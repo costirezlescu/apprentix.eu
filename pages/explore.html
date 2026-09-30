@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Explore — Apprentix</title>
+<meta name="description" content="Search, filter and compare records across European apprenticeship and VET datasets.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Public+Sans:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body data-root="../">
+
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="indep">
+  <div class="wrap">
+    <span class="tag">Independent project</span>
+    <p>Not affiliated with, or endorsed by, any European institution or agency. Built on publicly available data.</p>
+  </div>
+</div>
+
+<header class="site-head">
+  <div class="wrap head-inner">
+    <a class="brand" href="../">Apprenti<span class="x">x</span><span class="eu">.eu</span></a>
+    <nav class="site-nav">
+      <a href="../">Datasets</a>
+      <a href="about.html">About</a>
+      <a href="data.html">Data &amp; sources</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="wrap explore">
+
+  <aside class="rail">
+    <div class="panel">
+      <h2>Search</h2>
+      <p class="hint">Searches every field in this dataset.</p>
+      <input class="search" id="search" type="search" placeholder="Country, scheme, keyword…" aria-label="Search records">
+    </div>
+
+    <div class="panel">
+      <h2>Filter</h2>
+      <p class="hint">Combine filters to narrow the list.</p>
+      <div id="filters"></div>
+      <p style="margin:14px 0 0"><button class="linkbtn" id="reset" type="button">Reset everything</button></p>
+    </div>
+  </aside>
+
+  <section>
+    <div class="results-head">
+      <div>
+        <h1 id="ds-title">Loading…</h1>
+        <p class="sub" id="ds-tagline" style="margin:4px 0 0;color:var(--muted)"></p>
+      </div>
+      <span class="count" id="count"></span>
+    </div>
+
+    <div class="viewbar" id="viewbar">
+      <button class="btn" id="backToList" type="button">← Back to all records</button>
+      <label class="toggle"><input type="checkbox" id="diffsOnly"> Differences only</label>
+    </div>
+
+    <div id="listView">
+      <div class="grid" id="grid"></div>
+      <div class="empty" id="empty" hidden>
+        Nothing matches these filters.
+        <button class="linkbtn" id="resetEmpty" type="button">Reset</button>
+      </div>
+    </div>
+
+    <div id="compareView" hidden>
+      <div class="table-wrap"><table class="compare" id="compareTable"></table></div>
+    </div>
+
+    <p class="provenance" style="margin-top:26px">
+      Source: <a id="source-link" href="#" target="_blank" rel="noopener">…</a>.
+      <span id="caveat"></span>
+    </p>
+  </section>
+
+</main>
+
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-labelledby="drawerTitle"></aside>
+
+<div class="tray" id="tray">
+  <div class="wrap">
+    <span class="label">Compare</span>
+    <span id="traySlots" style="display:flex;gap:8px;flex-wrap:wrap"></span>
+    <span class="spacer"></span>
+    <button class="btn" id="trayClear" type="button">Clear</button>
+    <button class="btn primary" id="trayGo" type="button">Compare side by side</button>
+  </div>
+</div>
+
+<script type="module" src="../assets/js/explore.js"></script>
+
+</body>
+</html>

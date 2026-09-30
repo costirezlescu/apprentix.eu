@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Data &amp; sources — Apprentix</title>
+<meta name="description" content="Where the data on Apprentix comes from, how it was obtained, and what it can and cannot be used for.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Public+Sans:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body data-root="../">
+
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="indep">
+  <div class="wrap">
+    <span class="tag">Independent project</span>
+    <p>Not affiliated with, or endorsed by, any European institution or agency. Built on publicly available data.</p>
+  </div>
+</div>
+
+<header class="site-head">
+  <div class="wrap head-inner">
+    <a class="brand" href="../">Apprenti<span class="x">x</span><span class="eu">.eu</span></a>
+    <nav class="site-nav">
+      <a href="../">Datasets</a>
+      <a href="about.html">About</a>
+      <a href="data.html" aria-current="page">Data &amp; sources</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero">
+    <div class="wrap">
+      <h1>Data &amp; sources</h1>
+      <p class="lede">Where everything on this site comes from, how it was obtained, and what it can and cannot be used for.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <h2>Sources</h2>
+      <p class="sub">One entry per dataset. Each record on the site also links directly to its own source page.</p>
+      <div id="sources"></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap" style="max-width:min(72ch, 100%)">
+      <h2>How to read the data</h2>
+      <p class="sub"><strong>The official source is authoritative.</strong> Where this site and the source differ, the source is right. Records here are condensed for comparison and omit detail that the original carries.</p>
+      <p class="sub"><strong>Categories are interpretations.</strong> Filters such as “mostly at work” group records so they can be compared. The grouping is ours, not the publisher's, unless stated otherwise in the dataset notes above.</p>
+      <p class="sub"><strong>Dates matter.</strong> Each dataset records when it was retrieved. Sources are updated on their own cycles, and this site may lag behind.</p>
+
+      <h2 style="margin-top:34px">Reuse</h2>
+      <p class="sub">The <em>code</em> of this site is MIT-licensed and free to reuse. The <em>data</em> belongs to its original publishers and is not covered by that licence — check the conditions of each source before redistributing it.</p>
+
+      <h2 style="margin-top:34px">Corrections</h2>
+      <p class="sub">If a record misrepresents its source, it will be corrected or removed. Please report it.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="rowlinks">
+      <a href="../">Datasets</a>
+      <a href="about.html">About</a>
+    </div>
+    <p><strong>Apprentix</strong> is an independent, non-commercial project. It republishes publicly available information; it does not create or verify it.</p>
+  </div>
+</footer>
+
+<script type="module">
+  import { loadManifest, loadDataset, esc } from '../assets/js/data.js';
+
+  const m = await loadManifest();
+  const host = document.getElementById('sources');
+
+  const blocks = await Promise.all(m.datasets.map(async d => {
+    const { meta } = await loadDataset(d.id);
+    const s = meta.source;
+    return `
+      <div class="panel" style="margin-bottom:14px">
+        <h2 style="font-size:1.05rem">${esc(meta.title)}</h2>
+        <div class="kv" style="margin-top:10px">
+          <div class="row"><div class="k">Source</div><div><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.name)} ↗</a></div></div>
+          <div class="row"><div class="k">Retrieved</div><div>${esc(s.retrieved || '—')}</div></div>
+          <div class="row"><div class="k">Records</div><div>${d.records}</div></div>
+          <div class="row"><div class="k">Reuse</div><div>${esc(s.licence || 'Check with the publisher.')}</div></div>
+          <div class="row"><div class="k">Caveat</div><div>${esc(s.caveat || '—')}</div></div>
+        </div>
+      </div>`;
+  }));
+
+  host.innerHTML = blocks.join('');
+</script>
+
+</body>
+</html>

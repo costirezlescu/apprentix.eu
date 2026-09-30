@@ -1,0 +1,28 @@
+{
+  "site": {
+    "name": "Apprentix",
+    "domain": "apprentix.eu",
+    "tagline": "European apprenticeship and VET data, made searchable.",
+    "blurb": "An independent project that takes publicly available European data on apprenticeship and vocational education and republishes it in a form you can search, filter and compare — rather than read one page at a time.",
+    "updated": "2026-09-30"
+  },
+
+  "datasets": [
+    {
+      "id": "apprenticeship-schemes",
+      "path": "data/published/apprenticeship-schemes",
+      "title": "Apprenticeship schemes in Europe",
+      "tagline": "How apprenticeship is designed, governed and paid for across Europe.",
+      "records": 34,
+      "coverage": "29 education and training systems",
+      "status": "live"
+    }
+  ],
+
+  "planned": [
+    { "title": "Financing apprenticeships",      "note": "Cedefop database — not yet imported" },
+    { "title": "Financing adult learning",       "note": "Cedefop database — not yet imported" },
+    { "title": "National qualifications frameworks", "note": "Cedefop database — not yet imported" },
+    { "title": "VET in Europe",                  "note": "Cedefop database — not yet imported" }
+  ]
+}

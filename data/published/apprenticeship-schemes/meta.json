@@ -1,0 +1,63 @@
+{
+  "id": "apprenticeship-schemes",
+  "title": "Apprenticeship schemes in Europe",
+  "tagline": "How apprenticeship is designed, governed and paid for across Europe.",
+  "description": "Mainstream apprenticeship schemes with a stable legal basis in the EU Member States plus Iceland and Norway. Each record summarises one scheme and links to its official fiche.",
+  "recordLabel": { "one": "scheme", "many": "schemes" },
+
+  "source": {
+    "name": "Cedefop — European database on apprenticeship schemes",
+    "url": "https://www.cedefop.europa.eu/en/tools/apprenticeship-schemes",
+    "retrieved": "2026-09",
+    "licence": "Public information published by Cedefop. Check reuse conditions before redistributing.",
+    "caveat": "Values were read from the published scheme fiches and condensed. They have not been checked against the source record. The official fiches remain authoritative."
+  },
+
+  "display": {
+    "title": "name_en",
+    "subtitle": "name_original",
+    "group": "country",
+    "badge": "flag",
+    "link": "source_url",
+    "summary": "overview",
+    "facts": ["duration", "workplace_time", "compensation"]
+  },
+
+  "fields": [
+    { "key": "country",                 "label": "Country",              "type": "category", "facet": true },
+    { "key": "country_code",            "label": "Country code",         "type": "hidden" },
+    { "key": "flag",                    "label": "Flag",                 "type": "hidden" },
+    { "key": "name_en",                 "label": "Scheme",               "type": "title" },
+    { "key": "name_original",           "label": "Original name",        "type": "subtitle" },
+
+    { "key": "education_level",         "label": "Education level",      "type": "category", "facet": true,
+      "order": ["Upper secondary", "Post-secondary (EQF 5)", "Higher education (EQF 6+)", "Multiple levels"] },
+    { "key": "compensation",            "label": "Apprentice compensation", "type": "category", "facet": true,
+      "order": ["Wage", "Allowance", "Mostly unpaid"] },
+    { "key": "workplace_time",          "label": "Time at the workplace", "type": "category", "facet": true,
+      "order": ["Mostly at work (≥2/3)", "Around half", "Under half"] },
+
+    { "key": "duration",                "label": "Duration",             "type": "text" },
+    { "key": "target_group",            "label": "Target group",         "type": "text" },
+    { "key": "learners",                "label": "Apprentices (latest)", "type": "text" },
+    { "key": "qualification",           "label": "Qualification attained", "type": "text" },
+    { "key": "education_level_detail",  "label": "Level (as stated)",    "type": "text" },
+    { "key": "workplace_time_detail",   "label": "Workplace time (as stated)", "type": "text" },
+    { "key": "compensation_detail",     "label": "Compensation (as stated)",   "type": "text" },
+    { "key": "contract",                "label": "Formal relationship",  "type": "text" },
+    { "key": "governance",              "label": "Who oversees it",      "type": "text" },
+    { "key": "legal_basis",             "label": "Legal basis",          "type": "text" },
+
+    { "key": "overview",                "label": "Overview",             "type": "longtext" },
+    { "key": "source_url",              "label": "Official fiche",       "type": "link" },
+    { "key": "id",                      "label": "Identifier",           "type": "hidden" }
+  ],
+
+  "sections": [
+    { "title": "At a glance",   "fields": ["country", "education_level", "duration", "target_group", "learners"] },
+    { "title": "Qualification", "fields": ["qualification", "education_level_detail"] },
+    { "title": "At the workplace", "fields": ["workplace_time", "workplace_time_detail"] },
+    { "title": "Contract and pay", "fields": ["contract", "compensation", "compensation_detail"] },
+    { "title": "Governance",    "fields": ["governance", "legal_basis"] }
+  ]
+}

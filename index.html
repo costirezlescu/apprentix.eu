@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apprentix — European apprenticeship and VET data, made searchable</title>
+<meta name="description" content="An independent project republishing public European data on apprenticeship and vocational education in a form you can search, filter and compare.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Public+Sans:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body data-root="./">
+
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="indep">
+  <div class="wrap">
+    <span class="tag">Independent project</span>
+    <p>Not affiliated with, or endorsed by, any European institution or agency. Built on publicly available data.</p>
+  </div>
+</div>
+
+<header class="site-head">
+  <div class="wrap head-inner">
+    <a class="brand" href="./">Apprenti<span class="x">x</span><span class="eu">.eu</span></a>
+    <nav class="site-nav">
+      <a href="./" aria-current="page">Datasets</a>
+      <a href="pages/about.html">About</a>
+      <a href="pages/data.html">Data &amp; sources</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero">
+    <div class="wrap">
+      <h1 id="site-tagline">European apprenticeship data, made searchable.</h1>
+      <p class="lede" id="site-blurb"></p>
+      <div class="stats" id="stats"></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <h2>Datasets</h2>
+      <p class="sub">Each dataset can be searched, filtered and compared record by record. Every record links back to its official source.</p>
+      <div class="ds-grid" id="ds-grid"></div>
+    </div>
+  </section>
+
+  <section class="section" id="planned-section" hidden>
+    <div class="wrap">
+      <h2>In preparation</h2>
+      <p class="sub">Public datasets identified for import. Nothing here is live yet.</p>
+      <div class="ds-grid" id="planned-grid"></div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="rowlinks">
+      <a href="pages/about.html">About</a>
+      <a href="pages/data.html">Data &amp; sources</a>
+      <a href="https://github.com/" id="repo-link">Source code</a>
+    </div>
+    <p><strong>Apprentix</strong> is an independent, non-commercial project. It republishes publicly available information; it does not create or verify it. Each record links to its official source, which remains authoritative.</p>
+    <p id="foot-updated"></p>
+  </div>
+</footer>
+
+<script type="module">
+  import { loadManifest, esc } from './assets/js/data.js';
+
+  const m = await loadManifest();
+  document.getElementById('site-tagline').textContent = m.site.tagline;
+  document.getElementById('site-blurb').textContent = m.site.blurb;
+  document.getElementById('foot-updated').textContent = `Last updated ${m.site.updated}.`;
+
+  const totalRecords = m.datasets.reduce((n, d) => n + (d.records || 0), 0);
+  document.getElementById('stats').innerHTML = [
+    [m.datasets.length, m.datasets.length === 1 ? 'Dataset' : 'Datasets'],
+    [totalRecords, 'Records'],
+    [m.planned.length, 'In preparation']
+  ].map(([n, l]) => `<div class="stat"><div class="n">${n}</div><div class="l">${esc(l)}</div></div>`).join('');
+
+  document.getElementById('ds-grid').innerHTML = m.datasets.map(d => `
+    <a class="ds-card" href="pages/explore.html?dataset=${encodeURIComponent(d.id)}">
+      <h3>${esc(d.title)}</h3>
+      <p>${esc(d.tagline || '')}</p>
+      <div class="meta"><span>${d.records} records</span><span>${esc(d.coverage || '')}</span></div>
+    </a>`).join('');
+
+  if (m.planned?.length) {
+    document.getElementById('planned-section').hidden = false;
+    document.getElementById('planned-grid').innerHTML = m.planned.map(p => `
+      <div class="ds-card soon">
+        <h3>${esc(p.title)}</h3>
+        <p>${esc(p.note || '')}</p>
+      </div>`).join('');
+  }
+</script>
+
+</body>
+</html>
