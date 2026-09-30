@@ -66,7 +66,8 @@ apprentix.eu/
 │        └─ records.json          the records
 ├─ scripts/
 │  ├─ serve.ps1                   local preview server
-│  └─ csv-to-json.ps1             convert a spreadsheet into records.json
+│  ├─ csv-to-json.ps1             spreadsheet  -> records.json
+│  └─ docx-extract.ps1            Word files   -> CSV or records.json
 ├─ .nojekyll                      stops GitHub Pages hiding files
 └─ CNAME                          custom domain (apprentix.eu)
 ```
@@ -150,16 +151,59 @@ That's all. The explorer picks it up automatically.
 
 ---
 
-## Converting a spreadsheet
+## Getting data out of the originals
 
-If your raw data is a CSV or Excel file:
+### From a spreadsheet
 
 ```powershell
 pwsh -File scripts/csv-to-json.ps1 -In data/raw/financing.csv -Out data/published/financing/records.json
 ```
 
-It will report the columns it found so you can write `meta.json` against them.
-For Excel, save the sheet as CSV (UTF-8) first.
+It prints the columns it found, so you can write `meta.json` against them.
+For Excel, save the sheet as **CSV UTF-8** first.
+
+Useful options:
+
+- `-IdColumn name` — which column holds the unique id (default: the first)
+- `-Split "level,compensation"` — columns holding **several** values, separated by `;` or `|`
+
+### From Word documents
+
+`docx-extract.ps1` reads `.docx` files directly — no Word, no installation. Point it at
+a single file **or a whole folder**.
+
+**Always start by looking:**
+
+```powershell
+pwsh -File scripts/docx-extract.ps1 -In data/raw/fiches
+```
+
+It reports, per document, how many tables there are, their column headers, and the
+heading structure. That tells you which of the two routes below you need.
+
+**If the data sits in tables:**
+
+```powershell
+pwsh -File scripts/docx-extract.ps1 -In data/raw/fiches -Mode tables -Out data/raw/tables
+pwsh -File scripts/csv-to-json.ps1  -In data/raw/tables/table-1.csv -Out data/published/mine/records.json
+```
+
+**If each document is itself one record** — headings are the fields, the text beneath
+each heading is the value (the usual shape for country or scheme fiches):
+
+```powershell
+pwsh -File scripts/docx-extract.ps1 -In data/raw/fiches -Mode qa -Out data/published/mine/records.json
+```
+
+One document becomes one record; the filename becomes the `id`. At the end it prints
+every field key found across all the documents, ready to paste into `meta.json`.
+
+Documents don't have to be identical — if a heading is missing from one file, that
+field is simply absent from that record, and the site copes.
+
+**If a document has no styled headings** (bold text used instead of Heading 1/2), the
+inspect step will say so. Use `-Mode text` to dump the whole outline to JSON and work
+from there.
 
 ---
 
