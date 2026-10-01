@@ -1,0 +1,6408 @@
+{
+  "id": "erasmus-cove-participations",
+  "title": "Participations in Centres of Vocational Excellence projects",
+  "description": "Number of organisations from each country taking part in Erasmus+ Centres of Vocational Excellence (CoVE) projects, by call year and role (coordinator, partner, associated partner, affiliated entity).",
+  "unit": "participations",
+  "topic": "Excellence",
+  "source_label": "DG EMPL, CoVE Project Participants data 2021–2025",
+  "comparability": "Counts organisation-participations, not distinct organisations or projects: an organisation in two CoVEs counts twice. Only 13–16 CoVE projects are selected per call, so national figures are small and volatile. Associated partners and affiliated entities do not receive EU funding in the same way as full partners. Countries outside Europe are dropped. EU27 is the sum of member states.",
+  "dims": [
+    {
+      "key": "role",
+      "label": "Role",
+      "values": {
+        "TOTAL": "All participations",
+        "COORD": "Coordinator",
+        "PARTNER": "Partner",
+        "ASSOC": "Associated partner",
+        "AFFIL": "Affiliated entity"
+      },
+      "default": "TOTAL"
+    }
+  ],
+  "provenance": {
+    "publisher": "European Commission (DG EMPL), Centres of Vocational Excellence",
+    "dataset_code": "CoVE project participants 2021–2025",
+    "source_url": "https://employment-social-affairs.ec.europa.eu/policies-and-activities/skills-and-qualifications/skills-jobs/centres-vocational-excellence_en",
+    "api_url": "https://employment-social-affairs.ec.europa.eu/document/download/bbc30c6b-9af5-4b7f-92d8-cd92be8e23dc_en?filename=Project%20Participants%20data%202021-2022-2023-2024-2025.xlsx",
+    "licence": "CC-BY-4.0",
+    "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+    "citation": "European Commission, DG EMPL: Project Participants data (Centres of Vocational Excellence), aggregated by Apprentix.",
+    "source_updated": "Data extracted at the beginning of May 2026",
+    "retrieved_at": "2026-10-01T09:38:08+00:00",
+    "raw_file": "data/raw/erasmus/2026-10-01-cove-participants.xlsx",
+    "raw_sha256": "04b733b034ceb3fc04677f629d451438613cb16d0135388d56085f3810b2c9b9",
+    "licence_note": "Commission legal notice (https://commission.europa.eu/legal-notice_en): CC BY 4.0 under Decision 2011/833/EU."
+  },
+  "series": [
+    {
+      "geo": "AL",
+      "time": "2021",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "AL",
+      "time": "2024",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "AL",
+      "time": "2025",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "AT",
+      "time": "2021",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "AT",
+      "time": "2022",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "AT",
+      "time": "2023",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "AT",
+      "time": "2024",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "AT",
+      "time": "2025",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "BA",
+      "time": "2021",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "BA",
+      "time": "2022",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "BA",
+      "time": "2024",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "BA",
+      "time": "2025",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2021",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2022",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2023",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2024",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2025",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "BG",
+      "time": "2021",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "BG",
+      "time": "2022",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "BG",
+      "time": "2023",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "BG",
+      "time": "2025",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2024",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2025",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "CY",
+      "time": "2021",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "CY",
+      "time": "2022",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "CY",
+      "time": "2023",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "CY",
+      "time": "2024",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "CY",
+      "time": "2025",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "CZ",
+      "time": "2021",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "CZ",
+      "time": "2022",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2021",
+      "value": 5.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2022",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2023",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2024",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2025",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "DK",
+      "time": "2021",
+      "value": 5.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "DK",
+      "time": "2022",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "DK",
+      "time": "2023",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "DK",
+      "time": "2024",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "DK",
+      "time": "2025",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "EE",
+      "time": "2021",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "EE",
+      "time": "2022",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "EE",
+      "time": "2023",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "EE",
+      "time": "2024",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "EL",
+      "time": "2021",
+      "value": 1.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "EL",
+      "time": "2022",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "EL",
+      "time": "2023",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "EL",
+      "time": "2024",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "EL",
+      "time": "2025",
+      "value": 1.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "ES",
+      "time": "2021",
+      "value": 1.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "ES",
+      "time": "2022",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "ES",
+      "time": "2023",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "ES",
+      "time": "2024",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "ES",
+      "time": "2025",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "EU27",
+      "time": "2021",
+      "value": 28.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "EU27",
+      "time": "2022",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "EU27",
+      "time": "2023",
+      "value": 2.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "EU27",
+      "time": "2024",
+      "value": 5.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "EU27",
+      "time": "2025",
+      "value": 1.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2021",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2022",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2023",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2024",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2025",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2021",
+      "value": 3.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2022",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2023",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2024",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2025",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "GE",
+      "time": "2022",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "HR",
+      "time": "2021",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "HR",
+      "time": "2022",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "HR",
+      "time": "2024",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "HR",
+      "time": "2025",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "HU",
+      "time": "2023",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "HU",
+      "time": "2024",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2021",
+      "value": 4.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2022",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2023",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2024",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2025",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "IT",
+      "time": "2021",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "IT",
+      "time": "2022",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "IT",
+      "time": "2023",
+      "value": 2.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "IT",
+      "time": "2024",
+      "value": 3.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "IT",
+      "time": "2025",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "LT",
+      "time": "2021",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "LT",
+      "time": "2022",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "LT",
+      "time": "2023",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "LT",
+      "time": "2024",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "LT",
+      "time": "2025",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "LU",
+      "time": "2021",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "LU",
+      "time": "2024",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2021",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2022",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2023",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2024",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2025",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "MD",
+      "time": "2022",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "MD",
+      "time": "2025",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "MK",
+      "time": "2021",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "MK",
+      "time": "2023",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "MK",
+      "time": "2025",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "MT",
+      "time": "2021",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "MT",
+      "time": "2025",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2021",
+      "value": 2.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2022",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2023",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2024",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2025",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2021",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2022",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2023",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "PL",
+      "time": "2021",
+      "value": 3.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "PL",
+      "time": "2022",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "PL",
+      "time": "2023",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "PL",
+      "time": "2024",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "PL",
+      "time": "2025",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "PT",
+      "time": "2021",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "PT",
+      "time": "2022",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "PT",
+      "time": "2023",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "PT",
+      "time": "2024",
+      "value": 2.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "PT",
+      "time": "2025",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "RO",
+      "time": "2021",
+      "value": 4.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "RO",
+      "time": "2022",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "RO",
+      "time": "2023",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "RO",
+      "time": "2024",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "RO",
+      "time": "2025",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "RS",
+      "time": "2021",
+      "value": 4.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "RS",
+      "time": "2022",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "RS",
+      "time": "2024",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "RS",
+      "time": "2025",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "SE",
+      "time": "2021",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "SE",
+      "time": "2022",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "SE",
+      "time": "2023",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "SE",
+      "time": "2024",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "SE",
+      "time": "2025",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "SI",
+      "time": "2021",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "SI",
+      "time": "2022",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "SI",
+      "time": "2023",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "SI",
+      "time": "2024",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "SI",
+      "time": "2025",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "SK",
+      "time": "2021",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "SK",
+      "time": "2023",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "SK",
+      "time": "2025",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "TR",
+      "time": "2021",
+      "value": 2.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "TR",
+      "time": "2022",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "TR",
+      "time": "2023",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "TR",
+      "time": "2024",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "TR",
+      "time": "2025",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "UA",
+      "time": "2023",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "UA",
+      "time": "2024",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "UA",
+      "time": "2025",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2021",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2022",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2024",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2025",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "XK",
+      "time": "2024",
+      "value": 0.0,
+      "dims": {
+        "role": "AFFIL"
+      }
+    },
+    {
+      "geo": "AL",
+      "time": "2021",
+      "value": 1.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "AL",
+      "time": "2024",
+      "value": 1.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "AL",
+      "time": "2025",
+      "value": 1.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "AT",
+      "time": "2021",
+      "value": 4.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "AT",
+      "time": "2022",
+      "value": 9.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "AT",
+      "time": "2023",
+      "value": 4.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "AT",
+      "time": "2024",
+      "value": 1.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "AT",
+      "time": "2025",
+      "value": 3.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "BA",
+      "time": "2021",
+      "value": 3.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "BA",
+      "time": "2022",
+      "value": 4.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "BA",
+      "time": "2024",
+      "value": 1.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "BA",
+      "time": "2025",
+      "value": 0.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2021",
+      "value": 4.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2022",
+      "value": 2.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2023",
+      "value": 6.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2024",
+      "value": 8.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2025",
+      "value": 5.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "BG",
+      "time": "2021",
+      "value": 0.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "BG",
+      "time": "2022",
+      "value": 3.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "BG",
+      "time": "2023",
+      "value": 2.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "BG",
+      "time": "2025",
+      "value": 1.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2024",
+      "value": 1.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2025",
+      "value": 1.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "CY",
+      "time": "2021",
+      "value": 2.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "CY",
+      "time": "2022",
+      "value": 3.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "CY",
+      "time": "2023",
+      "value": 2.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "CY",
+      "time": "2024",
+      "value": 0.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "CY",
+      "time": "2025",
+      "value": 6.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "CZ",
+      "time": "2021",
+      "value": 0.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "CZ",
+      "time": "2022",
+      "value": 10.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2021",
+      "value": 9.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2022",
+      "value": 8.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2023",
+      "value": 18.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2024",
+      "value": 9.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2025",
+      "value": 5.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "DK",
+      "time": "2021",
+      "value": 0.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "DK",
+      "time": "2022",
+      "value": 0.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "DK",
+      "time": "2023",
+      "value": 3.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "DK",
+      "time": "2024",
+      "value": 3.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "DK",
+      "time": "2025",
+      "value": 1.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "EE",
+      "time": "2021",
+      "value": 0.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "EE",
+      "time": "2022",
+      "value": 0.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "EE",
+      "time": "2023",
+      "value": 4.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "EE",
+      "time": "2024",
+      "value": 2.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "EL",
+      "time": "2021",
+      "value": 16.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "EL",
+      "time": "2022",
+      "value": 6.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "EL",
+      "time": "2023",
+      "value": 9.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "EL",
+      "time": "2024",
+      "value": 10.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "EL",
+      "time": "2025",
+      "value": 10.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "ES",
+      "time": "2021",
+      "value": 18.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "ES",
+      "time": "2022",
+      "value": 9.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "ES",
+      "time": "2023",
+      "value": 10.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "ES",
+      "time": "2024",
+      "value": 9.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "ES",
+      "time": "2025",
+      "value": 10.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "EU27",
+      "time": "2021",
+      "value": 93.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "EU27",
+      "time": "2022",
+      "value": 80.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "EU27",
+      "time": "2023",
+      "value": 126.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "EU27",
+      "time": "2024",
+      "value": 78.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "EU27",
+      "time": "2025",
+      "value": 67.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2021",
+      "value": 7.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2022",
+      "value": 6.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2023",
+      "value": 3.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2024",
+      "value": 1.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2025",
+      "value": 0.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2021",
+      "value": 9.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2022",
+      "value": 0.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2023",
+      "value": 1.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2024",
+      "value": 1.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2025",
+      "value": 4.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "GE",
+      "time": "2022",
+      "value": 0.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "HR",
+      "time": "2021",
+      "value": 0.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "HR",
+      "time": "2022",
+      "value": 0.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "HR",
+      "time": "2024",
+      "value": 0.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "HR",
+      "time": "2025",
+      "value": 0.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "HU",
+      "time": "2023",
+      "value": 6.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "HU",
+      "time": "2024",
+      "value": 1.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2021",
+      "value": 3.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2022",
+      "value": 0.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2023",
+      "value": 0.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2024",
+      "value": 2.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2025",
+      "value": 1.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "IT",
+      "time": "2021",
+      "value": 4.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "IT",
+      "time": "2022",
+      "value": 15.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "IT",
+      "time": "2023",
+      "value": 7.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "IT",
+      "time": "2024",
+      "value": 9.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "IT",
+      "time": "2025",
+      "value": 7.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "LT",
+      "time": "2021",
+      "value": 1.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "LT",
+      "time": "2022",
+      "value": 5.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "LT",
+      "time": "2023",
+      "value": 6.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "LT",
+      "time": "2024",
+      "value": 0.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "LT",
+      "time": "2025",
+      "value": 3.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "LU",
+      "time": "2021",
+      "value": 1.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "LU",
+      "time": "2024",
+      "value": 2.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2021",
+      "value": 0.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2022",
+      "value": 2.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2023",
+      "value": 8.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2024",
+      "value": 0.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2025",
+      "value": 0.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "MD",
+      "time": "2022",
+      "value": 0.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "MD",
+      "time": "2025",
+      "value": 1.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "MK",
+      "time": "2021",
+      "value": 6.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "MK",
+      "time": "2023",
+      "value": 0.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "MK",
+      "time": "2025",
+      "value": 0.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "MT",
+      "time": "2021",
+      "value": 0.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "MT",
+      "time": "2025",
+      "value": 0.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2021",
+      "value": 6.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2022",
+      "value": 2.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2023",
+      "value": 2.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2024",
+      "value": 4.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2025",
+      "value": 5.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2021",
+      "value": 2.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2022",
+      "value": 1.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2023",
+      "value": 3.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "PL",
+      "time": "2021",
+      "value": 1.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "PL",
+      "time": "2022",
+      "value": 0.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "PL",
+      "time": "2023",
+      "value": 19.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "PL",
+      "time": "2024",
+      "value": 3.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "PL",
+      "time": "2025",
+      "value": 2.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "PT",
+      "time": "2021",
+      "value": 5.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "PT",
+      "time": "2022",
+      "value": 0.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "PT",
+      "time": "2023",
+      "value": 1.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "PT",
+      "time": "2024",
+      "value": 10.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "PT",
+      "time": "2025",
+      "value": 0.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "RO",
+      "time": "2021",
+      "value": 0.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "RO",
+      "time": "2022",
+      "value": 0.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "RO",
+      "time": "2023",
+      "value": 6.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "RO",
+      "time": "2024",
+      "value": 2.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "RO",
+      "time": "2025",
+      "value": 1.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "RS",
+      "time": "2021",
+      "value": 3.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "RS",
+      "time": "2022",
+      "value": 0.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "RS",
+      "time": "2024",
+      "value": 0.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "RS",
+      "time": "2025",
+      "value": 1.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "SE",
+      "time": "2021",
+      "value": 1.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "SE",
+      "time": "2022",
+      "value": 0.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "SE",
+      "time": "2023",
+      "value": 1.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "SE",
+      "time": "2024",
+      "value": 0.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "SE",
+      "time": "2025",
+      "value": 0.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "SI",
+      "time": "2021",
+      "value": 2.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "SI",
+      "time": "2022",
+      "value": 0.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "SI",
+      "time": "2023",
+      "value": 1.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "SI",
+      "time": "2024",
+      "value": 1.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "SI",
+      "time": "2025",
+      "value": 2.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "SK",
+      "time": "2021",
+      "value": 0.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "SK",
+      "time": "2023",
+      "value": 7.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "SK",
+      "time": "2025",
+      "value": 1.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "TR",
+      "time": "2021",
+      "value": 7.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "TR",
+      "time": "2022",
+      "value": 0.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "TR",
+      "time": "2023",
+      "value": 0.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "TR",
+      "time": "2024",
+      "value": 0.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "TR",
+      "time": "2025",
+      "value": 4.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "UA",
+      "time": "2023",
+      "value": 1.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "UA",
+      "time": "2024",
+      "value": 1.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "UA",
+      "time": "2025",
+      "value": 0.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2021",
+      "value": 2.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2022",
+      "value": 0.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2024",
+      "value": 2.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2025",
+      "value": 2.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "XK",
+      "time": "2024",
+      "value": 0.0,
+      "dims": {
+        "role": "ASSOC"
+      }
+    },
+    {
+      "geo": "AL",
+      "time": "2021",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "AL",
+      "time": "2024",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "AL",
+      "time": "2025",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "AT",
+      "time": "2021",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "AT",
+      "time": "2022",
+      "value": 1.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "AT",
+      "time": "2023",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "AT",
+      "time": "2024",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "AT",
+      "time": "2025",
+      "value": 1.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "BA",
+      "time": "2021",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "BA",
+      "time": "2022",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "BA",
+      "time": "2024",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "BA",
+      "time": "2025",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2021",
+      "value": 2.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2022",
+      "value": 1.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2023",
+      "value": 1.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2024",
+      "value": 1.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2025",
+      "value": 1.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "BG",
+      "time": "2021",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "BG",
+      "time": "2022",
+      "value": 1.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "BG",
+      "time": "2023",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "BG",
+      "time": "2025",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2024",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2025",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "CY",
+      "time": "2021",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "CY",
+      "time": "2022",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "CY",
+      "time": "2023",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "CY",
+      "time": "2024",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "CY",
+      "time": "2025",
+      "value": 2.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "CZ",
+      "time": "2021",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "CZ",
+      "time": "2022",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2021",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2022",
+      "value": 1.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2023",
+      "value": 2.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2024",
+      "value": 1.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2025",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "DK",
+      "time": "2021",
+      "value": 2.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "DK",
+      "time": "2022",
+      "value": 1.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "DK",
+      "time": "2023",
+      "value": 1.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "DK",
+      "time": "2024",
+      "value": 1.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "DK",
+      "time": "2025",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "EE",
+      "time": "2021",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "EE",
+      "time": "2022",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "EE",
+      "time": "2023",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "EE",
+      "time": "2024",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "EL",
+      "time": "2021",
+      "value": 3.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "EL",
+      "time": "2022",
+      "value": 1.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "EL",
+      "time": "2023",
+      "value": 3.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "EL",
+      "time": "2024",
+      "value": 3.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "EL",
+      "time": "2025",
+      "value": 7.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "ES",
+      "time": "2021",
+      "value": 1.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "ES",
+      "time": "2022",
+      "value": 1.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "ES",
+      "time": "2023",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "ES",
+      "time": "2024",
+      "value": 1.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "ES",
+      "time": "2025",
+      "value": 1.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "EU27",
+      "time": "2021",
+      "value": 12.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "EU27",
+      "time": "2022",
+      "value": 13.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "EU27",
+      "time": "2023",
+      "value": 14.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "EU27",
+      "time": "2024",
+      "value": 15.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "EU27",
+      "time": "2025",
+      "value": 16.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2021",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2022",
+      "value": 2.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2023",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2024",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2025",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2021",
+      "value": 1.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2022",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2023",
+      "value": 1.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2024",
+      "value": 1.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2025",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "GE",
+      "time": "2022",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "HR",
+      "time": "2021",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "HR",
+      "time": "2022",
+      "value": 1.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "HR",
+      "time": "2024",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "HR",
+      "time": "2025",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "HU",
+      "time": "2023",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "HU",
+      "time": "2024",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2021",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2022",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2023",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2024",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2025",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "IT",
+      "time": "2021",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "IT",
+      "time": "2022",
+      "value": 2.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "IT",
+      "time": "2023",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "IT",
+      "time": "2024",
+      "value": 4.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "IT",
+      "time": "2025",
+      "value": 4.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "LT",
+      "time": "2021",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "LT",
+      "time": "2022",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "LT",
+      "time": "2023",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "LT",
+      "time": "2024",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "LT",
+      "time": "2025",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "LU",
+      "time": "2021",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "LU",
+      "time": "2024",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2021",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2022",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2023",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2024",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2025",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "MD",
+      "time": "2022",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "MD",
+      "time": "2025",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "MK",
+      "time": "2021",
+      "value": 1.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "MK",
+      "time": "2023",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "MK",
+      "time": "2025",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "MT",
+      "time": "2021",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "MT",
+      "time": "2025",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2021",
+      "value": 2.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2022",
+      "value": 1.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2023",
+      "value": 1.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2024",
+      "value": 1.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2025",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2021",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2022",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2023",
+      "value": 1.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "PL",
+      "time": "2021",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "PL",
+      "time": "2022",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "PL",
+      "time": "2023",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "PL",
+      "time": "2024",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "PL",
+      "time": "2025",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "PT",
+      "time": "2021",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "PT",
+      "time": "2022",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "PT",
+      "time": "2023",
+      "value": 1.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "PT",
+      "time": "2024",
+      "value": 1.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "PT",
+      "time": "2025",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "RO",
+      "time": "2021",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "RO",
+      "time": "2022",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "RO",
+      "time": "2023",
+      "value": 2.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "RO",
+      "time": "2024",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "RO",
+      "time": "2025",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "RS",
+      "time": "2021",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "RS",
+      "time": "2022",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "RS",
+      "time": "2024",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "RS",
+      "time": "2025",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "SE",
+      "time": "2021",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "SE",
+      "time": "2022",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "SE",
+      "time": "2023",
+      "value": 1.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "SE",
+      "time": "2024",
+      "value": 1.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "SE",
+      "time": "2025",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "SI",
+      "time": "2021",
+      "value": 1.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "SI",
+      "time": "2022",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "SI",
+      "time": "2023",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "SI",
+      "time": "2024",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "SI",
+      "time": "2025",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "SK",
+      "time": "2021",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "SK",
+      "time": "2023",
+      "value": 1.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "SK",
+      "time": "2025",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "TR",
+      "time": "2021",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "TR",
+      "time": "2022",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "TR",
+      "time": "2023",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "TR",
+      "time": "2024",
+      "value": 1.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "TR",
+      "time": "2025",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "UA",
+      "time": "2023",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "UA",
+      "time": "2024",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "UA",
+      "time": "2025",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2021",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2022",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2024",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2025",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "XK",
+      "time": "2024",
+      "value": 0.0,
+      "dims": {
+        "role": "COORD"
+      }
+    },
+    {
+      "geo": "AL",
+      "time": "2021",
+      "value": 0.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "AL",
+      "time": "2024",
+      "value": 0.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "AL",
+      "time": "2025",
+      "value": 0.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "AT",
+      "time": "2021",
+      "value": 4.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "AT",
+      "time": "2022",
+      "value": 7.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "AT",
+      "time": "2023",
+      "value": 5.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "AT",
+      "time": "2024",
+      "value": 3.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "AT",
+      "time": "2025",
+      "value": 12.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "BA",
+      "time": "2021",
+      "value": 0.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "BA",
+      "time": "2022",
+      "value": 2.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "BA",
+      "time": "2024",
+      "value": 0.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "BA",
+      "time": "2025",
+      "value": 1.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2021",
+      "value": 9.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2022",
+      "value": 8.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2023",
+      "value": 9.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2024",
+      "value": 14.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2025",
+      "value": 14.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "BG",
+      "time": "2021",
+      "value": 5.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "BG",
+      "time": "2022",
+      "value": 2.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "BG",
+      "time": "2023",
+      "value": 9.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "BG",
+      "time": "2025",
+      "value": 7.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2024",
+      "value": 0.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2025",
+      "value": 0.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "CY",
+      "time": "2021",
+      "value": 2.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "CY",
+      "time": "2022",
+      "value": 3.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "CY",
+      "time": "2023",
+      "value": 11.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "CY",
+      "time": "2024",
+      "value": 9.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "CY",
+      "time": "2025",
+      "value": 17.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "CZ",
+      "time": "2021",
+      "value": 4.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "CZ",
+      "time": "2022",
+      "value": 5.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2021",
+      "value": 19.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2022",
+      "value": 15.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2023",
+      "value": 16.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2024",
+      "value": 26.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2025",
+      "value": 14.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "DK",
+      "time": "2021",
+      "value": 4.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "DK",
+      "time": "2022",
+      "value": 5.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "DK",
+      "time": "2023",
+      "value": 13.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "DK",
+      "time": "2024",
+      "value": 5.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "DK",
+      "time": "2025",
+      "value": 5.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "EE",
+      "time": "2021",
+      "value": 2.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "EE",
+      "time": "2022",
+      "value": 9.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "EE",
+      "time": "2023",
+      "value": 4.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "EE",
+      "time": "2024",
+      "value": 5.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "EL",
+      "time": "2021",
+      "value": 17.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "EL",
+      "time": "2022",
+      "value": 22.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "EL",
+      "time": "2023",
+      "value": 23.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "EL",
+      "time": "2024",
+      "value": 36.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "EL",
+      "time": "2025",
+      "value": 39.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "ES",
+      "time": "2021",
+      "value": 21.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "ES",
+      "time": "2022",
+      "value": 40.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "ES",
+      "time": "2023",
+      "value": 24.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "ES",
+      "time": "2024",
+      "value": 33.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "ES",
+      "time": "2025",
+      "value": 30.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "EU27",
+      "time": "2021",
+      "value": 186.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "EU27",
+      "time": "2022",
+      "value": 212.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "EU27",
+      "time": "2023",
+      "value": 245.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "EU27",
+      "time": "2024",
+      "value": 261.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "EU27",
+      "time": "2025",
+      "value": 247.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2021",
+      "value": 6.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2022",
+      "value": 13.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2023",
+      "value": 14.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2024",
+      "value": 6.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2025",
+      "value": 1.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2021",
+      "value": 8.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2022",
+      "value": 7.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2023",
+      "value": 5.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2024",
+      "value": 14.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2025",
+      "value": 15.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "GE",
+      "time": "2022",
+      "value": 1.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "HR",
+      "time": "2021",
+      "value": 2.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "HR",
+      "time": "2022",
+      "value": 3.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "HR",
+      "time": "2024",
+      "value": 2.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "HR",
+      "time": "2025",
+      "value": 6.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "HU",
+      "time": "2023",
+      "value": 5.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "HU",
+      "time": "2024",
+      "value": 0.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2021",
+      "value": 5.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2022",
+      "value": 2.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2023",
+      "value": 2.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2024",
+      "value": 14.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2025",
+      "value": 0.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "IT",
+      "time": "2021",
+      "value": 20.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "IT",
+      "time": "2022",
+      "value": 30.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "IT",
+      "time": "2023",
+      "value": 25.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "IT",
+      "time": "2024",
+      "value": 38.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "IT",
+      "time": "2025",
+      "value": 38.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "LT",
+      "time": "2021",
+      "value": 0.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "LT",
+      "time": "2022",
+      "value": 4.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "LT",
+      "time": "2023",
+      "value": 9.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "LT",
+      "time": "2024",
+      "value": 6.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "LT",
+      "time": "2025",
+      "value": 3.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "LU",
+      "time": "2021",
+      "value": 0.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "LU",
+      "time": "2024",
+      "value": 1.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2021",
+      "value": 7.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2022",
+      "value": 1.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2023",
+      "value": 5.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2024",
+      "value": 3.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2025",
+      "value": 3.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "MD",
+      "time": "2022",
+      "value": 1.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "MD",
+      "time": "2025",
+      "value": 0.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "MK",
+      "time": "2021",
+      "value": 2.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "MK",
+      "time": "2023",
+      "value": 3.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "MK",
+      "time": "2025",
+      "value": 4.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "MT",
+      "time": "2021",
+      "value": 3.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "MT",
+      "time": "2025",
+      "value": 3.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2021",
+      "value": 21.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2022",
+      "value": 11.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2023",
+      "value": 22.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2024",
+      "value": 9.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2025",
+      "value": 3.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2021",
+      "value": 5.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2022",
+      "value": 4.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2023",
+      "value": 3.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "PL",
+      "time": "2021",
+      "value": 1.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "PL",
+      "time": "2022",
+      "value": 1.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "PL",
+      "time": "2023",
+      "value": 11.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "PL",
+      "time": "2024",
+      "value": 7.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "PL",
+      "time": "2025",
+      "value": 7.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "PT",
+      "time": "2021",
+      "value": 8.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "PT",
+      "time": "2022",
+      "value": 13.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "PT",
+      "time": "2023",
+      "value": 16.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "PT",
+      "time": "2024",
+      "value": 15.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "PT",
+      "time": "2025",
+      "value": 7.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "RO",
+      "time": "2021",
+      "value": 3.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "RO",
+      "time": "2022",
+      "value": 4.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "RO",
+      "time": "2023",
+      "value": 4.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "RO",
+      "time": "2024",
+      "value": 4.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "RO",
+      "time": "2025",
+      "value": 7.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "RS",
+      "time": "2021",
+      "value": 1.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "RS",
+      "time": "2022",
+      "value": 3.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "RS",
+      "time": "2024",
+      "value": 4.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "RS",
+      "time": "2025",
+      "value": 4.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "SE",
+      "time": "2021",
+      "value": 3.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "SE",
+      "time": "2022",
+      "value": 3.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "SE",
+      "time": "2023",
+      "value": 5.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "SE",
+      "time": "2024",
+      "value": 8.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "SE",
+      "time": "2025",
+      "value": 3.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "SI",
+      "time": "2021",
+      "value": 7.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "SI",
+      "time": "2022",
+      "value": 4.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "SI",
+      "time": "2023",
+      "value": 5.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "SI",
+      "time": "2024",
+      "value": 3.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "SI",
+      "time": "2025",
+      "value": 9.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "SK",
+      "time": "2021",
+      "value": 5.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "SK",
+      "time": "2023",
+      "value": 3.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "SK",
+      "time": "2025",
+      "value": 4.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "TR",
+      "time": "2021",
+      "value": 6.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "TR",
+      "time": "2022",
+      "value": 6.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "TR",
+      "time": "2023",
+      "value": 3.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "TR",
+      "time": "2024",
+      "value": 8.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "TR",
+      "time": "2025",
+      "value": 10.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "UA",
+      "time": "2023",
+      "value": 3.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "UA",
+      "time": "2024",
+      "value": 6.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "UA",
+      "time": "2025",
+      "value": 2.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2021",
+      "value": 0.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2022",
+      "value": 3.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2024",
+      "value": 0.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2025",
+      "value": 0.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "XK",
+      "time": "2024",
+      "value": 2.0,
+      "dims": {
+        "role": "PARTNER"
+      }
+    },
+    {
+      "geo": "AL",
+      "time": "2021",
+      "value": 1.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "AL",
+      "time": "2024",
+      "value": 1.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "AL",
+      "time": "2025",
+      "value": 1.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "AT",
+      "time": "2021",
+      "value": 8.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "AT",
+      "time": "2022",
+      "value": 17.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "AT",
+      "time": "2023",
+      "value": 9.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "AT",
+      "time": "2024",
+      "value": 4.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "AT",
+      "time": "2025",
+      "value": 16.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "BA",
+      "time": "2021",
+      "value": 3.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "BA",
+      "time": "2022",
+      "value": 6.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "BA",
+      "time": "2024",
+      "value": 1.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "BA",
+      "time": "2025",
+      "value": 1.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2021",
+      "value": 15.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2022",
+      "value": 11.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2023",
+      "value": 16.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2024",
+      "value": 23.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2025",
+      "value": 20.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "BG",
+      "time": "2021",
+      "value": 5.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "BG",
+      "time": "2022",
+      "value": 6.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "BG",
+      "time": "2023",
+      "value": 11.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "BG",
+      "time": "2025",
+      "value": 8.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2024",
+      "value": 1.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2025",
+      "value": 1.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "CY",
+      "time": "2021",
+      "value": 4.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "CY",
+      "time": "2022",
+      "value": 6.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "CY",
+      "time": "2023",
+      "value": 13.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "CY",
+      "time": "2024",
+      "value": 9.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "CY",
+      "time": "2025",
+      "value": 25.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "CZ",
+      "time": "2021",
+      "value": 4.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "CZ",
+      "time": "2022",
+      "value": 15.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2021",
+      "value": 33.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2022",
+      "value": 24.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2023",
+      "value": 36.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2024",
+      "value": 36.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2025",
+      "value": 19.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "DK",
+      "time": "2021",
+      "value": 11.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "DK",
+      "time": "2022",
+      "value": 6.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "DK",
+      "time": "2023",
+      "value": 17.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "DK",
+      "time": "2024",
+      "value": 9.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "DK",
+      "time": "2025",
+      "value": 6.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "EE",
+      "time": "2021",
+      "value": 2.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "EE",
+      "time": "2022",
+      "value": 9.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "EE",
+      "time": "2023",
+      "value": 8.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "EE",
+      "time": "2024",
+      "value": 7.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "EL",
+      "time": "2021",
+      "value": 37.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "EL",
+      "time": "2022",
+      "value": 29.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "EL",
+      "time": "2023",
+      "value": 35.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "EL",
+      "time": "2024",
+      "value": 49.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "EL",
+      "time": "2025",
+      "value": 57.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "ES",
+      "time": "2021",
+      "value": 41.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "ES",
+      "time": "2022",
+      "value": 50.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "ES",
+      "time": "2023",
+      "value": 34.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "ES",
+      "time": "2024",
+      "value": 43.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "ES",
+      "time": "2025",
+      "value": 41.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "EU27",
+      "time": "2021",
+      "value": 319.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "EU27",
+      "time": "2022",
+      "value": 305.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "EU27",
+      "time": "2023",
+      "value": 387.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "EU27",
+      "time": "2024",
+      "value": 359.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "EU27",
+      "time": "2025",
+      "value": 331.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2021",
+      "value": 13.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2022",
+      "value": 21.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2023",
+      "value": 17.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2024",
+      "value": 7.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2025",
+      "value": 1.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2021",
+      "value": 21.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2022",
+      "value": 7.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2023",
+      "value": 7.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2024",
+      "value": 16.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2025",
+      "value": 19.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "GE",
+      "time": "2022",
+      "value": 1.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "HR",
+      "time": "2021",
+      "value": 2.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "HR",
+      "time": "2022",
+      "value": 4.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "HR",
+      "time": "2024",
+      "value": 2.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "HR",
+      "time": "2025",
+      "value": 6.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "HU",
+      "time": "2023",
+      "value": 11.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "HU",
+      "time": "2024",
+      "value": 1.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2021",
+      "value": 12.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2022",
+      "value": 2.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2023",
+      "value": 2.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2024",
+      "value": 16.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2025",
+      "value": 1.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "IT",
+      "time": "2021",
+      "value": 24.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "IT",
+      "time": "2022",
+      "value": 47.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "IT",
+      "time": "2023",
+      "value": 34.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "IT",
+      "time": "2024",
+      "value": 54.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "IT",
+      "time": "2025",
+      "value": 49.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "LT",
+      "time": "2021",
+      "value": 1.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "LT",
+      "time": "2022",
+      "value": 9.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "LT",
+      "time": "2023",
+      "value": 15.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "LT",
+      "time": "2024",
+      "value": 6.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "LT",
+      "time": "2025",
+      "value": 6.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "LU",
+      "time": "2021",
+      "value": 1.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "LU",
+      "time": "2024",
+      "value": 3.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2021",
+      "value": 7.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2022",
+      "value": 3.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2023",
+      "value": 13.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2024",
+      "value": 3.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2025",
+      "value": 3.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "MD",
+      "time": "2022",
+      "value": 1.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "MD",
+      "time": "2025",
+      "value": 1.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "MK",
+      "time": "2021",
+      "value": 9.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "MK",
+      "time": "2023",
+      "value": 3.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "MK",
+      "time": "2025",
+      "value": 4.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "MT",
+      "time": "2021",
+      "value": 3.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "MT",
+      "time": "2025",
+      "value": 3.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2021",
+      "value": 31.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2022",
+      "value": 14.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2023",
+      "value": 25.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2024",
+      "value": 14.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2025",
+      "value": 8.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2021",
+      "value": 7.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2022",
+      "value": 5.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2023",
+      "value": 7.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "PL",
+      "time": "2021",
+      "value": 5.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "PL",
+      "time": "2022",
+      "value": 1.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "PL",
+      "time": "2023",
+      "value": 30.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "PL",
+      "time": "2024",
+      "value": 10.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "PL",
+      "time": "2025",
+      "value": 9.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "PT",
+      "time": "2021",
+      "value": 13.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "PT",
+      "time": "2022",
+      "value": 13.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "PT",
+      "time": "2023",
+      "value": 18.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "PT",
+      "time": "2024",
+      "value": 28.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "PT",
+      "time": "2025",
+      "value": 7.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "RO",
+      "time": "2021",
+      "value": 7.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "RO",
+      "time": "2022",
+      "value": 4.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "RO",
+      "time": "2023",
+      "value": 12.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "RO",
+      "time": "2024",
+      "value": 6.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "RO",
+      "time": "2025",
+      "value": 8.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "RS",
+      "time": "2021",
+      "value": 8.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "RS",
+      "time": "2022",
+      "value": 3.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "RS",
+      "time": "2024",
+      "value": 4.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "RS",
+      "time": "2025",
+      "value": 5.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "SE",
+      "time": "2021",
+      "value": 4.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "SE",
+      "time": "2022",
+      "value": 3.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "SE",
+      "time": "2023",
+      "value": 7.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "SE",
+      "time": "2024",
+      "value": 9.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "SE",
+      "time": "2025",
+      "value": 3.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "SI",
+      "time": "2021",
+      "value": 10.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "SI",
+      "time": "2022",
+      "value": 4.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "SI",
+      "time": "2023",
+      "value": 6.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "SI",
+      "time": "2024",
+      "value": 4.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "SI",
+      "time": "2025",
+      "value": 11.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "SK",
+      "time": "2021",
+      "value": 5.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "SK",
+      "time": "2023",
+      "value": 11.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "SK",
+      "time": "2025",
+      "value": 5.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "TR",
+      "time": "2021",
+      "value": 15.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "TR",
+      "time": "2022",
+      "value": 6.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "TR",
+      "time": "2023",
+      "value": 3.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "TR",
+      "time": "2024",
+      "value": 9.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "TR",
+      "time": "2025",
+      "value": 14.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "UA",
+      "time": "2023",
+      "value": 4.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "UA",
+      "time": "2024",
+      "value": 7.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "UA",
+      "time": "2025",
+      "value": 2.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2021",
+      "value": 2.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2022",
+      "value": 3.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2024",
+      "value": 2.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2025",
+      "value": 2.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    },
+    {
+      "geo": "XK",
+      "time": "2024",
+      "value": 2.0,
+      "dims": {
+        "role": "TOTAL"
+      }
+    }
+  ],
+  "coverage": {
+    "geos": [
+      "AL",
+      "AT",
+      "BA",
+      "BE",
+      "BG",
+      "CH",
+      "CY",
+      "CZ",
+      "DE",
+      "DK",
+      "EE",
+      "EL",
+      "ES",
+      "EU27",
+      "FI",
+      "FR",
+      "GE",
+      "HR",
+      "HU",
+      "IE",
+      "IT",
+      "LT",
+      "LU",
+      "LV",
+      "MD",
+      "MK",
+      "MT",
+      "NL",
+      "NO",
+      "PL",
+      "PT",
+      "RO",
+      "RS",
+      "SE",
+      "SI",
+      "SK",
+      "TR",
+      "UA",
+      "UK",
+      "XK"
+    ],
+    "time": [
+      "2021",
+      "2025"
+    ],
+    "observations": 790
+  }
+}

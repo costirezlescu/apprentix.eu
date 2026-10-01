@@ -1,0 +1,915 @@
+{
+  "id": "erasmus-vet-accreditations",
+  "title": "New Erasmus accreditations in VET",
+  "description": "Number of organisations or consortia awarded an Erasmus accreditation in vocational education and training (KA120-VET), by country and call year. Accredited organisations can then apply each year for KA121-VET mobility funding.",
+  "unit": "accreditations",
+  "topic": "Mobility",
+  "source_label": "Erasmus+ projects lists, KA1 Learning Mobility of Individuals (KA120-VET)",
+  "comparability": "Counts new accreditations granted in each call year; accreditations run until 2027, so this is a flow, not the stock of accredited providers. Includes consortium coordinators. No grant is attached to the accreditation itself. EU27 is the sum of member states.",
+  "provenance": {
+    "publisher": "European Commission (DG EAC / EACEA), Erasmus+ project results",
+    "dataset_code": "ErasmusPlus_KA1 (KA120-VET)",
+    "source_url": "https://erasmus-plus.ec.europa.eu/projects/projects-lists",
+    "licence": "CC-BY-4.0",
+    "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+    "citation": "European Commission, Erasmus+ projects lists for download (KA1 Learning Mobility of Individuals), aggregated by Apprentix.",
+    "source_updated": "2026-10-01",
+    "retrieved_at": "2026-10-01T09:38:06+00:00",
+    "licence_note": "Commission legal notice (https://commission.europa.eu/legal-notice_en): CC BY 4.0 under Decision 2011/833/EU.",
+    "raw_note": "Source CSVs (~90 MB each) are not stored; URLs and SHA-256 hashes of the files used are listed below.",
+    "files": [
+      {
+        "call_year": "2014",
+        "url": "https://ec.europa.eu/programmes//erasmus-plus/project-result-content/aa12fcc2-dd48-4024-8a83-f15efb31dd80/ErasmusPlus_KA1_2014_LearningMobilityOfIndividuals_Projects_Overview_2026-10-01.csv",
+        "bytes": 63317299,
+        "sha256": "ee7571efd8096a6070398480b1b7b616d084fb03c845eeaea9730490cde5f524"
+      },
+      {
+        "call_year": "2015",
+        "url": "https://ec.europa.eu/programmes//erasmus-plus/project-result-content/ab5748d1-3927-4210-a5aa-fcc02ddb75ea/ErasmusPlus_KA1_2015_LearningMobilityOfIndividuals_Projects_Overview_2026-10-01.csv",
+        "bytes": 68417315,
+        "sha256": "e3697eb6ae119e23e0f73e8066fea3312d730ed65fb55ed7829250ed491662a7"
+      },
+      {
+        "call_year": "2016",
+        "url": "https://ec.europa.eu/programmes//erasmus-plus/project-result-content/9b0da927-e046-48dd-bbfe-0eaa89730a28/ErasmusPlus_KA1_2016_LearningMobilityOfIndividuals_Projects_Overview_2026-10-01.csv",
+        "bytes": 73532824,
+        "sha256": "53ea218a76b8177851087fd5f4ee7212c5962d6ddc0f18cdd14182cb5479cd1e"
+      },
+      {
+        "call_year": "2017",
+        "url": "https://ec.europa.eu/programmes//erasmus-plus/project-result-content/8fd9c6e3-8a4c-40cd-945d-d4d78e5c8d6a/ErasmusPlus_KA1_2017_LearningMobilityOfIndividuals_Projects_Overview_2026-10-01.csv",
+        "bytes": 82836543,
+        "sha256": "61f0f1f26250e461ce9d24ce787f04fbd5e2f626bce4e380f2a1769e768ab032"
+      },
+      {
+        "call_year": "2018",
+        "url": "https://ec.europa.eu/programmes//erasmus-plus/project-result-content/88416313-6569-4abe-bf0b-ebafbff894a9/ErasmusPlus_KA1_2018_LearningMobilityOfIndividuals_Projects_Overview_2026-10-01.csv",
+        "bytes": 87237030,
+        "sha256": "f79ad9e74fe008954689bce0d4befe6f0aca1a313008d5ea5470a2263277c188"
+      },
+      {
+        "call_year": "2019",
+        "url": "https://ec.europa.eu/programmes//erasmus-plus/project-result-content/c496758a-4519-483f-bd28-5ce819c12cc9/ErasmusPlus_KA1_2019_LearningMobilityOfIndividuals_Projects_Overview_2026-10-01.csv",
+        "bytes": 88103204,
+        "sha256": "85507d4d5bf527e8b47f12b542a587fd9477326ec4ae32bbcfb4bee7ecc1e3e8"
+      },
+      {
+        "call_year": "2020",
+        "url": "https://ec.europa.eu/programmes//erasmus-plus/project-result-content/0ea9d3c7-767d-4101-bb15-dc22fef2024e/ErasmusPlus_KA1_2020_LearningMobilityOfIndividuals_Projects_Overview_2026-10-01.csv",
+        "bytes": 89394210,
+        "sha256": "0674e0bcf65fd2d5bfbb9974d9026dd858c6d6c5d20ecda46b2aaf1ef9d3aa11"
+      },
+      {
+        "call_year": "2021",
+        "url": "https://ec.europa.eu/programmes//erasmus-plus/project-result-content/9248e5e0-4677-46d4-afb7-55a4249ea334/ErasmusPlus_KA1_2021_LearningMobilityOfIndividuals_Projects_Overview_2026-10-01.csv",
+        "bytes": 67051927,
+        "sha256": "acf55e2a6451b54d44fc800317c72b3bfd0316f2d8b86ad8deb05a2431a449c9"
+      },
+      {
+        "call_year": "2022",
+        "url": "https://ec.europa.eu/programmes//erasmus-plus/project-result-content/331b1343-f3f1-4d4e-8792-df54eb1432aa/ErasmusPlus_KA1_2022_LearningMobilityOfIndividuals_Projects_Overview_2026-10-01.csv",
+        "bytes": 103607791,
+        "sha256": "a40b6b33e1b2138f32b4b6a4610b28451a7133ee85a0d22d9f96d3ec37aa78ee"
+      },
+      {
+        "call_year": "2023",
+        "url": "https://ec.europa.eu/programmes//erasmus-plus/project-result-content/04ddbe7d-f8a4-4174-a54e-f7fab752215e/ErasmusPlus_KA1_2023_LearningMobilityOfIndividuals_Projects_Overview_2026-10-01.csv",
+        "bytes": 106339424,
+        "sha256": "f530f8adba6f941c0c07be22fff0f3996da161cb39aeb91d3de78368b9e5a21f"
+      },
+      {
+        "call_year": "2024",
+        "url": "https://ec.europa.eu/programmes//erasmus-plus/project-result-content/beb258e2-f6b6-4baa-bb03-4f231b24d8a0/ErasmusPlus_KA1_2024_LearningMobilityOfIndividuals_Projects_Overview_2026-10-01.csv",
+        "bytes": 90631326,
+        "sha256": "21c005909a3334f1d90ff03425f340f4b3a6aedb99df3809d292942460a92e21"
+      },
+      {
+        "call_year": "2025",
+        "url": "https://ec.europa.eu/programmes//erasmus-plus/project-result-content/aaf7e8fa-c4f1-4d9c-8e91-d71046fec68b/ErasmusPlus_KA1_2025_LearningMobilityOfIndividuals_Projects_Overview_2026-10-01.csv",
+        "bytes": 92368301,
+        "sha256": "e1563f425c601d24a9fc15c59547a278f08aba3d86b5a21f9ea9cdb6aa319e3c"
+      }
+    ]
+  },
+  "series": [
+    {
+      "geo": "AT",
+      "time": "2021",
+      "value": 27.0
+    },
+    {
+      "geo": "AT",
+      "time": "2022",
+      "value": 22.0
+    },
+    {
+      "geo": "AT",
+      "time": "2023",
+      "value": 23.0
+    },
+    {
+      "geo": "AT",
+      "time": "2024",
+      "value": 19.0
+    },
+    {
+      "geo": "AT",
+      "time": "2025",
+      "value": 13.0
+    },
+    {
+      "geo": "BE",
+      "time": "2021",
+      "value": 23.0
+    },
+    {
+      "geo": "BE",
+      "time": "2022",
+      "value": 39.0
+    },
+    {
+      "geo": "BE",
+      "time": "2023",
+      "value": 24.0
+    },
+    {
+      "geo": "BE",
+      "time": "2024",
+      "value": 22.0
+    },
+    {
+      "geo": "BE",
+      "time": "2025",
+      "value": 18.0
+    },
+    {
+      "geo": "BG",
+      "time": "2021",
+      "value": 27.0
+    },
+    {
+      "geo": "BG",
+      "time": "2022",
+      "value": 26.0
+    },
+    {
+      "geo": "BG",
+      "time": "2023",
+      "value": 9.0
+    },
+    {
+      "geo": "BG",
+      "time": "2024",
+      "value": 45.0
+    },
+    {
+      "geo": "BG",
+      "time": "2025",
+      "value": 20.0
+    },
+    {
+      "geo": "CY",
+      "time": "2021",
+      "value": 2.0
+    },
+    {
+      "geo": "CY",
+      "time": "2022",
+      "value": 2.0
+    },
+    {
+      "geo": "CY",
+      "time": "2023",
+      "value": 4.0
+    },
+    {
+      "geo": "CY",
+      "time": "2024",
+      "value": 5.0
+    },
+    {
+      "geo": "CY",
+      "time": "2025",
+      "value": 5.0
+    },
+    {
+      "geo": "CZ",
+      "time": "2021",
+      "value": 49.0
+    },
+    {
+      "geo": "CZ",
+      "time": "2022",
+      "value": 20.0
+    },
+    {
+      "geo": "CZ",
+      "time": "2023",
+      "value": 50.0
+    },
+    {
+      "geo": "CZ",
+      "time": "2024",
+      "value": 14.0
+    },
+    {
+      "geo": "CZ",
+      "time": "2025",
+      "value": 13.0
+    },
+    {
+      "geo": "DE",
+      "time": "2021",
+      "value": 201.0
+    },
+    {
+      "geo": "DE",
+      "time": "2022",
+      "value": 203.0
+    },
+    {
+      "geo": "DE",
+      "time": "2023",
+      "value": 100.0
+    },
+    {
+      "geo": "DE",
+      "time": "2024",
+      "value": 99.0
+    },
+    {
+      "geo": "DE",
+      "time": "2025",
+      "value": 103.0
+    },
+    {
+      "geo": "DK",
+      "time": "2021",
+      "value": 10.0
+    },
+    {
+      "geo": "DK",
+      "time": "2022",
+      "value": 9.0
+    },
+    {
+      "geo": "DK",
+      "time": "2023",
+      "value": 5.0
+    },
+    {
+      "geo": "DK",
+      "time": "2024",
+      "value": 6.0
+    },
+    {
+      "geo": "DK",
+      "time": "2025",
+      "value": 3.0
+    },
+    {
+      "geo": "EE",
+      "time": "2021",
+      "value": 3.0
+    },
+    {
+      "geo": "EE",
+      "time": "2022",
+      "value": 8.0
+    },
+    {
+      "geo": "EE",
+      "time": "2023",
+      "value": 6.0
+    },
+    {
+      "geo": "EE",
+      "time": "2024",
+      "value": 1.0
+    },
+    {
+      "geo": "EL",
+      "time": "2021",
+      "value": 10.0
+    },
+    {
+      "geo": "EL",
+      "time": "2022",
+      "value": 6.0
+    },
+    {
+      "geo": "EL",
+      "time": "2023",
+      "value": 30.0
+    },
+    {
+      "geo": "EL",
+      "time": "2024",
+      "value": 21.0
+    },
+    {
+      "geo": "EL",
+      "time": "2025",
+      "value": 35.0
+    },
+    {
+      "geo": "ES",
+      "time": "2021",
+      "value": 104.0
+    },
+    {
+      "geo": "ES",
+      "time": "2022",
+      "value": 33.0
+    },
+    {
+      "geo": "ES",
+      "time": "2023",
+      "value": 61.0
+    },
+    {
+      "geo": "ES",
+      "time": "2024",
+      "value": 178.0
+    },
+    {
+      "geo": "ES",
+      "time": "2025",
+      "value": 83.0
+    },
+    {
+      "geo": "EU27",
+      "time": "2021",
+      "value": 1065.0
+    },
+    {
+      "geo": "EU27",
+      "time": "2022",
+      "value": 885.0
+    },
+    {
+      "geo": "EU27",
+      "time": "2023",
+      "value": 756.0
+    },
+    {
+      "geo": "EU27",
+      "time": "2024",
+      "value": 666.0
+    },
+    {
+      "geo": "EU27",
+      "time": "2025",
+      "value": 504.0
+    },
+    {
+      "geo": "FI",
+      "time": "2021",
+      "value": 9.0
+    },
+    {
+      "geo": "FI",
+      "time": "2022",
+      "value": 3.0
+    },
+    {
+      "geo": "FI",
+      "time": "2023",
+      "value": 4.0
+    },
+    {
+      "geo": "FI",
+      "time": "2024",
+      "value": 5.0
+    },
+    {
+      "geo": "FI",
+      "time": "2025",
+      "value": 4.0
+    },
+    {
+      "geo": "FR",
+      "time": "2021",
+      "value": 160.0
+    },
+    {
+      "geo": "FR",
+      "time": "2022",
+      "value": 149.0
+    },
+    {
+      "geo": "FR",
+      "time": "2023",
+      "value": 132.0
+    },
+    {
+      "geo": "FR",
+      "time": "2024",
+      "value": 68.0
+    },
+    {
+      "geo": "FR",
+      "time": "2025",
+      "value": 33.0
+    },
+    {
+      "geo": "HR",
+      "time": "2021",
+      "value": 12.0
+    },
+    {
+      "geo": "HR",
+      "time": "2022",
+      "value": 30.0
+    },
+    {
+      "geo": "HR",
+      "time": "2023",
+      "value": 25.0
+    },
+    {
+      "geo": "HR",
+      "time": "2024",
+      "value": 10.0
+    },
+    {
+      "geo": "HR",
+      "time": "2025",
+      "value": 5.0
+    },
+    {
+      "geo": "HU",
+      "time": "2021",
+      "value": 17.0
+    },
+    {
+      "geo": "HU",
+      "time": "2022",
+      "value": 17.0
+    },
+    {
+      "geo": "HU",
+      "time": "2023",
+      "value": 11.0
+    },
+    {
+      "geo": "HU",
+      "time": "2024",
+      "value": 11.0
+    },
+    {
+      "geo": "HU",
+      "time": "2025",
+      "value": 11.0
+    },
+    {
+      "geo": "IE",
+      "time": "2021",
+      "value": 9.0
+    },
+    {
+      "geo": "IE",
+      "time": "2022",
+      "value": 6.0
+    },
+    {
+      "geo": "IE",
+      "time": "2023",
+      "value": 8.0
+    },
+    {
+      "geo": "IE",
+      "time": "2024",
+      "value": 8.0
+    },
+    {
+      "geo": "IE",
+      "time": "2025",
+      "value": 6.0
+    },
+    {
+      "geo": "IS",
+      "time": "2021",
+      "value": 2.0
+    },
+    {
+      "geo": "IS",
+      "time": "2022",
+      "value": 6.0
+    },
+    {
+      "geo": "IS",
+      "time": "2023",
+      "value": 3.0
+    },
+    {
+      "geo": "IT",
+      "time": "2021",
+      "value": 51.0
+    },
+    {
+      "geo": "IT",
+      "time": "2022",
+      "value": 50.0
+    },
+    {
+      "geo": "IT",
+      "time": "2023",
+      "value": 50.0
+    },
+    {
+      "geo": "IT",
+      "time": "2024",
+      "value": 50.0
+    },
+    {
+      "geo": "IT",
+      "time": "2025",
+      "value": 55.0
+    },
+    {
+      "geo": "LI",
+      "time": "2021",
+      "value": 1.0
+    },
+    {
+      "geo": "LI",
+      "time": "2023",
+      "value": 1.0
+    },
+    {
+      "geo": "LI",
+      "time": "2024",
+      "value": 1.0
+    },
+    {
+      "geo": "LT",
+      "time": "2021",
+      "value": 4.0
+    },
+    {
+      "geo": "LT",
+      "time": "2022",
+      "value": 5.0
+    },
+    {
+      "geo": "LT",
+      "time": "2023",
+      "value": 5.0
+    },
+    {
+      "geo": "LT",
+      "time": "2024",
+      "value": 2.0
+    },
+    {
+      "geo": "LU",
+      "time": "2021",
+      "value": 1.0
+    },
+    {
+      "geo": "LU",
+      "time": "2022",
+      "value": 1.0
+    },
+    {
+      "geo": "LU",
+      "time": "2023",
+      "value": 1.0
+    },
+    {
+      "geo": "LV",
+      "time": "2021",
+      "value": 9.0
+    },
+    {
+      "geo": "LV",
+      "time": "2022",
+      "value": 2.0
+    },
+    {
+      "geo": "LV",
+      "time": "2023",
+      "value": 8.0
+    },
+    {
+      "geo": "LV",
+      "time": "2024",
+      "value": 5.0
+    },
+    {
+      "geo": "LV",
+      "time": "2025",
+      "value": 3.0
+    },
+    {
+      "geo": "MK",
+      "time": "2025",
+      "value": 1.0
+    },
+    {
+      "geo": "MT",
+      "time": "2021",
+      "value": 3.0
+    },
+    {
+      "geo": "MT",
+      "time": "2022",
+      "value": 1.0
+    },
+    {
+      "geo": "MT",
+      "time": "2025",
+      "value": 2.0
+    },
+    {
+      "geo": "NL",
+      "time": "2021",
+      "value": 3.0
+    },
+    {
+      "geo": "NL",
+      "time": "2022",
+      "value": 4.0
+    },
+    {
+      "geo": "NL",
+      "time": "2023",
+      "value": 5.0
+    },
+    {
+      "geo": "NL",
+      "time": "2025",
+      "value": 1.0
+    },
+    {
+      "geo": "NO",
+      "time": "2021",
+      "value": 15.0
+    },
+    {
+      "geo": "NO",
+      "time": "2022",
+      "value": 19.0
+    },
+    {
+      "geo": "NO",
+      "time": "2023",
+      "value": 21.0
+    },
+    {
+      "geo": "NO",
+      "time": "2024",
+      "value": 12.0
+    },
+    {
+      "geo": "NO",
+      "time": "2025",
+      "value": 5.0
+    },
+    {
+      "geo": "PL",
+      "time": "2021",
+      "value": 162.0
+    },
+    {
+      "geo": "PL",
+      "time": "2022",
+      "value": 54.0
+    },
+    {
+      "geo": "PL",
+      "time": "2023",
+      "value": 53.0
+    },
+    {
+      "geo": "PL",
+      "time": "2024",
+      "value": 23.0
+    },
+    {
+      "geo": "PL",
+      "time": "2025",
+      "value": 23.0
+    },
+    {
+      "geo": "PT",
+      "time": "2021",
+      "value": 53.0
+    },
+    {
+      "geo": "PT",
+      "time": "2022",
+      "value": 50.0
+    },
+    {
+      "geo": "PT",
+      "time": "2023",
+      "value": 50.0
+    },
+    {
+      "geo": "PT",
+      "time": "2024",
+      "value": 30.0
+    },
+    {
+      "geo": "PT",
+      "time": "2025",
+      "value": 20.0
+    },
+    {
+      "geo": "RO",
+      "time": "2021",
+      "value": 57.0
+    },
+    {
+      "geo": "RO",
+      "time": "2022",
+      "value": 76.0
+    },
+    {
+      "geo": "RO",
+      "time": "2023",
+      "value": 40.0
+    },
+    {
+      "geo": "RO",
+      "time": "2024",
+      "value": 26.0
+    },
+    {
+      "geo": "RO",
+      "time": "2025",
+      "value": 28.0
+    },
+    {
+      "geo": "RS",
+      "time": "2021",
+      "value": 4.0
+    },
+    {
+      "geo": "RS",
+      "time": "2022",
+      "value": 11.0
+    },
+    {
+      "geo": "RS",
+      "time": "2023",
+      "value": 13.0
+    },
+    {
+      "geo": "RS",
+      "time": "2024",
+      "value": 4.0
+    },
+    {
+      "geo": "RS",
+      "time": "2025",
+      "value": 7.0
+    },
+    {
+      "geo": "SE",
+      "time": "2021",
+      "value": 28.0
+    },
+    {
+      "geo": "SE",
+      "time": "2022",
+      "value": 31.0
+    },
+    {
+      "geo": "SE",
+      "time": "2023",
+      "value": 26.0
+    },
+    {
+      "geo": "SE",
+      "time": "2024",
+      "value": 7.0
+    },
+    {
+      "geo": "SE",
+      "time": "2025",
+      "value": 9.0
+    },
+    {
+      "geo": "SI",
+      "time": "2021",
+      "value": 7.0
+    },
+    {
+      "geo": "SI",
+      "time": "2022",
+      "value": 12.0
+    },
+    {
+      "geo": "SI",
+      "time": "2023",
+      "value": 4.0
+    },
+    {
+      "geo": "SI",
+      "time": "2024",
+      "value": 6.0
+    },
+    {
+      "geo": "SI",
+      "time": "2025",
+      "value": 5.0
+    },
+    {
+      "geo": "SK",
+      "time": "2021",
+      "value": 24.0
+    },
+    {
+      "geo": "SK",
+      "time": "2022",
+      "value": 26.0
+    },
+    {
+      "geo": "SK",
+      "time": "2023",
+      "value": 22.0
+    },
+    {
+      "geo": "SK",
+      "time": "2024",
+      "value": 5.0
+    },
+    {
+      "geo": "SK",
+      "time": "2025",
+      "value": 6.0
+    },
+    {
+      "geo": "TR",
+      "time": "2021",
+      "value": 12.0
+    },
+    {
+      "geo": "TR",
+      "time": "2022",
+      "value": 13.0
+    },
+    {
+      "geo": "TR",
+      "time": "2023",
+      "value": 12.0
+    },
+    {
+      "geo": "TR",
+      "time": "2024",
+      "value": 8.0
+    },
+    {
+      "geo": "TR",
+      "time": "2025",
+      "value": 14.0
+    }
+  ],
+  "coverage": {
+    "geos": [
+      "AT",
+      "BE",
+      "BG",
+      "CY",
+      "CZ",
+      "DE",
+      "DK",
+      "EE",
+      "EL",
+      "ES",
+      "EU27",
+      "FI",
+      "FR",
+      "HR",
+      "HU",
+      "IE",
+      "IS",
+      "IT",
+      "LI",
+      "LT",
+      "LU",
+      "LV",
+      "MK",
+      "MT",
+      "NL",
+      "NO",
+      "PL",
+      "PT",
+      "RO",
+      "RS",
+      "SE",
+      "SI",
+      "SK",
+      "TR"
+    ],
+    "time": [
+      "2021",
+      "2025"
+    ],
+    "observations": 155
+  }
+}

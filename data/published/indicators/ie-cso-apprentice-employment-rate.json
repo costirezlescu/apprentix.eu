@@ -1,0 +1,1719 @@
+{
+  "id": "ie-cso-apprentice-employment-rate",
+  "title": "Qualified apprentices in employment in Ireland",
+  "description": "Share of apprentices who qualified in a given year who were in employment (with or without further education) a number of years after qualifying, by sex. Calculated by Apprentix from CSO counts: (employment only + employment and education) ÷ all qualified apprentices × 100.",
+  "unit": "%",
+  "topic": "Outcomes",
+  "national": true,
+  "source_label": "Calculated from CSO Apprenticeship Outcomes (AOQY13)",
+  "comparability": "Ireland, national source (CSO Apprenticeship Outcomes, from SOLAS apprenticeship records linked to CSO administrative data). Time is the year the apprentice qualified. Includes craft apprenticeships (NFQ level 6 Advanced Certificate) and the newer consortia-led apprenticeships (NFQ levels 5–8 in these tables), some of which are higher-education awards (NFQ 7–8, i.e. bachelor level). CSO rounds individual figures to the nearest five. Employment is derived from administrative (Revenue) records; the denominator includes apprentices whose outcome was 'not captured' (e.g. emigrated), and excludes records with missing or invalid PPSN. Rates are computed from counts rounded to the nearest five. Time is the qualification year; choose 'years since qualification' to compare cohorts at the same distance. Not comparable with survey-based (LFS) employment rates of VET graduates.",
+  "dims": [
+    {
+      "key": "sex",
+      "label": "Sex",
+      "values": {
+        "TOTAL": "Both sexes",
+        "1": "Male",
+        "2": "Female"
+      },
+      "default": "TOTAL"
+    },
+    {
+      "key": "years_since",
+      "label": "Years since qualification",
+      "values": {
+        "02": "2 years",
+        "03": "3 years",
+        "04": "4 years",
+        "05": "5 years",
+        "06": "6 years",
+        "07": "7 years",
+        "08": "8 years",
+        "09": "9 years",
+        "10": "10 years"
+      },
+      "default": "02"
+    }
+  ],
+  "provenance": {
+    "publisher": "Central Statistics Office (CSO), Ireland; calculation by Apprentix",
+    "dataset_code": "AOQY13",
+    "source_url": "https://data.cso.ie/table/AOQY13",
+    "api_url": "https://ws.cso.ie/public/api.restful/PxStat.Data.Cube_API.ReadDataset/AOQY13/JSON-stat/2.0/en",
+    "licence": "CC-BY-4.0",
+    "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+    "citation": "Central Statistics Office, Ireland. AOQY13: Apprenticeship Outcomes. CC BY 4.0.",
+    "source_updated": "2025-04-25",
+    "retrieved_at": "2026-10-01T09:52:49+00:00",
+    "raw_file": "data/raw/ie-cso/2026-10-01-AOQY13.json",
+    "raw_sha256": "318bf5edd63605c2b24a941a4dac9640e068cd0de1d982bcd7c9ab246d5f3400"
+  },
+  "series": [
+    {
+      "geo": "IE",
+      "time": "2010",
+      "value": 52.6398,
+      "dims": {
+        "sex": "1",
+        "years_since": "02"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2011",
+      "value": 57.351,
+      "dims": {
+        "sex": "1",
+        "years_since": "02"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2012",
+      "value": 65.1908,
+      "dims": {
+        "sex": "1",
+        "years_since": "02"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2013",
+      "value": 74.2664,
+      "dims": {
+        "sex": "1",
+        "years_since": "02"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2014",
+      "value": 79.1096,
+      "dims": {
+        "sex": "1",
+        "years_since": "02"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2015",
+      "value": 83.6066,
+      "dims": {
+        "sex": "1",
+        "years_since": "02"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2016",
+      "value": 86.4198,
+      "dims": {
+        "sex": "1",
+        "years_since": "02"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2017",
+      "value": 84.1924,
+      "dims": {
+        "sex": "1",
+        "years_since": "02"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2018",
+      "value": 86.423,
+      "dims": {
+        "sex": "1",
+        "years_since": "02"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2019",
+      "value": 89.0052,
+      "dims": {
+        "sex": "1",
+        "years_since": "02"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2020",
+      "value": 92.0078,
+      "dims": {
+        "sex": "1",
+        "years_since": "02"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2010",
+      "value": 56.5217,
+      "dims": {
+        "sex": "1",
+        "years_since": "03"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2011",
+      "value": 63.0464,
+      "dims": {
+        "sex": "1",
+        "years_since": "03"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2012",
+      "value": 69.1603,
+      "dims": {
+        "sex": "1",
+        "years_since": "03"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2013",
+      "value": 76.0722,
+      "dims": {
+        "sex": "1",
+        "years_since": "03"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2014",
+      "value": 81.1644,
+      "dims": {
+        "sex": "1",
+        "years_since": "03"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2015",
+      "value": 82.7869,
+      "dims": {
+        "sex": "1",
+        "years_since": "03"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2016",
+      "value": 84.3621,
+      "dims": {
+        "sex": "1",
+        "years_since": "03"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2017",
+      "value": 83.5052,
+      "dims": {
+        "sex": "1",
+        "years_since": "03"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2018",
+      "value": 87.4674,
+      "dims": {
+        "sex": "1",
+        "years_since": "03"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2019",
+      "value": 87.6963,
+      "dims": {
+        "sex": "1",
+        "years_since": "03"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2010",
+      "value": 62.2671,
+      "dims": {
+        "sex": "1",
+        "years_since": "04"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2011",
+      "value": 67.0199,
+      "dims": {
+        "sex": "1",
+        "years_since": "04"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2012",
+      "value": 73.5878,
+      "dims": {
+        "sex": "1",
+        "years_since": "04"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2013",
+      "value": 78.5553,
+      "dims": {
+        "sex": "1",
+        "years_since": "04"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2014",
+      "value": 82.1918,
+      "dims": {
+        "sex": "1",
+        "years_since": "04"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2015",
+      "value": 81.9672,
+      "dims": {
+        "sex": "1",
+        "years_since": "04"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2016",
+      "value": 84.7737,
+      "dims": {
+        "sex": "1",
+        "years_since": "04"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2017",
+      "value": 84.8797,
+      "dims": {
+        "sex": "1",
+        "years_since": "04"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2018",
+      "value": 87.4674,
+      "dims": {
+        "sex": "1",
+        "years_since": "04"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2010",
+      "value": 67.236,
+      "dims": {
+        "sex": "1",
+        "years_since": "05"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2011",
+      "value": 71.1258,
+      "dims": {
+        "sex": "1",
+        "years_since": "05"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2012",
+      "value": 76.4885,
+      "dims": {
+        "sex": "1",
+        "years_since": "05"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2013",
+      "value": 79.0068,
+      "dims": {
+        "sex": "1",
+        "years_since": "05"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2014",
+      "value": 82.1918,
+      "dims": {
+        "sex": "1",
+        "years_since": "05"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2015",
+      "value": 81.5574,
+      "dims": {
+        "sex": "1",
+        "years_since": "05"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2016",
+      "value": 84.7737,
+      "dims": {
+        "sex": "1",
+        "years_since": "05"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2017",
+      "value": 84.5361,
+      "dims": {
+        "sex": "1",
+        "years_since": "05"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2010",
+      "value": 69.7205,
+      "dims": {
+        "sex": "1",
+        "years_since": "06"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2011",
+      "value": 73.7748,
+      "dims": {
+        "sex": "1",
+        "years_since": "06"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2012",
+      "value": 77.2519,
+      "dims": {
+        "sex": "1",
+        "years_since": "06"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2013",
+      "value": 80.1354,
+      "dims": {
+        "sex": "1",
+        "years_since": "06"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2014",
+      "value": 81.1644,
+      "dims": {
+        "sex": "1",
+        "years_since": "06"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2015",
+      "value": 81.9672,
+      "dims": {
+        "sex": "1",
+        "years_since": "06"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2016",
+      "value": 86.0082,
+      "dims": {
+        "sex": "1",
+        "years_since": "06"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2010",
+      "value": 73.6025,
+      "dims": {
+        "sex": "1",
+        "years_since": "07"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2011",
+      "value": 76.0265,
+      "dims": {
+        "sex": "1",
+        "years_since": "07"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2012",
+      "value": 78.1679,
+      "dims": {
+        "sex": "1",
+        "years_since": "07"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2013",
+      "value": 80.1354,
+      "dims": {
+        "sex": "1",
+        "years_since": "07"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2014",
+      "value": 81.5068,
+      "dims": {
+        "sex": "1",
+        "years_since": "07"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2015",
+      "value": 81.5574,
+      "dims": {
+        "sex": "1",
+        "years_since": "07"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2010",
+      "value": 74.8447,
+      "dims": {
+        "sex": "1",
+        "years_since": "08"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2011",
+      "value": 77.4834,
+      "dims": {
+        "sex": "1",
+        "years_since": "08"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2012",
+      "value": 78.0153,
+      "dims": {
+        "sex": "1",
+        "years_since": "08"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2013",
+      "value": 80.5869,
+      "dims": {
+        "sex": "1",
+        "years_since": "08"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2014",
+      "value": 82.5342,
+      "dims": {
+        "sex": "1",
+        "years_since": "08"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2010",
+      "value": 75.0,
+      "dims": {
+        "sex": "1",
+        "years_since": "09"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2011",
+      "value": 77.4834,
+      "dims": {
+        "sex": "1",
+        "years_since": "09"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2012",
+      "value": 78.9313,
+      "dims": {
+        "sex": "1",
+        "years_since": "09"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2013",
+      "value": 80.3612,
+      "dims": {
+        "sex": "1",
+        "years_since": "09"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2010",
+      "value": 75.7764,
+      "dims": {
+        "sex": "1",
+        "years_since": "10"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2011",
+      "value": 77.8808,
+      "dims": {
+        "sex": "1",
+        "years_since": "10"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2012",
+      "value": 79.2366,
+      "dims": {
+        "sex": "1",
+        "years_since": "10"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2010",
+      "value": 80.0,
+      "dims": {
+        "sex": "2",
+        "years_since": "02"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2011",
+      "value": 75.0,
+      "dims": {
+        "sex": "2",
+        "years_since": "02"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2012",
+      "value": 50.0,
+      "dims": {
+        "sex": "2",
+        "years_since": "02"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2013",
+      "value": 100.0,
+      "dims": {
+        "sex": "2",
+        "years_since": "02"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2014",
+      "value": 100.0,
+      "dims": {
+        "sex": "2",
+        "years_since": "02"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2015",
+      "value": 0.0,
+      "dims": {
+        "sex": "2",
+        "years_since": "02"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2017",
+      "value": 100.0,
+      "dims": {
+        "sex": "2",
+        "years_since": "02"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2018",
+      "value": 100.0,
+      "dims": {
+        "sex": "2",
+        "years_since": "02"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2019",
+      "value": 100.0,
+      "dims": {
+        "sex": "2",
+        "years_since": "02"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2020",
+      "value": 95.8333,
+      "dims": {
+        "sex": "2",
+        "years_since": "02"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2010",
+      "value": 60.0,
+      "dims": {
+        "sex": "2",
+        "years_since": "03"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2011",
+      "value": 50.0,
+      "dims": {
+        "sex": "2",
+        "years_since": "03"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2012",
+      "value": 50.0,
+      "dims": {
+        "sex": "2",
+        "years_since": "03"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2013",
+      "value": 100.0,
+      "dims": {
+        "sex": "2",
+        "years_since": "03"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2014",
+      "value": 100.0,
+      "dims": {
+        "sex": "2",
+        "years_since": "03"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2015",
+      "value": 100.0,
+      "dims": {
+        "sex": "2",
+        "years_since": "03"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2017",
+      "value": 100.0,
+      "dims": {
+        "sex": "2",
+        "years_since": "03"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2018",
+      "value": 100.0,
+      "dims": {
+        "sex": "2",
+        "years_since": "03"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2019",
+      "value": 100.0,
+      "dims": {
+        "sex": "2",
+        "years_since": "03"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2010",
+      "value": 60.0,
+      "dims": {
+        "sex": "2",
+        "years_since": "04"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2011",
+      "value": 75.0,
+      "dims": {
+        "sex": "2",
+        "years_since": "04"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2012",
+      "value": 100.0,
+      "dims": {
+        "sex": "2",
+        "years_since": "04"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2013",
+      "value": 100.0,
+      "dims": {
+        "sex": "2",
+        "years_since": "04"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2014",
+      "value": 100.0,
+      "dims": {
+        "sex": "2",
+        "years_since": "04"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2015",
+      "value": 100.0,
+      "dims": {
+        "sex": "2",
+        "years_since": "04"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2017",
+      "value": 100.0,
+      "dims": {
+        "sex": "2",
+        "years_since": "04"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2018",
+      "value": 100.0,
+      "dims": {
+        "sex": "2",
+        "years_since": "04"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2010",
+      "value": 60.0,
+      "dims": {
+        "sex": "2",
+        "years_since": "05"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2011",
+      "value": 75.0,
+      "dims": {
+        "sex": "2",
+        "years_since": "05"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2012",
+      "value": 100.0,
+      "dims": {
+        "sex": "2",
+        "years_since": "05"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2013",
+      "value": 100.0,
+      "dims": {
+        "sex": "2",
+        "years_since": "05"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2014",
+      "value": 100.0,
+      "dims": {
+        "sex": "2",
+        "years_since": "05"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2015",
+      "value": 100.0,
+      "dims": {
+        "sex": "2",
+        "years_since": "05"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2017",
+      "value": 100.0,
+      "dims": {
+        "sex": "2",
+        "years_since": "05"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2010",
+      "value": 60.0,
+      "dims": {
+        "sex": "2",
+        "years_since": "06"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2011",
+      "value": 100.0,
+      "dims": {
+        "sex": "2",
+        "years_since": "06"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2012",
+      "value": 100.0,
+      "dims": {
+        "sex": "2",
+        "years_since": "06"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2013",
+      "value": 100.0,
+      "dims": {
+        "sex": "2",
+        "years_since": "06"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2014",
+      "value": 0.0,
+      "dims": {
+        "sex": "2",
+        "years_since": "06"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2015",
+      "value": 100.0,
+      "dims": {
+        "sex": "2",
+        "years_since": "06"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2010",
+      "value": 60.0,
+      "dims": {
+        "sex": "2",
+        "years_since": "07"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2011",
+      "value": 100.0,
+      "dims": {
+        "sex": "2",
+        "years_since": "07"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2012",
+      "value": 50.0,
+      "dims": {
+        "sex": "2",
+        "years_since": "07"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2013",
+      "value": 100.0,
+      "dims": {
+        "sex": "2",
+        "years_since": "07"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2014",
+      "value": 100.0,
+      "dims": {
+        "sex": "2",
+        "years_since": "07"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2015",
+      "value": 100.0,
+      "dims": {
+        "sex": "2",
+        "years_since": "07"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2010",
+      "value": 60.0,
+      "dims": {
+        "sex": "2",
+        "years_since": "08"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2011",
+      "value": 75.0,
+      "dims": {
+        "sex": "2",
+        "years_since": "08"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2012",
+      "value": 50.0,
+      "dims": {
+        "sex": "2",
+        "years_since": "08"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2013",
+      "value": 100.0,
+      "dims": {
+        "sex": "2",
+        "years_since": "08"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2014",
+      "value": 100.0,
+      "dims": {
+        "sex": "2",
+        "years_since": "08"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2010",
+      "value": 60.0,
+      "dims": {
+        "sex": "2",
+        "years_since": "09"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2011",
+      "value": 100.0,
+      "dims": {
+        "sex": "2",
+        "years_since": "09"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2012",
+      "value": 50.0,
+      "dims": {
+        "sex": "2",
+        "years_since": "09"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2013",
+      "value": 100.0,
+      "dims": {
+        "sex": "2",
+        "years_since": "09"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2010",
+      "value": 60.0,
+      "dims": {
+        "sex": "2",
+        "years_since": "10"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2011",
+      "value": 75.0,
+      "dims": {
+        "sex": "2",
+        "years_since": "10"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2012",
+      "value": 100.0,
+      "dims": {
+        "sex": "2",
+        "years_since": "10"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2010",
+      "value": 52.8505,
+      "dims": {
+        "sex": "TOTAL",
+        "years_since": "02"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2011",
+      "value": 57.444,
+      "dims": {
+        "sex": "TOTAL",
+        "years_since": "02"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2012",
+      "value": 65.1446,
+      "dims": {
+        "sex": "TOTAL",
+        "years_since": "02"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2013",
+      "value": 74.1573,
+      "dims": {
+        "sex": "TOTAL",
+        "years_since": "02"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2014",
+      "value": 79.1809,
+      "dims": {
+        "sex": "TOTAL",
+        "years_since": "02"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2015",
+      "value": 83.6066,
+      "dims": {
+        "sex": "TOTAL",
+        "years_since": "02"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2016",
+      "value": 86.0656,
+      "dims": {
+        "sex": "TOTAL",
+        "years_since": "02"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2017",
+      "value": 84.2466,
+      "dims": {
+        "sex": "TOTAL",
+        "years_since": "02"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2018",
+      "value": 86.1979,
+      "dims": {
+        "sex": "TOTAL",
+        "years_since": "02"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2019",
+      "value": 89.2583,
+      "dims": {
+        "sex": "TOTAL",
+        "years_since": "02"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2020",
+      "value": 92.1642,
+      "dims": {
+        "sex": "TOTAL",
+        "years_since": "02"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2010",
+      "value": 56.7026,
+      "dims": {
+        "sex": "TOTAL",
+        "years_since": "03"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2011",
+      "value": 63.1094,
+      "dims": {
+        "sex": "TOTAL",
+        "years_since": "03"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2012",
+      "value": 69.2542,
+      "dims": {
+        "sex": "TOTAL",
+        "years_since": "03"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2013",
+      "value": 76.1798,
+      "dims": {
+        "sex": "TOTAL",
+        "years_since": "03"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2014",
+      "value": 81.2287,
+      "dims": {
+        "sex": "TOTAL",
+        "years_since": "03"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2015",
+      "value": 83.1967,
+      "dims": {
+        "sex": "TOTAL",
+        "years_since": "03"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2016",
+      "value": 84.0164,
+      "dims": {
+        "sex": "TOTAL",
+        "years_since": "03"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2017",
+      "value": 83.5616,
+      "dims": {
+        "sex": "TOTAL",
+        "years_since": "03"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2018",
+      "value": 87.2396,
+      "dims": {
+        "sex": "TOTAL",
+        "years_since": "03"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2019",
+      "value": 87.7238,
+      "dims": {
+        "sex": "TOTAL",
+        "years_since": "03"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2010",
+      "value": 62.2496,
+      "dims": {
+        "sex": "TOTAL",
+        "years_since": "04"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2011",
+      "value": 67.0619,
+      "dims": {
+        "sex": "TOTAL",
+        "years_since": "04"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2012",
+      "value": 73.6682,
+      "dims": {
+        "sex": "TOTAL",
+        "years_since": "04"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2013",
+      "value": 78.6517,
+      "dims": {
+        "sex": "TOTAL",
+        "years_since": "04"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2014",
+      "value": 82.5939,
+      "dims": {
+        "sex": "TOTAL",
+        "years_since": "04"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2015",
+      "value": 82.377,
+      "dims": {
+        "sex": "TOTAL",
+        "years_since": "04"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2016",
+      "value": 84.4262,
+      "dims": {
+        "sex": "TOTAL",
+        "years_since": "04"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2017",
+      "value": 84.9315,
+      "dims": {
+        "sex": "TOTAL",
+        "years_since": "04"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2018",
+      "value": 87.5,
+      "dims": {
+        "sex": "TOTAL",
+        "years_since": "04"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2010",
+      "value": 67.0262,
+      "dims": {
+        "sex": "TOTAL",
+        "years_since": "05"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2011",
+      "value": 71.1462,
+      "dims": {
+        "sex": "TOTAL",
+        "years_since": "05"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2012",
+      "value": 76.5601,
+      "dims": {
+        "sex": "TOTAL",
+        "years_since": "05"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2013",
+      "value": 78.8764,
+      "dims": {
+        "sex": "TOTAL",
+        "years_since": "05"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2014",
+      "value": 82.2526,
+      "dims": {
+        "sex": "TOTAL",
+        "years_since": "05"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2015",
+      "value": 81.9672,
+      "dims": {
+        "sex": "TOTAL",
+        "years_since": "05"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2016",
+      "value": 84.8361,
+      "dims": {
+        "sex": "TOTAL",
+        "years_since": "05"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2017",
+      "value": 84.9315,
+      "dims": {
+        "sex": "TOTAL",
+        "years_since": "05"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2010",
+      "value": 69.6456,
+      "dims": {
+        "sex": "TOTAL",
+        "years_since": "06"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2011",
+      "value": 73.7813,
+      "dims": {
+        "sex": "TOTAL",
+        "years_since": "06"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2012",
+      "value": 77.3212,
+      "dims": {
+        "sex": "TOTAL",
+        "years_since": "06"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2013",
+      "value": 80.4494,
+      "dims": {
+        "sex": "TOTAL",
+        "years_since": "06"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2014",
+      "value": 80.8874,
+      "dims": {
+        "sex": "TOTAL",
+        "years_since": "06"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2015",
+      "value": 82.377,
+      "dims": {
+        "sex": "TOTAL",
+        "years_since": "06"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2016",
+      "value": 85.6557,
+      "dims": {
+        "sex": "TOTAL",
+        "years_since": "06"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2010",
+      "value": 73.3436,
+      "dims": {
+        "sex": "TOTAL",
+        "years_since": "07"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2011",
+      "value": 76.1528,
+      "dims": {
+        "sex": "TOTAL",
+        "years_since": "07"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2012",
+      "value": 78.2344,
+      "dims": {
+        "sex": "TOTAL",
+        "years_since": "07"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2013",
+      "value": 80.2247,
+      "dims": {
+        "sex": "TOTAL",
+        "years_since": "07"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2014",
+      "value": 81.9113,
+      "dims": {
+        "sex": "TOTAL",
+        "years_since": "07"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2015",
+      "value": 81.9672,
+      "dims": {
+        "sex": "TOTAL",
+        "years_since": "07"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2010",
+      "value": 74.5763,
+      "dims": {
+        "sex": "TOTAL",
+        "years_since": "08"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2011",
+      "value": 77.6021,
+      "dims": {
+        "sex": "TOTAL",
+        "years_since": "08"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2012",
+      "value": 77.93,
+      "dims": {
+        "sex": "TOTAL",
+        "years_since": "08"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2013",
+      "value": 80.6742,
+      "dims": {
+        "sex": "TOTAL",
+        "years_since": "08"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2014",
+      "value": 82.5939,
+      "dims": {
+        "sex": "TOTAL",
+        "years_since": "08"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2010",
+      "value": 74.7304,
+      "dims": {
+        "sex": "TOTAL",
+        "years_since": "09"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2011",
+      "value": 77.6021,
+      "dims": {
+        "sex": "TOTAL",
+        "years_since": "09"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2012",
+      "value": 78.8432,
+      "dims": {
+        "sex": "TOTAL",
+        "years_since": "09"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2013",
+      "value": 80.4494,
+      "dims": {
+        "sex": "TOTAL",
+        "years_since": "09"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2010",
+      "value": 75.6549,
+      "dims": {
+        "sex": "TOTAL",
+        "years_since": "10"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2011",
+      "value": 77.8656,
+      "dims": {
+        "sex": "TOTAL",
+        "years_since": "10"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2012",
+      "value": 79.2998,
+      "dims": {
+        "sex": "TOTAL",
+        "years_since": "10"
+      }
+    }
+  ],
+  "coverage": {
+    "geos": [
+      "IE"
+    ],
+    "time": [
+      "2010",
+      "2020"
+    ],
+    "observations": 184
+  }
+}

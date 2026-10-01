@@ -13,3 +13,15 @@ scratch/
 # Large or licence-uncertain originals: uncomment if raw files
 # should NOT be published to GitHub
 # data/raw/
+
+# Local download inbox (copy originals into data/raw/<source>/ with the date)
+data/downloads/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Research notes and drafts (kept local; GitHub Pages would publish them)
+research_notes/
+reports/

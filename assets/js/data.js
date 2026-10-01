@@ -67,13 +67,17 @@ export function facetValues(meta, records, key) {
   return keys.map(v => ({ value: v, count: counts.get(v) }));
 }
 
-/** Free-text haystack for a record. */
+/** Free-text haystack for a record (computed once per record). */
+const hayCache = new WeakMap();
 export function haystack(meta, rec) {
-  return meta.fields
+  if (hayCache.has(rec)) return hayCache.get(rec);
+  const h = meta.fields
     .filter(f => f.type !== 'hidden' && f.type !== 'link')
     .flatMap(f => values(rec, f.key))
     .join(' ')
     .toLowerCase();
+  hayCache.set(rec, h);
+  return h;
 }
 
 /** Does a record match the active state? Multi-value safe (intersection). */

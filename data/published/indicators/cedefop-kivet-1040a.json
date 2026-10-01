@@ -1,0 +1,228 @@
+{
+  "id": "cedefop-kivet-1040a",
+  "title": "Workers participating in on-the-job training (% of staff)",
+  "description": "Number of staff who participated in employer-sponsored on-the-job training in the last 12 months as a percentage of all staff surveyed (Cedefop, ESJS2).",
+  "unit": "%",
+  "topic": "Access, attractiveness and flexibility",
+  "source_label": "Cedefop Key indicators on VET, indicator 1040a",
+  "comparability": "EU averages are Cedefop estimates (weighted averages of available country data) where flagged.",
+  "flags": {
+    "b": "break in time series",
+    "d": "definition differs",
+    "e": "estimated",
+    "p": "provisional",
+    "u": "low reliability",
+    "z": "not applicable",
+    "c": "confidential"
+  },
+  "kivet": {
+    "number": "1040a",
+    "position": "Key Indicators on VET",
+    "group": "Access, attractiveness and flexibility",
+    "type": "CVET/Adult learning"
+  },
+  "provenance": {
+    "publisher": "Cedefop",
+    "dataset_code": "KIVET 1040a",
+    "source_url": "https://www.cedefop.europa.eu/en/datasets/dataset-key-indicators-vet",
+    "api_url": "https://www.cedefop.europa.eu/files/integratedmasterfileIndicators_2026_%2006%20July.xlsx",
+    "licence": "CC-BY-4.0",
+    "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+    "citation": "Cedefop (2026). Key indicators on VET [Data set]. https://doi.org/10.2906/534056862890980 Underlying source: Cedefop, ESJS2",
+    "source_updated": "2026 (6 July 2026)",
+    "retrieved_at": "2026-10-01T09:25:30+00:00",
+    "raw_file": "data/raw/cedefop/2026-10-01-kivet-masterfile.xlsx",
+    "raw_sha256": "6a10e5587408f5af5638676ea15a367832302238eb12dd4b0fe9f86c1589a919"
+  },
+  "series": [
+    {
+      "geo": "AT",
+      "time": "2021",
+      "value": 37.0
+    },
+    {
+      "geo": "BE",
+      "time": "2021",
+      "value": 37.0
+    },
+    {
+      "geo": "BG",
+      "time": "2021",
+      "value": 44.0
+    },
+    {
+      "geo": "CY",
+      "time": "2021",
+      "value": 34.0
+    },
+    {
+      "geo": "CZ",
+      "time": "2021",
+      "value": 53.0
+    },
+    {
+      "geo": "DE",
+      "time": "2021",
+      "value": 30.0
+    },
+    {
+      "geo": "DK",
+      "time": "2021",
+      "value": 34.0
+    },
+    {
+      "geo": "EE",
+      "time": "2021",
+      "value": 34.0
+    },
+    {
+      "geo": "EL",
+      "time": "2021",
+      "value": 40.0
+    },
+    {
+      "geo": "ES",
+      "time": "2021",
+      "value": 44.0
+    },
+    {
+      "geo": "EU27",
+      "time": "2021",
+      "value": 40.0
+    },
+    {
+      "geo": "FI",
+      "time": "2021",
+      "value": 52.0
+    },
+    {
+      "geo": "FR",
+      "time": "2021",
+      "value": 39.0
+    },
+    {
+      "geo": "HR",
+      "time": "2021",
+      "value": 30.0
+    },
+    {
+      "geo": "HU",
+      "time": "2021",
+      "value": 40.0
+    },
+    {
+      "geo": "IE",
+      "time": "2021",
+      "value": 51.0
+    },
+    {
+      "geo": "IS",
+      "time": "2021",
+      "value": 30.0
+    },
+    {
+      "geo": "IT",
+      "time": "2021",
+      "value": 36.0
+    },
+    {
+      "geo": "LT",
+      "time": "2021",
+      "value": 43.0
+    },
+    {
+      "geo": "LU",
+      "time": "2021",
+      "value": 46.0
+    },
+    {
+      "geo": "LV",
+      "time": "2021",
+      "value": 44.0
+    },
+    {
+      "geo": "MT",
+      "time": "2021",
+      "value": 43.0
+    },
+    {
+      "geo": "NL",
+      "time": "2021",
+      "value": 46.0
+    },
+    {
+      "geo": "NO",
+      "time": "2021",
+      "value": 48.0
+    },
+    {
+      "geo": "PL",
+      "time": "2021",
+      "value": 52.0
+    },
+    {
+      "geo": "PT",
+      "time": "2021",
+      "value": 51.0
+    },
+    {
+      "geo": "RO",
+      "time": "2021",
+      "value": 43.0
+    },
+    {
+      "geo": "SE",
+      "time": "2021",
+      "value": 49.0
+    },
+    {
+      "geo": "SI",
+      "time": "2021",
+      "value": 37.0
+    },
+    {
+      "geo": "SK",
+      "time": "2021",
+      "value": 48.0
+    }
+  ],
+  "coverage": {
+    "geos": [
+      "AT",
+      "BE",
+      "BG",
+      "CY",
+      "CZ",
+      "DE",
+      "DK",
+      "EE",
+      "EL",
+      "ES",
+      "EU27",
+      "FI",
+      "FR",
+      "HR",
+      "HU",
+      "IE",
+      "IS",
+      "IT",
+      "LT",
+      "LU",
+      "LV",
+      "MT",
+      "NL",
+      "NO",
+      "PL",
+      "PT",
+      "RO",
+      "SE",
+      "SI",
+      "SK"
+    ],
+    "time": [
+      "2021",
+      "2021"
+    ],
+    "observations": 30
+  }
+}

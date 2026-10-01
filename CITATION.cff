@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: >-
+  If you use data from Apprentix, please cite both Apprentix and the original
+  publisher named in each record's or indicator's provenance (for example
+  Cedefop or Eurostat). The original source remains authoritative.
+title: "Apprentix: European apprenticeship and VET data, made searchable"
+type: dataset
+authors:
+  - family-names: Rezlescu
+    given-names: Constantin
+url: "https://apprentix.eu"
+repository-code: "https://github.com/costirezlescu/apprentix.eu"
+abstract: >-
+  Republished public European data on apprenticeship and vocational education
+  and training: Cedefop's apprenticeship schemes and policy timeline, Cedefop
+  Key indicators on VET, Eurostat statistics and national sources, with
+  per-record provenance. Each resource keeps its original licence.
+keywords:
+  - apprenticeship
+  - vocational education and training
+  - VET
+  - work-based learning
+  - Europe
+  - open data
+license-url: "https://github.com/costirezlescu/apprentix.eu/blob/main/datapackage.json"

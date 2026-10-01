@@ -1,0 +1,2047 @@
+{
+  "id": "nl-duo-bbl-students",
+  "title": "BBL (work-based MBO) students in the Netherlands",
+  "description": "Students in the Dutch work-based MBO pathway (BBL) at 1 October, by MBO level and sector chamber (sectorkamer).",
+  "unit": "students",
+  "topic": "Participation",
+  "national": true,
+  "source_label": "DUO — Mbo-studenten per sectorkamer en leerweg: Studenten per sectorkamer leerweg niveau woonprovincie",
+  "comparability": "Netherlands, national source (DUO, 1-cijferbestand mbo from the ROD register). Stock: main enrolments (one per student per institution) at the reference date 1 October of the school year; time is the calendar year of that 1 October (e.g. 2025 = school year 2025/26). Includes funded and non-funded enrolments. The most recent year is provisional (flag 'p'). BBL is a learning pathway within MBO (levels 1–4, EQF 1–4), not a count of apprenticeship contracts; there is no higher-education apprenticeship in this count. DUO suppresses cells of 1–4 students (published as -1); these are excluded, so sums are lower bounds (by at most 4 × the number of suppressed cells). Do not sum with other countries. Summed from cells by sector chamber, level and province of residence, where suppression is more frequent than in the per-institution file: the all-levels/all-sectors total here is up to ~0.5% below the BBL value in nl-duo-mbo-students.",
+  "dims": [
+    {
+      "key": "level",
+      "label": "MBO level",
+      "values": {
+        "ALL": "All levels",
+        "1": "Level 1 (Entree)",
+        "2": "Level 2 (basic vocational)",
+        "3": "Level 3 (professional)",
+        "4": "Level 4 (middle management / specialist)"
+      },
+      "default": "ALL"
+    },
+    {
+      "key": "sector",
+      "label": "Sector chamber",
+      "values": {
+        "ALL": "All sectors",
+        "bovensectoraal": "Cross-sector (Bovensectoraal)",
+        "entree": "Entry level (Entree)",
+        "handel": "Trade and retail (Handel)",
+        "ict-en-creatieve-industrie": "ICT and creative industries (Ict en creatieve industrie)",
+        "mobiliteit-transport-logistiek-en-maritiem": "Mobility, transport, logistics and maritime (Mobiliteit, transport, logistiek en maritiem)",
+        "specialistisch-vakmanschap": "Specialist craftsmanship (Specialistisch vakmanschap)",
+        "techniek-en-gebouwde-omgeving": "Engineering and built environment (Techniek en gebouwde omgeving)",
+        "voedsel-groen-en-gastvrijheid": "Food, green sectors and hospitality (Voedsel, groen en gastvrijheid)",
+        "zakelijke-dienstverlening-en-veiligheid": "Business services and security (Zakelijke dienstverlening en veiligheid)",
+        "zorg-welzijn-en-sport": "Care, welfare and sport (Zorg, welzijn en sport)"
+      },
+      "default": "ALL"
+    }
+  ],
+  "flags": {
+    "p": "provisional (DUO: the latest 1 October count is provisional)"
+  },
+  "provenance": {
+    "publisher": "DUO (Dienst Uitvoering Onderwijs), Open Onderwijsdata",
+    "dataset_code": "mbo-studenten-per-sectorkamer-en-leerweg",
+    "source_url": "https://onderwijsdata.duo.nl/dataset/mbo-studenten-per-sectorkamer-en-leerweg",
+    "api_url": "https://onderwijsdata.duo.nl/dataset/467eb74f-05be-4466-9226-005c278c100b/resource/da6669b9-5894-4ba6-9ba4-bfd42f8d3387/download/2021-2025-sectorkamer01-studenten-per-sectorkamer-leerweg-niveau-woonprovincie.csv",
+    "licence": "Creative Commons Attribution (as declared in the CKAN metadata, license_id 'cc-by'; version not stated)",
+    "citation": "DUO Open Onderwijsdata, 'Mbo-studenten per sectorkamer en leerweg' — Studenten per sectorkamer leerweg niveau woonprovincie.",
+    "source_updated": "2026-02-02",
+    "retrieved_at": "2026-10-01T09:52:46+00:00",
+    "raw_file": "data/raw/nl-duo/2026-10-01-mbo-studenten-sectorkamer-leerweg-niveau.csv",
+    "raw_sha256": "ebc09ee7031c1442f1b5601582a01e42d5f5d7e562f17509403e16ca07ea4eda"
+  },
+  "series": [
+    {
+      "geo": "NL",
+      "time": "2021",
+      "value": 3116.0,
+      "dims": {
+        "level": "1",
+        "sector": "ALL"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2022",
+      "value": 3386.0,
+      "dims": {
+        "level": "1",
+        "sector": "ALL"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2023",
+      "value": 3766.0,
+      "dims": {
+        "level": "1",
+        "sector": "ALL"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2024",
+      "value": 4121.0,
+      "dims": {
+        "level": "1",
+        "sector": "ALL"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2025",
+      "value": 4234.0,
+      "flag": "p",
+      "dims": {
+        "level": "1",
+        "sector": "ALL"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2021",
+      "value": 3116.0,
+      "dims": {
+        "level": "1",
+        "sector": "entree"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2022",
+      "value": 3386.0,
+      "dims": {
+        "level": "1",
+        "sector": "entree"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2023",
+      "value": 3766.0,
+      "dims": {
+        "level": "1",
+        "sector": "entree"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2024",
+      "value": 4121.0,
+      "dims": {
+        "level": "1",
+        "sector": "entree"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2025",
+      "value": 4234.0,
+      "flag": "p",
+      "dims": {
+        "level": "1",
+        "sector": "entree"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2021",
+      "value": 29117.0,
+      "dims": {
+        "level": "2",
+        "sector": "ALL"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2022",
+      "value": 31047.0,
+      "dims": {
+        "level": "2",
+        "sector": "ALL"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2023",
+      "value": 32916.0,
+      "dims": {
+        "level": "2",
+        "sector": "ALL"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2024",
+      "value": 32669.0,
+      "dims": {
+        "level": "2",
+        "sector": "ALL"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2025",
+      "value": 33519.0,
+      "flag": "p",
+      "dims": {
+        "level": "2",
+        "sector": "ALL"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2021",
+      "value": 127.0,
+      "dims": {
+        "level": "2",
+        "sector": "bovensectoraal"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2022",
+      "value": 93.0,
+      "dims": {
+        "level": "2",
+        "sector": "bovensectoraal"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2023",
+      "value": 62.0,
+      "dims": {
+        "level": "2",
+        "sector": "bovensectoraal"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2024",
+      "value": 0.0,
+      "dims": {
+        "level": "2",
+        "sector": "bovensectoraal"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2025",
+      "value": 0.0,
+      "flag": "p",
+      "dims": {
+        "level": "2",
+        "sector": "bovensectoraal"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2021",
+      "value": 1531.0,
+      "dims": {
+        "level": "2",
+        "sector": "handel"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2022",
+      "value": 1545.0,
+      "dims": {
+        "level": "2",
+        "sector": "handel"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2023",
+      "value": 1583.0,
+      "dims": {
+        "level": "2",
+        "sector": "handel"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2024",
+      "value": 1598.0,
+      "dims": {
+        "level": "2",
+        "sector": "handel"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2025",
+      "value": 1525.0,
+      "flag": "p",
+      "dims": {
+        "level": "2",
+        "sector": "handel"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2021",
+      "value": 39.0,
+      "dims": {
+        "level": "2",
+        "sector": "ict-en-creatieve-industrie"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2022",
+      "value": 45.0,
+      "dims": {
+        "level": "2",
+        "sector": "ict-en-creatieve-industrie"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2023",
+      "value": 34.0,
+      "dims": {
+        "level": "2",
+        "sector": "ict-en-creatieve-industrie"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2024",
+      "value": 49.0,
+      "dims": {
+        "level": "2",
+        "sector": "ict-en-creatieve-industrie"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2025",
+      "value": 47.0,
+      "flag": "p",
+      "dims": {
+        "level": "2",
+        "sector": "ict-en-creatieve-industrie"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2021",
+      "value": 6189.0,
+      "dims": {
+        "level": "2",
+        "sector": "mobiliteit-transport-logistiek-en-maritiem"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2022",
+      "value": 6004.0,
+      "dims": {
+        "level": "2",
+        "sector": "mobiliteit-transport-logistiek-en-maritiem"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2023",
+      "value": 5915.0,
+      "dims": {
+        "level": "2",
+        "sector": "mobiliteit-transport-logistiek-en-maritiem"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2024",
+      "value": 6066.0,
+      "dims": {
+        "level": "2",
+        "sector": "mobiliteit-transport-logistiek-en-maritiem"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2025",
+      "value": 6145.0,
+      "flag": "p",
+      "dims": {
+        "level": "2",
+        "sector": "mobiliteit-transport-logistiek-en-maritiem"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2021",
+      "value": 0.0,
+      "dims": {
+        "level": "2",
+        "sector": "specialistisch-vakmanschap"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2022",
+      "value": 0.0,
+      "dims": {
+        "level": "2",
+        "sector": "specialistisch-vakmanschap"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2023",
+      "value": 0.0,
+      "dims": {
+        "level": "2",
+        "sector": "specialistisch-vakmanschap"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2024",
+      "value": 0.0,
+      "dims": {
+        "level": "2",
+        "sector": "specialistisch-vakmanschap"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2025",
+      "value": 0.0,
+      "flag": "p",
+      "dims": {
+        "level": "2",
+        "sector": "specialistisch-vakmanschap"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2021",
+      "value": 12908.0,
+      "dims": {
+        "level": "2",
+        "sector": "techniek-en-gebouwde-omgeving"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2022",
+      "value": 13432.0,
+      "dims": {
+        "level": "2",
+        "sector": "techniek-en-gebouwde-omgeving"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2023",
+      "value": 13426.0,
+      "dims": {
+        "level": "2",
+        "sector": "techniek-en-gebouwde-omgeving"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2024",
+      "value": 13691.0,
+      "dims": {
+        "level": "2",
+        "sector": "techniek-en-gebouwde-omgeving"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2025",
+      "value": 14338.0,
+      "flag": "p",
+      "dims": {
+        "level": "2",
+        "sector": "techniek-en-gebouwde-omgeving"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2021",
+      "value": 4274.0,
+      "dims": {
+        "level": "2",
+        "sector": "voedsel-groen-en-gastvrijheid"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2022",
+      "value": 4444.0,
+      "dims": {
+        "level": "2",
+        "sector": "voedsel-groen-en-gastvrijheid"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2023",
+      "value": 4550.0,
+      "dims": {
+        "level": "2",
+        "sector": "voedsel-groen-en-gastvrijheid"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2024",
+      "value": 4465.0,
+      "dims": {
+        "level": "2",
+        "sector": "voedsel-groen-en-gastvrijheid"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2025",
+      "value": 4342.0,
+      "flag": "p",
+      "dims": {
+        "level": "2",
+        "sector": "voedsel-groen-en-gastvrijheid"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2021",
+      "value": 1325.0,
+      "dims": {
+        "level": "2",
+        "sector": "zakelijke-dienstverlening-en-veiligheid"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2022",
+      "value": 2159.0,
+      "dims": {
+        "level": "2",
+        "sector": "zakelijke-dienstverlening-en-veiligheid"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2023",
+      "value": 3607.0,
+      "dims": {
+        "level": "2",
+        "sector": "zakelijke-dienstverlening-en-veiligheid"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2024",
+      "value": 3219.0,
+      "dims": {
+        "level": "2",
+        "sector": "zakelijke-dienstverlening-en-veiligheid"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2025",
+      "value": 3033.0,
+      "flag": "p",
+      "dims": {
+        "level": "2",
+        "sector": "zakelijke-dienstverlening-en-veiligheid"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2021",
+      "value": 2724.0,
+      "dims": {
+        "level": "2",
+        "sector": "zorg-welzijn-en-sport"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2022",
+      "value": 3325.0,
+      "dims": {
+        "level": "2",
+        "sector": "zorg-welzijn-en-sport"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2023",
+      "value": 3739.0,
+      "dims": {
+        "level": "2",
+        "sector": "zorg-welzijn-en-sport"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2024",
+      "value": 3581.0,
+      "dims": {
+        "level": "2",
+        "sector": "zorg-welzijn-en-sport"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2025",
+      "value": 4089.0,
+      "flag": "p",
+      "dims": {
+        "level": "2",
+        "sector": "zorg-welzijn-en-sport"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2021",
+      "value": 54140.0,
+      "dims": {
+        "level": "3",
+        "sector": "ALL"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2022",
+      "value": 54768.0,
+      "dims": {
+        "level": "3",
+        "sector": "ALL"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2023",
+      "value": 53663.0,
+      "dims": {
+        "level": "3",
+        "sector": "ALL"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2024",
+      "value": 51608.0,
+      "dims": {
+        "level": "3",
+        "sector": "ALL"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2025",
+      "value": 50678.0,
+      "flag": "p",
+      "dims": {
+        "level": "3",
+        "sector": "ALL"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2021",
+      "value": 0.0,
+      "dims": {
+        "level": "3",
+        "sector": "bovensectoraal"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2022",
+      "value": 0.0,
+      "dims": {
+        "level": "3",
+        "sector": "bovensectoraal"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2023",
+      "value": 0.0,
+      "dims": {
+        "level": "3",
+        "sector": "bovensectoraal"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2024",
+      "value": 0.0,
+      "dims": {
+        "level": "3",
+        "sector": "bovensectoraal"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2025",
+      "value": 0.0,
+      "flag": "p",
+      "dims": {
+        "level": "3",
+        "sector": "bovensectoraal"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2021",
+      "value": 2895.0,
+      "dims": {
+        "level": "3",
+        "sector": "handel"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2022",
+      "value": 2807.0,
+      "dims": {
+        "level": "3",
+        "sector": "handel"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2023",
+      "value": 2498.0,
+      "dims": {
+        "level": "3",
+        "sector": "handel"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2024",
+      "value": 2321.0,
+      "dims": {
+        "level": "3",
+        "sector": "handel"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2025",
+      "value": 1994.0,
+      "flag": "p",
+      "dims": {
+        "level": "3",
+        "sector": "handel"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2021",
+      "value": 139.0,
+      "dims": {
+        "level": "3",
+        "sector": "ict-en-creatieve-industrie"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2022",
+      "value": 169.0,
+      "dims": {
+        "level": "3",
+        "sector": "ict-en-creatieve-industrie"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2023",
+      "value": 176.0,
+      "dims": {
+        "level": "3",
+        "sector": "ict-en-creatieve-industrie"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2024",
+      "value": 150.0,
+      "dims": {
+        "level": "3",
+        "sector": "ict-en-creatieve-industrie"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2025",
+      "value": 139.0,
+      "flag": "p",
+      "dims": {
+        "level": "3",
+        "sector": "ict-en-creatieve-industrie"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2021",
+      "value": 7623.0,
+      "dims": {
+        "level": "3",
+        "sector": "mobiliteit-transport-logistiek-en-maritiem"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2022",
+      "value": 7509.0,
+      "dims": {
+        "level": "3",
+        "sector": "mobiliteit-transport-logistiek-en-maritiem"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2023",
+      "value": 7660.0,
+      "dims": {
+        "level": "3",
+        "sector": "mobiliteit-transport-logistiek-en-maritiem"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2024",
+      "value": 7876.0,
+      "dims": {
+        "level": "3",
+        "sector": "mobiliteit-transport-logistiek-en-maritiem"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2025",
+      "value": 8068.0,
+      "flag": "p",
+      "dims": {
+        "level": "3",
+        "sector": "mobiliteit-transport-logistiek-en-maritiem"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2021",
+      "value": 245.0,
+      "dims": {
+        "level": "3",
+        "sector": "specialistisch-vakmanschap"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2022",
+      "value": 252.0,
+      "dims": {
+        "level": "3",
+        "sector": "specialistisch-vakmanschap"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2023",
+      "value": 267.0,
+      "dims": {
+        "level": "3",
+        "sector": "specialistisch-vakmanschap"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2024",
+      "value": 279.0,
+      "dims": {
+        "level": "3",
+        "sector": "specialistisch-vakmanschap"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2025",
+      "value": 260.0,
+      "flag": "p",
+      "dims": {
+        "level": "3",
+        "sector": "specialistisch-vakmanschap"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2021",
+      "value": 18065.0,
+      "dims": {
+        "level": "3",
+        "sector": "techniek-en-gebouwde-omgeving"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2022",
+      "value": 18878.0,
+      "dims": {
+        "level": "3",
+        "sector": "techniek-en-gebouwde-omgeving"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2023",
+      "value": 19063.0,
+      "dims": {
+        "level": "3",
+        "sector": "techniek-en-gebouwde-omgeving"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2024",
+      "value": 19181.0,
+      "dims": {
+        "level": "3",
+        "sector": "techniek-en-gebouwde-omgeving"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2025",
+      "value": 19352.0,
+      "flag": "p",
+      "dims": {
+        "level": "3",
+        "sector": "techniek-en-gebouwde-omgeving"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2021",
+      "value": 7770.0,
+      "dims": {
+        "level": "3",
+        "sector": "voedsel-groen-en-gastvrijheid"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2022",
+      "value": 7625.0,
+      "dims": {
+        "level": "3",
+        "sector": "voedsel-groen-en-gastvrijheid"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2023",
+      "value": 7645.0,
+      "dims": {
+        "level": "3",
+        "sector": "voedsel-groen-en-gastvrijheid"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2024",
+      "value": 7367.0,
+      "dims": {
+        "level": "3",
+        "sector": "voedsel-groen-en-gastvrijheid"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2025",
+      "value": 7221.0,
+      "flag": "p",
+      "dims": {
+        "level": "3",
+        "sector": "voedsel-groen-en-gastvrijheid"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2021",
+      "value": 506.0,
+      "dims": {
+        "level": "3",
+        "sector": "zakelijke-dienstverlening-en-veiligheid"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2022",
+      "value": 491.0,
+      "dims": {
+        "level": "3",
+        "sector": "zakelijke-dienstverlening-en-veiligheid"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2023",
+      "value": 636.0,
+      "dims": {
+        "level": "3",
+        "sector": "zakelijke-dienstverlening-en-veiligheid"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2024",
+      "value": 676.0,
+      "dims": {
+        "level": "3",
+        "sector": "zakelijke-dienstverlening-en-veiligheid"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2025",
+      "value": 762.0,
+      "flag": "p",
+      "dims": {
+        "level": "3",
+        "sector": "zakelijke-dienstverlening-en-veiligheid"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2021",
+      "value": 16897.0,
+      "dims": {
+        "level": "3",
+        "sector": "zorg-welzijn-en-sport"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2022",
+      "value": 17037.0,
+      "dims": {
+        "level": "3",
+        "sector": "zorg-welzijn-en-sport"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2023",
+      "value": 15718.0,
+      "dims": {
+        "level": "3",
+        "sector": "zorg-welzijn-en-sport"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2024",
+      "value": 13758.0,
+      "dims": {
+        "level": "3",
+        "sector": "zorg-welzijn-en-sport"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2025",
+      "value": 12882.0,
+      "flag": "p",
+      "dims": {
+        "level": "3",
+        "sector": "zorg-welzijn-en-sport"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2021",
+      "value": 42791.0,
+      "dims": {
+        "level": "4",
+        "sector": "ALL"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2022",
+      "value": 46501.0,
+      "dims": {
+        "level": "4",
+        "sector": "ALL"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2023",
+      "value": 48768.0,
+      "dims": {
+        "level": "4",
+        "sector": "ALL"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2024",
+      "value": 48586.0,
+      "dims": {
+        "level": "4",
+        "sector": "ALL"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2025",
+      "value": 48484.0,
+      "flag": "p",
+      "dims": {
+        "level": "4",
+        "sector": "ALL"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2021",
+      "value": 0.0,
+      "dims": {
+        "level": "4",
+        "sector": "bovensectoraal"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2022",
+      "value": 0.0,
+      "dims": {
+        "level": "4",
+        "sector": "bovensectoraal"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2023",
+      "value": 0.0,
+      "dims": {
+        "level": "4",
+        "sector": "bovensectoraal"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2024",
+      "value": 0.0,
+      "dims": {
+        "level": "4",
+        "sector": "bovensectoraal"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2025",
+      "value": 0.0,
+      "flag": "p",
+      "dims": {
+        "level": "4",
+        "sector": "bovensectoraal"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2021",
+      "value": 4808.0,
+      "dims": {
+        "level": "4",
+        "sector": "handel"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2022",
+      "value": 4619.0,
+      "dims": {
+        "level": "4",
+        "sector": "handel"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2023",
+      "value": 4698.0,
+      "dims": {
+        "level": "4",
+        "sector": "handel"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2024",
+      "value": 4643.0,
+      "dims": {
+        "level": "4",
+        "sector": "handel"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2025",
+      "value": 4454.0,
+      "flag": "p",
+      "dims": {
+        "level": "4",
+        "sector": "handel"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2021",
+      "value": 879.0,
+      "dims": {
+        "level": "4",
+        "sector": "ict-en-creatieve-industrie"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2022",
+      "value": 922.0,
+      "dims": {
+        "level": "4",
+        "sector": "ict-en-creatieve-industrie"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2023",
+      "value": 977.0,
+      "dims": {
+        "level": "4",
+        "sector": "ict-en-creatieve-industrie"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2024",
+      "value": 952.0,
+      "dims": {
+        "level": "4",
+        "sector": "ict-en-creatieve-industrie"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2025",
+      "value": 949.0,
+      "flag": "p",
+      "dims": {
+        "level": "4",
+        "sector": "ict-en-creatieve-industrie"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2021",
+      "value": 2869.0,
+      "dims": {
+        "level": "4",
+        "sector": "mobiliteit-transport-logistiek-en-maritiem"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2022",
+      "value": 3017.0,
+      "dims": {
+        "level": "4",
+        "sector": "mobiliteit-transport-logistiek-en-maritiem"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2023",
+      "value": 3209.0,
+      "dims": {
+        "level": "4",
+        "sector": "mobiliteit-transport-logistiek-en-maritiem"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2024",
+      "value": 3274.0,
+      "dims": {
+        "level": "4",
+        "sector": "mobiliteit-transport-logistiek-en-maritiem"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2025",
+      "value": 3550.0,
+      "flag": "p",
+      "dims": {
+        "level": "4",
+        "sector": "mobiliteit-transport-logistiek-en-maritiem"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2021",
+      "value": 1115.0,
+      "dims": {
+        "level": "4",
+        "sector": "specialistisch-vakmanschap"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2022",
+      "value": 1162.0,
+      "dims": {
+        "level": "4",
+        "sector": "specialistisch-vakmanschap"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2023",
+      "value": 1212.0,
+      "dims": {
+        "level": "4",
+        "sector": "specialistisch-vakmanschap"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2024",
+      "value": 1269.0,
+      "dims": {
+        "level": "4",
+        "sector": "specialistisch-vakmanschap"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2025",
+      "value": 1369.0,
+      "flag": "p",
+      "dims": {
+        "level": "4",
+        "sector": "specialistisch-vakmanschap"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2021",
+      "value": 5814.0,
+      "dims": {
+        "level": "4",
+        "sector": "techniek-en-gebouwde-omgeving"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2022",
+      "value": 5989.0,
+      "dims": {
+        "level": "4",
+        "sector": "techniek-en-gebouwde-omgeving"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2023",
+      "value": 6237.0,
+      "dims": {
+        "level": "4",
+        "sector": "techniek-en-gebouwde-omgeving"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2024",
+      "value": 6190.0,
+      "dims": {
+        "level": "4",
+        "sector": "techniek-en-gebouwde-omgeving"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2025",
+      "value": 6216.0,
+      "flag": "p",
+      "dims": {
+        "level": "4",
+        "sector": "techniek-en-gebouwde-omgeving"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2021",
+      "value": 2600.0,
+      "dims": {
+        "level": "4",
+        "sector": "voedsel-groen-en-gastvrijheid"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2022",
+      "value": 2816.0,
+      "dims": {
+        "level": "4",
+        "sector": "voedsel-groen-en-gastvrijheid"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2023",
+      "value": 3018.0,
+      "dims": {
+        "level": "4",
+        "sector": "voedsel-groen-en-gastvrijheid"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2024",
+      "value": 3176.0,
+      "dims": {
+        "level": "4",
+        "sector": "voedsel-groen-en-gastvrijheid"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2025",
+      "value": 3193.0,
+      "flag": "p",
+      "dims": {
+        "level": "4",
+        "sector": "voedsel-groen-en-gastvrijheid"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2021",
+      "value": 958.0,
+      "dims": {
+        "level": "4",
+        "sector": "zakelijke-dienstverlening-en-veiligheid"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2022",
+      "value": 952.0,
+      "dims": {
+        "level": "4",
+        "sector": "zakelijke-dienstverlening-en-veiligheid"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2023",
+      "value": 962.0,
+      "dims": {
+        "level": "4",
+        "sector": "zakelijke-dienstverlening-en-veiligheid"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2024",
+      "value": 1081.0,
+      "dims": {
+        "level": "4",
+        "sector": "zakelijke-dienstverlening-en-veiligheid"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2025",
+      "value": 1166.0,
+      "flag": "p",
+      "dims": {
+        "level": "4",
+        "sector": "zakelijke-dienstverlening-en-veiligheid"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2021",
+      "value": 23748.0,
+      "dims": {
+        "level": "4",
+        "sector": "zorg-welzijn-en-sport"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2022",
+      "value": 27024.0,
+      "dims": {
+        "level": "4",
+        "sector": "zorg-welzijn-en-sport"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2023",
+      "value": 28455.0,
+      "dims": {
+        "level": "4",
+        "sector": "zorg-welzijn-en-sport"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2024",
+      "value": 28001.0,
+      "dims": {
+        "level": "4",
+        "sector": "zorg-welzijn-en-sport"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2025",
+      "value": 27587.0,
+      "flag": "p",
+      "dims": {
+        "level": "4",
+        "sector": "zorg-welzijn-en-sport"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2021",
+      "value": 129164.0,
+      "dims": {
+        "level": "ALL",
+        "sector": "ALL"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2022",
+      "value": 135702.0,
+      "dims": {
+        "level": "ALL",
+        "sector": "ALL"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2023",
+      "value": 139113.0,
+      "dims": {
+        "level": "ALL",
+        "sector": "ALL"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2024",
+      "value": 136984.0,
+      "dims": {
+        "level": "ALL",
+        "sector": "ALL"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2025",
+      "value": 136915.0,
+      "flag": "p",
+      "dims": {
+        "level": "ALL",
+        "sector": "ALL"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2021",
+      "value": 127.0,
+      "dims": {
+        "level": "ALL",
+        "sector": "bovensectoraal"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2022",
+      "value": 93.0,
+      "dims": {
+        "level": "ALL",
+        "sector": "bovensectoraal"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2023",
+      "value": 62.0,
+      "dims": {
+        "level": "ALL",
+        "sector": "bovensectoraal"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2024",
+      "value": 0.0,
+      "dims": {
+        "level": "ALL",
+        "sector": "bovensectoraal"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2025",
+      "value": 0.0,
+      "flag": "p",
+      "dims": {
+        "level": "ALL",
+        "sector": "bovensectoraal"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2021",
+      "value": 3116.0,
+      "dims": {
+        "level": "ALL",
+        "sector": "entree"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2022",
+      "value": 3386.0,
+      "dims": {
+        "level": "ALL",
+        "sector": "entree"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2023",
+      "value": 3766.0,
+      "dims": {
+        "level": "ALL",
+        "sector": "entree"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2024",
+      "value": 4121.0,
+      "dims": {
+        "level": "ALL",
+        "sector": "entree"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2025",
+      "value": 4234.0,
+      "flag": "p",
+      "dims": {
+        "level": "ALL",
+        "sector": "entree"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2021",
+      "value": 9234.0,
+      "dims": {
+        "level": "ALL",
+        "sector": "handel"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2022",
+      "value": 8971.0,
+      "dims": {
+        "level": "ALL",
+        "sector": "handel"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2023",
+      "value": 8779.0,
+      "dims": {
+        "level": "ALL",
+        "sector": "handel"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2024",
+      "value": 8562.0,
+      "dims": {
+        "level": "ALL",
+        "sector": "handel"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2025",
+      "value": 7973.0,
+      "flag": "p",
+      "dims": {
+        "level": "ALL",
+        "sector": "handel"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2021",
+      "value": 1057.0,
+      "dims": {
+        "level": "ALL",
+        "sector": "ict-en-creatieve-industrie"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2022",
+      "value": 1136.0,
+      "dims": {
+        "level": "ALL",
+        "sector": "ict-en-creatieve-industrie"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2023",
+      "value": 1187.0,
+      "dims": {
+        "level": "ALL",
+        "sector": "ict-en-creatieve-industrie"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2024",
+      "value": 1151.0,
+      "dims": {
+        "level": "ALL",
+        "sector": "ict-en-creatieve-industrie"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2025",
+      "value": 1135.0,
+      "flag": "p",
+      "dims": {
+        "level": "ALL",
+        "sector": "ict-en-creatieve-industrie"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2021",
+      "value": 16681.0,
+      "dims": {
+        "level": "ALL",
+        "sector": "mobiliteit-transport-logistiek-en-maritiem"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2022",
+      "value": 16530.0,
+      "dims": {
+        "level": "ALL",
+        "sector": "mobiliteit-transport-logistiek-en-maritiem"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2023",
+      "value": 16784.0,
+      "dims": {
+        "level": "ALL",
+        "sector": "mobiliteit-transport-logistiek-en-maritiem"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2024",
+      "value": 17216.0,
+      "dims": {
+        "level": "ALL",
+        "sector": "mobiliteit-transport-logistiek-en-maritiem"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2025",
+      "value": 17763.0,
+      "flag": "p",
+      "dims": {
+        "level": "ALL",
+        "sector": "mobiliteit-transport-logistiek-en-maritiem"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2021",
+      "value": 1360.0,
+      "dims": {
+        "level": "ALL",
+        "sector": "specialistisch-vakmanschap"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2022",
+      "value": 1414.0,
+      "dims": {
+        "level": "ALL",
+        "sector": "specialistisch-vakmanschap"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2023",
+      "value": 1479.0,
+      "dims": {
+        "level": "ALL",
+        "sector": "specialistisch-vakmanschap"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2024",
+      "value": 1548.0,
+      "dims": {
+        "level": "ALL",
+        "sector": "specialistisch-vakmanschap"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2025",
+      "value": 1629.0,
+      "flag": "p",
+      "dims": {
+        "level": "ALL",
+        "sector": "specialistisch-vakmanschap"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2021",
+      "value": 36787.0,
+      "dims": {
+        "level": "ALL",
+        "sector": "techniek-en-gebouwde-omgeving"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2022",
+      "value": 38299.0,
+      "dims": {
+        "level": "ALL",
+        "sector": "techniek-en-gebouwde-omgeving"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2023",
+      "value": 38726.0,
+      "dims": {
+        "level": "ALL",
+        "sector": "techniek-en-gebouwde-omgeving"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2024",
+      "value": 39062.0,
+      "dims": {
+        "level": "ALL",
+        "sector": "techniek-en-gebouwde-omgeving"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2025",
+      "value": 39906.0,
+      "flag": "p",
+      "dims": {
+        "level": "ALL",
+        "sector": "techniek-en-gebouwde-omgeving"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2021",
+      "value": 14644.0,
+      "dims": {
+        "level": "ALL",
+        "sector": "voedsel-groen-en-gastvrijheid"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2022",
+      "value": 14885.0,
+      "dims": {
+        "level": "ALL",
+        "sector": "voedsel-groen-en-gastvrijheid"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2023",
+      "value": 15213.0,
+      "dims": {
+        "level": "ALL",
+        "sector": "voedsel-groen-en-gastvrijheid"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2024",
+      "value": 15008.0,
+      "dims": {
+        "level": "ALL",
+        "sector": "voedsel-groen-en-gastvrijheid"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2025",
+      "value": 14756.0,
+      "flag": "p",
+      "dims": {
+        "level": "ALL",
+        "sector": "voedsel-groen-en-gastvrijheid"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2021",
+      "value": 2789.0,
+      "dims": {
+        "level": "ALL",
+        "sector": "zakelijke-dienstverlening-en-veiligheid"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2022",
+      "value": 3602.0,
+      "dims": {
+        "level": "ALL",
+        "sector": "zakelijke-dienstverlening-en-veiligheid"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2023",
+      "value": 5205.0,
+      "dims": {
+        "level": "ALL",
+        "sector": "zakelijke-dienstverlening-en-veiligheid"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2024",
+      "value": 4976.0,
+      "dims": {
+        "level": "ALL",
+        "sector": "zakelijke-dienstverlening-en-veiligheid"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2025",
+      "value": 4961.0,
+      "flag": "p",
+      "dims": {
+        "level": "ALL",
+        "sector": "zakelijke-dienstverlening-en-veiligheid"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2021",
+      "value": 43369.0,
+      "dims": {
+        "level": "ALL",
+        "sector": "zorg-welzijn-en-sport"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2022",
+      "value": 47386.0,
+      "dims": {
+        "level": "ALL",
+        "sector": "zorg-welzijn-en-sport"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2023",
+      "value": 47912.0,
+      "dims": {
+        "level": "ALL",
+        "sector": "zorg-welzijn-en-sport"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2024",
+      "value": 45340.0,
+      "dims": {
+        "level": "ALL",
+        "sector": "zorg-welzijn-en-sport"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2025",
+      "value": 44558.0,
+      "flag": "p",
+      "dims": {
+        "level": "ALL",
+        "sector": "zorg-welzijn-en-sport"
+      }
+    }
+  ],
+  "coverage": {
+    "geos": [
+      "NL"
+    ],
+    "time": [
+      "2021",
+      "2025"
+    ],
+    "observations": 215
+  }
+}

@@ -1,0 +1,2001 @@
+{
+  "id": "no-ssb-trade-certificates",
+  "title": "Trade and journeyman examinations taken in Norway",
+  "description": "Persons who completed a trade or journeyman's examination (fag-/svenneprøve) in Norway per school year, by type of training (apprentices, practice candidates, pupils) and result (all / passed).",
+  "unit": "persons",
+  "topic": "Outcomes",
+  "national": true,
+  "source_label": "09012: Completed vocational examinations, by age, type of training, results and interval (year)",
+  "comparability": "Norway, national source (SSB table 09012). Completions: persons who sat the trade or journeyman's examination in the school year; time is the start year of the school year (e.g. 2024 = 2024/25). 'Apprentices' are candidates who trained under an apprenticeship contract; 'practice candidates' (praksiskandidater) qualify through work experience without a contract. Upper-secondary level only. Do not sum with other countries.",
+  "dims": [
+    {
+      "key": "training",
+      "label": "Type of training",
+      "values": {
+        "00": "All procedures of learning",
+        "01": "Apprentices",
+        "02": "Practice candidates",
+        "03": "Pupils"
+      },
+      "default": "01"
+    },
+    {
+      "key": "result",
+      "label": "Result",
+      "values": {
+        "00": "Total",
+        "08": "Passed"
+      },
+      "default": "00"
+    }
+  ],
+  "provenance": {
+    "publisher": "Statistics Norway (SSB)",
+    "dataset_code": "09012",
+    "source_url": "https://www.ssb.no/en/statbank/table/09012",
+    "api_url": "https://data.ssb.no/api/pxwebapi/v2/tables/09012/data?lang=en&outputFormat=json-stat2&valueCodes[Alder]=999A&valueCodes[Laereform]=*&valueCodes[Resultat2]=*&valueCodes[ContentsCode]=*&valueCodes[Tid]=*",
+    "licence": "CC-BY-4.0",
+    "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+    "citation": "Statistics Norway (SSB), StatBank table 09012: Completed vocational examinations, by age, type of training, results and interval (year). CC BY 4.0.",
+    "source_updated": "2026-02-19T07:00:00Z",
+    "retrieved_at": "2026-10-01T09:52:32+00:00",
+    "raw_file": "data/raw/no-ssb/2026-10-01-09012.json",
+    "raw_sha256": "36054a7b38daa3fdac3110b9e97cb6340cd71c0e9afbdae822b4adfc709b01dc"
+  },
+  "series": [
+    {
+      "geo": "NO",
+      "time": "1998",
+      "value": 31025.0,
+      "dims": {
+        "training": "00",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "1999",
+      "value": 23714.0,
+      "dims": {
+        "training": "00",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2000",
+      "value": 20803.0,
+      "dims": {
+        "training": "00",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2001",
+      "value": 20018.0,
+      "dims": {
+        "training": "00",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2002",
+      "value": 19159.0,
+      "dims": {
+        "training": "00",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2003",
+      "value": 18310.0,
+      "dims": {
+        "training": "00",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2004",
+      "value": 18694.0,
+      "dims": {
+        "training": "00",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2005",
+      "value": 18566.0,
+      "dims": {
+        "training": "00",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2006",
+      "value": 19280.0,
+      "dims": {
+        "training": "00",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2007",
+      "value": 21288.0,
+      "dims": {
+        "training": "00",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2008",
+      "value": 22542.0,
+      "dims": {
+        "training": "00",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2009",
+      "value": 22849.0,
+      "dims": {
+        "training": "00",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2010",
+      "value": 22618.0,
+      "dims": {
+        "training": "00",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2011",
+      "value": 23279.0,
+      "dims": {
+        "training": "00",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2012",
+      "value": 23503.0,
+      "dims": {
+        "training": "00",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2013",
+      "value": 25065.0,
+      "dims": {
+        "training": "00",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2014",
+      "value": 25669.0,
+      "dims": {
+        "training": "00",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2015",
+      "value": 26652.0,
+      "dims": {
+        "training": "00",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2016",
+      "value": 27058.0,
+      "dims": {
+        "training": "00",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2017",
+      "value": 27928.0,
+      "dims": {
+        "training": "00",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2018",
+      "value": 29337.0,
+      "dims": {
+        "training": "00",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2019",
+      "value": 28219.0,
+      "dims": {
+        "training": "00",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2020",
+      "value": 31468.0,
+      "dims": {
+        "training": "00",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2021",
+      "value": 30327.0,
+      "dims": {
+        "training": "00",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2022",
+      "value": 32119.0,
+      "dims": {
+        "training": "00",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2023",
+      "value": 31489.0,
+      "dims": {
+        "training": "00",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2024",
+      "value": 33877.0,
+      "dims": {
+        "training": "00",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "1998",
+      "value": 13856.0,
+      "dims": {
+        "training": "01",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "1999",
+      "value": 13919.0,
+      "dims": {
+        "training": "01",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2000",
+      "value": 12732.0,
+      "dims": {
+        "training": "01",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2001",
+      "value": 12345.0,
+      "dims": {
+        "training": "01",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2002",
+      "value": 11814.0,
+      "dims": {
+        "training": "01",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2003",
+      "value": 11487.0,
+      "dims": {
+        "training": "01",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2004",
+      "value": 11945.0,
+      "dims": {
+        "training": "01",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2005",
+      "value": 12078.0,
+      "dims": {
+        "training": "01",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2006",
+      "value": 12868.0,
+      "dims": {
+        "training": "01",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2007",
+      "value": 14519.0,
+      "dims": {
+        "training": "01",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2008",
+      "value": 15377.0,
+      "dims": {
+        "training": "01",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2009",
+      "value": 15308.0,
+      "dims": {
+        "training": "01",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2010",
+      "value": 14947.0,
+      "dims": {
+        "training": "01",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2011",
+      "value": 14543.0,
+      "dims": {
+        "training": "01",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2012",
+      "value": 15367.0,
+      "dims": {
+        "training": "01",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2013",
+      "value": 15587.0,
+      "dims": {
+        "training": "01",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2014",
+      "value": 15623.0,
+      "dims": {
+        "training": "01",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2015",
+      "value": 15655.0,
+      "dims": {
+        "training": "01",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2016",
+      "value": 15839.0,
+      "dims": {
+        "training": "01",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2017",
+      "value": 16612.0,
+      "dims": {
+        "training": "01",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2018",
+      "value": 17771.0,
+      "dims": {
+        "training": "01",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2019",
+      "value": 18556.0,
+      "dims": {
+        "training": "01",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2020",
+      "value": 19377.0,
+      "dims": {
+        "training": "01",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2021",
+      "value": 18615.0,
+      "dims": {
+        "training": "01",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2022",
+      "value": 19486.0,
+      "dims": {
+        "training": "01",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2023",
+      "value": 19781.0,
+      "dims": {
+        "training": "01",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2024",
+      "value": 20834.0,
+      "dims": {
+        "training": "01",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "1998",
+      "value": 16382.0,
+      "dims": {
+        "training": "02",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "1999",
+      "value": 9148.0,
+      "dims": {
+        "training": "02",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2000",
+      "value": 7446.0,
+      "dims": {
+        "training": "02",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2001",
+      "value": 7130.0,
+      "dims": {
+        "training": "02",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2002",
+      "value": 6748.0,
+      "dims": {
+        "training": "02",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2003",
+      "value": 6207.0,
+      "dims": {
+        "training": "02",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2004",
+      "value": 5967.0,
+      "dims": {
+        "training": "02",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2005",
+      "value": 5751.0,
+      "dims": {
+        "training": "02",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2006",
+      "value": 5903.0,
+      "dims": {
+        "training": "02",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2007",
+      "value": 6300.0,
+      "dims": {
+        "training": "02",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2008",
+      "value": 6857.0,
+      "dims": {
+        "training": "02",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2009",
+      "value": 7131.0,
+      "dims": {
+        "training": "02",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2010",
+      "value": 7035.0,
+      "dims": {
+        "training": "02",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2011",
+      "value": 8052.0,
+      "dims": {
+        "training": "02",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2012",
+      "value": 7396.0,
+      "dims": {
+        "training": "02",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2013",
+      "value": 8801.0,
+      "dims": {
+        "training": "02",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2014",
+      "value": 9206.0,
+      "dims": {
+        "training": "02",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2015",
+      "value": 9908.0,
+      "dims": {
+        "training": "02",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2016",
+      "value": 10060.0,
+      "dims": {
+        "training": "02",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2017",
+      "value": 10115.0,
+      "dims": {
+        "training": "02",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2018",
+      "value": 10543.0,
+      "dims": {
+        "training": "02",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2019",
+      "value": 8611.0,
+      "dims": {
+        "training": "02",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2020",
+      "value": 10791.0,
+      "dims": {
+        "training": "02",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2021",
+      "value": 10390.0,
+      "dims": {
+        "training": "02",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2022",
+      "value": 11435.0,
+      "dims": {
+        "training": "02",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2023",
+      "value": 10581.0,
+      "dims": {
+        "training": "02",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2024",
+      "value": 11850.0,
+      "dims": {
+        "training": "02",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "1998",
+      "value": 787.0,
+      "dims": {
+        "training": "03",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "1999",
+      "value": 647.0,
+      "dims": {
+        "training": "03",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2000",
+      "value": 625.0,
+      "dims": {
+        "training": "03",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2001",
+      "value": 543.0,
+      "dims": {
+        "training": "03",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2002",
+      "value": 597.0,
+      "dims": {
+        "training": "03",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2003",
+      "value": 616.0,
+      "dims": {
+        "training": "03",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2004",
+      "value": 782.0,
+      "dims": {
+        "training": "03",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2005",
+      "value": 737.0,
+      "dims": {
+        "training": "03",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2006",
+      "value": 509.0,
+      "dims": {
+        "training": "03",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2007",
+      "value": 469.0,
+      "dims": {
+        "training": "03",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2008",
+      "value": 308.0,
+      "dims": {
+        "training": "03",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2009",
+      "value": 410.0,
+      "dims": {
+        "training": "03",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2010",
+      "value": 636.0,
+      "dims": {
+        "training": "03",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2011",
+      "value": 684.0,
+      "dims": {
+        "training": "03",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2012",
+      "value": 740.0,
+      "dims": {
+        "training": "03",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2013",
+      "value": 677.0,
+      "dims": {
+        "training": "03",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2014",
+      "value": 840.0,
+      "dims": {
+        "training": "03",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2015",
+      "value": 1089.0,
+      "dims": {
+        "training": "03",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2016",
+      "value": 1159.0,
+      "dims": {
+        "training": "03",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2017",
+      "value": 1201.0,
+      "dims": {
+        "training": "03",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2018",
+      "value": 1023.0,
+      "dims": {
+        "training": "03",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2019",
+      "value": 1052.0,
+      "dims": {
+        "training": "03",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2020",
+      "value": 1300.0,
+      "dims": {
+        "training": "03",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2021",
+      "value": 1322.0,
+      "dims": {
+        "training": "03",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2022",
+      "value": 1198.0,
+      "dims": {
+        "training": "03",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2023",
+      "value": 1127.0,
+      "dims": {
+        "training": "03",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2024",
+      "value": 1193.0,
+      "dims": {
+        "training": "03",
+        "result": "00"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "1998",
+      "value": 28978.0,
+      "dims": {
+        "training": "00",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "1999",
+      "value": 22206.0,
+      "dims": {
+        "training": "00",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2000",
+      "value": 19341.0,
+      "dims": {
+        "training": "00",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2001",
+      "value": 18584.0,
+      "dims": {
+        "training": "00",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2002",
+      "value": 17739.0,
+      "dims": {
+        "training": "00",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2003",
+      "value": 16933.0,
+      "dims": {
+        "training": "00",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2004",
+      "value": 17288.0,
+      "dims": {
+        "training": "00",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2005",
+      "value": 17321.0,
+      "dims": {
+        "training": "00",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2006",
+      "value": 18006.0,
+      "dims": {
+        "training": "00",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2007",
+      "value": 19768.0,
+      "dims": {
+        "training": "00",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2008",
+      "value": 20876.0,
+      "dims": {
+        "training": "00",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2009",
+      "value": 21060.0,
+      "dims": {
+        "training": "00",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2010",
+      "value": 20805.0,
+      "dims": {
+        "training": "00",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2011",
+      "value": 21239.0,
+      "dims": {
+        "training": "00",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2012",
+      "value": 21328.0,
+      "dims": {
+        "training": "00",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2013",
+      "value": 23367.0,
+      "dims": {
+        "training": "00",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2014",
+      "value": 23666.0,
+      "dims": {
+        "training": "00",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2015",
+      "value": 24676.0,
+      "dims": {
+        "training": "00",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2016",
+      "value": 25201.0,
+      "dims": {
+        "training": "00",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2017",
+      "value": 25991.0,
+      "dims": {
+        "training": "00",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2018",
+      "value": 27438.0,
+      "dims": {
+        "training": "00",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2019",
+      "value": 26032.0,
+      "dims": {
+        "training": "00",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2020",
+      "value": 29127.0,
+      "dims": {
+        "training": "00",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2021",
+      "value": 28403.0,
+      "dims": {
+        "training": "00",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2022",
+      "value": 30299.0,
+      "dims": {
+        "training": "00",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2023",
+      "value": 29786.0,
+      "dims": {
+        "training": "00",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2024",
+      "value": 31882.0,
+      "dims": {
+        "training": "00",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "1998",
+      "value": 12899.0,
+      "dims": {
+        "training": "01",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "1999",
+      "value": 12973.0,
+      "dims": {
+        "training": "01",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2000",
+      "value": 11770.0,
+      "dims": {
+        "training": "01",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2001",
+      "value": 11444.0,
+      "dims": {
+        "training": "01",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2002",
+      "value": 10893.0,
+      "dims": {
+        "training": "01",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2003",
+      "value": 10617.0,
+      "dims": {
+        "training": "01",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2004",
+      "value": 11085.0,
+      "dims": {
+        "training": "01",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2005",
+      "value": 11302.0,
+      "dims": {
+        "training": "01",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2006",
+      "value": 12026.0,
+      "dims": {
+        "training": "01",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2007",
+      "value": 13455.0,
+      "dims": {
+        "training": "01",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2008",
+      "value": 14165.0,
+      "dims": {
+        "training": "01",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2009",
+      "value": 14057.0,
+      "dims": {
+        "training": "01",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2010",
+      "value": 13728.0,
+      "dims": {
+        "training": "01",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2011",
+      "value": 13125.0,
+      "dims": {
+        "training": "01",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2012",
+      "value": 13844.0,
+      "dims": {
+        "training": "01",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2013",
+      "value": 14529.0,
+      "dims": {
+        "training": "01",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2014",
+      "value": 14386.0,
+      "dims": {
+        "training": "01",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2015",
+      "value": 14471.0,
+      "dims": {
+        "training": "01",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2016",
+      "value": 14698.0,
+      "dims": {
+        "training": "01",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2017",
+      "value": 15453.0,
+      "dims": {
+        "training": "01",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2018",
+      "value": 16665.0,
+      "dims": {
+        "training": "01",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2019",
+      "value": 17106.0,
+      "dims": {
+        "training": "01",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2020",
+      "value": 17919.0,
+      "dims": {
+        "training": "01",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2021",
+      "value": 17547.0,
+      "dims": {
+        "training": "01",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2022",
+      "value": 18468.0,
+      "dims": {
+        "training": "01",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2023",
+      "value": 18776.0,
+      "dims": {
+        "training": "01",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2024",
+      "value": 19799.0,
+      "dims": {
+        "training": "01",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "1998",
+      "value": 15532.0,
+      "dims": {
+        "training": "02",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "1999",
+      "value": 8746.0,
+      "dims": {
+        "training": "02",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2000",
+      "value": 7131.0,
+      "dims": {
+        "training": "02",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2001",
+      "value": 6797.0,
+      "dims": {
+        "training": "02",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2002",
+      "value": 6439.0,
+      "dims": {
+        "training": "02",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2003",
+      "value": 5843.0,
+      "dims": {
+        "training": "02",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2004",
+      "value": 5646.0,
+      "dims": {
+        "training": "02",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2005",
+      "value": 5473.0,
+      "dims": {
+        "training": "02",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2006",
+      "value": 5601.0,
+      "dims": {
+        "training": "02",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2007",
+      "value": 5941.0,
+      "dims": {
+        "training": "02",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2008",
+      "value": 6478.0,
+      "dims": {
+        "training": "02",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2009",
+      "value": 6717.0,
+      "dims": {
+        "training": "02",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2010",
+      "value": 6619.0,
+      "dims": {
+        "training": "02",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2011",
+      "value": 7595.0,
+      "dims": {
+        "training": "02",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2012",
+      "value": 6952.0,
+      "dims": {
+        "training": "02",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2013",
+      "value": 8331.0,
+      "dims": {
+        "training": "02",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2014",
+      "value": 8661.0,
+      "dims": {
+        "training": "02",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2015",
+      "value": 9327.0,
+      "dims": {
+        "training": "02",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2016",
+      "value": 9533.0,
+      "dims": {
+        "training": "02",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2017",
+      "value": 9553.0,
+      "dims": {
+        "training": "02",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2018",
+      "value": 9948.0,
+      "dims": {
+        "training": "02",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2019",
+      "value": 8083.0,
+      "dims": {
+        "training": "02",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2020",
+      "value": 10145.0,
+      "dims": {
+        "training": "02",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2021",
+      "value": 9776.0,
+      "dims": {
+        "training": "02",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2022",
+      "value": 10848.0,
+      "dims": {
+        "training": "02",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2023",
+      "value": 10022.0,
+      "dims": {
+        "training": "02",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2024",
+      "value": 11197.0,
+      "dims": {
+        "training": "02",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "1998",
+      "value": 547.0,
+      "dims": {
+        "training": "03",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "1999",
+      "value": 487.0,
+      "dims": {
+        "training": "03",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2000",
+      "value": 440.0,
+      "dims": {
+        "training": "03",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2001",
+      "value": 343.0,
+      "dims": {
+        "training": "03",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2002",
+      "value": 407.0,
+      "dims": {
+        "training": "03",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2003",
+      "value": 473.0,
+      "dims": {
+        "training": "03",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2004",
+      "value": 557.0,
+      "dims": {
+        "training": "03",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2005",
+      "value": 546.0,
+      "dims": {
+        "training": "03",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2006",
+      "value": 379.0,
+      "dims": {
+        "training": "03",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2007",
+      "value": 372.0,
+      "dims": {
+        "training": "03",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2008",
+      "value": 233.0,
+      "dims": {
+        "training": "03",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2009",
+      "value": 286.0,
+      "dims": {
+        "training": "03",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2010",
+      "value": 458.0,
+      "dims": {
+        "training": "03",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2011",
+      "value": 519.0,
+      "dims": {
+        "training": "03",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2012",
+      "value": 532.0,
+      "dims": {
+        "training": "03",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2013",
+      "value": 507.0,
+      "dims": {
+        "training": "03",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2014",
+      "value": 619.0,
+      "dims": {
+        "training": "03",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2015",
+      "value": 878.0,
+      "dims": {
+        "training": "03",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2016",
+      "value": 970.0,
+      "dims": {
+        "training": "03",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2017",
+      "value": 985.0,
+      "dims": {
+        "training": "03",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2018",
+      "value": 825.0,
+      "dims": {
+        "training": "03",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2019",
+      "value": 843.0,
+      "dims": {
+        "training": "03",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2020",
+      "value": 1063.0,
+      "dims": {
+        "training": "03",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2021",
+      "value": 1080.0,
+      "dims": {
+        "training": "03",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2022",
+      "value": 983.0,
+      "dims": {
+        "training": "03",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2023",
+      "value": 988.0,
+      "dims": {
+        "training": "03",
+        "result": "08"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2024",
+      "value": 886.0,
+      "dims": {
+        "training": "03",
+        "result": "08"
+      }
+    }
+  ],
+  "coverage": {
+    "geos": [
+      "NO"
+    ],
+    "time": [
+      "1998",
+      "2024"
+    ],
+    "observations": 216
+  }
+}

@@ -1,0 +1,453 @@
+{
+  "id": "cedefop-kivet-1026",
+  "title": "IVET learners who benefitted from a learning mobility abroad (%)",
+  "description": "Percentage rate of mobile IVET learners in a calendar year. This is the number of mobile IVET learners in a calendar year having experienced a mobility abroad of at least 10 days, expressed in relative percentage terms as a proportion of a cohort of IVET graduates in the same year. IVET at ISCED levels 3 and 4 is considered for learners and graduates (Cedefop calculations based on European Commission methodology, European Commission Erasmus+ data supplied at Cedefop's request as well as Eurostat data, UOE data collection on formal education. Data are provisional estimates and are affected by the impact of the COVID-19 pandemics. Due to the transition between the old and new programme, certain variables enabling country level data are absent, therefore country level data will not be published for the reference year 2022 and 2023).",
+  "unit": "%",
+  "topic": "Access, attractiveness and flexibility",
+  "source_label": "Cedefop Key indicators on VET, indicator 1026",
+  "comparability": "EU averages are Cedefop estimates (weighted averages of available country data) where flagged.",
+  "flags": {
+    "b": "break in time series",
+    "d": "definition differs",
+    "e": "estimated",
+    "p": "provisional",
+    "u": "low reliability",
+    "z": "not applicable",
+    "c": "confidential"
+  },
+  "kivet": {
+    "number": "1026",
+    "position": "Key Indicators on VET+\nDashboard",
+    "group": "Access, attractiveness and flexibility",
+    "type": "IVET",
+    "dashboard_group": "VET for the European Education Area",
+    "dashboard_type": "Progress"
+  },
+  "provenance": {
+    "publisher": "Cedefop",
+    "dataset_code": "KIVET 1026",
+    "source_url": "https://www.cedefop.europa.eu/en/datasets/dataset-key-indicators-vet",
+    "api_url": "https://www.cedefop.europa.eu/files/integratedmasterfileIndicators_2026_%2006%20July.xlsx",
+    "licence": "CC-BY-4.0",
+    "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+    "citation": "Cedefop (2026). Key indicators on VET [Data set]. https://doi.org/10.2906/534056862890980 Underlying source: Cedefop calculations based on European Commission methodology, European Commission Erasmus+ data supplied at Cedefop's request as well as Eurostat data , UOE data collection on formal education.",
+    "source_updated": "2026 (6 July 2026)",
+    "retrieved_at": "2026-10-01T09:25:30+00:00",
+    "raw_file": "data/raw/cedefop/2026-10-01-kivet-masterfile.xlsx",
+    "raw_sha256": "6a10e5587408f5af5638676ea15a367832302238eb12dd4b0fe9f86c1589a919"
+  },
+  "series": [
+    {
+      "geo": "AT",
+      "time": "2020",
+      "value": 1.1355
+    },
+    {
+      "geo": "AT",
+      "time": "2021",
+      "value": 2.2282
+    },
+    {
+      "geo": "BE",
+      "time": "2020",
+      "value": 1.1041
+    },
+    {
+      "geo": "BE",
+      "time": "2021",
+      "value": 0.3603
+    },
+    {
+      "geo": "BG",
+      "time": "2020",
+      "value": 1.8646,
+      "flag": "b"
+    },
+    {
+      "geo": "BG",
+      "time": "2021",
+      "value": 5.8967
+    },
+    {
+      "geo": "CY",
+      "time": "2020",
+      "value": 5.3989
+    },
+    {
+      "geo": "CY",
+      "time": "2021",
+      "value": 9.9231
+    },
+    {
+      "geo": "CZ",
+      "time": "2020",
+      "value": 1.1605
+    },
+    {
+      "geo": "CZ",
+      "time": "2021",
+      "value": 3.6011
+    },
+    {
+      "geo": "DE",
+      "time": "2020",
+      "value": 1.0294
+    },
+    {
+      "geo": "DE",
+      "time": "2021",
+      "value": 0.6572
+    },
+    {
+      "geo": "DK",
+      "time": "2020",
+      "value": 2.6104
+    },
+    {
+      "geo": "DK",
+      "time": "2021",
+      "value": 3.5573
+    },
+    {
+      "geo": "EE",
+      "time": "2020",
+      "value": 9.0136
+    },
+    {
+      "geo": "EE",
+      "time": "2021",
+      "value": 7.4004
+    },
+    {
+      "geo": "EL",
+      "time": "2020",
+      "value": 2.5618,
+      "flag": "d"
+    },
+    {
+      "geo": "EL",
+      "time": "2021",
+      "value": 1.6635
+    },
+    {
+      "geo": "ES",
+      "time": "2020",
+      "value": 0.5432
+    },
+    {
+      "geo": "ES",
+      "time": "2021",
+      "value": 1.3613
+    },
+    {
+      "geo": "EU27",
+      "time": "2018",
+      "value": 3.6
+    },
+    {
+      "geo": "EU27",
+      "time": "2019",
+      "value": 4.1
+    },
+    {
+      "geo": "EU27",
+      "time": "2020",
+      "value": 1.1965,
+      "flag": "V"
+    },
+    {
+      "geo": "EU27",
+      "time": "2021",
+      "value": 2.2,
+      "flag": "dV"
+    },
+    {
+      "geo": "EU27",
+      "time": "2022",
+      "value": 5.0,
+      "flag": "V"
+    },
+    {
+      "geo": "EU27",
+      "time": "2023",
+      "value": 5.3,
+      "flag": "p"
+    },
+    {
+      "geo": "FI",
+      "time": "2020",
+      "value": 1.163
+    },
+    {
+      "geo": "FI",
+      "time": "2021",
+      "value": 0.1278
+    },
+    {
+      "geo": "FR",
+      "time": "2020",
+      "value": 0.897
+    },
+    {
+      "geo": "FR",
+      "time": "2021",
+      "value": 0.946
+    },
+    {
+      "geo": "HR",
+      "time": "2020",
+      "value": 2.4662
+    },
+    {
+      "geo": "HR",
+      "time": "2021",
+      "value": 3.4435
+    },
+    {
+      "geo": "HU",
+      "time": "2020",
+      "value": 0.1593
+    },
+    {
+      "geo": "HU",
+      "time": "2021",
+      "value": 0.1939
+    },
+    {
+      "geo": "IE",
+      "time": "2020",
+      "value": 2.5215,
+      "flag": "d"
+    },
+    {
+      "geo": "IE",
+      "time": "2021",
+      "value": 0.1358,
+      "flag": "d"
+    },
+    {
+      "geo": "IS",
+      "time": "2020",
+      "value": 2.1295
+    },
+    {
+      "geo": "IS",
+      "time": "2021",
+      "value": 1.0267
+    },
+    {
+      "geo": "IT",
+      "time": "2020",
+      "value": 0.7234,
+      "flag": "p"
+    },
+    {
+      "geo": "IT",
+      "time": "2021",
+      "value": 3.4758
+    },
+    {
+      "geo": "LI",
+      "time": "2020",
+      "value": 10.8262
+    },
+    {
+      "geo": "LI",
+      "time": "2021",
+      "value": 3.7143
+    },
+    {
+      "geo": "LT",
+      "time": "2020",
+      "value": 7.778
+    },
+    {
+      "geo": "LT",
+      "time": "2021",
+      "value": 10.9039
+    },
+    {
+      "geo": "LU",
+      "time": "2020",
+      "value": 1.0727
+    },
+    {
+      "geo": "LU",
+      "time": "2021",
+      "value": 0.813
+    },
+    {
+      "geo": "LV",
+      "time": "2020",
+      "value": 6.7787
+    },
+    {
+      "geo": "LV",
+      "time": "2021",
+      "value": 11.1543
+    },
+    {
+      "geo": "MK",
+      "time": "2020",
+      "value": 1.3806
+    },
+    {
+      "geo": "MK",
+      "time": "2021",
+      "value": 2.3024
+    },
+    {
+      "geo": "MT",
+      "time": "2020",
+      "value": 1.6539
+    },
+    {
+      "geo": "MT",
+      "time": "2021",
+      "value": 2.6466
+    },
+    {
+      "geo": "NL",
+      "time": "2020",
+      "value": 1.5216
+    },
+    {
+      "geo": "NL",
+      "time": "2021",
+      "value": 1.107
+    },
+    {
+      "geo": "NO",
+      "time": "2020",
+      "value": 1.9649
+    },
+    {
+      "geo": "NO",
+      "time": "2021",
+      "value": 0.2431
+    },
+    {
+      "geo": "PL",
+      "time": "2020",
+      "value": 1.9834
+    },
+    {
+      "geo": "PL",
+      "time": "2021",
+      "value": 5.8424
+    },
+    {
+      "geo": "PT",
+      "time": "2020",
+      "value": 1.6344
+    },
+    {
+      "geo": "PT",
+      "time": "2021",
+      "value": 3.6235
+    },
+    {
+      "geo": "RO",
+      "time": "2020",
+      "value": 0.9824
+    },
+    {
+      "geo": "RO",
+      "time": "2021",
+      "value": 3.9537
+    },
+    {
+      "geo": "RS",
+      "time": "2020",
+      "value": 0.1838
+    },
+    {
+      "geo": "RS",
+      "time": "2021",
+      "value": 0.4444
+    },
+    {
+      "geo": "SE",
+      "time": "2020",
+      "value": 2.7673
+    },
+    {
+      "geo": "SE",
+      "time": "2021",
+      "value": 0.5473
+    },
+    {
+      "geo": "SI",
+      "time": "2020",
+      "value": 3.8445
+    },
+    {
+      "geo": "SI",
+      "time": "2021",
+      "value": 7.1817
+    },
+    {
+      "geo": "SK",
+      "time": "2020",
+      "value": 1.5862
+    },
+    {
+      "geo": "SK",
+      "time": "2021",
+      "value": 4.0723
+    },
+    {
+      "geo": "TR",
+      "time": "2020",
+      "value": 0.4769
+    },
+    {
+      "geo": "TR",
+      "time": "2021",
+      "value": 0.1629
+    }
+  ],
+  "coverage": {
+    "geos": [
+      "AT",
+      "BE",
+      "BG",
+      "CY",
+      "CZ",
+      "DE",
+      "DK",
+      "EE",
+      "EL",
+      "ES",
+      "EU27",
+      "FI",
+      "FR",
+      "HR",
+      "HU",
+      "IE",
+      "IS",
+      "IT",
+      "LI",
+      "LT",
+      "LU",
+      "LV",
+      "MK",
+      "MT",
+      "NL",
+      "NO",
+      "PL",
+      "PT",
+      "RO",
+      "RS",
+      "SE",
+      "SI",
+      "SK",
+      "TR"
+    ],
+    "time": [
+      "2018",
+      "2023"
+    ],
+    "observations": 72
+  }
+}

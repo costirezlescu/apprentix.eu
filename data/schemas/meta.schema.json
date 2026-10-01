@@ -1,0 +1,70 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://apprentix.eu/data/schemas/meta.schema.json",
+  "title": "Apprentix record dataset meta.json",
+  "description": "Describes a record dataset's fields; drives the explorer UI.",
+  "type": "object",
+  "required": ["id", "title", "recordLabel", "source", "display", "fields"],
+  "properties": {
+    "id": { "type": "string" },
+    "title": { "type": "string" },
+    "tagline": { "type": "string" },
+    "description": { "type": "string" },
+    "recordLabel": {
+      "type": "object",
+      "required": ["one", "many"],
+      "properties": { "one": { "type": "string" }, "many": { "type": "string" } }
+    },
+    "source": {
+      "type": "object",
+      "required": ["name", "url", "licence"],
+      "properties": {
+        "name": { "type": "string" },
+        "url": { "type": "string" },
+        "licence": { "type": "string" },
+        "licence_id": { "type": "string" },
+        "caveat": { "type": "string" },
+        "retrieved": { "type": "string" }
+      }
+    },
+    "display": {
+      "type": "object",
+      "required": ["title"],
+      "properties": {
+        "title": { "type": "string" },
+        "subtitle": { "type": "string" },
+        "group": { "type": "string" },
+        "badge": { "type": "string" },
+        "link": { "type": "string" },
+        "summary": { "type": "string" },
+        "facts": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "fields": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["key", "label", "type"],
+        "properties": {
+          "key": { "type": "string" },
+          "label": { "type": "string" },
+          "type": { "enum": ["category", "text", "longtext", "title", "subtitle", "link", "hidden"] },
+          "facet": { "type": "boolean" },
+          "order": { "type": "array", "items": { "type": "string" } },
+          "collapse": { "type": "integer", "minimum": 1 }
+        }
+      }
+    },
+    "sections": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["title", "fields"],
+        "properties": {
+          "title": { "type": "string" },
+          "fields": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,193 @@
+{
+  "description": "Datasets in the 'cedefop' catalogue on data.europa.eu (publisher Cedefop). An update signal: a new id, or a changed 'modified'/'issued', means Cedefop published or revised a dataset. Cedefop's own site blocks automated clients.",
+  "source": "data.europa.eu search API",
+  "api_url": "https://data.europa.eu/api/hub/search/search?filter=dataset&limit=100&facets={\"catalog\":[\"cedefop\"]}",
+  "checked_at": "2026-10-01T09:41:25+00:00",
+  "count": 14,
+  "datasets": [
+    {
+      "id": "continuing_vet_sekmokas_cedefop_2026_dataset",
+      "title": "Continuing vocational training in enterprises in EU: trends, inequalities and COVID-19 impact (2015-2020)",
+      "modified": null,
+      "issued": "2026-02-18",
+      "licence": [
+        "CC BY 4.0"
+      ],
+      "distribution_urls": [
+        "https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fwww.cedefop.europa.eu%2Ffiles%2F5616_annex_1.xlsx&wdOrigin=BROWSELINK",
+        "https://www.cedefop.europa.eu/en/publications/5616"
+      ],
+      "portal_url": "https://data.europa.eu/data/datasets/continuing_vet_sekmokas_cedefop_2026_dataset?locale=en"
+    },
+    {
+      "id": "ivet-attractiveness",
+      "title": "IVET attractiveness",
+      "modified": null,
+      "issued": "2026-06-24",
+      "licence": [
+        "CC BY 4.0"
+      ],
+      "distribution_urls": [
+        "https://www.cedefop.europa.eu/en/datasets/dataset-ivet-attractiveness"
+      ],
+      "portal_url": "https://data.europa.eu/data/datasets/ivet-attractiveness?locale=en"
+    },
+    {
+      "id": "key-indicators-on-vet",
+      "title": "Key indicators on VET",
+      "modified": null,
+      "issued": null,
+      "licence": [
+        "CC BY 4.0"
+      ],
+      "distribution_urls": [
+        "https://www.cedefop.europa.eu/en/datasets/dataset-key-indicators-vet"
+      ],
+      "portal_url": "https://data.europa.eu/data/datasets/key-indicators-on-vet?locale=en"
+    },
+    {
+      "id": "learning-outcomes-resources",
+      "title": "Learning Outcomes resources",
+      "modified": null,
+      "issued": null,
+      "licence": [
+        "CC BY 4.0"
+      ],
+      "distribution_urls": [
+        "http://data.europa.eu/euodp/en/data/storage/f/2024-07-22T083132/LO%20Dataset_07.2024.xlsx",
+        "https://data.europa.eu/api/hub/store/data/66f408a2b06dc43e4af91dd4"
+      ],
+      "portal_url": "https://data.europa.eu/data/datasets/learning-outcomes-resources?locale=en"
+    },
+    {
+      "id": "on-the-way-to-2020-data-for-vocational-education-and-training-policies",
+      "title": "On the way to 2020: data for vocational education and training policies",
+      "modified": "2025-11-25",
+      "issued": "2015-07-27T14:01:28",
+      "licence": [
+        "European Commission reuse notice"
+      ],
+      "distribution_urls": [
+        "http://www.cedefop.europa.eu/files/3066_en.pdf",
+        "http://www.cedefop.europa.eu/files/3066_en_compare_v.1.xlsx"
+      ],
+      "portal_url": "https://data.europa.eu/data/datasets/on-the-way-to-2020-data-for-vocational-education-and-training-policies?locale=en"
+    },
+    {
+      "id": "online-job-advertisements-opojaspc-imbalances-in-occupations",
+      "title": "Online Job Advertisements imbalances in occupations",
+      "modified": null,
+      "issued": "2026-05-21",
+      "licence": [
+        "CC BY 4.0"
+      ],
+      "distribution_urls": [
+        "https://www.cedefop.europa.eu/en/datasets/oja-imbalance-occupations",
+        "https://www.cedefop.europa.eu/files/cedefop-oja-imbalance-2026-05.csv"
+      ],
+      "portal_url": "https://data.europa.eu/data/datasets/online-job-advertisements-opojaspc-imbalances-in-occupations?locale=en"
+    },
+    {
+      "id": "recognition_symeonidis_villalba_cedefop_2026_dataset",
+      "title": "Comparative mapping of national recognition and validation arrangements for foreign VET qualifications and skills. Dataset",
+      "modified": null,
+      "issued": "2026-07-02T10:00:00",
+      "licence": [
+        "CC BY 4.0"
+      ],
+      "distribution_urls": [
+        "https://www.cedefop.europa.eu/en/datasets/recognition-validation-VET-arrangements",
+        "https://www.cedefop.europa.eu/en/publications/7104"
+      ],
+      "portal_url": "https://data.europa.eu/data/datasets/recognition_symeonidis_villalba_cedefop_2026_dataset?locale=en"
+    },
+    {
+      "id": "sekmokas_lipinska_cedefop_eucen_2026_dataset",
+      "title": "Setting the Scene: Financing Adult Learning in Europe",
+      "modified": null,
+      "issued": "2026-04-29",
+      "licence": [
+        "CC BY 4.0"
+      ],
+      "distribution_urls": [
+        "https://data.europa.eu/api/hub/store/data/6a02d4d6a265564272dbf041"
+      ],
+      "portal_url": "https://data.europa.eu/data/datasets/sekmokas_lipinska_cedefop_eucen_2026_dataset?locale=en"
+    },
+    {
+      "id": "short-term-anticipation-of-skills-trends-and-vet-demand",
+      "title": "Short-term anticipation of skills trends and VET demand (STAS)",
+      "modified": null,
+      "issued": "2026-08-28",
+      "licence": [
+        "CC BY 4.0"
+      ],
+      "distribution_urls": [
+        "https://www.cedefop.europa.eu/en/datasets/stas"
+      ],
+      "portal_url": "https://data.europa.eu/data/datasets/short-term-anticipation-of-skills-trends-and-vet-demand?locale=en"
+    },
+    {
+      "id": "skill-needs-forecasts-employment-trends",
+      "title": "Skill needs forecasts: employment trends",
+      "modified": "2018-12-14",
+      "issued": "2017-09-15",
+      "licence": [
+        "European Commission reuse notice"
+      ],
+      "distribution_urls": [
+        "https://www.cedefop.europa.eu/en/publications-and-resources/data-visualisations/skills-forecast?t=employment"
+      ],
+      "portal_url": "https://data.europa.eu/data/datasets/skill-needs-forecasts-employment-trends?locale=en"
+    },
+    {
+      "id": "skill-needs-forecasts-job-opportunities",
+      "title": "Skill needs forecasts: job opportunities",
+      "modified": "2019-01-10",
+      "issued": "2017-09-15",
+      "licence": [
+        "European Commission reuse notice"
+      ],
+      "distribution_urls": [
+        "http://www.cedefop.europa.eu/en/publications-and-resources/data-visualisations/job-opportunities",
+        "https://www.cedefop.europa.eu/en/publications-and-resources/data-visualisations/skills-forecast?t=job-openings"
+      ],
+      "portal_url": "https://data.europa.eu/data/datasets/skill-needs-forecasts-job-opportunities?locale=en"
+    },
+    {
+      "id": "skill-needs-forecasts-labour-market",
+      "title": "Skill needs forecasts: labour force",
+      "modified": "2017-09-19",
+      "issued": "2017-09-15",
+      "licence": [
+        "European Commission reuse notice"
+      ],
+      "distribution_urls": [
+        "https://www.cedefop.europa.eu/en/publications-and-resources/data-visualisations/skills-forecast?t=labour-force"
+      ],
+      "portal_url": "https://data.europa.eu/data/datasets/skill-needs-forecasts-labour-market?locale=en"
+    },
+    {
+      "id": "skills-forecast-2026",
+      "title": "Skills forecast (2026)",
+      "modified": null,
+      "issued": "2026-06-17",
+      "licence": [
+        "CC BY 4.0"
+      ],
+      "distribution_urls": [
+        "https://www.cedefop.europa.eu/en/datasets/dataset-skills-forecast"
+      ],
+      "portal_url": "https://data.europa.eu/data/datasets/skills-forecast-2026?locale=en"
+    },
+    {
+      "id": "timeline_vet_policies_europe_cedefop",
+      "title": "Timeline of VET policies in Europe",
+      "modified": null,
+      "issued": "2026-07-24",
+      "licence": null,
+      "distribution_urls": [],
+      "portal_url": "https://data.europa.eu/data/datasets/timeline_vet_policies_europe_cedefop?locale=en"
+    }
+  ]
+}

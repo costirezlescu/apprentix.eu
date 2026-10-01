@@ -1,0 +1,6811 @@
+{
+  "id": "fr-dares-apprentices-stock",
+  "title": "Apprentices under contract in France (end of month)",
+  "description": "Number of apprentices with a current apprenticeship contract on the last day of each month in France, by employer sector and level of the diploma prepared.",
+  "unit": "apprentices",
+  "topic": "Participation",
+  "national": true,
+  "source_label": "DARES, POEM series new_cap_tot_stk, new_cap_prive_stk, new_cap_public_stk, new_cap_second_stk, new_cap_sup_stk",
+  "comparability": "Stock: apprentices under contract on the last day of the month. DARES generally treats the last 48 months as provisional (flag 'p'). France, national source (DARES apprenticeship information system: Ari@ne and consular chambers 2013–2019, Deca from 2020, with DARES estimates for late reporting — using DSN for the most recent year). Covers ALL apprenticeship contracts, including the large and growing share preparing higher-education diplomas (Bac+2 to master/engineer, i.e. EQF 5–7), which most other countries' apprenticeship counts do not include. Geography: all French départements including the overseas DROM, excluding COM; employer establishment address. Raw data, not seasonally adjusted (strong September peak). The 'Scope' breakdown gives two alternative partitions of the total (by employer sector, and by level), so do not add sector and level values together. Do not sum with other countries.",
+  "dims": [
+    {
+      "key": "scope",
+      "label": "Scope",
+      "values": {
+        "TOTAL": "All contracts (private + public sector)",
+        "PRIVATE": "Private-sector employers",
+        "PUBLIC": "Public-sector employers",
+        "SECONDARY": "Secondary-level diplomas (CAP, Bac pro, BP…)",
+        "HIGHER": "Higher-education diplomas (BTS, licence, master, engineering…)"
+      },
+      "default": "TOTAL"
+    }
+  ],
+  "flags": {
+    "p": "provisional (DARES revises recent months)"
+  },
+  "provenance": {
+    "publisher": "DARES (Ministère du Travail), POEM",
+    "dataset_code": "new_cap_tot_stk",
+    "source_url": "https://poem.travail-emploi.gouv.fr/donnee/contrat-dapprentissage-secteurs-prive-et-public-stocks",
+    "api_url": "https://poem.travail-emploi.gouv.fr/exports/donnees/new_cap_tot_stk/new_cap_tot_stk.xlsx (and the private/public/secondary/higher series: new_cap_prive_stk, new_cap_public_stk, new_cap_second_stk, new_cap_sup_stk)",
+    "licence": "unverified — POEM legal notice (mentions légales) states the site's contents are \"des information publiques librement et gratuitement réutilisables dans les conditions fixées par la loi n°78-753 du 17 juillet 1978\", but also asks reusers to contact dares.dsypef at travail.gouv.fr; no named open licence is attached to the series",
+    "citation": "DARES, Système d'information sur l'apprentissage — POEM series new_cap_tot_stk, new_cap_prive_stk, new_cap_public_stk, new_cap_second_stk, new_cap_sup_stk.",
+    "source_updated": "2026-09-30",
+    "retrieved_at": "2026-10-01T09:52:42+00:00",
+    "raw_file": "data/raw/fr-dares/2026-10-01-new_cap_tot_stk.xlsx",
+    "raw_sha256": "87f1959ff2ac5cd25a51a683a1e7bffc37689bf42dc3e93bd1095b039ca9b125"
+  },
+  "series": [
+    {
+      "geo": "FR",
+      "time": "2013-01",
+      "value": 140654.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2013-02",
+      "value": 140361.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2013-03",
+      "value": 139909.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2013-04",
+      "value": 139570.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2013-05",
+      "value": 139039.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2013-06",
+      "value": 137985.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2013-07",
+      "value": 135096.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2013-08",
+      "value": 129833.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2013-09",
+      "value": 140617.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2013-10",
+      "value": 140714.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2013-11",
+      "value": 141182.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2013-12",
+      "value": 142058.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2014-01",
+      "value": 141757.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2014-02",
+      "value": 141437.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2014-03",
+      "value": 140904.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2014-04",
+      "value": 140404.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2014-05",
+      "value": 139820.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2014-06",
+      "value": 139017.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2014-07",
+      "value": 135575.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2014-08",
+      "value": 128604.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2014-09",
+      "value": 140339.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2014-10",
+      "value": 139876.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2014-11",
+      "value": 140287.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2014-12",
+      "value": 141296.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2015-01",
+      "value": 140969.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2015-02",
+      "value": 140610.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2015-03",
+      "value": 140181.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2015-04",
+      "value": 139612.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2015-05",
+      "value": 138984.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2015-06",
+      "value": 138232.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2015-07",
+      "value": 135006.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2015-08",
+      "value": 133309.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2015-09",
+      "value": 145703.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2015-10",
+      "value": 145117.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2015-11",
+      "value": 146401.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2015-12",
+      "value": 146932.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2016-01",
+      "value": 146758.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2016-02",
+      "value": 146419.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2016-03",
+      "value": 146018.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2016-04",
+      "value": 145364.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2016-05",
+      "value": 144850.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2016-06",
+      "value": 143997.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2016-07",
+      "value": 139695.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2016-08",
+      "value": 139383.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2016-09",
+      "value": 153177.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2016-10",
+      "value": 153339.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2016-11",
+      "value": 154834.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2016-12",
+      "value": 155283.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2017-01",
+      "value": 154968.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2017-02",
+      "value": 154543.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2017-03",
+      "value": 153985.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2017-04",
+      "value": 153180.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2017-05",
+      "value": 152594.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2017-06",
+      "value": 151532.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2017-07",
+      "value": 146513.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2017-08",
+      "value": 144881.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2017-09",
+      "value": 161366.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2017-10",
+      "value": 165901.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2017-11",
+      "value": 166747.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2017-12",
+      "value": 167048.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2018-01",
+      "value": 166506.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2018-02",
+      "value": 165879.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2018-03",
+      "value": 164987.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2018-04",
+      "value": 164236.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2018-05",
+      "value": 163555.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2018-06",
+      "value": 161622.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2018-07",
+      "value": 156693.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2018-08",
+      "value": 153729.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2018-09",
+      "value": 172045.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2018-10",
+      "value": 177842.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2018-11",
+      "value": 178621.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2018-12",
+      "value": 178860.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2019-01",
+      "value": 177923.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2019-02",
+      "value": 177226.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2019-03",
+      "value": 176116.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2019-04",
+      "value": 175228.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2019-05",
+      "value": 174319.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2019-06",
+      "value": 171796.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2019-07",
+      "value": 166238.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2019-08",
+      "value": 158521.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2019-09",
+      "value": 207964.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2019-10",
+      "value": 216203.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2019-11",
+      "value": 219282.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2019-12",
+      "value": 220531.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2020-01",
+      "value": 220624.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2020-02",
+      "value": 219937.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2020-03",
+      "value": 219409.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2020-04",
+      "value": 218838.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2020-05",
+      "value": 217911.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2020-06",
+      "value": 215405.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2020-07",
+      "value": 211652.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2020-08",
+      "value": 219417.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2020-09",
+      "value": 311342.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2020-10",
+      "value": 344302.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2020-11",
+      "value": 357057.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2020-12",
+      "value": 361957.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2021-01",
+      "value": 368074.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2021-02",
+      "value": 373859.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2021-03",
+      "value": 375440.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2021-04",
+      "value": 374589.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2021-05",
+      "value": 372497.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2021-06",
+      "value": 369190.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2021-07",
+      "value": 359928.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2021-08",
+      "value": 369270.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2021-09",
+      "value": 478810.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2021-10",
+      "value": 499214.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2021-11",
+      "value": 510049.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2021-12",
+      "value": 511215.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2022-01",
+      "value": 512085.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2022-02",
+      "value": 510598.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2022-03",
+      "value": 507694.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2022-04",
+      "value": 503170.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2022-05",
+      "value": 499145.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2022-06",
+      "value": 494255.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2022-07",
+      "value": 474447.0,
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2022-08",
+      "value": 472181.0,
+      "flag": "p",
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2022-09",
+      "value": 580481.0,
+      "flag": "p",
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2022-10",
+      "value": 592362.0,
+      "flag": "p",
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2022-11",
+      "value": 599032.0,
+      "flag": "p",
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2022-12",
+      "value": 601755.0,
+      "flag": "p",
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2023-01",
+      "value": 600711.0,
+      "flag": "p",
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2023-02",
+      "value": 598116.0,
+      "flag": "p",
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2023-03",
+      "value": 594366.0,
+      "flag": "p",
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2023-04",
+      "value": 589002.0,
+      "flag": "p",
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2023-05",
+      "value": 584355.0,
+      "flag": "p",
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2023-06",
+      "value": 576066.0,
+      "flag": "p",
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2023-07",
+      "value": 548450.0,
+      "flag": "p",
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2023-08",
+      "value": 532670.0,
+      "flag": "p",
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2023-09",
+      "value": 616630.0,
+      "flag": "p",
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2023-10",
+      "value": 637440.0,
+      "flag": "p",
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2023-11",
+      "value": 641698.0,
+      "flag": "p",
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2023-12",
+      "value": 640493.0,
+      "flag": "p",
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2024-01",
+      "value": 640716.0,
+      "flag": "p",
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2024-02",
+      "value": 638317.0,
+      "flag": "p",
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2024-03",
+      "value": 633623.0,
+      "flag": "p",
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2024-04",
+      "value": 630017.0,
+      "flag": "p",
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2024-05",
+      "value": 624449.0,
+      "flag": "p",
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2024-06",
+      "value": 610078.0,
+      "flag": "p",
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2024-07",
+      "value": 585481.0,
+      "flag": "p",
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2024-08",
+      "value": 527531.0,
+      "flag": "p",
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2024-09",
+      "value": 646167.0,
+      "flag": "p",
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2024-10",
+      "value": 654007.0,
+      "flag": "p",
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2024-11",
+      "value": 656809.0,
+      "flag": "p",
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2024-12",
+      "value": 662497.0,
+      "flag": "p",
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2025-01",
+      "value": 659178.0,
+      "flag": "p",
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2025-02",
+      "value": 656270.0,
+      "flag": "p",
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2025-03",
+      "value": 651574.0,
+      "flag": "p",
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2025-04",
+      "value": 646851.0,
+      "flag": "p",
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2025-05",
+      "value": 639884.0,
+      "flag": "p",
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2025-06",
+      "value": 629748.0,
+      "flag": "p",
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2025-07",
+      "value": 603166.0,
+      "flag": "p",
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2025-08",
+      "value": 529066.0,
+      "flag": "p",
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2025-09",
+      "value": 631659.0,
+      "flag": "p",
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2025-10",
+      "value": 631178.0,
+      "flag": "p",
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2025-11",
+      "value": 630402.0,
+      "flag": "p",
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2025-12",
+      "value": 634017.0,
+      "flag": "p",
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2026-01",
+      "value": 629094.0,
+      "flag": "p",
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2026-02",
+      "value": 624126.0,
+      "flag": "p",
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2026-03",
+      "value": 619953.0,
+      "flag": "p",
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2026-04",
+      "value": 615552.0,
+      "flag": "p",
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2026-05",
+      "value": 608736.0,
+      "flag": "p",
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2026-06",
+      "value": 599310.0,
+      "flag": "p",
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2026-07",
+      "value": 575565.0,
+      "flag": "p",
+      "dims": {
+        "scope": "HIGHER"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2013-01",
+      "value": 428227.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2013-02",
+      "value": 425628.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2013-03",
+      "value": 422416.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2013-04",
+      "value": 419887.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2013-05",
+      "value": 416953.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2013-06",
+      "value": 412225.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2013-07",
+      "value": 402061.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2013-08",
+      "value": 388559.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2013-09",
+      "value": 410843.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2013-10",
+      "value": 415207.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2013-11",
+      "value": 414889.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2013-12",
+      "value": 416301.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2014-01",
+      "value": 413408.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2014-02",
+      "value": 410731.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2014-03",
+      "value": 407628.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2014-04",
+      "value": 404663.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2014-05",
+      "value": 401369.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2014-06",
+      "value": 397788.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2014-07",
+      "value": 383751.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2014-08",
+      "value": 366908.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2014-09",
+      "value": 385923.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2014-10",
+      "value": 389340.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2014-11",
+      "value": 390504.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2014-12",
+      "value": 392718.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2015-01",
+      "value": 389895.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2015-02",
+      "value": 387504.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2015-03",
+      "value": 384739.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2015-04",
+      "value": 381932.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2015-05",
+      "value": 378837.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2015-06",
+      "value": 375700.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2015-07",
+      "value": 364787.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2015-08",
+      "value": 361163.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2015-09",
+      "value": 379605.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2015-10",
+      "value": 383946.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2015-11",
+      "value": 387653.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2015-12",
+      "value": 389763.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2016-01",
+      "value": 386770.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2016-02",
+      "value": 384169.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2016-03",
+      "value": 381421.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2016-04",
+      "value": 378380.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2016-05",
+      "value": 375492.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2016-06",
+      "value": 372220.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2016-07",
+      "value": 360143.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2016-08",
+      "value": 360555.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2016-09",
+      "value": 382807.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2016-10",
+      "value": 388408.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2016-11",
+      "value": 392269.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2016-12",
+      "value": 394111.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2017-01",
+      "value": 391434.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2017-02",
+      "value": 388587.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2017-03",
+      "value": 385530.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2017-04",
+      "value": 382143.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2017-05",
+      "value": 379174.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2017-06",
+      "value": 375063.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2017-07",
+      "value": 363307.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2017-08",
+      "value": 360237.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2017-09",
+      "value": 387967.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2017-10",
+      "value": 398619.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2017-11",
+      "value": 401393.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2017-12",
+      "value": 402633.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2018-01",
+      "value": 399112.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2018-02",
+      "value": 395689.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2018-03",
+      "value": 391317.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2018-04",
+      "value": 387713.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2018-05",
+      "value": 384296.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2018-06",
+      "value": 378550.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2018-07",
+      "value": 366698.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2018-08",
+      "value": 361477.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2018-09",
+      "value": 396414.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2018-10",
+      "value": 409891.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2018-11",
+      "value": 412205.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2018-12",
+      "value": 413526.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2019-01",
+      "value": 409417.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2019-02",
+      "value": 405901.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2019-03",
+      "value": 401309.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2019-04",
+      "value": 397878.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2019-05",
+      "value": 393968.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2019-06",
+      "value": 387305.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2019-07",
+      "value": 375007.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2019-08",
+      "value": 364190.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2019-09",
+      "value": 442213.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2019-10",
+      "value": 457814.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2019-11",
+      "value": 462763.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2019-12",
+      "value": 464620.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2020-01",
+      "value": 462900.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2020-02",
+      "value": 459797.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2020-03",
+      "value": 457702.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2020-04",
+      "value": 455936.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2020-05",
+      "value": 452685.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2020-06",
+      "value": 445719.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2020-07",
+      "value": 433015.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2020-08",
+      "value": 441994.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2020-09",
+      "value": 566232.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2020-10",
+      "value": 613224.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2020-11",
+      "value": 631666.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2020-12",
+      "value": 638721.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2021-01",
+      "value": 646921.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2021-02",
+      "value": 658117.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2021-03",
+      "value": 659238.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2021-04",
+      "value": 656510.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2021-05",
+      "value": 651822.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2021-06",
+      "value": 644602.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2021-07",
+      "value": 625864.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2021-08",
+      "value": 639850.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2021-09",
+      "value": 782416.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2021-10",
+      "value": 811686.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2021-11",
+      "value": 826727.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2021-12",
+      "value": 827756.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2022-01",
+      "value": 826632.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2022-02",
+      "value": 821658.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2022-03",
+      "value": 815213.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2022-04",
+      "value": 806684.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2022-05",
+      "value": 798811.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2022-06",
+      "value": 790796.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2022-07",
+      "value": 757606.0,
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2022-08",
+      "value": 757047.0,
+      "flag": "p",
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2022-09",
+      "value": 902590.0,
+      "flag": "p",
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2022-10",
+      "value": 923719.0,
+      "flag": "p",
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2022-11",
+      "value": 933989.0,
+      "flag": "p",
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2022-12",
+      "value": 938655.0,
+      "flag": "p",
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2023-01",
+      "value": 934991.0,
+      "flag": "p",
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2023-02",
+      "value": 929842.0,
+      "flag": "p",
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2023-03",
+      "value": 922150.0,
+      "flag": "p",
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2023-04",
+      "value": 911749.0,
+      "flag": "p",
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2023-05",
+      "value": 902561.0,
+      "flag": "p",
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2023-06",
+      "value": 888533.0,
+      "flag": "p",
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2023-07",
+      "value": 843853.0,
+      "flag": "p",
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2023-08",
+      "value": 822499.0,
+      "flag": "p",
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2023-09",
+      "value": 944863.0,
+      "flag": "p",
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2023-10",
+      "value": 976087.0,
+      "flag": "p",
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2023-11",
+      "value": 983911.0,
+      "flag": "p",
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2023-12",
+      "value": 981496.0,
+      "flag": "p",
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2024-01",
+      "value": 980369.0,
+      "flag": "p",
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2024-02",
+      "value": 975108.0,
+      "flag": "p",
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2024-03",
+      "value": 966209.0,
+      "flag": "p",
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2024-04",
+      "value": 959689.0,
+      "flag": "p",
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2024-05",
+      "value": 949004.0,
+      "flag": "p",
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2024-06",
+      "value": 926765.0,
+      "flag": "p",
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2024-07",
+      "value": 887022.0,
+      "flag": "p",
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2024-08",
+      "value": 813264.0,
+      "flag": "p",
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2024-09",
+      "value": 981687.0,
+      "flag": "p",
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2024-10",
+      "value": 1000014.0,
+      "flag": "p",
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2024-11",
+      "value": 1005423.0,
+      "flag": "p",
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2024-12",
+      "value": 1014447.0,
+      "flag": "p",
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2025-01",
+      "value": 1008007.0,
+      "flag": "p",
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2025-02",
+      "value": 1003037.0,
+      "flag": "p",
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2025-03",
+      "value": 995231.0,
+      "flag": "p",
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2025-04",
+      "value": 986930.0,
+      "flag": "p",
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2025-05",
+      "value": 974724.0,
+      "flag": "p",
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2025-06",
+      "value": 958048.0,
+      "flag": "p",
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2025-07",
+      "value": 914450.0,
+      "flag": "p",
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2025-08",
+      "value": 817467.0,
+      "flag": "p",
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2025-09",
+      "value": 970636.0,
+      "flag": "p",
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2025-10",
+      "value": 978342.0,
+      "flag": "p",
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2025-11",
+      "value": 978360.0,
+      "flag": "p",
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2025-12",
+      "value": 982948.0,
+      "flag": "p",
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2026-01",
+      "value": 974878.0,
+      "flag": "p",
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2026-02",
+      "value": 967384.0,
+      "flag": "p",
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2026-03",
+      "value": 960096.0,
+      "flag": "p",
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2026-04",
+      "value": 951996.0,
+      "flag": "p",
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2026-05",
+      "value": 939126.0,
+      "flag": "p",
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2026-06",
+      "value": 924126.0,
+      "flag": "p",
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2026-07",
+      "value": 884056.0,
+      "flag": "p",
+      "dims": {
+        "scope": "PRIVATE"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2013-01",
+      "value": 16737.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2013-02",
+      "value": 16741.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2013-03",
+      "value": 16673.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2013-04",
+      "value": 16634.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2013-05",
+      "value": 16581.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2013-06",
+      "value": 16478.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2013-07",
+      "value": 15727.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2013-08",
+      "value": 15092.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2013-09",
+      "value": 15612.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2013-10",
+      "value": 15954.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2013-11",
+      "value": 16359.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2013-12",
+      "value": 16694.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2014-01",
+      "value": 16677.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2014-02",
+      "value": 16780.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2014-03",
+      "value": 16748.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2014-04",
+      "value": 16696.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2014-05",
+      "value": 16624.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2014-06",
+      "value": 16541.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2014-07",
+      "value": 15702.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2014-08",
+      "value": 14437.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2014-09",
+      "value": 14636.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2014-10",
+      "value": 15264.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2014-11",
+      "value": 15637.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2014-12",
+      "value": 16085.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2015-01",
+      "value": 16067.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2015-02",
+      "value": 16105.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2015-03",
+      "value": 16066.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2015-04",
+      "value": 15996.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2015-05",
+      "value": 15952.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2015-06",
+      "value": 15845.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2015-07",
+      "value": 15127.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2015-08",
+      "value": 14172.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2015-09",
+      "value": 16131.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2015-10",
+      "value": 17344.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2015-11",
+      "value": 18251.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2015-12",
+      "value": 18648.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2016-01",
+      "value": 18869.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2016-02",
+      "value": 18903.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2016-03",
+      "value": 18881.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2016-04",
+      "value": 18841.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2016-05",
+      "value": 18772.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2016-06",
+      "value": 18677.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2016-07",
+      "value": 17924.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2016-08",
+      "value": 17034.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2016-09",
+      "value": 19428.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2016-10",
+      "value": 20773.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2016-11",
+      "value": 21503.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2016-12",
+      "value": 21841.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2017-01",
+      "value": 21865.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2017-02",
+      "value": 21822.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2017-03",
+      "value": 21764.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2017-04",
+      "value": 21693.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2017-05",
+      "value": 21656.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2017-06",
+      "value": 21524.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2017-07",
+      "value": 20113.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2017-08",
+      "value": 18977.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2017-09",
+      "value": 20381.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2017-10",
+      "value": 21948.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2017-11",
+      "value": 22796.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2017-12",
+      "value": 23243.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2018-01",
+      "value": 23369.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2018-02",
+      "value": 23329.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2018-03",
+      "value": 23247.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2018-04",
+      "value": 23155.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2018-05",
+      "value": 23053.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2018-06",
+      "value": 22846.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2018-07",
+      "value": 21337.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2018-08",
+      "value": 20342.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2018-09",
+      "value": 20785.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2018-10",
+      "value": 22410.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2018-11",
+      "value": 23112.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2018-12",
+      "value": 23372.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2019-01",
+      "value": 23322.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2019-02",
+      "value": 23269.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2019-03",
+      "value": 23167.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2019-04",
+      "value": 23082.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2019-05",
+      "value": 22984.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2019-06",
+      "value": 22724.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2019-07",
+      "value": 21137.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2019-08",
+      "value": 19889.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2019-09",
+      "value": 20293.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2019-10",
+      "value": 21308.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2019-11",
+      "value": 21894.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2019-12",
+      "value": 22169.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2020-01",
+      "value": 22268.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2020-02",
+      "value": 22244.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2020-03",
+      "value": 22208.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2020-04",
+      "value": 22175.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2020-05",
+      "value": 22118.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2020-06",
+      "value": 21930.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2020-07",
+      "value": 20396.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2020-08",
+      "value": 19524.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2020-09",
+      "value": 19408.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2020-10",
+      "value": 21058.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2020-11",
+      "value": 22092.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2020-12",
+      "value": 22688.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2021-01",
+      "value": 22991.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2021-02",
+      "value": 23167.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2021-03",
+      "value": 23184.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2021-04",
+      "value": 23164.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2021-05",
+      "value": 23092.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2021-06",
+      "value": 22852.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2021-07",
+      "value": 21377.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2021-08",
+      "value": 20757.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2021-09",
+      "value": 24050.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2021-10",
+      "value": 26835.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2021-11",
+      "value": 27964.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2021-12",
+      "value": 28406.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2022-01",
+      "value": 28529.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2022-02",
+      "value": 28451.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2022-03",
+      "value": 28298.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2022-04",
+      "value": 28119.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2022-05",
+      "value": 27951.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2022-06",
+      "value": 27603.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2022-07",
+      "value": 25652.0,
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2022-08",
+      "value": 25186.0,
+      "flag": "p",
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2022-09",
+      "value": 29221.0,
+      "flag": "p",
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2022-10",
+      "value": 30868.0,
+      "flag": "p",
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2022-11",
+      "value": 31795.0,
+      "flag": "p",
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2022-12",
+      "value": 32148.0,
+      "flag": "p",
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2023-01",
+      "value": 32293.0,
+      "flag": "p",
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2023-02",
+      "value": 32230.0,
+      "flag": "p",
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2023-03",
+      "value": 32110.0,
+      "flag": "p",
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2023-04",
+      "value": 31832.0,
+      "flag": "p",
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2023-05",
+      "value": 31628.0,
+      "flag": "p",
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2023-06",
+      "value": 31232.0,
+      "flag": "p",
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2023-07",
+      "value": 28742.0,
+      "flag": "p",
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2023-08",
+      "value": 27709.0,
+      "flag": "p",
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2023-09",
+      "value": 31719.0,
+      "flag": "p",
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2023-10",
+      "value": 33834.0,
+      "flag": "p",
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2023-11",
+      "value": 33510.0,
+      "flag": "p",
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2023-12",
+      "value": 33899.0,
+      "flag": "p",
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2024-01",
+      "value": 34117.0,
+      "flag": "p",
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2024-02",
+      "value": 33921.0,
+      "flag": "p",
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2024-03",
+      "value": 33728.0,
+      "flag": "p",
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2024-04",
+      "value": 33498.0,
+      "flag": "p",
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2024-05",
+      "value": 33269.0,
+      "flag": "p",
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2024-06",
+      "value": 32624.0,
+      "flag": "p",
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2024-07",
+      "value": 30119.0,
+      "flag": "p",
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2024-08",
+      "value": 27917.0,
+      "flag": "p",
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2024-09",
+      "value": 32419.0,
+      "flag": "p",
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2024-10",
+      "value": 33401.0,
+      "flag": "p",
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2024-11",
+      "value": 34165.0,
+      "flag": "p",
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2024-12",
+      "value": 34393.0,
+      "flag": "p",
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2025-01",
+      "value": 34313.0,
+      "flag": "p",
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2025-02",
+      "value": 34132.0,
+      "flag": "p",
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2025-03",
+      "value": 33745.0,
+      "flag": "p",
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2025-04",
+      "value": 33518.0,
+      "flag": "p",
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2025-05",
+      "value": 33249.0,
+      "flag": "p",
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2025-06",
+      "value": 32674.0,
+      "flag": "p",
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2025-07",
+      "value": 29810.0,
+      "flag": "p",
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2025-08",
+      "value": 26847.0,
+      "flag": "p",
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2025-09",
+      "value": 30419.0,
+      "flag": "p",
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2025-10",
+      "value": 30881.0,
+      "flag": "p",
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2025-11",
+      "value": 31354.0,
+      "flag": "p",
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2025-12",
+      "value": 31537.0,
+      "flag": "p",
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2026-01",
+      "value": 31485.0,
+      "flag": "p",
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2026-02",
+      "value": 31192.0,
+      "flag": "p",
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2026-03",
+      "value": 30974.0,
+      "flag": "p",
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2026-04",
+      "value": 30699.0,
+      "flag": "p",
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2026-05",
+      "value": 30474.0,
+      "flag": "p",
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2026-06",
+      "value": 29923.0,
+      "flag": "p",
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2026-07",
+      "value": 27369.0,
+      "flag": "p",
+      "dims": {
+        "scope": "PUBLIC"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2013-01",
+      "value": 304310.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2013-02",
+      "value": 302008.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2013-03",
+      "value": 299180.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2013-04",
+      "value": 296951.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2013-05",
+      "value": 294495.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2013-06",
+      "value": 290718.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2013-07",
+      "value": 282692.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2013-08",
+      "value": 273818.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2013-09",
+      "value": 285838.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2013-10",
+      "value": 290447.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2013-11",
+      "value": 290066.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2013-12",
+      "value": 290937.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2014-01",
+      "value": 288328.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2014-02",
+      "value": 286074.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2014-03",
+      "value": 283472.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2014-04",
+      "value": 280955.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2014-05",
+      "value": 278173.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2014-06",
+      "value": 275312.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2014-07",
+      "value": 263878.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2014-08",
+      "value": 252741.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2014-09",
+      "value": 260220.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2014-10",
+      "value": 264728.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2014-11",
+      "value": 265854.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2014-12",
+      "value": 267507.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2015-01",
+      "value": 264993.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2015-02",
+      "value": 262999.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2015-03",
+      "value": 260624.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2015-04",
+      "value": 258316.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2015-05",
+      "value": 255805.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2015-06",
+      "value": 253313.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2015-07",
+      "value": 244908.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2015-08",
+      "value": 242026.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2015-09",
+      "value": 250033.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2015-10",
+      "value": 256173.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2015-11",
+      "value": 259503.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2015-12",
+      "value": 261479.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2016-01",
+      "value": 258881.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2016-02",
+      "value": 256653.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2016-03",
+      "value": 254284.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2016-04",
+      "value": 251857.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2016-05",
+      "value": 249414.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2016-06",
+      "value": 246900.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2016-07",
+      "value": 238372.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2016-08",
+      "value": 238206.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2016-09",
+      "value": 249058.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2016-10",
+      "value": 255842.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2016-11",
+      "value": 258938.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2016-12",
+      "value": 260669.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2017-01",
+      "value": 258331.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2017-02",
+      "value": 255866.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2017-03",
+      "value": 253309.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2017-04",
+      "value": 250656.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2017-05",
+      "value": 248236.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2017-06",
+      "value": 245055.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2017-07",
+      "value": 236907.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2017-08",
+      "value": 234333.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2017-09",
+      "value": 246982.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2017-10",
+      "value": 254666.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2017-11",
+      "value": 257442.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2017-12",
+      "value": 258828.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2018-01",
+      "value": 255975.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2018-02",
+      "value": 253139.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2018-03",
+      "value": 249577.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2018-04",
+      "value": 246632.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2018-05",
+      "value": 243794.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2018-06",
+      "value": 239774.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2018-07",
+      "value": 231342.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2018-08",
+      "value": 228090.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2018-09",
+      "value": 245154.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2018-10",
+      "value": 254459.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2018-11",
+      "value": 256696.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2018-12",
+      "value": 258038.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2019-01",
+      "value": 254816.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2019-02",
+      "value": 251944.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2019-03",
+      "value": 248360.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2019-04",
+      "value": 245732.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2019-05",
+      "value": 242633.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2019-06",
+      "value": 238233.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2019-07",
+      "value": 229906.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2019-08",
+      "value": 225558.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2019-09",
+      "value": 254542.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2019-10",
+      "value": 262919.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2019-11",
+      "value": 265375.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2019-12",
+      "value": 266258.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2020-01",
+      "value": 264544.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2020-02",
+      "value": 262104.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2020-03",
+      "value": 260501.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2020-04",
+      "value": 259273.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2020-05",
+      "value": 256892.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2020-06",
+      "value": 252244.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2020-07",
+      "value": 241759.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2020-08",
+      "value": 242101.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2020-09",
+      "value": 274298.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2020-10",
+      "value": 289980.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2020-11",
+      "value": 296701.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2020-12",
+      "value": 299452.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2021-01",
+      "value": 301838.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2021-02",
+      "value": 307425.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2021-03",
+      "value": 306982.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2021-04",
+      "value": 305085.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2021-05",
+      "value": 302417.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2021-06",
+      "value": 298264.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2021-07",
+      "value": 287313.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2021-08",
+      "value": 291337.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2021-09",
+      "value": 327656.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2021-10",
+      "value": 339307.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2021-11",
+      "value": 344642.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2021-12",
+      "value": 344947.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2022-01",
+      "value": 343076.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2022-02",
+      "value": 339511.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2022-03",
+      "value": 335817.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2022-04",
+      "value": 331633.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2022-05",
+      "value": 327617.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2022-06",
+      "value": 324144.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2022-07",
+      "value": 308811.0,
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2022-08",
+      "value": 310052.0,
+      "flag": "p",
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2022-09",
+      "value": 351330.0,
+      "flag": "p",
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2022-10",
+      "value": 362225.0,
+      "flag": "p",
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2022-11",
+      "value": 366752.0,
+      "flag": "p",
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2022-12",
+      "value": 369048.0,
+      "flag": "p",
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2023-01",
+      "value": 366573.0,
+      "flag": "p",
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2023-02",
+      "value": 363956.0,
+      "flag": "p",
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2023-03",
+      "value": 359894.0,
+      "flag": "p",
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2023-04",
+      "value": 354579.0,
+      "flag": "p",
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2023-05",
+      "value": 349834.0,
+      "flag": "p",
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2023-06",
+      "value": 343699.0,
+      "flag": "p",
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2023-07",
+      "value": 324145.0,
+      "flag": "p",
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2023-08",
+      "value": 317538.0,
+      "flag": "p",
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2023-09",
+      "value": 359952.0,
+      "flag": "p",
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2023-10",
+      "value": 372481.0,
+      "flag": "p",
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2023-11",
+      "value": 375723.0,
+      "flag": "p",
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2023-12",
+      "value": 374902.0,
+      "flag": "p",
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2024-01",
+      "value": 373770.0,
+      "flag": "p",
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2024-02",
+      "value": 370712.0,
+      "flag": "p",
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2024-03",
+      "value": 366314.0,
+      "flag": "p",
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2024-04",
+      "value": 363170.0,
+      "flag": "p",
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2024-05",
+      "value": 357824.0,
+      "flag": "p",
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2024-06",
+      "value": 349311.0,
+      "flag": "p",
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2024-07",
+      "value": 331660.0,
+      "flag": "p",
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2024-08",
+      "value": 313650.0,
+      "flag": "p",
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2024-09",
+      "value": 367939.0,
+      "flag": "p",
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2024-10",
+      "value": 379408.0,
+      "flag": "p",
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2024-11",
+      "value": 382779.0,
+      "flag": "p",
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2024-12",
+      "value": 386343.0,
+      "flag": "p",
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2025-01",
+      "value": 383142.0,
+      "flag": "p",
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2025-02",
+      "value": 380899.0,
+      "flag": "p",
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2025-03",
+      "value": 377402.0,
+      "flag": "p",
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2025-04",
+      "value": 373597.0,
+      "flag": "p",
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2025-05",
+      "value": 368089.0,
+      "flag": "p",
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2025-06",
+      "value": 360974.0,
+      "flag": "p",
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2025-07",
+      "value": 341094.0,
+      "flag": "p",
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2025-08",
+      "value": 315248.0,
+      "flag": "p",
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2025-09",
+      "value": 369396.0,
+      "flag": "p",
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2025-10",
+      "value": 378045.0,
+      "flag": "p",
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2025-11",
+      "value": 379312.0,
+      "flag": "p",
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2025-12",
+      "value": 380468.0,
+      "flag": "p",
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2026-01",
+      "value": 377269.0,
+      "flag": "p",
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2026-02",
+      "value": 374450.0,
+      "flag": "p",
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2026-03",
+      "value": 371117.0,
+      "flag": "p",
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2026-04",
+      "value": 367143.0,
+      "flag": "p",
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2026-05",
+      "value": 360864.0,
+      "flag": "p",
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2026-06",
+      "value": 354739.0,
+      "flag": "p",
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2026-07",
+      "value": 335860.0,
+      "flag": "p",
+      "dims": {
+        "scope": "SECONDARY"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2013-01",
+      "value": 444964.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2013-02",
+      "value": 442369.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2013-03",
+      "value": 439089.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2013-04",
+      "value": 436521.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2013-05",
+      "value": 433534.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2013-06",
+      "value": 428703.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2013-07",
+      "value": 417788.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2013-08",
+      "value": 403651.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2013-09",
+      "value": 426455.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2013-10",
+      "value": 431161.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2013-11",
+      "value": 431248.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2013-12",
+      "value": 432995.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2014-01",
+      "value": 430085.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2014-02",
+      "value": 427511.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2014-03",
+      "value": 424376.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2014-04",
+      "value": 421359.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2014-05",
+      "value": 417993.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2014-06",
+      "value": 414329.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2014-07",
+      "value": 399453.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2014-08",
+      "value": 381345.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2014-09",
+      "value": 400559.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2014-10",
+      "value": 404604.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2014-11",
+      "value": 406141.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2014-12",
+      "value": 408803.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2015-01",
+      "value": 405962.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2015-02",
+      "value": 403609.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2015-03",
+      "value": 400805.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2015-04",
+      "value": 397928.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2015-05",
+      "value": 394789.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2015-06",
+      "value": 391545.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2015-07",
+      "value": 379914.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2015-08",
+      "value": 375335.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2015-09",
+      "value": 395736.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2015-10",
+      "value": 401290.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2015-11",
+      "value": 405904.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2015-12",
+      "value": 408411.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2016-01",
+      "value": 405639.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2016-02",
+      "value": 403072.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2016-03",
+      "value": 400302.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2016-04",
+      "value": 397221.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2016-05",
+      "value": 394264.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2016-06",
+      "value": 390897.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2016-07",
+      "value": 378067.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2016-08",
+      "value": 377589.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2016-09",
+      "value": 402235.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2016-10",
+      "value": 409181.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2016-11",
+      "value": 413772.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2016-12",
+      "value": 415952.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2017-01",
+      "value": 413299.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2017-02",
+      "value": 410409.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2017-03",
+      "value": 407294.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2017-04",
+      "value": 403836.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2017-05",
+      "value": 400830.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2017-06",
+      "value": 396587.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2017-07",
+      "value": 383420.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2017-08",
+      "value": 379214.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2017-09",
+      "value": 408348.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2017-10",
+      "value": 420567.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2017-11",
+      "value": 424189.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2017-12",
+      "value": 425876.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2018-01",
+      "value": 422481.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2018-02",
+      "value": 419018.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2018-03",
+      "value": 414564.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2018-04",
+      "value": 410868.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2018-05",
+      "value": 407349.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2018-06",
+      "value": 401396.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2018-07",
+      "value": 388035.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2018-08",
+      "value": 381819.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2018-09",
+      "value": 417199.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2018-10",
+      "value": 432301.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2018-11",
+      "value": 435317.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2018-12",
+      "value": 436898.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2019-01",
+      "value": 432739.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2019-02",
+      "value": 429170.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2019-03",
+      "value": 424476.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2019-04",
+      "value": 420960.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2019-05",
+      "value": 416952.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2019-06",
+      "value": 410029.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2019-07",
+      "value": 396144.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2019-08",
+      "value": 384079.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2019-09",
+      "value": 462506.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2019-10",
+      "value": 479122.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2019-11",
+      "value": 484657.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2019-12",
+      "value": 486789.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2020-01",
+      "value": 485168.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2020-02",
+      "value": 482041.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2020-03",
+      "value": 479910.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2020-04",
+      "value": 478111.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2020-05",
+      "value": 474803.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2020-06",
+      "value": 467649.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2020-07",
+      "value": 453411.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2020-08",
+      "value": 461518.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2020-09",
+      "value": 585640.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2020-10",
+      "value": 634282.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2020-11",
+      "value": 653758.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2020-12",
+      "value": 661409.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2021-01",
+      "value": 669912.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2021-02",
+      "value": 681284.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2021-03",
+      "value": 682422.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2021-04",
+      "value": 679674.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2021-05",
+      "value": 674914.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2021-06",
+      "value": 667454.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2021-07",
+      "value": 647241.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2021-08",
+      "value": 660607.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2021-09",
+      "value": 806466.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2021-10",
+      "value": 838521.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2021-11",
+      "value": 854691.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2021-12",
+      "value": 856162.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2022-01",
+      "value": 855161.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2022-02",
+      "value": 850109.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2022-03",
+      "value": 843511.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2022-04",
+      "value": 834803.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2022-05",
+      "value": 826762.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2022-06",
+      "value": 818399.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2022-07",
+      "value": 783258.0,
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2022-08",
+      "value": 782233.0,
+      "flag": "p",
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2022-09",
+      "value": 931811.0,
+      "flag": "p",
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2022-10",
+      "value": 954587.0,
+      "flag": "p",
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2022-11",
+      "value": 965784.0,
+      "flag": "p",
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2022-12",
+      "value": 970803.0,
+      "flag": "p",
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2023-01",
+      "value": 967284.0,
+      "flag": "p",
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2023-02",
+      "value": 962072.0,
+      "flag": "p",
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2023-03",
+      "value": 954260.0,
+      "flag": "p",
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2023-04",
+      "value": 943581.0,
+      "flag": "p",
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2023-05",
+      "value": 934189.0,
+      "flag": "p",
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2023-06",
+      "value": 919765.0,
+      "flag": "p",
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2023-07",
+      "value": 872595.0,
+      "flag": "p",
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2023-08",
+      "value": 850208.0,
+      "flag": "p",
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2023-09",
+      "value": 976582.0,
+      "flag": "p",
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2023-10",
+      "value": 1009921.0,
+      "flag": "p",
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2023-11",
+      "value": 1017421.0,
+      "flag": "p",
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2023-12",
+      "value": 1015395.0,
+      "flag": "p",
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2024-01",
+      "value": 1014486.0,
+      "flag": "p",
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2024-02",
+      "value": 1009029.0,
+      "flag": "p",
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2024-03",
+      "value": 999937.0,
+      "flag": "p",
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2024-04",
+      "value": 993187.0,
+      "flag": "p",
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2024-05",
+      "value": 982273.0,
+      "flag": "p",
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2024-06",
+      "value": 959389.0,
+      "flag": "p",
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2024-07",
+      "value": 917141.0,
+      "flag": "p",
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2024-08",
+      "value": 841181.0,
+      "flag": "p",
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2024-09",
+      "value": 1014106.0,
+      "flag": "p",
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2024-10",
+      "value": 1033415.0,
+      "flag": "p",
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2024-11",
+      "value": 1039588.0,
+      "flag": "p",
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2024-12",
+      "value": 1048840.0,
+      "flag": "p",
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2025-01",
+      "value": 1042320.0,
+      "flag": "p",
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2025-02",
+      "value": 1037169.0,
+      "flag": "p",
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2025-03",
+      "value": 1028976.0,
+      "flag": "p",
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2025-04",
+      "value": 1020448.0,
+      "flag": "p",
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2025-05",
+      "value": 1007973.0,
+      "flag": "p",
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2025-06",
+      "value": 990722.0,
+      "flag": "p",
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2025-07",
+      "value": 944260.0,
+      "flag": "p",
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2025-08",
+      "value": 844314.0,
+      "flag": "p",
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2025-09",
+      "value": 1001055.0,
+      "flag": "p",
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2025-10",
+      "value": 1009223.0,
+      "flag": "p",
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2025-11",
+      "value": 1009714.0,
+      "flag": "p",
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2025-12",
+      "value": 1014485.0,
+      "flag": "p",
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2026-01",
+      "value": 1006363.0,
+      "flag": "p",
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2026-02",
+      "value": 998576.0,
+      "flag": "p",
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2026-03",
+      "value": 991070.0,
+      "flag": "p",
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2026-04",
+      "value": 982695.0,
+      "flag": "p",
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2026-05",
+      "value": 969600.0,
+      "flag": "p",
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2026-06",
+      "value": 954049.0,
+      "flag": "p",
+      "dims": {
+        "scope": "TOTAL"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2026-07",
+      "value": 911425.0,
+      "flag": "p",
+      "dims": {
+        "scope": "TOTAL"
+      }
+    }
+  ],
+  "coverage": {
+    "geos": [
+      "FR"
+    ],
+    "time": [
+      "2013-01",
+      "2026-07"
+    ],
+    "observations": 815
+  }
+}

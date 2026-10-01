@@ -1,0 +1,1704 @@
+{
+  "id": "uk-dfe-apprenticeship-achievements",
+  "title": "Apprenticeship achievements in England",
+  "description": "Number of apprenticeship programmes successfully completed (achieved) in England in each academic year, by apprenticeship level and age group.",
+  "unit": "achievements",
+  "topic": "Outcomes",
+  "national": true,
+  "source_label": "DfE Apprenticeships — Headline Full year - Starts, Achievements, Participation by Level, Levy, Age, Region, Provider type (v2.0.2)",
+  "comparability": "Completions: programmes achieved in the academic year. England only (DfE Individualised Learner Record), not the whole United Kingdom: Scotland, Wales and Northern Ireland run separate apprenticeship systems and statistics. Time is the start year of the academic year (August–July), e.g. 2024 = 2024/25. All ages 16+. Levels: Intermediate = level 2 (EQF 3), Advanced = level 3 (EQF 4), Higher = levels 4–7 (EQF 5–7, including degree apprenticeships, i.e. higher-education apprenticeships). Figures rounded to the nearest 10 by DfE. The most recent academic year is provisional and covers only the part of the year reported to date (e.g. August–April) until the November release; it is flagged 'p' and must not be compared with full years. Do not sum with other countries.",
+  "dims": [
+    {
+      "key": "level",
+      "label": "Apprenticeship level",
+      "values": {
+        "TOTAL": "Total",
+        "ADVANCED": "Advanced (level 3)",
+        "HIGHER": "Higher (levels 4–7, incl. degree apprenticeships)",
+        "INTERMEDIATE": "Intermediate (level 2)",
+        "UNKNOWN": "Unknown"
+      },
+      "default": "TOTAL"
+    },
+    {
+      "key": "age",
+      "label": "Age",
+      "values": {
+        "TOTAL": "All ages (16+)",
+        "U19": "Under 19",
+        "19+": "19 and over",
+        "19-24": "19 to 24",
+        "25+": "25 and over"
+      },
+      "default": "TOTAL"
+    }
+  ],
+  "flags": {
+    "p": "provisional, partial academic year (quarters reported to date)"
+  },
+  "provenance": {
+    "publisher": "Department for Education (England), Explore Education Statistics",
+    "dataset_code": "1d419801-a90e-f970-9335-a13623faccbe",
+    "source_url": "https://explore-education-statistics.service.gov.uk/find-statistics/apprenticeships",
+    "api_url": "https://api.education.gov.uk/statistics/v1/data-sets/1d419801-a90e-f970-9335-a13623faccbe/query",
+    "licence": "OGL-UK-3.0",
+    "licence_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "citation": "Department for Education (2026), Apprenticeships: Headline Full year - Starts, Achievements, Participation by Level, Levy, Age, Region, Provider type. Open Government Licence v3.0.",
+    "source_updated": "2026-07-16",
+    "retrieved_at": "2026-10-01T09:52:52+00:00",
+    "raw_file": "data/raw/uk-dfe/2026-10-01-apprenticeships-headline-full-year-nat.json",
+    "raw_sha256": "d3c1736868c7c59dc6dff18cec1cfa3af356983206ee971a6b9388a47e1d40cf"
+  },
+  "series": [
+    {
+      "geo": "UK",
+      "time": "2017",
+      "value": 85250.0,
+      "dims": {
+        "level": "ADVANCED",
+        "age": "19+"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2018",
+      "value": 62280.0,
+      "dims": {
+        "level": "ADVANCED",
+        "age": "19+"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2019",
+      "value": 49930.0,
+      "dims": {
+        "level": "ADVANCED",
+        "age": "19+"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2020",
+      "value": 56180.0,
+      "dims": {
+        "level": "ADVANCED",
+        "age": "19+"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2021",
+      "value": 49980.0,
+      "dims": {
+        "level": "ADVANCED",
+        "age": "19+"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2022",
+      "value": 54720.0,
+      "dims": {
+        "level": "ADVANCED",
+        "age": "19+"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2023",
+      "value": 57800.0,
+      "dims": {
+        "level": "ADVANCED",
+        "age": "19+"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2024",
+      "value": 66290.0,
+      "dims": {
+        "level": "ADVANCED",
+        "age": "19+"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2025",
+      "value": 47920.0,
+      "flag": "p",
+      "dims": {
+        "level": "ADVANCED",
+        "age": "19+"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2017",
+      "value": 14800.0,
+      "dims": {
+        "level": "HIGHER",
+        "age": "19+"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2018",
+      "value": 12860.0,
+      "dims": {
+        "level": "HIGHER",
+        "age": "19+"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2019",
+      "value": 16730.0,
+      "dims": {
+        "level": "HIGHER",
+        "age": "19+"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2020",
+      "value": 28940.0,
+      "dims": {
+        "level": "HIGHER",
+        "age": "19+"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2021",
+      "value": 32910.0,
+      "dims": {
+        "level": "HIGHER",
+        "age": "19+"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2022",
+      "value": 44280.0,
+      "dims": {
+        "level": "HIGHER",
+        "age": "19+"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2023",
+      "value": 54280.0,
+      "dims": {
+        "level": "HIGHER",
+        "age": "19+"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2024",
+      "value": 64560.0,
+      "dims": {
+        "level": "HIGHER",
+        "age": "19+"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2025",
+      "value": 50280.0,
+      "flag": "p",
+      "dims": {
+        "level": "HIGHER",
+        "age": "19+"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2017",
+      "value": 103810.0,
+      "dims": {
+        "level": "INTERMEDIATE",
+        "age": "19+"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2018",
+      "value": 52280.0,
+      "dims": {
+        "level": "INTERMEDIATE",
+        "age": "19+"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2019",
+      "value": 36830.0,
+      "dims": {
+        "level": "INTERMEDIATE",
+        "age": "19+"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2020",
+      "value": 33150.0,
+      "dims": {
+        "level": "INTERMEDIATE",
+        "age": "19+"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2021",
+      "value": 22920.0,
+      "dims": {
+        "level": "INTERMEDIATE",
+        "age": "19+"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2022",
+      "value": 26810.0,
+      "dims": {
+        "level": "INTERMEDIATE",
+        "age": "19+"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2023",
+      "value": 25700.0,
+      "dims": {
+        "level": "INTERMEDIATE",
+        "age": "19+"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2024",
+      "value": 23840.0,
+      "dims": {
+        "level": "INTERMEDIATE",
+        "age": "19+"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2025",
+      "value": 15870.0,
+      "flag": "p",
+      "dims": {
+        "level": "INTERMEDIATE",
+        "age": "19+"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2017",
+      "value": 203860.0,
+      "dims": {
+        "level": "TOTAL",
+        "age": "19+"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2018",
+      "value": 127420.0,
+      "dims": {
+        "level": "TOTAL",
+        "age": "19+"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2019",
+      "value": 103480.0,
+      "dims": {
+        "level": "TOTAL",
+        "age": "19+"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2020",
+      "value": 118270.0,
+      "dims": {
+        "level": "TOTAL",
+        "age": "19+"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2021",
+      "value": 105810.0,
+      "dims": {
+        "level": "TOTAL",
+        "age": "19+"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2022",
+      "value": 125810.0,
+      "dims": {
+        "level": "TOTAL",
+        "age": "19+"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2023",
+      "value": 137780.0,
+      "dims": {
+        "level": "TOTAL",
+        "age": "19+"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2024",
+      "value": 154690.0,
+      "dims": {
+        "level": "TOTAL",
+        "age": "19+"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2025",
+      "value": 114060.0,
+      "flag": "p",
+      "dims": {
+        "level": "TOTAL",
+        "age": "19+"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2017",
+      "value": 37770.0,
+      "dims": {
+        "level": "ADVANCED",
+        "age": "19-24"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2018",
+      "value": 29900.0,
+      "dims": {
+        "level": "ADVANCED",
+        "age": "19-24"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2019",
+      "value": 24110.0,
+      "dims": {
+        "level": "ADVANCED",
+        "age": "19-24"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2020",
+      "value": 25510.0,
+      "dims": {
+        "level": "ADVANCED",
+        "age": "19-24"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2021",
+      "value": 23380.0,
+      "dims": {
+        "level": "ADVANCED",
+        "age": "19-24"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2022",
+      "value": 25830.0,
+      "dims": {
+        "level": "ADVANCED",
+        "age": "19-24"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2023",
+      "value": 26800.0,
+      "dims": {
+        "level": "ADVANCED",
+        "age": "19-24"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2024",
+      "value": 29350.0,
+      "dims": {
+        "level": "ADVANCED",
+        "age": "19-24"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2025",
+      "value": 21390.0,
+      "flag": "p",
+      "dims": {
+        "level": "ADVANCED",
+        "age": "19-24"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2017",
+      "value": 3400.0,
+      "dims": {
+        "level": "HIGHER",
+        "age": "19-24"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2018",
+      "value": 3950.0,
+      "dims": {
+        "level": "HIGHER",
+        "age": "19-24"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2019",
+      "value": 5330.0,
+      "dims": {
+        "level": "HIGHER",
+        "age": "19-24"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2020",
+      "value": 9770.0,
+      "dims": {
+        "level": "HIGHER",
+        "age": "19-24"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2021",
+      "value": 10490.0,
+      "dims": {
+        "level": "HIGHER",
+        "age": "19-24"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2022",
+      "value": 12950.0,
+      "dims": {
+        "level": "HIGHER",
+        "age": "19-24"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2023",
+      "value": 16300.0,
+      "dims": {
+        "level": "HIGHER",
+        "age": "19-24"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2024",
+      "value": 18670.0,
+      "dims": {
+        "level": "HIGHER",
+        "age": "19-24"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2025",
+      "value": 13540.0,
+      "flag": "p",
+      "dims": {
+        "level": "HIGHER",
+        "age": "19-24"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2017",
+      "value": 41160.0,
+      "dims": {
+        "level": "INTERMEDIATE",
+        "age": "19-24"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2018",
+      "value": 24700.0,
+      "dims": {
+        "level": "INTERMEDIATE",
+        "age": "19-24"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2019",
+      "value": 18380.0,
+      "dims": {
+        "level": "INTERMEDIATE",
+        "age": "19-24"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2020",
+      "value": 15920.0,
+      "dims": {
+        "level": "INTERMEDIATE",
+        "age": "19-24"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2021",
+      "value": 11090.0,
+      "dims": {
+        "level": "INTERMEDIATE",
+        "age": "19-24"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2022",
+      "value": 13390.0,
+      "dims": {
+        "level": "INTERMEDIATE",
+        "age": "19-24"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2023",
+      "value": 13300.0,
+      "dims": {
+        "level": "INTERMEDIATE",
+        "age": "19-24"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2024",
+      "value": 12100.0,
+      "dims": {
+        "level": "INTERMEDIATE",
+        "age": "19-24"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2025",
+      "value": 8380.0,
+      "flag": "p",
+      "dims": {
+        "level": "INTERMEDIATE",
+        "age": "19-24"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2017",
+      "value": 82330.0,
+      "dims": {
+        "level": "TOTAL",
+        "age": "19-24"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2018",
+      "value": 58550.0,
+      "dims": {
+        "level": "TOTAL",
+        "age": "19-24"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2019",
+      "value": 47820.0,
+      "dims": {
+        "level": "TOTAL",
+        "age": "19-24"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2020",
+      "value": 51200.0,
+      "dims": {
+        "level": "TOTAL",
+        "age": "19-24"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2021",
+      "value": 44960.0,
+      "dims": {
+        "level": "TOTAL",
+        "age": "19-24"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2022",
+      "value": 52170.0,
+      "dims": {
+        "level": "TOTAL",
+        "age": "19-24"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2023",
+      "value": 56400.0,
+      "dims": {
+        "level": "TOTAL",
+        "age": "19-24"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2024",
+      "value": 60120.0,
+      "dims": {
+        "level": "TOTAL",
+        "age": "19-24"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2025",
+      "value": 43310.0,
+      "flag": "p",
+      "dims": {
+        "level": "TOTAL",
+        "age": "19-24"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2017",
+      "value": 47480.0,
+      "dims": {
+        "level": "ADVANCED",
+        "age": "25+"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2018",
+      "value": 32380.0,
+      "dims": {
+        "level": "ADVANCED",
+        "age": "25+"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2019",
+      "value": 25820.0,
+      "dims": {
+        "level": "ADVANCED",
+        "age": "25+"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2020",
+      "value": 30670.0,
+      "dims": {
+        "level": "ADVANCED",
+        "age": "25+"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2021",
+      "value": 26600.0,
+      "dims": {
+        "level": "ADVANCED",
+        "age": "25+"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2022",
+      "value": 28890.0,
+      "dims": {
+        "level": "ADVANCED",
+        "age": "25+"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2023",
+      "value": 31000.0,
+      "dims": {
+        "level": "ADVANCED",
+        "age": "25+"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2024",
+      "value": 36940.0,
+      "dims": {
+        "level": "ADVANCED",
+        "age": "25+"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2025",
+      "value": 26530.0,
+      "flag": "p",
+      "dims": {
+        "level": "ADVANCED",
+        "age": "25+"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2017",
+      "value": 11410.0,
+      "dims": {
+        "level": "HIGHER",
+        "age": "25+"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2018",
+      "value": 8910.0,
+      "dims": {
+        "level": "HIGHER",
+        "age": "25+"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2019",
+      "value": 11390.0,
+      "dims": {
+        "level": "HIGHER",
+        "age": "25+"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2020",
+      "value": 19170.0,
+      "dims": {
+        "level": "HIGHER",
+        "age": "25+"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2021",
+      "value": 22420.0,
+      "dims": {
+        "level": "HIGHER",
+        "age": "25+"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2022",
+      "value": 31330.0,
+      "dims": {
+        "level": "HIGHER",
+        "age": "25+"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2023",
+      "value": 37980.0,
+      "dims": {
+        "level": "HIGHER",
+        "age": "25+"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2024",
+      "value": 45890.0,
+      "dims": {
+        "level": "HIGHER",
+        "age": "25+"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2025",
+      "value": 36740.0,
+      "flag": "p",
+      "dims": {
+        "level": "HIGHER",
+        "age": "25+"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2017",
+      "value": 62650.0,
+      "dims": {
+        "level": "INTERMEDIATE",
+        "age": "25+"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2018",
+      "value": 27580.0,
+      "dims": {
+        "level": "INTERMEDIATE",
+        "age": "25+"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2019",
+      "value": 18450.0,
+      "dims": {
+        "level": "INTERMEDIATE",
+        "age": "25+"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2020",
+      "value": 17230.0,
+      "dims": {
+        "level": "INTERMEDIATE",
+        "age": "25+"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2021",
+      "value": 11830.0,
+      "dims": {
+        "level": "INTERMEDIATE",
+        "age": "25+"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2022",
+      "value": 13420.0,
+      "dims": {
+        "level": "INTERMEDIATE",
+        "age": "25+"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2023",
+      "value": 12400.0,
+      "dims": {
+        "level": "INTERMEDIATE",
+        "age": "25+"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2024",
+      "value": 11740.0,
+      "dims": {
+        "level": "INTERMEDIATE",
+        "age": "25+"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2025",
+      "value": 7490.0,
+      "flag": "p",
+      "dims": {
+        "level": "INTERMEDIATE",
+        "age": "25+"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2017",
+      "value": 121540.0,
+      "dims": {
+        "level": "TOTAL",
+        "age": "25+"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2018",
+      "value": 68860.0,
+      "dims": {
+        "level": "TOTAL",
+        "age": "25+"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2019",
+      "value": 55660.0,
+      "dims": {
+        "level": "TOTAL",
+        "age": "25+"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2020",
+      "value": 67070.0,
+      "dims": {
+        "level": "TOTAL",
+        "age": "25+"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2021",
+      "value": 60850.0,
+      "dims": {
+        "level": "TOTAL",
+        "age": "25+"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2022",
+      "value": 73630.0,
+      "dims": {
+        "level": "TOTAL",
+        "age": "25+"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2023",
+      "value": 81380.0,
+      "dims": {
+        "level": "TOTAL",
+        "age": "25+"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2024",
+      "value": 94570.0,
+      "dims": {
+        "level": "TOTAL",
+        "age": "25+"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2025",
+      "value": 70760.0,
+      "flag": "p",
+      "dims": {
+        "level": "TOTAL",
+        "age": "25+"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2017",
+      "value": 111360.0,
+      "dims": {
+        "level": "ADVANCED",
+        "age": "TOTAL"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2018",
+      "value": 85100.0,
+      "dims": {
+        "level": "ADVANCED",
+        "age": "TOTAL"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2019",
+      "value": 67460.0,
+      "dims": {
+        "level": "ADVANCED",
+        "age": "TOTAL"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2020",
+      "value": 72610.0,
+      "dims": {
+        "level": "ADVANCED",
+        "age": "TOTAL"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2021",
+      "value": 65290.0,
+      "dims": {
+        "level": "ADVANCED",
+        "age": "TOTAL"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2022",
+      "value": 72560.0,
+      "dims": {
+        "level": "ADVANCED",
+        "age": "TOTAL"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2023",
+      "value": 76990.0,
+      "dims": {
+        "level": "ADVANCED",
+        "age": "TOTAL"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2024",
+      "value": 88520.0,
+      "dims": {
+        "level": "ADVANCED",
+        "age": "TOTAL"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2025",
+      "value": 64700.0,
+      "flag": "p",
+      "dims": {
+        "level": "ADVANCED",
+        "age": "TOTAL"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2017",
+      "value": 15770.0,
+      "dims": {
+        "level": "HIGHER",
+        "age": "TOTAL"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2018",
+      "value": 13900.0,
+      "dims": {
+        "level": "HIGHER",
+        "age": "TOTAL"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2019",
+      "value": 17810.0,
+      "dims": {
+        "level": "HIGHER",
+        "age": "TOTAL"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2020",
+      "value": 30540.0,
+      "dims": {
+        "level": "HIGHER",
+        "age": "TOTAL"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2021",
+      "value": 34660.0,
+      "dims": {
+        "level": "HIGHER",
+        "age": "TOTAL"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2022",
+      "value": 46490.0,
+      "dims": {
+        "level": "HIGHER",
+        "age": "TOTAL"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2023",
+      "value": 57220.0,
+      "dims": {
+        "level": "HIGHER",
+        "age": "TOTAL"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2024",
+      "value": 68210.0,
+      "dims": {
+        "level": "HIGHER",
+        "age": "TOTAL"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2025",
+      "value": 52810.0,
+      "flag": "p",
+      "dims": {
+        "level": "HIGHER",
+        "age": "TOTAL"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2017",
+      "value": 149030.0,
+      "dims": {
+        "level": "INTERMEDIATE",
+        "age": "TOTAL"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2018",
+      "value": 86150.0,
+      "dims": {
+        "level": "INTERMEDIATE",
+        "age": "TOTAL"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2019",
+      "value": 61630.0,
+      "dims": {
+        "level": "INTERMEDIATE",
+        "age": "TOTAL"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2020",
+      "value": 53380.0,
+      "dims": {
+        "level": "INTERMEDIATE",
+        "age": "TOTAL"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2021",
+      "value": 37270.0,
+      "dims": {
+        "level": "INTERMEDIATE",
+        "age": "TOTAL"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2022",
+      "value": 43270.0,
+      "dims": {
+        "level": "INTERMEDIATE",
+        "age": "TOTAL"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2023",
+      "value": 44020.0,
+      "dims": {
+        "level": "INTERMEDIATE",
+        "age": "TOTAL"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2024",
+      "value": 41600.0,
+      "dims": {
+        "level": "INTERMEDIATE",
+        "age": "TOTAL"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2025",
+      "value": 28690.0,
+      "flag": "p",
+      "dims": {
+        "level": "INTERMEDIATE",
+        "age": "TOTAL"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2017",
+      "value": 276160.0,
+      "dims": {
+        "level": "TOTAL",
+        "age": "TOTAL"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2018",
+      "value": 185150.0,
+      "dims": {
+        "level": "TOTAL",
+        "age": "TOTAL"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2019",
+      "value": 146900.0,
+      "dims": {
+        "level": "TOTAL",
+        "age": "TOTAL"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2020",
+      "value": 156530.0,
+      "dims": {
+        "level": "TOTAL",
+        "age": "TOTAL"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2021",
+      "value": 137220.0,
+      "dims": {
+        "level": "TOTAL",
+        "age": "TOTAL"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2022",
+      "value": 162320.0,
+      "dims": {
+        "level": "TOTAL",
+        "age": "TOTAL"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2023",
+      "value": 178220.0,
+      "dims": {
+        "level": "TOTAL",
+        "age": "TOTAL"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2024",
+      "value": 198330.0,
+      "dims": {
+        "level": "TOTAL",
+        "age": "TOTAL"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2025",
+      "value": 146210.0,
+      "flag": "p",
+      "dims": {
+        "level": "TOTAL",
+        "age": "TOTAL"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2017",
+      "value": 26110.0,
+      "dims": {
+        "level": "ADVANCED",
+        "age": "U19"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2018",
+      "value": 22820.0,
+      "dims": {
+        "level": "ADVANCED",
+        "age": "U19"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2019",
+      "value": 17540.0,
+      "dims": {
+        "level": "ADVANCED",
+        "age": "U19"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2020",
+      "value": 16430.0,
+      "dims": {
+        "level": "ADVANCED",
+        "age": "U19"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2021",
+      "value": 15310.0,
+      "dims": {
+        "level": "ADVANCED",
+        "age": "U19"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2022",
+      "value": 17840.0,
+      "dims": {
+        "level": "ADVANCED",
+        "age": "U19"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2023",
+      "value": 19190.0,
+      "dims": {
+        "level": "ADVANCED",
+        "age": "U19"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2024",
+      "value": 22240.0,
+      "dims": {
+        "level": "ADVANCED",
+        "age": "U19"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2025",
+      "value": 16790.0,
+      "flag": "p",
+      "dims": {
+        "level": "ADVANCED",
+        "age": "U19"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2017",
+      "value": 970.0,
+      "dims": {
+        "level": "HIGHER",
+        "age": "U19"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2018",
+      "value": 1040.0,
+      "dims": {
+        "level": "HIGHER",
+        "age": "U19"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2019",
+      "value": 1080.0,
+      "dims": {
+        "level": "HIGHER",
+        "age": "U19"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2020",
+      "value": 1600.0,
+      "dims": {
+        "level": "HIGHER",
+        "age": "U19"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2021",
+      "value": 1750.0,
+      "dims": {
+        "level": "HIGHER",
+        "age": "U19"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2022",
+      "value": 2210.0,
+      "dims": {
+        "level": "HIGHER",
+        "age": "U19"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2023",
+      "value": 2940.0,
+      "dims": {
+        "level": "HIGHER",
+        "age": "U19"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2024",
+      "value": 3640.0,
+      "dims": {
+        "level": "HIGHER",
+        "age": "U19"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2025",
+      "value": 2530.0,
+      "flag": "p",
+      "dims": {
+        "level": "HIGHER",
+        "age": "U19"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2017",
+      "value": 45230.0,
+      "dims": {
+        "level": "INTERMEDIATE",
+        "age": "U19"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2018",
+      "value": 33870.0,
+      "dims": {
+        "level": "INTERMEDIATE",
+        "age": "U19"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2019",
+      "value": 24800.0,
+      "dims": {
+        "level": "INTERMEDIATE",
+        "age": "U19"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2020",
+      "value": 20230.0,
+      "dims": {
+        "level": "INTERMEDIATE",
+        "age": "U19"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2021",
+      "value": 14350.0,
+      "dims": {
+        "level": "INTERMEDIATE",
+        "age": "U19"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2022",
+      "value": 16460.0,
+      "dims": {
+        "level": "INTERMEDIATE",
+        "age": "U19"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2023",
+      "value": 18320.0,
+      "dims": {
+        "level": "INTERMEDIATE",
+        "age": "U19"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2024",
+      "value": 17770.0,
+      "dims": {
+        "level": "INTERMEDIATE",
+        "age": "U19"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2025",
+      "value": 12830.0,
+      "flag": "p",
+      "dims": {
+        "level": "INTERMEDIATE",
+        "age": "U19"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2017",
+      "value": 72300.0,
+      "dims": {
+        "level": "TOTAL",
+        "age": "U19"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2018",
+      "value": 57730.0,
+      "dims": {
+        "level": "TOTAL",
+        "age": "U19"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2019",
+      "value": 43420.0,
+      "dims": {
+        "level": "TOTAL",
+        "age": "U19"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2020",
+      "value": 38260.0,
+      "dims": {
+        "level": "TOTAL",
+        "age": "U19"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2021",
+      "value": 31410.0,
+      "dims": {
+        "level": "TOTAL",
+        "age": "U19"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2022",
+      "value": 36510.0,
+      "dims": {
+        "level": "TOTAL",
+        "age": "U19"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2023",
+      "value": 40450.0,
+      "dims": {
+        "level": "TOTAL",
+        "age": "U19"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2024",
+      "value": 43640.0,
+      "dims": {
+        "level": "TOTAL",
+        "age": "U19"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2025",
+      "value": 32140.0,
+      "flag": "p",
+      "dims": {
+        "level": "TOTAL",
+        "age": "U19"
+      }
+    }
+  ],
+  "coverage": {
+    "geos": [
+      "UK"
+    ],
+    "time": [
+      "2017",
+      "2025"
+    ],
+    "observations": 180
+  }
+}

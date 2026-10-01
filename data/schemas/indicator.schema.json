@@ -1,0 +1,96 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://apprentix.eu/data/schemas/indicator.schema.json",
+  "title": "Apprentix indicator",
+  "description": "One statistical series in long format, with provenance. Written by pipeline/common.py write_indicator().",
+  "type": "object",
+  "required": ["id", "title", "description", "unit", "topic", "provenance", "series", "coverage"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9_.-]*$" },
+    "title": { "type": "string", "minLength": 3 },
+    "description": { "type": "string", "minLength": 10 },
+    "unit": { "type": "string" },
+    "topic": { "type": "string" },
+    "source_label": { "type": "string" },
+    "comparability": { "type": "string", "description": "What is counted, and why values may not be comparable across countries." },
+    "national": { "type": "boolean", "description": "True when the series comes from a national source and must not be summed with other countries." },
+    "dims": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["key", "label", "values", "default"],
+        "properties": {
+          "key": { "type": "string" },
+          "label": { "type": "string" },
+          "values": { "type": "object", "additionalProperties": { "type": "string" } },
+          "default": { "type": "string" }
+        }
+      }
+    },
+    "flags": { "type": "object", "additionalProperties": { "type": "string" } },
+    "target": {
+      "type": "object",
+      "required": ["value", "year", "label"],
+      "properties": {
+        "value": { "type": "number" },
+        "year": { "type": "string" },
+        "geo": { "type": "string" },
+        "label": { "type": "string" }
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "required": ["publisher", "source_url", "licence", "retrieved_at"],
+      "properties": {
+        "publisher": { "type": "string" },
+        "dataset_code": { "type": "string" },
+        "source_url": { "type": "string", "format": "uri" },
+        "api_url": { "type": "string" },
+        "licence": { "type": "string" },
+        "licence_url": { "type": "string" },
+        "citation": { "type": "string" },
+        "source_updated": { "type": "string" },
+        "retrieved_at": { "type": "string" },
+        "raw_file": { "type": "string" },
+        "raw_sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" }
+      }
+    },
+    "series": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["geo", "time", "value"],
+        "properties": {
+          "geo": { "type": "string" },
+          "time": { "type": "string", "pattern": "^\\d{4}(-(\\d{2}|Q[1-4]|S[12]))?$" },
+          "value": { "type": "number" },
+          "flag": { "type": "string" },
+          "dims": { "type": "object", "additionalProperties": { "type": "string" } }
+        },
+        "additionalProperties": false
+      }
+    },
+    "missing": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["geo", "time", "flag"],
+        "properties": {
+          "geo": { "type": "string" },
+          "time": { "type": "string" },
+          "flag": { "type": "string" },
+          "dims": { "type": "object" }
+        }
+      }
+    },
+    "coverage": {
+      "type": "object",
+      "required": ["geos", "time", "observations"],
+      "properties": {
+        "geos": { "type": "array", "items": { "type": "string" } },
+        "time": { "type": "array" },
+        "observations": { "type": "integer", "minimum": 1 }
+      }
+    }
+  }
+}

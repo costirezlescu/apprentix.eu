@@ -1,0 +1,2336 @@
+{
+  "id": "cedefop-kivet-1070",
+  "title": "Female IVET students as % of all female upper secondary students",
+  "description": "Number of female students in upper secondary IVET (ISCED 3) as a percentage of all female students in upper secondary education (Cedefop calculations based on Eurostat, UOE data collection on formal education).",
+  "unit": "%",
+  "topic": "Access, attractiveness and flexibility",
+  "source_label": "Cedefop Key indicators on VET, indicator 1070",
+  "comparability": "EU averages are Cedefop estimates (weighted averages of available country data) where flagged.",
+  "flags": {
+    "b": "break in time series",
+    "d": "definition differs",
+    "e": "estimated",
+    "p": "provisional",
+    "u": "low reliability",
+    "z": "not applicable",
+    "c": "confidential"
+  },
+  "kivet": {
+    "number": "1070",
+    "position": "Key Indicators on VET",
+    "group": "Access, attractiveness and flexibility",
+    "type": "IVET"
+  },
+  "provenance": {
+    "publisher": "Cedefop",
+    "dataset_code": "KIVET 1070",
+    "source_url": "https://www.cedefop.europa.eu/en/datasets/dataset-key-indicators-vet",
+    "api_url": "https://www.cedefop.europa.eu/files/integratedmasterfileIndicators_2026_%2006%20July.xlsx",
+    "licence": "CC-BY-4.0",
+    "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+    "citation": "Cedefop (2026). Key indicators on VET [Data set]. https://doi.org/10.2906/534056862890980 Underlying source: Cedefop calculations based on Eurostat data, UOE data collection on formal education",
+    "source_updated": "2026 (6 July 2026)",
+    "retrieved_at": "2026-10-01T09:25:30+00:00",
+    "raw_file": "data/raw/cedefop/2026-10-01-kivet-masterfile.xlsx",
+    "raw_sha256": "6a10e5587408f5af5638676ea15a367832302238eb12dd4b0fe9f86c1589a919"
+  },
+  "series": [
+    {
+      "geo": "AT",
+      "time": "2010",
+      "value": 67.7
+    },
+    {
+      "geo": "AT",
+      "time": "2013",
+      "value": 65.9
+    },
+    {
+      "geo": "AT",
+      "time": "2014",
+      "value": 65.4
+    },
+    {
+      "geo": "AT",
+      "time": "2015",
+      "value": 65.0
+    },
+    {
+      "geo": "AT",
+      "time": "2016",
+      "value": 64.2
+    },
+    {
+      "geo": "AT",
+      "time": "2017",
+      "value": 63.6
+    },
+    {
+      "geo": "AT",
+      "time": "2018",
+      "value": 63.1
+    },
+    {
+      "geo": "AT",
+      "time": "2019",
+      "value": 63.6
+    },
+    {
+      "geo": "AT",
+      "time": "2020",
+      "value": 63.5
+    },
+    {
+      "geo": "AT",
+      "time": "2021",
+      "value": 63.8
+    },
+    {
+      "geo": "AT",
+      "time": "2022",
+      "value": 63.7
+    },
+    {
+      "geo": "AT",
+      "time": "2023",
+      "value": 63.7
+    },
+    {
+      "geo": "AT",
+      "time": "2024",
+      "value": 64.1
+    },
+    {
+      "geo": "BE",
+      "time": "2010",
+      "value": 58.9
+    },
+    {
+      "geo": "BE",
+      "time": "2013",
+      "value": 58.6
+    },
+    {
+      "geo": "BE",
+      "time": "2014",
+      "value": 58.0
+    },
+    {
+      "geo": "BE",
+      "time": "2015",
+      "value": 57.8
+    },
+    {
+      "geo": "BE",
+      "time": "2016",
+      "value": 57.3
+    },
+    {
+      "geo": "BE",
+      "time": "2017",
+      "value": 55.9
+    },
+    {
+      "geo": "BE",
+      "time": "2018",
+      "value": 54.6
+    },
+    {
+      "geo": "BE",
+      "time": "2019",
+      "value": 53.9
+    },
+    {
+      "geo": "BE",
+      "time": "2020",
+      "value": 53.0
+    },
+    {
+      "geo": "BE",
+      "time": "2021",
+      "value": 50.8
+    },
+    {
+      "geo": "BE",
+      "time": "2022",
+      "value": 51.1
+    },
+    {
+      "geo": "BE",
+      "time": "2023",
+      "value": 51.9
+    },
+    {
+      "geo": "BE",
+      "time": "2024",
+      "value": 52.3
+    },
+    {
+      "geo": "BG",
+      "time": "2010",
+      "value": 43.4
+    },
+    {
+      "geo": "BG",
+      "time": "2013",
+      "value": 43.8
+    },
+    {
+      "geo": "BG",
+      "time": "2014",
+      "value": 46.3
+    },
+    {
+      "geo": "BG",
+      "time": "2015",
+      "value": 44.6
+    },
+    {
+      "geo": "BG",
+      "time": "2016",
+      "value": 43.1
+    },
+    {
+      "geo": "BG",
+      "time": "2017",
+      "value": 42.7
+    },
+    {
+      "geo": "BG",
+      "time": "2018",
+      "value": 45.4
+    },
+    {
+      "geo": "BG",
+      "time": "2019",
+      "value": 44.8
+    },
+    {
+      "geo": "BG",
+      "time": "2020",
+      "value": 44.0
+    },
+    {
+      "geo": "BG",
+      "time": "2021",
+      "value": 44.4
+    },
+    {
+      "geo": "BG",
+      "time": "2022",
+      "value": 47.5
+    },
+    {
+      "geo": "BG",
+      "time": "2023",
+      "value": 48.8
+    },
+    {
+      "geo": "BG",
+      "time": "2024",
+      "value": 50.0
+    },
+    {
+      "geo": "CH",
+      "time": "2013",
+      "value": 58.6
+    },
+    {
+      "geo": "CH",
+      "time": "2014",
+      "value": 58.4
+    },
+    {
+      "geo": "CH",
+      "time": "2015",
+      "value": 58.0
+    },
+    {
+      "geo": "CH",
+      "time": "2016",
+      "value": 57.5
+    },
+    {
+      "geo": "CH",
+      "time": "2017",
+      "value": 56.9
+    },
+    {
+      "geo": "CH",
+      "time": "2018",
+      "value": 56.3
+    },
+    {
+      "geo": "CH",
+      "time": "2019",
+      "value": 55.6
+    },
+    {
+      "geo": "CH",
+      "time": "2020",
+      "value": 54.7
+    },
+    {
+      "geo": "CH",
+      "time": "2021",
+      "value": 53.5
+    },
+    {
+      "geo": "CH",
+      "time": "2022",
+      "value": 53.3
+    },
+    {
+      "geo": "CH",
+      "time": "2023",
+      "value": 52.9
+    },
+    {
+      "geo": "CH",
+      "time": "2024",
+      "value": 52.7
+    },
+    {
+      "geo": "CY",
+      "time": "2010",
+      "value": 4.4
+    },
+    {
+      "geo": "CY",
+      "time": "2013",
+      "value": 5.2
+    },
+    {
+      "geo": "CY",
+      "time": "2014",
+      "value": 6.3
+    },
+    {
+      "geo": "CY",
+      "time": "2015",
+      "value": 6.9
+    },
+    {
+      "geo": "CY",
+      "time": "2016",
+      "value": 7.9
+    },
+    {
+      "geo": "CY",
+      "time": "2017",
+      "value": 8.0
+    },
+    {
+      "geo": "CY",
+      "time": "2018",
+      "value": 8.1
+    },
+    {
+      "geo": "CY",
+      "time": "2019",
+      "value": 8.4
+    },
+    {
+      "geo": "CY",
+      "time": "2020",
+      "value": 8.9
+    },
+    {
+      "geo": "CY",
+      "time": "2021",
+      "value": 9.0
+    },
+    {
+      "geo": "CY",
+      "time": "2022",
+      "value": 9.2
+    },
+    {
+      "geo": "CY",
+      "time": "2023",
+      "value": 9.1
+    },
+    {
+      "geo": "CY",
+      "time": "2024",
+      "value": 9.8
+    },
+    {
+      "geo": "CZ",
+      "time": "2013",
+      "value": 68.3
+    },
+    {
+      "geo": "CZ",
+      "time": "2014",
+      "value": 67.9
+    },
+    {
+      "geo": "CZ",
+      "time": "2015",
+      "value": 67.6
+    },
+    {
+      "geo": "CZ",
+      "time": "2016",
+      "value": 67.2
+    },
+    {
+      "geo": "CZ",
+      "time": "2017",
+      "value": 66.7
+    },
+    {
+      "geo": "CZ",
+      "time": "2018",
+      "value": 65.6
+    },
+    {
+      "geo": "CZ",
+      "time": "2019",
+      "value": 64.7
+    },
+    {
+      "geo": "CZ",
+      "time": "2020",
+      "value": 65.0
+    },
+    {
+      "geo": "CZ",
+      "time": "2021",
+      "value": 63.9
+    },
+    {
+      "geo": "CZ",
+      "time": "2022",
+      "value": 63.0
+    },
+    {
+      "geo": "CZ",
+      "time": "2023",
+      "value": 67.7
+    },
+    {
+      "geo": "CZ",
+      "time": "2024",
+      "value": 68.5
+    },
+    {
+      "geo": "DE",
+      "time": "2010",
+      "value": 44.0
+    },
+    {
+      "geo": "DE",
+      "time": "2013",
+      "value": 39.1
+    },
+    {
+      "geo": "DE",
+      "time": "2014",
+      "value": 39.5
+    },
+    {
+      "geo": "DE",
+      "time": "2015",
+      "value": 38.4
+    },
+    {
+      "geo": "DE",
+      "time": "2016",
+      "value": 37.7
+    },
+    {
+      "geo": "DE",
+      "time": "2017",
+      "value": 36.6
+    },
+    {
+      "geo": "DE",
+      "time": "2018",
+      "value": 36.9
+    },
+    {
+      "geo": "DE",
+      "time": "2019",
+      "value": 37.9
+    },
+    {
+      "geo": "DE",
+      "time": "2020",
+      "value": 38.4
+    },
+    {
+      "geo": "DE",
+      "time": "2021",
+      "value": 36.8
+    },
+    {
+      "geo": "DE",
+      "time": "2022",
+      "value": 36.0
+    },
+    {
+      "geo": "DE",
+      "time": "2023",
+      "value": 37.0
+    },
+    {
+      "geo": "DE",
+      "time": "2024",
+      "value": 38.8
+    },
+    {
+      "geo": "DK",
+      "time": "2013",
+      "value": 38.8
+    },
+    {
+      "geo": "DK",
+      "time": "2014",
+      "value": 37.2
+    },
+    {
+      "geo": "DK",
+      "time": "2015",
+      "value": 37.4
+    },
+    {
+      "geo": "DK",
+      "time": "2016",
+      "value": 36.1
+    },
+    {
+      "geo": "DK",
+      "time": "2017",
+      "value": 33.3
+    },
+    {
+      "geo": "DK",
+      "time": "2018",
+      "value": 31.2
+    },
+    {
+      "geo": "DK",
+      "time": "2019",
+      "value": 30.6
+    },
+    {
+      "geo": "DK",
+      "time": "2020",
+      "value": 31.9
+    },
+    {
+      "geo": "DK",
+      "time": "2021",
+      "value": 32.6
+    },
+    {
+      "geo": "DK",
+      "time": "2022",
+      "value": 33.5
+    },
+    {
+      "geo": "DK",
+      "time": "2023",
+      "value": 32.9
+    },
+    {
+      "geo": "DK",
+      "time": "2024",
+      "value": 32.1
+    },
+    {
+      "geo": "EE",
+      "time": "2010",
+      "value": 24.0
+    },
+    {
+      "geo": "EE",
+      "time": "2013",
+      "value": 23.7
+    },
+    {
+      "geo": "EE",
+      "time": "2014",
+      "value": 24.4
+    },
+    {
+      "geo": "EE",
+      "time": "2015",
+      "value": 26.0
+    },
+    {
+      "geo": "EE",
+      "time": "2016",
+      "value": 29.9
+    },
+    {
+      "geo": "EE",
+      "time": "2017",
+      "value": 32.7
+    },
+    {
+      "geo": "EE",
+      "time": "2018",
+      "value": 33.1
+    },
+    {
+      "geo": "EE",
+      "time": "2019",
+      "value": 33.3
+    },
+    {
+      "geo": "EE",
+      "time": "2020",
+      "value": 33.7
+    },
+    {
+      "geo": "EE",
+      "time": "2021",
+      "value": 33.8
+    },
+    {
+      "geo": "EE",
+      "time": "2022",
+      "value": 33.0
+    },
+    {
+      "geo": "EE",
+      "time": "2023",
+      "value": 31.2
+    },
+    {
+      "geo": "EE",
+      "time": "2024",
+      "value": 29.9
+    },
+    {
+      "geo": "EL",
+      "time": "2013",
+      "value": 27.2
+    },
+    {
+      "geo": "EL",
+      "time": "2014",
+      "value": 23.0
+    },
+    {
+      "geo": "EL",
+      "time": "2015",
+      "value": 20.1
+    },
+    {
+      "geo": "EL",
+      "time": "2016",
+      "value": 20.3
+    },
+    {
+      "geo": "EL",
+      "time": "2017",
+      "value": 21.0
+    },
+    {
+      "geo": "EL",
+      "time": "2018",
+      "value": 21.3
+    },
+    {
+      "geo": "EL",
+      "time": "2019",
+      "value": 21.8
+    },
+    {
+      "geo": "EL",
+      "time": "2020",
+      "value": 24.7
+    },
+    {
+      "geo": "EL",
+      "time": "2021",
+      "value": 26.6
+    },
+    {
+      "geo": "EL",
+      "time": "2022",
+      "value": 25.9
+    },
+    {
+      "geo": "EL",
+      "time": "2023",
+      "value": 25.9
+    },
+    {
+      "geo": "EL",
+      "time": "2024",
+      "value": 26.0
+    },
+    {
+      "geo": "ES",
+      "time": "2010",
+      "value": 38.1
+    },
+    {
+      "geo": "ES",
+      "time": "2013",
+      "value": 31.0
+    },
+    {
+      "geo": "ES",
+      "time": "2014",
+      "value": 31.7
+    },
+    {
+      "geo": "ES",
+      "time": "2015",
+      "value": 32.4
+    },
+    {
+      "geo": "ES",
+      "time": "2016",
+      "value": 32.4
+    },
+    {
+      "geo": "ES",
+      "time": "2017",
+      "value": 32.9
+    },
+    {
+      "geo": "ES",
+      "time": "2018",
+      "value": 33.2
+    },
+    {
+      "geo": "ES",
+      "time": "2019",
+      "value": 34.0
+    },
+    {
+      "geo": "ES",
+      "time": "2020",
+      "value": 34.0
+    },
+    {
+      "geo": "ES",
+      "time": "2021",
+      "value": 36.5
+    },
+    {
+      "geo": "ES",
+      "time": "2022",
+      "value": 37.2
+    },
+    {
+      "geo": "ES",
+      "time": "2023",
+      "value": 37.1,
+      "flag": "b"
+    },
+    {
+      "geo": "ES",
+      "time": "2024",
+      "value": 37.2
+    },
+    {
+      "geo": "EU27",
+      "time": "2013",
+      "value": 42.7,
+      "flag": "d"
+    },
+    {
+      "geo": "EU27",
+      "time": "2014",
+      "value": 41.7,
+      "flag": "d"
+    },
+    {
+      "geo": "EU27",
+      "time": "2015",
+      "value": 42.4,
+      "flag": "d"
+    },
+    {
+      "geo": "EU27",
+      "time": "2016",
+      "value": 41.9,
+      "flag": "d"
+    },
+    {
+      "geo": "EU27",
+      "time": "2017",
+      "value": 41.6
+    },
+    {
+      "geo": "EU27",
+      "time": "2018",
+      "value": 41.8
+    },
+    {
+      "geo": "EU27",
+      "time": "2019",
+      "value": 41.6
+    },
+    {
+      "geo": "EU27",
+      "time": "2020",
+      "value": 41.6
+    },
+    {
+      "geo": "EU27",
+      "time": "2021",
+      "value": 41.6
+    },
+    {
+      "geo": "EU27",
+      "time": "2022",
+      "value": 41.9
+    },
+    {
+      "geo": "EU27",
+      "time": "2023",
+      "value": 42.1
+    },
+    {
+      "geo": "EU27",
+      "time": "2024",
+      "value": 42.5
+    },
+    {
+      "geo": "FI",
+      "time": "2010",
+      "value": 66.7
+    },
+    {
+      "geo": "FI",
+      "time": "2013",
+      "value": 67.7
+    },
+    {
+      "geo": "FI",
+      "time": "2014",
+      "value": 68.0
+    },
+    {
+      "geo": "FI",
+      "time": "2015",
+      "value": 68.8
+    },
+    {
+      "geo": "FI",
+      "time": "2016",
+      "value": 68.7
+    },
+    {
+      "geo": "FI",
+      "time": "2017",
+      "value": 69.1
+    },
+    {
+      "geo": "FI",
+      "time": "2018",
+      "value": 69.0
+    },
+    {
+      "geo": "FI",
+      "time": "2019",
+      "value": 65.5
+    },
+    {
+      "geo": "FI",
+      "time": "2020",
+      "value": 64.5
+    },
+    {
+      "geo": "FI",
+      "time": "2021",
+      "value": 64.1
+    },
+    {
+      "geo": "FI",
+      "time": "2022",
+      "value": 65.0
+    },
+    {
+      "geo": "FI",
+      "time": "2023",
+      "value": 65.0
+    },
+    {
+      "geo": "FI",
+      "time": "2024",
+      "value": 65.0
+    },
+    {
+      "geo": "FR",
+      "time": "2010",
+      "value": 39.5
+    },
+    {
+      "geo": "FR",
+      "time": "2013",
+      "value": 37.7
+    },
+    {
+      "geo": "FR",
+      "time": "2014",
+      "value": 37.8
+    },
+    {
+      "geo": "FR",
+      "time": "2015",
+      "value": 36.5
+    },
+    {
+      "geo": "FR",
+      "time": "2016",
+      "value": 35.5
+    },
+    {
+      "geo": "FR",
+      "time": "2017",
+      "value": 34.6
+    },
+    {
+      "geo": "FR",
+      "time": "2018",
+      "value": 33.7
+    },
+    {
+      "geo": "FR",
+      "time": "2019",
+      "value": 33.3
+    },
+    {
+      "geo": "FR",
+      "time": "2020",
+      "value": 33.0
+    },
+    {
+      "geo": "FR",
+      "time": "2021",
+      "value": 33.6
+    },
+    {
+      "geo": "FR",
+      "time": "2022",
+      "value": 34.3
+    },
+    {
+      "geo": "FR",
+      "time": "2023",
+      "value": 34.8
+    },
+    {
+      "geo": "FR",
+      "time": "2024",
+      "value": 35.6
+    },
+    {
+      "geo": "HR",
+      "time": "2013",
+      "value": 64.2
+    },
+    {
+      "geo": "HR",
+      "time": "2014",
+      "value": 63.8
+    },
+    {
+      "geo": "HR",
+      "time": "2015",
+      "value": 63.5
+    },
+    {
+      "geo": "HR",
+      "time": "2016",
+      "value": 62.8
+    },
+    {
+      "geo": "HR",
+      "time": "2017",
+      "value": 62.2
+    },
+    {
+      "geo": "HR",
+      "time": "2018",
+      "value": 61.4
+    },
+    {
+      "geo": "HR",
+      "time": "2019",
+      "value": 61.0
+    },
+    {
+      "geo": "HR",
+      "time": "2020",
+      "value": 61.2
+    },
+    {
+      "geo": "HR",
+      "time": "2021",
+      "value": 61.8
+    },
+    {
+      "geo": "HR",
+      "time": "2022",
+      "value": 62.6
+    },
+    {
+      "geo": "HR",
+      "time": "2023",
+      "value": 62.9
+    },
+    {
+      "geo": "HR",
+      "time": "2024",
+      "value": 63.7
+    },
+    {
+      "geo": "HU",
+      "time": "2010",
+      "value": 20.4
+    },
+    {
+      "geo": "HU",
+      "time": "2013",
+      "value": 22.3
+    },
+    {
+      "geo": "HU",
+      "time": "2014",
+      "value": 20.6
+    },
+    {
+      "geo": "HU",
+      "time": "2015",
+      "value": 18.9
+    },
+    {
+      "geo": "HU",
+      "time": "2016",
+      "value": 16.5
+    },
+    {
+      "geo": "HU",
+      "time": "2017",
+      "value": 18.1
+    },
+    {
+      "geo": "HU",
+      "time": "2018",
+      "value": 31.8
+    },
+    {
+      "geo": "HU",
+      "time": "2019",
+      "value": 37.2
+    },
+    {
+      "geo": "HU",
+      "time": "2020",
+      "value": 42.6
+    },
+    {
+      "geo": "HU",
+      "time": "2021",
+      "value": 42.5
+    },
+    {
+      "geo": "HU",
+      "time": "2022",
+      "value": 46.1
+    },
+    {
+      "geo": "HU",
+      "time": "2023",
+      "value": 43.6
+    },
+    {
+      "geo": "HU",
+      "time": "2024",
+      "value": 46.3
+    },
+    {
+      "geo": "IE",
+      "time": "2010",
+      "value": 5.9
+    },
+    {
+      "geo": "IE",
+      "time": "2013",
+      "value": 2.0,
+      "flag": "d"
+    },
+    {
+      "geo": "IE",
+      "time": "2017",
+      "value": 7.0,
+      "flag": "d"
+    },
+    {
+      "geo": "IE",
+      "time": "2018",
+      "value": 40.3,
+      "flag": "d"
+    },
+    {
+      "geo": "IE",
+      "time": "2019",
+      "value": 31.4
+    },
+    {
+      "geo": "IE",
+      "time": "2020",
+      "value": 28.5
+    },
+    {
+      "geo": "IE",
+      "time": "2021",
+      "value": 28.1
+    },
+    {
+      "geo": "IE",
+      "time": "2022",
+      "value": 25.3
+    },
+    {
+      "geo": "IE",
+      "time": "2023",
+      "value": 26.2
+    },
+    {
+      "geo": "IE",
+      "time": "2024",
+      "value": 28.5
+    },
+    {
+      "geo": "IS",
+      "time": "2013",
+      "value": 26.8
+    },
+    {
+      "geo": "IS",
+      "time": "2014",
+      "value": 26.7
+    },
+    {
+      "geo": "IS",
+      "time": "2015",
+      "value": 27.3
+    },
+    {
+      "geo": "IS",
+      "time": "2016",
+      "value": 25.5
+    },
+    {
+      "geo": "IS",
+      "time": "2017",
+      "value": 22.3
+    },
+    {
+      "geo": "IS",
+      "time": "2018",
+      "value": 20.9
+    },
+    {
+      "geo": "IS",
+      "time": "2019",
+      "value": 20.0
+    },
+    {
+      "geo": "IS",
+      "time": "2020",
+      "value": 21.3
+    },
+    {
+      "geo": "IS",
+      "time": "2021",
+      "value": 23.5
+    },
+    {
+      "geo": "IS",
+      "time": "2022",
+      "value": 24.2
+    },
+    {
+      "geo": "IS",
+      "time": "2023",
+      "value": 23.3
+    },
+    {
+      "geo": "IT",
+      "time": "2010",
+      "value": 44.8
+    },
+    {
+      "geo": "IT",
+      "time": "2013",
+      "value": 48.7
+    },
+    {
+      "geo": "IT",
+      "time": "2014",
+      "value": 44.1
+    },
+    {
+      "geo": "IT",
+      "time": "2015",
+      "value": 43.7
+    },
+    {
+      "geo": "IT",
+      "time": "2016",
+      "value": 43.4
+    },
+    {
+      "geo": "IT",
+      "time": "2017",
+      "value": 43.1
+    },
+    {
+      "geo": "IT",
+      "time": "2018",
+      "value": 41.3,
+      "flag": "d"
+    },
+    {
+      "geo": "IT",
+      "time": "2019",
+      "value": 40.5,
+      "flag": "d"
+    },
+    {
+      "geo": "IT",
+      "time": "2020",
+      "value": 39.9
+    },
+    {
+      "geo": "IT",
+      "time": "2021",
+      "value": 39.2
+    },
+    {
+      "geo": "IT",
+      "time": "2022",
+      "value": 39.1
+    },
+    {
+      "geo": "IT",
+      "time": "2023",
+      "value": 38.6
+    },
+    {
+      "geo": "IT",
+      "time": "2024",
+      "value": 38.4
+    },
+    {
+      "geo": "LI",
+      "time": "2013",
+      "value": 61.4
+    },
+    {
+      "geo": "LI",
+      "time": "2014",
+      "value": 60.5
+    },
+    {
+      "geo": "LI",
+      "time": "2015",
+      "value": 58.5
+    },
+    {
+      "geo": "LI",
+      "time": "2016",
+      "value": 58.6
+    },
+    {
+      "geo": "LI",
+      "time": "2017",
+      "value": 59.0
+    },
+    {
+      "geo": "LI",
+      "time": "2018",
+      "value": 59.4
+    },
+    {
+      "geo": "LI",
+      "time": "2019",
+      "value": 61.7
+    },
+    {
+      "geo": "LI",
+      "time": "2020",
+      "value": 59.5
+    },
+    {
+      "geo": "LI",
+      "time": "2021",
+      "value": 59.6
+    },
+    {
+      "geo": "LI",
+      "time": "2022",
+      "value": 61.7
+    },
+    {
+      "geo": "LT",
+      "time": "2013",
+      "value": 20.5
+    },
+    {
+      "geo": "LT",
+      "time": "2014",
+      "value": 20.2
+    },
+    {
+      "geo": "LT",
+      "time": "2015",
+      "value": 20.2
+    },
+    {
+      "geo": "LT",
+      "time": "2016",
+      "value": 20.4
+    },
+    {
+      "geo": "LT",
+      "time": "2017",
+      "value": 20.6
+    },
+    {
+      "geo": "LT",
+      "time": "2018",
+      "value": 19.7
+    },
+    {
+      "geo": "LT",
+      "time": "2019",
+      "value": 19.0
+    },
+    {
+      "geo": "LT",
+      "time": "2020",
+      "value": 17.7
+    },
+    {
+      "geo": "LT",
+      "time": "2021",
+      "value": 18.4
+    },
+    {
+      "geo": "LT",
+      "time": "2022",
+      "value": 19.9
+    },
+    {
+      "geo": "LT",
+      "time": "2023",
+      "value": 20.0
+    },
+    {
+      "geo": "LT",
+      "time": "2024",
+      "value": 21.2
+    },
+    {
+      "geo": "LU",
+      "time": "2013",
+      "value": 57.5
+    },
+    {
+      "geo": "LU",
+      "time": "2014",
+      "value": 57.6
+    },
+    {
+      "geo": "LU",
+      "time": "2015",
+      "value": 59.3
+    },
+    {
+      "geo": "LU",
+      "time": "2016",
+      "value": 58.7
+    },
+    {
+      "geo": "LU",
+      "time": "2017",
+      "value": 59.0
+    },
+    {
+      "geo": "LU",
+      "time": "2018",
+      "value": 58.7
+    },
+    {
+      "geo": "LU",
+      "time": "2019",
+      "value": 58.7
+    },
+    {
+      "geo": "LU",
+      "time": "2020",
+      "value": 58.7
+    },
+    {
+      "geo": "LU",
+      "time": "2021",
+      "value": 58.2
+    },
+    {
+      "geo": "LU",
+      "time": "2022",
+      "value": 56.9
+    },
+    {
+      "geo": "LU",
+      "time": "2023",
+      "value": 55.3
+    },
+    {
+      "geo": "LU",
+      "time": "2024",
+      "value": 54.3
+    },
+    {
+      "geo": "LV",
+      "time": "2010",
+      "value": 28.9
+    },
+    {
+      "geo": "LV",
+      "time": "2013",
+      "value": 32.2
+    },
+    {
+      "geo": "LV",
+      "time": "2014",
+      "value": 33.1
+    },
+    {
+      "geo": "LV",
+      "time": "2015",
+      "value": 33.5
+    },
+    {
+      "geo": "LV",
+      "time": "2016",
+      "value": 31.8
+    },
+    {
+      "geo": "LV",
+      "time": "2017",
+      "value": 32.6
+    },
+    {
+      "geo": "LV",
+      "time": "2018",
+      "value": 32.8
+    },
+    {
+      "geo": "LV",
+      "time": "2019",
+      "value": 33.4
+    },
+    {
+      "geo": "LV",
+      "time": "2020",
+      "value": 33.5
+    },
+    {
+      "geo": "LV",
+      "time": "2021",
+      "value": 33.5
+    },
+    {
+      "geo": "LV",
+      "time": "2022",
+      "value": 34.5
+    },
+    {
+      "geo": "LV",
+      "time": "2023",
+      "value": 34.4
+    },
+    {
+      "geo": "LV",
+      "time": "2024",
+      "value": 33.6
+    },
+    {
+      "geo": "ME",
+      "time": "2015",
+      "value": 61.4
+    },
+    {
+      "geo": "ME",
+      "time": "2016",
+      "value": 61.0
+    },
+    {
+      "geo": "ME",
+      "time": "2017",
+      "value": 61.6
+    },
+    {
+      "geo": "ME",
+      "time": "2018",
+      "value": 62.4
+    },
+    {
+      "geo": "ME",
+      "time": "2019",
+      "value": 63.3
+    },
+    {
+      "geo": "ME",
+      "time": "2020",
+      "value": 64.0
+    },
+    {
+      "geo": "ME",
+      "time": "2021",
+      "value": 64.5
+    },
+    {
+      "geo": "ME",
+      "time": "2023",
+      "value": 63.8
+    },
+    {
+      "geo": "ME",
+      "time": "2024",
+      "value": 64.9
+    },
+    {
+      "geo": "MK",
+      "time": "2013",
+      "value": 54.2
+    },
+    {
+      "geo": "MK",
+      "time": "2014",
+      "value": 54.3
+    },
+    {
+      "geo": "MK",
+      "time": "2015",
+      "value": 54.4
+    },
+    {
+      "geo": "MK",
+      "time": "2016",
+      "value": 55.0
+    },
+    {
+      "geo": "MK",
+      "time": "2017",
+      "value": 54.9
+    },
+    {
+      "geo": "MK",
+      "time": "2018",
+      "value": 55.1
+    },
+    {
+      "geo": "MK",
+      "time": "2019",
+      "value": 56.0
+    },
+    {
+      "geo": "MK",
+      "time": "2020",
+      "value": 57.0
+    },
+    {
+      "geo": "MK",
+      "time": "2021",
+      "value": 58.4
+    },
+    {
+      "geo": "MK",
+      "time": "2022",
+      "value": 59.6
+    },
+    {
+      "geo": "MK",
+      "time": "2023",
+      "value": 61.2
+    },
+    {
+      "geo": "MK",
+      "time": "2024",
+      "value": 63.0
+    },
+    {
+      "geo": "MT",
+      "time": "2013",
+      "value": 18.8
+    },
+    {
+      "geo": "MT",
+      "time": "2014",
+      "value": 20.6
+    },
+    {
+      "geo": "MT",
+      "time": "2015",
+      "value": 21.1
+    },
+    {
+      "geo": "MT",
+      "time": "2016",
+      "value": 24.6
+    },
+    {
+      "geo": "MT",
+      "time": "2017",
+      "value": 23.1
+    },
+    {
+      "geo": "MT",
+      "time": "2018",
+      "value": 25.3
+    },
+    {
+      "geo": "MT",
+      "time": "2019",
+      "value": 24.4
+    },
+    {
+      "geo": "MT",
+      "time": "2020",
+      "value": 25.6
+    },
+    {
+      "geo": "MT",
+      "time": "2021",
+      "value": 24.3
+    },
+    {
+      "geo": "MT",
+      "time": "2022",
+      "value": 24.6
+    },
+    {
+      "geo": "MT",
+      "time": "2023",
+      "value": 26.5
+    },
+    {
+      "geo": "MT",
+      "time": "2024",
+      "value": 26.7
+    },
+    {
+      "geo": "NL",
+      "time": "2010",
+      "value": 65.3
+    },
+    {
+      "geo": "NL",
+      "time": "2015",
+      "value": 67.7
+    },
+    {
+      "geo": "NL",
+      "time": "2016",
+      "value": 66.5
+    },
+    {
+      "geo": "NL",
+      "time": "2017",
+      "value": 67.2
+    },
+    {
+      "geo": "NL",
+      "time": "2018",
+      "value": 66.1
+    },
+    {
+      "geo": "NL",
+      "time": "2019",
+      "value": 66.1
+    },
+    {
+      "geo": "NL",
+      "time": "2020",
+      "value": 66.6
+    },
+    {
+      "geo": "NL",
+      "time": "2021",
+      "value": 67.4
+    },
+    {
+      "geo": "NL",
+      "time": "2022",
+      "value": 69.1
+    },
+    {
+      "geo": "NL",
+      "time": "2023",
+      "value": 69.4
+    },
+    {
+      "geo": "NL",
+      "time": "2024",
+      "value": 69.2
+    },
+    {
+      "geo": "NO",
+      "time": "2010",
+      "value": 45.2
+    },
+    {
+      "geo": "NO",
+      "time": "2013",
+      "value": 44.2
+    },
+    {
+      "geo": "NO",
+      "time": "2014",
+      "value": 42.3
+    },
+    {
+      "geo": "NO",
+      "time": "2015",
+      "value": 41.2
+    },
+    {
+      "geo": "NO",
+      "time": "2016",
+      "value": 41.7
+    },
+    {
+      "geo": "NO",
+      "time": "2017",
+      "value": 41.0
+    },
+    {
+      "geo": "NO",
+      "time": "2018",
+      "value": 40.5
+    },
+    {
+      "geo": "NO",
+      "time": "2019",
+      "value": 41.2
+    },
+    {
+      "geo": "NO",
+      "time": "2020",
+      "value": 41.7
+    },
+    {
+      "geo": "NO",
+      "time": "2021",
+      "value": 42.0
+    },
+    {
+      "geo": "NO",
+      "time": "2022",
+      "value": 42.8
+    },
+    {
+      "geo": "NO",
+      "time": "2023",
+      "value": 43.4
+    },
+    {
+      "geo": "NO",
+      "time": "2024",
+      "value": 43.3
+    },
+    {
+      "geo": "PL",
+      "time": "2010",
+      "value": 36.9
+    },
+    {
+      "geo": "PL",
+      "time": "2013",
+      "value": 37.9
+    },
+    {
+      "geo": "PL",
+      "time": "2014",
+      "value": 38.8
+    },
+    {
+      "geo": "PL",
+      "time": "2015",
+      "value": 40.7
+    },
+    {
+      "geo": "PL",
+      "time": "2016",
+      "value": 41.3
+    },
+    {
+      "geo": "PL",
+      "time": "2017",
+      "value": 41.7
+    },
+    {
+      "geo": "PL",
+      "time": "2018",
+      "value": 41.8
+    },
+    {
+      "geo": "PL",
+      "time": "2019",
+      "value": 41.8
+    },
+    {
+      "geo": "PL",
+      "time": "2020",
+      "value": 41.6
+    },
+    {
+      "geo": "PL",
+      "time": "2021",
+      "value": 42.1
+    },
+    {
+      "geo": "PL",
+      "time": "2022",
+      "value": 42.6
+    },
+    {
+      "geo": "PL",
+      "time": "2023",
+      "value": 41.8
+    },
+    {
+      "geo": "PL",
+      "time": "2024",
+      "value": 41.1
+    },
+    {
+      "geo": "PT",
+      "time": "2010",
+      "value": 36.0
+    },
+    {
+      "geo": "PT",
+      "time": "2013",
+      "value": 40.2
+    },
+    {
+      "geo": "PT",
+      "time": "2014",
+      "value": 39.9
+    },
+    {
+      "geo": "PT",
+      "time": "2015",
+      "value": 39.0
+    },
+    {
+      "geo": "PT",
+      "time": "2016",
+      "value": 35.7
+    },
+    {
+      "geo": "PT",
+      "time": "2017",
+      "value": 35.4
+    },
+    {
+      "geo": "PT",
+      "time": "2018",
+      "value": 34.7
+    },
+    {
+      "geo": "PT",
+      "time": "2019",
+      "value": 33.8
+    },
+    {
+      "geo": "PT",
+      "time": "2020",
+      "value": 33.4
+    },
+    {
+      "geo": "PT",
+      "time": "2021",
+      "value": 33.4
+    },
+    {
+      "geo": "PT",
+      "time": "2022",
+      "value": 33.5
+    },
+    {
+      "geo": "PT",
+      "time": "2023",
+      "value": 32.2
+    },
+    {
+      "geo": "PT",
+      "time": "2024",
+      "value": 30.6
+    },
+    {
+      "geo": "RO",
+      "time": "2013",
+      "value": 51.5
+    },
+    {
+      "geo": "RO",
+      "time": "2014",
+      "value": 48.8
+    },
+    {
+      "geo": "RO",
+      "time": "2015",
+      "value": 48.1
+    },
+    {
+      "geo": "RO",
+      "time": "2016",
+      "value": 48.4
+    },
+    {
+      "geo": "RO",
+      "time": "2017",
+      "value": 48.9
+    },
+    {
+      "geo": "RO",
+      "time": "2018",
+      "value": 49.3
+    },
+    {
+      "geo": "RO",
+      "time": "2019",
+      "value": 49.5
+    },
+    {
+      "geo": "RO",
+      "time": "2020",
+      "value": 50.0
+    },
+    {
+      "geo": "RO",
+      "time": "2021",
+      "value": 50.6
+    },
+    {
+      "geo": "RO",
+      "time": "2022",
+      "value": 50.8
+    },
+    {
+      "geo": "RO",
+      "time": "2023",
+      "value": 50.6
+    },
+    {
+      "geo": "RO",
+      "time": "2024",
+      "value": 51.1
+    },
+    {
+      "geo": "RS",
+      "time": "2013",
+      "value": 71.9
+    },
+    {
+      "geo": "RS",
+      "time": "2014",
+      "value": 71.6
+    },
+    {
+      "geo": "RS",
+      "time": "2015",
+      "value": 71.0
+    },
+    {
+      "geo": "RS",
+      "time": "2016",
+      "value": 70.2
+    },
+    {
+      "geo": "RS",
+      "time": "2017",
+      "value": 69.7
+    },
+    {
+      "geo": "RS",
+      "time": "2018",
+      "value": 69.1
+    },
+    {
+      "geo": "RS",
+      "time": "2019",
+      "value": 68.4
+    },
+    {
+      "geo": "RS",
+      "time": "2020",
+      "value": 68.2
+    },
+    {
+      "geo": "RS",
+      "time": "2021",
+      "value": 67.8
+    },
+    {
+      "geo": "RS",
+      "time": "2022",
+      "value": 67.4
+    },
+    {
+      "geo": "RS",
+      "time": "2023",
+      "value": 67.3
+    },
+    {
+      "geo": "RS",
+      "time": "2024",
+      "value": 67.4,
+      "flag": "bd"
+    },
+    {
+      "geo": "SE",
+      "time": "2010",
+      "value": 45.5
+    },
+    {
+      "geo": "SE",
+      "time": "2013",
+      "value": 44.5
+    },
+    {
+      "geo": "SE",
+      "time": "2014",
+      "value": 41.3
+    },
+    {
+      "geo": "SE",
+      "time": "2015",
+      "value": 37.1
+    },
+    {
+      "geo": "SE",
+      "time": "2016",
+      "value": 35.8
+    },
+    {
+      "geo": "SE",
+      "time": "2017",
+      "value": 34.4
+    },
+    {
+      "geo": "SE",
+      "time": "2018",
+      "value": 35.6
+    },
+    {
+      "geo": "SE",
+      "time": "2019",
+      "value": 33.7
+    },
+    {
+      "geo": "SE",
+      "time": "2020",
+      "value": 33.0
+    },
+    {
+      "geo": "SE",
+      "time": "2021",
+      "value": 32.4
+    },
+    {
+      "geo": "SE",
+      "time": "2022",
+      "value": 32.7
+    },
+    {
+      "geo": "SE",
+      "time": "2023",
+      "value": 34.3
+    },
+    {
+      "geo": "SE",
+      "time": "2024",
+      "value": 34.0
+    },
+    {
+      "geo": "SI",
+      "time": "2010",
+      "value": 56.4
+    },
+    {
+      "geo": "SI",
+      "time": "2013",
+      "value": 58.6
+    },
+    {
+      "geo": "SI",
+      "time": "2014",
+      "value": 59.7
+    },
+    {
+      "geo": "SI",
+      "time": "2015",
+      "value": 60.5
+    },
+    {
+      "geo": "SI",
+      "time": "2016",
+      "value": 64.2
+    },
+    {
+      "geo": "SI",
+      "time": "2017",
+      "value": 64.3
+    },
+    {
+      "geo": "SI",
+      "time": "2018",
+      "value": 64.1
+    },
+    {
+      "geo": "SI",
+      "time": "2019",
+      "value": 63.7
+    },
+    {
+      "geo": "SI",
+      "time": "2020",
+      "value": 63.5
+    },
+    {
+      "geo": "SI",
+      "time": "2021",
+      "value": 62.0
+    },
+    {
+      "geo": "SI",
+      "time": "2022",
+      "value": 62.0
+    },
+    {
+      "geo": "SI",
+      "time": "2023",
+      "value": 62.3
+    },
+    {
+      "geo": "SI",
+      "time": "2024",
+      "value": 62.7
+    },
+    {
+      "geo": "SK",
+      "time": "2010",
+      "value": 65.9
+    },
+    {
+      "geo": "SK",
+      "time": "2013",
+      "value": 62.3
+    },
+    {
+      "geo": "SK",
+      "time": "2014",
+      "value": 63.0
+    },
+    {
+      "geo": "SK",
+      "time": "2015",
+      "value": 63.0
+    },
+    {
+      "geo": "SK",
+      "time": "2016",
+      "value": 63.1
+    },
+    {
+      "geo": "SK",
+      "time": "2017",
+      "value": 62.9
+    },
+    {
+      "geo": "SK",
+      "time": "2018",
+      "value": 61.8
+    },
+    {
+      "geo": "SK",
+      "time": "2019",
+      "value": 61.5
+    },
+    {
+      "geo": "SK",
+      "time": "2020",
+      "value": 61.4
+    },
+    {
+      "geo": "SK",
+      "time": "2021",
+      "value": 61.7
+    },
+    {
+      "geo": "SK",
+      "time": "2022",
+      "value": 61.9
+    },
+    {
+      "geo": "SK",
+      "time": "2023",
+      "value": 61.7
+    },
+    {
+      "geo": "SK",
+      "time": "2024",
+      "value": 62.3
+    },
+    {
+      "geo": "TR",
+      "time": "2013",
+      "value": 43.7
+    },
+    {
+      "geo": "TR",
+      "time": "2014",
+      "value": 44.6
+    },
+    {
+      "geo": "TR",
+      "time": "2015",
+      "value": 47.8
+    },
+    {
+      "geo": "TR",
+      "time": "2016",
+      "value": 46.6
+    },
+    {
+      "geo": "TR",
+      "time": "2017",
+      "value": 44.8
+    },
+    {
+      "geo": "TR",
+      "time": "2018",
+      "value": 45.0
+    },
+    {
+      "geo": "TR",
+      "time": "2019",
+      "value": 39.8
+    },
+    {
+      "geo": "TR",
+      "time": "2020",
+      "value": 35.6
+    },
+    {
+      "geo": "TR",
+      "time": "2021",
+      "value": 33.2
+    },
+    {
+      "geo": "TR",
+      "time": "2022",
+      "value": 32.1
+    },
+    {
+      "geo": "TR",
+      "time": "2023",
+      "value": 29.6
+    },
+    {
+      "geo": "TR",
+      "time": "2024",
+      "value": 32.8
+    },
+    {
+      "geo": "UK",
+      "time": "2013",
+      "value": 44.3
+    },
+    {
+      "geo": "UK",
+      "time": "2014",
+      "value": 46.2
+    },
+    {
+      "geo": "UK",
+      "time": "2015",
+      "value": 46.2
+    },
+    {
+      "geo": "UK",
+      "time": "2016",
+      "value": 47.3
+    },
+    {
+      "geo": "UK",
+      "time": "2017",
+      "value": 47.6
+    },
+    {
+      "geo": "UK",
+      "time": "2018",
+      "value": 44.7
+    },
+    {
+      "geo": "UK",
+      "time": "2019",
+      "value": 42.1
+    }
+  ],
+  "coverage": {
+    "geos": [
+      "AT",
+      "BE",
+      "BG",
+      "CH",
+      "CY",
+      "CZ",
+      "DE",
+      "DK",
+      "EE",
+      "EL",
+      "ES",
+      "EU27",
+      "FI",
+      "FR",
+      "HR",
+      "HU",
+      "IE",
+      "IS",
+      "IT",
+      "LI",
+      "LT",
+      "LU",
+      "LV",
+      "ME",
+      "MK",
+      "MT",
+      "NL",
+      "NO",
+      "PL",
+      "PT",
+      "RO",
+      "RS",
+      "SE",
+      "SI",
+      "SK",
+      "TR",
+      "UK"
+    ],
+    "time": [
+      "2010",
+      "2024"
+    ],
+    "observations": 448
+  }
+}

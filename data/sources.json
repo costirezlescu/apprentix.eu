@@ -1,0 +1,686 @@
+{
+  "description": "Every upstream source Apprentix tracks: what it provides, how it is accessed, its licence and refresh cadence. 'automated' sources are fetched by pipeline/ connectors; the others are curated by hand or not yet integrated.",
+  "sources": [
+    {
+      "id": "at-wko",
+      "name": "Austria — WKO Lehrlingsstatistik",
+      "publisher": "Wirtschaftskammer Österreich (WKO), Abteilung für Statistik",
+      "homepage": "https://www.wko.at/zahlen-daten-fakten/daten-lehrlingsstatistik",
+      "description": "Apprentices (Lehrlinge) in Austria at 31 December by sector (Sparte), federal state, apprenticeship year and sex, from the apprenticeship offices of the Economic Chambers. National series, 2002 onwards plus 1980/1990/2000 benchmarks.",
+      "access": "file",
+      "licence": "unverified — wko.at terms reserve all rights (personal use only; storage in databases and redistribution need WKO consent)",
+      "cadence": "annual (published in January–February for 31 December of the previous year)",
+      "permission_needed": "WKO's terms forbid storing the data in databases or passing it on without WKO's consent. Ask WKO (Abteilung für Statistik) for permission before enabling.",
+      "reuse_note": "WKO consent required before republishing (see wko.at Offenlegung).",
+      "outputs": [
+        "indicators/at-wko-apprentices",
+        "indicators/at-wko-apprentices-land"
+      ],
+      "automated": true,
+      "connector": "pipeline/sources/at_wko.py",
+      "status": {
+        "last_run": "2026-10-01T10:01:25+00:00",
+        "result": "awaiting-permission",
+        "detail": "WKO's terms forbid storing the data in databases or passing it on without WKO's consent. Ask WKO (Abteilung für Statistik) for permission before enabling."
+      }
+    },
+    {
+      "id": "cedefop",
+      "name": "Cedefop — Datasets (Key indicators on VET; Timeline of VET policies)",
+      "publisher": "Cedefop",
+      "homepage": "https://www.cedefop.europa.eu/en/datasets",
+      "description": "Cedefop's downloadable datasets: 58 Key indicators on VET for 36 countries (2010 onwards) and more than 1,000 national VET policy developments since 2015.",
+      "access": "file",
+      "browser_cors": false,
+      "licence": "CC-BY-4.0",
+      "cadence": "annual (KIVET June–July; Timeline yearly)",
+      "automated": true,
+      "connector": "pipeline/sources/cedefop_files.py",
+      "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+      "status": {
+        "last_run": "2026-10-01T10:01:30+00:00",
+        "result": "ok",
+        "outputs": [
+          "data/published/indicators/cedefop-kivet-1010.json",
+          "data/published/indicators/cedefop-kivet-1020.json",
+          "data/published/indicators/cedefop-kivet-1025.json",
+          "data/published/indicators/cedefop-kivet-1026.json",
+          "data/published/indicators/cedefop-kivet-1030.json",
+          "data/published/indicators/cedefop-kivet-1040a.json",
+          "data/published/indicators/cedefop-kivet-1050.json",
+          "data/published/indicators/cedefop-kivet-1050a.json",
+          "data/published/indicators/cedefop-kivet-1051.json",
+          "data/published/indicators/cedefop-kivet-1052.json",
+          "data/published/indicators/cedefop-kivet-1060.json",
+          "data/published/indicators/cedefop-kivet-1070.json",
+          "data/published/indicators/cedefop-kivet-1075.json",
+          "data/published/indicators/cedefop-kivet-1080.json",
+          "data/published/indicators/cedefop-kivet-1091.json",
+          "data/published/indicators/cedefop-kivet-1092.json",
+          "data/published/indicators/cedefop-kivet-1093.json",
+          "data/published/indicators/cedefop-kivet-1094.json",
+          "data/published/indicators/cedefop-kivet-1100.json",
+          "data/published/indicators/cedefop-kivet-1100a.json",
+          "data/published/indicators/cedefop-kivet-1101.json",
+          "data/published/indicators/cedefop-kivet-1102.json",
+          "data/published/indicators/cedefop-kivet-1110.json",
+          "data/published/indicators/cedefop-kivet-1120.json",
+          "data/published/indicators/cedefop-kivet-1130a.json",
+          "data/published/indicators/cedefop-kivet-1135.json",
+          "data/published/indicators/cedefop-kivet-1140a.json",
+          "data/published/indicators/cedefop-kivet-2010.json",
+          "data/published/indicators/cedefop-kivet-2025.json",
+          "data/published/indicators/cedefop-kivet-2030.json",
+          "data/published/indicators/cedefop-kivet-2034.json",
+          "data/published/indicators/cedefop-kivet-2035.json",
+          "data/published/indicators/cedefop-kivet-2040.json",
+          "data/published/indicators/cedefop-kivet-2045.json",
+          "data/published/indicators/cedefop-kivet-2050.json",
+          "data/published/indicators/cedefop-kivet-2065.json",
+          "data/published/indicators/cedefop-kivet-2066.json",
+          "data/published/indicators/cedefop-kivet-2080a.json",
+          "data/published/indicators/cedefop-kivet-2090a.json",
+          "data/published/indicators/cedefop-kivet-2110.json",
+          "data/published/indicators/cedefop-kivet-2120.json",
+          "data/published/indicators/cedefop-kivet-2125.json",
+          "data/published/indicators/cedefop-kivet-2128.json",
+          "data/published/indicators/cedefop-kivet-2130a.json",
+          "data/published/indicators/cedefop-kivet-3005.json",
+          "data/published/indicators/cedefop-kivet-3010.json",
+          "data/published/indicators/cedefop-kivet-3021.json",
+          "data/published/indicators/cedefop-kivet-3030.json",
+          "data/published/indicators/cedefop-kivet-3040.json",
+          "data/published/indicators/cedefop-kivet-3045.json",
+          "data/published/indicators/cedefop-kivet-3050.json",
+          "data/published/indicators/cedefop-kivet-3060.json",
+          "data/published/indicators/cedefop-kivet-3061.json",
+          "data/published/indicators/cedefop-kivet-3065.json",
+          "data/published/indicators/cedefop-kivet-3070b.json",
+          "data/published/indicators/cedefop-kivet-3075.json",
+          "data/published/indicators/cedefop-kivet-3080.json",
+          "data/published/indicators/cedefop-kivet-3090.json",
+          "data/published/vet-policy-timeline/meta.json",
+          "data/published/vet-policy-timeline/records.json"
+        ]
+      }
+    },
+    {
+      "id": "ch-bfs",
+      "name": "Switzerland — BFS initial VET statistics (opendata.swiss)",
+      "publisher": "Swiss Federal Statistical Office (BFS/OFS)",
+      "homepage": "https://www.bfs.admin.ch/bfs/de/home/statistiken/bildung-wissenschaft/personen-ausbildung/sekundarstufe-II.html",
+      "description": "Learners, entrants and qualifications in Swiss initial VET (EFZ/EBA), split into dual (company-based) and full-time school-based training, by sex and canton. National series.",
+      "access": "api",
+      "licence": "opendata.swiss terms_by (open use, source must be cited)",
+      "cadence": "annual (SDL learners in February; SBG-SFPI entrants/stock/qualifications in June)",
+      "outputs": [
+        "indicators/ch-bfs-learners-vet",
+        "indicators/ch-bfs-learners-vet-form",
+        "indicators/ch-bfs-learners-vet-canton",
+        "indicators/ch-bfs-entrants-vet",
+        "indicators/ch-bfs-qualifications-vet"
+      ],
+      "automated": true,
+      "connector": "pipeline/sources/ch_bfs.py",
+      "status": {
+        "last_run": "2026-10-01T10:01:44+00:00",
+        "result": "ok",
+        "outputs": [
+          "data/published/indicators/ch-bfs-entrants-vet.json",
+          "data/published/indicators/ch-bfs-learners-vet-canton.json",
+          "data/published/indicators/ch-bfs-learners-vet-form.json",
+          "data/published/indicators/ch-bfs-learners-vet.json",
+          "data/published/indicators/ch-bfs-qualifications-vet.json"
+        ]
+      }
+    },
+    {
+      "id": "data-europa",
+      "name": "data.europa.eu",
+      "publisher": "Publications Office of the European Union",
+      "homepage": "https://data.europa.eu/",
+      "description": "The EU open-data portal, used as a discovery hub: a catalogue of apprenticeship and VET datasets published by national, regional and EU bodies, plus an update watch on Cedefop's catalogue.",
+      "access": "api",
+      "browser_cors": true,
+      "licence": "EC-reuse",
+      "cadence": "continuous (harvested daily from national portals); refreshed on each pipeline run",
+      "outputs": [
+        "data-catalogue/records.json",
+        "data-catalogue/meta.json",
+        "watch/cedefop-catalogue.json"
+      ],
+      "automated": true,
+      "connector": "pipeline/sources/data_europa.py",
+      "licence_url": "https://eur-lex.europa.eu/eli/dec/2011/833/oj",
+      "status": {
+        "last_run": "2026-10-01T10:03:38+00:00",
+        "result": "ok",
+        "outputs": [
+          "data/published/data-catalogue/meta.json",
+          "data/published/data-catalogue/records.json",
+          "data/watch/cedefop-catalogue.json"
+        ]
+      }
+    },
+    {
+      "id": "de-ba",
+      "name": "Germany — BA Jobbörse: advertised apprenticeship places (monthly snapshot)",
+      "publisher": "Bundesagentur für Arbeit (BA)",
+      "homepage": "https://www.arbeitsagentur.de/jobsuche/suche?angebotsart=4",
+      "description": "Number of apprenticeship and dual-study places currently advertised in the Federal Employment Agency's job board (Jobbörse), recorded once a month, by type (apprenticeship vs dual study). Aggregate counts only — no ad texts or employer details are stored.",
+      "access": "api",
+      "licence": "unverified — no API terms published; BA imprint requires permission for reuse beyond information and source attribution",
+      "cadence": "monthly snapshot (first run of each month)",
+      "permission_needed": "The BA imprint requires prior permission to reuse its content, and the API has no published terms. Ask the Bundesagentur für Arbeit before enabling.",
+      "reuse_note": "Undocumented public API (client id from the BA web app); reuse terms unclear — aggregate counts only.",
+      "outputs": [
+        "indicators/de-ba-advertised-training-places"
+      ],
+      "automated": true,
+      "connector": "pipeline/sources/de_ba.py",
+      "status": {
+        "last_run": "2026-10-01T10:03:38+00:00",
+        "result": "awaiting-permission",
+        "detail": "The BA imprint requires prior permission to reuse its content, and the API has no published terms. Ask the Bundesagentur für Arbeit before enabling."
+      }
+    },
+    {
+      "id": "de-bibb",
+      "name": "Germany — BIBB DAZUBI (training-entrant and graduate rates)",
+      "publisher": "Bundesinstitut für Berufsbildung (BIBB)",
+      "homepage": "https://www.bibb.de/de/1868.php",
+      "description": "BIBB's Datensystem Auszubildende (DAZUBI) additional tables: the training-entrant rate (Ausbildungsanfängerquote) and graduate rate of dual VET in Germany compared with higher education, since 2012.",
+      "access": "file",
+      "licence": "CC BY-NC-ND 4.0 (as stated in the BIBB workbook)",
+      "cadence": "annual (March)",
+      "permission_needed": "Licensed CC BY-NC-ND 4.0; 'no derivatives' may rule out republishing extracted values in charts. Ask BIBB for permission before enabling.",
+      "reuse_note": "CC BY-NC-ND: non-commercial, no derivatives — confirm that republishing extracted values is acceptable.",
+      "outputs": [
+        "indicators/de-bibb-entry-graduation-rates"
+      ],
+      "automated": true,
+      "connector": "pipeline/sources/de_bibb.py",
+      "status": {
+        "last_run": "2026-10-01T10:03:38+00:00",
+        "result": "awaiting-permission",
+        "detail": "Licensed CC BY-NC-ND 4.0; 'no derivatives' may rule out republishing extracted values in charts. Ask BIBB for permission before enabling."
+      }
+    },
+    {
+      "id": "de-destatis",
+      "name": "Germany — Destatis GENESIS 21211 (vocational training statistics)",
+      "publisher": "Statistisches Bundesamt (Destatis)",
+      "homepage": "https://www-genesis.destatis.de/datenbank/online/statistic/21211/details",
+      "description": "Germany's official vocational training statistics (Berufsbildungsstatistik, 31 December survey): apprentices in dual training under BBiG/HwO, newly concluded training contracts and passed final examinations, by sex, training area and Land.",
+      "access": "api",
+      "browser_cors": false,
+      "licence": "dl-de/by-2-0",
+      "cadence": "annual (results for 31 December published in summer of the following year)",
+      "secret": "DESTATIS_TOKEN",
+      "outputs": [
+        "indicators/de-destatis-apprentices",
+        "indicators/de-destatis-new-contracts",
+        "indicators/de-destatis-exams-passed",
+        "indicators/de-destatis-apprentices-land"
+      ],
+      "automated": true,
+      "connector": "pipeline/sources/de_destatis.py",
+      "licence_url": "https://www.govdata.de/dl-de/by-2-0",
+      "status": {
+        "last_run": "2026-10-01T10:03:38+00:00",
+        "result": "skipped",
+        "detail": "needs DESTATIS_TOKEN"
+      }
+    },
+    {
+      "id": "dk-uvm",
+      "name": "Uddannelsesstatistik.dk — Lærepladsstatistik (Denmark)",
+      "publisher": "Børne- og Undervisningsministeriet / Styrelsen for IT og Læring (STIL), Uddannelsesstatistik.dk",
+      "homepage": "https://uddannelsesstatistik.dk/Pages/Topics/22.aspx",
+      "description": "Monthly number of new training agreements (indgåede uddannelsesaftaler) in Danish vocational education (EUD), from the Ministry's apprenticeship-place statistics.",
+      "access": "api",
+      "browser_cors": false,
+      "licence": "CC BY 4.0 (as declared in the service's DCAT-AP-DK metadata); STIL terms of use require the credit 'Kilde: Uddannelsesstatistik.dk' and the retrieval date",
+      "cadence": "monthly",
+      "secret": "DK_UDDANNELSESSTATISTIK_KEY",
+      "outputs": [
+        "indicators/dk-uvm-training-agreements"
+      ],
+      "automated": true,
+      "connector": "pipeline/sources/dk_uvm.py",
+      "status": {
+        "last_run": "2026-10-01T10:03:38+00:00",
+        "result": "skipped",
+        "detail": "needs DK_UDDANNELSESSTATISTIK_KEY"
+      }
+    },
+    {
+      "id": "erasmus",
+      "name": "Erasmus+ project lists",
+      "publisher": "European Commission (DG EAC / EACEA; DG EMPL for CoVEs)",
+      "homepage": "https://erasmus-plus.ec.europa.eu/projects/projects-lists",
+      "description": "Erasmus+ Key Action 1 VET mobility projects and EU grants by coordinating country and call year (2014–2025), new Erasmus accreditations in VET, and organisations taking part in Centres of Vocational Excellence projects.",
+      "access": "file",
+      "browser_cors": false,
+      "licence": "CC-BY-4.0",
+      "cadence": "files regenerated daily; new call-year results mainly summer–autumn",
+      "outputs": [
+        "indicators/erasmus-ka1-vet-projects",
+        "indicators/erasmus-ka1-vet-grant",
+        "indicators/erasmus-vet-accreditations",
+        "indicators/erasmus-cove-participations"
+      ],
+      "automated": true,
+      "connector": "pipeline/sources/erasmus.py",
+      "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+      "status": {
+        "last_run": "2026-10-01T10:07:45+00:00",
+        "result": "ok",
+        "outputs": [
+          "data/published/indicators/erasmus-cove-participations.json",
+          "data/published/indicators/erasmus-ka1-vet-grant.json",
+          "data/published/indicators/erasmus-ka1-vet-projects.json",
+          "data/published/indicators/erasmus-vet-accreditations.json"
+        ]
+      }
+    },
+    {
+      "id": "esco",
+      "name": "ESCO — European Skills, Competences, Qualifications and Occupations",
+      "publisher": "European Commission (DG EMPL)",
+      "homepage": "https://esco.ec.europa.eu/",
+      "description": "Reference list of every ESCO occupation (URI, English label, ESCO code, ISCO-08 unit group), pinned to ESCO v1.2.1. Used to link apprenticeship schemes to occupations.",
+      "access": "api",
+      "browser_cors": true,
+      "licence": "EC-reuse",
+      "cadence": "irregular (new ESCO versions roughly yearly)",
+      "outputs": [
+        "reference/esco-occupations.json"
+      ],
+      "automated": true,
+      "connector": "pipeline/sources/esco.py",
+      "licence_url": "https://eur-lex.europa.eu/eli/dec/2011/833/oj",
+      "status": {
+        "last_run": "2026-10-01T10:07:58+00:00",
+        "result": "ok",
+        "outputs": [
+          "data/reference/esco-occupations.json"
+        ]
+      }
+    },
+    {
+      "id": "eurostat",
+      "name": "Eurostat",
+      "publisher": "Eurostat (European Commission)",
+      "homepage": "https://ec.europa.eu/eurostat",
+      "description": "EU statistics on work-based learning, VET graduates' employment, and pupils in combined school- and work-based programmes — the closest EU-wide proxy for apprenticeship.",
+      "access": "api",
+      "browser_cors": true,
+      "licence": "CC-BY-4.0",
+      "cadence": "annual (LFS in September, UOE enrolment in August–September)",
+      "automated": true,
+      "connector": "pipeline/sources/eurostat.py",
+      "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+      "status": {
+        "last_run": "2026-10-01T10:08:04+00:00",
+        "result": "ok",
+        "outputs": [
+          "data/published/indicators/eurostat-ed3sw-share-of-vet.json",
+          "data/published/indicators/eurostat-edat_lfse_24-general.json",
+          "data/published/indicators/eurostat-edat_lfse_24-vet.json",
+          "data/published/indicators/eurostat-educ_uoe_enrs04-ed3sw.json",
+          "data/published/indicators/eurostat-educ_uoe_enrs07-ed4sw.json",
+          "data/published/indicators/eurostat-tps00215.json",
+          "data/published/indicators/eurostat-trng_cvt_34s.json"
+        ]
+      }
+    },
+    {
+      "id": "fi-statfin",
+      "name": "Statistics Finland — vocational students by mode of competence acquisition",
+      "publisher": "Statistics Finland (Tilastokeskus)",
+      "homepage": "https://stat.fi/en/statistics/opiskt",
+      "description": "Finnish vocational students, new students and qualifications whose studies included apprenticeship (oppisopimus) periods, by qualification type and sex, from Statistics Finland table 14rw.",
+      "access": "api",
+      "licence": "CC-BY-4.0",
+      "cadence": "annual (May; revised in October)",
+      "outputs": [
+        "indicators/fi-statfin-apprenticeship-students",
+        "indicators/fi-statfin-apprenticeship-new-students",
+        "indicators/fi-statfin-apprenticeship-qualifications"
+      ],
+      "automated": true,
+      "connector": "pipeline/sources/fi_statfin.py",
+      "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+      "status": {
+        "last_run": "2026-10-01T10:08:09+00:00",
+        "result": "ok",
+        "outputs": [
+          "data/published/indicators/fi-statfin-apprenticeship-new-students.json",
+          "data/published/indicators/fi-statfin-apprenticeship-qualifications.json",
+          "data/published/indicators/fi-statfin-apprenticeship-students.json"
+        ]
+      }
+    },
+    {
+      "id": "fr-dares",
+      "name": "DARES — apprenticeship contracts (POEM)",
+      "publisher": "DARES (Ministère du Travail), POEM",
+      "homepage": "https://poem.travail-emploi.gouv.fr/synthese/contrats-d-apprentissage",
+      "description": "Monthly new apprenticeship contracts and end-of-month stock of apprentices in France since 2013, by employer sector (private/public) and level (secondary/higher education).",
+      "access": "file",
+      "licence": "unverified — POEM legal notice (mentions légales) states the site's contents are \"des information publiques librement et gratuitement réutilisables dans les conditions fixées par la loi n°78-753 du 17 juillet 1978\", but also asks reusers to contact dares.dsypef at travail.gouv.fr; no named open licence is attached to the series",
+      "cadence": "monthly (about two months' lag)",
+      "outputs": [
+        "indicators/fr-dares-new-contracts",
+        "indicators/fr-dares-apprentices-stock"
+      ],
+      "automated": true,
+      "connector": "pipeline/sources/fr_dares.py",
+      "status": {
+        "last_run": "2026-10-01T10:08:20+00:00",
+        "result": "ok",
+        "outputs": [
+          "data/published/indicators/fr-dares-apprentices-stock.json",
+          "data/published/indicators/fr-dares-new-contracts.json"
+        ]
+      }
+    },
+    {
+      "id": "ie-cso",
+      "name": "CSO Ireland — Apprenticeship Outcomes",
+      "publisher": "Central Statistics Office (CSO), Ireland",
+      "homepage": "https://www.cso.ie/en/statistics/education/apprenticeshipoutcomesqualificationyear/",
+      "description": "Number of apprentices qualifying each year in Ireland (by sex and NFQ level) and the share in employment in the years after qualifying, from the CSO Apprenticeship Outcomes release.",
+      "access": "api",
+      "licence": "CC-BY-4.0",
+      "cadence": "irregular (latest release April 2025, qualification years 2010–2020)",
+      "outputs": [
+        "indicators/ie-cso-qualified-apprentices",
+        "indicators/ie-cso-apprentice-employment-rate"
+      ],
+      "automated": true,
+      "connector": "pipeline/sources/ie_cso.py",
+      "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+      "status": {
+        "last_run": "2026-10-01T10:08:22+00:00",
+        "result": "ok",
+        "outputs": [
+          "data/published/indicators/ie-cso-apprentice-employment-rate.json",
+          "data/published/indicators/ie-cso-qualified-apprentices.json"
+        ]
+      }
+    },
+    {
+      "id": "nl-duo",
+      "name": "DUO Open Onderwijsdata — MBO students",
+      "publisher": "DUO (Dienst Uitvoering Onderwijs), Open Onderwijsdata",
+      "homepage": "https://duo.nl/open_onderwijsdata/middelbaar-beroepsonderwijs/",
+      "description": "Students in Dutch secondary vocational education (MBO) at 1 October, by learning pathway — BBL (work-based, apprenticeship-type) vs BOL (school-based) — and for BBL by level and sector chamber.",
+      "access": "file",
+      "licence": "Creative Commons Attribution (as declared in the CKAN metadata, license_id 'cc-by'; version not stated)",
+      "cadence": "annual (January–February, reference date 1 October)",
+      "outputs": [
+        "indicators/nl-duo-mbo-students",
+        "indicators/nl-duo-bbl-students"
+      ],
+      "automated": true,
+      "connector": "pipeline/sources/nl_duo.py",
+      "status": {
+        "last_run": "2026-10-01T10:08:26+00:00",
+        "result": "ok",
+        "outputs": [
+          "data/published/indicators/nl-duo-bbl-students.json",
+          "data/published/indicators/nl-duo-mbo-students.json"
+        ]
+      }
+    },
+    {
+      "id": "no-ssb",
+      "name": "Statistics Norway (SSB) — StatBank",
+      "publisher": "Statistics Norway (SSB)",
+      "homepage": "https://www.ssb.no/en/vgu",
+      "description": "Norwegian apprentices (lærlinger) and training candidates (lærekandidater) at 1 October, new apprentices, and completed trade/journeyman examinations, from SSB's upper-secondary education statistics.",
+      "access": "api",
+      "licence": "CC-BY-4.0",
+      "cadence": "annual (February)",
+      "outputs": [
+        "indicators/no-ssb-apprentices",
+        "indicators/no-ssb-new-apprentices",
+        "indicators/no-ssb-trade-certificates"
+      ],
+      "automated": true,
+      "connector": "pipeline/sources/no_ssb.py",
+      "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+      "status": {
+        "last_run": "2026-10-01T10:08:30+00:00",
+        "result": "ok",
+        "outputs": [
+          "data/published/indicators/no-ssb-apprentices.json",
+          "data/published/indicators/no-ssb-new-apprentices.json",
+          "data/published/indicators/no-ssb-trade-certificates.json"
+        ]
+      }
+    },
+    {
+      "id": "oecd",
+      "name": "OECD Education at a Glance",
+      "publisher": "OECD",
+      "homepage": "https://data-explorer.oecd.org/",
+      "description": "Education at a Glance tables: share of VET students in combined school- and work-based programmes, and employment rates of adults with vocational versus general upper-secondary attainment. Adds non-EU comparators (CH, NO, IS, TR, UK).",
+      "access": "api",
+      "browser_cors": true,
+      "licence": "CC-BY-4.0",
+      "cadence": "annual (Education at a Glance, September)",
+      "outputs": [
+        "indicators/oecd-share-vet-sw",
+        "indicators/oecd-emp-rate-upper-secondary"
+      ],
+      "automated": true,
+      "connector": "pipeline/sources/oecd.py",
+      "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+      "status": {
+        "last_run": "2026-10-01T10:08:32+00:00",
+        "result": "ok",
+        "outputs": [
+          "data/published/indicators/oecd-emp-rate-upper-secondary.json",
+          "data/published/indicators/oecd-share-vet-sw.json"
+        ]
+      }
+    },
+    {
+      "id": "uis",
+      "name": "UNESCO Institute for Statistics (UIS)",
+      "publisher": "UNESCO Institute for Statistics",
+      "homepage": "https://databrowser.uis.unesco.org/",
+      "description": "Global education statistics: share of students in vocational programmes by ISCED level, share of 15–24-year-olds in vocational education, and government spending on vocational education. Fills gaps for candidate countries (AL, BA, GE, MD, ME, MK, RS, TR, UA).",
+      "access": "api",
+      "browser_cors": true,
+      "licence": "CC BY-SA 4.0 (UIS terms and conditions; credit 'Source: UNESCO Institute for Statistics (UIS)', URL and date of extraction)",
+      "cadence": "two data releases a year (typically February/March and September)",
+      "outputs": [
+        "indicators/uis-gtvp-3-v",
+        "indicators/uis-gtvp-4-v",
+        "indicators/uis-gtvp-5-v",
+        "indicators/uis-gtvp-2t3-v",
+        "indicators/uis-ev1524p-2t5-v",
+        "indicators/uis-xgdp-2t4-v-fsgov"
+      ],
+      "automated": true,
+      "connector": "pipeline/sources/uis.py",
+      "status": {
+        "last_run": "2026-10-01T10:08:33+00:00",
+        "result": "ok",
+        "outputs": [
+          "data/published/indicators/uis-ev1524p-2t5-v.json",
+          "data/published/indicators/uis-gtvp-2t3-v.json",
+          "data/published/indicators/uis-gtvp-3-v.json",
+          "data/published/indicators/uis-gtvp-4-v.json",
+          "data/published/indicators/uis-gtvp-5-v.json",
+          "data/published/indicators/uis-xgdp-2t4-v-fsgov.json"
+        ]
+      }
+    },
+    {
+      "id": "uk-dfe",
+      "name": "DfE Explore Education Statistics — Apprenticeships (England)",
+      "publisher": "Department for Education (England), Explore Education Statistics",
+      "homepage": "https://explore-education-statistics.service.gov.uk/find-statistics/apprenticeships",
+      "description": "Apprenticeship starts, achievements and participation in England by academic year, by apprenticeship level and age group.",
+      "access": "api",
+      "licence": "OGL-UK-3.0",
+      "cadence": "several releases a year; full-year final figures in November",
+      "outputs": [
+        "indicators/uk-dfe-apprenticeship-starts",
+        "indicators/uk-dfe-apprenticeship-achievements",
+        "indicators/uk-dfe-apprenticeship-participation"
+      ],
+      "automated": true,
+      "connector": "pipeline/sources/uk_dfe.py",
+      "licence_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+      "status": {
+        "last_run": "2026-10-01T10:08:37+00:00",
+        "result": "ok",
+        "outputs": [
+          "data/published/indicators/uk-dfe-apprenticeship-achievements.json",
+          "data/published/indicators/uk-dfe-apprenticeship-participation.json",
+          "data/published/indicators/uk-dfe-apprenticeship-starts.json"
+        ]
+      }
+    },
+    {
+      "id": "cedefop-apprenticeship-schemes",
+      "name": "Cedefop — European database on apprenticeship schemes",
+      "publisher": "Cedefop",
+      "homepage": "https://www.cedefop.europa.eu/en/tools/apprenticeship-schemes",
+      "description": "Scheme and country fiches (45 variables; 2016, 2019, 2023 and 2026 updates). The basis of the apprenticeship-schemes dataset on this site.",
+      "access": "manual",
+      "browser_cors": false,
+      "licence": "Cedefop legal notice: reproduction authorised with acknowledgement",
+      "cadence": "about every three years",
+      "why_manual": "Web pages only, behind bot protection that refuses automated requests. Curated by hand; a bulk export has been requested.",
+      "used_by": [
+        "apprenticeship-schemes"
+      ],
+      "automated": false
+    },
+    {
+      "id": "cedefop-financing-apprenticeships",
+      "name": "Cedefop — Financing apprenticeships database",
+      "publisher": "Cedefop",
+      "homepage": "https://www.cedefop.europa.eu/en/tools/financing-apprenticeships",
+      "description": "Financing arrangements for 29 schemes and 54 instruments. Reference period 2016–17 (not updated since).",
+      "access": "manual",
+      "browser_cors": false,
+      "licence": "Cedefop legal notice: reproduction authorised with acknowledgement",
+      "cadence": "not updated",
+      "why_manual": "Web pages only, behind bot protection.",
+      "automated": false
+    },
+    {
+      "id": "cedefop-nqf-online-tool",
+      "name": "Cedefop — NQF online tool",
+      "publisher": "Cedefop",
+      "homepage": "https://www.cedefop.europa.eu/en/tools/nqfs-online-tool",
+      "description": "National qualifications frameworks in 41 countries, state of play 2018, 2020, 2022, 2024.",
+      "access": "manual",
+      "browser_cors": false,
+      "licence": "Cedefop legal notice: reproduction authorised with acknowledgement",
+      "cadence": "every two years",
+      "why_manual": "Web pages and PDF reports only, behind bot protection.",
+      "automated": false
+    },
+    {
+      "id": "cedefop-vet-in-europe",
+      "name": "Cedefop — VET in Europe database",
+      "publisher": "Cedefop and ReferNet",
+      "homepage": "https://www.cedefop.europa.eu/en/tools/vet-in-europe",
+      "description": "Descriptions of national VET systems, system charts and 'Spotlight on VET' summaries.",
+      "access": "manual",
+      "browser_cors": false,
+      "licence": "Cedefop legal notice: reproduction authorised with acknowledgement",
+      "cadence": "about every two years per country",
+      "why_manual": "Long-form web pages and PDFs; best linked and summarised rather than copied.",
+      "automated": false
+    },
+    {
+      "id": "cedefop-financing-adult-learning",
+      "name": "Cedefop — Financing adult learning database",
+      "publisher": "Cedefop",
+      "homepage": "https://www.cedefop.europa.eu/en/tools/financing-adult-learning-db",
+      "description": "Training funds, tax incentives, individual learning accounts, vouchers and payback clauses (reference years 2014–15 and 2020).",
+      "access": "manual",
+      "browser_cors": false,
+      "licence": "Cedefop legal notice: reproduction authorised with acknowledgement",
+      "cadence": "irregular",
+      "why_manual": "Web pages only, behind bot protection.",
+      "automated": false
+    },
+    {
+      "id": "eafa-pledges",
+      "name": "European Alliance for Apprenticeships — members and pledges",
+      "publisher": "European Commission, DG EMPL",
+      "homepage": "https://employment-social-affairs.ec.europa.eu/policies-and-activities/skills-and-qualifications/working-together/european-alliance-apprenticeships/eafa-membership-and-pledges_en",
+      "description": "About 540 pledges by companies, chambers, social partners and others (2025).",
+      "access": "manual",
+      "browser_cors": false,
+      "licence": "EC-reuse",
+      "cadence": "continuous",
+      "why_manual": "Published only as an interactive map and list; no download found. An export can be requested from DG EMPL.",
+      "automated": false,
+      "licence_url": "https://eur-lex.europa.eu/eli/dec/2011/833/oj"
+    },
+    {
+      "id": "etf-data-portal",
+      "name": "European Training Foundation — Data portal",
+      "publisher": "ETF",
+      "homepage": "https://www.etf.europa.eu/en/publications-and-resources/data-portal",
+      "description": "Torino Process monitoring and education, skills and employment indicators for EU candidate and neighbouring countries.",
+      "access": "manual",
+      "browser_cors": false,
+      "licence": "unverified",
+      "cadence": "annual",
+      "why_manual": "Dashboards only; no API or bulk download found.",
+      "automated": false
+    },
+    {
+      "id": "eures",
+      "name": "EURES — European job mobility portal",
+      "publisher": "European Labour Authority",
+      "homepage": "https://eures.europa.eu/",
+      "description": "Job vacancies across Europe, including apprenticeships.",
+      "access": "manual",
+      "browser_cors": false,
+      "licence": "unverified",
+      "cadence": "continuous",
+      "why_manual": "No official open API; the portal's internal search is undocumented and its reuse terms are unclear. Not integrated.",
+      "automated": false
+    },
+    {
+      "id": "education-training-monitor",
+      "name": "Education and Training Monitor",
+      "publisher": "European Commission, DG EAC",
+      "homepage": "https://op.europa.eu/webpub/eac/education-and-training-monitor/en/index.html",
+      "description": "Annual EU and country analysis, including the VET learner-mobility target (12% by 2030).",
+      "access": "manual",
+      "browser_cors": false,
+      "licence": "EC-reuse",
+      "cadence": "annual (November)",
+      "why_manual": "Per-chart spreadsheet downloads; most series already come from Eurostat directly.",
+      "automated": false,
+      "licence_url": "https://eur-lex.europa.eu/eli/dec/2011/833/oj"
+    },
+    {
+      "id": "gisco-boundaries",
+      "name": "Eurostat GISCO — administrative boundaries",
+      "publisher": "Eurostat / EuroGeographics",
+      "homepage": "https://gisco-services.ec.europa.eu/distribution/v2/nuts/",
+      "description": "NUTS boundary files for maps.",
+      "access": "manual",
+      "licence": "Non-commercial use only; © EuroGeographics for the administrative boundaries",
+      "cadence": "per NUTS edition",
+      "why_manual": "Not used: the site draws a tile-grid map instead, which needs no boundary data and has no licence restriction.",
+      "automated": false
+    }
+  ]
+}

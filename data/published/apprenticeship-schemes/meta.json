@@ -9,7 +9,8 @@
     "name": "Cedefop — European database on apprenticeship schemes",
     "url": "https://www.cedefop.europa.eu/en/tools/apprenticeship-schemes",
     "retrieved": "2026-09",
-    "licence": "Public information published by Cedefop. Check reuse conditions before redistributing.",
+    "licence": "Cedefop's legal notice: reproduction is authorised provided the source is acknowledged, save where otherwise stated. Fiches also credit national ReferNet experts.",
+    "licence_id": "Cedefop-reproduction-with-acknowledgement",
     "caveat": "Values were read from the published scheme fiches and condensed. They have not been checked against the source record. The official fiches remain authoritative."
   },
 
@@ -50,6 +51,9 @@
 
     { "key": "overview",                "label": "Overview",             "type": "longtext" },
     { "key": "source_url",              "label": "Official fiche",       "type": "link" },
+    { "key": "source_version",          "label": "Source version",       "type": "text" },
+    { "key": "retrieved",               "label": "Read from source",     "type": "text" },
+    { "key": "status",                  "label": "How this record was made", "type": "text" },
     { "key": "id",                      "label": "Identifier",           "type": "hidden" }
   ],
 
@@ -58,6 +62,7 @@
     { "title": "Qualification", "fields": ["qualification", "education_level_detail"] },
     { "title": "At the workplace", "fields": ["workplace_time", "workplace_time_detail"] },
     { "title": "Contract and pay", "fields": ["contract", "compensation", "compensation_detail"] },
-    { "title": "Governance",    "fields": ["governance", "legal_basis"] }
+    { "title": "Governance",    "fields": ["governance", "legal_basis"] },
+    { "title": "Provenance",    "fields": ["source_version", "retrieved", "status", "source_url"] }
   ]
 }

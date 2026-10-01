@@ -1,0 +1,170 @@
+{
+  "id": "data-catalogue",
+  "title": "Apprenticeship and VET open-data catalogue",
+  "tagline": "1,632 open datasets on apprenticeship and vocational training, found across Europe's national data portals.",
+  "description": "Datasets about apprenticeships, vocational education and training published by statistics offices, ministries, regions and cities, as listed on data.europa.eu. Each entry links to the original publisher; Apprentix does not host the data.",
+  "recordLabel": {
+    "one": "dataset",
+    "many": "datasets"
+  },
+  "source": {
+    "name": "data.europa.eu — the official portal for European data (search API)",
+    "url": "https://data.europa.eu/",
+    "licence": "Catalogue metadata: European Commission reuse notice (Decision 2011/833/EU). Each dataset keeps its own licence, shown per entry.",
+    "licence_id": "EC-reuse",
+    "caveat": "Found automatically with multilingual searches (apprenticeship, Lehrling, apprentissage, apprendistato, lærling, oppisopimus, vocational training and others) and kept only when the title mentions apprenticeship or VET (or a keyword mentions apprenticeship). 'Concerns apprenticeship' is an Apprentix grouping: Yes when the title or keywords use an apprenticeship-specific term (apprentice, Lehrling, apprendistato, lærling, oppisopimus, dual training …); No for other VET datasets. Map services (WMS/WFS), building plans and machine-learning datasets are excluded. Titles and descriptions are the publishers' own; where there is no English version the original language is shown. Descriptions are shortened. Coverage depends on what national portals harvest into data.europa.eu.",
+    "retrieved": "2026-10-01",
+    "api_url": "https://data.europa.eu/api/hub/search/search",
+    "records_sha256": "22dfbafd7a5a1fef2eb5cd2eac69e94948b4134315421a29cb112eefed2aabc0"
+  },
+  "display": {
+    "title": "title",
+    "group": "country",
+    "badge": "year",
+    "link": "portal_url",
+    "summary": "description",
+    "facts": [
+      "publisher",
+      "formats",
+      "licence"
+    ]
+  },
+  "fields": [
+    {
+      "key": "country",
+      "label": "Country",
+      "type": "category",
+      "facet": true
+    },
+    {
+      "key": "concerns_apprenticeship",
+      "label": "Concerns apprenticeship",
+      "type": "category",
+      "facet": true,
+      "order": [
+        "Yes",
+        "No"
+      ]
+    },
+    {
+      "key": "publisher",
+      "label": "Publisher",
+      "type": "category",
+      "facet": true,
+      "collapse": 8
+    },
+    {
+      "key": "formats",
+      "label": "Format",
+      "type": "category",
+      "facet": true,
+      "collapse": 6
+    },
+    {
+      "key": "licence",
+      "label": "Licence",
+      "type": "category",
+      "facet": true,
+      "collapse": 6
+    },
+    {
+      "key": "year",
+      "label": "Last updated",
+      "type": "category",
+      "facet": true,
+      "collapse": 6
+    },
+    {
+      "key": "title",
+      "label": "Dataset",
+      "type": "title"
+    },
+    {
+      "key": "description",
+      "label": "Description",
+      "type": "longtext"
+    },
+    {
+      "key": "catalogue",
+      "label": "Source catalogue",
+      "type": "text"
+    },
+    {
+      "key": "modified",
+      "label": "Modified",
+      "type": "text"
+    },
+    {
+      "key": "issued",
+      "label": "Issued",
+      "type": "text"
+    },
+    {
+      "key": "keywords",
+      "label": "Keywords",
+      "type": "text"
+    },
+    {
+      "key": "original_language",
+      "label": "Original language",
+      "type": "text"
+    },
+    {
+      "key": "matched_queries",
+      "label": "Found by searching for",
+      "type": "text"
+    },
+    {
+      "key": "landing_page",
+      "label": "Publisher's page",
+      "type": "link"
+    },
+    {
+      "key": "portal_url",
+      "label": "On data.europa.eu",
+      "type": "link"
+    },
+    {
+      "key": "country_code",
+      "label": "Country code",
+      "type": "hidden"
+    },
+    {
+      "key": "id",
+      "label": "Identifier",
+      "type": "hidden"
+    }
+  ],
+  "sections": [
+    {
+      "title": "At a glance",
+      "fields": [
+        "country",
+        "publisher",
+        "concerns_apprenticeship",
+        "formats",
+        "licence",
+        "modified",
+        "issued"
+      ]
+    },
+    {
+      "title": "About",
+      "fields": [
+        "description",
+        "keywords",
+        "original_language"
+      ]
+    },
+    {
+      "title": "Links and provenance",
+      "fields": [
+        "landing_page",
+        "portal_url",
+        "catalogue",
+        "matched_queries",
+        "id"
+      ]
+    }
+  ]
+}

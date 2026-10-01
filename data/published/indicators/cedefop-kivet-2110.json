@@ -1,0 +1,249 @@
+{
+  "id": "cedefop-kivet-2110",
+  "title": "Workers helped to improve their work by training (%)",
+  "description": "Workers who answered ‘Strongly agree’ or 'Tend to agree' to the statement ‘The training has helped me improve the way I work’ as a percentage of all surveyed workers who participated in training paid by their employer of by themselves (Eurofound, EWCS).",
+  "unit": "%",
+  "topic": "Skills development and labour market relevance",
+  "source_label": "Cedefop Key indicators on VET, indicator 2110",
+  "comparability": "EU averages are Cedefop estimates (weighted averages of available country data) where flagged.",
+  "flags": {
+    "b": "break in time series",
+    "d": "definition differs",
+    "e": "estimated",
+    "p": "provisional",
+    "u": "low reliability",
+    "z": "not applicable",
+    "c": "confidential"
+  },
+  "kivet": {
+    "number": "2110",
+    "position": "Key Indicators on VET",
+    "group": "Skills development and labour market relevance",
+    "type": "CVET/Adult learning"
+  },
+  "provenance": {
+    "publisher": "Cedefop",
+    "dataset_code": "KIVET 2110",
+    "source_url": "https://www.cedefop.europa.eu/en/datasets/dataset-key-indicators-vet",
+    "api_url": "https://www.cedefop.europa.eu/files/integratedmasterfileIndicators_2026_%2006%20July.xlsx",
+    "licence": "CC-BY-4.0",
+    "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+    "citation": "Cedefop (2026). Key indicators on VET [Data set]. https://doi.org/10.2906/534056862890980 Underlying source: Eurofound, EWCS",
+    "source_updated": "2026 (6 July 2026)",
+    "retrieved_at": "2026-10-01T09:25:30+00:00",
+    "raw_file": "data/raw/cedefop/2026-10-01-kivet-masterfile.xlsx",
+    "raw_sha256": "6a10e5587408f5af5638676ea15a367832302238eb12dd4b0fe9f86c1589a919"
+  },
+  "series": [
+    {
+      "geo": "AT",
+      "time": "2015",
+      "value": 83.0
+    },
+    {
+      "geo": "BE",
+      "time": "2015",
+      "value": 77.0
+    },
+    {
+      "geo": "BG",
+      "time": "2015",
+      "value": 94.0,
+      "flag": "u"
+    },
+    {
+      "geo": "CH",
+      "time": "2015",
+      "value": 91.0
+    },
+    {
+      "geo": "CY",
+      "time": "2015",
+      "value": 93.0
+    },
+    {
+      "geo": "CZ",
+      "time": "2015",
+      "value": 87.0
+    },
+    {
+      "geo": "DE",
+      "time": "2015",
+      "value": 85.0
+    },
+    {
+      "geo": "DK",
+      "time": "2015",
+      "value": 81.0
+    },
+    {
+      "geo": "EE",
+      "time": "2015",
+      "value": 85.0
+    },
+    {
+      "geo": "EL",
+      "time": "2015",
+      "value": 88.0,
+      "flag": "u"
+    },
+    {
+      "geo": "ES",
+      "time": "2015",
+      "value": 86.0
+    },
+    {
+      "geo": "EU27",
+      "time": "2015",
+      "value": 83.0
+    },
+    {
+      "geo": "FI",
+      "time": "2015",
+      "value": 81.0
+    },
+    {
+      "geo": "FR",
+      "time": "2015",
+      "value": 76.0
+    },
+    {
+      "geo": "HR",
+      "time": "2015",
+      "value": 86.0
+    },
+    {
+      "geo": "HU",
+      "time": "2015",
+      "value": 86.0
+    },
+    {
+      "geo": "IE",
+      "time": "2015",
+      "value": 91.0
+    },
+    {
+      "geo": "IT",
+      "time": "2015",
+      "value": 85.0
+    },
+    {
+      "geo": "LT",
+      "time": "2015",
+      "value": 91.0
+    },
+    {
+      "geo": "LU",
+      "time": "2015",
+      "value": 80.0
+    },
+    {
+      "geo": "LV",
+      "time": "2015",
+      "value": 88.0
+    },
+    {
+      "geo": "MK",
+      "time": "2015",
+      "value": 94.0,
+      "flag": "u"
+    },
+    {
+      "geo": "MT",
+      "time": "2015",
+      "value": 92.0
+    },
+    {
+      "geo": "NL",
+      "time": "2015",
+      "value": 82.0
+    },
+    {
+      "geo": "NO",
+      "time": "2015",
+      "value": 86.0
+    },
+    {
+      "geo": "PL",
+      "time": "2015",
+      "value": 88.0
+    },
+    {
+      "geo": "PT",
+      "time": "2015",
+      "value": 90.0
+    },
+    {
+      "geo": "RO",
+      "time": "2015",
+      "value": 92.0
+    },
+    {
+      "geo": "SE",
+      "time": "2015",
+      "value": 71.0
+    },
+    {
+      "geo": "SI",
+      "time": "2015",
+      "value": 82.0
+    },
+    {
+      "geo": "SK",
+      "time": "2015",
+      "value": 80.0
+    },
+    {
+      "geo": "TR",
+      "time": "2015",
+      "value": 89.0
+    },
+    {
+      "geo": "UK",
+      "time": "2015",
+      "value": 84.0
+    }
+  ],
+  "coverage": {
+    "geos": [
+      "AT",
+      "BE",
+      "BG",
+      "CH",
+      "CY",
+      "CZ",
+      "DE",
+      "DK",
+      "EE",
+      "EL",
+      "ES",
+      "EU27",
+      "FI",
+      "FR",
+      "HR",
+      "HU",
+      "IE",
+      "IT",
+      "LT",
+      "LU",
+      "LV",
+      "MK",
+      "MT",
+      "NL",
+      "NO",
+      "PL",
+      "PT",
+      "RO",
+      "SE",
+      "SI",
+      "SK",
+      "TR",
+      "UK"
+    ],
+    "time": [
+      "2015",
+      "2015"
+    ],
+    "observations": 33
+  }
+}

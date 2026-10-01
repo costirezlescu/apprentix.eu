@@ -1,0 +1,526 @@
+{
+  "description": "Reference list of geographies used across Apprentix. 'code' follows Eurostat conventions (EL = Greece, UK = United Kingdom, EU27 = EU27_2020). 'tile' is [column,row] on the site's tile-grid map of Europe.",
+  "notes": {
+    "XK": "This designation is without prejudice to positions on status, and is in line with UNSCR 1244/1999 and the ICJ Opinion on the Kosovo declaration of independence."
+  },
+  "aliases": {
+    "EU27_2020": "EU27",
+    "GR": "EL",
+    "GB": "UK",
+    "EU": "EU27"
+  },
+  "countries": [
+    {
+      "code": "EU27",
+      "iso2": "EU",
+      "iso3": "EUU",
+      "name": "European Union (27)",
+      "group": "aggregate",
+      "flag": "🇪🇺"
+    },
+    {
+      "code": "AT",
+      "iso2": "AT",
+      "iso3": "AUT",
+      "name": "Austria",
+      "group": "eu",
+      "flag": "🇦🇹",
+      "tile": [
+        4,
+        4
+      ]
+    },
+    {
+      "code": "BE",
+      "iso2": "BE",
+      "iso3": "BEL",
+      "name": "Belgium",
+      "group": "eu",
+      "flag": "🇧🇪",
+      "tile": [
+        2,
+        2
+      ]
+    },
+    {
+      "code": "BG",
+      "iso2": "BG",
+      "iso3": "BGR",
+      "name": "Bulgaria",
+      "group": "eu",
+      "flag": "🇧🇬",
+      "tile": [
+        7,
+        5
+      ]
+    },
+    {
+      "code": "HR",
+      "iso2": "HR",
+      "iso3": "HRV",
+      "name": "Croatia",
+      "group": "eu",
+      "flag": "🇭🇷",
+      "tile": [
+        5,
+        5
+      ]
+    },
+    {
+      "code": "CY",
+      "iso2": "CY",
+      "iso3": "CYP",
+      "name": "Cyprus",
+      "group": "eu",
+      "flag": "🇨🇾",
+      "tile": [
+        9,
+        8
+      ]
+    },
+    {
+      "code": "CZ",
+      "iso2": "CZ",
+      "iso3": "CZE",
+      "name": "Czechia",
+      "group": "eu",
+      "flag": "🇨🇿",
+      "tile": [
+        4,
+        3
+      ]
+    },
+    {
+      "code": "DK",
+      "iso2": "DK",
+      "iso3": "DNK",
+      "name": "Denmark",
+      "group": "eu",
+      "flag": "🇩🇰",
+      "tile": [
+        4,
+        1
+      ]
+    },
+    {
+      "code": "EE",
+      "iso2": "EE",
+      "iso3": "EST",
+      "name": "Estonia",
+      "group": "eu",
+      "flag": "🇪🇪",
+      "tile": [
+        6,
+        1
+      ]
+    },
+    {
+      "code": "FI",
+      "iso2": "FI",
+      "iso3": "FIN",
+      "name": "Finland",
+      "group": "eu",
+      "flag": "🇫🇮",
+      "tile": [
+        6,
+        0
+      ]
+    },
+    {
+      "code": "FR",
+      "iso2": "FR",
+      "iso3": "FRA",
+      "name": "France",
+      "group": "eu",
+      "flag": "🇫🇷",
+      "tile": [
+        2,
+        3
+      ]
+    },
+    {
+      "code": "DE",
+      "iso2": "DE",
+      "iso3": "DEU",
+      "name": "Germany",
+      "group": "eu",
+      "flag": "🇩🇪",
+      "tile": [
+        4,
+        2
+      ]
+    },
+    {
+      "code": "EL",
+      "iso2": "GR",
+      "iso3": "GRC",
+      "name": "Greece",
+      "group": "eu",
+      "flag": "🇬🇷",
+      "tile": [
+        7,
+        8
+      ]
+    },
+    {
+      "code": "HU",
+      "iso2": "HU",
+      "iso3": "HUN",
+      "name": "Hungary",
+      "group": "eu",
+      "flag": "🇭🇺",
+      "tile": [
+        5,
+        4
+      ]
+    },
+    {
+      "code": "IE",
+      "iso2": "IE",
+      "iso3": "IRL",
+      "name": "Ireland",
+      "group": "eu",
+      "flag": "🇮🇪",
+      "tile": [
+        0,
+        1
+      ]
+    },
+    {
+      "code": "IT",
+      "iso2": "IT",
+      "iso3": "ITA",
+      "name": "Italy",
+      "group": "eu",
+      "flag": "🇮🇹",
+      "tile": [
+        3,
+        5
+      ]
+    },
+    {
+      "code": "LV",
+      "iso2": "LV",
+      "iso3": "LVA",
+      "name": "Latvia",
+      "group": "eu",
+      "flag": "🇱🇻",
+      "tile": [
+        6,
+        2
+      ]
+    },
+    {
+      "code": "LT",
+      "iso2": "LT",
+      "iso3": "LTU",
+      "name": "Lithuania",
+      "group": "eu",
+      "flag": "🇱🇹",
+      "tile": [
+        6,
+        3
+      ]
+    },
+    {
+      "code": "LU",
+      "iso2": "LU",
+      "iso3": "LUX",
+      "name": "Luxembourg",
+      "group": "eu",
+      "flag": "🇱🇺",
+      "tile": [
+        3,
+        3
+      ]
+    },
+    {
+      "code": "MT",
+      "iso2": "MT",
+      "iso3": "MLT",
+      "name": "Malta",
+      "group": "eu",
+      "flag": "🇲🇹",
+      "tile": [
+        3,
+        6
+      ]
+    },
+    {
+      "code": "NL",
+      "iso2": "NL",
+      "iso3": "NLD",
+      "name": "Netherlands",
+      "group": "eu",
+      "flag": "🇳🇱",
+      "tile": [
+        3,
+        2
+      ]
+    },
+    {
+      "code": "PL",
+      "iso2": "PL",
+      "iso3": "POL",
+      "name": "Poland",
+      "group": "eu",
+      "flag": "🇵🇱",
+      "tile": [
+        5,
+        2
+      ]
+    },
+    {
+      "code": "PT",
+      "iso2": "PT",
+      "iso3": "PRT",
+      "name": "Portugal",
+      "group": "eu",
+      "flag": "🇵🇹",
+      "tile": [
+        0,
+        4
+      ]
+    },
+    {
+      "code": "RO",
+      "iso2": "RO",
+      "iso3": "ROU",
+      "name": "Romania",
+      "group": "eu",
+      "flag": "🇷🇴",
+      "tile": [
+        6,
+        4
+      ]
+    },
+    {
+      "code": "SK",
+      "iso2": "SK",
+      "iso3": "SVK",
+      "name": "Slovakia",
+      "group": "eu",
+      "flag": "🇸🇰",
+      "tile": [
+        5,
+        3
+      ]
+    },
+    {
+      "code": "SI",
+      "iso2": "SI",
+      "iso3": "SVN",
+      "name": "Slovenia",
+      "group": "eu",
+      "flag": "🇸🇮",
+      "tile": [
+        4,
+        5
+      ]
+    },
+    {
+      "code": "ES",
+      "iso2": "ES",
+      "iso3": "ESP",
+      "name": "Spain",
+      "group": "eu",
+      "flag": "🇪🇸",
+      "tile": [
+        1,
+        4
+      ]
+    },
+    {
+      "code": "SE",
+      "iso2": "SE",
+      "iso3": "SWE",
+      "name": "Sweden",
+      "group": "eu",
+      "flag": "🇸🇪",
+      "tile": [
+        5,
+        0
+      ]
+    },
+    {
+      "code": "IS",
+      "iso2": "IS",
+      "iso3": "ISL",
+      "name": "Iceland",
+      "group": "efta",
+      "flag": "🇮🇸",
+      "tile": [
+        0,
+        0
+      ]
+    },
+    {
+      "code": "LI",
+      "iso2": "LI",
+      "iso3": "LIE",
+      "name": "Liechtenstein",
+      "group": "efta",
+      "flag": "🇱🇮",
+      "tile": [
+        2,
+        4
+      ]
+    },
+    {
+      "code": "NO",
+      "iso2": "NO",
+      "iso3": "NOR",
+      "name": "Norway",
+      "group": "efta",
+      "flag": "🇳🇴",
+      "tile": [
+        4,
+        0
+      ]
+    },
+    {
+      "code": "CH",
+      "iso2": "CH",
+      "iso3": "CHE",
+      "name": "Switzerland",
+      "group": "efta",
+      "flag": "🇨🇭",
+      "tile": [
+        3,
+        4
+      ]
+    },
+    {
+      "code": "UK",
+      "iso2": "GB",
+      "iso3": "GBR",
+      "name": "United Kingdom",
+      "group": "other",
+      "flag": "🇬🇧",
+      "tile": [
+        1,
+        1
+      ]
+    },
+    {
+      "code": "AL",
+      "iso2": "AL",
+      "iso3": "ALB",
+      "name": "Albania",
+      "group": "candidate",
+      "flag": "🇦🇱",
+      "tile": [
+        6,
+        7
+      ]
+    },
+    {
+      "code": "BA",
+      "iso2": "BA",
+      "iso3": "BIH",
+      "name": "Bosnia and Herzegovina",
+      "group": "candidate",
+      "flag": "🇧🇦",
+      "tile": [
+        5,
+        6
+      ]
+    },
+    {
+      "code": "GE",
+      "iso2": "GE",
+      "iso3": "GEO",
+      "name": "Georgia",
+      "group": "candidate",
+      "flag": "🇬🇪",
+      "tile": [
+        9,
+        5
+      ]
+    },
+    {
+      "code": "MD",
+      "iso2": "MD",
+      "iso3": "MDA",
+      "name": "Moldova",
+      "group": "candidate",
+      "flag": "🇲🇩",
+      "tile": [
+        7,
+        4
+      ]
+    },
+    {
+      "code": "ME",
+      "iso2": "ME",
+      "iso3": "MNE",
+      "name": "Montenegro",
+      "group": "candidate",
+      "flag": "🇲🇪",
+      "tile": [
+        6,
+        6
+      ]
+    },
+    {
+      "code": "MK",
+      "iso2": "MK",
+      "iso3": "MKD",
+      "name": "North Macedonia",
+      "group": "candidate",
+      "flag": "🇲🇰",
+      "tile": [
+        7,
+        7
+      ]
+    },
+    {
+      "code": "RS",
+      "iso2": "RS",
+      "iso3": "SRB",
+      "name": "Serbia",
+      "group": "candidate",
+      "flag": "🇷🇸",
+      "tile": [
+        6,
+        5
+      ]
+    },
+    {
+      "code": "TR",
+      "iso2": "TR",
+      "iso3": "TUR",
+      "name": "Türkiye",
+      "group": "candidate",
+      "flag": "🇹🇷",
+      "tile": [
+        8,
+        6
+      ]
+    },
+    {
+      "code": "UA",
+      "iso2": "UA",
+      "iso3": "UKR",
+      "name": "Ukraine",
+      "group": "candidate",
+      "flag": "🇺🇦",
+      "tile": [
+        7,
+        3
+      ]
+    },
+    {
+      "code": "XK",
+      "iso2": "XK",
+      "iso3": "XKX",
+      "name": "Kosovo*",
+      "group": "candidate",
+      "flag": "🇽🇰",
+      "tile": [
+        7,
+        6
+      ]
+    }
+  ]
+}

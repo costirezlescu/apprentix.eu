@@ -1,0 +1,578 @@
+{
+  "id": "cedefop-kivet-2120",
+  "title": "Workers with skills matched to their duties (%)",
+  "description": "Percentage of workers who answered ‘My present skills correspond well with my duties’ to the question ‘Which of the following alternatives would best describe your skills in your own work?’. Other possible answers are ‘I need further training to cope well with my duties’, ‘I have the skills to cope with more demanding duties’ (Eurofound, EWCS).",
+  "unit": "%",
+  "topic": "Skills development and labour market relevance",
+  "source_label": "Cedefop Key indicators on VET, indicator 2120",
+  "comparability": "EU averages are Cedefop estimates (weighted averages of available country data) where flagged.",
+  "flags": {
+    "b": "break in time series",
+    "d": "definition differs",
+    "e": "estimated",
+    "p": "provisional",
+    "u": "low reliability",
+    "z": "not applicable",
+    "c": "confidential"
+  },
+  "kivet": {
+    "number": "2120",
+    "position": "Key Indicators on VET",
+    "group": "Skills development and labour market relevance",
+    "type": "CVET/Adult learning"
+  },
+  "provenance": {
+    "publisher": "Cedefop",
+    "dataset_code": "KIVET 2120",
+    "source_url": "https://www.cedefop.europa.eu/en/datasets/dataset-key-indicators-vet",
+    "api_url": "https://www.cedefop.europa.eu/files/integratedmasterfileIndicators_2026_%2006%20July.xlsx",
+    "licence": "CC-BY-4.0",
+    "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+    "citation": "Cedefop (2026). Key indicators on VET [Data set]. https://doi.org/10.2906/534056862890980 Underlying source: Eurofound, EWCS",
+    "source_updated": "2026 (6 July 2026)",
+    "retrieved_at": "2026-10-01T09:25:30+00:00",
+    "raw_file": "data/raw/cedefop/2026-10-01-kivet-masterfile.xlsx",
+    "raw_sha256": "6a10e5587408f5af5638676ea15a367832302238eb12dd4b0fe9f86c1589a919"
+  },
+  "series": [
+    {
+      "geo": "AT",
+      "time": "2010",
+      "value": 58.0
+    },
+    {
+      "geo": "AT",
+      "time": "2015",
+      "value": 46.0
+    },
+    {
+      "geo": "AT",
+      "time": "2024",
+      "value": 37.0
+    },
+    {
+      "geo": "BE",
+      "time": "2010",
+      "value": 61.0
+    },
+    {
+      "geo": "BE",
+      "time": "2015",
+      "value": 61.0
+    },
+    {
+      "geo": "BE",
+      "time": "2024",
+      "value": 61.0
+    },
+    {
+      "geo": "BG",
+      "time": "2010",
+      "value": 64.0
+    },
+    {
+      "geo": "BG",
+      "time": "2015",
+      "value": 70.0
+    },
+    {
+      "geo": "BG",
+      "time": "2024",
+      "value": 61.0
+    },
+    {
+      "geo": "CH",
+      "time": "2015",
+      "value": 54.0
+    },
+    {
+      "geo": "CH",
+      "time": "2024",
+      "value": 56.0
+    },
+    {
+      "geo": "CY",
+      "time": "2010",
+      "value": 47.0
+    },
+    {
+      "geo": "CY",
+      "time": "2015",
+      "value": 53.0
+    },
+    {
+      "geo": "CY",
+      "time": "2024",
+      "value": 54.0
+    },
+    {
+      "geo": "CZ",
+      "time": "2010",
+      "value": 61.0
+    },
+    {
+      "geo": "CZ",
+      "time": "2015",
+      "value": 58.0
+    },
+    {
+      "geo": "CZ",
+      "time": "2024",
+      "value": 57.0
+    },
+    {
+      "geo": "DE",
+      "time": "2010",
+      "value": 51.0
+    },
+    {
+      "geo": "DE",
+      "time": "2015",
+      "value": 53.0
+    },
+    {
+      "geo": "DE",
+      "time": "2024",
+      "value": 49.0
+    },
+    {
+      "geo": "DK",
+      "time": "2010",
+      "value": 60.0
+    },
+    {
+      "geo": "DK",
+      "time": "2015",
+      "value": 55.0
+    },
+    {
+      "geo": "DK",
+      "time": "2024",
+      "value": 57.0
+    },
+    {
+      "geo": "EE",
+      "time": "2010",
+      "value": 53.0
+    },
+    {
+      "geo": "EE",
+      "time": "2015",
+      "value": 49.0
+    },
+    {
+      "geo": "EE",
+      "time": "2024",
+      "value": 48.0
+    },
+    {
+      "geo": "EL",
+      "time": "2010",
+      "value": 45.0
+    },
+    {
+      "geo": "EL",
+      "time": "2015",
+      "value": 56.0
+    },
+    {
+      "geo": "EL",
+      "time": "2024",
+      "value": 61.0
+    },
+    {
+      "geo": "ES",
+      "time": "2010",
+      "value": 53.0
+    },
+    {
+      "geo": "ES",
+      "time": "2015",
+      "value": 55.0
+    },
+    {
+      "geo": "ES",
+      "time": "2024",
+      "value": 59.0
+    },
+    {
+      "geo": "EU27",
+      "time": "2010",
+      "value": 55.0
+    },
+    {
+      "geo": "EU27",
+      "time": "2015",
+      "value": 57.0
+    },
+    {
+      "geo": "EU27",
+      "time": "2024",
+      "value": 57.0
+    },
+    {
+      "geo": "FI",
+      "time": "2010",
+      "value": 63.0
+    },
+    {
+      "geo": "FI",
+      "time": "2015",
+      "value": 69.0
+    },
+    {
+      "geo": "FI",
+      "time": "2024",
+      "value": 66.0
+    },
+    {
+      "geo": "FR",
+      "time": "2010",
+      "value": 60.0
+    },
+    {
+      "geo": "FR",
+      "time": "2015",
+      "value": 56.0
+    },
+    {
+      "geo": "FR",
+      "time": "2024",
+      "value": 64.0
+    },
+    {
+      "geo": "HR",
+      "time": "2010",
+      "value": 51.0
+    },
+    {
+      "geo": "HR",
+      "time": "2015",
+      "value": 61.0
+    },
+    {
+      "geo": "HR",
+      "time": "2024",
+      "value": 64.0
+    },
+    {
+      "geo": "HU",
+      "time": "2010",
+      "value": 47.0
+    },
+    {
+      "geo": "HU",
+      "time": "2015",
+      "value": 53.0
+    },
+    {
+      "geo": "HU",
+      "time": "2024",
+      "value": 55.0
+    },
+    {
+      "geo": "IE",
+      "time": "2010",
+      "value": 55.0
+    },
+    {
+      "geo": "IE",
+      "time": "2015",
+      "value": 55.0
+    },
+    {
+      "geo": "IE",
+      "time": "2024",
+      "value": 53.0
+    },
+    {
+      "geo": "IT",
+      "time": "2010",
+      "value": 62.0
+    },
+    {
+      "geo": "IT",
+      "time": "2015",
+      "value": 65.0
+    },
+    {
+      "geo": "IT",
+      "time": "2024",
+      "value": 67.0
+    },
+    {
+      "geo": "LT",
+      "time": "2010",
+      "value": 60.0
+    },
+    {
+      "geo": "LT",
+      "time": "2015",
+      "value": 61.0
+    },
+    {
+      "geo": "LT",
+      "time": "2024",
+      "value": 55.0
+    },
+    {
+      "geo": "LU",
+      "time": "2010",
+      "value": 54.0
+    },
+    {
+      "geo": "LU",
+      "time": "2015",
+      "value": 54.0
+    },
+    {
+      "geo": "LU",
+      "time": "2024",
+      "value": 52.0
+    },
+    {
+      "geo": "LV",
+      "time": "2010",
+      "value": 47.0
+    },
+    {
+      "geo": "LV",
+      "time": "2015",
+      "value": 61.0
+    },
+    {
+      "geo": "LV",
+      "time": "2024",
+      "value": 53.0
+    },
+    {
+      "geo": "ME",
+      "time": "2015",
+      "value": 63.0
+    },
+    {
+      "geo": "ME",
+      "time": "2024",
+      "value": 75.0
+    },
+    {
+      "geo": "MK",
+      "time": "2010",
+      "value": 62.0
+    },
+    {
+      "geo": "MK",
+      "time": "2015",
+      "value": 48.0
+    },
+    {
+      "geo": "MK",
+      "time": "2024",
+      "value": 56.0
+    },
+    {
+      "geo": "MT",
+      "time": "2010",
+      "value": 55.0
+    },
+    {
+      "geo": "MT",
+      "time": "2015",
+      "value": 60.0
+    },
+    {
+      "geo": "MT",
+      "time": "2024",
+      "value": 77.0
+    },
+    {
+      "geo": "NL",
+      "time": "2010",
+      "value": 56.0
+    },
+    {
+      "geo": "NL",
+      "time": "2015",
+      "value": 59.0
+    },
+    {
+      "geo": "NL",
+      "time": "2024",
+      "value": 59.0
+    },
+    {
+      "geo": "NO",
+      "time": "2010",
+      "value": 62.0
+    },
+    {
+      "geo": "NO",
+      "time": "2015",
+      "value": 62.0
+    },
+    {
+      "geo": "NO",
+      "time": "2024",
+      "value": 54.0
+    },
+    {
+      "geo": "PL",
+      "time": "2010",
+      "value": 60.0
+    },
+    {
+      "geo": "PL",
+      "time": "2015",
+      "value": 57.0
+    },
+    {
+      "geo": "PL",
+      "time": "2024",
+      "value": 55.0
+    },
+    {
+      "geo": "PT",
+      "time": "2010",
+      "value": 68.0
+    },
+    {
+      "geo": "PT",
+      "time": "2015",
+      "value": 76.0
+    },
+    {
+      "geo": "PT",
+      "time": "2024",
+      "value": 76.0
+    },
+    {
+      "geo": "RO",
+      "time": "2010",
+      "value": 40.0
+    },
+    {
+      "geo": "RO",
+      "time": "2015",
+      "value": 50.0
+    },
+    {
+      "geo": "RO",
+      "time": "2024",
+      "value": 45.0
+    },
+    {
+      "geo": "RS",
+      "time": "2024",
+      "value": 65.0
+    },
+    {
+      "geo": "SE",
+      "time": "2010",
+      "value": 53.0
+    },
+    {
+      "geo": "SE",
+      "time": "2015",
+      "value": 55.0
+    },
+    {
+      "geo": "SE",
+      "time": "2024",
+      "value": 58.0
+    },
+    {
+      "geo": "SI",
+      "time": "2010",
+      "value": 48.0
+    },
+    {
+      "geo": "SI",
+      "time": "2015",
+      "value": 50.0
+    },
+    {
+      "geo": "SI",
+      "time": "2024",
+      "value": 44.0
+    },
+    {
+      "geo": "SK",
+      "time": "2010",
+      "value": 52.0
+    },
+    {
+      "geo": "SK",
+      "time": "2015",
+      "value": 60.0
+    },
+    {
+      "geo": "SK",
+      "time": "2024",
+      "value": 47.0
+    },
+    {
+      "geo": "TR",
+      "time": "2010",
+      "value": 65.0
+    },
+    {
+      "geo": "TR",
+      "time": "2015",
+      "value": 69.0
+    },
+    {
+      "geo": "UK",
+      "time": "2010",
+      "value": 52.0
+    },
+    {
+      "geo": "UK",
+      "time": "2015",
+      "value": 58.0
+    }
+  ],
+  "coverage": {
+    "geos": [
+      "AT",
+      "BE",
+      "BG",
+      "CH",
+      "CY",
+      "CZ",
+      "DE",
+      "DK",
+      "EE",
+      "EL",
+      "ES",
+      "EU27",
+      "FI",
+      "FR",
+      "HR",
+      "HU",
+      "IE",
+      "IT",
+      "LT",
+      "LU",
+      "LV",
+      "ME",
+      "MK",
+      "MT",
+      "NL",
+      "NO",
+      "PL",
+      "PT",
+      "RO",
+      "RS",
+      "SE",
+      "SI",
+      "SK",
+      "TR",
+      "UK"
+    ],
+    "time": [
+      "2010",
+      "2024"
+    ],
+    "observations": 99
+  }
+}

@@ -1,0 +1,256 @@
+{
+  "id": "nl-duo-mbo-students",
+  "title": "MBO students in the Netherlands by learning pathway",
+  "description": "Students in Dutch secondary vocational education (MBO) at 1 October, by learning pathway: BBL (work-based, apprenticeship-type), BOL full-time and part-time (school-based), and exam-only participants.",
+  "unit": "students",
+  "topic": "Participation",
+  "national": true,
+  "source_label": "DUO — Mbo-studenten per instelling: Studenten per instelling bevoegd gezag plaats gemeente provincie van de instelling en leerweg",
+  "comparability": "Netherlands, national source (DUO, 1-cijferbestand mbo from the ROD register). Stock: main enrolments (one per student per institution) at the reference date 1 October of the school year; time is the calendar year of that 1 October (e.g. 2025 = school year 2025/26). Includes funded and non-funded enrolments. The most recent year is provisional (flag 'p'). BBL is a learning pathway within MBO (levels 1–4, EQF 1–4), not a count of apprenticeship contracts; there is no higher-education apprenticeship in this count. DUO suppresses cells of 1–4 students (published as -1); these are excluded, so sums are lower bounds (by at most 4 × the number of suppressed cells). Do not sum with other countries. Summed from per-institution counts; very few cells are suppressed in this file.",
+  "dims": [
+    {
+      "key": "pathway",
+      "label": "Learning pathway",
+      "values": {
+        "TOTAL": "All MBO students (sum of pathways)",
+        "BBL": "BBL — work-based pathway (beroepsbegeleidende leerweg)",
+        "BOLVT": "BOL full-time — school-based pathway (beroepsopleidende leerweg, voltijd)",
+        "BOLDT": "BOL part-time (deeltijd)",
+        "EX": "Exam participants only (examendeelnemers)"
+      },
+      "default": "BBL"
+    }
+  ],
+  "flags": {
+    "p": "provisional (DUO: the latest 1 October count is provisional)"
+  },
+  "provenance": {
+    "publisher": "DUO (Dienst Uitvoering Onderwijs), Open Onderwijsdata",
+    "dataset_code": "mbo-studenten-per-instelling",
+    "source_url": "https://onderwijsdata.duo.nl/dataset/mbo-studenten-per-instelling",
+    "api_url": "https://onderwijsdata.duo.nl/dataset/63c2b502-5675-4110-83a0-a111c3f46332/resource/0f1fba7c-5003-459d-8845-20ff055b9dc1/download/2021-2025-01-studenten-per-instelling-bevoegd-gezag-plaats-gemeente-provincie-van-de-instelling-.csv",
+    "licence": "Creative Commons Attribution (as declared in the CKAN metadata, license_id 'cc-by'; version not stated)",
+    "citation": "DUO Open Onderwijsdata, 'Mbo-studenten per instelling' — Studenten per instelling bevoegd gezag plaats gemeente provincie van de instelling en leerweg.",
+    "source_updated": "2026-02-02",
+    "retrieved_at": "2026-10-01T09:52:44+00:00",
+    "raw_file": "data/raw/nl-duo/2026-10-01-mbo-studenten-per-instelling-leerweg.csv",
+    "raw_sha256": "d9815465b870c52660459db847bc37520d16332e461150b5c552afe42b69eb07"
+  },
+  "series": [
+    {
+      "geo": "NL",
+      "time": "2021",
+      "value": 129502.0,
+      "dims": {
+        "pathway": "BBL"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2022",
+      "value": 136033.0,
+      "dims": {
+        "pathway": "BBL"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2023",
+      "value": 139467.0,
+      "dims": {
+        "pathway": "BBL"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2024",
+      "value": 137294.0,
+      "dims": {
+        "pathway": "BBL"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2025",
+      "value": 137185.0,
+      "flag": "p",
+      "dims": {
+        "pathway": "BBL"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2021",
+      "value": 0.0,
+      "dims": {
+        "pathway": "BOLDT"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2022",
+      "value": 0.0,
+      "dims": {
+        "pathway": "BOLDT"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2023",
+      "value": 0.0,
+      "dims": {
+        "pathway": "BOLDT"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2024",
+      "value": 0.0,
+      "dims": {
+        "pathway": "BOLDT"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2025",
+      "value": 0.0,
+      "flag": "p",
+      "dims": {
+        "pathway": "BOLDT"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2021",
+      "value": 373032.0,
+      "dims": {
+        "pathway": "BOLVT"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2022",
+      "value": 347054.0,
+      "dims": {
+        "pathway": "BOLVT"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2023",
+      "value": 329439.0,
+      "dims": {
+        "pathway": "BOLVT"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2024",
+      "value": 328874.0,
+      "dims": {
+        "pathway": "BOLVT"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2025",
+      "value": 330141.0,
+      "flag": "p",
+      "dims": {
+        "pathway": "BOLVT"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2021",
+      "value": 10026.0,
+      "dims": {
+        "pathway": "EX"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2022",
+      "value": 10498.0,
+      "dims": {
+        "pathway": "EX"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2023",
+      "value": 10297.0,
+      "dims": {
+        "pathway": "EX"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2024",
+      "value": 9911.0,
+      "dims": {
+        "pathway": "EX"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2025",
+      "value": 8918.0,
+      "flag": "p",
+      "dims": {
+        "pathway": "EX"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2021",
+      "value": 512560.0,
+      "dims": {
+        "pathway": "TOTAL"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2022",
+      "value": 493585.0,
+      "dims": {
+        "pathway": "TOTAL"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2023",
+      "value": 479203.0,
+      "dims": {
+        "pathway": "TOTAL"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2024",
+      "value": 476079.0,
+      "dims": {
+        "pathway": "TOTAL"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2025",
+      "value": 476244.0,
+      "flag": "p",
+      "dims": {
+        "pathway": "TOTAL"
+      }
+    }
+  ],
+  "coverage": {
+    "geos": [
+      "NL"
+    ],
+    "time": [
+      "2021",
+      "2025"
+    ],
+    "observations": 25
+  }
+}

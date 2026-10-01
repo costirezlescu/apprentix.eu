@@ -1,0 +1,83 @@
+name: Refresh data
+
+# Fetches every automated source, rebuilds the indexes, validates, and opens a
+# pull request when anything changed. Nothing reaches the live site until a
+# person reviews and merges that PR.
+
+on:
+  schedule:
+    - cron: "17 5 * * 1"   # Mondays 05:17 UTC (off the hour, to spread load on sources)
+  workflow_dispatch:
+    inputs:
+      connectors:
+        description: "Connector ids to run, space-separated (blank = all). See: python -m pipeline.run --list"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: refresh-data
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: pipeline/requirements.txt
+
+      - run: pip install -r pipeline/requirements.txt
+
+      - name: Run connectors
+        id: run
+        env:
+          # Optional keys; connectors that need one are skipped when it is unset.
+          DESTATIS_TOKEN: ${{ secrets.DESTATIS_TOKEN }}
+          DK_UDDANNELSESSTATISTIK_KEY: ${{ secrets.DK_UDDANNELSESSTATISTIK_KEY }}
+        run: |
+          set +e
+          python -m pipeline.run ${{ github.event.inputs.connectors }} 2>&1 | tee run.log
+          echo "status=${PIPESTATUS[0]}" >> "$GITHUB_OUTPUT"
+          {
+            echo 'log<<EOF'
+            grep -E '^- |wrote|skipped|Failed|Built' run.log | head -80
+            echo 'EOF'
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Validate
+        run: python -m pipeline.validate
+
+      - name: Open pull request
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: data-refresh
+          delete-branch: true
+          commit-message: "Data refresh ${{ github.run_id }}"
+          title: "Data refresh (${{ steps.run.outputs.status == '0' && 'all sources OK' || 'some sources failed' }})"
+          labels: data
+          add-paths: |
+            data/**
+            datapackage.json
+          body: |
+            Automated refresh of the automated sources. Review the diff before merging: the git history of `data/` is the site's changelog.
+
+            ```
+            ${{ steps.run.outputs.log }}
+            ```
+
+            Failed sources keep their previous data; see `data/sources.json` for the status of each.
+
+      - name: Fail if a connector failed
+        if: steps.run.outputs.status != '0'
+        run: |
+          echo "::warning::One or more connectors failed; see the run log."
+          exit 1

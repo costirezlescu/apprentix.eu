@@ -4,9 +4,8 @@
     "domain": "apprentix.eu",
     "tagline": "European apprenticeship and VET data, made searchable.",
     "blurb": "An independent project that takes publicly available European data on apprenticeship and vocational education and republishes it in a form you can search, filter and compare — rather than read one page at a time.",
-    "updated": "2026-09-30"
+    "updated": "2026-10-01"
   },
-
   "datasets": [
     {
       "id": "apprenticeship-schemes",
@@ -15,14 +14,50 @@
       "tagline": "How apprenticeship is designed, governed and paid for across Europe.",
       "records": 34,
       "coverage": "29 education and training systems",
-      "status": "live"
+      "status": "live",
+      "kind": "records"
+    },
+    {
+      "id": "vet-policy-timeline",
+      "path": "data/published/vet-policy-timeline",
+      "title": "VET policy timeline",
+      "tagline": "National VET and apprenticeship policies since 2015, and how far each has got.",
+      "records": 1184,
+      "coverage": "EU-27, Iceland and Norway, 2015–2025",
+      "status": "live",
+      "kind": "records"
+    },
+    {
+      "id": "data-catalogue",
+      "path": "data/published/data-catalogue",
+      "title": "Apprenticeship and VET open-data catalogue",
+      "tagline": "Open datasets on apprenticeship and vocational training, found across Europe's national data portals.",
+      "records": 1632,
+      "coverage": "27 countries plus EU-level publishers, via data.europa.eu",
+      "status": "live",
+      "kind": "records"
     }
   ],
-
   "planned": [
-    { "title": "Financing apprenticeships",      "note": "Cedefop database — not yet imported" },
-    { "title": "Financing adult learning",       "note": "Cedefop database — not yet imported" },
-    { "title": "National qualifications frameworks", "note": "Cedefop database — not yet imported" },
-    { "title": "VET in Europe",                  "note": "Cedefop database — not yet imported" }
-  ]
+    {
+      "title": "Financing apprenticeships",
+      "note": "Cedefop database — not yet imported"
+    },
+    {
+      "title": "Financing adult learning",
+      "note": "Cedefop database — not yet imported"
+    },
+    {
+      "title": "National qualifications frameworks",
+      "note": "Cedefop database — not yet imported"
+    },
+    {
+      "title": "VET in Europe",
+      "note": "Cedefop database — not yet imported"
+    }
+  ],
+  "indicators": {
+    "count": 97,
+    "path": "data/published/indicators/index.json"
+  }
 }

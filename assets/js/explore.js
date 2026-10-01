@@ -9,9 +9,10 @@ const $ = (id) => document.getElementById(id);
 const params = new URLSearchParams(location.search);
 const DATASET = params.get('dataset') || 'apprenticeship-schemes';
 const MAX_COMPARE = 6;
+const PAGE = 60;   // cards rendered at a time; large datasets page with "Show more"
 
 let META, RECORDS, ENTRY;
-const state = { q: '', filters: {}, compare: [] };
+const state = { q: '', filters: {}, compare: [], shown: PAGE, open: new Set() };
 
 init().catch(err => {
   $('grid').innerHTML =
@@ -50,8 +51,11 @@ function renderFilters() {
     const chips = document.createElement('div');
     chips.className = 'chips';
 
-    for (const { value, count } of facetValues(META, RECORDS, f.key)) {
+    const vals = facetValues(META, RECORDS, f.key);
+    const limit = f.collapse && !state.open.has(f.key) ? f.collapse : Infinity;
+    vals.forEach(({ value, count }, i) => {
       const on = state.filters[f.key].has(value);
+      if (i >= limit && !on) return;
       const b = document.createElement('button');
       b.className = 'chip';
       b.type = 'button';
@@ -60,11 +64,23 @@ function renderFilters() {
       b.addEventListener('click', () => {
         const set = state.filters[f.key];
         set.has(value) ? set.delete(value) : set.add(value);
+        state.shown = PAGE;
         showList(); renderFilters(); renderGrid();
       });
       chips.appendChild(b);
-    }
+    });
     group.appendChild(chips);
+    if (vals.length > limit || (f.collapse && state.open.has(f.key))) {
+      const more = document.createElement('button');
+      more.type = 'button';
+      more.className = 'linkbtn small';
+      more.textContent = state.open.has(f.key) ? 'Show fewer' : `Show all ${vals.length}`;
+      more.addEventListener('click', () => {
+        state.open.has(f.key) ? state.open.delete(f.key) : state.open.add(f.key);
+        renderFilters();
+      });
+      group.appendChild(more);
+    }
     host.appendChild(group);
   }
 }
@@ -83,7 +99,7 @@ function renderGrid() {
   $('count').textContent = `${list.length} of ${RECORDS.length} ${label}`;
   $('empty').hidden = list.length > 0;
 
-  for (const r of list) {
+  for (const r of list.slice(0, state.shown)) {
     const picked = state.compare.includes(r.id);
     const el = document.createElement('article');
     el.className = 'card' + (picked ? ' picked' : '');
@@ -103,6 +119,19 @@ function renderGrid() {
          <button class="btn${picked ? ' on' : ''}" data-cmp="${esc(r.id)}">${picked ? '✓ Comparing' : '+ Compare'}</button>
        </div>`;
     grid.appendChild(el);
+  }
+
+  if (list.length > state.shown) {
+    const row = document.createElement('div');
+    row.className = 'more-row';
+    row.style.gridColumn = '1 / -1';
+    const more = document.createElement('button');
+    more.className = 'btn';
+    more.type = 'button';
+    more.textContent = `Show ${Math.min(PAGE, list.length - state.shown)} more (${list.length - state.shown} not shown)`;
+    more.addEventListener('click', () => { state.shown += PAGE; renderGrid(); });
+    row.appendChild(more);
+    grid.appendChild(row);
   }
 
   grid.querySelectorAll('[data-open]').forEach(b =>
@@ -244,12 +273,14 @@ function showList() {
 function wire() {
   $('search').addEventListener('input', e => {
     state.q = e.target.value.trim().toLowerCase();
+    state.shown = PAGE;
     showList(); renderGrid();
   });
   $('reset').addEventListener('click', () => {
     state.q = '';
     $('search').value = '';
     for (const k of Object.keys(state.filters)) state.filters[k].clear();
+    state.shown = PAGE;
     showList(); renderFilters(); renderGrid();
   });
   $('resetEmpty').addEventListener('click', () => $('reset').click());

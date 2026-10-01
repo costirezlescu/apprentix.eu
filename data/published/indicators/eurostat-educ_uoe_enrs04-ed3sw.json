@@ -1,0 +1,10923 @@
+{
+  "id": "eurostat-educ_uoe_enrs04-ed3sw",
+  "title": "Pupils in combined school- and work-based upper-secondary VET",
+  "description": "Number of pupils enrolled in upper-secondary vocational programmes that combine school- and work-based learning (ISCED 3, 'SW' category in the UOE data collection). This is the nearest EU-wide statistical proxy for apprentices — but it is not a count of apprenticeship contracts.",
+  "unit": "pupils",
+  "topic": "Participation",
+  "source_label": "Pupils enrolled in upper-secondary education by programme orientation, sex, type of institution and intensity of participation",
+  "comparability": "Countries map their programmes to the 'school- and work-based' category differently. Flag 'm' means Eurostat considers the category not applicable to the country's system (data cannot exist), not that there are no apprentices.",
+  "dims": [
+    {
+      "key": "sex",
+      "label": "Sex",
+      "values": {
+        "T": "Total",
+        "M": "Males",
+        "F": "Females"
+      },
+      "default": "T"
+    }
+  ],
+  "flags": {
+    "m": "missing value; data cannot exist",
+    "d": "definition differs (see metadata)",
+    "e": "estimated"
+  },
+  "provenance": {
+    "publisher": "Eurostat",
+    "dataset_code": "educ_uoe_enrs04",
+    "source_url": "https://ec.europa.eu/eurostat/databrowser/view/educ_uoe_enrs04/default/table?lang=en",
+    "api_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/educ_uoe_enrs04?isced11=ED3SW&sector=TOT_SEC&worktime=TOTAL&unit=NR",
+    "licence": "CC-BY-4.0",
+    "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+    "citation": "Eurostat (educ_uoe_enrs04), Pupils enrolled in upper-secondary education by programme orientation, sex, type of institution and intensity of participation. Retrieved via the Eurostat Statistics API.",
+    "source_updated": "2026-08-11T23:00:00+0200",
+    "retrieved_at": "2026-10-01T12:00:00+00:00",
+    "raw_file": "data/raw/eurostat/2026-10-01-eurostat-educ_uoe_enrs04-ed3sw.json",
+    "raw_sha256": "f2c6c6e8e985ce96239ee6ce419cedfbbbbe0468fb10aaa19bde4d5e9ddc78d3"
+  },
+  "series": [
+    {
+      "geo": "AT",
+      "time": "2005",
+      "value": 42033.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "AT",
+      "time": "2010",
+      "value": 46073.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "AT",
+      "time": "2013",
+      "value": 43289.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "AT",
+      "time": "2014",
+      "value": 41813.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "AT",
+      "time": "2015",
+      "value": 39862.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "AT",
+      "time": "2016",
+      "value": 37509.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "AT",
+      "time": "2017",
+      "value": 36316.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "AT",
+      "time": "2018",
+      "value": 35978.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "AT",
+      "time": "2019",
+      "value": 43017.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "AT",
+      "time": "2020",
+      "value": 44182.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "AT",
+      "time": "2021",
+      "value": 44809.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "AT",
+      "time": "2022",
+      "value": 44663.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "AT",
+      "time": "2023",
+      "value": 45199.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "AT",
+      "time": "2024",
+      "value": 46373.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2005",
+      "value": 7941.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2010",
+      "value": 8348.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2013",
+      "value": 8675.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2014",
+      "value": 8715.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2015",
+      "value": 8570.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2016",
+      "value": 8750.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2017",
+      "value": 8252.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2018",
+      "value": 8028.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2019",
+      "value": 8320.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2020",
+      "value": 7917.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2021",
+      "value": 7821.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2022",
+      "value": 8194.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2023",
+      "value": 5278.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2024",
+      "value": 6442.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "BG",
+      "time": "2017",
+      "value": 103.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "BG",
+      "time": "2018",
+      "value": 339.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "BG",
+      "time": "2019",
+      "value": 786.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "BG",
+      "time": "2020",
+      "value": 1374.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "BG",
+      "time": "2021",
+      "value": 2222.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "BG",
+      "time": "2022",
+      "value": 3056.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "BG",
+      "time": "2023",
+      "value": 3272.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "BG",
+      "time": "2024",
+      "value": 2956.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2013",
+      "value": 87152.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2014",
+      "value": 86992.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2015",
+      "value": 87257.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2016",
+      "value": 85805.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2017",
+      "value": 85364.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2018",
+      "value": 83895.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2019",
+      "value": 82274.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2020",
+      "value": 80799.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2021",
+      "value": 79725.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2022",
+      "value": 79949.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2023",
+      "value": 79260.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2024",
+      "value": 79547.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CZ",
+      "time": "2013",
+      "value": 8940.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CZ",
+      "time": "2014",
+      "value": 8222.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CZ",
+      "time": "2015",
+      "value": 7603.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CZ",
+      "time": "2016",
+      "value": 7184.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2010",
+      "value": 453973.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2013",
+      "value": 380259.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2014",
+      "value": 385273.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2015",
+      "value": 370672.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2016",
+      "value": 368211.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2017",
+      "value": 346594.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2018",
+      "value": 340252.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2019",
+      "value": 347633.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2020",
+      "value": 343793.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2021",
+      "value": 325558.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2022",
+      "value": 316929.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2023",
+      "value": 318957.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2024",
+      "value": 321092.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "DK",
+      "time": "2013",
+      "value": 59885.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "DK",
+      "time": "2014",
+      "value": 58032.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "DK",
+      "time": "2015",
+      "value": 58578.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "DK",
+      "time": "2016",
+      "value": 44630.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "DK",
+      "time": "2017",
+      "value": 48522.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "DK",
+      "time": "2018",
+      "value": 44524.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "DK",
+      "time": "2019",
+      "value": 42751.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "DK",
+      "time": "2020",
+      "value": 44781.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "DK",
+      "time": "2021",
+      "value": 46915.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "DK",
+      "time": "2022",
+      "value": 47360.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "DK",
+      "time": "2023",
+      "value": 44808.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "DK",
+      "time": "2024",
+      "value": 42894.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "EE",
+      "time": "2010",
+      "value": 45.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "EE",
+      "time": "2013",
+      "value": 37.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "EE",
+      "time": "2014",
+      "value": 78.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "EE",
+      "time": "2015",
+      "value": 66.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "EE",
+      "time": "2016",
+      "value": 157.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "EE",
+      "time": "2017",
+      "value": 504.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "EE",
+      "time": "2018",
+      "value": 790.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "EE",
+      "time": "2019",
+      "value": 791.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "EE",
+      "time": "2020",
+      "value": 861.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "EE",
+      "time": "2021",
+      "value": 949.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "EE",
+      "time": "2022",
+      "value": 672.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "EE",
+      "time": "2023",
+      "value": 581.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "EE",
+      "time": "2024",
+      "value": 538.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "EL",
+      "time": "2013",
+      "value": 4344.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "EL",
+      "time": "2014",
+      "value": 4421.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "ES",
+      "time": "2014",
+      "value": 2510.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "ES",
+      "time": "2015",
+      "value": 1845.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "ES",
+      "time": "2016",
+      "value": 4826.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "ES",
+      "time": "2017",
+      "value": 7049.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "ES",
+      "time": "2018",
+      "value": 7462.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "ES",
+      "time": "2019",
+      "value": 6414.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "ES",
+      "time": "2020",
+      "value": 4549.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "ES",
+      "time": "2021",
+      "value": 6358.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "ES",
+      "time": "2022",
+      "value": 7448.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "ES",
+      "time": "2023",
+      "value": 7448.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "ES",
+      "time": "2024",
+      "value": 11714.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "EU27",
+      "time": "2015",
+      "value": 687118.0,
+      "flag": "d",
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "EU27",
+      "time": "2016",
+      "value": 668763.0,
+      "flag": "d",
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "EU27",
+      "time": "2017",
+      "value": 657113.0,
+      "flag": "d",
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "EU27",
+      "time": "2018",
+      "value": 721312.0,
+      "flag": "d",
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "EU27",
+      "time": "2019",
+      "value": 726673.0,
+      "flag": "d",
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "EU27",
+      "time": "2020",
+      "value": 744055.0,
+      "flag": "d",
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "EU27",
+      "time": "2021",
+      "value": 741400.0,
+      "flag": "d",
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "EU27",
+      "time": "2022",
+      "value": 791621.0,
+      "flag": "d",
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "EU27",
+      "time": "2023",
+      "value": 793361.0,
+      "flag": "d",
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "EU27",
+      "time": "2024",
+      "value": 835180.0,
+      "flag": "d",
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2005",
+      "value": 18478.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2010",
+      "value": 23392.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2013",
+      "value": 20429.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2014",
+      "value": 19738.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2015",
+      "value": 19056.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2016",
+      "value": 18399.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2017",
+      "value": 18839.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2018",
+      "value": 20309.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2019",
+      "value": 22154.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2020",
+      "value": 21011.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2021",
+      "value": 18800.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2022",
+      "value": 23467.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2023",
+      "value": 28147.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2024",
+      "value": 30400.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2005",
+      "value": 86118.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2010",
+      "value": 91463.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2013",
+      "value": 87850.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2014",
+      "value": 82640.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2015",
+      "value": 77106.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2016",
+      "value": 76450.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2017",
+      "value": 76657.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2018",
+      "value": 77198.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2019",
+      "value": 76577.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2020",
+      "value": 77160.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2021",
+      "value": 90858.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2022",
+      "value": 112561.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2023",
+      "value": 123587.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2024",
+      "value": 129315.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "HU",
+      "time": "2010",
+      "value": 32549.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "HU",
+      "time": "2013",
+      "value": 39972.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "HU",
+      "time": "2014",
+      "value": 43554.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "HU",
+      "time": "2015",
+      "value": 41003.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "HU",
+      "time": "2016",
+      "value": 34045.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "HU",
+      "time": "2017",
+      "value": 37698.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "HU",
+      "time": "2018",
+      "value": 64429.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "HU",
+      "time": "2019",
+      "value": 74064.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "HU",
+      "time": "2020",
+      "value": 84072.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "HU",
+      "time": "2021",
+      "value": 81395.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "HU",
+      "time": "2022",
+      "value": 95947.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "HU",
+      "time": "2023",
+      "value": 91998.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "HU",
+      "time": "2024",
+      "value": 101545.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2005",
+      "value": 3621.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2010",
+      "value": 4807.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2017",
+      "value": 6378.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2018",
+      "value": 55688.0,
+      "flag": "d",
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2019",
+      "value": 38563.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2020",
+      "value": 34428.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2021",
+      "value": 34142.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2022",
+      "value": 30099.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2023",
+      "value": 32853.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2024",
+      "value": 37884.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "IS",
+      "time": "2013",
+      "value": 920.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "IS",
+      "time": "2014",
+      "value": 898.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "IS",
+      "time": "2015",
+      "value": 824.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "IS",
+      "time": "2016",
+      "value": 779.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "IS",
+      "time": "2017",
+      "value": 832.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "IS",
+      "time": "2018",
+      "value": 862.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "IS",
+      "time": "2019",
+      "value": 801.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "IS",
+      "time": "2020",
+      "value": 856.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "IS",
+      "time": "2021",
+      "value": 1078.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "IS",
+      "time": "2022",
+      "value": 1050.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "IS",
+      "time": "2023",
+      "value": 903.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "IS",
+      "time": "2024",
+      "value": 897.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "IT",
+      "time": "2013",
+      "value": 0.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "LI",
+      "time": "2013",
+      "value": 435.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "LI",
+      "time": "2014",
+      "value": 434.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "LI",
+      "time": "2015",
+      "value": 428.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "LI",
+      "time": "2016",
+      "value": 417.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "LI",
+      "time": "2017",
+      "value": 423.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "LI",
+      "time": "2018",
+      "value": 399.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "LI",
+      "time": "2019",
+      "value": 421.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "LI",
+      "time": "2020",
+      "value": 418.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "LI",
+      "time": "2021",
+      "value": 415.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "LI",
+      "time": "2022",
+      "value": 420.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "LU",
+      "time": "2013",
+      "value": 1330.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "LU",
+      "time": "2014",
+      "value": 1330.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "LU",
+      "time": "2015",
+      "value": 1403.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "LU",
+      "time": "2016",
+      "value": 1362.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "LU",
+      "time": "2017",
+      "value": 1433.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "LU",
+      "time": "2018",
+      "value": 1473.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "LU",
+      "time": "2019",
+      "value": 1373.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "LU",
+      "time": "2020",
+      "value": 1415.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "LU",
+      "time": "2021",
+      "value": 1344.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "LU",
+      "time": "2022",
+      "value": 1339.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "LU",
+      "time": "2023",
+      "value": 1304.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "LU",
+      "time": "2024",
+      "value": 1360.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2005",
+      "value": 15252.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2010",
+      "value": 13533.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2013",
+      "value": 11061.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2014",
+      "value": 10563.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2015",
+      "value": 10061.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2016",
+      "value": 9303.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2017",
+      "value": 9731.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2018",
+      "value": 9764.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2019",
+      "value": 9951.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2020",
+      "value": 9781.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2021",
+      "value": 9932.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2022",
+      "value": 10265.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2023",
+      "value": 10221.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2024",
+      "value": 10345.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "ME",
+      "time": "2016",
+      "value": 0.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "ME",
+      "time": "2017",
+      "value": 0.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "MK",
+      "time": "2013",
+      "value": 0.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "MK",
+      "time": "2014",
+      "value": 0.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "MK",
+      "time": "2016",
+      "value": 0.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "MK",
+      "time": "2017",
+      "value": 0.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "MT",
+      "time": "2013",
+      "value": 77.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "MT",
+      "time": "2014",
+      "value": 192.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "MT",
+      "time": "2015",
+      "value": 302.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "MT",
+      "time": "2016",
+      "value": 316.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "MT",
+      "time": "2017",
+      "value": 448.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "MT",
+      "time": "2018",
+      "value": 676.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "MT",
+      "time": "2019",
+      "value": 800.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "MT",
+      "time": "2020",
+      "value": 1661.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "MT",
+      "time": "2021",
+      "value": 805.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "MT",
+      "time": "2022",
+      "value": 856.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "MT",
+      "time": "2023",
+      "value": 959.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "MT",
+      "time": "2024",
+      "value": 1006.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2005",
+      "value": 44215.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2010",
+      "value": 57630.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2005",
+      "value": 8629.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2010",
+      "value": 10916.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2013",
+      "value": 11025.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2014",
+      "value": 10974.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2015",
+      "value": 11428.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2016",
+      "value": 11958.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2017",
+      "value": 25494.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2018",
+      "value": 26710.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2019",
+      "value": 26680.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2020",
+      "value": 27512.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2021",
+      "value": 27211.0,
+      "flag": "d",
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2022",
+      "value": 30044.0,
+      "flag": "d",
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2023",
+      "value": 30531.0,
+      "flag": "d",
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2024",
+      "value": 30420.0,
+      "flag": "d",
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "PL",
+      "time": "2015",
+      "value": 43498.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "PL",
+      "time": "2016",
+      "value": 41410.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "PL",
+      "time": "2017",
+      "value": 37784.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "PL",
+      "time": "2018",
+      "value": 36419.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "PL",
+      "time": "2019",
+      "value": 32086.0,
+      "flag": "e",
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "PL",
+      "time": "2020",
+      "value": 42449.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "PL",
+      "time": "2021",
+      "value": 44950.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "PL",
+      "time": "2022",
+      "value": 46809.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "PL",
+      "time": "2023",
+      "value": 43186.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "PL",
+      "time": "2024",
+      "value": 48419.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "RO",
+      "time": "2015",
+      "value": 4753.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "RO",
+      "time": "2016",
+      "value": 13107.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "RO",
+      "time": "2017",
+      "value": 17112.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "RO",
+      "time": "2018",
+      "value": 13855.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "RO",
+      "time": "2019",
+      "value": 16438.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "RO",
+      "time": "2020",
+      "value": 18900.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "RO",
+      "time": "2021",
+      "value": 18297.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "RO",
+      "time": "2022",
+      "value": 18585.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "RO",
+      "time": "2023",
+      "value": 19058.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "RO",
+      "time": "2024",
+      "value": 18441.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "SE",
+      "time": "2010",
+      "value": 2642.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "SE",
+      "time": "2013",
+      "value": 2460.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "SE",
+      "time": "2014",
+      "value": 2355.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "SE",
+      "time": "2015",
+      "value": 2740.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "SE",
+      "time": "2016",
+      "value": 3103.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "SE",
+      "time": "2017",
+      "value": 3693.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "SE",
+      "time": "2018",
+      "value": 4127.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "SE",
+      "time": "2019",
+      "value": 4955.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "SE",
+      "time": "2020",
+      "value": 5721.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "SE",
+      "time": "2021",
+      "value": 6245.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "SE",
+      "time": "2022",
+      "value": 6620.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "SE",
+      "time": "2023",
+      "value": 6617.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "SE",
+      "time": "2024",
+      "value": 6909.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "SK",
+      "time": "2022",
+      "value": 16751.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "SK",
+      "time": "2023",
+      "value": 9889.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "SK",
+      "time": "2024",
+      "value": 17549.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2013",
+      "value": 543166.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2014",
+      "value": 430924.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2015",
+      "value": 432979.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2016",
+      "value": 436368.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2017",
+      "value": 430513.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2018",
+      "value": 363680.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2019",
+      "value": 299679.0,
+      "dims": {
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "AT",
+      "time": "2005",
+      "value": 82950.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "AT",
+      "time": "2010",
+      "value": 86468.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "AT",
+      "time": "2013",
+      "value": 81465.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "AT",
+      "time": "2014",
+      "value": 79059.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "AT",
+      "time": "2015",
+      "value": 76506.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "AT",
+      "time": "2016",
+      "value": 73536.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "AT",
+      "time": "2017",
+      "value": 72478.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "AT",
+      "time": "2018",
+      "value": 71709.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "AT",
+      "time": "2019",
+      "value": 74805.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "AT",
+      "time": "2020",
+      "value": 75707.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "AT",
+      "time": "2021",
+      "value": 76146.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "AT",
+      "time": "2022",
+      "value": 75708.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "AT",
+      "time": "2023",
+      "value": 75370.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "AT",
+      "time": "2024",
+      "value": 75623.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2005",
+      "value": 17679.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2010",
+      "value": 18745.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2013",
+      "value": 18818.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2014",
+      "value": 18616.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2015",
+      "value": 18088.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2016",
+      "value": 18098.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2017",
+      "value": 17809.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2018",
+      "value": 17520.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2019",
+      "value": 18008.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2020",
+      "value": 17199.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2021",
+      "value": 17173.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2022",
+      "value": 17995.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2023",
+      "value": 13012.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2024",
+      "value": 14951.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "BG",
+      "time": "2017",
+      "value": 445.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "BG",
+      "time": "2018",
+      "value": 943.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "BG",
+      "time": "2019",
+      "value": 2120.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "BG",
+      "time": "2020",
+      "value": 3545.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "BG",
+      "time": "2021",
+      "value": 5230.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "BG",
+      "time": "2022",
+      "value": 7516.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "BG",
+      "time": "2023",
+      "value": 8376.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "BG",
+      "time": "2024",
+      "value": 8391.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2013",
+      "value": 121497.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2014",
+      "value": 120711.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2015",
+      "value": 121049.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2016",
+      "value": 119681.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2017",
+      "value": 119049.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2018",
+      "value": 118783.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2019",
+      "value": 117767.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2020",
+      "value": 116975.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2021",
+      "value": 115660.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2022",
+      "value": 115779.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2023",
+      "value": 113920.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2024",
+      "value": 114249.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CZ",
+      "time": "2013",
+      "value": 19509.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CZ",
+      "time": "2014",
+      "value": 18571.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CZ",
+      "time": "2015",
+      "value": 18135.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CZ",
+      "time": "2016",
+      "value": 17846.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2010",
+      "value": 768999.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2013",
+      "value": 673801.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2014",
+      "value": 679415.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2015",
+      "value": 663847.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2016",
+      "value": 662764.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2017",
+      "value": 644154.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2018",
+      "value": 663162.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2019",
+      "value": 694785.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2020",
+      "value": 698933.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2021",
+      "value": 671369.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2022",
+      "value": 661672.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2023",
+      "value": 650692.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2024",
+      "value": 648071.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "DK",
+      "time": "2013",
+      "value": 74270.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "DK",
+      "time": "2014",
+      "value": 72844.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "DK",
+      "time": "2015",
+      "value": 73369.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "DK",
+      "time": "2016",
+      "value": 53031.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "DK",
+      "time": "2017",
+      "value": 66160.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "DK",
+      "time": "2018",
+      "value": 65049.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "DK",
+      "time": "2019",
+      "value": 63502.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "DK",
+      "time": "2020",
+      "value": 64729.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "DK",
+      "time": "2021",
+      "value": 68814.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "DK",
+      "time": "2022",
+      "value": 70085.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "DK",
+      "time": "2023",
+      "value": 67601.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "DK",
+      "time": "2024",
+      "value": 66019.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "EE",
+      "time": "2010",
+      "value": 98.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "EE",
+      "time": "2013",
+      "value": 64.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "EE",
+      "time": "2014",
+      "value": 77.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "EE",
+      "time": "2015",
+      "value": 132.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "EE",
+      "time": "2016",
+      "value": 194.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "EE",
+      "time": "2017",
+      "value": 397.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "EE",
+      "time": "2018",
+      "value": 374.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "EE",
+      "time": "2019",
+      "value": 413.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "EE",
+      "time": "2020",
+      "value": 459.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "EE",
+      "time": "2021",
+      "value": 608.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "EE",
+      "time": "2022",
+      "value": 509.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "EE",
+      "time": "2023",
+      "value": 386.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "EE",
+      "time": "2024",
+      "value": 344.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "EL",
+      "time": "2013",
+      "value": 7107.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "EL",
+      "time": "2014",
+      "value": 7239.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "ES",
+      "time": "2014",
+      "value": 4782.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "ES",
+      "time": "2015",
+      "value": 5426.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "ES",
+      "time": "2016",
+      "value": 6920.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "ES",
+      "time": "2017",
+      "value": 9299.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "ES",
+      "time": "2018",
+      "value": 9858.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "ES",
+      "time": "2019",
+      "value": 9037.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "ES",
+      "time": "2020",
+      "value": 7606.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "ES",
+      "time": "2021",
+      "value": 10900.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "ES",
+      "time": "2022",
+      "value": 11851.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "ES",
+      "time": "2023",
+      "value": 11851.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "ES",
+      "time": "2024",
+      "value": 19989.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "EU27",
+      "time": "2015",
+      "value": 1221742.0,
+      "flag": "d",
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "EU27",
+      "time": "2016",
+      "value": 1197074.0,
+      "flag": "d",
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "EU27",
+      "time": "2017",
+      "value": 1194873.0,
+      "flag": "d",
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "EU27",
+      "time": "2018",
+      "value": 1265726.0,
+      "flag": "d",
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "EU27",
+      "time": "2019",
+      "value": 1307595.0,
+      "flag": "d",
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "EU27",
+      "time": "2020",
+      "value": 1353982.0,
+      "flag": "d",
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "EU27",
+      "time": "2021",
+      "value": 1347368.0,
+      "flag": "d",
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "EU27",
+      "time": "2022",
+      "value": 1406859.0,
+      "flag": "d",
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "EU27",
+      "time": "2023",
+      "value": 1406651.0,
+      "flag": "d",
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "EU27",
+      "time": "2024",
+      "value": 1427384.0,
+      "flag": "d",
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2005",
+      "value": 16433.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2010",
+      "value": 26128.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2013",
+      "value": 18167.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2014",
+      "value": 16739.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2015",
+      "value": 15889.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2016",
+      "value": 14940.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2017",
+      "value": 15538.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2018",
+      "value": 16564.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2019",
+      "value": 19375.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2020",
+      "value": 20017.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2021",
+      "value": 17419.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2022",
+      "value": 22074.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2023",
+      "value": 25746.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2024",
+      "value": 27299.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2005",
+      "value": 219779.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2010",
+      "value": 229930.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2013",
+      "value": 214378.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2014",
+      "value": 203312.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2015",
+      "value": 189896.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2016",
+      "value": 184667.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2017",
+      "value": 183098.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2018",
+      "value": 186380.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2019",
+      "value": 191722.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2020",
+      "value": 197766.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2021",
+      "value": 215421.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2022",
+      "value": 241774.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2023",
+      "value": 253719.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2024",
+      "value": 256289.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "HU",
+      "time": "2005",
+      "value": 71441.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "HU",
+      "time": "2010",
+      "value": 50738.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "HU",
+      "time": "2013",
+      "value": 57309.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "HU",
+      "time": "2014",
+      "value": 63736.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "HU",
+      "time": "2015",
+      "value": 61302.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "HU",
+      "time": "2016",
+      "value": 56445.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "HU",
+      "time": "2017",
+      "value": 60026.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "HU",
+      "time": "2018",
+      "value": 93889.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "HU",
+      "time": "2019",
+      "value": 106309.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "HU",
+      "time": "2020",
+      "value": 118400.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "HU",
+      "time": "2021",
+      "value": 114020.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "HU",
+      "time": "2022",
+      "value": 130976.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "HU",
+      "time": "2023",
+      "value": 129380.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "HU",
+      "time": "2024",
+      "value": 139842.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2005",
+      "value": 2002.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2010",
+      "value": 3144.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2017",
+      "value": 12902.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2018",
+      "value": 35313.0,
+      "flag": "d",
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2019",
+      "value": 25671.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2020",
+      "value": 20531.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2021",
+      "value": 20937.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2022",
+      "value": 17803.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2023",
+      "value": 20151.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2024",
+      "value": 23131.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "IS",
+      "time": "2013",
+      "value": 2506.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "IS",
+      "time": "2014",
+      "value": 2527.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "IS",
+      "time": "2015",
+      "value": 2538.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "IS",
+      "time": "2016",
+      "value": 2609.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "IS",
+      "time": "2017",
+      "value": 2576.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "IS",
+      "time": "2018",
+      "value": 2649.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "IS",
+      "time": "2019",
+      "value": 2934.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "IS",
+      "time": "2020",
+      "value": 3147.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "IS",
+      "time": "2021",
+      "value": 3632.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "IS",
+      "time": "2022",
+      "value": 3840.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "IS",
+      "time": "2023",
+      "value": 3872.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "IS",
+      "time": "2024",
+      "value": 3900.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "IT",
+      "time": "2013",
+      "value": 0.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "LI",
+      "time": "2013",
+      "value": 755.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "LI",
+      "time": "2014",
+      "value": 761.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "LI",
+      "time": "2015",
+      "value": 755.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "LI",
+      "time": "2016",
+      "value": 734.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "LI",
+      "time": "2017",
+      "value": 697.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "LI",
+      "time": "2018",
+      "value": 643.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "LI",
+      "time": "2019",
+      "value": 685.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "LI",
+      "time": "2020",
+      "value": 684.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "LI",
+      "time": "2021",
+      "value": 684.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "LI",
+      "time": "2022",
+      "value": 664.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "LU",
+      "time": "2013",
+      "value": 2073.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "LU",
+      "time": "2014",
+      "value": 2046.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "LU",
+      "time": "2015",
+      "value": 2042.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "LU",
+      "time": "2016",
+      "value": 2021.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "LU",
+      "time": "2017",
+      "value": 2085.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "LU",
+      "time": "2018",
+      "value": 2097.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "LU",
+      "time": "2019",
+      "value": 2122.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "LU",
+      "time": "2020",
+      "value": 2156.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "LU",
+      "time": "2021",
+      "value": 2104.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "LU",
+      "time": "2022",
+      "value": 2133.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "LU",
+      "time": "2023",
+      "value": 2075.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "LU",
+      "time": "2024",
+      "value": 2099.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2005",
+      "value": 23834.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2010",
+      "value": 20673.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2013",
+      "value": 16931.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2014",
+      "value": 15901.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2015",
+      "value": 14786.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2016",
+      "value": 13707.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2017",
+      "value": 13860.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2018",
+      "value": 13882.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2019",
+      "value": 13572.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2020",
+      "value": 13514.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2021",
+      "value": 14188.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2022",
+      "value": 14620.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2023",
+      "value": 14908.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2024",
+      "value": 14801.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "ME",
+      "time": "2016",
+      "value": 0.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "ME",
+      "time": "2017",
+      "value": 0.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "MK",
+      "time": "2013",
+      "value": 0.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "MK",
+      "time": "2014",
+      "value": 0.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "MK",
+      "time": "2016",
+      "value": 0.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "MK",
+      "time": "2017",
+      "value": 0.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "MT",
+      "time": "2013",
+      "value": 562.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "MT",
+      "time": "2014",
+      "value": 634.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "MT",
+      "time": "2015",
+      "value": 628.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "MT",
+      "time": "2016",
+      "value": 933.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "MT",
+      "time": "2017",
+      "value": 1104.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "MT",
+      "time": "2018",
+      "value": 1152.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "MT",
+      "time": "2019",
+      "value": 1134.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "MT",
+      "time": "2020",
+      "value": 1404.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "MT",
+      "time": "2021",
+      "value": 1107.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "MT",
+      "time": "2022",
+      "value": 1268.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "MT",
+      "time": "2023",
+      "value": 1322.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "MT",
+      "time": "2024",
+      "value": 1464.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2005",
+      "value": 75335.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2010",
+      "value": 96170.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2005",
+      "value": 20241.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2010",
+      "value": 26229.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2013",
+      "value": 27726.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2014",
+      "value": 28620.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2015",
+      "value": 29374.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2016",
+      "value": 29831.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2017",
+      "value": 58872.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2018",
+      "value": 62477.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2019",
+      "value": 65611.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2020",
+      "value": 68739.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2021",
+      "value": 67895.0,
+      "flag": "d",
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2022",
+      "value": 72889.0,
+      "flag": "d",
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2023",
+      "value": 74096.0,
+      "flag": "d",
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2024",
+      "value": 72616.0,
+      "flag": "d",
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "PL",
+      "time": "2015",
+      "value": 69870.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "PL",
+      "time": "2016",
+      "value": 66982.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "PL",
+      "time": "2017",
+      "value": 64097.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "PL",
+      "time": "2018",
+      "value": 60379.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "PL",
+      "time": "2019",
+      "value": 53250.0,
+      "flag": "e",
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "PL",
+      "time": "2020",
+      "value": 72636.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "PL",
+      "time": "2021",
+      "value": 74977.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "PL",
+      "time": "2022",
+      "value": 77875.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "PL",
+      "time": "2023",
+      "value": 70419.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "PL",
+      "time": "2024",
+      "value": 77982.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "RO",
+      "time": "2015",
+      "value": 7605.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "RO",
+      "time": "2016",
+      "value": 19802.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "RO",
+      "time": "2017",
+      "value": 25492.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "RO",
+      "time": "2018",
+      "value": 20724.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "RO",
+      "time": "2019",
+      "value": 23525.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "RO",
+      "time": "2020",
+      "value": 29488.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "RO",
+      "time": "2021",
+      "value": 26667.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "RO",
+      "time": "2022",
+      "value": 26616.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "RO",
+      "time": "2023",
+      "value": 28250.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "RO",
+      "time": "2024",
+      "value": 23669.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "SE",
+      "time": "2010",
+      "value": 4757.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "SE",
+      "time": "2013",
+      "value": 3645.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "SE",
+      "time": "2014",
+      "value": 3229.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "SE",
+      "time": "2015",
+      "value": 4221.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "SE",
+      "time": "2016",
+      "value": 5188.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "SE",
+      "time": "2017",
+      "value": 5929.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "SE",
+      "time": "2018",
+      "value": 6731.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "SE",
+      "time": "2019",
+      "value": 8246.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "SE",
+      "time": "2020",
+      "value": 9893.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "SE",
+      "time": "2021",
+      "value": 10289.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "SE",
+      "time": "2022",
+      "value": 10662.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "SE",
+      "time": "2023",
+      "value": 10596.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "SE",
+      "time": "2024",
+      "value": 10503.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "SK",
+      "time": "2022",
+      "value": 15722.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "SK",
+      "time": "2023",
+      "value": 22797.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "SK",
+      "time": "2024",
+      "value": 16917.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2013",
+      "value": 493641.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2014",
+      "value": 403152.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2015",
+      "value": 421233.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2016",
+      "value": 431546.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2017",
+      "value": 424295.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2018",
+      "value": 386527.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2019",
+      "value": 348437.0,
+      "dims": {
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "AT",
+      "time": "2005",
+      "value": 124983.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "AT",
+      "time": "2010",
+      "value": 132540.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "AT",
+      "time": "2013",
+      "value": 124754.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "AT",
+      "time": "2014",
+      "value": 120873.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "AT",
+      "time": "2015",
+      "value": 116368.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "AT",
+      "time": "2016",
+      "value": 111046.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "AT",
+      "time": "2017",
+      "value": 108794.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "AT",
+      "time": "2018",
+      "value": 107688.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "AT",
+      "time": "2019",
+      "value": 117822.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "AT",
+      "time": "2020",
+      "value": 119889.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "AT",
+      "time": "2021",
+      "value": 120955.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "AT",
+      "time": "2022",
+      "value": 120372.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "AT",
+      "time": "2023",
+      "value": 120568.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "AT",
+      "time": "2024",
+      "value": 121996.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2005",
+      "value": 25620.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2010",
+      "value": 27093.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2013",
+      "value": 27493.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2014",
+      "value": 27331.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2015",
+      "value": 26658.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2016",
+      "value": 26848.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2017",
+      "value": 26061.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2018",
+      "value": 25548.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2019",
+      "value": 26328.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2020",
+      "value": 25116.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2021",
+      "value": 24994.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2022",
+      "value": 26189.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2023",
+      "value": 18290.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2024",
+      "value": 21393.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "BG",
+      "time": "2017",
+      "value": 548.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "BG",
+      "time": "2018",
+      "value": 1282.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "BG",
+      "time": "2019",
+      "value": 2906.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "BG",
+      "time": "2020",
+      "value": 4919.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "BG",
+      "time": "2021",
+      "value": 7452.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "BG",
+      "time": "2022",
+      "value": 10572.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "BG",
+      "time": "2023",
+      "value": 11648.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "BG",
+      "time": "2024",
+      "value": 11347.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2013",
+      "value": 208649.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2014",
+      "value": 207703.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2015",
+      "value": 208306.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2016",
+      "value": 205486.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2017",
+      "value": 204413.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2018",
+      "value": 202678.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2019",
+      "value": 200041.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2020",
+      "value": 197774.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2021",
+      "value": 195385.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2022",
+      "value": 195728.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2023",
+      "value": 193180.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2024",
+      "value": 193796.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CZ",
+      "time": "2013",
+      "value": 28449.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CZ",
+      "time": "2014",
+      "value": 26793.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CZ",
+      "time": "2015",
+      "value": 25738.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CZ",
+      "time": "2016",
+      "value": 25030.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2010",
+      "value": 1222972.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2013",
+      "value": 1054060.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2014",
+      "value": 1064689.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2015",
+      "value": 1034519.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2016",
+      "value": 1030975.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2017",
+      "value": 990748.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2018",
+      "value": 1003415.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2019",
+      "value": 1042418.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2020",
+      "value": 1042725.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2021",
+      "value": 996927.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2022",
+      "value": 978601.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2023",
+      "value": 969649.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2024",
+      "value": 969163.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "DK",
+      "time": "2013",
+      "value": 134155.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "DK",
+      "time": "2014",
+      "value": 130876.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "DK",
+      "time": "2015",
+      "value": 131947.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "DK",
+      "time": "2016",
+      "value": 97661.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "DK",
+      "time": "2017",
+      "value": 114682.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "DK",
+      "time": "2018",
+      "value": 109573.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "DK",
+      "time": "2019",
+      "value": 106253.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "DK",
+      "time": "2020",
+      "value": 109510.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "DK",
+      "time": "2021",
+      "value": 115729.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "DK",
+      "time": "2022",
+      "value": 117445.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "DK",
+      "time": "2023",
+      "value": 112409.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "DK",
+      "time": "2024",
+      "value": 108913.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "EE",
+      "time": "2010",
+      "value": 143.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "EE",
+      "time": "2013",
+      "value": 101.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "EE",
+      "time": "2014",
+      "value": 155.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "EE",
+      "time": "2015",
+      "value": 198.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "EE",
+      "time": "2016",
+      "value": 351.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "EE",
+      "time": "2017",
+      "value": 901.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "EE",
+      "time": "2018",
+      "value": 1164.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "EE",
+      "time": "2019",
+      "value": 1203.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "EE",
+      "time": "2020",
+      "value": 1320.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "EE",
+      "time": "2021",
+      "value": 1556.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "EE",
+      "time": "2022",
+      "value": 1180.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "EE",
+      "time": "2023",
+      "value": 967.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "EE",
+      "time": "2024",
+      "value": 882.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "EL",
+      "time": "2013",
+      "value": 11451.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "EL",
+      "time": "2014",
+      "value": 11660.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "ES",
+      "time": "2014",
+      "value": 7292.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "ES",
+      "time": "2015",
+      "value": 7271.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "ES",
+      "time": "2016",
+      "value": 11746.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "ES",
+      "time": "2017",
+      "value": 16348.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "ES",
+      "time": "2018",
+      "value": 17320.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "ES",
+      "time": "2019",
+      "value": 15451.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "ES",
+      "time": "2020",
+      "value": 12155.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "ES",
+      "time": "2021",
+      "value": 17258.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "ES",
+      "time": "2022",
+      "value": 19299.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "ES",
+      "time": "2023",
+      "value": 19299.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "ES",
+      "time": "2024",
+      "value": 31703.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "EU27",
+      "time": "2015",
+      "value": 1921410.0,
+      "flag": "d",
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "EU27",
+      "time": "2016",
+      "value": 1879995.0,
+      "flag": "d",
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "EU27",
+      "time": "2017",
+      "value": 1867507.0,
+      "flag": "d",
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "EU27",
+      "time": "2018",
+      "value": 2003981.0,
+      "flag": "d",
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "EU27",
+      "time": "2019",
+      "value": 2051701.0,
+      "flag": "d",
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "EU27",
+      "time": "2020",
+      "value": 2117325.0,
+      "flag": "d",
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "EU27",
+      "time": "2021",
+      "value": 2121941.0,
+      "flag": "d",
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "EU27",
+      "time": "2022",
+      "value": 2198480.0,
+      "flag": "d",
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "EU27",
+      "time": "2023",
+      "value": 2200012.0,
+      "flag": "d",
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "EU27",
+      "time": "2024",
+      "value": 2262565.0,
+      "flag": "d",
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2005",
+      "value": 34911.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2010",
+      "value": 49520.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2013",
+      "value": 38596.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2014",
+      "value": 36477.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2015",
+      "value": 34945.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2016",
+      "value": 33339.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2017",
+      "value": 34377.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2018",
+      "value": 36873.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2019",
+      "value": 41529.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2020",
+      "value": 41028.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2021",
+      "value": 36219.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2022",
+      "value": 45541.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2023",
+      "value": 53893.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2024",
+      "value": 57699.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2005",
+      "value": 305897.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2010",
+      "value": 321393.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2013",
+      "value": 302228.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2014",
+      "value": 285952.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2015",
+      "value": 267002.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2016",
+      "value": 261117.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2017",
+      "value": 259755.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2018",
+      "value": 263578.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2019",
+      "value": 268299.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2020",
+      "value": 274926.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2021",
+      "value": 306279.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2022",
+      "value": 354335.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2023",
+      "value": 377306.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2024",
+      "value": 385604.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "HU",
+      "time": "2010",
+      "value": 83287.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "HU",
+      "time": "2013",
+      "value": 97281.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "HU",
+      "time": "2014",
+      "value": 107290.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "HU",
+      "time": "2015",
+      "value": 102305.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "HU",
+      "time": "2016",
+      "value": 90490.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "HU",
+      "time": "2017",
+      "value": 97724.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "HU",
+      "time": "2018",
+      "value": 158318.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "HU",
+      "time": "2019",
+      "value": 180373.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "HU",
+      "time": "2020",
+      "value": 202472.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "HU",
+      "time": "2021",
+      "value": 195415.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "HU",
+      "time": "2022",
+      "value": 226923.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "HU",
+      "time": "2023",
+      "value": 221378.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "HU",
+      "time": "2024",
+      "value": 241387.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2005",
+      "value": 5623.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2010",
+      "value": 7951.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2017",
+      "value": 19280.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2018",
+      "value": 91001.0,
+      "flag": "d",
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2019",
+      "value": 64234.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2020",
+      "value": 54959.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2021",
+      "value": 55079.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2022",
+      "value": 47902.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2023",
+      "value": 53004.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2024",
+      "value": 61015.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "IS",
+      "time": "2013",
+      "value": 3426.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "IS",
+      "time": "2014",
+      "value": 3425.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "IS",
+      "time": "2015",
+      "value": 3362.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "IS",
+      "time": "2016",
+      "value": 3388.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "IS",
+      "time": "2017",
+      "value": 3408.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "IS",
+      "time": "2018",
+      "value": 3511.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "IS",
+      "time": "2019",
+      "value": 3735.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "IS",
+      "time": "2020",
+      "value": 4003.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "IS",
+      "time": "2021",
+      "value": 4710.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "IS",
+      "time": "2022",
+      "value": 4890.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "IS",
+      "time": "2023",
+      "value": 4775.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "IS",
+      "time": "2024",
+      "value": 4797.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "IT",
+      "time": "2013",
+      "value": 0.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "LI",
+      "time": "2013",
+      "value": 1190.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "LI",
+      "time": "2014",
+      "value": 1195.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "LI",
+      "time": "2015",
+      "value": 1183.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "LI",
+      "time": "2016",
+      "value": 1151.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "LI",
+      "time": "2017",
+      "value": 1120.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "LI",
+      "time": "2018",
+      "value": 1042.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "LI",
+      "time": "2019",
+      "value": 1106.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "LI",
+      "time": "2020",
+      "value": 1102.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "LI",
+      "time": "2021",
+      "value": 1099.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "LI",
+      "time": "2022",
+      "value": 1084.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "LU",
+      "time": "2013",
+      "value": 3403.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "LU",
+      "time": "2014",
+      "value": 3376.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "LU",
+      "time": "2015",
+      "value": 3445.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "LU",
+      "time": "2016",
+      "value": 3383.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "LU",
+      "time": "2017",
+      "value": 3518.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "LU",
+      "time": "2018",
+      "value": 3570.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "LU",
+      "time": "2019",
+      "value": 3495.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "LU",
+      "time": "2020",
+      "value": 3571.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "LU",
+      "time": "2021",
+      "value": 3448.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "LU",
+      "time": "2022",
+      "value": 3472.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "LU",
+      "time": "2023",
+      "value": 3379.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "LU",
+      "time": "2024",
+      "value": 3459.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2005",
+      "value": 39086.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2010",
+      "value": 34206.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2013",
+      "value": 27992.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2014",
+      "value": 26464.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2015",
+      "value": 24847.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2016",
+      "value": 23010.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2017",
+      "value": 23591.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2018",
+      "value": 23646.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2019",
+      "value": 23523.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2020",
+      "value": 23295.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2021",
+      "value": 24120.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2022",
+      "value": 24885.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2023",
+      "value": 25129.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2024",
+      "value": 25146.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "ME",
+      "time": "2016",
+      "value": 0.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "ME",
+      "time": "2017",
+      "value": 0.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "MK",
+      "time": "2013",
+      "value": 0.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "MK",
+      "time": "2014",
+      "value": 0.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "MK",
+      "time": "2016",
+      "value": 0.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "MK",
+      "time": "2017",
+      "value": 0.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "MT",
+      "time": "2013",
+      "value": 639.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "MT",
+      "time": "2014",
+      "value": 826.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "MT",
+      "time": "2015",
+      "value": 930.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "MT",
+      "time": "2016",
+      "value": 1249.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "MT",
+      "time": "2017",
+      "value": 1552.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "MT",
+      "time": "2018",
+      "value": 1828.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "MT",
+      "time": "2019",
+      "value": 1933.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "MT",
+      "time": "2020",
+      "value": 3065.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "MT",
+      "time": "2021",
+      "value": 1912.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "MT",
+      "time": "2022",
+      "value": 2124.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "MT",
+      "time": "2023",
+      "value": 2280.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "MT",
+      "time": "2024",
+      "value": 2470.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2005",
+      "value": 119550.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2010",
+      "value": 153800.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2005",
+      "value": 28870.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2010",
+      "value": 37145.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2013",
+      "value": 38751.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2014",
+      "value": 39594.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2015",
+      "value": 40802.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2016",
+      "value": 41789.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2017",
+      "value": 84366.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2018",
+      "value": 89187.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2019",
+      "value": 92291.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2020",
+      "value": 96251.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2021",
+      "value": 95106.0,
+      "flag": "d",
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2022",
+      "value": 102933.0,
+      "flag": "d",
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2023",
+      "value": 104627.0,
+      "flag": "d",
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2024",
+      "value": 103036.0,
+      "flag": "d",
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "PL",
+      "time": "2005",
+      "value": 137894.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "PL",
+      "time": "2010",
+      "value": 117305.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "PL",
+      "time": "2015",
+      "value": 113368.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "PL",
+      "time": "2016",
+      "value": 108392.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "PL",
+      "time": "2017",
+      "value": 101881.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "PL",
+      "time": "2018",
+      "value": 96798.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "PL",
+      "time": "2019",
+      "value": 85336.0,
+      "flag": "e",
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "PL",
+      "time": "2020",
+      "value": 115085.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "PL",
+      "time": "2021",
+      "value": 119927.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "PL",
+      "time": "2022",
+      "value": 124684.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "PL",
+      "time": "2023",
+      "value": 113605.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "PL",
+      "time": "2024",
+      "value": 126401.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "RO",
+      "time": "2015",
+      "value": 12358.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "RO",
+      "time": "2016",
+      "value": 32909.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "RO",
+      "time": "2017",
+      "value": 42604.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "RO",
+      "time": "2018",
+      "value": 34579.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "RO",
+      "time": "2019",
+      "value": 39963.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "RO",
+      "time": "2020",
+      "value": 48388.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "RO",
+      "time": "2021",
+      "value": 44964.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "RO",
+      "time": "2022",
+      "value": 45201.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "RO",
+      "time": "2023",
+      "value": 47308.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "RO",
+      "time": "2024",
+      "value": 42110.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "SE",
+      "time": "2010",
+      "value": 7399.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "SE",
+      "time": "2013",
+      "value": 6105.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "SE",
+      "time": "2014",
+      "value": 5584.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "SE",
+      "time": "2015",
+      "value": 6961.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "SE",
+      "time": "2016",
+      "value": 8291.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "SE",
+      "time": "2017",
+      "value": 9622.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "SE",
+      "time": "2018",
+      "value": 10858.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "SE",
+      "time": "2019",
+      "value": 13201.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "SE",
+      "time": "2020",
+      "value": 15614.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "SE",
+      "time": "2021",
+      "value": 16534.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "SE",
+      "time": "2022",
+      "value": 17282.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "SE",
+      "time": "2023",
+      "value": 17214.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "SE",
+      "time": "2024",
+      "value": 17412.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "SI",
+      "time": "2005",
+      "value": 4366.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "SI",
+      "time": "2010",
+      "value": 260.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "SK",
+      "time": "2013",
+      "value": 10578.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "SK",
+      "time": "2014",
+      "value": 11472.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "SK",
+      "time": "2015",
+      "value": 12550.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "SK",
+      "time": "2016",
+      "value": 14158.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "SK",
+      "time": "2017",
+      "value": 15521.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "SK",
+      "time": "2018",
+      "value": 16943.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "SK",
+      "time": "2019",
+      "value": 17434.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "SK",
+      "time": "2020",
+      "value": 19288.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "SK",
+      "time": "2021",
+      "value": 33173.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "SK",
+      "time": "2022",
+      "value": 32473.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "SK",
+      "time": "2023",
+      "value": 32686.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "SK",
+      "time": "2024",
+      "value": 34466.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2013",
+      "value": 1036807.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2014",
+      "value": 834075.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2015",
+      "value": 854211.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2016",
+      "value": 867914.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2017",
+      "value": 854808.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2018",
+      "value": 750207.0,
+      "dims": {
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "UK",
+      "time": "2019",
+      "value": 648116.0,
+      "dims": {
+        "sex": "T"
+      }
+    }
+  ],
+  "missing": [
+    {
+      "geo": "BA",
+      "time": "2020",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "BA",
+      "time": "2021",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "BA",
+      "time": "2022",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "BA",
+      "time": "2023",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "BA",
+      "time": "2024",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "BG",
+      "time": "2005",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "BG",
+      "time": "2010",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "BG",
+      "time": "2013",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "BG",
+      "time": "2014",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "BG",
+      "time": "2015",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "BG",
+      "time": "2016",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "CY",
+      "time": "2005",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "CY",
+      "time": "2010",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "CY",
+      "time": "2013",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "CY",
+      "time": "2014",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "CY",
+      "time": "2015",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "CY",
+      "time": "2016",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "CY",
+      "time": "2017",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "CY",
+      "time": "2018",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "CY",
+      "time": "2019",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "CY",
+      "time": "2020",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "CY",
+      "time": "2021",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "CY",
+      "time": "2022",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "CY",
+      "time": "2023",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "CY",
+      "time": "2024",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "CZ",
+      "time": "2017",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "CZ",
+      "time": "2018",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "CZ",
+      "time": "2019",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "CZ",
+      "time": "2020",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "CZ",
+      "time": "2021",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "CZ",
+      "time": "2022",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "CZ",
+      "time": "2023",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "CZ",
+      "time": "2024",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "EL",
+      "time": "2015",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "EL",
+      "time": "2016",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "EL",
+      "time": "2017",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "EL",
+      "time": "2018",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "EL",
+      "time": "2019",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "EL",
+      "time": "2020",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "EL",
+      "time": "2021",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "EL",
+      "time": "2022",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "EL",
+      "time": "2023",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "EL",
+      "time": "2024",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "GE",
+      "time": "2023",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "GE",
+      "time": "2024",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "HR",
+      "time": "2013",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "HR",
+      "time": "2014",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "HR",
+      "time": "2015",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "HR",
+      "time": "2016",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "HR",
+      "time": "2017",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "HR",
+      "time": "2018",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "HR",
+      "time": "2019",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "HR",
+      "time": "2020",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "HR",
+      "time": "2021",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "HR",
+      "time": "2022",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "HR",
+      "time": "2023",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "HR",
+      "time": "2024",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "IE",
+      "time": "2013",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "IE",
+      "time": "2014",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "IE",
+      "time": "2015",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "IE",
+      "time": "2016",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "IT",
+      "time": "2005",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "IT",
+      "time": "2010",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "IT",
+      "time": "2014",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "d"
+    },
+    {
+      "geo": "IT",
+      "time": "2015",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "IT",
+      "time": "2016",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "IT",
+      "time": "2017",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "IT",
+      "time": "2018",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "IT",
+      "time": "2019",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "IT",
+      "time": "2020",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "IT",
+      "time": "2021",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "IT",
+      "time": "2022",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "IT",
+      "time": "2023",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "IT",
+      "time": "2024",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "LT",
+      "time": "2013",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "LT",
+      "time": "2014",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "LT",
+      "time": "2015",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "LT",
+      "time": "2016",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "LT",
+      "time": "2017",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "LT",
+      "time": "2018",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "LT",
+      "time": "2019",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "LT",
+      "time": "2020",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "LT",
+      "time": "2021",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "LT",
+      "time": "2022",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "LT",
+      "time": "2023",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "LT",
+      "time": "2024",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "ME",
+      "time": "2018",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "ME",
+      "time": "2019",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "ME",
+      "time": "2020",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "ME",
+      "time": "2021",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "ME",
+      "time": "2023",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "ME",
+      "time": "2024",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "MK",
+      "time": "2015",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "MK",
+      "time": "2018",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "MK",
+      "time": "2019",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "MK",
+      "time": "2020",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "MK",
+      "time": "2021",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "MK",
+      "time": "2022",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "MK",
+      "time": "2023",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "MK",
+      "time": "2024",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "PT",
+      "time": "2005",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "PT",
+      "time": "2010",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "PT",
+      "time": "2013",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "PT",
+      "time": "2014",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "PT",
+      "time": "2015",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "PT",
+      "time": "2016",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "PT",
+      "time": "2017",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "PT",
+      "time": "2018",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "PT",
+      "time": "2019",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "PT",
+      "time": "2020",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "PT",
+      "time": "2021",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "PT",
+      "time": "2022",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "PT",
+      "time": "2023",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "PT",
+      "time": "2024",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "RO",
+      "time": "2014",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "d"
+    },
+    {
+      "geo": "RS",
+      "time": "2013",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "RS",
+      "time": "2015",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "d"
+    },
+    {
+      "geo": "RS",
+      "time": "2017",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "RS",
+      "time": "2018",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "RS",
+      "time": "2019",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "RS",
+      "time": "2020",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "RS",
+      "time": "2021",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "RS",
+      "time": "2022",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "RS",
+      "time": "2023",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "RS",
+      "time": "2024",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "SI",
+      "time": "2013",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "SI",
+      "time": "2014",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "SI",
+      "time": "2015",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "SI",
+      "time": "2016",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "SI",
+      "time": "2017",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "SI",
+      "time": "2018",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "SI",
+      "time": "2019",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "SI",
+      "time": "2020",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "SI",
+      "time": "2021",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "SI",
+      "time": "2022",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "SI",
+      "time": "2023",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "SI",
+      "time": "2024",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "SK",
+      "time": "2013",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "d"
+    },
+    {
+      "geo": "SK",
+      "time": "2014",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "d"
+    },
+    {
+      "geo": "SK",
+      "time": "2015",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "d"
+    },
+    {
+      "geo": "SK",
+      "time": "2016",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "d"
+    },
+    {
+      "geo": "SK",
+      "time": "2017",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "d"
+    },
+    {
+      "geo": "SK",
+      "time": "2018",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "d"
+    },
+    {
+      "geo": "SK",
+      "time": "2019",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "d"
+    },
+    {
+      "geo": "SK",
+      "time": "2020",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "d"
+    },
+    {
+      "geo": "SK",
+      "time": "2021",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "d"
+    },
+    {
+      "geo": "TR",
+      "time": "2013",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "TR",
+      "time": "2014",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "TR",
+      "time": "2015",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "TR",
+      "time": "2016",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "TR",
+      "time": "2017",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "TR",
+      "time": "2018",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "TR",
+      "time": "2019",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "d"
+    },
+    {
+      "geo": "TR",
+      "time": "2020",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "d"
+    },
+    {
+      "geo": "TR",
+      "time": "2021",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "d"
+    },
+    {
+      "geo": "TR",
+      "time": "2022",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "d"
+    },
+    {
+      "geo": "TR",
+      "time": "2023",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "d"
+    },
+    {
+      "geo": "TR",
+      "time": "2024",
+      "dims": {
+        "sex": "F"
+      },
+      "flag": "d"
+    },
+    {
+      "geo": "BA",
+      "time": "2020",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "BA",
+      "time": "2021",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "BA",
+      "time": "2022",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "BA",
+      "time": "2023",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "BA",
+      "time": "2024",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "BG",
+      "time": "2005",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "BG",
+      "time": "2010",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "BG",
+      "time": "2013",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "BG",
+      "time": "2014",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "BG",
+      "time": "2015",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "BG",
+      "time": "2016",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "CY",
+      "time": "2005",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "CY",
+      "time": "2010",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "CY",
+      "time": "2013",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "CY",
+      "time": "2014",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "CY",
+      "time": "2015",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "CY",
+      "time": "2016",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "CY",
+      "time": "2017",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "CY",
+      "time": "2018",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "CY",
+      "time": "2019",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "CY",
+      "time": "2020",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "CY",
+      "time": "2021",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "CY",
+      "time": "2022",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "CY",
+      "time": "2023",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "CY",
+      "time": "2024",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "CZ",
+      "time": "2017",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "CZ",
+      "time": "2018",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "CZ",
+      "time": "2019",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "CZ",
+      "time": "2020",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "CZ",
+      "time": "2021",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "CZ",
+      "time": "2022",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "CZ",
+      "time": "2023",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "CZ",
+      "time": "2024",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "EL",
+      "time": "2015",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "EL",
+      "time": "2016",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "EL",
+      "time": "2017",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "EL",
+      "time": "2018",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "EL",
+      "time": "2019",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "EL",
+      "time": "2020",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "EL",
+      "time": "2021",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "EL",
+      "time": "2022",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "EL",
+      "time": "2023",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "EL",
+      "time": "2024",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "GE",
+      "time": "2023",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "GE",
+      "time": "2024",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "HR",
+      "time": "2013",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "HR",
+      "time": "2014",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "HR",
+      "time": "2015",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "HR",
+      "time": "2016",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "HR",
+      "time": "2017",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "HR",
+      "time": "2018",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "HR",
+      "time": "2019",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "HR",
+      "time": "2020",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "HR",
+      "time": "2021",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "HR",
+      "time": "2022",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "HR",
+      "time": "2023",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "HR",
+      "time": "2024",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "IE",
+      "time": "2013",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "IE",
+      "time": "2014",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "IE",
+      "time": "2015",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "IE",
+      "time": "2016",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "IT",
+      "time": "2005",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "IT",
+      "time": "2010",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "IT",
+      "time": "2014",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "d"
+    },
+    {
+      "geo": "IT",
+      "time": "2015",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "IT",
+      "time": "2016",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "IT",
+      "time": "2017",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "IT",
+      "time": "2018",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "IT",
+      "time": "2019",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "IT",
+      "time": "2020",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "IT",
+      "time": "2021",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "IT",
+      "time": "2022",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "IT",
+      "time": "2023",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "IT",
+      "time": "2024",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "LT",
+      "time": "2013",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "LT",
+      "time": "2014",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "LT",
+      "time": "2015",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "LT",
+      "time": "2016",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "LT",
+      "time": "2017",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "LT",
+      "time": "2018",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "LT",
+      "time": "2019",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "LT",
+      "time": "2020",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "LT",
+      "time": "2021",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "LT",
+      "time": "2022",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "LT",
+      "time": "2023",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "LT",
+      "time": "2024",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "ME",
+      "time": "2018",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "ME",
+      "time": "2019",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "ME",
+      "time": "2020",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "ME",
+      "time": "2021",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "ME",
+      "time": "2023",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "ME",
+      "time": "2024",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "MK",
+      "time": "2015",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "MK",
+      "time": "2018",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "MK",
+      "time": "2019",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "MK",
+      "time": "2020",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "MK",
+      "time": "2021",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "MK",
+      "time": "2022",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "MK",
+      "time": "2023",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "MK",
+      "time": "2024",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "PT",
+      "time": "2005",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "PT",
+      "time": "2010",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "PT",
+      "time": "2013",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "PT",
+      "time": "2014",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "PT",
+      "time": "2015",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "PT",
+      "time": "2016",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "PT",
+      "time": "2017",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "PT",
+      "time": "2018",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "PT",
+      "time": "2019",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "PT",
+      "time": "2020",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "PT",
+      "time": "2021",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "PT",
+      "time": "2022",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "PT",
+      "time": "2023",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "PT",
+      "time": "2024",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "RO",
+      "time": "2014",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "d"
+    },
+    {
+      "geo": "RS",
+      "time": "2013",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "RS",
+      "time": "2015",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "d"
+    },
+    {
+      "geo": "RS",
+      "time": "2017",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "RS",
+      "time": "2018",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "RS",
+      "time": "2019",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "RS",
+      "time": "2020",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "RS",
+      "time": "2021",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "RS",
+      "time": "2022",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "RS",
+      "time": "2023",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "RS",
+      "time": "2024",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "SI",
+      "time": "2013",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "SI",
+      "time": "2014",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "SI",
+      "time": "2015",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "SI",
+      "time": "2016",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "SI",
+      "time": "2017",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "SI",
+      "time": "2018",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "SI",
+      "time": "2019",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "SI",
+      "time": "2020",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "SI",
+      "time": "2021",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "SI",
+      "time": "2022",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "SI",
+      "time": "2023",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "SI",
+      "time": "2024",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "SK",
+      "time": "2013",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "d"
+    },
+    {
+      "geo": "SK",
+      "time": "2014",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "d"
+    },
+    {
+      "geo": "SK",
+      "time": "2015",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "d"
+    },
+    {
+      "geo": "SK",
+      "time": "2016",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "d"
+    },
+    {
+      "geo": "SK",
+      "time": "2017",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "d"
+    },
+    {
+      "geo": "SK",
+      "time": "2018",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "d"
+    },
+    {
+      "geo": "SK",
+      "time": "2019",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "d"
+    },
+    {
+      "geo": "SK",
+      "time": "2020",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "d"
+    },
+    {
+      "geo": "SK",
+      "time": "2021",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "d"
+    },
+    {
+      "geo": "TR",
+      "time": "2013",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "TR",
+      "time": "2014",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "TR",
+      "time": "2015",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "TR",
+      "time": "2016",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "TR",
+      "time": "2017",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "TR",
+      "time": "2018",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "TR",
+      "time": "2019",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "d"
+    },
+    {
+      "geo": "TR",
+      "time": "2020",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "d"
+    },
+    {
+      "geo": "TR",
+      "time": "2021",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "d"
+    },
+    {
+      "geo": "TR",
+      "time": "2022",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "d"
+    },
+    {
+      "geo": "TR",
+      "time": "2023",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "d"
+    },
+    {
+      "geo": "TR",
+      "time": "2024",
+      "dims": {
+        "sex": "M"
+      },
+      "flag": "d"
+    },
+    {
+      "geo": "BA",
+      "time": "2020",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "BA",
+      "time": "2021",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "BA",
+      "time": "2022",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "BA",
+      "time": "2023",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "BA",
+      "time": "2024",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "BG",
+      "time": "2005",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "BG",
+      "time": "2010",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "BG",
+      "time": "2013",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "BG",
+      "time": "2014",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "BG",
+      "time": "2015",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "BG",
+      "time": "2016",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "CY",
+      "time": "2005",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "CY",
+      "time": "2010",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "CY",
+      "time": "2013",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "CY",
+      "time": "2014",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "CY",
+      "time": "2015",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "CY",
+      "time": "2016",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "CY",
+      "time": "2017",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "CY",
+      "time": "2018",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "CY",
+      "time": "2019",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "CY",
+      "time": "2020",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "CY",
+      "time": "2021",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "CY",
+      "time": "2022",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "CY",
+      "time": "2023",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "CY",
+      "time": "2024",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "CZ",
+      "time": "2017",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "CZ",
+      "time": "2018",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "CZ",
+      "time": "2019",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "CZ",
+      "time": "2020",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "CZ",
+      "time": "2021",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "CZ",
+      "time": "2022",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "CZ",
+      "time": "2023",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "CZ",
+      "time": "2024",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "EL",
+      "time": "2015",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "EL",
+      "time": "2016",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "EL",
+      "time": "2017",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "EL",
+      "time": "2018",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "EL",
+      "time": "2019",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "EL",
+      "time": "2020",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "EL",
+      "time": "2021",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "EL",
+      "time": "2022",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "EL",
+      "time": "2023",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "EL",
+      "time": "2024",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "GE",
+      "time": "2023",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "GE",
+      "time": "2024",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "HR",
+      "time": "2013",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "HR",
+      "time": "2014",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "HR",
+      "time": "2015",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "HR",
+      "time": "2016",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "HR",
+      "time": "2017",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "HR",
+      "time": "2018",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "HR",
+      "time": "2019",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "HR",
+      "time": "2020",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "HR",
+      "time": "2021",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "HR",
+      "time": "2022",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "HR",
+      "time": "2023",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "HR",
+      "time": "2024",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "IE",
+      "time": "2013",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "IE",
+      "time": "2014",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "IE",
+      "time": "2015",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "IE",
+      "time": "2016",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "IT",
+      "time": "2005",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "IT",
+      "time": "2010",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "IT",
+      "time": "2014",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "d"
+    },
+    {
+      "geo": "IT",
+      "time": "2015",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "IT",
+      "time": "2016",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "IT",
+      "time": "2017",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "IT",
+      "time": "2018",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "IT",
+      "time": "2019",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "IT",
+      "time": "2020",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "IT",
+      "time": "2021",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "IT",
+      "time": "2022",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "IT",
+      "time": "2023",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "IT",
+      "time": "2024",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "LT",
+      "time": "2013",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "LT",
+      "time": "2014",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "LT",
+      "time": "2015",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "LT",
+      "time": "2016",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "LT",
+      "time": "2017",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "LT",
+      "time": "2018",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "LT",
+      "time": "2019",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "LT",
+      "time": "2020",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "LT",
+      "time": "2021",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "LT",
+      "time": "2022",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "LT",
+      "time": "2023",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "LT",
+      "time": "2024",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "ME",
+      "time": "2018",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "ME",
+      "time": "2019",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "ME",
+      "time": "2020",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "ME",
+      "time": "2021",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "ME",
+      "time": "2023",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "ME",
+      "time": "2024",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "MK",
+      "time": "2015",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "MK",
+      "time": "2018",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "MK",
+      "time": "2019",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "MK",
+      "time": "2020",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "MK",
+      "time": "2021",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "MK",
+      "time": "2022",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "MK",
+      "time": "2023",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "MK",
+      "time": "2024",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "PT",
+      "time": "2005",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "PT",
+      "time": "2010",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "PT",
+      "time": "2013",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "PT",
+      "time": "2014",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "PT",
+      "time": "2015",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "PT",
+      "time": "2016",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "PT",
+      "time": "2017",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "PT",
+      "time": "2018",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "PT",
+      "time": "2019",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "PT",
+      "time": "2020",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "PT",
+      "time": "2021",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "PT",
+      "time": "2022",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "PT",
+      "time": "2023",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "PT",
+      "time": "2024",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "RO",
+      "time": "2014",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "d"
+    },
+    {
+      "geo": "RS",
+      "time": "2013",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "RS",
+      "time": "2015",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "d"
+    },
+    {
+      "geo": "RS",
+      "time": "2017",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "RS",
+      "time": "2018",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "RS",
+      "time": "2019",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "RS",
+      "time": "2020",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "RS",
+      "time": "2021",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "RS",
+      "time": "2022",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "RS",
+      "time": "2023",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "RS",
+      "time": "2024",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "SI",
+      "time": "2013",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "SI",
+      "time": "2014",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "SI",
+      "time": "2015",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "SI",
+      "time": "2016",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "SI",
+      "time": "2017",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "SI",
+      "time": "2018",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "SI",
+      "time": "2019",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "SI",
+      "time": "2020",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "SI",
+      "time": "2021",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "SI",
+      "time": "2022",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "SI",
+      "time": "2023",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "SI",
+      "time": "2024",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "TR",
+      "time": "2013",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "TR",
+      "time": "2014",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "TR",
+      "time": "2015",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "TR",
+      "time": "2016",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "TR",
+      "time": "2017",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "TR",
+      "time": "2018",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "m"
+    },
+    {
+      "geo": "TR",
+      "time": "2019",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "d"
+    },
+    {
+      "geo": "TR",
+      "time": "2020",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "d"
+    },
+    {
+      "geo": "TR",
+      "time": "2021",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "d"
+    },
+    {
+      "geo": "TR",
+      "time": "2022",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "d"
+    },
+    {
+      "geo": "TR",
+      "time": "2023",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "d"
+    },
+    {
+      "geo": "TR",
+      "time": "2024",
+      "dims": {
+        "sex": "T"
+      },
+      "flag": "d"
+    }
+  ],
+  "coverage": {
+    "geos": [
+      "AT",
+      "BE",
+      "BG",
+      "CH",
+      "CZ",
+      "DE",
+      "DK",
+      "EE",
+      "EL",
+      "ES",
+      "EU27",
+      "FI",
+      "FR",
+      "HU",
+      "IE",
+      "IS",
+      "IT",
+      "LI",
+      "LU",
+      "LV",
+      "ME",
+      "MK",
+      "MT",
+      "NL",
+      "NO",
+      "PL",
+      "RO",
+      "SE",
+      "SI",
+      "SK",
+      "UK"
+    ],
+    "time": [
+      "2005",
+      "2024"
+    ],
+    "observations": 884
+  }
+}

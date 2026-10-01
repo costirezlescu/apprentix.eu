@@ -19,6 +19,9 @@ Deliberately plain:
 - **No server.** Everything is static files, so it runs on GitHub Pages for free.
 - **No accounts, no database, no tracking.**
 - **Data-driven.** Adding a dataset means adding two JSON files — not writing code.
+- **Data refreshed by a pipeline, not by the site.** A small Python pipeline (`pipeline/`)
+  fetches public sources on a schedule in GitHub Actions and writes plain JSON/CSV.
+  Every change arrives as a pull request you review. The site itself still has no build step.
 
 The only external request is the Google Fonts stylesheet.
 
@@ -36,6 +39,8 @@ pwsh -File scripts/serve.ps1
 
 Then open <http://localhost:8080>. Press `Ctrl+C` in the terminal to stop it.
 
+No PowerShell? Any static server works, e.g. `python3 -m http.server 8080`.
+
 If port 8080 is busy: `pwsh -File scripts/serve.ps1 -Port 8081`
 
 (If you use VS Code, the *Live Server* extension does the same job — right-click
@@ -47,23 +52,32 @@ If port 8080 is busy: `pwsh -File scripts/serve.ps1 -Port 8081`
 
 ```
 apprentix.eu/
-├─ index.html                     Landing page: lists the datasets
+├─ index.html                     Landing page: datasets, indicators
 ├─ pages/
-│  ├─ explore.html                The explorer — works for ANY dataset
+│  ├─ explore.html                The explorer — works for ANY record dataset
+│  ├─ indicators.html             EU targets + every statistical indicator
 │  ├─ about.html
-│  └─ data.html                   Sources, licensing, caveats
+│  └─ data.html                   Source catalogue, licensing, caveats
 ├─ assets/
-│  ├─ css/site.css                All styling, light + dark
+│  ├─ css/site.css                All styling, light + dark (incl. chart colours)
 │  ├─ js/data.js                  Loading, filtering, helpers
 │  ├─ js/explore.js               The explorer UI
-│  └─ img/
+│  ├─ js/indicators.js            The indicators UI
+│  └─ js/charts.js                Dependency-free SVG charts (map, bars, lines)
 ├─ data/
 │  ├─ datasets.json               Site config + which datasets exist
-│  ├─ raw/                        ← YOU DUMP ORIGINAL FILES HERE
+│  ├─ sources.json                Catalogue of every upstream source (generated)
+│  ├─ reference/countries.json    Country codes, names, tile-map positions
+│  ├─ schemas/                    JSON Schemas the validator enforces
+│  ├─ raw/                        ← ORIGINAL FILES, dated (by you or the pipeline)
 │  └─ published/                  ← what the site actually reads
-│     └─ apprenticeship-schemes/
-│        ├─ meta.json             describes the fields
-│        └─ records.json          the records
+│     ├─ apprenticeship-schemes/  meta.json + records.json (hand-curated)
+│     ├─ vet-policy-timeline/     meta.json + records.json (from Cedefop)
+│     └─ indicators/              <id>.json + <id>.csv, index.json
+├─ pipeline/                      Python: one connector per source, build, validate
+├─ .github/workflows/             weekly refresh (opens a PR) + validation
+├─ datapackage.json               Frictionless description of all published data
+├─ CITATION.cff                   How to cite
 ├─ scripts/
 │  ├─ serve.ps1                   local preview server
 │  ├─ csv-to-json.ps1             spreadsheet  -> records.json
@@ -80,6 +94,55 @@ apprentix.eu/
 - **`data/published/`** is what the site loads. Clean, consistent JSON.
 
 Keeping the two apart means you can always show where a number came from.
+
+---
+
+## The data pipeline
+
+```
+python3 -m pip install -r pipeline/requirements.txt
+python3 -m pipeline.run --list          # all connectors
+python3 -m pipeline.run                 # run everything, then rebuild indexes
+python3 -m pipeline.run eurostat        # just one source
+python3 -m pipeline.run --build-only    # rebuild indexes after a hand edit
+python3 -m pipeline.validate            # check everything against data/schemas/
+```
+
+- **One file per source** in `pipeline/sources/` (a `SOURCE` description and a `run()`).
+  Adding a file is enough; it is picked up automatically. `pipeline/sources/_catalogue.py`
+  lists sources that are tracked but cannot be automated, and why.
+- **Statistics** are written to `data/published/indicators/<id>.json` (with provenance:
+  publisher, dataset code, licence, citation, retrieval time, SHA-256 of the original) plus a
+  CSV twin. The Indicators page (`pages/indicators.html`) draws every one of them — map,
+  ranking, trend, table — with no indicator-specific code.
+- **Originals** go to `data/raw/<source>/<date>-<name>`. A new dated copy is kept only when
+  the content changes. Very large files (Erasmus+) are hashed, not stored.
+- **Build outputs**: `data/published/indicators/index.json`, `data/sources.json` (the source
+  catalogue shown on *Data & sources*), record counts in `data/datasets.json`, and
+  `datapackage.json` (Frictionless Data Package describing everything published).
+
+### Automation (GitHub Actions)
+
+- `.github/workflows/ingest.yml` runs every Monday (and on demand from the Actions tab),
+  then opens a **pull request** titled "Data refresh". Review the diff, merge, and the site
+  updates. The git history of `data/` is the changelog.
+  *One-time setup:* Settings → Actions → General → allow GitHub Actions to create pull requests.
+- `.github/workflows/validate.yml` checks every push/PR against `data/schemas/`.
+- Optional API keys go in Settings → Secrets → Actions (e.g. `DESTATIS_TOKEN`); connectors
+  that need a missing key are skipped, not failed.
+
+### Cedefop
+
+Cedefop's web pages refuse automated requests, but its **Datasets** downloads (`/files/…xlsx`)
+work. If a download is refused, put the file in `data/raw/cedefop/` (with the date prefix) and
+the pipeline uses the latest copy. File names change per release: update the URL in
+`pipeline/sources/cedefop_files.py`. The apprenticeship-schemes fiches remain hand-curated.
+
+### Citing and DOIs
+
+`CITATION.cff` tells GitHub how to cite the project. To mint a DOI for each release, log in to
+[Zenodo](https://zenodo.org) with GitHub, enable this repository, then publish a GitHub
+release; Zenodo archives it and issues a DOI.
 
 ---
 

@@ -1,0 +1,265 @@
+{
+  "id": "vet-policy-timeline",
+  "title": "VET policy timeline",
+  "tagline": "More than 1,000 national VET and apprenticeship policies since 2015, and how far each has got.",
+  "description": "National strategies, laws and practical measures on vocational education and training in the EU Member States, Iceland and Norway, reported annually by Cedefop's ReferNet network from 2015 to 2025. Filter to policies that concern apprenticeship and work-based learning.",
+  "recordLabel": {
+    "one": "policy",
+    "many": "policies"
+  },
+  "source": {
+    "name": "Cedefop & ReferNet — Timeline of VET policies in Europe (2025 update)",
+    "url": "https://www.cedefop.europa.eu/en/datasets/timeline-EU-vet-policies",
+    "licence": "CC BY 4.0. Cite as: Cedefop, & ReferNet. (2026). Timeline of VET policies in Europe (2025 update): Research dataset [Data set].",
+    "licence_id": "CC-BY-4.0",
+    "caveat": "Imported automatically from Cedefop's published dataset. Text has been converted from HTML; nothing has been rewritten. 'Concerns apprenticeship' is an Apprentix grouping: it is Yes when the policy falls under Cedefop's theme 3.9 (reinforcing work-based learning, including apprenticeships), or its title, objectives or description mention apprenticeship, work-based learning or dual training.",
+    "retrieved": "2026-10-01",
+    "file_url": "https://www.cedefop.europa.eu/files/cedefop_timeline_of_vet_policies_in_europe_dataset_2026.xlsx",
+    "raw_file": "data/raw/cedefop/2026-10-01-timeline-of-vet-policies.xlsx",
+    "raw_sha256": "3b9e860c9c5d3eba64ef47b096f659f81b7cfea7f0be2bb8a405fde6dcad6561"
+  },
+  "display": {
+    "title": "title",
+    "group": "country",
+    "badge": "flag",
+    "link": "source_url",
+    "summary": "description",
+    "facts": [
+      "type",
+      "latest_year",
+      "latest_stage"
+    ]
+  },
+  "fields": [
+    {
+      "key": "country",
+      "label": "Country",
+      "type": "category",
+      "facet": true,
+      "collapse": 12
+    },
+    {
+      "key": "concerns_apprenticeship",
+      "label": "Concerns apprenticeship",
+      "type": "category",
+      "facet": true,
+      "order": [
+        "Yes",
+        "No"
+      ]
+    },
+    {
+      "key": "type",
+      "label": "Type of policy",
+      "type": "category",
+      "facet": true
+    },
+    {
+      "key": "latest_stage",
+      "label": "Latest progress stage",
+      "type": "category",
+      "facet": true,
+      "order": [
+        "Design phase",
+        "Pilot phase",
+        "Legislative process",
+        "Approved/agreed",
+        "Implementation phase",
+        "Completed",
+        "Discontinued"
+      ]
+    },
+    {
+      "key": "subsystem",
+      "label": "VET subsystem",
+      "type": "category",
+      "facet": true,
+      "order": [
+        "IVET",
+        "CVET"
+      ]
+    },
+    {
+      "key": "latest_year",
+      "label": "Latest report",
+      "type": "category",
+      "facet": true,
+      "collapse": 6
+    },
+    {
+      "key": "themes",
+      "label": "Theme",
+      "type": "category",
+      "facet": true,
+      "collapse": 6
+    },
+    {
+      "key": "target_groups",
+      "label": "Target group",
+      "type": "category",
+      "facet": true,
+      "collapse": 6
+    },
+    {
+      "key": "eu_priorities",
+      "label": "EU priority",
+      "type": "category",
+      "facet": true,
+      "collapse": 4
+    },
+    {
+      "key": "title",
+      "label": "Policy",
+      "type": "title"
+    },
+    {
+      "key": "first_year",
+      "label": "First reported",
+      "type": "text"
+    },
+    {
+      "key": "progress",
+      "label": "Progress by year",
+      "type": "text"
+    },
+    {
+      "key": "latest_stage_description",
+      "label": "Latest update",
+      "type": "longtext"
+    },
+    {
+      "key": "background",
+      "label": "Why",
+      "type": "longtext"
+    },
+    {
+      "key": "objectives",
+      "label": "Objectives",
+      "type": "longtext"
+    },
+    {
+      "key": "description",
+      "label": "Description",
+      "type": "longtext"
+    },
+    {
+      "key": "sub_themes",
+      "label": "Sub-themes",
+      "type": "text"
+    },
+    {
+      "key": "other_target_groups",
+      "label": "Other target groups",
+      "type": "text"
+    },
+    {
+      "key": "bodies",
+      "label": "Responsible bodies",
+      "type": "text"
+    },
+    {
+      "key": "reporting_period",
+      "label": "Reporting period",
+      "type": "text"
+    },
+    {
+      "key": "source_titles",
+      "label": "Sources",
+      "type": "text"
+    },
+    {
+      "key": "source_url",
+      "label": "National source",
+      "type": "link"
+    },
+    {
+      "key": "policy_id",
+      "label": "Cedefop policy ID",
+      "type": "text"
+    },
+    {
+      "key": "status",
+      "label": "How this record was made",
+      "type": "text"
+    },
+    {
+      "key": "country_code",
+      "label": "Country code",
+      "type": "hidden"
+    },
+    {
+      "key": "flag",
+      "label": "Flag",
+      "type": "hidden"
+    },
+    {
+      "key": "more_sources",
+      "label": "More sources",
+      "type": "hidden"
+    },
+    {
+      "key": "related_ids",
+      "label": "Related policies",
+      "type": "hidden"
+    },
+    {
+      "key": "id",
+      "label": "Identifier",
+      "type": "hidden"
+    }
+  ],
+  "sections": [
+    {
+      "title": "At a glance",
+      "fields": [
+        "country",
+        "type",
+        "subsystem",
+        "concerns_apprenticeship",
+        "first_year",
+        "latest_stage",
+        "latest_year"
+      ]
+    },
+    {
+      "title": "Progress",
+      "fields": [
+        "progress",
+        "latest_stage_description"
+      ]
+    },
+    {
+      "title": "Why and what",
+      "fields": [
+        "background",
+        "objectives"
+      ]
+    },
+    {
+      "title": "Who and whom",
+      "fields": [
+        "bodies",
+        "target_groups",
+        "other_target_groups"
+      ]
+    },
+    {
+      "title": "Classification",
+      "fields": [
+        "themes",
+        "sub_themes",
+        "eu_priorities",
+        "reporting_period"
+      ]
+    },
+    {
+      "title": "Sources and provenance",
+      "fields": [
+        "source_titles",
+        "source_url",
+        "policy_id",
+        "status"
+      ]
+    }
+  ]
+}

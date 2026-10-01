@@ -24,6 +24,7 @@
     <a class="brand" href="./">Apprenti<span class="x">x</span><span class="eu">.eu</span></a>
     <nav class="site-nav">
       <a href="./" aria-current="page">Datasets</a>
+      <a href="pages/indicators.html">Indicators</a>
       <a href="pages/about.html">About</a>
       <a href="pages/data.html">Data &amp; sources</a>
     </nav>
@@ -45,6 +46,14 @@
       <h2>Datasets</h2>
       <p class="sub">Each dataset can be searched, filtered and compared record by record. Every record links back to its official source.</p>
       <div class="ds-grid" id="ds-grid"></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <h2>Indicators</h2>
+      <p class="sub">Statistics refreshed automatically from Eurostat, Cedefop and national sources — with the EU's 2025 targets for vocational education.</p>
+      <div class="ds-grid" id="ind-grid"></div>
     </div>
   </section>
 
@@ -79,9 +88,11 @@
   document.getElementById('foot-updated').textContent = `Last updated ${m.site.updated}.`;
 
   const totalRecords = m.datasets.reduce((n, d) => n + (d.records || 0), 0);
+  const nInd = m.indicators?.count || 0;
   document.getElementById('stats').innerHTML = [
     [m.datasets.length, m.datasets.length === 1 ? 'Dataset' : 'Datasets'],
-    [totalRecords, 'Records'],
+    [totalRecords.toLocaleString('en-GB'), 'Records'],
+    [nInd, 'Indicators'],
     [m.planned.length, 'In preparation']
   ].map(([n, l]) => `<div class="stat"><div class="n">${n}</div><div class="l">${esc(l)}</div></div>`).join('');
 
@@ -90,6 +101,24 @@
       <h3>${esc(d.title)}</h3>
       <p>${esc(d.tagline || '')}</p>
       <div class="meta"><span>${d.records} records</span><span>${esc(d.coverage || '')}</span></div>
+    </a>`).join('');
+
+  const idx = await fetch('data/published/indicators/index.json').then(r => r.json());
+  const pubs = new Map();
+  for (const i of idx.indicators) {
+    const k = i.national ? 'National statistical sources' : i.provenance?.publisher;
+    pubs.set(k, (pubs.get(k) || 0) + 1);
+  }
+  document.getElementById('ind-grid').innerHTML = `
+    <a class="ds-card" href="pages/indicators.html">
+      <h3>EU targets for vocational education</h3>
+      <p>Work-based learning and employment of recent VET graduates against the EU's 2025 targets, by country.</p>
+      <div class="meta"><span>Eurostat</span><span>live</span></div>
+    </a>` + [...pubs].map(([p, n]) => `
+    <a class="ds-card" href="pages/indicators.html">
+      <h3>${esc(p)}</h3>
+      <p>${n} indicator${n === 1 ? '' : 's'} with maps, rankings, trends and downloads.</p>
+      <div class="meta"><span>${n} indicators</span></div>
     </a>`).join('');
 
   if (m.planned?.length) {

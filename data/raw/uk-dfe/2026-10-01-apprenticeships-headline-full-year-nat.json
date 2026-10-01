@@ -1,0 +1,4885 @@
+{
+ "query": {
+  "and": [
+   {
+    "geographicLevels": {
+     "eq": "NAT"
+    }
+   },
+   {
+    "filters": {
+     "eq": "cMB31"
+    }
+   },
+   {
+    "filters": {
+     "eq": "hlByW"
+    }
+   }
+  ]
+ },
+ "results": [
+  {
+   "filters": {
+    "0evT5": "Bzo7J",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "3Cx8u",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2017/2018"
+   },
+   "values": {
+    "EADqF": "48150",
+    "WcR2b": "84240",
+    "mU59K": "15770"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "Bzo7J",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "3Cx8u",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2018/2019"
+   },
+   "values": {
+    "EADqF": "75060",
+    "WcR2b": "123950",
+    "mU59K": "13900"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "Bzo7J",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "3Cx8u",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2019/2020"
+   },
+   "values": {
+    "EADqF": "82460",
+    "WcR2b": "165510",
+    "mU59K": "17810"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "Bzo7J",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "3Cx8u",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2020/2021"
+   },
+   "values": {
+    "EADqF": "98810",
+    "WcR2b": "207860",
+    "mU59K": "30540"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "Bzo7J",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "3Cx8u",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2021/2022"
+   },
+   "values": {
+    "EADqF": "106360",
+    "WcR2b": "238820",
+    "mU59K": "34660"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "Bzo7J",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "3Cx8u",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2022/2023"
+   },
+   "values": {
+    "EADqF": "112930",
+    "WcR2b": "261310",
+    "mU59K": "46490"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "Bzo7J",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "3Cx8u",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2023/2024"
+   },
+   "values": {
+    "EADqF": "122230",
+    "WcR2b": "273710",
+    "mU59K": "57220"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "Bzo7J",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "3Cx8u",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2024/2025"
+   },
+   "values": {
+    "EADqF": "140730",
+    "WcR2b": "303710",
+    "mU59K": "68210"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "Bzo7J",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "3Cx8u",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2025/2026"
+   },
+   "values": {
+    "EADqF": "126660",
+    "WcR2b": "308620",
+    "mU59K": "52810"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "Bzo7J",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "CYdId"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2017/2018"
+   },
+   "values": {
+    "EADqF": "31050",
+    "WcR2b": "55750",
+    "mU59K": "11410"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "Bzo7J",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "CYdId"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2018/2019"
+   },
+   "values": {
+    "EADqF": "50700",
+    "WcR2b": "80770",
+    "mU59K": "8910"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "Bzo7J",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "CYdId"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2019/2020"
+   },
+   "values": {
+    "EADqF": "55350",
+    "WcR2b": "109770",
+    "mU59K": "11390"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "Bzo7J",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "CYdId"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2020/2021"
+   },
+   "values": {
+    "EADqF": "70630",
+    "WcR2b": "142860",
+    "mU59K": "19170"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "Bzo7J",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "CYdId"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2021/2022"
+   },
+   "values": {
+    "EADqF": "71500",
+    "WcR2b": "163390",
+    "mU59K": "22420"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "Bzo7J",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "CYdId"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2022/2023"
+   },
+   "values": {
+    "EADqF": "76460",
+    "WcR2b": "177960",
+    "mU59K": "31330"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "Bzo7J",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "CYdId"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2023/2024"
+   },
+   "values": {
+    "EADqF": "84500",
+    "WcR2b": "185810",
+    "mU59K": "37980"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "Bzo7J",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "CYdId"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2024/2025"
+   },
+   "values": {
+    "EADqF": "101160",
+    "WcR2b": "210610",
+    "mU59K": "45890"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "Bzo7J",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "CYdId"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2025/2026"
+   },
+   "values": {
+    "EADqF": "90680",
+    "WcR2b": "216350",
+    "mU59K": "36740"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "Bzo7J",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "HpozL"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2017/2018"
+   },
+   "values": {
+    "EADqF": "14000",
+    "WcR2b": "24390",
+    "mU59K": "3400"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "Bzo7J",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "HpozL"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2018/2019"
+   },
+   "values": {
+    "EADqF": "20370",
+    "WcR2b": "38060",
+    "mU59K": "3950"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "Bzo7J",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "HpozL"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2019/2020"
+   },
+   "values": {
+    "EADqF": "22880",
+    "WcR2b": "50480",
+    "mU59K": "5330"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "Bzo7J",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "HpozL"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2020/2021"
+   },
+   "values": {
+    "EADqF": "24540",
+    "WcR2b": "60130",
+    "mU59K": "9770"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "Bzo7J",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "HpozL"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2021/2022"
+   },
+   "values": {
+    "EADqF": "29860",
+    "WcR2b": "69020",
+    "mU59K": "10490"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "Bzo7J",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "HpozL"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2022/2023"
+   },
+   "values": {
+    "EADqF": "29790",
+    "WcR2b": "74970",
+    "mU59K": "12950"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "Bzo7J",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "HpozL"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2023/2024"
+   },
+   "values": {
+    "EADqF": "30700",
+    "WcR2b": "79010",
+    "mU59K": "16300"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "Bzo7J",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "HpozL"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2024/2025"
+   },
+   "values": {
+    "EADqF": "32540",
+    "WcR2b": "84180",
+    "mU59K": "18670"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "Bzo7J",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "HpozL"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2025/2026"
+   },
+   "values": {
+    "EADqF": "29210",
+    "WcR2b": "84080",
+    "mU59K": "13540"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "Bzo7J",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2017/2018"
+   },
+   "values": {
+    "EADqF": "45060",
+    "WcR2b": "80140",
+    "mU59K": "14800"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "Bzo7J",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2018/2019"
+   },
+   "values": {
+    "EADqF": "71070",
+    "WcR2b": "118840",
+    "mU59K": "12860"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "Bzo7J",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2019/2020"
+   },
+   "values": {
+    "EADqF": "78230",
+    "WcR2b": "160250",
+    "mU59K": "16730"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "Bzo7J",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2020/2021"
+   },
+   "values": {
+    "EADqF": "95170",
+    "WcR2b": "203000",
+    "mU59K": "28940"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "Bzo7J",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2021/2022"
+   },
+   "values": {
+    "EADqF": "101360",
+    "WcR2b": "232400",
+    "mU59K": "32910"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "Bzo7J",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2022/2023"
+   },
+   "values": {
+    "EADqF": "106250",
+    "WcR2b": "252930",
+    "mU59K": "44280"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "Bzo7J",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2023/2024"
+   },
+   "values": {
+    "EADqF": "115200",
+    "WcR2b": "264820",
+    "mU59K": "54280"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "Bzo7J",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2024/2025"
+   },
+   "values": {
+    "EADqF": "133700",
+    "WcR2b": "294800",
+    "mU59K": "64560"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "Bzo7J",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2025/2026"
+   },
+   "values": {
+    "EADqF": "119890",
+    "WcR2b": "300420",
+    "mU59K": "50280"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "Bzo7J",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "S3TVx",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2017/2018"
+   },
+   "values": {
+    "EADqF": "3100",
+    "WcR2b": "4100",
+    "mU59K": "970"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "Bzo7J",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "S3TVx",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2018/2019"
+   },
+   "values": {
+    "EADqF": "3990",
+    "WcR2b": "5110",
+    "mU59K": "1040"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "Bzo7J",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "S3TVx",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2019/2020"
+   },
+   "values": {
+    "EADqF": "4230",
+    "WcR2b": "5260",
+    "mU59K": "1080"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "Bzo7J",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "S3TVx",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2020/2021"
+   },
+   "values": {
+    "EADqF": "3650",
+    "WcR2b": "4870",
+    "mU59K": "1600"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "Bzo7J",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "S3TVx",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2021/2022"
+   },
+   "values": {
+    "EADqF": "5000",
+    "WcR2b": "6420",
+    "mU59K": "1750"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "Bzo7J",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "S3TVx",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2022/2023"
+   },
+   "values": {
+    "EADqF": "6670",
+    "WcR2b": "8380",
+    "mU59K": "2210"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "Bzo7J",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "S3TVx",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2023/2024"
+   },
+   "values": {
+    "EADqF": "7030",
+    "WcR2b": "8890",
+    "mU59K": "2940"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "Bzo7J",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "S3TVx",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2024/2025"
+   },
+   "values": {
+    "EADqF": "7030",
+    "WcR2b": "8920",
+    "mU59K": "3640"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "Bzo7J",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "S3TVx",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2025/2026"
+   },
+   "values": {
+    "EADqF": "6770",
+    "WcR2b": "8200",
+    "mU59K": "2530"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "Bzo7J",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "S3TVx",
+    "mU59K": "qCpjG"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2017/2018"
+   },
+   "values": {
+    "EADqF": "3100",
+    "WcR2b": "4100",
+    "mU59K": "970"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "Bzo7J",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "S3TVx",
+    "mU59K": "qCpjG"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2018/2019"
+   },
+   "values": {
+    "EADqF": "3990",
+    "WcR2b": "5110",
+    "mU59K": "1040"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "Bzo7J",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "S3TVx",
+    "mU59K": "qCpjG"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2019/2020"
+   },
+   "values": {
+    "EADqF": "4230",
+    "WcR2b": "5260",
+    "mU59K": "1080"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "Bzo7J",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "S3TVx",
+    "mU59K": "qCpjG"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2020/2021"
+   },
+   "values": {
+    "EADqF": "3650",
+    "WcR2b": "4870",
+    "mU59K": "1600"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "Bzo7J",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "S3TVx",
+    "mU59K": "qCpjG"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2021/2022"
+   },
+   "values": {
+    "EADqF": "5000",
+    "WcR2b": "6420",
+    "mU59K": "1750"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "Bzo7J",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "S3TVx",
+    "mU59K": "qCpjG"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2022/2023"
+   },
+   "values": {
+    "EADqF": "6670",
+    "WcR2b": "8380",
+    "mU59K": "2210"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "Bzo7J",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "S3TVx",
+    "mU59K": "qCpjG"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2023/2024"
+   },
+   "values": {
+    "EADqF": "7030",
+    "WcR2b": "8890",
+    "mU59K": "2940"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "Bzo7J",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "S3TVx",
+    "mU59K": "qCpjG"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2024/2025"
+   },
+   "values": {
+    "EADqF": "7030",
+    "WcR2b": "8920",
+    "mU59K": "3640"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "Bzo7J",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "S3TVx",
+    "mU59K": "qCpjG"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2025/2026"
+   },
+   "values": {
+    "EADqF": "6770",
+    "WcR2b": "8200",
+    "mU59K": "2530"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "a3wLP",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "3Cx8u",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2017/2018"
+   },
+   "values": {
+    "EADqF": "166220",
+    "WcR2b": "372430",
+    "mU59K": "111360"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "a3wLP",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "3Cx8u",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2018/2019"
+   },
+   "values": {
+    "EADqF": "174730",
+    "WcR2b": "356150",
+    "mU59K": "85100"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "a3wLP",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "3Cx8u",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2019/2020"
+   },
+   "values": {
+    "EADqF": "140840",
+    "WcR2b": "338680",
+    "mU59K": "67460"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "a3wLP",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "3Cx8u",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2020/2021"
+   },
+   "values": {
+    "EADqF": "138490",
+    "WcR2b": "326380",
+    "mU59K": "72610"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "a3wLP",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "3Cx8u",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2021/2022"
+   },
+   "values": {
+    "EADqF": "151310",
+    "WcR2b": "330410",
+    "mU59K": "65290"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "a3wLP",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "3Cx8u",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2022/2023"
+   },
+   "values": {
+    "EADqF": "147930",
+    "WcR2b": "333390",
+    "mU59K": "72560"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "a3wLP",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "3Cx8u",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2023/2024"
+   },
+   "values": {
+    "EADqF": "146520",
+    "WcR2b": "324710",
+    "mU59K": "76990"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "a3wLP",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "3Cx8u",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2024/2025"
+   },
+   "values": {
+    "EADqF": "147090",
+    "WcR2b": "330150",
+    "mU59K": "88520"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "a3wLP",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "3Cx8u",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2025/2026"
+   },
+   "values": {
+    "EADqF": "128760",
+    "WcR2b": "314280",
+    "mU59K": "64700"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "a3wLP",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "CYdId"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2017/2018"
+   },
+   "values": {
+    "EADqF": "71050",
+    "WcR2b": "161420",
+    "mU59K": "47480"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "a3wLP",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "CYdId"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2018/2019"
+   },
+   "values": {
+    "EADqF": "79430",
+    "WcR2b": "151090",
+    "mU59K": "32380"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "a3wLP",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "CYdId"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2019/2020"
+   },
+   "values": {
+    "EADqF": "62920",
+    "WcR2b": "146800",
+    "mU59K": "25820"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "a3wLP",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "CYdId"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2020/2021"
+   },
+   "values": {
+    "EADqF": "63090",
+    "WcR2b": "141370",
+    "mU59K": "30670"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "a3wLP",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "CYdId"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2021/2022"
+   },
+   "values": {
+    "EADqF": "64510",
+    "WcR2b": "138580",
+    "mU59K": "26600"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "a3wLP",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "CYdId"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2022/2023"
+   },
+   "values": {
+    "EADqF": "62020",
+    "WcR2b": "137120",
+    "mU59K": "28890"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "a3wLP",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "CYdId"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2023/2024"
+   },
+   "values": {
+    "EADqF": "60970",
+    "WcR2b": "130080",
+    "mU59K": "31000"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "a3wLP",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "CYdId"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2024/2025"
+   },
+   "values": {
+    "EADqF": "62450",
+    "WcR2b": "131450",
+    "mU59K": "36940"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "a3wLP",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "CYdId"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2025/2026"
+   },
+   "values": {
+    "EADqF": "56640",
+    "WcR2b": "125750",
+    "mU59K": "26530"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "a3wLP",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "HpozL"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2017/2018"
+   },
+   "values": {
+    "EADqF": "54320",
+    "WcR2b": "143250",
+    "mU59K": "37770"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "a3wLP",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "HpozL"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2018/2019"
+   },
+   "values": {
+    "EADqF": "56150",
+    "WcR2b": "138580",
+    "mU59K": "29900"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "a3wLP",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "HpozL"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2019/2020"
+   },
+   "values": {
+    "EADqF": "44970",
+    "WcR2b": "133230",
+    "mU59K": "24110"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "a3wLP",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "HpozL"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2020/2021"
+   },
+   "values": {
+    "EADqF": "45610",
+    "WcR2b": "130510",
+    "mU59K": "25510"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "a3wLP",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "HpozL"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2021/2022"
+   },
+   "values": {
+    "EADqF": "50320",
+    "WcR2b": "131080",
+    "mU59K": "23380"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "a3wLP",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "HpozL"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2022/2023"
+   },
+   "values": {
+    "EADqF": "47430",
+    "WcR2b": "129830",
+    "mU59K": "25830"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "a3wLP",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "HpozL"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2023/2024"
+   },
+   "values": {
+    "EADqF": "45790",
+    "WcR2b": "125180",
+    "mU59K": "26800"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "a3wLP",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "HpozL"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2024/2025"
+   },
+   "values": {
+    "EADqF": "46050",
+    "WcR2b": "128630",
+    "mU59K": "29350"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "a3wLP",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "HpozL"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2025/2026"
+   },
+   "values": {
+    "EADqF": "39490",
+    "WcR2b": "125330",
+    "mU59K": "21390"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "a3wLP",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2017/2018"
+   },
+   "values": {
+    "EADqF": "125370",
+    "WcR2b": "304670",
+    "mU59K": "85250"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "a3wLP",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2018/2019"
+   },
+   "values": {
+    "EADqF": "135580",
+    "WcR2b": "289660",
+    "mU59K": "62280"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "a3wLP",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2019/2020"
+   },
+   "values": {
+    "EADqF": "107890",
+    "WcR2b": "280030",
+    "mU59K": "49930"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "a3wLP",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2020/2021"
+   },
+   "values": {
+    "EADqF": "108700",
+    "WcR2b": "271880",
+    "mU59K": "56180"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "a3wLP",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2021/2022"
+   },
+   "values": {
+    "EADqF": "114830",
+    "WcR2b": "269660",
+    "mU59K": "49980"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "a3wLP",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2022/2023"
+   },
+   "values": {
+    "EADqF": "109440",
+    "WcR2b": "266950",
+    "mU59K": "54720"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "a3wLP",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2023/2024"
+   },
+   "values": {
+    "EADqF": "106760",
+    "WcR2b": "255260",
+    "mU59K": "57800"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "a3wLP",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2024/2025"
+   },
+   "values": {
+    "EADqF": "108500",
+    "WcR2b": "260080",
+    "mU59K": "66290"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "a3wLP",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2025/2026"
+   },
+   "values": {
+    "EADqF": "96130",
+    "WcR2b": "251080",
+    "mU59K": "47920"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "a3wLP",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "S3TVx",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2017/2018"
+   },
+   "values": {
+    "EADqF": "40850",
+    "WcR2b": "67760",
+    "mU59K": "26110"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "a3wLP",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "S3TVx",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2018/2019"
+   },
+   "values": {
+    "EADqF": "39150",
+    "WcR2b": "66490",
+    "mU59K": "22820"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "a3wLP",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "S3TVx",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2019/2020"
+   },
+   "values": {
+    "EADqF": "32960",
+    "WcR2b": "58650",
+    "mU59K": "17540"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "a3wLP",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "S3TVx",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2020/2021"
+   },
+   "values": {
+    "EADqF": "29790",
+    "WcR2b": "54500",
+    "mU59K": "16430"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "a3wLP",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "S3TVx",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2021/2022"
+   },
+   "values": {
+    "EADqF": "36490",
+    "WcR2b": "60750",
+    "mU59K": "15310"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "a3wLP",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "S3TVx",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2022/2023"
+   },
+   "values": {
+    "EADqF": "38490",
+    "WcR2b": "66430",
+    "mU59K": "17840"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "a3wLP",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "S3TVx",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2023/2024"
+   },
+   "values": {
+    "EADqF": "39760",
+    "WcR2b": "69450",
+    "mU59K": "19190"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "a3wLP",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "S3TVx",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2024/2025"
+   },
+   "values": {
+    "EADqF": "38590",
+    "WcR2b": "70070",
+    "mU59K": "22240"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "a3wLP",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "S3TVx",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2025/2026"
+   },
+   "values": {
+    "EADqF": "32640",
+    "WcR2b": "63200",
+    "mU59K": "16790"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "a3wLP",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "S3TVx",
+    "mU59K": "qCpjG"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2017/2018"
+   },
+   "values": {
+    "EADqF": "40850",
+    "WcR2b": "67760",
+    "mU59K": "26110"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "a3wLP",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "S3TVx",
+    "mU59K": "qCpjG"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2018/2019"
+   },
+   "values": {
+    "EADqF": "39150",
+    "WcR2b": "66490",
+    "mU59K": "22820"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "a3wLP",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "S3TVx",
+    "mU59K": "qCpjG"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2019/2020"
+   },
+   "values": {
+    "EADqF": "32960",
+    "WcR2b": "58650",
+    "mU59K": "17540"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "a3wLP",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "S3TVx",
+    "mU59K": "qCpjG"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2020/2021"
+   },
+   "values": {
+    "EADqF": "29790",
+    "WcR2b": "54500",
+    "mU59K": "16430"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "a3wLP",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "S3TVx",
+    "mU59K": "qCpjG"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2021/2022"
+   },
+   "values": {
+    "EADqF": "36490",
+    "WcR2b": "60750",
+    "mU59K": "15310"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "a3wLP",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "S3TVx",
+    "mU59K": "qCpjG"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2022/2023"
+   },
+   "values": {
+    "EADqF": "38490",
+    "WcR2b": "66430",
+    "mU59K": "17840"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "a3wLP",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "S3TVx",
+    "mU59K": "qCpjG"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2023/2024"
+   },
+   "values": {
+    "EADqF": "39760",
+    "WcR2b": "69450",
+    "mU59K": "19190"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "a3wLP",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "S3TVx",
+    "mU59K": "qCpjG"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2024/2025"
+   },
+   "values": {
+    "EADqF": "38590",
+    "WcR2b": "70070",
+    "mU59K": "22240"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "a3wLP",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "S3TVx",
+    "mU59K": "qCpjG"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2025/2026"
+   },
+   "values": {
+    "EADqF": "32640",
+    "WcR2b": "63200",
+    "mU59K": "16790"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "k2whs",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "3Cx8u",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2017/2018"
+   },
+   "values": {
+    "EADqF": "375760",
+    "WcR2b": "814790",
+    "mU59K": "276160"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "k2whs",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "3Cx8u",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2018/2019"
+   },
+   "values": {
+    "EADqF": "393380",
+    "WcR2b": "742390",
+    "mU59K": "185150"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "k2whs",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "3Cx8u",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2019/2020"
+   },
+   "values": {
+    "EADqF": "322530",
+    "WcR2b": "718950",
+    "mU59K": "146900"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "k2whs",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "3Cx8u",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2020/2021"
+   },
+   "values": {
+    "EADqF": "321440",
+    "WcR2b": "712990",
+    "mU59K": "156530"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "k2whs",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "3Cx8u",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2021/2022"
+   },
+   "values": {
+    "EADqF": "349190",
+    "WcR2b": "740350",
+    "mU59K": "137220"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "k2whs",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "3Cx8u",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2022/2023"
+   },
+   "values": {
+    "EADqF": "337140",
+    "WcR2b": "752150",
+    "mU59K": "162320"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "k2whs",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "3Cx8u",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2023/2024"
+   },
+   "values": {
+    "EADqF": "339580",
+    "WcR2b": "736530",
+    "mU59K": "178220"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "k2whs",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "3Cx8u",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2024/2025"
+   },
+   "values": {
+    "EADqF": "353500",
+    "WcR2b": "761480",
+    "mU59K": "198330"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "k2whs",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "3Cx8u",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2025/2026"
+   },
+   "values": {
+    "EADqF": "308770",
+    "WcR2b": "735500",
+    "mU59K": "146210"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "k2whs",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "CYdId"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2017/2018"
+   },
+   "values": {
+    "EADqF": "155480",
+    "WcR2b": "364650",
+    "mU59K": "121540"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "k2whs",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "CYdId"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2018/2019"
+   },
+   "values": {
+    "EADqF": "179670",
+    "WcR2b": "325120",
+    "mU59K": "68860"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "k2whs",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "CYdId"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2019/2020"
+   },
+   "values": {
+    "EADqF": "150960",
+    "WcR2b": "332510",
+    "mU59K": "55660"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "k2whs",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "CYdId"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2020/2021"
+   },
+   "values": {
+    "EADqF": "161690",
+    "WcR2b": "345540",
+    "mU59K": "67070"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "k2whs",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "CYdId"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2021/2022"
+   },
+   "values": {
+    "EADqF": "165340",
+    "WcR2b": "358680",
+    "mU59K": "60850"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "k2whs",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "CYdId"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2022/2023"
+   },
+   "values": {
+    "EADqF": "160620",
+    "WcR2b": "365180",
+    "mU59K": "73630"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "k2whs",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "CYdId"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2023/2024"
+   },
+   "values": {
+    "EADqF": "164520",
+    "WcR2b": "355520",
+    "mU59K": "81380"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "k2whs",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "CYdId"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2024/2025"
+   },
+   "values": {
+    "EADqF": "181270",
+    "WcR2b": "377680",
+    "mU59K": "94570"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "k2whs",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "CYdId"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2025/2026"
+   },
+   "values": {
+    "EADqF": "161670",
+    "WcR2b": "372850",
+    "mU59K": "70760"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "k2whs",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "HpozL"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2017/2018"
+   },
+   "values": {
+    "EADqF": "113710",
+    "WcR2b": "273600",
+    "mU59K": "82330"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "k2whs",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "HpozL"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2018/2019"
+   },
+   "values": {
+    "EADqF": "116000",
+    "WcR2b": "256310",
+    "mU59K": "58550"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "k2whs",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "HpozL"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2019/2020"
+   },
+   "values": {
+    "EADqF": "95290",
+    "WcR2b": "250870",
+    "mU59K": "47820"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "k2whs",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "HpozL"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2020/2021"
+   },
+   "values": {
+    "EADqF": "94610",
+    "WcR2b": "248870",
+    "mU59K": "51200"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "k2whs",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "HpozL"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2021/2022"
+   },
+   "values": {
+    "EADqF": "106330",
+    "WcR2b": "255260",
+    "mU59K": "44960"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "k2whs",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "HpozL"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2022/2023"
+   },
+   "values": {
+    "EADqF": "98800",
+    "WcR2b": "255850",
+    "mU59K": "52170"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "k2whs",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "HpozL"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2023/2024"
+   },
+   "values": {
+    "EADqF": "96130",
+    "WcR2b": "248390",
+    "mU59K": "56400"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "k2whs",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "HpozL"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2024/2025"
+   },
+   "values": {
+    "EADqF": "97240",
+    "WcR2b": "252960",
+    "mU59K": "60120"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "k2whs",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "HpozL"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2025/2026"
+   },
+   "values": {
+    "EADqF": "83570",
+    "WcR2b": "246000",
+    "mU59K": "43310"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "k2whs",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2017/2018"
+   },
+   "values": {
+    "EADqF": "269190",
+    "WcR2b": "638250",
+    "mU59K": "203860"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "k2whs",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2018/2019"
+   },
+   "values": {
+    "EADqF": "295680",
+    "WcR2b": "581430",
+    "mU59K": "127420"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "k2whs",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2019/2020"
+   },
+   "values": {
+    "EADqF": "246260",
+    "WcR2b": "583380",
+    "mU59K": "103480"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "k2whs",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2020/2021"
+   },
+   "values": {
+    "EADqF": "256300",
+    "WcR2b": "594400",
+    "mU59K": "118270"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "k2whs",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2021/2022"
+   },
+   "values": {
+    "EADqF": "271670",
+    "WcR2b": "613940",
+    "mU59K": "105810"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "k2whs",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2022/2023"
+   },
+   "values": {
+    "EADqF": "259410",
+    "WcR2b": "621030",
+    "mU59K": "125810"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "k2whs",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2023/2024"
+   },
+   "values": {
+    "EADqF": "260650",
+    "WcR2b": "603900",
+    "mU59K": "137780"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "k2whs",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2024/2025"
+   },
+   "values": {
+    "EADqF": "278510",
+    "WcR2b": "630640",
+    "mU59K": "154690"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "k2whs",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2025/2026"
+   },
+   "values": {
+    "EADqF": "245240",
+    "WcR2b": "618850",
+    "mU59K": "114060"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "k2whs",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "S3TVx",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2017/2018"
+   },
+   "values": {
+    "EADqF": "106570",
+    "WcR2b": "176550",
+    "mU59K": "72300"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "k2whs",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "S3TVx",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2018/2019"
+   },
+   "values": {
+    "EADqF": "97700",
+    "WcR2b": "160960",
+    "mU59K": "57730"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "k2whs",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "S3TVx",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2019/2020"
+   },
+   "values": {
+    "EADqF": "76270",
+    "WcR2b": "135570",
+    "mU59K": "43420"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "k2whs",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "S3TVx",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2020/2021"
+   },
+   "values": {
+    "EADqF": "65150",
+    "WcR2b": "118590",
+    "mU59K": "38260"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "k2whs",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "S3TVx",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2021/2022"
+   },
+   "values": {
+    "EADqF": "77520",
+    "WcR2b": "126420",
+    "mU59K": "31410"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "k2whs",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "S3TVx",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2022/2023"
+   },
+   "values": {
+    "EADqF": "77720",
+    "WcR2b": "131120",
+    "mU59K": "36510"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "k2whs",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "S3TVx",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2023/2024"
+   },
+   "values": {
+    "EADqF": "78930",
+    "WcR2b": "132630",
+    "mU59K": "40450"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "k2whs",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "S3TVx",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2024/2025"
+   },
+   "values": {
+    "EADqF": "74990",
+    "WcR2b": "130840",
+    "mU59K": "43640"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "k2whs",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "S3TVx",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2025/2026"
+   },
+   "values": {
+    "EADqF": "63530",
+    "WcR2b": "116650",
+    "mU59K": "32140"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "k2whs",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "S3TVx",
+    "mU59K": "qCpjG"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2017/2018"
+   },
+   "values": {
+    "EADqF": "106570",
+    "WcR2b": "176550",
+    "mU59K": "72300"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "k2whs",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "S3TVx",
+    "mU59K": "qCpjG"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2018/2019"
+   },
+   "values": {
+    "EADqF": "97700",
+    "WcR2b": "160960",
+    "mU59K": "57730"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "k2whs",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "S3TVx",
+    "mU59K": "qCpjG"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2019/2020"
+   },
+   "values": {
+    "EADqF": "76270",
+    "WcR2b": "135570",
+    "mU59K": "43420"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "k2whs",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "S3TVx",
+    "mU59K": "qCpjG"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2020/2021"
+   },
+   "values": {
+    "EADqF": "65150",
+    "WcR2b": "118590",
+    "mU59K": "38260"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "k2whs",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "S3TVx",
+    "mU59K": "qCpjG"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2021/2022"
+   },
+   "values": {
+    "EADqF": "77520",
+    "WcR2b": "126420",
+    "mU59K": "31410"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "k2whs",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "S3TVx",
+    "mU59K": "qCpjG"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2022/2023"
+   },
+   "values": {
+    "EADqF": "77720",
+    "WcR2b": "131120",
+    "mU59K": "36510"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "k2whs",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "S3TVx",
+    "mU59K": "qCpjG"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2023/2024"
+   },
+   "values": {
+    "EADqF": "78930",
+    "WcR2b": "132630",
+    "mU59K": "40450"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "k2whs",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "S3TVx",
+    "mU59K": "qCpjG"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2024/2025"
+   },
+   "values": {
+    "EADqF": "74990",
+    "WcR2b": "130840",
+    "mU59K": "43640"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "k2whs",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "S3TVx",
+    "mU59K": "qCpjG"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2025/2026"
+   },
+   "values": {
+    "EADqF": "63530",
+    "WcR2b": "116650",
+    "mU59K": "32140"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "uRio4",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "3Cx8u",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2017/2018"
+   },
+   "values": {
+    "EADqF": "low",
+    "WcR2b": "low",
+    "mU59K": "low"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "uRio4",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "HpozL"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2017/2018"
+   },
+   "values": {
+    "EADqF": "low",
+    "WcR2b": "low",
+    "mU59K": "low"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "uRio4",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2017/2018"
+   },
+   "values": {
+    "EADqF": "low",
+    "WcR2b": "low",
+    "mU59K": "low"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "uRio4",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "S3TVx",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2017/2018"
+   },
+   "values": {
+    "EADqF": "low",
+    "WcR2b": "low",
+    "mU59K": "low"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "uRio4",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "S3TVx",
+    "mU59K": "qCpjG"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2017/2018"
+   },
+   "values": {
+    "EADqF": "low",
+    "WcR2b": "low",
+    "mU59K": "low"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "zShFQ",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "3Cx8u",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2017/2018"
+   },
+   "values": {
+    "EADqF": "161390",
+    "WcR2b": "374350",
+    "mU59K": "149030"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "zShFQ",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "3Cx8u",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2018/2019"
+   },
+   "values": {
+    "EADqF": "143590",
+    "WcR2b": "275810",
+    "mU59K": "86150"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "zShFQ",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "3Cx8u",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2019/2020"
+   },
+   "values": {
+    "EADqF": "99220",
+    "WcR2b": "225320",
+    "mU59K": "61630"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "zShFQ",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "3Cx8u",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2020/2021"
+   },
+   "values": {
+    "EADqF": "84150",
+    "WcR2b": "185420",
+    "mU59K": "53380"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "zShFQ",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "3Cx8u",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2021/2022"
+   },
+   "values": {
+    "EADqF": "91520",
+    "WcR2b": "175420",
+    "mU59K": "37270"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "zShFQ",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "3Cx8u",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2022/2023"
+   },
+   "values": {
+    "EADqF": "76280",
+    "WcR2b": "161780",
+    "mU59K": "43270"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "zShFQ",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "3Cx8u",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2023/2024"
+   },
+   "values": {
+    "EADqF": "70840",
+    "WcR2b": "142650",
+    "mU59K": "44020"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "zShFQ",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "3Cx8u",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2024/2025"
+   },
+   "values": {
+    "EADqF": "65680",
+    "WcR2b": "132930",
+    "mU59K": "41600"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "zShFQ",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "3Cx8u",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2025/2026"
+   },
+   "values": {
+    "EADqF": "53350",
+    "WcR2b": "116550",
+    "mU59K": "28690"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "zShFQ",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "CYdId"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2017/2018"
+   },
+   "values": {
+    "EADqF": "53380",
+    "WcR2b": "149920",
+    "mU59K": "62650"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "zShFQ",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "CYdId"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2018/2019"
+   },
+   "values": {
+    "EADqF": "49550",
+    "WcR2b": "95340",
+    "mU59K": "27580"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "zShFQ",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "CYdId"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2019/2020"
+   },
+   "values": {
+    "EADqF": "32700",
+    "WcR2b": "77840",
+    "mU59K": "18450"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "zShFQ",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "CYdId"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2020/2021"
+   },
+   "values": {
+    "EADqF": "27970",
+    "WcR2b": "62710",
+    "mU59K": "17230"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "zShFQ",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "CYdId"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2021/2022"
+   },
+   "values": {
+    "EADqF": "29330",
+    "WcR2b": "57650",
+    "mU59K": "11830"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "zShFQ",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "CYdId"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2022/2023"
+   },
+   "values": {
+    "EADqF": "22140",
+    "WcR2b": "51090",
+    "mU59K": "13420"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "zShFQ",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "CYdId"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2023/2024"
+   },
+   "values": {
+    "EADqF": "19050",
+    "WcR2b": "40700",
+    "mU59K": "12400"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "zShFQ",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "CYdId"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2024/2025"
+   },
+   "values": {
+    "EADqF": "17660",
+    "WcR2b": "36900",
+    "mU59K": "11740"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "zShFQ",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "CYdId"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2025/2026"
+   },
+   "values": {
+    "EADqF": "14350",
+    "WcR2b": "31640",
+    "mU59K": "7490"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "zShFQ",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "HpozL"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2017/2018"
+   },
+   "values": {
+    "EADqF": "45380",
+    "WcR2b": "113270",
+    "mU59K": "41160"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "zShFQ",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "HpozL"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2018/2019"
+   },
+   "values": {
+    "EADqF": "39490",
+    "WcR2b": "85940",
+    "mU59K": "24700"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "zShFQ",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "HpozL"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2019/2020"
+   },
+   "values": {
+    "EADqF": "27440",
+    "WcR2b": "71980",
+    "mU59K": "18380"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "zShFQ",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "HpozL"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2020/2021"
+   },
+   "values": {
+    "EADqF": "24460",
+    "WcR2b": "61370",
+    "mU59K": "15920"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "zShFQ",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "HpozL"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2021/2022"
+   },
+   "values": {
+    "EADqF": "26150",
+    "WcR2b": "57250",
+    "mU59K": "11090"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "zShFQ",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "HpozL"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2022/2023"
+   },
+   "values": {
+    "EADqF": "21580",
+    "WcR2b": "53050",
+    "mU59K": "13390"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "zShFQ",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "HpozL"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2023/2024"
+   },
+   "values": {
+    "EADqF": "19640",
+    "WcR2b": "46300",
+    "mU59K": "13300"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "zShFQ",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "HpozL"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2024/2025"
+   },
+   "values": {
+    "EADqF": "18650",
+    "WcR2b": "42590",
+    "mU59K": "12100"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "zShFQ",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "HpozL"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2025/2026"
+   },
+   "values": {
+    "EADqF": "14870",
+    "WcR2b": "38460",
+    "mU59K": "8380"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "zShFQ",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2017/2018"
+   },
+   "values": {
+    "EADqF": "98770",
+    "WcR2b": "263190",
+    "mU59K": "103810"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "zShFQ",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2018/2019"
+   },
+   "values": {
+    "EADqF": "89040",
+    "WcR2b": "181280",
+    "mU59K": "52280"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "zShFQ",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2019/2020"
+   },
+   "values": {
+    "EADqF": "60140",
+    "WcR2b": "149830",
+    "mU59K": "36830"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "zShFQ",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2020/2021"
+   },
+   "values": {
+    "EADqF": "52430",
+    "WcR2b": "124080",
+    "mU59K": "33150"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "zShFQ",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2021/2022"
+   },
+   "values": {
+    "EADqF": "55490",
+    "WcR2b": "114890",
+    "mU59K": "22920"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "zShFQ",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2022/2023"
+   },
+   "values": {
+    "EADqF": "43720",
+    "WcR2b": "104130",
+    "mU59K": "26810"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "zShFQ",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2023/2024"
+   },
+   "values": {
+    "EADqF": "38690",
+    "WcR2b": "86990",
+    "mU59K": "25700"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "zShFQ",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2024/2025"
+   },
+   "values": {
+    "EADqF": "36320",
+    "WcR2b": "79490",
+    "mU59K": "23840"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "zShFQ",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "GeCgr",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2025/2026"
+   },
+   "values": {
+    "EADqF": "29220",
+    "WcR2b": "70100",
+    "mU59K": "15870"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "zShFQ",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "S3TVx",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2017/2018"
+   },
+   "values": {
+    "EADqF": "62630",
+    "WcR2b": "111160",
+    "mU59K": "45230"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "zShFQ",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "S3TVx",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2018/2019"
+   },
+   "values": {
+    "EADqF": "54550",
+    "WcR2b": "94530",
+    "mU59K": "33870"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "zShFQ",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "S3TVx",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2019/2020"
+   },
+   "values": {
+    "EADqF": "39080",
+    "WcR2b": "75500",
+    "mU59K": "24800"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "zShFQ",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "S3TVx",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2020/2021"
+   },
+   "values": {
+    "EADqF": "31710",
+    "WcR2b": "61340",
+    "mU59K": "20230"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "zShFQ",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "S3TVx",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2021/2022"
+   },
+   "values": {
+    "EADqF": "36030",
+    "WcR2b": "60530",
+    "mU59K": "14350"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "zShFQ",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "S3TVx",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2022/2023"
+   },
+   "values": {
+    "EADqF": "32560",
+    "WcR2b": "57640",
+    "mU59K": "16460"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "zShFQ",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "S3TVx",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2023/2024"
+   },
+   "values": {
+    "EADqF": "32140",
+    "WcR2b": "55660",
+    "mU59K": "18320"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "zShFQ",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "S3TVx",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2024/2025"
+   },
+   "values": {
+    "EADqF": "29370",
+    "WcR2b": "53440",
+    "mU59K": "17770"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "zShFQ",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "S3TVx",
+    "mU59K": "YnmHK"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2025/2026"
+   },
+   "values": {
+    "EADqF": "24130",
+    "WcR2b": "46450",
+    "mU59K": "12830"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "zShFQ",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "S3TVx",
+    "mU59K": "qCpjG"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2017/2018"
+   },
+   "values": {
+    "EADqF": "62630",
+    "WcR2b": "111160",
+    "mU59K": "45230"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "zShFQ",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "S3TVx",
+    "mU59K": "qCpjG"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2018/2019"
+   },
+   "values": {
+    "EADqF": "54550",
+    "WcR2b": "94530",
+    "mU59K": "33870"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "zShFQ",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "S3TVx",
+    "mU59K": "qCpjG"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2019/2020"
+   },
+   "values": {
+    "EADqF": "39080",
+    "WcR2b": "75500",
+    "mU59K": "24800"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "zShFQ",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "S3TVx",
+    "mU59K": "qCpjG"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2020/2021"
+   },
+   "values": {
+    "EADqF": "31710",
+    "WcR2b": "61340",
+    "mU59K": "20230"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "zShFQ",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "S3TVx",
+    "mU59K": "qCpjG"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2021/2022"
+   },
+   "values": {
+    "EADqF": "36030",
+    "WcR2b": "60530",
+    "mU59K": "14350"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "zShFQ",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "S3TVx",
+    "mU59K": "qCpjG"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2022/2023"
+   },
+   "values": {
+    "EADqF": "32560",
+    "WcR2b": "57640",
+    "mU59K": "16460"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "zShFQ",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "S3TVx",
+    "mU59K": "qCpjG"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2023/2024"
+   },
+   "values": {
+    "EADqF": "32140",
+    "WcR2b": "55660",
+    "mU59K": "18320"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "zShFQ",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "S3TVx",
+    "mU59K": "qCpjG"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2024/2025"
+   },
+   "values": {
+    "EADqF": "29370",
+    "WcR2b": "53440",
+    "mU59K": "17770"
+   }
+  },
+  {
+   "filters": {
+    "0evT5": "zShFQ",
+    "EADqF": "hlByW",
+    "WcR2b": "cMB31",
+    "jI4AM": "S3TVx",
+    "mU59K": "qCpjG"
+   },
+   "geographicLevel": "NAT",
+   "locations": {
+    "NAT": "dP0Zw"
+   },
+   "timePeriod": {
+    "code": "AY",
+    "period": "2025/2026"
+   },
+   "values": {
+    "EADqF": "24130",
+    "WcR2b": "46450",
+    "mU59K": "12830"
+   }
+  }
+ ]
+}

@@ -24,6 +24,7 @@
     <a class="brand" href="../">Apprenti<span class="x">x</span><span class="eu">.eu</span></a>
     <nav class="site-nav">
       <a href="../">Datasets</a>
+      <a href="indicators.html">Indicators</a>
       <a href="about.html">About</a>
       <a href="data.html" aria-current="page">Data &amp; sources</a>
     </nav>
@@ -47,6 +48,21 @@
   </section>
 
   <section class="section">
+    <div class="wrap">
+      <h2>Every source we track</h2>
+      <p class="sub">Automated sources are fetched weekly by the <a href="https://github.com/costirezlescu/apprentix.eu/tree/main/pipeline">data pipeline</a>; changes reach the site only after review. Others are curated by hand or not yet integrated — with the reason.</p>
+      <div class="table-wrap"><table class="data" id="catalogue"></table></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap" style="max-width:min(72ch, 100%)">
+      <h2>Reuse this data</h2>
+      <p class="sub">Everything the site shows is also available as files: each indicator as <strong>CSV</strong> and <strong>JSON with provenance</strong> (<a href="../data/published/indicators/index.json">index</a>), each dataset as JSON, and the whole collection described in a <a href="../datapackage.json">Frictionless data package</a>. Please cite the original publisher named on each item, and Apprentix (<a href="https://github.com/costirezlescu/apprentix.eu/blob/main/CITATION.cff">CITATION.cff</a>).</p>
+    </div>
+  </section>
+
+  <section class="section">
     <div class="wrap" style="max-width:min(72ch, 100%)">
       <h2>How to read the data</h2>
       <p class="sub"><strong>The official source is authoritative.</strong> Where this site and the source differ, the source is right. Records here are condensed for comparison and omit detail that the original carries.</p>
@@ -54,7 +70,7 @@
       <p class="sub"><strong>Dates matter.</strong> Each dataset records when it was retrieved. Sources are updated on their own cycles, and this site may lag behind.</p>
 
       <h2 style="margin-top:34px">Reuse</h2>
-      <p class="sub">The <em>code</em> of this site is MIT-licensed and free to reuse. The <em>data</em> belongs to its original publishers and is not covered by that licence — check the conditions of each source before redistributing it.</p>
+      <p class="sub">The <em>code</em> of this site is MIT-licensed and free to reuse. The <em>data</em> belongs to its original publishers and is not covered by that licence. Each source's terms are listed above and on every indicator; most European sources here are CC BY 4.0 or allow reproduction with acknowledgement.</p>
 
       <h2 style="margin-top:34px">Corrections</h2>
       <p class="sub">If a record misrepresents its source, it will be corrected or removed. Please report it.</p>
@@ -95,6 +111,23 @@
   }));
 
   host.innerHTML = blocks.join('');
+
+  const cat = await fetch(new URL('../data/sources.json', location.href)).then(r => r.json());
+  const status = s => !s.automated ? (s.access === 'manual' ? 'Curated / not automated' : '—')
+    : s.status?.result === 'ok' ? `✓ Fetched ${esc((s.status.last_run || '').slice(0, 10))}`
+    : s.status?.result === 'skipped' ? 'Needs an API key'
+    : s.status?.result === 'awaiting-permission' ? 'Awaiting the publisher’s permission' : s.status?.result === 'error' ? '✕ Last run failed' : 'Automated';
+  document.getElementById('catalogue').innerHTML = `
+    <thead><tr><th>Source</th><th>Provides</th><th>Access</th><th>Licence</th><th>Updated</th><th>Status</th></tr></thead>
+    <tbody>${cat.sources.slice().sort((a, b) => (b.automated - a.automated) || a.name.localeCompare(b.name)).map(s => `
+      <tr>
+        <td><a href="${esc(s.homepage)}" target="_blank" rel="noopener">${esc(s.name)} ↗</a><br><small style="color:var(--muted)">${esc(s.publisher || '')}</small></td>
+        <td>${esc(s.description || '')}${s.why_manual ? `<br><small style="color:var(--muted)">${esc(s.why_manual)}</small>` : ''}</td>
+        <td>${esc(s.access)}</td>
+        <td>${s.licence_url ? `<a href="${esc(s.licence_url)}" target="_blank" rel="noopener">${esc(s.licence)}</a>` : esc(s.licence || '')}</td>
+        <td>${esc(s.cadence || '')}</td>
+        <td>${status(s)}</td>
+      </tr>`).join('')}</tbody>`;
 </script>
 
 </body>

@@ -1,0 +1,4272 @@
+{
+  "id": "ch-bfs-learners-vet",
+  "title": "Learners in initial VET (Switzerland)",
+  "description": "Number of learners enrolled in upper-secondary initial vocational education and training in Switzerland, by programme type (EFZ, EBA, non-regulated, commercial/IT schools, Anlehre) and sex. Time is the first calendar year of the school year (1999 = 1999/2000).",
+  "unit": "learners",
+  "topic": "Participation",
+  "national": true,
+  "source_label": "Sekundarstufe II - berufliche Grundbildung: Lernende nach Bildungstyp, Ausbildungsfeld, Geschlecht, Staatsangehörigkeit (Kategorie) und Jahr",
+  "comparability": "National series (BFS learners statistics, SDL; reference period = school year). Counts all learners in initial VET — both dual apprenticeships and full-time school-based programmes — so it is broader than an apprenticeship-contract count. The training-form split is in ch-bfs-learners-vet-form. Do not add to other countries' figures.",
+  "dims": [
+    {
+      "key": "type",
+      "label": "Programme type",
+      "values": {
+        "TOTAL": "Total",
+        "EFZ": "Federal VET Diploma (EFZ/CFC)",
+        "EBA": "Federal VET Certificate (EBA/AFP)",
+        "NONREG": "Not regulated by the VET Act",
+        "HMS_IMS": "Commercial and IT schools (HMS/IMS, until 2013)",
+        "ANLEHRE": "Anlehre (former short training, phased out)"
+      },
+      "default": "TOTAL"
+    },
+    {
+      "key": "sex",
+      "label": "Sex",
+      "values": {
+        "T": "Total",
+        "M": "Males",
+        "F": "Females"
+      },
+      "default": "T"
+    }
+  ],
+  "provenance": {
+    "publisher": "Swiss Federal Statistical Office (BFS)",
+    "dataset_code": "px-x-1502020100_104",
+    "source_url": "https://opendata.swiss/de/dataset/sekundarstufe-ii-berufliche-grundbildung-lernende-nach-bildungstyp-ausbildungsfeld-geschlecht-u3",
+    "api_url": "https://www.pxweb.bfs.admin.ch/api/v1/de/px-x-1502020100_104/px-x-1502020100_104.px",
+    "licence": "opendata.swiss terms of use 'Open use. Must provide the source.' (terms_by): non-commercial and commercial use allowed; you must provide the source (author, title and link to the dataset). BFS: 'Freie Nutzung - Quellenangabe ist Pflicht'.",
+    "citation": "BFS, Sekundarstufe II - berufliche Grundbildung: Lernende nach Bildungstyp, Ausbildungsfeld, Geschlecht, Staatsangehörigkeit (Kategorie) und Jahr (px-x-1502020100_104). opendata.swiss / BFS PxWeb. Source: BFS - Lernende (Schüler/innen und Studierende, Schul- und Berufsbildung) - © BFS.",
+    "source_updated": "2026-02-26",
+    "retrieved_at": "2026-10-01T09:33:19+00:00",
+    "raw_file": "data/raw/ch-bfs/2026-10-01-ch-bfs-learners-vet.json",
+    "raw_sha256": "af35b240d279bdc2258995b9f3c0783426d9632398b950c7d5392831749b4eb5",
+    "licence_url": "https://opendata.swiss/en/terms-of-use#terms_by"
+  },
+  "series": [
+    {
+      "geo": "CH",
+      "time": "1999",
+      "value": 1193.0,
+      "dims": {
+        "type": "ANLEHRE",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2000",
+      "value": 1315.0,
+      "dims": {
+        "type": "ANLEHRE",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2001",
+      "value": 1515.0,
+      "dims": {
+        "type": "ANLEHRE",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2002",
+      "value": 1612.0,
+      "dims": {
+        "type": "ANLEHRE",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2003",
+      "value": 1682.0,
+      "dims": {
+        "type": "ANLEHRE",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2004",
+      "value": 1916.0,
+      "dims": {
+        "type": "ANLEHRE",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2005",
+      "value": 1648.0,
+      "dims": {
+        "type": "ANLEHRE",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2006",
+      "value": 1086.0,
+      "dims": {
+        "type": "ANLEHRE",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2007",
+      "value": 965.0,
+      "dims": {
+        "type": "ANLEHRE",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2008",
+      "value": 909.0,
+      "dims": {
+        "type": "ANLEHRE",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2009",
+      "value": 769.0,
+      "dims": {
+        "type": "ANLEHRE",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2010",
+      "value": 853.0,
+      "dims": {
+        "type": "ANLEHRE",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2011",
+      "value": 711.0,
+      "dims": {
+        "type": "ANLEHRE",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2012",
+      "value": 416.0,
+      "dims": {
+        "type": "ANLEHRE",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2013",
+      "value": 276.0,
+      "dims": {
+        "type": "ANLEHRE",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2014",
+      "value": 190.0,
+      "dims": {
+        "type": "ANLEHRE",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2015",
+      "value": 110.0,
+      "dims": {
+        "type": "ANLEHRE",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2016",
+      "value": 11.0,
+      "dims": {
+        "type": "ANLEHRE",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2017",
+      "value": 8.0,
+      "dims": {
+        "type": "ANLEHRE",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2018",
+      "value": 6.0,
+      "dims": {
+        "type": "ANLEHRE",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2019",
+      "value": 7.0,
+      "dims": {
+        "type": "ANLEHRE",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2020",
+      "value": 9.0,
+      "dims": {
+        "type": "ANLEHRE",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2021",
+      "value": 8.0,
+      "dims": {
+        "type": "ANLEHRE",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2022",
+      "value": 0.0,
+      "dims": {
+        "type": "ANLEHRE",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2023",
+      "value": 0.0,
+      "dims": {
+        "type": "ANLEHRE",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2024",
+      "value": 0.0,
+      "dims": {
+        "type": "ANLEHRE",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "1999",
+      "value": 0.0,
+      "dims": {
+        "type": "EBA",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2000",
+      "value": 0.0,
+      "dims": {
+        "type": "EBA",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2001",
+      "value": 0.0,
+      "dims": {
+        "type": "EBA",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2002",
+      "value": 0.0,
+      "dims": {
+        "type": "EBA",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2003",
+      "value": 0.0,
+      "dims": {
+        "type": "EBA",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2004",
+      "value": 0.0,
+      "dims": {
+        "type": "EBA",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2005",
+      "value": 882.0,
+      "dims": {
+        "type": "EBA",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2006",
+      "value": 2417.0,
+      "dims": {
+        "type": "EBA",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2007",
+      "value": 2551.0,
+      "dims": {
+        "type": "EBA",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2008",
+      "value": 3103.0,
+      "dims": {
+        "type": "EBA",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2009",
+      "value": 3659.0,
+      "dims": {
+        "type": "EBA",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2010",
+      "value": 3888.0,
+      "dims": {
+        "type": "EBA",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2011",
+      "value": 4252.0,
+      "dims": {
+        "type": "EBA",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2012",
+      "value": 5006.0,
+      "dims": {
+        "type": "EBA",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2013",
+      "value": 5486.0,
+      "dims": {
+        "type": "EBA",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2014",
+      "value": 5714.0,
+      "dims": {
+        "type": "EBA",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2015",
+      "value": 5946.0,
+      "dims": {
+        "type": "EBA",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2016",
+      "value": 5829.0,
+      "dims": {
+        "type": "EBA",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2017",
+      "value": 5619.0,
+      "dims": {
+        "type": "EBA",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2018",
+      "value": 5625.0,
+      "dims": {
+        "type": "EBA",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2019",
+      "value": 5611.0,
+      "dims": {
+        "type": "EBA",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2020",
+      "value": 5492.0,
+      "dims": {
+        "type": "EBA",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2021",
+      "value": 5481.0,
+      "dims": {
+        "type": "EBA",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2022",
+      "value": 5242.0,
+      "dims": {
+        "type": "EBA",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2023",
+      "value": 4923.0,
+      "dims": {
+        "type": "EBA",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2024",
+      "value": 4826.0,
+      "dims": {
+        "type": "EBA",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "1999",
+      "value": 63925.0,
+      "dims": {
+        "type": "EFZ",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2000",
+      "value": 66377.0,
+      "dims": {
+        "type": "EFZ",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2001",
+      "value": 67694.0,
+      "dims": {
+        "type": "EFZ",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2002",
+      "value": 68712.0,
+      "dims": {
+        "type": "EFZ",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2003",
+      "value": 68623.0,
+      "dims": {
+        "type": "EFZ",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2004",
+      "value": 68883.0,
+      "dims": {
+        "type": "EFZ",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2005",
+      "value": 68721.0,
+      "dims": {
+        "type": "EFZ",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2006",
+      "value": 72429.0,
+      "dims": {
+        "type": "EFZ",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2007",
+      "value": 77511.0,
+      "dims": {
+        "type": "EFZ",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2008",
+      "value": 81146.0,
+      "dims": {
+        "type": "EFZ",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2009",
+      "value": 84689.0,
+      "dims": {
+        "type": "EFZ",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2010",
+      "value": 84947.0,
+      "dims": {
+        "type": "EFZ",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2011",
+      "value": 87438.0,
+      "dims": {
+        "type": "EFZ",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2012",
+      "value": 88217.0,
+      "dims": {
+        "type": "EFZ",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2013",
+      "value": 89086.0,
+      "dims": {
+        "type": "EFZ",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2014",
+      "value": 90224.0,
+      "dims": {
+        "type": "EFZ",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2015",
+      "value": 88416.0,
+      "dims": {
+        "type": "EFZ",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2016",
+      "value": 87520.0,
+      "dims": {
+        "type": "EFZ",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2017",
+      "value": 86142.0,
+      "dims": {
+        "type": "EFZ",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2018",
+      "value": 84122.0,
+      "dims": {
+        "type": "EFZ",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2019",
+      "value": 82522.0,
+      "dims": {
+        "type": "EFZ",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2020",
+      "value": 81738.0,
+      "dims": {
+        "type": "EFZ",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2021",
+      "value": 81781.0,
+      "dims": {
+        "type": "EFZ",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2022",
+      "value": 81347.0,
+      "dims": {
+        "type": "EFZ",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2023",
+      "value": 82147.0,
+      "dims": {
+        "type": "EFZ",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2024",
+      "value": 83824.0,
+      "dims": {
+        "type": "EFZ",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "1999",
+      "value": 5357.0,
+      "dims": {
+        "type": "HMS_IMS",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2000",
+      "value": 5656.0,
+      "dims": {
+        "type": "HMS_IMS",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2001",
+      "value": 6020.0,
+      "dims": {
+        "type": "HMS_IMS",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2002",
+      "value": 6082.0,
+      "dims": {
+        "type": "HMS_IMS",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2003",
+      "value": 6157.0,
+      "dims": {
+        "type": "HMS_IMS",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2004",
+      "value": 5810.0,
+      "dims": {
+        "type": "HMS_IMS",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2005",
+      "value": 5571.0,
+      "dims": {
+        "type": "HMS_IMS",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2006",
+      "value": 5538.0,
+      "dims": {
+        "type": "HMS_IMS",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2007",
+      "value": 5602.0,
+      "dims": {
+        "type": "HMS_IMS",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2008",
+      "value": 5935.0,
+      "dims": {
+        "type": "HMS_IMS",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2009",
+      "value": 5955.0,
+      "dims": {
+        "type": "HMS_IMS",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2010",
+      "value": 5200.0,
+      "dims": {
+        "type": "HMS_IMS",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2011",
+      "value": 3891.0,
+      "dims": {
+        "type": "HMS_IMS",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2012",
+      "value": 2812.0,
+      "dims": {
+        "type": "HMS_IMS",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2013",
+      "value": 1440.0,
+      "dims": {
+        "type": "HMS_IMS",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2014",
+      "value": 0.0,
+      "dims": {
+        "type": "HMS_IMS",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2015",
+      "value": 0.0,
+      "dims": {
+        "type": "HMS_IMS",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2016",
+      "value": 0.0,
+      "dims": {
+        "type": "HMS_IMS",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2017",
+      "value": 0.0,
+      "dims": {
+        "type": "HMS_IMS",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2018",
+      "value": 0.0,
+      "dims": {
+        "type": "HMS_IMS",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2019",
+      "value": 0.0,
+      "dims": {
+        "type": "HMS_IMS",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2020",
+      "value": 0.0,
+      "dims": {
+        "type": "HMS_IMS",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2021",
+      "value": 0.0,
+      "dims": {
+        "type": "HMS_IMS",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2022",
+      "value": 0.0,
+      "dims": {
+        "type": "HMS_IMS",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2023",
+      "value": 0.0,
+      "dims": {
+        "type": "HMS_IMS",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2024",
+      "value": 0.0,
+      "dims": {
+        "type": "HMS_IMS",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "1999",
+      "value": 14213.0,
+      "dims": {
+        "type": "NONREG",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2000",
+      "value": 14607.0,
+      "dims": {
+        "type": "NONREG",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2001",
+      "value": 14635.0,
+      "dims": {
+        "type": "NONREG",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2002",
+      "value": 14256.0,
+      "dims": {
+        "type": "NONREG",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2003",
+      "value": 14263.0,
+      "dims": {
+        "type": "NONREG",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2004",
+      "value": 12922.0,
+      "dims": {
+        "type": "NONREG",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2005",
+      "value": 12060.0,
+      "dims": {
+        "type": "NONREG",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2006",
+      "value": 9722.0,
+      "dims": {
+        "type": "NONREG",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2007",
+      "value": 2582.0,
+      "dims": {
+        "type": "NONREG",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2008",
+      "value": 1685.0,
+      "dims": {
+        "type": "NONREG",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2009",
+      "value": 1377.0,
+      "dims": {
+        "type": "NONREG",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2010",
+      "value": 1197.0,
+      "dims": {
+        "type": "NONREG",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2011",
+      "value": 1002.0,
+      "dims": {
+        "type": "NONREG",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2012",
+      "value": 517.0,
+      "dims": {
+        "type": "NONREG",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2013",
+      "value": 491.0,
+      "dims": {
+        "type": "NONREG",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2014",
+      "value": 423.0,
+      "dims": {
+        "type": "NONREG",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2015",
+      "value": 385.0,
+      "dims": {
+        "type": "NONREG",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2016",
+      "value": 351.0,
+      "dims": {
+        "type": "NONREG",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2017",
+      "value": 366.0,
+      "dims": {
+        "type": "NONREG",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2018",
+      "value": 329.0,
+      "dims": {
+        "type": "NONREG",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2019",
+      "value": 369.0,
+      "dims": {
+        "type": "NONREG",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2020",
+      "value": 370.0,
+      "dims": {
+        "type": "NONREG",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2021",
+      "value": 427.0,
+      "dims": {
+        "type": "NONREG",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2022",
+      "value": 408.0,
+      "dims": {
+        "type": "NONREG",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2023",
+      "value": 420.0,
+      "dims": {
+        "type": "NONREG",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2024",
+      "value": 417.0,
+      "dims": {
+        "type": "NONREG",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "1999",
+      "value": 84688.0,
+      "dims": {
+        "type": "TOTAL",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2000",
+      "value": 87955.0,
+      "dims": {
+        "type": "TOTAL",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2001",
+      "value": 89864.0,
+      "dims": {
+        "type": "TOTAL",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2002",
+      "value": 90662.0,
+      "dims": {
+        "type": "TOTAL",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2003",
+      "value": 90725.0,
+      "dims": {
+        "type": "TOTAL",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2004",
+      "value": 89531.0,
+      "dims": {
+        "type": "TOTAL",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2005",
+      "value": 88882.0,
+      "dims": {
+        "type": "TOTAL",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2006",
+      "value": 91192.0,
+      "dims": {
+        "type": "TOTAL",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2007",
+      "value": 89211.0,
+      "dims": {
+        "type": "TOTAL",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2008",
+      "value": 92778.0,
+      "dims": {
+        "type": "TOTAL",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2009",
+      "value": 96449.0,
+      "dims": {
+        "type": "TOTAL",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2010",
+      "value": 96085.0,
+      "dims": {
+        "type": "TOTAL",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2011",
+      "value": 97294.0,
+      "dims": {
+        "type": "TOTAL",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2012",
+      "value": 96968.0,
+      "dims": {
+        "type": "TOTAL",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2013",
+      "value": 96779.0,
+      "dims": {
+        "type": "TOTAL",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2014",
+      "value": 96551.0,
+      "dims": {
+        "type": "TOTAL",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2015",
+      "value": 94857.0,
+      "dims": {
+        "type": "TOTAL",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2016",
+      "value": 93711.0,
+      "dims": {
+        "type": "TOTAL",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2017",
+      "value": 92135.0,
+      "dims": {
+        "type": "TOTAL",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2018",
+      "value": 90082.0,
+      "dims": {
+        "type": "TOTAL",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2019",
+      "value": 88509.0,
+      "dims": {
+        "type": "TOTAL",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2020",
+      "value": 87609.0,
+      "dims": {
+        "type": "TOTAL",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2021",
+      "value": 87697.0,
+      "dims": {
+        "type": "TOTAL",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2022",
+      "value": 86997.0,
+      "dims": {
+        "type": "TOTAL",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2023",
+      "value": 87490.0,
+      "dims": {
+        "type": "TOTAL",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2024",
+      "value": 89067.0,
+      "dims": {
+        "type": "TOTAL",
+        "sex": "F"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "1999",
+      "value": 2467.0,
+      "dims": {
+        "type": "ANLEHRE",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2000",
+      "value": 2561.0,
+      "dims": {
+        "type": "ANLEHRE",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2001",
+      "value": 2821.0,
+      "dims": {
+        "type": "ANLEHRE",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2002",
+      "value": 2959.0,
+      "dims": {
+        "type": "ANLEHRE",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2003",
+      "value": 3177.0,
+      "dims": {
+        "type": "ANLEHRE",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2004",
+      "value": 3299.0,
+      "dims": {
+        "type": "ANLEHRE",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2005",
+      "value": 3318.0,
+      "dims": {
+        "type": "ANLEHRE",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2006",
+      "value": 2962.0,
+      "dims": {
+        "type": "ANLEHRE",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2007",
+      "value": 2581.0,
+      "dims": {
+        "type": "ANLEHRE",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2008",
+      "value": 2045.0,
+      "dims": {
+        "type": "ANLEHRE",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2009",
+      "value": 1664.0,
+      "dims": {
+        "type": "ANLEHRE",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2010",
+      "value": 1470.0,
+      "dims": {
+        "type": "ANLEHRE",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2011",
+      "value": 1383.0,
+      "dims": {
+        "type": "ANLEHRE",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2012",
+      "value": 981.0,
+      "dims": {
+        "type": "ANLEHRE",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2013",
+      "value": 715.0,
+      "dims": {
+        "type": "ANLEHRE",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2014",
+      "value": 508.0,
+      "dims": {
+        "type": "ANLEHRE",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2015",
+      "value": 220.0,
+      "dims": {
+        "type": "ANLEHRE",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2016",
+      "value": 23.0,
+      "dims": {
+        "type": "ANLEHRE",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2017",
+      "value": 10.0,
+      "dims": {
+        "type": "ANLEHRE",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2018",
+      "value": 11.0,
+      "dims": {
+        "type": "ANLEHRE",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2019",
+      "value": 15.0,
+      "dims": {
+        "type": "ANLEHRE",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2020",
+      "value": 17.0,
+      "dims": {
+        "type": "ANLEHRE",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2021",
+      "value": 13.0,
+      "dims": {
+        "type": "ANLEHRE",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2022",
+      "value": 0.0,
+      "dims": {
+        "type": "ANLEHRE",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2023",
+      "value": 0.0,
+      "dims": {
+        "type": "ANLEHRE",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2024",
+      "value": 0.0,
+      "dims": {
+        "type": "ANLEHRE",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "1999",
+      "value": 0.0,
+      "dims": {
+        "type": "EBA",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2000",
+      "value": 0.0,
+      "dims": {
+        "type": "EBA",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2001",
+      "value": 0.0,
+      "dims": {
+        "type": "EBA",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2002",
+      "value": 0.0,
+      "dims": {
+        "type": "EBA",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2003",
+      "value": 0.0,
+      "dims": {
+        "type": "EBA",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2004",
+      "value": 0.0,
+      "dims": {
+        "type": "EBA",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2005",
+      "value": 453.0,
+      "dims": {
+        "type": "EBA",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2006",
+      "value": 1260.0,
+      "dims": {
+        "type": "EBA",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2007",
+      "value": 2122.0,
+      "dims": {
+        "type": "EBA",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2008",
+      "value": 3286.0,
+      "dims": {
+        "type": "EBA",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2009",
+      "value": 4130.0,
+      "dims": {
+        "type": "EBA",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2010",
+      "value": 4455.0,
+      "dims": {
+        "type": "EBA",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2011",
+      "value": 5197.0,
+      "dims": {
+        "type": "EBA",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2012",
+      "value": 5867.0,
+      "dims": {
+        "type": "EBA",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2013",
+      "value": 6479.0,
+      "dims": {
+        "type": "EBA",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2014",
+      "value": 6920.0,
+      "dims": {
+        "type": "EBA",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2015",
+      "value": 7269.0,
+      "dims": {
+        "type": "EBA",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2016",
+      "value": 7916.0,
+      "dims": {
+        "type": "EBA",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2017",
+      "value": 8183.0,
+      "dims": {
+        "type": "EBA",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2018",
+      "value": 8736.0,
+      "dims": {
+        "type": "EBA",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2019",
+      "value": 9431.0,
+      "dims": {
+        "type": "EBA",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2020",
+      "value": 9562.0,
+      "dims": {
+        "type": "EBA",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2021",
+      "value": 9324.0,
+      "dims": {
+        "type": "EBA",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2022",
+      "value": 8746.0,
+      "dims": {
+        "type": "EBA",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2023",
+      "value": 8350.0,
+      "dims": {
+        "type": "EBA",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2024",
+      "value": 8155.0,
+      "dims": {
+        "type": "EBA",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "1999",
+      "value": 108388.0,
+      "dims": {
+        "type": "EFZ",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2000",
+      "value": 109669.0,
+      "dims": {
+        "type": "EFZ",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2001",
+      "value": 109785.0,
+      "dims": {
+        "type": "EFZ",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2002",
+      "value": 109254.0,
+      "dims": {
+        "type": "EFZ",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2003",
+      "value": 109639.0,
+      "dims": {
+        "type": "EFZ",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2004",
+      "value": 110253.0,
+      "dims": {
+        "type": "EFZ",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2005",
+      "value": 111938.0,
+      "dims": {
+        "type": "EFZ",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2006",
+      "value": 114628.0,
+      "dims": {
+        "type": "EFZ",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2007",
+      "value": 117937.0,
+      "dims": {
+        "type": "EFZ",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2008",
+      "value": 119186.0,
+      "dims": {
+        "type": "EFZ",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2009",
+      "value": 119185.0,
+      "dims": {
+        "type": "EFZ",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2010",
+      "value": 120015.0,
+      "dims": {
+        "type": "EFZ",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2011",
+      "value": 122168.0,
+      "dims": {
+        "type": "EFZ",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2012",
+      "value": 122074.0,
+      "dims": {
+        "type": "EFZ",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2013",
+      "value": 122597.0,
+      "dims": {
+        "type": "EFZ",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2014",
+      "value": 125058.0,
+      "dims": {
+        "type": "EFZ",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2015",
+      "value": 123913.0,
+      "dims": {
+        "type": "EFZ",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2016",
+      "value": 122548.0,
+      "dims": {
+        "type": "EFZ",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2017",
+      "value": 122103.0,
+      "dims": {
+        "type": "EFZ",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2018",
+      "value": 120442.0,
+      "dims": {
+        "type": "EFZ",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2019",
+      "value": 119216.0,
+      "dims": {
+        "type": "EFZ",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2020",
+      "value": 117785.0,
+      "dims": {
+        "type": "EFZ",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2021",
+      "value": 117985.0,
+      "dims": {
+        "type": "EFZ",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2022",
+      "value": 116726.0,
+      "dims": {
+        "type": "EFZ",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2023",
+      "value": 118155.0,
+      "dims": {
+        "type": "EFZ",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2024",
+      "value": 119237.0,
+      "dims": {
+        "type": "EFZ",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "1999",
+      "value": 4068.0,
+      "dims": {
+        "type": "HMS_IMS",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2000",
+      "value": 4426.0,
+      "dims": {
+        "type": "HMS_IMS",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2001",
+      "value": 4741.0,
+      "dims": {
+        "type": "HMS_IMS",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2002",
+      "value": 5033.0,
+      "dims": {
+        "type": "HMS_IMS",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2003",
+      "value": 5548.0,
+      "dims": {
+        "type": "HMS_IMS",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2004",
+      "value": 5667.0,
+      "dims": {
+        "type": "HMS_IMS",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2005",
+      "value": 5654.0,
+      "dims": {
+        "type": "HMS_IMS",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2006",
+      "value": 5865.0,
+      "dims": {
+        "type": "HMS_IMS",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2007",
+      "value": 6087.0,
+      "dims": {
+        "type": "HMS_IMS",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2008",
+      "value": 6433.0,
+      "dims": {
+        "type": "HMS_IMS",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2009",
+      "value": 6606.0,
+      "dims": {
+        "type": "HMS_IMS",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2010",
+      "value": 5851.0,
+      "dims": {
+        "type": "HMS_IMS",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2011",
+      "value": 4720.0,
+      "dims": {
+        "type": "HMS_IMS",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2012",
+      "value": 3410.0,
+      "dims": {
+        "type": "HMS_IMS",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2013",
+      "value": 2111.0,
+      "dims": {
+        "type": "HMS_IMS",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2014",
+      "value": 0.0,
+      "dims": {
+        "type": "HMS_IMS",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2015",
+      "value": 0.0,
+      "dims": {
+        "type": "HMS_IMS",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2016",
+      "value": 0.0,
+      "dims": {
+        "type": "HMS_IMS",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2017",
+      "value": 0.0,
+      "dims": {
+        "type": "HMS_IMS",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2018",
+      "value": 0.0,
+      "dims": {
+        "type": "HMS_IMS",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2019",
+      "value": 0.0,
+      "dims": {
+        "type": "HMS_IMS",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2020",
+      "value": 0.0,
+      "dims": {
+        "type": "HMS_IMS",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2021",
+      "value": 0.0,
+      "dims": {
+        "type": "HMS_IMS",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2022",
+      "value": 0.0,
+      "dims": {
+        "type": "HMS_IMS",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2023",
+      "value": 0.0,
+      "dims": {
+        "type": "HMS_IMS",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2024",
+      "value": 0.0,
+      "dims": {
+        "type": "HMS_IMS",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "1999",
+      "value": 3351.0,
+      "dims": {
+        "type": "NONREG",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2000",
+      "value": 3358.0,
+      "dims": {
+        "type": "NONREG",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2001",
+      "value": 3093.0,
+      "dims": {
+        "type": "NONREG",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2002",
+      "value": 3089.0,
+      "dims": {
+        "type": "NONREG",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2003",
+      "value": 3057.0,
+      "dims": {
+        "type": "NONREG",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2004",
+      "value": 2634.0,
+      "dims": {
+        "type": "NONREG",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2005",
+      "value": 2929.0,
+      "dims": {
+        "type": "NONREG",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2006",
+      "value": 2802.0,
+      "dims": {
+        "type": "NONREG",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2007",
+      "value": 1416.0,
+      "dims": {
+        "type": "NONREG",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2008",
+      "value": 1280.0,
+      "dims": {
+        "type": "NONREG",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2009",
+      "value": 1045.0,
+      "dims": {
+        "type": "NONREG",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2010",
+      "value": 699.0,
+      "dims": {
+        "type": "NONREG",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2011",
+      "value": 677.0,
+      "dims": {
+        "type": "NONREG",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2012",
+      "value": 507.0,
+      "dims": {
+        "type": "NONREG",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2013",
+      "value": 549.0,
+      "dims": {
+        "type": "NONREG",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2014",
+      "value": 544.0,
+      "dims": {
+        "type": "NONREG",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2015",
+      "value": 563.0,
+      "dims": {
+        "type": "NONREG",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2016",
+      "value": 578.0,
+      "dims": {
+        "type": "NONREG",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2017",
+      "value": 616.0,
+      "dims": {
+        "type": "NONREG",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2018",
+      "value": 643.0,
+      "dims": {
+        "type": "NONREG",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2019",
+      "value": 596.0,
+      "dims": {
+        "type": "NONREG",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2020",
+      "value": 623.0,
+      "dims": {
+        "type": "NONREG",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2021",
+      "value": 590.0,
+      "dims": {
+        "type": "NONREG",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2022",
+      "value": 548.0,
+      "dims": {
+        "type": "NONREG",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2023",
+      "value": 626.0,
+      "dims": {
+        "type": "NONREG",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2024",
+      "value": 637.0,
+      "dims": {
+        "type": "NONREG",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "1999",
+      "value": 118274.0,
+      "dims": {
+        "type": "TOTAL",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2000",
+      "value": 120014.0,
+      "dims": {
+        "type": "TOTAL",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2001",
+      "value": 120440.0,
+      "dims": {
+        "type": "TOTAL",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2002",
+      "value": 120335.0,
+      "dims": {
+        "type": "TOTAL",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2003",
+      "value": 121421.0,
+      "dims": {
+        "type": "TOTAL",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2004",
+      "value": 121853.0,
+      "dims": {
+        "type": "TOTAL",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2005",
+      "value": 124292.0,
+      "dims": {
+        "type": "TOTAL",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2006",
+      "value": 127517.0,
+      "dims": {
+        "type": "TOTAL",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2007",
+      "value": 130143.0,
+      "dims": {
+        "type": "TOTAL",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2008",
+      "value": 132230.0,
+      "dims": {
+        "type": "TOTAL",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2009",
+      "value": 132630.0,
+      "dims": {
+        "type": "TOTAL",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2010",
+      "value": 132490.0,
+      "dims": {
+        "type": "TOTAL",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2011",
+      "value": 134145.0,
+      "dims": {
+        "type": "TOTAL",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2012",
+      "value": 132839.0,
+      "dims": {
+        "type": "TOTAL",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2013",
+      "value": 132451.0,
+      "dims": {
+        "type": "TOTAL",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2014",
+      "value": 133030.0,
+      "dims": {
+        "type": "TOTAL",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2015",
+      "value": 131965.0,
+      "dims": {
+        "type": "TOTAL",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2016",
+      "value": 131065.0,
+      "dims": {
+        "type": "TOTAL",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2017",
+      "value": 130912.0,
+      "dims": {
+        "type": "TOTAL",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2018",
+      "value": 129832.0,
+      "dims": {
+        "type": "TOTAL",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2019",
+      "value": 129258.0,
+      "dims": {
+        "type": "TOTAL",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2020",
+      "value": 127987.0,
+      "dims": {
+        "type": "TOTAL",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2021",
+      "value": 127912.0,
+      "dims": {
+        "type": "TOTAL",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2022",
+      "value": 126020.0,
+      "dims": {
+        "type": "TOTAL",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2023",
+      "value": 127131.0,
+      "dims": {
+        "type": "TOTAL",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2024",
+      "value": 128029.0,
+      "dims": {
+        "type": "TOTAL",
+        "sex": "M"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "1999",
+      "value": 3660.0,
+      "dims": {
+        "type": "ANLEHRE",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2000",
+      "value": 3876.0,
+      "dims": {
+        "type": "ANLEHRE",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2001",
+      "value": 4336.0,
+      "dims": {
+        "type": "ANLEHRE",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2002",
+      "value": 4571.0,
+      "dims": {
+        "type": "ANLEHRE",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2003",
+      "value": 4859.0,
+      "dims": {
+        "type": "ANLEHRE",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2004",
+      "value": 5215.0,
+      "dims": {
+        "type": "ANLEHRE",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2005",
+      "value": 4966.0,
+      "dims": {
+        "type": "ANLEHRE",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2006",
+      "value": 4048.0,
+      "dims": {
+        "type": "ANLEHRE",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2007",
+      "value": 3546.0,
+      "dims": {
+        "type": "ANLEHRE",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2008",
+      "value": 2954.0,
+      "dims": {
+        "type": "ANLEHRE",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2009",
+      "value": 2433.0,
+      "dims": {
+        "type": "ANLEHRE",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2010",
+      "value": 2323.0,
+      "dims": {
+        "type": "ANLEHRE",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2011",
+      "value": 2094.0,
+      "dims": {
+        "type": "ANLEHRE",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2012",
+      "value": 1397.0,
+      "dims": {
+        "type": "ANLEHRE",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2013",
+      "value": 991.0,
+      "dims": {
+        "type": "ANLEHRE",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2014",
+      "value": 698.0,
+      "dims": {
+        "type": "ANLEHRE",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2015",
+      "value": 330.0,
+      "dims": {
+        "type": "ANLEHRE",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2016",
+      "value": 34.0,
+      "dims": {
+        "type": "ANLEHRE",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2017",
+      "value": 18.0,
+      "dims": {
+        "type": "ANLEHRE",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2018",
+      "value": 17.0,
+      "dims": {
+        "type": "ANLEHRE",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2019",
+      "value": 22.0,
+      "dims": {
+        "type": "ANLEHRE",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2020",
+      "value": 26.0,
+      "dims": {
+        "type": "ANLEHRE",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2021",
+      "value": 21.0,
+      "dims": {
+        "type": "ANLEHRE",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2022",
+      "value": 0.0,
+      "dims": {
+        "type": "ANLEHRE",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2023",
+      "value": 0.0,
+      "dims": {
+        "type": "ANLEHRE",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2024",
+      "value": 0.0,
+      "dims": {
+        "type": "ANLEHRE",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "1999",
+      "value": 0.0,
+      "dims": {
+        "type": "EBA",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2000",
+      "value": 0.0,
+      "dims": {
+        "type": "EBA",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2001",
+      "value": 0.0,
+      "dims": {
+        "type": "EBA",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2002",
+      "value": 0.0,
+      "dims": {
+        "type": "EBA",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2003",
+      "value": 0.0,
+      "dims": {
+        "type": "EBA",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2004",
+      "value": 0.0,
+      "dims": {
+        "type": "EBA",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2005",
+      "value": 1335.0,
+      "dims": {
+        "type": "EBA",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2006",
+      "value": 3677.0,
+      "dims": {
+        "type": "EBA",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2007",
+      "value": 4673.0,
+      "dims": {
+        "type": "EBA",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2008",
+      "value": 6389.0,
+      "dims": {
+        "type": "EBA",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2009",
+      "value": 7789.0,
+      "dims": {
+        "type": "EBA",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2010",
+      "value": 8343.0,
+      "dims": {
+        "type": "EBA",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2011",
+      "value": 9449.0,
+      "dims": {
+        "type": "EBA",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2012",
+      "value": 10873.0,
+      "dims": {
+        "type": "EBA",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2013",
+      "value": 11965.0,
+      "dims": {
+        "type": "EBA",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2014",
+      "value": 12634.0,
+      "dims": {
+        "type": "EBA",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2015",
+      "value": 13215.0,
+      "dims": {
+        "type": "EBA",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2016",
+      "value": 13745.0,
+      "dims": {
+        "type": "EBA",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2017",
+      "value": 13802.0,
+      "dims": {
+        "type": "EBA",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2018",
+      "value": 14361.0,
+      "dims": {
+        "type": "EBA",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2019",
+      "value": 15042.0,
+      "dims": {
+        "type": "EBA",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2020",
+      "value": 15054.0,
+      "dims": {
+        "type": "EBA",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2021",
+      "value": 14805.0,
+      "dims": {
+        "type": "EBA",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2022",
+      "value": 13988.0,
+      "dims": {
+        "type": "EBA",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2023",
+      "value": 13273.0,
+      "dims": {
+        "type": "EBA",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2024",
+      "value": 12981.0,
+      "dims": {
+        "type": "EBA",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "1999",
+      "value": 172313.0,
+      "dims": {
+        "type": "EFZ",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2000",
+      "value": 176046.0,
+      "dims": {
+        "type": "EFZ",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2001",
+      "value": 177479.0,
+      "dims": {
+        "type": "EFZ",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2002",
+      "value": 177966.0,
+      "dims": {
+        "type": "EFZ",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2003",
+      "value": 178262.0,
+      "dims": {
+        "type": "EFZ",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2004",
+      "value": 179136.0,
+      "dims": {
+        "type": "EFZ",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2005",
+      "value": 180659.0,
+      "dims": {
+        "type": "EFZ",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2006",
+      "value": 187057.0,
+      "dims": {
+        "type": "EFZ",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2007",
+      "value": 195448.0,
+      "dims": {
+        "type": "EFZ",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2008",
+      "value": 200332.0,
+      "dims": {
+        "type": "EFZ",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2009",
+      "value": 203874.0,
+      "dims": {
+        "type": "EFZ",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2010",
+      "value": 204962.0,
+      "dims": {
+        "type": "EFZ",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2011",
+      "value": 209606.0,
+      "dims": {
+        "type": "EFZ",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2012",
+      "value": 210291.0,
+      "dims": {
+        "type": "EFZ",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2013",
+      "value": 211683.0,
+      "dims": {
+        "type": "EFZ",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2014",
+      "value": 215282.0,
+      "dims": {
+        "type": "EFZ",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2015",
+      "value": 212329.0,
+      "dims": {
+        "type": "EFZ",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2016",
+      "value": 210068.0,
+      "dims": {
+        "type": "EFZ",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2017",
+      "value": 208245.0,
+      "dims": {
+        "type": "EFZ",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2018",
+      "value": 204564.0,
+      "dims": {
+        "type": "EFZ",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2019",
+      "value": 201738.0,
+      "dims": {
+        "type": "EFZ",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2020",
+      "value": 199523.0,
+      "dims": {
+        "type": "EFZ",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2021",
+      "value": 199766.0,
+      "dims": {
+        "type": "EFZ",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2022",
+      "value": 198073.0,
+      "dims": {
+        "type": "EFZ",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2023",
+      "value": 200302.0,
+      "dims": {
+        "type": "EFZ",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2024",
+      "value": 203061.0,
+      "dims": {
+        "type": "EFZ",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "1999",
+      "value": 9425.0,
+      "dims": {
+        "type": "HMS_IMS",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2000",
+      "value": 10082.0,
+      "dims": {
+        "type": "HMS_IMS",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2001",
+      "value": 10761.0,
+      "dims": {
+        "type": "HMS_IMS",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2002",
+      "value": 11115.0,
+      "dims": {
+        "type": "HMS_IMS",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2003",
+      "value": 11705.0,
+      "dims": {
+        "type": "HMS_IMS",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2004",
+      "value": 11477.0,
+      "dims": {
+        "type": "HMS_IMS",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2005",
+      "value": 11225.0,
+      "dims": {
+        "type": "HMS_IMS",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2006",
+      "value": 11403.0,
+      "dims": {
+        "type": "HMS_IMS",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2007",
+      "value": 11689.0,
+      "dims": {
+        "type": "HMS_IMS",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2008",
+      "value": 12368.0,
+      "dims": {
+        "type": "HMS_IMS",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2009",
+      "value": 12561.0,
+      "dims": {
+        "type": "HMS_IMS",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2010",
+      "value": 11051.0,
+      "dims": {
+        "type": "HMS_IMS",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2011",
+      "value": 8611.0,
+      "dims": {
+        "type": "HMS_IMS",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2012",
+      "value": 6222.0,
+      "dims": {
+        "type": "HMS_IMS",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2013",
+      "value": 3551.0,
+      "dims": {
+        "type": "HMS_IMS",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2014",
+      "value": 0.0,
+      "dims": {
+        "type": "HMS_IMS",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2015",
+      "value": 0.0,
+      "dims": {
+        "type": "HMS_IMS",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2016",
+      "value": 0.0,
+      "dims": {
+        "type": "HMS_IMS",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2017",
+      "value": 0.0,
+      "dims": {
+        "type": "HMS_IMS",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2018",
+      "value": 0.0,
+      "dims": {
+        "type": "HMS_IMS",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2019",
+      "value": 0.0,
+      "dims": {
+        "type": "HMS_IMS",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2020",
+      "value": 0.0,
+      "dims": {
+        "type": "HMS_IMS",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2021",
+      "value": 0.0,
+      "dims": {
+        "type": "HMS_IMS",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2022",
+      "value": 0.0,
+      "dims": {
+        "type": "HMS_IMS",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2023",
+      "value": 0.0,
+      "dims": {
+        "type": "HMS_IMS",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2024",
+      "value": 0.0,
+      "dims": {
+        "type": "HMS_IMS",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "1999",
+      "value": 17564.0,
+      "dims": {
+        "type": "NONREG",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2000",
+      "value": 17965.0,
+      "dims": {
+        "type": "NONREG",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2001",
+      "value": 17728.0,
+      "dims": {
+        "type": "NONREG",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2002",
+      "value": 17345.0,
+      "dims": {
+        "type": "NONREG",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2003",
+      "value": 17320.0,
+      "dims": {
+        "type": "NONREG",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2004",
+      "value": 15556.0,
+      "dims": {
+        "type": "NONREG",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2005",
+      "value": 14989.0,
+      "dims": {
+        "type": "NONREG",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2006",
+      "value": 12524.0,
+      "dims": {
+        "type": "NONREG",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2007",
+      "value": 3998.0,
+      "dims": {
+        "type": "NONREG",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2008",
+      "value": 2965.0,
+      "dims": {
+        "type": "NONREG",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2009",
+      "value": 2422.0,
+      "dims": {
+        "type": "NONREG",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2010",
+      "value": 1896.0,
+      "dims": {
+        "type": "NONREG",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2011",
+      "value": 1679.0,
+      "dims": {
+        "type": "NONREG",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2012",
+      "value": 1024.0,
+      "dims": {
+        "type": "NONREG",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2013",
+      "value": 1040.0,
+      "dims": {
+        "type": "NONREG",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2014",
+      "value": 967.0,
+      "dims": {
+        "type": "NONREG",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2015",
+      "value": 948.0,
+      "dims": {
+        "type": "NONREG",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2016",
+      "value": 929.0,
+      "dims": {
+        "type": "NONREG",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2017",
+      "value": 982.0,
+      "dims": {
+        "type": "NONREG",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2018",
+      "value": 972.0,
+      "dims": {
+        "type": "NONREG",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2019",
+      "value": 965.0,
+      "dims": {
+        "type": "NONREG",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2020",
+      "value": 993.0,
+      "dims": {
+        "type": "NONREG",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2021",
+      "value": 1017.0,
+      "dims": {
+        "type": "NONREG",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2022",
+      "value": 956.0,
+      "dims": {
+        "type": "NONREG",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2023",
+      "value": 1046.0,
+      "dims": {
+        "type": "NONREG",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2024",
+      "value": 1054.0,
+      "dims": {
+        "type": "NONREG",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "1999",
+      "value": 202962.0,
+      "dims": {
+        "type": "TOTAL",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2000",
+      "value": 207969.0,
+      "dims": {
+        "type": "TOTAL",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2001",
+      "value": 210304.0,
+      "dims": {
+        "type": "TOTAL",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2002",
+      "value": 210997.0,
+      "dims": {
+        "type": "TOTAL",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2003",
+      "value": 212146.0,
+      "dims": {
+        "type": "TOTAL",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2004",
+      "value": 211384.0,
+      "dims": {
+        "type": "TOTAL",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2005",
+      "value": 213174.0,
+      "dims": {
+        "type": "TOTAL",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2006",
+      "value": 218709.0,
+      "dims": {
+        "type": "TOTAL",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2007",
+      "value": 219354.0,
+      "dims": {
+        "type": "TOTAL",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2008",
+      "value": 225008.0,
+      "dims": {
+        "type": "TOTAL",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2009",
+      "value": 229079.0,
+      "dims": {
+        "type": "TOTAL",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2010",
+      "value": 228575.0,
+      "dims": {
+        "type": "TOTAL",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2011",
+      "value": 231439.0,
+      "dims": {
+        "type": "TOTAL",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2012",
+      "value": 229807.0,
+      "dims": {
+        "type": "TOTAL",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2013",
+      "value": 229230.0,
+      "dims": {
+        "type": "TOTAL",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2014",
+      "value": 229581.0,
+      "dims": {
+        "type": "TOTAL",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2015",
+      "value": 226822.0,
+      "dims": {
+        "type": "TOTAL",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2016",
+      "value": 224776.0,
+      "dims": {
+        "type": "TOTAL",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2017",
+      "value": 223047.0,
+      "dims": {
+        "type": "TOTAL",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2018",
+      "value": 219914.0,
+      "dims": {
+        "type": "TOTAL",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2019",
+      "value": 217767.0,
+      "dims": {
+        "type": "TOTAL",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2020",
+      "value": 215596.0,
+      "dims": {
+        "type": "TOTAL",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2021",
+      "value": 215609.0,
+      "dims": {
+        "type": "TOTAL",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2022",
+      "value": 213017.0,
+      "dims": {
+        "type": "TOTAL",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2023",
+      "value": 214621.0,
+      "dims": {
+        "type": "TOTAL",
+        "sex": "T"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2024",
+      "value": 217096.0,
+      "dims": {
+        "type": "TOTAL",
+        "sex": "T"
+      }
+    }
+  ],
+  "coverage": {
+    "geos": [
+      "CH"
+    ],
+    "time": [
+      "1999",
+      "2024"
+    ],
+    "observations": 468
+  }
+}
