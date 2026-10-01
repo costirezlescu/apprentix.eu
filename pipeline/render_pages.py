@@ -173,7 +173,9 @@ def page(*, title: str, description: str, canonical: str, root: str, body: str, 
     <nav class="site-nav">
       {nav(root, "Datasets", "datasets")}
       {nav(pages + "indicators.html", "Indicators", "indicators")}
+      {nav(pages + "insights.html", "Insights", "insights")}
       {nav(pages + "countries/", "Countries", "countries")}
+      {nav(pages + "ask.html", "Ask", "ask")}
       {nav(pages + "about.html", "About", "about")}
       {nav(pages + "data.html", "Data &amp; sources", "data")}
     </nav>
@@ -189,7 +191,9 @@ def page(*, title: str, description: str, canonical: str, root: str, body: str, 
     <div class="rowlinks">
       <a href="{root}">Datasets</a>
       <a href="{pages}indicators.html">Indicators</a>
+      <a href="{pages}insights.html">Insights</a>
       <a href="{pages}countries/">Countries</a>
+      <a href="{pages}ask.html">Ask</a>
       <a href="{pages}about.html">About</a>
       <a href="{pages}data.html">Data &amp; sources</a>
       <a href="{root}{FEED_PATH}">Updates feed (Atom)</a>
@@ -793,7 +797,9 @@ def sitemap(D, codes: list[str], extra: list[tuple[str, str]] = ()) -> str:
     urls: list[tuple[str, str]] = [
         (SITE, updated),
         (SITE + "pages/indicators.html", updated),
+        (SITE + "pages/insights.html", updated),
         (SITE + "pages/compare.html", updated),
+        (SITE + "pages/ask.html", updated),
         (SITE + "pages/countries/", updated),
         (SITE + "pages/about.html", updated),
         (SITE + "pages/data.html", updated),

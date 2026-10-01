@@ -835,3 +835,92 @@ table.matrix td.focus { background: var(--accent-soft); }
 .cell-tag.coloured::before { content: ""; position: absolute; left: 0; top: .3em; width: 9px; height: 9px; border-radius: 2px; background: var(--tag); }
 .cp-sec h3 { margin-top: 22px; font-size: 1.02rem; }
 .cp-sec h3:first-of-type { margin-top: 8px; }
+
+/* ---------- Insights ---------- */
+
+.in-head { padding-block: 8px 6px; max-width: 80ch; }
+.in-head h1 { font-family: var(--display); font-weight: 500; font-size: clamp(2rem, 4vw, 2.8rem); margin-top: 4px; }
+.in-filter { margin: 16px 0 8px; }
+.in-filter .chip[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--on-accent); }
+.in-toc { font-size: .9rem; color: var(--muted); margin-top: 8px; }
+.in-toc ol { margin: 8px 0 0; padding-left: 20px; line-height: 1.8; }
+.in-list { display: grid; gap: 18px; margin: 22px 0 28px; }
+.in-card { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 20px 22px; min-width: 0; }
+.in-card[hidden] { display: none; }
+.in-card h2 { font-family: var(--display); font-weight: 500; font-size: 1.45rem; line-height: 1.25; margin: 6px 0 8px; }
+.in-card h2 a { color: var(--ink); text-decoration: none; }
+.in-card h2 a:hover { text-decoration: underline; text-decoration-color: var(--accent); }
+.in-tags { display: flex; gap: 6px; flex-wrap: wrap; }
+.in-tag { font-family: var(--mono); font-size: 10px; letter-spacing: .08em; text-transform: uppercase; color: var(--accent-ink); background: var(--accent-soft); padding: 2px 8px; border-radius: 999px; }
+.in-finding { font-size: 1.05rem; line-height: 1.6; margin: 0 0 12px; max-width: 80ch; }
+.in-chart { margin: 8px 0 12px; }
+.in-note { font-size: .8rem; color: var(--muted); margin: 6px 0 0; }
+.in-detail { margin: 8px 0 12px; padding-left: 20px; color: var(--ink); max-width: 80ch; }
+.in-detail li + li { margin-top: 6px; }
+.in-data, .in-method { font-size: .88rem; margin-top: 8px; }
+.in-data summary, .in-method summary { cursor: pointer; color: var(--accent-ink); }
+.in-method p, .in-method ul { color: var(--muted); max-width: 80ch; }
+.in-table { overflow-x: auto; margin-top: 8px; max-height: 360px; overflow-y: auto; }
+.in-table table + table { margin-top: 14px; }
+.in-sources { font-size: .82rem; color: var(--muted); margin: 10px 0 0; }
+.in-panels { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 18px; }
+.in-panels h3 { font-size: .9rem; font-weight: 600; margin: 0 0 6px; }
+@media (max-width: 900px) { .in-panels { grid-template-columns: 1fr; } }
+.in-levels { display: flex; gap: 12px; flex-wrap: wrap; }
+.in-level { flex: 1 1 140px; border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; }
+.in-level-h { font-family: var(--mono); font-size: 12px; font-weight: 500; color: var(--accent-ink); margin-bottom: 6px; }
+.in-level-item { font-size: .9rem; padding: 3px 0; border-top: 1px solid var(--line); }
+.viz .pt-label { font-size: 10px; fill: var(--muted); pointer-events: none; }
+.viz .pt:focus { outline: none; }
+.viz .pt:focus .dot, .viz .pt:hover .dot { stroke: var(--ink); }
+.viz .axis-title { font-size: 11px; }
+
+/* ---------- Navigation at narrow widths (7 links) ---------- */
+
+.site-nav { flex-wrap: wrap; row-gap: 4px; }
+@media (max-width: 760px) {
+  .head-inner { padding-block: 8px; min-height: 0; gap: 6px 20px; }
+  .site-nav { margin-left: 0; width: 100%; gap: 2px 14px; }
+  .site-nav a { padding-block: 4px; }
+}
+
+/* ---------- Ask Apprentix (assistant) ---------- */
+
+.ask { max-width: 820px; padding-block: 32px 80px; }
+.ask-head h1 { font-family: var(--display); font-weight: 600; font-size: clamp(1.8rem, 5vw, 2.4rem); letter-spacing: -.015em; }
+.ask-head .lede { color: var(--muted); margin: 10px 0 0; max-width: 62ch; }
+.ask-starters { margin-top: 24px; }
+.ask-starters h2 { color: var(--muted); margin-bottom: 8px; }
+.ask-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.ask-chips .chip { text-align: left; border-radius: 10px; padding: 7px 12px; line-height: 1.4; font-size: .86rem; }
+.ask-chips .chip:disabled { opacity: .55; cursor: not-allowed; }
+.ask-log { display: grid; gap: 14px; margin-top: 26px; }
+.ask-log:empty { display: none; }
+.ask-msg { border: 1px solid var(--line); border-radius: 12px; padding: 12px 16px; background: var(--surface); overflow-wrap: anywhere; }
+.ask-msg.user { background: var(--accent-soft); border-color: transparent; margin-left: min(12%, 80px); }
+.ask-msg.user p { margin: 2px 0 0; white-space: pre-wrap; }
+.ask-msg.error { border-color: var(--amber); background: var(--amber-soft); }
+.ask-msg.error p { margin: 4px 0 0; }
+.ask-who { color: var(--muted); font-size: 10px; }
+.ask-body p { margin: 8px 0 0; }
+.ask-body ul, .ask-body ol { margin: 8px 0 0; padding-left: 1.3em; display: grid; gap: 4px; }
+.ask-body code { font-family: var(--mono); font-size: .85em; background: var(--sunken); padding: 1px 4px; border-radius: 4px; }
+.ask-sources { margin-top: 12px; padding-top: 10px; border-top: 1px solid var(--line); }
+.ask-sources .mono { color: var(--muted); font-size: 10px; }
+.ask-sources ul { margin: 4px 0 0; padding-left: 1.2em; font-size: .88rem; display: grid; gap: 2px; }
+.ask-foot { margin: 10px 0 0; font-size: .76rem; color: var(--faint); }
+.ask-thinking { color: var(--muted); font-style: italic; margin: 0; }
+.ask-form { margin-top: 22px; box-shadow: var(--shadow); }
+main:has(.ask-msg) .ask-form { position: sticky; bottom: 12px; }
+.ask-notice { margin: 0 0 12px; font-size: .82rem; color: var(--muted); background: var(--amber-soft); border-radius: 8px; padding: 8px 10px; }
+.ask-notice strong { color: var(--ink); }
+.ask-label { display: block; font-weight: 600; font-size: .9rem; margin-bottom: 6px; }
+.ask-input { resize: vertical; min-height: 64px; font: inherit; }
+.ask-input:disabled { background: var(--sunken); cursor: not-allowed; }
+.ask-actions { display: flex; align-items: center; gap: 10px; margin-top: 10px; flex-wrap: wrap; }
+.ask-status { color: var(--muted); font-size: .85rem; margin-right: auto; }
+.ask-off { margin: 0 0 10px; font-weight: 600; color: var(--amber); }
+@media (max-width: 560px) {
+  .ask-msg.user { margin-left: 0; }
+  .ask-form { position: static; box-shadow: none; }
+}

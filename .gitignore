@@ -25,3 +25,8 @@ __pycache__/
 # Research notes and drafts (kept local; GitHub Pages would publish them)
 research_notes/
 reports/
+
+# Ask Apprentix Worker (local secrets and tooling)
+worker/.dev.vars
+worker/node_modules/
+worker/.wrangler/

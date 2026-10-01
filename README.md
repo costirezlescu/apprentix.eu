@@ -23,7 +23,8 @@ Deliberately plain:
   fetches public sources on a schedule in GitHub Actions and writes plain JSON/CSV.
   Every change arrives as a pull request you review. The site itself still has no build step.
 
-The only external request is the Google Fonts stylesheet.
+The only external request is the Google Fonts stylesheet — plus, on the optional *Ask* page,
+the question sent to the assistant's Worker (see "Ask Apprentix" below).
 
 ---
 
@@ -57,6 +58,7 @@ apprentix.eu/
 │  ├─ countries/, indicators/, datasets/   generated static pages (do not edit)
 │  ├─ explore.html                The explorer — works for ANY record dataset
 │  ├─ indicators.html             EU targets + every statistical indicator
+│  ├─ ask.html                    Ask Apprentix (AI assistant; see below)
 │  ├─ about.html
 │  └─ data.html                   Source catalogue, licensing, caveats
 ├─ assets/
@@ -71,11 +73,13 @@ apprentix.eu/
 │  ├─ reference/countries.json    Country codes, names, tile-map positions
 │  ├─ schemas/                    JSON Schemas the validator enforces
 │  ├─ raw/                        ← ORIGINAL FILES, dated (by you or the pipeline)
+│  ├─ ai/                         search index for Ask Apprentix (generated)
 │  └─ published/                  ← what the site actually reads
 │     ├─ apprenticeship-schemes/  meta.json + records.json (hand-curated)
 │     ├─ vet-policy-timeline/     meta.json + records.json (from Cedefop)
 │     └─ indicators/              <id>.json + <id>.csv, index.json
 ├─ pipeline/                      Python: one connector per source, build, validate
+├─ worker/                        Cloudflare Worker behind Ask Apprentix (deployed with wrangler)
 ├─ .github/workflows/             weekly refresh (opens a PR) + validation
 ├─ datapackage.json               Frictionless description of all published data
 ├─ CITATION.cff                   How to cite
@@ -334,6 +338,133 @@ field is simply absent from that record, and the site copes.
 **If a document has no styled headings** (bold text used instead of Heading 1/2), the
 inspect step will say so. Use `-Mode text` to dump the whole outline to JSON and work
 from there.
+
+---
+
+## Ask Apprentix (AI assistant)
+
+`pages/ask.html` lets visitors ask questions in plain language ("Which countries pay apprentices
+a wage and require at least half the time at the workplace?"). Answers are written by an AI model
+**only from Apprentix's own published data**, and link to the Apprentix pages and the original
+publishers they used.
+
+### How it works
+
+```
+browser (pages/ask.html, assets/js/ask.js)
+   │  POST {messages}            ← URL from data/datasets.json  site.ask_endpoint
+   ▼
+Cloudflare Worker  worker/src/index.js      holds OPENROUTER_API_KEY (secret)
+   │  tool-calling loop (max 5 rounds) ──► OpenRouter ──► x-ai/grok-4.3
+   │  tools run inside the Worker, reading the site's static JSON:
+   │    search_site    BM25 over data/ai/search-index.json
+   │    get_country    a country's profile chunk (+ NQF levels)
+   │    get_indicator  data/published/indicators/<id>.json (values + provenance)
+   │    query_records  data/published/<dataset>/records.json (filters, text, count_by)
+   │    list_datasets  data/datasets.json + indicator index
+   ▼
+{answer (markdown), sources [{title, url}], model, usage}
+```
+
+- **The key never reaches the browser.** It lives only as a Worker secret. Nothing in the repo
+  contains it; `worker/.dev.vars` (local testing) is git-ignored.
+- **Retrieval index.** `pipeline/build_ai_index.py` runs at the end of every build and writes
+  `data/ai/search-index.json` (~2 MB, ~1,700 text chunks: country profiles, every indicator with
+  its latest values, datasets, schemes with Cedefop's coded answers, financing instruments,
+  recognition arrangements, VET policies, NQF levels, CoVE projects, insights) plus slim
+  per-country shards of the 24,768 Europass qualifications in `data/ai/records/vet-qualifications/`
+  (the full file is too large to load inside a Worker). Do not edit these files by hand.
+- **Grounding.** The system prompt (in `worker/src/index.js`) tells the model to answer only from
+  tool results, cite Apprentix URLs and publishers, say when the data does not cover a question,
+  respect comparability caveats (national counts are not comparable; ED3SW is a proxy, not an
+  apprentice count; financing data is 2016–17), give no legal/financial advice, point learners and
+  employers to official services, and answer in the user's language.
+
+### Privacy
+
+- The page warns, above the input, that questions are sent to OpenRouter and xAI and that no
+  personal data should be entered. The conversation is kept in the page's memory only — no
+  cookies, no local storage; it disappears when the page is closed.
+- The Worker logs nothing about questions or visitors (on error it logs only the HTTP status
+  class; Workers observability is disabled in `wrangler.toml`). The rate limiter is keyed on the
+  visitor's IP inside Cloudflare's rate-limiting counter, which is not stored by Apprentix.
+- The browser sends no cookies to the Worker (`credentials: 'omit'`). Only the origins listed in
+  `ALLOWED_ORIGINS` are accepted.
+- Optional: set `DATA_COLLECTION = "deny"` in `wrangler.toml` to make OpenRouter route only to
+  providers that do not retain or train on prompts (requests fail if the model has none). Also
+  check your OpenRouter account's privacy settings.
+
+### Cost controls
+
+| Control | Where | Default |
+|---|---|---|
+| Per-IP rate limit (Workers Rate Limiting API) | `[[ratelimits]]` in `wrangler.toml` | 10 questions / minute |
+| Daily request cap (all visitors) | `DAILY_LIMIT` var, counted in KV | 1,000 / day |
+| Daily token cap | `DAILY_TOKEN_LIMIT` var | 3,000,000 tokens / day |
+| Reply length | `MAX_TOKENS` var | 1,200 tokens |
+| Tool rounds per question | `MAX_ROUNDS` in `src/index.js` | 5 (then the model must answer) |
+| Conversation sent | `src/index.js` | last 8 messages, ≤ 2,000 characters each |
+| Tool output passed to the model | `src/index.js` | ≤ 12,000 characters per tool call |
+
+The KV counter is a soft cap (KV is eventually consistent; one write per question). As a hard
+backstop, **set a credit limit on the OpenRouter key** itself (openrouter.ai → Keys → limit).
+
+**Workers plan.** Loading and indexing the 2 MB search index takes roughly 200 ms of CPU the first
+time an isolate handles a question (then it is cached in memory). The Workers **Free** plan allows
+10 ms of CPU per request, so cold starts can fail there; the **Workers Paid** plan ($5/month,
+30 s CPU) is recommended. KV on the free tier allows 1,000 writes/day, which matches the default
+daily cap.
+
+### Deploy (once)
+
+You need Node.js 18+ and a Cloudflare account (apprentix.eu is already on Cloudflare).
+
+```sh
+cd worker
+npx wrangler login
+npx wrangler kv namespace create BUDGET
+#   → copy the printed id into wrangler.toml, replacing REPLACE_WITH_KV_NAMESPACE_ID
+npx wrangler secret put OPENROUTER_API_KEY
+#   → paste the OpenRouter key when prompted (it is stored encrypted at Cloudflare, not in the repo)
+npx wrangler deploy
+#   → prints the Worker URL, e.g. https://apprentix-ask.<your-subdomain>.workers.dev
+```
+
+Then switch the page on: in `data/datasets.json` set
+
+```json
+"site": { …, "ask_endpoint": "https://apprentix-ask.<your-subdomain>.workers.dev/ask" }
+```
+
+commit and push. (`null` shows "The assistant isn't switched on yet." and disables the input —
+setting it back to `null` is the off switch for the page; `npx wrangler delete` removes the Worker.)
+
+**workers.dev URL or a route on apprentix.eu?** The `workers.dev` URL is the simplest and works
+whatever the DNS setup: the browser makes a cross-origin request, which the Worker allows only for
+`ALLOWED_ORIGINS`. Alternatively, serve it at `https://apprentix.eu/api/ask` (uncomment `routes` in
+`wrangler.toml`; the Worker answers on `/ask` and `/api/ask`). That keeps everything on one
+domain (no CORS, less likely to be blocked by privacy extensions), but **only works if the
+apprentix.eu DNS record pointing at GitHub Pages is proxied through Cloudflare** (orange cloud),
+with SSL/TLS mode "Full". With DNS-only (grey cloud) records, which is GitHub Pages' default
+recommendation, Cloudflare never sees the traffic and the route does nothing — use workers.dev.
+
+### Change the model or limits
+
+Edit `[vars]` in `worker/wrangler.toml` (`MODEL` takes any OpenRouter model id that supports tool
+calling) and run `npx wrangler deploy` again. Secrets are kept across deploys.
+
+### Test
+
+```sh
+node --test worker/test         # BM25, tools (mocked fetch), CORS/limits, full loop (mocked OpenRouter)
+cd worker && npx wrangler deploy --dry-run   # bundle check, no upload
+```
+
+Local end-to-end: put `OPENROUTER_API_KEY=…` in `worker/.dev.vars` (git-ignored), run
+`npx wrangler dev` in `worker/`, serve the site on port 8080, and temporarily set
+`ask_endpoint` to `http://localhost:8787/ask`. The local Worker still reads data from
+`SITE_BASE` (the live site); run `npx wrangler dev --var SITE_BASE:http://localhost:8080` to use your
+local build instead.
 
 ---
 

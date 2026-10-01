@@ -122,5 +122,10 @@ def all(connectors: dict, status: dict) -> None:
     refresh_manifest(inds)
     datapackage(inds)
     print(f"Built: {len(inds)} indicators, catalogue, manifest, datapackage.json")
+    from . import insights, render_insights
+    insights.build()          # analyses across all data → data/published/insights/
+    render_insights.render_insights()
     from . import render_pages
     render_pages.render_all()
+    from . import build_ai_index
+    build_ai_index.build()

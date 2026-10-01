@@ -1,0 +1,10 @@
+{
+  "name": "apprentix-ask",
+  "private": true,
+  "type": "module",
+  "description": "Ask Apprentix: Cloudflare Worker that answers questions from apprentix.eu data via OpenRouter.",
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "deploy": "npx wrangler deploy"
+  }
+}

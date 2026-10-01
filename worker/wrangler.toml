@@ -1,0 +1,39 @@
+# Ask Apprentix — Cloudflare Worker. See README.md, "Ask Apprentix (AI assistant)".
+# The OpenRouter key is NOT here: set it with  npx wrangler secret put OPENROUTER_API_KEY
+
+name = "apprentix-ask"
+main = "src/index.js"
+compatibility_date = "2025-09-01"
+workers_dev = true
+
+# Optional, once you want https://apprentix.eu/api/ask instead of the workers.dev URL
+# (requires apprentix.eu to be proxied through Cloudflare — see the README trade-off):
+# routes = [{ pattern = "apprentix.eu/api/ask", zone_name = "apprentix.eu" }]
+
+[vars]
+MODEL = "x-ai/grok-4.3"
+SITE_BASE = "https://apprentix.eu"
+ALLOWED_ORIGINS = "https://apprentix.eu,https://www.apprentix.eu,http://localhost:8080,http://127.0.0.1:8765"
+DAILY_LIMIT = "1000"            # questions per day (all visitors together)
+DAILY_TOKEN_LIMIT = "3000000"   # model tokens per day; "0" disables this cap
+MAX_TOKENS = "1200"             # max tokens per model reply
+# DATA_COLLECTION = "deny"      # only route to providers that don't retain/train on prompts
+
+# Per-IP rate limit: 10 questions per 60 seconds (Workers Rate Limiting API).
+[[ratelimits]]
+name = "ASK_LIMITER"
+namespace_id = "1701"
+
+  [ratelimits.simple]
+  limit = 10
+  period = 60
+
+# Daily request/token counter. Create it with
+#   npx wrangler kv namespace create BUDGET
+# and paste the printed id below.
+[[kv_namespaces]]
+binding = "BUDGET"
+id = "REPLACE_WITH_KV_NAMESPACE_ID"
+
+[observability]
+enabled = false

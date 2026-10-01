@@ -1,0 +1,1506 @@
+{
+  "description": "Analyses computed by Apprentix from its published data (pipeline/insights.py). Recomputed on every build.",
+  "items": [
+    {
+      "id": "eu-2025-targets",
+      "audience": [
+        "policy"
+      ],
+      "title": "EU 2025 targets: work-based learning met, employment of VET graduates missed",
+      "finding": "In 2025, 66.0% of recent VET graduates in the EU had work-based learning — above the 60% target (up from 60.3% in 2021). The employment rate of recent VET graduates was 80.1%, short of the 82% target. 13 of 24 member states with data meet the first target; only 8 of 26 meet the second.",
+      "detail": [
+        "Furthest from the work-based learning target: Romania (9.1%), Czechia (15.2%), Italy (22.0%), Cyprus (25.0%).",
+        "Furthest from the employment target: Greece (58.0%), Romania (63.4%), Italy (64.9%), Spain (68.8%).",
+        "Largest gains in graduate employment since 2021: Portugal (+11.9 points), Lithuania (+11.9 points), Italy (+11.0 points); largest falls: Sweden (-5.9 points), Netherlands (-4.4 points), Cyprus (-2.5 points)."
+      ],
+      "chart": {
+        "type": "target-bars",
+        "panels": [
+          {
+            "title": "Recent VET graduates with work-based learning",
+            "target": 60,
+            "rows": [
+              {
+                "geo": "NL",
+                "name": "Netherlands",
+                "value": 95.4,
+                "flag": null
+              },
+              {
+                "geo": "FR",
+                "name": "France",
+                "value": 93.2,
+                "flag": null
+              },
+              {
+                "geo": "DE",
+                "name": "Germany",
+                "value": 93.0,
+                "flag": "u"
+              },
+              {
+                "geo": "ES",
+                "name": "Spain",
+                "value": 91.8,
+                "flag": "u"
+              },
+              {
+                "geo": "AT",
+                "name": "Austria",
+                "value": 86.4,
+                "flag": null
+              },
+              {
+                "geo": "PT",
+                "name": "Portugal",
+                "value": 80.9,
+                "flag": null
+              },
+              {
+                "geo": "DK",
+                "name": "Denmark",
+                "value": 79.9,
+                "flag": "b"
+              },
+              {
+                "geo": "FI",
+                "name": "Finland",
+                "value": 79.6,
+                "flag": null
+              },
+              {
+                "geo": "SI",
+                "name": "Slovenia",
+                "value": 72.0,
+                "flag": null
+              },
+              {
+                "geo": "EE",
+                "name": "Estonia",
+                "value": 68.2,
+                "flag": null
+              },
+              {
+                "geo": "PL",
+                "name": "Poland",
+                "value": 67.5,
+                "flag": "u"
+              },
+              {
+                "geo": "SE",
+                "name": "Sweden",
+                "value": 67.3,
+                "flag": null
+              },
+              {
+                "geo": "LT",
+                "name": "Lithuania",
+                "value": 62.1,
+                "flag": null
+              },
+              {
+                "geo": "BE",
+                "name": "Belgium",
+                "value": 51.6,
+                "flag": null
+              },
+              {
+                "geo": "SK",
+                "name": "Slovakia",
+                "value": 50.7,
+                "flag": null
+              },
+              {
+                "geo": "MT",
+                "name": "Malta",
+                "value": 50.6,
+                "flag": "u"
+              },
+              {
+                "geo": "HU",
+                "name": "Hungary",
+                "value": 43.1,
+                "flag": "u"
+              },
+              {
+                "geo": "HR",
+                "name": "Croatia",
+                "value": 38.7,
+                "flag": null
+              },
+              {
+                "geo": "IE",
+                "name": "Ireland",
+                "value": 29.9,
+                "flag": "u"
+              },
+              {
+                "geo": "EL",
+                "name": "Greece",
+                "value": 25.8,
+                "flag": null
+              },
+              {
+                "geo": "CY",
+                "name": "Cyprus",
+                "value": 25.0,
+                "flag": "u"
+              },
+              {
+                "geo": "IT",
+                "name": "Italy",
+                "value": 22.0,
+                "flag": null
+              },
+              {
+                "geo": "CZ",
+                "name": "Czechia",
+                "value": 15.2,
+                "flag": null
+              },
+              {
+                "geo": "RO",
+                "name": "Romania",
+                "value": 9.1,
+                "flag": null
+              }
+            ],
+            "eu": 66.0
+          },
+          {
+            "title": "Employment rate of recent VET graduates",
+            "target": 82,
+            "rows": [
+              {
+                "geo": "DE",
+                "name": "Germany",
+                "value": 91.5,
+                "flag": null
+              },
+              {
+                "geo": "DK",
+                "name": "Denmark",
+                "value": 89.0,
+                "flag": "b"
+              },
+              {
+                "geo": "NL",
+                "name": "Netherlands",
+                "value": 87.6,
+                "flag": null
+              },
+              {
+                "geo": "CZ",
+                "name": "Czechia",
+                "value": 85.7,
+                "flag": null
+              },
+              {
+                "geo": "AT",
+                "name": "Austria",
+                "value": 84.8,
+                "flag": null
+              },
+              {
+                "geo": "SE",
+                "name": "Sweden",
+                "value": 84.2,
+                "flag": null
+              },
+              {
+                "geo": "HU",
+                "name": "Hungary",
+                "value": 82.6,
+                "flag": null
+              },
+              {
+                "geo": "SK",
+                "name": "Slovakia",
+                "value": 82.2,
+                "flag": null
+              },
+              {
+                "geo": "LT",
+                "name": "Lithuania",
+                "value": 81.7,
+                "flag": null
+              },
+              {
+                "geo": "MT",
+                "name": "Malta",
+                "value": 80.7,
+                "flag": "u"
+              },
+              {
+                "geo": "BG",
+                "name": "Bulgaria",
+                "value": 78.8,
+                "flag": "u"
+              },
+              {
+                "geo": "SI",
+                "name": "Slovenia",
+                "value": 77.6,
+                "flag": "u"
+              },
+              {
+                "geo": "PL",
+                "name": "Poland",
+                "value": 76.9,
+                "flag": null
+              },
+              {
+                "geo": "BE",
+                "name": "Belgium",
+                "value": 75.4,
+                "flag": null
+              },
+              {
+                "geo": "FI",
+                "name": "Finland",
+                "value": 75.2,
+                "flag": null
+              },
+              {
+                "geo": "PT",
+                "name": "Portugal",
+                "value": 75.2,
+                "flag": null
+              },
+              {
+                "geo": "LV",
+                "name": "Latvia",
+                "value": 74.6,
+                "flag": null
+              },
+              {
+                "geo": "HR",
+                "name": "Croatia",
+                "value": 74.5,
+                "flag": null
+              },
+              {
+                "geo": "IE",
+                "name": "Ireland",
+                "value": 73.5,
+                "flag": null
+              },
+              {
+                "geo": "FR",
+                "name": "France",
+                "value": 72.9,
+                "flag": "d"
+              },
+              {
+                "geo": "CY",
+                "name": "Cyprus",
+                "value": 72.2,
+                "flag": "u"
+              },
+              {
+                "geo": "EE",
+                "name": "Estonia",
+                "value": 71.3,
+                "flag": null
+              },
+              {
+                "geo": "ES",
+                "name": "Spain",
+                "value": 68.8,
+                "flag": "d"
+              },
+              {
+                "geo": "IT",
+                "name": "Italy",
+                "value": 64.9,
+                "flag": null
+              },
+              {
+                "geo": "RO",
+                "name": "Romania",
+                "value": 63.4,
+                "flag": null
+              },
+              {
+                "geo": "EL",
+                "name": "Greece",
+                "value": 58.0,
+                "flag": null
+              }
+            ],
+            "eu": 80.1
+          }
+        ]
+      },
+      "method": "Latest year for all EU-27 countries with data. Changes since 2021 exclude countries with a Eurostat break-in-series flag (b) in between.",
+      "caveats": [
+        "Several values carry low-reliability flags (u).",
+        "The targets were set by the 2020 Council Recommendation on VET for 2025."
+      ],
+      "sources": [
+        {
+          "label": "Recent VET graduates who had work-based learning",
+          "url": "pages/indicators/eurostat-tps00215.html"
+        },
+        {
+          "label": "Employment rate of recent VET graduates",
+          "url": "pages/indicators/eurostat-edat_lfse_24-vet.html"
+        }
+      ]
+    },
+    {
+      "id": "wbl-and-employment",
+      "audience": [
+        "policy"
+      ],
+      "title": "Where more VET graduates learn at work, more of them find jobs",
+      "finding": "Across 28 European countries, those where a larger share of recent VET graduates had work-based learning tend to have higher employment among those graduates (Spearman ρ = +0.41, a moderate association). The link holds after allowing for how strong each country's labour market is overall (partial ρ = +0.35).",
+      "detail": [
+        "Work-based learning is also associated with a larger employment advantage of VET graduates over general-education graduates (ρ = +0.34; +0.38 after the same adjustment; 27 countries).",
+        "Exceptions matter: Czechia and Norway achieve higher graduate employment than their level of work-based learning would suggest, while Spain and France do less well than theirs would suggest. Labour-market structure, the quality of placements and how programmes are mapped all play a part."
+      ],
+      "chart": {
+        "type": "scatter",
+        "x": {
+          "label": "Recent VET graduates with work-based learning (%)",
+          "unit": "%"
+        },
+        "y": {
+          "label": "Employment rate of recent VET graduates (%)",
+          "unit": "%"
+        },
+        "points": [
+          {
+            "geo": "AT",
+            "name": "Austria",
+            "x": 86.4,
+            "y": 84.8,
+            "label": "2025/2025"
+          },
+          {
+            "geo": "BE",
+            "name": "Belgium",
+            "x": 51.6,
+            "y": 75.4,
+            "label": "2025/2025"
+          },
+          {
+            "geo": "CH",
+            "name": "Switzerland",
+            "x": 96.7,
+            "y": 85.2,
+            "label": "2025/2025"
+          },
+          {
+            "geo": "CY",
+            "name": "Cyprus",
+            "x": 25.0,
+            "y": 72.2,
+            "label": "2025/2025"
+          },
+          {
+            "geo": "CZ",
+            "name": "Czechia",
+            "x": 15.2,
+            "y": 85.7,
+            "label": "2025/2025"
+          },
+          {
+            "geo": "DE",
+            "name": "Germany",
+            "x": 93.0,
+            "y": 91.5,
+            "label": "2025/2025"
+          },
+          {
+            "geo": "DK",
+            "name": "Denmark",
+            "x": 79.9,
+            "y": 89.0,
+            "label": "2025/2025"
+          },
+          {
+            "geo": "EE",
+            "name": "Estonia",
+            "x": 68.2,
+            "y": 71.3,
+            "label": "2025/2025"
+          },
+          {
+            "geo": "EL",
+            "name": "Greece",
+            "x": 25.8,
+            "y": 58.0,
+            "label": "2025/2025"
+          },
+          {
+            "geo": "ES",
+            "name": "Spain",
+            "x": 91.8,
+            "y": 68.8,
+            "label": "2025/2025"
+          },
+          {
+            "geo": "FI",
+            "name": "Finland",
+            "x": 79.6,
+            "y": 75.2,
+            "label": "2025/2025"
+          },
+          {
+            "geo": "FR",
+            "name": "France",
+            "x": 93.2,
+            "y": 72.9,
+            "label": "2025/2025"
+          },
+          {
+            "geo": "HR",
+            "name": "Croatia",
+            "x": 38.7,
+            "y": 74.5,
+            "label": "2025/2025"
+          },
+          {
+            "geo": "HU",
+            "name": "Hungary",
+            "x": 43.1,
+            "y": 82.6,
+            "label": "2025/2025"
+          },
+          {
+            "geo": "IE",
+            "name": "Ireland",
+            "x": 29.9,
+            "y": 73.5,
+            "label": "2025/2025"
+          },
+          {
+            "geo": "IT",
+            "name": "Italy",
+            "x": 22.0,
+            "y": 64.9,
+            "label": "2025/2025"
+          },
+          {
+            "geo": "LT",
+            "name": "Lithuania",
+            "x": 62.1,
+            "y": 81.7,
+            "label": "2025/2025"
+          },
+          {
+            "geo": "LU",
+            "name": "Luxembourg",
+            "x": 34.5,
+            "y": 80.0,
+            "label": "2023/2023"
+          },
+          {
+            "geo": "LV",
+            "name": "Latvia",
+            "x": 34.9,
+            "y": 74.6,
+            "label": "2024/2025"
+          },
+          {
+            "geo": "MT",
+            "name": "Malta",
+            "x": 50.6,
+            "y": 80.7,
+            "label": "2025/2025"
+          },
+          {
+            "geo": "NL",
+            "name": "Netherlands",
+            "x": 95.4,
+            "y": 87.6,
+            "label": "2025/2025"
+          },
+          {
+            "geo": "NO",
+            "name": "Norway",
+            "x": 60.6,
+            "y": 87.4,
+            "label": "2025/2025"
+          },
+          {
+            "geo": "PL",
+            "name": "Poland",
+            "x": 67.5,
+            "y": 76.9,
+            "label": "2025/2025"
+          },
+          {
+            "geo": "PT",
+            "name": "Portugal",
+            "x": 80.9,
+            "y": 75.2,
+            "label": "2025/2025"
+          },
+          {
+            "geo": "RO",
+            "name": "Romania",
+            "x": 9.1,
+            "y": 63.4,
+            "label": "2025/2025"
+          },
+          {
+            "geo": "SE",
+            "name": "Sweden",
+            "x": 67.3,
+            "y": 84.2,
+            "label": "2025/2025"
+          },
+          {
+            "geo": "SI",
+            "name": "Slovenia",
+            "x": 72.0,
+            "y": 77.6,
+            "label": "2025/2025"
+          },
+          {
+            "geo": "SK",
+            "name": "Slovakia",
+            "x": 50.7,
+            "y": 82.2,
+            "label": "2025/2025"
+          }
+        ],
+        "targets": {
+          "x": 60,
+          "y": 82
+        }
+      },
+      "method": "Latest value since 2020 for each country (mostly 2025). Spearman rank correlation; partial correlation of ranks controlling for the employment rate of all 20–64-year-olds (Cedefop KIVET 3060).",
+      "caveats": [
+        "Cross-country association, not proof that work-based learning causes better outcomes.",
+        "Several countries carry Eurostat low-reliability flags (u) for the work-based learning figure."
+      ],
+      "sources": [
+        {
+          "label": "Recent VET graduates who had work-based learning",
+          "url": "pages/indicators/eurostat-tps00215.html"
+        },
+        {
+          "label": "Employment rate of recent VET graduates",
+          "url": "pages/indicators/eurostat-edat_lfse_24-vet.html"
+        },
+        {
+          "label": "Employment premium for recent IVET graduates (over general stream) (%)",
+          "url": "pages/indicators/cedefop-kivet-2090a.html"
+        },
+        {
+          "label": "Employment rate for 20-64 year-olds (%)",
+          "url": "pages/indicators/cedefop-kivet-3060.html"
+        }
+      ]
+    },
+    {
+      "id": "vet-advantage",
+      "audience": [
+        "policy",
+        "learners"
+      ],
+      "title": "Vocational graduates find work more often — and the gender gap is smaller",
+      "finding": "In 2025, 80.1% of recent EU graduates with a vocational qualification were employed, against 66.8% of those with a general upper-secondary qualification — an advantage of 13.3 points. Since 2014 the advantage has stayed between 13 and 18 points.",
+      "detail": [
+        "Women with a recent vocational qualification are employed 3.3 points less often than men; among general-education graduates the gap is 9.7 points.",
+        "For learners choosing a route, this is the EU-wide picture: in some countries general education leads more often to further study, which this measure does not count as a success."
+      ],
+      "chart": {
+        "type": "lines",
+        "unit": "%",
+        "series": [
+          {
+            "label": "Vocational (ISCED 35/45)",
+            "points": [
+              {
+                "time": "2014",
+                "value": 72.5
+              },
+              {
+                "time": "2015",
+                "value": 72.3
+              },
+              {
+                "time": "2016",
+                "value": 75.0
+              },
+              {
+                "time": "2017",
+                "value": 75.9
+              },
+              {
+                "time": "2018",
+                "value": 79.1
+              },
+              {
+                "time": "2019",
+                "value": 79.2
+              },
+              {
+                "time": "2020",
+                "value": 75.9
+              },
+              {
+                "time": "2021",
+                "value": 76.0
+              },
+              {
+                "time": "2022",
+                "value": 79.7
+              },
+              {
+                "time": "2023",
+                "value": 80.7
+              },
+              {
+                "time": "2024",
+                "value": 79.9
+              },
+              {
+                "time": "2025",
+                "value": 80.1
+              }
+            ]
+          },
+          {
+            "label": "General (ISCED 34/44)",
+            "points": [
+              {
+                "time": "2014",
+                "value": 57.7
+              },
+              {
+                "time": "2015",
+                "value": 58.7
+              },
+              {
+                "time": "2016",
+                "value": 58.9
+              },
+              {
+                "time": "2017",
+                "value": 62.8
+              },
+              {
+                "time": "2018",
+                "value": 63.7
+              },
+              {
+                "time": "2019",
+                "value": 62.9
+              },
+              {
+                "time": "2020",
+                "value": 58.4
+              },
+              {
+                "time": "2021",
+                "value": 61.4
+              },
+              {
+                "time": "2022",
+                "value": 66.7
+              },
+              {
+                "time": "2023",
+                "value": 67.8
+              },
+              {
+                "time": "2024",
+                "value": 62.9
+              },
+              {
+                "time": "2025",
+                "value": 66.8
+              }
+            ]
+          }
+        ]
+      },
+      "method": "Eurostat edat_lfse_24: employment rate of 20–34-year-olds not in education, 1–3 years after their highest qualification, EU-27.",
+      "caveats": [
+        "People still in education are excluded, which affects general-education graduates more."
+      ],
+      "sources": [
+        {
+          "label": "Employment rate of recent VET graduates",
+          "url": "pages/indicators/eurostat-edat_lfse_24-vet.html"
+        },
+        {
+          "label": "Employment rate of recent general-education graduates",
+          "url": "pages/indicators/eurostat-edat_lfse_24-general.html"
+        }
+      ]
+    },
+    {
+      "id": "two-families",
+      "audience": [
+        "policy"
+      ],
+      "title": "Europe has two families of apprenticeship — and neither clearly wins",
+      "finding": "Grouping the 34 schemes by Cedefop's coded answers shows 18 employer-based apprenticeships (long traditions, a distinct apprentice status) and 14 school-based dual tracks that grew out of school VET, mostly introduced after 2012. Neither group of countries clearly does better: median employment of recent VET graduates is 80.3% where schemes are employer-based and 78.8% where they are school-based, while VET graduates' advantage over general-education graduates is 7.9 and 11.4 points respectively.",
+      "detail": [
+        "Employer-based schemes: Austria, Belgium — French community, Cyprus, Denmark, Finland, France, Germany, Greece, Iceland, Ireland, Italy, Luxembourg, Malta, Netherlands, Norway, Poland, Romania.",
+        "School-based dual tracks: Belgium — Flanders, Bulgaria, Croatia, Czechia, Estonia, Hungary, Italy, Latvia, Lithuania, Romania, Slovakia, Slovenia, Spain, Sweden.",
+        "Young people neither in employment nor education: median 9.1% in employer-based countries vs 11.0% in school-based ones.",
+        "Design details within each family — pay, the share of time at work, the role of social partners — vary as much as between them; see the comparison matrix."
+      ],
+      "chart": {
+        "type": "paired-bars",
+        "unit": "% of schemes",
+        "groups": [
+          "Employer-based",
+          "School-based dual"
+        ],
+        "rows": [
+          {
+            "label": "Introduced before 2000",
+            "employer": 89,
+            "school": 0
+          },
+          {
+            "label": "Learner has apprentice status",
+            "employer": 100,
+            "school": 50
+          },
+          {
+            "label": "Learner is a student",
+            "employer": 0,
+            "school": 64
+          },
+          {
+            "label": "Training agreement, not a contract",
+            "employer": 6,
+            "school": 64
+          },
+          {
+            "label": "Qualification only via apprenticeship",
+            "employer": 61,
+            "school": 0
+          },
+          {
+            "label": "Pay also covers school time",
+            "employer": 61,
+            "school": 21
+          },
+          {
+            "label": "Typical learner aged 15–18",
+            "employer": 33,
+            "school": 64
+          },
+          {
+            "label": "At least half the time at work",
+            "employer": 83,
+            "school": 71
+          }
+        ]
+      },
+      "method": "Families from Cedefop's coded fiche answers (2026): school-based dual = 'grew out of school-based VET'; employer-based = learner has a specific apprentice status and the scheme did not grow out of school VET. Earlier exploratory clustering (Jaccard distance, average linkage) gave the same two groups plus a few distinct schemes (France's professionalisation contract, Italy's types 1 and 3, Portugal, Czechia). Outcomes compare countries whose schemes all fall in one family.",
+      "caveats": [
+        "Few countries per group; medians can move with one country.",
+        "Country outcomes reflect all VET, not only apprentices."
+      ],
+      "sources": [
+        {
+          "label": "Compare all schemes",
+          "url": "pages/compare.html"
+        },
+        {
+          "label": "Apprenticeship schemes dataset",
+          "url": "pages/datasets/apprenticeship-schemes.html"
+        }
+      ]
+    },
+    {
+      "id": "national-trajectories",
+      "audience": [
+        "policy"
+      ],
+      "title": "National apprenticeship numbers are moving in very different directions",
+      "finding": "Since 2017, the number of apprentices in France has grown 2.4-fold, to 1,014,485 at the end of 2025. Over the same period: Norway +23% (to 2025); Switzerland +1% (to 2025); England -6% (to 2024).",
+      "detail": [
+        "France's growth coincides with its 2018 vocational training reform and the hiring aid introduced in 2020; its December 2025 figure is the first annual fall.",
+        "Each country counts something different (stocks, starts or entrants; with or without higher-education apprenticeships), so compare the direction of travel, not the levels."
+      ],
+      "chart": {
+        "type": "lines",
+        "unit": "index, 2017 = 100",
+        "series": [
+          {
+            "label": "France — apprentices (stock, December)",
+            "points": [
+              {
+                "time": "2017",
+                "value": 100.0
+              },
+              {
+                "time": "2018",
+                "value": 102.6
+              },
+              {
+                "time": "2019",
+                "value": 114.3
+              },
+              {
+                "time": "2020",
+                "value": 155.3
+              },
+              {
+                "time": "2021",
+                "value": 201.0
+              },
+              {
+                "time": "2022",
+                "value": 228.0
+              },
+              {
+                "time": "2023",
+                "value": 238.4
+              },
+              {
+                "time": "2024",
+                "value": 246.3
+              },
+              {
+                "time": "2025",
+                "value": 238.2
+              }
+            ]
+          },
+          {
+            "label": "Norway — apprentices",
+            "points": [
+              {
+                "time": "2017",
+                "value": 100.0
+              },
+              {
+                "time": "2018",
+                "value": 104.1
+              },
+              {
+                "time": "2019",
+                "value": 109.4
+              },
+              {
+                "time": "2020",
+                "value": 110.0
+              },
+              {
+                "time": "2021",
+                "value": 115.4
+              },
+              {
+                "time": "2022",
+                "value": 118.8
+              },
+              {
+                "time": "2023",
+                "value": 118.5
+              },
+              {
+                "time": "2024",
+                "value": 120.2
+              },
+              {
+                "time": "2025",
+                "value": 123.1
+              }
+            ]
+          },
+          {
+            "label": "Switzerland — VET entrants",
+            "points": [
+              {
+                "time": "2017",
+                "value": 100.0
+              },
+              {
+                "time": "2018",
+                "value": 99.1
+              },
+              {
+                "time": "2019",
+                "value": 99.4
+              },
+              {
+                "time": "2020",
+                "value": 99.2
+              },
+              {
+                "time": "2021",
+                "value": 98.1
+              },
+              {
+                "time": "2022",
+                "value": 97.0
+              },
+              {
+                "time": "2023",
+                "value": 98.9
+              },
+              {
+                "time": "2024",
+                "value": 100.1
+              },
+              {
+                "time": "2025",
+                "value": 100.7
+              }
+            ]
+          },
+          {
+            "label": "England — apprenticeship starts",
+            "points": [
+              {
+                "time": "2017",
+                "value": 100.0
+              },
+              {
+                "time": "2018",
+                "value": 104.7
+              },
+              {
+                "time": "2019",
+                "value": 85.8
+              },
+              {
+                "time": "2020",
+                "value": 85.5
+              },
+              {
+                "time": "2021",
+                "value": 92.9
+              },
+              {
+                "time": "2022",
+                "value": 89.7
+              },
+              {
+                "time": "2023",
+                "value": 90.4
+              },
+              {
+                "time": "2024",
+                "value": 94.1
+              }
+            ]
+          }
+        ]
+      },
+      "method": "Each national series indexed to 2017 = 100. England uses the last complete academic year.",
+      "caveats": [
+        "National definitions differ; levels are not comparable across countries."
+      ],
+      "sources": [
+        {
+          "label": "Apprentices under contract in France (end of month)",
+          "url": "pages/indicators/fr-dares-apprentices-stock.html"
+        },
+        {
+          "label": "Apprentices in Norway (1 October)",
+          "url": "pages/indicators/no-ssb-apprentices.html"
+        },
+        {
+          "label": "Entrants to initial VET by training form (Switzerland)",
+          "url": "pages/indicators/ch-bfs-entrants-vet.html"
+        },
+        {
+          "label": "Apprenticeship starts in England",
+          "url": "pages/indicators/uk-dfe-apprenticeship-starts.html"
+        }
+      ]
+    },
+    {
+      "id": "small-schemes",
+      "audience": [
+        "policy"
+      ],
+      "title": "In most countries apprenticeship is still a minority route within VET",
+      "finding": "Of the 31 schemes whose share is known, 23 enrol under 30% of the country's VET learners at that level; only 8 enrol more. EU-wide, the share of upper-secondary VET pupils in combined school- and work-based programmes rose from 22.1% in 2015 to 24.7% in 2024.",
+      "detail": [
+        "Schemes enrolling 30% or more of VET learners: Denmark (Apprenticeship (VET programmes)), France (Apprenticeship contract), Germany (Dual VET), Hungary (Dual vocational training), Iceland (Apprenticeship (certified trades)), Malta (MCAST apprenticeships), Norway (Upper secondary VET (2+2 model)), Poland (Vocational preparation of juvenile workers)."
+      ],
+      "chart": {
+        "type": "bars",
+        "unit": "schemes",
+        "rows": [
+          {
+            "label": "Under 10%",
+            "value": 12
+          },
+          {
+            "label": "10–30%",
+            "value": 11
+          },
+          {
+            "label": "30–60%",
+            "value": 5
+          },
+          {
+            "label": "Over 60%",
+            "value": 3
+          }
+        ]
+      },
+      "method": "Cedefop coded answer Q6 (share of apprentices among VET learners at the corresponding level); Eurostat educ_uoe_enrs04 (ED3SW ÷ ED35).",
+      "caveats": [
+        "The EU share is affected by how countries map programmes to the 'school- and work-based' category (flag d)."
+      ],
+      "sources": [
+        {
+          "label": "Share of upper-secondary VET pupils in work-based programmes",
+          "url": "pages/indicators/eurostat-ed3sw-share-of-vet.html"
+        },
+        {
+          "label": "Compare all schemes",
+          "url": "pages/compare.html?q=q_share_of_vet"
+        }
+      ]
+    },
+    {
+      "id": "who-pays",
+      "audience": [
+        "policy",
+        "employers"
+      ],
+      "title": "Employers pay apprentices almost everywhere; governments sweeten the deal",
+      "finding": "In 33 of 34 schemes employers pay the apprentice, and in 28 that pay is a taxable wage. Governments compensate with subsidies (25 schemes) and tax deductions (17). Only 2 schemes offer companies no financial incentive.",
+      "detail": [
+        "Pay is set by law in 25 schemes and by sectoral collective agreements in 14.",
+        "Levy-financed training funds existed in 7 of the 21 countries in Cedefop's financing database (Germany, Denmark, France, Hungary, Ireland, Netherlands, United Kingdom), tax incentives in 10 (2016–17)."
+      ],
+      "chart": {
+        "type": "bars",
+        "unit": "schemes",
+        "rows": [
+          {
+            "label": "Subsidies",
+            "value": 25
+          },
+          {
+            "label": "Tax deductions",
+            "value": 17
+          },
+          {
+            "label": "Other incentives",
+            "value": 19
+          },
+          {
+            "label": "None",
+            "value": 2
+          }
+        ]
+      },
+      "method": "Cedefop coded answers Q33–Q37 (2026 fiches); financing instruments database (reference 2016–17).",
+      "caveats": [
+        "The financing database is not updated since 2016–17."
+      ],
+      "sources": [
+        {
+          "label": "Compare: who pays",
+          "url": "pages/compare.html?q=q_pay_funded_by"
+        },
+        {
+          "label": "Financing instruments",
+          "url": "pages/explore.html?dataset=financing-instruments"
+        }
+      ]
+    },
+    {
+      "id": "policy-focus",
+      "audience": [
+        "policy"
+      ],
+      "title": "One in three national VET reforms concerns apprenticeship",
+      "finding": "Of 1,184 VET policy developments that Cedefop and ReferNet have tracked since 2015, 408 concern apprenticeship or work-based learning — 36% in 2015–20 and 35% in 2021–25. Only 5% were discontinued.",
+      "detail": [
+        "Beyond work-based learning itself, these reforms most often also address: Engaging VET stakeholders and strengthening partnerships in VET (169); Financial and non-financial incentives to learners, providers and companies (134); Ensuring equal opportunities and inclusiveness in education and training (131); Modernising VET standards, curricula, programmes and training courses (109)."
+      ],
+      "chart": {
+        "type": "bars",
+        "unit": "policies",
+        "rows": [
+          {
+            "label": "Engaging VET stakeholders and strengthening partnerships …",
+            "value": 169
+          },
+          {
+            "label": "Financial and non-financial incentives to learners, …",
+            "value": 134
+          },
+          {
+            "label": "Ensuring equal opportunities and inclusiveness in …",
+            "value": 131
+          },
+          {
+            "label": "Modernising VET standards, curricula, programmes and …",
+            "value": 109
+          },
+          {
+            "label": "Acquiring key competences",
+            "value": 101
+          },
+          {
+            "label": "Systematic approaches to and opportunities for initial …",
+            "value": 94
+          }
+        ]
+      },
+      "method": "Cedefop Timeline of VET policies (2025 update). 'Concerns apprenticeship' is an Apprentix grouping (theme 3.9 or wording).",
+      "caveats": [
+        "Countries report with different granularity; counts reflect reporting as well as activity."
+      ],
+      "sources": [
+        {
+          "label": "VET policy timeline",
+          "url": "pages/explore.html?dataset=vet-policy-timeline&f.concerns_apprenticeship=Yes"
+        }
+      ]
+    },
+    {
+      "id": "erasmus-vet",
+      "audience": [
+        "policy",
+        "learners"
+      ],
+      "title": "Erasmus+ money for VET mobility has more than tripled — unevenly",
+      "finding": "EU-wide, Erasmus+ grants for VET mobility projects rose from €238 million (2021 call) to €833 million (2025), and projects from 2,925 to 6,890. Relative to VET pupils, funding is highest in Cyprus (€668 per pupil) and Lithuania, and lowest in Netherlands (€52) and Luxembourg.",
+      "detail": [
+        "Smaller and Baltic countries draw the most per VET pupil; large dual systems the least.",
+        "For learners: most VET schools and many training companies in Europe can now send apprentices abroad — check the accredited organisations directory."
+      ],
+      "chart": {
+        "type": "bars",
+        "unit": "€ per upper-secondary VET pupil",
+        "rows": [
+          {
+            "label": "Cyprus",
+            "value": 668
+          },
+          {
+            "label": "Lithuania",
+            "value": 640
+          },
+          {
+            "label": "Estonia",
+            "value": 386
+          },
+          {
+            "label": "Latvia",
+            "value": 372
+          },
+          {
+            "label": "Malta",
+            "value": 241
+          },
+          {
+            "label": "Greece",
+            "value": 199
+          },
+          {
+            "label": "Portugal",
+            "value": 157
+          },
+          {
+            "label": "Ireland",
+            "value": 146
+          },
+          {
+            "label": "Slovenia",
+            "value": 134
+          },
+          {
+            "label": "Hungary",
+            "value": 131
+          },
+          {
+            "label": "Denmark",
+            "value": 124
+          },
+          {
+            "label": "Slovakia",
+            "value": 121
+          },
+          {
+            "label": "Germany",
+            "value": 119
+          },
+          {
+            "label": "Bulgaria",
+            "value": 106
+          },
+          {
+            "label": "Croatia",
+            "value": 102
+          },
+          {
+            "label": "Spain",
+            "value": 102
+          },
+          {
+            "label": "Sweden",
+            "value": 94
+          },
+          {
+            "label": "France",
+            "value": 93
+          },
+          {
+            "label": "Romania",
+            "value": 91
+          },
+          {
+            "label": "Austria",
+            "value": 79
+          },
+          {
+            "label": "Czechia",
+            "value": 71
+          },
+          {
+            "label": "Finland",
+            "value": 66
+          },
+          {
+            "label": "Italy",
+            "value": 64
+          },
+          {
+            "label": "Poland",
+            "value": 64
+          },
+          {
+            "label": "Belgium",
+            "value": 63
+          },
+          {
+            "label": "Luxembourg",
+            "value": 63
+          },
+          {
+            "label": "Netherlands",
+            "value": 52
+          }
+        ]
+      },
+      "method": "Grants of KA121/KA122-VET (and predecessor) projects by coordinator country and call year, divided by upper-secondary VET pupils (Eurostat, latest year).",
+      "caveats": [
+        "2021 was the first, partial year of the 2021–27 programme.",
+        "Coordinator country, not where learners travel to."
+      ],
+      "sources": [
+        {
+          "label": "EU grant for Erasmus+ VET mobility projects",
+          "url": "pages/indicators/erasmus-ka1-vet-grant.html"
+        },
+        {
+          "label": "Accredited VET organisations",
+          "url": "pages/explore.html?dataset=erasmus-vet-organisations"
+        }
+      ]
+    },
+    {
+      "id": "master-craft-levels",
+      "audience": [
+        "learners",
+        "employers",
+        "policy"
+      ],
+      "title": "The same master craftsperson certificate sits at different European levels",
+      "finding": "Master craftsperson qualifications are placed at EQF 6 in Austria, Germany; EQF 5 in Croatia, France, Luxembourg; EQF 4 in Montenegro, Slovenia.",
+      "detail": [
+        "The EQF level shown on a certificate and in Europass affects how it is recognised abroad and whether it opens doors to further study.",
+        "Initial apprenticeship qualifications cluster at EQF 3–4; see the qualification levels dataset for each country."
+      ],
+      "chart": {
+        "type": "level-strip",
+        "rows": [
+          {
+            "name": "Austria",
+            "label": "Master craftsperson (Meister)",
+            "eqf": 6
+          },
+          {
+            "name": "Germany",
+            "label": "Master craftsman (Meister)",
+            "eqf": 6
+          },
+          {
+            "name": "Croatia",
+            "label": "Master craftsman’s diploma (programi za majstore uz najmanje dvije godine vrednovanog radnog iskustva)",
+            "eqf": 5
+          },
+          {
+            "name": "France",
+            "label": "Master craftsman qualifications issued by the Chambers of Trades (Brevets de maîtrise - Chambre des métiers)",
+            "eqf": 5
+          },
+          {
+            "name": "Luxembourg",
+            "label": "Master craftsman diploma (Brevet de maîtrise)",
+            "eqf": 5
+          },
+          {
+            "name": "Montenegro",
+            "label": "Master craftsman examination certificate",
+            "eqf": 4
+          },
+          {
+            "name": "Slovenia",
+            "label": "Master craftsperson’s examination certificate (Spričevalo o opravljenem mojstrskem izpitu)",
+            "eqf": 4
+          }
+        ]
+      },
+      "method": "Cedefop NQF online tool (state of play 2024): qualification types named as master craftsperson qualifications.",
+      "caveats": [
+        "Programme content and entry requirements differ; the level reflects each country's framework design."
+      ],
+      "sources": [
+        {
+          "label": "Qualification levels",
+          "url": "pages/explore.html?dataset=nqf-qualification-levels&f.apprenticeship_or_craft=Yes"
+        }
+      ]
+    },
+    {
+      "id": "for-learners",
+      "audience": [
+        "learners"
+      ],
+      "title": "For learners: what to expect from an apprenticeship in Europe",
+      "finding": "In 28 of 34 schemes apprentices earn a wage; 24 lead to a qualification giving direct access to higher education; and in 8 many apprentices are over 24 — apprenticeship is not only for school-leavers.",
+      "detail": [
+        "Schemes where many apprentices are adults: Denmark (Apprenticeship (VET programmes)), Estonia (Workplace-based learning), Finland (Apprenticeship training), France (Professionalisation contract), Italy (Type 3: higher education apprenticeship), Luxembourg (Apprenticeship contract), Portugal (Apprenticeship programmes), Romania (Apprenticeship at the workplace).",
+        "Look up a country page for the scheme's duration, pay rules and the official fiche, and the Erasmus+ directory for organisations that send apprentices abroad."
+      ],
+      "chart": {
+        "type": "bars",
+        "unit": "schemes",
+        "rows": [
+          {
+            "label": "Paid a wage",
+            "value": 28
+          },
+          {
+            "label": "Direct access to higher education",
+            "value": 24
+          },
+          {
+            "label": "Many learners over 24",
+            "value": 8
+          }
+        ]
+      },
+      "method": "Cedefop coded answers (2026 fiches): Q33, Q11, Q4.",
+      "caveats": [
+        "Rules differ by occupation and region within a scheme; the official fiche and national authorities are authoritative."
+      ],
+      "sources": [
+        {
+          "label": "Compare all schemes",
+          "url": "pages/compare.html?q=q_typical_age"
+        },
+        {
+          "label": "Countries",
+          "url": "pages/countries/"
+        }
+      ]
+    },
+    {
+      "id": "jobs-outlook",
+      "audience": [
+        "learners",
+        "employers"
+      ],
+      "title": "Where employment is forecast to grow",
+      "finding": "Cedefop's short-term forecast for 2027 expects EU employment to grow fastest for professionals (+1.7%) and technicians and associate professionals (+0.5%), and to shrink for skilled agricultural and fishery workers (-1.6%) and craft and related trades workers (-0.8%).",
+      "detail": [
+        "Employment change is not the same as job openings: people retiring from shrinking occupations still need to be replaced, which this forecast does not show.",
+        "Many technician and associate-professional jobs are reachable through higher VET and apprenticeship at EQF 5–6."
+      ],
+      "chart": {
+        "type": "bars",
+        "unit": "% change",
+        "rows": [
+          {
+            "label": "2 Professionals",
+            "value": 1.67
+          },
+          {
+            "label": "3 Technicians and associate professionals",
+            "value": 0.54
+          },
+          {
+            "label": "1 Legislators, senior officials and managers",
+            "value": 0.23
+          },
+          {
+            "label": "5 Service workers and shop and market sales workers",
+            "value": 0.21
+          },
+          {
+            "label": "9 Elementary occupations",
+            "value": 0.02
+          },
+          {
+            "label": "4 Clerks",
+            "value": -0.14
+          },
+          {
+            "label": "8 Plant and machine operators and assemblers",
+            "value": -0.23
+          },
+          {
+            "label": "7 Craft and related trades workers",
+            "value": -0.77
+          },
+          {
+            "label": "6 Skilled agricultural and fishery workers",
+            "value": -1.62
+          }
+        ]
+      },
+      "method": "Cedefop STAS (short-term anticipation of skills trends), EU-27 employment growth by ISCO major group, 2027.",
+      "caveats": [
+        "Forecasts, flagged 'f'; revised twice a year."
+      ],
+      "sources": [
+        {
+          "label": "Projected annual employment growth by occupation (STAS short-term projections)",
+          "url": "pages/indicators/cedefop-stas-employment-growth.html"
+        }
+      ]
+    },
+    {
+      "id": "data-gaps",
+      "audience": [
+        "policy"
+      ],
+      "title": "What Europe still can't measure about apprenticeships",
+      "finding": "There is no EU statistic counting apprentices. The closest proxy — pupils in combined school- and work-based VET — is reported as 'not applicable' for 8 member states (Cyprus, Czechia, Greece, Croatia, Italy, Lithuania, Portugal, Slovenia), and open, machine-readable national apprentice statistics exist for only 7 countries (Switzerland, Finland, France, Ireland, Netherlands, Norway, United Kingdom).",
+      "detail": [
+        "Completion rates, apprentice pay levels and employer participation are not published comparably anywhere.",
+        "A common EU definition and an annual count of apprenticeship contracts would let countries benchmark what matters most."
+      ],
+      "chart": null,
+      "method": "Eurostat flags ('m' = data cannot exist); Apprentix source catalogue.",
+      "caveats": [],
+      "sources": [
+        {
+          "label": "Data & sources",
+          "url": "pages/data.html"
+        },
+        {
+          "label": "Pupils in combined school- and work-based upper-secondary VET",
+          "url": "pages/indicators/eurostat-educ_uoe_enrs04-ed3sw.html"
+        }
+      ]
+    }
+  ],
+  "failed": []
+}

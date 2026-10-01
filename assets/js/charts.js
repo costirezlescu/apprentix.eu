@@ -171,7 +171,9 @@ export function tileMap(host, opts) {
 export function barChart(host, rows, opts) {
   host.replaceChildren();
   const width = Math.max(300, host.clientWidth || 600);
-  const rowH = 26, top = 8, labelW = Math.min(150, width * 0.32), valueW = 64, right = 12;
+  const longest = Math.max(0, ...rows.map(r => String(r.name).length));
+  const rowH = 26, top = 8, valueW = 64, right = 12;
+  const labelW = opts.fitLabels ? Math.min(width * 0.48, Math.max(90, longest * 6.6 + 14)) : Math.min(150, width * 0.32);
   const H = top + rows.length * rowH + 28;
   const svg = svgEl('svg', { viewBox: `0 0 ${width} ${H}`, width, height: H, class: 'viz bars', role: 'img',
     'aria-label': opts.label || 'Bar chart by country' }, host);
@@ -353,4 +355,75 @@ export function lineLegend(host, series, onRemove) {
     }
     host.appendChild(item);
   }
+}
+
+/* ---------- scatter (one series, labelled points, optional target lines) ---------- */
+
+/**
+ * points: [{geo, name, x, y}]; opts: { fmtX, fmtY, xLabel, yLabel, targets: {x, y} }
+ */
+export function scatterChart(host, points, opts) {
+  host.replaceChildren();
+  const width = Math.max(300, host.clientWidth || 600);
+  const H = Math.min(420, Math.max(300, width * 0.62));
+  const m = { t: 30, r: 18, b: 44, l: 52 };
+  const svg = svgEl('svg', { viewBox: `0 0 ${width} ${H}`, width, height: H, class: 'viz scatter', role: 'img',
+    'aria-label': opts.label || 'Scatter chart' }, host);
+  const xs = points.map(p => p.x), ys = points.map(p => p.y);
+  if (opts.targets?.x != null) xs.push(opts.targets.x);
+  if (opts.targets?.y != null) ys.push(opts.targets.y);
+  const tx = niceTicks(Math.min(...xs), Math.max(...xs), 5), ty = niceTicks(Math.min(...ys), Math.max(...ys), 5);
+  const sx = v => m.l + (v - tx[0]) / (tx[tx.length - 1] - tx[0]) * (width - m.l - m.r);
+  const sy = v => m.t + (1 - (v - ty[0]) / (ty[ty.length - 1] - ty[0])) * (H - m.t - m.b);
+  for (const t of ty) {
+    svgEl('line', { x1: m.l, x2: width - m.r, y1: sy(t), y2: sy(t), class: 'grid' }, svg);
+    text(svg, m.l - 8, sy(t) + 4, opts.fmtY.tick(t), { 'text-anchor': 'end', class: 'tick' });
+  }
+  for (const t of tx) {
+    svgEl('line', { x1: sx(t), x2: sx(t), y1: m.t, y2: H - m.b, class: 'grid' }, svg);
+    text(svg, sx(t), H - m.b + 16, opts.fmtX.tick(t), { 'text-anchor': 'middle', class: 'tick' });
+  }
+  text(svg, (m.l + width - m.r) / 2, H - 6, opts.xLabel || '', { 'text-anchor': 'middle', class: 'tick axis-title' });
+  text(svg, m.l - 40, 12, opts.yLabel || '', { class: 'tick axis-title' });
+  if (opts.targets?.x != null) svgEl('line', { x1: sx(opts.targets.x), x2: sx(opts.targets.x), y1: m.t, y2: H - m.b, class: 'target' }, svg);
+  if (opts.targets?.y != null) svgEl('line', { x1: m.l, x2: width - m.r, y1: sy(opts.targets.y), y2: sy(opts.targets.y), class: 'target' }, svg);
+  for (const p of points) {
+    const g = svgEl('g', { class: 'pt', tabindex: 0, 'aria-label': `${p.name}: ${opts.fmtX(p.x)}, ${opts.fmtY(p.y)}` }, svg);
+    svgEl('circle', { cx: sx(p.x), cy: sy(p.y), r: 12, class: 'hit' }, g);
+    svgEl('circle', { cx: sx(p.x), cy: sy(p.y), r: 4.5, class: 'dot', style: 'fill:var(--bar)' }, g);
+    text(g, sx(p.x) + 7, sy(p.y) - 6, p.geo, { class: 'pt-label' });
+    const over = e => showTip(e, p.name, [{ value: opts.fmtX(p.x), label: opts.xShort || 'x' }, { value: opts.fmtY(p.y), label: opts.yShort || 'y' }]);
+    g.addEventListener('pointermove', over); g.addEventListener('focus', over);
+    g.addEventListener('pointerleave', hideTip); g.addEventListener('blur', hideTip);
+  }
+}
+
+/* ---------- paired horizontal bars (two groups, legend) ---------- */
+
+export function pairedBars(host, rows, opts) {
+  host.replaceChildren();
+  const width = Math.max(300, host.clientWidth || 600);
+  const rowH = 40, top = 6, labelW = Math.min(230, width * 0.42), right = 48;
+  const H = top + rows.length * rowH + 24;
+  const svg = svgEl('svg', { viewBox: `0 0 ${width} ${H}`, width, height: H, class: 'viz bars', role: 'img',
+    'aria-label': opts.label || 'Paired bar chart' }, host);
+  const x0 = labelW, x1 = width - right;
+  const sx = v => x0 + v / 100 * (x1 - x0);
+  for (const t of [0, 25, 50, 75, 100]) {
+    svgEl('line', { x1: sx(t), x2: sx(t), y1: top, y2: top + rows.length * rowH, class: 'grid' }, svg);
+    text(svg, sx(t), top + rows.length * rowH + 16, t + '%', { 'text-anchor': 'middle', class: 'tick' });
+  }
+  rows.forEach((r, i) => {
+    const y = top + i * rowH;
+    text(svg, x0 - 8, y + rowH / 2 + 4, r.label, { 'text-anchor': 'end', class: 'cat' });
+    [['a', '--series-1'], ['b', '--series-2']].forEach(([k, c], j) => {
+      const v = r[k], by = y + 6 + j * 14, w = Math.max(1, sx(v) - sx(0));
+      const g = svgEl('g', { tabindex: 0, 'aria-label': `${r.label}, ${opts.groups[j]}: ${v}%` }, svg);
+      svgEl('rect', { x: sx(0), y: by, width: w, height: 11, rx: 3, style: `fill:var(${c})` }, g);
+      text(g, sx(v) + 5, by + 9, v + '%', { class: 'val' });
+      const over = e => showTip(e, r.label, [{ value: v + '%', label: opts.groups[j], key: c }]);
+      g.addEventListener('pointermove', over); g.addEventListener('focus', over);
+      g.addEventListener('pointerleave', hideTip); g.addEventListener('blur', hideTip);
+    });
+  });
 }
