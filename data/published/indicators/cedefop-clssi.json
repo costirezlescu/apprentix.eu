@@ -1,0 +1,9545 @@
+{
+  "id": "cedefop-clssi",
+  "title": "Cedefop labour and skills shortage index (CLSSI) by occupation",
+  "description": "Cedefop's labour and skills shortage index for 38 occupation groups (ISCO-08 2-digit), by country. The index is the average of three component shortage indicators (LSI1, LSI2, LSI3 in the source), each scored from 1 to 4; higher values signal stronger labour and skills shortages in that occupation. Time is the release year of the dataset file (2026).",
+  "unit": "index (1–4)",
+  "topic": "Skills intelligence",
+  "source_label": "Cedefop labour and skills shortage index (CLSSI), 2026 dataset",
+  "comparability": "Scores are on an ordinal 1–4 scale; see the Cedefop dataset page for how the three component indicators are defined and banded. The workbook does not state the reference period of the underlying data (the dataset page dates from November 2024, the file from 2026). Where one component indicator is missing the index is the mean of the two available (flag 'm'). ISCO-08 codes were added by apprentix.eu from the occupation titles; occupation groups 63 and 95 are not covered. Cedefop's broad groups: High-skilled non-manual occupations: ISCO 11, 12, 13, 14, 21, 22, 23, 24, 25, 26, 31, 32, 33, 34, 35; Skilled non-manual occupations: ISCO 41, 42, 43, 44, 51, 52, 53, 54; Skilled manual occupations: ISCO 61, 62, 71, 72, 73, 74, 75, 81, 82, 83; Elementary Occupations: ISCO 91, 92, 93, 94, 96.",
+  "dims": [
+    {
+      "key": "occupation",
+      "label": "Occupation (ISCO-08 2-digit)",
+      "values": {
+        "11": "11 Chief executives, senior officials and legislators",
+        "12": "12 Administrative and commercial managers",
+        "13": "13 Production and specialised services managers",
+        "14": "14 Hospitality, retail and other services managers",
+        "21": "21 Science and engineering professionals",
+        "22": "22 Health professionals",
+        "23": "23 Teaching professionals",
+        "24": "24 Business and administration professionals",
+        "25": "25 Information and communications technology professionals",
+        "26": "26 Legal, social and cultural professionals",
+        "31": "31 Science and engineering associate professionals",
+        "32": "32 Health associate professionals",
+        "33": "33 Business and administration associate professionals",
+        "34": "34 Legal, social, cultural and related associate professionals",
+        "35": "35 Information and communications technicians",
+        "41": "41 General and keyboard clerks",
+        "42": "42 Customer services clerks",
+        "43": "43 Numerical and material recording clerks",
+        "44": "44 Other clerical support workers",
+        "51": "51 Personal service workers",
+        "52": "52 Sales workers",
+        "53": "53 Personal care workers",
+        "54": "54 Protective services workers",
+        "61": "61 Market-oriented skilled agricultural workers",
+        "62": "62 Market-oriented skilled forestry, fishery and hunting workers",
+        "71": "71 Building and related trades workers, excluding electricians",
+        "72": "72 Metal, machinery and related trades workers",
+        "73": "73 Handicraft and printing workers",
+        "74": "74 Electrical and electronic trades workers",
+        "75": "75 Food processing, wood working, garment and other craft and related trades",
+        "81": "81 Stationary plant and machine operators",
+        "82": "82 Assemblers",
+        "83": "83 Drivers and mobile plant operators",
+        "91": "91 Cleaners and helpers",
+        "92": "92 Agricultural, forestry and fishery labourers",
+        "93": "93 Labourers in mining, construction, manufacturing and transport",
+        "94": "94 Food preparation assistants",
+        "96": "96 Refuse workers and other elementary workers"
+      },
+      "default": "71"
+    }
+  ],
+  "flags": {
+    "m": "one of the three component indicators is missing; index averages the other two"
+  },
+  "provenance": {
+    "publisher": "Cedefop",
+    "dataset_code": "CLSSI 2026",
+    "source_url": "https://www.cedefop.europa.eu/en/datasets/labour-skills-shortage-index",
+    "api_url": "https://www.cedefop.europa.eu/files/2026_cedefop_labour_skills_shortage_index_clssi_dataset.xlsx",
+    "licence": "CC-BY-4.0",
+    "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+    "citation": "Cedefop (2026). Cedefop labour and skills shortage index (CLSSI) [Data set]. https://www.cedefop.europa.eu/en/datasets/labour-skills-shortage-index. Licence CC BY 4.0 as stated on the Cedefop dataset landing page (the workbook carries no licence statement).",
+    "source_updated": "2026 dataset",
+    "retrieved_at": "2026-10-01T10:59:20+00:00",
+    "raw_file": "data/raw/cedefop/2026-10-01-clssi.xlsx",
+    "raw_sha256": "79e066fa33631c4e5f641374280729204b1297ec575ff2f609d2f224ebf988a5"
+  },
+  "series": [
+    {
+      "geo": "AT",
+      "time": "2026",
+      "value": 4.0,
+      "dims": {
+        "occupation": "11"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2026",
+      "value": 4.0,
+      "dims": {
+        "occupation": "11"
+      }
+    },
+    {
+      "geo": "BG",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "11"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "11"
+      }
+    },
+    {
+      "geo": "CY",
+      "time": "2026",
+      "value": 3.3333,
+      "dims": {
+        "occupation": "11"
+      }
+    },
+    {
+      "geo": "CZ",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "11"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2026",
+      "value": 3.3333,
+      "dims": {
+        "occupation": "11"
+      }
+    },
+    {
+      "geo": "DK",
+      "time": "2026",
+      "value": 3.3333,
+      "dims": {
+        "occupation": "11"
+      }
+    },
+    {
+      "geo": "EE",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "11"
+      }
+    },
+    {
+      "geo": "EL",
+      "time": "2026",
+      "value": 4.0,
+      "dims": {
+        "occupation": "11"
+      }
+    },
+    {
+      "geo": "ES",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "11"
+      }
+    },
+    {
+      "geo": "EU27",
+      "time": "2026",
+      "value": 3.6667,
+      "dims": {
+        "occupation": "11"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "11"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "11"
+      }
+    },
+    {
+      "geo": "HR",
+      "time": "2026",
+      "value": 3.6667,
+      "dims": {
+        "occupation": "11"
+      }
+    },
+    {
+      "geo": "HU",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "11"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2026",
+      "value": 4.0,
+      "dims": {
+        "occupation": "11"
+      }
+    },
+    {
+      "geo": "IS",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "11"
+      }
+    },
+    {
+      "geo": "IT",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "11"
+      }
+    },
+    {
+      "geo": "LT",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "11"
+      }
+    },
+    {
+      "geo": "LU",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "11"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "11"
+      }
+    },
+    {
+      "geo": "MT",
+      "time": "2026",
+      "value": 3.3333,
+      "dims": {
+        "occupation": "11"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2026",
+      "value": 1.3333,
+      "dims": {
+        "occupation": "11"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "11"
+      }
+    },
+    {
+      "geo": "PL",
+      "time": "2026",
+      "value": 4.0,
+      "dims": {
+        "occupation": "11"
+      }
+    },
+    {
+      "geo": "PT",
+      "time": "2026",
+      "value": 4.0,
+      "dims": {
+        "occupation": "11"
+      }
+    },
+    {
+      "geo": "RO",
+      "time": "2026",
+      "value": 4.0,
+      "dims": {
+        "occupation": "11"
+      }
+    },
+    {
+      "geo": "SE",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "11"
+      }
+    },
+    {
+      "geo": "SI",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "11"
+      }
+    },
+    {
+      "geo": "SK",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "11"
+      }
+    },
+    {
+      "geo": "AT",
+      "time": "2026",
+      "value": 3.3333,
+      "dims": {
+        "occupation": "12"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "12"
+      }
+    },
+    {
+      "geo": "BG",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "12"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "12"
+      }
+    },
+    {
+      "geo": "CY",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "12"
+      }
+    },
+    {
+      "geo": "CZ",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "12"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "12"
+      }
+    },
+    {
+      "geo": "DK",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "12"
+      }
+    },
+    {
+      "geo": "EE",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "12"
+      }
+    },
+    {
+      "geo": "EL",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "12"
+      }
+    },
+    {
+      "geo": "ES",
+      "time": "2026",
+      "value": 3.3333,
+      "dims": {
+        "occupation": "12"
+      }
+    },
+    {
+      "geo": "EU27",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "12"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "12"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "12"
+      }
+    },
+    {
+      "geo": "HR",
+      "time": "2026",
+      "value": 3.6667,
+      "dims": {
+        "occupation": "12"
+      }
+    },
+    {
+      "geo": "HU",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "12"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "12"
+      }
+    },
+    {
+      "geo": "IS",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "12"
+      }
+    },
+    {
+      "geo": "IT",
+      "time": "2026",
+      "value": 3.3333,
+      "dims": {
+        "occupation": "12"
+      }
+    },
+    {
+      "geo": "LT",
+      "time": "2026",
+      "value": 3.6667,
+      "dims": {
+        "occupation": "12"
+      }
+    },
+    {
+      "geo": "LU",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "12"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "12"
+      }
+    },
+    {
+      "geo": "MT",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "12"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "12"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "12"
+      }
+    },
+    {
+      "geo": "PL",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "12"
+      }
+    },
+    {
+      "geo": "PT",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "12"
+      }
+    },
+    {
+      "geo": "RO",
+      "time": "2026",
+      "value": 3.3333,
+      "dims": {
+        "occupation": "12"
+      }
+    },
+    {
+      "geo": "SE",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "12"
+      }
+    },
+    {
+      "geo": "SI",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "12"
+      }
+    },
+    {
+      "geo": "SK",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "12"
+      }
+    },
+    {
+      "geo": "AT",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "13"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "13"
+      }
+    },
+    {
+      "geo": "BG",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "13"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "13"
+      }
+    },
+    {
+      "geo": "CY",
+      "time": "2026",
+      "value": 3.3333,
+      "dims": {
+        "occupation": "13"
+      }
+    },
+    {
+      "geo": "CZ",
+      "time": "2026",
+      "value": 1.3333,
+      "dims": {
+        "occupation": "13"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "13"
+      }
+    },
+    {
+      "geo": "DK",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "13"
+      }
+    },
+    {
+      "geo": "EE",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "13"
+      }
+    },
+    {
+      "geo": "EL",
+      "time": "2026",
+      "value": 3.3333,
+      "dims": {
+        "occupation": "13"
+      }
+    },
+    {
+      "geo": "ES",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "13"
+      }
+    },
+    {
+      "geo": "EU27",
+      "time": "2026",
+      "value": 3.3333,
+      "dims": {
+        "occupation": "13"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "13"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2026",
+      "value": 3.3333,
+      "dims": {
+        "occupation": "13"
+      }
+    },
+    {
+      "geo": "HR",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "13"
+      }
+    },
+    {
+      "geo": "HU",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "13"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "13"
+      }
+    },
+    {
+      "geo": "IS",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "13"
+      }
+    },
+    {
+      "geo": "IT",
+      "time": "2026",
+      "value": 3.3333,
+      "dims": {
+        "occupation": "13"
+      }
+    },
+    {
+      "geo": "LT",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "13"
+      }
+    },
+    {
+      "geo": "LU",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "13"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "13"
+      }
+    },
+    {
+      "geo": "MT",
+      "time": "2026",
+      "value": 3.3333,
+      "dims": {
+        "occupation": "13"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "13"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "13"
+      }
+    },
+    {
+      "geo": "PL",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "13"
+      }
+    },
+    {
+      "geo": "PT",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "13"
+      }
+    },
+    {
+      "geo": "RO",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "13"
+      }
+    },
+    {
+      "geo": "SE",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "13"
+      }
+    },
+    {
+      "geo": "SI",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "13"
+      }
+    },
+    {
+      "geo": "SK",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "13"
+      }
+    },
+    {
+      "geo": "AT",
+      "time": "2026",
+      "value": 1.6667,
+      "dims": {
+        "occupation": "14"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "14"
+      }
+    },
+    {
+      "geo": "BG",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "14"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2026",
+      "value": 3.3333,
+      "dims": {
+        "occupation": "14"
+      }
+    },
+    {
+      "geo": "CY",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "14"
+      }
+    },
+    {
+      "geo": "CZ",
+      "time": "2026",
+      "value": 1.3333,
+      "dims": {
+        "occupation": "14"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2026",
+      "value": 1.6667,
+      "dims": {
+        "occupation": "14"
+      }
+    },
+    {
+      "geo": "DK",
+      "time": "2026",
+      "value": 1.6667,
+      "dims": {
+        "occupation": "14"
+      }
+    },
+    {
+      "geo": "EE",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "14"
+      }
+    },
+    {
+      "geo": "EL",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "14"
+      }
+    },
+    {
+      "geo": "ES",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "14"
+      }
+    },
+    {
+      "geo": "EU27",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "14"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "14"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "14"
+      }
+    },
+    {
+      "geo": "HR",
+      "time": "2026",
+      "value": 3.3333,
+      "dims": {
+        "occupation": "14"
+      }
+    },
+    {
+      "geo": "HU",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "14"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "14"
+      }
+    },
+    {
+      "geo": "IS",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "14"
+      }
+    },
+    {
+      "geo": "IT",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "14"
+      }
+    },
+    {
+      "geo": "LT",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "14"
+      }
+    },
+    {
+      "geo": "LU",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "14"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "14"
+      }
+    },
+    {
+      "geo": "MT",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "14"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "14"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2026",
+      "value": 3.3333,
+      "dims": {
+        "occupation": "14"
+      }
+    },
+    {
+      "geo": "PL",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "14"
+      }
+    },
+    {
+      "geo": "PT",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "14"
+      }
+    },
+    {
+      "geo": "RO",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "14"
+      }
+    },
+    {
+      "geo": "SE",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "14"
+      }
+    },
+    {
+      "geo": "SI",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "14"
+      }
+    },
+    {
+      "geo": "SK",
+      "time": "2026",
+      "value": 1.3333,
+      "dims": {
+        "occupation": "14"
+      }
+    },
+    {
+      "geo": "AT",
+      "time": "2026",
+      "value": 3.6667,
+      "dims": {
+        "occupation": "21"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2026",
+      "value": 3.6667,
+      "dims": {
+        "occupation": "21"
+      }
+    },
+    {
+      "geo": "BG",
+      "time": "2026",
+      "value": 3.3333,
+      "dims": {
+        "occupation": "21"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2026",
+      "value": 3.3333,
+      "dims": {
+        "occupation": "21"
+      }
+    },
+    {
+      "geo": "CY",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "21"
+      }
+    },
+    {
+      "geo": "CZ",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "21"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "21"
+      }
+    },
+    {
+      "geo": "DK",
+      "time": "2026",
+      "value": 3.3333,
+      "dims": {
+        "occupation": "21"
+      }
+    },
+    {
+      "geo": "EE",
+      "time": "2026",
+      "value": 3.3333,
+      "dims": {
+        "occupation": "21"
+      }
+    },
+    {
+      "geo": "EL",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "21"
+      }
+    },
+    {
+      "geo": "ES",
+      "time": "2026",
+      "value": 3.6667,
+      "dims": {
+        "occupation": "21"
+      }
+    },
+    {
+      "geo": "EU27",
+      "time": "2026",
+      "value": 3.6667,
+      "dims": {
+        "occupation": "21"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2026",
+      "value": 3.6667,
+      "dims": {
+        "occupation": "21"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "21"
+      }
+    },
+    {
+      "geo": "HR",
+      "time": "2026",
+      "value": 3.6667,
+      "dims": {
+        "occupation": "21"
+      }
+    },
+    {
+      "geo": "HU",
+      "time": "2026",
+      "value": 3.6667,
+      "dims": {
+        "occupation": "21"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2026",
+      "value": 3.3333,
+      "dims": {
+        "occupation": "21"
+      }
+    },
+    {
+      "geo": "IS",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "21"
+      }
+    },
+    {
+      "geo": "IT",
+      "time": "2026",
+      "value": 3.6667,
+      "dims": {
+        "occupation": "21"
+      }
+    },
+    {
+      "geo": "LT",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "21"
+      }
+    },
+    {
+      "geo": "LU",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "21"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2026",
+      "value": 3.6667,
+      "dims": {
+        "occupation": "21"
+      }
+    },
+    {
+      "geo": "MT",
+      "time": "2026",
+      "value": 4.0,
+      "dims": {
+        "occupation": "21"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "21"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2026",
+      "value": 3.6667,
+      "dims": {
+        "occupation": "21"
+      }
+    },
+    {
+      "geo": "PL",
+      "time": "2026",
+      "value": 3.6667,
+      "dims": {
+        "occupation": "21"
+      }
+    },
+    {
+      "geo": "PT",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "21"
+      }
+    },
+    {
+      "geo": "RO",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "21"
+      }
+    },
+    {
+      "geo": "SE",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "21"
+      }
+    },
+    {
+      "geo": "SI",
+      "time": "2026",
+      "value": 4.0,
+      "dims": {
+        "occupation": "21"
+      }
+    },
+    {
+      "geo": "SK",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "21"
+      }
+    },
+    {
+      "geo": "AT",
+      "time": "2026",
+      "value": 3.3333,
+      "dims": {
+        "occupation": "22"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2026",
+      "value": 4.0,
+      "dims": {
+        "occupation": "22"
+      }
+    },
+    {
+      "geo": "BG",
+      "time": "2026",
+      "value": 3.6667,
+      "dims": {
+        "occupation": "22"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "22"
+      }
+    },
+    {
+      "geo": "CY",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "22"
+      }
+    },
+    {
+      "geo": "CZ",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "22"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "22"
+      }
+    },
+    {
+      "geo": "DK",
+      "time": "2026",
+      "value": 3.6667,
+      "dims": {
+        "occupation": "22"
+      }
+    },
+    {
+      "geo": "EE",
+      "time": "2026",
+      "value": 3.6667,
+      "dims": {
+        "occupation": "22"
+      }
+    },
+    {
+      "geo": "EL",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "22"
+      }
+    },
+    {
+      "geo": "ES",
+      "time": "2026",
+      "value": 3.3333,
+      "dims": {
+        "occupation": "22"
+      }
+    },
+    {
+      "geo": "EU27",
+      "time": "2026",
+      "value": 3.6667,
+      "dims": {
+        "occupation": "22"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "22"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2026",
+      "value": 3.3333,
+      "dims": {
+        "occupation": "22"
+      }
+    },
+    {
+      "geo": "HR",
+      "time": "2026",
+      "value": 3.3333,
+      "dims": {
+        "occupation": "22"
+      }
+    },
+    {
+      "geo": "HU",
+      "time": "2026",
+      "value": 3.6667,
+      "dims": {
+        "occupation": "22"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "22"
+      }
+    },
+    {
+      "geo": "IS",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "22"
+      }
+    },
+    {
+      "geo": "IT",
+      "time": "2026",
+      "value": 3.3333,
+      "dims": {
+        "occupation": "22"
+      }
+    },
+    {
+      "geo": "LT",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "22"
+      }
+    },
+    {
+      "geo": "LU",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "22"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2026",
+      "value": 3.3333,
+      "dims": {
+        "occupation": "22"
+      }
+    },
+    {
+      "geo": "MT",
+      "time": "2026",
+      "value": 4.0,
+      "dims": {
+        "occupation": "22"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "22"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2026",
+      "value": 4.0,
+      "dims": {
+        "occupation": "22"
+      }
+    },
+    {
+      "geo": "PL",
+      "time": "2026",
+      "value": 4.0,
+      "dims": {
+        "occupation": "22"
+      }
+    },
+    {
+      "geo": "PT",
+      "time": "2026",
+      "value": 3.3333,
+      "dims": {
+        "occupation": "22"
+      }
+    },
+    {
+      "geo": "RO",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "22"
+      }
+    },
+    {
+      "geo": "SE",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "22"
+      }
+    },
+    {
+      "geo": "SI",
+      "time": "2026",
+      "value": 4.0,
+      "dims": {
+        "occupation": "22"
+      }
+    },
+    {
+      "geo": "SK",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "22"
+      }
+    },
+    {
+      "geo": "AT",
+      "time": "2026",
+      "value": 3.3333,
+      "dims": {
+        "occupation": "23"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "23"
+      }
+    },
+    {
+      "geo": "BG",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "23"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2026",
+      "value": 1.3333,
+      "dims": {
+        "occupation": "23"
+      }
+    },
+    {
+      "geo": "CY",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "23"
+      }
+    },
+    {
+      "geo": "CZ",
+      "time": "2026",
+      "value": 1.6667,
+      "dims": {
+        "occupation": "23"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "23"
+      }
+    },
+    {
+      "geo": "DK",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "23"
+      }
+    },
+    {
+      "geo": "EE",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "23"
+      }
+    },
+    {
+      "geo": "EL",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "23"
+      }
+    },
+    {
+      "geo": "ES",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "23"
+      }
+    },
+    {
+      "geo": "EU27",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "23"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "23"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "23"
+      }
+    },
+    {
+      "geo": "HR",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "23"
+      }
+    },
+    {
+      "geo": "HU",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "23"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "23"
+      }
+    },
+    {
+      "geo": "IS",
+      "time": "2026",
+      "value": 1.0,
+      "dims": {
+        "occupation": "23"
+      }
+    },
+    {
+      "geo": "IT",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "23"
+      }
+    },
+    {
+      "geo": "LT",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "23"
+      }
+    },
+    {
+      "geo": "LU",
+      "time": "2026",
+      "value": 1.6667,
+      "dims": {
+        "occupation": "23"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "23"
+      }
+    },
+    {
+      "geo": "MT",
+      "time": "2026",
+      "value": 3.6667,
+      "dims": {
+        "occupation": "23"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2026",
+      "value": 1.3333,
+      "dims": {
+        "occupation": "23"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "23"
+      }
+    },
+    {
+      "geo": "PL",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "23"
+      }
+    },
+    {
+      "geo": "PT",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "23"
+      }
+    },
+    {
+      "geo": "RO",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "23"
+      }
+    },
+    {
+      "geo": "SE",
+      "time": "2026",
+      "value": 1.3333,
+      "dims": {
+        "occupation": "23"
+      }
+    },
+    {
+      "geo": "SI",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "23"
+      }
+    },
+    {
+      "geo": "SK",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "23"
+      }
+    },
+    {
+      "geo": "AT",
+      "time": "2026",
+      "value": 3.6667,
+      "dims": {
+        "occupation": "24"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2026",
+      "value": 3.3333,
+      "dims": {
+        "occupation": "24"
+      }
+    },
+    {
+      "geo": "BG",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "24"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "24"
+      }
+    },
+    {
+      "geo": "CY",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "24"
+      }
+    },
+    {
+      "geo": "CZ",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "24"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2026",
+      "value": 3.6667,
+      "dims": {
+        "occupation": "24"
+      }
+    },
+    {
+      "geo": "DK",
+      "time": "2026",
+      "value": 3.3333,
+      "dims": {
+        "occupation": "24"
+      }
+    },
+    {
+      "geo": "EE",
+      "time": "2026",
+      "value": 3.3333,
+      "dims": {
+        "occupation": "24"
+      }
+    },
+    {
+      "geo": "EL",
+      "time": "2026",
+      "value": 3.6667,
+      "dims": {
+        "occupation": "24"
+      }
+    },
+    {
+      "geo": "ES",
+      "time": "2026",
+      "value": 3.6667,
+      "dims": {
+        "occupation": "24"
+      }
+    },
+    {
+      "geo": "EU27",
+      "time": "2026",
+      "value": 3.3333,
+      "dims": {
+        "occupation": "24"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2026",
+      "value": 3.3333,
+      "dims": {
+        "occupation": "24"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2026",
+      "value": 3.6667,
+      "dims": {
+        "occupation": "24"
+      }
+    },
+    {
+      "geo": "HR",
+      "time": "2026",
+      "value": 3.6667,
+      "dims": {
+        "occupation": "24"
+      }
+    },
+    {
+      "geo": "HU",
+      "time": "2026",
+      "value": 4.0,
+      "dims": {
+        "occupation": "24"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2026",
+      "value": 3.3333,
+      "dims": {
+        "occupation": "24"
+      }
+    },
+    {
+      "geo": "IS",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "24"
+      }
+    },
+    {
+      "geo": "IT",
+      "time": "2026",
+      "value": 3.6667,
+      "dims": {
+        "occupation": "24"
+      }
+    },
+    {
+      "geo": "LT",
+      "time": "2026",
+      "value": 3.6667,
+      "dims": {
+        "occupation": "24"
+      }
+    },
+    {
+      "geo": "LU",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "24"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2026",
+      "value": 3.3333,
+      "dims": {
+        "occupation": "24"
+      }
+    },
+    {
+      "geo": "MT",
+      "time": "2026",
+      "value": 4.0,
+      "dims": {
+        "occupation": "24"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "24"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "24"
+      }
+    },
+    {
+      "geo": "PL",
+      "time": "2026",
+      "value": 3.6667,
+      "dims": {
+        "occupation": "24"
+      }
+    },
+    {
+      "geo": "PT",
+      "time": "2026",
+      "value": 3.3333,
+      "dims": {
+        "occupation": "24"
+      }
+    },
+    {
+      "geo": "RO",
+      "time": "2026",
+      "value": 3.3333,
+      "dims": {
+        "occupation": "24"
+      }
+    },
+    {
+      "geo": "SE",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "24"
+      }
+    },
+    {
+      "geo": "SI",
+      "time": "2026",
+      "value": 3.3333,
+      "dims": {
+        "occupation": "24"
+      }
+    },
+    {
+      "geo": "SK",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "24"
+      }
+    },
+    {
+      "geo": "AT",
+      "time": "2026",
+      "value": 3.6667,
+      "dims": {
+        "occupation": "25"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2026",
+      "value": 3.3333,
+      "dims": {
+        "occupation": "25"
+      }
+    },
+    {
+      "geo": "BG",
+      "time": "2026",
+      "value": 3.6667,
+      "dims": {
+        "occupation": "25"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "25"
+      }
+    },
+    {
+      "geo": "CY",
+      "time": "2026",
+      "value": 3.3333,
+      "dims": {
+        "occupation": "25"
+      }
+    },
+    {
+      "geo": "CZ",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "25"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "25"
+      }
+    },
+    {
+      "geo": "DK",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "25"
+      }
+    },
+    {
+      "geo": "EE",
+      "time": "2026",
+      "value": 3.3333,
+      "dims": {
+        "occupation": "25"
+      }
+    },
+    {
+      "geo": "EL",
+      "time": "2026",
+      "value": 4.0,
+      "dims": {
+        "occupation": "25"
+      }
+    },
+    {
+      "geo": "ES",
+      "time": "2026",
+      "value": 3.3333,
+      "dims": {
+        "occupation": "25"
+      }
+    },
+    {
+      "geo": "EU27",
+      "time": "2026",
+      "value": 3.6667,
+      "dims": {
+        "occupation": "25"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2026",
+      "value": 3.3333,
+      "dims": {
+        "occupation": "25"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2026",
+      "value": 3.6667,
+      "dims": {
+        "occupation": "25"
+      }
+    },
+    {
+      "geo": "HR",
+      "time": "2026",
+      "value": 4.0,
+      "dims": {
+        "occupation": "25"
+      }
+    },
+    {
+      "geo": "HU",
+      "time": "2026",
+      "value": 3.6667,
+      "dims": {
+        "occupation": "25"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2026",
+      "value": 3.3333,
+      "dims": {
+        "occupation": "25"
+      }
+    },
+    {
+      "geo": "IS",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "25"
+      }
+    },
+    {
+      "geo": "IT",
+      "time": "2026",
+      "value": 3.3333,
+      "dims": {
+        "occupation": "25"
+      }
+    },
+    {
+      "geo": "LT",
+      "time": "2026",
+      "value": 3.3333,
+      "dims": {
+        "occupation": "25"
+      }
+    },
+    {
+      "geo": "LU",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "25"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "25"
+      }
+    },
+    {
+      "geo": "MT",
+      "time": "2026",
+      "value": 4.0,
+      "dims": {
+        "occupation": "25"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "25"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2026",
+      "value": 3.6667,
+      "dims": {
+        "occupation": "25"
+      }
+    },
+    {
+      "geo": "PL",
+      "time": "2026",
+      "value": 3.6667,
+      "dims": {
+        "occupation": "25"
+      }
+    },
+    {
+      "geo": "PT",
+      "time": "2026",
+      "value": 3.6667,
+      "dims": {
+        "occupation": "25"
+      }
+    },
+    {
+      "geo": "RO",
+      "time": "2026",
+      "value": 4.0,
+      "dims": {
+        "occupation": "25"
+      }
+    },
+    {
+      "geo": "SE",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "25"
+      }
+    },
+    {
+      "geo": "SI",
+      "time": "2026",
+      "value": 3.3333,
+      "dims": {
+        "occupation": "25"
+      }
+    },
+    {
+      "geo": "SK",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "25"
+      }
+    },
+    {
+      "geo": "AT",
+      "time": "2026",
+      "value": 3.3333,
+      "dims": {
+        "occupation": "26"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2026",
+      "value": 3.3333,
+      "dims": {
+        "occupation": "26"
+      }
+    },
+    {
+      "geo": "BG",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "26"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "26"
+      }
+    },
+    {
+      "geo": "CY",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "26"
+      }
+    },
+    {
+      "geo": "CZ",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "26"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "26"
+      }
+    },
+    {
+      "geo": "DK",
+      "time": "2026",
+      "value": 3.3333,
+      "dims": {
+        "occupation": "26"
+      }
+    },
+    {
+      "geo": "EE",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "26"
+      }
+    },
+    {
+      "geo": "EL",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "26"
+      }
+    },
+    {
+      "geo": "ES",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "26"
+      }
+    },
+    {
+      "geo": "EU27",
+      "time": "2026",
+      "value": 3.6667,
+      "dims": {
+        "occupation": "26"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "26"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2026",
+      "value": 3.3333,
+      "dims": {
+        "occupation": "26"
+      }
+    },
+    {
+      "geo": "HR",
+      "time": "2026",
+      "value": 3.6667,
+      "dims": {
+        "occupation": "26"
+      }
+    },
+    {
+      "geo": "HU",
+      "time": "2026",
+      "value": 3.6667,
+      "dims": {
+        "occupation": "26"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "26"
+      }
+    },
+    {
+      "geo": "IS",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "26"
+      }
+    },
+    {
+      "geo": "IT",
+      "time": "2026",
+      "value": 3.6667,
+      "dims": {
+        "occupation": "26"
+      }
+    },
+    {
+      "geo": "LT",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "26"
+      }
+    },
+    {
+      "geo": "LU",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "26"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "26"
+      }
+    },
+    {
+      "geo": "MT",
+      "time": "2026",
+      "value": 3.6667,
+      "dims": {
+        "occupation": "26"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "26"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "26"
+      }
+    },
+    {
+      "geo": "PL",
+      "time": "2026",
+      "value": 3.3333,
+      "dims": {
+        "occupation": "26"
+      }
+    },
+    {
+      "geo": "PT",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "26"
+      }
+    },
+    {
+      "geo": "RO",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "26"
+      }
+    },
+    {
+      "geo": "SE",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "26"
+      }
+    },
+    {
+      "geo": "SI",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "26"
+      }
+    },
+    {
+      "geo": "SK",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "26"
+      }
+    },
+    {
+      "geo": "AT",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "31"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "31"
+      }
+    },
+    {
+      "geo": "BG",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "31"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "31"
+      }
+    },
+    {
+      "geo": "CY",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "31"
+      }
+    },
+    {
+      "geo": "CZ",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "31"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "31"
+      }
+    },
+    {
+      "geo": "DK",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "31"
+      }
+    },
+    {
+      "geo": "EE",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "31"
+      }
+    },
+    {
+      "geo": "EL",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "31"
+      }
+    },
+    {
+      "geo": "ES",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "31"
+      }
+    },
+    {
+      "geo": "EU27",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "31"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "31"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2026",
+      "value": 3.3333,
+      "dims": {
+        "occupation": "31"
+      }
+    },
+    {
+      "geo": "HR",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "31"
+      }
+    },
+    {
+      "geo": "HU",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "31"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "31"
+      }
+    },
+    {
+      "geo": "IS",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "31"
+      }
+    },
+    {
+      "geo": "IT",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "31"
+      }
+    },
+    {
+      "geo": "LT",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "31"
+      }
+    },
+    {
+      "geo": "LU",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "31"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "31"
+      }
+    },
+    {
+      "geo": "MT",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "31"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "31"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2026",
+      "value": 3.3333,
+      "dims": {
+        "occupation": "31"
+      }
+    },
+    {
+      "geo": "PL",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "31"
+      }
+    },
+    {
+      "geo": "PT",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "31"
+      }
+    },
+    {
+      "geo": "RO",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "31"
+      }
+    },
+    {
+      "geo": "SE",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "31"
+      }
+    },
+    {
+      "geo": "SI",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "31"
+      }
+    },
+    {
+      "geo": "SK",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "31"
+      }
+    },
+    {
+      "geo": "AT",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "32"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "32"
+      }
+    },
+    {
+      "geo": "BG",
+      "time": "2026",
+      "value": 3.3333,
+      "dims": {
+        "occupation": "32"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "32"
+      }
+    },
+    {
+      "geo": "CY",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "32"
+      }
+    },
+    {
+      "geo": "CZ",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "32"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "32"
+      }
+    },
+    {
+      "geo": "DK",
+      "time": "2026",
+      "value": 3.6667,
+      "dims": {
+        "occupation": "32"
+      }
+    },
+    {
+      "geo": "EE",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "32"
+      }
+    },
+    {
+      "geo": "EL",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "32"
+      }
+    },
+    {
+      "geo": "ES",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "32"
+      }
+    },
+    {
+      "geo": "EU27",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "32"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "32"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "32"
+      }
+    },
+    {
+      "geo": "HR",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "32"
+      }
+    },
+    {
+      "geo": "HU",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "32"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2026",
+      "value": 3.6667,
+      "dims": {
+        "occupation": "32"
+      }
+    },
+    {
+      "geo": "IS",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "32"
+      }
+    },
+    {
+      "geo": "IT",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "32"
+      }
+    },
+    {
+      "geo": "LT",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "32"
+      }
+    },
+    {
+      "geo": "LU",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "32"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2026",
+      "value": 1.6667,
+      "dims": {
+        "occupation": "32"
+      }
+    },
+    {
+      "geo": "MT",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "32"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "32"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "32"
+      }
+    },
+    {
+      "geo": "PL",
+      "time": "2026",
+      "value": 3.3333,
+      "dims": {
+        "occupation": "32"
+      }
+    },
+    {
+      "geo": "PT",
+      "time": "2026",
+      "value": 3.3333,
+      "dims": {
+        "occupation": "32"
+      }
+    },
+    {
+      "geo": "RO",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "32"
+      }
+    },
+    {
+      "geo": "SE",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "32"
+      }
+    },
+    {
+      "geo": "SI",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "32"
+      }
+    },
+    {
+      "geo": "SK",
+      "time": "2026",
+      "value": 1.3333,
+      "dims": {
+        "occupation": "32"
+      }
+    },
+    {
+      "geo": "AT",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "33"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "33"
+      }
+    },
+    {
+      "geo": "BG",
+      "time": "2026",
+      "value": 3.3333,
+      "dims": {
+        "occupation": "33"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "33"
+      }
+    },
+    {
+      "geo": "CY",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "33"
+      }
+    },
+    {
+      "geo": "CZ",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "33"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "33"
+      }
+    },
+    {
+      "geo": "DK",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "33"
+      }
+    },
+    {
+      "geo": "EE",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "33"
+      }
+    },
+    {
+      "geo": "EL",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "33"
+      }
+    },
+    {
+      "geo": "ES",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "33"
+      }
+    },
+    {
+      "geo": "EU27",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "33"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "33"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "33"
+      }
+    },
+    {
+      "geo": "HR",
+      "time": "2026",
+      "value": 3.3333,
+      "dims": {
+        "occupation": "33"
+      }
+    },
+    {
+      "geo": "HU",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "33"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "33"
+      }
+    },
+    {
+      "geo": "IS",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "33"
+      }
+    },
+    {
+      "geo": "IT",
+      "time": "2026",
+      "value": 1.6667,
+      "dims": {
+        "occupation": "33"
+      }
+    },
+    {
+      "geo": "LT",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "33"
+      }
+    },
+    {
+      "geo": "LU",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "33"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "33"
+      }
+    },
+    {
+      "geo": "MT",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "33"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "33"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "33"
+      }
+    },
+    {
+      "geo": "PL",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "33"
+      }
+    },
+    {
+      "geo": "PT",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "33"
+      }
+    },
+    {
+      "geo": "RO",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "33"
+      }
+    },
+    {
+      "geo": "SE",
+      "time": "2026",
+      "value": 1.6667,
+      "dims": {
+        "occupation": "33"
+      }
+    },
+    {
+      "geo": "SI",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "33"
+      }
+    },
+    {
+      "geo": "SK",
+      "time": "2026",
+      "value": 1.6667,
+      "dims": {
+        "occupation": "33"
+      }
+    },
+    {
+      "geo": "AT",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "34"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "34"
+      }
+    },
+    {
+      "geo": "BG",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "34"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "34"
+      }
+    },
+    {
+      "geo": "CY",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "34"
+      }
+    },
+    {
+      "geo": "CZ",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "34"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2026",
+      "value": 3.6667,
+      "dims": {
+        "occupation": "34"
+      }
+    },
+    {
+      "geo": "DK",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "34"
+      }
+    },
+    {
+      "geo": "EE",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "34"
+      }
+    },
+    {
+      "geo": "EL",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "34"
+      }
+    },
+    {
+      "geo": "ES",
+      "time": "2026",
+      "value": 3.3333,
+      "dims": {
+        "occupation": "34"
+      }
+    },
+    {
+      "geo": "EU27",
+      "time": "2026",
+      "value": 3.3333,
+      "dims": {
+        "occupation": "34"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "34"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "34"
+      }
+    },
+    {
+      "geo": "HR",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "34"
+      }
+    },
+    {
+      "geo": "HU",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "34"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "34"
+      }
+    },
+    {
+      "geo": "IS",
+      "time": "2026",
+      "value": 3.3333,
+      "dims": {
+        "occupation": "34"
+      }
+    },
+    {
+      "geo": "IT",
+      "time": "2026",
+      "value": 3.6667,
+      "dims": {
+        "occupation": "34"
+      }
+    },
+    {
+      "geo": "LT",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "34"
+      }
+    },
+    {
+      "geo": "LU",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "34"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "34"
+      }
+    },
+    {
+      "geo": "MT",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "34"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2026",
+      "value": 3.3333,
+      "dims": {
+        "occupation": "34"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2026",
+      "value": 1.6667,
+      "dims": {
+        "occupation": "34"
+      }
+    },
+    {
+      "geo": "PL",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "34"
+      }
+    },
+    {
+      "geo": "PT",
+      "time": "2026",
+      "value": 3.3333,
+      "dims": {
+        "occupation": "34"
+      }
+    },
+    {
+      "geo": "RO",
+      "time": "2026",
+      "value": 3.6667,
+      "dims": {
+        "occupation": "34"
+      }
+    },
+    {
+      "geo": "SE",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "34"
+      }
+    },
+    {
+      "geo": "SI",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "34"
+      }
+    },
+    {
+      "geo": "SK",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "34"
+      }
+    },
+    {
+      "geo": "AT",
+      "time": "2026",
+      "value": 3.3333,
+      "dims": {
+        "occupation": "35"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "35"
+      }
+    },
+    {
+      "geo": "BG",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "35"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "35"
+      }
+    },
+    {
+      "geo": "CY",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "35"
+      }
+    },
+    {
+      "geo": "CZ",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "35"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "35"
+      }
+    },
+    {
+      "geo": "DK",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "35"
+      }
+    },
+    {
+      "geo": "EE",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "35"
+      }
+    },
+    {
+      "geo": "EL",
+      "time": "2026",
+      "value": 3.6667,
+      "dims": {
+        "occupation": "35"
+      }
+    },
+    {
+      "geo": "ES",
+      "time": "2026",
+      "value": 4.0,
+      "dims": {
+        "occupation": "35"
+      }
+    },
+    {
+      "geo": "EU27",
+      "time": "2026",
+      "value": 3.3333,
+      "dims": {
+        "occupation": "35"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "35"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "35"
+      }
+    },
+    {
+      "geo": "HR",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "35"
+      }
+    },
+    {
+      "geo": "HU",
+      "time": "2026",
+      "value": 3.3333,
+      "dims": {
+        "occupation": "35"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "35"
+      }
+    },
+    {
+      "geo": "IS",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "35"
+      }
+    },
+    {
+      "geo": "IT",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "35"
+      }
+    },
+    {
+      "geo": "LT",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "35"
+      }
+    },
+    {
+      "geo": "LU",
+      "time": "2026",
+      "value": 3.3333,
+      "dims": {
+        "occupation": "35"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2026",
+      "value": 3.3333,
+      "dims": {
+        "occupation": "35"
+      }
+    },
+    {
+      "geo": "MT",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "35"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2026",
+      "value": 3.3333,
+      "dims": {
+        "occupation": "35"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "35"
+      }
+    },
+    {
+      "geo": "PL",
+      "time": "2026",
+      "value": 3.3333,
+      "dims": {
+        "occupation": "35"
+      }
+    },
+    {
+      "geo": "PT",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "35"
+      }
+    },
+    {
+      "geo": "RO",
+      "time": "2026",
+      "value": 3.3333,
+      "dims": {
+        "occupation": "35"
+      }
+    },
+    {
+      "geo": "SE",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "35"
+      }
+    },
+    {
+      "geo": "SI",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "35"
+      }
+    },
+    {
+      "geo": "SK",
+      "time": "2026",
+      "value": 1.3333,
+      "dims": {
+        "occupation": "35"
+      }
+    },
+    {
+      "geo": "AT",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "41"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "41"
+      }
+    },
+    {
+      "geo": "BG",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "41"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "41"
+      }
+    },
+    {
+      "geo": "CY",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "41"
+      }
+    },
+    {
+      "geo": "CZ",
+      "time": "2026",
+      "value": 1.6667,
+      "dims": {
+        "occupation": "41"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2026",
+      "value": 1.6667,
+      "dims": {
+        "occupation": "41"
+      }
+    },
+    {
+      "geo": "DK",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "41"
+      }
+    },
+    {
+      "geo": "EE",
+      "time": "2026",
+      "value": 3.6667,
+      "dims": {
+        "occupation": "41"
+      }
+    },
+    {
+      "geo": "EL",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "41"
+      }
+    },
+    {
+      "geo": "ES",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "41"
+      }
+    },
+    {
+      "geo": "EU27",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "41"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "41"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "41"
+      }
+    },
+    {
+      "geo": "HR",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "41"
+      }
+    },
+    {
+      "geo": "HU",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "41"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2026",
+      "value": 1.3333,
+      "dims": {
+        "occupation": "41"
+      }
+    },
+    {
+      "geo": "IS",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "41"
+      }
+    },
+    {
+      "geo": "IT",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "41"
+      }
+    },
+    {
+      "geo": "LT",
+      "time": "2026",
+      "value": 4.0,
+      "dims": {
+        "occupation": "41"
+      }
+    },
+    {
+      "geo": "LU",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "41"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2026",
+      "value": 3.6667,
+      "dims": {
+        "occupation": "41"
+      }
+    },
+    {
+      "geo": "MT",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "41"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "41"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "41"
+      }
+    },
+    {
+      "geo": "PL",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "41"
+      }
+    },
+    {
+      "geo": "PT",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "41"
+      }
+    },
+    {
+      "geo": "RO",
+      "time": "2026",
+      "value": 3.3333,
+      "dims": {
+        "occupation": "41"
+      }
+    },
+    {
+      "geo": "SE",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "41"
+      }
+    },
+    {
+      "geo": "SI",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "41"
+      }
+    },
+    {
+      "geo": "SK",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "41"
+      }
+    },
+    {
+      "geo": "AT",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "42"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "42"
+      }
+    },
+    {
+      "geo": "BG",
+      "time": "2026",
+      "value": 3.6667,
+      "dims": {
+        "occupation": "42"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "42"
+      }
+    },
+    {
+      "geo": "CY",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "42"
+      }
+    },
+    {
+      "geo": "CZ",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "42"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2026",
+      "value": 3.3333,
+      "dims": {
+        "occupation": "42"
+      }
+    },
+    {
+      "geo": "DK",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "42"
+      }
+    },
+    {
+      "geo": "EE",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "42"
+      }
+    },
+    {
+      "geo": "EL",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "42"
+      }
+    },
+    {
+      "geo": "ES",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "42"
+      }
+    },
+    {
+      "geo": "EU27",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "42"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "42"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2026",
+      "value": 3.6667,
+      "dims": {
+        "occupation": "42"
+      }
+    },
+    {
+      "geo": "HR",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "42"
+      }
+    },
+    {
+      "geo": "HU",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "42"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "42"
+      }
+    },
+    {
+      "geo": "IS",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "42"
+      }
+    },
+    {
+      "geo": "IT",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "42"
+      }
+    },
+    {
+      "geo": "LT",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "42"
+      }
+    },
+    {
+      "geo": "LU",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "42"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2026",
+      "value": 3.3333,
+      "dims": {
+        "occupation": "42"
+      }
+    },
+    {
+      "geo": "MT",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "42"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "42"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2026",
+      "value": 1.6667,
+      "dims": {
+        "occupation": "42"
+      }
+    },
+    {
+      "geo": "PL",
+      "time": "2026",
+      "value": 3.3333,
+      "dims": {
+        "occupation": "42"
+      }
+    },
+    {
+      "geo": "PT",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "42"
+      }
+    },
+    {
+      "geo": "RO",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "42"
+      }
+    },
+    {
+      "geo": "SE",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "42"
+      }
+    },
+    {
+      "geo": "SI",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "42"
+      }
+    },
+    {
+      "geo": "SK",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "42"
+      }
+    },
+    {
+      "geo": "AT",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "43"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "43"
+      }
+    },
+    {
+      "geo": "BG",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "43"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "43"
+      }
+    },
+    {
+      "geo": "CY",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "43"
+      }
+    },
+    {
+      "geo": "CZ",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "43"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2026",
+      "value": 3.3333,
+      "dims": {
+        "occupation": "43"
+      }
+    },
+    {
+      "geo": "DK",
+      "time": "2026",
+      "value": 1.6667,
+      "dims": {
+        "occupation": "43"
+      }
+    },
+    {
+      "geo": "EE",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "43"
+      }
+    },
+    {
+      "geo": "EL",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "43"
+      }
+    },
+    {
+      "geo": "ES",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "43"
+      }
+    },
+    {
+      "geo": "EU27",
+      "time": "2026",
+      "value": 3.3333,
+      "dims": {
+        "occupation": "43"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "43"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "43"
+      }
+    },
+    {
+      "geo": "HR",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "43"
+      }
+    },
+    {
+      "geo": "HU",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "43"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "43"
+      }
+    },
+    {
+      "geo": "IS",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "43"
+      }
+    },
+    {
+      "geo": "IT",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "43"
+      }
+    },
+    {
+      "geo": "LT",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "43"
+      }
+    },
+    {
+      "geo": "LU",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "43"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "43"
+      }
+    },
+    {
+      "geo": "MT",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "43"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "43"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "43"
+      }
+    },
+    {
+      "geo": "PL",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "43"
+      }
+    },
+    {
+      "geo": "PT",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "43"
+      }
+    },
+    {
+      "geo": "RO",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "43"
+      }
+    },
+    {
+      "geo": "SE",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "43"
+      }
+    },
+    {
+      "geo": "SI",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "43"
+      }
+    },
+    {
+      "geo": "SK",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "43"
+      }
+    },
+    {
+      "geo": "AT",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "44"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "44"
+      }
+    },
+    {
+      "geo": "BG",
+      "time": "2026",
+      "value": 3.6667,
+      "dims": {
+        "occupation": "44"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2026",
+      "value": 3.3333,
+      "dims": {
+        "occupation": "44"
+      }
+    },
+    {
+      "geo": "CY",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "44"
+      }
+    },
+    {
+      "geo": "CZ",
+      "time": "2026",
+      "value": 1.6667,
+      "dims": {
+        "occupation": "44"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "44"
+      }
+    },
+    {
+      "geo": "DK",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "44"
+      }
+    },
+    {
+      "geo": "EE",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "44"
+      }
+    },
+    {
+      "geo": "EL",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "44"
+      }
+    },
+    {
+      "geo": "ES",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "44"
+      }
+    },
+    {
+      "geo": "EU27",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "44"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "44"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "44"
+      }
+    },
+    {
+      "geo": "HR",
+      "time": "2026",
+      "value": 1.6667,
+      "dims": {
+        "occupation": "44"
+      }
+    },
+    {
+      "geo": "HU",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "44"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "44"
+      }
+    },
+    {
+      "geo": "IS",
+      "time": "2026",
+      "value": 1.0,
+      "flag": "m",
+      "dims": {
+        "occupation": "44"
+      }
+    },
+    {
+      "geo": "IT",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "44"
+      }
+    },
+    {
+      "geo": "LT",
+      "time": "2026",
+      "value": 3.3333,
+      "dims": {
+        "occupation": "44"
+      }
+    },
+    {
+      "geo": "LU",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "44"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "44"
+      }
+    },
+    {
+      "geo": "MT",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "44"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "44"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2026",
+      "value": 1.0,
+      "dims": {
+        "occupation": "44"
+      }
+    },
+    {
+      "geo": "PL",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "44"
+      }
+    },
+    {
+      "geo": "PT",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "44"
+      }
+    },
+    {
+      "geo": "RO",
+      "time": "2026",
+      "value": 1.6667,
+      "dims": {
+        "occupation": "44"
+      }
+    },
+    {
+      "geo": "SE",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "44"
+      }
+    },
+    {
+      "geo": "SI",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "44"
+      }
+    },
+    {
+      "geo": "SK",
+      "time": "2026",
+      "value": 1.6667,
+      "dims": {
+        "occupation": "44"
+      }
+    },
+    {
+      "geo": "AT",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "51"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "51"
+      }
+    },
+    {
+      "geo": "BG",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "51"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2026",
+      "value": 1.6667,
+      "dims": {
+        "occupation": "51"
+      }
+    },
+    {
+      "geo": "CY",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "51"
+      }
+    },
+    {
+      "geo": "CZ",
+      "time": "2026",
+      "value": 3.3333,
+      "dims": {
+        "occupation": "51"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2026",
+      "value": 1.6667,
+      "dims": {
+        "occupation": "51"
+      }
+    },
+    {
+      "geo": "DK",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "51"
+      }
+    },
+    {
+      "geo": "EE",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "51"
+      }
+    },
+    {
+      "geo": "EL",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "51"
+      }
+    },
+    {
+      "geo": "ES",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "51"
+      }
+    },
+    {
+      "geo": "EU27",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "51"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "51"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "51"
+      }
+    },
+    {
+      "geo": "HR",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "51"
+      }
+    },
+    {
+      "geo": "HU",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "51"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "51"
+      }
+    },
+    {
+      "geo": "IS",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "51"
+      }
+    },
+    {
+      "geo": "IT",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "51"
+      }
+    },
+    {
+      "geo": "LT",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "51"
+      }
+    },
+    {
+      "geo": "LU",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "51"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "51"
+      }
+    },
+    {
+      "geo": "MT",
+      "time": "2026",
+      "value": 1.3333,
+      "dims": {
+        "occupation": "51"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "51"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "51"
+      }
+    },
+    {
+      "geo": "PL",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "51"
+      }
+    },
+    {
+      "geo": "PT",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "51"
+      }
+    },
+    {
+      "geo": "RO",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "51"
+      }
+    },
+    {
+      "geo": "SE",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "51"
+      }
+    },
+    {
+      "geo": "SI",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "51"
+      }
+    },
+    {
+      "geo": "SK",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "51"
+      }
+    },
+    {
+      "geo": "AT",
+      "time": "2026",
+      "value": 1.6667,
+      "dims": {
+        "occupation": "52"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "52"
+      }
+    },
+    {
+      "geo": "BG",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "52"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "52"
+      }
+    },
+    {
+      "geo": "CY",
+      "time": "2026",
+      "value": 1.6667,
+      "dims": {
+        "occupation": "52"
+      }
+    },
+    {
+      "geo": "CZ",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "52"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "52"
+      }
+    },
+    {
+      "geo": "DK",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "52"
+      }
+    },
+    {
+      "geo": "EE",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "52"
+      }
+    },
+    {
+      "geo": "EL",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "52"
+      }
+    },
+    {
+      "geo": "ES",
+      "time": "2026",
+      "value": 3.3333,
+      "dims": {
+        "occupation": "52"
+      }
+    },
+    {
+      "geo": "EU27",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "52"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "52"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "52"
+      }
+    },
+    {
+      "geo": "HR",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "52"
+      }
+    },
+    {
+      "geo": "HU",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "52"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "52"
+      }
+    },
+    {
+      "geo": "IS",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "52"
+      }
+    },
+    {
+      "geo": "IT",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "52"
+      }
+    },
+    {
+      "geo": "LT",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "52"
+      }
+    },
+    {
+      "geo": "LU",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "52"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2026",
+      "value": 1.6667,
+      "dims": {
+        "occupation": "52"
+      }
+    },
+    {
+      "geo": "MT",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "52"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "52"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "52"
+      }
+    },
+    {
+      "geo": "PL",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "52"
+      }
+    },
+    {
+      "geo": "PT",
+      "time": "2026",
+      "value": 3.6667,
+      "dims": {
+        "occupation": "52"
+      }
+    },
+    {
+      "geo": "RO",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "52"
+      }
+    },
+    {
+      "geo": "SE",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "52"
+      }
+    },
+    {
+      "geo": "SI",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "52"
+      }
+    },
+    {
+      "geo": "SK",
+      "time": "2026",
+      "value": 1.6667,
+      "dims": {
+        "occupation": "52"
+      }
+    },
+    {
+      "geo": "AT",
+      "time": "2026",
+      "value": 1.6667,
+      "dims": {
+        "occupation": "53"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "53"
+      }
+    },
+    {
+      "geo": "BG",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "53"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2026",
+      "value": 1.3333,
+      "dims": {
+        "occupation": "53"
+      }
+    },
+    {
+      "geo": "CY",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "53"
+      }
+    },
+    {
+      "geo": "CZ",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "53"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "53"
+      }
+    },
+    {
+      "geo": "DK",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "53"
+      }
+    },
+    {
+      "geo": "EE",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "53"
+      }
+    },
+    {
+      "geo": "EL",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "53"
+      }
+    },
+    {
+      "geo": "ES",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "53"
+      }
+    },
+    {
+      "geo": "EU27",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "53"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "53"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2026",
+      "value": 1.3333,
+      "dims": {
+        "occupation": "53"
+      }
+    },
+    {
+      "geo": "HR",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "53"
+      }
+    },
+    {
+      "geo": "HU",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "53"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "53"
+      }
+    },
+    {
+      "geo": "IS",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "53"
+      }
+    },
+    {
+      "geo": "IT",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "53"
+      }
+    },
+    {
+      "geo": "LT",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "53"
+      }
+    },
+    {
+      "geo": "LU",
+      "time": "2026",
+      "value": 3.3333,
+      "dims": {
+        "occupation": "53"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "53"
+      }
+    },
+    {
+      "geo": "MT",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "53"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "53"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "53"
+      }
+    },
+    {
+      "geo": "PL",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "53"
+      }
+    },
+    {
+      "geo": "PT",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "53"
+      }
+    },
+    {
+      "geo": "RO",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "53"
+      }
+    },
+    {
+      "geo": "SE",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "53"
+      }
+    },
+    {
+      "geo": "SI",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "53"
+      }
+    },
+    {
+      "geo": "SK",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "53"
+      }
+    },
+    {
+      "geo": "AT",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "54"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "54"
+      }
+    },
+    {
+      "geo": "BG",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "54"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "54"
+      }
+    },
+    {
+      "geo": "CY",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "54"
+      }
+    },
+    {
+      "geo": "CZ",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "54"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "54"
+      }
+    },
+    {
+      "geo": "DK",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "54"
+      }
+    },
+    {
+      "geo": "EE",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "54"
+      }
+    },
+    {
+      "geo": "EL",
+      "time": "2026",
+      "value": 1.6667,
+      "dims": {
+        "occupation": "54"
+      }
+    },
+    {
+      "geo": "ES",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "54"
+      }
+    },
+    {
+      "geo": "EU27",
+      "time": "2026",
+      "value": 1.6667,
+      "dims": {
+        "occupation": "54"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "54"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2026",
+      "value": 1.3333,
+      "dims": {
+        "occupation": "54"
+      }
+    },
+    {
+      "geo": "HR",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "54"
+      }
+    },
+    {
+      "geo": "HU",
+      "time": "2026",
+      "value": 1.6667,
+      "dims": {
+        "occupation": "54"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "54"
+      }
+    },
+    {
+      "geo": "IS",
+      "time": "2026",
+      "value": 3.3333,
+      "dims": {
+        "occupation": "54"
+      }
+    },
+    {
+      "geo": "IT",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "54"
+      }
+    },
+    {
+      "geo": "LT",
+      "time": "2026",
+      "value": 1.6667,
+      "dims": {
+        "occupation": "54"
+      }
+    },
+    {
+      "geo": "LU",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "54"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2026",
+      "value": 1.6667,
+      "dims": {
+        "occupation": "54"
+      }
+    },
+    {
+      "geo": "MT",
+      "time": "2026",
+      "value": 1.3333,
+      "dims": {
+        "occupation": "54"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "54"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "54"
+      }
+    },
+    {
+      "geo": "PL",
+      "time": "2026",
+      "value": 1.3333,
+      "dims": {
+        "occupation": "54"
+      }
+    },
+    {
+      "geo": "PT",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "54"
+      }
+    },
+    {
+      "geo": "RO",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "54"
+      }
+    },
+    {
+      "geo": "SE",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "54"
+      }
+    },
+    {
+      "geo": "SI",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "54"
+      }
+    },
+    {
+      "geo": "SK",
+      "time": "2026",
+      "value": 1.0,
+      "dims": {
+        "occupation": "54"
+      }
+    },
+    {
+      "geo": "AT",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "61"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "61"
+      }
+    },
+    {
+      "geo": "BG",
+      "time": "2026",
+      "value": 1.3333,
+      "dims": {
+        "occupation": "61"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2026",
+      "value": 3.3333,
+      "dims": {
+        "occupation": "61"
+      }
+    },
+    {
+      "geo": "CY",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "61"
+      }
+    },
+    {
+      "geo": "CZ",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "61"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "61"
+      }
+    },
+    {
+      "geo": "DK",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "61"
+      }
+    },
+    {
+      "geo": "EE",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "61"
+      }
+    },
+    {
+      "geo": "EL",
+      "time": "2026",
+      "value": 1.3333,
+      "dims": {
+        "occupation": "61"
+      }
+    },
+    {
+      "geo": "ES",
+      "time": "2026",
+      "value": 1.3333,
+      "dims": {
+        "occupation": "61"
+      }
+    },
+    {
+      "geo": "EU27",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "61"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2026",
+      "value": 1.6667,
+      "dims": {
+        "occupation": "61"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "61"
+      }
+    },
+    {
+      "geo": "HR",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "61"
+      }
+    },
+    {
+      "geo": "HU",
+      "time": "2026",
+      "value": 1.3333,
+      "dims": {
+        "occupation": "61"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "61"
+      }
+    },
+    {
+      "geo": "IS",
+      "time": "2026",
+      "value": 3.3333,
+      "dims": {
+        "occupation": "61"
+      }
+    },
+    {
+      "geo": "IT",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "61"
+      }
+    },
+    {
+      "geo": "LT",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "61"
+      }
+    },
+    {
+      "geo": "LU",
+      "time": "2026",
+      "value": 1.6667,
+      "dims": {
+        "occupation": "61"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "61"
+      }
+    },
+    {
+      "geo": "MT",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "61"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "61"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2026",
+      "value": 1.0,
+      "dims": {
+        "occupation": "61"
+      }
+    },
+    {
+      "geo": "PL",
+      "time": "2026",
+      "value": 1.3333,
+      "dims": {
+        "occupation": "61"
+      }
+    },
+    {
+      "geo": "PT",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "61"
+      }
+    },
+    {
+      "geo": "RO",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "61"
+      }
+    },
+    {
+      "geo": "SE",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "61"
+      }
+    },
+    {
+      "geo": "SI",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "61"
+      }
+    },
+    {
+      "geo": "SK",
+      "time": "2026",
+      "value": 1.3333,
+      "dims": {
+        "occupation": "61"
+      }
+    },
+    {
+      "geo": "AT",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "62"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2026",
+      "value": 1.3333,
+      "dims": {
+        "occupation": "62"
+      }
+    },
+    {
+      "geo": "BG",
+      "time": "2026",
+      "value": 1.0,
+      "dims": {
+        "occupation": "62"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "62"
+      }
+    },
+    {
+      "geo": "CY",
+      "time": "2026",
+      "value": 4.0,
+      "flag": "m",
+      "dims": {
+        "occupation": "62"
+      }
+    },
+    {
+      "geo": "CZ",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "62"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "62"
+      }
+    },
+    {
+      "geo": "DK",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "62"
+      }
+    },
+    {
+      "geo": "EE",
+      "time": "2026",
+      "value": 1.3333,
+      "dims": {
+        "occupation": "62"
+      }
+    },
+    {
+      "geo": "EL",
+      "time": "2026",
+      "value": 1.0,
+      "dims": {
+        "occupation": "62"
+      }
+    },
+    {
+      "geo": "ES",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "62"
+      }
+    },
+    {
+      "geo": "EU27",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "62"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "62"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "62"
+      }
+    },
+    {
+      "geo": "HR",
+      "time": "2026",
+      "value": 1.0,
+      "dims": {
+        "occupation": "62"
+      }
+    },
+    {
+      "geo": "HU",
+      "time": "2026",
+      "value": 1.3333,
+      "dims": {
+        "occupation": "62"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "62"
+      }
+    },
+    {
+      "geo": "IS",
+      "time": "2026",
+      "value": 4.0,
+      "flag": "m",
+      "dims": {
+        "occupation": "62"
+      }
+    },
+    {
+      "geo": "IT",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "62"
+      }
+    },
+    {
+      "geo": "LT",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "62"
+      }
+    },
+    {
+      "geo": "LU",
+      "time": "2026",
+      "value": 3.3333,
+      "dims": {
+        "occupation": "62"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "62"
+      }
+    },
+    {
+      "geo": "MT",
+      "time": "2026",
+      "value": 2.5,
+      "flag": "m",
+      "dims": {
+        "occupation": "62"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "62"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "62"
+      }
+    },
+    {
+      "geo": "PL",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "62"
+      }
+    },
+    {
+      "geo": "PT",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "62"
+      }
+    },
+    {
+      "geo": "RO",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "62"
+      }
+    },
+    {
+      "geo": "SE",
+      "time": "2026",
+      "value": 3.6667,
+      "dims": {
+        "occupation": "62"
+      }
+    },
+    {
+      "geo": "SI",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "62"
+      }
+    },
+    {
+      "geo": "SK",
+      "time": "2026",
+      "value": 1.6667,
+      "dims": {
+        "occupation": "62"
+      }
+    },
+    {
+      "geo": "AT",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "71"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2026",
+      "value": 1.6667,
+      "dims": {
+        "occupation": "71"
+      }
+    },
+    {
+      "geo": "BG",
+      "time": "2026",
+      "value": 1.6667,
+      "dims": {
+        "occupation": "71"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "71"
+      }
+    },
+    {
+      "geo": "CY",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "71"
+      }
+    },
+    {
+      "geo": "CZ",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "71"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "71"
+      }
+    },
+    {
+      "geo": "DK",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "71"
+      }
+    },
+    {
+      "geo": "EE",
+      "time": "2026",
+      "value": 1.0,
+      "dims": {
+        "occupation": "71"
+      }
+    },
+    {
+      "geo": "EL",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "71"
+      }
+    },
+    {
+      "geo": "ES",
+      "time": "2026",
+      "value": 1.6667,
+      "dims": {
+        "occupation": "71"
+      }
+    },
+    {
+      "geo": "EU27",
+      "time": "2026",
+      "value": 1.3333,
+      "dims": {
+        "occupation": "71"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2026",
+      "value": 1.6667,
+      "dims": {
+        "occupation": "71"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2026",
+      "value": 1.6667,
+      "dims": {
+        "occupation": "71"
+      }
+    },
+    {
+      "geo": "HR",
+      "time": "2026",
+      "value": 1.3333,
+      "dims": {
+        "occupation": "71"
+      }
+    },
+    {
+      "geo": "HU",
+      "time": "2026",
+      "value": 1.0,
+      "dims": {
+        "occupation": "71"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "71"
+      }
+    },
+    {
+      "geo": "IS",
+      "time": "2026",
+      "value": 1.6667,
+      "dims": {
+        "occupation": "71"
+      }
+    },
+    {
+      "geo": "IT",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "71"
+      }
+    },
+    {
+      "geo": "LT",
+      "time": "2026",
+      "value": 1.3333,
+      "dims": {
+        "occupation": "71"
+      }
+    },
+    {
+      "geo": "LU",
+      "time": "2026",
+      "value": 1.6667,
+      "dims": {
+        "occupation": "71"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2026",
+      "value": 1.3333,
+      "dims": {
+        "occupation": "71"
+      }
+    },
+    {
+      "geo": "MT",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "71"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "71"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "71"
+      }
+    },
+    {
+      "geo": "PL",
+      "time": "2026",
+      "value": 1.3333,
+      "dims": {
+        "occupation": "71"
+      }
+    },
+    {
+      "geo": "PT",
+      "time": "2026",
+      "value": 1.0,
+      "dims": {
+        "occupation": "71"
+      }
+    },
+    {
+      "geo": "RO",
+      "time": "2026",
+      "value": 1.3333,
+      "dims": {
+        "occupation": "71"
+      }
+    },
+    {
+      "geo": "SE",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "71"
+      }
+    },
+    {
+      "geo": "SI",
+      "time": "2026",
+      "value": 1.3333,
+      "dims": {
+        "occupation": "71"
+      }
+    },
+    {
+      "geo": "SK",
+      "time": "2026",
+      "value": 1.6667,
+      "dims": {
+        "occupation": "71"
+      }
+    },
+    {
+      "geo": "AT",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "72"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "72"
+      }
+    },
+    {
+      "geo": "BG",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "72"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2026",
+      "value": 3.3333,
+      "dims": {
+        "occupation": "72"
+      }
+    },
+    {
+      "geo": "CY",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "72"
+      }
+    },
+    {
+      "geo": "CZ",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "72"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "72"
+      }
+    },
+    {
+      "geo": "DK",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "72"
+      }
+    },
+    {
+      "geo": "EE",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "72"
+      }
+    },
+    {
+      "geo": "EL",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "72"
+      }
+    },
+    {
+      "geo": "ES",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "72"
+      }
+    },
+    {
+      "geo": "EU27",
+      "time": "2026",
+      "value": 1.6667,
+      "dims": {
+        "occupation": "72"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "72"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2026",
+      "value": 1.6667,
+      "dims": {
+        "occupation": "72"
+      }
+    },
+    {
+      "geo": "HR",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "72"
+      }
+    },
+    {
+      "geo": "HU",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "72"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "72"
+      }
+    },
+    {
+      "geo": "IS",
+      "time": "2026",
+      "value": 1.6667,
+      "dims": {
+        "occupation": "72"
+      }
+    },
+    {
+      "geo": "IT",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "72"
+      }
+    },
+    {
+      "geo": "LT",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "72"
+      }
+    },
+    {
+      "geo": "LU",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "72"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "72"
+      }
+    },
+    {
+      "geo": "MT",
+      "time": "2026",
+      "value": 1.6667,
+      "dims": {
+        "occupation": "72"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "72"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "72"
+      }
+    },
+    {
+      "geo": "PL",
+      "time": "2026",
+      "value": 1.3333,
+      "dims": {
+        "occupation": "72"
+      }
+    },
+    {
+      "geo": "PT",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "72"
+      }
+    },
+    {
+      "geo": "RO",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "72"
+      }
+    },
+    {
+      "geo": "SE",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "72"
+      }
+    },
+    {
+      "geo": "SI",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "72"
+      }
+    },
+    {
+      "geo": "SK",
+      "time": "2026",
+      "value": 1.6667,
+      "dims": {
+        "occupation": "72"
+      }
+    },
+    {
+      "geo": "AT",
+      "time": "2026",
+      "value": 1.3333,
+      "dims": {
+        "occupation": "73"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2026",
+      "value": 1.6667,
+      "dims": {
+        "occupation": "73"
+      }
+    },
+    {
+      "geo": "BG",
+      "time": "2026",
+      "value": 1.6667,
+      "dims": {
+        "occupation": "73"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "73"
+      }
+    },
+    {
+      "geo": "CY",
+      "time": "2026",
+      "value": 1.6667,
+      "dims": {
+        "occupation": "73"
+      }
+    },
+    {
+      "geo": "CZ",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "73"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "73"
+      }
+    },
+    {
+      "geo": "DK",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "73"
+      }
+    },
+    {
+      "geo": "EE",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "73"
+      }
+    },
+    {
+      "geo": "EL",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "73"
+      }
+    },
+    {
+      "geo": "ES",
+      "time": "2026",
+      "value": 1.6667,
+      "dims": {
+        "occupation": "73"
+      }
+    },
+    {
+      "geo": "EU27",
+      "time": "2026",
+      "value": 1.6667,
+      "dims": {
+        "occupation": "73"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2026",
+      "value": 1.3333,
+      "dims": {
+        "occupation": "73"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "73"
+      }
+    },
+    {
+      "geo": "HR",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "73"
+      }
+    },
+    {
+      "geo": "HU",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "73"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "73"
+      }
+    },
+    {
+      "geo": "IS",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "73"
+      }
+    },
+    {
+      "geo": "IT",
+      "time": "2026",
+      "value": 1.3333,
+      "dims": {
+        "occupation": "73"
+      }
+    },
+    {
+      "geo": "LT",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "73"
+      }
+    },
+    {
+      "geo": "LU",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "73"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "73"
+      }
+    },
+    {
+      "geo": "MT",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "73"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2026",
+      "value": 3.6667,
+      "dims": {
+        "occupation": "73"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "73"
+      }
+    },
+    {
+      "geo": "PL",
+      "time": "2026",
+      "value": 1.3333,
+      "dims": {
+        "occupation": "73"
+      }
+    },
+    {
+      "geo": "PT",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "73"
+      }
+    },
+    {
+      "geo": "RO",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "73"
+      }
+    },
+    {
+      "geo": "SE",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "73"
+      }
+    },
+    {
+      "geo": "SI",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "73"
+      }
+    },
+    {
+      "geo": "SK",
+      "time": "2026",
+      "value": 1.3333,
+      "dims": {
+        "occupation": "73"
+      }
+    },
+    {
+      "geo": "AT",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "74"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2026",
+      "value": 3.3333,
+      "dims": {
+        "occupation": "74"
+      }
+    },
+    {
+      "geo": "BG",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "74"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2026",
+      "value": 3.3333,
+      "dims": {
+        "occupation": "74"
+      }
+    },
+    {
+      "geo": "CY",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "74"
+      }
+    },
+    {
+      "geo": "CZ",
+      "time": "2026",
+      "value": 3.3333,
+      "dims": {
+        "occupation": "74"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2026",
+      "value": 3.6667,
+      "dims": {
+        "occupation": "74"
+      }
+    },
+    {
+      "geo": "DK",
+      "time": "2026",
+      "value": 3.3333,
+      "dims": {
+        "occupation": "74"
+      }
+    },
+    {
+      "geo": "EE",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "74"
+      }
+    },
+    {
+      "geo": "EL",
+      "time": "2026",
+      "value": 3.3333,
+      "dims": {
+        "occupation": "74"
+      }
+    },
+    {
+      "geo": "ES",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "74"
+      }
+    },
+    {
+      "geo": "EU27",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "74"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2026",
+      "value": 1.6667,
+      "dims": {
+        "occupation": "74"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2026",
+      "value": 1.6667,
+      "dims": {
+        "occupation": "74"
+      }
+    },
+    {
+      "geo": "HR",
+      "time": "2026",
+      "value": 3.3333,
+      "dims": {
+        "occupation": "74"
+      }
+    },
+    {
+      "geo": "HU",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "74"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "74"
+      }
+    },
+    {
+      "geo": "IS",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "74"
+      }
+    },
+    {
+      "geo": "IT",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "74"
+      }
+    },
+    {
+      "geo": "LT",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "74"
+      }
+    },
+    {
+      "geo": "LU",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "74"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "74"
+      }
+    },
+    {
+      "geo": "MT",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "74"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "74"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2026",
+      "value": 3.3333,
+      "dims": {
+        "occupation": "74"
+      }
+    },
+    {
+      "geo": "PL",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "74"
+      }
+    },
+    {
+      "geo": "PT",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "74"
+      }
+    },
+    {
+      "geo": "RO",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "74"
+      }
+    },
+    {
+      "geo": "SE",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "74"
+      }
+    },
+    {
+      "geo": "SI",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "74"
+      }
+    },
+    {
+      "geo": "SK",
+      "time": "2026",
+      "value": 1.6667,
+      "dims": {
+        "occupation": "74"
+      }
+    },
+    {
+      "geo": "AT",
+      "time": "2026",
+      "value": 1.6667,
+      "dims": {
+        "occupation": "75"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "75"
+      }
+    },
+    {
+      "geo": "BG",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "75"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "75"
+      }
+    },
+    {
+      "geo": "CY",
+      "time": "2026",
+      "value": 3.3333,
+      "dims": {
+        "occupation": "75"
+      }
+    },
+    {
+      "geo": "CZ",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "75"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "75"
+      }
+    },
+    {
+      "geo": "DK",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "75"
+      }
+    },
+    {
+      "geo": "EE",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "75"
+      }
+    },
+    {
+      "geo": "EL",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "75"
+      }
+    },
+    {
+      "geo": "ES",
+      "time": "2026",
+      "value": 1.6667,
+      "dims": {
+        "occupation": "75"
+      }
+    },
+    {
+      "geo": "EU27",
+      "time": "2026",
+      "value": 1.6667,
+      "dims": {
+        "occupation": "75"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "75"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "75"
+      }
+    },
+    {
+      "geo": "HR",
+      "time": "2026",
+      "value": 1.3333,
+      "dims": {
+        "occupation": "75"
+      }
+    },
+    {
+      "geo": "HU",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "75"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "75"
+      }
+    },
+    {
+      "geo": "IS",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "75"
+      }
+    },
+    {
+      "geo": "IT",
+      "time": "2026",
+      "value": 1.6667,
+      "dims": {
+        "occupation": "75"
+      }
+    },
+    {
+      "geo": "LT",
+      "time": "2026",
+      "value": 1.3333,
+      "dims": {
+        "occupation": "75"
+      }
+    },
+    {
+      "geo": "LU",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "75"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2026",
+      "value": 1.3333,
+      "dims": {
+        "occupation": "75"
+      }
+    },
+    {
+      "geo": "MT",
+      "time": "2026",
+      "value": 1.6667,
+      "dims": {
+        "occupation": "75"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "75"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2026",
+      "value": 1.3333,
+      "dims": {
+        "occupation": "75"
+      }
+    },
+    {
+      "geo": "PL",
+      "time": "2026",
+      "value": 1.6667,
+      "dims": {
+        "occupation": "75"
+      }
+    },
+    {
+      "geo": "PT",
+      "time": "2026",
+      "value": 1.6667,
+      "dims": {
+        "occupation": "75"
+      }
+    },
+    {
+      "geo": "RO",
+      "time": "2026",
+      "value": 1.6667,
+      "dims": {
+        "occupation": "75"
+      }
+    },
+    {
+      "geo": "SE",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "75"
+      }
+    },
+    {
+      "geo": "SI",
+      "time": "2026",
+      "value": 1.6667,
+      "dims": {
+        "occupation": "75"
+      }
+    },
+    {
+      "geo": "SK",
+      "time": "2026",
+      "value": 1.6667,
+      "dims": {
+        "occupation": "75"
+      }
+    },
+    {
+      "geo": "AT",
+      "time": "2026",
+      "value": 1.0,
+      "dims": {
+        "occupation": "81"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2026",
+      "value": 1.3333,
+      "dims": {
+        "occupation": "81"
+      }
+    },
+    {
+      "geo": "BG",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "81"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2026",
+      "value": 1.6667,
+      "dims": {
+        "occupation": "81"
+      }
+    },
+    {
+      "geo": "CY",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "81"
+      }
+    },
+    {
+      "geo": "CZ",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "81"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2026",
+      "value": 1.3333,
+      "dims": {
+        "occupation": "81"
+      }
+    },
+    {
+      "geo": "DK",
+      "time": "2026",
+      "value": 1.3333,
+      "dims": {
+        "occupation": "81"
+      }
+    },
+    {
+      "geo": "EE",
+      "time": "2026",
+      "value": 1.0,
+      "dims": {
+        "occupation": "81"
+      }
+    },
+    {
+      "geo": "EL",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "81"
+      }
+    },
+    {
+      "geo": "ES",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "81"
+      }
+    },
+    {
+      "geo": "EU27",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "81"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "81"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "81"
+      }
+    },
+    {
+      "geo": "HR",
+      "time": "2026",
+      "value": 1.6667,
+      "dims": {
+        "occupation": "81"
+      }
+    },
+    {
+      "geo": "HU",
+      "time": "2026",
+      "value": 1.6667,
+      "dims": {
+        "occupation": "81"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "81"
+      }
+    },
+    {
+      "geo": "IS",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "81"
+      }
+    },
+    {
+      "geo": "IT",
+      "time": "2026",
+      "value": 1.6667,
+      "dims": {
+        "occupation": "81"
+      }
+    },
+    {
+      "geo": "LT",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "81"
+      }
+    },
+    {
+      "geo": "LU",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "81"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2026",
+      "value": 1.6667,
+      "dims": {
+        "occupation": "81"
+      }
+    },
+    {
+      "geo": "MT",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "81"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "81"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "81"
+      }
+    },
+    {
+      "geo": "PL",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "81"
+      }
+    },
+    {
+      "geo": "PT",
+      "time": "2026",
+      "value": 1.3333,
+      "dims": {
+        "occupation": "81"
+      }
+    },
+    {
+      "geo": "RO",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "81"
+      }
+    },
+    {
+      "geo": "SE",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "81"
+      }
+    },
+    {
+      "geo": "SI",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "81"
+      }
+    },
+    {
+      "geo": "SK",
+      "time": "2026",
+      "value": 1.6667,
+      "dims": {
+        "occupation": "81"
+      }
+    },
+    {
+      "geo": "AT",
+      "time": "2026",
+      "value": 1.3333,
+      "dims": {
+        "occupation": "82"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "82"
+      }
+    },
+    {
+      "geo": "BG",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "82"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "82"
+      }
+    },
+    {
+      "geo": "CY",
+      "time": "2026",
+      "value": 2.5,
+      "flag": "m",
+      "dims": {
+        "occupation": "82"
+      }
+    },
+    {
+      "geo": "CZ",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "82"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "82"
+      }
+    },
+    {
+      "geo": "DK",
+      "time": "2026",
+      "value": 1.6667,
+      "dims": {
+        "occupation": "82"
+      }
+    },
+    {
+      "geo": "EE",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "82"
+      }
+    },
+    {
+      "geo": "EL",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "82"
+      }
+    },
+    {
+      "geo": "ES",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "82"
+      }
+    },
+    {
+      "geo": "EU27",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "82"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "82"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "82"
+      }
+    },
+    {
+      "geo": "HR",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "82"
+      }
+    },
+    {
+      "geo": "HU",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "82"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2026",
+      "value": 1.6667,
+      "dims": {
+        "occupation": "82"
+      }
+    },
+    {
+      "geo": "IS",
+      "time": "2026",
+      "value": 2.0,
+      "flag": "m",
+      "dims": {
+        "occupation": "82"
+      }
+    },
+    {
+      "geo": "IT",
+      "time": "2026",
+      "value": 1.3333,
+      "dims": {
+        "occupation": "82"
+      }
+    },
+    {
+      "geo": "LT",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "82"
+      }
+    },
+    {
+      "geo": "LU",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "82"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "82"
+      }
+    },
+    {
+      "geo": "MT",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "82"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "82"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "82"
+      }
+    },
+    {
+      "geo": "PL",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "82"
+      }
+    },
+    {
+      "geo": "PT",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "82"
+      }
+    },
+    {
+      "geo": "RO",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "82"
+      }
+    },
+    {
+      "geo": "SE",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "82"
+      }
+    },
+    {
+      "geo": "SI",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "82"
+      }
+    },
+    {
+      "geo": "SK",
+      "time": "2026",
+      "value": 1.6667,
+      "dims": {
+        "occupation": "82"
+      }
+    },
+    {
+      "geo": "AT",
+      "time": "2026",
+      "value": 1.6667,
+      "dims": {
+        "occupation": "83"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2026",
+      "value": 1.3333,
+      "dims": {
+        "occupation": "83"
+      }
+    },
+    {
+      "geo": "BG",
+      "time": "2026",
+      "value": 1.6667,
+      "dims": {
+        "occupation": "83"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "83"
+      }
+    },
+    {
+      "geo": "CY",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "83"
+      }
+    },
+    {
+      "geo": "CZ",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "83"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2026",
+      "value": 1.6667,
+      "dims": {
+        "occupation": "83"
+      }
+    },
+    {
+      "geo": "DK",
+      "time": "2026",
+      "value": 1.6667,
+      "dims": {
+        "occupation": "83"
+      }
+    },
+    {
+      "geo": "EE",
+      "time": "2026",
+      "value": 1.6667,
+      "dims": {
+        "occupation": "83"
+      }
+    },
+    {
+      "geo": "EL",
+      "time": "2026",
+      "value": 1.6667,
+      "dims": {
+        "occupation": "83"
+      }
+    },
+    {
+      "geo": "ES",
+      "time": "2026",
+      "value": 1.6667,
+      "dims": {
+        "occupation": "83"
+      }
+    },
+    {
+      "geo": "EU27",
+      "time": "2026",
+      "value": 1.3333,
+      "dims": {
+        "occupation": "83"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "83"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2026",
+      "value": 1.3333,
+      "dims": {
+        "occupation": "83"
+      }
+    },
+    {
+      "geo": "HR",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "83"
+      }
+    },
+    {
+      "geo": "HU",
+      "time": "2026",
+      "value": 1.3333,
+      "dims": {
+        "occupation": "83"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2026",
+      "value": 1.3333,
+      "dims": {
+        "occupation": "83"
+      }
+    },
+    {
+      "geo": "IS",
+      "time": "2026",
+      "value": 1.0,
+      "dims": {
+        "occupation": "83"
+      }
+    },
+    {
+      "geo": "IT",
+      "time": "2026",
+      "value": 1.3333,
+      "dims": {
+        "occupation": "83"
+      }
+    },
+    {
+      "geo": "LT",
+      "time": "2026",
+      "value": 1.0,
+      "dims": {
+        "occupation": "83"
+      }
+    },
+    {
+      "geo": "LU",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "83"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2026",
+      "value": 1.3333,
+      "dims": {
+        "occupation": "83"
+      }
+    },
+    {
+      "geo": "MT",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "83"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "83"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2026",
+      "value": 1.6667,
+      "dims": {
+        "occupation": "83"
+      }
+    },
+    {
+      "geo": "PL",
+      "time": "2026",
+      "value": 1.3333,
+      "dims": {
+        "occupation": "83"
+      }
+    },
+    {
+      "geo": "PT",
+      "time": "2026",
+      "value": 1.6667,
+      "dims": {
+        "occupation": "83"
+      }
+    },
+    {
+      "geo": "RO",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "83"
+      }
+    },
+    {
+      "geo": "SE",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "83"
+      }
+    },
+    {
+      "geo": "SI",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "83"
+      }
+    },
+    {
+      "geo": "SK",
+      "time": "2026",
+      "value": 1.0,
+      "dims": {
+        "occupation": "83"
+      }
+    },
+    {
+      "geo": "AT",
+      "time": "2026",
+      "value": 1.0,
+      "dims": {
+        "occupation": "91"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2026",
+      "value": 1.3333,
+      "dims": {
+        "occupation": "91"
+      }
+    },
+    {
+      "geo": "BG",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "91"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2026",
+      "value": 1.3333,
+      "dims": {
+        "occupation": "91"
+      }
+    },
+    {
+      "geo": "CY",
+      "time": "2026",
+      "value": 1.3333,
+      "dims": {
+        "occupation": "91"
+      }
+    },
+    {
+      "geo": "CZ",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "91"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2026",
+      "value": 1.0,
+      "dims": {
+        "occupation": "91"
+      }
+    },
+    {
+      "geo": "DK",
+      "time": "2026",
+      "value": 1.6667,
+      "dims": {
+        "occupation": "91"
+      }
+    },
+    {
+      "geo": "EE",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "91"
+      }
+    },
+    {
+      "geo": "EL",
+      "time": "2026",
+      "value": 1.3333,
+      "dims": {
+        "occupation": "91"
+      }
+    },
+    {
+      "geo": "ES",
+      "time": "2026",
+      "value": 1.0,
+      "dims": {
+        "occupation": "91"
+      }
+    },
+    {
+      "geo": "EU27",
+      "time": "2026",
+      "value": 1.0,
+      "dims": {
+        "occupation": "91"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2026",
+      "value": 1.0,
+      "dims": {
+        "occupation": "91"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "91"
+      }
+    },
+    {
+      "geo": "HR",
+      "time": "2026",
+      "value": 1.6667,
+      "dims": {
+        "occupation": "91"
+      }
+    },
+    {
+      "geo": "HU",
+      "time": "2026",
+      "value": 1.3333,
+      "dims": {
+        "occupation": "91"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2026",
+      "value": 1.0,
+      "dims": {
+        "occupation": "91"
+      }
+    },
+    {
+      "geo": "IS",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "91"
+      }
+    },
+    {
+      "geo": "IT",
+      "time": "2026",
+      "value": 1.6667,
+      "dims": {
+        "occupation": "91"
+      }
+    },
+    {
+      "geo": "LT",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "91"
+      }
+    },
+    {
+      "geo": "LU",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "91"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "91"
+      }
+    },
+    {
+      "geo": "MT",
+      "time": "2026",
+      "value": 1.3333,
+      "dims": {
+        "occupation": "91"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2026",
+      "value": 1.0,
+      "dims": {
+        "occupation": "91"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "91"
+      }
+    },
+    {
+      "geo": "PL",
+      "time": "2026",
+      "value": 1.6667,
+      "dims": {
+        "occupation": "91"
+      }
+    },
+    {
+      "geo": "PT",
+      "time": "2026",
+      "value": 1.0,
+      "dims": {
+        "occupation": "91"
+      }
+    },
+    {
+      "geo": "RO",
+      "time": "2026",
+      "value": 1.0,
+      "dims": {
+        "occupation": "91"
+      }
+    },
+    {
+      "geo": "SE",
+      "time": "2026",
+      "value": 1.3333,
+      "dims": {
+        "occupation": "91"
+      }
+    },
+    {
+      "geo": "SI",
+      "time": "2026",
+      "value": 1.3333,
+      "dims": {
+        "occupation": "91"
+      }
+    },
+    {
+      "geo": "SK",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "91"
+      }
+    },
+    {
+      "geo": "AT",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "92"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "92"
+      }
+    },
+    {
+      "geo": "BG",
+      "time": "2026",
+      "value": 1.6667,
+      "dims": {
+        "occupation": "92"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "92"
+      }
+    },
+    {
+      "geo": "CY",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "92"
+      }
+    },
+    {
+      "geo": "CZ",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "92"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "92"
+      }
+    },
+    {
+      "geo": "DK",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "92"
+      }
+    },
+    {
+      "geo": "EE",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "92"
+      }
+    },
+    {
+      "geo": "EL",
+      "time": "2026",
+      "value": 1.0,
+      "dims": {
+        "occupation": "92"
+      }
+    },
+    {
+      "geo": "ES",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "92"
+      }
+    },
+    {
+      "geo": "EU27",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "92"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "92"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2026",
+      "value": 1.6667,
+      "dims": {
+        "occupation": "92"
+      }
+    },
+    {
+      "geo": "HR",
+      "time": "2026",
+      "value": 1.6667,
+      "dims": {
+        "occupation": "92"
+      }
+    },
+    {
+      "geo": "HU",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "92"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "92"
+      }
+    },
+    {
+      "geo": "IS",
+      "time": "2026",
+      "value": 2.5,
+      "flag": "m",
+      "dims": {
+        "occupation": "92"
+      }
+    },
+    {
+      "geo": "IT",
+      "time": "2026",
+      "value": 1.0,
+      "dims": {
+        "occupation": "92"
+      }
+    },
+    {
+      "geo": "LT",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "92"
+      }
+    },
+    {
+      "geo": "LU",
+      "time": "2026",
+      "value": 3.6667,
+      "dims": {
+        "occupation": "92"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2026",
+      "value": 1.6667,
+      "dims": {
+        "occupation": "92"
+      }
+    },
+    {
+      "geo": "MT",
+      "time": "2026",
+      "value": 1.6667,
+      "dims": {
+        "occupation": "92"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "92"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "92"
+      }
+    },
+    {
+      "geo": "PL",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "92"
+      }
+    },
+    {
+      "geo": "PT",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "92"
+      }
+    },
+    {
+      "geo": "RO",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "92"
+      }
+    },
+    {
+      "geo": "SE",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "92"
+      }
+    },
+    {
+      "geo": "SI",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "92"
+      }
+    },
+    {
+      "geo": "SK",
+      "time": "2026",
+      "value": 1.3333,
+      "dims": {
+        "occupation": "92"
+      }
+    },
+    {
+      "geo": "AT",
+      "time": "2026",
+      "value": 1.6667,
+      "dims": {
+        "occupation": "93"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "93"
+      }
+    },
+    {
+      "geo": "BG",
+      "time": "2026",
+      "value": 1.6667,
+      "dims": {
+        "occupation": "93"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "93"
+      }
+    },
+    {
+      "geo": "CY",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "93"
+      }
+    },
+    {
+      "geo": "CZ",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "93"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "93"
+      }
+    },
+    {
+      "geo": "DK",
+      "time": "2026",
+      "value": 1.6667,
+      "dims": {
+        "occupation": "93"
+      }
+    },
+    {
+      "geo": "EE",
+      "time": "2026",
+      "value": 1.6667,
+      "dims": {
+        "occupation": "93"
+      }
+    },
+    {
+      "geo": "EL",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "93"
+      }
+    },
+    {
+      "geo": "ES",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "93"
+      }
+    },
+    {
+      "geo": "EU27",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "93"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "93"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "93"
+      }
+    },
+    {
+      "geo": "HR",
+      "time": "2026",
+      "value": 1.3333,
+      "dims": {
+        "occupation": "93"
+      }
+    },
+    {
+      "geo": "HU",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "93"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "93"
+      }
+    },
+    {
+      "geo": "IS",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "93"
+      }
+    },
+    {
+      "geo": "IT",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "93"
+      }
+    },
+    {
+      "geo": "LT",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "93"
+      }
+    },
+    {
+      "geo": "LU",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "93"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "93"
+      }
+    },
+    {
+      "geo": "MT",
+      "time": "2026",
+      "value": 1.3333,
+      "dims": {
+        "occupation": "93"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "93"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "93"
+      }
+    },
+    {
+      "geo": "PL",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "93"
+      }
+    },
+    {
+      "geo": "PT",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "93"
+      }
+    },
+    {
+      "geo": "RO",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "93"
+      }
+    },
+    {
+      "geo": "SE",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "93"
+      }
+    },
+    {
+      "geo": "SI",
+      "time": "2026",
+      "value": 1.3333,
+      "dims": {
+        "occupation": "93"
+      }
+    },
+    {
+      "geo": "SK",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "93"
+      }
+    },
+    {
+      "geo": "AT",
+      "time": "2026",
+      "value": 1.6667,
+      "dims": {
+        "occupation": "94"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "94"
+      }
+    },
+    {
+      "geo": "BG",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "94"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2026",
+      "value": 1.3333,
+      "dims": {
+        "occupation": "94"
+      }
+    },
+    {
+      "geo": "CY",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "94"
+      }
+    },
+    {
+      "geo": "CZ",
+      "time": "2026",
+      "value": 3.3333,
+      "dims": {
+        "occupation": "94"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2026",
+      "value": 1.6667,
+      "dims": {
+        "occupation": "94"
+      }
+    },
+    {
+      "geo": "DK",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "94"
+      }
+    },
+    {
+      "geo": "EE",
+      "time": "2026",
+      "value": 1.6667,
+      "dims": {
+        "occupation": "94"
+      }
+    },
+    {
+      "geo": "EL",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "94"
+      }
+    },
+    {
+      "geo": "ES",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "94"
+      }
+    },
+    {
+      "geo": "EU27",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "94"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "94"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "94"
+      }
+    },
+    {
+      "geo": "HR",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "94"
+      }
+    },
+    {
+      "geo": "HU",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "94"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "94"
+      }
+    },
+    {
+      "geo": "IS",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "94"
+      }
+    },
+    {
+      "geo": "IT",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "94"
+      }
+    },
+    {
+      "geo": "LT",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "94"
+      }
+    },
+    {
+      "geo": "LU",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "94"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "94"
+      }
+    },
+    {
+      "geo": "MT",
+      "time": "2026",
+      "value": 1.6667,
+      "dims": {
+        "occupation": "94"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "94"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2026",
+      "value": 1.6667,
+      "dims": {
+        "occupation": "94"
+      }
+    },
+    {
+      "geo": "PL",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "94"
+      }
+    },
+    {
+      "geo": "PT",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "94"
+      }
+    },
+    {
+      "geo": "RO",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "94"
+      }
+    },
+    {
+      "geo": "SE",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "94"
+      }
+    },
+    {
+      "geo": "SI",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "94"
+      }
+    },
+    {
+      "geo": "SK",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "94"
+      }
+    },
+    {
+      "geo": "AT",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "96"
+      }
+    },
+    {
+      "geo": "BE",
+      "time": "2026",
+      "value": 1.3333,
+      "dims": {
+        "occupation": "96"
+      }
+    },
+    {
+      "geo": "BG",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "96"
+      }
+    },
+    {
+      "geo": "CH",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "96"
+      }
+    },
+    {
+      "geo": "CY",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "96"
+      }
+    },
+    {
+      "geo": "CZ",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "96"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "96"
+      }
+    },
+    {
+      "geo": "DK",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "96"
+      }
+    },
+    {
+      "geo": "EE",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "96"
+      }
+    },
+    {
+      "geo": "EL",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "96"
+      }
+    },
+    {
+      "geo": "ES",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "96"
+      }
+    },
+    {
+      "geo": "EU27",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "96"
+      }
+    },
+    {
+      "geo": "FI",
+      "time": "2026",
+      "value": 3.3333,
+      "dims": {
+        "occupation": "96"
+      }
+    },
+    {
+      "geo": "FR",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "96"
+      }
+    },
+    {
+      "geo": "HR",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "96"
+      }
+    },
+    {
+      "geo": "HU",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "96"
+      }
+    },
+    {
+      "geo": "IE",
+      "time": "2026",
+      "value": 1.3333,
+      "dims": {
+        "occupation": "96"
+      }
+    },
+    {
+      "geo": "IS",
+      "time": "2026",
+      "value": 3.3333,
+      "dims": {
+        "occupation": "96"
+      }
+    },
+    {
+      "geo": "IT",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "96"
+      }
+    },
+    {
+      "geo": "LT",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "96"
+      }
+    },
+    {
+      "geo": "LU",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "96"
+      }
+    },
+    {
+      "geo": "LV",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "96"
+      }
+    },
+    {
+      "geo": "MT",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "96"
+      }
+    },
+    {
+      "geo": "NL",
+      "time": "2026",
+      "value": 1.6667,
+      "dims": {
+        "occupation": "96"
+      }
+    },
+    {
+      "geo": "NO",
+      "time": "2026",
+      "value": 1.0,
+      "dims": {
+        "occupation": "96"
+      }
+    },
+    {
+      "geo": "PL",
+      "time": "2026",
+      "value": 1.6667,
+      "dims": {
+        "occupation": "96"
+      }
+    },
+    {
+      "geo": "PT",
+      "time": "2026",
+      "value": 2.0,
+      "dims": {
+        "occupation": "96"
+      }
+    },
+    {
+      "geo": "RO",
+      "time": "2026",
+      "value": 2.3333,
+      "dims": {
+        "occupation": "96"
+      }
+    },
+    {
+      "geo": "SE",
+      "time": "2026",
+      "value": 2.6667,
+      "dims": {
+        "occupation": "96"
+      }
+    },
+    {
+      "geo": "SI",
+      "time": "2026",
+      "value": 1.6667,
+      "dims": {
+        "occupation": "96"
+      }
+    },
+    {
+      "geo": "SK",
+      "time": "2026",
+      "value": 3.0,
+      "dims": {
+        "occupation": "96"
+      }
+    }
+  ],
+  "coverage": {
+    "geos": [
+      "AT",
+      "BE",
+      "BG",
+      "CH",
+      "CY",
+      "CZ",
+      "DE",
+      "DK",
+      "EE",
+      "EL",
+      "ES",
+      "EU27",
+      "FI",
+      "FR",
+      "HR",
+      "HU",
+      "IE",
+      "IS",
+      "IT",
+      "LT",
+      "LU",
+      "LV",
+      "MT",
+      "NL",
+      "NO",
+      "PL",
+      "PT",
+      "RO",
+      "SE",
+      "SI",
+      "SK"
+    ],
+    "time": [
+      "2026",
+      "2026"
+    ],
+    "observations": 1178
+  }
+}

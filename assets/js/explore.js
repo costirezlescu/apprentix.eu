@@ -26,9 +26,22 @@ async function init() {
 
   for (const f of facets(META)) state.filters[f.key] = new Set();
 
+  // Deep links: ?q=<search>, ?f.<facet>=<value> (repeatable), ?open=<record id>.
+  state.q = (params.get('q') || '').trim().toLowerCase();
+  $('search').value = params.get('q') || '';
+  for (const [k, v] of params) {
+    if (k.startsWith('f.') && state.filters[k.slice(2)]) state.filters[k.slice(2)].add(v);
+  }
+
   document.title = `${meta.title} — Apprentix`;
   $('ds-title').textContent = meta.title;
   $('ds-tagline').textContent = meta.tagline || '';
+  if (meta.matrix) {
+    const a = document.createElement('a');
+    a.href = 'compare.html';
+    a.textContent = ' Compare all schemes side by side →';
+    $('ds-tagline').appendChild(a);
+  }
   $('source-link').href = meta.source.url;
   $('source-link').textContent = meta.source.name;
   $('caveat').textContent = meta.source.caveat || '';
@@ -37,6 +50,7 @@ async function init() {
   renderGrid();
   renderTray();
   wire();
+  if (params.get('open')) openDrawer(params.get('open'));
 }
 
 /* ---------- filters ---------- */

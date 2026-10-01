@@ -22,8 +22,108 @@
     "overview": "Company-based training with about one day a week at part-time vocational school (Berufsschule). Roughly a third of each youth cohort enters an apprenticeship, across some 200 recognised trades.",
     "source_url": "https://www.cedefop.europa.eu/en/tools/apprenticeship-schemes/scheme-fiches/dual-apprenticeship",
     "source_version": "Cedefop European database on apprenticeship schemes, 2026 update",
-    "retrieved": "2026-09",
-    "status": "Hand-entered from the fiche; not yet checked field by field"
+    "retrieved": "2026-10-01",
+    "status": "Checked against the 2026 fiche on 2026-10-01: Cedefop's coded answers imported directly; learners and duration compared with the fiche text.",
+    "q_introduced": "Before 2000",
+    "q_origin": [
+      "Craft tradition"
+    ],
+    "q_age_limits": "Minimum only",
+    "q_typical_age": [
+      "15–18"
+    ],
+    "q_share_of_vet": "10–30%",
+    "q_in_nqf": "Yes",
+    "q_in_isced": "Yes",
+    "q_qualification_route": "Only through apprenticeship",
+    "q_qualification_type": [
+      "Apprenticeship qualification (journeyman etc.)"
+    ],
+    "q_access_to_he": "Yes",
+    "q_national_coordination": "Yes",
+    "q_partners_design": [
+      "Design qualifications",
+      "Design curricula"
+    ],
+    "q_partners_implement": [
+      "Final assessment",
+      "Accredit companies",
+      "Monitor in-company training",
+      "Other"
+    ],
+    "q_quality_assurance": [
+      "Monitoring during training",
+      "Evaluation at completion",
+      "Graduate tracking",
+      "Impact or cost–benefit evaluation",
+      "Other"
+    ],
+    "q_alternation_compulsory": "Yes",
+    "q_min_workplace_share": "50% or more",
+    "q_training_vs_work_time": "No",
+    "q_alternation_form": [
+      "Every week, both venues",
+      "Blocks of weeks",
+      "Blocks of months"
+    ],
+    "q_training_basis": [
+      "Own apprenticeship programme"
+    ],
+    "q_training_plan": "Yes, national/sectoral",
+    "q_company_requirements": [
+      "Suitable learning environment",
+      "Mentor or trainer",
+      "Other"
+    ],
+    "q_sanctions": "Yes",
+    "q_learner_status": [
+      "Specific apprentice status"
+    ],
+    "q_written_arrangement": "Yes",
+    "q_contract_type": [
+      "Specific apprenticeship contract"
+    ],
+    "q_contract_registered": [
+      "Chambers"
+    ],
+    "q_compensation": [
+      "Wage"
+    ],
+    "q_wage_setting": [
+      "Sectoral agreements",
+      "Firm or individual agreements"
+    ],
+    "q_pay_funded_by": [
+      "Employers"
+    ],
+    "q_training_cost_funding": [
+      "Host employers",
+      "Training funds"
+    ],
+    "q_financial_incentives": [
+      "Subsidies",
+      "Tax deductions",
+      "Other"
+    ],
+    "q_nonfinancial_incentives": [
+      "Campaigns",
+      "Online platforms",
+      "Chamber or intermediary support",
+      "School collaboration guidelines",
+      "Trainer training",
+      "Other"
+    ],
+    "q_pay_covers_school": "Yes",
+    "q_learner_incentives": [
+      "Grants for other costs",
+      "Recognition of prior learning",
+      "Guidance",
+      "Other"
+    ],
+    "fiche_author": "Kurt Schmid, ibw Austria",
+    "fiche_pdf": "https://www.cedefop.europa.eu/en/print/pdf/node/26438",
+    "country_fiche_url": "https://www.cedefop.europa.eu/en/tools/apprenticeship-schemes/country-fiches/austria",
+    "fiche_answers_read": "2026-10-01"
   },
   {
     "id": "befl-duaal",
@@ -48,8 +148,107 @@
     "overview": "Flanders' redesign of apprenticeship: learners spend most of the week with an accredited company under a dual-learning agreement, combined with school-based general and vocational education.",
     "source_url": "https://www.cedefop.europa.eu/en/tools/apprenticeship-schemes/scheme-fiches/dual-learning",
     "source_version": "Cedefop European database on apprenticeship schemes, 2026 update",
-    "retrieved": "2026-09",
-    "status": "Hand-entered from the fiche; not yet checked field by field"
+    "retrieved": "2026-10-01",
+    "status": "Checked against the 2026 fiche on 2026-10-01: Cedefop's coded answers imported directly; learners and duration compared with the fiche text.",
+    "q_introduced": "After 2012",
+    "q_origin": [
+      "Craft tradition",
+      "Grew out of school-based VET"
+    ],
+    "q_age_limits": "Minimum and maximum",
+    "q_typical_age": [
+      "18–24"
+    ],
+    "q_share_of_vet": "Under 10%",
+    "q_in_nqf": "Yes",
+    "q_in_isced": "Yes",
+    "q_qualification_route": "Also through school-based VET",
+    "q_qualification_type": [
+      "VET qualification, route shown",
+      "Other"
+    ],
+    "q_access_to_he": "Yes",
+    "q_national_coordination": "Yes",
+    "q_partners_design": [
+      "Design qualifications",
+      "Design curricula"
+    ],
+    "q_partners_implement": [
+      "Accredit companies",
+      "Monitor in-company training",
+      "Other"
+    ],
+    "q_quality_assurance": [
+      "Monitoring during training",
+      "Evaluation at completion",
+      "Graduate tracking"
+    ],
+    "q_alternation_compulsory": "Yes",
+    "q_min_workplace_share": "50% or more",
+    "q_training_vs_work_time": "No",
+    "q_alternation_form": [
+      "Every week, both venues",
+      "Varies by agreement"
+    ],
+    "q_training_basis": [
+      "Own apprenticeship programme"
+    ],
+    "q_training_plan": "Yes, national/sectoral",
+    "q_company_requirements": [
+      "Suitable learning environment",
+      "Mentor or trainer",
+      "Other"
+    ],
+    "q_sanctions": "No",
+    "q_learner_status": [
+      "Specific apprentice status"
+    ],
+    "q_written_arrangement": "Yes",
+    "q_contract_type": [
+      "Ordinary employment contract",
+      "Specific apprenticeship contract"
+    ],
+    "q_contract_registered": [
+      "Other"
+    ],
+    "q_compensation": [
+      "Wage",
+      "Allowance",
+      "None required by law"
+    ],
+    "q_wage_setting": [
+      "By law",
+      "Sectoral agreements"
+    ],
+    "q_pay_funded_by": [
+      "Employers"
+    ],
+    "q_training_cost_funding": [
+      "Host employers",
+      "Training funds",
+      "State"
+    ],
+    "q_financial_incentives": [
+      "Subsidies"
+    ],
+    "q_nonfinancial_incentives": [
+      "Campaigns",
+      "Online platforms",
+      "Chamber or intermediary support",
+      "School collaboration guidelines",
+      "Trainer training"
+    ],
+    "q_pay_covers_school": "Yes",
+    "q_learner_incentives": [
+      "Pay top-up grants",
+      "Recognition of prior learning",
+      "Guidance",
+      "Other"
+    ],
+    "fiche_author": "Marieke Vandeweyer, Flemish Department for Work, Economy, Science, Innovation and Social Economy",
+    "fiche_pdf": "https://www.cedefop.europa.eu/en/print/pdf/node/44044",
+    "country_fiche_url": "https://www.cedefop.europa.eu/en/tools/apprenticeship-schemes/country-fiches/be-nl",
+    "fiche_answers_read": "2026-10-01"
   },
   {
     "id": "befr-alternance",
@@ -74,8 +273,106 @@
     "overview": "Alternance training run through networks such as IFAPME and SFPME: hands-on training with an employer alternates with centre-based courses, under a single harmonised contract and progressive allowance.",
     "source_url": "https://www.cedefop.europa.eu/en/tools/apprenticeship-schemes/scheme-fiches/dual-training",
     "source_version": "Cedefop European database on apprenticeship schemes, 2026 update",
-    "retrieved": "2026-09",
-    "status": "Hand-entered from the fiche; not yet checked field by field"
+    "retrieved": "2026-10-01",
+    "status": "Checked against the 2026 fiche on 2026-10-01: Cedefop's coded answers imported directly; learners and duration compared with the fiche text.",
+    "q_introduced": "Before 2000",
+    "q_origin": [
+      "Craft tradition"
+    ],
+    "q_age_limits": "Minimum and maximum",
+    "q_typical_age": [
+      "18–24"
+    ],
+    "q_share_of_vet": "10–30%",
+    "q_in_nqf": "Yes",
+    "q_in_isced": "Yes",
+    "q_qualification_route": "Only through apprenticeship",
+    "q_qualification_type": [
+      "VET qualification, route not shown",
+      "VET qualification, route shown",
+      "Apprenticeship qualification (journeyman etc.)"
+    ],
+    "q_access_to_he": "Yes",
+    "q_national_coordination": "Yes",
+    "q_partners_design": [
+      "Design qualifications",
+      "Design curricula",
+      "Other"
+    ],
+    "q_partners_implement": [
+      "Final assessment",
+      "Accredit companies",
+      "Other"
+    ],
+    "q_quality_assurance": [
+      "Monitoring during training",
+      "Evaluation at completion",
+      "Graduate tracking",
+      "Other"
+    ],
+    "q_alternation_compulsory": "Yes",
+    "q_min_workplace_share": "50% or more",
+    "q_training_vs_work_time": "No",
+    "q_alternation_form": [
+      "Every week, both venues"
+    ],
+    "q_training_basis": [
+      "Own apprenticeship programme",
+      "General VET standards"
+    ],
+    "q_training_plan": "Yes, agreed by school and company",
+    "q_company_requirements": [
+      "Suitable learning environment",
+      "Mentor or trainer"
+    ],
+    "q_sanctions": "Yes",
+    "q_learner_status": [
+      "Specific apprentice status"
+    ],
+    "q_written_arrangement": "Yes",
+    "q_contract_type": [
+      "Specific apprenticeship contract"
+    ],
+    "q_contract_registered": [
+      "School",
+      "Other"
+    ],
+    "q_compensation": [
+      "Wage"
+    ],
+    "q_wage_setting": [
+      "By law",
+      "Firm or individual agreements"
+    ],
+    "q_pay_funded_by": [
+      "Employers"
+    ],
+    "q_training_cost_funding": [
+      "Host employers",
+      "Training funds",
+      "State"
+    ],
+    "q_financial_incentives": [
+      "Other"
+    ],
+    "q_nonfinancial_incentives": [
+      "Online platforms",
+      "Chamber or intermediary support",
+      "School collaboration guidelines",
+      "Trainer training"
+    ],
+    "q_pay_covers_school": "Yes",
+    "q_learner_incentives": [
+      "Pay top-up grants",
+      "Grants for other costs",
+      "Recognition of prior learning",
+      "Guidance",
+      "Other"
+    ],
+    "fiche_author": "Pascale Etienne, OFFA (Office francophone de formation en alternance)",
+    "fiche_pdf": "https://www.cedefop.europa.eu/en/print/pdf/node/26441",
+    "country_fiche_url": "https://www.cedefop.europa.eu/en/tools/apprenticeship-schemes/country-fiches/be-fr",
+    "fiche_answers_read": "2026-10-01"
   },
   {
     "id": "bg-dual",
@@ -100,8 +397,96 @@
     "overview": "Introduced in 2014 with Swiss and German support: pupils in the dual track sign an employment contract with a partner company for the last two school grades, splitting the week between work and school.",
     "source_url": "https://www.cedefop.europa.eu/en/tools/apprenticeship-schemes/scheme-fiches/work-based-learning-dual-system-training",
     "source_version": "Cedefop European database on apprenticeship schemes, 2026 update",
-    "retrieved": "2026-09",
-    "status": "Hand-entered from the fiche; not yet checked field by field"
+    "retrieved": "2026-10-01",
+    "status": "Checked against the 2026 fiche on 2026-10-01: Cedefop's coded answers imported directly; learners and duration compared with the fiche text.",
+    "q_introduced": "After 2012",
+    "q_origin": [
+      "Grew out of school-based VET"
+    ],
+    "q_age_limits": "Minimum only",
+    "q_typical_age": [
+      "15–18"
+    ],
+    "q_share_of_vet": "Under 10%",
+    "q_in_nqf": "Yes",
+    "q_in_isced": "Yes",
+    "q_qualification_route": "Also through school-based VET",
+    "q_qualification_type": [
+      "VET qualification, route shown"
+    ],
+    "q_access_to_he": "Yes",
+    "q_national_coordination": "Yes",
+    "q_partners_design": [
+      "Design qualifications",
+      "Other"
+    ],
+    "q_partners_implement": [
+      "Final assessment",
+      "Other"
+    ],
+    "q_quality_assurance": [
+      "Monitoring during training",
+      "Evaluation at completion",
+      "Other"
+    ],
+    "q_alternation_compulsory": "Yes",
+    "q_min_workplace_share": "50% or more",
+    "q_training_vs_work_time": "No",
+    "q_alternation_form": [
+      "Every week, both venues"
+    ],
+    "q_training_basis": [
+      "General VET standards"
+    ],
+    "q_training_plan": "Yes, agreed by school and company",
+    "q_company_requirements": [
+      "Suitable learning environment",
+      "Mentor or trainer"
+    ],
+    "q_sanctions": "No",
+    "q_learner_status": [
+      "Specific apprentice status"
+    ],
+    "q_written_arrangement": "Yes",
+    "q_contract_type": [
+      "Specific apprenticeship contract"
+    ],
+    "q_contract_registered": [
+      "Other"
+    ],
+    "q_compensation": [
+      "Wage"
+    ],
+    "q_wage_setting": [
+      "By law",
+      "Firm or individual agreements"
+    ],
+    "q_pay_funded_by": [
+      "Employers"
+    ],
+    "q_training_cost_funding": [
+      "Host employers"
+    ],
+    "q_financial_incentives": [
+      "Subsidies",
+      "Tax deductions",
+      "Other"
+    ],
+    "q_nonfinancial_incentives": [
+      "Online platforms",
+      "School collaboration guidelines",
+      "Trainer training"
+    ],
+    "q_pay_covers_school": "No, company time only",
+    "q_learner_incentives": [
+      "Pay top-up grants",
+      "Guidance",
+      "Other"
+    ],
+    "fiche_author": "Petya Evtimova, Modern Education Foundation",
+    "fiche_pdf": "https://www.cedefop.europa.eu/en/print/pdf/node/32994",
+    "country_fiche_url": "https://www.cedefop.europa.eu/en/tools/apprenticeship-schemes/country-fiches/bulgaria",
+    "fiche_answers_read": "2026-10-01"
   },
   {
     "id": "hr-jmo",
@@ -126,8 +511,104 @@
     "overview": "Croatia's craft-sector apprenticeship: three-year programmes for licensed craft occupations where practical training with a master craftsperson alternates with vocational school.",
     "source_url": "https://www.cedefop.europa.eu/en/tools/apprenticeship-schemes/scheme-fiches/unified-model-education",
     "source_version": "Cedefop European database on apprenticeship schemes, 2026 update",
-    "retrieved": "2026-09",
-    "status": "Hand-entered from the fiche; not yet checked field by field"
+    "retrieved": "2026-10-01",
+    "status": "Checked against the 2026 fiche on 2026-10-01: Cedefop's coded answers imported directly; learners and duration compared with the fiche text.",
+    "q_introduced": "2000–2012",
+    "q_origin": [
+      "Craft tradition",
+      "Grew out of school-based VET"
+    ],
+    "q_age_limits": "Minimum and maximum",
+    "q_typical_age": [
+      "15–18"
+    ],
+    "q_share_of_vet": "10–30%",
+    "q_in_nqf": "Yes",
+    "q_in_isced": "Yes",
+    "q_qualification_route": "Also through school-based VET",
+    "q_qualification_type": [
+      "VET qualification, route shown"
+    ],
+    "q_access_to_he": "No",
+    "q_national_coordination": "No",
+    "q_partners_design": [
+      "Design qualifications",
+      "Design curricula",
+      "Other"
+    ],
+    "q_partners_implement": [
+      "Final assessment",
+      "Accredit companies",
+      "Monitor in-company training",
+      "Other"
+    ],
+    "q_quality_assurance": [
+      "Monitoring during training",
+      "Evaluation at completion",
+      "Other"
+    ],
+    "q_alternation_compulsory": "Yes",
+    "q_min_workplace_share": "50% or more",
+    "q_training_vs_work_time": "No",
+    "q_alternation_form": [
+      "Every week, both venues",
+      "Blocks of weeks",
+      "Varies by agreement"
+    ],
+    "q_training_basis": [
+      "Own apprenticeship programme",
+      "General VET standards"
+    ],
+    "q_training_plan": "Yes, national/sectoral",
+    "q_company_requirements": [
+      "Suitable learning environment",
+      "Mentor or trainer"
+    ],
+    "q_sanctions": "No",
+    "q_learner_status": [
+      "Student"
+    ],
+    "q_written_arrangement": "Yes",
+    "q_contract_type": [
+      "Formal agreement, not a contract"
+    ],
+    "q_contract_registered": [
+      "School",
+      "Chambers",
+      "Other"
+    ],
+    "q_compensation": [
+      "Allowance"
+    ],
+    "q_wage_setting": [
+      "By law",
+      "Firm or individual agreements"
+    ],
+    "q_pay_funded_by": [
+      "Employers"
+    ],
+    "q_training_cost_funding": [
+      "Host employers"
+    ],
+    "q_financial_incentives": [
+      "Subsidies",
+      "Tax deductions",
+      "Other"
+    ],
+    "q_nonfinancial_incentives": [
+      "Chamber or intermediary support",
+      "Trainer training"
+    ],
+    "q_pay_covers_school": "No, company time only",
+    "q_learner_incentives": [
+      "Pay top-up grants",
+      "Guidance",
+      "Other"
+    ],
+    "fiche_author": "Mirela Laković, Croatian Chamber of Trades and Crafts",
+    "fiche_pdf": "https://www.cedefop.europa.eu/en/print/pdf/node/26447",
+    "country_fiche_url": "https://www.cedefop.europa.eu/en/tools/apprenticeship-schemes/country-fiches/croatia",
+    "fiche_answers_read": "2026-10-01"
   },
   {
     "id": "cy-nma",
@@ -152,8 +633,87 @@
     "overview": "A second-chance and vocational route for young people, combining workshop and school learning with in-company placements across the week.",
     "source_url": "https://www.cedefop.europa.eu/en/tools/apprenticeship-schemes/scheme-fiches/new-modern-apprenticeship",
     "source_version": "Cedefop European database on apprenticeship schemes, 2026 update",
-    "retrieved": "2026-09",
-    "status": "Hand-entered from the fiche; not yet checked field by field"
+    "retrieved": "2026-10-01",
+    "status": "Checked against the 2026 fiche on 2026-10-01: Cedefop's coded answers imported directly; learners and duration compared with the fiche text (learners could not be confirmed).",
+    "q_introduced": "Before 2000",
+    "q_origin": [
+      "Craft tradition"
+    ],
+    "q_age_limits": "Minimum and maximum",
+    "q_typical_age": [
+      "15–18"
+    ],
+    "q_share_of_vet": "Under 10%",
+    "q_in_nqf": "Yes",
+    "q_in_isced": "Yes",
+    "q_qualification_route": "Only through apprenticeship",
+    "q_qualification_type": [
+      "Apprenticeship qualification (journeyman etc.)"
+    ],
+    "q_access_to_he": "No",
+    "q_national_coordination": "Yes",
+    "q_partners_design": [
+      "Design qualifications",
+      "Design curricula"
+    ],
+    "q_partners_implement": [
+      "Monitor in-company training",
+      "Other"
+    ],
+    "q_quality_assurance": [
+      "Monitoring during training",
+      "Evaluation at completion"
+    ],
+    "q_alternation_compulsory": "Yes",
+    "q_min_workplace_share": "50% or more",
+    "q_training_vs_work_time": "No",
+    "q_alternation_form": [
+      "Every week, both venues"
+    ],
+    "q_training_basis": [
+      "Other"
+    ],
+    "q_training_plan": "Yes, agreed by school and company",
+    "q_company_requirements": [
+      "Suitable learning environment",
+      "Mentor or trainer"
+    ],
+    "q_sanctions": "No",
+    "q_learner_status": [
+      "Specific apprentice status"
+    ],
+    "q_written_arrangement": "Yes",
+    "q_contract_type": [
+      "Specific apprenticeship contract"
+    ],
+    "q_contract_registered": [
+      "School",
+      "Other"
+    ],
+    "q_compensation": [
+      "Wage"
+    ],
+    "q_wage_setting": [
+      "Firm or individual agreements"
+    ],
+    "q_pay_funded_by": [
+      "Employers"
+    ],
+    "q_training_cost_funding": [
+      "Host employers"
+    ],
+    "q_financial_incentives": [
+      "None"
+    ],
+    "q_pay_covers_school": "No, company time only",
+    "q_learner_incentives": [
+      "Guidance",
+      "Other"
+    ],
+    "fiche_author": "Nikos Papaevripidis, Ministry of Education, Sports and Youth",
+    "fiche_pdf": "https://www.cedefop.europa.eu/en/print/pdf/node/26449",
+    "country_fiche_url": "https://www.cedefop.europa.eu/en/tools/apprenticeship-schemes/country-fiches/cyprus",
+    "fiche_answers_read": "2026-10-01"
   },
   {
     "id": "cz-dual",
@@ -178,8 +738,97 @@
     "overview": "Czechia's brand-new dual pathway: from 2026/27, certified employers deliver the practical part of upper secondary VET at the workplace, with learners paid for productive work.",
     "source_url": "https://www.cedefop.europa.eu/en/tools/apprenticeship-schemes/scheme-fiches/dual-practical-training",
     "source_version": "Cedefop European database on apprenticeship schemes, 2026 update",
-    "retrieved": "2026-09",
-    "status": "Hand-entered from the fiche; not yet checked field by field"
+    "retrieved": "2026-10-01",
+    "status": "Checked against the 2026 fiche on 2026-10-01: Cedefop's coded answers imported directly; learners and duration compared with the fiche text.",
+    "q_introduced": "After 2012",
+    "q_origin": [
+      "Grew out of school-based VET"
+    ],
+    "q_age_limits": "Minimum only",
+    "q_in_nqf": "No NQF",
+    "q_in_isced": "No",
+    "q_qualification_route": "Also through school-based VET",
+    "q_qualification_type": [
+      "VET qualification, route not shown"
+    ],
+    "q_access_to_he": "Yes",
+    "q_national_coordination": "Yes",
+    "q_partners_design": [
+      "Design qualifications",
+      "Design curricula",
+      "Other"
+    ],
+    "q_partners_implement": [
+      "Accredit companies",
+      "Monitor in-company training",
+      "Other"
+    ],
+    "q_quality_assurance": [
+      "Monitoring during training",
+      "Evaluation at completion",
+      "Graduate tracking"
+    ],
+    "q_alternation_compulsory": "Yes",
+    "q_min_workplace_share": "No minimum",
+    "q_training_vs_work_time": "No",
+    "q_alternation_form": [
+      "Varies by agreement"
+    ],
+    "q_training_basis": [
+      "General VET standards",
+      "Other"
+    ],
+    "q_training_plan": "Yes, national/sectoral",
+    "q_company_requirements": [
+      "Suitable learning environment",
+      "Mentor or trainer",
+      "Other"
+    ],
+    "q_sanctions": "No",
+    "q_learner_status": [
+      "Student"
+    ],
+    "q_written_arrangement": "No",
+    "q_contract_type": [
+      "Formal agreement, not a contract"
+    ],
+    "q_contract_registered": [
+      "School"
+    ],
+    "q_compensation": [
+      "Allowance"
+    ],
+    "q_wage_setting": [
+      "By law",
+      "Other"
+    ],
+    "q_pay_funded_by": [
+      "Employers",
+      "Other"
+    ],
+    "q_training_cost_funding": [
+      "Host employers",
+      "State"
+    ],
+    "q_financial_incentives": [
+      "Subsidies",
+      "Tax deductions",
+      "Other"
+    ],
+    "q_nonfinancial_incentives": [
+      "Chamber or intermediary support",
+      "School collaboration guidelines"
+    ],
+    "q_pay_covers_school": "No, company time only",
+    "q_learner_incentives": [
+      "Pay top-up grants",
+      "Recognition of prior learning",
+      "Guidance"
+    ],
+    "fiche_author": "Cedefop, with input from Martina Kaňáková (National Pedagogical Institute) and the ReferNet coordinator",
+    "fiche_pdf": "https://www.cedefop.europa.eu/en/print/pdf/node/162475",
+    "country_fiche_url": "https://www.cedefop.europa.eu/en/tools/apprenticeship-schemes/country-fiches/czechia",
+    "fiche_answers_read": "2026-10-01"
   },
   {
     "id": "dk-eud",
@@ -204,8 +853,104 @@
     "overview": "Denmark's main VET route: alternating school periods and long company placements under a training agreement, with apprentice wages set by collective agreement and employers reimbursed through the AUB levy fund.",
     "source_url": "https://www.cedefop.europa.eu/en/tools/apprenticeship-schemes/scheme-fiches/apprenticeship",
     "source_version": "Cedefop European database on apprenticeship schemes, 2026 update",
-    "retrieved": "2026-09",
-    "status": "Hand-entered from the fiche; not yet checked field by field"
+    "retrieved": "2026-10-01",
+    "status": "Checked against the 2026 fiche on 2026-10-01: Cedefop's coded answers imported directly; learners and duration compared with the fiche text.",
+    "q_introduced": "Before 2000",
+    "q_origin": [
+      "Craft tradition"
+    ],
+    "q_age_limits": "Minimum only",
+    "q_typical_age": [
+      "15–18",
+      "18–24",
+      "Over 24"
+    ],
+    "q_share_of_vet": "Over 60%",
+    "q_in_nqf": "Yes",
+    "q_in_isced": "Yes",
+    "q_qualification_route": "Only through apprenticeship",
+    "q_qualification_type": [
+      "Apprenticeship qualification (journeyman etc.)"
+    ],
+    "q_access_to_he": "Yes",
+    "q_national_coordination": "Yes",
+    "q_partners_design": [
+      "Design qualifications",
+      "Design curricula",
+      "Other"
+    ],
+    "q_partners_implement": [
+      "Final assessment",
+      "Accredit companies",
+      "Monitor in-company training",
+      "Other"
+    ],
+    "q_quality_assurance": [
+      "Monitoring during training",
+      "Evaluation at completion",
+      "Graduate tracking"
+    ],
+    "q_alternation_compulsory": "Yes",
+    "q_min_workplace_share": "50% or more",
+    "q_training_vs_work_time": "No",
+    "q_alternation_form": [
+      "Blocks of months",
+      "School years, then workplace"
+    ],
+    "q_training_basis": [
+      "Own apprenticeship programme"
+    ],
+    "q_training_plan": "Yes, national/sectoral",
+    "q_company_requirements": [
+      "Suitable learning environment",
+      "Mentor or trainer",
+      "Other"
+    ],
+    "q_sanctions": "Yes",
+    "q_learner_status": [
+      "Specific apprentice status"
+    ],
+    "q_written_arrangement": "Yes",
+    "q_contract_type": [
+      "Ordinary employment contract"
+    ],
+    "q_contract_registered": [
+      "School",
+      "Education ministry",
+      "Other"
+    ],
+    "q_compensation": [
+      "Wage"
+    ],
+    "q_wage_setting": [
+      "Sectoral agreements"
+    ],
+    "q_pay_funded_by": [
+      "Employers"
+    ],
+    "q_training_cost_funding": [
+      "Host employers",
+      "Training funds"
+    ],
+    "q_financial_incentives": [
+      "Subsidies",
+      "Other"
+    ],
+    "q_nonfinancial_incentives": [
+      "Campaigns",
+      "Online platforms",
+      "Trainer training"
+    ],
+    "q_pay_covers_school": "Yes",
+    "q_learner_incentives": [
+      "Recognition of prior learning",
+      "Guidance",
+      "Other"
+    ],
+    "fiche_author": "Henrik Hersom, University College Copenhagen",
+    "fiche_pdf": "https://www.cedefop.europa.eu/en/print/pdf/node/26452",
+    "country_fiche_url": "https://www.cedefop.europa.eu/en/tools/apprenticeship-schemes/country-fiches/denmark",
+    "fiche_answers_read": "2026-10-01"
   },
   {
     "id": "ee-wbl",
@@ -230,8 +975,101 @@
     "overview": "Any Estonian VET curriculum can be taken in workplace-based form: at least two-thirds of the study load happens at work under a tripartite contract, open to learners of all ages.",
     "source_url": "https://www.cedefop.europa.eu/en/tools/apprenticeship-schemes/scheme-fiches/workplace-based-learning",
     "source_version": "Cedefop European database on apprenticeship schemes, 2026 update",
-    "retrieved": "2026-09",
-    "status": "Hand-entered from the fiche; not yet checked field by field"
+    "retrieved": "2026-10-01",
+    "status": "Checked against the 2026 fiche on 2026-10-01: Cedefop's coded answers imported directly; learners and duration compared with the fiche text.",
+    "q_introduced": "2000–2012",
+    "q_origin": [
+      "Grew out of school-based VET"
+    ],
+    "q_age_limits": "Other",
+    "q_typical_age": [
+      "Over 24"
+    ],
+    "q_share_of_vet": "Under 10%",
+    "q_in_nqf": "Yes",
+    "q_in_isced": "Yes",
+    "q_qualification_route": "Also through school-based VET",
+    "q_qualification_type": [
+      "VET qualification, route not shown"
+    ],
+    "q_access_to_he": "Yes",
+    "q_national_coordination": "Yes",
+    "q_partners_design": [
+      "Design curricula"
+    ],
+    "q_partners_implement": [
+      "Final assessment",
+      "Accredit companies",
+      "Other"
+    ],
+    "q_quality_assurance": [
+      "Monitoring during training",
+      "Evaluation at completion",
+      "Other"
+    ],
+    "q_alternation_compulsory": "Yes",
+    "q_min_workplace_share": "50% or more",
+    "q_training_vs_work_time": "No",
+    "q_alternation_form": [
+      "Varies by agreement"
+    ],
+    "q_training_basis": [
+      "General VET standards"
+    ],
+    "q_training_plan": "Yes, agreed by school and company",
+    "q_company_requirements": [
+      "Suitable learning environment",
+      "Mentor or trainer",
+      "Other"
+    ],
+    "q_sanctions": "No",
+    "q_learner_status": [
+      "Student",
+      "Specific apprentice status"
+    ],
+    "q_written_arrangement": "Yes",
+    "q_contract_type": [
+      "Ordinary employment contract",
+      "Formal agreement, not a contract"
+    ],
+    "q_contract_registered": [
+      "School",
+      "Other"
+    ],
+    "q_compensation": [
+      "Wage"
+    ],
+    "q_wage_setting": [
+      "By law",
+      "Firm or individual agreements"
+    ],
+    "q_pay_funded_by": [
+      "Employers"
+    ],
+    "q_training_cost_funding": [
+      "Host employers",
+      "State",
+      "Other"
+    ],
+    "q_financial_incentives": [
+      "Other"
+    ],
+    "q_nonfinancial_incentives": [
+      "Campaigns",
+      "Chamber or intermediary support",
+      "Trainer training"
+    ],
+    "q_pay_covers_school": "No, company time only",
+    "q_learner_incentives": [
+      "Pay top-up grants",
+      "Grants for other costs",
+      "Recognition of prior learning",
+      "Guidance"
+    ],
+    "fiche_author": "Sigrid Ester Tani, Ministry of Education and Research",
+    "fiche_pdf": "https://www.cedefop.europa.eu/en/print/pdf/node/26456",
+    "country_fiche_url": "https://www.cedefop.europa.eu/en/tools/apprenticeship-schemes/country-fiches/estonia",
+    "fiche_answers_read": "2026-10-01"
   },
   {
     "id": "fi-oppisopimus",
@@ -256,8 +1094,103 @@
     "overview": "A fully flexible route to any Finnish vocational qualification, used heavily by adults: learning happens mostly on the job under an employment contract, topped up with theoretical studies.",
     "source_url": "https://www.cedefop.europa.eu/en/tools/apprenticeship-schemes/scheme-fiches/apprenticeship-training",
     "source_version": "Cedefop European database on apprenticeship schemes, 2026 update",
-    "retrieved": "2026-09",
-    "status": "Hand-entered from the fiche; not yet checked field by field"
+    "retrieved": "2026-10-01",
+    "status": "Checked against the 2026 fiche on 2026-10-01: Cedefop's coded answers imported directly; learners and duration compared with the fiche text.",
+    "q_introduced": "Before 2000",
+    "q_origin": [
+      "Craft tradition",
+      "Other"
+    ],
+    "q_age_limits": "Minimum only",
+    "q_typical_age": [
+      "Over 24"
+    ],
+    "q_share_of_vet": "10–30%",
+    "q_in_nqf": "Yes",
+    "q_in_isced": "Yes",
+    "q_qualification_route": "Also through school-based VET",
+    "q_qualification_type": [
+      "VET qualification, route shown"
+    ],
+    "q_access_to_he": "Yes",
+    "q_national_coordination": "Yes",
+    "q_partners_design": [
+      "Design qualifications",
+      "Design curricula",
+      "Other"
+    ],
+    "q_partners_implement": [
+      "Final assessment",
+      "Monitor in-company training",
+      "Other"
+    ],
+    "q_quality_assurance": [
+      "Monitoring during training",
+      "Evaluation at completion",
+      "Other"
+    ],
+    "q_alternation_compulsory": "No",
+    "q_min_workplace_share": "No minimum",
+    "q_training_vs_work_time": "No",
+    "q_alternation_form": [
+      "Varies by agreement"
+    ],
+    "q_training_basis": [
+      "General VET standards"
+    ],
+    "q_training_plan": "Yes, agreed by school and company",
+    "q_company_requirements": [
+      "Suitable learning environment",
+      "Mentor or trainer",
+      "Other"
+    ],
+    "q_sanctions": "No",
+    "q_learner_status": [
+      "Specific apprentice status"
+    ],
+    "q_written_arrangement": "Yes",
+    "q_contract_type": [
+      "Specific apprenticeship contract"
+    ],
+    "q_contract_registered": [
+      "School"
+    ],
+    "q_compensation": [
+      "Wage"
+    ],
+    "q_wage_setting": [
+      "Sectoral agreements",
+      "Firm or individual agreements"
+    ],
+    "q_pay_funded_by": [
+      "Employers"
+    ],
+    "q_training_cost_funding": [
+      "Host employers",
+      "State"
+    ],
+    "q_financial_incentives": [
+      "Other"
+    ],
+    "q_nonfinancial_incentives": [
+      "Campaigns",
+      "Online platforms",
+      "Chamber or intermediary support",
+      "School collaboration guidelines",
+      "Trainer training"
+    ],
+    "q_pay_covers_school": "Yes",
+    "q_learner_incentives": [
+      "Pay top-up grants",
+      "Grants for other costs",
+      "Recognition of prior learning",
+      "Guidance",
+      "Other"
+    ],
+    "fiche_author": "Riikka Vacker, Finnish National Agency for Education (EDUFI)",
+    "fiche_pdf": "https://www.cedefop.europa.eu/en/print/pdf/node/26459",
+    "country_fiche_url": "https://www.cedefop.europa.eu/en/tools/apprenticeship-schemes/country-fiches/finland",
+    "fiche_answers_read": "2026-10-01"
   },
   {
     "id": "fr-apprentissage",
@@ -282,8 +1215,107 @@
     "overview": "France's flagship scheme, massively expanded since 2018: a special employment contract covering everything from vocational certificates to engineering and master degrees, with training delivered by CFA centres.",
     "source_url": "https://www.cedefop.europa.eu/en/tools/apprenticeship-schemes/scheme-fiches/apprenticeship-contract",
     "source_version": "Cedefop European database on apprenticeship schemes, 2026 update",
-    "retrieved": "2026-09",
-    "status": "Hand-entered from the fiche; not yet checked field by field"
+    "retrieved": "2026-10-01",
+    "status": "Checked against the 2026 fiche on 2026-10-01: Cedefop's coded answers imported directly; learners and duration compared with the fiche text.",
+    "q_introduced": "Before 2000",
+    "q_origin": [
+      "Craft tradition"
+    ],
+    "q_age_limits": "Minimum and maximum",
+    "q_typical_age": [
+      "18–24"
+    ],
+    "q_share_of_vet": "30–60%",
+    "q_in_nqf": "Yes",
+    "q_in_isced": "Yes",
+    "q_qualification_route": "Also through school-based VET",
+    "q_qualification_type": [
+      "VET qualification, route not shown"
+    ],
+    "q_access_to_he": "Yes",
+    "q_national_coordination": "Yes",
+    "q_partners_design": [
+      "Design qualifications",
+      "Design curricula",
+      "Other"
+    ],
+    "q_partners_implement": [
+      "Final assessment",
+      "Other"
+    ],
+    "q_quality_assurance": [
+      "Monitoring during training",
+      "Evaluation at completion",
+      "Graduate tracking",
+      "Impact or cost–benefit evaluation",
+      "Other"
+    ],
+    "q_alternation_compulsory": "Yes",
+    "q_min_workplace_share": "50% or more",
+    "q_training_vs_work_time": "No",
+    "q_alternation_form": [
+      "Varies by agreement"
+    ],
+    "q_training_basis": [
+      "General VET standards"
+    ],
+    "q_training_plan": "Yes, national/sectoral",
+    "q_company_requirements": [
+      "Suitable learning environment",
+      "Mentor or trainer",
+      "Other"
+    ],
+    "q_sanctions": "Yes",
+    "q_learner_status": [
+      "Specific apprentice status"
+    ],
+    "q_written_arrangement": "Yes",
+    "q_contract_type": [
+      "Specific apprenticeship contract"
+    ],
+    "q_contract_registered": [
+      "Other"
+    ],
+    "q_compensation": [
+      "Wage"
+    ],
+    "q_wage_setting": [
+      "By law",
+      "Sectoral agreements"
+    ],
+    "q_pay_funded_by": [
+      "Employers"
+    ],
+    "q_training_cost_funding": [
+      "Host employers",
+      "Training funds",
+      "State",
+      "Other"
+    ],
+    "q_financial_incentives": [
+      "Subsidies",
+      "Tax deductions",
+      "Other"
+    ],
+    "q_nonfinancial_incentives": [
+      "Campaigns",
+      "Online platforms",
+      "Chamber or intermediary support",
+      "Trainer training",
+      "Other"
+    ],
+    "q_pay_covers_school": "Yes",
+    "q_learner_incentives": [
+      "Pay top-up grants",
+      "Grants for other costs",
+      "Recognition of prior learning",
+      "Guidance",
+      "Other"
+    ],
+    "fiche_author": "Romain Pigaeud, Centre Inffo",
+    "fiche_pdf": "https://www.cedefop.europa.eu/en/print/pdf/node/26462",
+    "country_fiche_url": "https://www.cedefop.europa.eu/en/tools/apprenticeship-schemes/country-fiches/france",
+    "fiche_answers_read": "2026-10-01"
   },
   {
     "id": "fr-pro",
@@ -308,8 +1340,104 @@
     "overview": "The adult-oriented sibling of the apprenticeship contract: aimed at young people and jobseekers, it links employment to a recognised qualification with a lighter training share.",
     "source_url": "https://www.cedefop.europa.eu/en/tools/apprenticeship-schemes/scheme-fiches/professionalisation-contract",
     "source_version": "Cedefop European database on apprenticeship schemes, 2026 update",
-    "retrieved": "2026-09",
-    "status": "Hand-entered from the fiche; not yet checked field by field"
+    "retrieved": "2026-10-01",
+    "status": "Checked against the 2026 fiche on 2026-10-01: Cedefop's coded answers imported directly; learners and duration compared with the fiche text.",
+    "q_introduced": "2000–2012",
+    "q_origin": [
+      "Created from scratch"
+    ],
+    "q_age_limits": "Minimum only",
+    "q_typical_age": [
+      "Over 24"
+    ],
+    "q_in_nqf": "Yes",
+    "q_in_isced": "Yes",
+    "q_qualification_route": "Also through school-based VET",
+    "q_qualification_type": [
+      "VET qualification, route not shown",
+      "Other"
+    ],
+    "q_access_to_he": "Yes",
+    "q_national_coordination": "Yes",
+    "q_partners_design": [
+      "Design qualifications",
+      "Other"
+    ],
+    "q_partners_implement": [
+      "Monitor in-company training",
+      "Other"
+    ],
+    "q_quality_assurance": [
+      "Monitoring during training",
+      "Evaluation at completion",
+      "Graduate tracking",
+      "Impact or cost–benefit evaluation"
+    ],
+    "q_alternation_compulsory": "Yes",
+    "q_min_workplace_share": "50% or more",
+    "q_training_vs_work_time": "No",
+    "q_alternation_form": [
+      "Other"
+    ],
+    "q_training_basis": [
+      "General VET standards",
+      "Other"
+    ],
+    "q_training_plan": "Yes, national/sectoral",
+    "q_company_requirements": [
+      "Suitable learning environment",
+      "Mentor or trainer",
+      "Other"
+    ],
+    "q_sanctions": "Yes",
+    "q_learner_status": [
+      "Employee"
+    ],
+    "q_written_arrangement": "Yes",
+    "q_contract_type": [
+      "Specific apprenticeship contract"
+    ],
+    "q_contract_registered": [
+      "Employment ministry",
+      "Other"
+    ],
+    "q_compensation": [
+      "Wage"
+    ],
+    "q_wage_setting": [
+      "By law"
+    ],
+    "q_pay_funded_by": [
+      "Employers"
+    ],
+    "q_training_cost_funding": [
+      "Host employers",
+      "Training funds",
+      "State",
+      "Other"
+    ],
+    "q_financial_incentives": [
+      "Subsidies",
+      "Tax deductions",
+      "Other"
+    ],
+    "q_nonfinancial_incentives": [
+      "Campaigns",
+      "Online platforms",
+      "Chamber or intermediary support",
+      "School collaboration guidelines",
+      "Trainer training"
+    ],
+    "q_pay_covers_school": "Yes",
+    "q_learner_incentives": [
+      "Recognition of prior learning",
+      "Guidance",
+      "Other"
+    ],
+    "fiche_author": "Romain Pigaeud, Centre Inffo",
+    "fiche_pdf": "https://www.cedefop.europa.eu/en/print/pdf/node/26463",
+    "country_fiche_url": "https://www.cedefop.europa.eu/en/tools/apprenticeship-schemes/country-fiches/france",
+    "fiche_answers_read": "2026-10-01"
   },
   {
     "id": "de-dual",
@@ -334,8 +1462,107 @@
     "overview": "The archetypal dual system: 1.2 million apprentices train in ~320 recognised occupations, with chambers overseeing quality, social partners shaping curricula, and a statutory minimum training wage since 2020.",
     "source_url": "https://www.cedefop.europa.eu/en/tools/apprenticeship-schemes/scheme-fiches/dual-vet",
     "source_version": "Cedefop European database on apprenticeship schemes, 2026 update",
-    "retrieved": "2026-09",
-    "status": "Hand-entered from the fiche; not yet checked field by field"
+    "retrieved": "2026-10-01",
+    "status": "Checked against the 2026 fiche on 2026-10-01: Cedefop's coded answers imported directly; learners and duration compared with the fiche text.",
+    "q_introduced": "Before 2000",
+    "q_origin": [
+      "Craft tradition"
+    ],
+    "q_age_limits": "Other",
+    "q_typical_age": [
+      "18–24"
+    ],
+    "q_share_of_vet": "Over 60%",
+    "q_in_nqf": "Yes",
+    "q_in_isced": "Yes",
+    "q_qualification_route": "Only through apprenticeship",
+    "q_qualification_type": [
+      "VET qualification, route shown"
+    ],
+    "q_access_to_he": "No",
+    "q_national_coordination": "Yes",
+    "q_partners_design": [
+      "Design qualifications",
+      "Design curricula",
+      "Other"
+    ],
+    "q_partners_implement": [
+      "Final assessment",
+      "Accredit companies",
+      "Monitor in-company training",
+      "Other"
+    ],
+    "q_quality_assurance": [
+      "Monitoring during training",
+      "Evaluation at completion",
+      "Graduate tracking",
+      "Impact or cost–benefit evaluation",
+      "Other"
+    ],
+    "q_alternation_compulsory": "Yes",
+    "q_min_workplace_share": "50% or more",
+    "q_training_vs_work_time": "No",
+    "q_alternation_form": [
+      "Every week, both venues",
+      "Blocks of weeks"
+    ],
+    "q_training_basis": [
+      "Own apprenticeship programme"
+    ],
+    "q_training_plan": "Yes, national/sectoral",
+    "q_company_requirements": [
+      "Suitable learning environment",
+      "Mentor or trainer"
+    ],
+    "q_sanctions": "Yes",
+    "q_learner_status": [
+      "Specific apprentice status"
+    ],
+    "q_written_arrangement": "Yes",
+    "q_contract_type": [
+      "Specific apprenticeship contract"
+    ],
+    "q_contract_registered": [
+      "Chambers"
+    ],
+    "q_compensation": [
+      "Wage"
+    ],
+    "q_wage_setting": [
+      "Sectoral agreements",
+      "Firm or individual agreements"
+    ],
+    "q_pay_funded_by": [
+      "Employers"
+    ],
+    "q_training_cost_funding": [
+      "Host employers",
+      "Training funds",
+      "State",
+      "Other"
+    ],
+    "q_financial_incentives": [
+      "Other"
+    ],
+    "q_nonfinancial_incentives": [
+      "Campaigns",
+      "Online platforms",
+      "Chamber or intermediary support",
+      "School collaboration guidelines",
+      "Trainer training",
+      "Other"
+    ],
+    "q_pay_covers_school": "Yes",
+    "q_learner_incentives": [
+      "Grants for other costs",
+      "Recognition of prior learning",
+      "Guidance",
+      "Other"
+    ],
+    "fiche_author": "Isabelle Le Mouillour, BIBB",
+    "fiche_pdf": "https://www.cedefop.europa.eu/en/print/pdf/node/26465",
+    "country_fiche_url": "https://www.cedefop.europa.eu/en/tools/apprenticeship-schemes/country-fiches/germany",
+    "fiche_answers_read": "2026-10-01"
   },
   {
     "id": "el-epas",
@@ -360,8 +1587,93 @@
     "overview": "Run by the public employment service: apprentices spend four days a week in a company and one in an EPAS school, earning a share of the national minimum wage.",
     "source_url": "https://www.cedefop.europa.eu/en/tools/apprenticeship-schemes/scheme-fiches/epas-apprenticeships-dypa-vet-schools",
     "source_version": "Cedefop European database on apprenticeship schemes, 2026 update",
-    "retrieved": "2026-09",
-    "status": "Hand-entered from the fiche; not yet checked field by field"
+    "retrieved": "2026-10-01",
+    "status": "Checked against the 2026 fiche on 2026-10-01: Cedefop's coded answers imported directly; learners and duration compared with the fiche text.",
+    "q_introduced": "Before 2000",
+    "q_origin": [
+      "Craft tradition"
+    ],
+    "q_age_limits": "Minimum and maximum",
+    "q_typical_age": [
+      "15–18",
+      "18–24"
+    ],
+    "q_share_of_vet": "Under 10%",
+    "q_in_nqf": "Yes",
+    "q_in_isced": "Yes",
+    "q_qualification_route": "Only through apprenticeship",
+    "q_qualification_type": [
+      "Apprenticeship qualification (journeyman etc.)"
+    ],
+    "q_access_to_he": "No",
+    "q_national_coordination": "Yes",
+    "q_partners_design": [
+      "Design qualifications",
+      "Other"
+    ],
+    "q_partners_implement": [
+      "Other"
+    ],
+    "q_quality_assurance": [
+      "Monitoring during training"
+    ],
+    "q_alternation_compulsory": "Yes",
+    "q_min_workplace_share": "50% or more",
+    "q_training_vs_work_time": "No",
+    "q_alternation_form": [
+      "Every week, both venues"
+    ],
+    "q_training_basis": [
+      "Own apprenticeship programme"
+    ],
+    "q_training_plan": "Yes, national/sectoral",
+    "q_company_requirements": [
+      "Suitable learning environment",
+      "Mentor or trainer",
+      "Other"
+    ],
+    "q_sanctions": "No",
+    "q_learner_status": [
+      "Specific apprentice status"
+    ],
+    "q_written_arrangement": "Yes",
+    "q_contract_type": [
+      "Specific apprenticeship contract"
+    ],
+    "q_contract_registered": [
+      "Employment ministry"
+    ],
+    "q_compensation": [
+      "Wage"
+    ],
+    "q_wage_setting": [
+      "By law"
+    ],
+    "q_pay_funded_by": [
+      "Employers",
+      "State",
+      "Other"
+    ],
+    "q_training_cost_funding": [
+      "Host employers",
+      "Other"
+    ],
+    "q_financial_incentives": [
+      "Subsidies"
+    ],
+    "q_nonfinancial_incentives": [
+      "Campaigns",
+      "Other"
+    ],
+    "q_pay_covers_school": "No, company time only",
+    "q_learner_incentives": [
+      "Grants for other costs",
+      "Guidance"
+    ],
+    "fiche_author": "Based on input from DYPA, the Greek public employment service",
+    "fiche_pdf": "https://www.cedefop.europa.eu/en/print/pdf/node/26468",
+    "country_fiche_url": "https://www.cedefop.europa.eu/en/tools/apprenticeship-schemes/country-fiches/greece",
+    "fiche_answers_read": "2026-10-01"
   },
   {
     "id": "el-postsec",
@@ -386,8 +1698,95 @@
     "overview": "An optional apprenticeship year for vocational lyceum (EPAL) graduates, leading to an EQF level-5 certificate after workplace practice and lab-based learning.",
     "source_url": "https://www.cedefop.europa.eu/en/tools/apprenticeship-schemes/scheme-fiches/post-secondary-year-apprenticeship-class",
     "source_version": "Cedefop European database on apprenticeship schemes, 2026 update",
-    "retrieved": "2026-09",
-    "status": "Hand-entered from the fiche; not yet checked field by field"
+    "retrieved": "2026-10-01",
+    "status": "Checked against the 2026 fiche on 2026-10-01: Cedefop's coded answers imported directly; learners and duration compared with the fiche text.",
+    "q_introduced": "After 2012",
+    "q_origin": [
+      "Created from scratch"
+    ],
+    "q_age_limits": "Minimum only",
+    "q_typical_age": [
+      "18–24"
+    ],
+    "q_share_of_vet": "10–30%",
+    "q_in_nqf": "Yes",
+    "q_in_isced": "No",
+    "q_qualification_route": "Also through school-based VET",
+    "q_qualification_type": [
+      "Apprenticeship qualification (journeyman etc.)"
+    ],
+    "q_access_to_he": "Yes",
+    "q_national_coordination": "Yes",
+    "q_partners_design": [
+      "Design qualifications",
+      "Design curricula",
+      "Other"
+    ],
+    "q_partners_implement": [
+      "Other"
+    ],
+    "q_quality_assurance": [
+      "Monitoring during training",
+      "Evaluation at completion"
+    ],
+    "q_alternation_compulsory": "Yes",
+    "q_min_workplace_share": "50% or more",
+    "q_training_vs_work_time": "No",
+    "q_alternation_form": [
+      "Every week, both venues"
+    ],
+    "q_training_basis": [
+      "Own apprenticeship programme"
+    ],
+    "q_training_plan": "Yes, national/sectoral",
+    "q_company_requirements": [
+      "Suitable learning environment",
+      "Mentor or trainer",
+      "Other"
+    ],
+    "q_sanctions": "No",
+    "q_learner_status": [
+      "Specific apprentice status"
+    ],
+    "q_written_arrangement": "Yes",
+    "q_contract_type": [
+      "Specific apprenticeship contract"
+    ],
+    "q_contract_registered": [
+      "Employment ministry"
+    ],
+    "q_compensation": [
+      "Wage"
+    ],
+    "q_wage_setting": [
+      "By law"
+    ],
+    "q_pay_funded_by": [
+      "Employers"
+    ],
+    "q_training_cost_funding": [
+      "Host employers",
+      "State",
+      "Other"
+    ],
+    "q_financial_incentives": [
+      "Subsidies"
+    ],
+    "q_nonfinancial_incentives": [
+      "Online platforms",
+      "School collaboration guidelines",
+      "Trainer training",
+      "Other"
+    ],
+    "q_pay_covers_school": "No, company time only",
+    "q_learner_incentives": [
+      "Guidance",
+      "Other"
+    ],
+    "fiche_author": "Olga Kafetzopoulou, Ministry of Education and Religious Affairs",
+    "fiche_pdf": "https://www.cedefop.europa.eu/en/print/pdf/node/43272",
+    "country_fiche_url": "https://www.cedefop.europa.eu/en/tools/apprenticeship-schemes/country-fiches/greece",
+    "fiche_answers_read": "2026-10-01"
   },
   {
     "id": "hu-dual",
@@ -412,8 +1811,100 @@
     "overview": "After Hungary's 2019 reform, learners in the dual phase sign a vocational training employment contract with a company, earning a wage while completing sectoral training.",
     "source_url": "https://www.cedefop.europa.eu/en/tools/apprenticeship-schemes/scheme-fiches/dual-vocational-training-system-based-vocational-employment-contract",
     "source_version": "Cedefop European database on apprenticeship schemes, 2026 update",
-    "retrieved": "2026-09",
-    "status": "Hand-entered from the fiche; not yet checked field by field"
+    "retrieved": "2026-10-01",
+    "status": "Checked against the 2026 fiche on 2026-10-01: Cedefop's coded answers imported directly; learners and duration compared with the fiche text.",
+    "q_introduced": "After 2012",
+    "q_origin": [
+      "Grew out of school-based VET"
+    ],
+    "q_age_limits": "Minimum only",
+    "q_typical_age": [
+      "15–18"
+    ],
+    "q_share_of_vet": "30–60%",
+    "q_in_nqf": "Yes",
+    "q_in_isced": "Yes",
+    "q_qualification_route": "Also through school-based VET",
+    "q_qualification_type": [
+      "VET qualification, route not shown"
+    ],
+    "q_access_to_he": "Yes",
+    "q_national_coordination": "Yes",
+    "q_partners_design": [
+      "Design qualifications",
+      "Design curricula"
+    ],
+    "q_partners_implement": [
+      "Final assessment",
+      "Accredit companies",
+      "Monitor in-company training",
+      "Other"
+    ],
+    "q_quality_assurance": [
+      "Monitoring during training",
+      "Evaluation at completion",
+      "Graduate tracking",
+      "Other"
+    ],
+    "q_alternation_compulsory": "No",
+    "q_min_workplace_share": "50% or more",
+    "q_training_vs_work_time": "No",
+    "q_alternation_form": [
+      "Varies by agreement"
+    ],
+    "q_training_basis": [
+      "School-based VET programme"
+    ],
+    "q_training_plan": "Yes, national/sectoral",
+    "q_company_requirements": [
+      "Suitable learning environment",
+      "Mentor or trainer",
+      "Other"
+    ],
+    "q_sanctions": "Yes",
+    "q_learner_status": [
+      "Specific apprentice status"
+    ],
+    "q_written_arrangement": "Yes",
+    "q_contract_type": [
+      "Specific apprenticeship contract"
+    ],
+    "q_contract_registered": [
+      "Other"
+    ],
+    "q_compensation": [
+      "Allowance"
+    ],
+    "q_wage_setting": [
+      "By law"
+    ],
+    "q_pay_funded_by": [
+      "Employers"
+    ],
+    "q_training_cost_funding": [
+      "Host employers",
+      "State"
+    ],
+    "q_financial_incentives": [
+      "Subsidies",
+      "Tax deductions"
+    ],
+    "q_nonfinancial_incentives": [
+      "Chamber or intermediary support",
+      "School collaboration guidelines",
+      "Trainer training",
+      "Other"
+    ],
+    "q_pay_covers_school": "Yes",
+    "q_learner_incentives": [
+      "Grants for other costs",
+      "Guidance",
+      "Other"
+    ],
+    "fiche_author": "Eva Mezo-Zadori, IKK Innovative Training Support Centre",
+    "fiche_pdf": "https://www.cedefop.europa.eu/en/print/pdf/node/26472",
+    "country_fiche_url": "https://www.cedefop.europa.eu/en/tools/apprenticeship-schemes/country-fiches/hungary",
+    "fiche_answers_read": "2026-10-01"
   },
   {
     "id": "is-starfsnam",
@@ -438,8 +1929,93 @@
     "overview": "Iceland's route to journeyman's examinations in certified trades: school periods alternate with an extended, paid workplace contract under a licensed master.",
     "source_url": "https://www.cedefop.europa.eu/en/tools/apprenticeship-schemes/scheme-fiches/apprenticeship-1",
     "source_version": "Cedefop European database on apprenticeship schemes, 2026 update",
-    "retrieved": "2026-09",
-    "status": "Hand-entered from the fiche; not yet checked field by field"
+    "retrieved": "2026-10-01",
+    "status": "Checked against the 2026 fiche on 2026-10-01: Cedefop's coded answers imported directly; learners and duration compared with the fiche text.",
+    "q_introduced": "Before 2000",
+    "q_origin": [
+      "Craft tradition"
+    ],
+    "q_age_limits": "Minimum only",
+    "q_typical_age": [
+      "18–24"
+    ],
+    "q_share_of_vet": "30–60%",
+    "q_in_nqf": "Yes",
+    "q_in_isced": "Yes",
+    "q_qualification_route": "Only through apprenticeship",
+    "q_qualification_type": [
+      "Apprenticeship qualification (journeyman etc.)"
+    ],
+    "q_access_to_he": "No",
+    "q_national_coordination": "Yes",
+    "q_partners_design": [
+      "Design qualifications",
+      "Design curricula"
+    ],
+    "q_partners_implement": [
+      "Final assessment",
+      "Accredit companies"
+    ],
+    "q_quality_assurance": [
+      "Monitoring during training"
+    ],
+    "q_alternation_compulsory": "Yes",
+    "q_min_workplace_share": "No minimum",
+    "q_training_vs_work_time": "No",
+    "q_alternation_form": [
+      "School years, then workplace",
+      "Varies by agreement"
+    ],
+    "q_training_basis": [
+      "Own apprenticeship programme"
+    ],
+    "q_training_plan": "Yes, national/sectoral",
+    "q_company_requirements": [
+      "Suitable learning environment",
+      "Mentor or trainer"
+    ],
+    "q_sanctions": "No",
+    "q_learner_status": [
+      "Specific apprentice status"
+    ],
+    "q_written_arrangement": "Yes",
+    "q_contract_type": [
+      "Specific apprenticeship contract"
+    ],
+    "q_contract_registered": [
+      "School",
+      "Education ministry"
+    ],
+    "q_compensation": [
+      "Wage"
+    ],
+    "q_wage_setting": [
+      "Sectoral agreements"
+    ],
+    "q_pay_funded_by": [
+      "Employers"
+    ],
+    "q_training_cost_funding": [
+      "Host employers",
+      "Training funds",
+      "State"
+    ],
+    "q_financial_incentives": [
+      "Subsidies"
+    ],
+    "q_nonfinancial_incentives": [
+      "Campaigns",
+      "Other"
+    ],
+    "q_pay_covers_school": "No, company time only",
+    "q_learner_incentives": [
+      "Guidance",
+      "Other"
+    ],
+    "fiche_author": "Cedefop, with input from Skúli Leifsson (Rannís)",
+    "fiche_pdf": "https://www.cedefop.europa.eu/en/print/pdf/node/26474",
+    "country_fiche_url": "https://www.cedefop.europa.eu/en/tools/apprenticeship-schemes/country-fiches/iceland",
+    "fiche_answers_read": "2026-10-01"
   },
   {
     "id": "ie-app",
@@ -464,8 +2040,99 @@
     "overview": "Craft apprenticeships follow a seven-phase on/off-the-job model, while post-2016 'new' apprenticeships extend the model to sectors from finance to biopharma, up to degree level.",
     "source_url": "https://www.cedefop.europa.eu/en/tools/apprenticeship-schemes/scheme-fiches/apprenticeships-ireland",
     "source_version": "Cedefop European database on apprenticeship schemes, 2026 update",
-    "retrieved": "2026-09",
-    "status": "Hand-entered from the fiche; not yet checked field by field"
+    "retrieved": "2026-10-01",
+    "status": "Checked against the 2026 fiche on 2026-10-01: Cedefop's coded answers imported directly; learners and duration compared with the fiche text (learners could not be confirmed).",
+    "q_introduced": "Before 2000",
+    "q_origin": [
+      "Craft tradition"
+    ],
+    "q_age_limits": "Minimum only",
+    "q_typical_age": [
+      "18–24"
+    ],
+    "q_share_of_vet": "Under 10%",
+    "q_in_nqf": "Yes",
+    "q_in_isced": "Yes",
+    "q_qualification_route": "Only through apprenticeship",
+    "q_qualification_type": [
+      "Apprenticeship qualification (journeyman etc.)",
+      "Other"
+    ],
+    "q_access_to_he": "Yes",
+    "q_national_coordination": "Yes",
+    "q_partners_design": [
+      "Design qualifications",
+      "Design curricula",
+      "Other"
+    ],
+    "q_partners_implement": [
+      "Monitor in-company training",
+      "Other"
+    ],
+    "q_quality_assurance": [
+      "Monitoring during training",
+      "Evaluation at completion",
+      "Other"
+    ],
+    "q_alternation_compulsory": "Yes",
+    "q_min_workplace_share": "50% or more",
+    "q_training_vs_work_time": "No",
+    "q_alternation_form": [
+      "Other"
+    ],
+    "q_training_basis": [
+      "Own apprenticeship programme"
+    ],
+    "q_training_plan": "Yes, national/sectoral",
+    "q_company_requirements": [
+      "Suitable learning environment",
+      "Mentor or trainer",
+      "Other"
+    ],
+    "q_sanctions": "Yes",
+    "q_learner_status": [
+      "Employee",
+      "Specific apprentice status"
+    ],
+    "q_written_arrangement": "Yes",
+    "q_contract_type": [
+      "Ordinary employment contract"
+    ],
+    "q_contract_registered": [
+      "Other"
+    ],
+    "q_compensation": [
+      "Wage"
+    ],
+    "q_wage_setting": [
+      "Sectoral agreements",
+      "Firm or individual agreements"
+    ],
+    "q_pay_funded_by": [
+      "Employers",
+      "State"
+    ],
+    "q_training_cost_funding": [
+      "Host employers"
+    ],
+    "q_financial_incentives": [
+      "Subsidies",
+      "Other"
+    ],
+    "q_nonfinancial_incentives": [
+      "Campaigns",
+      "Online platforms"
+    ],
+    "q_pay_covers_school": "Yes",
+    "q_learner_incentives": [
+      "Grants for other costs",
+      "Guidance",
+      "Other"
+    ],
+    "fiche_author": "Breda McNally, SOLAS",
+    "fiche_pdf": "https://www.cedefop.europa.eu/en/print/pdf/node/26476",
+    "country_fiche_url": "https://www.cedefop.europa.eu/en/tools/apprenticeship-schemes/country-fiches/ireland",
+    "fiche_answers_read": "2026-10-01"
   },
   {
     "id": "it-type1",
@@ -490,8 +2157,101 @@
     "overview": "For 15–25 year-olds: an employment contract that leads to an upper-secondary vocational qualification or diploma, combining company training with education providers.",
     "source_url": "https://www.cedefop.europa.eu/en/tools/apprenticeship-schemes/scheme-fiches/apprenticeship-vocational-qualification-and-diploma-upper-secondary-education",
     "source_version": "Cedefop European database on apprenticeship schemes, 2026 update",
-    "retrieved": "2026-09",
-    "status": "Hand-entered from the fiche; not yet checked field by field"
+    "retrieved": "2026-10-01",
+    "status": "Checked against the 2026 fiche on 2026-10-01: Cedefop's coded answers imported directly; learners and duration compared with the fiche text.",
+    "q_introduced": "2000–2012",
+    "q_origin": [
+      "Craft tradition",
+      "Grew out of school-based VET"
+    ],
+    "q_age_limits": "Minimum and maximum",
+    "q_typical_age": [
+      "18–24"
+    ],
+    "q_share_of_vet": "Under 10%",
+    "q_in_nqf": "Yes",
+    "q_in_isced": "Yes",
+    "q_qualification_route": "Also through school-based VET",
+    "q_qualification_type": [
+      "VET qualification, route not shown"
+    ],
+    "q_access_to_he": "Yes",
+    "q_national_coordination": "No",
+    "q_partners_design": [
+      "Design qualifications",
+      "Other"
+    ],
+    "q_partners_implement": [
+      "Other"
+    ],
+    "q_quality_assurance": [
+      "Monitoring during training",
+      "Evaluation at completion",
+      "Graduate tracking",
+      "Other"
+    ],
+    "q_alternation_compulsory": "Yes",
+    "q_min_workplace_share": "20–50%",
+    "q_training_vs_work_time": "Yes",
+    "q_alternation_form": [
+      "Blocks of weeks",
+      "Blocks of months",
+      "Varies by agreement"
+    ],
+    "q_training_basis": [
+      "School-based VET programme"
+    ],
+    "q_training_plan": "Yes, agreed by school and company",
+    "q_company_requirements": [
+      "Suitable learning environment",
+      "Mentor or trainer",
+      "Other"
+    ],
+    "q_sanctions": "Yes",
+    "q_learner_status": [
+      "Specific apprentice status"
+    ],
+    "q_written_arrangement": "Yes",
+    "q_contract_type": [
+      "Specific apprenticeship contract"
+    ],
+    "q_contract_registered": [
+      "Employment ministry"
+    ],
+    "q_compensation": [
+      "Wage"
+    ],
+    "q_wage_setting": [
+      "By law",
+      "Sectoral agreements"
+    ],
+    "q_pay_funded_by": [
+      "Employers"
+    ],
+    "q_training_cost_funding": [
+      "Host employers",
+      "State",
+      "Other"
+    ],
+    "q_financial_incentives": [
+      "Subsidies",
+      "Tax deductions",
+      "Other"
+    ],
+    "q_nonfinancial_incentives": [
+      "Chamber or intermediary support",
+      "School collaboration guidelines"
+    ],
+    "q_pay_covers_school": "No, company time only",
+    "q_learner_incentives": [
+      "Recognition of prior learning",
+      "Guidance",
+      "Other"
+    ],
+    "fiche_author": "Sandra D'Agostino, INAPP",
+    "fiche_pdf": "https://www.cedefop.europa.eu/en/print/pdf/node/26478",
+    "country_fiche_url": "https://www.cedefop.europa.eu/en/tools/apprenticeship-schemes/country-fiches/italy",
+    "fiche_answers_read": "2026-10-01"
   },
   {
     "id": "it-type3",
@@ -516,8 +2276,100 @@
     "overview": "Connects employment contracts to higher education and research: apprentices earn degrees, doctorates or higher technical qualifications while employed.",
     "source_url": "https://www.cedefop.europa.eu/en/tools/apprenticeship-schemes/scheme-fiches/higher-education-and-research-apprenticeship-type-3",
     "source_version": "Cedefop European database on apprenticeship schemes, 2026 update",
-    "retrieved": "2026-09",
-    "status": "Hand-entered from the fiche; not yet checked field by field"
+    "retrieved": "2026-10-01",
+    "status": "Checked against the 2026 fiche on 2026-10-01: Cedefop's coded answers imported directly; learners and duration compared with the fiche text.",
+    "q_introduced": "2000–2012",
+    "q_origin": [
+      "Created from scratch"
+    ],
+    "q_age_limits": "Minimum and maximum",
+    "q_typical_age": [
+      "Over 24"
+    ],
+    "q_share_of_vet": "Under 10%",
+    "q_in_nqf": "Yes",
+    "q_in_isced": "Yes",
+    "q_qualification_route": "Also through school-based VET",
+    "q_qualification_type": [
+      "VET qualification, route not shown",
+      "Other"
+    ],
+    "q_access_to_he": "Yes",
+    "q_national_coordination": "No",
+    "q_partners_design": [
+      "Design qualifications",
+      "Other"
+    ],
+    "q_partners_implement": [
+      "Other"
+    ],
+    "q_quality_assurance": [
+      "Monitoring during training",
+      "Evaluation at completion",
+      "Graduate tracking",
+      "Other"
+    ],
+    "q_alternation_compulsory": "Yes",
+    "q_min_workplace_share": "50% or more",
+    "q_training_vs_work_time": "Yes",
+    "q_alternation_form": [
+      "Varies by agreement"
+    ],
+    "q_training_basis": [
+      "School-based VET programme",
+      "Other"
+    ],
+    "q_training_plan": "Yes, agreed by school and company",
+    "q_company_requirements": [
+      "Suitable learning environment",
+      "Mentor or trainer",
+      "Other"
+    ],
+    "q_sanctions": "Yes",
+    "q_learner_status": [
+      "Specific apprentice status"
+    ],
+    "q_written_arrangement": "Yes",
+    "q_contract_type": [
+      "Specific apprenticeship contract"
+    ],
+    "q_contract_registered": [
+      "Employment ministry"
+    ],
+    "q_compensation": [
+      "Wage"
+    ],
+    "q_wage_setting": [
+      "By law",
+      "Sectoral agreements"
+    ],
+    "q_pay_funded_by": [
+      "Employers"
+    ],
+    "q_training_cost_funding": [
+      "Host employers",
+      "Training funds",
+      "State",
+      "Other"
+    ],
+    "q_financial_incentives": [
+      "Tax deductions",
+      "Other"
+    ],
+    "q_nonfinancial_incentives": [
+      "Chamber or intermediary support",
+      "School collaboration guidelines"
+    ],
+    "q_pay_covers_school": "No, company time only",
+    "q_learner_incentives": [
+      "Recognition of prior learning",
+      "Guidance",
+      "Other"
+    ],
+    "fiche_author": "Sandra D'Agostino, INAPP",
+    "fiche_pdf": "https://www.cedefop.europa.eu/en/print/pdf/node/26482",
+    "country_fiche_url": "https://www.cedefop.europa.eu/en/tools/apprenticeship-schemes/country-fiches/italy",
+    "fiche_answers_read": "2026-10-01"
   },
   {
     "id": "lv-wbl",
@@ -542,8 +2394,106 @@
     "overview": "A school-led model where VET programmes are partly delivered in companies under tripartite agreements, expanded steadily since 2015.",
     "source_url": "https://www.cedefop.europa.eu/en/tools/apprenticeship-schemes/scheme-fiches/work-based-learning-wbl",
     "source_version": "Cedefop European database on apprenticeship schemes, 2026 update",
-    "retrieved": "2026-09",
-    "status": "Hand-entered from the fiche; not yet checked field by field"
+    "retrieved": "2026-10-01",
+    "status": "Checked against the 2026 fiche on 2026-10-01: Cedefop's coded answers imported directly; learners and duration compared with the fiche text.",
+    "q_introduced": "After 2012",
+    "q_origin": [
+      "Grew out of school-based VET"
+    ],
+    "q_age_limits": "Other",
+    "q_typical_age": [
+      "15–18",
+      "18–24"
+    ],
+    "q_share_of_vet": "10–30%",
+    "q_in_nqf": "Yes",
+    "q_in_isced": "Yes",
+    "q_qualification_route": "Also through school-based VET",
+    "q_qualification_type": [
+      "VET qualification, route not shown"
+    ],
+    "q_access_to_he": "Yes",
+    "q_national_coordination": "No",
+    "q_partners_design": [
+      "Design qualifications",
+      "Design curricula",
+      "Other"
+    ],
+    "q_partners_implement": [
+      "Final assessment",
+      "Other"
+    ],
+    "q_quality_assurance": [
+      "Monitoring during training",
+      "Evaluation at completion",
+      "Graduate tracking",
+      "Other"
+    ],
+    "q_alternation_compulsory": "Yes",
+    "q_min_workplace_share": "20–50%",
+    "q_training_vs_work_time": "No",
+    "q_alternation_form": [
+      "Blocks of weeks",
+      "Blocks of months",
+      "Varies by agreement"
+    ],
+    "q_training_basis": [
+      "General VET standards"
+    ],
+    "q_training_plan": "Yes, agreed by school and company",
+    "q_company_requirements": [
+      "Suitable learning environment",
+      "Mentor or trainer"
+    ],
+    "q_sanctions": "No",
+    "q_learner_status": [
+      "Student",
+      "Employee"
+    ],
+    "q_written_arrangement": "Yes",
+    "q_contract_type": [
+      "Ordinary employment contract",
+      "Formal agreement, not a contract"
+    ],
+    "q_contract_registered": [
+      "School",
+      "Other"
+    ],
+    "q_compensation": [
+      "Wage",
+      "Allowance"
+    ],
+    "q_wage_setting": [
+      "Firm or individual agreements"
+    ],
+    "q_pay_funded_by": [
+      "Employers"
+    ],
+    "q_training_cost_funding": [
+      "Host employers",
+      "State",
+      "Other"
+    ],
+    "q_financial_incentives": [
+      "Subsidies",
+      "Tax deductions"
+    ],
+    "q_nonfinancial_incentives": [
+      "Campaigns",
+      "Online platforms",
+      "Other"
+    ],
+    "q_pay_covers_school": "No, company time only",
+    "q_learner_incentives": [
+      "Grants for other costs",
+      "Recognition of prior learning",
+      "Guidance",
+      "Other"
+    ],
+    "fiche_author": "Ilze Buligina, Ministry of Education and Science",
+    "fiche_pdf": "https://www.cedefop.europa.eu/en/print/pdf/node/26486",
+    "country_fiche_url": "https://www.cedefop.europa.eu/en/tools/apprenticeship-schemes/country-fiches/latvia",
+    "fiche_answers_read": "2026-10-01"
   },
   {
     "id": "lt-pameistryste",
@@ -568,8 +2518,97 @@
     "overview": "Any Lithuanian VET programme can be organised in apprenticeship form: the learner signs an apprenticeship employment contract and trains mainly on the job.",
     "source_url": "https://www.cedefop.europa.eu/en/tools/apprenticeship-schemes/scheme-fiches/vet-form-apprenticeship",
     "source_version": "Cedefop European database on apprenticeship schemes, 2026 update",
-    "retrieved": "2026-09",
-    "status": "Hand-entered from the fiche; not yet checked field by field"
+    "retrieved": "2026-10-01",
+    "status": "Checked against the 2026 fiche on 2026-10-01: Cedefop's coded answers imported directly; learners and duration compared with the fiche text.",
+    "q_introduced": "2000–2012",
+    "q_origin": [
+      "Grew out of school-based VET"
+    ],
+    "q_age_limits": "Other",
+    "q_typical_age": [
+      "15–18"
+    ],
+    "q_share_of_vet": "10–30%",
+    "q_in_nqf": "Yes",
+    "q_in_isced": "Yes",
+    "q_qualification_route": "Also through school-based VET",
+    "q_qualification_type": [
+      "VET qualification, route not shown"
+    ],
+    "q_access_to_he": "Yes",
+    "q_national_coordination": "Yes",
+    "q_partners_design": [
+      "Design qualifications",
+      "Design curricula"
+    ],
+    "q_partners_implement": [
+      "Final assessment"
+    ],
+    "q_quality_assurance": [
+      "Monitoring during training",
+      "Evaluation at completion",
+      "Other"
+    ],
+    "q_alternation_compulsory": "No",
+    "q_min_workplace_share": "50% or more",
+    "q_training_vs_work_time": "Yes",
+    "q_alternation_form": [
+      "Varies by agreement"
+    ],
+    "q_training_basis": [
+      "School-based VET programme"
+    ],
+    "q_training_plan": "Yes, agreed by school and company",
+    "q_company_requirements": [
+      "Suitable learning environment",
+      "Mentor or trainer",
+      "Other"
+    ],
+    "q_sanctions": "No",
+    "q_learner_status": [
+      "Specific apprentice status"
+    ],
+    "q_written_arrangement": "Yes",
+    "q_contract_type": [
+      "Specific apprenticeship contract"
+    ],
+    "q_contract_registered": [
+      "School",
+      "Other"
+    ],
+    "q_compensation": [
+      "Wage"
+    ],
+    "q_wage_setting": [
+      "By law",
+      "Firm or individual agreements"
+    ],
+    "q_pay_funded_by": [
+      "Employers"
+    ],
+    "q_training_cost_funding": [
+      "Host employers",
+      "State",
+      "Other"
+    ],
+    "q_financial_incentives": [
+      "Subsidies"
+    ],
+    "q_nonfinancial_incentives": [
+      "Campaigns",
+      "Online platforms",
+      "Trainer training"
+    ],
+    "q_pay_covers_school": "No, company time only",
+    "q_learner_incentives": [
+      "Pay top-up grants",
+      "Guidance",
+      "Other"
+    ],
+    "fiche_author": "Simonas Gaušas, Visionary Analytics",
+    "fiche_pdf": "https://www.cedefop.europa.eu/en/print/pdf/node/26488",
+    "country_fiche_url": "https://www.cedefop.europa.eu/en/tools/apprenticeship-schemes/country-fiches/lithuania",
+    "fiche_answers_read": "2026-10-01"
   },
   {
     "id": "lu-apprentissage",
@@ -580,7 +2619,7 @@
     "name_original": "Contrat d'apprentissage",
     "education_level": "Upper secondary",
     "education_level_detail": "Upper secondary (EQF 2–4)",
-    "duration": "Mostly 2–3 yrs",
+    "duration": "2–4 yrs by qualification (CCP 2–3, DAP ~3, DT ~4)",
     "workplace_time": "Mostly at work (≥2/3)",
     "workplace_time_detail": "1–2 school days/week; most tracks over 50% practical",
     "compensation": "Wage",
@@ -594,8 +2633,107 @@
     "overview": "Apprentices train for the CCP, DAP or DT qualifications with an employer and chamber oversight, in a system spanning three languages and strong cross-border participation.",
     "source_url": "https://www.cedefop.europa.eu/en/tools/apprenticeship-schemes/scheme-fiches/apprenticeship-contract-0",
     "source_version": "Cedefop European database on apprenticeship schemes, 2026 update",
-    "retrieved": "2026-09",
-    "status": "Hand-entered from the fiche; not yet checked field by field"
+    "retrieved": "2026-10-01",
+    "status": "Checked against the 2026 fiche on 2026-10-01: Cedefop's coded answers imported directly; learners and duration compared with the fiche text (duration corrected).",
+    "q_introduced": "Before 2000",
+    "q_origin": [
+      "Craft tradition"
+    ],
+    "q_age_limits": "Minimum only",
+    "q_typical_age": [
+      "15–18",
+      "18–24",
+      "Over 24"
+    ],
+    "q_share_of_vet": "10–30%",
+    "q_in_nqf": "Yes",
+    "q_in_isced": "No",
+    "q_qualification_route": "Only through apprenticeship",
+    "q_qualification_type": [
+      "VET qualification, route not shown",
+      "Apprenticeship qualification (journeyman etc.)"
+    ],
+    "q_access_to_he": "No",
+    "q_national_coordination": "Yes",
+    "q_partners_design": [
+      "Design qualifications",
+      "Design curricula",
+      "Other"
+    ],
+    "q_partners_implement": [
+      "Final assessment",
+      "Accredit companies",
+      "Monitor in-company training"
+    ],
+    "q_quality_assurance": [
+      "Monitoring during training",
+      "Evaluation at completion",
+      "Graduate tracking"
+    ],
+    "q_alternation_compulsory": "Yes",
+    "q_min_workplace_share": "50% or more",
+    "q_training_vs_work_time": "No",
+    "q_alternation_form": [
+      "Every week, both venues",
+      "Blocks of weeks"
+    ],
+    "q_training_basis": [
+      "Own apprenticeship programme"
+    ],
+    "q_training_plan": "Yes, national/sectoral",
+    "q_company_requirements": [
+      "Suitable learning environment",
+      "Mentor or trainer",
+      "Other"
+    ],
+    "q_sanctions": "Yes",
+    "q_learner_status": [
+      "Specific apprentice status"
+    ],
+    "q_written_arrangement": "Yes",
+    "q_contract_type": [
+      "Specific apprenticeship contract"
+    ],
+    "q_contract_registered": [
+      "Chambers",
+      "Education ministry"
+    ],
+    "q_compensation": [
+      "Wage"
+    ],
+    "q_wage_setting": [
+      "By law"
+    ],
+    "q_pay_funded_by": [
+      "Employers"
+    ],
+    "q_training_cost_funding": [
+      "Host employers",
+      "State"
+    ],
+    "q_financial_incentives": [
+      "Subsidies",
+      "Tax deductions",
+      "Other"
+    ],
+    "q_nonfinancial_incentives": [
+      "Campaigns",
+      "Online platforms",
+      "Chamber or intermediary support",
+      "Trainer training",
+      "Other"
+    ],
+    "q_pay_covers_school": "Yes",
+    "q_learner_incentives": [
+      "Pay top-up grants",
+      "Recognition of prior learning",
+      "Guidance",
+      "Other"
+    ],
+    "fiche_author": "Nathalie Fratini, Ministry of National Education, Childhood and Youth",
+    "fiche_pdf": "https://www.cedefop.europa.eu/en/print/pdf/node/26490",
+    "country_fiche_url": "https://www.cedefop.europa.eu/en/tools/apprenticeship-schemes/country-fiches/luxembourg",
+    "fiche_answers_read": "2026-10-01"
   },
   {
     "id": "mt-mcast",
@@ -620,8 +2758,98 @@
     "overview": "Malta's college of arts, science and technology embeds apprenticeship placements into its vocational programmes under the 2018 apprenticeship act.",
     "source_url": "https://www.cedefop.europa.eu/en/tools/apprenticeship-schemes/scheme-fiches/mcast-apprenticeships",
     "source_version": "Cedefop European database on apprenticeship schemes, 2026 update",
-    "retrieved": "2026-09",
-    "status": "Hand-entered from the fiche; not yet checked field by field"
+    "retrieved": "2026-10-01",
+    "status": "Checked against the 2026 fiche on 2026-10-01: Cedefop's coded answers imported directly; learners and duration compared with the fiche text (duration could not be confirmed).",
+    "q_introduced": "Before 2000",
+    "q_origin": [
+      "Craft tradition"
+    ],
+    "q_age_limits": "Minimum only",
+    "q_typical_age": [
+      "18–24"
+    ],
+    "q_share_of_vet": "30–60%",
+    "q_in_nqf": "Yes",
+    "q_in_isced": "Yes",
+    "q_qualification_route": "Only through apprenticeship",
+    "q_qualification_type": [
+      "VET qualification, route shown"
+    ],
+    "q_access_to_he": "Yes",
+    "q_national_coordination": "Yes",
+    "q_partners_design": [
+      "Design qualifications",
+      "Design curricula",
+      "Other"
+    ],
+    "q_partners_implement": [
+      "Other"
+    ],
+    "q_quality_assurance": [
+      "Monitoring during training",
+      "Graduate tracking"
+    ],
+    "q_alternation_compulsory": "Yes",
+    "q_min_workplace_share": "50% or more",
+    "q_training_vs_work_time": "No",
+    "q_alternation_form": [
+      "Varies by agreement"
+    ],
+    "q_training_basis": [
+      "Own apprenticeship programme"
+    ],
+    "q_training_plan": "Yes, agreed by school and company",
+    "q_company_requirements": [
+      "Suitable learning environment",
+      "Mentor or trainer"
+    ],
+    "q_sanctions": "Yes",
+    "q_learner_status": [
+      "Specific apprentice status"
+    ],
+    "q_written_arrangement": "Yes",
+    "q_contract_type": [
+      "Formal agreement, not a contract"
+    ],
+    "q_contract_registered": [
+      "School",
+      "Other"
+    ],
+    "q_compensation": [
+      "Wage",
+      "Allowance"
+    ],
+    "q_wage_setting": [
+      "By law"
+    ],
+    "q_pay_funded_by": [
+      "Employers",
+      "State"
+    ],
+    "q_training_cost_funding": [
+      "Host employers",
+      "State"
+    ],
+    "q_financial_incentives": [
+      "Tax deductions",
+      "Other"
+    ],
+    "q_nonfinancial_incentives": [
+      "Campaigns",
+      "Online platforms",
+      "School collaboration guidelines",
+      "Other"
+    ],
+    "q_pay_covers_school": "No, company time only",
+    "q_learner_incentives": [
+      "Pay top-up grants",
+      "Guidance",
+      "Other"
+    ],
+    "fiche_author": "Pierre Dalmas, MCAST",
+    "fiche_pdf": "https://www.cedefop.europa.eu/en/print/pdf/node/26492",
+    "country_fiche_url": "https://www.cedefop.europa.eu/en/tools/apprenticeship-schemes/country-fiches/malta",
+    "fiche_answers_read": "2026-10-01"
   },
   {
     "id": "nl-bbl",
@@ -646,8 +2874,102 @@
     "overview": "The work-based track through Dutch MBO: learners are typically employed four days a week at an accredited training company and study one day, at every MBO level.",
     "source_url": "https://www.cedefop.europa.eu/en/tools/apprenticeship-schemes/scheme-fiches/dual-pathway",
     "source_version": "Cedefop European database on apprenticeship schemes, 2026 update",
-    "retrieved": "2026-09",
-    "status": "Hand-entered from the fiche; not yet checked field by field"
+    "retrieved": "2026-10-01",
+    "status": "Checked against the 2026 fiche on 2026-10-01: Cedefop's coded answers imported directly; learners and duration compared with the fiche text.",
+    "q_introduced": "Before 2000",
+    "q_origin": [
+      "Craft tradition"
+    ],
+    "q_age_limits": "Minimum only",
+    "q_typical_age": [
+      "18–24"
+    ],
+    "q_share_of_vet": "10–30%",
+    "q_in_nqf": "Yes",
+    "q_in_isced": "Yes",
+    "q_qualification_route": "Also through school-based VET",
+    "q_qualification_type": [
+      "VET qualification, route not shown"
+    ],
+    "q_access_to_he": "Yes",
+    "q_national_coordination": "Yes",
+    "q_partners_design": [
+      "Design qualifications",
+      "Design curricula"
+    ],
+    "q_partners_implement": [
+      "Accredit companies",
+      "Monitor in-company training",
+      "Other"
+    ],
+    "q_quality_assurance": [
+      "Monitoring during training",
+      "Evaluation at completion",
+      "Graduate tracking",
+      "Other"
+    ],
+    "q_alternation_compulsory": "Yes",
+    "q_min_workplace_share": "20–50%",
+    "q_training_vs_work_time": "No",
+    "q_alternation_form": [
+      "Every week, both venues"
+    ],
+    "q_training_basis": [
+      "General VET standards"
+    ],
+    "q_training_plan": "Yes, agreed by school and company",
+    "q_company_requirements": [
+      "Suitable learning environment",
+      "Mentor or trainer",
+      "Other"
+    ],
+    "q_sanctions": "Yes",
+    "q_learner_status": [
+      "Specific apprentice status"
+    ],
+    "q_written_arrangement": "Yes",
+    "q_contract_type": [
+      "Specific apprenticeship contract"
+    ],
+    "q_contract_registered": [
+      "School",
+      "Other"
+    ],
+    "q_compensation": [
+      "Wage"
+    ],
+    "q_wage_setting": [
+      "By law",
+      "Sectoral agreements"
+    ],
+    "q_pay_funded_by": [
+      "Employers"
+    ],
+    "q_training_cost_funding": [
+      "Host employers",
+      "Training funds",
+      "State"
+    ],
+    "q_financial_incentives": [
+      "Subsidies"
+    ],
+    "q_nonfinancial_incentives": [
+      "Campaigns",
+      "Online platforms",
+      "Chamber or intermediary support",
+      "Trainer training"
+    ],
+    "q_pay_covers_school": "Yes",
+    "q_learner_incentives": [
+      "Grants for other costs",
+      "Recognition of prior learning",
+      "Guidance",
+      "Other"
+    ],
+    "fiche_author": "Daphne Beukers, SBB",
+    "fiche_pdf": "https://www.cedefop.europa.eu/en/print/pdf/node/26494",
+    "country_fiche_url": "https://www.cedefop.europa.eu/en/tools/apprenticeship-schemes/country-fiches/netherlands",
+    "fiche_answers_read": "2026-10-01"
   },
   {
     "id": "no-2plus2",
@@ -668,12 +2990,98 @@
     "governance": "National Council for VET (SRY); ten vocational training councils; counties",
     "target_group": "Typically start at 16, after lower secondary",
     "qualification": "Trade or journeyman's certificate (Fagbrev/Svennebrev), EQF 4",
-    "learners": "80 144 vocational learners (2025)",
+    "learners": "43 177 first-year vocational pupils (2025); ~23 600 offered an apprenticeship (2024)",
     "overview": "Norway's signature 2+2 model: two years in school followed by a two-year paid apprenticeship, ending in a trade or journeyman's certificate.",
     "source_url": "https://www.cedefop.europa.eu/en/tools/apprenticeship-schemes/scheme-fiches/upper-secondary-vocational-programmes",
     "source_version": "Cedefop European database on apprenticeship schemes, 2026 update",
-    "retrieved": "2026-09",
-    "status": "Hand-entered from the fiche; not yet checked field by field"
+    "retrieved": "2026-10-01",
+    "status": "Checked against the 2026 fiche on 2026-10-01: Cedefop's coded answers imported directly; learners and duration compared with the fiche text (learners corrected).",
+    "q_introduced": "Before 2000",
+    "q_origin": [
+      "Craft tradition"
+    ],
+    "q_age_limits": "Minimum only",
+    "q_typical_age": [
+      "18–24"
+    ],
+    "q_share_of_vet": "Over 60%",
+    "q_in_nqf": "Yes",
+    "q_in_isced": "Yes",
+    "q_qualification_route": "Also through school-based VET",
+    "q_qualification_type": [
+      "Apprenticeship qualification (journeyman etc.)"
+    ],
+    "q_access_to_he": "No",
+    "q_national_coordination": "Yes",
+    "q_partners_design": [
+      "Design qualifications",
+      "Design curricula"
+    ],
+    "q_partners_implement": [
+      "Final assessment",
+      "Accredit companies"
+    ],
+    "q_quality_assurance": [
+      "Monitoring during training",
+      "Evaluation at completion",
+      "Graduate tracking",
+      "Other"
+    ],
+    "q_alternation_compulsory": "Yes",
+    "q_min_workplace_share": "50% or more",
+    "q_training_vs_work_time": "Yes",
+    "q_alternation_form": [
+      "Other"
+    ],
+    "q_training_basis": [
+      "Own apprenticeship programme"
+    ],
+    "q_training_plan": "Yes, national/sectoral",
+    "q_company_requirements": [
+      "Suitable learning environment",
+      "Mentor or trainer"
+    ],
+    "q_sanctions": "Yes",
+    "q_learner_status": [
+      "Specific apprentice status"
+    ],
+    "q_written_arrangement": "Yes",
+    "q_contract_type": [
+      "Specific apprenticeship contract"
+    ],
+    "q_contract_registered": [
+      "Other"
+    ],
+    "q_compensation": [
+      "Wage"
+    ],
+    "q_wage_setting": [
+      "Sectoral agreements"
+    ],
+    "q_pay_funded_by": [
+      "Employers"
+    ],
+    "q_training_cost_funding": [
+      "Host employers",
+      "State"
+    ],
+    "q_financial_incentives": [
+      "Subsidies"
+    ],
+    "q_nonfinancial_incentives": [
+      "Campaigns",
+      "Chamber or intermediary support",
+      "Other"
+    ],
+    "q_pay_covers_school": "No, company time only",
+    "q_learner_incentives": [
+      "Guidance",
+      "Other"
+    ],
+    "fiche_author": "Margareth Haukås, HK-dir",
+    "fiche_pdf": "https://www.cedefop.europa.eu/en/print/pdf/node/26496",
+    "country_fiche_url": "https://www.cedefop.europa.eu/en/tools/apprenticeship-schemes/country-fiches/norway",
+    "fiche_answers_read": "2026-10-01"
   },
   {
     "id": "pl-juvenile",
@@ -698,8 +3106,106 @@
     "overview": "Juvenile workers (15+) sign an employment contract, often in craft firms, combining paid vocational preparation at the employer with schooling.",
     "source_url": "https://www.cedefop.europa.eu/en/tools/apprenticeship-schemes/scheme-fiches/vocational-preparation-juvenile-workers",
     "source_version": "Cedefop European database on apprenticeship schemes, 2026 update",
-    "retrieved": "2026-09",
-    "status": "Hand-entered from the fiche; not yet checked field by field"
+    "retrieved": "2026-10-01",
+    "status": "Checked against the 2026 fiche on 2026-10-01: Cedefop's coded answers imported directly; learners and duration compared with the fiche text.",
+    "q_introduced": "Before 2000",
+    "q_origin": [
+      "Craft tradition"
+    ],
+    "q_age_limits": "Minimum and maximum",
+    "q_typical_age": [
+      "15–18"
+    ],
+    "q_share_of_vet": "30–60%",
+    "q_in_nqf": "Yes",
+    "q_in_isced": "Yes",
+    "q_qualification_route": "Only through apprenticeship",
+    "q_qualification_type": [
+      "VET qualification, route shown",
+      "Apprenticeship qualification (journeyman etc.)"
+    ],
+    "q_access_to_he": "No",
+    "q_national_coordination": "Yes",
+    "q_partners_design": [
+      "Design qualifications",
+      "Design curricula",
+      "Other"
+    ],
+    "q_partners_implement": [
+      "Final assessment",
+      "Accredit companies",
+      "Monitor in-company training",
+      "Other"
+    ],
+    "q_quality_assurance": [
+      "Monitoring during training",
+      "Evaluation at completion"
+    ],
+    "q_alternation_compulsory": "No",
+    "q_min_workplace_share": "50% or more",
+    "q_training_vs_work_time": "No",
+    "q_alternation_form": [
+      "Every week, both venues",
+      "Blocks of weeks"
+    ],
+    "q_training_basis": [
+      "General VET standards",
+      "Other"
+    ],
+    "q_training_plan": "Yes, agreed by school and company",
+    "q_company_requirements": [
+      "Suitable learning environment",
+      "Mentor or trainer"
+    ],
+    "q_sanctions": "Yes",
+    "q_learner_status": [
+      "Employee",
+      "Specific apprentice status"
+    ],
+    "q_written_arrangement": "Yes",
+    "q_contract_type": [
+      "Specific apprenticeship contract"
+    ],
+    "q_contract_registered": [
+      "Chambers",
+      "Other"
+    ],
+    "q_compensation": [
+      "Wage"
+    ],
+    "q_wage_setting": [
+      "By law",
+      "Firm or individual agreements"
+    ],
+    "q_pay_funded_by": [
+      "Employers"
+    ],
+    "q_training_cost_funding": [
+      "Host employers",
+      "Training funds",
+      "State"
+    ],
+    "q_financial_incentives": [
+      "Subsidies",
+      "Tax deductions"
+    ],
+    "q_nonfinancial_incentives": [
+      "Campaigns",
+      "Online platforms",
+      "Chamber or intermediary support",
+      "Trainer training"
+    ],
+    "q_pay_covers_school": "Yes",
+    "q_learner_incentives": [
+      "Pay top-up grants",
+      "Grants for other costs",
+      "Guidance",
+      "Other"
+    ],
+    "fiche_author": "Andrzej Stępnikowski",
+    "fiche_pdf": "https://www.cedefop.europa.eu/en/print/pdf/node/26500",
+    "country_fiche_url": "https://www.cedefop.europa.eu/en/tools/apprenticeship-schemes/country-fiches/poland",
+    "fiche_answers_read": "2026-10-01"
   },
   {
     "id": "pt-aprendizagem",
@@ -724,8 +3230,96 @@
     "overview": "Run by the public employment service (IEFP): young people earn a double (school + vocational) certification through centre-based learning and in-company training, supported by allowances.",
     "source_url": "https://www.cedefop.europa.eu/en/tools/apprenticeship-schemes/scheme-fiches/apprenticeship-programmes",
     "source_version": "Cedefop European database on apprenticeship schemes, 2026 update",
-    "retrieved": "2026-09",
-    "status": "Hand-entered from the fiche; not yet checked field by field"
+    "retrieved": "2026-10-01",
+    "status": "Checked against the 2026 fiche on 2026-10-01: Cedefop's coded answers imported directly; learners and duration compared with the fiche text.",
+    "q_introduced": "Before 2000",
+    "q_origin": [
+      "Other"
+    ],
+    "q_age_limits": "Minimum and maximum",
+    "q_typical_age": [
+      "15–18",
+      "18–24",
+      "Over 24"
+    ],
+    "q_share_of_vet": "10–30%",
+    "q_in_nqf": "Yes",
+    "q_in_isced": "Yes",
+    "q_qualification_route": "Also through school-based VET",
+    "q_qualification_type": [
+      "VET qualification, route shown"
+    ],
+    "q_access_to_he": "Yes",
+    "q_national_coordination": "Yes",
+    "q_partners_design": [
+      "Design qualifications",
+      "Other"
+    ],
+    "q_partners_implement": [
+      "Other"
+    ],
+    "q_quality_assurance": [
+      "Monitoring during training",
+      "Evaluation at completion"
+    ],
+    "q_alternation_compulsory": "Yes",
+    "q_min_workplace_share": "20–50%",
+    "q_training_vs_work_time": "No",
+    "q_alternation_form": [
+      "Blocks of months",
+      "Varies by agreement"
+    ],
+    "q_training_basis": [
+      "General VET standards"
+    ],
+    "q_training_plan": "Yes, agreed by school and company",
+    "q_company_requirements": [
+      "Suitable learning environment",
+      "Mentor or trainer",
+      "Other"
+    ],
+    "q_sanctions": "Yes",
+    "q_learner_status": [
+      "Student"
+    ],
+    "q_written_arrangement": "Yes",
+    "q_contract_type": [
+      "Formal agreement, not a contract"
+    ],
+    "q_contract_registered": [
+      "School"
+    ],
+    "q_compensation": [
+      "Allowance"
+    ],
+    "q_wage_setting": [
+      "By law"
+    ],
+    "q_pay_funded_by": [
+      "State"
+    ],
+    "q_training_cost_funding": [
+      "State",
+      "Other"
+    ],
+    "q_financial_incentives": [
+      "None"
+    ],
+    "q_nonfinancial_incentives": [
+      "Online platforms",
+      "Chamber or intermediary support",
+      "School collaboration guidelines"
+    ],
+    "q_pay_covers_school": "Yes",
+    "q_learner_incentives": [
+      "Pay top-up grants",
+      "Grants for other costs",
+      "Guidance"
+    ],
+    "fiche_author": "Alexandra Costa Artur, IMANOVATION",
+    "fiche_pdf": "https://www.cedefop.europa.eu/en/print/pdf/node/26503",
+    "country_fiche_url": "https://www.cedefop.europa.eu/en/tools/apprenticeship-schemes/country-fiches/portugal",
+    "fiche_answers_read": "2026-10-01"
   },
   {
     "id": "ro-ucenicie",
@@ -750,8 +3344,95 @@
     "overview": "An employment-based route mainly for adults and jobseekers: apprentices hold a special employment contract with at least the minimum wage while training for a qualification.",
     "source_url": "https://www.cedefop.europa.eu/en/tools/apprenticeship-schemes/scheme-fiches/apprenticeship-workplace",
     "source_version": "Cedefop European database on apprenticeship schemes, 2026 update",
-    "retrieved": "2026-09",
-    "status": "Hand-entered from the fiche; not yet checked field by field"
+    "retrieved": "2026-10-01",
+    "status": "Checked against the 2026 fiche on 2026-10-01: Cedefop's coded answers imported directly; learners and duration compared with the fiche text (duration could not be confirmed).",
+    "q_introduced": "Before 2000",
+    "q_origin": [
+      "Craft tradition"
+    ],
+    "q_age_limits": "Minimum only",
+    "q_typical_age": [
+      "Over 24"
+    ],
+    "q_in_nqf": "Yes",
+    "q_in_isced": "No",
+    "q_qualification_route": "Also through school-based VET",
+    "q_qualification_type": [
+      "VET qualification, route shown"
+    ],
+    "q_access_to_he": "Yes",
+    "q_national_coordination": "Yes",
+    "q_partners_design": [
+      "Design qualifications",
+      "Design curricula",
+      "Other"
+    ],
+    "q_partners_implement": [
+      "Final assessment",
+      "Monitor in-company training"
+    ],
+    "q_quality_assurance": [
+      "Monitoring during training",
+      "Evaluation at completion",
+      "Other"
+    ],
+    "q_alternation_compulsory": "Yes",
+    "q_min_workplace_share": "50% or more",
+    "q_training_vs_work_time": "Yes",
+    "q_alternation_form": [
+      "Varies by agreement"
+    ],
+    "q_training_basis": [
+      "General VET standards",
+      "Other"
+    ],
+    "q_training_plan": "Yes, agreed by school and company",
+    "q_company_requirements": [
+      "Suitable learning environment",
+      "Mentor or trainer"
+    ],
+    "q_sanctions": "Yes",
+    "q_learner_status": [
+      "Specific apprentice status"
+    ],
+    "q_written_arrangement": "Yes",
+    "q_contract_type": [
+      "Specific apprenticeship contract"
+    ],
+    "q_contract_registered": [
+      "Employment ministry",
+      "Other"
+    ],
+    "q_compensation": [
+      "Wage"
+    ],
+    "q_wage_setting": [
+      "By law"
+    ],
+    "q_pay_funded_by": [
+      "Employers"
+    ],
+    "q_training_cost_funding": [
+      "Host employers",
+      "State"
+    ],
+    "q_financial_incentives": [
+      "Subsidies"
+    ],
+    "q_nonfinancial_incentives": [
+      "Campaigns",
+      "School collaboration guidelines"
+    ],
+    "q_pay_covers_school": "Yes",
+    "q_learner_incentives": [
+      "Grants for other costs",
+      "Recognition of prior learning",
+      "Guidance"
+    ],
+    "fiche_author": "Mikaela Kets Didgard, Sectoral Committee – Finance, Banks, Insurance",
+    "fiche_pdf": "https://www.cedefop.europa.eu/en/print/pdf/node/26508",
+    "country_fiche_url": "https://www.cedefop.europa.eu/en/tools/apprenticeship-schemes/country-fiches/romania",
+    "fiche_answers_read": "2026-10-01"
   },
   {
     "id": "ro-dual",
@@ -776,8 +3457,95 @@
     "overview": "Companies co-initiate dual classes and co-fund scholarships on top of the state grant; the model is now being extended to a full tertiary dual route.",
     "source_url": "https://www.cedefop.europa.eu/en/tools/apprenticeship-schemes/scheme-fiches/vet-dual-system",
     "source_version": "Cedefop European database on apprenticeship schemes, 2026 update",
-    "retrieved": "2026-09",
-    "status": "Hand-entered from the fiche; not yet checked field by field"
+    "retrieved": "2026-10-01",
+    "status": "Checked against the 2026 fiche on 2026-10-01: Cedefop's coded answers imported directly; learners and duration compared with the fiche text.",
+    "q_introduced": "After 2012",
+    "q_origin": [
+      "Grew out of school-based VET"
+    ],
+    "q_age_limits": "Minimum and maximum",
+    "q_typical_age": [
+      "15–18"
+    ],
+    "q_share_of_vet": "Under 10%",
+    "q_in_nqf": "Yes",
+    "q_in_isced": "Yes",
+    "q_qualification_route": "Also through school-based VET",
+    "q_qualification_type": [
+      "VET qualification, route shown"
+    ],
+    "q_access_to_he": "No",
+    "q_national_coordination": "Yes",
+    "q_partners_design": [
+      "Design qualifications",
+      "Design curricula"
+    ],
+    "q_partners_implement": [
+      "Final assessment",
+      "Other"
+    ],
+    "q_quality_assurance": [
+      "Monitoring during training",
+      "Evaluation at completion"
+    ],
+    "q_alternation_compulsory": "Yes",
+    "q_min_workplace_share": "50% or more",
+    "q_training_vs_work_time": "No",
+    "q_alternation_form": [
+      "Varies by agreement"
+    ],
+    "q_training_basis": [
+      "School-based VET programme"
+    ],
+    "q_training_plan": "Yes, agreed by school and company",
+    "q_company_requirements": [
+      "Suitable learning environment",
+      "Mentor or trainer",
+      "Other"
+    ],
+    "q_sanctions": "Yes",
+    "q_learner_status": [
+      "Student"
+    ],
+    "q_written_arrangement": "Yes",
+    "q_contract_type": [
+      "Formal agreement, not a contract"
+    ],
+    "q_contract_registered": [
+      "School",
+      "Other"
+    ],
+    "q_compensation": [
+      "Allowance"
+    ],
+    "q_wage_setting": [
+      "By law"
+    ],
+    "q_pay_funded_by": [
+      "Employers"
+    ],
+    "q_training_cost_funding": [
+      "Host employers",
+      "State"
+    ],
+    "q_financial_incentives": [
+      "Tax deductions",
+      "Other"
+    ],
+    "q_nonfinancial_incentives": [
+      "Campaigns",
+      "Other"
+    ],
+    "q_pay_covers_school": "Yes",
+    "q_learner_incentives": [
+      "Pay top-up grants",
+      "Recognition of prior learning",
+      "Guidance"
+    ],
+    "fiche_author": "Mikaela Kets Didgard, Sectoral Committee – Finance, Banks, Insurance",
+    "fiche_pdf": "https://www.cedefop.europa.eu/en/print/pdf/node/26509",
+    "country_fiche_url": "https://www.cedefop.europa.eu/en/tools/apprenticeship-schemes/country-fiches/romania",
+    "fiche_answers_read": "2026-10-01"
   },
   {
     "id": "sk-dual",
@@ -802,8 +3570,107 @@
     "overview": "Since 2015, certified employers contract learners directly and deliver the practical part of upper-secondary VET in-company, with financial incentives on both sides.",
     "source_url": "https://www.cedefop.europa.eu/en/tools/apprenticeship-schemes/scheme-fiches/dual-education",
     "source_version": "Cedefop European database on apprenticeship schemes, 2026 update",
-    "retrieved": "2026-09",
-    "status": "Hand-entered from the fiche; not yet checked field by field"
+    "retrieved": "2026-10-01",
+    "status": "Checked against the 2026 fiche on 2026-10-01: Cedefop's coded answers imported directly; learners and duration compared with the fiche text.",
+    "q_introduced": "After 2012",
+    "q_origin": [
+      "Grew out of school-based VET"
+    ],
+    "q_age_limits": "Minimum and maximum",
+    "q_typical_age": [
+      "15–18",
+      "18–24"
+    ],
+    "q_share_of_vet": "Under 10%",
+    "q_in_nqf": "Yes",
+    "q_in_isced": "Yes",
+    "q_qualification_route": "Also through school-based VET",
+    "q_qualification_type": [
+      "VET qualification, route not shown",
+      "Apprenticeship qualification (journeyman etc.)"
+    ],
+    "q_access_to_he": "Yes",
+    "q_national_coordination": "No",
+    "q_partners_design": [
+      "Design qualifications",
+      "Design curricula",
+      "Other"
+    ],
+    "q_partners_implement": [
+      "Final assessment",
+      "Accredit companies",
+      "Monitor in-company training",
+      "Other"
+    ],
+    "q_quality_assurance": [
+      "Monitoring during training",
+      "Evaluation at completion",
+      "Graduate tracking",
+      "Other"
+    ],
+    "q_alternation_compulsory": "Yes",
+    "q_min_workplace_share": "50% or more",
+    "q_training_vs_work_time": "No",
+    "q_alternation_form": [
+      "Varies by agreement"
+    ],
+    "q_training_basis": [
+      "Own apprenticeship programme",
+      "General VET standards"
+    ],
+    "q_training_plan": "Yes, national/sectoral",
+    "q_company_requirements": [
+      "Suitable learning environment",
+      "Mentor or trainer",
+      "Other"
+    ],
+    "q_sanctions": "Yes",
+    "q_learner_status": [
+      "Student"
+    ],
+    "q_written_arrangement": "Yes",
+    "q_contract_type": [
+      "Formal agreement, not a contract"
+    ],
+    "q_contract_registered": [
+      "School",
+      "Education ministry"
+    ],
+    "q_compensation": [
+      "Wage"
+    ],
+    "q_wage_setting": [
+      "By law",
+      "Firm or individual agreements"
+    ],
+    "q_pay_funded_by": [
+      "Employers",
+      "State"
+    ],
+    "q_training_cost_funding": [
+      "Host employers",
+      "State"
+    ],
+    "q_financial_incentives": [
+      "Subsidies",
+      "Tax deductions"
+    ],
+    "q_nonfinancial_incentives": [
+      "Campaigns",
+      "Trainer training",
+      "Other"
+    ],
+    "q_pay_covers_school": "No, company time only",
+    "q_learner_incentives": [
+      "Pay top-up grants",
+      "Grants for other costs",
+      "Guidance",
+      "Other"
+    ],
+    "fiche_author": "Cedefop, with input from Andrej Hutta (Association of Employers' Unions and Associations of the Slovak Republic)",
+    "fiche_pdf": "https://www.cedefop.europa.eu/en/print/pdf/node/162474",
+    "country_fiche_url": "https://www.cedefop.europa.eu/en/tools/apprenticeship-schemes/country-fiches/slovakia",
+    "fiche_answers_read": "2026-10-01"
   },
   {
     "id": "si-vajenistvo",
@@ -828,8 +3695,102 @@
     "overview": "Slovenia reintroduced apprenticeship in 2017: at least half of the three-year programme takes place with an employer, with chamber-registered contracts and rising allowances.",
     "source_url": "https://www.cedefop.europa.eu/en/tools/apprenticeship-schemes/scheme-fiches/apprenticeship-pathway-upper-secondary-vocational-education",
     "source_version": "Cedefop European database on apprenticeship schemes, 2026 update",
-    "retrieved": "2026-09",
-    "status": "Hand-entered from the fiche; not yet checked field by field"
+    "retrieved": "2026-10-01",
+    "status": "Checked against the 2026 fiche on 2026-10-01: Cedefop's coded answers imported directly; learners and duration compared with the fiche text.",
+    "q_introduced": "After 2012",
+    "q_origin": [
+      "Grew out of school-based VET"
+    ],
+    "q_age_limits": "Minimum only",
+    "q_typical_age": [
+      "15–18"
+    ],
+    "q_share_of_vet": "Under 10%",
+    "q_in_nqf": "Yes",
+    "q_in_isced": "Yes",
+    "q_qualification_route": "Also through school-based VET",
+    "q_qualification_type": [
+      "VET qualification, route not shown"
+    ],
+    "q_access_to_he": "No",
+    "q_national_coordination": "Yes",
+    "q_partners_design": [
+      "Design qualifications",
+      "Design curricula"
+    ],
+    "q_partners_implement": [
+      "Final assessment",
+      "Accredit companies",
+      "Monitor in-company training",
+      "Other"
+    ],
+    "q_quality_assurance": [
+      "Monitoring during training",
+      "Evaluation at completion",
+      "Other"
+    ],
+    "q_alternation_compulsory": "Yes",
+    "q_min_workplace_share": "50% or more",
+    "q_training_vs_work_time": "No",
+    "q_alternation_form": [
+      "Every week, both venues",
+      "Blocks of months",
+      "Varies by agreement"
+    ],
+    "q_training_basis": [
+      "School-based VET programme"
+    ],
+    "q_training_plan": "Yes, national/sectoral",
+    "q_company_requirements": [
+      "Suitable learning environment",
+      "Mentor or trainer"
+    ],
+    "q_sanctions": "Yes",
+    "q_learner_status": [
+      "Student"
+    ],
+    "q_written_arrangement": "Yes",
+    "q_contract_type": [
+      "Formal agreement, not a contract"
+    ],
+    "q_contract_registered": [
+      "Chambers"
+    ],
+    "q_compensation": [
+      "Allowance"
+    ],
+    "q_wage_setting": [
+      "By law"
+    ],
+    "q_pay_funded_by": [
+      "Employers"
+    ],
+    "q_training_cost_funding": [
+      "Host employers",
+      "State"
+    ],
+    "q_financial_incentives": [
+      "Subsidies",
+      "Tax deductions"
+    ],
+    "q_nonfinancial_incentives": [
+      "Campaigns",
+      "Online platforms",
+      "Chamber or intermediary support",
+      "School collaboration guidelines",
+      "Trainer training"
+    ],
+    "q_pay_covers_school": "No, company time only",
+    "q_learner_incentives": [
+      "Pay top-up grants",
+      "Grants for other costs",
+      "Guidance",
+      "Other"
+    ],
+    "fiche_author": "Darko Mali, CPI – Institute of the Republic of Slovenia for VET",
+    "fiche_pdf": "https://www.cedefop.europa.eu/en/print/pdf/node/162466",
+    "country_fiche_url": "https://www.cedefop.europa.eu/en/tools/apprenticeship-schemes/country-fiches/slovenia",
+    "fiche_answers_read": "2026-10-01"
   },
   {
     "id": "es-intensiva",
@@ -854,8 +3815,105 @@
     "overview": "Spain's 2022 VET law made all programmes dual; the 'intensive' regime adds a paid training contract and longer company periods on top of the general in-company training.",
     "source_url": "https://www.cedefop.europa.eu/en/tools/apprenticeship-schemes/scheme-fiches/intensive-vet",
     "source_version": "Cedefop European database on apprenticeship schemes, 2026 update",
-    "retrieved": "2026-09",
-    "status": "Hand-entered from the fiche; not yet checked field by field"
+    "retrieved": "2026-10-01",
+    "status": "Checked against the 2026 fiche on 2026-10-01: Cedefop's coded answers imported directly; learners and duration compared with the fiche text.",
+    "q_introduced": "After 2012",
+    "q_origin": [
+      "Grew out of school-based VET"
+    ],
+    "q_age_limits": "Minimum only",
+    "q_typical_age": [
+      "18–24"
+    ],
+    "q_share_of_vet": "Under 10%",
+    "q_in_nqf": "Yes",
+    "q_in_isced": "Yes",
+    "q_qualification_route": "Also through school-based VET",
+    "q_qualification_type": [
+      "VET qualification, route not shown"
+    ],
+    "q_access_to_he": "Yes",
+    "q_national_coordination": "No",
+    "q_partners_design": [
+      "Design qualifications",
+      "Design curricula"
+    ],
+    "q_partners_implement": [
+      "Other"
+    ],
+    "q_quality_assurance": [
+      "Monitoring during training",
+      "Evaluation at completion",
+      "Graduate tracking",
+      "Impact or cost–benefit evaluation"
+    ],
+    "q_alternation_compulsory": "Yes",
+    "q_min_workplace_share": "20–50%",
+    "q_training_vs_work_time": "No",
+    "q_alternation_form": [
+      "Varies by agreement"
+    ],
+    "q_training_basis": [
+      "General VET standards",
+      "Other"
+    ],
+    "q_training_plan": "Yes, agreed by school and company",
+    "q_company_requirements": [
+      "Suitable learning environment",
+      "Mentor or trainer"
+    ],
+    "q_sanctions": "No",
+    "q_learner_status": [
+      "Student",
+      "Employee"
+    ],
+    "q_written_arrangement": "Yes",
+    "q_contract_type": [
+      "Specific apprenticeship contract",
+      "Formal agreement, not a contract"
+    ],
+    "q_contract_registered": [
+      "Employment ministry",
+      "Other"
+    ],
+    "q_compensation": [
+      "Wage"
+    ],
+    "q_wage_setting": [
+      "By law",
+      "Sectoral agreements"
+    ],
+    "q_pay_funded_by": [
+      "Employers"
+    ],
+    "q_training_cost_funding": [
+      "Host employers",
+      "State"
+    ],
+    "q_financial_incentives": [
+      "Subsidies",
+      "Tax deductions",
+      "Other"
+    ],
+    "q_nonfinancial_incentives": [
+      "Campaigns",
+      "Online platforms",
+      "Chamber or intermediary support",
+      "School collaboration guidelines",
+      "Trainer training",
+      "Other"
+    ],
+    "q_pay_covers_school": "No, company time only",
+    "q_learner_incentives": [
+      "Grants for other costs",
+      "Recognition of prior learning",
+      "Guidance",
+      "Other"
+    ],
+    "fiche_author": "Guillem Salvans, Fundación Bertelsmann",
+    "fiche_pdf": "https://www.cedefop.europa.eu/en/print/pdf/node/26512",
+    "country_fiche_url": "https://www.cedefop.europa.eu/en/tools/apprenticeship-schemes/country-fiches/spain",
+    "fiche_answers_read": "2026-10-01"
   },
   {
     "id": "se-larling",
@@ -880,7 +3938,103 @@
     "overview": "An apprenticeship variant of national VET programmes: from year one, at least half of the education is workplace-based, with learners usually keeping student status and state study grants.",
     "source_url": "https://www.cedefop.europa.eu/en/tools/apprenticeship-schemes/scheme-fiches/apprenticeship-education-upper-secondary-schools",
     "source_version": "Cedefop European database on apprenticeship schemes, 2026 update",
-    "retrieved": "2026-09",
-    "status": "Hand-entered from the fiche; not yet checked field by field"
+    "retrieved": "2026-10-01",
+    "status": "Checked against the 2026 fiche on 2026-10-01: Cedefop's coded answers imported directly; learners and duration compared with the fiche text.",
+    "q_introduced": "2000–2012",
+    "q_origin": [
+      "Grew out of school-based VET"
+    ],
+    "q_age_limits": "Other",
+    "q_typical_age": [
+      "15–18"
+    ],
+    "q_share_of_vet": "10–30%",
+    "q_in_nqf": "Yes",
+    "q_in_isced": "Yes",
+    "q_qualification_route": "Also through school-based VET",
+    "q_qualification_type": [
+      "VET qualification, route shown"
+    ],
+    "q_access_to_he": "Yes",
+    "q_national_coordination": "Yes",
+    "q_partners_design": [
+      "Design curricula",
+      "Other"
+    ],
+    "q_partners_implement": [
+      "Final assessment",
+      "Other"
+    ],
+    "q_quality_assurance": [
+      "Monitoring during training",
+      "Evaluation at completion",
+      "Graduate tracking",
+      "Other"
+    ],
+    "q_alternation_compulsory": "Yes",
+    "q_min_workplace_share": "50% or more",
+    "q_training_vs_work_time": "No",
+    "q_alternation_form": [
+      "Varies by agreement"
+    ],
+    "q_training_basis": [
+      "General VET standards"
+    ],
+    "q_training_plan": "Yes, agreed by school and company",
+    "q_company_requirements": [
+      "Suitable learning environment",
+      "Mentor or trainer"
+    ],
+    "q_sanctions": "No",
+    "q_learner_status": [
+      "Student",
+      "Specific apprentice status"
+    ],
+    "q_written_arrangement": "Yes",
+    "q_contract_type": [
+      "Specific apprenticeship contract",
+      "Formal agreement, not a contract"
+    ],
+    "q_contract_registered": [
+      "School"
+    ],
+    "q_compensation": [
+      "Wage",
+      "Allowance"
+    ],
+    "q_wage_setting": [
+      "By law",
+      "Cross-sector agreements",
+      "Sectoral agreements"
+    ],
+    "q_pay_funded_by": [
+      "Employers",
+      "State"
+    ],
+    "q_training_cost_funding": [
+      "Host employers",
+      "State",
+      "Other"
+    ],
+    "q_financial_incentives": [
+      "Subsidies",
+      "Other"
+    ],
+    "q_nonfinancial_incentives": [
+      "Campaigns",
+      "Chamber or intermediary support",
+      "School collaboration guidelines",
+      "Trainer training"
+    ],
+    "q_pay_covers_school": "No, company time only",
+    "q_learner_incentives": [
+      "Grants for other costs",
+      "Guidance",
+      "Other"
+    ],
+    "fiche_author": "Pär Lundström, Swedish Installation Federation",
+    "fiche_pdf": "https://www.cedefop.europa.eu/en/print/pdf/node/26514",
+    "country_fiche_url": "https://www.cedefop.europa.eu/en/tools/apprenticeship-schemes/country-fiches/sweden",
+    "fiche_answers_read": "2026-10-01"
   }
 ]

@@ -76,6 +76,126 @@
       ]
     },
     {
+      "name": "cedefop-clssi-json",
+      "path": "data/published/indicators/cedefop-clssi.json",
+      "format": "json",
+      "mediatype": "application/json",
+      "title": "Cedefop labour and skills shortage index (CLSSI) by occupation",
+      "description": "Cedefop's labour and skills shortage index for 38 occupation groups (ISCO-08 2-digit), by country. The index is the average of three component shortage indicators (LSI1, LSI2, LSI3 in the source), each scored from 1 to 4; higher values signal stronger labour and skills shortages in that occupation. Time is the release year of the dataset file (2026).",
+      "sources": [
+        {
+          "title": "Cedefop",
+          "path": "https://www.cedefop.europa.eu/en/datasets/labour-skills-shortage-index"
+        }
+      ],
+      "licenses": [
+        {
+          "name": "CC-BY-4.0",
+          "path": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ]
+    },
+    {
+      "name": "cedefop-clssi-csv",
+      "path": "data/published/indicators/cedefop-clssi.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "title": "Cedefop labour and skills shortage index (CLSSI) by occupation",
+      "description": "Cedefop's labour and skills shortage index for 38 occupation groups (ISCO-08 2-digit), by country. The index is the average of three component shortage indicators (LSI1, LSI2, LSI3 in the source), each scored from 1 to 4; higher values signal stronger labour and skills shortages in that occupation. Time is the release year of the dataset file (2026).",
+      "sources": [
+        {
+          "title": "Cedefop",
+          "path": "https://www.cedefop.europa.eu/en/datasets/labour-skills-shortage-index"
+        }
+      ],
+      "licenses": [
+        {
+          "name": "CC-BY-4.0",
+          "path": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ]
+    },
+    {
+      "name": "cedefop-esi-editions-json",
+      "path": "data/published/indicators/cedefop-esi-editions.json",
+      "format": "json",
+      "mediatype": "application/json",
+      "title": "European Skills Index (ESI) — 2018, 2020 and 2022 editions as published",
+      "description": "Overall index, pillar and sub-pillar scores of Cedefop's European Skills Index as published in the 2018, 2020 and 2022 editions. Each edition covers three data years (2018 edition: 2014–2016; 2020 edition: 2016–2018; 2022 edition: 2018–2020). Time is the data year, i.e. the year the underlying indicators refer to, not the release year. Scores are distances to the 'frontier' of best achievable performance, shown on a 0–100 scale.",
+      "sources": [
+        {
+          "title": "Cedefop",
+          "path": "https://www.cedefop.europa.eu/en/datasets/dataset-european-skills-index-esi"
+        }
+      ],
+      "licenses": [
+        {
+          "name": "CC-BY-4.0",
+          "path": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ]
+    },
+    {
+      "name": "cedefop-esi-editions-csv",
+      "path": "data/published/indicators/cedefop-esi-editions.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "title": "European Skills Index (ESI) — 2018, 2020 and 2022 editions as published",
+      "description": "Overall index, pillar and sub-pillar scores of Cedefop's European Skills Index as published in the 2018, 2020 and 2022 editions. Each edition covers three data years (2018 edition: 2014–2016; 2020 edition: 2016–2018; 2022 edition: 2018–2020). Time is the data year, i.e. the year the underlying indicators refer to, not the release year. Scores are distances to the 'frontier' of best achievable performance, shown on a 0–100 scale.",
+      "sources": [
+        {
+          "title": "Cedefop",
+          "path": "https://www.cedefop.europa.eu/en/datasets/dataset-european-skills-index-esi"
+        }
+      ],
+      "licenses": [
+        {
+          "name": "CC-BY-4.0",
+          "path": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ]
+    },
+    {
+      "name": "cedefop-esi-json",
+      "path": "data/published/indicators/cedefop-esi.json",
+      "format": "json",
+      "mediatype": "application/json",
+      "title": "European Skills Index (ESI), 2024 methodology",
+      "description": "Cedefop's European Skills Index measures how well each country's skills system performs, as a composite of 15 indicators grouped into three pillars — skills development (basic education; training and other education), skills activation (transition to work; labour market participation) and skills matching (skills utilisation; skills mismatch). Scores are normalised from 0 to 100, where 100 is the 'frontier' of best achievable performance. The ESI 2024 dataset recomputes every release from 2017 to 2024 with the 2024 methodology. Time is the ESI release year; the release year equals the data year plus 2 (e.g. ESI 2024 uses principally 2022 data).",
+      "sources": [
+        {
+          "title": "Cedefop",
+          "path": "https://www.cedefop.europa.eu/en/datasets/dataset-european-skills-index-esi"
+        }
+      ],
+      "licenses": [
+        {
+          "name": "CC-BY-4.0",
+          "path": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ]
+    },
+    {
+      "name": "cedefop-esi-csv",
+      "path": "data/published/indicators/cedefop-esi.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "title": "European Skills Index (ESI), 2024 methodology",
+      "description": "Cedefop's European Skills Index measures how well each country's skills system performs, as a composite of 15 indicators grouped into three pillars — skills development (basic education; training and other education), skills activation (transition to work; labour market participation) and skills matching (skills utilisation; skills mismatch). Scores are normalised from 0 to 100, where 100 is the 'frontier' of best achievable performance. The ESI 2024 dataset recomputes every release from 2017 to 2024 with the 2024 methodology. Time is the ESI release year; the release year equals the data year plus 2 (e.g. ESI 2024 uses principally 2022 data).",
+      "sources": [
+        {
+          "title": "Cedefop",
+          "path": "https://www.cedefop.europa.eu/en/datasets/dataset-european-skills-index-esi"
+        }
+      ],
+      "licenses": [
+        {
+          "name": "CC-BY-4.0",
+          "path": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ]
+    },
+    {
       "name": "cedefop-kivet-1010-json",
       "path": "data/published/indicators/cedefop-kivet-1010.json",
       "format": "json",
@@ -2386,6 +2506,86 @@
         {
           "title": "Cedefop",
           "path": "https://www.cedefop.europa.eu/en/datasets/dataset-key-indicators-vet"
+        }
+      ],
+      "licenses": [
+        {
+          "name": "CC-BY-4.0",
+          "path": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ]
+    },
+    {
+      "name": "cedefop-stas-employment-growth-json",
+      "path": "data/published/indicators/cedefop-stas-employment-growth.json",
+      "format": "json",
+      "mediatype": "application/json",
+      "title": "Projected annual employment growth by occupation (STAS short-term projections)",
+      "description": "Cedefop's short-term projection of the annual growth rate of employment (percentage change on the previous year), by ISCO major occupation group (1-digit) and in total. Release: Short-term Anticipation of Skills and VET demand (STAS) - August 2026 projections.",
+      "sources": [
+        {
+          "title": "Cedefop",
+          "path": "https://www.cedefop.europa.eu/en/datasets/stas"
+        }
+      ],
+      "licenses": [
+        {
+          "name": "CC-BY-4.0",
+          "path": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ]
+    },
+    {
+      "name": "cedefop-stas-employment-growth-csv",
+      "path": "data/published/indicators/cedefop-stas-employment-growth.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "title": "Projected annual employment growth by occupation (STAS short-term projections)",
+      "description": "Cedefop's short-term projection of the annual growth rate of employment (percentage change on the previous year), by ISCO major occupation group (1-digit) and in total. Release: Short-term Anticipation of Skills and VET demand (STAS) - August 2026 projections.",
+      "sources": [
+        {
+          "title": "Cedefop",
+          "path": "https://www.cedefop.europa.eu/en/datasets/stas"
+        }
+      ],
+      "licenses": [
+        {
+          "name": "CC-BY-4.0",
+          "path": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ]
+    },
+    {
+      "name": "cedefop-stas-employment-json",
+      "path": "data/published/indicators/cedefop-stas-employment.json",
+      "format": "json",
+      "mediatype": "application/json",
+      "title": "Projected employment by occupation (STAS short-term projections)",
+      "description": "Cedefop's short-term projection of the number of people employed, by ISCO major occupation group (1-digit) and in total, for the current and next year. Release: Short-term Anticipation of Skills and VET demand (STAS) - August 2026 projections.",
+      "sources": [
+        {
+          "title": "Cedefop",
+          "path": "https://www.cedefop.europa.eu/en/datasets/stas"
+        }
+      ],
+      "licenses": [
+        {
+          "name": "CC-BY-4.0",
+          "path": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ]
+    },
+    {
+      "name": "cedefop-stas-employment-csv",
+      "path": "data/published/indicators/cedefop-stas-employment.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "title": "Projected employment by occupation (STAS short-term projections)",
+      "description": "Cedefop's short-term projection of the number of people employed, by ISCO major occupation group (1-digit) and in total, for the current and next year. Release: Short-term Anticipation of Skills and VET demand (STAS) - August 2026 projections.",
+      "sources": [
+        {
+          "title": "Cedefop",
+          "path": "https://www.cedefop.europa.eu/en/datasets/stas"
         }
       ],
       "licenses": [

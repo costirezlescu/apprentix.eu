@@ -3,17 +3,18 @@
   "title": "Apprenticeship schemes in Europe",
   "tagline": "How apprenticeship is designed, governed and paid for across Europe.",
   "description": "Mainstream apprenticeship schemes with a stable legal basis in the EU Member States plus Iceland and Norway. Each record summarises one scheme and links to its official fiche.",
-  "recordLabel": { "one": "scheme", "many": "schemes" },
-
+  "recordLabel": {
+    "one": "scheme",
+    "many": "schemes"
+  },
   "source": {
     "name": "Cedefop — European database on apprenticeship schemes",
     "url": "https://www.cedefop.europa.eu/en/tools/apprenticeship-schemes",
-    "retrieved": "2026-09",
+    "retrieved": "2026-10-01",
     "licence": "Cedefop's legal notice: reproduction is authorised provided the source is acknowledged, save where otherwise stated. Fiches also credit national ReferNet experts.",
     "licence_id": "Cedefop-reproduction-with-acknowledgement",
-    "caveat": "Values were read from the published scheme fiches and condensed. They have not been checked against the source record. The official fiches remain authoritative."
+    "caveat": "Cedefop's coded answers (filters and the comparison matrix) are imported directly from the 2026 fiches. The short descriptions (overview, duration, learners, pay) were condensed by hand and checked against the fiche text on 2026-10-01. The official fiches remain authoritative."
   },
-
   "display": {
     "title": "name_en",
     "subtitle": "name_original",
@@ -21,48 +22,767 @@
     "badge": "flag",
     "link": "source_url",
     "summary": "overview",
-    "facts": ["duration", "workplace_time", "compensation"]
+    "facts": [
+      "duration",
+      "q_min_workplace_share",
+      "q_compensation"
+    ]
   },
-
   "fields": [
-    { "key": "country",                 "label": "Country",              "type": "category", "facet": true },
-    { "key": "country_code",            "label": "Country code",         "type": "hidden" },
-    { "key": "flag",                    "label": "Flag",                 "type": "hidden" },
-    { "key": "name_en",                 "label": "Scheme",               "type": "title" },
-    { "key": "name_original",           "label": "Original name",        "type": "subtitle" },
-
-    { "key": "education_level",         "label": "Education level",      "type": "category", "facet": true,
-      "order": ["Upper secondary", "Post-secondary (EQF 5)", "Higher education (EQF 6+)", "Multiple levels"] },
-    { "key": "compensation",            "label": "Apprentice compensation", "type": "category", "facet": true,
-      "order": ["Wage", "Allowance", "Mostly unpaid"] },
-    { "key": "workplace_time",          "label": "Time at the workplace", "type": "category", "facet": true,
-      "order": ["Mostly at work (≥2/3)", "Around half", "Under half"] },
-
-    { "key": "duration",                "label": "Duration",             "type": "text" },
-    { "key": "target_group",            "label": "Target group",         "type": "text" },
-    { "key": "learners",                "label": "Apprentices (latest)", "type": "text" },
-    { "key": "qualification",           "label": "Qualification attained", "type": "text" },
-    { "key": "education_level_detail",  "label": "Level (as stated)",    "type": "text" },
-    { "key": "workplace_time_detail",   "label": "Workplace time (as stated)", "type": "text" },
-    { "key": "compensation_detail",     "label": "Compensation (as stated)",   "type": "text" },
-    { "key": "contract",                "label": "Formal relationship",  "type": "text" },
-    { "key": "governance",              "label": "Who oversees it",      "type": "text" },
-    { "key": "legal_basis",             "label": "Legal basis",          "type": "text" },
-
-    { "key": "overview",                "label": "Overview",             "type": "longtext" },
-    { "key": "source_url",              "label": "Official fiche",       "type": "link" },
-    { "key": "source_version",          "label": "Source version",       "type": "text" },
-    { "key": "retrieved",               "label": "Read from source",     "type": "text" },
-    { "key": "status",                  "label": "How this record was made", "type": "text" },
-    { "key": "id",                      "label": "Identifier",           "type": "hidden" }
+    {
+      "key": "country",
+      "label": "Country",
+      "type": "category",
+      "facet": true
+    },
+    {
+      "key": "country_code",
+      "label": "Country code",
+      "type": "hidden"
+    },
+    {
+      "key": "flag",
+      "label": "Flag",
+      "type": "hidden"
+    },
+    {
+      "key": "q_introduced",
+      "label": "Introduced",
+      "type": "category",
+      "order": [
+        "Before 2000",
+        "2000–2012",
+        "After 2012"
+      ],
+      "question": "Q1",
+      "multi": false,
+      "facet": true,
+      "collapse": 6
+    },
+    {
+      "key": "q_origin",
+      "label": "Origin",
+      "type": "category",
+      "order": [
+        "Craft tradition",
+        "Grew out of school-based VET",
+        "Created from scratch",
+        "Other"
+      ],
+      "question": "Q2",
+      "multi": true
+    },
+    {
+      "key": "q_age_limits",
+      "label": "Age limits in law",
+      "type": "category",
+      "order": [
+        "Minimum and maximum",
+        "Minimum only",
+        "Other"
+      ],
+      "question": "Q3",
+      "multi": false
+    },
+    {
+      "key": "q_typical_age",
+      "label": "Typical learner age",
+      "type": "category",
+      "order": [
+        "15–18",
+        "18–24",
+        "Over 24"
+      ],
+      "question": "Q4",
+      "multi": true
+    },
+    {
+      "key": "q_share_of_vet",
+      "label": "Share of VET learners",
+      "type": "category",
+      "order": [
+        "Over 60%",
+        "30–60%",
+        "10–30%",
+        "Under 10%"
+      ],
+      "question": "Q6",
+      "multi": false,
+      "facet": true,
+      "collapse": 6
+    },
+    {
+      "key": "q_in_nqf",
+      "label": "In the national qualifications framework",
+      "type": "category",
+      "order": [
+        "Yes",
+        "No",
+        "No NQF"
+      ],
+      "question": "Q7",
+      "multi": false
+    },
+    {
+      "key": "q_in_isced",
+      "label": "In the ISCED 2011 mapping",
+      "type": "category",
+      "order": [
+        "Yes",
+        "No"
+      ],
+      "question": "Q8",
+      "multi": false
+    },
+    {
+      "key": "q_qualification_route",
+      "label": "Same qualification via other routes",
+      "type": "category",
+      "order": [
+        "Only through apprenticeship",
+        "Also through school-based VET"
+      ],
+      "question": "Q9",
+      "multi": false
+    },
+    {
+      "key": "q_qualification_type",
+      "label": "Type of qualification",
+      "type": "category",
+      "order": [
+        "VET qualification, route not shown",
+        "VET qualification, route shown",
+        "Apprenticeship qualification (journeyman etc.)",
+        "Other"
+      ],
+      "question": "Q10",
+      "multi": true
+    },
+    {
+      "key": "q_access_to_he",
+      "label": "Direct access to higher education",
+      "type": "category",
+      "order": [
+        "Yes",
+        "No"
+      ],
+      "question": "Q11",
+      "multi": false,
+      "facet": true,
+      "collapse": 6
+    },
+    {
+      "key": "q_national_coordination",
+      "label": "National coordinating body",
+      "type": "category",
+      "order": [
+        "Yes",
+        "No"
+      ],
+      "question": "Q13",
+      "multi": false
+    },
+    {
+      "key": "q_partners_design",
+      "label": "Social partners shape content",
+      "type": "category",
+      "order": [
+        "Design qualifications",
+        "Design curricula",
+        "Other",
+        "No role"
+      ],
+      "question": "Q14",
+      "multi": true
+    },
+    {
+      "key": "q_partners_implement",
+      "label": "Social partners in implementation",
+      "type": "category",
+      "order": [
+        "Final assessment",
+        "Accredit companies",
+        "Monitor in-company training",
+        "Other",
+        "No role"
+      ],
+      "question": "Q15",
+      "multi": true
+    },
+    {
+      "key": "q_quality_assurance",
+      "label": "Quality assurance",
+      "type": "category",
+      "order": [
+        "Monitoring during training",
+        "Evaluation at completion",
+        "Graduate tracking",
+        "Impact or cost–benefit evaluation",
+        "Other"
+      ],
+      "question": "Q18",
+      "multi": true
+    },
+    {
+      "key": "q_alternation_compulsory",
+      "label": "Alternation school/company compulsory",
+      "type": "category",
+      "order": [
+        "Yes",
+        "No"
+      ],
+      "question": "Q19",
+      "multi": false
+    },
+    {
+      "key": "q_min_workplace_share",
+      "label": "Minimum workplace share",
+      "type": "category",
+      "order": [
+        "50% or more",
+        "20–50%",
+        "Under 20%",
+        "No minimum"
+      ],
+      "question": "Q20",
+      "multi": false,
+      "facet": true,
+      "collapse": 6
+    },
+    {
+      "key": "q_training_vs_work_time",
+      "label": "Training time distinguished from work time",
+      "type": "category",
+      "order": [
+        "Yes",
+        "No"
+      ],
+      "question": "Q21",
+      "multi": false
+    },
+    {
+      "key": "q_alternation_form",
+      "label": "Form of alternation",
+      "type": "category",
+      "order": [
+        "Every week, both venues",
+        "Blocks of weeks",
+        "Blocks of months",
+        "School years, then workplace",
+        "Varies by agreement",
+        "Other",
+        "Not specified"
+      ],
+      "question": "Q22",
+      "multi": true,
+      "facet": true,
+      "collapse": 6
+    },
+    {
+      "key": "q_training_basis",
+      "label": "Basis of training",
+      "type": "category",
+      "order": [
+        "Own apprenticeship programme",
+        "School-based VET programme",
+        "General VET standards",
+        "Other"
+      ],
+      "question": "Q23",
+      "multi": true
+    },
+    {
+      "key": "q_training_plan",
+      "label": "Workplace training plan required",
+      "type": "category",
+      "order": [
+        "Yes, national/sectoral",
+        "Yes, agreed by school and company",
+        "No"
+      ],
+      "question": "Q25",
+      "multi": false
+    },
+    {
+      "key": "q_company_requirements",
+      "label": "Requirements on companies",
+      "type": "category",
+      "order": [
+        "Suitable learning environment",
+        "Mentor or trainer",
+        "Other"
+      ],
+      "question": "Q26",
+      "multi": true
+    },
+    {
+      "key": "q_sanctions",
+      "label": "Sanctions on companies not training",
+      "type": "category",
+      "order": [
+        "Yes",
+        "No"
+      ],
+      "question": "Q28",
+      "multi": false
+    },
+    {
+      "key": "q_learner_status",
+      "label": "Learner status",
+      "type": "category",
+      "order": [
+        "Student",
+        "Employee",
+        "Specific apprentice status",
+        "Other"
+      ],
+      "question": "Q29",
+      "multi": true,
+      "facet": true,
+      "collapse": 6
+    },
+    {
+      "key": "q_written_arrangement",
+      "label": "Written arrangement required",
+      "type": "category",
+      "order": [
+        "Yes",
+        "No"
+      ],
+      "question": "Q30",
+      "multi": false
+    },
+    {
+      "key": "q_contract_type",
+      "label": "Type of arrangement",
+      "type": "category",
+      "order": [
+        "Ordinary employment contract",
+        "Specific apprenticeship contract",
+        "Formal agreement, not a contract"
+      ],
+      "question": "Q31",
+      "multi": true,
+      "facet": true,
+      "collapse": 6
+    },
+    {
+      "key": "q_contract_registered",
+      "label": "Arrangement registered at",
+      "type": "category",
+      "order": [
+        "School",
+        "Employment ministry",
+        "Chambers",
+        "Education ministry",
+        "Other"
+      ],
+      "question": "Q32",
+      "multi": true
+    },
+    {
+      "key": "q_compensation",
+      "label": "Apprentice pay (Cedefop)",
+      "type": "category",
+      "order": [
+        "Wage",
+        "Allowance",
+        "Expenses only",
+        "None required by law"
+      ],
+      "question": "Q33",
+      "multi": true,
+      "facet": true,
+      "collapse": 6
+    },
+    {
+      "key": "q_wage_setting",
+      "label": "How pay is set",
+      "type": "category",
+      "order": [
+        "By law",
+        "Cross-sector agreements",
+        "Sectoral agreements",
+        "Firm or individual agreements",
+        "Other"
+      ],
+      "question": "Q34",
+      "multi": true,
+      "facet": true,
+      "collapse": 6
+    },
+    {
+      "key": "q_pay_funded_by",
+      "label": "Pay funded by",
+      "type": "category",
+      "order": [
+        "Employers",
+        "State",
+        "Other"
+      ],
+      "question": "Q35",
+      "multi": true
+    },
+    {
+      "key": "q_training_cost_funding",
+      "label": "In-company training costs funded by",
+      "type": "category",
+      "order": [
+        "Host employers",
+        "Training funds",
+        "State",
+        "Other"
+      ],
+      "question": "Q36",
+      "multi": true
+    },
+    {
+      "key": "q_financial_incentives",
+      "label": "Financial incentives for companies",
+      "type": "category",
+      "order": [
+        "Subsidies",
+        "Tax deductions",
+        "Other",
+        "None"
+      ],
+      "question": "Q37",
+      "multi": true,
+      "facet": true,
+      "collapse": 6
+    },
+    {
+      "key": "q_nonfinancial_incentives",
+      "label": "Non-financial support for companies",
+      "type": "category",
+      "order": [
+        "Campaigns",
+        "Online platforms",
+        "Chamber or intermediary support",
+        "School collaboration guidelines",
+        "Trainer training",
+        "Other"
+      ],
+      "question": "Q38",
+      "multi": true
+    },
+    {
+      "key": "q_pay_covers_school",
+      "label": "Pay covers school time",
+      "type": "category",
+      "order": [
+        "Yes",
+        "No, company time only"
+      ],
+      "question": "Q39",
+      "multi": false
+    },
+    {
+      "key": "q_learner_incentives",
+      "label": "Incentives for learners",
+      "type": "category",
+      "order": [
+        "Pay top-up grants",
+        "Grants for other costs",
+        "Recognition of prior learning",
+        "Guidance",
+        "Other",
+        "None"
+      ],
+      "question": "Q40",
+      "multi": true
+    },
+    {
+      "key": "name_en",
+      "label": "Scheme",
+      "type": "title"
+    },
+    {
+      "key": "name_original",
+      "label": "Original name",
+      "type": "subtitle"
+    },
+    {
+      "key": "education_level",
+      "label": "Education level",
+      "type": "category",
+      "facet": true,
+      "order": [
+        "Upper secondary",
+        "Post-secondary (EQF 5)",
+        "Higher education (EQF 6+)",
+        "Multiple levels"
+      ]
+    },
+    {
+      "key": "compensation",
+      "label": "Pay (Apprentix summary)",
+      "type": "text"
+    },
+    {
+      "key": "workplace_time",
+      "label": "Time at the workplace (approx.)",
+      "type": "text"
+    },
+    {
+      "key": "duration",
+      "label": "Duration",
+      "type": "text"
+    },
+    {
+      "key": "target_group",
+      "label": "Target group",
+      "type": "text"
+    },
+    {
+      "key": "learners",
+      "label": "Apprentices (latest)",
+      "type": "text"
+    },
+    {
+      "key": "qualification",
+      "label": "Qualification attained",
+      "type": "text"
+    },
+    {
+      "key": "education_level_detail",
+      "label": "Level (as stated)",
+      "type": "text"
+    },
+    {
+      "key": "workplace_time_detail",
+      "label": "Workplace time (as stated)",
+      "type": "text"
+    },
+    {
+      "key": "compensation_detail",
+      "label": "Compensation (as stated)",
+      "type": "text"
+    },
+    {
+      "key": "contract",
+      "label": "Formal relationship",
+      "type": "text"
+    },
+    {
+      "key": "governance",
+      "label": "Who oversees it",
+      "type": "text"
+    },
+    {
+      "key": "legal_basis",
+      "label": "Legal basis",
+      "type": "text"
+    },
+    {
+      "key": "overview",
+      "label": "Overview",
+      "type": "longtext"
+    },
+    {
+      "key": "source_url",
+      "label": "Official fiche",
+      "type": "link"
+    },
+    {
+      "key": "source_version",
+      "label": "Source version",
+      "type": "text"
+    },
+    {
+      "key": "retrieved",
+      "label": "Read from source",
+      "type": "text"
+    },
+    {
+      "key": "status",
+      "label": "How this record was made",
+      "type": "text"
+    },
+    {
+      "key": "id",
+      "label": "Identifier",
+      "type": "hidden"
+    },
+    {
+      "key": "fiche_author",
+      "label": "Fiche drafted by",
+      "type": "text"
+    },
+    {
+      "key": "fiche_pdf",
+      "label": "Fiche (PDF)",
+      "type": "link"
+    },
+    {
+      "key": "country_fiche_url",
+      "label": "Country fiche",
+      "type": "link"
+    },
+    {
+      "key": "fiche_answers_read",
+      "label": "Coded answers read from Cedefop",
+      "type": "text"
+    }
   ],
-
   "sections": [
-    { "title": "At a glance",   "fields": ["country", "education_level", "duration", "target_group", "learners"] },
-    { "title": "Qualification", "fields": ["qualification", "education_level_detail"] },
-    { "title": "At the workplace", "fields": ["workplace_time", "workplace_time_detail"] },
-    { "title": "Contract and pay", "fields": ["contract", "compensation", "compensation_detail"] },
-    { "title": "Governance",    "fields": ["governance", "legal_basis"] },
-    { "title": "Provenance",    "fields": ["source_version", "retrieved", "status", "source_url"] }
-  ]
+    {
+      "title": "At a glance",
+      "fields": [
+        "country",
+        "education_level",
+        "duration",
+        "target_group",
+        "learners"
+      ]
+    },
+    {
+      "title": "Qualification",
+      "fields": [
+        "qualification",
+        "education_level_detail"
+      ]
+    },
+    {
+      "title": "At the workplace",
+      "fields": [
+        "workplace_time",
+        "workplace_time_detail"
+      ]
+    },
+    {
+      "title": "Contract and pay",
+      "fields": [
+        "contract",
+        "compensation_detail",
+        "compensation"
+      ]
+    },
+    {
+      "title": "Governance",
+      "fields": [
+        "governance",
+        "legal_basis"
+      ]
+    },
+    {
+      "title": "Provenance",
+      "fields": [
+        "source_version",
+        "retrieved",
+        "status",
+        "source_url",
+        "fiche_author",
+        "fiche_answers_read"
+      ]
+    },
+    {
+      "title": "Cedefop coding — history and learners",
+      "coded": true,
+      "fields": [
+        "q_introduced",
+        "q_origin",
+        "q_age_limits",
+        "q_typical_age",
+        "q_share_of_vet"
+      ]
+    },
+    {
+      "title": "Cedefop coding — qualification",
+      "coded": true,
+      "fields": [
+        "q_in_nqf",
+        "q_in_isced",
+        "q_qualification_route",
+        "q_qualification_type",
+        "q_access_to_he"
+      ]
+    },
+    {
+      "title": "Cedefop coding — governance",
+      "coded": true,
+      "fields": [
+        "q_national_coordination",
+        "q_partners_design",
+        "q_partners_implement",
+        "q_quality_assurance"
+      ]
+    },
+    {
+      "title": "Cedefop coding — training at the workplace",
+      "coded": true,
+      "fields": [
+        "q_alternation_compulsory",
+        "q_min_workplace_share",
+        "q_training_vs_work_time",
+        "q_alternation_form",
+        "q_training_basis",
+        "q_training_plan",
+        "q_company_requirements",
+        "q_sanctions"
+      ]
+    },
+    {
+      "title": "Cedefop coding — contract and pay",
+      "coded": true,
+      "fields": [
+        "q_learner_status",
+        "q_written_arrangement",
+        "q_contract_type",
+        "q_contract_registered",
+        "q_compensation",
+        "q_wage_setting",
+        "q_pay_covers_school"
+      ]
+    },
+    {
+      "title": "Cedefop coding — financing and incentives",
+      "coded": true,
+      "fields": [
+        "q_pay_funded_by",
+        "q_training_cost_funding",
+        "q_financial_incentives",
+        "q_nonfinancial_incentives",
+        "q_learner_incentives"
+      ]
+    }
+  ],
+  "matrix": {
+    "questions": [
+      "q_introduced",
+      "q_origin",
+      "q_age_limits",
+      "q_typical_age",
+      "q_share_of_vet",
+      "q_in_nqf",
+      "q_in_isced",
+      "q_qualification_route",
+      "q_qualification_type",
+      "q_access_to_he",
+      "q_national_coordination",
+      "q_partners_design",
+      "q_partners_implement",
+      "q_quality_assurance",
+      "q_alternation_compulsory",
+      "q_min_workplace_share",
+      "q_training_vs_work_time",
+      "q_alternation_form",
+      "q_training_basis",
+      "q_training_plan",
+      "q_company_requirements",
+      "q_sanctions",
+      "q_learner_status",
+      "q_written_arrangement",
+      "q_contract_type",
+      "q_contract_registered",
+      "q_compensation",
+      "q_wage_setting",
+      "q_pay_covers_school",
+      "q_pay_funded_by",
+      "q_training_cost_funding",
+      "q_financial_incentives",
+      "q_nonfinancial_incentives",
+      "q_learner_incentives"
+    ]
+  }
 }

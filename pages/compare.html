@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Compare apprenticeship schemes — Apprentix</title>
+<meta name="description" content="Compare all 34 apprenticeship schemes in Europe side by side on 34 questions coded by Cedefop: pay, contract, workplace share, governance, financing and incentives.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Public+Sans:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body data-root="../">
+
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="indep">
+  <div class="wrap">
+    <span class="tag">Independent project</span>
+    <p>Not affiliated with, or endorsed by, any European institution or agency. Built on publicly available data.</p>
+  </div>
+</div>
+
+<header class="site-head">
+  <div class="wrap head-inner">
+    <a class="brand" href="../">Apprenti<span class="x">x</span><span class="eu">.eu</span></a>
+    <nav class="site-nav">
+      <a href="../">Datasets</a>
+      <a href="indicators.html">Indicators</a>
+      <a href="countries/">Countries</a>
+      <a href="about.html">About</a>
+      <a href="data.html">Data &amp; sources</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="wrap compare-page">
+  <div class="mono">Apprenticeship schemes</div>
+  <h1 style="margin-top:4px">Compare every scheme</h1>
+  <p style="color:var(--muted);max-width:75ch;margin:6px 0 0">Each column is one question from Cedefop's standard questionnaire, answered by national experts in the 2026 scheme fiches.
+    Pick a question to colour its column and see how the schemes split. Select a scheme for its full record.</p>
+  <p class="hint" id="count" style="color:var(--muted);font-size:.85rem;margin:8px 0 0"></p>
+
+  <div class="filterbar">
+    <label>Question<select id="focus"></select></label>
+    <label>Order rows by<select id="sortby"><option value="country">Country</option><option value="answer">Answer to the selected question</option></select></label>
+  </div>
+  <div class="chips" id="sections" role="group" aria-label="Show questions about"></div>
+
+  <div class="chart-card" id="dist"></div>
+  <div class="chart-card matrix-card"><div class="matrix-scroll" id="matrix">Loading…</div></div>
+
+  <p class="provenance" style="margin-top:22px">Source: <a href="https://www.cedefop.europa.eu/en/tools/apprenticeship-schemes" target="_blank" rel="noopener">Cedefop — European database on apprenticeship schemes</a>, 2026 fiches, coded answers read on 2026-10-01.
+    Option labels are shortened; the fiches carry the full wording and the explanations behind each answer. Reproduced with acknowledgement under Cedefop's legal notice.</p>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="rowlinks">
+      <a href="../">Datasets</a>
+      <a href="indicators.html">Indicators</a>
+      <a href="countries/">Countries</a>
+      <a href="about.html">About</a>
+      <a href="data.html">Data &amp; sources</a>
+    </div>
+    <p><strong>Apprentix</strong> is an independent, non-commercial project. It republishes publicly available information; it does not create or verify it. Each indicator names its publisher, which remains authoritative.</p>
+  </div>
+</footer>
+
+<script type="module" src="../assets/js/compare.js"></script>
+
+</body>
+</html>

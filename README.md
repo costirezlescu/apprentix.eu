@@ -131,6 +131,28 @@ python3 -m pipeline.validate            # check everything against data/schemas/
 - Optional API keys go in Settings → Secrets → Actions (e.g. `DESTATIS_TOKEN`); connectors
   that need a missing key are skipped, not failed.
 
+### Country pages, comparison matrix, sitemap
+
+`pipeline/render_pages.py` runs at the end of every build and writes one static, crawlable
+page per country (`pages/countries/<code>.html`: schemes, key figures against the EU-27,
+national statistics, recent policies, open datasets) plus `sitemap.xml`. Do not edit those
+files by hand — change the renderer. `pages/compare.html` is the scheme comparison matrix,
+driven by `meta.matrix` in the apprenticeship-schemes `meta.json`.
+
+### Cedefop scheme fiches (browser-assisted curation)
+
+Each fiche answers the same questionnaire; 34 questions are multiple choice. To refresh them
+after a new Cedefop update round:
+
+1. In a normal browser, open Cedefop's scheme-fiche list, paste
+   `pipeline/curate/fiche_extract.js` into the developer console, and wait.
+2. Save the `A|` lines as `data/raw/cedefop-schemes/<date>-fiche-answers.txt`
+   (copy the `META|` lines from the previous file).
+3. Run `python -m pipeline.curate.merge_fiches`, then `python -m pipeline.run --build-only`.
+
+Option labels live in `pipeline/curate/scheme_questions.py`; the merge stops if a fiche uses
+an option that file does not know, so a changed questionnaire is never silently mis-read.
+
 ### Cedefop
 
 Cedefop's web pages refuse automated requests, but its **Datasets** downloads (`/files/…xlsx`)

@@ -122,3 +122,5 @@ def all(connectors: dict, status: dict) -> None:
     refresh_manifest(inds)
     datapackage(inds)
     print(f"Built: {len(inds)} indicators, catalogue, manifest, datapackage.json")
+    from . import render_pages
+    render_pages.render_all()

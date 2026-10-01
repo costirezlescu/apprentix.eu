@@ -67,6 +67,8 @@ jobs:
           add-paths: |
             data/**
             datapackage.json
+            pages/countries/**
+            sitemap.xml
           body: |
             Automated refresh of the automated sources. Review the diff before merging: the git history of `data/` is the site's changelog.
 

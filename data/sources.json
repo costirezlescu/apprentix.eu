@@ -105,6 +105,27 @@
       }
     },
     {
+      "id": "cedefop-skills",
+      "name": "Cedefop — Skills intelligence datasets (ESI, CLSSI, STAS)",
+      "publisher": "Cedefop",
+      "homepage": "https://www.cedefop.europa.eu/en/datasets",
+      "description": "Cedefop's downloadable skills-intelligence datasets: the European Skills Index (2018–2024 editions), the Cedefop labour and skills shortage index (CLSSI) by occupation, and the short-term anticipation of skills trends and VET demand (STAS) employment projections.",
+      "access": "file",
+      "browser_cors": false,
+      "licence": "CC-BY-4.0",
+      "cadence": "ESI biennial; STAS twice a year (after AMECO spring/autumn releases); CLSSI irregular",
+      "outputs": [
+        "indicators/cedefop-esi",
+        "indicators/cedefop-esi-editions",
+        "indicators/cedefop-clssi",
+        "indicators/cedefop-stas-employment",
+        "indicators/cedefop-stas-employment-growth"
+      ],
+      "automated": true,
+      "connector": "pipeline/sources/cedefop_skills.py",
+      "licence_url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    {
       "id": "ch-bfs",
       "name": "Switzerland — BFS initial VET statistics (opendata.swiss)",
       "publisher": "Swiss Federal Statistical Office (BFS/OFS)",

@@ -1,0 +1,73 @@
+# Cedefop European database on apprenticeship schemes — structured answers, reference year 2026
+# Read from the live scheme fiches on 2026-10-01 with pipeline/curate/fiche_extract.js (browser console).
+# One line per fiche: slug | Q=selected option indices (0-based, in Cedefop's option order; see pipeline/curate/scheme_questions.py)
+# Source: https://www.cedefop.europa.eu/en/tools/apprenticeship-schemes/scheme-fiches/<slug>
+# META lines: slug | country fiche slug | PDF node id | drafted by (as credited on the fiche)
+A|dual-apprenticeship|1=0 2=0 3=1 4=0 6=2 7=0 8=0 9=0 10=2 11=0 13=0 14=0,1 15=0,1,2,3 18=0,1,2,3,4 19=0 20=0 21=1 22=0,1,2 23=0 25=0 26=0,1,2 28=0 29=2 30=0 31=1 32=2 33=0 34=2,3 35=0 36=0,1 37=0,1,2 38=0,1,2,3,4,5 39=0 40=1,2,3,4
+A|dual-learning|1=2 2=0,1 3=0 4=1 6=3 7=0 8=0 9=1 10=1,3 11=0,1 13=0 14=0,1 15=1,2,3 18=0,1,2 19=0 20=0 21=1 22=0,4 23=0 25=0,1 26=0,1,2 28=1 29=2 30=0 31=0,1 32=4 33=0,1,3 34=0,2 35=0 36=0,1,2 37=0 38=0,1,2,3,4 39=0,1 40=0,2,3,4
+A|dual-training|1=0 2=0 3=0,1 4=1 6=2 7=0 8=0 9=0,1 10=0,1,2 11=0,1 13=0 14=0,1,2 15=0,1,3 18=0,1,2,4 19=0 20=0 21=1 22=0 23=0,2 25=1 26=0,1 28=0 29=2 30=0 31=1 32=0,4 33=0 34=0,3 35=0 36=0,1,2 37=2 38=1,2,3,4 39=0 40=0,1,2,3,4
+A|work-based-learning-dual-system-training|1=2 2=1 3=1 4=0 6=3 7=0 8=0 9=1 10=1 11=0 13=0 14=0,2 15=0,3 18=0,1,4 19=0 20=0 21=1 22=0 23=2 25=1 26=0,1 28=1 29=2 30=0 31=1 32=4 33=0 34=0,3 35=0 36=0 37=0,1,2 38=1,3,4 39=1 40=0,3,4
+A|unified-model-education|1=1,2 2=0,1 3=0 4=0 6=2 7=0 8=0 9=1 10=1 11=1 13=1 14=0,1,2 15=0,1,2,3 18=0,1,4 19=0 20=0,1 21=1 22=0,1,4 23=0,2 25=0,1 26=0,1 28=1 29=0 30=0 31=2 32=0,2,4 33=1 34=0,3 35=0 36=0 37=0,1,2 38=2,4 39=1 40=0,3,4
+A|new-modern-apprenticeship|1=0 2=0 3=0 4=0 6=3 7=0 8=0 9=0 10=2 11=1 13=0 14=0,1 15=2,3 18=0,1 19=0 20=0 21=1 22=0 23=3 25=1 26=0,1 28=1 29=2 30=0 31=1 32=0,4 33=0 34=3 35=0 36=0 37=3 38= 39=1 40=3,4
+A|dual-practical-training|1=2 2=1 3=1 4= 6= 7=2 8=1 9=1 10=0 11=0 13=0 14=0,1,2 15=1,2,3 18=0,1,2 19=0 20=3 21=1 22=4 23=2,3 25=0,1 26=0,1,2 28=1 29=0 30=1 31=2 32=0 33=1 34=0,4 35=0,2 36=0,2 37=0,1,2 38=2,3 39=1 40=0,2,3
+A|apprenticeship|1=0 2=0 3=1 4=0,1,2 6=0 7=0 8=0 9=0 10=2 11=0,1 13=0 14=0,1,2 15=0,1,2,3 18=0,1,2 19=0 20=0 21=1 22=2,3 23=0 25=0 26=0,1,2 28=0 29=2 30=0 31=0 32=0,3,4 33=0 34=2 35=0 36=0,1 37=0,2 38=0,1,4 39=0 40=2,3,4
+A|workplace-based-learning|1=1 2=1 3=2 4=2 6=3 7=0 8=0 9=1 10=0 11=0,1 13=0 14=1 15=0,1,3 18=0,1,4 19=0 20=0 21=1 22=4 23=2 25=1 26=0,1,2 28=1 29=0,2 30=0 31=0,2 32=0,4 33=0 34=0,3 35=0 36=0,2,3 37=2 38=0,2,4 39=1 40=0,1,2,3
+A|apprenticeship-training|1=0 2=0,3 3=1 4=2 6=2 7=0 8=0 9=1 10=1 11=0 13=0 14=0,1,2 15=0,2,3 18=0,1,4 19=1 20=3 21=1 22=4 23=2 25=1 26=0,1,2 28=1 29=2 30=0 31=1 32=0 33=0 34=2,3 35=0 36=0,2 37=2 38=0,1,2,3,4 39=0,1 40=0,1,2,3,4
+A|apprenticeship-contract|1=0 2=0 3=0 4=1 6=1 7=0 8=0 9=1 10=0 11=0 13=0 14=0,1,2 15=0,3 18=0,1,2,3,4 19=0 20=0 21=1 22=4 23=2 25=0,1 26=0,1,2 28=0 29=2 30=0 31=1 32=4 33=0 34=0,2 35=0 36=0,1,2,3 37=0,1,2 38=0,1,2,4,5 39=0 40=0,1,2,3,4
+A|professionalisation-contract|1=1 2=2 3=1 4=2 6= 7=0 8=0 9=1 10=0,3 11=0 13=0 14=0,2 15=2,3 18=0,1,2,3 19=0 20=0 21=1 22=5 23=2,3 25=0,1 26=0,1,2 28=0 29=1 30=0 31=1 32=1,4 33=0 34=0 35=0 36=0,1,2,3 37=0,1,2 38=0,1,2,3,4 39=0 40=2,3,4
+A|dual-vet|1=0 2=0 3=2 4=1 6=0 7=0 8=0 9=0 10=1 11=1 13=0 14=0,1,2 15=0,1,2,3 18=0,1,2,3,4 19=0 20=0 21=1 22=0,1 23=0 25=0 26=0,1 28=0 29=2 30=0 31=1 32=2 33=0 34=2,3 35=0 36=0,1,2,3 37=2 38=0,1,2,3,4,5 39=0 40=1,2,3,4
+A|epas-apprenticeships-dypa-vet-schools|1=0 2=0 3=0 4=0,1 6=3 7=0 8=0 9=0 10=2 11=1 13=0 14=0,2 15=3 18=0 19=0 20=0 21=1 22=0 23=0 25=0,1 26=0,1,2 28=1 29=2 30=0 31=1 32=1 33=0 34=0 35=0,1,2 36=0,3 37=0 38=0,5 39=1 40=1,3
+A|post-secondary-year-apprenticeship-class|1=2 2=2 3=1 4=1 6=2 7=0 8=1 9=1 10=2 11=0 13=0 14=0,1,2 15=3 18=0,1 19=0 20=0 21=1 22=0 23=0 25=0,1 26=0,1,2 28=1 29=2 30=0 31=1 32=1 33=0 34=0 35=0 36=0,2,3 37=0 38=1,3,4,5 39=1 40=3,4
+A|dual-vocational-training-system-based-vocational-employment-contract|1=2 2=1 3=1 4=0 6=1 7=0 8=0 9=1 10=0 11=0,1 13=0 14=0,1 15=0,1,2,3 18=0,1,2,4 19=1 20=0,3 21=1 22=4 23=1 25=0,1 26=0,1,2 28=0 29=2 30=0 31=1 32=4 33=1 34=0 35=0 36=0,2 37=0,1 38=2,3,4,5 39=0 40=1,3,4
+A|apprenticeship-1|1=0 2=0 3=1 4=1 6=1 7=0 8=0 9=0 10=2 11=1 13=0 14=0,1 15=0,1 18=0 19=0 20=3 21=1 22=3,4 23=0 25=0 26=0,1 28=1 29=2 30=0 31=1 32=0,3 33=0 34=2 35=0 36=0,1,2 37=0 38=0,5 39=1 40=3,4
+A|apprenticeships-ireland|1=0 2=0 3=1 4=1 6=3 7=0 8=0 9=0,1 10=2,3 11=0 13=0 14=0,1,2 15=2,3 18=0,1,4 19=0 20=0 21=1 22=5 23=0 25=0,1 26=0,1,2 28=0 29=1,2 30=0 31=0 32=4 33=0 34=2,3 35=0,1 36=0 37=0,2 38=0,1 39=0 40=1,3,4
+A|apprenticeship-vocational-qualification-and-diploma-upper-secondary-education|1=1 2=0,1 3=0 4=1 6=3 7=0 8=0 9=1 10=0 11=0,1 13=1 14=0,2 15=3 18=0,1,2,4 19=0 20=1 21=0 22=1,2,4 23=1 25=1 26=0,1,2 28=0 29=2 30=0 31=1 32=1 33=0 34=0,2 35=0 36=0,2,3 37=0,1,2 38=2,3 39=1 40=2,3,4
+A|higher-education-and-research-apprenticeship-type-3|1=1 2=2 3=0 4=2 6=3 7=0 8=0 9=1 10=0,3 11=0 13=1 14=0,2 15=3 18=0,1,2,4 19=0 20=0,1 21=0 22=4 23=1,3 25=1 26=0,1,2 28=0 29=2 30=0 31=1 32=1 33=0 34=0,2 35=0 36=0,1,2,3 37=1,2 38=2,3 39=1 40=2,3,4
+A|work-based-learning-wbl|1=2 2=1 3=2 4=0,1 6=2 7=0 8=0 9=1 10=0 11=0,1 13=1 14=0,1,2 15=0,3 18=0,1,2,4 19=0 20=1 21=1 22=1,2,4 23=2 25=1 26=0,1 28=1 29=0,1 30=0 31=0,2 32=0,4 33=0,1 34=3 35=0 36=0,2,3 37=0,1 38=0,1,5 39=1 40=1,2,3,4
+A|vet-form-apprenticeship|1=1 2=1 3=2 4=0 6=2 7=0 8=0 9=1 10=0 11=0 13=0 14=0,1 15=0 18=0,1,4 19=1 20=0 21=0 22=4 23=1 25=1 26=0,1,2 28=1 29=2 30=0 31=1 32=0,4 33=0 34=0,3 35=0 36=0,2,3 37=0 38=0,1,4 39=1 40=0,3,4
+A|apprenticeship-contract-0|1=0 2=0 3=1 4=0,1,2 6=2 7=0 8=1 9=0,1 10=0,2 11=1 13=0 14=0,1,2 15=0,1,2 18=0,1,2 19=0 20=0,3 21=1 22=0,1 23=0 25=0 26=0,1,2 28=0 29=2 30=0 31=1 32=2,3 33=0 34=0 35=0 36=0,2 37=0,1,2 38=0,1,2,4,5 39=0 40=0,2,3,4
+A|mcast-apprenticeships|1=0 2=0 3=1 4=1 6=1 7=0 8=0 9=0 10=1 11=0,1 13=0 14=0,1,2 15=3 18=0,2 19=0 20=0,3 21=1 22=4 23=0 25=1 26=0,1 28=0 29=2 30=0 31=2 32=0,4 33=0,1 34=0 35=0,1 36=0,2 37=1,2 38=0,1,3,5 39=1 40=0,3,4
+A|dual-pathway|1=0 2=0 3=1 4=1 6=2 7=0 8=0 9=1 10=0 11=0,1 13=0 14=0,1 15=1,2,3 18=0,1,2,4 19=0 20=1 21=1 22=0 23=2 25=1 26=0,1,2 28=0 29=2 30=0 31=1 32=0,4 33=0 34=0,2 35=0 36=0,1,2 37=0 38=0,1,2,4 39=0 40=1,2,3,4
+A|upper-secondary-vocational-programmes|1=0 2=0 3=1 4=1 6=0 7=0 8=0 9=1 10=2 11=1 13=0 14=0,1 15=0,1 18=0,1,2,4 19=0 20=0 21=0 22=5 23=0 25=0 26=0,1 28=0 29=2 30=0 31=1 32=4 33=0 34=2 35=0 36=0,2 37=0 38=0,2,5 39=1 40=3,4
+A|vocational-preparation-juvenile-workers|1=0 2=0 3=0 4=0 6=1 7=0 8=0 9=0,1 10=1,2 11=1 13=0 14=0,1,2 15=0,1,2,3 18=0,1 19=1 20=0 21=1 22=0,1 23=2,3 25=1 26=0,1 28=0 29=1,2 30=0 31=1 32=2,4 33=0 34=0,3 35=0 36=0,1,2 37=0,1 38=0,1,2,4 39=0 40=0,1,3,4
+A|apprenticeship-programmes|1=0 2=3 3=0 4=0,1,2 6=2 7=0 8=0 9=1 10=1 11=0 13=0 14=0,2 15=3 18=0,1 19=0 20=1 21=1 22=2,4 23=2 25=1 26=0,1,2 28=0 29=0 30=0 31=2 32=0 33=1 34=0 35=1 36=2,3 37=3 38=1,2,3 39=0 40=0,1,3
+A|apprenticeship-workplace|1=0 2=0 3=1 4=2 6= 7=0 8=1 9=1 10=1 11=0,1 13=0 14=0,1,2 15=0,2 18=0,1,4 19=0 20=0 21=0 22=4 23=2,3 25=1 26=0,1 28=0 29=2 30=0 31=1 32=1,4 33=0 34=0 35=0 36=0,2 37=0 38=0,3 39=0 40=1,2,3
+A|vet-dual-system|1=2 2=1 3=0 4=0 6=3 7=0 8=0 9=1 10=1 11=1 13=0 14=0,1 15=0,3 18=0,1 19=0 20=0 21=1 22=4 23=1 25=1 26=0,1,2 28=0 29=0 30=0 31=2 32=0,4 33=1 34=0 35=0 36=0,2 37=1,2 38=0,5 39=0 40=0,2,3
+A|dual-education|1=2 2=1 3=0,2 4=0,1 6=3 7=0 8=0 9=1 10=0,2 11=0,1 13=1 14=0,1,2 15=0,1,2,3 18=0,1,2,4 19=0 20=0 21=1 22=4 23=0,2 25=0,1 26=0,1,2 28=0 29=0 30=0 31=2 32=0,3 33=0 34=0,3 35=0,1 36=0,2 37=0,1 38=0,4,5 39=1 40=0,1,3,4
+A|apprenticeship-pathway-upper-secondary-vocational-education|1=2 2=1 3=1 4=0 6=3 7=0 8=0 9=1 10=0 11=1 13=0 14=0,1 15=0,1,2,3 18=0,1,4 19=0 20=0 21=1 22=0,2,4 23=1 25=0,1 26=0,1 28=0 29=0 30=0 31=2 32=2 33=1 34=0 35=0 36=0,2 37=0,1 38=0,1,2,3,4 39=1 40=0,1,3,4
+A|intensive-vet|1=2 2=1 3=1 4=1 6=3 7=0 8=0 9=1 10=0 11=0,1 13=1 14=0,1 15=3 18=0,1,2,3 19=0 20=1 21=1 22=4 23=2,3 25=1 26=0,1 28=1 29=0,1 30=0 31=1,2 32=1,4 33=0 34=0,2 35=0 36=0,2 37=0,1,2 38=0,1,2,3,4,5 39=1 40=1,2,3,4
+A|apprenticeship-education-upper-secondary-schools|1=1 2=1 3=2 4=0 6=2 7=0 8=0 9=1 10=1 11=0 13=0 14=1,2 15=0,3 18=0,1,2,4 19=0 20=0 21=1 22=4 23=2 25=1 26=0,1 28=1 29=0,2 30=0 31=1,2 32=0 33=0,1 34=0,1,2 35=0,1 36=0,2,3 37=0,2 38=0,2,3,4 39=1 40=1,3,4
+META|dual-apprenticeship|austria|26438|Kurt Schmid, ibw Austria
+META|dual-learning|be-nl|44044|Marieke Vandeweyer, Flemish Department for Work, Economy, Science, Innovation and Social Economy
+META|dual-training|be-fr|26441|Pascale Etienne, OFFA (Office francophone de formation en alternance)
+META|work-based-learning-dual-system-training|bulgaria|32994|Petya Evtimova, Modern Education Foundation
+META|unified-model-education|croatia|26447|Mirela Laković, Croatian Chamber of Trades and Crafts
+META|new-modern-apprenticeship|cyprus|26449|Nikos Papaevripidis, Ministry of Education, Sports and Youth
+META|dual-practical-training|czechia|162475|Cedefop, with input from Martina Kaňáková (National Pedagogical Institute) and the ReferNet coordinator
+META|apprenticeship|denmark|26452|Henrik Hersom, University College Copenhagen
+META|workplace-based-learning|estonia|26456|Sigrid Ester Tani, Ministry of Education and Research
+META|apprenticeship-training|finland|26459|Riikka Vacker, Finnish National Agency for Education (EDUFI)
+META|apprenticeship-contract|france|26462|Romain Pigaeud, Centre Inffo
+META|professionalisation-contract|france|26463|Romain Pigaeud, Centre Inffo
+META|dual-vet|germany|26465|Isabelle Le Mouillour, BIBB
+META|epas-apprenticeships-dypa-vet-schools|greece|26468|Based on input from DYPA, the Greek public employment service
+META|post-secondary-year-apprenticeship-class|greece|43272|Olga Kafetzopoulou, Ministry of Education and Religious Affairs
+META|dual-vocational-training-system-based-vocational-employment-contract|hungary|26472|Eva Mezo-Zadori, IKK Innovative Training Support Centre
+META|apprenticeship-1|iceland|26474|Cedefop, with input from Skúli Leifsson (Rannís)
+META|apprenticeships-ireland|ireland|26476|Breda McNally, SOLAS
+META|apprenticeship-vocational-qualification-and-diploma-upper-secondary-education|italy|26478|Sandra D'Agostino, INAPP
+META|higher-education-and-research-apprenticeship-type-3|italy|26482|Sandra D'Agostino, INAPP
+META|work-based-learning-wbl|latvia|26486|Ilze Buligina, Ministry of Education and Science
+META|vet-form-apprenticeship|lithuania|26488|Simonas Gaušas, Visionary Analytics
+META|apprenticeship-contract-0|luxembourg|26490|Nathalie Fratini, Ministry of National Education, Childhood and Youth
+META|mcast-apprenticeships|malta|26492|Pierre Dalmas, MCAST
+META|dual-pathway|netherlands|26494|Daphne Beukers, SBB
+META|upper-secondary-vocational-programmes|norway|26496|Margareth Haukås, HK-dir
+META|vocational-preparation-juvenile-workers|poland|26500|Andrzej Stępnikowski
+META|apprenticeship-programmes|portugal|26503|Alexandra Costa Artur, IMANOVATION
+META|apprenticeship-workplace|romania|26508|Mikaela Kets Didgard, Sectoral Committee – Finance, Banks, Insurance
+META|vet-dual-system|romania|26509|Mikaela Kets Didgard, Sectoral Committee – Finance, Banks, Insurance
+META|dual-education|slovakia|162474|Cedefop, with input from Andrej Hutta (Association of Employers' Unions and Associations of the Slovak Republic)
+META|apprenticeship-pathway-upper-secondary-vocational-education|slovenia|162466|Darko Mali, CPI – Institute of the Republic of Slovenia for VET
+META|intensive-vet|spain|26512|Guillem Salvans, Fundación Bertelsmann
+META|apprenticeship-education-upper-secondary-schools|sweden|26514|Pär Lundström, Swedish Installation Federation
