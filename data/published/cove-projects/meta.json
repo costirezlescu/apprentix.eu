@@ -1,0 +1,153 @@
+{
+  "id": "cove-projects",
+  "title": "Centres of Vocational Excellence projects",
+  "tagline": "Every Erasmus+ Centre of Vocational Excellence partnership since 2021, and who takes part.",
+  "description": "Centres of Vocational Excellence (CoVEs) are Erasmus+ partnerships that bring together VET providers, employers, universities, chambers and public authorities from several countries around one sector or challenge. Each record is one CoVE project selected in the 2021–2025 calls, with its coordinator, partners and the countries involved.",
+  "recordLabel": {
+    "one": "CoVE project",
+    "many": "CoVE projects"
+  },
+  "source": {
+    "name": "European Commission (DG EMPL) — Centres of Vocational Excellence: Project Participants data",
+    "url": "https://employment-social-affairs.ec.europa.eu/policies-and-activities/skills-and-qualifications/skills-jobs/centres-vocational-excellence_en",
+    "licence": "CC BY 4.0, under the Commission's reuse policy (Decision 2011/833/EU; legal notice: https://commission.europa.eu/legal-notice_en). Cite as: European Commission, DG EMPL, Centres of Vocational Excellence project participants data; compiled by Apprentix.",
+    "licence_id": "CC-BY-4.0",
+    "caveat": "Compiled automatically from the participants workbook published by DG EMPL (Data extracted at the beginning of May 2026). Organisations are listed by the legal name given in the workbook; no people are named. Associated partners and affiliated entities take part without being full beneficiaries. Countries outside Europe are shown by name but do not have a country page on this site.",
+    "retrieved": "2026-10-01",
+    "file_url": "https://employment-social-affairs.ec.europa.eu/document/download/bbc30c6b-9af5-4b7f-92d8-cd92be8e23dc_en?filename=Project%20Participants%20data%202021-2022-2023-2024-2025.xlsx",
+    "raw_file": "data/raw/erasmus/2026-10-01-cove-participants.xlsx",
+    "raw_sha256": "04b733b034ceb3fc04677f629d451438613cb16d0135388d56085f3810b2c9b9"
+  },
+  "display": {
+    "title": "acronym",
+    "subtitle": "project_title",
+    "group": "coordinator_country",
+    "badge": "flag",
+    "facts": [
+      "call_year",
+      "countries_label",
+      "size_label"
+    ]
+  },
+  "fields": [
+    {
+      "key": "call_year",
+      "label": "Call year",
+      "type": "category",
+      "facet": true
+    },
+    {
+      "key": "coordinator_country",
+      "label": "Coordinator country",
+      "type": "category",
+      "facet": true,
+      "collapse": 12
+    },
+    {
+      "key": "countries",
+      "label": "Countries involved",
+      "type": "category",
+      "facet": true,
+      "collapse": 12
+    },
+    {
+      "key": "acronym",
+      "label": "Acronym",
+      "type": "title"
+    },
+    {
+      "key": "project_title",
+      "label": "Project",
+      "type": "subtitle"
+    },
+    {
+      "key": "coordinator",
+      "label": "Coordinator",
+      "type": "text"
+    },
+    {
+      "key": "organisation_count",
+      "label": "Organisations",
+      "type": "text"
+    },
+    {
+      "key": "partner_count",
+      "label": "Full partners",
+      "type": "text"
+    },
+    {
+      "key": "associated_partner_count",
+      "label": "Associated partners",
+      "type": "text"
+    },
+    {
+      "key": "affiliated_entity_count",
+      "label": "Affiliated entities",
+      "type": "text"
+    },
+    {
+      "key": "country_count",
+      "label": "Number of countries",
+      "type": "text"
+    },
+    {
+      "key": "roles",
+      "label": "Make-up",
+      "type": "text"
+    },
+    {
+      "key": "participants",
+      "label": "Participating organisations",
+      "type": "longtext"
+    },
+    {
+      "key": "size_label",
+      "label": "Size",
+      "type": "hidden"
+    },
+    {
+      "key": "countries_label",
+      "label": "Countries",
+      "type": "hidden"
+    },
+    {
+      "key": "coordinator_country_code",
+      "label": "Coordinator country code",
+      "type": "hidden"
+    },
+    {
+      "key": "flag",
+      "label": "Flag",
+      "type": "hidden"
+    },
+    {
+      "key": "id",
+      "label": "Identifier",
+      "type": "hidden"
+    }
+  ],
+  "sections": [
+    {
+      "title": "At a glance",
+      "fields": [
+        "call_year",
+        "coordinator",
+        "coordinator_country",
+        "roles",
+        "country_count"
+      ]
+    },
+    {
+      "title": "Countries",
+      "fields": [
+        "countries"
+      ]
+    },
+    {
+      "title": "Who takes part",
+      "fields": [
+        "participants"
+      ]
+    }
+  ]
+}

@@ -280,7 +280,7 @@
       "name": "Erasmus+ project lists",
       "publisher": "European Commission (DG EAC / EACEA; DG EMPL for CoVEs)",
       "homepage": "https://erasmus-plus.ec.europa.eu/projects/projects-lists",
-      "description": "Erasmus+ Key Action 1 VET mobility projects and EU grants by coordinating country and call year (2014–2025), new Erasmus accreditations in VET, and organisations taking part in Centres of Vocational Excellence projects.",
+      "description": "Erasmus+ Key Action 1 VET mobility projects and EU grants by coordinating country and call year (2014–2025), new Erasmus accreditations in VET and a directory of accredited VET organisations, and Centres of Vocational Excellence projects with their participating organisations.",
       "access": "file",
       "browser_cors": false,
       "licence": "CC-BY-4.0",
@@ -289,7 +289,11 @@
         "indicators/erasmus-ka1-vet-projects",
         "indicators/erasmus-ka1-vet-grant",
         "indicators/erasmus-vet-accreditations",
-        "indicators/erasmus-cove-participations"
+        "indicators/erasmus-cove-participations",
+        "erasmus-vet-organisations/records.json",
+        "erasmus-vet-organisations/meta.json",
+        "cove-projects/records.json",
+        "cove-projects/meta.json"
       ],
       "automated": true,
       "connector": "pipeline/sources/erasmus.py",
@@ -328,6 +332,24 @@
           "data/reference/esco-occupations.json"
         ]
       }
+    },
+    {
+      "id": "europass-qdr",
+      "name": "Europass Qualifications Dataset Register (QDR)",
+      "publisher": "European Commission (DG EMPL), Europass; data from national qualification authorities",
+      "homepage": "https://data.europa.eu/data/datasets/european-learning-data?locale=en",
+      "description": "National qualifications published to Europass by designated national authorities in the European Learning Model: the vocational ones at EQF levels 2–5, with EQF/NQF level, field, awarding body, credits and a link to each Europass record.",
+      "access": "api",
+      "browser_cors": false,
+      "licence": "EC-reuse",
+      "cadence": "weekly (dumps regenerated weekly; national authorities publish continuously)",
+      "outputs": [
+        "vet-qualifications/records.json",
+        "vet-qualifications/meta.json"
+      ],
+      "automated": true,
+      "connector": "pipeline/sources/europass_qdr.py",
+      "licence_url": "https://eur-lex.europa.eu/eli/dec/2011/833/oj"
     },
     {
       "id": "eurostat",

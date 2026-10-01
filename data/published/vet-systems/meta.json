@@ -1,0 +1,36 @@
+{
+  "id": "vet-systems",
+  "title": "VET systems in Europe: national descriptions",
+  "tagline": "Who describes each country's VET system, and where to read it — 30 descriptions by Cedefop's ReferNet network.",
+  "description": "A guide to Cedefop's VET in Europe database: for each country, the latest detailed description of its vocational education and training system, written by the national ReferNet partner, with links to the full text, the 'Spotlight on VET' summary and the system chart. Apprentix links to these texts rather than copying them.",
+  "recordLabel": { "one": "system description", "many": "system descriptions" },
+  "source": {
+    "name": "Cedefop & ReferNet — VET in Europe database",
+    "url": "https://www.cedefop.europa.eu/en/tools/vet-in-europe",
+    "licence": "Cedefop's legal notice: reproduction is authorised provided the source is acknowledged, save where otherwise stated. Cite each description as given in its record.",
+    "licence_id": "Cedefop-reproduction-with-acknowledgement",
+    "caveat": "Links and citations read from Cedefop's pages on 2026-10-01. Most descriptions date from 2023 (Malta and Iceland 2022, United Kingdom 2019).",
+    "retrieved": "2026-10-01"
+  },
+  "display": { "title": "title", "group": "country", "badge": "flag", "link": "source_url", "summary": "citation", "facts": ["version", "refernet_partner"] },
+  "fields": [
+    { "key": "country",              "label": "Country",           "type": "category", "facet": true, "collapse": 12 },
+    { "key": "version",              "label": "Version",           "type": "category", "facet": true },
+    { "key": "has_spotlight",        "label": "Spotlight summary available", "type": "category", "facet": true, "order": ["Yes", "No"] },
+    { "key": "title",                "label": "Description",       "type": "title" },
+    { "key": "refernet_partner",     "label": "Written by (ReferNet partner)", "type": "text" },
+    { "key": "citation",             "label": "Cite as",           "type": "longtext" },
+    { "key": "source_url",           "label": "Read on Cedefop",   "type": "link" },
+    { "key": "full_description_pdf", "label": "Full description (PDF)", "type": "link" },
+    { "key": "spotlight_pdf",        "label": "Spotlight on VET (PDF)", "type": "link" },
+    { "key": "system_chart",         "label": "System chart (PDF)", "type": "link" },
+    { "key": "retrieved",            "label": "Links checked",     "type": "text" },
+    { "key": "country_code",         "label": "Country code",      "type": "hidden" },
+    { "key": "flag",                 "label": "Flag",              "type": "hidden" },
+    { "key": "id",                   "label": "Identifier",        "type": "hidden" }
+  ],
+  "sections": [
+    { "title": "Description", "fields": ["country", "version", "refernet_partner", "citation"] },
+    { "title": "Read it", "fields": ["source_url", "full_description_pdf", "spotlight_pdf", "system_chart", "retrieved"] }
+  ]
+}

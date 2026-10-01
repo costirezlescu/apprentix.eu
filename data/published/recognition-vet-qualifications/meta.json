@@ -1,0 +1,152 @@
+{
+  "id": "recognition-vet-qualifications",
+  "title": "Recognising foreign VET qualifications",
+  "tagline": "Who informs, who decides and under which law foreign VET qualifications are recognised, in 30 European systems.",
+  "description": "Cedefop's comparative mapping of national arrangements for recognising and validating foreign vocational qualifications and skills in the EU Member States, Iceland and Norway (Belgium's Flemish and French Communities separately). For each purpose — further learning, employment in regulated professions, employment in non-regulated professions — it names the information centre, the competent authority and the legal basis, and it summarises validation arrangements in the labour market. Situation at 1 June 2026.",
+  "recordLabel": {
+    "one": "system",
+    "many": "systems"
+  },
+  "source": {
+    "name": "Cedefop — Comparative mapping of national recognition and validation arrangements for foreign VET qualifications and skills. Dataset (2026)",
+    "url": "https://www.cedefop.europa.eu/en/datasets/recognition-validation-VET-arrangements",
+    "licence": "CC BY 4.0",
+    "licence_id": "CC-BY-4.0",
+    "citation": "Cedefop. (2026). Recognition and validation of foreign VET qualifications in Europe. Comparative insights for skills portability [Dataset]. Publications Office of the European Union. https://doi.org/10.2906/774317077022848",
+    "doi": "10.2906/774317077022848",
+    "caveat": "Extracted automatically from Table 1 of Cedefop's PDF dataset (by V. Symeonidis and E. Villalba-Garcia), which maps arrangements as at 1 June 2026. Recognition data come from a 2024 ReferNet survey and 2026 consultations with ENIC-NARIC centres and recognition authorities; validation data mainly from the European Inventory on Validation of Non-formal and Informal Learning, 2023. Cell text is reproduced as printed: only line breaks were joined (words split by a hyphen at a line end are rejoined with the hyphen kept; non-breaking hyphens are plain hyphens; blank lines within a cell are kept as paragraph breaks), so wording, spelling and abbreviations are Cedefop's. 'Validation in the labour market' is a single cell per system in the source, not split by purpose. No categories have been derived. Belgium's two Communities are separate records with country code BE. The PDF is the authoritative version.",
+    "retrieved": "2026-10-01",
+    "raw_file": "data/raw/cedefop/2026-10-01-recognition_symeonidis_villalba_cedefop_2026_dataset.pdf",
+    "raw_sha256": "ce32b0bcd5027ffb8acdfb679ecb4c4611223f45d8da675e00555081fdf5f6c4",
+    "publication_url": "https://www.cedefop.europa.eu/en/publications/7104"
+  },
+  "display": {
+    "title": "system",
+    "group": "country",
+    "badge": "flag",
+    "subtitle": "community"
+  },
+  "fields": [
+    {
+      "key": "system",
+      "label": "Education and training system",
+      "type": "title"
+    },
+    {
+      "key": "country",
+      "label": "Country",
+      "type": "category",
+      "facet": true,
+      "collapse": 12
+    },
+    {
+      "key": "community",
+      "label": "Community (Belgium)",
+      "type": "text"
+    },
+    {
+      "key": "further_learning_information_centre",
+      "label": "Information centre",
+      "type": "longtext"
+    },
+    {
+      "key": "further_learning_competent_authority",
+      "label": "Competent authority",
+      "type": "longtext"
+    },
+    {
+      "key": "further_learning_legal_basis",
+      "label": "Legal basis",
+      "type": "longtext"
+    },
+    {
+      "key": "regulated_information_centre",
+      "label": "Information centre",
+      "type": "longtext"
+    },
+    {
+      "key": "regulated_competent_authority",
+      "label": "Competent authority",
+      "type": "longtext"
+    },
+    {
+      "key": "regulated_legal_basis",
+      "label": "Legal basis",
+      "type": "longtext"
+    },
+    {
+      "key": "non_regulated_information_centre",
+      "label": "Information centre",
+      "type": "longtext"
+    },
+    {
+      "key": "non_regulated_competent_authority",
+      "label": "Competent authority",
+      "type": "longtext"
+    },
+    {
+      "key": "non_regulated_legal_basis",
+      "label": "Legal basis",
+      "type": "longtext"
+    },
+    {
+      "key": "labour_market_validation",
+      "label": "Validation in the labour market",
+      "type": "longtext"
+    },
+    {
+      "key": "country_code",
+      "label": "Country code",
+      "type": "hidden"
+    },
+    {
+      "key": "flag",
+      "label": "Flag",
+      "type": "hidden"
+    },
+    {
+      "key": "id",
+      "label": "Identifier",
+      "type": "hidden"
+    }
+  ],
+  "sections": [
+    {
+      "title": "At a glance",
+      "fields": [
+        "country",
+        "community"
+      ]
+    },
+    {
+      "title": "Recognition for further learning",
+      "fields": [
+        "further_learning_information_centre",
+        "further_learning_competent_authority",
+        "further_learning_legal_basis"
+      ]
+    },
+    {
+      "title": "Recognition for employment (regulated professions)",
+      "fields": [
+        "regulated_information_centre",
+        "regulated_competent_authority",
+        "regulated_legal_basis"
+      ]
+    },
+    {
+      "title": "Recognition for employment (non-regulated professions)",
+      "fields": [
+        "non_regulated_information_centre",
+        "non_regulated_competent_authority",
+        "non_regulated_legal_basis"
+      ]
+    },
+    {
+      "title": "Validation in the labour market",
+      "fields": [
+        "labour_market_validation"
+      ]
+    }
+  ]
+}

@@ -76,6 +76,146 @@
       ]
     },
     {
+      "name": "financing-instruments",
+      "path": "data/published/financing-instruments/records.json",
+      "format": "json",
+      "mediatype": "application/json",
+      "title": "Financing apprenticeships: instruments",
+      "description": "The 55 financing instruments in Cedefop's database on financing apprenticeships in the EU: who pays, through which mechanism, for which costs, how much and for whom. Reference period 2016–17; the database has not been updated since.",
+      "sources": [
+        {
+          "title": "Cedefop — Database on financing apprenticeships in the EU",
+          "path": "https://www.cedefop.europa.eu/en/tools/financing-apprenticeships"
+        }
+      ],
+      "licenses": [
+        {
+          "name": "Cedefop-reproduction-with-acknowledgement",
+          "title": "Cedefop's legal notice: reproduction is authorised provided the source is acknowledged, save where otherwise stated."
+        }
+      ]
+    },
+    {
+      "name": "recognition-vet-qualifications",
+      "path": "data/published/recognition-vet-qualifications/records.json",
+      "format": "json",
+      "mediatype": "application/json",
+      "title": "Recognising foreign VET qualifications",
+      "description": "Cedefop's comparative mapping of national arrangements for recognising and validating foreign vocational qualifications and skills in the EU Member States, Iceland and Norway (Belgium's Flemish and French Communities separately). For each purpose — further learning, employment in regulated professions, employment in non-regulated professions — it names the information centre, the competent authority and the legal basis, and it summarises validation arrangements in the labour market. Situation at 1 June 2026.",
+      "sources": [
+        {
+          "title": "Cedefop — Comparative mapping of national recognition and validation arrangements for foreign VET qualifications and skills. Dataset (2026)",
+          "path": "https://www.cedefop.europa.eu/en/datasets/recognition-validation-VET-arrangements"
+        }
+      ],
+      "licenses": [
+        {
+          "name": "CC-BY-4.0",
+          "title": "CC BY 4.0"
+        }
+      ]
+    },
+    {
+      "name": "erasmus-vet-organisations",
+      "path": "data/published/erasmus-vet-organisations/records.json",
+      "format": "json",
+      "mediatype": "application/json",
+      "title": "Erasmus+ accredited VET organisations",
+      "description": "Schools, training centres, companies, chambers and public bodies awarded an Erasmus accreditation in VET (KA120-VET) in the 2021–2027 programme. Accredited organisations can send apprentices, learners and staff abroad every year without competing project by project. Each record shows where the organisation is, when it was accredited, and how many Erasmus+ VET mobility projects it has coordinated since 2021.",
+      "sources": [
+        {
+          "title": "European Commission — Erasmus+ projects lists for download (KA1 Learning Mobility of Individuals)",
+          "path": "https://erasmus-plus.ec.europa.eu/projects/projects-lists"
+        }
+      ],
+      "licenses": [
+        {
+          "name": "CC-BY-4.0",
+          "title": "CC BY 4.0, under the Commission's reuse policy (Decision 2011/833/EU; legal notice: https://commission.europa.eu/legal-notice_en). Cite as: European Commission, Erasmus+ projects lists (KA1); compiled by Apprentix."
+        }
+      ]
+    },
+    {
+      "name": "cove-projects",
+      "path": "data/published/cove-projects/records.json",
+      "format": "json",
+      "mediatype": "application/json",
+      "title": "Centres of Vocational Excellence projects",
+      "description": "Centres of Vocational Excellence (CoVEs) are Erasmus+ partnerships that bring together VET providers, employers, universities, chambers and public authorities from several countries around one sector or challenge. Each record is one CoVE project selected in the 2021–2025 calls, with its coordinator, partners and the countries involved.",
+      "sources": [
+        {
+          "title": "European Commission (DG EMPL) — Centres of Vocational Excellence: Project Participants data",
+          "path": "https://employment-social-affairs.ec.europa.eu/policies-and-activities/skills-and-qualifications/skills-jobs/centres-vocational-excellence_en"
+        }
+      ],
+      "licenses": [
+        {
+          "name": "CC-BY-4.0",
+          "title": "CC BY 4.0, under the Commission's reuse policy (Decision 2011/833/EU; legal notice: https://commission.europa.eu/legal-notice_en). Cite as: European Commission, DG EMPL, Centres of Vocational Excellence project participants data; compiled by Apprentix."
+        }
+      ]
+    },
+    {
+      "name": "nqf-qualification-levels",
+      "path": "data/published/nqf-qualification-levels/records.json",
+      "format": "json",
+      "mediatype": "application/json",
+      "title": "Qualification levels in national frameworks",
+      "description": "The level tables of Cedefop's NQF online tool (state of play 2024): each qualification type placed at a national framework level and, where the country has referenced its framework, at an EQF level. Filter to apprenticeship and craft qualifications to compare where they sit across Europe.",
+      "sources": [
+        {
+          "title": "Cedefop — National qualifications frameworks (NQF) online tool, 2024",
+          "path": "https://www.cedefop.europa.eu/en/tools/nqfs-online-tool"
+        }
+      ],
+      "licenses": [
+        {
+          "name": "Cedefop-reproduction-with-acknowledgement",
+          "title": "Cedefop's legal notice: reproduction is authorised provided the source is acknowledged, save where otherwise stated."
+        }
+      ]
+    },
+    {
+      "name": "vet-systems",
+      "path": "data/published/vet-systems/records.json",
+      "format": "json",
+      "mediatype": "application/json",
+      "title": "VET systems in Europe",
+      "description": "A guide to Cedefop's VET in Europe database: for each country, the latest detailed description of its vocational education and training system, written by the national ReferNet partner, with links to the full text, the 'Spotlight on VET' summary and the system chart. Apprentix links to these texts rather than copying them.",
+      "sources": [
+        {
+          "title": "Cedefop & ReferNet — VET in Europe database",
+          "path": "https://www.cedefop.europa.eu/en/tools/vet-in-europe"
+        }
+      ],
+      "licenses": [
+        {
+          "name": "Cedefop-reproduction-with-acknowledgement",
+          "title": "Cedefop's legal notice: reproduction is authorised provided the source is acknowledged, save where otherwise stated. Cite each description as given in its record."
+        }
+      ]
+    },
+    {
+      "name": "vet-qualifications",
+      "path": "data/published/vet-qualifications/records.json",
+      "format": "json",
+      "mediatype": "application/json",
+      "title": "National VET qualifications in Europe",
+      "description": "Vocational qualifications that national qualification authorities publish to the Europass Qualifications Dataset Register (QDR), with their EQF and national framework levels, field of education, awarding body, credits and a short learning-outcome summary. Filter to qualifications obtained through apprenticeship or dual training. Each entry links to its official Europass record.",
+      "sources": [
+        {
+          "title": "European Commission, Europass — Qualifications Dataset Register (European Learning Data, SPARQL endpoint)",
+          "path": "https://data.europa.eu/data/datasets/european-learning-data?locale=en"
+        }
+      ],
+      "licenses": [
+        {
+          "name": "EC-reuse",
+          "title": "European Commission reuse notice (Decision 2011/833/EU): reuse allowed with acknowledgement of the source. Data published to the QDR by national qualification authorities."
+        }
+      ]
+    },
+    {
       "name": "cedefop-clssi-json",
       "path": "data/published/indicators/cedefop-clssi.json",
       "format": "json",

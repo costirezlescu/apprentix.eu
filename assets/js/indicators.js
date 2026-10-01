@@ -107,7 +107,8 @@ async function showOverview() {
       </a>`).join('')}</div>
     <p class="provenance" style="margin-top:26px">Sources: ${[...pubs].map(([p, n]) => `${esc(p)} (${n})`).join(' · ')}.
       Machine-readable index: <a href="${url('data/published/indicators/index.json')}">index.json</a> ·
-      <a href="${url('datapackage.json')}">datapackage.json</a>.</p>`;
+      <a href="${url('datapackage.json')}">datapackage.json</a> ·
+      <a href="${url('pages/indicators/')}">all indicators as citable pages</a>.</p>`;
 }
 
 function defaultsMatch(ind, o) {
@@ -344,6 +345,7 @@ function renderProvenance() {
     <div class="downloads">
       <a class="btn" href="${url(IND.csv)}" download>Download CSV</a>
       <a class="btn" href="${url('data/published/indicators/' + IND.id + '.json')}">JSON with provenance</a>
+      <a class="btn" href="${url('pages/indicators/' + encodeURIComponent(IND.id) + '.html')}">Cite / about this dataset</a>
       ${p.api_url ? `<a class="btn" href="${esc(p.api_url)}" target="_blank" rel="noopener">Publisher's data ↗</a>` : ''}
     </div>`;
 }

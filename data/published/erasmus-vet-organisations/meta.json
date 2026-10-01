@@ -1,0 +1,168 @@
+{
+  "id": "erasmus-vet-organisations",
+  "title": "Erasmus+ accredited VET organisations",
+  "tagline": "Every organisation holding an Erasmus accreditation in vocational education and training since 2021.",
+  "description": "Schools, training centres, companies, chambers and public bodies awarded an Erasmus accreditation in VET (KA120-VET) in the 2021–2027 programme. Accredited organisations can send apprentices, learners and staff abroad every year without competing project by project. Each record shows where the organisation is, when it was accredited, and how many Erasmus+ VET mobility projects it has coordinated since 2021.",
+  "recordLabel": {
+    "one": "organisation",
+    "many": "organisations"
+  },
+  "source": {
+    "name": "European Commission — Erasmus+ projects lists for download (KA1 Learning Mobility of Individuals)",
+    "url": "https://erasmus-plus.ec.europa.eu/projects/projects-lists",
+    "licence": "CC BY 4.0, under the Commission's reuse policy (Decision 2011/833/EU; legal notice: https://commission.europa.eu/legal-notice_en). Cite as: European Commission, Erasmus+ projects lists (KA1); compiled by Apprentix.",
+    "licence_id": "CC-BY-4.0",
+    "caveat": "Compiled automatically from the Commission's KA1 project lists, call years 2021 onwards: one record per organisation named as holder of a KA120-VET accreditation. Organisations are matched by name and country (the files carry no organisation ID), so a renamed organisation may appear twice and a name variant may miss its project counts. Only organisation-level information is shown: name, town (taken from the published address; street and postcode are dropped), region, type and website. No contact persons, e-mail addresses or phone numbers are read or published, and rows describing private individuals are skipped. Members of accredited consortia are not listed, only the consortium coordinator. 'Mobility projects since 2021' counts KA121-VET and KA122-VET projects the organisation coordinated; the grant is the indicative amount awarded at selection, not the amount finally paid. Status is the accreditation status shown in the lists when they were last read.",
+    "retrieved": "2026-10-01"
+  },
+  "display": {
+    "title": "name",
+    "subtitle": "location",
+    "group": "country",
+    "badge": "flag",
+    "link": "project_page",
+    "facts": [
+      "accredited_label",
+      "org_type",
+      "projects_summary"
+    ]
+  },
+  "fields": [
+    {
+      "key": "country",
+      "label": "Country",
+      "type": "category",
+      "facet": true,
+      "collapse": 12
+    },
+    {
+      "key": "accreditation_years",
+      "label": "Accreditation year",
+      "type": "category",
+      "facet": true
+    },
+    {
+      "key": "org_type",
+      "label": "Type of organisation",
+      "type": "category",
+      "facet": true,
+      "collapse": 6
+    },
+    {
+      "key": "projects_band",
+      "label": "Mobility projects coordinated since 2021",
+      "type": "category",
+      "facet": true,
+      "order": [
+        "None",
+        "1–2",
+        "3–4",
+        "5 or more"
+      ]
+    },
+    {
+      "key": "status",
+      "label": "Accreditation status",
+      "type": "category",
+      "facet": true,
+      "order": [
+        "Accredited",
+        "Suspended",
+        "Terminated"
+      ]
+    },
+    {
+      "key": "name",
+      "label": "Organisation",
+      "type": "title"
+    },
+    {
+      "key": "location",
+      "label": "Town and region",
+      "type": "subtitle"
+    },
+    {
+      "key": "ka121_projects",
+      "label": "Accredited mobility projects (KA121-VET)",
+      "type": "text"
+    },
+    {
+      "key": "ka122_projects",
+      "label": "Short-term mobility projects (KA122-VET)",
+      "type": "text"
+    },
+    {
+      "key": "grant_total",
+      "label": "EU grant for these projects (indicative)",
+      "type": "text"
+    },
+    {
+      "key": "accreditation_ids",
+      "label": "Accreditation number",
+      "type": "text"
+    },
+    {
+      "key": "website",
+      "label": "Website",
+      "type": "text"
+    },
+    {
+      "key": "project_page",
+      "label": "Erasmus+ project page",
+      "type": "link"
+    },
+    {
+      "key": "accredited_label",
+      "label": "Accredited",
+      "type": "hidden"
+    },
+    {
+      "key": "projects_summary",
+      "label": "Mobility projects",
+      "type": "hidden"
+    },
+    {
+      "key": "country_code",
+      "label": "Country code",
+      "type": "hidden"
+    },
+    {
+      "key": "flag",
+      "label": "Flag",
+      "type": "hidden"
+    },
+    {
+      "key": "id",
+      "label": "Identifier",
+      "type": "hidden"
+    }
+  ],
+  "sections": [
+    {
+      "title": "At a glance",
+      "fields": [
+        "country",
+        "location",
+        "org_type",
+        "accreditation_years",
+        "status"
+      ]
+    },
+    {
+      "title": "Mobility projects coordinated since 2021",
+      "fields": [
+        "ka121_projects",
+        "ka122_projects",
+        "grant_total"
+      ]
+    },
+    {
+      "title": "Links and identifiers",
+      "fields": [
+        "website",
+        "accreditation_ids",
+        "project_page"
+      ]
+    }
+  ]
+}

@@ -36,23 +36,81 @@
       "coverage": "27 countries plus EU-level publishers, via data.europa.eu",
       "status": "live",
       "kind": "records"
+    },
+    {
+      "id": "financing-instruments",
+      "path": "data/published/financing-instruments",
+      "title": "Financing apprenticeships: instruments",
+      "tagline": "Levies, training funds, tax incentives and grants that pay for apprenticeships.",
+      "records": 55,
+      "coverage": "21 countries, reference period 2016–17",
+      "status": "live",
+      "kind": "records"
+    },
+    {
+      "id": "recognition-vet-qualifications",
+      "path": "data/published/recognition-vet-qualifications",
+      "title": "Recognising foreign VET qualifications",
+      "tagline": "Who informs, who decides and under which law foreign VET qualifications are recognised, in 30 European systems.",
+      "records": 30,
+      "coverage": "EU-27 (Belgium's Flemish and French Communities separately), Iceland and Norway, as at June 2026",
+      "status": "live",
+      "kind": "records"
+    },
+    {
+      "id": "erasmus-vet-organisations",
+      "path": "data/published/erasmus-vet-organisations",
+      "title": "Erasmus+ accredited VET organisations",
+      "tagline": "Every organisation holding an Erasmus accreditation in vocational education and training since 2021.",
+      "records": 4038,
+      "coverage": "33 countries (EU-27, EEA and candidate countries), accreditation calls 2021–2025",
+      "status": "live",
+      "kind": "records"
+    },
+    {
+      "id": "cove-projects",
+      "path": "data/published/cove-projects",
+      "title": "Centres of Vocational Excellence projects",
+      "tagline": "Every Erasmus+ Centre of Vocational Excellence partnership since 2021, and who takes part.",
+      "records": 73,
+      "coverage": "Calls 2021–2025, 1,856 participations from 45 countries",
+      "status": "live",
+      "kind": "records"
+    },
+    {
+      "id": "nqf-qualification-levels",
+      "path": "data/published/nqf-qualification-levels",
+      "title": "Qualification levels in national frameworks",
+      "tagline": "Where apprenticeship and other qualifications sit in 43 national frameworks, and at which EQF level.",
+      "records": 1074,
+      "coverage": "43 frameworks (EU, EFTA, candidate countries), state of play 2024",
+      "status": "live",
+      "kind": "records"
+    },
+    {
+      "id": "vet-systems",
+      "path": "data/published/vet-systems",
+      "title": "VET systems in Europe",
+      "tagline": "Where to read each country's VET system description, and who wrote it.",
+      "records": 30,
+      "coverage": "EU-27, Iceland, Norway, United Kingdom",
+      "status": "live",
+      "kind": "records"
+    },
+    {
+      "id": "vet-qualifications",
+      "path": "data/published/vet-qualifications",
+      "title": "National VET qualifications in Europe",
+      "tagline": "Vocational qualifications at EQF levels 2–5 from national registers, as published to Europass.",
+      "records": 24768,
+      "coverage": "14 countries (AT, BE-Flanders, CZ, DE, EE, FR, IE, LV, LT, MT, NL, RS, SI, SE), EQF levels 2–5",
+      "status": "live",
+      "kind": "records"
     }
   ],
   "planned": [
     {
-      "title": "Financing apprenticeships",
-      "note": "Cedefop database — not yet imported"
-    },
-    {
       "title": "Financing adult learning",
-      "note": "Cedefop database — not yet imported"
-    },
-    {
-      "title": "National qualifications frameworks",
-      "note": "Cedefop database — not yet imported"
-    },
-    {
-      "title": "VET in Europe",
       "note": "Cedefop database — not yet imported"
     }
   ],

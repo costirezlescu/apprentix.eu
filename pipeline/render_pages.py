@@ -3,6 +3,8 @@
   pages/countries/index.html        every country with content, grouped
   pages/countries/<code>.html       one profile per country (schemes, key figures,
                                     national statistics, policies, open datasets)
+  pages/indicators/, pages/datasets/, data/feed.xml, the DataCatalog block in
+  pages/data.html                   see render_datasets.py (called from here)
   sitemap.xml, robots.txt           at the repository root
 
 Plain static HTML generated from data/published/, so crawlers and visitors without
@@ -25,6 +27,7 @@ from .common import DATA, INDICATORS, LICENCES, PUBLISHED, REFERENCE, ROOT, geo_
 
 SITE = "https://apprentix.eu/"
 OUT = ROOT / "pages" / "countries"
+FEED_PATH = "data/feed.xml"
 FONTS = ("https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600"
          "&family=Public+Sans:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap")
 
@@ -75,6 +78,11 @@ def explore_url(dataset: str, filters: list[tuple[str, str]] = (), **extra) -> s
     params = [("dataset", dataset)] + [(f"f.{k}", v) for k, v in filters]
     params += [(k, v) for k, v in extra.items() if v]
     return "../explore.html?" + urlencode(params, quote_via=quote)
+
+
+def indicator_page_url(ind_id: str, prefix: str = "../indicators/") -> str:
+    """Relative link to the static page of an indicator (pages/indicators/<id>.html)."""
+    return prefix + quote(ind_id) + ".html"
 
 
 def indicator_url(ind_id: str, geo: str | None = None) -> str:
@@ -143,6 +151,7 @@ def page(*, title: str, description: str, canonical: str, root: str, body: str, 
 <meta name="twitter:card" content="summary">
 <link rel="stylesheet" href="{FONTS.replace('&', '&amp;')}">
 <link rel="stylesheet" href="{root}assets/css/site.css">
+<link rel="alternate" type="application/atom+xml" title="Apprentix data updates" href="{root}{FEED_PATH}">
 <script type="application/ld+json">
 {json_ld(json_ld_obj)}
 </script>
@@ -183,6 +192,7 @@ def page(*, title: str, description: str, canonical: str, root: str, body: str, 
       <a href="{pages}countries/">Countries</a>
       <a href="{pages}about.html">About</a>
       <a href="{pages}data.html">Data &amp; sources</a>
+      <a href="{root}{FEED_PATH}">Updates feed (Atom)</a>
       <a href="https://github.com/costirezlescu/apprentix.eu">Source code</a>
     </div>
     <p><strong>Apprentix</strong> is an independent, non-commercial project. It republishes publicly available information; it does not create or verify it. Each figure and record names its publisher, which remains authoritative.</p>
@@ -256,6 +266,20 @@ def load():
     schemes_meta, schemes = dataset("apprenticeship-schemes")
     policy_meta, policies = dataset("vet-policy-timeline")
     cat_meta, catalogue = dataset("data-catalogue")
+    extra = {}
+    for did in ("vet-systems", "financing-instruments", "nqf-qualification-levels",
+                "recognition-vet-qualifications", "erasmus-vet-organisations", "cove-projects"):
+        m, recs = dataset(did)
+        extra[did] = {"meta": m, "by_country": by_country(recs), "all": recs}
+    # CoVE: by coordinator, and by every participating country (names).
+    cove = extra["cove-projects"]
+    cove["by_country"] = {}
+    names_to_code = {c["name"]: c["code"] for c in ref["countries"]}
+    for r in cove["all"]:
+        for n in r.get("countries") or []:
+            g = names_to_code.get(n)
+            if g:
+                cove["by_country"].setdefault(g, []).append(r)
 
     # Latest default-dimension observations for the indicators we show.
     wanted = [i for alts in KEY_FIGURES for i in alts if i in by_id] + [i["id"] for i in index if i.get("national")]
@@ -285,6 +309,7 @@ def load():
         "schemes_meta": schemes_meta, "schemes": by_country(schemes),
         "policy_meta": policy_meta, "policies": by_country(policies),
         "cat_meta": cat_meta, "catalogue": by_country(catalogue),
+        "extra": extra,
     }
 
 
@@ -299,11 +324,13 @@ def country_facts(D, code: str) -> dict:
         "catalogue": D["catalogue"].get(code, []),
         "indicators": inds,
         "national": national,
+        **{k.replace("-", "_"): v["by_country"].get(code, []) for k, v in D["extra"].items()},
     }
 
 
 def has_content(f: dict) -> bool:
-    return bool(f["schemes"] or f["policies"] or f["catalogue"] or f["indicators"])
+    return bool(f["schemes"] or f["policies"] or f["catalogue"] or f["indicators"]
+                or f["vet_systems"] or f["nqf_qualification_levels"] or f["erasmus_vet_organisations"])
 
 
 def record_values(records: list[dict], key: str) -> list[str]:
@@ -371,7 +398,7 @@ def figures_table(rows: list[dict], code: str, name: str, with_eu: bool) -> str:
         body.append(
             f'<tr><th scope="row"><a href="{e(indicator_url(ind["id"], code))}">{e(ind["title"])}</a>'
             + (f'<span class="cp-dims">{e(note)}</span>' if (note := dims_note(ind)) else "")
-            + f'<span class="cp-src">{e(src)}</span></th>'
+            + f'<span class="cp-src">{e(src)} · <a href="{e(indicator_page_url(ind["id"]))}">about &amp; cite</a></span></th>'
             f'<td class="num"><strong>{e(fmt_value(o["value"], ind.get("unit")))}</strong>{flag_html(ind, o.get("flag"))}</td>'
             + (f'<td class="num">{e(fmt_value(eu["value"], ind.get("unit"))) + flag_html(ind, eu.get("flag")) if eu else "—"}</td>' if with_eu else "")
             + f'<td class="num">{e(o["time"])}</td></tr>')
@@ -472,6 +499,67 @@ def render_country(D, c: dict, f: dict, has_page: set[str]) -> str:
   <p class="sub">{e(the_name[0].upper() + the_name[1:])} has {plural(ns, 'mainstream apprenticeship scheme')} in Cedefop's European database on apprenticeship schemes.</p>
   <div class="cp-schemes">{"".join(scheme_block(s, sm) for s in f["schemes"])}</div>
   <p class="provenance">Source: <a href="{e(src['url'])}" target="_blank" rel="noopener">{e(src['name'])}</a>. {e(src.get('caveat', ''))}</p>
+</section>""")
+
+    # System, qualifications and recognition (Cedefop VET in Europe, NQF tool, recognition mapping).
+    X = D["extra"]
+    vs, nq, rc = f["vet_systems"], f["nqf_qualification_levels"], f["recognition_vet_qualifications"]
+    if vs or nq or rc:
+        nav.append(("system", "System and qualifications"))
+        parts = []
+        for v in vs:
+            links = [f'<a class="btn primary" href="{e(v["source_url"])}" target="_blank" rel="noopener">Read the system description ↗</a>']
+            if v.get("spotlight_pdf"):
+                links.append(f'<a class="btn" href="{e(v["spotlight_pdf"])}" target="_blank" rel="noopener">Spotlight on VET (PDF) ↗</a>')
+            if v.get("system_chart"):
+                links.append(f'<a class="btn" href="{e(v["system_chart"])}" target="_blank" rel="noopener">System chart (PDF) ↗</a>')
+            parts.append(f'<h3>How VET is organised</h3><p>Cedefop’s VET in Europe database has a detailed description of {e(the_name)}’s VET system ({e(v.get("version", ""))}), written by {e(v.get("refernet_partner", "the national ReferNet partner"))}.</p><p class="cp-links">{"".join(links)}</p>')
+        app_q = [q for q in nq if q.get("apprenticeship_or_craft") == "Yes"]
+        if nq:
+            items = "".join(f'<li>{e(q["qualification_type"])}<span class="cp-meta">National level {e(q.get("nqf_level", ""))} · {e(", ".join(q.get("eqf_level", [])) or "EQF level not stated")}</span></li>' for q in app_q[:10])
+            nq_country = record_values(nq, "country")
+            parts.append(f'''<h3>Where apprenticeship qualifications sit</h3>
+  <p>{e(the_name[0].upper() + the_name[1:])}'s qualifications framework places {plural(len(nq), "qualification type")} on its levels{f"; {len(app_q)} of them are named as apprenticeship or craft qualifications" if app_q else ""}.</p>
+  {f'<ul class="cp-list">{items}</ul>' if items else ''}
+  <p class="cp-links"><a class="btn" href="{e(explore_url("nqf-qualification-levels", [("country", v) for v in nq_country]))}">All {plural(len(nq), "qualification type")}</a>{f'<a class="btn" href="{e(explore_url("nqf-qualification-levels", [("country", v) for v in nq_country] + [("apprenticeship_or_craft", "Yes")]))}">Apprenticeship and craft only</a>' if app_q else ''}</p>''')
+        if rc:
+            links = "".join(f'<a class="btn" href="{e(explore_url("recognition-vet-qualifications", [], open=r["id"]))}">{e(r.get("system") or r["country"])}</a>' for r in rc)
+            parts.append(f'<h3>Recognising foreign VET qualifications</h3><p>Who informs, who decides and under which law foreign VET qualifications are recognised in {e(the_name)}.</p><p class="cp-links">{links}</p>')
+        srcs = [X[k]["meta"]["source"] for k, recs in (("vet-systems", vs), ("nqf-qualification-levels", nq), ("recognition-vet-qualifications", rc)) if recs and X[k]["meta"]]
+        sections.append(f"""<section class="cp-sec" id="system" aria-labelledby="h-system">
+  <h2 id="h-system">System and qualifications</h2>
+  {"".join(parts)}
+  <p class="provenance">Sources: {"; ".join(f'<a href="{e(s["url"])}" target="_blank" rel="noopener">{e(s["name"])}</a>' for s in srcs)}.</p>
+</section>""")
+
+    # Financing (Cedefop financing apprenticeships database, 2016–17).
+    fi = f["financing_instruments"]
+    if fi:
+        nav.append(("financing", "Financing"))
+        items = "".join(f'<li><a href="{e(explore_url("financing-instruments", [], open=r["id"]))}">{e(r["title"])}</a><span class="cp-meta">{e(", ".join(r.get("type", [])))}{" · " + e(r["scope"]) if r.get("scope") else ""}</span></li>' for r in fi)
+        src = X["financing-instruments"]["meta"]["source"]
+        sections.append(f"""<section class="cp-sec" id="financing" aria-labelledby="h-financing">
+  <h2 id="h-financing">Financing apprenticeships</h2>
+  <p class="sub">{plural(len(fi), "financing instrument")} for apprenticeships in {e(the_name)}, as recorded by Cedefop for 2016–17 (the database has not been updated since).</p>
+  <ul class="cp-list">{items}</ul>
+  <p class="provenance">Source: <a href="{e(src['url'])}" target="_blank" rel="noopener">{e(src['name'])}</a>.</p>
+</section>""")
+
+    # Erasmus+ accredited VET organisations and Centres of Vocational Excellence.
+    eo, cv = f["erasmus_vet_organisations"], f["cove_projects"]
+    if eo or cv:
+        nav.append(("erasmus", "Erasmus+ and excellence"))
+        bits = []
+        if eo:
+            eo_country = record_values(eo, "country")
+            bits.append(f'<p>{plural(len(eo), "organisation")} in {e(the_name)} {"holds" if len(eo) == 1 else "hold"} an Erasmus accreditation for vocational education and training (calls 2021–2025).</p><p class="cp-links"><a class="btn primary" href="{e(explore_url("erasmus-vet-organisations", [("country", v) for v in eo_country]))}">Browse accredited organisations</a></p>')
+        if cv:
+            coord = [r for r in cv if r.get("coordinator_country_code") == code or r.get("coordinator_country") == name]
+            bits.append(f'<p>Organisations from {e(the_name)} take part in {plural(len(cv), "Centre of Vocational Excellence project")}{f", coordinating {len(coord)}" if coord else ""}.</p><p class="cp-links"><a class="btn" href="{e(explore_url("cove-projects", [("countries", name)]))}">Browse CoVE projects</a></p>')
+        sections.append(f"""<section class="cp-sec" id="erasmus" aria-labelledby="h-erasmus">
+  <h2 id="h-erasmus">Erasmus+ and excellence</h2>
+  {"".join(bits)}
+  <p class="provenance">Source: European Commission, Erasmus+ project results and DG EMPL CoVE participants (CC BY 4.0).</p>
 </section>""")
 
     # c. Key figures
@@ -700,7 +788,7 @@ def render_index(D, facts: dict[str, dict]) -> str:
 
 # ---------------------------------------------------------------- sitemap --
 
-def sitemap(D, codes: list[str]) -> str:
+def sitemap(D, codes: list[str], extra: list[tuple[str, str]] = ()) -> str:
     updated = D["updated"]
     urls: list[tuple[str, str]] = [
         (SITE, updated),
@@ -718,9 +806,9 @@ def sitemap(D, codes: list[str]) -> str:
             r = str(read_json(meta_path).get("source", {}).get("retrieved", ""))
             lastmod = r if re.fullmatch(r"\d{4}-\d{2}-\d{2}", r) else updated
         urls.append((f"{SITE}pages/explore.html?" + urlencode({"dataset": d["id"]}), lastmod))
-    for i in sorted(D["index"], key=lambda i: i["id"]):
-        r = (i.get("provenance") or {}).get("retrieved_at", "")[:10]
-        urls.append((f"{SITE}pages/indicators.html?" + urlencode({"id": i["id"]}), r or updated))
+    # Static indicator and dataset pages (render_datasets). The interactive
+    # indicators.html?id=… views are not listed: the static page is canonical.
+    urls += list(extra)
     lines = ['<?xml version="1.0" encoding="UTF-8"?>',
              '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
     for loc, mod in urls:
@@ -762,12 +850,15 @@ def render_all() -> list[Path]:
         if p.name not in expected:
             p.unlink()
             written.append(p)
+    from . import render_datasets
+    extra_written, extra_urls = render_datasets.render_all(D)
+    written += extra_written
     codes = [c["code"] for c in D["countries"] if c["code"] in facts]
-    if write_text(ROOT / "sitemap.xml", sitemap(D, codes)):
+    if write_text(ROOT / "sitemap.xml", sitemap(D, codes, extra_urls)):
         written.append(ROOT / "sitemap.xml")
     if write_text(ROOT / "robots.txt", ROBOTS):
         written.append(ROOT / "robots.txt")
-    print(f"Rendered: {len(facts)} country pages + index, sitemap.xml ({len(written)} file(s) changed)")
+    print(f"Rendered: {len(facts)} country pages + index, sitemap.xml ({len(written)} file(s) changed in total)")
     return written
 
 

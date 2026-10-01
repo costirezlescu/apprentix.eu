@@ -1,0 +1,45 @@
+{
+  "id": "nqf-qualification-levels",
+  "title": "Qualification levels: where apprenticeships sit in national frameworks",
+  "tagline": "Every qualification type in 43 national qualifications frameworks, with its national and European (EQF) level.",
+  "description": "The level tables of Cedefop's NQF online tool (state of play 2024): each qualification type placed at a national framework level and, where the country has referenced its framework, at an EQF level. Filter to apprenticeship and craft qualifications to compare where they sit across Europe.",
+  "recordLabel": { "one": "qualification type", "many": "qualification types" },
+
+  "source": {
+    "name": "Cedefop — National qualifications frameworks (NQF) online tool, 2024",
+    "url": "https://www.cedefop.europa.eu/en/tools/nqfs-online-tool",
+    "licence": "Cedefop's legal notice: reproduction is authorised provided the source is acknowledged, save where otherwise stated.",
+    "licence_id": "Cedefop-reproduction-with-acknowledgement",
+    "caveat": "Read from the NQF tool's country pages on 2026-10-01 (state of play 2024). Where an EQF level cell spans several rows on Cedefop's page, the level is carried down and marked. 'Apprenticeship or craft' is an Apprentix flag from words in the qualification name (apprenticeship, journeyman, craft, master craftsperson, dual, Lehre, Geselle, Meister, fagbrev, svennebrev …), so it misses apprenticeship routes whose qualification has the same name as the school route — e.g. Dutch MBO via BBL.",
+    "retrieved": "2026-10-01"
+  },
+
+  "display": {
+    "title": "qualification_type",
+    "group": "country",
+    "badge": "flag",
+    "link": "source_url",
+    "facts": ["nqf_level", "eqf_level", "apprenticeship_or_craft"]
+  },
+
+  "fields": [
+    { "key": "country",                 "label": "Country",            "type": "category", "facet": true, "collapse": 12 },
+    { "key": "apprenticeship_or_craft", "label": "Apprenticeship or craft", "type": "category", "facet": true, "order": ["Yes", "No"] },
+    { "key": "eqf_level",               "label": "EQF level",          "type": "category", "facet": true,
+      "order": ["EQF 1", "EQF 2", "EQF 3", "EQF 4", "EQF 5", "EQF 6", "EQF 7", "EQF 8", "Not referenced to the EQF"] },
+    { "key": "qualification_type",      "label": "Qualification type", "type": "title" },
+    { "key": "nqf_level",               "label": "National level",     "type": "text" },
+    { "key": "eqf_from_merged_cell",    "label": "EQF level from a merged cell", "type": "text" },
+    { "key": "reference_year",          "label": "State of play",      "type": "text" },
+    { "key": "source_url",              "label": "Cedefop country page", "type": "link" },
+    { "key": "retrieved",               "label": "Read from Cedefop",  "type": "text" },
+    { "key": "country_code",            "label": "Country code",       "type": "hidden" },
+    { "key": "flag",                    "label": "Flag",               "type": "hidden" },
+    { "key": "id",                      "label": "Identifier",         "type": "hidden" }
+  ],
+
+  "sections": [
+    { "title": "Level", "fields": ["country", "nqf_level", "eqf_level", "eqf_from_merged_cell", "apprenticeship_or_craft"] },
+    { "title": "Source", "fields": ["reference_year", "source_url", "retrieved"] }
+  ]
+}

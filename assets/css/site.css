@@ -833,3 +833,5 @@ table.matrix td.focus { background: var(--accent-soft); }
 .cell-tag { display: block; line-height: 1.35; margin-bottom: 3px; }
 .cell-tag.coloured { padding-left: 14px; position: relative; font-weight: 600; }
 .cell-tag.coloured::before { content: ""; position: absolute; left: 0; top: .3em; width: 9px; height: 9px; border-radius: 2px; background: var(--tag); }
+.cp-sec h3 { margin-top: 22px; font-size: 1.02rem; }
+.cp-sec h3:first-of-type { margin-top: 8px; }

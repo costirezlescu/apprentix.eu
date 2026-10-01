@@ -1,3 +1,6 @@
 openpyxl>=3.1
 jsonschema>=4.21
 certifi
+
+# Optional: only for hand-run curation scripts (pipeline/curate/recognition_pdf.py)
+# pip install pdfplumber

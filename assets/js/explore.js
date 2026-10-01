@@ -160,7 +160,7 @@ function renderValue(f, rec) {
   const vs = values(rec, f.key);
   if (!vs.length) return '';
   if (f.type === 'link') {
-    return `<a href="${esc(vs[0])}" target="_blank" rel="noopener">Open source record ↗</a>`;
+    return `<a href="${esc(vs[0])}" target="_blank" rel="noopener">Open ↗</a>`;
   }
   return esc(vs.join(' · '));
 }

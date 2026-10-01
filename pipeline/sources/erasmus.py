@@ -21,8 +21,17 @@ CoVE participants: DG EMPL XLSX "Project Participants data 2021-…-2025"
   linked from the Centres of Vocational Excellence page; one sheet per call
   year listing participating organisations, their role and country.
 
-No personal data is published: contact persons, addresses and organisation
-names are never read into the output. Reuse: both sites point to the
+Record datasets (explorer):
+  erasmus-vet-organisations: one record per organisation holding a KA120-VET
+    accreditation (call years 2021+), with KA121/KA122-VET projects it
+    coordinated since 2021. Organisation-level fields only (name, town taken
+    from the address, region, type, website); per-year rows are cached in
+    data/raw/erasmus/ka1-directory-cache.json alongside ka1-cache.json.
+  cove-projects: one record per CoVE project from the DG EMPL workbook.
+
+No personal data is published: contact persons, e-mails, phone numbers and
+street addresses are never read into the output, and organisation rows whose
+type denotes a private individual are skipped. Reuse: both sites point to the
 Commission legal notice (CC BY 4.0, Decision 2011/833/EU).
 """
 
@@ -33,13 +42,15 @@ import datetime as dt
 import os
 import html
 import io
+import json
 import re
 import sys
 import urllib.parse
 from collections import defaultdict
 
 from ..common import (FetchError, countries, fetch, geo_code, provenance, read_json,
-                      rel, save_raw, write_indicator, INDICATORS, head, today, write_json, RAW)
+                      rel, save_raw, slug, write_indicator, write_records, INDICATORS, head,
+                      today, write_json, PUBLISHED, RAW)
 
 LISTING = "https://erasmus-plus.ec.europa.eu/projects/projects-lists"
 COVE_PAGE = ("https://employment-social-affairs.ec.europa.eu/policies-and-activities/"
@@ -52,7 +63,7 @@ SOURCE = {
     "name": "Erasmus+ project lists",
     "publisher": "European Commission (DG EAC / EACEA; DG EMPL for CoVEs)",
     "homepage": LISTING,
-    "description": "Erasmus+ Key Action 1 VET mobility projects and EU grants by coordinating country and call year (2014–2025), new Erasmus accreditations in VET, and organisations taking part in Centres of Vocational Excellence projects.",
+    "description": "Erasmus+ Key Action 1 VET mobility projects and EU grants by coordinating country and call year (2014–2025), new Erasmus accreditations in VET and a directory of accredited VET organisations, and Centres of Vocational Excellence projects with their participating organisations.",
     "access": "file",
     "browser_cors": False,
     "licence": LICENCE,
@@ -63,6 +74,10 @@ SOURCE = {
         "indicators/erasmus-ka1-vet-grant",
         "indicators/erasmus-vet-accreditations",
         "indicators/erasmus-cove-participations",
+        "erasmus-vet-organisations/records.json",
+        "erasmus-vet-organisations/meta.json",
+        "cove-projects/records.json",
+        "cove-projects/meta.json",
     ],
 }
 
@@ -167,8 +182,14 @@ def _classify(pid: str, action_type: str) -> tuple[str | None, bool]:
     return None, False
 
 
-def parse_ka1(body: bytes, file_year: int, agg: dict, accr: dict) -> dict:
-    """Stream one KA1 CSV, adding to agg[(geo, year, action)] = [projects, grant] and accr[(geo, year)]."""
+def parse_ka1(body: bytes, file_year: int, agg: dict, accr: dict, directory: dict | None = None) -> dict:
+    """Stream one KA1 CSV, adding to agg[(geo, year, action)] = [projects, grant] and accr[(geo, year)].
+
+    With `directory` ({"accredited": [], "coord": defaultdict}), also collects
+    organisation-level rows for the accredited-organisations directory (see
+    _dir_row): one row per KA120-VET accreditation, and per coordinating
+    organisation the number of KA121/KA122-VET projects and their grant.
+    """
     head = body[:4096].decode("utf-8", "replace").splitlines()[0]
     delim = max([",", ";", "\t"], key=head.count)
     text = io.TextIOWrapper(io.BytesIO(body), encoding="utf-8-sig", errors="replace", newline="")
@@ -180,6 +201,9 @@ def parse_ka1(body: bytes, file_year: int, agg: dict, accr: dict) -> dict:
     i_grant = _col(header, "eu grant")
     i_ctry = _col(header, "coordinator's country", "coordinating organisation country")
     width = max(i_type, i_year, i_pid, i_grant, i_ctry)
+    dcols = _dir_cols(header) if directory is not None else None
+    if dcols:
+        width = max(width, *(i for i in dcols.values() if i is not None))
     stats = {"rows": 0, "vet_projects": 0, "vet_accreditations": 0, "unmapped_country": 0, "short_rows": 0}
     seen = set()
     for row in reader:
@@ -202,13 +226,90 @@ def parse_ka1(body: bytes, file_year: int, agg: dict, accr: dict) -> dict:
         if is_accr:
             accr[(geo, year)] += 1
             stats["vet_accreditations"] += 1
+            if dcols:
+                d = _dir_row(row, dcols, pid, year, geo)
+                if d:
+                    directory["accredited"].append(d)
+                else:
+                    stats["dir_skipped"] = stats.get("dir_skipped", 0) + 1
             continue
         cell = agg[(geo, year, action)]
         cell[0] += 1
-        cell[1] += _amount(row[i_grant]) or 0.0
+        amount = _amount(row[i_grant]) or 0.0
+        cell[1] += amount
         stats["vet_projects"] += 1
+        if dcols and action in ("KA121", "KA122") and dcols["name"] is not None:
+            key = _org_key(row[dcols["name"]])
+            if key:
+                c = directory["coord"][(key, geo)]
+                c[0 if action == "KA121" else 1] += 1
+                c[2] += amount
     text.detach()
     return stats
+
+
+# ---------------------------------------------- directory (organisations) --
+
+# Organisation types that would denote a private individual; such rows are never published.
+PERSON_TYPE = re.compile(r"natural person|individual|informal group|private person", re.I)
+CARD_URL = "https://erasmus-plus.ec.europa.eu/projects/search/details/{pid}"
+DIR_FIRST_YEAR = 2021   # KA120/KA121/KA122 exist from the 2021 call
+
+
+def _dir_cols(header: list[str]) -> dict:
+    def opt(*prefixes):
+        try:
+            return _col(header, *prefixes)
+        except KeyError:
+            return None
+    return {
+        "name": opt("coordinating organisation name"),
+        "type": opt("coordinating organisation type"),
+        "address": opt("coordinator's address"),   # read only to take the town; never stored
+        "region": opt("coordinator's region"),
+        "website": opt("coordinator's website"),
+        "card": opt("results platform project card"),
+        "status": opt("project or accreditation status"),
+    }
+
+
+def _org_key(name: str) -> str:
+    return re.sub(r"\W+", " ", (name or "").casefold()).strip()
+
+
+def _cell(row: list[str], i: int | None) -> str:
+    return re.sub(r"\s+", " ", row[i]).strip() if i is not None and i < len(row) else ""
+
+
+def _city(address: str) -> str:
+    """Addresses read 'street, postcode, town'; keep only the town."""
+    town = address.rsplit(",", 1)[-1].strip() if address else ""
+    if not town or town.lower() in ("unknown", "null", "n/a", "-") or not re.search(r"[^\W\d_]", town):
+        return ""
+    return town.title() if town.isupper() and len(town) > 3 else town
+
+
+def _website(w: str) -> str:
+    w = w.replace(" ", "")
+    if not w or "@" in w or "." not in w:
+        return ""
+    return w
+
+
+def _card(pid: str) -> str:
+    return CARD_URL.format(pid=urllib.parse.quote(pid))
+
+
+def _dir_row(row, cols, pid, year, geo) -> list | None:
+    """Organisation-level fields of one accreditation; None for individuals or unnamed rows."""
+    name, otype = _cell(row, cols["name"]), _cell(row, cols["type"])
+    if not name or PERSON_TYPE.search(otype):
+        return None
+    card = _cell(row, cols["card"])
+    if not card.startswith("http") or card == _card(pid):
+        card = ""   # the standard URL is rebuilt from the identifier; keeps the cache small
+    return [pid, year, name, otype, _city(_cell(row, cols["address"])), _cell(row, cols["region"]),
+            geo, _website(_cell(row, cols["website"])), card, _cell(row, cols["status"])]
 
 
 # -------------------------------------------------------------- output ---
@@ -340,44 +441,61 @@ def ka1_indicators(files: dict, agg: dict, accr: dict) -> list[str]:
     return out
 
 
-def cove_indicator() -> list[str]:
+def cove_workbook() -> dict | None:
+    """Download the DG EMPL participants workbook once; return its rows and provenance."""
     page = fetch(COVE_PAGE, timeout=120).decode("utf-8", "replace")
     m = COVE_LINK.search(page)
     if not m:
         print("erasmus: CoVE participants XLSX link not found; skipped", file=sys.stderr)
-        return []
+        return None
     url = urllib.parse.urljoin(COVE_PAGE, html.unescape(m.group(1)))
     body = fetch(url, timeout=120)
     raw, digest = save_raw("erasmus", "cove-participants.xlsx", body)
 
     import openpyxl
     wb = openpyxl.load_workbook(io.BytesIO(body), read_only=True, data_only=True)
-    counts = defaultdict(int)
+    rows = []   # (call year, acronym, project title, organisation, role cell, country code)
     extracted = None
     for ws in wb.worksheets:
         if not re.fullmatch(r"\d{4}", ws.title.strip()):
             continue
         year = ws.title.strip()
         header = None
+        acronym = title = ""
         for row in ws.iter_rows(values_only=True):
-            cells = [("" if v is None else str(v).strip()) for v in row]
+            cells = [("" if v is None else re.sub(r"\s+", " ", str(v)).strip()) for v in row]
             if header is None:
                 low = [c.lower() for c in cells]
                 if "role" in low and "country code" in low:
-                    header = (low.index("role"), low.index("country code"))
+                    def find(*pre):
+                        return next((i for i, c in enumerate(low) if c.startswith(pre)), None)
+                    header = {"acronym": find("acronym"), "title": find("project title"),
+                              "name": find("legal name", "organisation"),
+                              "role": low.index("role"), "cc": low.index("country code")}
                 elif cells and cells[0].lower().startswith("data extracted"):
                     extracted = cells[0]
                 continue
-            role = ROLE_MAP.get(cells[header[0]].lower()) if len(cells) > header[0] else None
-            geo = geo_code(cells[header[1]].upper()) if len(cells) > header[1] else None
-            if role is None or geo is None:
-                continue
-            counts[(geo, year, role)] += 1
-            counts[(geo, year, "TOTAL")] += 1
+            get = lambda k: cells[header[k]] if header[k] is not None and header[k] < len(cells) else ""
+            if get("acronym"):
+                acronym, title = get("acronym"), get("title") or title
+            rows.append((year, acronym, title, get("name"), get("role"), get("cc").upper()))
     wb.close()
+    return {"url": url, "raw": raw, "sha256": digest, "extracted": extracted, "rows": rows}
+
+
+def cove_indicator(cw: dict) -> list[str]:
+    counts = defaultdict(int)
+    for year, _, _, _, role_cell, cc in cw["rows"]:
+        role = ROLE_MAP.get(role_cell.lower())
+        geo = geo_code(cc)
+        if role is None or geo is None:
+            continue
+        counts[(geo, year, role)] += 1
+        counts[(geo, year, "TOTAL")] += 1
     if not counts:
         print("erasmus: CoVE workbook had no usable rows; skipped", file=sys.stderr)
         return []
+    url, raw, digest, extracted = cw["url"], cw["raw"], cw["sha256"], cw["extracted"]
     geos_years = {(g, y) for g, y, _ in counts}
     series = [{"geo": g, "time": y, "value": counts.get((g, y, r), 0), "dims": {"role": r}}
               for g, y in geos_years for r in ROLES]
@@ -401,13 +519,275 @@ def cove_indicator() -> list[str]:
     })]
 
 
+# ------------------------------------------------------- record datasets --
+
+LICENCE_TEXT = ("CC BY 4.0, under the Commission's reuse policy (Decision 2011/833/EU; legal notice: "
+                f"{LEGAL}). Cite as: European Commission, {{}}; compiled by Apprentix.")
+# Countries that appear in CoVE partnerships but are not in data/reference/countries.json.
+OTHER_COUNTRIES = {"AM": "Armenia", "CA": "Canada", "CN": "China", "EG": "Egypt", "GH": "Ghana",
+                   "ZA": "South Africa", "US": "United States", "IL": "Israel", "TN": "Tunisia",
+                   "MA": "Morocco", "JP": "Japan", "KR": "South Korea", "AU": "Australia", "IN": "India"}
+PROJECT_BANDS = ["None", "1–2", "3–4", "5 or more"]
+
+
+def _country(cc: str) -> tuple[str | None, str, str | None]:
+    """(site code or None, display name, flag emoji or None) for a country code."""
+    geo = geo_code(cc)
+    if geo:
+        c = countries()["by_code"][geo]
+        return geo, c["name"], c.get("flag")
+    return None, OTHER_COUNTRIES.get(cc, cc), None
+
+
+def _publish(dataset_id: str, records: list[dict], meta: dict) -> list[str]:
+    """Write records.json + meta.json; keep the previous 'retrieved' date when the records are unchanged."""
+    folder = PUBLISHED / dataset_id
+    old_rec, old_meta = folder / "records.json", folder / "meta.json"
+    if old_rec.exists() and old_meta.exists() and read_json(old_rec) == records:
+        prev = read_json(old_meta).get("source", {})
+        for k in ("retrieved", "raw_file", "raw_sha256"):
+            if k in prev:
+                meta["source"][k] = prev[k]
+    rec_path = write_records(dataset_id, records)
+    write_json(old_meta, meta)
+    return [rel(rec_path), rel(old_meta)]
+
+
+def _band(n: int) -> str:
+    return "None" if n == 0 else "1–2" if n <= 2 else "3–4" if n <= 4 else "5 or more"
+
+
+def accredited_organisations(dir_by_year: dict) -> list[str]:
+    """Directory of organisations holding an Erasmus accreditation in VET (KA120-VET, 2021–)."""
+    acc = sorted((r for d in dir_by_year.values() for r in d["accredited"]), key=lambda r: (r[1], r[0]))
+    coord = defaultdict(lambda: [0, 0, 0.0])
+    for d in dir_by_year.values():
+        for key, geo, n121, n122, grant in d["coord"]:
+            c = coord[(key, geo)]
+            c[0], c[1], c[2] = c[0] + n121, c[1] + n122, c[2] + grant
+    orgs = {}
+    for pid, year, name, otype, city, region, geo, website, card, status in acc:
+        o = orgs.setdefault((_org_key(name), geo), {"pids": [], "years": set()})
+        o["pids"].append(pid)
+        o["years"].add(year)
+        # The latest accreditation wins for descriptive fields; keep earlier values when blank.
+        for k, v in (("name", name), ("type", otype), ("city", city), ("region", region),
+                     ("website", website), ("card", card), ("status", status)):
+            if v or k not in o:
+                o[k] = v
+    records = []
+    for (key, geo), o in orgs.items():
+        n121, n122, grant = coord.get((key, geo), (0, 0, 0.0))
+        total = n121 + n122
+        _, cname, flag = _country(geo)
+        years = sorted(o["years"])
+        loc = " · ".join(dict.fromkeys(x for x in (o["city"], o["region"]) if x))
+        summary = (f"{total} mobility project{'s' if total != 1 else ''} since 2021"
+                   + (f", €{round(grant):,}" if grant else "")) if total else "No mobility projects coordinated yet"
+        records.append({
+            "id": "erasmus-acc-" + o["pids"][0].rsplit("-", 1)[-1],
+            "name": o["name"],
+            "location": loc or None,
+            "country": cname,
+            "country_code": geo,
+            "flag": flag,
+            "org_type": o["type"] or None,
+            "accreditation_years": years,
+            "accredited_label": "Accredited " + ", ".join(years),
+            "status": o["status"] or None,
+            "accreditation_ids": o["pids"],
+            "ka121_projects": n121,
+            "ka122_projects": n122,
+            "projects_band": _band(total),
+            "grant_total": f"€{round(grant):,}" if grant else None,
+            "projects_summary": summary,
+            "website": o["website"] or None,
+            "project_page": o["card"] or _card(o["pids"][-1]),
+        })
+    records = [{k: v for k, v in r.items() if v is not None} for r in records]
+    records.sort(key=lambda r: (r["country"], r["name"].casefold(), r["id"]))
+    status_order = ["Accredited", "Suspended", "Terminated"]
+    meta = {
+        "id": "erasmus-vet-organisations",
+        "title": "Erasmus+ accredited VET organisations",
+        "tagline": "Every organisation holding an Erasmus accreditation in vocational education and training since 2021.",
+        "description": "Schools, training centres, companies, chambers and public bodies awarded an Erasmus accreditation in VET (KA120-VET) in the 2021–2027 programme. Accredited organisations can send apprentices, learners and staff abroad every year without competing project by project. Each record shows where the organisation is, when it was accredited, and how many Erasmus+ VET mobility projects it has coordinated since 2021.",
+        "recordLabel": {"one": "organisation", "many": "organisations"},
+        "source": {
+            "name": "European Commission — Erasmus+ projects lists for download (KA1 Learning Mobility of Individuals)",
+            "url": LISTING,
+            "licence": LICENCE_TEXT.format("Erasmus+ projects lists (KA1)"),
+            "licence_id": LICENCE,
+            "caveat": ("Compiled automatically from the Commission's KA1 project lists, call years 2021 onwards: one record per "
+                       "organisation named as holder of a KA120-VET accreditation. Organisations are matched by name and country "
+                       "(the files carry no organisation ID), so a renamed organisation may appear twice and a name variant may miss "
+                       "its project counts. Only organisation-level information is shown: name, town (taken from the published "
+                       "address; street and postcode are dropped), region, type and website. No contact persons, e-mail addresses "
+                       "or phone numbers are read or published, and rows describing private individuals are skipped. Members of "
+                       "accredited consortia are not listed, only the consortium coordinator. 'Mobility projects since 2021' counts "
+                       "KA121-VET and KA122-VET projects the organisation coordinated; the grant is the indicative amount awarded "
+                       "at selection, not the amount finally paid. Status is the accreditation status shown in the lists "
+                       "when they were last read."),
+            "retrieved": today(),
+        },
+        "display": {
+            "title": "name",
+            "subtitle": "location",
+            "group": "country",
+            "badge": "flag",
+            "link": "project_page",
+            "facts": ["accredited_label", "org_type", "projects_summary"],
+        },
+        "fields": [
+            {"key": "country", "label": "Country", "type": "category", "facet": True, "collapse": 12},
+            {"key": "accreditation_years", "label": "Accreditation year", "type": "category", "facet": True},
+            {"key": "org_type", "label": "Type of organisation", "type": "category", "facet": True, "collapse": 6},
+            {"key": "projects_band", "label": "Mobility projects coordinated since 2021", "type": "category",
+             "facet": True, "order": PROJECT_BANDS},
+            {"key": "status", "label": "Accreditation status", "type": "category", "facet": True, "order": status_order},
+            {"key": "name", "label": "Organisation", "type": "title"},
+            {"key": "location", "label": "Town and region", "type": "subtitle"},
+            {"key": "ka121_projects", "label": "Accredited mobility projects (KA121-VET)", "type": "text"},
+            {"key": "ka122_projects", "label": "Short-term mobility projects (KA122-VET)", "type": "text"},
+            {"key": "grant_total", "label": "EU grant for these projects (indicative)", "type": "text"},
+            {"key": "accreditation_ids", "label": "Accreditation number", "type": "text"},
+            {"key": "website", "label": "Website", "type": "text"},
+            {"key": "project_page", "label": "Erasmus+ project page", "type": "link"},
+            {"key": "accredited_label", "label": "Accredited", "type": "hidden"},
+            {"key": "projects_summary", "label": "Mobility projects", "type": "hidden"},
+            {"key": "country_code", "label": "Country code", "type": "hidden"},
+            {"key": "flag", "label": "Flag", "type": "hidden"},
+            {"key": "id", "label": "Identifier", "type": "hidden"},
+        ],
+        "sections": [
+            {"title": "At a glance", "fields": ["country", "location", "org_type", "accreditation_years", "status"]},
+            {"title": "Mobility projects coordinated since 2021",
+             "fields": ["ka121_projects", "ka122_projects", "grant_total"]},
+            {"title": "Links and identifiers", "fields": ["website", "accreditation_ids", "project_page"]},
+        ],
+    }
+    return _publish("erasmus-vet-organisations", records, meta)
+
+
+def cove_projects(cw: dict) -> list[str]:
+    """One record per Centre of Vocational Excellence project, with its participating organisations."""
+    projects = {}
+    for year, acronym, title, name, role_cell, cc in cw["rows"]:
+        role = ROLE_MAP.get(role_cell.lower())
+        if not acronym or not name or role is None:
+            continue
+        p = projects.setdefault((year, acronym), {"title": title, "orgs": []})
+        if (name, role, cc) not in p["orgs"]:
+            p["orgs"].append((name, role, cc))
+    role_word = {"COORD": ("coordinator", "coordinators"), "PARTNER": ("partner", "partners"),
+                 "ASSOC": ("associated partner", "associated partners"),
+                 "AFFIL": ("affiliated entity", "affiliated entities")}
+    records, ids = [], set()
+    for (year, acronym), p in projects.items():
+        orgs = p["orgs"]
+        coord = next((o for o in orgs if o[1] == "COORD"), None)
+        ccode, cname, cflag = _country(coord[2]) if coord else (None, None, None)
+        n = defaultdict(int)
+        for _, role, _ in orgs:
+            n[role] += 1
+        names = sorted({_country(cc)[1] for _, _, cc in orgs if cc})
+        order = list(ROLE_MAP.values())
+        part = [f"{name} ({_country(cc)[1]}, {role_word[role][0]})"
+                for name, role, cc in sorted(orgs, key=lambda o: (order.index(o[1]), o[0].casefold()))]
+        rid = f"cove-{year}-{slug(acronym)}"
+        while rid in ids:
+            rid += "-x"
+        ids.add(rid)
+        rec = {
+            "id": rid,
+            "acronym": acronym,
+            "project_title": p["title"] or None,
+            "call_year": year,
+            "coordinator": coord[0] if coord else None,
+            "coordinator_country": cname,
+            "coordinator_country_code": ccode,
+            "flag": cflag,
+            "countries": names,
+            "country_count": len(names),
+            "organisation_count": len(orgs),
+            "partner_count": n["PARTNER"],
+            "associated_partner_count": n["ASSOC"],
+            "affiliated_entity_count": n["AFFIL"],
+            "roles": ", ".join(f"{n[r]} {role_word[r][n[r] != 1]}" for r in order if n[r]),
+            "size_label": f"{len(orgs)} organisations",
+            "countries_label": f"{len(names)} countr{'ies' if len(names) != 1 else 'y'}",
+            "participants": part,
+        }
+        records.append({k: v for k, v in rec.items() if v is not None})
+    records.sort(key=lambda r: (r["call_year"], r["acronym"].casefold()))
+    meta = {
+        "id": "cove-projects",
+        "title": "Centres of Vocational Excellence projects",
+        "tagline": "Every Erasmus+ Centre of Vocational Excellence partnership since 2021, and who takes part.",
+        "description": "Centres of Vocational Excellence (CoVEs) are Erasmus+ partnerships that bring together VET providers, employers, universities, chambers and public authorities from several countries around one sector or challenge. Each record is one CoVE project selected in the 2021–2025 calls, with its coordinator, partners and the countries involved.",
+        "recordLabel": {"one": "CoVE project", "many": "CoVE projects"},
+        "source": {
+            "name": "European Commission (DG EMPL) — Centres of Vocational Excellence: Project Participants data",
+            "url": COVE_PAGE,
+            "licence": LICENCE_TEXT.format("DG EMPL, Centres of Vocational Excellence project participants data"),
+            "licence_id": LICENCE,
+            "caveat": ("Compiled automatically from the participants workbook published by DG EMPL "
+                       f"({cw['extracted'] or 'extraction date not stated'}). Organisations are listed by the legal name "
+                       "given in the workbook; no people are named. Associated partners and affiliated entities take part "
+                       "without being full beneficiaries. Countries outside Europe are shown by name but do not have a "
+                       "country page on this site."),
+            "retrieved": today(),
+            "file_url": cw["url"],
+            "raw_file": rel(cw["raw"]),
+            "raw_sha256": cw["sha256"],
+        },
+        "display": {
+            "title": "acronym",
+            "subtitle": "project_title",
+            "group": "coordinator_country",
+            "badge": "flag",
+            "facts": ["call_year", "countries_label", "size_label"],
+        },
+        "fields": [
+            {"key": "call_year", "label": "Call year", "type": "category", "facet": True},
+            {"key": "coordinator_country", "label": "Coordinator country", "type": "category", "facet": True, "collapse": 12},
+            {"key": "countries", "label": "Countries involved", "type": "category", "facet": True, "collapse": 12},
+            {"key": "acronym", "label": "Acronym", "type": "title"},
+            {"key": "project_title", "label": "Project", "type": "subtitle"},
+            {"key": "coordinator", "label": "Coordinator", "type": "text"},
+            {"key": "organisation_count", "label": "Organisations", "type": "text"},
+            {"key": "partner_count", "label": "Full partners", "type": "text"},
+            {"key": "associated_partner_count", "label": "Associated partners", "type": "text"},
+            {"key": "affiliated_entity_count", "label": "Affiliated entities", "type": "text"},
+            {"key": "country_count", "label": "Number of countries", "type": "text"},
+            {"key": "roles", "label": "Make-up", "type": "text"},
+            {"key": "participants", "label": "Participating organisations", "type": "longtext"},
+            {"key": "size_label", "label": "Size", "type": "hidden"},
+            {"key": "countries_label", "label": "Countries", "type": "hidden"},
+            {"key": "coordinator_country_code", "label": "Coordinator country code", "type": "hidden"},
+            {"key": "flag", "label": "Flag", "type": "hidden"},
+            {"key": "id", "label": "Identifier", "type": "hidden"},
+        ],
+        "sections": [
+            {"title": "At a glance", "fields": ["call_year", "coordinator", "coordinator_country", "roles", "country_count"]},
+            {"title": "Countries", "fields": ["countries"]},
+            {"title": "Who takes part", "fields": ["participants"]},
+        ],
+    }
+    return _publish("cove-projects", records, meta)
+
+
 CACHE = RAW / "erasmus" / "ka1-cache.json"
+# Organisation rows for the accredited-organisations directory, per call year (2021+).
+# A year is reused only when its sha256 matches the ka1-cache.json entry, so both caches
+# always describe the same file; if either is missing or stale, the file is downloaded.
+DIR_CACHE = RAW / "erasmus" / "ka1-directory-cache.json"
 MAX_AGE_DAYS = 28       # open call years: full re-download at least this often
 LAST_CLOSED_YEAR = 2020  # 2014–2020 programme is closed
 
 
-def _load_cache() -> dict:
-    return read_json(CACHE) if CACHE.exists() else {}
+def _load_cache(path=CACHE) -> dict:
+    return read_json(path) if path.exists() else {}
 
 
 def _is_fresh(year: int, c: dict | None, size: int | None) -> bool:
@@ -419,22 +799,42 @@ def _is_fresh(year: int, c: dict | None, size: int | None) -> bool:
     return age < MAX_AGE_DAYS
 
 
+def _write_dir_cache(dcache: dict) -> None:
+    """JSON with one row per line: compact, but still diffs line by line."""
+    dump = lambda o: json.dumps(o, ensure_ascii=False, separators=(",", ":"))
+    parts = []
+    for year, d in dcache.items():
+        rows = {k: "[\n" + ",\n".join(dump(r) for r in d[k]) + "\n]" for k in ("accredited", "coord")}
+        parts.append(f'{dump(year)}:{{"sha256":{dump(d["sha256"])},\n"accredited":{rows["accredited"]},\n'
+                     f'"coord":{rows["coord"]}}}')
+    text = "{\n" + ",\n".join(parts) + "\n}\n"
+    if not DIR_CACHE.exists() or DIR_CACHE.read_text(encoding="utf-8") != text:
+        DIR_CACHE.write_text(text, encoding="utf-8")
+
+
 def run() -> list[str]:
     files = discover_ka1()
     cache = _load_cache()
+    dcache = _load_cache(DIR_CACHE)
     agg = defaultdict(lambda: [0, 0.0])
     accr = defaultdict(int)
+    dir_by_year = {}
     downloaded = 0
     for year, f in files.items():
         c = cache.get(str(year))
+        dc = dcache.get(str(year))
+        wants_dir = year >= DIR_FIRST_YEAR
         size = head(f["url"]).get("content-length")
         size = int(size) if size and size.isdigit() else None
-        if _is_fresh(year, c, size):
+        dir_ok = not wants_dir or (dc is not None and c is not None and dc.get("sha256") == c.get("sha256"))
+        if _is_fresh(year, c, size) and dir_ok:
             for geo, y, a, p, g in c["agg"]:
                 agg[(geo, y, a)][0] += p
                 agg[(geo, y, a)][1] += g
             for geo, y, n in c["accr"]:
                 accr[(geo, y)] += n
+            if wants_dir:
+                dir_by_year[year] = dc
             f["bytes"], f["sha256"] = c["bytes"], c["sha256"]
             print(f"erasmus: KA1 {year}: unchanged ({size:,} bytes), not downloaded", file=sys.stderr)
             continue
@@ -443,7 +843,8 @@ def run() -> list[str]:
         _, f["sha256"] = save_raw("erasmus", f"ka1-{year}.csv", body, keep=False)
         f["bytes"] = len(body)
         y_agg, y_accr = defaultdict(lambda: [0, 0.0]), defaultdict(int)
-        stats = parse_ka1(body, year, y_agg, y_accr)
+        y_dir = {"accredited": [], "coord": defaultdict(lambda: [0, 0, 0.0])} if wants_dir else None
+        stats = parse_ka1(body, year, y_agg, y_accr, y_dir)
         del body
         for k, (p, g) in y_agg.items():
             agg[k][0] += p
@@ -455,9 +856,20 @@ def run() -> list[str]:
             "agg": sorted([g, y, a, p, round(gr, 2)] for (g, y, a), (p, gr) in y_agg.items()),
             "accr": sorted([g, y, n] for (g, y), n in y_accr.items()),
         }
+        if wants_dir:
+            dcache[str(year)] = dir_by_year[year] = {
+                "sha256": f["sha256"],
+                "accredited": sorted(y_dir["accredited"]),
+                "coord": sorted([k, g, a, b, round(gr, 2)] for (k, g), (a, b, gr) in y_dir["coord"].items()),
+            }
         print(f"erasmus: KA1 {year}: {stats}", file=sys.stderr)
     write_json(CACHE, dict(sorted(cache.items())))
+    _write_dir_cache({k: dcache[k] for k in sorted(dcache) if int(k) in files})
     print(f"erasmus: downloaded {downloaded} of {len(files)} KA1 files", file=sys.stderr)
     written = ka1_indicators(files, agg, accr)
-    written += cove_indicator()
+    written += accredited_organisations(dir_by_year)
+    cw = cove_workbook()
+    if cw:
+        written += cove_indicator(cw)
+        written += cove_projects(cw)
     return written

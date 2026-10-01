@@ -1,0 +1,68 @@
+{
+  "id": "financing-instruments",
+  "title": "Financing apprenticeships: instruments",
+  "tagline": "Levies, training funds, tax incentives and grants that pay for apprenticeships in 21 countries.",
+  "description": "The 55 financing instruments in Cedefop's database on financing apprenticeships in the EU: who pays, through which mechanism, for which costs, how much and for whom. Reference period 2016–17; the database has not been updated since.",
+  "recordLabel": { "one": "instrument", "many": "instruments" },
+
+  "source": {
+    "name": "Cedefop — Database on financing apprenticeships in the EU",
+    "url": "https://www.cedefop.europa.eu/en/tools/financing-apprenticeships",
+    "licence": "Cedefop's legal notice: reproduction is authorised provided the source is acknowledged, save where otherwise stated.",
+    "licence_id": "Cedefop-reproduction-with-acknowledgement",
+    "caveat": "Reference period 2016–17: amounts, take-up and even the existence of instruments may have changed since. Read from Cedefop's instrument pages on 2026-10-01; long texts are shortened (marked …) — each record links to the full page. 'Scope' is an Apprentix grouping from the 'Education and training eligible' text.",
+    "retrieved": "2026-10-01"
+  },
+
+  "display": {
+    "title": "title",
+    "group": "country",
+    "badge": "flag",
+    "link": "source_url",
+    "summary": "objectives",
+    "facts": ["type", "level", "scope"]
+  },
+
+  "fields": [
+    { "key": "country",            "label": "Country",              "type": "category", "facet": true, "collapse": 10 },
+    { "key": "type",               "label": "Type of instrument",   "type": "category", "facet": true,
+      "order": ["Training funds", "Tax incentives", "Grants for companies", "Grants for individuals"] },
+    { "key": "scope",              "label": "Scope",                "type": "category", "facet": true,
+      "order": ["Apprenticeship only", "Apprenticeship and other training"] },
+    { "key": "level",              "label": "Level of operation",   "type": "category", "facet": true,
+      "order": ["National", "Regional", "Sub-country", "Sectoral"] },
+    { "key": "introduced",         "label": "Introduced",           "type": "category", "facet": true },
+    { "key": "status",             "label": "Status (2016–17)",     "type": "category", "facet": true },
+
+    { "key": "title",              "label": "Instrument",           "type": "title" },
+    { "key": "name_en",            "label": "Name in English",      "type": "text" },
+    { "key": "region",             "label": "Region or community",  "type": "text" },
+    { "key": "area",               "label": "Part of the country",  "type": "text" },
+    { "key": "sectors",            "label": "Sectors",              "type": "text" },
+    { "key": "year_introduced",    "label": "Year introduced",      "type": "text" },
+    { "key": "year_terminated",    "label": "End",                  "type": "text" },
+    { "key": "objectives",         "label": "Objectives",           "type": "longtext" },
+    { "key": "legal_basis",        "label": "Legal basis",          "type": "longtext" },
+    { "key": "eligible_groups",    "label": "Who is eligible",      "type": "longtext" },
+    { "key": "eligible_training",  "label": "Education and training covered", "type": "longtext" },
+    { "key": "financing_source",   "label": "Source of financing",  "type": "longtext" },
+    { "key": "financing_formula",  "label": "How funds are allocated", "type": "longtext" },
+    { "key": "eligible_costs",     "label": "Costs covered",        "type": "longtext" },
+    { "key": "volume",             "label": "Volume of funding",    "type": "longtext" },
+    { "key": "take_up",            "label": "Beneficiaries / take-up", "type": "longtext" },
+    { "key": "related_schemes",    "label": "Apprenticeship schemes (2016–17)", "type": "text" },
+    { "key": "source_url",         "label": "Full Cedefop page",    "type": "link" },
+    { "key": "retrieved",          "label": "Read from Cedefop",    "type": "text" },
+    { "key": "related_scheme_urls","label": "Scheme pages",         "type": "hidden" },
+    { "key": "country_code",       "label": "Country code",         "type": "hidden" },
+    { "key": "flag",               "label": "Flag",                 "type": "hidden" },
+    { "key": "id",                 "label": "Identifier",           "type": "hidden" }
+  ],
+
+  "sections": [
+    { "title": "At a glance",   "fields": ["country", "type", "scope", "level", "region", "area", "sectors", "year_introduced", "year_terminated", "status"] },
+    { "title": "Purpose and rules", "fields": ["objectives", "legal_basis", "eligible_groups", "eligible_training"] },
+    { "title": "Money",         "fields": ["financing_source", "financing_formula", "eligible_costs", "volume", "take_up"] },
+    { "title": "Links",         "fields": ["related_schemes", "source_url", "retrieved"] }
+  ]
+}

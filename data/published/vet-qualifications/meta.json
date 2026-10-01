@@ -1,0 +1,185 @@
+{
+  "id": "vet-qualifications",
+  "title": "National VET qualifications in Europe",
+  "tagline": "24,768 vocational qualifications at EQF levels 2–5 from 14 national registers, as published to Europass.",
+  "description": "Vocational qualifications that national qualification authorities publish to the Europass Qualifications Dataset Register (QDR), with their EQF and national framework levels, field of education, awarding body, credits and a short learning-outcome summary. Filter to qualifications obtained through apprenticeship or dual training. Each entry links to its official Europass record.",
+  "recordLabel": {
+    "one": "qualification",
+    "many": "qualifications"
+  },
+  "source": {
+    "name": "European Commission, Europass — Qualifications Dataset Register (European Learning Data, SPARQL endpoint)",
+    "url": "https://data.europa.eu/data/datasets/european-learning-data?locale=en",
+    "licence": "European Commission reuse notice (Decision 2011/833/EU): reuse allowed with acknowledgement of the source. Data published to the QDR by national qualification authorities.",
+    "licence_id": "EC-reuse",
+    "caveat": "Coverage depends on what each national authority has published to Europass, and differs widely: some registers are complete (e.g. France's RNCP, Sweden's higher VET, Austria's qualifications register), Germany is represented by the DQR list (mostly dual vocational training), and several countries publish no VET qualifications at these levels yet. Included: current ('released') qualifications at EQF levels 2–5, which includes short-cycle higher education at level 5. Excluded: about 12,400 course offers that KURSNET (the German Federal Employment Agency's course database) registers as qualifications, records withdrawn from the register ('not published anymore'), and general-education school-leaving qualifications recognised by title (Gymnázium, HAVO/VWO, general Matura, Hauptschulabschluss, Mittlerer Schulabschluss, Allgemeine Hochschulreife). 'Apprenticeship / work-based route' is an Apprentix grouping, because the European Learning Model has no apprenticeship field: 'Apprenticeship / dual' when a title names an apprenticeship (Lehre, Apprenticeship, lärling, apprentissage, 'by apprenticeship') or the record's text says it is dual vocational training (Germany's DQR entries), an apprenticeship occupation (Austria's 'Lehrberuf', final exam 'Lehrabschlussprüfung') or delivered on apprenticeship (Malta); 'Work-based learning mentioned' when the text mentions work-based learning or training in a company. 'Not stated' does not mean the qualification cannot be taken as an apprenticeship — many school-based and apprenticeship routes lead to the same qualification (e.g. the Netherlands' BOL/BBL, France's RNCP titles). No ESCO occupation or skill links are published for these qualifications. Titles are the authorities' own; the English title is shown where one is published, otherwise the original. Learning-outcome summaries are shortened.",
+    "retrieved": "2026-10-01",
+    "api_url": "https://europa.eu/europass/qdr/open-data/sparql",
+    "dump_url": "https://europa.eu/europass/qdr/open-data/dcat",
+    "records_sha256": "c15e802eede83604cc9a9db0ec1bbd45d9a370ce167567a9a75b3d39cb884847"
+  },
+  "display": {
+    "title": "title",
+    "subtitle": "title_original",
+    "group": "country",
+    "badge": "eqf_level",
+    "link": "europass_url",
+    "summary": "summary",
+    "facts": [
+      "nqf_level",
+      "field",
+      "apprenticeship"
+    ]
+  },
+  "fields": [
+    {
+      "key": "country",
+      "label": "Country",
+      "type": "category",
+      "facet": true,
+      "collapse": 16
+    },
+    {
+      "key": "eqf_level",
+      "label": "EQF level",
+      "type": "category",
+      "facet": true,
+      "order": [
+        "EQF 2",
+        "EQF 3",
+        "EQF 4",
+        "EQF 5"
+      ]
+    },
+    {
+      "key": "apprenticeship",
+      "label": "Apprenticeship / work-based route",
+      "type": "category",
+      "facet": true,
+      "order": [
+        "Apprenticeship / dual",
+        "Work-based learning mentioned",
+        "Not stated"
+      ]
+    },
+    {
+      "key": "field",
+      "label": "Field of education (ISCED-F)",
+      "type": "category",
+      "facet": true,
+      "collapse": 11
+    },
+    {
+      "key": "awarding_body",
+      "label": "Awarding body",
+      "type": "category",
+      "facet": true,
+      "collapse": 8
+    },
+    {
+      "key": "language",
+      "label": "Language of the record",
+      "type": "category",
+      "facet": true,
+      "collapse": 8
+    },
+    {
+      "key": "title",
+      "label": "Qualification",
+      "type": "title"
+    },
+    {
+      "key": "title_original",
+      "label": "Original title",
+      "type": "subtitle"
+    },
+    {
+      "key": "summary",
+      "label": "Learning outcomes (summary)",
+      "type": "longtext"
+    },
+    {
+      "key": "nqf_level",
+      "label": "National framework level",
+      "type": "text"
+    },
+    {
+      "key": "field_detail",
+      "label": "Detailed field (ISCED-F)",
+      "type": "text"
+    },
+    {
+      "key": "credits",
+      "label": "Credit points",
+      "type": "text"
+    },
+    {
+      "key": "volume",
+      "label": "Volume of learning",
+      "type": "text"
+    },
+    {
+      "key": "duration",
+      "label": "Maximum duration",
+      "type": "text"
+    },
+    {
+      "key": "updated",
+      "label": "Last updated in the register",
+      "type": "text"
+    },
+    {
+      "key": "europass_url",
+      "label": "On Europass",
+      "type": "link"
+    },
+    {
+      "key": "source_page",
+      "label": "National register page",
+      "type": "link"
+    },
+    {
+      "key": "country_code",
+      "label": "Country code",
+      "type": "hidden"
+    },
+    {
+      "key": "id",
+      "label": "Identifier",
+      "type": "hidden"
+    }
+  ],
+  "sections": [
+    {
+      "title": "At a glance",
+      "fields": [
+        "country",
+        "eqf_level",
+        "nqf_level",
+        "apprenticeship",
+        "field",
+        "field_detail"
+      ]
+    },
+    {
+      "title": "About the qualification",
+      "fields": [
+        "summary",
+        "awarding_body",
+        "credits",
+        "volume",
+        "duration",
+        "language"
+      ]
+    },
+    {
+      "title": "Links and provenance",
+      "fields": [
+        "europass_url",
+        "source_page",
+        "updated",
+        "id"
+      ]
+    }
+  ]
+}

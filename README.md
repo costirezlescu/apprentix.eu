@@ -54,6 +54,7 @@ If port 8080 is busy: `pwsh -File scripts/serve.ps1 -Port 8081`
 apprentix.eu/
 ├─ index.html                     Landing page: datasets, indicators
 ├─ pages/
+│  ├─ countries/, indicators/, datasets/   generated static pages (do not edit)
 │  ├─ explore.html                The explorer — works for ANY record dataset
 │  ├─ indicators.html             EU targets + every statistical indicator
 │  ├─ about.html
@@ -158,6 +159,18 @@ national statistics, recent policies, open datasets) plus `sitemap.xml`. Do not 
 files by hand — change the renderer. `pages/compare.html` is the scheme comparison matrix,
 driven by `meta.matrix` in the apprenticeship-schemes `meta.json`.
 
+`pipeline/render_datasets.py` (called by the same step) makes everything citable and findable:
+
+- `pages/indicators/<id>.html` — one static page per indicator (definition, what is counted,
+  latest value per country, publisher, licence, citation, CSV/JSON downloads, link to the
+  interactive view) and `pages/indicators/index.html` listing them by topic;
+- `pages/datasets/<id>.html` — one page per record dataset in `data/datasets.json` (description,
+  fields, licence, record count, download);
+- schema.org **Dataset** JSON-LD on each of those pages, and a **DataCatalog** block in
+  `pages/data.html` (between the `apprentix:catalog` markers — do not edit inside them);
+- `data/feed.xml` — an Atom feed with one entry per indicator or dataset whose data changed
+  (dated by the retrieval date, which only moves when the data does). Linked from every page.
+
 ### Cedefop scheme fiches (browser-assisted curation)
 
 Each fiche answers the same questionnaire; 34 questions are multiple choice. To refresh them
@@ -171,6 +184,19 @@ after a new Cedefop update round:
 
 Option labels live in `pipeline/curate/scheme_questions.py`; the merge stops if a fiche uses
 an option that file does not know, so a changed questionnaire is never silently mis-read.
+
+### Other hand-curated Cedefop databases
+
+Read in a browser (Cedefop refuses scripts), saved under `data/raw/`, then built by a script:
+
+| Dataset | Raw file | Build |
+|---|---|---|
+| Financing instruments (2016–17) | `data/raw/cedefop-financing/<date>-instruments.jsonl` | `python -m pipeline.curate.financing_instruments` |
+| Qualification levels (NQF tool 2024) | `data/raw/cedefop-nqf/<date>-level-tables.txt` | `python -m pipeline.curate.nqf_levels` |
+| VET systems (VET in Europe) | `data/raw/cedefop-vet-in-europe/<date>-systems.txt` | `python -m pipeline.curate.vet_systems` |
+| Recognition of foreign VET qualifications | the Cedefop PDF in `data/raw/cedefop/` | `python -m pipeline.curate.recognition_pdf` (needs `pdfplumber`) |
+
+Each script documents its raw format at the top. Then run `python -m pipeline.run --build-only`.
 
 ### Cedefop
 
