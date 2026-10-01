@@ -20,6 +20,7 @@ import sys
 import traceback
 
 from . import build
+from . import common
 from .common import now_iso
 from .sources import discover
 
@@ -54,10 +55,13 @@ def main(argv: list[str]) -> int:
                 status[sid] = {"last_run": now_iso(), "result": "skipped", "detail": f"needs {secret}"}
                 continue
             print(f"- {sid}: running")
+            common.WARNINGS.clear()
             try:
                 written = m.run() or []
                 print(f"  wrote {len(written)} file(s)")
                 status[sid] = {"last_run": now_iso(), "result": "ok", "outputs": sorted(written)}
+                if common.WARNINGS:
+                    status[sid]["warnings"] = list(common.WARNINGS)
             except Exception as e:  # keep going; report at the end
                 traceback.print_exc()
                 status[sid] = {"last_run": now_iso(), "result": "error", "detail": str(e)[:300]}

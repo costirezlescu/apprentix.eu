@@ -131,6 +131,25 @@ python3 -m pipeline.validate            # check everything against data/schemas/
 - Optional API keys go in Settings → Secrets → Actions (e.g. `DESTATIS_TOKEN`); connectors
   that need a missing key are skipped, not failed.
 
+### Keeping up with the sources (source watch)
+
+The weekly refresh keeps every **known** dataset current by itself. After it,
+`python -m pipeline.watch` looks for what needs a person, and the workflow keeps **one GitHub
+issue** labelled `source-watch` up to date (you get an email; it closes itself when nothing is left):
+
+| Check | Catches |
+|---|---|
+| Cedefop's catalogue on data.europa.eu | a **new Cedefop dataset**, or a revised one |
+| Eurostat's table of contents | a **new Eurostat table** about VET, apprenticeship or work-based learning |
+| Connector warnings and failures | a refused download where a stored (possibly old) copy was used |
+| Release cycles | a source past its usual release date, e.g. a new KIVET file under a new name, or the yearly check of the hand-curated fiches |
+| data.europa.eu catalogue | apprenticeship datasets newly published on national portals (candidates for connectors) |
+
+After handling an item (or deciding to ignore it), run `python -m pipeline.watch --ack` and commit
+`data/watch/known.json`. That records what has been reviewed and snoozes "probably out" reminders
+for 3 months; they clear for good once the connector holds the newer release. The current report
+is in `data/watch/report.json`.
+
 ### Country pages, comparison matrix, sitemap
 
 `pipeline/render_pages.py` runs at the end of every build and writes one static, crawlable

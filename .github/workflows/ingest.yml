@@ -17,6 +17,7 @@ on:
 permissions:
   contents: write
   pull-requests: write
+  issues: write
 
 concurrency:
   group: refresh-data
@@ -56,6 +57,12 @@ jobs:
       - name: Validate
         run: python -m pipeline.validate
 
+      - name: Source watch
+        # New datasets, renamed release files, refused downloads, overdue releases.
+        run: |
+          python -m pipeline.watch --markdown > watch.md
+          python -m pipeline.watch
+
       - name: Open pull request
         uses: peter-evans/create-pull-request@v7
         with:
@@ -77,6 +84,25 @@ jobs:
             ```
 
             Failed sources keep their previous data; see `data/sources.json` for the status of each.
+
+      - name: Open or update the source-watch issue
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          [ -f watch.md ] || exit 0
+          open=$(gh issue list --label source-watch --state open --json number --jq '.[0].number // empty')
+          if [ -s watch.md ]; then
+            gh label create source-watch --color FBCA04 --description "Upstream changes that need a person" 2>/dev/null || true
+            if [ -n "$open" ]; then
+              gh issue edit "$open" --body-file watch.md
+              gh issue comment "$open" --body "Updated by refresh run ${{ github.run_id }}."
+            else
+              gh issue create --title "Source watch: upstream changes need attention" --label source-watch --body-file watch.md
+            fi
+          elif [ -n "$open" ]; then
+            gh issue close "$open" --comment "Nothing needs attention any more (run ${{ github.run_id }})."
+          fi
 
       - name: Fail if a connector failed
         if: steps.run.outputs.status != '0'

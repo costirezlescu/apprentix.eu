@@ -17,7 +17,7 @@ import re
 
 from ..common import (FetchError, PUBLISHED, fetch, geo_code, html_to_text, latest_raw,
                       num, provenance, read_json, rel, save_raw, write_indicator,
-                      write_json, write_records)
+                      write_json, write_records, warn)
 
 SOURCE = {
     "id": "cedefop",
@@ -80,7 +80,7 @@ def download(key: str) -> tuple[bytes, str, object]:
     path = latest_raw("cedefop", f["raw_glob"])
     if not path:
         raise FetchError(f"Could not download {url} and no stored copy in data/raw/cedefop/")
-    print(f"  using stored copy {rel(path)}")
+    warn(f"download refused or failed ({url}); used the stored copy {rel(path)}, which may be out of date")
     body = path.read_bytes()
     from ..common import sha256
     return body, url, (path, sha256(body))

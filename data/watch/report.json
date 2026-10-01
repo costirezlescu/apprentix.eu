@@ -1,0 +1,16 @@
+{
+  "description": "Items from the source watch that need a person. See pipeline/watch.py.",
+  "checked_at": "2026-10-01T11:26:01+00:00",
+  "count": 1,
+  "items": [
+    {
+      "kind": "overdue",
+      "rule": "cedefop-esi",
+      "source": "Cedefop European Skills Index",
+      "title": "Cedefop European Skills Index: a newer release is probably out",
+      "detail": "We hold the 2024-06 release; this source usually updates every 24 months.",
+      "url": "https://www.cedefop.europa.eu/en/datasets/dataset-european-skills-index-esi",
+      "action": "If a new ESI edition exists, add it to FILES in pipeline/sources/cedefop_skills.py."
+    }
+  ]
+}

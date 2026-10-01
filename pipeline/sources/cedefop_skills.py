@@ -24,7 +24,7 @@ import re
 import warnings
 
 from ..common import (FetchError, fetch, geo_code, latest_raw, num, provenance, rel,
-                      save_raw, sha256, slug, write_indicator)
+                      save_raw, sha256, slug, write_indicator, warn)
 
 SOURCE = {
     "id": "cedefop-skills",
@@ -81,7 +81,7 @@ def download(key: str) -> tuple[bytes, str, object, object]:
     path = latest_raw("cedefop", f"*-{stem}.{ext}")
     if not path:
         raise FetchError(f"Could not download {url} and no stored copy in data/raw/cedefop/")
-    print(f"  using stored copy {rel(path)}")
+    warn(f"download refused or failed ({url}); used the stored copy {rel(path)}, which may be out of date")
     body = path.read_bytes()
     return body, url, path, sha256(body)
 

@@ -66,6 +66,18 @@ def today() -> str:
     return now_iso()[:10]
 
 
+# ---------------------------------------------------------------- warnings
+
+WARNINGS: list[str] = []
+
+
+def warn(msg: str) -> None:
+    """Record something a person should know (e.g. a stale fallback). The runner
+    attaches these to the connector's status, and pipeline/watch.py reports them."""
+    print(f"  warning: {msg}")
+    WARNINGS.append(msg)
+
+
 # ---------------------------------------------------------------- http ----
 
 class FetchError(RuntimeError):
