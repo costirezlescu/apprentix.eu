@@ -125,9 +125,15 @@ def all(connectors: dict, status: dict) -> None:
     from . import changes, duel
     changes.build()           # what changed since the last build → data/published/changes/
     duel.build()              # per-country profiles for the country duel
+    from . import play
+    play.build()              # 'Higher or lower?' question pool
+    from . import glossary
+    glossary.render()         # pages/glossary.html
     from . import insights, render_insights, facts
     insights.build()          # analyses across all data → data/published/insights/
     facts.build()             # 'Did you know?' facts → data/published/facts/
+    from . import og
+    og.build()                # link-preview images + duel share pages
     render_insights.render_insights()
     from . import render_pages
     render_pages.render_all()

@@ -7,6 +7,7 @@ assets/js/insights.js draws the charts on top and wires the audience filter.
 
 from __future__ import annotations
 
+from . import og
 from .common import DATA, PUBLISHED, ROOT, read_json
 from .render_pages import SITE, breadcrumb, e, page, website, write_text
 
@@ -98,7 +99,7 @@ def render_insights() -> list[str]:
 </div>
 <p class="provenance">These are descriptive analyses of public data by Apprentix, not official statistics. Associations between countries do not show cause and effect. Last computed {e(updated)}; the computation is open: <a href="https://github.com/costirezlescu/apprentix.eu/blob/main/pipeline/insights.py">pipeline/insights.py</a>.</p>
 <script type="module" src="../assets/js/insights.js"></script>
-<script type="module">import { mountSurpriseBanner } from '../assets/js/facts.js'; mountSurpriseBanner();</script>"""
+<script type="module">import {{ mountSurpriseBanner }} from '../assets/js/facts.js'; mountSurpriseBanner();</script>"""
     ld = {"@context": "https://schema.org", "@graph": [
         {"@type": "Article", "@id": page_url + "#article", "headline": "Insights on apprenticeships in Europe",
          "description": items[0]["finding"] if items else "", "url": page_url, "dateModified": updated,
@@ -107,6 +108,8 @@ def render_insights() -> list[str]:
         website(), breadcrumb([("Apprentix", SITE), ("Insights", page_url)], page_url)]}
     html = page(title="Insights on apprenticeships in Europe — Apprentix",
                 description="What European data on apprenticeships says: EU targets, work-based learning and jobs, scheme families, national trends, financing, mobility and data gaps.",
-                canonical=page_url, root="../", body=body, json_ld_obj=ld, current="insights", updated=updated)
+                canonical=page_url, root="../", body=body, json_ld_obj=ld, current="insights", updated=updated,
+                og_image=og.section_path("insights"),
+                og_image_alt=og.alt_for("insights", "Insights on apprenticeships in Europe — Apprentix."))
     changed = write_text(OUT, html)
     return [str(OUT)] if changed else []

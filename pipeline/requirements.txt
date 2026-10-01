@@ -1,6 +1,9 @@
 openpyxl>=3.1
 jsonschema>=4.21
 certifi
+# Social preview images (pipeline/og.py). Pinned exactly: PNG bytes depend on the Pillow
+# build (FreeType, zlib), and a stable version keeps the weekly PRs free of image churn.
+Pillow==12.3.0
 
 # Optional: only for hand-run curation scripts (pipeline/curate/recognition_pdf.py)
 # pip install pdfplumber

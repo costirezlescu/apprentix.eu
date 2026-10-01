@@ -128,8 +128,31 @@ def json_ld(obj) -> str:
 
 # ---------------------------------------------------------------- page shell --
 
+OG_DEFAULT = "assets/og/site.png"
+OG_DEFAULT_ALT = "Apprentix — European apprenticeship and VET data, made searchable."
+
+
+def og_meta(*, title: str, description: str, url: str, image: str | None = None, alt: str | None = None,
+            og_type: str = "website") -> str:
+    """Open Graph + Twitter card tags. `image` is a path from the site root (pipeline/og.py)."""
+    img = SITE + quote(image or OG_DEFAULT)
+    return f"""<meta property="og:type" content="{e(og_type)}">
+<meta property="og:site_name" content="Apprentix">
+<meta property="og:locale" content="en_GB">
+<meta property="og:title" content="{e(title)}">
+<meta property="og:description" content="{e(description)}">
+<meta property="og:url" content="{e(url)}">
+<meta property="og:image" content="{e(img)}">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="{e(alt or OG_DEFAULT_ALT)}">
+<meta name="twitter:card" content="summary_large_image">"""
+
+
 def page(*, title: str, description: str, canonical: str, root: str, body: str, json_ld_obj,
-         current: str | None, updated: str, og_type: str = "website") -> str:
+         current: str | None, updated: str, og_type: str = "website", og_image: str | None = None,
+         og_image_alt: str | None = None, head_extra: str = "") -> str:
     def nav(href, label, key):
         cur = ' aria-current="page"' if key == current else ""
         return f'<a href="{href}"{cur}>{label}</a>'
@@ -142,19 +165,13 @@ def page(*, title: str, description: str, canonical: str, root: str, body: str, 
 <title>{e(title)}</title>
 <meta name="description" content="{e(description)}">
 <link rel="canonical" href="{e(canonical)}">
-<meta property="og:type" content="{og_type}">
-<meta property="og:site_name" content="Apprentix">
-<meta property="og:locale" content="en_GB">
-<meta property="og:title" content="{e(title)}">
-<meta property="og:description" content="{e(description)}">
-<meta property="og:url" content="{e(canonical)}">
-<meta name="twitter:card" content="summary">
+{og_meta(title=title, description=description, url=canonical, image=og_image, alt=og_image_alt, og_type=og_type)}
 <link rel="stylesheet" href="{FONTS.replace('&', '&amp;')}">
 <link rel="stylesheet" href="{root}assets/css/site.css">
 <link rel="alternate" type="application/atom+xml" title="Apprentix data updates" href="{root}{FEED_PATH}">
 <script type="application/ld+json">
 {json_ld(json_ld_obj)}
-</script>
+</script>{chr(10) + head_extra if head_extra else ""}
 </head>
 <body data-root="{root}">
 
@@ -194,6 +211,10 @@ def page(*, title: str, description: str, canonical: str, root: str, body: str, 
       <a href="{pages}insights.html">Insights</a>
       <a href="{pages}countries/">Countries</a>
       <a href="{pages}ask.html">Ask</a>
+      <a href="{pages}find.html">Find my apprenticeship</a>
+      <a href="{pages}duel.html">Compare countries</a>
+      <a href="{pages}play.html">Higher or lower?</a>
+      <a href="{pages}glossary.html">Glossary</a>
       <a href="{pages}about.html">About</a>
       <a href="{pages}data.html">Data &amp; sources</a>
       <a href="{root}{FEED_PATH}">Updates feed (Atom)</a>
@@ -204,6 +225,7 @@ def page(*, title: str, description: str, canonical: str, root: str, body: str, 
   </div>
 </footer>
 
+<script type="module">import {{ initGlossary }} from '{root}assets/js/glossary.js'; initGlossary();</script>
 </body>
 </html>
 """
@@ -702,8 +724,10 @@ def render_country(D, c: dict, f: dict, has_page: set[str]) -> str:
             breadcrumb([("Apprentix", SITE), ("Countries", SITE + "pages/countries/"), (name, page_url)], page_url),
         ],
     }
+    from . import og
     return page(title=title, description=description, canonical=page_url, root="../../", body=body,
-                json_ld_obj=ld, current=None, updated=updated)
+                json_ld_obj=ld, current=None, updated=updated, og_image=og.country_path(code),
+                og_image_alt=og.alt_for(f"country:{code}", f"{name}: apprenticeship and VET profile on Apprentix."))
 
 
 # ---------------------------------------------------------------- index page --
@@ -787,8 +811,10 @@ def render_index(D, facts: dict[str, dict]) -> str:
             breadcrumb([("Apprentix", SITE), ("Countries", page_url)], page_url),
         ],
     }
+    from . import og
     return page(title=title, description=description, canonical=page_url, root="../../", body=body,
-                json_ld_obj=ld, current="countries", updated=updated)
+                json_ld_obj=ld, current="countries", updated=updated, og_image=og.section_path("countries"),
+                og_image_alt=og.alt_for("countries", "Apprenticeships by country — Apprentix."))
 
 
 # ---------------------------------------------------------------- sitemap --
@@ -801,6 +827,8 @@ def sitemap(D, codes: list[str], extra: list[tuple[str, str]] = ()) -> str:
         (SITE + "pages/insights.html", updated),
         (SITE + "pages/find.html", updated),
         (SITE + "pages/duel.html", updated),
+        (SITE + "pages/play.html", updated),
+        (SITE + "pages/glossary.html", updated),
         (SITE + "pages/compare.html", updated),
         (SITE + "pages/ask.html", updated),
         (SITE + "pages/countries/", updated),

@@ -91,10 +91,33 @@ function hideTip() { tooltip().classList.remove('show'); }
 
 /* ---------- tile-grid map ---------- */
 
+/** Five-class breaks (4 values) from a pool of numbers: quantiles at 20/40/60/80 %. */
+function quantileBreaks(sorted) {
+  return sorted.length ? [0.2, 0.4, 0.6, 0.8].map(q => sorted[Math.floor(q * (sorted.length - 1))]) : [];
+}
+
+/**
+ * A colour scale that stays fixed across years: pass every value that can be
+ * shown (e.g. all countries × all years) and hand the result to tileMap as
+ * { domain, breaks }. Breaks are quantiles of the pooled values.
+ */
+export function fixedScale(values) {
+  const v = values.filter(x => x != null && !Number.isNaN(x)).sort((a, b) => a - b);
+  if (!v.length) return null;
+  return { domain: [v[0], v[v.length - 1]], breaks: quantileBreaks(v) };
+}
+
 /**
  * opts: { countries: [{code,name,tile}], values: Map(code -> {value, flag}),
- *         missing: Map(code -> flag), fmt, onSelect(code), selected: Set }
- * Sequential single-hue scale in 5 classes (quantiles of the shown values).
+ *         missing: Map(code -> flag), fmt, onSelect(code), selected: Set,
+ *         domain?: [min, max], breaks?: [b1..b4] }
+ * Sequential single-hue scale in 5 classes. By default the classes are
+ * quantiles of the shown values; with `domain` (and optionally `breaks`) the
+ * scale is fixed — e.g. the same for every year of a time-lapse — and the
+ * legend shows that fixed scale. Without `breaks`, a domain is cut into five
+ * equal intervals.
+ * Returns { svg, update(partialOpts) }: update re-colours the existing tiles in
+ * place (no DOM rebuild, so focus and CSS fill transitions survive).
  */
 export function tileMap(host, opts) {
   host.replaceChildren();
@@ -103,63 +126,203 @@ export function tileMap(host, opts) {
   const rows = Math.max(...tiles.map(c => c.tile[1])) + 1;
   const size = 44, gap = 3;
   const W = cols * (size + gap), H = rows * (size + gap);
-  const svg = svgEl('svg', { viewBox: `0 0 ${W} ${H}`, class: 'viz tilemap', role: 'img',
-    'aria-label': opts.label || 'Map of European countries' }, host);
+  const svg = svgEl('svg', { viewBox: `0 0 ${W} ${H}`, class: 'viz tilemap', role: 'img' }, host);
+  const legend = document.createElement('div');
+  legend.className = 'viz-legend seq';
 
-  const vals = [...opts.values.values()].map(v => v.value).filter(v => v != null).sort((a, b) => a - b);
-  const breaks = vals.length ? [0.2, 0.4, 0.6, 0.8].map(q => vals[Math.floor(q * (vals.length - 1))]) : [];
+  let cur = { ...opts };
+  let breaks = [], edges = [];
   const cls = v => breaks.filter(b => v > b).length; // 0..4
 
-  for (const c of tiles) {
+  const cells = tiles.map(c => {
     const [cx, cy] = c.tile;
     const g = svgEl('g', { transform: `translate(${cx * (size + gap)},${cy * (size + gap)})`,
       class: 'tile', tabindex: 0 }, svg);
-    const v = opts.values.get(c.code);
-    const miss = opts.missing?.get(c.code);
-    const k = v ? cls(v.value) : null;
-    svgEl('rect', { width: size, height: size, rx: 4,
-      class: v ? `seq-${k}` : miss ? 'tile-na' : 'tile-empty' }, g);
-    if (opts.selected?.has(c.code)) svgEl('rect', { width: size - 2, height: size - 2, x: 1, y: 1, rx: 3, class: 'tile-sel' }, g);
-    text(g, size / 2, size / 2 + 4, c.code, { 'text-anchor': 'middle', class: `tile-code${v ? ` t-${k}` : ''}` });
-    const label = v ? `${opts.fmt(v.value)}${v.flag ? ` (${v.flag})` : ''}` : miss ? `no value (${miss})` : 'no data';
-    g.setAttribute('aria-label', `${c.name}: ${label}`);
-    const over = e => showTip(e, c.name, [{ value: v ? opts.fmt(v.value) : '—',
-      label: v ? (v.flag ? `flag ${v.flag}` : opts.year || '') : miss ? `flag ${miss}` : 'no data' }]);
+    const rect = svgEl('rect', { width: size, height: size, rx: 4 }, g);
+    const sel = svgEl('rect', { width: size - 2, height: size - 2, x: 1, y: 1, rx: 3, class: 'tile-sel' }, g);
+    const label = text(g, size / 2, size / 2 + 4, c.code, { 'text-anchor': 'middle' });
+    const over = e => {
+      const v = cur.values.get(c.code), miss = cur.missing?.get(c.code);
+      showTip(e, c.name, [{ value: v ? cur.fmt(v.value) : '—',
+        label: v ? (v.flag ? `flag ${v.flag}` : cur.year || '') : miss ? `flag ${miss}` : 'no data' }]);
+    };
+    const pick = () => { if (cur.onSelect && cur.values.get(c.code)) cur.onSelect(c.code); };
     g.addEventListener('pointermove', over);
     g.addEventListener('focus', over);
     g.addEventListener('pointerleave', hideTip);
     g.addEventListener('blur', hideTip);
-    if (opts.onSelect && v) {
-      g.style.cursor = 'pointer';
-      g.addEventListener('click', () => opts.onSelect(c.code));
-      g.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); opts.onSelect(c.code); } });
+    g.addEventListener('click', pick);
+    g.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); pick(); } });
+    return { c, g, rect, sel, label };
+  });
+
+  function paint(next = {}) {
+    cur = { ...cur, ...next };
+    svg.setAttribute('aria-label', cur.label || 'Map of European countries');
+    const shown = [...cur.values.values()].map(v => v.value).filter(v => v != null).sort((a, b) => a - b);
+    if (cur.domain) {
+      const [lo, hi] = cur.domain;
+      breaks = cur.breaks?.length === 4 ? cur.breaks : [1, 2, 3, 4].map(i => lo + (hi - lo) * i / 5);
+      edges = [lo, ...breaks, hi];
+    } else {
+      breaks = quantileBreaks(shown);
+      edges = shown.length ? [shown[0], ...breaks, shown[shown.length - 1]] : [];
     }
+    for (const { c, g, rect, sel, label } of cells) {
+      const v = cur.values.get(c.code);
+      const miss = cur.missing?.get(c.code);
+      const k = v ? cls(v.value) : null;
+      rect.setAttribute('class', v ? `seq-${k}` : miss ? 'tile-na' : 'tile-empty');
+      sel.setAttribute('visibility', cur.selected?.has(c.code) ? 'visible' : 'hidden');
+      label.setAttribute('class', `tile-code${v ? ` t-${k}` : ''}`);
+      const desc = v ? `${cur.fmt(v.value)}${v.flag ? ` (${v.flag})` : ''}` : miss ? `no value (${miss})` : 'no data';
+      g.setAttribute('aria-label', `${c.name}: ${desc}`);
+      g.style.cursor = cur.onSelect && v ? 'pointer' : '';
+    }
+    renderLegend();
   }
 
   // Legend: 5 classes + no value.
-  const legend = document.createElement('div');
-  legend.className = 'viz-legend seq';
-  const lo = vals[0], hi = vals[vals.length - 1];
-  const edges = [lo, ...breaks, hi];
-  for (let i = 0; i < 5 && vals.length; i++) {
-    const item = document.createElement('span');
-    item.className = 'li';
-    const sw = document.createElement('i');
-    sw.className = `sw seq-${i}`;
-    const lab = document.createElement('span');
-    lab.textContent = `${opts.fmt.tick(edges[i])}–${opts.fmt.tick(edges[i + 1])}`;
-    item.append(sw, lab);
-    legend.appendChild(item);
+  function renderLegend() {
+    legend.replaceChildren();
+    for (let i = 0; i < 5 && edges.length; i++) {
+      const item = document.createElement('span');
+      item.className = 'li';
+      const sw = document.createElement('i');
+      sw.className = `sw seq-${i}`;
+      const lab = document.createElement('span');
+      lab.textContent = `${cur.fmt.tick(edges[i])}–${cur.fmt.tick(edges[i + 1])}`;
+      item.append(sw, lab);
+      legend.appendChild(item);
+    }
+    for (const [c, l] of [['tile-na', 'flagged, no value'], ['tile-empty', 'no data']]) {
+      const item = document.createElement('span');
+      item.className = 'li';
+      const sw = document.createElement('i'); sw.className = `sw ${c}`;
+      const lab = document.createElement('span'); lab.textContent = l;
+      item.append(sw, lab);
+      legend.appendChild(item);
+    }
   }
-  for (const [c, l] of [['tile-na', 'flagged, no value'], ['tile-empty', 'no data']]) {
-    const item = document.createElement('span');
-    item.className = 'li';
-    const sw = document.createElement('i'); sw.className = `sw ${c}`;
-    const lab = document.createElement('span'); lab.textContent = l;
-    item.append(sw, lab);
-    legend.appendChild(item);
-  }
+
+  paint();
   host.appendChild(legend);
+  return { svg, update: paint };
+}
+
+/* ---------- time-lapse controls (play/pause + year slider) ---------- */
+
+export const prefersReducedMotion = () =>
+  typeof matchMedia === 'function' && matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+/**
+ * Play/pause button and a labelled year slider, appended to `host`.
+ * opts: { steps: ['2014', …], index, interval = 900, label = 'Year',
+ *         onStep(index, {source: 'play'|'user'|'set'}), onPlayState(playing), onEnd(),
+ *         hasNext?(), advance?(), hold? }
+ * Playing advances one step per `interval` ms and stops on the last step;
+ * pressing play on the last step restarts from the first. Moving the slider
+ * pauses. The elements are never rebuilt, so keyboard focus stays put.
+ * Returns { play, pause, toggle, set(index), setSteps(steps, index), index, playing, button, slider }.
+ */
+export function timeControls(host, opts) {
+  let steps = opts.steps.slice();
+  let idx = Math.max(0, Math.min(steps.length - 1, opts.index ?? steps.length - 1));
+  let timer = null;
+  const interval = opts.interval || 900;
+  const uid = 'tl-' + Math.random().toString(36).slice(2, 8);
+
+  const wrap = document.createElement('div');
+  wrap.className = 'tl-controls';
+  const btn = document.createElement('button');
+  btn.type = 'button';
+  btn.className = 'tl-play';
+  const icon = document.createElement('span');
+  icon.className = 'tl-icon';
+  icon.setAttribute('aria-hidden', 'true');
+  const word = document.createElement('span');
+  btn.append(icon, word);
+
+  const lab = document.createElement('label');
+  lab.className = 'tl-slider';
+  lab.htmlFor = uid;
+  const labText = document.createElement('span');
+  labText.className = 'tl-slider-label';
+  labText.textContent = opts.label || 'Year';
+  const slider = document.createElement('input');
+  slider.type = 'range';
+  slider.id = uid;
+  slider.min = '0';
+  slider.step = '1';
+  const out = document.createElement('output');
+  out.className = 'tl-out';
+  out.htmlFor = uid;
+  lab.append(labText, slider);
+  wrap.append(btn, lab, out);
+  host.appendChild(wrap);
+
+  const sync = () => {
+    slider.max = String(Math.max(0, steps.length - 1));
+    slider.value = String(idx);
+    slider.disabled = steps.length < 2;
+    slider.setAttribute('aria-valuetext', steps[idx] ?? '');
+    out.textContent = steps[idx] ?? '';
+    const playing = !!timer;
+    icon.textContent = playing ? '❚❚' : '▶';
+    word.textContent = playing ? 'Pause' : 'Play';
+    btn.setAttribute('aria-label', playing ? `Pause the time-lapse (showing ${steps[idx]})` : 'Play the time-lapse, year by year');
+    wrap.classList.toggle('is-playing', playing);
+  };
+
+  const go = (i, source) => {
+    idx = Math.max(0, Math.min(steps.length - 1, i));
+    sync();
+    opts.onStep?.(idx, { source });
+  };
+
+  // At the last step: stop, unless opts.hasNext() says there is more to show
+  // (e.g. the next indicator) — then hold the last frame for opts.hold ms while
+  // still "playing" (so Pause can cancel it) and call opts.advance().
+  const atEnd = () => {
+    if (opts.hasNext?.()) {
+      timer = setTimeout(() => { timer = null; sync(); opts.onPlayState?.(false); opts.advance(); }, opts.hold ?? 2400);
+    } else { stop(); opts.onEnd?.(); }
+  };
+  const tick = () => {
+    if (idx >= steps.length - 1) return atEnd();
+    go(idx + 1, 'play');
+    if (idx >= steps.length - 1) return atEnd();
+    timer = setTimeout(tick, interval);
+  };
+
+  function stop() {
+    const was = !!timer;
+    clearTimeout(timer);
+    timer = null;
+    sync();
+    if (was) opts.onPlayState?.(false);
+  }
+
+  function play() {
+    if (timer || steps.length < 2) return;
+    if (idx >= steps.length - 1) go(0, 'play');
+    timer = setTimeout(tick, interval);
+    sync();
+    opts.onPlayState?.(true);
+  }
+
+  btn.addEventListener('click', () => (timer ? stop() : play()));
+  slider.addEventListener('input', () => { const i = +slider.value; stop(); go(i, 'user'); });
+
+  sync();
+  return {
+    play, pause: stop, toggle: () => (timer ? stop() : play()),
+    set: i => go(i, 'set'),
+    setSteps(next, i) { stop(); steps = next.slice(); idx = Math.max(0, Math.min(steps.length - 1, i ?? steps.length - 1)); sync(); },
+    get index() { return idx; },
+    get playing() { return !!timer; },
+    button: btn, slider, element: wrap,
+  };
 }
 
 /* ---------- ranked horizontal bars ---------- */

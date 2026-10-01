@@ -1658,3 +1658,531 @@ a.change-title:hover, a.change-title:focus-visible { color: var(--accent); text-
 }
 .filterbar label { min-width: 0; max-width: 100%; }
 .filterbar select { max-width: 100%; }
+
+
+/* ---------- merged from timelapse.css ---------- */
+/* ---------- Time-lapse maps ----------
+   Play/pause + year slider (charts.js timeControls), the big year overlay on
+   indicator maps, and the home-page "Europe over time" card (home-map.js).
+   Uses the site tokens only, so light and dark mode follow site.css. */
+
+.tl-controls {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+  margin: 0 0 10px;
+  min-width: 0;
+}
+.tl-play {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  min-height: 36px;
+  min-width: 92px;
+  padding: 6px 14px;
+  border: 1px solid var(--accent);
+  border-radius: 999px;
+  background: var(--accent);
+  color: var(--on-accent);
+  font-size: .85rem;
+  font-weight: 600;
+}
+.tl-play:hover { background: var(--accent-ink); border-color: var(--accent-ink); }
+.tl-controls.is-playing .tl-play { background: var(--surface); color: var(--accent-ink); }
+.tl-controls.is-playing .tl-play:hover { background: var(--accent-soft); }
+.tl-icon { font-size: .72rem; letter-spacing: -.08em; width: 1em; text-align: center; }
+
+.tl-slider {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1 1 120px;
+  min-width: 0;
+  font-size: .78rem;
+  color: var(--muted);
+}
+.tl-slider-label {
+  /* Visually hidden: the slider keeps its accessible name, the year sits in <output>. */
+  position: absolute; width: 1px; height: 1px; overflow: hidden;
+  clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap;
+}
+.tl-slider input[type="range"] {
+  flex: 1 1 auto;
+  width: 100%;
+  min-width: 0;
+  margin: 0;
+  accent-color: var(--accent);
+  min-height: 24px;
+  cursor: pointer;
+}
+.tl-slider input[type="range"]:disabled { cursor: default; opacity: .5; }
+.tl-out {
+  min-width: 3.4em;
+  font-family: var(--mono);
+  font-size: .9rem;
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+  color: var(--ink);
+}
+
+/* Map + overlaid year (shown only while playing). The stage matches the tile
+   map's width so the year sits in the map's empty bottom-left corner (below Portugal). */
+.tl-stage { position: relative; min-width: 0; max-width: 520px; margin-inline: auto; }
+.tl-year {
+  position: absolute;
+  bottom: var(--tl-year-bottom, 24%);
+  left: 1%;
+  font-family: var(--display);
+  font-size: clamp(1.7rem, 6.5vw, 3.2rem);
+  font-weight: 600;
+  line-height: 1;
+  color: var(--ink);
+  opacity: 0;
+  pointer-events: none;
+  font-variant-numeric: tabular-nums;
+  text-shadow: 0 0 6px var(--surface), 0 0 2px var(--surface);
+}
+.is-playing .tl-year { opacity: .85; }
+
+@media (prefers-reduced-motion: no-preference) {
+  .tilemap .tile rect:first-child { transition: fill .45s ease; }
+  .tl-year { transition: opacity .2s; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .tilemap .tile rect:first-child, .tl-year { transition: none; }
+}
+
+/* ---------- Home: "Europe over time" ---------- */
+
+.tl-home {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 18px 20px;
+  min-width: 0;
+}
+.tl-home-head h2 { font-family: var(--display); font-size: 1.4rem; font-weight: 600; }
+.tl-home-head .hint { font-size: .85rem; color: var(--muted); margin: 4px 0 12px; max-width: 70ch; }
+.tl-chips { margin-bottom: 14px; }
+.tl-chips .chip { min-height: 32px; }
+
+.tl-home-body {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr);
+  gap: 16px 24px;
+  align-items: start;
+}
+.tl-home-info { min-width: 0; }
+.tl-home-topic { color: var(--muted); }
+.tl-home-title { font-size: 1.05rem; font-weight: 700; margin-top: 4px; line-height: 1.35; }
+.tl-home-year {
+  font-family: var(--display);
+  font-size: clamp(2.4rem, 6vw, 3.4rem);
+  font-weight: 600;
+  line-height: 1.05;
+  margin-top: 10px;
+  font-variant-numeric: tabular-nums;
+}
+.tl-home-eu { margin: 6px 0 0; font-size: .95rem; }
+.tl-home-eu strong { font-size: 1.15rem; font-variant-numeric: tabular-nums; }
+.tl-home-target { margin: 4px 0 0; font-size: .85rem; color: var(--muted); }
+.tl-home-target[data-met="true"] { color: var(--accent-ink); }
+.tl-home-target[data-met="false"] { color: var(--amber); }
+.tl-home-link { display: inline-block; margin-top: 12px; font-weight: 600; font-size: .9rem; }
+.tl-home-source { margin: 10px 0 0; font-size: .75rem; color: var(--muted); }
+.tl-home-map .tilemap { max-width: 400px; }
+.tl-home-map .viz-legend { font-size: .74rem; gap: 4px 10px; }
+/* The home card shows the year beside the map, so the overlay stays off there. */
+.tl-home .tl-year { display: none; }
+.tl-home-controls { margin-top: 12px; }
+.tl-home-controls .tl-controls { margin: 0; }
+.tl-home-status { margin: 6px 0 0; font-size: .82rem; color: var(--muted); }
+.tl-home-status:empty { display: none; }
+
+@media (max-width: 760px) {
+  .tl-home { padding: 16px; }
+  .tl-home-body { grid-template-columns: minmax(0, 1fr); }
+  .tl-home-year { margin-top: 6px; }
+}
+
+
+/* ---------- merged from play.css ---------- */
+/* Apprentix — "Higher or lower?" game (pages/play.html).
+   Uses the tokens from site.css; adds two outcome tokens in light and dark.
+   Outcome is never shown by colour alone: every state also has an icon and text. */
+
+:root {
+  --play-good: #1d6b3a;
+  --play-good-soft: #e3f2e8;
+  --play-bad: #a3332b;
+  --play-bad-soft: #f8e5e2;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --play-good: #7fd89c;
+    --play-good-soft: #15291c;
+    --play-bad: #f2a197;
+    --play-bad-soft: #321a17;
+  }
+}
+:root[data-theme="dark"] {
+  --play-good: #7fd89c;
+  --play-good-soft: #15291c;
+  --play-bad: #f2a197;
+  --play-bad-soft: #321a17;
+}
+
+.play { padding-block: 22px 56px; max-width: 860px; }
+.play-kicker { color: var(--accent-ink); }
+.play-title { font-family: var(--display); font-weight: 500; font-size: clamp(1.9rem, 4.5vw, 2.6rem); line-height: 1.15; margin-top: 6px; }
+.play-lede { color: var(--muted); max-width: 62ch; margin: 10px 0 22px; }
+.play-loading { color: var(--muted); }
+
+.play-sr {
+  position: absolute !important;
+  width: 1px; height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+/* ---------- status bar ---------- */
+
+.play-bar {
+  display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 18px;
+  font-size: .9rem; color: var(--muted);
+}
+.play-count { font-weight: 700; color: var(--ink); margin-right: auto; }
+.play-stat strong { color: var(--ink); font-variant-numeric: tabular-nums; }
+.play-progress { height: 4px; background: var(--sunken); border-radius: 4px; margin: 8px 0 22px; overflow: hidden; }
+.play-progress > span { display: block; height: 100%; background: var(--accent); border-radius: 4px; }
+
+/* ---------- question ---------- */
+
+.play-q { font-family: var(--display); font-weight: 500; font-size: clamp(1.3rem, 3.4vw, 1.75rem); line-height: 1.25; }
+.play-q:focus { outline: none; }
+.play-q:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+.play-meta { display: flex; flex-wrap: wrap; gap: 4px 14px; font-size: .85rem; color: var(--muted); margin: 6px 0 18px; }
+.play-diff { font-family: var(--mono); font-size: 11px; letter-spacing: .06em; text-transform: uppercase; color: var(--faint); }
+
+.play-cards {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  align-items: stretch;
+  gap: 12px;
+}
+.play-vs { align-self: center; font-family: var(--display); font-style: italic; color: var(--faint); }
+
+.play-card {
+  position: relative;
+  display: flex; flex-direction: column; align-items: center; gap: 4px;
+  min-height: 168px; min-width: 0;
+  padding: 18px 14px 22px;
+  background: var(--surface);
+  border: 2px solid var(--line-strong);
+  border-radius: 14px;
+  text-align: center;
+  overflow: hidden;
+  transition: border-color .15s, box-shadow .15s, transform .15s;
+}
+.play-card:hover:not([aria-disabled="true"]) { border-color: var(--accent); box-shadow: var(--shadow); transform: translateY(-2px); }
+.play-card:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+.play-card[aria-disabled="true"] { cursor: default; }
+
+.play-key {
+  position: absolute; top: 8px; left: 10px;
+  font-family: var(--mono); font-size: 11px; color: var(--faint);
+  border: 1px solid var(--line); border-radius: 4px; padding: 0 5px;
+}
+.play-emoji { font-size: 2.6rem; line-height: 1.1; }
+.play-name { font-weight: 700; font-size: 1.1rem; overflow-wrap: anywhere; }
+.play-scheme { font-size: .82rem; color: var(--muted); }
+
+.play-reveal { display: flex; flex-direction: column; align-items: center; gap: 2px; min-height: 2.9em; margin-top: 4px; }
+.play-value { font-family: var(--display); font-size: 1.6rem; font-weight: 600; font-variant-numeric: tabular-nums; line-height: 1.2; overflow-wrap: anywhere; }
+.play-mark { font-size: .82rem; font-weight: 700; color: var(--muted); }
+.play-flag { font-size: .75rem; color: var(--muted); }
+
+.play-meter { position: absolute; left: 0; right: 0; bottom: 0; height: 6px; background: var(--sunken); }
+.play-meter > span { display: block; height: 100%; width: 0; background: var(--accent); transition: width .65s cubic-bezier(.2, .7, .2, 1); }
+
+.play-card.is-higher .play-mark { color: var(--accent-ink); }
+.play-card.is-picked { border-width: 3px; }
+.play-card.is-picked.is-higher { border-color: var(--play-good); background: var(--play-good-soft); }
+.play-card.is-picked.is-lower { border-color: var(--play-bad); background: var(--play-bad-soft); }
+
+.play-hint { font-size: .85rem; color: var(--muted); margin: 14px 0 0; }
+
+/* ---------- result ---------- */
+
+.play-result {
+  margin-top: 18px; padding: 16px 18px;
+  border-radius: 12px; border: 1px solid var(--line); border-left-width: 5px;
+  background: var(--surface);
+}
+.play-result.is-correct { border-left-color: var(--play-good); }
+.play-result.is-wrong { border-left-color: var(--play-bad); }
+.play-outcome { margin: 0; font-size: 1.05rem; }
+.play-icon {
+  display: inline-grid; place-items: center;
+  width: 1.5em; height: 1.5em; margin-right: 8px; border-radius: 50%;
+  font-weight: 700; font-size: .95rem; vertical-align: -.15em;
+}
+.is-correct .play-icon { background: var(--play-good-soft); color: var(--play-good); }
+.is-wrong .play-icon { background: var(--play-bad-soft); color: var(--play-bad); }
+.is-correct .play-outcome strong, .is-correct .play-review-head strong { color: var(--play-good); }
+.is-wrong .play-outcome strong, .is-wrong .play-review-head strong { color: var(--play-bad); }
+.play-explain { margin: 6px 0 12px; color: var(--ink); font-variant-numeric: tabular-nums; }
+
+.play-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+.play-actions .btn { min-height: 44px; padding: 8px 18px; font-size: .95rem; display: inline-flex; align-items: center; justify-content: center; }
+.play-actions a.btn { text-decoration: none; color: var(--ink); }
+.play-actions .btn.primary { color: var(--on-accent); }
+.play-status { font-size: .88rem; color: var(--muted); }
+
+/* ---------- end screen ---------- */
+
+.play-end-card {
+  padding: 22px 20px; border: 1px solid var(--line); border-radius: 14px;
+  background: var(--surface); box-shadow: var(--shadow);
+}
+.play-end-title { font-family: var(--display); font-weight: 500; font-size: clamp(1.6rem, 4vw, 2.2rem); }
+.play-end-title:focus { outline: none; }
+.play-end-title:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+.play-end-verdict { font-size: 1.05rem; margin: 6px 0 4px; }
+.play-end-best { color: var(--muted); margin: 0 0 16px; }
+.play-link-label { display: block; font-size: .85rem; color: var(--muted); margin: 16px 0 4px; }
+.play-link-input {
+  width: 100%; min-height: 44px; padding: 8px 10px;
+  font: inherit; font-family: var(--mono); font-size: .85rem;
+  color: var(--ink); background: var(--sunken);
+  border: 1px solid var(--line-strong); border-radius: 8px;
+}
+.play-link-input:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+.play-review-title { font-family: var(--display); font-weight: 500; font-size: 1.3rem; margin: 28px 0 8px; }
+.play-review { list-style: decimal; padding-left: 1.6em; margin: 0; }
+.play-review li { padding: 10px 0; border-bottom: 1px solid var(--line); }
+.play-review li::marker { color: var(--faint); font-variant-numeric: tabular-nums; }
+.play-review-head { margin: 0; }
+.play-review-body { margin: 4px 0; color: var(--muted); font-size: .92rem; }
+.play-review a { display: inline-flex; align-items: center; min-height: 44px; }
+
+/* ---------- small screens ---------- */
+
+@media (max-width: 560px) {
+  .play { padding-inline: 16px; }
+  .play-cards { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 10px; }
+  .play-vs { display: none; }
+  .play-card { min-height: 150px; padding: 16px 8px 20px; }
+  .play-emoji { font-size: 2.1rem; }
+  .play-name { font-size: 1rem; }
+  .play-value { font-size: 1.25rem; }
+  .play-actions .btn { flex: 1 1 auto; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .play-card, .play-card:hover { transition: none; transform: none !important; }
+  .play-meter > span { transition: none; }
+}
+
+
+/* ---------- merged from glossary.css ---------- */
+/* Glossary terms and popovers (assets/js/glossary.js) and the glossary page.
+   Uses the colour tokens from site.css, so light and dark themes follow automatically. */
+
+.gl-term {
+  color: inherit;
+  text-decoration: underline dotted;
+  text-decoration-color: var(--accent);
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: .2em;
+  cursor: help;
+  border-radius: 2px;
+}
+.gl-term:hover,
+.gl-term[aria-expanded="true"] {
+  text-decoration-style: solid;
+  background: var(--accent-soft);
+}
+.gl-term:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.gl-pop {
+  position: fixed;
+  z-index: 60;
+  box-sizing: border-box;
+  width: max-content;
+  max-width: min(22rem, calc(100vw - 16px));
+  padding: .75rem .9rem .7rem;
+  background: var(--surface);
+  color: var(--ink);
+  border: 1px solid var(--line-strong);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  /* Reset whatever the surrounding text uses: the popover sits next to the term. */
+  font: 400 .9rem/1.45 var(--body);
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: left;
+  text-transform: none;
+  text-indent: 0;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+.gl-pop[hidden] { display: none; }
+.gl-pop:focus { outline: none; }
+.gl-pop:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.gl-pop p { margin: 0; }
+
+.gl-pop-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: .5rem;
+  margin-bottom: .3rem;
+}
+.gl-pop-title {
+  font-family: var(--display);
+  font-weight: 600;
+  font-size: 1.02rem;
+  line-height: 1.25;
+}
+.gl-pop-close {
+  flex: none;
+  min-width: 32px;
+  min-height: 32px;
+  margin: -.4rem -.5rem 0 0;
+  padding: 0;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--muted);
+  font: inherit;
+  font-size: 1.25rem;
+  line-height: 1;
+  cursor: pointer;
+}
+.gl-pop-close:hover { background: var(--sunken); color: var(--ink); }
+.gl-pop-short { color: var(--ink); }
+.gl-pop-long {
+  margin-top: .45rem !important;
+  color: var(--muted);
+  font-size: .86rem;
+}
+.gl-pop-foot {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .35rem 1rem;
+  margin-top: .55rem !important;
+  padding-top: .5rem;
+  border-top: 1px solid var(--line);
+  font-size: .82rem;
+}
+.gl-pop-foot a { color: var(--accent-ink); }
+.gl-pop-more {
+  padding: .2rem 0;
+  border: 0;
+  background: none;
+  color: var(--accent-ink);
+  font: inherit;
+  font-weight: 500;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.gl-pop-more[hidden], .gl-pop-src[hidden] { display: none; }
+
+@media (prefers-reduced-motion: no-preference) {
+  .gl-pop:not([hidden]) { animation: gl-in .12s ease-out; }
+  @keyframes gl-in { from { opacity: 0; transform: translateY(-2px); } to { opacity: 1; transform: none; } }
+}
+
+@media print {
+  .gl-term { text-decoration: none; background: none; }
+  .gl-pop { display: none !important; }
+}
+
+/* ---------------------------------------------------------------- glossary page -- */
+
+.gl-page .gl-intro { max-width: 46rem; }
+.gl-filter {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .5rem 1rem;
+  margin: 1.25rem 0 .75rem;
+  padding: .6rem 0;
+  background: var(--ground);
+  border-bottom: 1px solid var(--line);
+}
+.gl-filter label { font-weight: 500; }
+.gl-filter input {
+  flex: 1 1 14rem;
+  max-width: 26rem;
+  min-height: 40px;
+  padding: .45rem .7rem;
+  border: 1px solid var(--line-strong);
+  border-radius: 6px;
+  background: var(--surface);
+  color: var(--ink);
+  font: inherit;
+}
+.gl-filter input:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+.gl-count { color: var(--muted); font-size: .9rem; }
+.gl-az {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .25rem;
+  margin: 0 0 1rem;
+  padding: 0;
+  list-style: none;
+}
+.gl-az a {
+  display: inline-block;
+  min-width: 2rem;
+  padding: .25rem .35rem;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: var(--surface);
+  text-align: center;
+  text-decoration: none;
+  font-family: var(--mono);
+  font-size: .85rem;
+}
+.gl-letter {
+  margin: 1.75rem 0 .5rem;
+  padding-bottom: .25rem;
+  border-bottom: 1px solid var(--line-strong);
+  font-family: var(--display);
+}
+.gl-list { margin: 0; }
+.gl-entry {
+  margin: 0 0 .9rem;
+  padding: .85rem 1rem;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  scroll-margin-top: 5rem;
+}
+.gl-entry:target { border-color: var(--accent); box-shadow: 0 0 0 2px var(--accent-soft); }
+.gl-entry dt {
+  font-family: var(--display);
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+.gl-entry dt a { color: inherit; text-decoration: none; }
+.gl-entry dt a:hover { text-decoration: underline; }
+.gl-aka { margin-left: .35rem; color: var(--muted); font-family: var(--body); font-size: .85rem; font-weight: 400; }
+.gl-entry dd { margin: .3rem 0 0; }
+.gl-entry .gl-short { font-size: 1.02rem; }
+.gl-entry .gl-long { color: var(--muted); }
+.gl-entry .gl-meta { color: var(--muted); font-size: .86rem; }
+.gl-entry[hidden], .gl-letter[hidden] { display: none; }

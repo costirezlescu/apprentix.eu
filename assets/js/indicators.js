@@ -2,7 +2,7 @@
    Driven entirely by data/published/indicators/*.json. */
 
 import { url, esc } from './data.js';
-import { formatter, tileMap, barChart, lineChart, lineLegend } from './charts.js';
+import { formatter, tileMap, barChart, lineChart, lineLegend, fixedScale, timeControls } from './charts.js';
 import { addShareControls } from './share.js';
 
 const $ = id => document.getElementById(id);
@@ -16,6 +16,7 @@ const get = p => fetch(url(p)).then(r => {
 });
 
 let INDEX, COUNTRIES, IND, state;
+let multi = null; // live map/ranking context while a multi-country indicator is shown (see drawMulti)
 
 init().catch(err => {
   $('view').innerHTML = `<p class="empty">Could not load indicators.<br><small>${esc(err.message)}</small></p>`;
@@ -35,8 +36,19 @@ async function init() {
   if (id) await showIndicator(id);
   else await showOverview();
 
-  let t;
-  window.addEventListener('resize', () => { clearTimeout(t); t = setTimeout(() => IND && draw(), 150); });
+  document.addEventListener('visibilitychange', () => { if (document.hidden) multi?.controls?.pause(); });
+
+  // Redraw on width changes only (phones fire height-only resizes while scrolling,
+  // which would otherwise interrupt a playing time-lapse).
+  let t, lastW = window.innerWidth;
+  window.addEventListener('resize', () => {
+    clearTimeout(t);
+    t = setTimeout(() => {
+      if (window.innerWidth === lastW) return;
+      lastW = window.innerWidth;
+      if (IND) draw();
+    }, 150);
+  });
 }
 
 const cname = code => COUNTRIES.byCode[code]?.name || code;
@@ -221,7 +233,10 @@ function renderFilters(years) {
   bar.innerHTML = parts.join('');
   bar.hidden = !parts.length;
   bar.querySelectorAll('[data-dim]').forEach(s => s.addEventListener('change', () => { state.dims[s.dataset.dim] = s.value; draw(); }));
-  $('year')?.addEventListener('change', e => { state.year = e.target.value; draw(); });
+  $('year')?.addEventListener('change', e => {
+    state.year = e.target.value;
+    if (multi?.controls) { multi.controls.set(multi.steps.indexOf(state.year)); } else draw();
+  });
   $('by')?.addEventListener('change', e => { state.breakdown = e.target.value; draw(); });
 }
 
@@ -235,12 +250,65 @@ function toggleCountry(code) {
   draw();
 }
 
+const isCountry = geo => !!COUNTRIES.byCode[geo]?.tile;
+
 function drawMulti(fmt, obs) {
+  multi?.controls?.pause();
+  const target = IND.target && (IND.dims || []).every(d => state.dims[d.key] === d.default) ? IND.target : null;
+  // Years ascending, for the time-lapse. The colour scale is fixed over every
+  // year of the current dimension selection, so colour changes are real changes.
+  const steps = [...new Set(obs.map(o => o.time))].sort();
+  const canPlay = steps.length >= 3;
+  const scale = canPlay ? fixedScale(obs.filter(o => isCountry(o.geo)).map(o => o.value)) : null;
+
+  // Line series: EU27 + selected countries (colour follows the selection slot, not rank).
+  const eu0 = obs.find(o => o.geo === 'EU27' && o.time === state.year);
+  if (!state.selected.length && !eu0) {
+    state.selected = obs.filter(o => o.time === state.year && o.geo !== 'EU27')
+      .sort((a, b) => b.value - a.value).slice(0, 3).map(o => o.geo);
+  }
+  const series = [];
+  if (IND.coverage.geos.includes('EU27')) series.push({ key: 'EU27', label: 'EU-27', colorVar: '--series-eu', points: obs.filter(o => o.geo === 'EU27') });
+  state.selected.forEach((g, i) => series.push({ key: g, label: cname(g), colorVar: SERIES_VARS[i], removable: true,
+    points: obs.filter(o => o.geo === g) }));
+
+  $('charts').innerHTML = `
+    <div class="chart-grid">
+      <div class="chart-card" id="map-card"><h2 id="map-h"></h2><p class="hint">Colour shows the value (see the legend)${scale ? '; the colour scale is the same for every year, so a change of colour is a real change' : ''}. Select a country to add it to the chart over time.</p>
+        ${canPlay ? '<div id="tl-host"></div>' : ''}
+        <div class="tl-stage"><div id="map"></div><div class="tl-year" id="tl-year" aria-hidden="true"></div></div></div>
+      <div class="chart-card"><h2 id="bars-h"></h2><p class="hint">${target ? `The amber line is the EU target (${esc(fmt(target.value))}). ` : ''}Select a country to compare it over time.</p><div id="bars"></div></div>
+    </div>
+    <div class="chart-card"><h2>Over time</h2><p class="hint">${state.selected.length ? '' : 'Select up to four countries on the map or in the ranking to compare them. '}Hover or use the arrow keys for values.</p>
+      <div class="viz-legend" id="legend"></div><div id="lines"></div></div>`;
+
+  const sel = new Set(state.selected);
+  multi = { fmt, obs, target, sel, steps, scale, controls: null,
+    map: tileMap($('map'), { countries: COUNTRIES.countries, values: new Map(), fmt, onSelect: toggleCountry, selected: sel,
+      ...(scale || {}) }) };
+  lineLegend($('legend'), series, code => toggleCountry(code));
+  lineChart($('lines'), series, { fmt, target, label: `${IND.title} over time` });
+
+  if (canPlay) {
+    const card = $('map-card');
+    multi.controls = timeControls($('tl-host'), {
+      steps, index: Math.max(0, steps.indexOf(state.year)), interval: 900,
+      label: 'Year shown on the map and ranking',
+      onStep: i => { state.year = steps[i]; renderYear(); },
+      onPlayState: playing => card.classList.toggle('is-playing', playing),
+    });
+  }
+  renderYear();
+}
+
+/* Everything that depends on the selected year, updated in place (also once
+   per frame while the time-lapse plays). */
+function renderYear() {
+  const { fmt, obs, target, sel } = multi;
   const yearObs = obs.filter(o => o.time === state.year);
   const byGeo = new Map(yearObs.map(o => [o.geo, o]));
   const countries = yearObs.filter(o => o.geo !== 'EU27').sort((a, b) => b.value - a.value);
   const eu = byGeo.get('EU27');
-  const target = IND.target && (IND.dims || []).every(d => state.dims[d.key] === d.default) ? IND.target : null;
 
   // Stat tiles
   const tiles = [];
@@ -259,39 +327,30 @@ function drawMulti(fmt, obs) {
   tiles.push(tile('Countries with data', String(countries.length), `in ${state.year}`));
   $('tiles').innerHTML = tiles.join('');
 
-  // Line series: EU27 + selected countries (colour follows the selection slot, not rank).
-  if (!state.selected.length && !eu) state.selected = countries.slice(0, 3).map(o => o.geo);
-  const series = [];
-  if (IND.coverage.geos.includes('EU27')) series.push({ key: 'EU27', label: 'EU-27', colorVar: '--series-eu', points: obs.filter(o => o.geo === 'EU27') });
-  state.selected.forEach((g, i) => series.push({ key: g, label: cname(g), colorVar: SERIES_VARS[i], removable: true,
-    points: obs.filter(o => o.geo === g) }));
-
-  $('charts').innerHTML = `
-    <div class="chart-grid">
-      <div class="chart-card"><h2>Map, ${esc(state.year)}</h2><p class="hint">Colour shows the value (see the legend). Select a country to add it to the chart over time.</p><div id="map"></div></div>
-      <div class="chart-card"><h2>Ranking, ${esc(state.year)}</h2><p class="hint">${target ? `The amber line is the EU target (${esc(fmt(target.value))}). ` : ''}Select a country to compare it over time.</p><div id="bars"></div></div>
-    </div>
-    <div class="chart-card"><h2>Over time</h2><p class="hint">${state.selected.length ? '' : 'Select up to four countries on the map or in the ranking to compare them. '}Hover or use the arrow keys for values.</p>
-      <div class="viz-legend" id="legend"></div><div id="lines"></div></div>`;
+  $('map-h').textContent = `Map, ${state.year}`;
+  $('bars-h').textContent = `Ranking, ${state.year}`;
+  $('tl-year').textContent = state.year;
+  const yearSelect = $('year');
+  if (yearSelect && yearSelect.value !== state.year) yearSelect.value = state.year;
 
   const missing = new Map((IND.missing || [])
     .filter(m => m.time === state.year && (IND.dims || []).every(d => (m.dims?.[d.key] ?? d.default) === state.dims[d.key]))
     .map(m => [m.geo, m.flag]));
-  const sel = new Set(state.selected);
-  tileMap($('map'), { countries: COUNTRIES.countries, values: byGeo, missing, fmt, year: state.year,
-    onSelect: toggleCountry, selected: sel, label: `${IND.title}, ${state.year}, map` });
+  multi.map.update({ values: byGeo, missing, year: state.year, label: `${IND.title}, ${state.year}, map` });
   const rows = [...(eu ? [{ code: 'EU27', name: 'EU-27', value: eu.value, flag: eu.flag, emphasis: true }] : []),
     ...countries.map(o => ({ code: o.geo, name: cname(o.geo), value: o.value, flag: o.flag }))];
   barChart($('bars'), rows, { fmt, target, year: state.year, selected: sel, fitLabels: true,
     onSelect: c => c !== 'EU27' && toggleCountry(c), label: `${IND.title}, ${state.year}, ranking` });
-  lineLegend($('legend'), series, code => toggleCountry(code));
-  lineChart($('lines'), series, { fmt, target, label: `${IND.title} over time` });
 
   // Table view of the selected year.
   $('table-card').innerHTML = `<h2>Table, ${esc(state.year)}</h2>
     <div style="overflow-x:auto"><table class="data"><thead><tr><th>Country</th><th class="num">${esc(IND.unit || 'Value')}</th><th>Flag</th></tr></thead>
     <tbody>${rows.map(r => `<tr><td>${esc(r.name)}</td><td class="num">${esc(fmt(r.value))}</td><td>${esc(r.flag ? `${r.flag} — ${IND.flags?.[r.flag] || ''}` : '')}</td></tr>`).join('')}
     ${[...missing].map(([g, f]) => `<tr><td>${esc(cname(g))}</td><td class="num">—</td><td>${esc(`${f} — ${IND.flags?.[f] || ''}`)}</td></tr>`).join('')}</tbody></table></div>`;
+
+  // Keep the URL and the share link/image in step with the year shown.
+  syncUrl();
+  shareCharts();
 }
 
 function drawSingle(fmt, obs) {

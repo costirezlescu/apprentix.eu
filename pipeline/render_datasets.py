@@ -347,8 +347,10 @@ def render_indicator(D, ind: dict, names: dict[str, str], siblings: list[dict]) 
             breadcrumb([("Apprentix", SITE), ("Indicators", SITE + "pages/indicators/"), (ind["title"], page_url)], page_url),
         ],
     }
+    from . import og
     return page(title=title, description=description, canonical=page_url, root="../../", body=body,
-                json_ld_obj=ld, current="indicators", updated=D["updated"])
+                json_ld_obj=ld, current="indicators", updated=D["updated"], og_image=og.indicator_path(iid),
+                og_image_alt=og.alt_for(f"indicator:{iid}", f"{ind['title']} — Apprentix."))
 
 
 def topic_of(meta: dict) -> str:
@@ -409,8 +411,10 @@ def render_indicator_index(D, index: list[dict], names: dict[str, str]) -> str:
             breadcrumb([("Apprentix", SITE), ("Indicators", page_url)], page_url),
         ],
     }
+    from . import og
     return page(title=title, description=description, canonical=page_url, root="../../", body=body,
-                json_ld_obj=ld, current="indicators", updated=D["updated"])
+                json_ld_obj=ld, current="indicators", updated=D["updated"], og_image=og.section_path("indicators"),
+                og_image_alt=og.alt_for("indicators", "Statistics on apprenticeship and VET in Europe — Apprentix."))
 
 
 # ---------------------------------------------------------------- record datasets --
@@ -612,8 +616,10 @@ def render_dataset(D, ds: dict, names: dict[str, str], others: list[dict]) -> st
             breadcrumb([("Apprentix", SITE), ("Data & sources", SITE + "pages/data.html"), (title_, page_url)], page_url),
         ],
     }
+    from . import og
     return page(title=title, description=description, canonical=page_url, root="../../", body=body,
-                json_ld_obj=ld, current=None, updated=D["updated"])
+                json_ld_obj=ld, current=None, updated=D["updated"], og_image=og.section_path("data"),
+                og_image_alt=og.alt_for("data", "Where the data comes from — Apprentix."))
 
 
 # ---------------------------------------------------------------- data.html catalogue --

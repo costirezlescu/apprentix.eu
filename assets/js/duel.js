@@ -495,9 +495,14 @@ async function init() {
   $('#pickers').addEventListener('submit', (ev) => ev.preventDefault());
   $('#swap').addEventListener('click', () => { [S.a, S.b] = [S.b, S.a]; update(); });
   $('#random').addEventListener('click', random);
+  // Prefer the static share page (it has a preview image) when this exact pair has one.
+  let SHARE = {};
+  fetch(url('data/published/og/duel-pairs.json')).then(r => r.ok ? r.json() : {}).then(j => { SHARE = j.pairs || {}; }).catch(() => {});
   $('#copy').addEventListener('click', async () => {
     const st = $('#copy-status');
-    try { await navigator.clipboard.writeText(location.href); st.textContent = 'Link copied.'; }
+    const pair = SHARE[`${S.a}-${S.b}`];
+    const link = pair ? new URL(url(pair), location.href).href : location.href;
+    try { await navigator.clipboard.writeText(link); st.textContent = 'Link copied.'; }
     catch { st.textContent = 'Copy the address bar to share this duel.'; }
     setTimeout(() => { st.textContent = ''; }, 3000);
   });

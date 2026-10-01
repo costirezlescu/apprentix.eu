@@ -5,6 +5,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Apprentix — European apprenticeship and VET data, made searchable</title>
 <meta name="description" content="An independent project republishing public European data on apprenticeship and vocational education in a form you can search, filter and compare.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Apprentix">
+<meta property="og:locale" content="en_GB">
+<meta property="og:title" content="Apprentix — European apprenticeship and VET data, made searchable">
+<meta property="og:description" content="An independent project republishing public European data on apprenticeship and vocational education in a form you can search, filter and compare.">
+<meta property="og:url" content="https://apprentix.eu/">
+<meta property="og:image" content="https://apprentix.eu/assets/og/site.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Apprentix: European apprenticeship and VET data, made searchable — apprenticeship schemes, statistical indicators and countries covered.">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Public+Sans:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <link rel="stylesheet" href="assets/css/site.css">
 <link rel="alternate" type="application/atom+xml" title="Apprentix data updates" href="data/feed.xml">
@@ -64,6 +76,12 @@
           <p>Schemes, outcomes, money and mobility side by side — with an honest scorecard of who is ahead on comparable measures.</p>
           <span class="start-go">Pick two countries →</span>
         </a>
+        <a class="start-card" href="pages/play.html">
+          <span class="start-kicker">Play</span>
+          <h3>Higher or lower?</h3>
+          <p>Ten quick questions: which of two countries has more apprentices in work, more training firms, more early leavers? Challenge a friend to beat your score.</p>
+          <span class="start-go">Play a round →</span>
+        </a>
         <a class="start-card" href="pages/insights.html">
           <span class="start-kicker">For decision-makers</span>
           <h3>Insights</h3>
@@ -77,6 +95,12 @@
           <span class="start-go">Ask →</span>
         </a>
       </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <section id="timelapse" class="tl-home" aria-labelledby="tl-home-title"></section>
     </div>
   </section>
 
@@ -130,6 +154,10 @@
 <footer class="site-foot">
   <div class="wrap">
     <div class="rowlinks">
+      <a href="pages/find.html">Find my apprenticeship</a>
+      <a href="pages/duel.html">Compare countries</a>
+      <a href="pages/play.html">Higher or lower?</a>
+      <a href="pages/glossary.html">Glossary</a>
       <a href="pages/about.html">About</a>
       <a href="pages/data.html">Data &amp; sources</a>
       <a href="https://github.com/costirezlescu/apprentix.eu">Source code</a>
@@ -143,6 +171,8 @@
 <script type="module">
   import { mountDidYouKnow } from './assets/js/facts.js';
   import { mountChanges } from './assets/js/changes.js';
+  import { mountHomeMap } from './assets/js/home-map.js';
+  mountHomeMap(document.getElementById('timelapse'));
   mountDidYouKnow(document.getElementById('dyk'));
   mountChanges(document.getElementById('changes'), { limit: 5 });
 </script>
@@ -199,5 +229,6 @@
   }
 </script>
 
+<script type="module">import { initGlossary } from './assets/js/glossary.js'; initGlossary();</script>
 </body>
 </html>
