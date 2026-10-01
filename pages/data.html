@@ -871,6 +871,12 @@
 
   <section class="section">
     <div class="wrap">
+      <section id="changes" hidden></section>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
       <h2>Every source we track</h2>
       <p class="sub">Automated sources are fetched weekly by the <a href="https://github.com/costirezlescu/apprentix.eu/tree/main/pipeline">data pipeline</a>; changes reach the site only after review. Others are curated by hand or not yet integrated — with the reason.</p>
       <div class="table-wrap"><table class="data" id="catalogue"></table></div>
@@ -963,5 +969,9 @@
       </tr>`).join('')}</tbody>`;
 </script>
 
+<script type="module">
+  import { mountChanges } from '../assets/js/changes.js';
+  mountChanges(document.getElementById('changes'), { limit: 8, earlier: 8 });
+</script>
 </body>
 </html>

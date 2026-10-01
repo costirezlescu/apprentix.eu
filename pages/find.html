@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Find my apprenticeship — Apprentix</title>
+<meta name="description" content="Answer up to seven short questions and see which of Europe's 34 apprenticeship schemes fit you best — by country, age, pay, access to university, time at the company, level and contract. Based on Cedefop's scheme fiches.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Public+Sans:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="../assets/css/site.css">
+<link rel="alternate" type="application/atom+xml" title="Apprentix data updates" href="../data/feed.xml">
+</head>
+<body data-root="../">
+
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="indep">
+  <div class="wrap">
+    <span class="tag">Independent project</span>
+    <p>Not affiliated with, or endorsed by, any European institution or agency. Built on publicly available data.</p>
+  </div>
+</div>
+
+<header class="site-head">
+  <div class="wrap head-inner">
+    <a class="brand" href="../">Apprenti<span class="x">x</span><span class="eu">.eu</span></a>
+    <nav class="site-nav">
+      <a href="../">Datasets</a>
+      <a href="indicators.html">Indicators</a>
+      <a href="insights.html">Insights</a>
+      <a href="countries/">Countries</a>
+      <a href="ask.html">Ask</a>
+      <a href="about.html">About</a>
+      <a href="data.html">Data &amp; sources</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="wrap find-page">
+  <div class="mono">Apprenticeship schemes</div>
+  <h1 class="find-title">Find my apprenticeship</h1>
+  <p class="find-lede">Seven short questions, all optional. We'll show which of Europe's apprenticeship schemes fit you best, and why.
+    For young people and adults thinking about an apprenticeship — and for the parents and teachers helping them.</p>
+
+  <noscript><p class="find-note">This quiz needs JavaScript. You can still <a href="explore.html?dataset=apprenticeship-schemes">browse every scheme in the explorer</a>.</p></noscript>
+
+  <section id="quiz" class="find-quiz panel" aria-labelledby="q-title" hidden>
+    <ol class="find-dots" id="dots" aria-label="Questions"></ol>
+    <p class="find-count mono" id="q-count" aria-live="polite"></p>
+    <form id="quiz-form" novalidate>
+      <fieldset class="find-step" id="step">
+        <legend id="q-title" class="find-q" tabindex="-1"></legend>
+        <p class="find-help" id="q-help"></p>
+        <div id="q-options" class="find-options"></div>
+      </fieldset>
+      <div class="find-nav">
+        <button type="button" class="btn" id="back">Back</button>
+        <span class="find-spacer"></span>
+        <button type="button" class="btn find-skip" id="skip">Skip to results</button>
+        <button type="submit" class="btn primary" id="next">Next</button>
+      </div>
+    </form>
+  </section>
+
+  <section id="results" class="find-results" aria-labelledby="r-title" hidden>
+    <div class="find-res-head">
+      <h2 id="r-title" class="find-r-title" tabindex="-1">Your matches</h2>
+      <p class="find-summary" id="r-summary"></p>
+      <div class="chips find-answers" id="r-answers" aria-label="Your answers — select one to change it"></div>
+      <div class="find-actions">
+        <button type="button" class="btn" id="edit">Change answers</button>
+        <button type="button" class="btn" id="restart">Start again</button>
+        <button type="button" class="btn primary" id="share">Copy link to these results</button>
+        <span class="find-status" id="share-status" role="status"></span>
+      </div>
+      <p class="find-sharehint">The link holds your answers — nothing is stored or tracked.</p>
+    </div>
+
+    <p class="find-note" id="r-note">This is a guide based on Cedefop's scheme descriptions, not advice; rules vary by occupation and region — check the official fiche and national authorities.</p>
+
+    <ol class="find-list" id="r-list"></ol>
+    <div id="r-excluded"></div>
+
+    <p class="provenance find-prov">How matches are worked out: each answer is compared with the <strong>coded answers</strong> national experts gave in Cedefop's 2026 scheme fiches
+      (<a href="https://www.cedefop.europa.eu/en/tools/apprenticeship-schemes" target="_blank" rel="noopener">Cedefop — European database on apprenticeship schemes</a>, read on 2026-10-01),
+      cross-checked with Apprentix's hand-checked summaries (time at work, pay, level). Country, "I need a wage" and "university access is a must" leave schemes out; every other answer only changes the order.
+      See every coded answer side by side in <a href="compare.html">Compare every scheme</a>. Reproduced with acknowledgement under Cedefop's legal notice.</p>
+  </section>
+
+  <p id="loading" class="find-loading">Loading…</p>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="rowlinks">
+      <a href="../">Datasets</a>
+      <a href="indicators.html">Indicators</a>
+      <a href="insights.html">Insights</a>
+      <a href="countries/">Countries</a>
+      <a href="ask.html">Ask</a>
+      <a href="about.html">About</a>
+      <a href="data.html">Data &amp; sources</a>
+      <a href="../data/feed.xml">Updates feed (Atom)</a>
+    </div>
+    <p><strong>Apprentix</strong> is an independent, non-commercial project. It republishes publicly available information; it does not create or verify it. Each indicator names its publisher, which remains authoritative.</p>
+  </div>
+</footer>
+
+<script type="module" src="../assets/js/find.js"></script>
+
+</body>
+</html>

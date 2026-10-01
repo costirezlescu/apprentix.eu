@@ -250,4 +250,10 @@ clear.addEventListener('click', () => {
     form.prepend(off);
   }
   setBusy(false);
+  // ?q=<question> (e.g. from the Find quiz) prefills the box; the visitor still presses Ask.
+  const pre = new URLSearchParams(location.search).get('q');
+  if (pre) {
+    input.value = pre.trim().slice(0, MAX_CHARS);
+    if (endpoint) input.focus();
+  }
 })();

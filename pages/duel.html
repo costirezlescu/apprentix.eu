@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Country vs country — Apprentix</title>
+<meta name="description" content="Put two European countries side by side: apprenticeship schemes, key VET figures against the EU-27, policies, Erasmus+ funding, qualifications and national statistics — each figure with its source.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Public+Sans:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="../assets/css/site.css">
+<link rel="alternate" type="application/atom+xml" title="Apprentix data updates" href="../data/feed.xml">
+</head>
+<body data-root="../">
+
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="indep">
+  <div class="wrap">
+    <span class="tag">Independent project</span>
+    <p>Not affiliated with, or endorsed by, any European institution or agency. Built on publicly available data.</p>
+  </div>
+</div>
+
+<header class="site-head">
+  <div class="wrap head-inner">
+    <a class="brand" href="../">Apprenti<span class="x">x</span><span class="eu">.eu</span></a>
+    <nav class="site-nav">
+      <a href="../">Datasets</a>
+      <a href="indicators.html">Indicators</a>
+      <a href="insights.html">Insights</a>
+      <a href="countries/">Countries</a>
+      <a href="ask.html">Ask</a>
+      <a href="about.html">About</a>
+      <a href="data.html">Data &amp; sources</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="wrap duel">
+  <div class="mono duel-kicker">Country vs country</div>
+  <h1 class="duel-title">Compare two countries</h1>
+  <p class="duel-lede">Pick two countries — or the EU-27 — to set their apprenticeship schemes, key figures, policies, funding and qualifications side by side. Every figure links to its source indicator.</p>
+
+  <form class="duel-pickers" id="pickers" role="search" aria-label="Choose two countries" autocomplete="off">
+    <div class="duel-pick duel-pick-a">
+      <label class="duel-pick-label" for="pick-a"><span class="duel-key duel-key-a" aria-hidden="true"></span>First country</label>
+      <div class="duel-combo" data-side="a">
+        <span class="duel-combo-flag" aria-hidden="true"></span>
+        <input id="pick-a" type="text" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="list-a" spellcheck="false">
+        <ul class="duel-list" id="list-a" role="listbox" aria-label="Countries" hidden></ul>
+      </div>
+    </div>
+    <button type="button" class="btn duel-swap" id="swap" aria-label="Swap the two countries" title="Swap"><span aria-hidden="true">⇄</span></button>
+    <div class="duel-pick duel-pick-b">
+      <label class="duel-pick-label" for="pick-b"><span class="duel-key duel-key-b" aria-hidden="true"></span>Second country</label>
+      <div class="duel-combo" data-side="b">
+        <span class="duel-combo-flag" aria-hidden="true"></span>
+        <input id="pick-b" type="text" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="list-b" spellcheck="false">
+        <ul class="duel-list" id="list-b" role="listbox" aria-label="Countries" hidden></ul>
+      </div>
+    </div>
+    <div class="duel-actions">
+      <button type="button" class="btn" id="random">Random duel</button>
+      <button type="button" class="btn" id="copy" aria-describedby="copy-status">Copy link</button>
+      <span class="duel-status" id="copy-status" role="status" aria-live="polite"></span>
+    </div>
+  </form>
+
+  <p class="duel-sr" id="duel-announce" role="status" aria-live="polite"></p>
+  <div id="duel" aria-busy="true">
+    <p class="duel-loading">Loading…</p>
+  </div>
+
+  <noscript><p class="duel-loading">This comparison needs JavaScript. Each country also has a static profile page: <a href="countries/">all countries</a>.</p></noscript>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="rowlinks">
+      <a href="../">Datasets</a>
+      <a href="indicators.html">Indicators</a>
+      <a href="insights.html">Insights</a>
+      <a href="countries/">Countries</a>
+      <a href="ask.html">Ask</a>
+      <a href="about.html">About</a>
+      <a href="data.html">Data &amp; sources</a>
+      <a href="../data/feed.xml">Updates feed (Atom)</a>
+    </div>
+    <p><strong>Apprentix</strong> is an independent, non-commercial project. It republishes publicly available information; it does not create or verify it. Each indicator names its publisher, which remains authoritative.</p>
+  </div>
+</footer>
+
+<script type="module" src="../assets/js/duel.js"></script>
+
+</body>
+</html>

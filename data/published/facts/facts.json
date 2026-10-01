@@ -1,0 +1,1285 @@
+{
+  "description": "Short facts computed by Apprentix from its published data (pipeline/facts.py). Recomputed on every build.",
+  "count": 103,
+  "items": [
+    {
+      "id": "ch-dual-share",
+      "text": "In Switzerland, 89% of learners in initial VET train in a company as well as at school — only a minority are in full-time VET schools (2025).",
+      "highlight": "89%",
+      "kind": "design",
+      "countries": [
+        "CH"
+      ],
+      "link": "pages/indicators.html?id=ch-bfs-learners-vet-form",
+      "source": "Swiss Federal Statistical Office",
+      "weight": 2
+    },
+    {
+      "id": "cove-coordinators",
+      "text": "Greece coordinates 17 of the 73 Erasmus+ Centres of Vocational Excellence selected since 2021 — more than any other country.",
+      "highlight": "17 of the 73",
+      "kind": "mobility",
+      "countries": [
+        "EL"
+      ],
+      "link": "pages/explore.html?dataset=cove-projects&f.coordinator_country=Greece",
+      "source": "European Commission (Erasmus+)",
+      "weight": 3
+    },
+    {
+      "id": "cove-largest",
+      "text": "The largest Centre of Vocational Excellence, WIN4SMEs, brings together 84 organisations from 16 countries.",
+      "highlight": "84 organisations",
+      "kind": "mobility",
+      "countries": [
+        "DE"
+      ],
+      "link": "pages/explore.html?dataset=cove-projects&open=cove-2023-win4smes",
+      "source": "European Commission (Erasmus+)",
+      "weight": 1
+    },
+    {
+      "id": "eqf-high-share",
+      "text": "13 of 41 apprenticeship and craft qualifications in Europe's national frameworks sit at EQF 5 or above — beyond upper-secondary level.",
+      "highlight": "13 of 41",
+      "kind": "qualification",
+      "countries": [],
+      "link": "pages/explore.html?dataset=nqf-qualification-levels&f.apprenticeship_or_craft=Yes",
+      "source": "Cedefop",
+      "weight": 2
+    },
+    {
+      "id": "eqf-master-craft",
+      "text": "The same master craftsperson certificate sits at EQF 6 in Austria and Germany, but at EQF 4 in Montenegro and Slovenia.",
+      "highlight": "EQF 6",
+      "kind": "qualification",
+      "countries": [
+        "AT",
+        "DE",
+        "ME",
+        "SI"
+      ],
+      "link": "pages/insights.html#master-craft-levels",
+      "source": "Cedefop",
+      "weight": 3
+    },
+    {
+      "id": "eqf-span-ch",
+      "text": "In Switzerland, one apprenticeship qualification — “Federal VET diploma” — sits at both EQF 4 and EQF 5.",
+      "highlight": "both EQF 4 and EQF 5",
+      "kind": "qualification",
+      "countries": [
+        "CH"
+      ],
+      "link": "pages/explore.html?dataset=nqf-qualification-levels&f.country=Switzerland&f.apprenticeship_or_craft=Yes",
+      "source": "Cedefop",
+      "weight": 1
+    },
+    {
+      "id": "eqf-span-li",
+      "text": "In Liechtenstein, one apprenticeship qualification — “VET diploma” — sits at both EQF 4 and EQF 5.",
+      "highlight": "both EQF 4 and EQF 5",
+      "kind": "qualification",
+      "countries": [
+        "LI"
+      ],
+      "link": "pages/explore.html?dataset=nqf-qualification-levels&f.country=Liechtenstein&f.apprenticeship_or_craft=Yes",
+      "source": "Cedefop",
+      "weight": 1
+    },
+    {
+      "id": "eqf-span-ro",
+      "text": "In Romania, one apprenticeship qualification — “Certificate of qualification” — sits at 4 different EQF levels, from EQF 1 to EQF 4.",
+      "highlight": "4 different EQF levels",
+      "kind": "qualification",
+      "countries": [
+        "RO"
+      ],
+      "link": "pages/explore.html?dataset=nqf-qualification-levels&f.country=Romania&f.apprenticeship_or_craft=Yes",
+      "source": "Cedefop",
+      "weight": 2
+    },
+    {
+      "id": "erasmus-accredited-top",
+      "text": "Germany has the most Erasmus-accredited VET organisations — 692, ahead of France with 516.",
+      "highlight": "692",
+      "kind": "mobility",
+      "countries": [
+        "DE",
+        "FR"
+      ],
+      "link": "pages/explore.html?dataset=erasmus-vet-organisations&f.country=Germany&f.status=Accredited",
+      "source": "European Commission (Erasmus+)",
+      "weight": 1
+    },
+    {
+      "id": "erasmus-accredited-total",
+      "text": "3,991 schools, companies and other organisations hold an Erasmus accreditation to send VET learners and staff abroad every year.",
+      "highlight": "3,991",
+      "kind": "mobility",
+      "countries": [],
+      "link": "pages/explore.html?dataset=erasmus-vet-organisations&f.status=Accredited",
+      "source": "European Commission (Erasmus+)",
+      "weight": 1
+    },
+    {
+      "id": "erasmus-grant-growth",
+      "text": "Erasmus+ grants for VET mobility reached €833 million in 2025 — 4.0 times the €208 million of 2014.",
+      "highlight": "€833 million",
+      "kind": "mobility",
+      "countries": [
+        "EU27"
+      ],
+      "link": "pages/indicators.html?id=erasmus-ka1-vet-grant",
+      "source": "European Commission (Erasmus+)",
+      "weight": 3
+    },
+    {
+      "id": "erasmus-per-pupil",
+      "text": "Erasmus+ VET mobility grants in 2025 came to €668 per upper-secondary VET pupil in Cyprus, but €52 in the Netherlands.",
+      "highlight": "€668",
+      "kind": "mobility",
+      "countries": [
+        "CY",
+        "NL"
+      ],
+      "link": "pages/indicators.html?id=erasmus-ka1-vet-grant&geo=CY,NL",
+      "source": "European Commission (Erasmus+)",
+      "weight": 3
+    },
+    {
+      "id": "erasmus-projects",
+      "text": "6,890 Erasmus+ projects sending VET learners and staff abroad were funded in 2025, up from 2,703 in 2014.",
+      "highlight": "6,890",
+      "kind": "mobility",
+      "countries": [
+        "EU27"
+      ],
+      "link": "pages/indicators.html?id=erasmus-ka1-vet-projects",
+      "source": "European Commission (Erasmus+)",
+      "weight": 1
+    },
+    {
+      "id": "finance-levy-countries",
+      "text": "Only 7 of 21 countries studied by Cedefop use levy-financed training funds for apprenticeship: Germany, Denmark, France, Hungary, Ireland, the Netherlands and the UK (2016–17).",
+      "highlight": "7 of 21",
+      "kind": "policy",
+      "countries": [
+        "DE",
+        "DK",
+        "FR",
+        "HU",
+        "IE",
+        "NL",
+        "UK"
+      ],
+      "link": "pages/explore.html?dataset=financing-instruments&f.type=Training%20funds",
+      "source": "Cedefop",
+      "weight": 2
+    },
+    {
+      "id": "finance-most",
+      "text": "The United Kingdom has the most apprenticeship financing instruments in Cedefop's database — 7 instruments of 55 (2016–17).",
+      "highlight": "7 instruments",
+      "kind": "policy",
+      "countries": [
+        "UK"
+      ],
+      "link": "pages/explore.html?dataset=financing-instruments&f.country=United%20Kingdom",
+      "source": "Cedefop",
+      "weight": 1
+    },
+    {
+      "id": "finance-oldest",
+      "text": "The oldest instrument in Cedefop's apprenticeship financing database is Germany's “Corporate Tax”, in place since 1920.",
+      "highlight": "1920",
+      "kind": "policy",
+      "countries": [
+        "DE"
+      ],
+      "link": "pages/explore.html?dataset=financing-instruments&open=fi-corporate-tax",
+      "source": "Cedefop",
+      "weight": 3
+    },
+    {
+      "id": "finance-oldest-levy",
+      "text": "France's “Apprenticeship tax”, a levy on companies that funds apprenticeship, dates back to 1925.",
+      "highlight": "1925",
+      "kind": "policy",
+      "countries": [
+        "FR"
+      ],
+      "link": "pages/explore.html?dataset=financing-instruments&open=fi-apprenticeship-tax",
+      "source": "Cedefop",
+      "weight": 3
+    },
+    {
+      "id": "fr-higher-education-share",
+      "text": "62% of France's apprentices now prepare a higher-education diploma (end of 2025), up from 39% at the end of 2017.",
+      "highlight": "62%",
+      "kind": "trend",
+      "countries": [
+        "FR"
+      ],
+      "link": "pages/indicators.html?id=fr-dares-apprentices-stock&dim_scope=HIGHER",
+      "source": "DARES (France)",
+      "weight": 3
+    },
+    {
+      "id": "gender-ch-bfs-entrants-vet",
+      "text": "Women make up only 42% of entrants to dual VET in Switzerland (2025).",
+      "highlight": "42%",
+      "kind": "contrast",
+      "countries": [
+        "CH"
+      ],
+      "link": "pages/indicators.html?id=ch-bfs-entrants-vet",
+      "source": "Swiss Federal Statistical Office",
+      "weight": 2
+    },
+    {
+      "id": "gender-eu-vet-employment",
+      "text": "Across the EU, young men with a recent VET qualification are 3.3 points more likely to be in work than young women (2025), against 9.7 points after general education.",
+      "highlight": "3.3 points",
+      "kind": "contrast",
+      "countries": [
+        "EU27"
+      ],
+      "link": "pages/indicators.html?id=eurostat-edat_lfse_24-vet",
+      "source": "Eurostat",
+      "weight": 1
+    },
+    {
+      "id": "gender-ie-cso-qualified-apprentices",
+      "text": "Only 120 of the 2,685 apprentices who qualified in Ireland in 2020 were women.",
+      "highlight": "120 of the 2,685",
+      "kind": "contrast",
+      "countries": [
+        "IE"
+      ],
+      "link": "pages/indicators.html?id=ie-cso-qualified-apprentices",
+      "source": "CSO Ireland",
+      "weight": 3
+    },
+    {
+      "id": "gender-no-ssb-apprentices",
+      "text": "Women make up only 30% of apprentices in Norway (2025).",
+      "highlight": "30%",
+      "kind": "contrast",
+      "countries": [
+        "NO"
+      ],
+      "link": "pages/indicators.html?id=no-ssb-apprentices",
+      "source": "Statistics Norway",
+      "weight": 2
+    },
+    {
+      "id": "gender-vet-employment-max",
+      "text": "In Norway, young men with a recent VET qualification are 22.7 points more likely to be in work than young women — the widest gap in Europe (2025).",
+      "highlight": "22.7 points",
+      "kind": "contrast",
+      "countries": [
+        "NO"
+      ],
+      "link": "pages/indicators.html?id=eurostat-edat_lfse_24-vet&geo=NO&dim_sex=F",
+      "source": "Eurostat",
+      "weight": 3
+    },
+    {
+      "id": "gender-vet-employment-women",
+      "text": "In Finland, young women with a recent VET qualification are 5.8 points more likely to be in work than young men (2025).",
+      "highlight": "5.8 points",
+      "kind": "contrast",
+      "countries": [
+        "FI"
+      ],
+      "link": "pages/indicators.html?id=eurostat-edat_lfse_24-vet&geo=FI&dim_sex=F",
+      "source": "Eurostat",
+      "weight": 2
+    },
+    {
+      "id": "ie-apprentice-employment",
+      "text": "Two years after qualifying, 92% of Irish apprentices who finished in 2020 were in work — against 53% of those who finished in 2010.",
+      "highlight": "92%",
+      "kind": "outcome",
+      "countries": [
+        "IE"
+      ],
+      "link": "pages/indicators.html?id=ie-cso-apprentice-employment-rate",
+      "source": "CSO Ireland",
+      "weight": 2
+    },
+    {
+      "id": "policy-discontinued",
+      "text": "Only 21 of 408 apprenticeship-related policies reported to Cedefop since 2015 have been discontinued; most are being implemented or completed.",
+      "highlight": "21 of 408",
+      "kind": "policy",
+      "countries": [],
+      "link": "pages/explore.html?dataset=vet-policy-timeline&f.concerns_apprenticeship=Yes&f.latest_stage=Discontinued",
+      "source": "Cedefop & ReferNet",
+      "weight": 1
+    },
+    {
+      "id": "policy-latest-at",
+      "text": "Most recent apprenticeship policy Cedefop lists for Austria (first reported 2022): “Digitisation of training design and administration in dual VET”.",
+      "highlight": "Digitisation of training design and administration in dual VET",
+      "kind": "policy",
+      "countries": [
+        "AT"
+      ],
+      "link": "pages/explore.html?dataset=vet-policy-timeline&open=tl-44482",
+      "source": "Cedefop & ReferNet",
+      "weight": 1
+    },
+    {
+      "id": "policy-latest-be",
+      "text": "Most recent apprenticeship policy Cedefop lists for Belgium (first reported 2020): “Financial incentives for apprentices”.",
+      "highlight": "Financial incentives for apprentices",
+      "kind": "policy",
+      "countries": [
+        "BE"
+      ],
+      "link": "pages/explore.html?dataset=vet-policy-timeline&open=tl-42149",
+      "source": "Cedefop & ReferNet",
+      "weight": 1
+    },
+    {
+      "id": "policy-latest-bg",
+      "text": "Most recent apprenticeship policy Cedefop lists for Bulgaria (first reported 2023): “Strategic vision for the development of dual VET (DVET)-2030”.",
+      "highlight": "Strategic vision for the development of dual VET (DVET)-2030",
+      "kind": "policy",
+      "countries": [
+        "BG"
+      ],
+      "link": "pages/explore.html?dataset=vet-policy-timeline&open=tl-48669",
+      "source": "Cedefop & ReferNet",
+      "weight": 1
+    },
+    {
+      "id": "policy-latest-cy",
+      "text": "Most recent apprenticeship policy Cedefop lists for Cyprus (first reported 2020): “Work-based learning in the public sector”.",
+      "highlight": "Work-based learning in the public sector",
+      "kind": "policy",
+      "countries": [
+        "CY"
+      ],
+      "link": "pages/explore.html?dataset=vet-policy-timeline&open=tl-38947",
+      "source": "Cedefop & ReferNet",
+      "weight": 1
+    },
+    {
+      "id": "policy-latest-de",
+      "text": "Most recent apprenticeship policy Cedefop lists for Germany (first reported 2021): “Support for inter-company apprenticeship training (ÜLU)”.",
+      "highlight": "Support for inter-company apprenticeship training (ÜLU)",
+      "kind": "policy",
+      "countries": [
+        "DE"
+      ],
+      "link": "pages/explore.html?dataset=vet-policy-timeline&open=tl-41830",
+      "source": "Cedefop & ReferNet",
+      "weight": 1
+    },
+    {
+      "id": "policy-latest-dk",
+      "text": "Most recent apprenticeship policy Cedefop lists for Denmark (first reported 2025): “The Junior apprenticeship scheme”.",
+      "highlight": "The Junior apprenticeship scheme",
+      "kind": "policy",
+      "countries": [
+        "DK"
+      ],
+      "link": "pages/explore.html?dataset=vet-policy-timeline&open=tl-49959",
+      "source": "Cedefop & ReferNet",
+      "weight": 1
+    },
+    {
+      "id": "policy-latest-ee",
+      "text": "Most recent apprenticeship policy Cedefop lists for Estonia (first reported 2022): “Developing work-based learning and practical training”.",
+      "highlight": "Developing work-based learning and practical training",
+      "kind": "policy",
+      "countries": [
+        "EE"
+      ],
+      "link": "pages/explore.html?dataset=vet-policy-timeline&open=tl-44315",
+      "source": "Cedefop & ReferNet",
+      "weight": 1
+    },
+    {
+      "id": "policy-latest-no",
+      "text": "Most recent apprenticeship policy Cedefop lists for Norway (first reported 2021): “Apprenticeship portal”.",
+      "highlight": "Apprenticeship portal",
+      "kind": "policy",
+      "countries": [
+        "NO"
+      ],
+      "link": "pages/explore.html?dataset=vet-policy-timeline&open=tl-41548",
+      "source": "Cedefop & ReferNet",
+      "weight": 1
+    },
+    {
+      "id": "policy-latest-pt",
+      "text": "Most recent apprenticeship policy Cedefop lists for Portugal (first reported 2022): “Apprenticeship programmes”.",
+      "highlight": "Apprenticeship programmes",
+      "kind": "policy",
+      "countries": [
+        "PT"
+      ],
+      "link": "pages/explore.html?dataset=vet-policy-timeline&open=tl-43332",
+      "source": "Cedefop & ReferNet",
+      "weight": 1
+    },
+    {
+      "id": "policy-most",
+      "text": "Cedefop lists 32 apprenticeship-related VET policies for Austria since 2015, more than for any other country (Germany: 29).",
+      "highlight": "32",
+      "kind": "policy",
+      "countries": [
+        "AT",
+        "DE"
+      ],
+      "link": "pages/explore.html?dataset=vet-policy-timeline&f.country=Austria&f.concerns_apprenticeship=Yes",
+      "source": "Cedefop & ReferNet",
+      "weight": 2
+    },
+    {
+      "id": "policy-share",
+      "text": "408 of 1,184 national VET policies tracked by Cedefop and ReferNet since 2015 concern apprenticeship or work-based learning.",
+      "highlight": "408 of 1,184",
+      "kind": "policy",
+      "countries": [],
+      "link": "pages/explore.html?dataset=vet-policy-timeline&f.concerns_apprenticeship=Yes",
+      "source": "Cedefop & ReferNet",
+      "weight": 1
+    },
+    {
+      "id": "rebound-ie-cso-qualified-apprentices",
+      "text": "Apprentices qualifying in Ireland rose 2.2-fold from a low of 1,220 in 2016 to 2,685 in 2020.",
+      "highlight": "2.2-fold",
+      "kind": "trend",
+      "countries": [
+        "IE"
+      ],
+      "link": "pages/indicators.html?id=ie-cso-qualified-apprentices",
+      "source": "CSO Ireland",
+      "weight": 2
+    },
+    {
+      "id": "rebound-no-ssb-trade-certificates",
+      "text": "Trade and journeyman examinations taken in Norway rose 1.8-fold from a low of 11,487 in 2003 to 20,834 in 2024.",
+      "highlight": "1.8-fold",
+      "kind": "trend",
+      "countries": [
+        "NO"
+      ],
+      "link": "pages/indicators.html?id=no-ssb-trade-certificates",
+      "source": "Statistics Norway",
+      "weight": 2
+    },
+    {
+      "id": "record-no-ssb-apprentices",
+      "text": "Apprentices in Norway reached 52,440 in 2025, the highest since the series began in 2006.",
+      "highlight": "52,440",
+      "kind": "record",
+      "countries": [
+        "NO"
+      ],
+      "link": "pages/indicators.html?id=no-ssb-apprentices",
+      "source": "Statistics Norway",
+      "weight": 2
+    },
+    {
+      "id": "record-no-ssb-new-apprentices",
+      "text": "New apprentices in Norway reached 26,717 in 2025, the highest since the series began in 2003.",
+      "highlight": "26,717",
+      "kind": "record",
+      "countries": [
+        "NO"
+      ],
+      "link": "pages/indicators.html?id=no-ssb-new-apprentices",
+      "source": "Statistics Norway",
+      "weight": 2
+    },
+    {
+      "id": "record-no-ssb-trade-certificates",
+      "text": "Trade and journeyman examinations taken in Norway reached 20,834 in 2024, the highest since the series began in 1998.",
+      "highlight": "20,834",
+      "kind": "record",
+      "countries": [
+        "NO"
+      ],
+      "link": "pages/indicators.html?id=no-ssb-trade-certificates",
+      "source": "Statistics Norway",
+      "weight": 2
+    },
+    {
+      "id": "scheme-access-to-he-no",
+      "text": "In 10 of 34 schemes the apprenticeship qualification does not give direct access to higher education.",
+      "highlight": "10 of 34",
+      "kind": "design",
+      "countries": [],
+      "link": "pages/compare.html?q=q_access_to_he",
+      "source": "Cedefop",
+      "weight": 1
+    },
+    {
+      "id": "scheme-age-limits-minimum-and-maximum",
+      "text": "12 of 34 apprenticeship schemes set a maximum age in law as well as a minimum.",
+      "highlight": "12 of 34",
+      "kind": "design",
+      "countries": [],
+      "link": "pages/compare.html?q=q_age_limits",
+      "source": "Cedefop",
+      "weight": 1
+    },
+    {
+      "id": "scheme-contract-type-formal-agreement-not-a-contract",
+      "text": "In 7 of 34 schemes apprentices sign only a training agreement, not an employment or apprenticeship contract.",
+      "highlight": "7 of 34",
+      "kind": "design",
+      "countries": [
+        "CZ",
+        "HR",
+        "MT",
+        "PT",
+        "RO",
+        "SI",
+        "SK"
+      ],
+      "link": "pages/compare.html?q=q_contract_type",
+      "source": "Cedefop",
+      "weight": 2
+    },
+    {
+      "id": "scheme-financial-incentives-none",
+      "text": "Only the schemes in Cyprus and Portugal offer companies no financial incentive to take apprentices.",
+      "highlight": "Cyprus and Portugal",
+      "kind": "design",
+      "countries": [
+        "CY",
+        "PT"
+      ],
+      "link": "pages/compare.html?q=q_financial_incentives",
+      "source": "Cedefop",
+      "weight": 3
+    },
+    {
+      "id": "scheme-introduced-after-2012",
+      "text": "10 of 34 apprenticeship schemes in Europe were introduced after 2012; 17 date from before 2000.",
+      "highlight": "10 of 34",
+      "kind": "design",
+      "countries": [],
+      "link": "pages/compare.html?q=q_introduced",
+      "source": "Cedefop",
+      "weight": 2
+    },
+    {
+      "id": "scheme-learner-status-employee",
+      "text": "Cedefop codes apprentices as employees in only 5 of 34 schemes; in 25 they have a specific apprentice status.",
+      "highlight": "5 of 34",
+      "kind": "design",
+      "countries": [
+        "ES",
+        "FR",
+        "IE",
+        "LV",
+        "PL"
+      ],
+      "link": "pages/compare.html?q=q_learner_status",
+      "source": "Cedefop",
+      "weight": 2
+    },
+    {
+      "id": "scheme-learner-status-student",
+      "text": "In 6 of 34 apprenticeship schemes the apprentice is legally only a student, not an employee.",
+      "highlight": "6 of 34",
+      "kind": "design",
+      "countries": [
+        "CZ",
+        "HR",
+        "PT",
+        "RO",
+        "SI",
+        "SK"
+      ],
+      "link": "pages/compare.html?q=q_learner_status",
+      "source": "Cedefop",
+      "weight": 2
+    },
+    {
+      "id": "scheme-min-workplace-share-50-or-more",
+      "text": "In 26 of 34 schemes apprentices must spend at least half of their training time at the workplace.",
+      "highlight": "26 of 34",
+      "kind": "design",
+      "countries": [],
+      "link": "pages/compare.html?q=q_min_workplace_share",
+      "source": "Cedefop",
+      "weight": 1
+    },
+    {
+      "id": "scheme-min-workplace-share-no-minimum",
+      "text": "Only the schemes in Czechia, Finland and Iceland set no minimum share of time at the workplace.",
+      "highlight": "Czechia, Finland and Iceland",
+      "kind": "design",
+      "countries": [
+        "CZ",
+        "FI",
+        "IS"
+      ],
+      "link": "pages/compare.html?q=q_min_workplace_share",
+      "source": "Cedefop",
+      "weight": 2
+    },
+    {
+      "id": "scheme-origin-created-from-scratch",
+      "text": "Only 3 schemes were built from scratch: France's Professionalisation contract, Greece's Post-secondary apprenticeship year and Italy's Type 3: higher education apprenticeship.",
+      "highlight": "3 schemes",
+      "kind": "design",
+      "countries": [
+        "EL",
+        "FR",
+        "IT"
+      ],
+      "link": "pages/compare.html?q=q_origin",
+      "source": "Cedefop",
+      "weight": 2
+    },
+    {
+      "id": "scheme-pay-covers-school-yes",
+      "text": "In 16 of 34 schemes apprentices are also paid for their time at school; in 18 only company time is paid.",
+      "highlight": "16 of 34",
+      "kind": "design",
+      "countries": [],
+      "link": "pages/compare.html?q=q_pay_covers_school",
+      "source": "Cedefop",
+      "weight": 2
+    },
+    {
+      "id": "scheme-pay-funded-by-state",
+      "text": "The state helps pay apprentices in 6 of 34 schemes; employers pay them in 33.",
+      "highlight": "6 of 34",
+      "kind": "design",
+      "countries": [
+        "EL",
+        "IE",
+        "MT",
+        "PT",
+        "SE",
+        "SK"
+      ],
+      "link": "pages/compare.html?q=q_pay_funded_by",
+      "source": "Cedefop",
+      "weight": 1
+    },
+    {
+      "id": "scheme-qualification-route-only-through-apprenticeship",
+      "text": "In only 11 of 34 schemes is apprenticeship the sole route to the qualification; elsewhere a school route leads to the same certificate.",
+      "highlight": "11 of 34",
+      "kind": "design",
+      "countries": [],
+      "link": "pages/compare.html?q=q_qualification_route",
+      "source": "Cedefop",
+      "weight": 2
+    },
+    {
+      "id": "scheme-quality-assurance-impact-or-cost-benefit-evaluation",
+      "text": "Only 5 of 34 apprenticeship schemes are checked with impact or cost–benefit evaluations, though all monitor training as it happens.",
+      "highlight": "5 of 34",
+      "kind": "design",
+      "countries": [
+        "AT",
+        "DE",
+        "ES",
+        "FR"
+      ],
+      "link": "pages/compare.html?q=q_quality_assurance",
+      "source": "Cedefop",
+      "weight": 2
+    },
+    {
+      "id": "scheme-sanctions-yes",
+      "text": "In 20 of 34 schemes companies can be sanctioned if they do not train apprentices properly.",
+      "highlight": "20 of 34",
+      "kind": "design",
+      "countries": [],
+      "link": "pages/compare.html?q=q_sanctions",
+      "source": "Cedefop",
+      "weight": 1
+    },
+    {
+      "id": "scheme-share-of-vet-over-60",
+      "text": "Only 3 of 31 apprenticeship schemes enrol more than 60% of their country's VET learners at that level.",
+      "highlight": "3 of 31",
+      "kind": "design",
+      "countries": [
+        "DE",
+        "DK",
+        "NO"
+      ],
+      "link": "pages/compare.html?q=q_share_of_vet",
+      "source": "Cedefop",
+      "weight": 2
+    },
+    {
+      "id": "scheme-training-vs-work-time-yes",
+      "text": "Only 5 of 34 schemes legally distinguish an apprentice's training time from productive work time.",
+      "highlight": "5 of 34",
+      "kind": "design",
+      "countries": [
+        "IT",
+        "LT",
+        "NO",
+        "RO"
+      ],
+      "link": "pages/compare.html?q=q_training_vs_work_time",
+      "source": "Cedefop",
+      "weight": 2
+    },
+    {
+      "id": "scheme-typical-age-over-24",
+      "text": "In 8 of 33 European apprenticeship schemes many apprentices are over 24 — apprenticeship is not only for school-leavers.",
+      "highlight": "8 of 33",
+      "kind": "design",
+      "countries": [
+        "DK",
+        "EE",
+        "FI",
+        "FR",
+        "IT",
+        "LU",
+        "PT",
+        "RO"
+      ],
+      "link": "pages/compare.html?q=q_typical_age",
+      "source": "Cedefop",
+      "weight": 3
+    },
+    {
+      "id": "scheme-wage-setting-by-law",
+      "text": "Apprentice pay is set by law in 25 of 34 schemes, and by sectoral collective agreements in 14.",
+      "highlight": "25 of 34",
+      "kind": "design",
+      "countries": [],
+      "link": "pages/compare.html?q=q_wage_setting",
+      "source": "Cedefop",
+      "weight": 1
+    },
+    {
+      "id": "scheme-written-arrangement-no",
+      "text": "Only the scheme in Czechia requires no written contract or agreement for apprentices.",
+      "highlight": "Czechia",
+      "kind": "design",
+      "countries": [
+        "CZ"
+      ],
+      "link": "pages/explore.html?dataset=apprenticeship-schemes&open=cz-dual",
+      "source": "Cedefop",
+      "weight": 3
+    },
+    {
+      "id": "spread-cedefop-kivet-1010",
+      "text": "74% of upper-secondary students in Czechia are in vocational programmes; in Cyprus, just 18% (2024).",
+      "highlight": "74%",
+      "kind": "contrast",
+      "countries": [
+        "CY",
+        "CZ"
+      ],
+      "link": "pages/indicators.html?id=cedefop-kivet-1010&geo=CZ,CY",
+      "source": "Cedefop",
+      "weight": 2
+    },
+    {
+      "id": "spread-cedefop-kivet-1030",
+      "text": "83% of staff in enterprises in Czechia took part in employer-sponsored training courses in 2020; in Greece, 12%.",
+      "highlight": "83%",
+      "kind": "contrast",
+      "countries": [
+        "CZ",
+        "EL"
+      ],
+      "link": "pages/indicators.html?id=cedefop-kivet-1030&geo=CZ,EL",
+      "source": "Cedefop",
+      "weight": 1
+    },
+    {
+      "id": "spread-cedefop-kivet-1050",
+      "text": "Adults in Sweden are 7.3 times as likely as adults in Greece to have taken part in learning in the last four weeks: 38% against 5.2% (2025).",
+      "highlight": "7.3 times",
+      "kind": "contrast",
+      "countries": [
+        "EL",
+        "SE"
+      ],
+      "link": "pages/indicators.html?id=cedefop-kivet-1050&geo=SE,EL",
+      "source": "Cedefop",
+      "weight": 2
+    },
+    {
+      "id": "spread-cedefop-kivet-1060",
+      "text": "97% of enterprises in Latvia provided training for their staff in 2020; in Romania, 18%.",
+      "highlight": "97%",
+      "kind": "contrast",
+      "countries": [
+        "LV",
+        "RO"
+      ],
+      "link": "pages/indicators.html?id=cedefop-kivet-1060&geo=LV,RO",
+      "source": "Cedefop",
+      "weight": 1
+    },
+    {
+      "id": "spread-cedefop-kivet-1070",
+      "text": "69% of girls in upper-secondary education in the Netherlands are in a vocational programme; in Cyprus, only 9.8% (2024).",
+      "highlight": "9.8%",
+      "kind": "contrast",
+      "countries": [
+        "CY",
+        "NL"
+      ],
+      "link": "pages/indicators.html?id=cedefop-kivet-1070&geo=NL,CY",
+      "source": "Cedefop",
+      "weight": 2
+    },
+    {
+      "id": "spread-cedefop-kivet-1080",
+      "text": "68% of 18–24-year-olds with a vocational qualification in Luxembourg are still in education or training; in Lithuania, 16% (2025).",
+      "highlight": "68%",
+      "kind": "contrast",
+      "countries": [
+        "LT",
+        "LU"
+      ],
+      "link": "pages/indicators.html?id=cedefop-kivet-1080&geo=LU,LT",
+      "source": "Cedefop",
+      "weight": 2
+    },
+    {
+      "id": "spread-cedefop-kivet-2010",
+      "text": "Belgium spends 0.95% of GDP on initial VET, 5.0 times the share in Malta (0.19%, 2023).",
+      "highlight": "5.0 times",
+      "kind": "contrast",
+      "countries": [
+        "BE",
+        "MT"
+      ],
+      "link": "pages/indicators.html?id=cedefop-kivet-2010&geo=BE,MT",
+      "source": "Cedefop",
+      "weight": 2
+    },
+    {
+      "id": "spread-cedefop-kivet-2025",
+      "text": "Public spending per initial-VET student is 6.3 times higher in Cyprus than in Bulgaria (2023, adjusted for price levels).",
+      "highlight": "6.3 times",
+      "kind": "contrast",
+      "countries": [
+        "BG",
+        "CY"
+      ],
+      "link": "pages/indicators.html?id=cedefop-kivet-2025&geo=CY,BG",
+      "source": "Cedefop",
+      "weight": 3
+    },
+    {
+      "id": "spread-cedefop-kivet-2040",
+      "text": "Initial-VET students in Luxembourg and Romania learn 2.0 foreign languages on average; in Denmark, 0.1 (2024).",
+      "highlight": "0.1",
+      "kind": "contrast",
+      "countries": [
+        "DK",
+        "LU",
+        "RO"
+      ],
+      "link": "pages/indicators.html?id=cedefop-kivet-2040&geo=LU,RO,DK",
+      "source": "Cedefop",
+      "weight": 2
+    },
+    {
+      "id": "spread-cedefop-kivet-2050",
+      "text": "66% of upper-secondary VET graduates in Estonia trained in a STEM field, against 23% in the Netherlands (2024).",
+      "highlight": "66%",
+      "kind": "contrast",
+      "countries": [
+        "EE",
+        "NL"
+      ],
+      "link": "pages/indicators.html?id=cedefop-kivet-2050&geo=EE,NL",
+      "source": "Cedefop",
+      "weight": 1
+    },
+    {
+      "id": "spread-cedefop-kivet-3010",
+      "text": "16% of 18–24-year-olds in Romania left education and training early, against 3.0% in Greece (2025).",
+      "highlight": "16%",
+      "kind": "contrast",
+      "countries": [
+        "EL",
+        "RO"
+      ],
+      "link": "pages/indicators.html?id=cedefop-kivet-3010&geo=RO,EL",
+      "source": "Cedefop",
+      "weight": 1
+    },
+    {
+      "id": "spread-cedefop-kivet-3030",
+      "text": "19% of 15–29-year-olds in Romania are neither in work nor in education or training, 3.6 times the rate in the Netherlands (5.3%, 2025).",
+      "highlight": "3.6 times",
+      "kind": "contrast",
+      "countries": [
+        "NL",
+        "RO"
+      ],
+      "link": "pages/indicators.html?id=cedefop-kivet-3030&geo=RO,NL",
+      "source": "Cedefop",
+      "weight": 1
+    },
+    {
+      "id": "spread-eurostat-edat_lfse_24-vet",
+      "text": "94% of recent VET graduates in Iceland are in work, against 58% in Greece (2025).",
+      "highlight": "94%",
+      "kind": "contrast",
+      "countries": [
+        "EL",
+        "IS"
+      ],
+      "link": "pages/indicators.html?id=eurostat-edat_lfse_24-vet&geo=IS,EL",
+      "source": "Eurostat",
+      "weight": 2
+    },
+    {
+      "id": "spread-eurostat-tps00215",
+      "text": "In Switzerland, 97% of recent VET graduates had work-based learning during their programme; in Romania, only 9.1% (2025).",
+      "highlight": "97%",
+      "kind": "contrast",
+      "countries": [
+        "CH",
+        "RO"
+      ],
+      "link": "pages/indicators.html?id=eurostat-tps00215&geo=CH,RO",
+      "source": "Eurostat",
+      "weight": 3
+    },
+    {
+      "id": "spread-eurostat-trng_cvt_34s",
+      "text": "59% of enterprises in Germany train apprentices or other initial-VET learners; in Lithuania, only 2.3% (2020).",
+      "highlight": "59%",
+      "kind": "contrast",
+      "countries": [
+        "DE",
+        "LT"
+      ],
+      "link": "pages/indicators.html?id=eurostat-trng_cvt_34s&geo=DE,LT",
+      "source": "Eurostat",
+      "weight": 3
+    },
+    {
+      "id": "spread-vet-premium",
+      "text": "Recent VET graduates in Germany are 24.4 points more likely to be employed than general-education graduates; in Ireland, 11.2 points less likely (2025).",
+      "highlight": "24.4 points",
+      "kind": "outcome",
+      "countries": [
+        "DE",
+        "IE"
+      ],
+      "link": "pages/indicators.html?id=cedefop-kivet-2090a&geo=DE,IE",
+      "source": "Cedefop",
+      "weight": 3
+    },
+    {
+      "id": "target-emp-eu",
+      "text": "The EU missed its 82% target: 80.1% of recent VET graduates were in work in 2025.",
+      "highlight": "80.1%",
+      "kind": "outcome",
+      "countries": [
+        "EU27"
+      ],
+      "link": "pages/indicators.html?id=eurostat-edat_lfse_24-vet",
+      "source": "Eurostat",
+      "weight": 2
+    },
+    {
+      "id": "target-emp-fall",
+      "text": "The share of recent VET graduates in work in Sweden fell by 5.9 points between 2021 and 2025, to 84.2% — the largest fall in the EU.",
+      "highlight": "5.9 points",
+      "kind": "trend",
+      "countries": [
+        "SE"
+      ],
+      "link": "pages/indicators.html?id=eurostat-edat_lfse_24-vet&geo=SE",
+      "source": "Eurostat",
+      "weight": 1
+    },
+    {
+      "id": "target-emp-furthest",
+      "text": "Greece is furthest from the EU's 82% employment target: 58.0% of recent VET graduates were in work in 2025.",
+      "highlight": "58.0%",
+      "kind": "record",
+      "countries": [
+        "EL"
+      ],
+      "link": "pages/indicators.html?id=eurostat-edat_lfse_24-vet&geo=EL",
+      "source": "Eurostat",
+      "weight": 2
+    },
+    {
+      "id": "target-emp-gain",
+      "text": "Portugal raised the share of recent VET graduates in work by 11.9 points between 2021 and 2025, to 75.2% — the largest gain in the EU.",
+      "highlight": "11.9 points",
+      "kind": "trend",
+      "countries": [
+        "PT"
+      ],
+      "link": "pages/indicators.html?id=eurostat-edat_lfse_24-vet&geo=PT",
+      "source": "Eurostat",
+      "weight": 2
+    },
+    {
+      "id": "target-emp-met",
+      "text": "In 2025, 8 of 26 EU countries with data met the EU target of 82% for recent VET graduates' employment; the EU as a whole reached 80.1%.",
+      "highlight": "8 of 26",
+      "kind": "record",
+      "countries": [],
+      "link": "pages/indicators.html?id=eurostat-edat_lfse_24-vet",
+      "source": "Eurostat",
+      "weight": 2
+    },
+    {
+      "id": "target-emp-top",
+      "text": "Germany leads the EU: 91.5% of its recent VET graduates were in work in 2025, against an EU target of 82%.",
+      "highlight": "91.5%",
+      "kind": "record",
+      "countries": [
+        "DE"
+      ],
+      "link": "pages/indicators.html?id=eurostat-edat_lfse_24-vet&geo=DE",
+      "source": "Eurostat",
+      "weight": 1
+    },
+    {
+      "id": "target-wbl-eu",
+      "text": "The EU beat its 60% target: 66.0% of recent VET graduates had work-based learning in 2025.",
+      "highlight": "66.0%",
+      "kind": "record",
+      "countries": [
+        "EU27"
+      ],
+      "link": "pages/indicators.html?id=eurostat-tps00215",
+      "source": "Eurostat",
+      "weight": 1
+    },
+    {
+      "id": "target-wbl-fall",
+      "text": "The share of recent VET graduates with work-based learning in Italy fell by 9.8 points between 2021 and 2025, to 22.0% — the largest fall in the EU.",
+      "highlight": "9.8 points",
+      "kind": "trend",
+      "countries": [
+        "IT"
+      ],
+      "link": "pages/indicators.html?id=eurostat-tps00215&geo=IT",
+      "source": "Eurostat",
+      "weight": 1
+    },
+    {
+      "id": "target-wbl-furthest",
+      "text": "Romania is furthest from the EU's 60% work-based learning target: 9.1% of recent VET graduates had work-based learning in 2025.",
+      "highlight": "9.1%",
+      "kind": "record",
+      "countries": [
+        "RO"
+      ],
+      "link": "pages/indicators.html?id=eurostat-tps00215&geo=RO",
+      "source": "Eurostat",
+      "weight": 2
+    },
+    {
+      "id": "target-wbl-gain",
+      "text": "Lithuania raised the share of recent VET graduates with work-based learning by 13.4 points between 2021 and 2025, to 62.1% — the largest gain in the EU.",
+      "highlight": "13.4 points",
+      "kind": "trend",
+      "countries": [
+        "LT"
+      ],
+      "link": "pages/indicators.html?id=eurostat-tps00215&geo=LT",
+      "source": "Eurostat",
+      "weight": 2
+    },
+    {
+      "id": "target-wbl-met",
+      "text": "In 2025, 13 of 24 EU countries with data met the EU target of 60% for recent VET graduates' work-based learning; the EU as a whole reached 66.0%.",
+      "highlight": "13 of 24",
+      "kind": "record",
+      "countries": [],
+      "link": "pages/indicators.html?id=eurostat-tps00215",
+      "source": "Eurostat",
+      "weight": 2
+    },
+    {
+      "id": "target-wbl-top",
+      "text": "The Netherlands leads the EU: 95.4% of its recent VET graduates had work-based learning in 2025, against an EU target of 60%.",
+      "highlight": "95.4%",
+      "kind": "record",
+      "countries": [
+        "NL"
+      ],
+      "link": "pages/indicators.html?id=eurostat-tps00215&geo=NL",
+      "source": "Eurostat",
+      "weight": 1
+    },
+    {
+      "id": "trend-fi-statfin-apprenticeship-students",
+      "text": "Vocational students with apprenticeship periods in Finland: +27% between 2019 and 2025, from 65,980 to 84,062.",
+      "highlight": "+27%",
+      "kind": "trend",
+      "countries": [
+        "FI"
+      ],
+      "link": "pages/indicators.html?id=fi-statfin-apprenticeship-students",
+      "source": "Statistics Finland",
+      "weight": 2
+    },
+    {
+      "id": "trend-fr-dares-apprentices-stock",
+      "text": "Apprentices under contract in France grew 2.4-fold between December 2017 and December 2025, to 1,014,485.",
+      "highlight": "2.4-fold",
+      "kind": "trend",
+      "countries": [
+        "FR"
+      ],
+      "link": "pages/indicators.html?id=fr-dares-apprentices-stock",
+      "source": "DARES (France)",
+      "weight": 3
+    },
+    {
+      "id": "trend-ie-cso-qualified-apprentices",
+      "text": "Apprentices qualifying in Ireland: −20% between 2010 and 2020, from 3,360 to 2,685.",
+      "highlight": "−20%",
+      "kind": "trend",
+      "countries": [
+        "IE"
+      ],
+      "link": "pages/indicators.html?id=ie-cso-qualified-apprentices",
+      "source": "CSO Ireland",
+      "weight": 2
+    },
+    {
+      "id": "trend-nl-duo-bbl-students",
+      "text": "Students in work-based MBO (BBL) in the Netherlands: +6% between 2021 and 2025, from 129,164 to 136,915.",
+      "highlight": "+6%",
+      "kind": "trend",
+      "countries": [
+        "NL"
+      ],
+      "link": "pages/indicators.html?id=nl-duo-bbl-students",
+      "source": "DUO (Netherlands)",
+      "weight": 1
+    },
+    {
+      "id": "trend-no-ssb-apprentices",
+      "text": "Apprentices in Norway: +23% between 2017 and 2025, from 42,594 to 52,440.",
+      "highlight": "+23%",
+      "kind": "trend",
+      "countries": [
+        "NO"
+      ],
+      "link": "pages/indicators.html?id=no-ssb-apprentices",
+      "source": "Statistics Norway",
+      "weight": 2
+    },
+    {
+      "id": "trend-no-ssb-new-apprentices",
+      "text": "New apprentices in Norway: +23% between 2017 and 2025, from 21,809 to 26,717.",
+      "highlight": "+23%",
+      "kind": "trend",
+      "countries": [
+        "NO"
+      ],
+      "link": "pages/indicators.html?id=no-ssb-new-apprentices",
+      "source": "Statistics Norway",
+      "weight": 2
+    },
+    {
+      "id": "trend-no-ssb-trade-certificates",
+      "text": "Trade and journeyman examinations taken in Norway: +25% between 2017 and 2024, from 16,612 to 20,834.",
+      "highlight": "+25%",
+      "kind": "trend",
+      "countries": [
+        "NO"
+      ],
+      "link": "pages/indicators.html?id=no-ssb-trade-certificates",
+      "source": "Statistics Norway",
+      "weight": 2
+    },
+    {
+      "id": "trend-uk-dfe-apprenticeship-achievements",
+      "text": "Apprenticeship achievements in England: −28% between 2017/18 and 2024/25, from 276,160 to 198,330.",
+      "highlight": "−28%",
+      "kind": "trend",
+      "countries": [
+        "UK"
+      ],
+      "link": "pages/indicators.html?id=uk-dfe-apprenticeship-achievements",
+      "source": "Department for Education (England)",
+      "weight": 2
+    },
+    {
+      "id": "trend-uk-dfe-apprenticeship-starts",
+      "text": "Apprenticeship starts in England: −6% between 2017/18 and 2024/25, from 375,760 to 353,500.",
+      "highlight": "−6%",
+      "kind": "trend",
+      "countries": [
+        "UK"
+      ],
+      "link": "pages/indicators.html?id=uk-dfe-apprenticeship-starts",
+      "source": "Department for Education (England)",
+      "weight": 1
+    },
+    {
+      "id": "turn-fi-statfin-apprenticeship-students",
+      "text": "Vocational students with apprenticeship periods in Finland fell 17% in the year to 2025, to 84,062 — the first annual fall since 2020.",
+      "highlight": "17%",
+      "kind": "trend",
+      "countries": [
+        "FI"
+      ],
+      "link": "pages/indicators.html?id=fi-statfin-apprenticeship-students",
+      "source": "Statistics Finland",
+      "weight": 2
+    },
+    {
+      "id": "turn-fr-dares-apprentices-stock",
+      "text": "Apprentices under contract in France fell 3% in the year to December 2025, to 1,014,485 — the first annual fall since December 2015.",
+      "highlight": "3%",
+      "kind": "trend",
+      "countries": [
+        "FR"
+      ],
+      "link": "pages/indicators.html?id=fr-dares-apprentices-stock",
+      "source": "DARES (France)",
+      "weight": 2
+    },
+    {
+      "id": "vet-vs-general-behind",
+      "text": "Ireland is an exception: recent general-education graduates are 11.2 points more likely to be in work than VET graduates (2025).",
+      "highlight": "11.2 points",
+      "kind": "outcome",
+      "countries": [
+        "IE"
+      ],
+      "link": "pages/indicators.html?id=eurostat-edat_lfse_24-general&geo=IE",
+      "source": "Eurostat",
+      "weight": 2
+    },
+    {
+      "id": "vet-vs-general-count",
+      "text": "In 16 of 17 European countries, recent VET graduates are more likely to be in work than recent general-education graduates (2025).",
+      "highlight": "16 of 17",
+      "kind": "outcome",
+      "countries": [],
+      "link": "pages/indicators.html?id=eurostat-edat_lfse_24-vet",
+      "source": "Eurostat",
+      "weight": 2
+    }
+  ],
+  "rejected": [
+    "policy-latest-ie: 234 characters — Most recent apprenticeship policy Cedefop lists for Ireland (first reported 2023): “New Prison Education Taskforce: Education, Training and Apprenticeship Opportunities to support Rehabilitation and Post-Release Access to Employment”."
+  ],
+  "failed": []
+}

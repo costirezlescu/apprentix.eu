@@ -3,6 +3,7 @@
 
 import { url, esc } from './data.js';
 import { formatter, tileMap, barChart, lineChart, lineLegend } from './charts.js';
+import { addShareControls } from './share.js';
 
 const $ = id => document.getElementById(id);
 const params = new URLSearchParams(location.search);
@@ -181,6 +182,24 @@ function draw() {
   if (state.single) drawSingle(fmt, obs);
   else drawMulti(fmt, obs);
   syncUrl();
+  shareCharts();
+}
+
+/* Every chart card gets "Download image" (with title, source and licence on it) and "Copy link". */
+function shareCharts() {
+  const p = IND.provenance || {};
+  const dimsNote = (IND.dims || []).filter(d => state.dims[d.key] !== d.default || d.key === state.breakdown)
+    .map(d => d.key === state.breakdown ? `by ${d.label.toLowerCase()}` : `${d.label}: ${d.values[state.dims[d.key]]}`).join(' · ');
+  document.querySelectorAll('#charts .chart-card').forEach(card => {
+    const part = card.querySelector('h2')?.textContent || '';
+    addShareControls(card, {
+      title: `${IND.title} — ${part}`,
+      subtitle: [IND.unit && `Unit: ${IND.unit}`, dimsNote].filter(Boolean).join(' · '),
+      source: `${p.publisher || ''}${p.dataset_code ? ` (${p.dataset_code})` : ''}, retrieved ${(p.retrieved_at || '').slice(0, 10)}`,
+      licence: p.licence ? `Licence: ${p.licence}` : '',
+      url: location.href,
+    });
+  });
 }
 
 function renderFilters(years) {
@@ -263,7 +282,7 @@ function drawMulti(fmt, obs) {
     onSelect: toggleCountry, selected: sel, label: `${IND.title}, ${state.year}, map` });
   const rows = [...(eu ? [{ code: 'EU27', name: 'EU-27', value: eu.value, flag: eu.flag, emphasis: true }] : []),
     ...countries.map(o => ({ code: o.geo, name: cname(o.geo), value: o.value, flag: o.flag }))];
-  barChart($('bars'), rows, { fmt, target, year: state.year, selected: sel,
+  barChart($('bars'), rows, { fmt, target, year: state.year, selected: sel, fitLabels: true,
     onSelect: c => c !== 'EU27' && toggleCountry(c), label: `${IND.title}, ${state.year}, ranking` });
   lineLegend($('legend'), series, code => toggleCountry(code));
   lineChart($('lines'), series, { fmt, target, label: `${IND.title} over time` });

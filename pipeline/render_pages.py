@@ -673,6 +673,7 @@ def render_country(D, c: dict, f: dict, has_page: set[str]) -> str:
     <h1><span class="cp-flag-emoji" aria-hidden="true">{c.get('flag', '')}</span> {e(name)}</h1>
     <p class="lede">Apprenticeships and vocational education and training (VET) in {e(the_name)}: {e(summary)}.</p>
     {f'<ul class="cp-toc" aria-label="On this page">{toc}</ul>' if toc else ''}
+    <p class="cp-links cp-actions"><a class="btn primary" href="../duel.html?a={e(code)}">Compare {e(name)} with another country</a><a class="btn" href="../find.html?c={e('GR' if code == 'EL' else code)}">Find an apprenticeship in {e(name)}</a></p>
   </div>
   <div class="cp-mapbox">{tile_map(D["countries"], has_page, code, "")}</div>
 </header>
@@ -798,6 +799,8 @@ def sitemap(D, codes: list[str], extra: list[tuple[str, str]] = ()) -> str:
         (SITE, updated),
         (SITE + "pages/indicators.html", updated),
         (SITE + "pages/insights.html", updated),
+        (SITE + "pages/find.html", updated),
+        (SITE + "pages/duel.html", updated),
         (SITE + "pages/compare.html", updated),
         (SITE + "pages/ask.html", updated),
         (SITE + "pages/countries/", updated),

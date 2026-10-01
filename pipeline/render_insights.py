@@ -97,7 +97,8 @@ def render_insights() -> list[str]:
 {chr(10).join(card(i, n) for n, i in enumerate(items))}
 </div>
 <p class="provenance">These are descriptive analyses of public data by Apprentix, not official statistics. Associations between countries do not show cause and effect. Last computed {e(updated)}; the computation is open: <a href="https://github.com/costirezlescu/apprentix.eu/blob/main/pipeline/insights.py">pipeline/insights.py</a>.</p>
-<script type="module" src="../assets/js/insights.js"></script>"""
+<script type="module" src="../assets/js/insights.js"></script>
+<script type="module">import { mountSurpriseBanner } from '../assets/js/facts.js'; mountSurpriseBanner();</script>"""
     ld = {"@context": "https://schema.org", "@graph": [
         {"@type": "Article", "@id": page_url + "#article", "headline": "Insights on apprenticeships in Europe",
          "description": items[0]["finding"] if items else "", "url": page_url, "dateModified": updated,

@@ -122,8 +122,12 @@ def all(connectors: dict, status: dict) -> None:
     refresh_manifest(inds)
     datapackage(inds)
     print(f"Built: {len(inds)} indicators, catalogue, manifest, datapackage.json")
-    from . import insights, render_insights
+    from . import changes, duel
+    changes.build()           # what changed since the last build → data/published/changes/
+    duel.build()              # per-country profiles for the country duel
+    from . import insights, render_insights, facts
     insights.build()          # analyses across all data → data/published/insights/
+    facts.build()             # 'Did you know?' facts → data/published/facts/
     render_insights.render_insights()
     from . import render_pages
     render_pages.render_all()

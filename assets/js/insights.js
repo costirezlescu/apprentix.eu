@@ -4,6 +4,7 @@
 
 import { url } from './data.js';
 import { formatter, barChart, lineChart, lineLegend, scatterChart, pairedBars } from './charts.js';
+import { addShareControls } from './share.js';
 
 const SERIES = ['--series-1', '--series-2', '--series-3', '--series-4'];
 let ITEMS = [];
@@ -20,6 +21,15 @@ function drawAll() {
     const item = ITEMS[Number(host.dataset.chart)];
     if (!item?.chart || host.closest('.in-card').hidden) return;
     draw(host, item);
+    if (host.querySelector('svg.viz')) {
+      const card = host.closest('.in-card');
+      addShareControls(host, {
+        title: item.title,
+        subtitle: item.finding.length > 220 ? item.finding.slice(0, item.finding.lastIndexOf(' ', 217)) + ' …' : item.finding,
+        source: 'Apprentix analysis of ' + (item.sources || []).map(s => s.label).join('; '),
+        url: `${location.origin}${location.pathname}#${card.id}`,
+      });
+    }
   });
 }
 

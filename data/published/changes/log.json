@@ -1,0 +1,24 @@
+{
+  "description": "What changed in Apprentix's published data, newest first. One entry per refresh that changed something. Written by pipeline/changes.py.",
+  "feed": "data/feed.xml",
+  "entries": [
+    {
+      "date": "2026-10-01",
+      "baseline": true,
+      "items": [
+        {
+          "kind": "baseline",
+          "title": "Apprentix began tracking changes",
+          "text": "Tracking 102 indicators (59,983 values) and 10 record datasets (32,918 records). Each weekly refresh is compared with this baseline.",
+          "link": "pages/data.html"
+        }
+      ],
+      "counts": {
+        "indicators": 102,
+        "values": 59983,
+        "datasets": 10,
+        "records": 32918
+      }
+    }
+  ]
+}
