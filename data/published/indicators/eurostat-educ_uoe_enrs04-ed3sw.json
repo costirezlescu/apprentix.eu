@@ -31,10 +31,10 @@
     "licence": "CC-BY-4.0",
     "licence_url": "https://creativecommons.org/licenses/by/4.0/",
     "citation": "Eurostat (educ_uoe_enrs04), Pupils enrolled in upper-secondary education by programme orientation, sex, type of institution and intensity of participation. Retrieved via the Eurostat Statistics API.",
-    "source_updated": "2026-08-11T23:00:00+0200",
-    "retrieved_at": "2026-10-01T12:00:00+00:00",
-    "raw_file": "data/raw/eurostat/2026-10-01-eurostat-educ_uoe_enrs04-ed3sw.json",
-    "raw_sha256": "f2c6c6e8e985ce96239ee6ce419cedfbbbbe0468fb10aaa19bde4d5e9ddc78d3"
+    "source_updated": "2026-10-06T23:00:00+0200",
+    "retrieved_at": "2026-10-12T13:22:46+00:00",
+    "raw_file": "data/raw/eurostat/2026-10-12-eurostat-educ_uoe_enrs04-ed3sw.json",
+    "raw_sha256": "a64dc80cdd0c37a7d6de3b6717ea27399e15961295eed635712d90e6d0963a0f"
   },
   "series": [
     {
@@ -328,7 +328,7 @@
     {
       "geo": "CH",
       "time": "2013",
-      "value": 87152.0,
+      "value": 82289.0,
       "dims": {
         "sex": "F"
       }
@@ -2664,7 +2664,7 @@
     {
       "geo": "CH",
       "time": "2013",
-      "value": 121497.0,
+      "value": 112463.0,
       "dims": {
         "sex": "M"
       }
@@ -5008,7 +5008,7 @@
     {
       "geo": "CH",
       "time": "2013",
-      "value": 208649.0,
+      "value": 194752.0,
       "dims": {
         "sex": "T"
       }

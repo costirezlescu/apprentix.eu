@@ -3,6 +3,158 @@
   "feed": "data/feed.xml",
   "entries": [
     {
+      "date": "2026-10-12",
+      "items": [
+        {
+          "kind": "new-indicator",
+          "title": "New indicator: Apprentices in dual vocational training (Germany)",
+          "text": "Statistisches Bundesamt (Destatis) data, 2008–2025, 1 country.",
+          "link": "pages/indicators/de-destatis-apprentices.html",
+          "countries": [
+            "DE"
+          ]
+        },
+        {
+          "kind": "new-indicator",
+          "title": "New indicator: Apprentices in dual vocational training by Land (Germany)",
+          "text": "Statistisches Bundesamt (Destatis) data, 2008–2025, 1 country.",
+          "link": "pages/indicators/de-destatis-apprentices-land.html",
+          "countries": [
+            "DE"
+          ]
+        },
+        {
+          "kind": "new-indicator",
+          "title": "New indicator: Final apprenticeship examinations passed (Germany)",
+          "text": "Statistisches Bundesamt (Destatis) data, 2008–2025, 1 country.",
+          "link": "pages/indicators/de-destatis-exams-passed.html",
+          "countries": [
+            "DE"
+          ]
+        },
+        {
+          "kind": "new-indicator",
+          "title": "New indicator: Newly concluded apprenticeship contracts (Germany)",
+          "text": "Statistisches Bundesamt (Destatis) data, 2008–2025, 1 country.",
+          "link": "pages/indicators/de-destatis-new-contracts.html",
+          "countries": [
+            "DE"
+          ]
+        },
+        {
+          "kind": "new-records",
+          "title": "14 datasets added: Apprenticeship and VET open-data catalogue",
+          "text": "By country: DE 6, NL 3, PT 2, CH 1, ES 1. Including Pupils enrolled in vocational upper-secondary and post-secondary non-tertiary education by education level, sex and field of education, City of Gel…",
+          "link": "pages/datasets/data-catalogue.html",
+          "countries": [
+            "CH",
+            "DE",
+            "ES",
+            "NL",
+            "PT"
+          ]
+        },
+        {
+          "kind": "new-records",
+          "title": "2 organisations added: Erasmus+ accredited VET organisations",
+          "text": "Gymnázium duklianskych hrdinov, Obchodná akadémia a Základná škola, Centrálna 464, Svidník, Stredna zdravotnicka skola. Now 4,040 in total (was 4,038).",
+          "link": "pages/datasets/erasmus-vet-organisations.html",
+          "countries": [
+            "SK"
+          ]
+        },
+        {
+          "kind": "revision",
+          "title": "Revised figures: EU grant for Erasmus+ VET mobility projects",
+          "text": "29 earlier values revised. Largest: Spain 2024 EUR 52,656,518 → EUR 51,435,405; Poland 2025 EUR 63,999,468 → EUR 64,859,781; Türkiye 2025 EUR 32,813,430 → EUR 33,152,621.",
+          "link": "pages/indicators/erasmus-ka1-vet-grant.html",
+          "countries": [
+            "AT",
+            "BE",
+            "BG",
+            "DE",
+            "EE",
+            "EL",
+            "ES",
+            "FI",
+            "FR",
+            "IE",
+            "IT",
+            "LT",
+            "NL",
+            "NO",
+            "PL",
+            "SE",
+            "TR"
+          ]
+        },
+        {
+          "kind": "revision",
+          "title": "Revised figures: Erasmus+ VET mobility projects",
+          "text": "3 earlier values revised. Largest: Türkiye 2025 199 projects → 200 projects; Spain 2025 1,013 projects → 1,014 projects; EU-27 2025 6,890 projects → 6,891 projects.",
+          "link": "pages/indicators/erasmus-ka1-vet-projects.html",
+          "countries": [
+            "ES",
+            "TR"
+          ]
+        },
+        {
+          "kind": "revision",
+          "title": "Revised figures: Pupils in combined school- and work-based post-secondary VET",
+          "text": "1 earlier value revised. Largest: Switzerland 2013 12 pupils → 2 pupils.",
+          "link": "pages/indicators/eurostat-educ_uoe_enrs07-ed4sw.html",
+          "countries": [
+            "CH"
+          ]
+        },
+        {
+          "kind": "revision",
+          "title": "Revised figures: Pupils in combined school- and work-based upper-secondary VET",
+          "text": "1 earlier value revised. Largest: Switzerland 2013 208,649 pupils → 194,752 pupils.",
+          "link": "pages/indicators/eurostat-educ_uoe_enrs04-ed3sw.html",
+          "countries": [
+            "CH"
+          ]
+        },
+        {
+          "kind": "revision",
+          "title": "Revised figures in 1 more indicator",
+          "text": "Including Share of upper-secondary VET pupils in work-based programmes.",
+          "link": "pages/indicators/index.html",
+          "countries": [
+            "CH"
+          ]
+        },
+        {
+          "kind": "updated-records",
+          "title": "140 datasets updated: Apprenticeship and VET open-data catalogue",
+          "text": "Including Expenditure on vocational education by education level, type of institution and expenditure category, 01001000 _BP _ Vocational School Centre _120 _, 01001000 _BP _ Vocational School Centre…",
+          "link": "pages/datasets/data-catalogue.html",
+          "countries": [
+            "CH",
+            "DE",
+            "ES",
+            "IE",
+            "IT",
+            "LI",
+            "LT",
+            "NL",
+            "PT",
+            "SE",
+            "UA"
+          ]
+        }
+      ],
+      "counts": {
+        "new-indicator": 4,
+        "new-records": 2,
+        "revision": 5,
+        "updated-records": 1,
+        "records_added": 16,
+        "values_revised": 35
+      }
+    },
+    {
       "date": "2026-10-01",
       "baseline": true,
       "items": [

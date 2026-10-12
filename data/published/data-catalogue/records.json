@@ -2390,7 +2390,12 @@
       "Time frequency"
     ],
     "matched_queries": [
-      "vocational education"
+      "beroepsonderwijs",
+      "erhvervsuddannelse",
+      "kształcenie zawodowe",
+      "szakképzés",
+      "vocational education",
+      "yrkesutbildning"
     ],
     "original_language": "de, en, fr"
   },
@@ -3655,6 +3660,51 @@
     "matched_queries": [
       "kształcenie zawodowe",
       "vocational training"
+    ],
+    "original_language": "de, en, fr"
+  },
+  {
+    "id": "lrfvjattzjgok3camkcpva",
+    "title": "Pupils enrolled in vocational upper-secondary and post-secondary non-tertiary education by education level, sex and field of education",
+    "country": "EU / international",
+    "publisher": "Eurostat",
+    "concerns_apprenticeship": "No",
+    "catalogue": "estat",
+    "description": "Pupils enrolled in vocational upper-secondary and post-secondary non-tertiary education by education level, sex and field of education",
+    "formats": [
+      "CSV",
+      "HTML",
+      "TSV",
+      "XML"
+    ],
+    "licence": [
+      "CC BY 4.0"
+    ],
+    "modified": "2026-10-06",
+    "issued": "2016-09-09",
+    "year": "2026",
+    "landing_page": "https://ec.europa.eu/eurostat/databrowser/product/page/educ_uoe_enrs10",
+    "portal_url": "https://data.europa.eu/data/datasets/lrfvjattzjgok3camkcpva?locale=en",
+    "keywords": [
+      "Classification Internationale Type de l'Education (CITE 2011)",
+      "Domaines d'études et de formation de la CITE (CITE-F 2013)",
+      "Entité géopolitique (déclarante)",
+      "Fréquence (relative au temps)",
+      "Geopolitical entity (reporting)",
+      "Geopolitische Meldeeinheit",
+      "Geschlecht",
+      "International Standard Classification of Education (ISCED 2011)",
+      "Internationale Standardklassifikation des Bildungswesens (ISCED 2011)",
+      "ISCED Bildungs- und Weiterbildungsbereiche (ISCED-F 2013)",
+      "ISCED Fields of education and training (ISCED-F 2013)",
+      "Maßeinheit",
+      "Sex",
+      "Sexe",
+      "Time frequency"
+    ],
+    "matched_queries": [
+      "beroepsonderwijs",
+      "szakképzés"
     ],
     "original_language": "de, en, fr"
   },
@@ -9300,7 +9350,8 @@
     "catalogue": "govdata",
     "description": "The development plan (B-Plan) 01001000 _BP _vocational school centre _120 _Urschrift has been digitally prepared. According to the resolution of the statutes, it depicts the stipulations for the urban planning order and represents parts of the binding land-use planning of the municipal authority of Flensburg. The official document containing the legally binding determinations shall be deposited with the competent authority.",
     "formats": [
-      "GML"
+      "GML",
+      "WMS_SRVC"
     ],
     "licence": [
       "Data licence Germany – attribution 2.0"
@@ -9360,7 +9411,8 @@
     "catalogue": "govdata",
     "description": "The development plan (B-Plan) 01001000 _BP _vocational school centre _120 _1Ae has been digitally prepared. According to the resolution of the statutes, it depicts the stipulations for the urban planning order and represents parts of the binding land-use planning of the municipal authority of Flensburg. The official document containing the legally binding determinations shall be deposited with the competent authority.",
     "formats": [
-      "GML"
+      "GML",
+      "WMS_SRVC"
     ],
     "licence": [
       "Data licence Germany – attribution 2.0"
@@ -9393,7 +9445,8 @@
     "catalogue": "govdata",
     "description": "The development plan (B-Plan) 01001000 _BP _vocational school centre _120 _2Ae has been digitally prepared. According to the resolution of the statutes, it depicts the stipulations for the urban planning order and represents parts of the binding land-use planning of the municipal authority of Flensburg. The official document containing the legally binding determinations shall be deposited with the competent authority.",
     "formats": [
-      "GML"
+      "GML",
+      "WMS_SRVC"
     ],
     "licence": [
       "Data licence Germany – attribution 2.0"
@@ -9461,7 +9514,7 @@
     "licence": [
       "Data licence Germany – attribution 2.0"
     ],
-    "modified": "2026-09-24",
+    "modified": "2026-10-01",
     "issued": "2019-07-19",
     "year": "2026",
     "portal_url": "https://data.europa.eu/data/datasets/ceb7baab-53ba-4052-9f17-bd6eca61627b~~1?locale=en",
@@ -9479,23 +9532,23 @@
     "title": "Accessibility information portal - Education: Childcare, schools, vocational schools - entrances",
     "country": "Germany",
     "country_code": "DE",
-    "publisher": "Stadt Dresden",
+    "publisher": "Not stated",
     "concerns_apprenticeship": "No",
-    "catalogue": "govdata",
+    "catalogue": "gdi-de",
     "description": "In the Infoportal Accessibility, facilities with public use are:\n- barrier-free accessibility and accessibility\n- the equipment with barrier-free toilets and their characteristics\n- the provision of technical aids for persons with disabilities;\n- special offers and services for people with disabilities.\nFor each recorded facility there is detailed information, each of which is summarized on its own website. All information is available in three languages (DE, CS and EN).\nThe information portal has its own website at www.dresden.de. There is an advanced search function for users.",
     "formats": [
       "WFS_SRVC",
       "WMS_SRVC"
     ],
     "licence": [
-      "Data licence Germany – attribution 2.0"
+      "Not stated"
     ],
-    "modified": "2026-09-24",
-    "issued": "2019-08-16",
+    "modified": "2026-07-14",
+    "issued": "2026-10-01",
     "year": "2026",
+    "landing_page": "https://www.dresden.de/de/rathaus/aemter-und-einrichtungen/oe/dborg/stadt_dresden_6642.php",
     "portal_url": "https://data.europa.eu/data/datasets/f252a4cd-1f4c-482e-be23-215d972aba2b?locale=en",
     "keywords": [
-      "lokal",
       "opendata"
     ],
     "matched_queries": [
@@ -9755,9 +9808,9 @@
     "licence": [
       "Data licence Germany – attribution 2.0"
     ],
-    "modified": "2023-11-09",
+    "modified": "2026-10-08",
     "issued": "2023-09-26",
-    "year": "2023",
+    "year": "2026",
     "portal_url": "https://data.europa.eu/data/datasets/http-statistik-leipzig-de-resource-ds-7-2-y?locale=en",
     "keywords": [
       "stadt-leipzig"
@@ -9931,15 +9984,12 @@
     "title": "Apprentices by age and gender - year - regional depth: Municipalities/associations of municipalities",
     "country": "Germany",
     "country_code": "DE",
-    "publisher": "Hessisches Statistisches Landesamt",
+    "publisher": "Regionalstatistik",
     "concerns_apprenticeship": "Yes",
     "catalogue": "govdata",
     "description": "Apprentices by age and gender - year - regional depth: Municipalities/associations of municipalities",
     "formats": [
-      "CSV",
-      "JSON",
-      "REST",
-      "TXT"
+      "CSV"
     ],
     "licence": [
       "Data licence Germany – attribution 2.0"
@@ -10117,15 +10167,12 @@
     "title": "Apprentices by occupation and gender - year -regional depth: Municipalities/associations of municipalities",
     "country": "Germany",
     "country_code": "DE",
-    "publisher": "Hessisches Statistisches Landesamt",
+    "publisher": "Regionalstatistik",
     "concerns_apprenticeship": "Yes",
     "catalogue": "govdata",
     "description": "Apprentices by occupation and gender - year -regional depth: Municipalities/associations of municipalities",
     "formats": [
-      "CSV",
-      "JSON",
-      "REST",
-      "TXT"
+      "CSV"
     ],
     "licence": [
       "Data licence Germany – attribution 2.0"
@@ -10139,7 +10186,6 @@
       "auspendelnde-in-das-ausland",
       "auspendelnde-in-das-inland",
       "ausschließlich-geringfügig-entlohnte-beschäftigte",
-      "beamte",
       "beamtinnen-und-beamte",
       "geschlecht",
       "männlich",
@@ -10149,7 +10195,8 @@
       "sozialversicherungspflichtig-beschäftigte-insgesamt",
       "stellung-im-beruf-5",
       "stichtag",
-      "weiblich"
+      "weiblich",
+      "wohnort"
     ],
     "matched_queries": [
       "apprentice",
@@ -12200,8 +12247,8 @@
     "licence": [
       "Data licence Germany – attribution 2.0"
     ],
-    "modified": "2026-09-29",
-    "issued": "2026-09-29",
+    "modified": "2026-10-11",
+    "issued": "2026-10-11",
     "year": "2026",
     "landing_page": "http://www.statistik-nord.de",
     "portal_url": "https://data.europa.eu/data/datasets/stanord_cms-51524?locale=en",
@@ -12281,7 +12328,7 @@
       "Other (closed)"
     ],
     "modified": "2020-10-07",
-    "issued": "2026-09-29",
+    "issued": "2026-10-07",
     "year": "2020",
     "portal_url": "https://data.europa.eu/data/datasets/abf3f239-57e9-4138-b012-fb66a0a50775?locale=en",
     "keywords": [
@@ -12365,8 +12412,8 @@
     "licence": [
       "Data licence Germany – attribution 2.0"
     ],
-    "modified": "2026-09-29",
-    "issued": "2026-09-29",
+    "modified": "2026-10-11",
+    "issued": "2026-10-11",
     "year": "2026",
     "landing_page": "http://www.statistik-nord.de",
     "portal_url": "https://data.europa.eu/data/datasets/stanord_cms-51335?locale=en",
@@ -12404,8 +12451,8 @@
     "licence": [
       "Data licence Germany – attribution 2.0"
     ],
-    "modified": "2026-09-29",
-    "issued": "2026-09-29",
+    "modified": "2026-10-11",
+    "issued": "2026-10-11",
     "year": "2026",
     "landing_page": "http://www.statistik-nord.de",
     "portal_url": "https://data.europa.eu/data/datasets/stanord_cms-51140?locale=en",
@@ -12443,8 +12490,8 @@
     "licence": [
       "Data licence Germany – attribution 2.0"
     ],
-    "modified": "2026-09-29",
-    "issued": "2026-09-29",
+    "modified": "2026-10-11",
+    "issued": "2026-10-11",
     "year": "2026",
     "landing_page": "http://www.statistik-nord.de",
     "portal_url": "https://data.europa.eu/data/datasets/stanord_cms-50966?locale=en",
@@ -12482,8 +12529,8 @@
     "licence": [
       "Data licence Germany – attribution 2.0"
     ],
-    "modified": "2026-09-29",
-    "issued": "2026-09-29",
+    "modified": "2026-10-11",
+    "issued": "2026-10-11",
     "year": "2026",
     "landing_page": "http://www.statistik-nord.de",
     "portal_url": "https://data.europa.eu/data/datasets/stanord_cms-50898?locale=en",
@@ -13025,6 +13072,70 @@
     "original_language": "de"
   },
   {
+    "id": "dbfe8d0c-96ed-41d2-ac0f-f98d61bc5377",
+    "title": "City of Gelsenkirchen: Infrastructure data Vocational college",
+    "country": "Germany",
+    "country_code": "DE",
+    "publisher": "Stadt Gelsenkirchen",
+    "concerns_apprenticeship": "No",
+    "catalogue": "govdata",
+    "description": "The infrastructure database or POI database of the city of Gelsenkirchen offers you extensive information about infrastructures in Gelsenkirchen. You currently have the opportunity to access over 100 different types of infrastructure as well as over 7000 data sets from the areas of family, education, leisure, infrastructure, culture, administration, social affairs and economy. In addition to the spatial location, information on contact data and other technical information is stored. The offer is constantly being expanded and maintained by the responsible services.",
+    "formats": [
+      "ZIP"
+    ],
+    "licence": [
+      "Other (closed)"
+    ],
+    "modified": "2025-03-11",
+    "issued": "2015-12-10",
+    "year": "2025",
+    "portal_url": "https://data.europa.eu/data/datasets/dbfe8d0c-96ed-41d2-ac0f-f98d61bc5377?locale=en",
+    "keywords": [
+      "berufsschule",
+      "datensatz",
+      "kolleg",
+      "lokal",
+      "opendata",
+      "stadt-gelsenkirchen"
+    ],
+    "matched_queries": [
+      "ammatillinen"
+    ],
+    "original_language": "de"
+  },
+  {
+    "id": "12072fe7-39e1-43bf-9052-57301e234b96",
+    "title": "City of Gelsenkirchen: Infrastructure data Youth Vocational Assistance",
+    "country": "Germany",
+    "country_code": "DE",
+    "publisher": "Stadt Gelsenkirchen",
+    "concerns_apprenticeship": "No",
+    "catalogue": "govdata",
+    "description": "The infrastructure database or POI database of the city of Gelsenkirchen offers you extensive information about infrastructures in Gelsenkirchen. You currently have the opportunity to access over 100 different types of infrastructure as well as over 7000 data sets from the areas of family, education, leisure, infrastructure, culture, administration, social affairs and economy. In addition to the spatial location, information on contact data and other technical information is stored. The offer is constantly being expanded and maintained by the responsible services.",
+    "formats": [
+      "ZIP"
+    ],
+    "licence": [
+      "Other (closed)"
+    ],
+    "modified": "2025-03-11",
+    "issued": "2015-12-10",
+    "year": "2025",
+    "portal_url": "https://data.europa.eu/data/datasets/12072fe7-39e1-43bf-9052-57301e234b96?locale=en",
+    "keywords": [
+      "datensatz",
+      "jugendliche-berufsanfanger",
+      "lokal",
+      "opendata",
+      "stadt-gelsenkirchen"
+    ],
+    "matched_queries": [
+      "ammatillinen",
+      "szakképzés"
+    ],
+    "original_language": "de"
+  },
+  {
     "id": "30303032-3135-4032-312d-303030310000",
     "title": "Continuing vocational training in companies: Germany, Years, Continuing education, Business sectors",
     "country": "Germany",
@@ -13192,8 +13303,8 @@
     "licence": [
       "Data licence Germany – attribution 2.0"
     ],
-    "modified": "2026-09-29",
-    "issued": "2026-09-29",
+    "modified": "2026-10-11",
+    "issued": "2026-10-11",
     "year": "2026",
     "landing_page": "http://www.statistik-nord.de",
     "portal_url": "https://data.europa.eu/data/datasets/stanord_cms-67855?locale=en",
@@ -13645,6 +13756,182 @@
     ],
     "matched_queries": [
       "Berufsausbildung",
+      "erhvervsuddannelse",
+      "szakképzés",
+      "vocational training",
+      "yrkesutbildning"
+    ],
+    "original_language": "de"
+  },
+  {
+    "id": "https-www-regionalstatistik-de-genesisws-downloader-00-tables-13111-12-03-4_00",
+    "title": "Employees subject to social security contributions at the place of residence by gender, nationality and type of vocational training qualification - cut-off date 30.06. - regional depth:circles and krfr.cities",
+    "country": "Germany",
+    "country_code": "DE",
+    "publisher": "Regionalstatistik",
+    "concerns_apprenticeship": "No",
+    "catalogue": "govdata",
+    "description": "Employees subject to social security contributions at the place of residence by gender, nationality and type of vocational training qualification - cut-off date 30.06. - regional depth:circles and krfr.cities",
+    "formats": [
+      "CSV"
+    ],
+    "licence": [
+      "Data licence Germany – attribution 2.0"
+    ],
+    "modified": "2024-06-26",
+    "issued": "2016-02-23",
+    "year": "2024",
+    "portal_url": "https://data.europa.eu/data/datasets/https-www-regionalstatistik-de-genesisws-downloader-00-tables-13111-12-03-4_00?locale=en",
+    "keywords": [
+      "art-des-beruflichen-ausbildungsabschlusses",
+      "ausländer-innen",
+      "deutsche",
+      "geschlecht",
+      "insgesamt",
+      "kreise-und-kreisfreie-städte",
+      "mit-akademischem-abschluss",
+      "mit-anerkanntem-berufsabschluss",
+      "männlich",
+      "nationalität",
+      "ohne-berufsabschluss",
+      "sozialversicherungspfl.-beschäftigte-wohnort",
+      "sozialversicherungspflichtig-beschäftigte",
+      "stichtag",
+      "weiblich"
+    ],
+    "matched_queries": [
+      "erhvervsuddannelse",
+      "szakképzés",
+      "vocational training",
+      "yrkesutbildning"
+    ],
+    "original_language": "de"
+  },
+  {
+    "id": "https-www-regionalstatistik-de-genesisws-downloader-00-tables-13111-12-03-4-b_00",
+    "title": "Employees subject to social security contributions at the place of residence by gender, nationality and type of vocational training qualification - cut-off date 30.06. - regional levels",
+    "country": "Germany",
+    "country_code": "DE",
+    "publisher": "Regionalstatistik",
+    "concerns_apprenticeship": "No",
+    "catalogue": "govdata",
+    "description": "Employees subject to social security contributions at the place of residence by gender, nationality and type of vocational training qualification - cut-off date 30.06. - regional levels",
+    "formats": [
+      "CSV"
+    ],
+    "licence": [
+      "Data licence Germany – attribution 2.0"
+    ],
+    "modified": "2024-06-26",
+    "issued": "2016-02-23",
+    "year": "2024",
+    "portal_url": "https://data.europa.eu/data/datasets/https-www-regionalstatistik-de-genesisws-downloader-00-tables-13111-12-03-4-b_00?locale=en",
+    "keywords": [
+      "art-des-beruflichen-ausbildungsabschlusses",
+      "ausländer-innen",
+      "deutsche",
+      "geschlecht",
+      "insgesamt",
+      "kreise-und-kreisfreie-städte",
+      "mit-akademischem-abschluss",
+      "mit-anerkanntem-berufsabschluss",
+      "männlich",
+      "nationalität",
+      "ohne-berufsabschluss",
+      "sozialversicherungspfl.-beschäftigte-wohnort",
+      "sozialversicherungspflichtig-beschäftigte",
+      "stichtag",
+      "weiblich"
+    ],
+    "matched_queries": [
+      "erhvervsuddannelse",
+      "szakképzés",
+      "vocational training",
+      "yrkesutbildning"
+    ],
+    "original_language": "de"
+  },
+  {
+    "id": "https-www-regionalstatistik-de-genesisws-downloader-00-tables-13111-11-04-4_00",
+    "title": "Employees subject to social security contributions at the place of work by gender, nationality and type of vocational training qualification - cut-off date 30.06. - regional depth:circles and krfr. cities",
+    "country": "Germany",
+    "country_code": "DE",
+    "publisher": "Regionalstatistik",
+    "concerns_apprenticeship": "No",
+    "catalogue": "govdata",
+    "description": "Employees subject to social security contributions at the place of work by gender, nationality and type of vocational training qualification - cut-off date 30.06. - regional depth:circles and krfr. cities",
+    "formats": [
+      "CSV"
+    ],
+    "licence": [
+      "Data licence Germany – attribution 2.0"
+    ],
+    "modified": "2024-06-26",
+    "issued": "2016-02-23",
+    "year": "2024",
+    "portal_url": "https://data.europa.eu/data/datasets/https-www-regionalstatistik-de-genesisws-downloader-00-tables-13111-11-04-4_00?locale=en",
+    "keywords": [
+      "art-des-beruflichen-ausbildungsabschlusses",
+      "ausländer-innen",
+      "deutsche",
+      "geschlecht",
+      "insgesamt",
+      "kreise-und-kreisfreie-städte",
+      "mit-akademischem-abschluss",
+      "mit-anerkanntem-berufsabschluss",
+      "männlich",
+      "nationalität",
+      "ohne-berufsabschluss",
+      "sozialversicherungspfl.-beschäftigte-arbeitsort",
+      "sozialversicherungspflichtig-beschäftigte",
+      "stichtag",
+      "weiblich"
+    ],
+    "matched_queries": [
+      "erhvervsuddannelse",
+      "szakképzés",
+      "vocational training",
+      "yrkesutbildning"
+    ],
+    "original_language": "de"
+  },
+  {
+    "id": "https-www-regionalstatistik-de-genesisws-downloader-00-tables-13111-11-04-4-b_00",
+    "title": "Employees subject to social security contributions at the place of work by gender, nationality and type of vocational training qualification - cut-off date 30.06. - regional levels",
+    "country": "Germany",
+    "country_code": "DE",
+    "publisher": "Regionalstatistik",
+    "concerns_apprenticeship": "No",
+    "catalogue": "govdata",
+    "description": "Employees subject to social security contributions at the place of work by gender, nationality and type of vocational training qualification - cut-off date 30.06. - regional levels",
+    "formats": [
+      "CSV"
+    ],
+    "licence": [
+      "Data licence Germany – attribution 2.0"
+    ],
+    "modified": "2024-06-26",
+    "issued": "2016-02-23",
+    "year": "2024",
+    "portal_url": "https://data.europa.eu/data/datasets/https-www-regionalstatistik-de-genesisws-downloader-00-tables-13111-11-04-4-b_00?locale=en",
+    "keywords": [
+      "art-des-beruflichen-ausbildungsabschlusses",
+      "ausländer-innen",
+      "deutsche",
+      "geschlecht",
+      "insgesamt",
+      "kreise-und-kreisfreie-städte",
+      "mit-akademischem-abschluss",
+      "mit-anerkanntem-berufsabschluss",
+      "männlich",
+      "nationalität",
+      "ohne-berufsabschluss",
+      "sozialversicherungspfl.-beschäftigte-arbeitsort",
+      "sozialversicherungspflichtig-beschäftigte",
+      "stichtag",
+      "weiblich"
+    ],
+    "matched_queries": [
       "erhvervsuddannelse",
       "szakképzés",
       "vocational training",
@@ -14479,8 +14766,8 @@
     "licence": [
       "Data licence Germany – attribution 2.0"
     ],
-    "modified": "2026-09-29",
-    "issued": "2026-09-29",
+    "modified": "2026-10-11",
+    "issued": "2026-10-11",
     "year": "2026",
     "landing_page": "http://www.statistik-nord.de",
     "portal_url": "https://data.europa.eu/data/datasets/stanord_cms-51476?locale=en",
@@ -14507,7 +14794,7 @@
     "licence": [
       "CC BY-SA"
     ],
-    "modified": "2026-08-28",
+    "modified": "2026-09-30",
     "issued": "2024-07-01",
     "year": "2026",
     "landing_page": "https://statistik.arbeitsagentur.de",
@@ -14548,7 +14835,7 @@
     "licence": [
       "CC BY-SA"
     ],
-    "modified": "2026-08-28",
+    "modified": "2026-09-30",
     "issued": "2022-03-31",
     "year": "2026",
     "landing_page": "https://statistik.arbeitsagentur.de",
@@ -14666,8 +14953,8 @@
     "licence": [
       "Data licence Germany – attribution 2.0"
     ],
-    "modified": "2026-09-29",
-    "issued": "2026-09-29",
+    "modified": "2026-10-11",
+    "issued": "2026-10-11",
     "year": "2026",
     "landing_page": "http://www.statistik-nord.de",
     "portal_url": "https://data.europa.eu/data/datasets/stanord_cms-51336?locale=en",
@@ -14996,7 +15283,7 @@
     "licence": [
       "Data licence Germany – zero 2.0"
     ],
-    "modified": "2026-09-01",
+    "modified": "2026-10-01",
     "issued": "2024-07-26",
     "year": "2026",
     "landing_page": "https://www.bmel-statistik.de/landwirtschaft/berufliche-bildung/ausbildungsmarkt",
@@ -17672,7 +17959,7 @@
     "licence": [
       "Data licence Germany – zero 2.0"
     ],
-    "modified": "2026-09-01",
+    "modified": "2026-10-01",
     "issued": "2024-07-26",
     "year": "2026",
     "landing_page": "https://www.bmel-statistik.de/landwirtschaft/berufliche-bildung/ausbildung",
@@ -18625,7 +18912,7 @@
     "licence": [
       "Data licence Germany – attribution 2.0"
     ],
-    "modified": "2026-09-29",
+    "modified": "2026-10-11",
     "issued": "2014-09-26",
     "year": "2026",
     "landing_page": "http://www.statistik-nord.de",
@@ -18652,7 +18939,7 @@
     "licence": [
       "Data licence Germany – attribution 2.0"
     ],
-    "modified": "2026-09-29",
+    "modified": "2026-10-11",
     "issued": "2014-09-26",
     "year": "2026",
     "landing_page": "http://www.statistik-nord.de",
@@ -18679,7 +18966,7 @@
     "licence": [
       "Data licence Germany – attribution 2.0"
     ],
-    "modified": "2026-09-29",
+    "modified": "2026-10-11",
     "issued": "2014-09-26",
     "year": "2026",
     "landing_page": "http://www.statistik-nord.de",
@@ -19383,8 +19670,8 @@
     "licence": [
       "Data licence Germany – attribution 2.0"
     ],
-    "modified": "2026-09-29",
-    "issued": "2026-09-29",
+    "modified": "2026-10-11",
+    "issued": "2026-10-11",
     "year": "2026",
     "landing_page": "http://www.statistik-nord.de",
     "portal_url": "https://data.europa.eu/data/datasets/stanord_cms-55431?locale=en",
@@ -19418,8 +19705,8 @@
     "licence": [
       "Data licence Germany – attribution 2.0"
     ],
-    "modified": "2026-09-29",
-    "issued": "2026-09-29",
+    "modified": "2026-10-11",
+    "issued": "2026-10-11",
     "year": "2026",
     "landing_page": "http://www.statistik-nord.de",
     "portal_url": "https://data.europa.eu/data/datasets/stanord_cms-57523?locale=en",
@@ -19452,8 +19739,8 @@
     "licence": [
       "Data licence Germany – attribution 2.0"
     ],
-    "modified": "2026-09-29",
-    "issued": "2026-09-29",
+    "modified": "2026-10-11",
+    "issued": "2026-10-11",
     "year": "2026",
     "landing_page": "http://www.statistik-nord.de",
     "portal_url": "https://data.europa.eu/data/datasets/stanord_cms-57952?locale=en",
@@ -19487,8 +19774,8 @@
     "licence": [
       "Data licence Germany – attribution 2.0"
     ],
-    "modified": "2026-09-29",
-    "issued": "2026-09-29",
+    "modified": "2026-10-11",
+    "issued": "2026-10-11",
     "year": "2026",
     "landing_page": "http://www.statistik-nord.de",
     "portal_url": "https://data.europa.eu/data/datasets/stanord_cms-59828?locale=en",
@@ -19522,8 +19809,8 @@
     "licence": [
       "Data licence Germany – attribution 2.0"
     ],
-    "modified": "2026-09-29",
-    "issued": "2026-09-29",
+    "modified": "2026-10-11",
+    "issued": "2026-10-11",
     "year": "2026",
     "landing_page": "http://www.statistik-nord.de",
     "portal_url": "https://data.europa.eu/data/datasets/stanord_cms-60604?locale=en",
@@ -19557,8 +19844,8 @@
     "licence": [
       "Data licence Germany – attribution 2.0"
     ],
-    "modified": "2026-09-29",
-    "issued": "2026-09-29",
+    "modified": "2026-10-11",
+    "issued": "2026-10-11",
     "year": "2026",
     "landing_page": "http://www.statistik-nord.de",
     "portal_url": "https://data.europa.eu/data/datasets/stanord_cms-51162?locale=en",
@@ -19590,8 +19877,8 @@
     "licence": [
       "Data licence Germany – attribution 2.0"
     ],
-    "modified": "2026-09-29",
-    "issued": "2026-09-29",
+    "modified": "2026-10-11",
+    "issued": "2026-10-11",
     "year": "2026",
     "landing_page": "http://www.statistik-nord.de",
     "portal_url": "https://data.europa.eu/data/datasets/stanord_cms-51014?locale=en",
@@ -20385,7 +20672,7 @@
     "licence": [
       "Data licence Germany – attribution 2.0"
     ],
-    "modified": "2026-09-24",
+    "modified": "2026-10-01",
     "issued": "2014-09-15",
     "year": "2026",
     "portal_url": "https://data.europa.eu/data/datasets/457de1ca-3f9e-4b14-add9-9cf7bf0b1c73~~1?locale=en",
@@ -20508,7 +20795,7 @@
     "licence": [
       "Data licence Germany – attribution 2.0"
     ],
-    "modified": "2026-09-29",
+    "modified": "2026-10-11",
     "issued": "2014-09-26",
     "year": "2026",
     "landing_page": "http://www.statistik-nord.de",
@@ -20539,7 +20826,7 @@
     "licence": [
       "Data licence Germany – attribution 2.0"
     ],
-    "modified": "2026-09-29",
+    "modified": "2026-10-11",
     "issued": "2014-09-26",
     "year": "2026",
     "landing_page": "http://www.statistik-nord.de",
@@ -20569,7 +20856,7 @@
     "licence": [
       "Data licence Germany – attribution 2.0"
     ],
-    "modified": "2026-09-29",
+    "modified": "2026-10-11",
     "issued": "2014-09-26",
     "year": "2026",
     "landing_page": "http://www.statistik-nord.de",
@@ -24087,7 +24374,7 @@
     "licence": [
       "CC BY 4.0"
     ],
-    "modified": "2026-09-30",
+    "modified": "2026-10-11",
     "issued": "2026-05-22",
     "year": "2026",
     "landing_page": "https://ws.cso.ie/public/api.restful/PxStat.Data.Cube_API.ReadDataset/QQI10/JSON-stat/2.0/en",
@@ -24129,7 +24416,7 @@
     "licence": [
       "CC BY 4.0"
     ],
-    "modified": "2026-09-30",
+    "modified": "2026-10-11",
     "issued": "2026-05-22",
     "year": "2026",
     "landing_page": "https://ws.cso.ie/public/api.restful/PxStat.Data.Cube_API.ReadDataset/QQI11/JSON-stat/2.0/en",
@@ -24496,6 +24783,40 @@
     "original_language": "it"
   },
   {
+    "id": "r_pugliapercorsiiefpautorizzati",
+    "title": "Authorised VET pathways",
+    "country": "Italy",
+    "country_code": "IT",
+    "publisher": "Regione Puglia",
+    "concerns_apprenticeship": "No",
+    "catalogue": "dati-gov-it",
+    "description": "List of approved vocational education and training (VET) pathways",
+    "formats": [
+      "CSV"
+    ],
+    "licence": [
+      "CC BY 4.0"
+    ],
+    "modified": "2025-11-14",
+    "issued": "2025-11-14",
+    "year": "2025",
+    "landing_page": "https://dati.puglia.it/ckan/dataset/dc46992b-3fa0-4c80-8407-1bc0e68576c8#",
+    "portal_url": "https://data.europa.eu/data/datasets/r_pugliapercorsiiefpautorizzati?locale=en",
+    "keywords": [
+      "N_A"
+    ],
+    "matched_queries": [
+      "beroepsonderwijs",
+      "Berufsbildung",
+      "erhvervsuddannelse",
+      "formazione professionale",
+      "IeFP",
+      "szakképzés",
+      "yrkesutbildning"
+    ],
+    "original_language": "it"
+  },
+  {
     "id": "r_lazio-57a125f2-7c5f-4adb-a0fc-536728f57d43",
     "title": "Characteristics of VET pathways",
     "country": "Italy",
@@ -24835,35 +25156,6 @@
     "original_language": "it"
   },
   {
-    "id": "r_pugliapercorsiiefpautorizzati",
-    "title": "Percorsi IeFP autorizzati",
-    "country": "Italy",
-    "country_code": "IT",
-    "publisher": "Regione Puglia",
-    "concerns_apprenticeship": "No",
-    "catalogue": "dati-gov-it",
-    "description": "Elenco dei percorsi di istruzione e formazione professionale (IeFP), autorizzati",
-    "formats": [
-      "CSV"
-    ],
-    "licence": [
-      "CC BY 4.0"
-    ],
-    "modified": "2025-11-14",
-    "issued": "2025-11-14",
-    "year": "2025",
-    "landing_page": "https://dati.puglia.it/ckan/dataset/dc46992b-3fa0-4c80-8407-1bc0e68576c8##",
-    "portal_url": "https://data.europa.eu/data/datasets/r_pugliapercorsiiefpautorizzati?locale=en",
-    "keywords": [
-      "N_A"
-    ],
-    "matched_queries": [
-      "formazione professionale",
-      "IeFP"
-    ],
-    "original_language": "it"
-  },
-  {
     "id": "845c3195-79d0-407c-97f5-2132c2a74383",
     "title": "Personnel assignments in committees for vocational training courses",
     "country": "Italy",
@@ -24945,7 +25237,7 @@
     "modified": "2009-12-31",
     "issued": "2011-10-17",
     "year": "2009",
-    "landing_page": "https://dati.toscana.it/dataset/corsi-di-formazione-professionale-sul-territorio-del-comune-di-firenze-alunne-iscritte-for-20091##",
+    "landing_page": "https://dati.toscana.it/dataset/corsi-di-formazione-professionale-sul-territorio-del-comune-di-firenze-alunne-iscritte-for-20091#",
     "portal_url": "https://data.europa.eu/data/datasets/c_d612-d-6107?locale=en",
     "keywords": [
       "13ledonneafirenze",
@@ -24980,7 +25272,7 @@
     "modified": "2010-12-31",
     "issued": "2011-10-17",
     "year": "2010",
-    "landing_page": "https://dati.toscana.it/dataset/corsi-di-formazione-professionale-sul-territorio-del-comune-di-firenze-alunne-iscritte-for-20101##",
+    "landing_page": "https://dati.toscana.it/dataset/corsi-di-formazione-professionale-sul-territorio-del-comune-di-firenze-alunne-iscritte-for-20101#",
     "portal_url": "https://data.europa.eu/data/datasets/c_d612-d-6105?locale=en",
     "keywords": [
       "13ledonneafirenze",
@@ -25016,7 +25308,7 @@
     "modified": "2009-12-31",
     "issued": "2011-10-17",
     "year": "2009",
-    "landing_page": "https://dati.toscana.it/dataset/corsi-di-formazione-professionale-residenti-nel-comune-di-firenze-iscritte-e-formate-per-t-2009##",
+    "landing_page": "https://dati.toscana.it/dataset/corsi-di-formazione-professionale-residenti-nel-comune-di-firenze-iscritte-e-formate-per-t-2009#",
     "portal_url": "https://data.europa.eu/data/datasets/c_d612-d-6108?locale=en",
     "keywords": [
       "13ledonneafirenze",
@@ -25051,7 +25343,7 @@
     "modified": "2010-12-31",
     "issued": "2011-10-17",
     "year": "2010",
-    "landing_page": "https://dati.toscana.it/dataset/corsi-di-formazione-professionale-residenti-nel-comune-di-firenze-iscritte-e-formate-per-t-2010##",
+    "landing_page": "https://dati.toscana.it/dataset/corsi-di-formazione-professionale-residenti-nel-comune-di-firenze-iscritte-e-formate-per-t-2010#",
     "portal_url": "https://data.europa.eu/data/datasets/c_d612-d-6099?locale=en",
     "keywords": [
       "13ledonneafirenze",
@@ -25086,7 +25378,7 @@
     "modified": "2009-12-31",
     "issued": "2011-10-17",
     "year": "2009",
-    "landing_page": "https://dati.toscana.it/dataset/corsi-di-formazione-professionale-residenti-nel-comune-di-firenze-iscritte-e-formate-per-c-2009##",
+    "landing_page": "https://dati.toscana.it/dataset/corsi-di-formazione-professionale-residenti-nel-comune-di-firenze-iscritte-e-formate-per-c-2009#",
     "portal_url": "https://data.europa.eu/data/datasets/c_d612-d-6103?locale=en",
     "keywords": [
       "13ledonneafirenze",
@@ -25121,7 +25413,7 @@
     "modified": "2010-12-31",
     "issued": "2011-10-17",
     "year": "2010",
-    "landing_page": "https://dati.toscana.it/dataset/corsi-di-formazione-professionale-residenti-nel-comune-di-firenze-iscritte-e-formate-per-c-2010##",
+    "landing_page": "https://dati.toscana.it/dataset/corsi-di-formazione-professionale-residenti-nel-comune-di-firenze-iscritte-e-formate-per-c-2010#",
     "portal_url": "https://data.europa.eu/data/datasets/c_d612-d-6090?locale=en",
     "keywords": [
       "13ledonneafirenze",
@@ -25153,8 +25445,8 @@
     "licence": [
       "CC BY 4.0"
     ],
-    "modified": "2026-04-30",
-    "issued": "2026-07-07",
+    "modified": "2026-06-30",
+    "issued": "2026-09-21",
     "year": "2026",
     "landing_page": "https://opencoesione.gov.it/it/opendata#",
     "portal_url": "https://data.europa.eu/data/datasets/pcm-d-425?locale=en",
@@ -25825,7 +26117,7 @@
     "modified": "2015-08-18",
     "issued": "2015-08-18",
     "year": "2015",
-    "landing_page": "https://dati.toscana.it/dataset/corsi-di-formazione-professionale-comparto-ore-previste-iscritti-formati-e-qualificati-ann-2012##",
+    "landing_page": "https://dati.toscana.it/dataset/corsi-di-formazione-professionale-comparto-ore-previste-iscritti-formati-e-qualificati-ann-2012#",
     "portal_url": "https://data.europa.eu/data/datasets/c_d612-d-5756?locale=en",
     "keywords": [
       "05istruzioneecultura",
@@ -25866,7 +26158,7 @@
     "modified": "2015-08-18",
     "issued": "2015-08-18",
     "year": "2015",
-    "landing_page": "https://dati.toscana.it/dataset/corsi-di-formazione-professionale-comparto-ore-previste-iscritti-formati-e-qualificati-ann-2013##",
+    "landing_page": "https://dati.toscana.it/dataset/corsi-di-formazione-professionale-comparto-ore-previste-iscritti-formati-e-qualificati-ann-2013#",
     "portal_url": "https://data.europa.eu/data/datasets/c_d612-d-5757?locale=en",
     "keywords": [
       "05istruzioneecultura",
@@ -25907,7 +26199,7 @@
     "modified": "2015-08-18",
     "issued": "2015-08-18",
     "year": "2015",
-    "landing_page": "https://dati.toscana.it/dataset/corsi-di-formazione-professionale-comparto-ore-previste-iscritti-formati-e-qualificati-ann-2014##",
+    "landing_page": "https://dati.toscana.it/dataset/corsi-di-formazione-professionale-comparto-ore-previste-iscritti-formati-e-qualificati-ann-2014#",
     "portal_url": "https://data.europa.eu/data/datasets/c_d612-d-5758?locale=en",
     "keywords": [
       "05istruzioneecultura",
@@ -25948,7 +26240,7 @@
     "modified": "2015-08-21",
     "issued": "2015-08-21",
     "year": "2015",
-    "landing_page": "https://dati.toscana.it/dataset/corsi-di-formazione-professionale-comparto-alunne-iscritte-formate-e-qualificate-anno-2012##",
+    "landing_page": "https://dati.toscana.it/dataset/corsi-di-formazione-professionale-comparto-alunne-iscritte-formate-e-qualificate-anno-2012#",
     "portal_url": "https://data.europa.eu/data/datasets/c_d612-d-5571?locale=en",
     "keywords": [
       "13ledonneafirenze",
@@ -25989,7 +26281,7 @@
     "modified": "2015-08-21",
     "issued": "2015-08-21",
     "year": "2015",
-    "landing_page": "https://dati.toscana.it/dataset/corsi-di-formazione-professionale-comparto-alunne-iscritte-formate-e-qualificate-anno-2013##",
+    "landing_page": "https://dati.toscana.it/dataset/corsi-di-formazione-professionale-comparto-alunne-iscritte-formate-e-qualificate-anno-2013#",
     "portal_url": "https://data.europa.eu/data/datasets/c_d612-d-5567?locale=en",
     "keywords": [
       "13ledonneafirenze",
@@ -26030,7 +26322,7 @@
     "modified": "2015-08-21",
     "issued": "2015-08-21",
     "year": "2015",
-    "landing_page": "https://dati.toscana.it/dataset/corsi-di-formazione-professionale-comparto-alunne-iscritte-formate-e-qualificate-anno-2014##",
+    "landing_page": "https://dati.toscana.it/dataset/corsi-di-formazione-professionale-comparto-alunne-iscritte-formate-e-qualificate-anno-2014#",
     "portal_url": "https://data.europa.eu/data/datasets/c_d612-d-5570?locale=en",
     "keywords": [
       "13ledonneafirenze",
@@ -26071,7 +26363,7 @@
     "modified": "2015-08-18",
     "issued": "2015-08-18",
     "year": "2015",
-    "landing_page": "https://dati.toscana.it/dataset/corsi-di-formazione-professionale-tipologia-ore-previste-iscritti-formati-e-qualificati-an-2012##",
+    "landing_page": "https://dati.toscana.it/dataset/corsi-di-formazione-professionale-tipologia-ore-previste-iscritti-formati-e-qualificati-an-2012#",
     "portal_url": "https://data.europa.eu/data/datasets/c_d612-d-5775?locale=en",
     "keywords": [
       "05istruzioneecultura",
@@ -26112,7 +26404,7 @@
     "modified": "2015-08-18",
     "issued": "2015-08-18",
     "year": "2015",
-    "landing_page": "https://dati.toscana.it/dataset/corsi-di-formazione-professionale-tipologia-ore-previste-iscritti-formati-e-qualificati-an-2013##",
+    "landing_page": "https://dati.toscana.it/dataset/corsi-di-formazione-professionale-tipologia-ore-previste-iscritti-formati-e-qualificati-an-2013#",
     "portal_url": "https://data.europa.eu/data/datasets/c_d612-d-5774?locale=en",
     "keywords": [
       "05istruzioneecultura",
@@ -26153,7 +26445,7 @@
     "modified": "2015-08-18",
     "issued": "2015-08-18",
     "year": "2015",
-    "landing_page": "https://dati.toscana.it/dataset/corsi-di-formazione-professionale-tipologia-ore-previste-iscritti-formati-e-qualificati-an-2014##",
+    "landing_page": "https://dati.toscana.it/dataset/corsi-di-formazione-professionale-tipologia-ore-previste-iscritti-formati-e-qualificati-an-2014#",
     "portal_url": "https://data.europa.eu/data/datasets/c_d612-d-5773?locale=en",
     "keywords": [
       "05istruzioneecultura",
@@ -26194,7 +26486,7 @@
     "modified": "2015-08-25",
     "issued": "2015-08-25",
     "year": "2015",
-    "landing_page": "https://dati.toscana.it/dataset/corsi-di-formazione-professionale-tipologia-alunne-iscritte-formate-e-qualificate-anno-2012##",
+    "landing_page": "https://dati.toscana.it/dataset/corsi-di-formazione-professionale-tipologia-alunne-iscritte-formate-e-qualificate-anno-2012#",
     "portal_url": "https://data.europa.eu/data/datasets/c_d612-d-5576?locale=en",
     "keywords": [
       "13ledonneafirenze",
@@ -26235,7 +26527,7 @@
     "modified": "2015-08-25",
     "issued": "2015-08-25",
     "year": "2015",
-    "landing_page": "https://dati.toscana.it/dataset/corsi-di-formazione-professionale-tipologia-alunne-iscritte-formate-e-qualificate-anno-2013##",
+    "landing_page": "https://dati.toscana.it/dataset/corsi-di-formazione-professionale-tipologia-alunne-iscritte-formate-e-qualificate-anno-2013#",
     "portal_url": "https://data.europa.eu/data/datasets/c_d612-d-5578?locale=en",
     "keywords": [
       "13ledonneafirenze",
@@ -26276,7 +26568,7 @@
     "modified": "2015-08-25",
     "issued": "2015-08-25",
     "year": "2015",
-    "landing_page": "https://dati.toscana.it/dataset/corsi-di-formazione-professionale-tipologia-alunne-iscritte-formate-e-qualificate-anno-2014##",
+    "landing_page": "https://dati.toscana.it/dataset/corsi-di-formazione-professionale-tipologia-alunne-iscritte-formate-e-qualificate-anno-2014#",
     "portal_url": "https://data.europa.eu/data/datasets/c_d612-d-5577?locale=en",
     "keywords": [
       "13ledonneafirenze",
@@ -26315,7 +26607,7 @@
     "modified": "2009-12-31",
     "issued": "2011-10-17",
     "year": "2009",
-    "landing_page": "https://dati.toscana.it/dataset/corsi-di-formazione-professionale-sul-territorio-del-comune-di-firenze-alunne-iscritte-for-2009##",
+    "landing_page": "https://dati.toscana.it/dataset/corsi-di-formazione-professionale-sul-territorio-del-comune-di-firenze-alunne-iscritte-for-2009#",
     "portal_url": "https://data.europa.eu/data/datasets/c_d612-d-6098?locale=en",
     "keywords": [
       "13ledonneafirenze",
@@ -26352,7 +26644,7 @@
     "modified": "2010-12-31",
     "issued": "2011-10-17",
     "year": "2010",
-    "landing_page": "https://dati.toscana.it/dataset/corsi-di-formazione-professionale-sul-territorio-del-comune-di-firenze-alunne-iscritte-for-2010##",
+    "landing_page": "https://dati.toscana.it/dataset/corsi-di-formazione-professionale-sul-territorio-del-comune-di-firenze-alunne-iscritte-for-2010#",
     "portal_url": "https://data.europa.eu/data/datasets/c_d612-d-6094?locale=en",
     "keywords": [
       "13ledonneafirenze",
@@ -26391,7 +26683,7 @@
     "modified": "2015-08-31",
     "issued": "2015-08-31",
     "year": "2015",
-    "landing_page": "https://dati.toscana.it/dataset/corsi-di-formazione-professionale-effettuati-dai-residenti-comparto-iscritti-e-formati-ann-2012##",
+    "landing_page": "https://dati.toscana.it/dataset/corsi-di-formazione-professionale-effettuati-dai-residenti-comparto-iscritti-e-formati-ann-2012#",
     "portal_url": "https://data.europa.eu/data/datasets/c_d612-d-5754?locale=en",
     "keywords": [
       "05istruzioneecultura",
@@ -26433,7 +26725,7 @@
     "modified": "2015-08-31",
     "issued": "2015-08-31",
     "year": "2015",
-    "landing_page": "https://dati.toscana.it/dataset/corsi-di-formazione-professionale-effettuati-dai-residenti-comparto-iscritti-e-formati-ann-2013##",
+    "landing_page": "https://dati.toscana.it/dataset/corsi-di-formazione-professionale-effettuati-dai-residenti-comparto-iscritti-e-formati-ann-2013#",
     "portal_url": "https://data.europa.eu/data/datasets/c_d612-d-5763?locale=en",
     "keywords": [
       "05istruzioneecultura",
@@ -26475,7 +26767,7 @@
     "modified": "2015-08-31",
     "issued": "2015-08-31",
     "year": "2015",
-    "landing_page": "https://dati.toscana.it/dataset/corsi-di-formazione-professionale-effettuati-dai-residenti-comparto-iscritti-e-formati-ann-2014##",
+    "landing_page": "https://dati.toscana.it/dataset/corsi-di-formazione-professionale-effettuati-dai-residenti-comparto-iscritti-e-formati-ann-2014#",
     "portal_url": "https://data.europa.eu/data/datasets/c_d612-d-5776?locale=en",
     "keywords": [
       "05istruzioneecultura",
@@ -26517,7 +26809,7 @@
     "modified": "2015-09-03",
     "issued": "2015-03-09",
     "year": "2015",
-    "landing_page": "https://dati.toscana.it/dataset/corsi-di-formazione-professionale-effettuati-dai-residenti-tipologia-iscritti-e-formati-an-2012##",
+    "landing_page": "https://dati.toscana.it/dataset/corsi-di-formazione-professionale-effettuati-dai-residenti-tipologia-iscritti-e-formati-an-2012#",
     "portal_url": "https://data.europa.eu/data/datasets/c_d612-d-5771?locale=en",
     "keywords": [
       "05istruzioneecultura",
@@ -26559,7 +26851,7 @@
     "modified": "2015-09-03",
     "issued": "2015-03-09",
     "year": "2015",
-    "landing_page": "https://dati.toscana.it/dataset/corsi-di-formazione-professionale-effettuati-dai-residenti-tipologia-iscritti-e-formati-an-2013##",
+    "landing_page": "https://dati.toscana.it/dataset/corsi-di-formazione-professionale-effettuati-dai-residenti-tipologia-iscritti-e-formati-an-2013#",
     "portal_url": "https://data.europa.eu/data/datasets/c_d612-d-5772?locale=en",
     "keywords": [
       "05istruzioneecultura",
@@ -26601,7 +26893,7 @@
     "modified": "2015-09-03",
     "issued": "2015-03-09",
     "year": "2015",
-    "landing_page": "https://dati.toscana.it/dataset/corsi-di-formazione-professionale-effettuati-dai-residenti-tipologia-iscritti-e-formati-an-2014##",
+    "landing_page": "https://dati.toscana.it/dataset/corsi-di-formazione-professionale-effettuati-dai-residenti-tipologia-iscritti-e-formati-an-2014#",
     "portal_url": "https://data.europa.eu/data/datasets/c_d612-d-5770?locale=en",
     "keywords": [
       "05istruzioneecultura",
@@ -26973,7 +27265,7 @@
     "title": "Apprentices from Liechtenstein by country of company, field of education, training year and sex since 2014/15",
     "country": "Liechtenstein",
     "country_code": "LI",
-    "publisher": "Amt für Statistik",
+    "publisher": "Office of Statistics",
     "concerns_apprenticeship": "Yes",
     "catalogue": "opendata-li",
     "description": "Apprentices from Liechtenstein by Year, Country of company, Field of education, Sex and Training year",
@@ -26986,17 +27278,28 @@
     ],
     "modified": "2026-06-06",
     "year": "2026",
-    "landing_page": "https://etab.llv.li/PXWeb/pxweb/en/eTab",
+    "landing_page": "https://etab.llv.li/PXWeb/pxweb/de/eTab",
     "portal_url": "https://data.europa.eu/data/datasets/483-001?locale=en",
     "keywords": [
       "Berufliche Grundbildung",
       "Vocational education and training"
     ],
     "matched_queries": [
+      "apprendistato",
       "apprentice",
       "apprentices",
+      "apprentis",
+      "apprentissage",
+      "aprendices",
+      "aprendizaje",
+      "lärling",
+      "lærling",
+      "lærlinge",
+      "oppisopimus",
+      "ucenicie",
       "vocational education",
-      "vocational education and training"
+      "vocational education and training",
+      "μαθητεία"
     ],
     "original_language": "de, en"
   },
@@ -27005,7 +27308,7 @@
     "title": "Apprentices from Liechtenstein with vocational baccalaureate by year, field of education and sex since 2010/11",
     "country": "Liechtenstein",
     "country_code": "LI",
-    "publisher": "Amt für Statistik",
+    "publisher": "Office of Statistics",
     "concerns_apprenticeship": "Yes",
     "catalogue": "opendata-li",
     "description": "Apprentices from Liechtenstein with vocational baccalaureate by Year, Field of education and Sex",
@@ -27018,7 +27321,7 @@
     ],
     "modified": "2026-06-06",
     "year": "2026",
-    "landing_page": "https://etab.llv.li/PXWeb/pxweb/en/eTab",
+    "landing_page": "https://etab.llv.li/PXWeb/pxweb/de/eTab",
     "portal_url": "https://data.europa.eu/data/datasets/483-002?locale=en",
     "keywords": [
       "Berufliche Grundbildung",
@@ -27027,6 +27330,12 @@
     "matched_queries": [
       "apprentice",
       "apprentices",
+      "apprentis",
+      "aprendices",
+      "lärling",
+      "lærling",
+      "lærlinge",
+      "oppisopimus",
       "vocational education",
       "vocational education and training"
     ],
@@ -27037,7 +27346,7 @@
     "title": "Apprentices in Liechtenstein by field of education, country of residence and sex since 2014/15",
     "country": "Liechtenstein",
     "country_code": "LI",
-    "publisher": "Amt für Statistik",
+    "publisher": "Office of Statistics",
     "concerns_apprenticeship": "Yes",
     "catalogue": "opendata-li",
     "description": "Apprentices in Liechtenstein by Year, Field of education, Sex and Country of residence",
@@ -27050,7 +27359,7 @@
     ],
     "modified": "2026-06-06",
     "year": "2026",
-    "landing_page": "https://etab.llv.li/PXWeb/pxweb/en/eTab",
+    "landing_page": "https://etab.llv.li/PXWeb/pxweb/de/eTab",
     "portal_url": "https://data.europa.eu/data/datasets/483-011?locale=en",
     "keywords": [
       "Berufliche Grundbildung",
@@ -27059,6 +27368,12 @@
     "matched_queries": [
       "apprentice",
       "apprentices",
+      "apprentis",
+      "aprendices",
+      "lärling",
+      "lærling",
+      "lærlinge",
+      "oppisopimus",
       "vocational education",
       "vocational education and training"
     ],
@@ -27069,7 +27384,7 @@
     "title": "Apprentices in Liechtenstein with vocational baccalaureate by field of education, country of residence and sex since 2014/15",
     "country": "Liechtenstein",
     "country_code": "LI",
-    "publisher": "Amt für Statistik",
+    "publisher": "Office of Statistics",
     "concerns_apprenticeship": "Yes",
     "catalogue": "opendata-li",
     "description": "Apprentices in Liechtenstein with vocational baccalaureate by Year, Field of education, Sex and Country of residence",
@@ -27082,7 +27397,7 @@
     ],
     "modified": "2026-06-06",
     "year": "2026",
-    "landing_page": "https://etab.llv.li/PXWeb/pxweb/en/eTab",
+    "landing_page": "https://etab.llv.li/PXWeb/pxweb/de/eTab",
     "portal_url": "https://data.europa.eu/data/datasets/483-012?locale=en",
     "keywords": [
       "Berufliche Grundbildung",
@@ -27091,6 +27406,12 @@
     "matched_queries": [
       "apprentice",
       "apprentices",
+      "apprentis",
+      "aprendices",
+      "lärling",
+      "lærling",
+      "lærlinge",
+      "oppisopimus",
       "vocational education",
       "vocational education and training"
     ],
@@ -27101,7 +27422,7 @@
     "title": "Graduates of apprentices from Liechtenstein by fields of education and sex since 2015",
     "country": "Liechtenstein",
     "country_code": "LI",
-    "publisher": "Amt für Statistik",
+    "publisher": "Office of Statistics",
     "concerns_apprenticeship": "Yes",
     "catalogue": "opendata-li",
     "description": "Graduates of apprentices from Liechtenstein by Year, Field of education, Sex and Graduation",
@@ -27114,7 +27435,7 @@
     ],
     "modified": "2026-06-06",
     "year": "2026",
-    "landing_page": "https://etab.llv.li/PXWeb/pxweb/de/eTab",
+    "landing_page": "https://etab.llv.li/PXWeb/pxweb/en/eTab",
     "portal_url": "https://data.europa.eu/data/datasets/483-101?locale=en",
     "keywords": [
       "Berufliche Grundbildung",
@@ -27123,6 +27444,7 @@
     "matched_queries": [
       "apprentice",
       "apprentices",
+      "apprentis",
       "vocational education",
       "vocational education and training"
     ],
@@ -27133,7 +27455,7 @@
     "title": "Graduates of apprentices in Liechtenstein by fields and sex since 2015",
     "country": "Liechtenstein",
     "country_code": "LI",
-    "publisher": "Amt für Statistik",
+    "publisher": "Office of Statistics",
     "concerns_apprenticeship": "Yes",
     "catalogue": "opendata-li",
     "description": "Graduates of apprentices in Liechtenstein by Year, Field of education, Sex and Graduation",
@@ -27146,7 +27468,7 @@
     ],
     "modified": "2026-06-06",
     "year": "2026",
-    "landing_page": "https://etab.llv.li/PXWeb/pxweb/de/eTab",
+    "landing_page": "https://etab.llv.li/PXWeb/pxweb/en/eTab",
     "portal_url": "https://data.europa.eu/data/datasets/483-111?locale=en",
     "keywords": [
       "Berufliche Grundbildung",
@@ -27155,6 +27477,7 @@
     "matched_queries": [
       "apprentice",
       "apprentices",
+      "apprentis",
       "vocational education",
       "vocational education and training"
     ],
@@ -27165,7 +27488,7 @@
     "title": "Individual basis - Apprentices in Liechtenstein by apprenticeship year and sex since 2017",
     "country": "Liechtenstein",
     "country_code": "LI",
-    "publisher": "Amt für Statistik",
+    "publisher": "Office of Statistics",
     "concerns_apprenticeship": "Yes",
     "catalogue": "opendata-li",
     "description": "Individual basis - Apprentices in Liechtenstein by Year, Apprenticeship year and Sex",
@@ -27178,16 +27501,26 @@
     ],
     "modified": "2026-06-15",
     "year": "2026",
-    "landing_page": "https://etab.llv.li/PXWeb/pxweb/de/eTab",
+    "landing_page": "https://etab.llv.li/PXWeb/pxweb/en/eTab",
     "portal_url": "https://data.europa.eu/data/datasets/363-133?locale=en",
     "keywords": [
       "Banken",
       "Banking institutions"
     ],
     "matched_queries": [
+      "apprendistato",
       "apprentice",
       "apprentices",
-      "apprenticeship"
+      "apprenticeship",
+      "apprentis",
+      "apprentissage",
+      "aprendizaje",
+      "lärling",
+      "lærling",
+      "lærlinge",
+      "oppisopimus",
+      "ucenicie",
+      "μαθητεία"
     ],
     "original_language": "de, en"
   },
@@ -27196,7 +27529,7 @@
     "title": "Training companies in Liechtenstein by number of apprentices since 2010/11",
     "country": "Liechtenstein",
     "country_code": "LI",
-    "publisher": "Amt für Statistik",
+    "publisher": "Office of Statistics",
     "concerns_apprenticeship": "Yes",
     "catalogue": "opendata-li",
     "description": "Training companies in Liechtenstein bei Jahr und Lehrbetriebsgrösse",
@@ -27218,6 +27551,12 @@
     "matched_queries": [
       "apprentice",
       "apprentices",
+      "aprendices",
+      "lärling",
+      "lærling",
+      "lærlinge",
+      "oppisopimus",
+      "praktykant",
       "vocational education",
       "vocational education and training"
     ],
@@ -27836,6 +28175,8 @@
     "matched_queries": [
       "erhvervsuddannelse",
       "szakképzés",
+      "vocational education",
+      "vocational education and training",
       "vocational training"
     ],
     "original_language": "en, lt"
@@ -29257,7 +29598,8 @@
       "Leerlingen"
     ],
     "matched_queries": [
-      "mbo"
+      "mbo",
+      "vocational training"
     ],
     "original_language": "nl"
   },
@@ -30353,6 +30695,7 @@
       "Leerlingen"
     ],
     "matched_queries": [
+      "kształcenie zawodowe",
       "mbo"
     ],
     "original_language": "nl"
@@ -31826,6 +32169,33 @@
     "original_language": "nl"
   },
   {
+    "id": "cbs-microdata-0b01e410807e0b00",
+    "title": "National Cohort Study Education with enrolment and exam data of students in Secondary Vocational Education (from 01-09-2021)",
+    "country": "Netherlands",
+    "country_code": "NL",
+    "publisher": "Centraal_Bureau_voor_de_Statistiek",
+    "concerns_apprenticeship": "No",
+    "catalogue": "nsip-nl",
+    "description": "National Cohort Research Education (NCO)\nThe NCO microdata files have been compiled by the Central Bureau of Statistics (CBS) for the National Cohort Research Education (NCO). The NCO has been initiated and is funded by the National Research Board for Education (NRO). For these files, existing register data from the socio-statistical files (SSB) of Statistics Netherlands (CBS) and existing educational registrations of the Register of Educational Participants (ROD) of the Educational Implementation Service (DUO) have been combined.",
+    "licence": [
+      "Not stated"
+    ],
+    "portal_url": "https://data.europa.eu/data/datasets/cbs-microdata-0b01e410807e0b00?locale=en",
+    "keywords": [
+      "Data Governance Act",
+      "DGA",
+      "Microdata",
+      "Middelbaar beroepsonderwijs mbo",
+      "ODISSEI"
+    ],
+    "matched_queries": [
+      "beroepsonderwijs",
+      "erhvervsuddannelse",
+      "szakképzés"
+    ],
+    "original_language": "nl"
+  },
+  {
     "id": "nieuwe_vsv_mbo",
     "title": "New VSV MBO",
     "country": "Netherlands",
@@ -33087,6 +33457,33 @@
     "original_language": "nl"
   },
   {
+    "id": "cbs-microdata-0b01e4108038382e",
+    "title": "Results of employer research into the connection of vocational education and training with the labour market (from 04-01-2018)",
+    "country": "Netherlands",
+    "country_code": "NL",
+    "publisher": "Centraal_Bureau_voor_de_Statistiek",
+    "concerns_apprenticeship": "No",
+    "catalogue": "nsip-nl",
+    "description": "Research into the satisfaction of employers with the connection of the training followed by MBO'ers and their position on the labour market. SBB (Cooperation Organisation for Vocational Training in Business) carries out this research on behalf of the Ministry of Education, Culture and Science and has approached CBS for the execution of the fieldwork.\nMore information on how to access the data:\n> https://www.cbs.nl/en-en/our-services/custom-and-microdata/microdata-self-research-do\n### Methodology\nThis is a CAWI-only study.",
+    "licence": [
+      "Not stated"
+    ],
+    "portal_url": "https://data.europa.eu/data/datasets/cbs-microdata-0b01e4108038382e?locale=en",
+    "keywords": [
+      "Data Governance Act",
+      "DGA",
+      "Microdata",
+      "ODISSEI"
+    ],
+    "matched_queries": [
+      "mbo",
+      "szakképzés",
+      "vocational training",
+      "yrkesutbildning"
+    ],
+    "original_language": "nl"
+  },
+  {
     "id": "rio_nfo_po_vo_vavo_mbo_ho~~1",
     "title": "RIO nfo, po, vo, vavo, mbo and ho",
     "country": "Netherlands",
@@ -33108,6 +33505,64 @@
     ],
     "matched_queries": [
       "mbo"
+    ],
+    "original_language": "nl"
+  },
+  {
+    "id": "cbs-microdata-0b01e410807ee3f6",
+    "title": "School drop-out survey (SVO), characteristics of school leavers who have obtained their VET or MBO diploma or who have left education prematurely (01-01-2023 - 01-01-2024)",
+    "country": "Netherlands",
+    "country_code": "NL",
+    "publisher": "Centraal_Bureau_voor_de_Statistiek",
+    "concerns_apprenticeship": "No",
+    "catalogue": "nsip-nl",
+    "description": "Research on graduates and school leavers in the labour market. One of the underlying reasons for the implementation of this study is the MBO Macro-Efficiency Act. In order to be able to monitor the effect of this law, the Ministry of Education, Culture and Science (OCW) wants to have access to the connection between the course followed and the position that is exercised.\nMore information on how to access the data:\n> https://www.cbs.nl/en-en/our-services/custom-and-microdata/microdata-self-research-do\n### Methodology\nThe school-leaving survey is a sample survey.",
+    "licence": [
+      "Not stated"
+    ],
+    "portal_url": "https://data.europa.eu/data/datasets/cbs-microdata-0b01e410807ee3f6?locale=en",
+    "keywords": [
+      "Data Governance Act",
+      "DGA",
+      "Microdata",
+      "ODISSEI"
+    ],
+    "matched_queries": [
+      "Ausbildung",
+      "Berufsbildung",
+      "erhvervsuddannelse",
+      "mbo",
+      "szakképzés",
+      "yrkesutbildning"
+    ],
+    "original_language": "nl"
+  },
+  {
+    "id": "cbs-microdata-0b01e4108079e7cb",
+    "title": "School drop-out survey (SVO), characteristics of school leavers who have obtained their VET or MBO diploma or who have left education prematurely (01-09-2022 - 01-01-2023)",
+    "country": "Netherlands",
+    "country_code": "NL",
+    "publisher": "Centraal_Bureau_voor_de_Statistiek",
+    "concerns_apprenticeship": "No",
+    "catalogue": "nsip-nl",
+    "description": "Research on graduates and school leavers in the labour market. One of the underlying reasons for the implementation of this study is the MBO Macro-Efficiency Act. In order to be able to monitor the effect of this law, the Ministry of Education, Culture and Science (OCW) wants to have access to the connection between the course followed and the position that is exercised.\nMore information on how to access the data:\n> https://www.cbs.nl/en-en/our-services/custom-and-microdata/microdata-self-research-do\n### Methodology\nThe school-leaving survey is a sample survey.",
+    "licence": [
+      "Not stated"
+    ],
+    "portal_url": "https://data.europa.eu/data/datasets/cbs-microdata-0b01e4108079e7cb?locale=en",
+    "keywords": [
+      "Data Governance Act",
+      "DGA",
+      "Microdata",
+      "ODISSEI"
+    ],
+    "matched_queries": [
+      "Ausbildung",
+      "Berufsbildung",
+      "erhvervsuddannelse",
+      "mbo",
+      "szakképzés",
+      "yrkesutbildning"
     ],
     "original_language": "nl"
   },
@@ -33244,30 +33699,6 @@
       "Not stated"
     ],
     "portal_url": "https://data.europa.eu/data/datasets/cbs-microdata-0b01e4108055b33a?locale=en",
-    "keywords": [
-      "Data Governance Act",
-      "DGA",
-      "Microdata",
-      "ODISSEI"
-    ],
-    "matched_queries": [
-      "mbo"
-    ],
-    "original_language": "nl"
-  },
-  {
-    "id": "cbs-microdata-0b01e4108079e7cb",
-    "title": "Schoolverlatersonderzoek (SVO), kenmerken van schoolverlaters die hun vo- of mbo-diploma hebben behaald of die het onderwijs voortijdig hebben verlaten (vanaf 01-09-2022)",
-    "country": "Netherlands",
-    "country_code": "NL",
-    "publisher": "Centraal_Bureau_voor_de_Statistiek",
-    "concerns_apprenticeship": "No",
-    "catalogue": "nsip-nl",
-    "description": "Onderzoek naar gediplomeerden en schoolverlaters op de arbeidsmarkt. Een van de achterliggende redenen voor de uitvoering van dit onderzoek is de wet macrodoelmatigheid mbo. Om het effect van deze wet te kunnen monitoren wil het ministerie van Onderwijs, Cultuur en Wetenschap (OCW) kunnen beschikken over de aansluiting tussen de gevolgde opleiding en de functie die wordt uitgeoefend.",
-    "licence": [
-      "Not stated"
-    ],
-    "portal_url": "https://data.europa.eu/data/datasets/cbs-microdata-0b01e4108079e7cb?locale=en",
     "keywords": [
       "Data Governance Act",
       "DGA",
@@ -34951,6 +35382,42 @@
     "original_language": "en, nb, nn"
   },
   {
+    "id": "5b03f6bbc8d8c9229f4afa4a",
+    "title": "Absences for Training and Vocational Improvement",
+    "country": "Portugal",
+    "country_code": "PT",
+    "publisher": "Administração Central do Sistema de Saúde (ACSS), I.P",
+    "concerns_apprenticeship": "No",
+    "catalogue": "dados-gov-pt",
+    "description": "Monitor absences from work due to the frequency of external training activities, by entity and professional group.\nIt covers the various types of absences justified by the external frequency of training and further training by workers, grouped by professional group and entity.\n**Remarks:** Does not include attendance at in-house trainings. Includes hours of absence converted into working days (modules of 7 hours of absence are equivalent to one day of absence). The indicator does not cover IGAS and DGS data.",
+    "formats": [
+      "CSV",
+      "JSON",
+      "SHP"
+    ],
+    "licence": [
+      "Not stated"
+    ],
+    "issued": "2018-12-31",
+    "year": "2018",
+    "landing_page": "https://dados.gov.pt/datasets/ausencias-para-formacao-e-aperfeicoamento-profissional",
+    "portal_url": "https://data.europa.eu/data/datasets/5b03f6bbc8d8c9229f4afa4a?locale=en",
+    "keywords": [
+      "absentismo",
+      "ausencias",
+      "eficiencia",
+      "formacao",
+      "transparencia-sns-gov-pt"
+    ],
+    "matched_queries": [
+      "Ausbildung",
+      "erhvervsuddannelse",
+      "szakképzés",
+      "yrkesutbildning"
+    ],
+    "original_language": "pt"
+  },
+  {
     "id": "649bb044078190f89be7719c",
     "title": "Absences for Vocational Training and Improvement",
     "country": "Portugal",
@@ -35093,75 +35560,37 @@
     "original_language": "pt"
   },
   {
-    "id": "5ae9c624c8d8c9146d44cc1a",
-    "title": "Centros de Formação Profissional e Outros",
-    "country": "Portugal",
-    "country_code": "PT",
-    "publisher": "Município de Lisboa",
-    "concerns_apprenticeship": "No",
-    "catalogue": "dados-gov-pt",
-    "description": "Conjunto de dados referentes a \"Centros de Formação Profissional e Outros\". O mapa dos Setores Estratégicos - \"Economia Digital\" - de Lisboa não representa um recenseamento exaustivo, mas antes disponibiliza informação de diversos atores estratégicos que atuam na cidade e na região, obedecendo a lógicas de cluster. A análise e seleção dos atores representados foi efetuada pelos técnicos da Direção Municipal de Economia e Inovação, com base em pesquisa online em sites especializados, estando sujeita a permanentes retificações e atualizações. Dataset of \"Trainning Center and Others\".",
-    "formats": [
-      "GEOJSON"
-    ],
-    "licence": [
-      "CC0 1.0"
-    ],
-    "landing_page": "https://geodados-cml.hub.arcgis.com/datasets/CML::centros-de-forma%C3%A7%C3%A3o-profissional-e-outros/explore",
-    "portal_url": "https://data.europa.eu/data/datasets/5ae9c624c8d8c9146d44cc1a?locale=en",
-    "keywords": [
-      "creativity",
-      "criatividade",
-      "dados-cm-lisboa-pt",
-      "digital",
-      "digital-economy",
-      "economia",
-      "economia-digital",
-      "economy",
-      "hardware",
-      "innovation",
-      "inovacao",
-      "investigacao",
-      "producao",
-      "production",
-      "research"
-    ],
-    "matched_queries": [
-      "formação profissional"
-    ],
-    "original_language": "pt"
-  },
-  {
-    "id": "ine-0014470",
-    "title": "Desempregados inscritos em centros de emprego do IEFP (movimento ao longo do mês - N.º)",
+    "id": "ine-0007078",
+    "title": "Average duration of CVT courses (per participant - No.)",
     "country": "Portugal",
     "country_code": "PT",
     "publisher": "Instituto Nacional de Estatística",
     "concerns_apprenticeship": "No",
     "catalogue": "dados-gov-pt",
-    "description": "Desempregados inscritos em centros de emprego do IEFP (movimento ao longo do mês - N.º); Mensal - Instituto do Emprego e Formação Profissional\nhttps://www.ine.pt/xurl/indx/0014470/PT",
+    "description": "Average duration of CVT courses (per participant - No.) by economic activity (CAE Rev. 3) and Staff band in service; Five-yearly - MTSSS/GEP, Community survey on continuing vocational training\nhttps://www.ine.pt/xurl/indx/0007078/PT",
     "formats": [
       "JSON"
     ],
     "licence": [
       "CC BY 4.0"
     ],
-    "modified": "2026-09-24",
-    "year": "2026",
-    "landing_page": "https://www.ine.pt/xurl/indx/0014470/PT",
-    "portal_url": "https://data.europa.eu/data/datasets/ine-0014470?locale=en",
+    "modified": "2024-01-29",
+    "year": "2024",
+    "landing_page": "https://www.ine.pt/xurl/indx/0007078/PT",
+    "portal_url": "https://data.europa.eu/data/datasets/ine-0007078?locale=en",
     "keywords": [
-      "desempregados",
-      "desemprego",
-      "em",
+      "continua",
+      "dos",
+      "duracao",
+      "educacao",
+      "educacao-formacao-e-aprendizagem",
+      "formacao",
+      "formacao-e-aprendizagem",
       "ine",
-      "mercado-de-trabalho",
-      "profissional",
       "www-ine-pt"
     ],
     "matched_queries": [
-      "formação profissional",
-      "IeFP"
+      "vocational training"
     ],
     "original_language": "pt"
   },
@@ -35197,75 +35626,6 @@
     ],
     "matched_queries": [
       "vocational training"
-    ],
-    "original_language": "pt"
-  },
-  {
-    "id": "ine-0007078",
-    "title": "Duração média dos cursos de formação profissional contínua (por participante - N.º)",
-    "country": "Portugal",
-    "country_code": "PT",
-    "publisher": "Instituto Nacional de Estatística",
-    "concerns_apprenticeship": "No",
-    "catalogue": "dados-gov-pt",
-    "description": "Duração média dos cursos de formação profissional contínua (por participante - N.º) por Atividade económica (CAE Rev. 3) e Escalão de pessoal ao serviço; Quinquenal - MTSSS/GEP, Inquérito comunitário à formação profissional contínua\nhttps://www.ine.pt/xurl/indx/0007078/PT",
-    "formats": [
-      "JSON"
-    ],
-    "licence": [
-      "CC BY 4.0"
-    ],
-    "modified": "2024-01-29",
-    "year": "2024",
-    "landing_page": "https://www.ine.pt/xurl/indx/0007078/PT",
-    "portal_url": "https://data.europa.eu/data/datasets/ine-0007078?locale=en",
-    "keywords": [
-      "continua",
-      "dos",
-      "duracao",
-      "educacao",
-      "educacao-formacao-e-aprendizagem",
-      "formacao",
-      "formacao-e-aprendizagem",
-      "ine",
-      "www-ine-pt"
-    ],
-    "matched_queries": [
-      "formação profissional"
-    ],
-    "original_language": "pt"
-  },
-  {
-    "id": "6abcf3ad93f832b089d5dae4",
-    "title": "Escolas profissionais - Rede IEFP (Instituto do Emprego e da Formação Profissional,IP)",
-    "country": "Portugal",
-    "country_code": "PT",
-    "publisher": "Município de Lisboa",
-    "concerns_apprenticeship": "No",
-    "catalogue": "dados-gov-pt",
-    "description": "Conjunto de dados referentes às escolas profissionais da Rede IEFP, em Lisboa. Dataset of the vocational schools in the IEFP Network in Lisbon\"",
-    "formats": [
-      "GEOJSON"
-    ],
-    "licence": [
-      "CC0 1.0"
-    ],
-    "landing_page": "https://geodados-cml.hub.arcgis.com/datasets/d59e1e793ee04f5b8cd2ef4596065d80/explore?layer=2&location=38.745363%2C-9.159440%2C12",
-    "portal_url": "https://data.europa.eu/data/datasets/6abcf3ad93f832b089d5dae4?locale=en",
-    "keywords": [
-      "dados-cm-lisboa-pt",
-      "educacao",
-      "education",
-      "ensino",
-      "geodados",
-      "lisboa",
-      "opendata",
-      "poieducacao",
-      "school"
-    ],
-    "matched_queries": [
-      "formação profissional",
-      "IeFP"
     ],
     "original_language": "pt"
   },
@@ -35312,13 +35672,13 @@
   },
   {
     "id": "ine-0014471",
-    "title": "Ofertas de emprego em centros de emprego do IEFP (movimento ao longo do mês - N.º)",
+    "title": "Job vacancies in IEFP job centres (movement throughout the month - No.)",
     "country": "Portugal",
     "country_code": "PT",
     "publisher": "Instituto Nacional de Estatística",
     "concerns_apprenticeship": "No",
     "catalogue": "dados-gov-pt",
-    "description": "Ofertas de emprego em centros de emprego do IEFP (movimento ao longo do mês - N.º); Mensal - Instituto do Emprego e Formação Profissional\nhttps://www.ine.pt/xurl/indx/0014471/PT",
+    "description": "Job vacancies in IEFP job centres (movement throughout the month - No.); Monthly - Institute for Employment and Vocational Training\nhttps://www.ine.pt/xurl/indx/0014471/PT",
     "formats": [
       "JSON"
     ],
@@ -35338,90 +35698,20 @@
       "www-ine-pt"
     ],
     "matched_queries": [
-      "formação profissional",
-      "IeFP"
-    ],
-    "original_language": "pt"
-  },
-  {
-    "id": "ine-0002392",
-    "title": "Proporção de empresas com 10 e mais pessoas ao serviço com cursos e outras formas de formação profissional contínua (%)",
-    "country": "Portugal",
-    "country_code": "PT",
-    "publisher": "Instituto Nacional de Estatística",
-    "concerns_apprenticeship": "No",
-    "catalogue": "dados-gov-pt",
-    "description": "Proporção de empresas com 10 e mais pessoas ao serviço com cursos e outras formas de formação profissional contínua (%) por Atividade económica (CAE Rev. 2.1), Escalão de pessoal ao serviço e Tipo de formação; Quinquenal - MTSSS/GEP, Inquérito comunitário à formação profissional contínua\nhttps://www.ine.pt/xurl/indx/0002392/PT",
-    "formats": [
-      "JSON"
-    ],
-    "licence": [
-      "CC BY 4.0"
-    ],
-    "modified": "2013-01-21",
-    "year": "2013",
-    "landing_page": "https://www.ine.pt/xurl/indx/0002392/PT",
-    "portal_url": "https://data.europa.eu/data/datasets/ine-0002392?locale=en",
-    "keywords": [
-      "continua",
-      "educacao",
-      "educacao-formacao-e-aprendizagem",
-      "empresas",
-      "formacao",
-      "formacao-e-aprendizagem",
-      "ine",
-      "proporcao",
-      "www-ine-pt"
-    ],
-    "matched_queries": [
-      "formação profissional"
-    ],
-    "original_language": "pt"
-  },
-  {
-    "id": "ine-0007075",
-    "title": "Proporção de empresas com 10 e mais pessoas ao serviço com cursos e outras formas de formação profissional contínua (%)",
-    "country": "Portugal",
-    "country_code": "PT",
-    "publisher": "Instituto Nacional de Estatística",
-    "concerns_apprenticeship": "No",
-    "catalogue": "dados-gov-pt",
-    "description": "Proporção de empresas com 10 e mais pessoas ao serviço com cursos e outras formas de formação profissional contínua (%) por Atividade económica (CAE Rev. 3), Escalão de pessoal ao serviço e Tipo de formação; Quinquenal - MTSSS/GEP, Inquérito comunitário à formação profissional contínua\nhttps://www.ine.pt/xurl/indx/0007075/PT",
-    "formats": [
-      "JSON"
-    ],
-    "licence": [
-      "CC BY 4.0"
-    ],
-    "modified": "2024-01-29",
-    "year": "2024",
-    "landing_page": "https://www.ine.pt/xurl/indx/0007075/PT",
-    "portal_url": "https://data.europa.eu/data/datasets/ine-0007075?locale=en",
-    "keywords": [
-      "continua",
-      "educacao",
-      "educacao-formacao-e-aprendizagem",
-      "empresas",
-      "formacao",
-      "formacao-e-aprendizagem",
-      "ine",
-      "proporcao",
-      "www-ine-pt"
-    ],
-    "matched_queries": [
-      "formação profissional"
+      "IeFP",
+      "vocational training"
     ],
     "original_language": "pt"
   },
   {
     "id": "ine-0002393",
-    "title": "Proporção de empresas com 10 e mais pessoas ao serviço com formação profissional contínua (%)",
+    "title": "Proportion of enterprises with 10 and more persons employed with continuing vocational training (%)",
     "country": "Portugal",
     "country_code": "PT",
     "publisher": "Instituto Nacional de Estatística",
     "concerns_apprenticeship": "No",
     "catalogue": "dados-gov-pt",
-    "description": "Proporção de empresas com 10 e mais pessoas ao serviço com formação profissional contínua (%) por Atividade económica (CAE Rev. 2.1) e Tipo de formação; Quinquenal - MTSSS/GEP, Inquérito comunitário à formação profissional contínua\nhttps://www.ine.pt/xurl/indx/0002393/PT",
+    "description": "Share of enterprises with 10 and more persons employed with continuing vocational training (%) by economic activity (CAE Rev. 2.1) and Type of training; Five-yearly - MTSSS/GEP, Community survey on continuing vocational training\nhttps://www.ine.pt/xurl/indx/0002393/PT",
     "formats": [
       "JSON"
     ],
@@ -35444,19 +35734,19 @@
       "www-ine-pt"
     ],
     "matched_queries": [
-      "formação profissional"
+      "vocational training"
     ],
     "original_language": "pt"
   },
   {
     "id": "ine-0007076",
-    "title": "Proporção de empresas com 10 e mais pessoas ao serviço com formação profissional contínua (%)",
+    "title": "Proportion of enterprises with 10 and more persons employed with continuing vocational training (%)",
     "country": "Portugal",
     "country_code": "PT",
     "publisher": "Instituto Nacional de Estatística",
     "concerns_apprenticeship": "No",
     "catalogue": "dados-gov-pt",
-    "description": "Proporção de empresas com 10 e mais pessoas ao serviço com formação profissional contínua (%) por Atividade económica (CAE Rev. 3) e Tipo de formação; Quinquenal - MTSSS/GEP, Inquérito comunitário à formação profissional contínua\nhttps://www.ine.pt/xurl/indx/0007076/PT",
+    "description": "Proportion of enterprises with 10 and more persons employed with continuing vocational training (%) by economic activity (CAE Rev. 3) and type of training; Five-yearly - MTSSS/GEP, Community survey on continuing vocational training\nhttps://www.ine.pt/xurl/indx/0007076/PT",
     "formats": [
       "JSON"
     ],
@@ -35479,19 +35769,19 @@
       "www-ine-pt"
     ],
     "matched_queries": [
-      "formação profissional"
+      "vocational training"
     ],
     "original_language": "pt"
   },
   {
     "id": "ine-0007080",
-    "title": "Proporção de empresas com 10 e mais pessoas ao serviço sem formação profissional contínua (%)",
+    "title": "Proportion of enterprises with 10 and more persons employed without continuing vocational training (%)",
     "country": "Portugal",
     "country_code": "PT",
     "publisher": "Instituto Nacional de Estatística",
     "concerns_apprenticeship": "No",
     "catalogue": "dados-gov-pt",
-    "description": "Proporção de empresas com 10 e mais pessoas ao serviço sem formação profissional contínua (%) por Atividade económica (CAE Rev. 3) e Razão de não formação; Quinquenal - MTSSS/GEP, Inquérito comunitário à formação profissional contínua\nhttps://www.ine.pt/xurl/indx/0007080/PT",
+    "description": "Proportion of enterprises with 10 and more persons employed without continuing vocational training (%) by economic activity (CAE Rev. 3) and reason for non-training; Five-yearly - MTSSS/GEP, Community survey on continuing vocational training\nhttps://www.ine.pt/xurl/indx/0007080/PT",
     "formats": [
       "JSON"
     ],
@@ -35514,7 +35804,7 @@
       "www-ine-pt"
     ],
     "matched_queries": [
-      "formação profissional"
+      "vocational training"
     ],
     "original_language": "pt"
   },
@@ -35550,6 +35840,111 @@
     ],
     "matched_queries": [
       "szakképzés",
+      "vocational training"
+    ],
+    "original_language": "pt"
+  },
+  {
+    "id": "ine-0007077",
+    "title": "Rate of access to CVT courses (%)",
+    "country": "Portugal",
+    "country_code": "PT",
+    "publisher": "Instituto Nacional de Estatística",
+    "concerns_apprenticeship": "No",
+    "catalogue": "dados-gov-pt",
+    "description": "Rate of access to CVT courses (%) by economic activity (CAE Rev. 3) and Staff band in service; Five-yearly - MTSSS/GEP, Community survey on continuing vocational training\nhttps://www.ine.pt/xurl/indx/0007077/PT",
+    "formats": [
+      "JSON"
+    ],
+    "licence": [
+      "CC BY 4.0"
+    ],
+    "modified": "2024-01-29",
+    "year": "2024",
+    "landing_page": "https://www.ine.pt/xurl/indx/0007077/PT",
+    "portal_url": "https://data.europa.eu/data/datasets/ine-0007077?locale=en",
+    "keywords": [
+      "acesso",
+      "continua",
+      "educacao",
+      "educacao-formacao-e-aprendizagem",
+      "formacao",
+      "formacao-e-aprendizagem",
+      "ine",
+      "taxa",
+      "www-ine-pt"
+    ],
+    "matched_queries": [
+      "vocational training"
+    ],
+    "original_language": "pt"
+  },
+  {
+    "id": "ine-0002392",
+    "title": "Share of enterprises with 10 and more people employed with courses and other forms of continuing vocational training (%)",
+    "country": "Portugal",
+    "country_code": "PT",
+    "publisher": "Instituto Nacional de Estatística",
+    "concerns_apprenticeship": "No",
+    "catalogue": "dados-gov-pt",
+    "description": "Proportion of enterprises with 10 and more persons employed with courses and other forms of continuing vocational training (%) by economic activity (CAE Rev. 2.1), band of persons employed and type of training; Five-yearly - MTSSS/GEP, Community survey on continuing vocational training\nhttps://www.ine.pt/xurl/indx/0002392/PT",
+    "formats": [
+      "JSON"
+    ],
+    "licence": [
+      "CC BY 4.0"
+    ],
+    "modified": "2013-01-21",
+    "year": "2013",
+    "landing_page": "https://www.ine.pt/xurl/indx/0002392/PT",
+    "portal_url": "https://data.europa.eu/data/datasets/ine-0002392?locale=en",
+    "keywords": [
+      "continua",
+      "educacao",
+      "educacao-formacao-e-aprendizagem",
+      "empresas",
+      "formacao",
+      "formacao-e-aprendizagem",
+      "ine",
+      "proporcao",
+      "www-ine-pt"
+    ],
+    "matched_queries": [
+      "vocational training"
+    ],
+    "original_language": "pt"
+  },
+  {
+    "id": "ine-0007075",
+    "title": "Share of enterprises with 10 and more people employed with courses and other forms of continuing vocational training (%)",
+    "country": "Portugal",
+    "country_code": "PT",
+    "publisher": "Instituto Nacional de Estatística",
+    "concerns_apprenticeship": "No",
+    "catalogue": "dados-gov-pt",
+    "description": "Proportion of enterprises with 10 and more persons employed with courses and other forms of continuing vocational training (%) by economic activity (CAE Rev. 3), band of persons employed and type of training; Five-yearly - MTSSS/GEP, Community survey on continuing vocational training\nhttps://www.ine.pt/xurl/indx/0007075/PT",
+    "formats": [
+      "JSON"
+    ],
+    "licence": [
+      "CC BY 4.0"
+    ],
+    "modified": "2024-01-29",
+    "year": "2024",
+    "landing_page": "https://www.ine.pt/xurl/indx/0007075/PT",
+    "portal_url": "https://data.europa.eu/data/datasets/ine-0007075?locale=en",
+    "keywords": [
+      "continua",
+      "educacao",
+      "educacao-formacao-e-aprendizagem",
+      "empresas",
+      "formacao",
+      "formacao-e-aprendizagem",
+      "ine",
+      "proporcao",
+      "www-ine-pt"
+    ],
+    "matched_queries": [
       "vocational training"
     ],
     "original_language": "pt"
@@ -35658,41 +36053,6 @@
       "szakképzés",
       "vocational training",
       "yrkesutbildning"
-    ],
-    "original_language": "pt"
-  },
-  {
-    "id": "ine-0007077",
-    "title": "Taxa de acesso a cursos de formação profissional contínua (%)",
-    "country": "Portugal",
-    "country_code": "PT",
-    "publisher": "Instituto Nacional de Estatística",
-    "concerns_apprenticeship": "No",
-    "catalogue": "dados-gov-pt",
-    "description": "Taxa de acesso a cursos de formação profissional contínua (%) por Atividade económica (CAE Rev. 3) e Escalão de pessoal ao serviço; Quinquenal - MTSSS/GEP, Inquérito comunitário à formação profissional contínua\nhttps://www.ine.pt/xurl/indx/0007077/PT",
-    "formats": [
-      "JSON"
-    ],
-    "licence": [
-      "CC BY 4.0"
-    ],
-    "modified": "2024-01-29",
-    "year": "2024",
-    "landing_page": "https://www.ine.pt/xurl/indx/0007077/PT",
-    "portal_url": "https://data.europa.eu/data/datasets/ine-0007077?locale=en",
-    "keywords": [
-      "acesso",
-      "continua",
-      "educacao",
-      "educacao-formacao-e-aprendizagem",
-      "formacao",
-      "formacao-e-aprendizagem",
-      "ine",
-      "taxa",
-      "www-ine-pt"
-    ],
-    "matched_queries": [
-      "formação profissional"
     ],
     "original_language": "pt"
   },
@@ -35841,6 +36201,158 @@
     ],
     "matched_queries": [
       "beroepsonderwijs"
+    ],
+    "original_language": "pt"
+  },
+  {
+    "id": "ine-0014470",
+    "title": "Unemployed registered with IEFP Employment Centres (movement throughout the month - No.)",
+    "country": "Portugal",
+    "country_code": "PT",
+    "publisher": "Instituto Nacional de Estatística",
+    "concerns_apprenticeship": "No",
+    "catalogue": "dados-gov-pt",
+    "description": "Unemployed registered with IEFP Employment Centres (movement throughout the month - No.); Monthly - Institute for Employment and Vocational Training\nhttps://www.ine.pt/xurl/indx/0014470/PT",
+    "formats": [
+      "JSON"
+    ],
+    "licence": [
+      "CC BY 4.0"
+    ],
+    "modified": "2026-09-24",
+    "year": "2026",
+    "landing_page": "https://www.ine.pt/xurl/indx/0014470/PT",
+    "portal_url": "https://data.europa.eu/data/datasets/ine-0014470?locale=en",
+    "keywords": [
+      "desempregados",
+      "desemprego",
+      "em",
+      "ine",
+      "mercado-de-trabalho",
+      "profissional",
+      "www-ine-pt"
+    ],
+    "matched_queries": [
+      "IeFP",
+      "vocational training"
+    ],
+    "original_language": "pt"
+  },
+  {
+    "id": "ine-0001387",
+    "title": "Vocational education teachers/trainers (vocational courses) (No.)",
+    "country": "Portugal",
+    "country_code": "PT",
+    "publisher": "Instituto Nacional de Estatística",
+    "concerns_apprenticeship": "No",
+    "catalogue": "dados-gov-pt",
+    "description": "Teachers/trainers in vocational education (vocational courses) (No.) by geographical location (NUTS - 2013), sex and age group; Annual - Directorate-General for Education and Science Statistics\nhttps://www.ine.pt/xurl/indx/0001387/PT",
+    "formats": [
+      "JSON"
+    ],
+    "licence": [
+      "CC BY 4.0"
+    ],
+    "modified": "2024-06-29",
+    "year": "2024",
+    "landing_page": "https://www.ine.pt/xurl/indx/0001387/PT",
+    "portal_url": "https://data.europa.eu/data/datasets/ine-0001387?locale=en",
+    "keywords": [
+      "ciencia",
+      "do",
+      "educacao",
+      "educacao-formacao-e-aprendizagem",
+      "formacao-e-aprendizagem",
+      "ine",
+      "pessoal-docente-e-nao-docente",
+      "professores",
+      "www-ine-pt"
+    ],
+    "matched_queries": [
+      "beroepsonderwijs",
+      "erhvervsuddannelse",
+      "szakképzés",
+      "vocational education"
+    ],
+    "original_language": "pt"
+  },
+  {
+    "id": "6abcf3ad93f832b089d5dae4",
+    "title": "Vocational schools - IEFP Network (Institute for Employment and Vocational Training, IP)",
+    "country": "Portugal",
+    "country_code": "PT",
+    "publisher": "Município de Lisboa",
+    "concerns_apprenticeship": "No",
+    "catalogue": "dados-gov-pt",
+    "description": "Dataset referring to the professional schools of the IEFP Network, in Lisbon. Dataset of the vocational schools in the IEFP Network in Lisbon\"",
+    "formats": [
+      "GEOJSON"
+    ],
+    "licence": [
+      "CC0 1.0"
+    ],
+    "landing_page": "https://geodados-cml.hub.arcgis.com/datasets/d59e1e793ee04f5b8cd2ef4596065d80/explore?layer=2&location=38.745363%2C-9.159440%2C12",
+    "portal_url": "https://data.europa.eu/data/datasets/6abcf3ad93f832b089d5dae4?locale=en",
+    "keywords": [
+      "dados-cm-lisboa-pt",
+      "educacao",
+      "education",
+      "ensino",
+      "geodados",
+      "lisboa",
+      "opendata",
+      "poieducacao",
+      "school"
+    ],
+    "matched_queries": [
+      "Berufsbildung",
+      "erhvervsuddannelse",
+      "IeFP",
+      "szakképzés",
+      "vocational training"
+    ],
+    "original_language": "pt"
+  },
+  {
+    "id": "5ae9c624c8d8c9146d44cc1a",
+    "title": "Vocational Training Centres and Others",
+    "country": "Portugal",
+    "country_code": "PT",
+    "publisher": "Município de Lisboa",
+    "concerns_apprenticeship": "No",
+    "catalogue": "dados-gov-pt",
+    "description": "Data set for \"Vocational and Other Training Centres\". The map of the Strategic Sectors - \"Digital Economy\" - of Lisbon does not represent an exhaustive census, but rather provides information from several strategic actors operating in the city and the region, obeying cluster logics. The analysis and selection of the actors represented was carried out by the technicians of the Municipal Directorate of Economy and Innovation, based on online research on specialized websites, subject to permanent rectifications and updates. Dataset of \"Training Center and Others\".",
+    "formats": [
+      "GEOJSON"
+    ],
+    "licence": [
+      "CC0 1.0"
+    ],
+    "landing_page": "https://geodados-cml.hub.arcgis.com/datasets/CML::centros-de-forma%C3%A7%C3%A3o-profissional-e-outros/explore",
+    "portal_url": "https://data.europa.eu/data/datasets/5ae9c624c8d8c9146d44cc1a?locale=en",
+    "keywords": [
+      "creativity",
+      "criatividade",
+      "dados-cm-lisboa-pt",
+      "digital",
+      "digital-economy",
+      "economia",
+      "economia-digital",
+      "economy",
+      "hardware",
+      "innovation",
+      "inovacao",
+      "investigacao",
+      "producao",
+      "production",
+      "research"
+    ],
+    "matched_queries": [
+      "Berufsbildung",
+      "erhvervsuddannelse",
+      "szakképzés",
+      "vocational training",
+      "yrkesutbildning"
     ],
     "original_language": "pt"
   },
@@ -37203,7 +37715,7 @@
     "licence": [
       "CC BY 4.0"
     ],
-    "modified": "2026-09-16",
+    "modified": "2026-09-28",
     "issued": "2026-05-18",
     "year": "2026",
     "portal_url": "https://data.europa.eu/data/datasets/https-datos-comunidad-madrid-catalogo-dataset-alumnos_finalizado_cursos_fp_ocupacional_consejeria_economia_hacienda_empleo_por_sexo?locale=en",
@@ -37225,8 +37737,7 @@
       "Hombres de 21 a 25 años que han finalizado cursos de Formación Profesional Ocupacional gestionados"
     ],
     "matched_queries": [
-      "formación profesional",
-      "vocational training"
+      "formación profesional"
     ],
     "original_language": "es"
   },
@@ -37436,7 +37947,7 @@
     "licence": [
       "Publisher terms (administraciodigital.gencat.cat)"
     ],
-    "modified": "2026-09-04",
+    "modified": "2026-10-02",
     "issued": "2025-11-10",
     "year": "2026",
     "portal_url": "https://data.europa.eu/data/datasets/https-analisi-transparenciacatalunya-cat-api-views-iqgc-shq4?locale=en",
@@ -39016,7 +39527,7 @@
     ],
     "matched_queries": [
       "formación profesional",
-      "vocational training"
+      "kształcenie zawodowe"
     ],
     "original_language": "es"
   },
@@ -39060,12 +39571,13 @@
     "licence": [
       "Publisher terms (gobiernodecanarias.org)"
     ],
-    "modified": "2026-06-08",
+    "modified": "2026-10-06",
     "issued": "2025-04-07",
     "year": "2026",
     "portal_url": "https://data.europa.eu/data/datasets/https-datos-canarias-es-catalogos-estadisticas-dataset-urn-sdmx-org-sdmx-infomodel-codelist-codelist-istac-cl_ministerio_titulaciones_fp?locale=en",
     "keywords": [
-      "Clasificación"
+      "Clasificación",
+      "Codelist"
     ],
     "matched_queries": [
       "formación profesional"
@@ -39776,7 +40288,7 @@
     "licence": [
       "CC BY 4.0"
     ],
-    "modified": "2026-09-05",
+    "modified": "2026-10-05",
     "issued": "2025-03-20",
     "year": "2026",
     "portal_url": "https://data.europa.eu/data/datasets/https-opendata-aragon-es-datos-catalogo-dataset-formacion-profesional-basica-alumnado-matriculado-por-procedencia-y-titularidad-del-centro-municipios?locale=en",
@@ -41809,7 +42321,7 @@
     "licence": [
       "CC BY 4.0"
     ],
-    "modified": "2026-09-13",
+    "modified": "2026-10-04",
     "issued": "2018-07-12",
     "year": "2026",
     "portal_url": "https://data.europa.eu/data/datasets/https-opendata-euskadi-eus-catalogo-indicadores-municipales-de-sostenibilidad-tasa-de-afil-a-la-s-s-segun-grupo-cotizacion-personal-no-cualificado-y-aprendices-sobre-total-personas-afiliadas-?locale=en",
@@ -43807,7 +44319,6 @@
       "ammatillinen",
       "erhvervsuddannelse",
       "formación profesional",
-      "kształcenie zawodowe",
       "szakképzés",
       "yrkesutbildning"
     ],
@@ -43838,8 +44349,7 @@
       "Sociedad"
     ],
     "matched_queries": [
-      "formación profesional",
-      "vocational training"
+      "formación profesional"
     ],
     "original_language": "es"
   },
@@ -43899,8 +44409,8 @@
     "year": "2017",
     "portal_url": "https://data.europa.eu/data/datasets/https-www-vitoria-gasteiz-org-j34-01w-catalogo-programas_de_formacion_profesional_ocupacional?locale=en",
     "keywords": [
-      "Empresa",
-      "Enpresa"
+      "Formación",
+      "Prestakuntza"
     ],
     "matched_queries": [
       "Berufsausbildung",
@@ -44901,7 +45411,7 @@
     "licence": [
       "CC BY 4.0"
     ],
-    "modified": "2026-09-17",
+    "modified": "2026-10-08",
     "issued": "2025-09-11",
     "year": "2026",
     "portal_url": "https://data.europa.eu/data/datasets/https-datos-comunidad-madrid-catalogo-dataset-1925206?locale=en",
@@ -45284,7 +45794,7 @@
     "licence": [
       "CC BY"
     ],
-    "modified": "2026-05-25",
+    "modified": "2026-09-25",
     "issued": "2023-10-31",
     "year": "2026",
     "portal_url": "https://data.europa.eu/data/datasets/https-dadesobertes-gva-es-dataset-edu-alu-fp-2023?locale=en",
@@ -45318,7 +45828,7 @@
     "licence": [
       "CC BY"
     ],
-    "modified": "2026-05-25",
+    "modified": "2026-09-25",
     "issued": "2024-10-31",
     "year": "2026",
     "portal_url": "https://data.europa.eu/data/datasets/https-dadesobertes-gva-es-dataset-edu-alu-fp-2024?locale=en",
@@ -45352,7 +45862,7 @@
     "licence": [
       "CC BY"
     ],
-    "modified": "2026-05-25",
+    "modified": "2026-09-25",
     "issued": "2025-10-31",
     "year": "2026",
     "portal_url": "https://data.europa.eu/data/datasets/https-dadesobertes-gva-es-dataset-edu-alu-fp-2025?locale=en",
@@ -46436,7 +46946,7 @@
     "licence": [
       "Publisher terms (datos.lorca.es)"
     ],
-    "modified": "2026-09-19",
+    "modified": "2026-10-10",
     "issued": "2014-07-18",
     "year": "2026",
     "portal_url": "https://data.europa.eu/data/datasets/https-datos-lorca-es-catalogo-cursos-formacion-empleo-?locale=en",
@@ -46547,6 +47057,42 @@
       "yrkesutbildning"
     ],
     "original_language": "es"
+  },
+  {
+    "id": "-91ff7a79-ceb3-45a7-9686-c992634343ce-_100445_es",
+    "title": "Vocational Training for Employment (g12_18_VET)",
+    "country": "Spain",
+    "country_code": "ES",
+    "publisher": "Instituto de Estadística y Cartografía de Andalucía. Junta de Andalucía",
+    "concerns_apprenticeship": "No",
+    "catalogue": "codsi",
+    "description": "Contains information about the location of Vocational Training Centres for Employment in Andalusia.",
+    "formats": [
+      "WFS_SRVC",
+      "WMS_SRVC"
+    ],
+    "licence": [
+      "CC BY 4.0"
+    ],
+    "modified": "2019-02-04",
+    "year": "2019",
+    "portal_url": "https://data.europa.eu/data/datasets/-91ff7a79-ceb3-45a7-9686-c992634343ce-_100445_es?locale=en",
+    "keywords": [
+      "Andalucía",
+      "Datos Espaciales de Referencia de Andalucía (DERA). G12 Servicios",
+      "DERA",
+      "IECA"
+    ],
+    "matched_queries": [
+      "ammatillinen",
+      "Berufsausbildung",
+      "erhvervsuddannelse",
+      "formación profesional",
+      "kształcenie zawodowe",
+      "szakképzés",
+      "yrkesutbildning"
+    ],
+    "original_language": "en, es"
   },
   {
     "id": "https-statistikdatabasen-scb-se-dataset-tab6464",
@@ -47509,8 +48055,8 @@
     "landing_page": "https://www.statistikdatabasen.scb.se/goto/sv/ssd/UF05034b",
     "portal_url": "https://data.europa.eu/data/datasets/https-statistikdatabasen-scb-se-dataset-tab5823?locale=en",
     "keywords": [
-      "Activity after training",
       "Education and research",
+      "Employment and income after completed education",
       "Sysselsättning och inkomster efter avslutad utbildning",
       "Utbildning och forskning"
     ],
@@ -47960,8 +48506,8 @@
     "landing_page": "https://www.statistikdatabasen.scb.se/goto/en/ssd/UF05032b",
     "portal_url": "https://data.europa.eu/data/datasets/https-statistikdatabasen-scb-se-dataset-tab5820?locale=en",
     "keywords": [
-      "Activity after training",
       "Education and research",
+      "Employment and income after completed education",
       "Sysselsättning och inkomster efter avslutad utbildning",
       "Utbildning och forskning"
     ],
@@ -48087,7 +48633,7 @@
     "publisher": "Rådet för främjande av kommunala analyser - Kolada",
     "concerns_apprenticeship": "No",
     "catalogue": "oppnadata",
-    "description": "Antal elever i årskurs 9 som är behöriga till ett yrkesprogram dividerat med antal elever som fått eller skulle ha fått betyg i minst ett ämne enligt det mål- och kunskapsrelaterade betygssystemet i årskurs 9. För att ha gymnasiebehörighet till ett yrkesprogram krävs godkända betyg i svenska eller svenska som andraspråk, engelska och matematik och i minst fem andra ämnen från grundskolan. Uppgiften avser elever i fristående skolor i kommunen oavsett folkbokföringsort. Uppgiften avser läsår.",
+    "description": "Number of pupils in grade 9 who are eligible for a vocational programme divided by the number of pupils who have received or would have received grades in at least one subject according to the target- and knowledge-related grading system in grade 9. To have upper secondary school qualifications for a vocational programme, pass grades in Swedish or Swedish as a second language, English and mathematics and in at least five other subjects from compulsory school are required.",
     "formats": [
       "JSON"
     ],
@@ -48116,7 +48662,7 @@
     "publisher": "Rådet för främjande av kommunala analyser - Kolada",
     "concerns_apprenticeship": "No",
     "catalogue": "oppnadata",
-    "description": "Antal elever i årskurs 9 som är behöriga till ett yrkesprogram dividerat med antal elever som fått eller skulle ha fått betyg i minst ett ämne enligt det mål- och kunskapsrelaterade betygssystemet i årskurs 9. För att ha gymnasiebehörighet till ett yrkesprogram krävs godkända betyg i svenska eller svenska som andraspråk, engelska och matematik och i minst fem andra ämnen från grundskolan. Uppgiften avser elever i kommunala skolor i kommunen oavsett folkbokföringsort. Uppgiften avser läsår.",
+    "description": "Number of pupils in grade 9 who are eligible for a vocational programme divided by the number of pupils who have received or would have received grades in at least one subject according to the target- and knowledge-related grading system in grade 9. To have upper secondary school qualifications for a vocational programme, pass grades in Swedish or Swedish as a second language, English and mathematics and in at least five other subjects from compulsory school are required. The data refers to pupils in municipal schools in the municipality regardless of their place of population registration.",
     "formats": [
       "JSON"
     ],
@@ -48370,7 +48916,7 @@
     "publisher": "Rådet för främjande av kommunala analyser - Kolada",
     "concerns_apprenticeship": "No",
     "catalogue": "oppnadata",
-    "description": "Antal elever i årskurs 9 som är behöriga till ett yrkesprogram dividerat med antal elever som fått eller skulle ha fått betyg i minst ett ämne enligt det mål- och kunskapsrelaterade betygssystemet i årskurs 9. För att ha gymnasiebehörighet till ett yrkesprogram krävs godkända betyg i svenska eller svenska som andraspråk, engelska och matematik och i minst fem andra ämnen från grundskolan. Med lägeskommun avses elever i skolor belägna i kommunen oavsett folkbokföringsort. Uppgiften avser läsår. Nyinvandrade elever har kommit till Sverige de senaste fyra åren.",
+    "description": "Number of pupils in grade 9 who are eligible for a vocational programme divided by the number of pupils who have received or would have received grades in at least one subject according to the target- and knowledge-related grading system in grade 9. To have upper secondary school qualifications for a vocational programme, pass grades in Swedish or Swedish as a second language, English and mathematics and in at least five other subjects from compulsory school are required.",
     "formats": [
       "JSON"
     ],
@@ -48544,7 +49090,7 @@
     "publisher": "Rådet för främjande av kommunala analyser - Kolada",
     "concerns_apprenticeship": "No",
     "catalogue": "oppnadata",
-    "description": "Antal elever i årskurs 9 som är behöriga till ett yrkesprogram dividerat med antal elever som fått eller skulle ha fått betyg i minst ett ämne enligt det mål- och kunskapsrelaterade betygssystemet i årskurs 9. För att ha gymnasiebehörighet till ett yrkesprogram krävs godkända betyg i svenska eller svenska som andraspråk, engelska och matematik och i minst fem andra ämnen från grundskolan. Fram t.o.m. 2011 krävdes godkända betyg i svenska eller svenska som andraspråk, engelska och matematik för att uppnå lägsta behörighet till gymnasiet. Uppgiften avser elever folkbokförda i kommunen.",
+    "description": "Number of pupils in grade 9 who are eligible for a vocational programme divided by the number of pupils who have received or would have received grades in at least one subject according to the target- and knowledge-related grading system in grade 9. To have upper secondary school qualifications for a vocational programme, pass grades in Swedish or Swedish as a second language, English and mathematics and in at least five other subjects from compulsory school are required.",
     "formats": [
       "JSON"
     ],
@@ -49627,8 +50173,8 @@
     "landing_page": "https://www.statistikdatabasen.scb.se/goto/en/ssd/UF0503YHsyss1c",
     "portal_url": "https://data.europa.eu/data/datasets/https-statistikdatabasen-scb-se-dataset-tab6005?locale=en",
     "keywords": [
-      "Activity after training",
       "Education and research",
+      "Employment and income after completed education",
       "Sysselsättning och inkomster efter avslutad utbildning",
       "Utbildning och forskning"
     ],
@@ -49657,8 +50203,8 @@
     "landing_page": "https://www.statistikdatabasen.scb.se/goto/en/ssd/UF05031bYh",
     "portal_url": "https://data.europa.eu/data/datasets/https-statistikdatabasen-scb-se-dataset-tab5791?locale=en",
     "keywords": [
-      "Activity after training",
       "Education and research",
+      "Employment and income after completed education",
       "Sysselsättning och inkomster efter avslutad utbildning",
       "Utbildning och forskning"
     ],
@@ -50088,7 +50634,7 @@
     "title": "Admissions by field of training, apprenticeship canton, type of training, form of training, gender and year",
     "country": "Switzerland",
     "country_code": "CH",
-    "publisher": "Office fédéral de la statistique",
+    "publisher": "Bundesamt für Statistik",
     "concerns_apprenticeship": "Yes",
     "catalogue": "opendata-swiss",
     "description": "This dataset presents the annual numbers of admissions to basic vocational training by field of training, canton of apprenticeship, type of training (EFZ, EBA, not regulated), form of training (full school, dual) and gender, since 2010.",
@@ -50140,7 +50686,7 @@
     "title": "Admissions by occupation, apprenticeship canton, type of training, form of training, gender and year",
     "country": "Switzerland",
     "country_code": "CH",
-    "publisher": "Office fédéral de la statistique",
+    "publisher": "Bundesamt für Statistik",
     "concerns_apprenticeship": "Yes",
     "catalogue": "opendata-swiss",
     "description": "This dataset presents the annual numbers of admissions to basic vocational education and training by occupation, apprenticeship canton, type of training (EFZ, EBA, not regulated), form of training (full school, dual) and gender, since 2010.",
@@ -50192,7 +50738,7 @@
     "title": "Admissions by occupation/subject, apprenticeship canton, type of training, form of training, gender and year",
     "country": "Switzerland",
     "country_code": "CH",
-    "publisher": "Office fédéral de la statistique",
+    "publisher": "Bundesamt für Statistik",
     "concerns_apprenticeship": "Yes",
     "catalogue": "opendata-swiss",
     "description": "This dataset presents the annual numbers of admissions to basic vocational education and training by occupation and subject, apprenticeship canton, type of training (EFZ, EBA, not regulated), form of training (full school, dual) and gender, since 2010.",
@@ -50323,7 +50869,7 @@
     "publisher": "Fachstelle für Daten und Statistik des Kantons Zug",
     "concerns_apprenticeship": "Yes",
     "catalogue": "opendata-swiss",
-    "description": "Anzahl Lernende nach Brückenangebot im Kanton Zug, 2009 bis 2024 (Jahreszahl bezieht sich auf den Start des Schuljahrs).\nIntegrations-Brückenagebot für Erwachsene (I-B-A-20+): Seit dem Schuljahr 2014/15. \nINVOLV Integrationsvorlehre: Von 2017/18 bis 2020/21, danach Überführung zum GIBZ (Gewerblich-industrielles Bildungszentrum Zug).\n(QUELLE: Kanton Zug, Amt für Brückenangebote)",
+    "description": "Number of apprentices by bridge offer in the canton of Zug, 2009/10 to 2025/26.\nIntegration Bridge Tagbot for Adults (I-B-A-20+): Since the school year 2014/15. \nINVOLV integration pre-teaching: From 2017/18 to 2020/21, then transfer to the GIBZ (Commercial-Industrial Education Center Zug).\n(SOURCE: Canton of Zug, Office for Bridge Offerings)",
     "formats": [
       "CSV",
       "JSON"
@@ -50331,9 +50877,9 @@
     "licence": [
       "opendata.swiss terms"
     ],
-    "modified": "2025-10-17",
+    "modified": "2026-10-05",
     "issued": "2024-12-02",
-    "year": "2025",
+    "year": "2026",
     "landing_page": "https://www.zg.ch/behoerden/gesundheitsdirektion/statistikfachstelle/themen/bildung/4-brueckenangebote",
     "portal_url": "https://data.europa.eu/data/datasets/935bfae6-42d8-4ba3-84ba-ca372d62b546-kanton-zug?locale=en",
     "keywords": [
@@ -50727,7 +51273,7 @@
     "title": "Bundesbeiträge an Personen in der höheren Berufsbildung: Beiträge nach Ausbildungsfeld (in German)",
     "country": "Switzerland",
     "country_code": "CH",
-    "publisher": "Office fédéral de la statistique",
+    "publisher": "Bundesamt für Statistik",
     "concerns_apprenticeship": "No",
     "catalogue": "opendata-swiss",
     "description": "Dieses Dataset präsentiert den Gesamtbetrag der Beiträge, die Anzahl der Beiträge und den durchschnittlichen Beitrag nach Prüfungsart und Ausbildungsfeld, seit 2018.",
@@ -50752,6 +51298,8 @@
       "beroepsonderwijs",
       "Berufsbildung",
       "erhvervsuddannelse",
+      "formation professionnelle",
+      "vocational training",
       "yrkesutbildning"
     ],
     "original_language": "de, en, fr, it"
@@ -50761,7 +51309,7 @@
     "title": "Bundesbeiträge an Personen in der höheren Berufsbildung: Kursanbieter und Kurse nach Ausbildungsfeld (in German)",
     "country": "Switzerland",
     "country_code": "CH",
-    "publisher": "Office fédéral de la statistique",
+    "publisher": "Bundesamt für Statistik",
     "concerns_apprenticeship": "No",
     "catalogue": "opendata-swiss",
     "description": "Dieses Dataset präsentiert die jährliche Anzahl Kursanbieter und beitragsberechtigenden Kurse nach Prüfungsart, Ausbildungsfeld und Kurssprache, seit 2017.",
@@ -50786,6 +51334,8 @@
       "beroepsonderwijs",
       "Berufsbildung",
       "erhvervsuddannelse",
+      "formation professionnelle",
+      "vocational training",
       "yrkesutbildning"
     ],
     "original_language": "de, en, fr, it"
@@ -50795,7 +51345,7 @@
     "title": "Bundesbeiträge an Personen in der höheren Berufsbildung: Prüfungskandidatinnen und -kandidaten sowie Bezügerinnen und Bezüger nach Ausbildungsfeld (in German)",
     "country": "Switzerland",
     "country_code": "CH",
-    "publisher": "Office fédéral de la statistique",
+    "publisher": "Bundesamt für Statistik",
     "concerns_apprenticeship": "No",
     "catalogue": "opendata-swiss",
     "description": "Dieses Dataset präsentiert die Anzahl, das Durchschnittsalter und die Erfolgsquote der Prüfungskandidatinnen und -kandidaten sowie der Bezügerinnen und Bezüger nach Prüfungsart und Ausbildungsfeld, seit 2018.",
@@ -50821,6 +51371,7 @@
       "Berufsbildung",
       "erhvervsuddannelse",
       "formation professionnelle",
+      "vocational training",
       "yrkesutbildning"
     ],
     "original_language": "de, en, fr, it"
@@ -50830,7 +51381,7 @@
     "title": "Compulsory school: Apprentices by region and school canton",
     "country": "Switzerland",
     "country_code": "CH",
-    "publisher": "Office fédéral de la statistique",
+    "publisher": "Bundesamt für Statistik",
     "concerns_apprenticeship": "Yes",
     "catalogue": "opendata-swiss",
     "formats": [
@@ -50866,7 +51417,7 @@
     "title": "Compulsory school: Apprentices by region, school canton, type of education and nationality",
     "country": "Switzerland",
     "country_code": "CH",
-    "publisher": "Office fédéral de la statistique",
+    "publisher": "Bundesamt für Statistik",
     "concerns_apprenticeship": "Yes",
     "catalogue": "opendata-swiss",
     "formats": [
@@ -50902,7 +51453,7 @@
     "title": "Degrees by field of training, canton of apprenticeship, type of training, form of training, gender and year",
     "country": "Switzerland",
     "country_code": "CH",
-    "publisher": "Office fédéral de la statistique",
+    "publisher": "Bundesamt für Statistik",
     "concerns_apprenticeship": "Yes",
     "catalogue": "opendata-swiss",
     "description": "This dataset presents the annual numbers of qualifications in basic vocational education and training by field of training, canton of apprenticeship, type of training (EFZ, EBA, not regulated), form of training (full school, dual) and gender, since 2010.",
@@ -50954,7 +51505,7 @@
     "title": "Degrees by occupation, apprenticeship canton, type of training, form of training, gender and year",
     "country": "Switzerland",
     "country_code": "CH",
-    "publisher": "Office fédéral de la statistique",
+    "publisher": "Bundesamt für Statistik",
     "concerns_apprenticeship": "Yes",
     "catalogue": "opendata-swiss",
     "description": "This dataset presents the annual numbers of qualifications in basic vocational education and training by occupation, company canton, type of training (EFZ, EBA, not regulated), form of training (full school, dual) and gender, since 2010.",
@@ -51007,7 +51558,7 @@
     "title": "Degrees by occupation/subject, apprenticeship canton, type of training, form of training, gender and year",
     "country": "Switzerland",
     "country_code": "CH",
-    "publisher": "Office fédéral de la statistique",
+    "publisher": "Bundesamt für Statistik",
     "concerns_apprenticeship": "Yes",
     "catalogue": "opendata-swiss",
     "description": "This dataset presents the annual numbers of qualifications in basic vocational education and training by occupation and subject, canton of apprenticeship, type of training (EFZ, EBA, not regulated), form of training (full school, dual) and gender, since 2010.",
@@ -51060,7 +51611,7 @@
     "title": "Degrees in higher vocational education and training by type of training, field of training, type of diploma, canton of residence and gender",
     "country": "Switzerland",
     "country_code": "CH",
-    "publisher": "Office fédéral de la statistique",
+    "publisher": "Bundesamt für Statistik",
     "concerns_apprenticeship": "No",
     "catalogue": "opendata-swiss",
     "description": "This dataset presents the annual numbers of higher vocational education and training degrees by type of training, field of training, type of diploma, canton of residence and gender, since 2012.",
@@ -51107,7 +51658,7 @@
     "title": "Degrees of higher vocational education and training not regulated by the BBG by type of education, diploma type, school canton, residential canton and gender",
     "country": "Switzerland",
     "country_code": "CH",
-    "publisher": "Office fédéral de la statistique",
+    "publisher": "Bundesamt für Statistik",
     "concerns_apprenticeship": "No",
     "catalogue": "opendata-swiss",
     "description": "This dataset presents the annual figures of the degrees of higher vocational education and training not regulated by the BBG by type of education, diploma type, canton of residence and gender, since 2012.",
@@ -51237,7 +51788,7 @@
     "title": "Examination candidates by apprenticeship canton, type of training, gender and year",
     "country": "Switzerland",
     "country_code": "CH",
-    "publisher": "Office fédéral de la statistique",
+    "publisher": "Bundesamt für Statistik",
     "concerns_apprenticeship": "Yes",
     "catalogue": "opendata-swiss",
     "description": "This dataset presents the annual numbers of candidates in basic vocational education and training by apprenticeship canton, type of training (EFZ, EBA, not regulated) and gender, since 2010.",
@@ -51688,7 +52239,7 @@
     "title": "Primary level 1-2: Apprentices by region and school canton",
     "country": "Switzerland",
     "country_code": "CH",
-    "publisher": "Office fédéral de la statistique",
+    "publisher": "Bundesamt für Statistik",
     "concerns_apprenticeship": "Yes",
     "catalogue": "opendata-swiss",
     "formats": [
@@ -51789,7 +52340,7 @@
     "title": "Scenarios 2022-2031 for upper secondary education: Expected development in the number of learners and qualifications in basic vocational education and training by canton, field of education and gender",
     "country": "Switzerland",
     "country_code": "CH",
-    "publisher": "Office fédéral de la statistique",
+    "publisher": "Bundesamt für Statistik",
     "concerns_apprenticeship": "No",
     "catalogue": "opendata-swiss",
     "description": "This dataset presents the annual scenarios for upper secondary education concerning the expected evolution of the number of learners and qualifications in basic vocational education and training by scenario, canton, field of education and gender, 2022-2031.",
@@ -52049,7 +52600,7 @@
     "title": "Secondary education, basic vocational education: Apprentices by region, school canton, form of education and type of education",
     "country": "Switzerland",
     "country_code": "CH",
-    "publisher": "Office fédéral de la statistique",
+    "publisher": "Bundesamt für Statistik",
     "concerns_apprenticeship": "Yes",
     "catalogue": "opendata-swiss",
     "formats": [
@@ -52092,7 +52643,7 @@
     "title": "Secondary education, basic vocational education: Educational qualifications by canton",
     "country": "Switzerland",
     "country_code": "CH",
-    "publisher": "Office fédéral de la statistique",
+    "publisher": "Bundesamt für Statistik",
     "concerns_apprenticeship": "No",
     "catalogue": "opendata-swiss",
     "formats": [
@@ -52126,7 +52677,7 @@
     "title": "Secondary education, basic vocational education: Students by region, school canton, gender, nationality and character of the school",
     "country": "Switzerland",
     "country_code": "CH",
-    "publisher": "Office fédéral de la statistique",
+    "publisher": "Bundesamt für Statistik",
     "concerns_apprenticeship": "No",
     "catalogue": "opendata-swiss",
     "formats": [
@@ -52215,7 +52766,7 @@
     "title": "Tertiary, higher vocational education and training: Apprentices by region, school canton, gender, nationality, character of the school and form of training",
     "country": "Switzerland",
     "country_code": "CH",
-    "publisher": "Office fédéral de la statistique",
+    "publisher": "Bundesamt für Statistik",
     "concerns_apprenticeship": "Yes",
     "catalogue": "opendata-swiss",
     "formats": [
@@ -52303,7 +52854,7 @@
     "title": "Tertiary, higher vocational education and training: Educational qualifications. Development by region and canton",
     "country": "Switzerland",
     "country_code": "CH",
-    "publisher": "Office fédéral de la statistique",
+    "publisher": "Bundesamt für Statistik",
     "concerns_apprenticeship": "No",
     "catalogue": "opendata-swiss",
     "formats": [
@@ -52492,7 +53043,7 @@
     "title": "Total number of apprentices by occupation, company canton, type of training, form of training, gender and year",
     "country": "Switzerland",
     "country_code": "CH",
-    "publisher": "Office fédéral de la statistique",
+    "publisher": "Bundesamt für Statistik",
     "concerns_apprenticeship": "Yes",
     "catalogue": "opendata-swiss",
     "description": "This dataset presents the annual figures of the total number of learners in basic vocational education and training by occupation, company canton, type of training (EFZ, EBA, not regulated), form of training (full school, dual) and gender, since 2010.",
@@ -52541,7 +53092,7 @@
     "title": "Total number of learners by field of training, company canton, type of training, form of training, gender and year",
     "country": "Switzerland",
     "country_code": "CH",
-    "publisher": "Office fédéral de la statistique",
+    "publisher": "Bundesamt für Statistik",
     "concerns_apprenticeship": "Yes",
     "catalogue": "opendata-swiss",
     "description": "This dataset presents the annual figures of the total number of learners in basic vocational education and training by field of training, canton of apprenticeship, type of training (EFZ, EBA, not regulated), form of training (full school, dual) and gender, since 2010.",
@@ -52582,7 +53133,7 @@
     "title": "Total number of learners by occupation/subject, company canton, type of training, form of training, gender and year",
     "country": "Switzerland",
     "country_code": "CH",
-    "publisher": "Office fédéral de la statistique",
+    "publisher": "Bundesamt für Statistik",
     "concerns_apprenticeship": "Yes",
     "catalogue": "opendata-swiss",
     "description": "This dataset presents the annual figures of the total number of learners in basic vocational education and training by occupation and subject, canton of apprenticeships, type of training (EFZ, EBA, not regulated), form of training (full school, dual) and gender, since 2010.",
@@ -52624,7 +53175,7 @@
     "title": "Vocational certificates by type of training, direction, school canton, residential canton and gender",
     "country": "Switzerland",
     "country_code": "CH",
-    "publisher": "Office fédéral de la statistique",
+    "publisher": "Bundesamt für Statistik",
     "concerns_apprenticeship": "No",
     "catalogue": "opendata-swiss",
     "description": "This dataset presents the annual numbers of vocational certificates by type of training (BM1, BM2), direction, school canton, residential canton and gender, since 2012.",
@@ -52729,6 +53280,37 @@
     ],
     "matched_queries": [
       "ammatillinen"
+    ],
+    "original_language": "de"
+  },
+  {
+    "id": "29c3d6a0-010b-426c-9dd8-2dce86982026-geoinformation-der-stadt-bern",
+    "title": "Vocational schools",
+    "country": "Switzerland",
+    "country_code": "CH",
+    "publisher": "Geoinformation Stadt Bern",
+    "concerns_apprenticeship": "No",
+    "catalogue": "opendata-swiss",
+    "description": "Locations of vocational schools in the city of Bern.",
+    "formats": [
+      "HTML",
+      "WFS_SRVC",
+      "WMS_SRVC"
+    ],
+    "licence": [
+      "opendata.swiss terms"
+    ],
+    "modified": "2020-08-14",
+    "year": "2020",
+    "landing_page": "https://map.bern.ch/geoportal/#/produkt/Berufsschulen",
+    "portal_url": "https://data.europa.eu/data/datasets/29c3d6a0-010b-426c-9dd8-2dce86982026-geoinformation-der-stadt-bern?locale=en",
+    "keywords": [
+      "berufsschule",
+      "bildung",
+      "poi"
+    ],
+    "matched_queries": [
+      "erhvervsuddannelse"
     ],
     "original_language": "de"
   },
@@ -52962,7 +53544,7 @@
     "licence": [
       "Not stated"
     ],
-    "modified": "2026-09-23",
+    "modified": "2026-10-01",
     "issued": "2019-12-04",
     "year": "2026",
     "portal_url": "https://data.europa.eu/data/datasets/0a767426-ab24-4982-a37a-432992b9a287?locale=en",
@@ -52996,7 +53578,7 @@
     "licence": [
       "Not stated"
     ],
-    "modified": "2026-09-23",
+    "modified": "2026-10-01",
     "issued": "2019-12-04",
     "year": "2026",
     "portal_url": "https://data.europa.eu/data/datasets/d9d923ab-10d8-4840-8ff6-3420ade125d3?locale=en",
@@ -53031,7 +53613,7 @@
     "licence": [
       "Not stated"
     ],
-    "modified": "2026-09-23",
+    "modified": "2026-10-01",
     "issued": "2022-12-06",
     "year": "2026",
     "portal_url": "https://data.europa.eu/data/datasets/098eb7e8-e42f-4cbd-84b8-b4022f0c6c8f?locale=en",

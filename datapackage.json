@@ -4,7 +4,7 @@
   "title": "Apprentix — European apprenticeship and VET data",
   "description": "Republished public European data on apprenticeship and vocational education and training. Each resource keeps its original publisher's licence; see 'licenses' per resource.",
   "homepage": "https://apprentix.eu/",
-  "version": "2026-10-01",
+  "version": "2026-10-12",
   "contributors": [
     {
       "title": "Apprentix",
@@ -2922,6 +2922,166 @@
       "licenses": [
         {
           "name": "opendata.swiss terms of use 'Open use. Must provide the source.' (terms_by): non-commercial and commercial use allowed; you must provide the source (author, title and link to the dataset). BFS: 'Freie Nutzung - Quellenangabe ist Pflicht'."
+        }
+      ]
+    },
+    {
+      "name": "de-destatis-apprentices-land-json",
+      "path": "data/published/indicators/de-destatis-apprentices-land.json",
+      "format": "json",
+      "mediatype": "application/json",
+      "title": "Apprentices in dual vocational training by Land (Germany)",
+      "description": "Number of apprentices in dual vocational training on 31 December, by federal state (Land) of the training place and sex. 'DE' is the national total.",
+      "sources": [
+        {
+          "title": "Statistisches Bundesamt (Destatis)",
+          "path": "https://www-genesis.destatis.de/datenbank/online/table/21211-0101"
+        }
+      ],
+      "licenses": [
+        {
+          "name": "dl-de/by-2-0",
+          "path": "https://www.govdata.de/dl-de/by-2-0"
+        }
+      ]
+    },
+    {
+      "name": "de-destatis-apprentices-land-csv",
+      "path": "data/published/indicators/de-destatis-apprentices-land.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "title": "Apprentices in dual vocational training by Land (Germany)",
+      "description": "Number of apprentices in dual vocational training on 31 December, by federal state (Land) of the training place and sex. 'DE' is the national total.",
+      "sources": [
+        {
+          "title": "Statistisches Bundesamt (Destatis)",
+          "path": "https://www-genesis.destatis.de/datenbank/online/table/21211-0101"
+        }
+      ],
+      "licenses": [
+        {
+          "name": "dl-de/by-2-0",
+          "path": "https://www.govdata.de/dl-de/by-2-0"
+        }
+      ]
+    },
+    {
+      "name": "de-destatis-apprentices-json",
+      "path": "data/published/indicators/de-destatis-apprentices.json",
+      "format": "json",
+      "mediatype": "application/json",
+      "title": "Apprentices in dual vocational training (Germany)",
+      "description": "Number of apprentices (Auszubildende) in dual vocational training in Germany on 31 December, by sex and training area (Ausbildungsbereich: industry and trade, crafts, public service, agriculture, liberal professions, housekeeping, shipping).",
+      "sources": [
+        {
+          "title": "Statistisches Bundesamt (Destatis)",
+          "path": "https://www-genesis.destatis.de/datenbank/online/table/21211-0001"
+        }
+      ],
+      "licenses": [
+        {
+          "name": "dl-de/by-2-0",
+          "path": "https://www.govdata.de/dl-de/by-2-0"
+        }
+      ]
+    },
+    {
+      "name": "de-destatis-apprentices-csv",
+      "path": "data/published/indicators/de-destatis-apprentices.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "title": "Apprentices in dual vocational training (Germany)",
+      "description": "Number of apprentices (Auszubildende) in dual vocational training in Germany on 31 December, by sex and training area (Ausbildungsbereich: industry and trade, crafts, public service, agriculture, liberal professions, housekeeping, shipping).",
+      "sources": [
+        {
+          "title": "Statistisches Bundesamt (Destatis)",
+          "path": "https://www-genesis.destatis.de/datenbank/online/table/21211-0001"
+        }
+      ],
+      "licenses": [
+        {
+          "name": "dl-de/by-2-0",
+          "path": "https://www.govdata.de/dl-de/by-2-0"
+        }
+      ]
+    },
+    {
+      "name": "de-destatis-exams-passed-json",
+      "path": "data/published/indicators/de-destatis-exams-passed.json",
+      "format": "json",
+      "mediatype": "application/json",
+      "title": "Final apprenticeship examinations passed (Germany)",
+      "description": "Number of final examinations (Abschlussprüfungen) passed in dual vocational training in Germany during the calendar year, by sex and training area.",
+      "sources": [
+        {
+          "title": "Statistisches Bundesamt (Destatis)",
+          "path": "https://www-genesis.destatis.de/datenbank/online/table/21211-0007"
+        }
+      ],
+      "licenses": [
+        {
+          "name": "dl-de/by-2-0",
+          "path": "https://www.govdata.de/dl-de/by-2-0"
+        }
+      ]
+    },
+    {
+      "name": "de-destatis-exams-passed-csv",
+      "path": "data/published/indicators/de-destatis-exams-passed.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "title": "Final apprenticeship examinations passed (Germany)",
+      "description": "Number of final examinations (Abschlussprüfungen) passed in dual vocational training in Germany during the calendar year, by sex and training area.",
+      "sources": [
+        {
+          "title": "Statistisches Bundesamt (Destatis)",
+          "path": "https://www-genesis.destatis.de/datenbank/online/table/21211-0007"
+        }
+      ],
+      "licenses": [
+        {
+          "name": "dl-de/by-2-0",
+          "path": "https://www.govdata.de/dl-de/by-2-0"
+        }
+      ]
+    },
+    {
+      "name": "de-destatis-new-contracts-json",
+      "path": "data/published/indicators/de-destatis-new-contracts.json",
+      "format": "json",
+      "mediatype": "application/json",
+      "title": "Newly concluded apprenticeship contracts (Germany)",
+      "description": "Number of newly concluded training contracts (neu abgeschlossene Ausbildungsverträge) in dual vocational training in Germany during the calendar year, by sex and training area.",
+      "sources": [
+        {
+          "title": "Statistisches Bundesamt (Destatis)",
+          "path": "https://www-genesis.destatis.de/datenbank/online/table/21211-0004"
+        }
+      ],
+      "licenses": [
+        {
+          "name": "dl-de/by-2-0",
+          "path": "https://www.govdata.de/dl-de/by-2-0"
+        }
+      ]
+    },
+    {
+      "name": "de-destatis-new-contracts-csv",
+      "path": "data/published/indicators/de-destatis-new-contracts.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "title": "Newly concluded apprenticeship contracts (Germany)",
+      "description": "Number of newly concluded training contracts (neu abgeschlossene Ausbildungsverträge) in dual vocational training in Germany during the calendar year, by sex and training area.",
+      "sources": [
+        {
+          "title": "Statistisches Bundesamt (Destatis)",
+          "path": "https://www-genesis.destatis.de/datenbank/online/table/21211-0004"
+        }
+      ],
+      "licenses": [
+        {
+          "name": "dl-de/by-2-0",
+          "path": "https://www.govdata.de/dl-de/by-2-0"
         }
       ]
     },

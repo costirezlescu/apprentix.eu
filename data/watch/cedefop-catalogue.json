@@ -2,8 +2,8 @@
   "description": "Datasets in the 'cedefop' catalogue on data.europa.eu (publisher Cedefop). An update signal: a new id, or a changed 'modified'/'issued', means Cedefop published or revised a dataset. Cedefop's own site blocks automated clients.",
   "source": "data.europa.eu search API",
   "api_url": "https://data.europa.eu/api/hub/search/search?filter=dataset&limit=100&facets={\"catalog\":[\"cedefop\"]}",
-  "checked_at": "2026-10-01T09:41:25+00:00",
-  "count": 14,
+  "checked_at": "2026-10-12T13:16:47+00:00",
+  "count": 15,
   "datasets": [
     {
       "id": "continuing_vet_sekmokas_cedefop_2026_dataset",
@@ -100,6 +100,20 @@
         "https://www.cedefop.europa.eu/en/publications/7104"
       ],
       "portal_url": "https://data.europa.eu/data/datasets/recognition_symeonidis_villalba_cedefop_2026_dataset?locale=en"
+    },
+    {
+      "id": "regional-skills-ecosystem-index-reset",
+      "title": "Regional skills ecosystem index (RESET)",
+      "modified": null,
+      "issued": "2026-10-05",
+      "licence": [
+        "Creative Commons Attribution 4.0 International"
+      ],
+      "distribution_urls": [
+        "https://www.cedefop.europa.eu/en/datasets/regional-skills-ecosystem-index",
+        "https://www.cedefop.europa.eu/en/tools/reset"
+      ],
+      "portal_url": "https://data.europa.eu/data/datasets/regional-skills-ecosystem-index-reset?locale=en"
     },
     {
       "id": "sekmokas_lipinska_cedefop_eucen_2026_dataset",
