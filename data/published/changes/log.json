@@ -3,6 +3,106 @@
   "feed": "data/feed.xml",
   "entries": [
     {
+      "date": "2026-10-16",
+      "items": [
+        {
+          "kind": "new-records",
+          "title": "1 organisation added: Erasmus+ accredited VET organisations",
+          "text": "Zespół Szkół Ogólnokształcących i Zawodowych im. Ziemi Pogorzelskiej w Pogorzeli. Now 4,041 in total (was 4,040).",
+          "link": "pages/explore.html?dataset=erasmus-vet-organisations&open=erasmus-acc-000371170",
+          "countries": [
+            "PL"
+          ]
+        },
+        {
+          "kind": "new-records",
+          "title": "6 datasets added: Apprenticeship and VET open-data catalogue",
+          "text": "By country: SK 3, BE 2, CH 1. Including 2021 National Assessment of Critical Thinking, Media Wisdom and Problem Solving in the Third Grade of Secondary Education in Flanders (General - Vocational - T…",
+          "link": "pages/datasets/data-catalogue.html",
+          "countries": [
+            "BE",
+            "CH",
+            "SK"
+          ]
+        },
+        {
+          "kind": "revision",
+          "title": "Revised figures: EU grant for Erasmus+ VET mobility projects",
+          "text": "35 earlier values revised. Largest: Luxembourg 2024 EUR 666,354 → EUR 611,480; Netherlands 2025 EUR 29,918,894 → EUR 31,558,794; Türkiye 2024 EUR 23,253,328 → EUR 23,079,448.",
+          "link": "pages/indicators/erasmus-ka1-vet-grant.html",
+          "countries": [
+            "AT",
+            "BE",
+            "BG",
+            "CZ",
+            "DE",
+            "EL",
+            "ES",
+            "FR",
+            "HR",
+            "IE",
+            "IS",
+            "IT",
+            "LT",
+            "LU",
+            "NL",
+            "NO",
+            "PL",
+            "SE",
+            "SI",
+            "SK",
+            "TR"
+          ]
+        },
+        {
+          "kind": "revision",
+          "title": "Revised figures: Erasmus+ VET mobility projects",
+          "text": "2 earlier values revised. Largest: Poland 2025 768 projects → 769 projects; EU-27 2025 6,891 projects → 6,892 projects.",
+          "link": "pages/indicators/erasmus-ka1-vet-projects.html",
+          "countries": [
+            "PL"
+          ]
+        },
+        {
+          "kind": "revision",
+          "title": "Revised figures: New Erasmus accreditations in VET",
+          "text": "2 earlier values revised. Largest: Poland 2025 23 accreditations → 24 accreditations; EU-27 2025 504 accreditations → 505 accreditations.",
+          "link": "pages/indicators/erasmus-vet-accreditations.html",
+          "countries": [
+            "PL"
+          ]
+        },
+        {
+          "kind": "updated-records",
+          "title": "57 datasets updated: Apprenticeship and VET open-data catalogue",
+          "text": "Including Mentor and schemes in the field of employment: Number of adult apprentices in persons and full-time equivalents, Accessibility information portal - Education: Childcare, schools, vocational…",
+          "link": "pages/datasets/data-catalogue.html",
+          "countries": [
+            "CH",
+            "DE",
+            "DK",
+            "ES",
+            "IE",
+            "SE"
+          ]
+        },
+        {
+          "kind": "removed-records",
+          "title": "8 datasets removed: Apprenticeship and VET open-data catalogue",
+          "text": "1,644 in total (was 1,646). No longer in the source, or merged with another record.",
+          "link": "pages/datasets/data-catalogue.html"
+        }
+      ],
+      "counts": {
+        "new-records": 2,
+        "removed-records": 1,
+        "revision": 3,
+        "updated-records": 1,
+        "records_added": 7,
+        "values_revised": 39
+      }
+    },
+    {
       "date": "2026-10-12",
       "items": [
         {

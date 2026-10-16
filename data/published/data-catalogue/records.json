@@ -177,13 +177,13 @@
     "original_language": "de"
   },
   {
-    "id": "doi-10-48804-v7lhyz",
+    "id": "doi-10-48804-v7lhyz~~1",
     "title": "2021 National Assessment of Critical Thinking, Media Wisdom and Problem Solving in the Third Grade of Secondary Education in Flanders (General - Vocational - Technical Track)",
     "country": "Belgium",
     "country_code": "BE",
     "publisher": "Katholieke Universiteit Leuven",
     "concerns_apprenticeship": "No",
-    "catalogue": "data-gov-be",
+    "catalogue": "nsip-be",
     "description": "In 2021 a national assessment was carried out, which was commissioned by the Flemish government, to assess the extent to which students have achieved the cross-curricular attainment targets related to critical thinking, media wisdom and problem-solving at the end of the third grade of general, vocational and technical secondary education. A written digital test was administered to assess the attainment targets for critical thinking and media literacy. An additional assignment was administered to assess the attainment targets for problem solving.",
     "licence": [
       "Not stated"
@@ -191,16 +191,13 @@
     "modified": "2023-12-20",
     "issued": "2023-12-20",
     "year": "2023",
-    "portal_url": "https://data.europa.eu/data/datasets/doi-10-48804-v7lhyz?locale=en",
+    "portal_url": "https://data.europa.eu/data/datasets/doi-10-48804-v7lhyz~~1?locale=en",
     "keywords": [
       "Peilingen",
       "Peilingonderzoek"
     ],
     "matched_queries": [
-      "ammatillinen",
-      "beroepsonderwijs",
-      "szakképzés",
-      "yrkesutbildning"
+      "beroepsonderwijs"
     ],
     "original_language": "de, en, fr, nl"
   },
@@ -250,19 +247,19 @@
     "original_language": "de, en, fr, nl"
   },
   {
-    "id": "0b0ee4dc-a7c1-4ffd-af43-606d698d1a29",
+    "id": "0b0ee4dc-a7c1-4ffd-af43-606d698d1a29~~1",
     "title": "Flemish Agency for Employment and Vocational Training (VDAB)",
     "country": "Belgium",
     "country_code": "BE",
     "publisher": "VDAB",
     "concerns_apprenticeship": "No",
-    "catalogue": "data-gov-be",
+    "catalogue": "nsip-be",
     "description": "The Flemish Employment and Vocational Training Service ensures that jobseekers and employers find each other on the labour market. It is the mission of the VDAB to ensure, organise and promote job placement, counselling and training in the interests of employers, workers and jobseekers with a view to the lifelong and sustainable integration of jobseekers and workers into the labour market.",
     "licence": [
       "Not stated"
     ],
     "landing_page": "https://www.vlaanderen.be/DataCatalogRecord/a89235fe-b4a6-45d5-a391-2593117914cf",
-    "portal_url": "https://data.europa.eu/data/datasets/0b0ee4dc-a7c1-4ffd-af43-606d698d1a29?locale=en",
+    "portal_url": "https://data.europa.eu/data/datasets/0b0ee4dc-a7c1-4ffd-af43-606d698d1a29~~1?locale=en",
     "keywords": [
       "VDAB",
       "Vlaamse Dienst voor Arbeidsbemiddeling en Beroepsopleiding (VDAB)",
@@ -1610,7 +1607,7 @@
     "publisher": "Styrelsen for Arbejdsmarked og Rekruttering",
     "concerns_apprenticeship": "Yes",
     "catalogue": "datavejviser",
-    "description": "Number of persons and full-time persons. Period: 2004-01-01 – 2026-08-31",
+    "description": "Antal personer og fuldtidspersoner. Periode: 2004-01-01 – 2026-09-30",
     "formats": [
       "CSV",
       "HTML",
@@ -1620,8 +1617,8 @@
     "licence": [
       "CC BY 4.0"
     ],
-    "modified": "2026-09-10",
-    "issued": "2026-09-10",
+    "modified": "2026-10-11",
+    "issued": "2026-10-11",
     "year": "2026",
     "landing_page": "https://jobindsats.dk/databank/indsatser/mentor-og-ordninger-pa-beskaeftigelsesomradet/tilskudsordninger/antal-voksenlaerlinge-opgjort-i-personer-og-fuldtidspersoner/",
     "portal_url": "https://data.europa.eu/data/datasets/https-data-gov-dk-dataset-vla02?locale=en",
@@ -9514,7 +9511,7 @@
     "licence": [
       "Data licence Germany – attribution 2.0"
     ],
-    "modified": "2026-10-01",
+    "modified": "2026-10-11",
     "issued": "2019-07-19",
     "year": "2026",
     "portal_url": "https://data.europa.eu/data/datasets/ceb7baab-53ba-4052-9f17-bd6eca61627b~~1?locale=en",
@@ -9532,23 +9529,23 @@
     "title": "Accessibility information portal - Education: Childcare, schools, vocational schools - entrances",
     "country": "Germany",
     "country_code": "DE",
-    "publisher": "Not stated",
+    "publisher": "Stadt Dresden",
     "concerns_apprenticeship": "No",
-    "catalogue": "gdi-de",
+    "catalogue": "govdata",
     "description": "In the Infoportal Accessibility, facilities with public use are:\n- barrier-free accessibility and accessibility\n- the equipment with barrier-free toilets and their characteristics\n- the provision of technical aids for persons with disabilities;\n- special offers and services for people with disabilities.\nFor each recorded facility there is detailed information, each of which is summarized on its own website. All information is available in three languages (DE, CS and EN).\nThe information portal has its own website at www.dresden.de. There is an advanced search function for users.",
     "formats": [
       "WFS_SRVC",
       "WMS_SRVC"
     ],
     "licence": [
-      "Not stated"
+      "Data licence Germany – attribution 2.0"
     ],
-    "modified": "2026-07-14",
-    "issued": "2026-10-01",
+    "modified": "2026-10-11",
+    "issued": "2019-08-16",
     "year": "2026",
-    "landing_page": "https://www.dresden.de/de/rathaus/aemter-und-einrichtungen/oe/dborg/stadt_dresden_6642.php",
     "portal_url": "https://data.europa.eu/data/datasets/f252a4cd-1f4c-482e-be23-215d972aba2b?locale=en",
     "keywords": [
+      "lokal",
       "opendata"
     ],
     "matched_queries": [
@@ -9626,140 +9623,6 @@
       "kształcenie zawodowe",
       "szakképzés",
       "yrkesutbildning"
-    ],
-    "original_language": "de"
-  },
-  {
-    "id": "36c4e56f-29d3-4c28-ad8b-f070ad29f8dc",
-    "title": "Amending Collective Agreement No 13 to the Collective Agreement for Apprentices of the Länder in Nursing Professions (TVA-L Pflege) of 14 February 2026",
-    "country": "Germany",
-    "country_code": "DE",
-    "publisher": "Verkündungen",
-    "concerns_apprenticeship": "Yes",
-    "catalogue": "govdata",
-    "description": "From 07 September 2026\nCircular of the Ministry of Finance",
-    "formats": [
-      "PDF"
-    ],
-    "licence": [
-      "CC0 1.0"
-    ],
-    "modified": "2026-09-15",
-    "issued": "2026-09-15",
-    "year": "2026",
-    "portal_url": "https://data.europa.eu/data/datasets/36c4e56f-29d3-4c28-ad8b-f070ad29f8dc?locale=en",
-    "keywords": [
-      "sonstiges"
-    ],
-    "matched_queries": [
-      "apprentice",
-      "apprentices",
-      "apprentis",
-      "aprendices",
-      "Auszubildende",
-      "lärling",
-      "lærling",
-      "lærlinge",
-      "oppisopimus",
-      "praktykant",
-      "μαθητεία"
-    ],
-    "original_language": "de"
-  },
-  {
-    "id": "a9e19f99-9843-4b91-8927-bc7558de07d7",
-    "title": "Amending Collective Agreement No 13 to the Collective Agreement for Apprentices of the Länder in Vocational Training Professions pursuant to the Vocational Training Act (TVA-L BBiG) of 14 February 2026",
-    "country": "Germany",
-    "country_code": "DE",
-    "publisher": "Verkündungen",
-    "concerns_apprenticeship": "Yes",
-    "catalogue": "govdata",
-    "description": "From 02 September 2026\nCircular of the Ministry of Finance",
-    "formats": [
-      "PDF"
-    ],
-    "licence": [
-      "CC0 1.0"
-    ],
-    "modified": "2026-09-15",
-    "issued": "2026-09-15",
-    "year": "2026",
-    "portal_url": "https://data.europa.eu/data/datasets/a9e19f99-9843-4b91-8927-bc7558de07d7?locale=en",
-    "keywords": [
-      "sonstiges"
-    ],
-    "matched_queries": [
-      "apprentice",
-      "apprentices",
-      "apprentis",
-      "aprendices",
-      "Ausbildung",
-      "Auszubildende",
-      "Berufsbildung",
-      "erhvervsuddannelse",
-      "lärling",
-      "lærling",
-      "lærlinge",
-      "oppisopimus",
-      "szakképzés",
-      "vocational training",
-      "yrkesutbildning"
-    ],
-    "original_language": "de"
-  },
-  {
-    "id": "d5c61beb-c713-4820-aa00-48543d20d7e7",
-    "title": "Amending collective agreement No 3 to the collective agreement for dual students of the Länder in training-integrated dual study programmes (TVdS-L) of 14 February 2026",
-    "country": "Germany",
-    "country_code": "DE",
-    "publisher": "Verkündungen",
-    "concerns_apprenticeship": "Yes",
-    "catalogue": "govdata",
-    "description": "From 07 September 2026\nCircular of the Ministry of Finance",
-    "formats": [
-      "PDF"
-    ],
-    "licence": [
-      "CC0 1.0"
-    ],
-    "modified": "2026-09-15",
-    "issued": "2026-09-15",
-    "year": "2026",
-    "portal_url": "https://data.europa.eu/data/datasets/d5c61beb-c713-4820-aa00-48543d20d7e7?locale=en",
-    "keywords": [
-      "sonstiges"
-    ],
-    "matched_queries": [
-      "alternance",
-      "Ausbildung"
-    ],
-    "original_language": "de"
-  },
-  {
-    "id": "a4d502aa-b694-484c-beb5-363e18c91938",
-    "title": "Amending Collective Agreement No 5 to the Collective Agreement for Trainees of the Länder in Health Professions (TVA-L Gesundheit) of 14 February 2026",
-    "country": "Germany",
-    "country_code": "DE",
-    "publisher": "Verkündungen",
-    "concerns_apprenticeship": "Yes",
-    "catalogue": "govdata",
-    "description": "From 07 September 2026\nCircular of the Ministry of Finance",
-    "formats": [
-      "PDF"
-    ],
-    "licence": [
-      "CC0 1.0"
-    ],
-    "modified": "2026-09-15",
-    "issued": "2026-09-15",
-    "year": "2026",
-    "portal_url": "https://data.europa.eu/data/datasets/a4d502aa-b694-484c-beb5-363e18c91938?locale=en",
-    "keywords": [
-      "sonstiges"
-    ],
-    "matched_queries": [
-      "apprentis",
-      "Auszubildende"
     ],
     "original_language": "de"
   },
@@ -12247,8 +12110,8 @@
     "licence": [
       "Data licence Germany – attribution 2.0"
     ],
-    "modified": "2026-10-11",
-    "issued": "2026-10-11",
+    "modified": "2026-10-15",
+    "issued": "2026-10-15",
     "year": "2026",
     "landing_page": "http://www.statistik-nord.de",
     "portal_url": "https://data.europa.eu/data/datasets/stanord_cms-51524?locale=en",
@@ -12328,7 +12191,7 @@
       "Other (closed)"
     ],
     "modified": "2020-10-07",
-    "issued": "2026-10-07",
+    "issued": "2026-10-13",
     "year": "2020",
     "portal_url": "https://data.europa.eu/data/datasets/abf3f239-57e9-4138-b012-fb66a0a50775?locale=en",
     "keywords": [
@@ -12412,8 +12275,8 @@
     "licence": [
       "Data licence Germany – attribution 2.0"
     ],
-    "modified": "2026-10-11",
-    "issued": "2026-10-11",
+    "modified": "2026-10-15",
+    "issued": "2026-10-15",
     "year": "2026",
     "landing_page": "http://www.statistik-nord.de",
     "portal_url": "https://data.europa.eu/data/datasets/stanord_cms-51335?locale=en",
@@ -12451,8 +12314,8 @@
     "licence": [
       "Data licence Germany – attribution 2.0"
     ],
-    "modified": "2026-10-11",
-    "issued": "2026-10-11",
+    "modified": "2026-10-15",
+    "issued": "2026-10-15",
     "year": "2026",
     "landing_page": "http://www.statistik-nord.de",
     "portal_url": "https://data.europa.eu/data/datasets/stanord_cms-51140?locale=en",
@@ -12490,8 +12353,8 @@
     "licence": [
       "Data licence Germany – attribution 2.0"
     ],
-    "modified": "2026-10-11",
-    "issued": "2026-10-11",
+    "modified": "2026-10-15",
+    "issued": "2026-10-15",
     "year": "2026",
     "landing_page": "http://www.statistik-nord.de",
     "portal_url": "https://data.europa.eu/data/datasets/stanord_cms-50966?locale=en",
@@ -12529,8 +12392,8 @@
     "licence": [
       "Data licence Germany – attribution 2.0"
     ],
-    "modified": "2026-10-11",
-    "issued": "2026-10-11",
+    "modified": "2026-10-15",
+    "issued": "2026-10-15",
     "year": "2026",
     "landing_page": "http://www.statistik-nord.de",
     "portal_url": "https://data.europa.eu/data/datasets/stanord_cms-50898?locale=en",
@@ -13303,8 +13166,8 @@
     "licence": [
       "Data licence Germany – attribution 2.0"
     ],
-    "modified": "2026-10-11",
-    "issued": "2026-10-11",
+    "modified": "2026-10-15",
+    "issued": "2026-10-15",
     "year": "2026",
     "landing_page": "http://www.statistik-nord.de",
     "portal_url": "https://data.europa.eu/data/datasets/stanord_cms-67855?locale=en",
@@ -14766,8 +14629,8 @@
     "licence": [
       "Data licence Germany – attribution 2.0"
     ],
-    "modified": "2026-10-11",
-    "issued": "2026-10-11",
+    "modified": "2026-10-15",
+    "issued": "2026-10-15",
     "year": "2026",
     "landing_page": "http://www.statistik-nord.de",
     "portal_url": "https://data.europa.eu/data/datasets/stanord_cms-51476?locale=en",
@@ -14953,8 +14816,8 @@
     "licence": [
       "Data licence Germany – attribution 2.0"
     ],
-    "modified": "2026-10-11",
-    "issued": "2026-10-11",
+    "modified": "2026-10-15",
+    "issued": "2026-10-15",
     "year": "2026",
     "landing_page": "http://www.statistik-nord.de",
     "portal_url": "https://data.europa.eu/data/datasets/stanord_cms-51336?locale=en",
@@ -18912,7 +18775,7 @@
     "licence": [
       "Data licence Germany – attribution 2.0"
     ],
-    "modified": "2026-10-11",
+    "modified": "2026-10-15",
     "issued": "2014-09-26",
     "year": "2026",
     "landing_page": "http://www.statistik-nord.de",
@@ -18939,7 +18802,7 @@
     "licence": [
       "Data licence Germany – attribution 2.0"
     ],
-    "modified": "2026-10-11",
+    "modified": "2026-10-15",
     "issued": "2014-09-26",
     "year": "2026",
     "landing_page": "http://www.statistik-nord.de",
@@ -18966,7 +18829,7 @@
     "licence": [
       "Data licence Germany – attribution 2.0"
     ],
-    "modified": "2026-10-11",
+    "modified": "2026-10-15",
     "issued": "2014-09-26",
     "year": "2026",
     "landing_page": "http://www.statistik-nord.de",
@@ -19670,8 +19533,8 @@
     "licence": [
       "Data licence Germany – attribution 2.0"
     ],
-    "modified": "2026-10-11",
-    "issued": "2026-10-11",
+    "modified": "2026-10-15",
+    "issued": "2026-10-15",
     "year": "2026",
     "landing_page": "http://www.statistik-nord.de",
     "portal_url": "https://data.europa.eu/data/datasets/stanord_cms-55431?locale=en",
@@ -19705,8 +19568,8 @@
     "licence": [
       "Data licence Germany – attribution 2.0"
     ],
-    "modified": "2026-10-11",
-    "issued": "2026-10-11",
+    "modified": "2026-10-15",
+    "issued": "2026-10-15",
     "year": "2026",
     "landing_page": "http://www.statistik-nord.de",
     "portal_url": "https://data.europa.eu/data/datasets/stanord_cms-57523?locale=en",
@@ -19739,8 +19602,8 @@
     "licence": [
       "Data licence Germany – attribution 2.0"
     ],
-    "modified": "2026-10-11",
-    "issued": "2026-10-11",
+    "modified": "2026-10-15",
+    "issued": "2026-10-15",
     "year": "2026",
     "landing_page": "http://www.statistik-nord.de",
     "portal_url": "https://data.europa.eu/data/datasets/stanord_cms-57952?locale=en",
@@ -19774,8 +19637,8 @@
     "licence": [
       "Data licence Germany – attribution 2.0"
     ],
-    "modified": "2026-10-11",
-    "issued": "2026-10-11",
+    "modified": "2026-10-15",
+    "issued": "2026-10-15",
     "year": "2026",
     "landing_page": "http://www.statistik-nord.de",
     "portal_url": "https://data.europa.eu/data/datasets/stanord_cms-59828?locale=en",
@@ -19809,8 +19672,8 @@
     "licence": [
       "Data licence Germany – attribution 2.0"
     ],
-    "modified": "2026-10-11",
-    "issued": "2026-10-11",
+    "modified": "2026-10-15",
+    "issued": "2026-10-15",
     "year": "2026",
     "landing_page": "http://www.statistik-nord.de",
     "portal_url": "https://data.europa.eu/data/datasets/stanord_cms-60604?locale=en",
@@ -19844,8 +19707,8 @@
     "licence": [
       "Data licence Germany – attribution 2.0"
     ],
-    "modified": "2026-10-11",
-    "issued": "2026-10-11",
+    "modified": "2026-10-15",
+    "issued": "2026-10-15",
     "year": "2026",
     "landing_page": "http://www.statistik-nord.de",
     "portal_url": "https://data.europa.eu/data/datasets/stanord_cms-51162?locale=en",
@@ -19877,8 +19740,8 @@
     "licence": [
       "Data licence Germany – attribution 2.0"
     ],
-    "modified": "2026-10-11",
-    "issued": "2026-10-11",
+    "modified": "2026-10-15",
+    "issued": "2026-10-15",
     "year": "2026",
     "landing_page": "http://www.statistik-nord.de",
     "portal_url": "https://data.europa.eu/data/datasets/stanord_cms-51014?locale=en",
@@ -20672,7 +20535,7 @@
     "licence": [
       "Data licence Germany – attribution 2.0"
     ],
-    "modified": "2026-10-01",
+    "modified": "2026-10-11",
     "issued": "2014-09-15",
     "year": "2026",
     "portal_url": "https://data.europa.eu/data/datasets/457de1ca-3f9e-4b14-add9-9cf7bf0b1c73~~1?locale=en",
@@ -20795,7 +20658,7 @@
     "licence": [
       "Data licence Germany – attribution 2.0"
     ],
-    "modified": "2026-10-11",
+    "modified": "2026-10-15",
     "issued": "2014-09-26",
     "year": "2026",
     "landing_page": "http://www.statistik-nord.de",
@@ -20826,7 +20689,7 @@
     "licence": [
       "Data licence Germany – attribution 2.0"
     ],
-    "modified": "2026-10-11",
+    "modified": "2026-10-15",
     "issued": "2014-09-26",
     "year": "2026",
     "landing_page": "http://www.statistik-nord.de",
@@ -20856,7 +20719,7 @@
     "licence": [
       "Data licence Germany – attribution 2.0"
     ],
-    "modified": "2026-10-11",
+    "modified": "2026-10-15",
     "issued": "2014-09-26",
     "year": "2026",
     "landing_page": "http://www.statistik-nord.de",
@@ -24374,7 +24237,7 @@
     "licence": [
       "CC BY 4.0"
     ],
-    "modified": "2026-10-11",
+    "modified": "2026-10-15",
     "issued": "2026-05-22",
     "year": "2026",
     "landing_page": "https://ws.cso.ie/public/api.restful/PxStat.Data.Cube_API.ReadDataset/QQI10/JSON-stat/2.0/en",
@@ -24416,7 +24279,7 @@
     "licence": [
       "CC BY 4.0"
     ],
-    "modified": "2026-10-11",
+    "modified": "2026-10-15",
     "issued": "2026-05-22",
     "year": "2026",
     "landing_page": "https://ws.cso.ie/public/api.restful/PxStat.Data.Cube_API.ReadDataset/QQI11/JSON-stat/2.0/en",
@@ -36805,6 +36668,93 @@
     "original_language": "ro"
   },
   {
+    "id": "https-statdata-statistics-sk-public-api-dc-opendata-cube-dataset-sv1801rs",
+    "title": "Enterprises with continuing vocational training by economic activity categories - yearly",
+    "country": "Slovakia",
+    "country_code": "SK",
+    "publisher": "Štatistický úrad SR",
+    "concerns_apprenticeship": "No",
+    "catalogue": "data-gov-sk",
+    "description": "Enterprises with continuing vocational training by economic activity categories - yearly",
+    "formats": [
+      "CSV",
+      "JSON",
+      "ODS",
+      "XML"
+    ],
+    "licence": [
+      "Not stated"
+    ],
+    "modified": "2022-10-31",
+    "year": "2022",
+    "portal_url": "https://data.europa.eu/data/datasets/https-statdata-statistics-sk-public-api-dc-opendata-cube-dataset-sv1801rs?locale=en",
+    "keywords": [
+      "Štatistika"
+    ],
+    "matched_queries": [
+      "vocational training"
+    ],
+    "original_language": "en, sk"
+  },
+  {
+    "id": "https-statdata-statistics-sk-public-api-dc-opendata-cube-dataset-sv3801rr",
+    "title": "Enterprises with continuing vocational training by regions - yearly",
+    "country": "Slovakia",
+    "country_code": "SK",
+    "publisher": "Štatistický úrad SR",
+    "concerns_apprenticeship": "No",
+    "catalogue": "data-gov-sk",
+    "description": "Enterprises with continuing vocational training by regions - yearly",
+    "formats": [
+      "CSV",
+      "JSON",
+      "ODS",
+      "XML"
+    ],
+    "licence": [
+      "Not stated"
+    ],
+    "modified": "2022-10-31",
+    "year": "2022",
+    "portal_url": "https://data.europa.eu/data/datasets/https-statdata-statistics-sk-public-api-dc-opendata-cube-dataset-sv3801rr?locale=en",
+    "keywords": [
+      "Štatistika"
+    ],
+    "matched_queries": [
+      "vocational training"
+    ],
+    "original_language": "en, sk"
+  },
+  {
+    "id": "https-statdata-statistics-sk-public-api-dc-opendata-cube-dataset-sv1802rs",
+    "title": "Enterprises with continuing vocational training by size of the enterprise - yearly",
+    "country": "Slovakia",
+    "country_code": "SK",
+    "publisher": "Štatistický úrad SR",
+    "concerns_apprenticeship": "No",
+    "catalogue": "data-gov-sk",
+    "description": "Enterprises with continuing vocational training by size of the enterprise - yearly",
+    "formats": [
+      "CSV",
+      "JSON",
+      "ODS",
+      "XML"
+    ],
+    "licence": [
+      "Not stated"
+    ],
+    "modified": "2022-10-31",
+    "year": "2022",
+    "portal_url": "https://data.europa.eu/data/datasets/https-statdata-statistics-sk-public-api-dc-opendata-cube-dataset-sv1802rs?locale=en",
+    "keywords": [
+      "Štatistika"
+    ],
+    "matched_queries": [
+      "vocational training"
+    ],
+    "original_language": "en, sk"
+  },
+  {
     "id": "adp-euvet12",
     "title": "7 EU VET - VET survey in seven European countries",
     "country": "Slovenia",
@@ -39601,7 +39551,8 @@
     "year": "2024",
     "portal_url": "https://data.europa.eu/data/datasets/https-www-juntadeandalucia-es-datosabiertos-portal-dataset-9de24faa-6c77-4c9e-84e9-8d6573e91eb1?locale=en",
     "matched_queries": [
-      "formación profesional"
+      "formación profesional",
+      "kształcenie zawodowe"
     ],
     "original_language": "es"
   },
@@ -40254,7 +40205,7 @@
     "licence": [
       "CC BY 4.0"
     ],
-    "modified": "2026-09-05",
+    "modified": "2026-10-05",
     "issued": "2025-03-20",
     "year": "2026",
     "portal_url": "https://data.europa.eu/data/datasets/https-opendata-aragon-es-datos-catalogo-dataset-formacion-profesional-basica-alumnado-matriculado-por-procedencia-y-sexo-municipios?locale=en",
@@ -40560,7 +40511,7 @@
     "licence": [
       "CC BY 4.0"
     ],
-    "modified": "2026-02-25",
+    "modified": "2026-10-05",
     "issued": "2025-03-20",
     "year": "2026",
     "portal_url": "https://data.europa.eu/data/datasets/https-opendata-aragon-es-datos-catalogo-dataset-formacion-profesional-basica-centros-por-titularidad-municipios?locale=en",
@@ -40594,7 +40545,7 @@
     "licence": [
       "CC BY 4.0"
     ],
-    "modified": "2026-02-25",
+    "modified": "2026-10-05",
     "issued": "2025-03-20",
     "year": "2026",
     "portal_url": "https://data.europa.eu/data/datasets/https-opendata-aragon-es-datos-catalogo-dataset-formacion-profesional-basica-unidades-por-curso-y-titularidad-del-centro-municipios?locale=en",
@@ -47059,42 +47010,6 @@
     "original_language": "es"
   },
   {
-    "id": "-91ff7a79-ceb3-45a7-9686-c992634343ce-_100445_es",
-    "title": "Vocational Training for Employment (g12_18_VET)",
-    "country": "Spain",
-    "country_code": "ES",
-    "publisher": "Instituto de Estadística y Cartografía de Andalucía. Junta de Andalucía",
-    "concerns_apprenticeship": "No",
-    "catalogue": "codsi",
-    "description": "Contains information about the location of Vocational Training Centres for Employment in Andalusia.",
-    "formats": [
-      "WFS_SRVC",
-      "WMS_SRVC"
-    ],
-    "licence": [
-      "CC BY 4.0"
-    ],
-    "modified": "2019-02-04",
-    "year": "2019",
-    "portal_url": "https://data.europa.eu/data/datasets/-91ff7a79-ceb3-45a7-9686-c992634343ce-_100445_es?locale=en",
-    "keywords": [
-      "Andalucía",
-      "Datos Espaciales de Referencia de Andalucía (DERA). G12 Servicios",
-      "DERA",
-      "IECA"
-    ],
-    "matched_queries": [
-      "ammatillinen",
-      "Berufsausbildung",
-      "erhvervsuddannelse",
-      "formación profesional",
-      "kształcenie zawodowe",
-      "szakképzés",
-      "yrkesutbildning"
-    ],
-    "original_language": "en, es"
-  },
-  {
     "id": "https-statistikdatabasen-scb-se-dataset-tab6464",
     "title": "Admitted students in higher vocational education courses by sex, educational orientation, level of education, upper secondary school and national background. Year 2020 - 2025",
     "country": "Sweden",
@@ -49159,7 +49074,7 @@
     "licence": [
       "CC BY 4.0"
     ],
-    "modified": "2025-10-15",
+    "modified": "2025-10-14",
     "year": "2025",
     "portal_url": "https://data.europa.eu/data/datasets/http-api-kolada-se-v3-kpi-n28142?locale=en",
     "keywords": [
@@ -49187,7 +49102,7 @@
     "licence": [
       "CC BY 4.0"
     ],
-    "modified": "2025-10-15",
+    "modified": "2025-10-14",
     "year": "2025",
     "portal_url": "https://data.europa.eu/data/datasets/http-api-kolada-se-v3-kpi-n28152?locale=en",
     "keywords": [
@@ -49215,7 +49130,7 @@
     "licence": [
       "CC BY 4.0"
     ],
-    "modified": "2025-10-15",
+    "modified": "2025-10-14",
     "year": "2025",
     "portal_url": "https://data.europa.eu/data/datasets/http-api-kolada-se-v3-kpi-n28141?locale=en",
     "keywords": [
@@ -49243,7 +49158,7 @@
     "licence": [
       "CC BY 4.0"
     ],
-    "modified": "2025-10-15",
+    "modified": "2025-10-14",
     "year": "2025",
     "portal_url": "https://data.europa.eu/data/datasets/http-api-kolada-se-v3-kpi-n28151?locale=en",
     "keywords": [
@@ -49271,7 +49186,7 @@
     "licence": [
       "CC BY 4.0"
     ],
-    "modified": "2025-10-15",
+    "modified": "2025-10-14",
     "year": "2025",
     "portal_url": "https://data.europa.eu/data/datasets/http-api-kolada-se-v3-kpi-n28160?locale=en",
     "keywords": [
@@ -49299,7 +49214,7 @@
     "licence": [
       "CC BY 4.0"
     ],
-    "modified": "2025-10-15",
+    "modified": "2025-10-14",
     "year": "2025",
     "portal_url": "https://data.europa.eu/data/datasets/http-api-kolada-se-v3-kpi-n28146?locale=en",
     "keywords": [
@@ -49327,7 +49242,7 @@
     "licence": [
       "CC BY 4.0"
     ],
-    "modified": "2025-10-15",
+    "modified": "2025-10-14",
     "year": "2025",
     "portal_url": "https://data.europa.eu/data/datasets/http-api-kolada-se-v3-kpi-n28145?locale=en",
     "keywords": [
@@ -49355,7 +49270,7 @@
     "licence": [
       "CC BY 4.0"
     ],
-    "modified": "2025-10-15",
+    "modified": "2025-10-14",
     "year": "2025",
     "portal_url": "https://data.europa.eu/data/datasets/http-api-kolada-se-v3-kpi-n28159?locale=en",
     "keywords": [
@@ -50544,40 +50459,6 @@
     "original_language": "sv"
   },
   {
-    "id": "vote-lehrstelleninitiative-kanton-basel-landschaft",
-    "title": "\"Teaching Place Initiative\"",
-    "country": "Switzerland",
-    "country_code": "CH",
-    "publisher": "Basel-Landschaft",
-    "concerns_apprenticeship": "Yes",
-    "catalogue": "opendata-swiss",
-    "description": "Final results of the federal vote \"\"Lehrstelleninitiative\"\", 18 May 2003, Canton Basel-Landschaft, broken down by municipality.",
-    "formats": [
-      "CSV",
-      "JSON"
-    ],
-    "licence": [
-      "opendata.swiss terms"
-    ],
-    "modified": "2022-01-19",
-    "issued": "2003-05-18",
-    "year": "2022",
-    "landing_page": "https://abstimmungen.bl.ch/vote/lehrstelleninitiative/data",
-    "portal_url": "https://data.europa.eu/data/datasets/vote-lehrstelleninitiative-kanton-basel-landschaft?locale=en",
-    "keywords": [
-      "abstimmung",
-      "federal",
-      "national",
-      "nazionale",
-      "votation",
-      "votazione"
-    ],
-    "matched_queries": [
-      "Lehrstellen"
-    ],
-    "original_language": "de, fr, it, rm"
-  },
-  {
     "id": "11180-kanton-basel-landschaft",
     "title": "Addresses of vocational, middle and higher education institutions",
     "country": "Switzerland",
@@ -50686,7 +50567,7 @@
     "title": "Admissions by occupation, apprenticeship canton, type of training, form of training, gender and year",
     "country": "Switzerland",
     "country_code": "CH",
-    "publisher": "Bundesamt für Statistik",
+    "publisher": "Office fédéral de la statistique",
     "concerns_apprenticeship": "Yes",
     "catalogue": "opendata-swiss",
     "description": "This dataset presents the annual numbers of admissions to basic vocational education and training by occupation, apprenticeship canton, type of training (EFZ, EBA, not regulated), form of training (full school, dual) and gender, since 2010.",
@@ -50869,7 +50750,7 @@
     "publisher": "Fachstelle für Daten und Statistik des Kantons Zug",
     "concerns_apprenticeship": "Yes",
     "catalogue": "opendata-swiss",
-    "description": "Number of apprentices by bridge offer in the canton of Zug, 2009/10 to 2025/26.\nIntegration Bridge Tagbot for Adults (I-B-A-20+): Since the school year 2014/15. \nINVOLV integration pre-teaching: From 2017/18 to 2020/21, then transfer to the GIBZ (Commercial-Industrial Education Center Zug).\n(SOURCE: Canton of Zug, Office for Bridge Offerings)",
+    "description": "Number of apprentices by bridge offer in the canton of Zug, 2009/10 to 2025/26.\nIntegration bridge offer for adults (I-B-A-20+): Since the school year 2014/15. \nINVOLV integration pre-teaching: From 2017/18 to 2020/21, then transfer to the GIBZ (Commercial-Industrial Education Center Zug).\n(SOURCE: Canton of Zug, Office for Bridge Offerings)",
     "formats": [
       "CSV",
       "JSON"
@@ -51381,7 +51262,7 @@
     "title": "Compulsory school: Apprentices by region and school canton",
     "country": "Switzerland",
     "country_code": "CH",
-    "publisher": "Bundesamt für Statistik",
+    "publisher": "Office fédéral de la statistique",
     "concerns_apprenticeship": "Yes",
     "catalogue": "opendata-swiss",
     "formats": [
@@ -51417,7 +51298,7 @@
     "title": "Compulsory school: Apprentices by region, school canton, type of education and nationality",
     "country": "Switzerland",
     "country_code": "CH",
-    "publisher": "Bundesamt für Statistik",
+    "publisher": "Office fédéral de la statistique",
     "concerns_apprenticeship": "Yes",
     "catalogue": "opendata-swiss",
     "formats": [
@@ -51453,7 +51334,7 @@
     "title": "Degrees by field of training, canton of apprenticeship, type of training, form of training, gender and year",
     "country": "Switzerland",
     "country_code": "CH",
-    "publisher": "Bundesamt für Statistik",
+    "publisher": "Office fédéral de la statistique",
     "concerns_apprenticeship": "Yes",
     "catalogue": "opendata-swiss",
     "description": "This dataset presents the annual numbers of qualifications in basic vocational education and training by field of training, canton of apprenticeship, type of training (EFZ, EBA, not regulated), form of training (full school, dual) and gender, since 2010.",
@@ -51505,7 +51386,7 @@
     "title": "Degrees by occupation, apprenticeship canton, type of training, form of training, gender and year",
     "country": "Switzerland",
     "country_code": "CH",
-    "publisher": "Bundesamt für Statistik",
+    "publisher": "Office fédéral de la statistique",
     "concerns_apprenticeship": "Yes",
     "catalogue": "opendata-swiss",
     "description": "This dataset presents the annual numbers of qualifications in basic vocational education and training by occupation, company canton, type of training (EFZ, EBA, not regulated), form of training (full school, dual) and gender, since 2010.",
@@ -51658,7 +51539,7 @@
     "title": "Degrees of higher vocational education and training not regulated by the BBG by type of education, diploma type, school canton, residential canton and gender",
     "country": "Switzerland",
     "country_code": "CH",
-    "publisher": "Bundesamt für Statistik",
+    "publisher": "Office fédéral de la statistique",
     "concerns_apprenticeship": "No",
     "catalogue": "opendata-swiss",
     "description": "This dataset presents the annual figures of the degrees of higher vocational education and training not regulated by the BBG by type of education, diploma type, canton of residence and gender, since 2012.",
@@ -51788,7 +51669,7 @@
     "title": "Examination candidates by apprenticeship canton, type of training, gender and year",
     "country": "Switzerland",
     "country_code": "CH",
-    "publisher": "Bundesamt für Statistik",
+    "publisher": "Office fédéral de la statistique",
     "concerns_apprenticeship": "Yes",
     "catalogue": "opendata-swiss",
     "description": "This dataset presents the annual numbers of candidates in basic vocational education and training by apprenticeship canton, type of training (EFZ, EBA, not regulated) and gender, since 2010.",
@@ -51896,7 +51777,7 @@
     "title": "Higher Vocational Education and Training: Learners by type of education, school canton, gender and nationality (category)",
     "country": "Switzerland",
     "country_code": "CH",
-    "publisher": "Bundesamt für Statistik",
+    "publisher": "Office fédéral de la statistique",
     "concerns_apprenticeship": "No",
     "catalogue": "opendata-swiss",
     "description": "This dataset presents the annual numbers of learners by type of education, school canton, gender and nationality (Switzerland, abroad), since 1999.",
@@ -52239,7 +52120,7 @@
     "title": "Primary level 1-2: Apprentices by region and school canton",
     "country": "Switzerland",
     "country_code": "CH",
-    "publisher": "Bundesamt für Statistik",
+    "publisher": "Office fédéral de la statistique",
     "concerns_apprenticeship": "Yes",
     "catalogue": "opendata-swiss",
     "formats": [
@@ -52340,7 +52221,7 @@
     "title": "Scenarios 2022-2031 for upper secondary education: Expected development in the number of learners and qualifications in basic vocational education and training by canton, field of education and gender",
     "country": "Switzerland",
     "country_code": "CH",
-    "publisher": "Bundesamt für Statistik",
+    "publisher": "Office fédéral de la statistique",
     "concerns_apprenticeship": "No",
     "catalogue": "opendata-swiss",
     "description": "This dataset presents the annual scenarios for upper secondary education concerning the expected evolution of the number of learners and qualifications in basic vocational education and training by scenario, canton, field of education and gender, 2022-2031.",
@@ -52417,6 +52298,48 @@
     ],
     "matched_queries": [
       "erhvervsuddannelse"
+    ],
+    "original_language": "de, fr"
+  },
+  {
+    "id": "36877609-bundesamt-fur-statistik-bfs",
+    "title": "Scenarios 2026-2035 for Higher Vocational Schools - Expected evolution of the number of students and initial degrees of Higher Vocational Schools by scenario, language region, field of education, admission card and gender",
+    "country": "Switzerland",
+    "country_code": "CH",
+    "publisher": "Bundesamt für Statistik",
+    "concerns_apprenticeship": "No",
+    "catalogue": "opendata-swiss",
+    "description": "This dataset presents the annual scenarios for the expected evolution of the number of students and the initial degrees of the higher technical schools by scenario, language region, field of education, admission card and gender, 2026-2035.",
+    "formats": [
+      "HTML"
+    ],
+    "licence": [
+      "opendata.swiss terms"
+    ],
+    "issued": "2026-10-12",
+    "year": "2026",
+    "landing_page": "https://www.bfs.admin.ch/asset/de/px-x-1509090000_121",
+    "portal_url": "https://data.europa.eu/data/datasets/36877609-bundesamt-fur-statistik-bfs?locale=en",
+    "keywords": [
+      "bildung-und-wissenschaft",
+      "donna",
+      "education-and-science",
+      "education-et-science",
+      "femme",
+      "formazione-e-scienza",
+      "frau",
+      "gender",
+      "genere",
+      "genre",
+      "geschlecht",
+      "homme",
+      "man",
+      "mann",
+      "uomo"
+    ],
+    "matched_queries": [
+      "erhvervsuddannelse",
+      "szakképzés"
     ],
     "original_language": "de, fr"
   },
@@ -52600,7 +52523,7 @@
     "title": "Secondary education, basic vocational education: Apprentices by region, school canton, form of education and type of education",
     "country": "Switzerland",
     "country_code": "CH",
-    "publisher": "Bundesamt für Statistik",
+    "publisher": "Office fédéral de la statistique",
     "concerns_apprenticeship": "Yes",
     "catalogue": "opendata-swiss",
     "formats": [
@@ -52643,7 +52566,7 @@
     "title": "Secondary education, basic vocational education: Educational qualifications by canton",
     "country": "Switzerland",
     "country_code": "CH",
-    "publisher": "Bundesamt für Statistik",
+    "publisher": "Office fédéral de la statistique",
     "concerns_apprenticeship": "No",
     "catalogue": "opendata-swiss",
     "formats": [
@@ -52677,7 +52600,7 @@
     "title": "Secondary education, basic vocational education: Students by region, school canton, gender, nationality and character of the school",
     "country": "Switzerland",
     "country_code": "CH",
-    "publisher": "Bundesamt für Statistik",
+    "publisher": "Office fédéral de la statistique",
     "concerns_apprenticeship": "No",
     "catalogue": "opendata-swiss",
     "formats": [
@@ -53043,7 +52966,7 @@
     "title": "Total number of apprentices by occupation, company canton, type of training, form of training, gender and year",
     "country": "Switzerland",
     "country_code": "CH",
-    "publisher": "Bundesamt für Statistik",
+    "publisher": "Office fédéral de la statistique",
     "concerns_apprenticeship": "Yes",
     "catalogue": "opendata-swiss",
     "description": "This dataset presents the annual figures of the total number of learners in basic vocational education and training by occupation, company canton, type of training (EFZ, EBA, not regulated), form of training (full school, dual) and gender, since 2010.",
@@ -53133,7 +53056,7 @@
     "title": "Total number of learners by occupation/subject, company canton, type of training, form of training, gender and year",
     "country": "Switzerland",
     "country_code": "CH",
-    "publisher": "Bundesamt für Statistik",
+    "publisher": "Office fédéral de la statistique",
     "concerns_apprenticeship": "Yes",
     "catalogue": "opendata-swiss",
     "description": "This dataset presents the annual figures of the total number of learners in basic vocational education and training by occupation and subject, canton of apprenticeships, type of training (EFZ, EBA, not regulated), form of training (full school, dual) and gender, since 2010.",
@@ -53175,7 +53098,7 @@
     "title": "Vocational certificates by type of training, direction, school canton, residential canton and gender",
     "country": "Switzerland",
     "country_code": "CH",
-    "publisher": "Bundesamt für Statistik",
+    "publisher": "Office fédéral de la statistique",
     "concerns_apprenticeship": "No",
     "catalogue": "opendata-swiss",
     "description": "This dataset presents the annual numbers of vocational certificates by type of training (BM1, BM2), direction, school canton, residential canton and gender, since 2012.",

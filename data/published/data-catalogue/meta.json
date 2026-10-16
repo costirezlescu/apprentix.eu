@@ -1,7 +1,7 @@
 {
   "id": "data-catalogue",
   "title": "Apprenticeship and VET open-data catalogue",
-  "tagline": "1,646 open datasets on apprenticeship and vocational training, found across Europe's national data portals.",
+  "tagline": "1,644 open datasets on apprenticeship and vocational training, found across Europe's national data portals.",
   "description": "Datasets about apprenticeships, vocational education and training published by statistics offices, ministries, regions and cities, as listed on data.europa.eu. Each entry links to the original publisher; Apprentix does not host the data.",
   "recordLabel": {
     "one": "dataset",
@@ -13,9 +13,9 @@
     "licence": "Catalogue metadata: European Commission reuse notice (Decision 2011/833/EU). Each dataset keeps its own licence, shown per entry.",
     "licence_id": "EC-reuse",
     "caveat": "Found automatically with multilingual searches (apprenticeship, Lehrling, apprentissage, apprendistato, lærling, oppisopimus, vocational training and others) and kept only when the title mentions apprenticeship or VET (or a keyword mentions apprenticeship). 'Concerns apprenticeship' is an Apprentix grouping: Yes when the title or keywords use an apprenticeship-specific term (apprentice, Lehrling, apprendistato, lærling, oppisopimus, dual training …); No for other VET datasets. Map services (WMS/WFS), building plans and machine-learning datasets are excluded. Titles and descriptions are the publishers' own; where there is no English version the original language is shown. Descriptions are shortened. Coverage depends on what national portals harvest into data.europa.eu.",
-    "retrieved": "2026-10-12",
+    "retrieved": "2026-10-16",
     "api_url": "https://data.europa.eu/api/hub/search/search",
-    "records_sha256": "d350c9046afce1e9d5d8727ea688e4efdac9c5480c5ad3926bf45c011dd2620a"
+    "records_sha256": "af0d540d6a1b8ffc7dd850c5ab666741644e0dd4ff461a17727783d5a084faa8"
   },
   "display": {
     "title": "title",
