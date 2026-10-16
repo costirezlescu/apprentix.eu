@@ -6,6 +6,8 @@ An independent, non-commercial project that takes publicly available European da
 apprenticeship and vocational education and republishes it in a form you can search,
 filter and compare — rather than read one page at a time.
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23426138.svg)](https://doi.org/10.5281/zenodo.23426138)
+
 **Not affiliated with, or endorsed by, any European institution or agency.**
 Every record links back to its official source, which remains authoritative.
 
@@ -230,9 +232,17 @@ the pipeline uses the latest copy. File names change per release: update the URL
 
 ### Citing and DOIs
 
-`CITATION.cff` tells GitHub how to cite the project. To mint a DOI for each release, log in to
-[Zenodo](https://zenodo.org) with GitHub, enable this repository, then publish a GitHub
-release; Zenodo archives it and issues a DOI.
+`CITATION.cff` tells GitHub and Zenodo how to cite the project. The repository is connected to
+Zenodo: each GitHub release is archived with its own DOI. Cite the concept DOI
+[10.5281/zenodo.23426138](https://doi.org/10.5281/zenodo.23426138), which always resolves to the latest version
+(v1.0.0, 17 October 2026: [10.5281/zenodo.23426139](https://doi.org/10.5281/zenodo.23426139)).
+
+For a new release: bump `version` and `date-released` in `CITATION.cff`, push, then publish a
+GitHub release tagged `vX.Y.Z` (semantic versioning: major for breaking changes to file paths or
+formats, minor for new datasets or features, patch for fixes). After Zenodo creates the record,
+edit it to set **Resource type: Dataset** and the custom licence "Mixed licences: each resource
+keeps its publisher's licence (mostly CC BY 4.0); website code MIT"; Zenodo resets both to its
+defaults on every release.
 
 ---
 

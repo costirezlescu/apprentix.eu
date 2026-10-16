@@ -22,6 +22,14 @@ abstract: >-
   Vocational Excellence. Each resource keeps its original publisher's licence;
   the website code is MIT-licensed.
 version: "1.0.0"
+doi: 10.5281/zenodo.23426138
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.23426138
+    description: All versions (always resolves to the latest release)
+  - type: doi
+    value: 10.5281/zenodo.23426139
+    description: Version 1.0.0
 date-released: "2026-10-17"
 keywords:
   - apprenticeship

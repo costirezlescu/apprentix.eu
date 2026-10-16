@@ -633,6 +633,8 @@ def catalog_ld(D, datasets: list[dict], inds: list[dict], names: dict[str, str])
         "description": ("Every dataset and statistical indicator Apprentix republishes on apprenticeship and vocational "
                         "education and training in Europe, each with its original publisher, licence and downloads."),
         "url": SITE + "pages/data.html",
+        "identifier": "https://doi.org/10.5281/zenodo.23426138",
+        "sameAs": "https://doi.org/10.5281/zenodo.23426138",
         "inLanguage": "en",
         "isAccessibleForFree": True,
         "publisher": APPRENTIX,
