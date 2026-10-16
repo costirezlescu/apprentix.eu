@@ -1,13 +1,13 @@
 {
   "description": "Items from the source watch that need a person. See pipeline/watch.py.",
-  "checked_at": "2026-10-16T20:48:07+00:00",
+  "checked_at": "2026-10-16T20:59:21+00:00",
   "count": 1,
   "items": [
     {
       "kind": "failure",
       "source": "Uddannelsesstatistik.dk — Lærepladsstatistik (Denmark)",
       "title": "dk-uvm failed",
-      "detail": "Uddannelsesstatistik: no område matching ('^erhvervsuddannelse',); API offered: ['EUD', 'FGU', 'GS', 'GYM', 'VEU', 'DAG', 'TVE']",
+      "detail": "Uddannelsesstatistik: no emne matching ('l[æa]replads|praktikplads',); API offered: ['ATP', 'FRAFHF', 'FRAV', 'LAERSTYRUND', 'OVERHF', 'PRAK', 'TRIV', 'UDDFORLOVERG', 'UDDFORLSTAT', 'UDB&ANS', 'UDDFORL', 'UDDSTAT', 'GF2M', 'EUDK']",
       "url": "https://uddannelsesstatistik.dk/Pages/Topics/22.aspx",
       "action": "See the workflow log. The previous data stays published until fixed."
     }
