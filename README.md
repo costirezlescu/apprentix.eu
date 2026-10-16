@@ -196,7 +196,7 @@ for importing into a feed reader) and `data/feeds/index.json`. Each country page
 
 **Scheme portraits and stories.** `pipeline/portraits.py` turns Cedefop's coded answers for each
 scheme into a visual summary (company/school split, pay, arrangement, duration, typical age, level)
-and an "If you were an apprentice in …" story, written to `data/published/portraits/portraits.json`
+and a "What to expect on this scheme" story, written to `data/published/portraits/portraits.json`
 and shown on country pages, in the Scheme of the week and in the quiz results.
 
 **Myth or fact?** `pipeline/myths.py` writes `data/published/myths/myths.json`: statements about

@@ -1,4 +1,4 @@
-"""Scheme portraits: a visual summary and an "If you were an apprentice in …" story for each
+"""Scheme portraits: a visual summary and a "What to expect on this scheme" story for each
 of the 34 apprenticeship schemes, written only from Cedefop's coded answers (the q_* fields)
 and the scheme record's own short texts.
 
@@ -139,7 +139,9 @@ def portrait(s: dict) -> dict:
             line += ", which does not by itself give access to higher education"
         story.append(line + ".")
 
-    title = f"If you were an apprentice in {country}"
+    # The story always sits under the scheme's own name (country pages, Scheme of the week,
+    # quiz results), so a neutral title avoids two schemes in one country sharing a heading.
+    title = "What to expect on this scheme"
     return {"country": country, "country_code": s.get("country_code"), "name": s.get("name_en"),
             "split": split, "split_label": share, "facts": facts, "story_title": title, "story": story,
             "html": render(s, title, split, share, facts, story)}
@@ -155,7 +157,8 @@ ICONS = {   # 20×20 stroke icons (currentColor)
 
 
 def icon(name: str) -> str:
-    return (f'<svg class="pt-icon" viewBox="0 0 20 20" aria-hidden="true" focusable="false" fill="none" '
+    # width/height attributes keep the icon small even if a stale stylesheet is served.
+    return (f'<svg class="pt-icon" width="20" height="20" viewBox="0 0 20 20" aria-hidden="true" focusable="false" fill="none" '
             f'stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">{ICONS[name]}</svg>')
 
 
@@ -178,7 +181,7 @@ def render(s: dict, title: str, split, share, facts, story) -> str:
 def build() -> dict:
     schemes = read_json(DATASET)
     out = {s["id"]: portrait(s) for s in sorted(schemes, key=lambda s: s["id"])}
-    write_json(OUT, {"description": "Scheme portraits and 'If you were an apprentice in …' stories, generated from "
+    write_json(OUT, {"description": "Scheme portraits and 'What to expect on this scheme' stories, generated from "
                                     "Cedefop's coded answers by pipeline/portraits.py.",
                      "portraits": out})
     print(f"Portraits: {len(out)} schemes")

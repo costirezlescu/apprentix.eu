@@ -129,7 +129,7 @@ def all(connectors: dict, status: dict) -> None:
     changes.ensure_by_country()
     duel.build()              # per-country profiles for the country duel
     from . import portraits, pulse
-    portraits.build()         # scheme portraits and "If you were an apprentice in …" stories
+    portraits.build()         # scheme portraits and "What to expect on this scheme" stories
     pulse.build()             # policy pulse: apprenticeship policies that moved in the latest year
     from . import play
     play.build()              # 'Higher or lower?' question pool
@@ -147,5 +147,7 @@ def all(connectors: dict, status: dict) -> None:
     render_pages.render_all()
     from . import follow
     follow.build()            # one Atom feed per country page → data/feeds/
+    from . import asset_version
+    asset_version.apply()     # ?v= on CSS/JS references in hand-written pages and JS imports
     from . import build_ai_index
     build_ai_index.build()

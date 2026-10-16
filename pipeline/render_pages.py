@@ -67,6 +67,9 @@ def e(v) -> str:
 
 
 def write_text(path: Path, text: str) -> bool:
+    if path.suffix == ".html":
+        from .asset_version import stamp_html
+        text = stamp_html(text)      # ?v= on CSS/JS links, so caches never mix old and new assets
     path.parent.mkdir(parents=True, exist_ok=True)
     if path.exists() and path.read_text(encoding="utf-8") == text:
         return False

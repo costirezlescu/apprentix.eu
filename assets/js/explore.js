@@ -3,7 +3,7 @@
 
 import {
   loadDataset, esc, values, field, facets, facetValues, matches
-} from './data.js';
+} from './data.js?v=0246fca6';
 
 const $ = (id) => document.getElementById(id);
 const params = new URLSearchParams(location.search);

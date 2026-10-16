@@ -459,7 +459,7 @@ GUIDE += [
      "(pages/duel.html?a=AT&b=DE): schemes, outcomes, money and mobility side by side. Country pages "
      "(pages/countries/<code>.html, e.g. at.html, el.html for Greece) gather everything per country, with a 'Follow' "
      "section and an update feed per country (data/feeds/<code>.xml). Glossary (pages/glossary.html): plain-language "
-     "definitions of VET terms. Higher or lower? (pages/play.html) and Myth or fact? (pages/myths.html): quiz games. Each country page has a 'Find an apprenticeship' section with the official national services for apprenticeship places, a 'What is counted' panel comparing its national statistics, and scheme portraits ('If you were an apprentice in …'). Every indicator and insight chart can "
+     "definitions of VET terms. Higher or lower? (pages/play.html) and Myth or fact? (pages/myths.html): quiz games. Each country page has a 'Find an apprenticeship' section with the official national services for apprenticeship places, a 'What is counted' panel comparing its national statistics, and scheme portraits with a 'What to expect on this scheme' story. Every indicator and insight chart can "
      "be downloaded as an image or embedded on another website."),
 ]
 
