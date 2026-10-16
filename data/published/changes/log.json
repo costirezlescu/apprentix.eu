@@ -7,6 +7,42 @@
       "items": [
         {
           "kind": "new-indicator",
+          "title": "New indicator: Applicants for training places registered with the employment agencies (Germany)",
+          "text": "Statistik der Bundesagentur für Arbeit data, 2009–2025, 1 country.",
+          "link": "pages/indicators/de-ba-applicants.html",
+          "countries": [
+            "DE"
+          ]
+        },
+        {
+          "kind": "new-indicator",
+          "title": "New indicator: Registered applicants still without a training place at 30 September (Germany)",
+          "text": "Statistik der Bundesagentur für Arbeit data, 2009–2025, 1 country.",
+          "link": "pages/indicators/de-ba-unplaced-applicants.html",
+          "countries": [
+            "DE"
+          ]
+        },
+        {
+          "kind": "new-indicator",
+          "title": "New indicator: Registered training places still unfilled at 30 September (Germany)",
+          "text": "Statistik der Bundesagentur für Arbeit data, 2009–2025, 1 country.",
+          "link": "pages/indicators/de-ba-unfilled-places.html",
+          "countries": [
+            "DE"
+          ]
+        },
+        {
+          "kind": "new-indicator",
+          "title": "New indicator: Training places registered with the employment agencies (Germany)",
+          "text": "Statistik der Bundesagentur für Arbeit data, 2009–2025, 1 country.",
+          "link": "pages/indicators/de-ba-training-places.html",
+          "countries": [
+            "DE"
+          ]
+        },
+        {
+          "kind": "new-indicator",
           "title": "New indicator: New training agreements in Danish vocational education (monthly)",
           "text": "Børne- og Undervisningsministeriet / Styrelsen for IT og Læring (STIL), Uddannelsesstatistik.dk data, Jan 2003–Aug 2026, 1 country.",
           "link": "pages/indicators/dk-uvm-training-agreements.html",
@@ -144,7 +180,7 @@
         }
       ],
       "counts": {
-        "new-indicator": 2,
+        "new-indicator": 6,
         "new-dataset": 1,
         "new-records": 2,
         "removed-records": 1,

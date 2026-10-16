@@ -2986,6 +2986,158 @@
       ]
     },
     {
+      "name": "de-ba-applicants-json",
+      "path": "data/published/indicators/de-ba-applicants.json",
+      "format": "json",
+      "mediatype": "application/json",
+      "title": "Applicants for training places registered with the employment agencies (Germany)",
+      "description": "Young people who used the employment agencies' and job centres' placement service to look for a training place during the reporting year (October–September), by Land of residence.",
+      "sources": [
+        {
+          "title": "Statistik der Bundesagentur für Arbeit",
+          "path": "https://statistik.arbeitsagentur.de/DE/Navigation/Statistiken/Fachstatistiken/Ausbildungsmarkt/Ausbildungsmarkt-Nav.html"
+        }
+      ],
+      "licenses": [
+        {
+          "name": "Free reuse with source credit: '© Statistik der Bundesagentur für Arbeit' (BA statistics imprint: data and tables 'dürfen uneingeschränkt verwendet werden'; own calculations must be marked; values must not be altered)"
+        }
+      ]
+    },
+    {
+      "name": "de-ba-applicants-csv",
+      "path": "data/published/indicators/de-ba-applicants.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "title": "Applicants for training places registered with the employment agencies (Germany)",
+      "description": "Young people who used the employment agencies' and job centres' placement service to look for a training place during the reporting year (October–September), by Land of residence.",
+      "sources": [
+        {
+          "title": "Statistik der Bundesagentur für Arbeit",
+          "path": "https://statistik.arbeitsagentur.de/DE/Navigation/Statistiken/Fachstatistiken/Ausbildungsmarkt/Ausbildungsmarkt-Nav.html"
+        }
+      ],
+      "licenses": [
+        {
+          "name": "Free reuse with source credit: '© Statistik der Bundesagentur für Arbeit' (BA statistics imprint: data and tables 'dürfen uneingeschränkt verwendet werden'; own calculations must be marked; values must not be altered)"
+        }
+      ]
+    },
+    {
+      "name": "de-ba-training-places-json",
+      "path": "data/published/indicators/de-ba-training-places.json",
+      "format": "json",
+      "mediatype": "application/json",
+      "title": "Training places registered with the employment agencies (Germany)",
+      "description": "Company training places (Berufsausbildungsstellen) that employers registered with the employment agencies and job centres for placement during the reporting year (October–September), by Land.",
+      "sources": [
+        {
+          "title": "Statistik der Bundesagentur für Arbeit",
+          "path": "https://statistik.arbeitsagentur.de/DE/Navigation/Statistiken/Fachstatistiken/Ausbildungsmarkt/Ausbildungsmarkt-Nav.html"
+        }
+      ],
+      "licenses": [
+        {
+          "name": "Free reuse with source credit: '© Statistik der Bundesagentur für Arbeit' (BA statistics imprint: data and tables 'dürfen uneingeschränkt verwendet werden'; own calculations must be marked; values must not be altered)"
+        }
+      ]
+    },
+    {
+      "name": "de-ba-training-places-csv",
+      "path": "data/published/indicators/de-ba-training-places.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "title": "Training places registered with the employment agencies (Germany)",
+      "description": "Company training places (Berufsausbildungsstellen) that employers registered with the employment agencies and job centres for placement during the reporting year (October–September), by Land.",
+      "sources": [
+        {
+          "title": "Statistik der Bundesagentur für Arbeit",
+          "path": "https://statistik.arbeitsagentur.de/DE/Navigation/Statistiken/Fachstatistiken/Ausbildungsmarkt/Ausbildungsmarkt-Nav.html"
+        }
+      ],
+      "licenses": [
+        {
+          "name": "Free reuse with source credit: '© Statistik der Bundesagentur für Arbeit' (BA statistics imprint: data and tables 'dürfen uneingeschränkt verwendet werden'; own calculations must be marked; values must not be altered)"
+        }
+      ]
+    },
+    {
+      "name": "de-ba-unfilled-places-json",
+      "path": "data/published/indicators/de-ba-unfilled-places.json",
+      "format": "json",
+      "mediatype": "application/json",
+      "title": "Registered training places still unfilled at 30 September (Germany)",
+      "description": "Registered training places that were still vacant at the end of the reporting year (30 September), by Land: a measure of employers' difficulty in finding apprentices.",
+      "sources": [
+        {
+          "title": "Statistik der Bundesagentur für Arbeit",
+          "path": "https://statistik.arbeitsagentur.de/DE/Navigation/Statistiken/Fachstatistiken/Ausbildungsmarkt/Ausbildungsmarkt-Nav.html"
+        }
+      ],
+      "licenses": [
+        {
+          "name": "Free reuse with source credit: '© Statistik der Bundesagentur für Arbeit' (BA statistics imprint: data and tables 'dürfen uneingeschränkt verwendet werden'; own calculations must be marked; values must not be altered)"
+        }
+      ]
+    },
+    {
+      "name": "de-ba-unfilled-places-csv",
+      "path": "data/published/indicators/de-ba-unfilled-places.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "title": "Registered training places still unfilled at 30 September (Germany)",
+      "description": "Registered training places that were still vacant at the end of the reporting year (30 September), by Land: a measure of employers' difficulty in finding apprentices.",
+      "sources": [
+        {
+          "title": "Statistik der Bundesagentur für Arbeit",
+          "path": "https://statistik.arbeitsagentur.de/DE/Navigation/Statistiken/Fachstatistiken/Ausbildungsmarkt/Ausbildungsmarkt-Nav.html"
+        }
+      ],
+      "licenses": [
+        {
+          "name": "Free reuse with source credit: '© Statistik der Bundesagentur für Arbeit' (BA statistics imprint: data and tables 'dürfen uneingeschränkt verwendet werden'; own calculations must be marked; values must not be altered)"
+        }
+      ]
+    },
+    {
+      "name": "de-ba-unplaced-applicants-json",
+      "path": "data/published/indicators/de-ba-unplaced-applicants.json",
+      "format": "json",
+      "mediatype": "application/json",
+      "title": "Registered applicants still without a training place at 30 September (Germany)",
+      "description": "Registered applicants who at the end of the reporting year (30 September) had neither a training place nor an alternative (such as school, a course or a job) and were still looking, by Land.",
+      "sources": [
+        {
+          "title": "Statistik der Bundesagentur für Arbeit",
+          "path": "https://statistik.arbeitsagentur.de/DE/Navigation/Statistiken/Fachstatistiken/Ausbildungsmarkt/Ausbildungsmarkt-Nav.html"
+        }
+      ],
+      "licenses": [
+        {
+          "name": "Free reuse with source credit: '© Statistik der Bundesagentur für Arbeit' (BA statistics imprint: data and tables 'dürfen uneingeschränkt verwendet werden'; own calculations must be marked; values must not be altered)"
+        }
+      ]
+    },
+    {
+      "name": "de-ba-unplaced-applicants-csv",
+      "path": "data/published/indicators/de-ba-unplaced-applicants.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "title": "Registered applicants still without a training place at 30 September (Germany)",
+      "description": "Registered applicants who at the end of the reporting year (30 September) had neither a training place nor an alternative (such as school, a course or a job) and were still looking, by Land.",
+      "sources": [
+        {
+          "title": "Statistik der Bundesagentur für Arbeit",
+          "path": "https://statistik.arbeitsagentur.de/DE/Navigation/Statistiken/Fachstatistiken/Ausbildungsmarkt/Ausbildungsmarkt-Nav.html"
+        }
+      ],
+      "licenses": [
+        {
+          "name": "Free reuse with source credit: '© Statistik der Bundesagentur für Arbeit' (BA statistics imprint: data and tables 'dürfen uneingeschränkt verwendet werden'; own calculations must be marked; values must not be altered)"
+        }
+      ]
+    },
+    {
       "name": "de-destatis-apprentices-land-json",
       "path": "data/published/indicators/de-destatis-apprentices-land.json",
       "format": "json",

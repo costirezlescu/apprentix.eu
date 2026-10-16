@@ -49,7 +49,7 @@ SOURCE = {
     "cadence": "annual (March)",
     "secret": None,
     # Not published until the publisher agrees; see pipeline/run.py.
-    "permission_needed": "Licensed CC BY-NC-ND 4.0; 'no derivatives' may rule out republishing extracted values in charts. Ask BIBB for permission before enabling.",
+    "permission_needed": "Licensed CC BY-NC-ND 4.0; 'no derivatives' may rule out republishing extracted values in charts. Permission requested from BIBB on 17 October 2026; switched off until it answers.",
     "reuse_note": "CC BY-NC-ND: non-commercial, no derivatives — confirm that republishing extracted values is acceptable.",
     "outputs": ["indicators/de-bibb-entry-graduation-rates"],
 }

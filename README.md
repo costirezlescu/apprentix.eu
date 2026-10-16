@@ -136,8 +136,17 @@ python3 -m pipeline.validate            # check everything against data/schemas/
   fails. The git history of `data/` is the changelog.
   *If `main` is protected:* allow GitHub Actions to push to it (or the push step fails).
 - `.github/workflows/validate.yml` checks every push/PR against `data/schemas/`.
-- Optional API keys go in Settings → Secrets → Actions (e.g. `DESTATIS_TOKEN`); connectors
-  that need a missing key are skipped, not failed.
+- Optional API keys go in Settings → Secrets → Actions (`DESTATIS_TOKEN`,
+  `DK_UDDANNELSESSTATISTIK_KEY`); connectors that need a missing key are skipped, not failed.
+  Paste a key on its own; stray spaces, quotes or a leading "Bearer " are stripped.
+
+**Germany's sources.** Destatis (statistic 21211, apprentices and contracts at 31 December, key
+needed) and the BA statistics service (`de_ba_statistik.py`: training places and applicants
+registered with the employment agencies, per reporting year and Land, reusable with the credit
+"© Statistik der Bundesagentur für Arbeit"). The earlier job-board connector (advertised places
+from the BA Jobbörse API) was removed: its reuse needed the BA's permission. BIBB's DAZUBI tables
+(`de_bibb.py`) stay switched off until BIBB answers the permission request (sent 17 October 2026),
+as does Austria's WKO Lehrlingsstatistik (`at_wko.py`).
 
 ### Keeping up with the sources (source watch)
 

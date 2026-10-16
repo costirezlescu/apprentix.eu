@@ -49,7 +49,7 @@ SOURCE = {
     "cadence": "annual (published in January–February for 31 December of the previous year)",
     "secret": None,
     # Not published until the publisher agrees; see pipeline/run.py.
-    "permission_needed": "WKO's terms forbid storing the data in databases or passing it on without WKO's consent. Ask WKO (Abteilung für Statistik) for permission before enabling.",
+    "permission_needed": "WKO's terms forbid storing the data in databases or passing it on without WKO's consent. Permission requested from WKO (Abteilung für Statistik) on 17 October 2026; switched off until it answers.",
     "reuse_note": "WKO consent required before republishing (see wko.at Offenlegung).",
     "outputs": ["indicators/at-wko-apprentices", "indicators/at-wko-apprentices-land"],
 }

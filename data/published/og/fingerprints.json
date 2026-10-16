@@ -1,7 +1,7 @@
 {
  "description": "Content fingerprint of each preview image in assets/og/ (what was drawn, not the pixels). pipeline/og.py redraws a card only when its fingerprint changes.",
  "cards": {
-  "assets/og/ask.png": "ea6b6e56796a0ee1d465",
+  "assets/og/ask.png": "931556b890e56a0046fd",
   "assets/og/compare.png": "f9b26bcf960ca6788721",
   "assets/og/countries.png": "4b65c1f020a7500aea6a",
   "assets/og/country/al.png": "dfe49e41681fda066582",
@@ -46,7 +46,7 @@
   "assets/og/country/ua.png": "20384ecba02df75c344d",
   "assets/og/country/uk.png": "3832b61dadd8bbee4cfa",
   "assets/og/country/xk.png": "fa6af22110e68535749b",
-  "assets/og/data.png": "85ca8573cb2e0725e8e3",
+  "assets/og/data.png": "f4144da5954c27eebb69",
   "assets/og/duel.png": "6013a1b981a09c454f84",
   "assets/og/duel/al-eu27.png": "3e9ac2b136495f8191d7",
   "assets/og/duel/al-xk.png": "ae0bf55d26e7e4832810",
@@ -256,6 +256,10 @@
   "assets/og/indicator/ch-bfs-learners-vet-form.png": "eda8f27eb508d8c168ab",
   "assets/og/indicator/ch-bfs-learners-vet.png": "a24f8c7da8400d00a8bd",
   "assets/og/indicator/ch-bfs-qualifications-vet.png": "2682adc31db6c17ac3f7",
+  "assets/og/indicator/de-ba-applicants.png": "3c936b70793144eb1d6c",
+  "assets/og/indicator/de-ba-training-places.png": "ebd3c4d4ca62c0ee2d1b",
+  "assets/og/indicator/de-ba-unfilled-places.png": "69ca1bbbbf7addcb231f",
+  "assets/og/indicator/de-ba-unplaced-applicants.png": "ba335e5cdc370f51ec73",
   "assets/og/indicator/de-destatis-apprentices-land.png": "0d23e7941c8d6634a78b",
   "assets/og/indicator/de-destatis-apprentices.png": "ea8c2751a89ada16156f",
   "assets/og/indicator/de-destatis-exams-passed.png": "8369aa8440786558b941",
@@ -295,9 +299,9 @@
   "assets/og/indicator/uk-dfe-apprenticeship-achievements.png": "d15d2ebdbe65814b9b82",
   "assets/og/indicator/uk-dfe-apprenticeship-participation.png": "84b263d148333b31483c",
   "assets/og/indicator/uk-dfe-apprenticeship-starts.png": "17e40afd4328ef28c627",
-  "assets/og/indicators.png": "31e7178c4bc75fb31596",
+  "assets/og/indicators.png": "9ac2d9e818f912075a94",
   "assets/og/insights.png": "5722279e3d06479fbe63",
-  "assets/og/play.png": "607c26c087ef6876a657",
-  "assets/og/site.png": "03fb131345aff4e1ad40"
+  "assets/og/play.png": "7fac5bb0a2595170ac22",
+  "assets/og/site.png": "b798b46dec829bcbc466"
  }
 }

@@ -5187,6 +5187,246 @@
       "csv": "data/published/indicators/ch-bfs-qualifications-vet.csv"
     },
     {
+      "id": "de-ba-applicants",
+      "title": "Applicants for training places registered with the employment agencies (Germany)",
+      "description": "Young people who used the employment agencies' and job centres' placement service to look for a training place during the reporting year (October–September), by Land of residence.",
+      "unit": "applicants",
+      "topic": "Participation",
+      "national": true,
+      "source_label": "Statistik der Bundesagentur für Arbeit, Ausbildungsmarkt time series (product 181), sheet Zeitreihe_Bewerber",
+      "comparability": "National statistic (Germany), not comparable with other countries. Counts only what was registered with the employment agencies (Agenturen für Arbeit) and job centres for placement: registration is voluntary for employers and young people, so these are not all apprenticeship places or all applicants. Occupations recognised under the Vocational Training Act (BBiG, incl. the Crafts Code), i.e. mostly dual training. Time is the year in which the reporting year (1 October – 30 September) ends: 2025 = 2024/25; values are the reporting-year totals at 30 September. The most recent year may carry revised data. Source: © Statistik der Bundesagentur für Arbeit.",
+      "dims": [
+        {
+          "key": "land",
+          "label": "Land",
+          "values": {
+            "DE": "Germany",
+            "01": "Schleswig-Holstein",
+            "02": "Hamburg",
+            "03": "Lower Saxony",
+            "04": "Bremen",
+            "05": "North Rhine-Westphalia",
+            "06": "Hesse",
+            "07": "Rhineland-Palatinate",
+            "08": "Baden-Württemberg",
+            "09": "Bavaria",
+            "10": "Saarland",
+            "11": "Berlin",
+            "12": "Brandenburg",
+            "13": "Mecklenburg-Vorpommern",
+            "14": "Saxony",
+            "15": "Saxony-Anhalt",
+            "16": "Thuringia"
+          },
+          "default": "DE"
+        }
+      ],
+      "provenance": {
+        "publisher": "Statistik der Bundesagentur für Arbeit",
+        "dataset_code": "Ausbildungsmarkt, Zeitreihe (Produkt-ID 181)",
+        "source_url": "https://statistik.arbeitsagentur.de/DE/Navigation/Statistiken/Fachstatistiken/Ausbildungsmarkt/Ausbildungsmarkt-Nav.html",
+        "api_url": "https://statistik.arbeitsagentur.de/Statistikdaten/Detail/Aktuell/ausbildungsmarkt/zr-monat-ausbm/zr-monat-ausbm-d-0-xlsx.xlsx",
+        "licence": "Free reuse with source credit: '© Statistik der Bundesagentur für Arbeit' (BA statistics imprint: data and tables 'dürfen uneingeschränkt verwendet werden'; own calculations must be marked; values must not be altered)",
+        "citation": "© Statistik der Bundesagentur für Arbeit, Bewerberinnen und Bewerber sowie Berufsausbildungsstellen — Zeitreihe (Zeitreihe_Bewerber). https://statistik.arbeitsagentur.de/",
+        "retrieved_at": "2026-10-16T22:03:37+00:00",
+        "raw_file": "data/raw/de-ba-statistik/2026-10-16-zr-monat-ausbm.xlsx",
+        "raw_sha256": "5f95d9b0b04a746cb18455204263de035cee3983035956a952c82933d9d72f46"
+      },
+      "licence_url": "https://statistik.arbeitsagentur.de/DE/Home/Service/Impressum/impressum_node.html",
+      "coverage": {
+        "geos": [
+          "DE"
+        ],
+        "time": [
+          "2009",
+          "2025"
+        ],
+        "observations": 289
+      },
+      "path": "data/published/indicators/de-ba-applicants.json",
+      "csv": "data/published/indicators/de-ba-applicants.csv"
+    },
+    {
+      "id": "de-ba-training-places",
+      "title": "Training places registered with the employment agencies (Germany)",
+      "description": "Company training places (Berufsausbildungsstellen) that employers registered with the employment agencies and job centres for placement during the reporting year (October–September), by Land.",
+      "unit": "training places",
+      "topic": "Participation",
+      "national": true,
+      "source_label": "Statistik der Bundesagentur für Arbeit, Ausbildungsmarkt time series (product 181), sheet Zeitreihe_Stellen",
+      "comparability": "National statistic (Germany), not comparable with other countries. Counts only what was registered with the employment agencies (Agenturen für Arbeit) and job centres for placement: registration is voluntary for employers and young people, so these are not all apprenticeship places or all applicants. Occupations recognised under the Vocational Training Act (BBiG, incl. the Crafts Code), i.e. mostly dual training. Time is the year in which the reporting year (1 October – 30 September) ends: 2025 = 2024/25; values are the reporting-year totals at 30 September. The most recent year may carry revised data. Source: © Statistik der Bundesagentur für Arbeit.",
+      "dims": [
+        {
+          "key": "land",
+          "label": "Land",
+          "values": {
+            "DE": "Germany",
+            "01": "Schleswig-Holstein",
+            "02": "Hamburg",
+            "03": "Lower Saxony",
+            "04": "Bremen",
+            "05": "North Rhine-Westphalia",
+            "06": "Hesse",
+            "07": "Rhineland-Palatinate",
+            "08": "Baden-Württemberg",
+            "09": "Bavaria",
+            "10": "Saarland",
+            "11": "Berlin",
+            "12": "Brandenburg",
+            "13": "Mecklenburg-Vorpommern",
+            "14": "Saxony",
+            "15": "Saxony-Anhalt",
+            "16": "Thuringia"
+          },
+          "default": "DE"
+        }
+      ],
+      "provenance": {
+        "publisher": "Statistik der Bundesagentur für Arbeit",
+        "dataset_code": "Ausbildungsmarkt, Zeitreihe (Produkt-ID 181)",
+        "source_url": "https://statistik.arbeitsagentur.de/DE/Navigation/Statistiken/Fachstatistiken/Ausbildungsmarkt/Ausbildungsmarkt-Nav.html",
+        "api_url": "https://statistik.arbeitsagentur.de/Statistikdaten/Detail/Aktuell/ausbildungsmarkt/zr-monat-ausbm/zr-monat-ausbm-d-0-xlsx.xlsx",
+        "licence": "Free reuse with source credit: '© Statistik der Bundesagentur für Arbeit' (BA statistics imprint: data and tables 'dürfen uneingeschränkt verwendet werden'; own calculations must be marked; values must not be altered)",
+        "citation": "© Statistik der Bundesagentur für Arbeit, Bewerberinnen und Bewerber sowie Berufsausbildungsstellen — Zeitreihe (Zeitreihe_Stellen). https://statistik.arbeitsagentur.de/",
+        "retrieved_at": "2026-10-16T22:03:36+00:00",
+        "raw_file": "data/raw/de-ba-statistik/2026-10-16-zr-monat-ausbm.xlsx",
+        "raw_sha256": "5f95d9b0b04a746cb18455204263de035cee3983035956a952c82933d9d72f46"
+      },
+      "licence_url": "https://statistik.arbeitsagentur.de/DE/Home/Service/Impressum/impressum_node.html",
+      "coverage": {
+        "geos": [
+          "DE"
+        ],
+        "time": [
+          "2009",
+          "2025"
+        ],
+        "observations": 289
+      },
+      "path": "data/published/indicators/de-ba-training-places.json",
+      "csv": "data/published/indicators/de-ba-training-places.csv"
+    },
+    {
+      "id": "de-ba-unfilled-places",
+      "title": "Registered training places still unfilled at 30 September (Germany)",
+      "description": "Registered training places that were still vacant at the end of the reporting year (30 September), by Land: a measure of employers' difficulty in finding apprentices.",
+      "unit": "training places",
+      "topic": "Participation",
+      "national": true,
+      "source_label": "Statistik der Bundesagentur für Arbeit, Ausbildungsmarkt time series (product 181), sheet Zeitreihe_Stellen_unbes",
+      "comparability": "National statistic (Germany), not comparable with other countries. Counts only what was registered with the employment agencies (Agenturen für Arbeit) and job centres for placement: registration is voluntary for employers and young people, so these are not all apprenticeship places or all applicants. Occupations recognised under the Vocational Training Act (BBiG, incl. the Crafts Code), i.e. mostly dual training. Time is the year in which the reporting year (1 October – 30 September) ends: 2025 = 2024/25; values are the reporting-year totals at 30 September. The most recent year may carry revised data. Source: © Statistik der Bundesagentur für Arbeit. Unfilled = registered places with no apprentice at 30 September.",
+      "dims": [
+        {
+          "key": "land",
+          "label": "Land",
+          "values": {
+            "DE": "Germany",
+            "01": "Schleswig-Holstein",
+            "02": "Hamburg",
+            "03": "Lower Saxony",
+            "04": "Bremen",
+            "05": "North Rhine-Westphalia",
+            "06": "Hesse",
+            "07": "Rhineland-Palatinate",
+            "08": "Baden-Württemberg",
+            "09": "Bavaria",
+            "10": "Saarland",
+            "11": "Berlin",
+            "12": "Brandenburg",
+            "13": "Mecklenburg-Vorpommern",
+            "14": "Saxony",
+            "15": "Saxony-Anhalt",
+            "16": "Thuringia"
+          },
+          "default": "DE"
+        }
+      ],
+      "provenance": {
+        "publisher": "Statistik der Bundesagentur für Arbeit",
+        "dataset_code": "Ausbildungsmarkt, Zeitreihe (Produkt-ID 181)",
+        "source_url": "https://statistik.arbeitsagentur.de/DE/Navigation/Statistiken/Fachstatistiken/Ausbildungsmarkt/Ausbildungsmarkt-Nav.html",
+        "api_url": "https://statistik.arbeitsagentur.de/Statistikdaten/Detail/Aktuell/ausbildungsmarkt/zr-monat-ausbm/zr-monat-ausbm-d-0-xlsx.xlsx",
+        "licence": "Free reuse with source credit: '© Statistik der Bundesagentur für Arbeit' (BA statistics imprint: data and tables 'dürfen uneingeschränkt verwendet werden'; own calculations must be marked; values must not be altered)",
+        "citation": "© Statistik der Bundesagentur für Arbeit, Bewerberinnen und Bewerber sowie Berufsausbildungsstellen — Zeitreihe (Zeitreihe_Stellen_unbes). https://statistik.arbeitsagentur.de/",
+        "retrieved_at": "2026-10-16T22:03:36+00:00",
+        "raw_file": "data/raw/de-ba-statistik/2026-10-16-zr-monat-ausbm.xlsx",
+        "raw_sha256": "5f95d9b0b04a746cb18455204263de035cee3983035956a952c82933d9d72f46"
+      },
+      "licence_url": "https://statistik.arbeitsagentur.de/DE/Home/Service/Impressum/impressum_node.html",
+      "coverage": {
+        "geos": [
+          "DE"
+        ],
+        "time": [
+          "2009",
+          "2025"
+        ],
+        "observations": 289
+      },
+      "path": "data/published/indicators/de-ba-unfilled-places.json",
+      "csv": "data/published/indicators/de-ba-unfilled-places.csv"
+    },
+    {
+      "id": "de-ba-unplaced-applicants",
+      "title": "Registered applicants still without a training place at 30 September (Germany)",
+      "description": "Registered applicants who at the end of the reporting year (30 September) had neither a training place nor an alternative (such as school, a course or a job) and were still looking, by Land.",
+      "unit": "applicants",
+      "topic": "Participation",
+      "national": true,
+      "source_label": "Statistik der Bundesagentur für Arbeit, Ausbildungsmarkt time series (product 181), sheet Zeitreihe_Bewerber_unvers",
+      "comparability": "National statistic (Germany), not comparable with other countries. Counts only what was registered with the employment agencies (Agenturen für Arbeit) and job centres for placement: registration is voluntary for employers and young people, so these are not all apprenticeship places or all applicants. Occupations recognised under the Vocational Training Act (BBiG, incl. the Crafts Code), i.e. mostly dual training. Time is the year in which the reporting year (1 October – 30 September) ends: 2025 = 2024/25; values are the reporting-year totals at 30 September. The most recent year may carry revised data. Source: © Statistik der Bundesagentur für Arbeit. Unplaced (unversorgt) excludes applicants with an alternative who still want a training place.",
+      "dims": [
+        {
+          "key": "land",
+          "label": "Land",
+          "values": {
+            "DE": "Germany",
+            "01": "Schleswig-Holstein",
+            "02": "Hamburg",
+            "03": "Lower Saxony",
+            "04": "Bremen",
+            "05": "North Rhine-Westphalia",
+            "06": "Hesse",
+            "07": "Rhineland-Palatinate",
+            "08": "Baden-Württemberg",
+            "09": "Bavaria",
+            "10": "Saarland",
+            "11": "Berlin",
+            "12": "Brandenburg",
+            "13": "Mecklenburg-Vorpommern",
+            "14": "Saxony",
+            "15": "Saxony-Anhalt",
+            "16": "Thuringia"
+          },
+          "default": "DE"
+        }
+      ],
+      "provenance": {
+        "publisher": "Statistik der Bundesagentur für Arbeit",
+        "dataset_code": "Ausbildungsmarkt, Zeitreihe (Produkt-ID 181)",
+        "source_url": "https://statistik.arbeitsagentur.de/DE/Navigation/Statistiken/Fachstatistiken/Ausbildungsmarkt/Ausbildungsmarkt-Nav.html",
+        "api_url": "https://statistik.arbeitsagentur.de/Statistikdaten/Detail/Aktuell/ausbildungsmarkt/zr-monat-ausbm/zr-monat-ausbm-d-0-xlsx.xlsx",
+        "licence": "Free reuse with source credit: '© Statistik der Bundesagentur für Arbeit' (BA statistics imprint: data and tables 'dürfen uneingeschränkt verwendet werden'; own calculations must be marked; values must not be altered)",
+        "citation": "© Statistik der Bundesagentur für Arbeit, Bewerberinnen und Bewerber sowie Berufsausbildungsstellen — Zeitreihe (Zeitreihe_Bewerber_unvers). https://statistik.arbeitsagentur.de/",
+        "retrieved_at": "2026-10-16T22:03:37+00:00",
+        "raw_file": "data/raw/de-ba-statistik/2026-10-16-zr-monat-ausbm.xlsx",
+        "raw_sha256": "5f95d9b0b04a746cb18455204263de035cee3983035956a952c82933d9d72f46"
+      },
+      "licence_url": "https://statistik.arbeitsagentur.de/DE/Home/Service/Impressum/impressum_node.html",
+      "coverage": {
+        "geos": [
+          "DE"
+        ],
+        "time": [
+          "2009",
+          "2025"
+        ],
+        "observations": 289
+      },
+      "path": "data/published/indicators/de-ba-unplaced-applicants.json",
+      "csv": "data/published/indicators/de-ba-unplaced-applicants.csv"
+    },
+    {
       "id": "de-destatis-apprentices-land",
       "title": "Apprentices in dual vocational training by Land (Germany)",
       "description": "Number of apprentices in dual vocational training on 31 December, by federal state (Land) of the training place and sex. 'DE' is the national total.",
