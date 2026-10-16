@@ -219,7 +219,7 @@ function shareCharts() {
     if (view !== 'trend' && state.year && state.year !== latestDefault) q.set('year', state.year);
     if (view !== 'map' && state.selected.length) q.set('geo', state.selected.join(','));
     const rows = new Set(obsNow.filter(o => o.time === state.year).map(o => o.geo)).size;
-    const height = view === 'map' ? 600 : view === 'ranking' ? Math.min(1400, 190 + rows * 26) : 500;
+    const height = view === 'map' ? 700 : view === 'ranking' ? Math.min(1400, 190 + rows * 26) : 500;
     return { path: `embed/chart.html?${q}`, height };
   };
   document.querySelectorAll('#charts .chart-card').forEach(card => {
