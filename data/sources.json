@@ -313,9 +313,11 @@
       "automated": true,
       "connector": "pipeline/sources/dk_uvm.py",
       "status": {
-        "last_run": "2026-10-16T21:02:58+00:00",
-        "result": "error",
-        "detail": "Uddannelsesstatistik: could not parse any month/value from [{'[Dato].[År Desc].[År Desc]': '2003', '[Dato].[Måned].[Måned]': 'Januar', 'Indg aftaler i perioden': '2.581'}, {'[Dato].[År Desc].[År Desc]': '2003', '[Dato].[Måned].[Måned]': 'Februar', 'Indg aftaler i perioden': '1.766'}, {'[Dato].[År De"
+        "last_run": "2026-10-16T21:05:07+00:00",
+        "result": "ok",
+        "outputs": [
+          "data/published/indicators/dk-uvm-training-agreements.json"
+        ]
       }
     },
     {

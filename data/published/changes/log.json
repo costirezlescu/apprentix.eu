@@ -6,6 +6,15 @@
       "date": "2026-10-16",
       "items": [
         {
+          "kind": "new-indicator",
+          "title": "New indicator: New training agreements in Danish vocational education (monthly)",
+          "text": "Børne- og Undervisningsministeriet / Styrelsen for IT og Læring (STIL), Uddannelsesstatistik.dk data, Jan 2003–Aug 2026, 1 country.",
+          "link": "pages/indicators/dk-uvm-training-agreements.html",
+          "countries": [
+            "DK"
+          ]
+        },
+        {
           "kind": "new-dataset",
           "title": "New dataset: Regional skills ecosystems (RESET)",
           "text": "244 regions. How Europe's 244 regions compare on skills supply, demand, match and environment.",
@@ -135,8 +144,8 @@
         }
       ],
       "counts": {
+        "new-indicator": 2,
         "new-dataset": 1,
-        "new-indicator": 1,
         "new-records": 2,
         "removed-records": 1,
         "revision": 3,

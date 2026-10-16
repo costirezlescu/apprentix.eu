@@ -3146,6 +3146,44 @@
       ]
     },
     {
+      "name": "dk-uvm-training-agreements-json",
+      "path": "data/published/indicators/dk-uvm-training-agreements.json",
+      "format": "json",
+      "mediatype": "application/json",
+      "title": "New training agreements in Danish vocational education (monthly)",
+      "description": "Number of new training agreements (indgåede uddannelsesaftaler) between vocational students and employers in Denmark each month, from the Ministry's Lærepladsstatistik.",
+      "sources": [
+        {
+          "title": "Børne- og Undervisningsministeriet / Styrelsen for IT og Læring (STIL), Uddannelsesstatistik.dk",
+          "path": "https://uddannelsesstatistik.dk/Pages/Topics/22.aspx"
+        }
+      ],
+      "licenses": [
+        {
+          "name": "CC BY 4.0 (as declared in the service's DCAT-AP-DK metadata); STIL terms of use require the credit 'Kilde: Uddannelsesstatistik.dk' and the retrieval date"
+        }
+      ]
+    },
+    {
+      "name": "dk-uvm-training-agreements-csv",
+      "path": "data/published/indicators/dk-uvm-training-agreements.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "title": "New training agreements in Danish vocational education (monthly)",
+      "description": "Number of new training agreements (indgåede uddannelsesaftaler) between vocational students and employers in Denmark each month, from the Ministry's Lærepladsstatistik.",
+      "sources": [
+        {
+          "title": "Børne- og Undervisningsministeriet / Styrelsen for IT og Læring (STIL), Uddannelsesstatistik.dk",
+          "path": "https://uddannelsesstatistik.dk/Pages/Topics/22.aspx"
+        }
+      ],
+      "licenses": [
+        {
+          "name": "CC BY 4.0 (as declared in the service's DCAT-AP-DK metadata); STIL terms of use require the credit 'Kilde: Uddannelsesstatistik.dk' and the retrieval date"
+        }
+      ]
+    },
+    {
       "name": "erasmus-cove-participations-json",
       "path": "data/published/indicators/erasmus-cove-participations.json",
       "format": "json",

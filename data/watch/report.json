@@ -1,15 +1,6 @@
 {
   "description": "Items from the source watch that need a person. See pipeline/watch.py.",
-  "checked_at": "2026-10-16T21:03:55+00:00",
-  "count": 1,
-  "items": [
-    {
-      "kind": "failure",
-      "source": "Uddannelsesstatistik.dk — Lærepladsstatistik (Denmark)",
-      "title": "dk-uvm failed",
-      "detail": "Uddannelsesstatistik: could not parse any month/value from [{'[Dato].[År Desc].[År Desc]': '2003', '[Dato].[Måned].[Måned]': 'Januar', 'Indg aftaler i perioden': '2.581'}, {'[Dato].[År Desc].[År Desc]': '2003', '[Dato].[Måned].[Måned]': 'Februar', 'Indg aftaler i perioden': '1.766'}, {'[Dato].[År De",
-      "url": "https://uddannelsesstatistik.dk/Pages/Topics/22.aspx",
-      "action": "See the workflow log. The previous data stays published until fixed."
-    }
-  ]
+  "checked_at": "2026-10-16T21:05:58+00:00",
+  "count": 0,
+  "items": []
 }

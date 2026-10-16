@@ -5437,6 +5437,39 @@
       "csv": "data/published/indicators/de-destatis-new-contracts.csv"
     },
     {
+      "id": "dk-uvm-training-agreements",
+      "title": "New training agreements in Danish vocational education (monthly)",
+      "description": "Number of new training agreements (indgåede uddannelsesaftaler) between vocational students and employers in Denmark each month, from the Ministry's Lærepladsstatistik.",
+      "unit": "agreements",
+      "topic": "Participation",
+      "national": true,
+      "source_label": "Uddannelsesstatistik.dk — EUD / PRAK / AFTALER: [Measures].[Indg aftaler i perioden]",
+      "comparability": "Denmark, national source (STIL apprenticeship-place statistics). Flow: training agreements concluded in the month between a vocational (EUD) student and an approved company, covering all agreement types the ministry counts (ordinary, short, rest and combination agreements). Upper-secondary/post-secondary VET only (EUD; no higher-education apprenticeships). Not a count of apprentices in training (stock). The ministry discretionises small cells. Do not sum with other countries.",
+      "provenance": {
+        "publisher": "Børne- og Undervisningsministeriet / Styrelsen for IT og Læring (STIL), Uddannelsesstatistik.dk",
+        "dataset_code": "EUD/PRAK/AFTALER",
+        "source_url": "https://uddannelsesstatistik.dk/Pages/Topics/22.aspx",
+        "api_url": "https://api.uddannelsesstatistik.dk/Api/v1/statistik",
+        "licence": "CC BY 4.0 (as declared in the service's DCAT-AP-DK metadata); STIL terms of use require the credit 'Kilde: Uddannelsesstatistik.dk' and the retrieval date",
+        "citation": "Kilde: Uddannelsesstatistik.dk (Lærepladsstatistik).",
+        "retrieved_at": "2026-10-16T21:05:07+00:00",
+        "raw_file": "data/raw/dk-uvm/2026-10-16-laerepladsstatistik-indgaaede-aftaler.json",
+        "raw_sha256": "9f04ec3dfe79a80c90852316a92ded6ffeb59a2a24d53e742847d4433f1ba205"
+      },
+      "coverage": {
+        "geos": [
+          "DK"
+        ],
+        "time": [
+          "2003-01",
+          "2026-08"
+        ],
+        "observations": 284
+      },
+      "path": "data/published/indicators/dk-uvm-training-agreements.json",
+      "csv": "data/published/indicators/dk-uvm-training-agreements.csv"
+    },
+    {
       "id": "erasmus-cove-participations",
       "title": "Participations in Centres of Vocational Excellence projects",
       "description": "Number of organisations from each country taking part in Erasmus+ Centres of Vocational Excellence (CoVE) projects, by call year and role (coordinator, partner, associated partner, affiliated entity).",

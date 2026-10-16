@@ -1,7 +1,7 @@
 {
  "description": "Content fingerprint of each preview image in assets/og/ (what was drawn, not the pixels). pipeline/og.py redraws a card only when its fingerprint changes.",
  "cards": {
-  "assets/og/ask.png": "c0f5efb68febedb838f4",
+  "assets/og/ask.png": "ea6b6e56796a0ee1d465",
   "assets/og/compare.png": "f9b26bcf960ca6788721",
   "assets/og/countries.png": "4b65c1f020a7500aea6a",
   "assets/og/country/al.png": "dfe49e41681fda066582",
@@ -46,7 +46,7 @@
   "assets/og/country/ua.png": "20384ecba02df75c344d",
   "assets/og/country/uk.png": "3832b61dadd8bbee4cfa",
   "assets/og/country/xk.png": "fa6af22110e68535749b",
-  "assets/og/data.png": "ac05c35163fecec2deb4",
+  "assets/og/data.png": "85ca8573cb2e0725e8e3",
   "assets/og/duel.png": "6013a1b981a09c454f84",
   "assets/og/duel/al-eu27.png": "3e9ac2b136495f8191d7",
   "assets/og/duel/al-xk.png": "ae0bf55d26e7e4832810",
@@ -260,6 +260,7 @@
   "assets/og/indicator/de-destatis-apprentices.png": "ea8c2751a89ada16156f",
   "assets/og/indicator/de-destatis-exams-passed.png": "8369aa8440786558b941",
   "assets/og/indicator/de-destatis-new-contracts.png": "f65cf168bf103c0a2d68",
+  "assets/og/indicator/dk-uvm-training-agreements.png": "e93fd66dacd801969ea2",
   "assets/og/indicator/erasmus-cove-participations.png": "a3fb4019fdb2327d0d56",
   "assets/og/indicator/erasmus-ka1-vet-grant.png": "0c1e96b49042eaeb9888",
   "assets/og/indicator/erasmus-ka1-vet-projects.png": "c5a9de2dd771016bd1c5",
@@ -294,9 +295,9 @@
   "assets/og/indicator/uk-dfe-apprenticeship-achievements.png": "d15d2ebdbe65814b9b82",
   "assets/og/indicator/uk-dfe-apprenticeship-participation.png": "84b263d148333b31483c",
   "assets/og/indicator/uk-dfe-apprenticeship-starts.png": "17e40afd4328ef28c627",
-  "assets/og/indicators.png": "70f614a4ef3ee9b4b28b",
+  "assets/og/indicators.png": "31e7178c4bc75fb31596",
   "assets/og/insights.png": "5722279e3d06479fbe63",
-  "assets/og/play.png": "d58bd740ed492ed1a2fe",
-  "assets/og/site.png": "4480f04972f166372153"
+  "assets/og/play.png": "607c26c087ef6876a657",
+  "assets/og/site.png": "03fb131345aff4e1ad40"
  }
 }
