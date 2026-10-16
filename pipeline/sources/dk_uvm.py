@@ -117,8 +117,19 @@ def _dump_tree(area: str, key: str) -> None:
         print(f"  dk-uvm: could not list the tree under {area}: {e}")
 
 
+def _get(row: dict, name: str):
+    """A row value by field name; the API returns e.g. '[Dato].[År Desc].[År Desc]' for the
+    detail '[Dato].[År Desc]', and 'Indg aftaler i perioden' for '[Measures].[Indg aftaler i perioden]'."""
+    if name in row:
+        return row[name]
+    short = re.sub(r"^\[Measures\]\.\[(.*)\]$", r"\1", name)
+    if short in row:
+        return row[short]
+    return next((v for k, v in row.items() if k.startswith(name + ".") or k.startswith(name)), None)
+
+
 def _time(row: dict, fields: list[str]) -> str | None:
-    vals = [str(row.get(f, "")).strip() for f in fields]
+    vals = [str(_get(row, f) or "").strip() for f in fields]
     s = " ".join(v for v in vals if v)
     m = re.search(r"(\d{4})\s*[-/M]?\s*(\d{1,2})\b", s)
     if m and 1 <= int(m.group(2)) <= 12:
@@ -230,7 +241,7 @@ def run() -> list[str]:
     totals = {}
     for r in rows:
         t = _time(r, fields)
-        v = _number(r.get(measure))
+        v = _number(_get(r, measure))
         if t and v is not None:
             totals[t] = totals.get(t, 0) + v   # sums over any remaining breakdown rows
     if not totals:
