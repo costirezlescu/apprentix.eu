@@ -51,8 +51,8 @@ SOURCE = {
 }
 
 AREAS = (r"^eud$", r"^erhvervsuddannelse")   # the API lists areas by code (EUD, GYM, …)
-TOPIC = r"l[æa]replads|praktikplads"
-SUBTOPIC_PREFS = [r"indg[åa]ede", r"aftale", r"n[øo]gletal", r"l[æa]replads"]
+TOPICS = (r"^prak$", r"l[æa]replads|praktikplads")   # codes: EUD / PRAK / AFTALER
+SUBTOPIC_PREFS = [r"^aftaler$", r"indg[åa]ede", r"aftale"]
 MEASURE = r"indg[åa]ede.*aftale|aftale.*indg[åa]ede"
 MONTHS_DA = {"januar": 1, "februar": 2, "marts": 3, "april": 4, "maj": 5, "juni": 6, "juli": 7,
              "august": 8, "september": 9, "oktober": 10, "november": 11, "december": 12}
@@ -199,14 +199,16 @@ def run() -> list[str]:
     area = _pick(areas, *AREAS, what="område")
     try:
         topics = _names(_post("skema", {"område": area}, key)[0], "emne")
-        topic = _pick(topics, TOPIC, what="emne")
+        topic = _pick(topics, *TOPICS, what="emne")
         subs = _names(_post("skema", {"område": area, "emne": topic}, key)[0], "underemne")
-        sub = _pick(subs, *SUBTOPIC_PREFS, r".", what="underemne")
-        schema, _ = _post("skema", {"område": area, "emne": topic, "underemne": sub}, key)
+        sub = _pick(subs, *SUBTOPIC_PREFS, what="underemne")
+        schema, schema_body = _post("skema", {"område": area, "emne": topic, "underemne": sub}, key)
+        print(f"  dk-uvm: schema of {area}/{topic}/{sub}: {schema_body[:4000].decode('utf-8', 'replace')}")
         measures = _names(schema, "nøgletal", "noegletal")
         details = _names(schema, "detaljering")
         print(f"  dk-uvm: details available: {details}")
-        measure = _pick(measures, MEASURE, r"indg[åa]ede", what="nøgletal (new agreements)")
+        measure = (_pick(measures, MEASURE, r"indg[åa]ede", r"^antal", what="nøgletal (new agreements)")
+                   if len(measures) != 1 else measures[0])
     except ValueError:
         _dump_tree(area, key)
         raise
