@@ -130,12 +130,47 @@ def _number(v):
         return None   # discretionised / blank
 
 
+def clean_key(raw: str | None) -> str:
+    """The key as pasted into the secret, minus common paste slips: quotes, spaces or
+    line breaks, and a leading 'Bearer ' (the connector adds that itself)."""
+    key = re.sub(r"\s+", "", (raw or "").strip().strip("'\""))
+    return re.sub(r"(?i)^bearer", "", key) if re.match(r"(?i)^bearer\S{20,}", key) else key
+
+
+def key_expiry(key: str) -> str | None:
+    """If the key is a JWT with an expiry claim, the expiry as an ISO date (never the key)."""
+    import base64
+    import datetime as dt
+    parts = key.split(".")
+    if len(parts) != 3:
+        return None
+    try:
+        pad = parts[1] + "=" * (-len(parts[1]) % 4)
+        exp = json.loads(base64.urlsafe_b64decode(pad)).get("exp")
+        return dt.datetime.fromtimestamp(int(exp), dt.timezone.utc).date().isoformat() if exp else None
+    except (ValueError, TypeError):
+        return None
+
+
 def run() -> list[str]:
-    key = os.environ.get(KEY_ENV)
+    key = clean_key(os.environ.get(KEY_ENV))
     if not key:
         raise RuntimeError(f"{KEY_ENV} is not set")
 
-    areas = _names(_post("skema", {}, key)[0], "område", "omraade")
+    try:
+        first = _post("skema", {}, key)[0]
+    except Exception as e:
+        if "401" in str(e):
+            import datetime as dt
+            exp = key_expiry(key)
+            hint = (f"the key expired on {exp}" if exp and exp < dt.date.today().isoformat()
+                    else f"the key is valid until {exp} but was refused" if exp
+                    else "the key was refused (it is not a JWT, so it may be the wrong value)")
+            raise RuntimeError(f"HTTP 401 from Uddannelsesstatistik: {hint}. Log in at "
+                               f"https://secure.api.uddannelsesstatistik.dk/Login, copy (or renew) the API key "
+                               f"and update the GitHub secret {KEY_ENV}.") from e
+        raise
+    areas = _names(first, "område", "omraade")
     area = _pick(areas, AREA, what="område")
     topics = _names(_post("skema", {"område": area}, key)[0], "emne")
     topic = _pick(topics, TOPIC, what="emne")
