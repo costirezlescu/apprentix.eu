@@ -1,13 +1,13 @@
 {
   "description": "Items from the source watch that need a person. See pipeline/watch.py.",
-  "checked_at": "2026-10-16T20:59:21+00:00",
+  "checked_at": "2026-10-16T21:01:37+00:00",
   "count": 1,
   "items": [
     {
       "kind": "failure",
       "source": "Uddannelsesstatistik.dk — Lærepladsstatistik (Denmark)",
       "title": "dk-uvm failed",
-      "detail": "Uddannelsesstatistik: no emne matching ('l[æa]replads|praktikplads',); API offered: ['ATP', 'FRAFHF', 'FRAV', 'LAERSTYRUND', 'OVERHF', 'PRAK', 'TRIV', 'UDDFORLOVERG', 'UDDFORLSTAT', 'UDB&ANS', 'UDDFORL', 'UDDSTAT', 'GF2M', 'EUDK']",
+      "detail": "Uddannelsesstatistik: no nøgletal (new agreements) matching ('indg[åa]ede.*aftale|aftale.*indg[åa]ede', 'indg[åa]ede', '^antal'); API offered: ['[Measures].[Indg aftaler i perioden]', '[Measures].[Indg aftaler seneste 3 mdr]', '[Measures].[Indg aftaler seneste 12 mdr]', '[Measures].[Igangv aftaler u",
       "url": "https://uddannelsesstatistik.dk/Pages/Topics/22.aspx",
       "action": "See the workflow log. The previous data stays published until fixed."
     }

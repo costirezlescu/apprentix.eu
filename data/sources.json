@@ -313,9 +313,9 @@
       "automated": true,
       "connector": "pipeline/sources/dk_uvm.py",
       "status": {
-        "last_run": "2026-10-16T20:58:41+00:00",
+        "last_run": "2026-10-16T21:00:37+00:00",
         "result": "error",
-        "detail": "Uddannelsesstatistik: no emne matching ('l[æa]replads|praktikplads',); API offered: ['ATP', 'FRAFHF', 'FRAV', 'LAERSTYRUND', 'OVERHF', 'PRAK', 'TRIV', 'UDDFORLOVERG', 'UDDFORLSTAT', 'UDB&ANS', 'UDDFORL', 'UDDSTAT', 'GF2M', 'EUDK']"
+        "detail": "Uddannelsesstatistik: no nøgletal (new agreements) matching ('indg[åa]ede.*aftale|aftale.*indg[åa]ede', 'indg[åa]ede', '^antal'); API offered: ['[Measures].[Indg aftaler i perioden]', '[Measures].[Indg aftaler seneste 3 mdr]', '[Measures].[Indg aftaler seneste 12 mdr]', '[Measures].[Igangv aftaler u"
       }
     },
     {
