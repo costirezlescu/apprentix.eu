@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+  <title>Apprentix — Switzerland: apprenticeship and VET data updates</title>
+  <subtitle>New figures, revisions and records about Switzerland on apprentix.eu, newest first.</subtitle>
+  <id>https://apprentix.eu/data/feeds/ch.xml</id>
+  <link rel="self" type="application/atom+xml" href="https://apprentix.eu/data/feeds/ch.xml"/>
+  <link rel="alternate" type="text/html" href="https://apprentix.eu/pages/countries/ch.html"/>
+  <updated>2026-10-12T00:00:00Z</updated>
+  <author><name>Apprentix</name><uri>https://apprentix.eu/</uri></author>
+  <rights>Each figure and record keeps its original publisher's licence; see the linked page.</rights>
+  <entry>
+    <id>tag:apprentix.eu,2026-10-12:ch/b8ee9cdc7796</id>
+    <title>14 datasets added: Apprenticeship and VET open-data catalogue</title>
+    <link rel="alternate" type="text/html" href="https://apprentix.eu/pages/datasets/data-catalogue.html"/>
+    <updated>2026-10-12T00:00:00Z</updated>
+    <category term="new-records"/>
+    <summary>1 dataset added: Vocational schools.</summary>
+  </entry>
+  <entry>
+    <id>tag:apprentix.eu,2026-10-12:ch/04737b9de735</id>
+    <title>Revised figures: Pupils in combined school- and work-based post-secondary VET</title>
+    <link rel="alternate" type="text/html" href="https://apprentix.eu/pages/indicators/eurostat-educ_uoe_enrs07-ed4sw.html"/>
+    <updated>2026-10-12T00:00:00Z</updated>
+    <category term="revision"/>
+    <summary>1 value revised for Switzerland, largest 2013: 12 pupils → 2 pupils.</summary>
+  </entry>
+  <entry>
+    <id>tag:apprentix.eu,2026-10-12:ch/788a39b62bb4</id>
+    <title>Revised figures: Pupils in combined school- and work-based upper-secondary VET</title>
+    <link rel="alternate" type="text/html" href="https://apprentix.eu/pages/indicators/eurostat-educ_uoe_enrs04-ed3sw.html"/>
+    <updated>2026-10-12T00:00:00Z</updated>
+    <category term="revision"/>
+    <summary>1 value revised for Switzerland, largest 2013: 208,649 pupils → 194,752 pupils.</summary>
+  </entry>
+  <entry>
+    <id>tag:apprentix.eu,2026-10-12:ch/684baba3dedb</id>
+    <title>Revised figures: Share of upper-secondary VET pupils in work-based programmes</title>
+    <link rel="alternate" type="text/html" href="https://apprentix.eu/pages/indicators/eurostat-ed3sw-share-of-vet.html"/>
+    <updated>2026-10-12T00:00:00Z</updated>
+    <category term="revision"/>
+    <summary>1 value revised for Switzerland, largest 2013: 90.6% → 84.5%.</summary>
+  </entry>
+  <entry>
+    <id>tag:apprentix.eu,2026-10-12:ch/b01c3611deeb</id>
+    <title>140 datasets updated: Apprenticeship and VET open-data catalogue</title>
+    <link rel="alternate" type="text/html" href="https://apprentix.eu/pages/datasets/data-catalogue.html"/>
+    <updated>2026-10-12T00:00:00Z</updated>
+    <category term="updated-records"/>
+    <summary>26 datasets updated: Admissions by field of training, apprenticeship canton, type of training, form of training, gender and year, Admissions by occupation, apprenticeship canton, type of training, fo…</summary>
+  </entry>
+</feed>

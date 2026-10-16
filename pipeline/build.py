@@ -124,6 +124,7 @@ def all(connectors: dict, status: dict) -> None:
     print(f"Built: {len(inds)} indicators, catalogue, manifest, datapackage.json")
     from . import changes, duel
     changes.build()           # what changed since the last build → data/published/changes/
+    changes.ensure_by_country()
     duel.build()              # per-country profiles for the country duel
     from . import play
     play.build()              # 'Higher or lower?' question pool
@@ -137,5 +138,7 @@ def all(connectors: dict, status: dict) -> None:
     render_insights.render_insights()
     from . import render_pages
     render_pages.render_all()
+    from . import follow
+    follow.build()            # one Atom feed per country page → data/feeds/
     from . import build_ai_index
     build_ai_index.build()

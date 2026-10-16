@@ -104,6 +104,12 @@
     </div>
   </section>
 
+  <section class="section">
+    <div class="wrap">
+      <section id="scheme-week" class="sow" aria-label="Scheme of the week" hidden></section>
+    </div>
+  </section>
+
   <section class="section" id="changes-section">
     <div class="wrap">
       <section id="changes" hidden></section>
@@ -172,7 +178,9 @@
   import { mountDidYouKnow } from './assets/js/facts.js';
   import { mountChanges } from './assets/js/changes.js';
   import { mountHomeMap } from './assets/js/home-map.js';
+  import { mountSchemeOfWeek } from './assets/js/scheme-week.js';
   mountHomeMap(document.getElementById('timelapse'));
+  mountSchemeOfWeek(document.getElementById('scheme-week'));
   mountDidYouKnow(document.getElementById('dyk'));
   mountChanges(document.getElementById('changes'), { limit: 5 });
 </script>

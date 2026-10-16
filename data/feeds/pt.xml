@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+  <title>Apprentix — Portugal: apprenticeship and VET data updates</title>
+  <subtitle>New figures, revisions and records about Portugal on apprentix.eu, newest first.</subtitle>
+  <id>https://apprentix.eu/data/feeds/pt.xml</id>
+  <link rel="self" type="application/atom+xml" href="https://apprentix.eu/data/feeds/pt.xml"/>
+  <link rel="alternate" type="text/html" href="https://apprentix.eu/pages/countries/pt.html"/>
+  <updated>2026-10-12T00:00:00Z</updated>
+  <author><name>Apprentix</name><uri>https://apprentix.eu/</uri></author>
+  <rights>Each figure and record keeps its original publisher's licence; see the linked page.</rights>
+  <entry>
+    <id>tag:apprentix.eu,2026-10-12:pt/b8ee9cdc7796</id>
+    <title>14 datasets added: Apprenticeship and VET open-data catalogue</title>
+    <link rel="alternate" type="text/html" href="https://apprentix.eu/pages/datasets/data-catalogue.html"/>
+    <updated>2026-10-12T00:00:00Z</updated>
+    <category term="new-records"/>
+    <summary>2 datasets added: Absences for Training and Vocational Improvement, Vocational education teachers/trainers (vocational courses) (No.).</summary>
+  </entry>
+  <entry>
+    <id>tag:apprentix.eu,2026-10-12:pt/b01c3611deeb</id>
+    <title>140 datasets updated: Apprenticeship and VET open-data catalogue</title>
+    <link rel="alternate" type="text/html" href="https://apprentix.eu/pages/datasets/data-catalogue.html"/>
+    <updated>2026-10-12T00:00:00Z</updated>
+    <category term="updated-records"/>
+    <summary>11 datasets updated: Average duration of CVT courses (per participant - No.), Job vacancies in IEFP job centres (movement throughout the month - No.), Proportion of enterprises with 10 and more perso…</summary>
+  </entry>
+</feed>

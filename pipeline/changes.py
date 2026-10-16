@@ -4,6 +4,9 @@
 
   data/published/changes/snapshot.json   compact fingerprint of everything published
   data/published/changes/log.json        newest-first human-readable change log (last 26 entries)
+  data/published/changes/by-country.json the same changes per country (last 30 per country), with a
+                                         line about that country where one can be given; it feeds
+                                         the per-country Atom feeds (pipeline/follow.py)
 
 The snapshot holds, per indicator, the default-breakdown value of every
 geo/period plus a hash of the full series; per record dataset, the record
@@ -31,6 +34,8 @@ from .common import DATA, INDICATORS, PUBLISHED, ROOT, countries, read_json, tod
 OUT = PUBLISHED / "changes"
 SNAPSHOT = OUT / "snapshot.json"
 LOG = OUT / "log.json"
+BY_COUNTRY = OUT / "by-country.json"
+COUNTRY_KEEP = 30      # entries kept per country
 
 LOG_KEEP = 26          # entries (about six months of weekly refreshes)
 TEXT_MAX = 200
@@ -288,8 +293,13 @@ def diff_indicator(iid: str, old: dict, new: dict, ind: dict) -> list[dict]:
             text += f"{_period(nmax)} figures for {_plural(len(nc), 'country', 'countries')}."
         if not text:
             text = f"Data now runs to {_period(nmax)} (previously {_period(omax)})."
+        per = {}
+        for g in _countries(newer):
+            prev_t = max((t for t in nv[g] if t < nmax), default=None)
+            per[g] = (f"{_geo_name(g)}: {_fmt(nv[g][prev_t], unit)} in {_period(prev_t)} → {_fmt(nv[g][nmax], unit)} in {_period(nmax)}."
+                      if prev_t is not None else f"{_geo_name(g)}: {_fmt(nv[g][nmax], unit)} in {_period(nmax)}.")
         items.append({"kind": "new-period", "title": f"New {_period(nmax)} data: {title}",
-                      "text": text, "link": _ind_link(iid), "countries": _countries(newer),
+                      "text": text, "link": _ind_link(iid), "countries": _countries(newer), "by_country": per,
                       "score": 100 if target else 85 if headline else 70 if ind.get("national") else 75,
                       "key": iid})
     else:
@@ -303,8 +313,10 @@ def diff_indicator(iid: str, old: dict, new: dict, ind: dict) -> list[dict]:
             text += f" (up to {_period(latest)})."
             if gained:
                 text += f" Now covers {_list([_geo_name(g) for g in sorted(gained)], k=3)}."
+            per = {g: f"{_geo_name(g)}: {_fmt(nv[g][max(nv[g])], unit)} in {_period(max(nv[g]))}"
+                      + (" (first figures)." if not ov.get(g) else ".") for g in _countries(caught)}
             items.append({"kind": "new-data", "title": f"More countries reported: {title}",
-                          "text": text, "link": _ind_link(iid), "countries": _countries(caught),
+                          "text": text, "link": _ind_link(iid), "countries": _countries(caught), "by_country": per,
                           "score": 55 if (target or headline) else 45, "key": iid})
 
     # Revisions: values that changed for periods present before and after.
@@ -331,8 +343,14 @@ def diff_indicator(iid: str, old: dict, new: dict, ind: dict) -> list[dict]:
             big = "; ".join(f"{_geo_name(g)} {_period(t)} {_fmt(a, unit)} → {_fmt(b, unit)}"
                             for _, _, g, t, a, b in revs[:3])
             text += f" Largest: {big}."
+        per = {}
+        for g in _countries(g for _, _, g, *_ in revs):
+            mine = [r for r in revs if r[2] == g]
+            _, _, _, t, a, b = mine[0]
+            per[g] = (f"{_plural(len(mine), 'value')} revised for {_geo_name(g)}"
+                      + f", largest {_period(t)}: {_fmt(a, unit)} → {_fmt(b, unit)}.")
         items.append({"kind": "revision", "title": f"Revised figures: {title}", "text": text,
-                      "link": _ind_link(iid), "countries": _countries(g for _, _, g, *_ in revs),
+                      "link": _ind_link(iid), "countries": _countries(g for _, _, g, *_ in revs), "by_country": per,
                       "score": 50 if target else 40, "key": iid, "n": len(revs)})
     elif not items and old.get("hash") != new.get("hash"):
         # Only other breakdowns (or flags, notes) changed.
@@ -366,6 +384,17 @@ def _by_country_text(recs: list[dict]) -> str:
         return ""
     top = sorted(by.items(), key=lambda x: (-x[1], x[0]))
     return ", ".join(f"{c} {n}" for c, n in top[:6]) + (", …" if len(top) > 6 else "")
+
+
+def _per_country_names(ds: dict, recs: list[dict], verb: str) -> dict:
+    """{country code: 'N records added: a, b and c.'} for the per-country feeds."""
+    one, many = _labels(ds)
+    by: dict[str, list[str]] = {}
+    for r in recs:
+        c = _record_country(r)
+        if c and _is_country(c):
+            by.setdefault(c, []).append(_record_name(ds, r))
+    return {c: clip(f"{_plural(len(n), one, many).capitalize()} {verb}: {_list(n, k=3)}.") for c, n in by.items()}
 
 
 def _explore(did: str, rid: str | None = None) -> str:
@@ -430,7 +459,7 @@ def diff_dataset(did: str, old: dict, new: dict, ds: dict) -> list[dict]:
             text += f"By country: {_by_country_text(recs)}. "
         text += f"Including {_list(names, k=3)}. " if len(added) > 3 else f"{_list(names, k=3)}. "
         text += f"Now {new['count']:,} in total (was {old['count']:,})."
-        items.append({"kind": "new-records",
+        items.append({"kind": "new-records", "by_country": _per_country_names(ds, recs, "added"),
                       "title": f"{_plural(len(added), one, many).capitalize()} added: {title}",
                       "text": text, "link": _explore(did, str(recs[0].get("id"))) if len(added) == 1 else link,
                       "countries": _countries(_record_country(r) for r in recs),
@@ -463,7 +492,7 @@ def diff_dataset(did: str, old: dict, new: dict, ds: dict) -> list[dict]:
     if changed:
         recs = [by_id[i] for i in changed]
         names = [_record_name(ds, r) for r in recs]
-        items.append({"kind": "updated-records",
+        items.append({"kind": "updated-records", "by_country": _per_country_names(ds, recs, "updated"),
                       "title": f"{_plural(len(changed), one, many).capitalize()} updated: {title}",
                       "text": f"Including {_list(names, k=3)}." if len(names) > 1 else f"{names[0]}.",
                       "link": _explore(did, str(recs[0].get("id"))) if len(changed) == 1 else link,
@@ -499,8 +528,9 @@ def _summarise(kind: str, rest: list[dict]) -> dict:
             "countries": sorted({c for it in rest for c in it.get("countries", [])}), "score": 0}
 
 
-def diff(old: dict, new: dict, state: dict) -> tuple[list[dict], dict]:
-    """(change items, most interesting first; counts per kind). `old`/`new` are fingerprints."""
+def diff(old: dict, new: dict, state: dict) -> tuple[list[dict], dict, list[dict]]:
+    """(change items, most interesting first; counts per kind; every item before the
+    overflow of each kind was summarised). `old`/`new` are fingerprints."""
     items = []
     oi, ni = old.get("indicators", {}), new.get("indicators", {})
     for iid in sorted(set(ni) - set(oi)):
@@ -508,8 +538,11 @@ def diff(old: dict, new: dict, state: dict) -> tuple[list[dict], dict]:
         cov = new["indicators"][iid]
         times = cov["times"] or [cov.get("max")]
         geos = _countries(cov["values"])
+        vals = _grid_to_values(cov)
         span = f"{_period(times[0])}–{_period(times[-1])}" if len(times) > 1 else _period(times[0] or "")
         items.append({"kind": "new-indicator", "title": f"New indicator: {ind.get('title') or iid}",
+                      "by_country": {g: f"{_geo_name(g)}: {_fmt(vals[g][max(vals[g])], ind.get('unit'))} in "
+                                        f"{_period(max(vals[g]))}." for g in geos if vals.get(g)},
                       "text": clip(f"{(ind.get('provenance') or {}).get('publisher', '')} data, {span}, "
                                    f"{_plural(len(geos), 'country', 'countries')}.".lstrip(" ,")),
                       "link": _ind_link(iid), "countries": geos,
@@ -551,7 +584,7 @@ def diff(old: dict, new: dict, state: dict) -> tuple[list[dict], dict]:
         s["score"] = min(it["score"] for it in kept if it["kind"] == k) - 0.5
         kept.append(s)
     kept.sort(key=lambda it: (-it["score"], it["kind"], it["title"]))
-    return kept, _counts(items)
+    return kept, _counts(items), items
 
 
 def _counts(items: list[dict]) -> dict:
@@ -589,6 +622,47 @@ def baseline_entry(snap: dict, state: dict) -> dict:
             "counts": {"indicators": n_ind, "values": n_obs, "datasets": n_ds, "records": n_rec}}
 
 
+# --------------------------------------------------------- per country ----
+
+def _country_item(date: str, it: dict, cc: str) -> dict:
+    return {"date": date, "kind": it["kind"], "title": clip(it["title"], TITLE_MAX),
+            "text": clip((it.get("by_country") or {}).get(cc) or it["text"]), "link": it["link"]}
+
+
+def update_by_country(date: str, items: list[dict], log_entries: list[dict]) -> None:
+    """Add this build's items to each country's history (data/published/changes/by-country.json).
+    The first time, the history is seeded from the existing log (no per-country lines there)."""
+    if BY_COUNTRY.exists():
+        hist = read_json(BY_COUNTRY).get("countries", {})
+    else:
+        hist = {}
+        for e in reversed(log_entries):
+            if e.get("baseline"):
+                continue
+            for it in e.get("items", []):
+                for cc in it.get("countries") or []:
+                    hist.setdefault(cc, []).insert(0, _country_item(e["date"], it, cc))
+    fresh: dict[str, list[dict]] = {}
+    for it in items:
+        for cc in it.get("countries") or []:
+            fresh.setdefault(cc, []).append(_country_item(date, it, cc))
+    for cc, new in fresh.items():
+        titles = {x["title"] for x in new}
+        # A second build on the same day replaces that day's lines with the same title.
+        old = [x for x in hist.get(cc, []) if not (x["date"] == date and x["title"] in titles)]
+        hist[cc] = (new + old)[:COUNTRY_KEEP]
+    write_json(BY_COUNTRY, {
+        "description": "Changes in Apprentix's published data, per country, newest first (last 30 per country). Written by pipeline/changes.py; feeds data/feeds/<code>.xml.",
+        "countries": dict(sorted(hist.items())),
+    })
+
+
+def ensure_by_country() -> None:
+    """Create the per-country history from the log if it does not exist yet."""
+    if not BY_COUNTRY.exists() and LOG.exists():
+        update_by_country("", [], read_json(LOG).get("entries", []))
+
+
 # ---------------------------------------------------------------- build ----
 
 def build(state: dict | None = None) -> dict | None:
@@ -612,12 +686,13 @@ def build(state: dict | None = None) -> dict | None:
         if old == {"indicators": snap["indicators"], "datasets": snap["datasets"]}:
             print("Changes: none since the last snapshot")
             return None
-        items, counts = diff(old, snap, state)
+        items, counts, every = diff(old, snap, state)
         if not items:
             SNAPSHOT.write_text(dump_snapshot(snap), encoding="utf-8")
             print("Changes: snapshot updated (nothing reportable)")
             return None
         entry = {"date": today(), "items": [public(it) for it in items], "counts": counts}
+        update_by_country(entry["date"], every, entries)
 
     # Two builds on one day: merge into that day's entry (the newer item wins per title).
     if entries and entries[0].get("date") == entry["date"] and not entry.get("baseline") \

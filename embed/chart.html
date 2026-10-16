@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apprentix chart</title>
+<meta name="robots" content="noindex">
+<meta name="description" content="An embeddable chart from apprentix.eu, with its source and licence.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,600&family=Public+Sans:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<!-- Embeddable chart. Query string:
+       ?indicator=<id>&view=map|ranking|trend[&year=YYYY][&geo=AT,DE][&dim_<key>=<value>]
+       ?insight=<id>
+     plus optional &theme=light|dark. The page posts its height to the parent window
+     ({type: 'apprentix-embed', height}) so hosts can size the iframe. -->
+<body data-root="../" class="embed">
+<main class="embed-main" id="main">
+  <header class="embed-head">
+    <h1 id="em-title">Loading chart…</h1>
+    <p id="em-sub" class="embed-sub"></p>
+  </header>
+  <div id="em-controls"></div>
+  <div id="em-chart" class="embed-chart"></div>
+  <footer class="embed-foot">
+    <p id="em-source"></p>
+    <p class="embed-brand"><a id="em-link" href="https://apprentix.eu/" target="_blank" rel="noopener">Apprenti<span class="x">x</span>.eu</a> <span id="em-more">· see the full data ↗</span></p>
+  </footer>
+</main>
+<script type="module" src="../assets/js/embed.js"></script>
+</body>
+</html>

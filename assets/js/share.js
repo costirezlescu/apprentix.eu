@@ -3,7 +3,8 @@
    to a chart container. The image is a PNG composed in the browser from the
    chart's SVG(s) and legend, with the title, the source credit, the licence and
    apprentix.eu written on it — so a shared chart always carries its source.
-   Nothing is uploaded anywhere. */
+   With meta.embed ({path, height}) there is also an "Embed" button that shows an
+   <iframe> snippet for embed/chart.html. Nothing is uploaded anywhere. */
 
 const NS = 'http://www.w3.org/2000/svg';
 const STYLE_PROPS = ['fill', 'stroke', 'stroke-width', 'stroke-linecap', 'stroke-linejoin', 'opacity',
@@ -140,14 +141,31 @@ function flash(btn, text) {
   setTimeout(() => { btn.textContent = old; }, 1800);
 }
 
+const SITE = 'https://apprentix.eu/';
+
+/** Absolute URL of a site path: the live site when on apprentix.eu or a local copy otherwise. */
+function siteUrl(path) {
+  const root = document.body.dataset.root || './';
+  const local = new URL(root + path, location.href);
+  return /(^|\.)apprentix\.eu$/.test(location.hostname) ? SITE + path : local.href;
+}
+
+/** The <iframe> snippet for an embed (embed: {path, height, title}). */
+export function embedCode(embed) {
+  const src = siteUrl(embed.path);
+  const esc = s => String(s).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;');
+  return `<iframe src="${esc(src)}" title="${esc(embed.title || 'Apprentix chart')}" width="100%" height="${Number(embed.height) || 520}" `
+    + 'style="border:0;max-width:900px" loading="lazy"></iframe>';
+}
+
 /**
- * meta: { title, subtitle?, source, licence?, url? }  (url defaults to the current page)
+ * meta: { title, subtitle?, source, licence?, url?, embed?: {path, height} }  (url defaults to the current page)
  * Buttons are added once per host; calling again only updates the metadata.
  */
 export function addShareControls(host, meta) {
   if (!host) return;
   host._shareMeta = meta;
-  if (host.querySelector(':scope > .share-bar')) return;
+  if (host.querySelector(':scope > .share-bar')) { host._embedFill?.(); return; }
   const bar = document.createElement('div');
   bar.className = 'share-bar';
   const dl = document.createElement('button');
@@ -193,6 +211,57 @@ export function addShareControls(host, meta) {
   });
   bar.append(dl, cp);
   host.appendChild(bar);
+  addEmbed(host, bar);
+}
+
+function addEmbed(host, bar) {
+  const btn = document.createElement('button');
+  btn.type = 'button';
+  btn.className = 'share-btn';
+  btn.textContent = 'Embed';
+  btn.setAttribute('aria-expanded', 'false');
+  btn.hidden = !host._shareMeta?.embed;
+  const panel = document.createElement('div');
+  panel.className = 'embed-panel';
+  panel.hidden = true;
+  const help = document.createElement('p');
+  help.textContent = 'Paste this code into your web page to show this chart, with its source and licence. The chart updates when the data does.';
+  const code = document.createElement('textarea');
+  code.readOnly = true;
+  code.setAttribute('aria-label', 'Embed code');
+  const actions = document.createElement('div');
+  actions.className = 'embed-actions';
+  const copy = document.createElement('button');
+  copy.type = 'button';
+  copy.className = 'share-btn';
+  copy.textContent = 'Copy code';
+  const preview = document.createElement('a');
+  preview.target = '_blank';
+  preview.rel = 'noopener';
+  preview.textContent = 'Preview ↗';
+  actions.append(copy, preview);
+  panel.append(help, code, actions);
+  const fill = () => {
+    const e = host._shareMeta?.embed;
+    btn.hidden = !e;
+    if (!e) { panel.hidden = true; return; }
+    code.value = embedCode({ title: host._shareMeta.title, ...e });
+    preview.href = siteUrl(e.path);
+  };
+  btn.addEventListener('click', () => {
+    fill();
+    panel.hidden = !panel.hidden;
+    btn.setAttribute('aria-expanded', String(!panel.hidden));
+    if (!panel.hidden) code.select();
+  });
+  copy.addEventListener('click', async () => {
+    fill();
+    try { await navigator.clipboard.writeText(code.value); flash(copy, 'Copied ✓'); }
+    catch { code.select(); flash(copy, 'Press Ctrl/⌘+C'); }
+  });
+  host._embedFill = fill;
+  bar.appendChild(btn);
+  host.appendChild(panel);
 }
 
 /** The PNG (as a Blob) that "Download image" would save — also usable for previews. */

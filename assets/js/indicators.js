@@ -202,9 +202,30 @@ function shareCharts() {
   const p = IND.provenance || {};
   const dimsNote = (IND.dims || []).filter(d => state.dims[d.key] !== d.default || d.key === state.breakdown)
     .map(d => d.key === state.breakdown ? `by ${d.label.toLowerCase()}` : `${d.label}: ${d.values[state.dims[d.key]]}`).join(' · ');
+  // Embeds show the latest year unless another year was picked, so they stay current.
+  const obsNow = obsFor();
+  const latestDefault = (() => {
+    const years = [...new Set(obsNow.map(o => o.time))].sort().reverse();
+    const counts = years.map(y => obsNow.filter(o => o.time === y).length);
+    const maxc = Math.max(0, ...counts);
+    return years.find((y, i) => counts[i] >= maxc * 0.6) || years[0];
+  })();
+  const embedFor = card => {
+    const view = card.querySelector('#map') ? 'map' : card.querySelector('#bars') ? 'ranking' : card.querySelector('#lines') ? 'trend' : null;
+    if (!view) return null;
+    const q = new URLSearchParams({ indicator: IND.id, view });
+    if (state.breakdown) q.set('by', state.breakdown);
+    for (const d of IND.dims || []) if (state.dims[d.key] !== d.default) q.set(`dim_${d.key}`, state.dims[d.key]);
+    if (view !== 'trend' && state.year && state.year !== latestDefault) q.set('year', state.year);
+    if (view !== 'map' && state.selected.length) q.set('geo', state.selected.join(','));
+    const rows = new Set(obsNow.filter(o => o.time === state.year).map(o => o.geo)).size;
+    const height = view === 'map' ? 600 : view === 'ranking' ? Math.min(1400, 190 + rows * 26) : 500;
+    return { path: `embed/chart.html?${q}`, height };
+  };
   document.querySelectorAll('#charts .chart-card').forEach(card => {
     const part = card.querySelector('h2')?.textContent || '';
     addShareControls(card, {
+      embed: embedFor(card),
       title: `${IND.title} — ${part}`,
       subtitle: [IND.unit && `Unit: ${IND.unit}`, dimsNote].filter(Boolean).join(' · '),
       source: `${p.publisher || ''}${p.dataset_code ? ` (${p.dataset_code})` : ''}, retrieved ${(p.retrieved_at || '').slice(0, 10)}`,

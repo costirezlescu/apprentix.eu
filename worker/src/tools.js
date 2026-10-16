@@ -64,7 +64,7 @@ export class SourceLog {
 
 /* Overview content first, then records; and content about a country the question names. */
 const KIND_WEIGHT = {
-  country: 1.35, indicator: 1.3, insight: 1.25, guide: 1.1, scheme: 1.15, nqf: 1.1, dataset: 1.0,
+  country: 1.35, indicator: 1.3, insight: 1.25, guide: 1.1, glossary: 1.15, scheme: 1.15, nqf: 1.1, dataset: 1.0,
   'qualifications-summary': 1.0, financing: 1.0, recognition: 1.0, policy: 0.9, 'policy-other': 0.6,
 };
 
@@ -303,13 +303,13 @@ export const TOOL_SPECS = [
     type: 'function',
     function: {
       name: 'search_site',
-      description: 'Full-text (BM25) search over everything Apprentix publishes: country profiles, indicators (with latest values), datasets, apprenticeship schemes (with Cedefop coded answers), financing instruments, recognition arrangements, VET policies, NQF levels, CoVE projects, insights. Use English keywords for best results.',
+      description: 'Full-text (BM25) search over everything Apprentix publishes: country profiles, indicators (with latest values), datasets, apprenticeship schemes (with Cedefop coded answers), financing instruments, recognition arrangements, VET policies, NQF levels, CoVE projects, insights, glossary definitions of VET terms. Use English keywords for best results.',
       parameters: {
         type: 'object',
         properties: {
           query: { type: 'string', description: 'Keywords, e.g. "apprentice wage workplace share 50%"' },
           k: { type: 'integer', minimum: 1, maximum: 8, description: 'Number of results (default 5)' },
-          kind: { type: 'string', enum: ['country', 'indicator', 'dataset', 'scheme', 'financing', 'recognition', 'vet-system', 'policy', 'policy-other', 'cove', 'nqf', 'erasmus-summary', 'catalogue-summary', 'qualifications-summary', 'insight', 'guide'], description: 'Optional: restrict to one kind of content' },
+          kind: { type: 'string', enum: ['country', 'indicator', 'dataset', 'scheme', 'financing', 'recognition', 'vet-system', 'policy', 'policy-other', 'cove', 'nqf', 'erasmus-summary', 'catalogue-summary', 'qualifications-summary', 'insight', 'guide', 'glossary'], description: 'Optional: restrict to one kind of content' },
           country_code: { type: 'string', description: 'Optional: restrict to a country (Eurostat code, e.g. DE, FR, EL for Greece)' },
         },
         required: ['query'],

@@ -1,0 +1,350 @@
+{
+  "description": "Changes in Apprentix's published data, per country, newest first (last 30 per country). Written by pipeline/changes.py; feeds data/feeds/<code>.xml.",
+  "countries": {
+    "AT": [
+      {
+        "date": "2026-10-12",
+        "kind": "revision",
+        "title": "Revised figures: EU grant for Erasmus+ VET mobility projects",
+        "text": "2 values revised for Austria, largest 2024: EUR 13,561,118 → EUR 13,555,087.",
+        "link": "pages/indicators/erasmus-ka1-vet-grant.html"
+      }
+    ],
+    "BE": [
+      {
+        "date": "2026-10-12",
+        "kind": "revision",
+        "title": "Revised figures: EU grant for Erasmus+ VET mobility projects",
+        "text": "1 value revised for Belgium, largest 2025: EUR 26,503,092 → EUR 26,502,036.",
+        "link": "pages/indicators/erasmus-ka1-vet-grant.html"
+      }
+    ],
+    "BG": [
+      {
+        "date": "2026-10-12",
+        "kind": "revision",
+        "title": "Revised figures: EU grant for Erasmus+ VET mobility projects",
+        "text": "2 values revised for Bulgaria, largest 2025: EUR 18,048,144 → EUR 18,038,258.",
+        "link": "pages/indicators/erasmus-ka1-vet-grant.html"
+      }
+    ],
+    "CH": [
+      {
+        "date": "2026-10-12",
+        "kind": "new-records",
+        "title": "14 datasets added: Apprenticeship and VET open-data catalogue",
+        "text": "1 dataset added: Vocational schools.",
+        "link": "pages/datasets/data-catalogue.html"
+      },
+      {
+        "date": "2026-10-12",
+        "kind": "revision",
+        "title": "Revised figures: Pupils in combined school- and work-based post-secondary VET",
+        "text": "1 value revised for Switzerland, largest 2013: 12 pupils → 2 pupils.",
+        "link": "pages/indicators/eurostat-educ_uoe_enrs07-ed4sw.html"
+      },
+      {
+        "date": "2026-10-12",
+        "kind": "revision",
+        "title": "Revised figures: Pupils in combined school- and work-based upper-secondary VET",
+        "text": "1 value revised for Switzerland, largest 2013: 208,649 pupils → 194,752 pupils.",
+        "link": "pages/indicators/eurostat-educ_uoe_enrs04-ed3sw.html"
+      },
+      {
+        "date": "2026-10-12",
+        "kind": "revision",
+        "title": "Revised figures: Share of upper-secondary VET pupils in work-based programmes",
+        "text": "1 value revised for Switzerland, largest 2013: 90.6% → 84.5%.",
+        "link": "pages/indicators/eurostat-ed3sw-share-of-vet.html"
+      },
+      {
+        "date": "2026-10-12",
+        "kind": "updated-records",
+        "title": "140 datasets updated: Apprenticeship and VET open-data catalogue",
+        "text": "26 datasets updated: Admissions by field of training, apprenticeship canton, type of training, form of training, gender and year, Admissions by occupation, apprenticeship canton, type of training, fo…",
+        "link": "pages/datasets/data-catalogue.html"
+      }
+    ],
+    "DE": [
+      {
+        "date": "2026-10-12",
+        "kind": "new-indicator",
+        "title": "New indicator: Apprentices in dual vocational training (Germany)",
+        "text": "Germany: 1,211,844 apprentices in 2025.",
+        "link": "pages/indicators/de-destatis-apprentices.html"
+      },
+      {
+        "date": "2026-10-12",
+        "kind": "new-indicator",
+        "title": "New indicator: Apprentices in dual vocational training by Land (Germany)",
+        "text": "Germany: 1,211,841 apprentices in 2025.",
+        "link": "pages/indicators/de-destatis-apprentices-land.html"
+      },
+      {
+        "date": "2026-10-12",
+        "kind": "new-indicator",
+        "title": "New indicator: Final apprenticeship examinations passed (Germany)",
+        "text": "Germany: 338,349 examinations in 2025.",
+        "link": "pages/indicators/de-destatis-exams-passed.html"
+      },
+      {
+        "date": "2026-10-12",
+        "kind": "new-indicator",
+        "title": "New indicator: Newly concluded apprenticeship contracts (Germany)",
+        "text": "Germany: 461,919 contracts in 2025.",
+        "link": "pages/indicators/de-destatis-new-contracts.html"
+      },
+      {
+        "date": "2026-10-12",
+        "kind": "new-records",
+        "title": "14 datasets added: Apprenticeship and VET open-data catalogue",
+        "text": "6 datasets added: City of Gelsenkirchen: Infrastructure data Vocational college, City of Gelsenkirchen: Infrastructure data Youth Vocational Assistance, Employees subject to social security contribut…",
+        "link": "pages/datasets/data-catalogue.html"
+      },
+      {
+        "date": "2026-10-12",
+        "kind": "revision",
+        "title": "Revised figures: EU grant for Erasmus+ VET mobility projects",
+        "text": "2 values revised for Germany, largest 2024: EUR 92,663,374 → EUR 92,100,804.",
+        "link": "pages/indicators/erasmus-ka1-vet-grant.html"
+      },
+      {
+        "date": "2026-10-12",
+        "kind": "updated-records",
+        "title": "140 datasets updated: Apprenticeship and VET open-data catalogue",
+        "text": "35 datasets updated: 01001000 _BP _ Vocational School Centre _120 _, 01001000 _BP _ Vocational School Centre _120 _1Ae, 01001000 _BP _ Vocational School Centre _120 _2Ae and 32 more.",
+        "link": "pages/datasets/data-catalogue.html"
+      }
+    ],
+    "EE": [
+      {
+        "date": "2026-10-12",
+        "kind": "revision",
+        "title": "Revised figures: EU grant for Erasmus+ VET mobility projects",
+        "text": "1 value revised for Estonia, largest 2024: EUR 5,761,155 → EUR 5,743,555.",
+        "link": "pages/indicators/erasmus-ka1-vet-grant.html"
+      }
+    ],
+    "EL": [
+      {
+        "date": "2026-10-12",
+        "kind": "revision",
+        "title": "Revised figures: EU grant for Erasmus+ VET mobility projects",
+        "text": "1 value revised for Greece, largest 2025: EUR 23,180,243 → EUR 23,007,213.",
+        "link": "pages/indicators/erasmus-ka1-vet-grant.html"
+      }
+    ],
+    "ES": [
+      {
+        "date": "2026-10-12",
+        "kind": "new-records",
+        "title": "14 datasets added: Apprenticeship and VET open-data catalogue",
+        "text": "1 dataset added: Vocational Training for Employment (g12_18_VET).",
+        "link": "pages/datasets/data-catalogue.html"
+      },
+      {
+        "date": "2026-10-12",
+        "kind": "revision",
+        "title": "Revised figures: EU grant for Erasmus+ VET mobility projects",
+        "text": "2 values revised for Spain, largest 2024: EUR 52,656,518 → EUR 51,435,405.",
+        "link": "pages/indicators/erasmus-ka1-vet-grant.html"
+      },
+      {
+        "date": "2026-10-12",
+        "kind": "revision",
+        "title": "Revised figures: Erasmus+ VET mobility projects",
+        "text": "1 value revised for Spain, largest 2025: 1,013 projects → 1,014 projects.",
+        "link": "pages/indicators/erasmus-ka1-vet-projects.html"
+      },
+      {
+        "date": "2026-10-12",
+        "kind": "updated-records",
+        "title": "140 datasets updated: Apprenticeship and VET open-data catalogue",
+        "text": "14 datasets updated: Alumnos que han finalizado cursos de Formación Profesional Ocupacional gestionados por la Consejería de Economía, Hacienda y Empleo por sexo, Awards of the department of educatio…",
+        "link": "pages/datasets/data-catalogue.html"
+      }
+    ],
+    "FI": [
+      {
+        "date": "2026-10-12",
+        "kind": "revision",
+        "title": "Revised figures: EU grant for Erasmus+ VET mobility projects",
+        "text": "1 value revised for Finland, largest 2025: EUR 15,432,885 → EUR 15,424,180.",
+        "link": "pages/indicators/erasmus-ka1-vet-grant.html"
+      }
+    ],
+    "FR": [
+      {
+        "date": "2026-10-12",
+        "kind": "revision",
+        "title": "Revised figures: EU grant for Erasmus+ VET mobility projects",
+        "text": "2 values revised for France, largest 2024: EUR 77,102,362 → EUR 76,610,471.",
+        "link": "pages/indicators/erasmus-ka1-vet-grant.html"
+      }
+    ],
+    "IE": [
+      {
+        "date": "2026-10-12",
+        "kind": "revision",
+        "title": "Revised figures: EU grant for Erasmus+ VET mobility projects",
+        "text": "2 values revised for Ireland, largest 2024: EUR 7,370,191 → EUR 7,357,875.",
+        "link": "pages/indicators/erasmus-ka1-vet-grant.html"
+      },
+      {
+        "date": "2026-10-12",
+        "kind": "updated-records",
+        "title": "140 datasets updated: Apprenticeship and VET open-data catalogue",
+        "text": "2 datasets updated: QQI10 - Number of QQI Awards Made to Apprentices – Further Education Only, QQI11 - Number of QQI Awards Made to Apprentices –Higher Education Only.",
+        "link": "pages/datasets/data-catalogue.html"
+      }
+    ],
+    "IT": [
+      {
+        "date": "2026-10-12",
+        "kind": "revision",
+        "title": "Revised figures: EU grant for Erasmus+ VET mobility projects",
+        "text": "1 value revised for Italy, largest 2024: EUR 61,207,884 → EUR 61,178,883.",
+        "link": "pages/indicators/erasmus-ka1-vet-grant.html"
+      },
+      {
+        "date": "2026-10-12",
+        "kind": "updated-records",
+        "title": "140 datasets updated: Apprenticeship and VET open-data catalogue",
+        "text": "28 datasets updated: Authorised VET pathways, Professional training courses on the territory of the Municipality of Florence enrolled students trained and qualified by type of course 2009, Profession…",
+        "link": "pages/datasets/data-catalogue.html"
+      }
+    ],
+    "LI": [
+      {
+        "date": "2026-10-12",
+        "kind": "updated-records",
+        "title": "140 datasets updated: Apprenticeship and VET open-data catalogue",
+        "text": "8 datasets updated: Apprentices from Liechtenstein by country of company, field of education, training year and sex since 2014/15, Apprentices from Liechtenstein with vocational baccalaureate by year…",
+        "link": "pages/datasets/data-catalogue.html"
+      }
+    ],
+    "LT": [
+      {
+        "date": "2026-10-12",
+        "kind": "revision",
+        "title": "Revised figures: EU grant for Erasmus+ VET mobility projects",
+        "text": "1 value revised for Lithuania, largest 2025: EUR 11,189,083 → EUR 11,188,802.",
+        "link": "pages/indicators/erasmus-ka1-vet-grant.html"
+      },
+      {
+        "date": "2026-10-12",
+        "kind": "updated-records",
+        "title": "140 datasets updated: Apprenticeship and VET open-data catalogue",
+        "text": "1 dataset updated: Vocational Training Coupon Part 1 Details.",
+        "link": "pages/datasets/data-catalogue.html"
+      }
+    ],
+    "NL": [
+      {
+        "date": "2026-10-12",
+        "kind": "new-records",
+        "title": "14 datasets added: Apprenticeship and VET open-data catalogue",
+        "text": "3 datasets added: National Cohort Study Education with enrolment and exam data of students in Secondary Vocational Education (from 01-09-2021), Results of employer research into the connection of voc…",
+        "link": "pages/datasets/data-catalogue.html"
+      },
+      {
+        "date": "2026-10-12",
+        "kind": "revision",
+        "title": "Revised figures: EU grant for Erasmus+ VET mobility projects",
+        "text": "1 value revised for Netherlands, largest 2025: EUR 29,914,064 → EUR 29,918,894.",
+        "link": "pages/indicators/erasmus-ka1-vet-grant.html"
+      },
+      {
+        "date": "2026-10-12",
+        "kind": "updated-records",
+        "title": "140 datasets updated: Apprenticeship and VET open-data catalogue",
+        "text": "3 datasets updated: Incoming MBO students, MBO students by institution, School drop-out survey (SVO), characteristics of school leavers who have obtained their VET or MBO diploma or who have left edu…",
+        "link": "pages/datasets/data-catalogue.html"
+      }
+    ],
+    "NO": [
+      {
+        "date": "2026-10-12",
+        "kind": "revision",
+        "title": "Revised figures: EU grant for Erasmus+ VET mobility projects",
+        "text": "2 values revised for Norway, largest 2024: EUR 8,450,088 → EUR 8,441,747.",
+        "link": "pages/indicators/erasmus-ka1-vet-grant.html"
+      }
+    ],
+    "PL": [
+      {
+        "date": "2026-10-12",
+        "kind": "revision",
+        "title": "Revised figures: EU grant for Erasmus+ VET mobility projects",
+        "text": "2 values revised for Poland, largest 2025: EUR 63,999,468 → EUR 64,859,781.",
+        "link": "pages/indicators/erasmus-ka1-vet-grant.html"
+      }
+    ],
+    "PT": [
+      {
+        "date": "2026-10-12",
+        "kind": "new-records",
+        "title": "14 datasets added: Apprenticeship and VET open-data catalogue",
+        "text": "2 datasets added: Absences for Training and Vocational Improvement, Vocational education teachers/trainers (vocational courses) (No.).",
+        "link": "pages/datasets/data-catalogue.html"
+      },
+      {
+        "date": "2026-10-12",
+        "kind": "updated-records",
+        "title": "140 datasets updated: Apprenticeship and VET open-data catalogue",
+        "text": "11 datasets updated: Average duration of CVT courses (per participant - No.), Job vacancies in IEFP job centres (movement throughout the month - No.), Proportion of enterprises with 10 and more perso…",
+        "link": "pages/datasets/data-catalogue.html"
+      }
+    ],
+    "SE": [
+      {
+        "date": "2026-10-12",
+        "kind": "revision",
+        "title": "Revised figures: EU grant for Erasmus+ VET mobility projects",
+        "text": "1 value revised for Sweden, largest 2024: EUR 12,085,075 → EUR 12,084,401.",
+        "link": "pages/indicators/erasmus-ka1-vet-grant.html"
+      },
+      {
+        "date": "2026-10-12",
+        "kind": "updated-records",
+        "title": "140 datasets updated: Apprenticeship and VET open-data catalogue",
+        "text": "8 datasets updated: Incomes (interval) among those who work after higher vocational education. Graduation year 2007/2008 - 2018/2019, Position among those who work after higher vocational education.…",
+        "link": "pages/datasets/data-catalogue.html"
+      }
+    ],
+    "SK": [
+      {
+        "date": "2026-10-12",
+        "kind": "new-records",
+        "title": "2 organisations added: Erasmus+ accredited VET organisations",
+        "text": "2 organisations added: Gymnázium duklianskych hrdinov, Obchodná akadémia a Základná škola, Centrálna 464, Svidník, Stredna zdravotnicka skola.",
+        "link": "pages/datasets/erasmus-vet-organisations.html"
+      }
+    ],
+    "TR": [
+      {
+        "date": "2026-10-12",
+        "kind": "revision",
+        "title": "Revised figures: EU grant for Erasmus+ VET mobility projects",
+        "text": "3 values revised for Türkiye, largest 2025: EUR 32,813,430 → EUR 33,152,621.",
+        "link": "pages/indicators/erasmus-ka1-vet-grant.html"
+      },
+      {
+        "date": "2026-10-12",
+        "kind": "revision",
+        "title": "Revised figures: Erasmus+ VET mobility projects",
+        "text": "1 value revised for Türkiye, largest 2025: 199 projects → 200 projects.",
+        "link": "pages/indicators/erasmus-ka1-vet-projects.html"
+      }
+    ],
+    "UA": [
+      {
+        "date": "2026-10-12",
+        "kind": "updated-records",
+        "title": "140 datasets updated: Apprenticeship and VET open-data catalogue",
+        "text": "3 datasets updated: Data on the actual admission and graduation by profession in vocational (vocational) education institutions, Register of documents on general secondary and vocational education (a…",
+        "link": "pages/datasets/data-catalogue.html"
+      }
+    ]
+  }
+}

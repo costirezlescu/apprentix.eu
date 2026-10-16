@@ -1,0 +1,299 @@
+{
+  "description": "One Atom feed per country: what changed in Apprentix's data for it. Written by pipeline/follow.py.",
+  "countries": {
+    "AL": {
+      "name": "Albania",
+      "feed": "data/feeds/al.xml",
+      "page": "pages/countries/al.html",
+      "entries": 0,
+      "updated": null
+    },
+    "AT": {
+      "name": "Austria",
+      "feed": "data/feeds/at.xml",
+      "page": "pages/countries/at.html",
+      "entries": 1,
+      "updated": "2026-10-12"
+    },
+    "BA": {
+      "name": "Bosnia and Herzegovina",
+      "feed": "data/feeds/ba.xml",
+      "page": "pages/countries/ba.html",
+      "entries": 0,
+      "updated": null
+    },
+    "BE": {
+      "name": "Belgium",
+      "feed": "data/feeds/be.xml",
+      "page": "pages/countries/be.html",
+      "entries": 1,
+      "updated": "2026-10-12"
+    },
+    "BG": {
+      "name": "Bulgaria",
+      "feed": "data/feeds/bg.xml",
+      "page": "pages/countries/bg.html",
+      "entries": 1,
+      "updated": "2026-10-12"
+    },
+    "CH": {
+      "name": "Switzerland",
+      "feed": "data/feeds/ch.xml",
+      "page": "pages/countries/ch.html",
+      "entries": 5,
+      "updated": "2026-10-12"
+    },
+    "CY": {
+      "name": "Cyprus",
+      "feed": "data/feeds/cy.xml",
+      "page": "pages/countries/cy.html",
+      "entries": 0,
+      "updated": null
+    },
+    "CZ": {
+      "name": "Czechia",
+      "feed": "data/feeds/cz.xml",
+      "page": "pages/countries/cz.html",
+      "entries": 0,
+      "updated": null
+    },
+    "DE": {
+      "name": "Germany",
+      "feed": "data/feeds/de.xml",
+      "page": "pages/countries/de.html",
+      "entries": 7,
+      "updated": "2026-10-12"
+    },
+    "DK": {
+      "name": "Denmark",
+      "feed": "data/feeds/dk.xml",
+      "page": "pages/countries/dk.html",
+      "entries": 0,
+      "updated": null
+    },
+    "EE": {
+      "name": "Estonia",
+      "feed": "data/feeds/ee.xml",
+      "page": "pages/countries/ee.html",
+      "entries": 1,
+      "updated": "2026-10-12"
+    },
+    "EL": {
+      "name": "Greece",
+      "feed": "data/feeds/el.xml",
+      "page": "pages/countries/el.html",
+      "entries": 1,
+      "updated": "2026-10-12"
+    },
+    "ES": {
+      "name": "Spain",
+      "feed": "data/feeds/es.xml",
+      "page": "pages/countries/es.html",
+      "entries": 4,
+      "updated": "2026-10-12"
+    },
+    "FI": {
+      "name": "Finland",
+      "feed": "data/feeds/fi.xml",
+      "page": "pages/countries/fi.html",
+      "entries": 1,
+      "updated": "2026-10-12"
+    },
+    "FR": {
+      "name": "France",
+      "feed": "data/feeds/fr.xml",
+      "page": "pages/countries/fr.html",
+      "entries": 1,
+      "updated": "2026-10-12"
+    },
+    "GE": {
+      "name": "Georgia",
+      "feed": "data/feeds/ge.xml",
+      "page": "pages/countries/ge.html",
+      "entries": 0,
+      "updated": null
+    },
+    "HR": {
+      "name": "Croatia",
+      "feed": "data/feeds/hr.xml",
+      "page": "pages/countries/hr.html",
+      "entries": 0,
+      "updated": null
+    },
+    "HU": {
+      "name": "Hungary",
+      "feed": "data/feeds/hu.xml",
+      "page": "pages/countries/hu.html",
+      "entries": 0,
+      "updated": null
+    },
+    "IE": {
+      "name": "Ireland",
+      "feed": "data/feeds/ie.xml",
+      "page": "pages/countries/ie.html",
+      "entries": 2,
+      "updated": "2026-10-12"
+    },
+    "IS": {
+      "name": "Iceland",
+      "feed": "data/feeds/is.xml",
+      "page": "pages/countries/is.html",
+      "entries": 0,
+      "updated": null
+    },
+    "IT": {
+      "name": "Italy",
+      "feed": "data/feeds/it.xml",
+      "page": "pages/countries/it.html",
+      "entries": 2,
+      "updated": "2026-10-12"
+    },
+    "LI": {
+      "name": "Liechtenstein",
+      "feed": "data/feeds/li.xml",
+      "page": "pages/countries/li.html",
+      "entries": 1,
+      "updated": "2026-10-12"
+    },
+    "LT": {
+      "name": "Lithuania",
+      "feed": "data/feeds/lt.xml",
+      "page": "pages/countries/lt.html",
+      "entries": 2,
+      "updated": "2026-10-12"
+    },
+    "LU": {
+      "name": "Luxembourg",
+      "feed": "data/feeds/lu.xml",
+      "page": "pages/countries/lu.html",
+      "entries": 0,
+      "updated": null
+    },
+    "LV": {
+      "name": "Latvia",
+      "feed": "data/feeds/lv.xml",
+      "page": "pages/countries/lv.html",
+      "entries": 0,
+      "updated": null
+    },
+    "MD": {
+      "name": "Moldova",
+      "feed": "data/feeds/md.xml",
+      "page": "pages/countries/md.html",
+      "entries": 0,
+      "updated": null
+    },
+    "ME": {
+      "name": "Montenegro",
+      "feed": "data/feeds/me.xml",
+      "page": "pages/countries/me.html",
+      "entries": 0,
+      "updated": null
+    },
+    "MK": {
+      "name": "North Macedonia",
+      "feed": "data/feeds/mk.xml",
+      "page": "pages/countries/mk.html",
+      "entries": 0,
+      "updated": null
+    },
+    "MT": {
+      "name": "Malta",
+      "feed": "data/feeds/mt.xml",
+      "page": "pages/countries/mt.html",
+      "entries": 0,
+      "updated": null
+    },
+    "NL": {
+      "name": "Netherlands",
+      "feed": "data/feeds/nl.xml",
+      "page": "pages/countries/nl.html",
+      "entries": 3,
+      "updated": "2026-10-12"
+    },
+    "NO": {
+      "name": "Norway",
+      "feed": "data/feeds/no.xml",
+      "page": "pages/countries/no.html",
+      "entries": 1,
+      "updated": "2026-10-12"
+    },
+    "PL": {
+      "name": "Poland",
+      "feed": "data/feeds/pl.xml",
+      "page": "pages/countries/pl.html",
+      "entries": 1,
+      "updated": "2026-10-12"
+    },
+    "PT": {
+      "name": "Portugal",
+      "feed": "data/feeds/pt.xml",
+      "page": "pages/countries/pt.html",
+      "entries": 2,
+      "updated": "2026-10-12"
+    },
+    "RO": {
+      "name": "Romania",
+      "feed": "data/feeds/ro.xml",
+      "page": "pages/countries/ro.html",
+      "entries": 0,
+      "updated": null
+    },
+    "RS": {
+      "name": "Serbia",
+      "feed": "data/feeds/rs.xml",
+      "page": "pages/countries/rs.html",
+      "entries": 0,
+      "updated": null
+    },
+    "SE": {
+      "name": "Sweden",
+      "feed": "data/feeds/se.xml",
+      "page": "pages/countries/se.html",
+      "entries": 2,
+      "updated": "2026-10-12"
+    },
+    "SI": {
+      "name": "Slovenia",
+      "feed": "data/feeds/si.xml",
+      "page": "pages/countries/si.html",
+      "entries": 0,
+      "updated": null
+    },
+    "SK": {
+      "name": "Slovakia",
+      "feed": "data/feeds/sk.xml",
+      "page": "pages/countries/sk.html",
+      "entries": 1,
+      "updated": "2026-10-12"
+    },
+    "TR": {
+      "name": "Türkiye",
+      "feed": "data/feeds/tr.xml",
+      "page": "pages/countries/tr.html",
+      "entries": 2,
+      "updated": "2026-10-12"
+    },
+    "UA": {
+      "name": "Ukraine",
+      "feed": "data/feeds/ua.xml",
+      "page": "pages/countries/ua.html",
+      "entries": 1,
+      "updated": "2026-10-12"
+    },
+    "UK": {
+      "name": "United Kingdom",
+      "feed": "data/feeds/uk.xml",
+      "page": "pages/countries/uk.html",
+      "entries": 0,
+      "updated": null
+    },
+    "XK": {
+      "name": "Kosovo*",
+      "feed": "data/feeds/xk.xml",
+      "page": "pages/countries/xk.html",
+      "entries": 0,
+      "updated": null
+    }
+  }
+}

@@ -475,6 +475,18 @@ def policy_sort_key(p: dict):
     return (p.get("latest_year") or "", p.get("first_year") or "", p.get("policy_id") or p["id"])
 
 
+_CHANGES: dict | None = None
+
+
+def country_changes(code: str) -> list[dict]:
+    """This country's change history (pipeline/changes.py), newest first."""
+    global _CHANGES
+    if _CHANGES is None:
+        from .changes import BY_COUNTRY
+        _CHANGES = read_json(BY_COUNTRY).get("countries", {}) if BY_COUNTRY.exists() else {}
+    return _CHANGES.get(code, [])
+
+
 def render_country(D, c: dict, f: dict, has_page: set[str]) -> str:
     code, name = c["code"], c["name"]
     the_name = ("the " if code in THE else "") + name
@@ -659,7 +671,23 @@ def render_country(D, c: dict, f: dict, has_page: set[str]) -> str:
   <p class="provenance">Source: <a href="{e(src['url'])}" target="_blank" rel="noopener">{e(src['name'])}</a> ({licence_html(src.get('licence_id'))}). Each dataset keeps its own licence.</p>
 </section>""")
 
-    # g. Sources
+    # g. Follow: recent changes for this country and its Atom feed.
+    nav.append(("follow", "Follow"))
+    recent_changes = country_changes(code)[:6]
+    change_items = "".join(
+        f'<li><span class="mono">{e(it["date"])}</span> <a href="../../{e(it["link"])}">{e(it["title"])}</a>'
+        f'<br><span class="cp-change-text">{e(it["text"])}</span></li>' for it in recent_changes)
+    sections.append(f"""<section class="cp-sec" id="follow" aria-labelledby="h-follow">
+  <h2 id="h-follow">Follow {e(name)}</h2>
+  <p class="sub">Apprentix checks its sources every week. When figures or records about {e(the_name)} change — a new year of data, a revision, a new scheme or policy — it is listed here and in {e(name)}'s update feed.</p>
+  {f'<ol class="cp-list cp-changes">{change_items}</ol>' if recent_changes else f'<p class="cp-changes-none">No changes for {e(the_name)} since Apprentix began tracking them. The first will appear here.</p>'}
+  <div class="follow-box">
+    <p class="cp-links"><button type="button" class="btn primary follow-copy" data-feed="{SITE}data/feeds/{slug}.xml" hidden>Copy {e(name)}'s feed link</button><a class="btn" href="../../data/feeds/{slug}.xml" type="application/atom+xml">Open the feed</a></p>
+    <p class="follow-help">A feed is a web address that a feed reader (for example Feedly, Inoreader, NetNewsWire or Thunderbird) checks for you, so you hear about each change without visiting the site. Nothing to sign up for; Apprentix does not know who follows.</p>
+  </div>
+</section>""")
+
+    # h. Sources
     src_rows = []
     if f["schemes"]:
         s = D["schemes_meta"]["source"]
@@ -695,7 +723,7 @@ def render_country(D, c: dict, f: dict, has_page: set[str]) -> str:
     <h1><span class="cp-flag-emoji" aria-hidden="true">{c.get('flag', '')}</span> {e(name)}</h1>
     <p class="lede">Apprenticeships and vocational education and training (VET) in {e(the_name)}: {e(summary)}.</p>
     {f'<ul class="cp-toc" aria-label="On this page">{toc}</ul>' if toc else ''}
-    <p class="cp-links cp-actions"><a class="btn primary" href="../duel.html?a={e(code)}">Compare {e(name)} with another country</a><a class="btn" href="../find.html?c={e('GR' if code == 'EL' else code)}">Find an apprenticeship in {e(name)}</a></p>
+    <p class="cp-links cp-actions"><a class="btn primary" href="../duel.html?a={e(code)}">Compare {e(name)} with another country</a><a class="btn" href="../find.html?c={e('GR' if code == 'EL' else code)}">Find an apprenticeship in {e(name)}</a><a class="btn" href="#follow">Follow {e(name)}</a></p>
   </div>
   <div class="cp-mapbox">{tile_map(D["countries"], has_page, code, "")}</div>
 </header>
@@ -725,8 +753,10 @@ def render_country(D, c: dict, f: dict, has_page: set[str]) -> str:
         ],
     }
     from . import og
+    feed_link = (f'<link rel="alternate" type="application/atom+xml" title="Apprentix — {e(name)} updates" '
+                 f'href="../../data/feeds/{slug}.xml">\n<script type="module" src="../../assets/js/follow.js"></script>')
     return page(title=title, description=description, canonical=page_url, root="../../", body=body,
-                json_ld_obj=ld, current=None, updated=updated, og_image=og.country_path(code),
+                json_ld_obj=ld, current=None, updated=updated, og_image=og.country_path(code), head_extra=feed_link,
                 og_image_alt=og.alt_for(f"country:{code}", f"{name}: apprenticeship and VET profile on Apprentix."))
 
 
@@ -780,6 +810,12 @@ def render_index(D, facts: dict[str, dict]) -> str:
 </header>
 
 {chr(10).join(groups_html)}
+
+<section class="cp-sec" id="follow" aria-labelledby="h-follow">
+  <h2 id="h-follow">Follow a country</h2>
+  <p class="sub">Each country has its own update feed: new years of data, revisions, new schemes and policies, as Apprentix's weekly refresh finds them. Add a feed to any feed reader; there is nothing to sign up for. To follow several countries at once, import the <a href="../../data/feeds/countries.opml">list of all country feeds (OPML)</a>.</p>
+  <ul class="cp-feeds">{"".join(f'<li><a href="../../data/feeds/{c["code"].lower()}.xml" type="application/atom+xml"><span aria-hidden="true">{c.get("flag", "")}</span> {e(c["name"])}</a></li>' for c in sorted(item_list, key=lambda c: c["name"]))}</ul>
+</section>
 
 <p class="provenance">Country names and groupings follow Eurostat conventions. {e(D["ref"].get("notes", {}).get("XK", ""))}</p>"""
 

@@ -452,8 +452,39 @@ GUIDE = [
 ]
 
 
+GUIDE += [
+    ("guide:tools", SITE + "pages/find.html", "Apprentix tools for learners and readers",
+     "Find my apprenticeship (pages/find.html): a short quiz that matches a learner's age, pay, time at work and "
+     "route to university against Cedefop's 34 schemes; a country can be preset with ?c=AT. Compare two countries "
+     "(pages/duel.html?a=AT&b=DE): schemes, outcomes, money and mobility side by side. Country pages "
+     "(pages/countries/<code>.html, e.g. at.html, el.html for Greece) gather everything per country, with a 'Follow' "
+     "section and an update feed per country (data/feeds/<code>.xml). Glossary (pages/glossary.html): plain-language "
+     "definitions of VET terms. Higher or lower? (pages/play.html): a quiz game. Every indicator and insight chart can "
+     "be downloaded as an image or embedded on another website."),
+]
+
+
 def guide_chunks() -> list[dict]:
     return [chunk(i, u, t, "guide", x) for i, u, t, x in GUIDE]
+
+
+def glossary_chunks() -> list[dict]:
+    """One chunk per glossary term (data/reference/glossary.json), linked to its glossary entry."""
+    path = ROOT / "data" / "reference" / "glossary.json"
+    if not path.exists():
+        return []
+    out = []
+    for t in read_json(path).get("terms", []):
+        aka = [a for a in t.get("aliases", []) if a.lower() != t["term"].lower()]
+        src = t.get("source") or {}
+        text = " ".join(x for x in [
+            f"{t['term']}{' (also: ' + ', '.join(aka) + ')' if aka else ''}: {t.get('short', '')}",
+            t.get("long", ""),
+            f"Definition source: {src.get('label')}." if src.get("label") else "",
+        ] if x)
+        out.append(chunk(f"glossary:{t['id']}", f"{SITE}pages/glossary.html#{t['id']}", f"Glossary: {t['term']}",
+                         "glossary", text))
+    return sorted(out, key=lambda c: c["id"])
 
 
 # ---------------------------------------------------------------- shards --
@@ -513,6 +544,7 @@ def build() -> dict:
 
     chunks: list[dict] = []
     chunks += guide_chunks()
+    chunks += glossary_chunks()
     chunks += country_chunks(D, facts, fmt_value, key_figures, names)
     chunks += indicator_chunks(D["index"], names, fmt_value)
     chunks += dataset_chunks(D["manifest"])

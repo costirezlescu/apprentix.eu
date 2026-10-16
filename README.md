@@ -176,6 +176,24 @@ driven by `meta.matrix` in the apprenticeship-schemes `meta.json`.
 - `data/feed.xml` — an Atom feed with one entry per indicator or dataset whose data changed
   (dated by the retrieval date, which only moves when the data does). Linked from every page.
 
+**Follow a country.** `pipeline/changes.py` also keeps `data/published/changes/by-country.json`:
+each country's changes (new periods, revisions, new or updated records), newest first, with a line
+about that country ("Germany: 1,211,844 apprentices in 2025"). `pipeline/follow.py` turns it into
+one Atom feed per country page (`data/feeds/<code>.xml`), `data/feeds/countries.opml` (all of them,
+for importing into a feed reader) and `data/feeds/index.json`. Each country page ends with a
+"Follow" section listing its recent changes and the feed link; the countries index lists every feed.
+
+**Scheme of the week.** The home page shows one of Cedefop's apprenticeship schemes per ISO week
+(`assets/js/scheme-week.js`), in a fixed shuffled order; it changes every Monday on its own.
+
+**Embeddable charts.** Every indicator chart (map, ranking, over time) and insight chart has an
+"Embed" button giving an `<iframe>` snippet for `embed/chart.html`
+(`?indicator=<id>&view=map|ranking|trend[&year=][&geo=AT,DE][&dim_<key>=][&by=<key>]`, or
+`?insight=<id>`; optional `&theme=light|dark`). The embedded chart carries its title, source,
+licence and a link back, follows the latest data unless a year was chosen, and posts its height to
+the host page (`{type: 'apprentix-embed', height}`). Embedding on other sites needs the server
+to allow framing of `/embed/` — see "Publishing".
+
 ### Cedefop scheme fiches (browser-assisted curation)
 
 Each fiche answers the same questionnaire; 34 questions are multiple choice. To refresh them
@@ -346,8 +364,9 @@ from there.
 
 `pages/ask.html` lets visitors ask questions in plain language ("Which countries pay apprentices
 a wage and require at least half the time at the workplace?"). Answers are written by an AI model
-**only from Apprentix's own published data**, and link to the Apprentix pages and the original
-publishers they used.
+**from Apprentix's own published data first**, and link to the Apprentix pages and the original
+publishers they used. When the site has nothing on a question, the assistant says so; it may then
+add brief general background, clearly labelled "Beyond Apprentix's data", with no figures or URLs.
 
 ### How it works
 
@@ -372,11 +391,15 @@ Cloudflare Worker  worker/src/index.js      holds OPENROUTER_API_KEY (secret)
 - **Retrieval index.** `pipeline/build_ai_index.py` runs at the end of every build and writes
   `data/ai/search-index.json` (~2 MB, ~1,700 text chunks: country profiles, every indicator with
   its latest values, datasets, schemes with Cedefop's coded answers, financing instruments,
-  recognition arrangements, VET policies, NQF levels, CoVE projects, insights) plus slim
+  recognition arrangements, VET policies, NQF levels, CoVE projects, insights, the 70 glossary
+  terms and a guide to the site's tools) plus slim
   per-country shards of the 24,768 Europass qualifications in `data/ai/records/vet-qualifications/`
   (the full file is too large to load inside a Worker). Do not edit these files by hand.
-- **Grounding.** The system prompt (in `worker/src/index.js`) tells the model to answer only from
-  tool results, cite Apprentix URLs and publishers, say when the data does not cover a question,
+- **Grounding.** The system prompt (`SYSTEM_PROMPT` in `worker/src/index.js`) tells the model to
+  look everything up in Apprentix first and take every figure, scheme, policy, date and definition
+  from tool results; to cite Apprentix URLs and publishers; to say when the data does not cover a
+  question, and only then add short general background in a separate, labelled paragraph without
+  figures, dates or URLs; to
   respect comparability caveats (national counts are not comparable; ED3SW is a proxy, not an
   apprentice count; financing data is 2016–17), give no legal/financial advice, point learners and
   employers to official services, and answer in the user's language.
@@ -485,6 +508,22 @@ the Forge site needs none of the Laravel defaults:
 3. **Deploying:** Forge deploys on every push to `main` through its GitHub webhook — including
    the weekly refresh commit, so refreshed data goes live without any extra step.
 4. Optional nginx tweak: `try_files $uri $uri/ =404;` instead of the Laravel `/index.php` fallback.
+5. **Let other sites embed charts.** Forge's nginx config sends `X-Frame-Options: SAMEORIGIN`
+   for every page, which stops `embed/chart.html` from showing inside other websites' iframes.
+   In Forge → the site → *Edit Files → Edit Nginx Configuration*, add inside the `server { … }`
+   block (next to the other `location` blocks):
+   ```nginx
+   location ^~ /embed/ {
+       # A location with its own add_header does not inherit the server's X-Frame-Options.
+       add_header X-Content-Type-Options "nosniff";
+       add_header Content-Security-Policy "frame-ancestors *";
+       try_files $uri =404;
+   }
+   ```
+   Only the `embed/` pages become frameable; the rest of the site keeps `SAMEORIGIN`. Because
+   apprentix.eu is proxied through Cloudflare, a Cloudflare *Transform Rule* (modify response
+   header: remove `X-Frame-Options` when the URI path starts with `/embed/`) works too. Check with
+   `curl -sI https://apprentix.eu/embed/chart.html | grep -i frame`.
 
 All paths in the code are relative, so the site also works from any other static host.
 
