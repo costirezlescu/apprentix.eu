@@ -4,7 +4,7 @@
     "domain": "apprentix.eu",
     "tagline": "European apprenticeship and VET data, made searchable.",
     "blurb": "An independent project that takes publicly available European data on apprenticeship and vocational education and republishes it in a form you can search, filter and compare — rather than read one page at a time.",
-    "updated": "2026-10-01",
+    "updated": "2026-10-12",
     "ask_endpoint": null
   },
   "datasets": [
@@ -33,7 +33,7 @@
       "path": "data/published/data-catalogue",
       "title": "Apprenticeship and VET open-data catalogue",
       "tagline": "Open datasets on apprenticeship and vocational training, found across Europe's national data portals.",
-      "records": 1632,
+      "records": 1646,
       "coverage": "27 countries plus EU-level publishers, via data.europa.eu",
       "status": "live",
       "kind": "records"
@@ -63,7 +63,7 @@
       "path": "data/published/erasmus-vet-organisations",
       "title": "Erasmus+ accredited VET organisations",
       "tagline": "Every organisation holding an Erasmus accreditation in vocational education and training since 2021.",
-      "records": 4038,
+      "records": 4040,
       "coverage": "33 countries (EU-27, EEA and candidate countries), accreditation calls 2021–2025",
       "status": "live",
       "kind": "records"
@@ -116,7 +116,7 @@
     }
   ],
   "indicators": {
-    "count": 102,
+    "count": 106,
     "path": "data/published/indicators/index.json"
   }
 }

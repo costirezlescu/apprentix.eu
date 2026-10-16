@@ -19,7 +19,7 @@
       "automated": true,
       "connector": "pipeline/sources/at_wko.py",
       "status": {
-        "last_run": "2026-10-01T10:01:25+00:00",
+        "last_run": "2026-10-12T13:13:43+00:00",
         "result": "awaiting-permission",
         "detail": "WKO's terms forbid storing the data in databases or passing it on without WKO's consent. Ask WKO (Abteilung für Statistik) for permission before enabling."
       }
@@ -38,7 +38,7 @@
       "connector": "pipeline/sources/cedefop_files.py",
       "licence_url": "https://creativecommons.org/licenses/by/4.0/",
       "status": {
-        "last_run": "2026-10-01T10:01:30+00:00",
+        "last_run": "2026-10-12T13:13:53+00:00",
         "result": "ok",
         "outputs": [
           "data/published/indicators/cedefop-kivet-1010.json",
@@ -123,7 +123,18 @@
       ],
       "automated": true,
       "connector": "pipeline/sources/cedefop_skills.py",
-      "licence_url": "https://creativecommons.org/licenses/by/4.0/"
+      "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+      "status": {
+        "last_run": "2026-10-12T13:14:02+00:00",
+        "result": "ok",
+        "outputs": [
+          "data/published/indicators/cedefop-clssi.json",
+          "data/published/indicators/cedefop-esi-editions.json",
+          "data/published/indicators/cedefop-esi.json",
+          "data/published/indicators/cedefop-stas-employment-growth.json",
+          "data/published/indicators/cedefop-stas-employment.json"
+        ]
+      }
     },
     {
       "id": "ch-bfs",
@@ -144,7 +155,7 @@
       "automated": true,
       "connector": "pipeline/sources/ch_bfs.py",
       "status": {
-        "last_run": "2026-10-01T10:01:44+00:00",
+        "last_run": "2026-10-12T13:14:19+00:00",
         "result": "ok",
         "outputs": [
           "data/published/indicators/ch-bfs-entrants-vet.json",
@@ -174,7 +185,7 @@
       "connector": "pipeline/sources/data_europa.py",
       "licence_url": "https://eur-lex.europa.eu/eli/dec/2011/833/oj",
       "status": {
-        "last_run": "2026-10-01T10:03:38+00:00",
+        "last_run": "2026-10-12T13:16:47+00:00",
         "result": "ok",
         "outputs": [
           "data/published/data-catalogue/meta.json",
@@ -200,7 +211,7 @@
       "automated": true,
       "connector": "pipeline/sources/de_ba.py",
       "status": {
-        "last_run": "2026-10-01T10:03:38+00:00",
+        "last_run": "2026-10-12T13:16:47+00:00",
         "result": "awaiting-permission",
         "detail": "The BA imprint requires prior permission to reuse its content, and the API has no published terms. Ask the Bundesagentur für Arbeit before enabling."
       }
@@ -222,7 +233,7 @@
       "automated": true,
       "connector": "pipeline/sources/de_bibb.py",
       "status": {
-        "last_run": "2026-10-01T10:03:38+00:00",
+        "last_run": "2026-10-12T13:16:47+00:00",
         "result": "awaiting-permission",
         "detail": "Licensed CC BY-NC-ND 4.0; 'no derivatives' may rule out republishing extracted values in charts. Ask BIBB for permission before enabling."
       }
@@ -248,9 +259,14 @@
       "connector": "pipeline/sources/de_destatis.py",
       "licence_url": "https://www.govdata.de/dl-de/by-2-0",
       "status": {
-        "last_run": "2026-10-01T10:03:38+00:00",
-        "result": "skipped",
-        "detail": "needs DESTATIS_TOKEN"
+        "last_run": "2026-10-12T13:17:15+00:00",
+        "result": "ok",
+        "outputs": [
+          "data/published/indicators/de-destatis-apprentices-land.json",
+          "data/published/indicators/de-destatis-apprentices.json",
+          "data/published/indicators/de-destatis-exams-passed.json",
+          "data/published/indicators/de-destatis-new-contracts.json"
+        ]
       }
     },
     {
@@ -270,9 +286,9 @@
       "automated": true,
       "connector": "pipeline/sources/dk_uvm.py",
       "status": {
-        "last_run": "2026-10-01T10:03:38+00:00",
-        "result": "skipped",
-        "detail": "needs DK_UDDANNELSESSTATISTIK_KEY"
+        "last_run": "2026-10-12T13:17:15+00:00",
+        "result": "error",
+        "detail": "HTTP 401 for https://api.uddannelsesstatistik.dk/Api/v1/skema"
       }
     },
     {
@@ -299,9 +315,13 @@
       "connector": "pipeline/sources/erasmus.py",
       "licence_url": "https://creativecommons.org/licenses/by/4.0/",
       "status": {
-        "last_run": "2026-10-01T10:07:45+00:00",
+        "last_run": "2026-10-12T13:20:43+00:00",
         "result": "ok",
         "outputs": [
+          "data/published/cove-projects/meta.json",
+          "data/published/cove-projects/records.json",
+          "data/published/erasmus-vet-organisations/meta.json",
+          "data/published/erasmus-vet-organisations/records.json",
           "data/published/indicators/erasmus-cove-participations.json",
           "data/published/indicators/erasmus-ka1-vet-grant.json",
           "data/published/indicators/erasmus-ka1-vet-projects.json",
@@ -326,7 +346,7 @@
       "connector": "pipeline/sources/esco.py",
       "licence_url": "https://eur-lex.europa.eu/eli/dec/2011/833/oj",
       "status": {
-        "last_run": "2026-10-01T10:07:58+00:00",
+        "last_run": "2026-10-12T13:21:00+00:00",
         "result": "ok",
         "outputs": [
           "data/reference/esco-occupations.json"
@@ -349,7 +369,16 @@
       ],
       "automated": true,
       "connector": "pipeline/sources/europass_qdr.py",
-      "licence_url": "https://eur-lex.europa.eu/eli/dec/2011/833/oj"
+      "licence_url": "https://eur-lex.europa.eu/eli/dec/2011/833/oj",
+      "status": {
+        "last_run": "2026-10-12T13:22:39+00:00",
+        "result": "ok",
+        "outputs": [
+          "data/published/vet-qualifications/meta.json",
+          "data/published/vet-qualifications/records.json",
+          "data/raw/europass-qdr/vocabulary-labels.json"
+        ]
+      }
     },
     {
       "id": "eurostat",
@@ -365,7 +394,7 @@
       "connector": "pipeline/sources/eurostat.py",
       "licence_url": "https://creativecommons.org/licenses/by/4.0/",
       "status": {
-        "last_run": "2026-10-01T10:08:04+00:00",
+        "last_run": "2026-10-12T13:22:50+00:00",
         "result": "ok",
         "outputs": [
           "data/published/indicators/eurostat-ed3sw-share-of-vet.json",
@@ -396,7 +425,7 @@
       "connector": "pipeline/sources/fi_statfin.py",
       "licence_url": "https://creativecommons.org/licenses/by/4.0/",
       "status": {
-        "last_run": "2026-10-01T10:08:09+00:00",
+        "last_run": "2026-10-12T13:22:57+00:00",
         "result": "ok",
         "outputs": [
           "data/published/indicators/fi-statfin-apprenticeship-new-students.json",
@@ -421,7 +450,7 @@
       "automated": true,
       "connector": "pipeline/sources/fr_dares.py",
       "status": {
-        "last_run": "2026-10-01T10:08:20+00:00",
+        "last_run": "2026-10-12T13:23:12+00:00",
         "result": "ok",
         "outputs": [
           "data/published/indicators/fr-dares-apprentices-stock.json",
@@ -446,7 +475,7 @@
       "connector": "pipeline/sources/ie_cso.py",
       "licence_url": "https://creativecommons.org/licenses/by/4.0/",
       "status": {
-        "last_run": "2026-10-01T10:08:22+00:00",
+        "last_run": "2026-10-12T13:23:15+00:00",
         "result": "ok",
         "outputs": [
           "data/published/indicators/ie-cso-apprentice-employment-rate.json",
@@ -470,7 +499,7 @@
       "automated": true,
       "connector": "pipeline/sources/nl_duo.py",
       "status": {
-        "last_run": "2026-10-01T10:08:26+00:00",
+        "last_run": "2026-10-12T13:23:20+00:00",
         "result": "ok",
         "outputs": [
           "data/published/indicators/nl-duo-bbl-students.json",
@@ -496,7 +525,7 @@
       "connector": "pipeline/sources/no_ssb.py",
       "licence_url": "https://creativecommons.org/licenses/by/4.0/",
       "status": {
-        "last_run": "2026-10-01T10:08:30+00:00",
+        "last_run": "2026-10-12T13:23:28+00:00",
         "result": "ok",
         "outputs": [
           "data/published/indicators/no-ssb-apprentices.json",
@@ -523,7 +552,7 @@
       "connector": "pipeline/sources/oecd.py",
       "licence_url": "https://creativecommons.org/licenses/by/4.0/",
       "status": {
-        "last_run": "2026-10-01T10:08:32+00:00",
+        "last_run": "2026-10-12T13:23:34+00:00",
         "result": "ok",
         "outputs": [
           "data/published/indicators/oecd-emp-rate-upper-secondary.json",
@@ -552,7 +581,7 @@
       "automated": true,
       "connector": "pipeline/sources/uis.py",
       "status": {
-        "last_run": "2026-10-01T10:08:33+00:00",
+        "last_run": "2026-10-12T13:23:37+00:00",
         "result": "ok",
         "outputs": [
           "data/published/indicators/uis-ev1524p-2t5-v.json",
@@ -582,7 +611,7 @@
       "connector": "pipeline/sources/uk_dfe.py",
       "licence_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
       "status": {
-        "last_run": "2026-10-01T10:08:37+00:00",
+        "last_run": "2026-10-12T13:23:41+00:00",
         "result": "ok",
         "outputs": [
           "data/published/indicators/uk-dfe-apprenticeship-achievements.json",

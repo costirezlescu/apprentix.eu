@@ -5066,6 +5066,256 @@
       "csv": "data/published/indicators/ch-bfs-qualifications-vet.csv"
     },
     {
+      "id": "de-destatis-apprentices-land",
+      "title": "Apprentices in dual vocational training by Land (Germany)",
+      "description": "Number of apprentices in dual vocational training on 31 December, by federal state (Land) of the training place and sex. 'DE' is the national total.",
+      "unit": "apprentices",
+      "topic": "Participation",
+      "national": true,
+      "source_label": "Destatis GENESIS 21211-0101: Apprentices",
+      "comparability": "National series from the Berufsbildungsstatistik (statistic 21211; reported by the competent bodies — chambers etc. — to the statistical offices). Covers dual vocational training under the Vocational Training Act (BBiG) and the Crafts Code (HwO) only; school-based VET (e.g. health and care schools, Berufsfachschulen) is not included. Stock on 31 December, by Land. Do not add to other countries' figures.",
+      "dims": [
+        {
+          "key": "land",
+          "label": "Land",
+          "values": {
+            "DE": "Germany",
+            "01": "Schleswig-Holstein",
+            "02": "Hamburg",
+            "03": "Lower Saxony",
+            "04": "Bremen",
+            "05": "North Rhine-Westphalia",
+            "06": "Hesse",
+            "07": "Rhineland-Palatinate",
+            "08": "Baden-Württemberg",
+            "09": "Bavaria",
+            "10": "Saarland",
+            "11": "Berlin",
+            "12": "Brandenburg",
+            "13": "Mecklenburg-Vorpommern",
+            "14": "Saxony",
+            "15": "Saxony-Anhalt",
+            "16": "Thuringia"
+          },
+          "default": "DE"
+        },
+        {
+          "key": "sex",
+          "label": "Sex",
+          "values": {
+            "T": "Total",
+            "F": "Females",
+            "M": "Males"
+          },
+          "default": "T"
+        }
+      ],
+      "provenance": {
+        "publisher": "Statistisches Bundesamt (Destatis)",
+        "dataset_code": "21211-0101",
+        "source_url": "https://www-genesis.destatis.de/datenbank/online/table/21211-0101",
+        "api_url": "https://genesis.destatis.de/genesisWS/rest/2020/data/tablefile (POST name=21211-0101&format=ffcsv&language=en)",
+        "licence": "dl-de/by-2-0",
+        "licence_url": "https://www.govdata.de/dl-de/by-2-0",
+        "citation": "Statistisches Bundesamt (Destatis), GENESIS-Online, table 21211-0101 (Berufsbildungsstatistik). Datenlizenz Deutschland – Namensnennung – Version 2.0.",
+        "retrieved_at": "2026-10-12T13:17:15+00:00",
+        "raw_file": "data/raw/de-destatis/2026-10-12-21211-0101.csv",
+        "raw_sha256": "4a4fbc61744c80f6a7265d7f2f6ac594c0c66c28f2064c4e346f28a83f98bdb3"
+      },
+      "coverage": {
+        "geos": [
+          "DE"
+        ],
+        "time": [
+          "2008",
+          "2025"
+        ],
+        "observations": 918
+      },
+      "path": "data/published/indicators/de-destatis-apprentices-land.json",
+      "csv": "data/published/indicators/de-destatis-apprentices-land.csv"
+    },
+    {
+      "id": "de-destatis-apprentices",
+      "title": "Apprentices in dual vocational training (Germany)",
+      "description": "Number of apprentices (Auszubildende) in dual vocational training in Germany on 31 December, by sex and training area (Ausbildungsbereich: industry and trade, crafts, public service, agriculture, liberal professions, housekeeping, shipping).",
+      "unit": "apprentices",
+      "topic": "Participation",
+      "national": true,
+      "source_label": "Destatis GENESIS 21211-0001: Apprentices",
+      "comparability": "National series from the Berufsbildungsstatistik (statistic 21211; reported by the competent bodies — chambers etc. — to the statistical offices). Covers dual vocational training under the Vocational Training Act (BBiG) and the Crafts Code (HwO) only; school-based VET (e.g. health and care schools, Berufsfachschulen) is not included. Stock on 31 December; counts training relationships (contracts), not persons. Do not add to other countries' figures.",
+      "dims": [
+        {
+          "key": "sex",
+          "label": "Sex",
+          "values": {
+            "T": "Total",
+            "F": "Females",
+            "M": "Males"
+          },
+          "default": "T"
+        },
+        {
+          "key": "training_area",
+          "label": "Training area",
+          "values": {
+            "TOTAL": "Total",
+            "AUSB-FB": "Liberal professions",
+            "AUSB-HAUS": "Housekeeping",
+            "AUSB-HW": "Crafts",
+            "AUSB-IH": "Industry and trade",
+            "AUSB-LW": "Agriculture",
+            "AUSB-OED": "Public service"
+          },
+          "default": "TOTAL"
+        }
+      ],
+      "provenance": {
+        "publisher": "Statistisches Bundesamt (Destatis)",
+        "dataset_code": "21211-0001",
+        "source_url": "https://www-genesis.destatis.de/datenbank/online/table/21211-0001",
+        "api_url": "https://genesis.destatis.de/genesisWS/rest/2020/data/tablefile (POST name=21211-0001&format=ffcsv&language=en)",
+        "licence": "dl-de/by-2-0",
+        "licence_url": "https://www.govdata.de/dl-de/by-2-0",
+        "citation": "Statistisches Bundesamt (Destatis), GENESIS-Online, table 21211-0001 (Berufsbildungsstatistik). Datenlizenz Deutschland – Namensnennung – Version 2.0.",
+        "retrieved_at": "2026-10-12T13:16:53+00:00",
+        "raw_file": "data/raw/de-destatis/2026-10-12-21211-0001.csv",
+        "raw_sha256": "cfcc2ef4609b87fade9d28847fa48d928134620494d19d76d8c44d5e808f9d3a"
+      },
+      "coverage": {
+        "geos": [
+          "DE"
+        ],
+        "time": [
+          "2008",
+          "2025"
+        ],
+        "observations": 378
+      },
+      "path": "data/published/indicators/de-destatis-apprentices.json",
+      "csv": "data/published/indicators/de-destatis-apprentices.csv"
+    },
+    {
+      "id": "de-destatis-exams-passed",
+      "title": "Final apprenticeship examinations passed (Germany)",
+      "description": "Number of final examinations (Abschlussprüfungen) passed in dual vocational training in Germany during the calendar year, by sex and training area.",
+      "unit": "examinations",
+      "topic": "Outcomes",
+      "national": true,
+      "source_label": "Destatis GENESIS 21211-0007: Final examination passed",
+      "comparability": "National series from the Berufsbildungsstatistik (statistic 21211; reported by the competent bodies — chambers etc. — to the statistical offices). Covers dual vocational training under the Vocational Training Act (BBiG) and the Crafts Code (HwO) only; school-based VET (e.g. health and care schools, Berufsfachschulen) is not included. Flow: passed examinations in the calendar year (including external candidates admitted without a training contract, as reported by Destatis). Do not add to other countries' figures.",
+      "dims": [
+        {
+          "key": "sex",
+          "label": "Sex",
+          "values": {
+            "T": "Total",
+            "F": "Females",
+            "M": "Males"
+          },
+          "default": "T"
+        },
+        {
+          "key": "training_area",
+          "label": "Training area",
+          "values": {
+            "TOTAL": "Total",
+            "AUSB-FB": "Liberal professions",
+            "AUSB-HAUS": "Housekeeping",
+            "AUSB-HW": "Crafts",
+            "AUSB-IH": "Industry and trade",
+            "AUSB-LW": "Agriculture",
+            "AUSB-OED": "Public service"
+          },
+          "default": "TOTAL"
+        }
+      ],
+      "provenance": {
+        "publisher": "Statistisches Bundesamt (Destatis)",
+        "dataset_code": "21211-0007",
+        "source_url": "https://www-genesis.destatis.de/datenbank/online/table/21211-0007",
+        "api_url": "https://genesis.destatis.de/genesisWS/rest/2020/data/tablefile (POST name=21211-0007&format=ffcsv&language=en)",
+        "licence": "dl-de/by-2-0",
+        "licence_url": "https://www.govdata.de/dl-de/by-2-0",
+        "citation": "Statistisches Bundesamt (Destatis), GENESIS-Online, table 21211-0007 (Berufsbildungsstatistik). Datenlizenz Deutschland – Namensnennung – Version 2.0.",
+        "retrieved_at": "2026-10-12T13:17:06+00:00",
+        "raw_file": "data/raw/de-destatis/2026-10-12-21211-0007.csv",
+        "raw_sha256": "4d9da623466435eff6874c78748efcf3c29d6f445b9e84fadd3a0d599392d1cf"
+      },
+      "coverage": {
+        "geos": [
+          "DE"
+        ],
+        "time": [
+          "2008",
+          "2025"
+        ],
+        "observations": 378
+      },
+      "path": "data/published/indicators/de-destatis-exams-passed.json",
+      "csv": "data/published/indicators/de-destatis-exams-passed.csv"
+    },
+    {
+      "id": "de-destatis-new-contracts",
+      "title": "Newly concluded apprenticeship contracts (Germany)",
+      "description": "Number of newly concluded training contracts (neu abgeschlossene Ausbildungsverträge) in dual vocational training in Germany during the calendar year, by sex and training area.",
+      "unit": "contracts",
+      "topic": "Participation",
+      "national": true,
+      "source_label": "Destatis GENESIS 21211-0004: Newly concluded training contracts",
+      "comparability": "National series from the Berufsbildungsstatistik (statistic 21211; reported by the competent bodies — chambers etc. — to the statistical offices). Covers dual vocational training under the Vocational Training Act (BBiG) and the Crafts Code (HwO) only; school-based VET (e.g. health and care schools, Berufsfachschulen) is not included. Flow: contracts concluded between 1 January and 31 December and still recorded by the competent body (Destatis count). BIBB's figure for new contracts (survey at 30 September, see de-bibb) uses a different reference period and is not identical. Do not add to other countries' figures.",
+      "dims": [
+        {
+          "key": "sex",
+          "label": "Sex",
+          "values": {
+            "T": "Total",
+            "F": "Females",
+            "M": "Males"
+          },
+          "default": "T"
+        },
+        {
+          "key": "training_area",
+          "label": "Training area",
+          "values": {
+            "TOTAL": "Total",
+            "AUSB-FB": "Liberal professions",
+            "AUSB-HAUS": "Housekeeping",
+            "AUSB-HW": "Crafts",
+            "AUSB-IH": "Industry and trade",
+            "AUSB-LW": "Agriculture",
+            "AUSB-OED": "Public service"
+          },
+          "default": "TOTAL"
+        }
+      ],
+      "provenance": {
+        "publisher": "Statistisches Bundesamt (Destatis)",
+        "dataset_code": "21211-0004",
+        "source_url": "https://www-genesis.destatis.de/datenbank/online/table/21211-0004",
+        "api_url": "https://genesis.destatis.de/genesisWS/rest/2020/data/tablefile (POST name=21211-0004&format=ffcsv&language=en)",
+        "licence": "dl-de/by-2-0",
+        "licence_url": "https://www.govdata.de/dl-de/by-2-0",
+        "citation": "Statistisches Bundesamt (Destatis), GENESIS-Online, table 21211-0004 (Berufsbildungsstatistik). Datenlizenz Deutschland – Namensnennung – Version 2.0.",
+        "retrieved_at": "2026-10-12T13:17:00+00:00",
+        "raw_file": "data/raw/de-destatis/2026-10-12-21211-0004.csv",
+        "raw_sha256": "b2c80dcc270ca239526572dc76b99b7862f2ef48c7421063e1da2be3a1fde72a"
+      },
+      "coverage": {
+        "geos": [
+          "DE"
+        ],
+        "time": [
+          "2008",
+          "2025"
+        ],
+        "observations": 378
+      },
+      "path": "data/published/indicators/de-destatis-new-contracts.json",
+      "csv": "data/published/indicators/de-destatis-new-contracts.csv"
+    },
+    {
       "id": "erasmus-cove-participations",
       "title": "Participations in Centres of Vocational Excellence projects",
       "description": "Number of organisations from each country taking part in Erasmus+ Centres of Vocational Excellence (CoVE) projects, by call year and role (coordinator, partner, associated partner, affiliated entity).",
@@ -5182,82 +5432,82 @@
         "licence": "CC-BY-4.0",
         "licence_url": "https://creativecommons.org/licenses/by/4.0/",
         "citation": "European Commission, Erasmus+ projects lists for download (KA1 Learning Mobility of Individuals), aggregated by Apprentix.",
-        "source_updated": "2026-10-01",
-        "retrieved_at": "2026-10-01T09:38:06+00:00",
+        "source_updated": "2026-10-12",
+        "retrieved_at": "2026-10-12T13:20:39+00:00",
         "licence_note": "Commission legal notice (https://commission.europa.eu/legal-notice_en): CC BY 4.0 under Decision 2011/833/EU.",
         "raw_note": "Source CSVs (~90 MB each) are not stored; URLs and SHA-256 hashes of the files used are listed below.",
         "files": [
           {
             "call_year": "2014",
-            "url": "https://ec.europa.eu/programmes//erasmus-plus/project-result-content/aa12fcc2-dd48-4024-8a83-f15efb31dd80/ErasmusPlus_KA1_2014_LearningMobilityOfIndividuals_Projects_Overview_2026-10-01.csv",
+            "url": "https://ec.europa.eu/programmes//erasmus-plus/project-result-content/aa12fcc2-dd48-4024-8a83-f15efb31dd80/ErasmusPlus_KA1_2014_LearningMobilityOfIndividuals_Projects_Overview_2026-10-12.csv",
             "bytes": 63317299,
             "sha256": "ee7571efd8096a6070398480b1b7b616d084fb03c845eeaea9730490cde5f524"
           },
           {
             "call_year": "2015",
-            "url": "https://ec.europa.eu/programmes//erasmus-plus/project-result-content/ab5748d1-3927-4210-a5aa-fcc02ddb75ea/ErasmusPlus_KA1_2015_LearningMobilityOfIndividuals_Projects_Overview_2026-10-01.csv",
+            "url": "https://ec.europa.eu/programmes//erasmus-plus/project-result-content/ab5748d1-3927-4210-a5aa-fcc02ddb75ea/ErasmusPlus_KA1_2015_LearningMobilityOfIndividuals_Projects_Overview_2026-10-12.csv",
             "bytes": 68417315,
             "sha256": "e3697eb6ae119e23e0f73e8066fea3312d730ed65fb55ed7829250ed491662a7"
           },
           {
             "call_year": "2016",
-            "url": "https://ec.europa.eu/programmes//erasmus-plus/project-result-content/9b0da927-e046-48dd-bbfe-0eaa89730a28/ErasmusPlus_KA1_2016_LearningMobilityOfIndividuals_Projects_Overview_2026-10-01.csv",
+            "url": "https://ec.europa.eu/programmes//erasmus-plus/project-result-content/9b0da927-e046-48dd-bbfe-0eaa89730a28/ErasmusPlus_KA1_2016_LearningMobilityOfIndividuals_Projects_Overview_2026-10-12.csv",
             "bytes": 73532824,
             "sha256": "53ea218a76b8177851087fd5f4ee7212c5962d6ddc0f18cdd14182cb5479cd1e"
           },
           {
             "call_year": "2017",
-            "url": "https://ec.europa.eu/programmes//erasmus-plus/project-result-content/8fd9c6e3-8a4c-40cd-945d-d4d78e5c8d6a/ErasmusPlus_KA1_2017_LearningMobilityOfIndividuals_Projects_Overview_2026-10-01.csv",
+            "url": "https://ec.europa.eu/programmes//erasmus-plus/project-result-content/8fd9c6e3-8a4c-40cd-945d-d4d78e5c8d6a/ErasmusPlus_KA1_2017_LearningMobilityOfIndividuals_Projects_Overview_2026-10-12.csv",
             "bytes": 82836543,
             "sha256": "61f0f1f26250e461ce9d24ce787f04fbd5e2f626bce4e380f2a1769e768ab032"
           },
           {
             "call_year": "2018",
-            "url": "https://ec.europa.eu/programmes//erasmus-plus/project-result-content/88416313-6569-4abe-bf0b-ebafbff894a9/ErasmusPlus_KA1_2018_LearningMobilityOfIndividuals_Projects_Overview_2026-10-01.csv",
-            "bytes": 87237030,
-            "sha256": "f79ad9e74fe008954689bce0d4befe6f0aca1a313008d5ea5470a2263277c188"
+            "url": "https://ec.europa.eu/programmes//erasmus-plus/project-result-content/88416313-6569-4abe-bf0b-ebafbff894a9/ErasmusPlus_KA1_2018_LearningMobilityOfIndividuals_Projects_Overview_2026-10-12.csv",
+            "bytes": 87234233,
+            "sha256": "a7ae833a9896d38b10adda125481c9c3ef0d479f6b469e6533e9bcaa22d60d47"
           },
           {
             "call_year": "2019",
-            "url": "https://ec.europa.eu/programmes//erasmus-plus/project-result-content/c496758a-4519-483f-bd28-5ce819c12cc9/ErasmusPlus_KA1_2019_LearningMobilityOfIndividuals_Projects_Overview_2026-10-01.csv",
+            "url": "https://ec.europa.eu/programmes//erasmus-plus/project-result-content/c496758a-4519-483f-bd28-5ce819c12cc9/ErasmusPlus_KA1_2019_LearningMobilityOfIndividuals_Projects_Overview_2026-10-12.csv",
             "bytes": 88103204,
             "sha256": "85507d4d5bf527e8b47f12b542a587fd9477326ec4ae32bbcfb4bee7ecc1e3e8"
           },
           {
             "call_year": "2020",
-            "url": "https://ec.europa.eu/programmes//erasmus-plus/project-result-content/0ea9d3c7-767d-4101-bb15-dc22fef2024e/ErasmusPlus_KA1_2020_LearningMobilityOfIndividuals_Projects_Overview_2026-10-01.csv",
+            "url": "https://ec.europa.eu/programmes//erasmus-plus/project-result-content/0ea9d3c7-767d-4101-bb15-dc22fef2024e/ErasmusPlus_KA1_2020_LearningMobilityOfIndividuals_Projects_Overview_2026-10-12.csv",
             "bytes": 89394210,
             "sha256": "0674e0bcf65fd2d5bfbb9974d9026dd858c6d6c5d20ecda46b2aaf1ef9d3aa11"
           },
           {
             "call_year": "2021",
-            "url": "https://ec.europa.eu/programmes//erasmus-plus/project-result-content/9248e5e0-4677-46d4-afb7-55a4249ea334/ErasmusPlus_KA1_2021_LearningMobilityOfIndividuals_Projects_Overview_2026-10-01.csv",
-            "bytes": 67051927,
-            "sha256": "acf55e2a6451b54d44fc800317c72b3bfd0316f2d8b86ad8deb05a2431a449c9"
+            "url": "https://ec.europa.eu/programmes//erasmus-plus/project-result-content/9248e5e0-4677-46d4-afb7-55a4249ea334/ErasmusPlus_KA1_2021_LearningMobilityOfIndividuals_Projects_Overview_2026-10-12.csv",
+            "bytes": 67050289,
+            "sha256": "de8b57964232af965c3b769c9d2ab020a41ea141f0d62c536650f4d3355ce02c"
           },
           {
             "call_year": "2022",
-            "url": "https://ec.europa.eu/programmes//erasmus-plus/project-result-content/331b1343-f3f1-4d4e-8792-df54eb1432aa/ErasmusPlus_KA1_2022_LearningMobilityOfIndividuals_Projects_Overview_2026-10-01.csv",
-            "bytes": 103607791,
-            "sha256": "a40b6b33e1b2138f32b4b6a4610b28451a7133ee85a0d22d9f96d3ec37aa78ee"
+            "url": "https://ec.europa.eu/programmes//erasmus-plus/project-result-content/331b1343-f3f1-4d4e-8792-df54eb1432aa/ErasmusPlus_KA1_2022_LearningMobilityOfIndividuals_Projects_Overview_2026-10-12.csv",
+            "bytes": 103607410,
+            "sha256": "0129f9409b5c67bc76fca8f1a1bb4f3d57ff1885322fe5d0f2faf24002a5e9ae"
           },
           {
             "call_year": "2023",
-            "url": "https://ec.europa.eu/programmes//erasmus-plus/project-result-content/04ddbe7d-f8a4-4174-a54e-f7fab752215e/ErasmusPlus_KA1_2023_LearningMobilityOfIndividuals_Projects_Overview_2026-10-01.csv",
-            "bytes": 106339424,
-            "sha256": "f530f8adba6f941c0c07be22fff0f3996da161cb39aeb91d3de78368b9e5a21f"
+            "url": "https://ec.europa.eu/programmes//erasmus-plus/project-result-content/04ddbe7d-f8a4-4174-a54e-f7fab752215e/ErasmusPlus_KA1_2023_LearningMobilityOfIndividuals_Projects_Overview_2026-10-12.csv",
+            "bytes": 106364499,
+            "sha256": "129457e44986492bbc5510b5b8dcc15726ae0964d84d8b0fcf2948f496e55cf2"
           },
           {
             "call_year": "2024",
-            "url": "https://ec.europa.eu/programmes//erasmus-plus/project-result-content/beb258e2-f6b6-4baa-bb03-4f231b24d8a0/ErasmusPlus_KA1_2024_LearningMobilityOfIndividuals_Projects_Overview_2026-10-01.csv",
-            "bytes": 90631326,
-            "sha256": "21c005909a3334f1d90ff03425f340f4b3a6aedb99df3809d292942460a92e21"
+            "url": "https://ec.europa.eu/programmes//erasmus-plus/project-result-content/beb258e2-f6b6-4baa-bb03-4f231b24d8a0/ErasmusPlus_KA1_2024_LearningMobilityOfIndividuals_Projects_Overview_2026-10-12.csv",
+            "bytes": 91312569,
+            "sha256": "b3fa5d0db8597555b835de3d078f11634f90425c4223e43cd40df3efd042eeea"
           },
           {
             "call_year": "2025",
-            "url": "https://ec.europa.eu/programmes//erasmus-plus/project-result-content/aaf7e8fa-c4f1-4d9c-8e91-d71046fec68b/ErasmusPlus_KA1_2025_LearningMobilityOfIndividuals_Projects_Overview_2026-10-01.csv",
-            "bytes": 92368301,
-            "sha256": "e1563f425c601d24a9fc15c59547a278f08aba3d86b5a21f9ea9cdb6aa319e3c"
+            "url": "https://ec.europa.eu/programmes//erasmus-plus/project-result-content/aaf7e8fa-c4f1-4d9c-8e91-d71046fec68b/ErasmusPlus_KA1_2025_LearningMobilityOfIndividuals_Projects_Overview_2026-10-12.csv",
+            "bytes": 92594496,
+            "sha256": "41f345d8329e4c729ecb21bca7c4c3a214ee9348a4a8a4a781d7f7b3f2461d1a"
           }
         ]
       },
@@ -5337,82 +5587,82 @@
         "licence": "CC-BY-4.0",
         "licence_url": "https://creativecommons.org/licenses/by/4.0/",
         "citation": "European Commission, Erasmus+ projects lists for download (KA1 Learning Mobility of Individuals), aggregated by Apprentix.",
-        "source_updated": "2026-10-01",
-        "retrieved_at": "2026-10-01T09:38:06+00:00",
+        "source_updated": "2026-10-12",
+        "retrieved_at": "2026-10-12T13:20:39+00:00",
         "licence_note": "Commission legal notice (https://commission.europa.eu/legal-notice_en): CC BY 4.0 under Decision 2011/833/EU.",
         "raw_note": "Source CSVs (~90 MB each) are not stored; URLs and SHA-256 hashes of the files used are listed below.",
         "files": [
           {
             "call_year": "2014",
-            "url": "https://ec.europa.eu/programmes//erasmus-plus/project-result-content/aa12fcc2-dd48-4024-8a83-f15efb31dd80/ErasmusPlus_KA1_2014_LearningMobilityOfIndividuals_Projects_Overview_2026-10-01.csv",
+            "url": "https://ec.europa.eu/programmes//erasmus-plus/project-result-content/aa12fcc2-dd48-4024-8a83-f15efb31dd80/ErasmusPlus_KA1_2014_LearningMobilityOfIndividuals_Projects_Overview_2026-10-12.csv",
             "bytes": 63317299,
             "sha256": "ee7571efd8096a6070398480b1b7b616d084fb03c845eeaea9730490cde5f524"
           },
           {
             "call_year": "2015",
-            "url": "https://ec.europa.eu/programmes//erasmus-plus/project-result-content/ab5748d1-3927-4210-a5aa-fcc02ddb75ea/ErasmusPlus_KA1_2015_LearningMobilityOfIndividuals_Projects_Overview_2026-10-01.csv",
+            "url": "https://ec.europa.eu/programmes//erasmus-plus/project-result-content/ab5748d1-3927-4210-a5aa-fcc02ddb75ea/ErasmusPlus_KA1_2015_LearningMobilityOfIndividuals_Projects_Overview_2026-10-12.csv",
             "bytes": 68417315,
             "sha256": "e3697eb6ae119e23e0f73e8066fea3312d730ed65fb55ed7829250ed491662a7"
           },
           {
             "call_year": "2016",
-            "url": "https://ec.europa.eu/programmes//erasmus-plus/project-result-content/9b0da927-e046-48dd-bbfe-0eaa89730a28/ErasmusPlus_KA1_2016_LearningMobilityOfIndividuals_Projects_Overview_2026-10-01.csv",
+            "url": "https://ec.europa.eu/programmes//erasmus-plus/project-result-content/9b0da927-e046-48dd-bbfe-0eaa89730a28/ErasmusPlus_KA1_2016_LearningMobilityOfIndividuals_Projects_Overview_2026-10-12.csv",
             "bytes": 73532824,
             "sha256": "53ea218a76b8177851087fd5f4ee7212c5962d6ddc0f18cdd14182cb5479cd1e"
           },
           {
             "call_year": "2017",
-            "url": "https://ec.europa.eu/programmes//erasmus-plus/project-result-content/8fd9c6e3-8a4c-40cd-945d-d4d78e5c8d6a/ErasmusPlus_KA1_2017_LearningMobilityOfIndividuals_Projects_Overview_2026-10-01.csv",
+            "url": "https://ec.europa.eu/programmes//erasmus-plus/project-result-content/8fd9c6e3-8a4c-40cd-945d-d4d78e5c8d6a/ErasmusPlus_KA1_2017_LearningMobilityOfIndividuals_Projects_Overview_2026-10-12.csv",
             "bytes": 82836543,
             "sha256": "61f0f1f26250e461ce9d24ce787f04fbd5e2f626bce4e380f2a1769e768ab032"
           },
           {
             "call_year": "2018",
-            "url": "https://ec.europa.eu/programmes//erasmus-plus/project-result-content/88416313-6569-4abe-bf0b-ebafbff894a9/ErasmusPlus_KA1_2018_LearningMobilityOfIndividuals_Projects_Overview_2026-10-01.csv",
-            "bytes": 87237030,
-            "sha256": "f79ad9e74fe008954689bce0d4befe6f0aca1a313008d5ea5470a2263277c188"
+            "url": "https://ec.europa.eu/programmes//erasmus-plus/project-result-content/88416313-6569-4abe-bf0b-ebafbff894a9/ErasmusPlus_KA1_2018_LearningMobilityOfIndividuals_Projects_Overview_2026-10-12.csv",
+            "bytes": 87234233,
+            "sha256": "a7ae833a9896d38b10adda125481c9c3ef0d479f6b469e6533e9bcaa22d60d47"
           },
           {
             "call_year": "2019",
-            "url": "https://ec.europa.eu/programmes//erasmus-plus/project-result-content/c496758a-4519-483f-bd28-5ce819c12cc9/ErasmusPlus_KA1_2019_LearningMobilityOfIndividuals_Projects_Overview_2026-10-01.csv",
+            "url": "https://ec.europa.eu/programmes//erasmus-plus/project-result-content/c496758a-4519-483f-bd28-5ce819c12cc9/ErasmusPlus_KA1_2019_LearningMobilityOfIndividuals_Projects_Overview_2026-10-12.csv",
             "bytes": 88103204,
             "sha256": "85507d4d5bf527e8b47f12b542a587fd9477326ec4ae32bbcfb4bee7ecc1e3e8"
           },
           {
             "call_year": "2020",
-            "url": "https://ec.europa.eu/programmes//erasmus-plus/project-result-content/0ea9d3c7-767d-4101-bb15-dc22fef2024e/ErasmusPlus_KA1_2020_LearningMobilityOfIndividuals_Projects_Overview_2026-10-01.csv",
+            "url": "https://ec.europa.eu/programmes//erasmus-plus/project-result-content/0ea9d3c7-767d-4101-bb15-dc22fef2024e/ErasmusPlus_KA1_2020_LearningMobilityOfIndividuals_Projects_Overview_2026-10-12.csv",
             "bytes": 89394210,
             "sha256": "0674e0bcf65fd2d5bfbb9974d9026dd858c6d6c5d20ecda46b2aaf1ef9d3aa11"
           },
           {
             "call_year": "2021",
-            "url": "https://ec.europa.eu/programmes//erasmus-plus/project-result-content/9248e5e0-4677-46d4-afb7-55a4249ea334/ErasmusPlus_KA1_2021_LearningMobilityOfIndividuals_Projects_Overview_2026-10-01.csv",
-            "bytes": 67051927,
-            "sha256": "acf55e2a6451b54d44fc800317c72b3bfd0316f2d8b86ad8deb05a2431a449c9"
+            "url": "https://ec.europa.eu/programmes//erasmus-plus/project-result-content/9248e5e0-4677-46d4-afb7-55a4249ea334/ErasmusPlus_KA1_2021_LearningMobilityOfIndividuals_Projects_Overview_2026-10-12.csv",
+            "bytes": 67050289,
+            "sha256": "de8b57964232af965c3b769c9d2ab020a41ea141f0d62c536650f4d3355ce02c"
           },
           {
             "call_year": "2022",
-            "url": "https://ec.europa.eu/programmes//erasmus-plus/project-result-content/331b1343-f3f1-4d4e-8792-df54eb1432aa/ErasmusPlus_KA1_2022_LearningMobilityOfIndividuals_Projects_Overview_2026-10-01.csv",
-            "bytes": 103607791,
-            "sha256": "a40b6b33e1b2138f32b4b6a4610b28451a7133ee85a0d22d9f96d3ec37aa78ee"
+            "url": "https://ec.europa.eu/programmes//erasmus-plus/project-result-content/331b1343-f3f1-4d4e-8792-df54eb1432aa/ErasmusPlus_KA1_2022_LearningMobilityOfIndividuals_Projects_Overview_2026-10-12.csv",
+            "bytes": 103607410,
+            "sha256": "0129f9409b5c67bc76fca8f1a1bb4f3d57ff1885322fe5d0f2faf24002a5e9ae"
           },
           {
             "call_year": "2023",
-            "url": "https://ec.europa.eu/programmes//erasmus-plus/project-result-content/04ddbe7d-f8a4-4174-a54e-f7fab752215e/ErasmusPlus_KA1_2023_LearningMobilityOfIndividuals_Projects_Overview_2026-10-01.csv",
-            "bytes": 106339424,
-            "sha256": "f530f8adba6f941c0c07be22fff0f3996da161cb39aeb91d3de78368b9e5a21f"
+            "url": "https://ec.europa.eu/programmes//erasmus-plus/project-result-content/04ddbe7d-f8a4-4174-a54e-f7fab752215e/ErasmusPlus_KA1_2023_LearningMobilityOfIndividuals_Projects_Overview_2026-10-12.csv",
+            "bytes": 106364499,
+            "sha256": "129457e44986492bbc5510b5b8dcc15726ae0964d84d8b0fcf2948f496e55cf2"
           },
           {
             "call_year": "2024",
-            "url": "https://ec.europa.eu/programmes//erasmus-plus/project-result-content/beb258e2-f6b6-4baa-bb03-4f231b24d8a0/ErasmusPlus_KA1_2024_LearningMobilityOfIndividuals_Projects_Overview_2026-10-01.csv",
-            "bytes": 90631326,
-            "sha256": "21c005909a3334f1d90ff03425f340f4b3a6aedb99df3809d292942460a92e21"
+            "url": "https://ec.europa.eu/programmes//erasmus-plus/project-result-content/beb258e2-f6b6-4baa-bb03-4f231b24d8a0/ErasmusPlus_KA1_2024_LearningMobilityOfIndividuals_Projects_Overview_2026-10-12.csv",
+            "bytes": 91312569,
+            "sha256": "b3fa5d0db8597555b835de3d078f11634f90425c4223e43cd40df3efd042eeea"
           },
           {
             "call_year": "2025",
-            "url": "https://ec.europa.eu/programmes//erasmus-plus/project-result-content/aaf7e8fa-c4f1-4d9c-8e91-d71046fec68b/ErasmusPlus_KA1_2025_LearningMobilityOfIndividuals_Projects_Overview_2026-10-01.csv",
-            "bytes": 92368301,
-            "sha256": "e1563f425c601d24a9fc15c59547a278f08aba3d86b5a21f9ea9cdb6aa319e3c"
+            "url": "https://ec.europa.eu/programmes//erasmus-plus/project-result-content/aaf7e8fa-c4f1-4d9c-8e91-d71046fec68b/ErasmusPlus_KA1_2025_LearningMobilityOfIndividuals_Projects_Overview_2026-10-12.csv",
+            "bytes": 92594496,
+            "sha256": "41f345d8329e4c729ecb21bca7c4c3a214ee9348a4a8a4a781d7f7b3f2461d1a"
           }
         ]
       },
@@ -5619,10 +5869,10 @@
         "licence": "CC-BY-4.0",
         "licence_url": "https://creativecommons.org/licenses/by/4.0/",
         "citation": "Apprentix calculation from Eurostat (educ_uoe_enrs04).",
-        "source_updated": "2026-08-11T23:00:00+0200",
-        "retrieved_at": "2026-10-01T12:00:00+00:00",
-        "raw_file": "data/raw/eurostat/2026-10-01-educ_uoe_enrs04-ed35.json",
-        "raw_sha256": "f614bc8a7962913783b0bb7f25c67b54cf229967b7df0608173ced7560e209b2"
+        "source_updated": "2026-10-06T23:00:00+0200",
+        "retrieved_at": "2026-10-12T13:22:50+00:00",
+        "raw_file": "data/raw/eurostat/2026-10-12-educ_uoe_enrs04-ed35.json",
+        "raw_sha256": "63c3893789a26d3eca09598202c36cab13d525659a000b2b508b436f0e5b765c"
       },
       "coverage": {
         "geos": [
@@ -5864,10 +6114,10 @@
         "licence": "CC-BY-4.0",
         "licence_url": "https://creativecommons.org/licenses/by/4.0/",
         "citation": "Eurostat (educ_uoe_enrs04), Pupils enrolled in upper-secondary education by programme orientation, sex, type of institution and intensity of participation. Retrieved via the Eurostat Statistics API.",
-        "source_updated": "2026-08-11T23:00:00+0200",
-        "retrieved_at": "2026-10-01T12:00:00+00:00",
-        "raw_file": "data/raw/eurostat/2026-10-01-eurostat-educ_uoe_enrs04-ed3sw.json",
-        "raw_sha256": "f2c6c6e8e985ce96239ee6ce419cedfbbbbe0468fb10aaa19bde4d5e9ddc78d3"
+        "source_updated": "2026-10-06T23:00:00+0200",
+        "retrieved_at": "2026-10-12T13:22:46+00:00",
+        "raw_file": "data/raw/eurostat/2026-10-12-eurostat-educ_uoe_enrs04-ed3sw.json",
+        "raw_sha256": "a64dc80cdd0c37a7d6de3b6717ea27399e15961295eed635712d90e6d0963a0f"
       },
       "coverage": {
         "geos": [
@@ -5940,10 +6190,10 @@
         "licence": "CC-BY-4.0",
         "licence_url": "https://creativecommons.org/licenses/by/4.0/",
         "citation": "Eurostat (educ_uoe_enrs07), Pupils enrolled in post-secondary non-tertiary education by programme orientation, sex, type of institution and intensity of participation. Retrieved via the Eurostat Statistics API.",
-        "source_updated": "2026-08-11T23:00:00+0200",
-        "retrieved_at": "2026-10-01T12:00:00+00:00",
-        "raw_file": "data/raw/eurostat/2026-10-01-eurostat-educ_uoe_enrs07-ed4sw.json",
-        "raw_sha256": "8d721eb4611383c6ca7c6e839a2a0b0b241cc814ddcde23ab13e5b4a7cbba442"
+        "source_updated": "2026-10-06T23:00:00+0200",
+        "retrieved_at": "2026-10-12T13:22:47+00:00",
+        "raw_file": "data/raw/eurostat/2026-10-12-eurostat-educ_uoe_enrs07-ed4sw.json",
+        "raw_sha256": "f667ff436aa01464b5062616558c66751609b2821c00cda2bed8e889d99f9e74"
       },
       "coverage": {
         "geos": [
@@ -6988,9 +7238,9 @@
         "licence": "CC-BY-4.0",
         "licence_url": "https://creativecommons.org/licenses/by/4.0/",
         "citation": "OECD, Education at a Glance: Share of students enrolled in school and work-based programmes (DSD_EAG_UOE_NON_FIN_STUD@DF_UOE_NF_SHARE_VET). Retrieved via the OECD Data Explorer SDMX API.",
-        "retrieved_at": "2026-10-01T09:50:34+00:00",
-        "raw_file": "data/raw/oecd/2026-10-01-oecd-share-vet-sw.csv",
-        "raw_sha256": "ab36d762be1fbef9b3cdeb2cdcb19d9e1f3fc9e74599386508e66d5df5d653c3"
+        "retrieved_at": "2026-10-12T13:23:31+00:00",
+        "raw_file": "data/raw/oecd/2026-10-12-oecd-share-vet-sw.csv",
+        "raw_sha256": "15f96aaa0678aa1248c9bda77b4281e2715690e6c1a55efa6232e4edf1d3d117"
       },
       "coverage": {
         "geos": [

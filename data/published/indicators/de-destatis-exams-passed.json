@@ -1,0 +1,3462 @@
+{
+  "id": "de-destatis-exams-passed",
+  "title": "Final apprenticeship examinations passed (Germany)",
+  "description": "Number of final examinations (Abschlussprüfungen) passed in dual vocational training in Germany during the calendar year, by sex and training area.",
+  "unit": "examinations",
+  "topic": "Outcomes",
+  "national": true,
+  "source_label": "Destatis GENESIS 21211-0007: Final examination passed",
+  "comparability": "National series from the Berufsbildungsstatistik (statistic 21211; reported by the competent bodies — chambers etc. — to the statistical offices). Covers dual vocational training under the Vocational Training Act (BBiG) and the Crafts Code (HwO) only; school-based VET (e.g. health and care schools, Berufsfachschulen) is not included. Flow: passed examinations in the calendar year (including external candidates admitted without a training contract, as reported by Destatis). Do not add to other countries' figures.",
+  "dims": [
+    {
+      "key": "sex",
+      "label": "Sex",
+      "values": {
+        "T": "Total",
+        "F": "Females",
+        "M": "Males"
+      },
+      "default": "T"
+    },
+    {
+      "key": "training_area",
+      "label": "Training area",
+      "values": {
+        "TOTAL": "Total",
+        "AUSB-FB": "Liberal professions",
+        "AUSB-HAUS": "Housekeeping",
+        "AUSB-HW": "Crafts",
+        "AUSB-IH": "Industry and trade",
+        "AUSB-LW": "Agriculture",
+        "AUSB-OED": "Public service"
+      },
+      "default": "TOTAL"
+    }
+  ],
+  "provenance": {
+    "publisher": "Statistisches Bundesamt (Destatis)",
+    "dataset_code": "21211-0007",
+    "source_url": "https://www-genesis.destatis.de/datenbank/online/table/21211-0007",
+    "api_url": "https://genesis.destatis.de/genesisWS/rest/2020/data/tablefile (POST name=21211-0007&format=ffcsv&language=en)",
+    "licence": "dl-de/by-2-0",
+    "licence_url": "https://www.govdata.de/dl-de/by-2-0",
+    "citation": "Statistisches Bundesamt (Destatis), GENESIS-Online, table 21211-0007 (Berufsbildungsstatistik). Datenlizenz Deutschland – Namensnennung – Version 2.0.",
+    "retrieved_at": "2026-10-12T13:17:06+00:00",
+    "raw_file": "data/raw/de-destatis/2026-10-12-21211-0007.csv",
+    "raw_sha256": "4d9da623466435eff6874c78748efcf3c29d6f445b9e84fadd3a0d599392d1cf"
+  },
+  "series": [
+    {
+      "geo": "DE",
+      "time": "2008",
+      "value": 34359.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-FB"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2009",
+      "value": 33435.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-FB"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2010",
+      "value": 34221.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-FB"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2011",
+      "value": 33417.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-FB"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2012",
+      "value": 31767.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-FB"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2013",
+      "value": 31311.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-FB"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2014",
+      "value": 30684.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-FB"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2015",
+      "value": 30426.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-FB"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2016",
+      "value": 30024.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-FB"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2017",
+      "value": 28575.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-FB"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2018",
+      "value": 30039.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-FB"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2019",
+      "value": 30009.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-FB"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2020",
+      "value": 29604.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-FB"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2021",
+      "value": 30417.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-FB"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2022",
+      "value": 29220.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-FB"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2023",
+      "value": 27885.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-FB"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2024",
+      "value": 27558.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-FB"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2025",
+      "value": 28683.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-FB"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2008",
+      "value": 2985.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-HAUS"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2009",
+      "value": 2835.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-HAUS"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2010",
+      "value": 2928.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-HAUS"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2011",
+      "value": 2712.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-HAUS"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2012",
+      "value": 2616.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-HAUS"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2013",
+      "value": 2262.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-HAUS"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2014",
+      "value": 2049.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-HAUS"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2015",
+      "value": 1836.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-HAUS"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2016",
+      "value": 1653.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-HAUS"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2017",
+      "value": 1539.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-HAUS"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2018",
+      "value": 1437.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-HAUS"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2019",
+      "value": 1377.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-HAUS"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2020",
+      "value": 1251.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-HAUS"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2021",
+      "value": 1191.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-HAUS"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2022",
+      "value": 1137.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-HAUS"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2023",
+      "value": 963.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-HAUS"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2024",
+      "value": 873.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-HAUS"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2025",
+      "value": 702.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-HAUS"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2008",
+      "value": 27900.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-HW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2009",
+      "value": 28869.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-HW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2010",
+      "value": 29799.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-HW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2011",
+      "value": 29271.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-HW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2012",
+      "value": 26838.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-HW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2013",
+      "value": 25197.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-HW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2014",
+      "value": 23127.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-HW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2015",
+      "value": 21702.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-HW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2016",
+      "value": 20202.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-HW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2017",
+      "value": 19749.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-HW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2018",
+      "value": 19500.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-HW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2019",
+      "value": 18858.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-HW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2020",
+      "value": 17790.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-HW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2021",
+      "value": 16407.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-HW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2022",
+      "value": 16287.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-HW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2023",
+      "value": 14244.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-HW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2024",
+      "value": 14079.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-HW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2025",
+      "value": 14181.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-HW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2008",
+      "value": 115050.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-IH"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2009",
+      "value": 122550.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-IH"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2010",
+      "value": 127626.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-IH"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2011",
+      "value": 125496.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-IH"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2012",
+      "value": 114744.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-IH"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2013",
+      "value": 111444.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-IH"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2014",
+      "value": 110541.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-IH"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2015",
+      "value": 106152.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-IH"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2016",
+      "value": 101154.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-IH"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2017",
+      "value": 99183.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-IH"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2018",
+      "value": 94686.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-IH"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2019",
+      "value": 91533.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-IH"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2020",
+      "value": 87243.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-IH"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2021",
+      "value": 86163.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-IH"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2022",
+      "value": 82374.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-IH"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2023",
+      "value": 73053.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-IH"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2024",
+      "value": 70224.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-IH"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2025",
+      "value": 71349.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-IH"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2008",
+      "value": 2583.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-LW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2009",
+      "value": 2751.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-LW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2010",
+      "value": 2871.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-LW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2011",
+      "value": 2772.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-LW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2012",
+      "value": 2604.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-LW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2013",
+      "value": 2406.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-LW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2014",
+      "value": 2292.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-LW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2015",
+      "value": 2280.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-LW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2016",
+      "value": 2355.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-LW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2017",
+      "value": 2262.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-LW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2018",
+      "value": 2439.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-LW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2019",
+      "value": 2379.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-LW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2020",
+      "value": 2433.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-LW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2021",
+      "value": 2307.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-LW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2022",
+      "value": 2457.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-LW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2023",
+      "value": 2589.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-LW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2024",
+      "value": 2532.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-LW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2025",
+      "value": 2463.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-LW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2008",
+      "value": 7689.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-OED"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2009",
+      "value": 7824.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-OED"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2010",
+      "value": 7674.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-OED"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2011",
+      "value": 7662.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-OED"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2012",
+      "value": 8247.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-OED"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2013",
+      "value": 7983.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-OED"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2014",
+      "value": 7224.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-OED"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2015",
+      "value": 7299.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-OED"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2016",
+      "value": 7377.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-OED"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2017",
+      "value": 7320.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-OED"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2018",
+      "value": 7761.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-OED"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2019",
+      "value": 7998.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-OED"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2020",
+      "value": 8052.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-OED"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2021",
+      "value": 8106.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-OED"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2022",
+      "value": 8190.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-OED"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2023",
+      "value": 7878.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-OED"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2024",
+      "value": 7797.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-OED"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2025",
+      "value": 7473.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "AUSB-OED"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2008",
+      "value": 190569.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "TOTAL"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2009",
+      "value": 198264.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "TOTAL"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2010",
+      "value": 205116.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "TOTAL"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2011",
+      "value": 201330.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "TOTAL"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2012",
+      "value": 186813.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "TOTAL"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2013",
+      "value": 180603.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "TOTAL"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2014",
+      "value": 175917.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "TOTAL"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2015",
+      "value": 169695.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "TOTAL"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2016",
+      "value": 162765.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "TOTAL"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2017",
+      "value": 158628.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "TOTAL"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2018",
+      "value": 155865.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "TOTAL"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2019",
+      "value": 152157.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "TOTAL"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2020",
+      "value": 146376.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "TOTAL"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2021",
+      "value": 144591.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "TOTAL"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2022",
+      "value": 139665.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "TOTAL"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2023",
+      "value": 126612.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "TOTAL"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2024",
+      "value": 123063.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "TOTAL"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2025",
+      "value": 124851.0,
+      "dims": {
+        "sex": "F",
+        "training_area": "TOTAL"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2008",
+      "value": 1701.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-FB"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2009",
+      "value": 1632.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-FB"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2010",
+      "value": 1746.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-FB"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2011",
+      "value": 1737.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-FB"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2012",
+      "value": 1851.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-FB"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2013",
+      "value": 1866.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-FB"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2014",
+      "value": 2055.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-FB"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2015",
+      "value": 2100.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-FB"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2016",
+      "value": 2106.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-FB"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2017",
+      "value": 2238.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-FB"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2018",
+      "value": 2403.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-FB"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2019",
+      "value": 2547.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-FB"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2020",
+      "value": 2538.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-FB"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2021",
+      "value": 2742.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-FB"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2022",
+      "value": 2778.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-FB"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2023",
+      "value": 2745.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-FB"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2024",
+      "value": 2907.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-FB"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2025",
+      "value": 3168.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-FB"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2008",
+      "value": 243.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-HAUS"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2009",
+      "value": 249.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-HAUS"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2010",
+      "value": 240.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-HAUS"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2011",
+      "value": 219.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-HAUS"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2012",
+      "value": 189.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-HAUS"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2013",
+      "value": 198.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-HAUS"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2014",
+      "value": 180.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-HAUS"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2015",
+      "value": 159.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-HAUS"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2016",
+      "value": 135.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-HAUS"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2017",
+      "value": 141.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-HAUS"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2018",
+      "value": 153.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-HAUS"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2019",
+      "value": 153.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-HAUS"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2020",
+      "value": 162.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-HAUS"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2021",
+      "value": 192.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-HAUS"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2022",
+      "value": 201.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-HAUS"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2023",
+      "value": 153.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-HAUS"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2024",
+      "value": 183.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-HAUS"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2025",
+      "value": 147.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-HAUS"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2008",
+      "value": 86106.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-HW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2009",
+      "value": 87543.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-HW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2010",
+      "value": 85149.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-HW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2011",
+      "value": 87822.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-HW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2012",
+      "value": 81378.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-HW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2013",
+      "value": 77178.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-HW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2014",
+      "value": 74943.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-HW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2015",
+      "value": 72759.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-HW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2016",
+      "value": 68634.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-HW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2017",
+      "value": 67431.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-HW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2018",
+      "value": 66147.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-HW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2019",
+      "value": 65445.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-HW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2020",
+      "value": 67125.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-HW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2021",
+      "value": 66744.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-HW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2022",
+      "value": 69192.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-HW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2023",
+      "value": 66066.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-HW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2024",
+      "value": 65007.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-HW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2025",
+      "value": 62817.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-HW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2008",
+      "value": 162594.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-IH"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2009",
+      "value": 167505.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-IH"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2010",
+      "value": 172737.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-IH"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2011",
+      "value": 172437.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-IH"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2012",
+      "value": 162627.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-IH"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2013",
+      "value": 157953.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-IH"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2014",
+      "value": 158955.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-IH"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2015",
+      "value": 157962.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-IH"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2016",
+      "value": 154479.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-IH"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2017",
+      "value": 152352.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-IH"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2018",
+      "value": 150771.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-IH"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2019",
+      "value": 151026.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-IH"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2020",
+      "value": 151716.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-IH"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2021",
+      "value": 152613.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-IH"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2022",
+      "value": 153303.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-IH"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2023",
+      "value": 140205.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-IH"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2024",
+      "value": 136185.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-IH"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2025",
+      "value": 136110.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-IH"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2008",
+      "value": 9309.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-LW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2009",
+      "value": 9360.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-LW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2010",
+      "value": 9813.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-LW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2011",
+      "value": 9072.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-LW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2012",
+      "value": 8583.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-LW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2013",
+      "value": 8340.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-LW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2014",
+      "value": 8151.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-LW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2015",
+      "value": 8094.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-LW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2016",
+      "value": 7941.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-LW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2017",
+      "value": 8097.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-LW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2018",
+      "value": 8061.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-LW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2019",
+      "value": 7710.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-LW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2020",
+      "value": 7773.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-LW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2021",
+      "value": 7359.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-LW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2022",
+      "value": 7281.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-LW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2023",
+      "value": 7347.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-LW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2024",
+      "value": 7440.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-LW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2025",
+      "value": 6993.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-LW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2008",
+      "value": 4329.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-OED"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2009",
+      "value": 4296.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-OED"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2010",
+      "value": 4227.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-OED"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2011",
+      "value": 3966.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-OED"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2012",
+      "value": 4002.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-OED"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2013",
+      "value": 4137.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-OED"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2014",
+      "value": 3828.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-OED"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2015",
+      "value": 3777.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-OED"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2016",
+      "value": 3735.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-OED"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2017",
+      "value": 3804.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-OED"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2018",
+      "value": 4008.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-OED"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2019",
+      "value": 4254.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-OED"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2020",
+      "value": 4494.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-OED"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2021",
+      "value": 4392.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-OED"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2022",
+      "value": 4665.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-OED"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2023",
+      "value": 4437.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-OED"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2024",
+      "value": 4431.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-OED"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2025",
+      "value": 4263.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "AUSB-OED"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2008",
+      "value": 264282.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "TOTAL"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2009",
+      "value": 270588.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "TOTAL"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2010",
+      "value": 273915.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "TOTAL"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2011",
+      "value": 275253.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "TOTAL"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2012",
+      "value": 258630.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "TOTAL"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2013",
+      "value": 249672.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "TOTAL"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2014",
+      "value": 248112.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "TOTAL"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2015",
+      "value": 244848.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "TOTAL"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2016",
+      "value": 237033.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "TOTAL"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2017",
+      "value": 234060.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "TOTAL"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2018",
+      "value": 231543.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "TOTAL"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2019",
+      "value": 231135.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "TOTAL"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2020",
+      "value": 233808.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "TOTAL"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2021",
+      "value": 234039.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "TOTAL"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2022",
+      "value": 237423.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "TOTAL"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2023",
+      "value": 220953.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "TOTAL"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2024",
+      "value": 216150.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "TOTAL"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2025",
+      "value": 213498.0,
+      "dims": {
+        "sex": "M",
+        "training_area": "TOTAL"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2008",
+      "value": 36060.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-FB"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2009",
+      "value": 35067.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-FB"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2010",
+      "value": 35970.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-FB"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2011",
+      "value": 35154.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-FB"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2012",
+      "value": 33618.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-FB"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2013",
+      "value": 33174.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-FB"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2014",
+      "value": 32739.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-FB"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2015",
+      "value": 32526.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-FB"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2016",
+      "value": 32130.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-FB"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2017",
+      "value": 30813.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-FB"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2018",
+      "value": 32442.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-FB"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2019",
+      "value": 32556.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-FB"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2020",
+      "value": 32142.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-FB"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2021",
+      "value": 33159.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-FB"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2022",
+      "value": 32001.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-FB"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2023",
+      "value": 30630.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-FB"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2024",
+      "value": 30462.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-FB"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2025",
+      "value": 31851.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-FB"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2008",
+      "value": 3228.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-HAUS"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2009",
+      "value": 3084.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-HAUS"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2010",
+      "value": 3168.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-HAUS"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2011",
+      "value": 2931.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-HAUS"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2012",
+      "value": 2805.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-HAUS"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2013",
+      "value": 2460.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-HAUS"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2014",
+      "value": 2229.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-HAUS"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2015",
+      "value": 1995.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-HAUS"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2016",
+      "value": 1788.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-HAUS"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2017",
+      "value": 1680.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-HAUS"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2018",
+      "value": 1590.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-HAUS"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2019",
+      "value": 1527.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-HAUS"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2020",
+      "value": 1413.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-HAUS"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2021",
+      "value": 1383.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-HAUS"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2022",
+      "value": 1338.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-HAUS"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2023",
+      "value": 1113.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-HAUS"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2024",
+      "value": 1056.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-HAUS"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2025",
+      "value": 849.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-HAUS"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2008",
+      "value": 114006.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-HW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2009",
+      "value": 116412.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-HW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2010",
+      "value": 114945.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-HW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2011",
+      "value": 117093.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-HW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2012",
+      "value": 108216.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-HW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2013",
+      "value": 102375.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-HW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2014",
+      "value": 98070.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-HW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2015",
+      "value": 94461.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-HW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2016",
+      "value": 88839.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-HW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2017",
+      "value": 87177.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-HW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2018",
+      "value": 85650.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-HW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2019",
+      "value": 84306.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-HW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2020",
+      "value": 84915.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-HW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2021",
+      "value": 83151.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-HW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2022",
+      "value": 85479.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-HW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2023",
+      "value": 80310.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-HW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2024",
+      "value": 79086.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-HW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2025",
+      "value": 76998.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-HW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2008",
+      "value": 277644.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-IH"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2009",
+      "value": 290058.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-IH"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2010",
+      "value": 300363.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-IH"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2011",
+      "value": 297933.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-IH"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2012",
+      "value": 277371.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-IH"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2013",
+      "value": 269397.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-IH"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2014",
+      "value": 269496.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-IH"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2015",
+      "value": 264114.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-IH"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2016",
+      "value": 255633.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-IH"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2017",
+      "value": 251535.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-IH"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2018",
+      "value": 245457.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-IH"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2019",
+      "value": 242562.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-IH"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2020",
+      "value": 238959.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-IH"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2021",
+      "value": 238773.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-IH"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2022",
+      "value": 235680.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-IH"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2023",
+      "value": 213258.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-IH"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2024",
+      "value": 206406.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-IH"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2025",
+      "value": 207459.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-IH"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2008",
+      "value": 11892.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-LW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2009",
+      "value": 12111.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-LW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2010",
+      "value": 12684.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-LW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2011",
+      "value": 11844.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-LW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2012",
+      "value": 11184.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-LW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2013",
+      "value": 10746.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-LW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2014",
+      "value": 10443.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-LW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2015",
+      "value": 10374.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-LW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2016",
+      "value": 10296.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-LW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2017",
+      "value": 10359.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-LW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2018",
+      "value": 10500.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-LW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2019",
+      "value": 10089.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-LW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2020",
+      "value": 10206.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-LW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2021",
+      "value": 9666.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-LW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2022",
+      "value": 9735.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-LW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2023",
+      "value": 9936.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-LW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2024",
+      "value": 9972.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-LW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2025",
+      "value": 9456.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-LW"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2008",
+      "value": 12018.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-OED"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2009",
+      "value": 12120.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-OED"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2010",
+      "value": 11901.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-OED"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2011",
+      "value": 11625.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-OED"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2012",
+      "value": 12249.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-OED"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2013",
+      "value": 12123.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-OED"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2014",
+      "value": 11052.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-OED"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2015",
+      "value": 11073.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-OED"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2016",
+      "value": 11112.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-OED"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2017",
+      "value": 11121.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-OED"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2018",
+      "value": 11772.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-OED"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2019",
+      "value": 12252.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-OED"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2020",
+      "value": 12546.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-OED"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2021",
+      "value": 12498.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-OED"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2022",
+      "value": 12855.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-OED"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2023",
+      "value": 12318.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-OED"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2024",
+      "value": 12228.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-OED"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2025",
+      "value": 11736.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "AUSB-OED"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2008",
+      "value": 454851.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "TOTAL"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2009",
+      "value": 468852.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "TOTAL"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2010",
+      "value": 479031.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "TOTAL"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2011",
+      "value": 476580.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "TOTAL"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2012",
+      "value": 445443.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "TOTAL"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2013",
+      "value": 430275.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "TOTAL"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2014",
+      "value": 424029.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "TOTAL"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2015",
+      "value": 414543.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "TOTAL"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2016",
+      "value": 399798.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "TOTAL"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2017",
+      "value": 392685.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "TOTAL"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2018",
+      "value": 387408.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "TOTAL"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2019",
+      "value": 383292.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "TOTAL"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2020",
+      "value": 380184.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "TOTAL"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2021",
+      "value": 378630.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "TOTAL"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2022",
+      "value": 377088.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "TOTAL"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2023",
+      "value": 347565.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "TOTAL"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2024",
+      "value": 339213.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "TOTAL"
+      }
+    },
+    {
+      "geo": "DE",
+      "time": "2025",
+      "value": 338349.0,
+      "dims": {
+        "sex": "T",
+        "training_area": "TOTAL"
+      }
+    }
+  ],
+  "coverage": {
+    "geos": [
+      "DE"
+    ],
+    "time": [
+      "2008",
+      "2025"
+    ],
+    "observations": 378
+  }
+}

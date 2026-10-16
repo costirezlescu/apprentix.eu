@@ -5,9 +5,105 @@
   <id>https://apprentix.eu/data/feed.xml</id>
   <link rel="self" type="application/atom+xml" href="https://apprentix.eu/data/feed.xml"/>
   <link rel="alternate" type="text/html" href="https://apprentix.eu/pages/data.html"/>
-  <updated>2026-10-01T12:00:00+00:00</updated>
+  <updated>2026-10-12T13:23:31+00:00</updated>
   <author><name>Apprentix</name><uri>https://apprentix.eu/</uri></author>
   <rights>Each dataset keeps its original publisher's licence; see the linked page.</rights>
+  <entry>
+    <id>tag:apprentix.eu,2026-10-12:indicator/oecd-share-vet-sw</id>
+    <title>Updated: Share of VET students in combined school- and work-based programmes (OECD)</title>
+    <link rel="alternate" type="text/html" href="https://apprentix.eu/pages/indicators/oecd-share-vet-sw.html"/>
+    <updated>2026-10-12T13:23:31+00:00</updated>
+    <category term="Participation"/>
+    <summary>Share of VET students in combined school- and work-based programmes (OECD) (OECD): new or revised data retrieved 2026-10-12. 1,548 observations, 25 geographies, 2013–2024.</summary>
+  </entry>
+  <entry>
+    <id>tag:apprentix.eu,2026-10-12:indicator/eurostat-ed3sw-share-of-vet</id>
+    <title>Updated: Share of upper-secondary VET pupils in work-based programmes</title>
+    <link rel="alternate" type="text/html" href="https://apprentix.eu/pages/indicators/eurostat-ed3sw-share-of-vet.html"/>
+    <updated>2026-10-12T13:22:50+00:00</updated>
+    <category term="Participation"/>
+    <summary>Share of upper-secondary VET pupils in work-based programmes (Eurostat; calculation by Apprentix): new or revised data retrieved 2026-10-12; source updated 2026-10-06T23:00:00+0200. 303 observations, 31 geographies, 2005–2024.</summary>
+  </entry>
+  <entry>
+    <id>tag:apprentix.eu,2026-10-12:indicator/eurostat-educ_uoe_enrs07-ed4sw</id>
+    <title>Updated: Pupils in combined school- and work-based post-secondary VET</title>
+    <link rel="alternate" type="text/html" href="https://apprentix.eu/pages/indicators/eurostat-educ_uoe_enrs07-ed4sw.html"/>
+    <updated>2026-10-12T13:22:47+00:00</updated>
+    <category term="Participation"/>
+    <summary>Pupils in combined school- and work-based post-secondary VET (Eurostat): new or revised data retrieved 2026-10-12; source updated 2026-10-06T23:00:00+0200. 626 observations, 22 geographies, 2005–2024.</summary>
+  </entry>
+  <entry>
+    <id>tag:apprentix.eu,2026-10-12:indicator/eurostat-educ_uoe_enrs04-ed3sw</id>
+    <title>Updated: Pupils in combined school- and work-based upper-secondary VET</title>
+    <link rel="alternate" type="text/html" href="https://apprentix.eu/pages/indicators/eurostat-educ_uoe_enrs04-ed3sw.html"/>
+    <updated>2026-10-12T13:22:46+00:00</updated>
+    <category term="Participation"/>
+    <summary>Pupils in combined school- and work-based upper-secondary VET (Eurostat): new or revised data retrieved 2026-10-12; source updated 2026-10-06T23:00:00+0200. 884 observations, 31 geographies, 2005–2024.</summary>
+  </entry>
+  <entry>
+    <id>tag:apprentix.eu,2026-10-12:indicator/erasmus-ka1-vet-projects</id>
+    <title>Updated: Erasmus+ VET mobility projects</title>
+    <link rel="alternate" type="text/html" href="https://apprentix.eu/pages/indicators/erasmus-ka1-vet-projects.html"/>
+    <updated>2026-10-12T13:20:39+00:00</updated>
+    <category term="Mobility"/>
+    <summary>Erasmus+ VET mobility projects (European Commission (DG EAC / EACEA), Erasmus+ project results): new or revised data retrieved 2026-10-12; source updated 2026-10-12. 1,233 observations, 35 geographies, 2014–2025.</summary>
+  </entry>
+  <entry>
+    <id>tag:apprentix.eu,2026-10-12:indicator/erasmus-ka1-vet-grant</id>
+    <title>Updated: EU grant for Erasmus+ VET mobility projects</title>
+    <link rel="alternate" type="text/html" href="https://apprentix.eu/pages/indicators/erasmus-ka1-vet-grant.html"/>
+    <updated>2026-10-12T13:20:39+00:00</updated>
+    <category term="Mobility"/>
+    <summary>EU grant for Erasmus+ VET mobility projects (European Commission (DG EAC / EACEA), Erasmus+ project results): new or revised data retrieved 2026-10-12; source updated 2026-10-12. 1,233 observations, 35 geographies, 2014–2025.</summary>
+  </entry>
+  <entry>
+    <id>tag:apprentix.eu,2026-10-12:indicator/de-destatis-apprentices-land</id>
+    <title>Updated: Apprentices in dual vocational training by Land (Germany)</title>
+    <link rel="alternate" type="text/html" href="https://apprentix.eu/pages/indicators/de-destatis-apprentices-land.html"/>
+    <updated>2026-10-12T13:17:15+00:00</updated>
+    <category term="Participation"/>
+    <summary>Apprentices in dual vocational training by Land (Germany) (Statistisches Bundesamt (Destatis)): new or revised data retrieved 2026-10-12. 918 observations, 1 geographies, 2008–2025.</summary>
+  </entry>
+  <entry>
+    <id>tag:apprentix.eu,2026-10-12:indicator/de-destatis-exams-passed</id>
+    <title>Updated: Final apprenticeship examinations passed (Germany)</title>
+    <link rel="alternate" type="text/html" href="https://apprentix.eu/pages/indicators/de-destatis-exams-passed.html"/>
+    <updated>2026-10-12T13:17:06+00:00</updated>
+    <category term="Outcomes"/>
+    <summary>Final apprenticeship examinations passed (Germany) (Statistisches Bundesamt (Destatis)): new or revised data retrieved 2026-10-12. 378 observations, 1 geographies, 2008–2025.</summary>
+  </entry>
+  <entry>
+    <id>tag:apprentix.eu,2026-10-12:indicator/de-destatis-new-contracts</id>
+    <title>Updated: Newly concluded apprenticeship contracts (Germany)</title>
+    <link rel="alternate" type="text/html" href="https://apprentix.eu/pages/indicators/de-destatis-new-contracts.html"/>
+    <updated>2026-10-12T13:17:00+00:00</updated>
+    <category term="Participation"/>
+    <summary>Newly concluded apprenticeship contracts (Germany) (Statistisches Bundesamt (Destatis)): new or revised data retrieved 2026-10-12. 378 observations, 1 geographies, 2008–2025.</summary>
+  </entry>
+  <entry>
+    <id>tag:apprentix.eu,2026-10-12:indicator/de-destatis-apprentices</id>
+    <title>Updated: Apprentices in dual vocational training (Germany)</title>
+    <link rel="alternate" type="text/html" href="https://apprentix.eu/pages/indicators/de-destatis-apprentices.html"/>
+    <updated>2026-10-12T13:16:53+00:00</updated>
+    <category term="Participation"/>
+    <summary>Apprentices in dual vocational training (Germany) (Statistisches Bundesamt (Destatis)): new or revised data retrieved 2026-10-12. 378 observations, 1 geographies, 2008–2025.</summary>
+  </entry>
+  <entry>
+    <id>tag:apprentix.eu,2026-10-12:dataset/erasmus-vet-organisations</id>
+    <title>Updated: Erasmus+ accredited VET organisations</title>
+    <link rel="alternate" type="text/html" href="https://apprentix.eu/pages/datasets/erasmus-vet-organisations.html"/>
+    <updated>2026-10-12T00:00:00Z</updated>
+    <category term="Datasets"/>
+    <summary>Erasmus+ accredited VET organisations: 4,040 records, read from European Commission — Erasmus+ projects lists for download (KA1 Learning Mobility of Individuals) on 2026-10-12.</summary>
+  </entry>
+  <entry>
+    <id>tag:apprentix.eu,2026-10-12:dataset/data-catalogue</id>
+    <title>Updated: Apprenticeship and VET open-data catalogue</title>
+    <link rel="alternate" type="text/html" href="https://apprentix.eu/pages/datasets/data-catalogue.html"/>
+    <updated>2026-10-12T00:00:00Z</updated>
+    <category term="Datasets"/>
+    <summary>Apprenticeship and VET open-data catalogue: 1,646 records, read from data.europa.eu — the official portal for European data (search API) on 2026-10-12.</summary>
+  </entry>
   <entry>
     <id>tag:apprentix.eu,2026-10-01:indicator/eurostat-trng_cvt_34s</id>
     <title>Updated: Enterprises employing initial-VET participants</title>
@@ -25,22 +121,6 @@
     <summary>Recent VET graduates who had work-based learning (Eurostat): new or revised data retrieved 2026-10-01; source updated 2026-09-10T23:00:00+0200. 414 observations, 32 geographies, 2021–2025.</summary>
   </entry>
   <entry>
-    <id>tag:apprentix.eu,2026-10-01:indicator/eurostat-educ_uoe_enrs07-ed4sw</id>
-    <title>Updated: Pupils in combined school- and work-based post-secondary VET</title>
-    <link rel="alternate" type="text/html" href="https://apprentix.eu/pages/indicators/eurostat-educ_uoe_enrs07-ed4sw.html"/>
-    <updated>2026-10-01T12:00:00+00:00</updated>
-    <category term="Participation"/>
-    <summary>Pupils in combined school- and work-based post-secondary VET (Eurostat): new or revised data retrieved 2026-10-01; source updated 2026-08-11T23:00:00+0200. 626 observations, 22 geographies, 2005–2024.</summary>
-  </entry>
-  <entry>
-    <id>tag:apprentix.eu,2026-10-01:indicator/eurostat-educ_uoe_enrs04-ed3sw</id>
-    <title>Updated: Pupils in combined school- and work-based upper-secondary VET</title>
-    <link rel="alternate" type="text/html" href="https://apprentix.eu/pages/indicators/eurostat-educ_uoe_enrs04-ed3sw.html"/>
-    <updated>2026-10-01T12:00:00+00:00</updated>
-    <category term="Participation"/>
-    <summary>Pupils in combined school- and work-based upper-secondary VET (Eurostat): new or revised data retrieved 2026-10-01; source updated 2026-08-11T23:00:00+0200. 884 observations, 31 geographies, 2005–2024.</summary>
-  </entry>
-  <entry>
     <id>tag:apprentix.eu,2026-10-01:indicator/eurostat-edat_lfse_24-vet</id>
     <title>Updated: Employment rate of recent VET graduates</title>
     <link rel="alternate" type="text/html" href="https://apprentix.eu/pages/indicators/eurostat-edat_lfse_24-vet.html"/>
@@ -55,14 +135,6 @@
     <updated>2026-10-01T12:00:00+00:00</updated>
     <category term="Outcomes"/>
     <summary>Employment rate of recent general-education graduates (Eurostat): new or revised data retrieved 2026-10-01; source updated 2026-09-10T23:00:00+0200. 997 observations, 36 geographies, 2014–2025.</summary>
-  </entry>
-  <entry>
-    <id>tag:apprentix.eu,2026-10-01:indicator/eurostat-ed3sw-share-of-vet</id>
-    <title>Updated: Share of upper-secondary VET pupils in work-based programmes</title>
-    <link rel="alternate" type="text/html" href="https://apprentix.eu/pages/indicators/eurostat-ed3sw-share-of-vet.html"/>
-    <updated>2026-10-01T12:00:00+00:00</updated>
-    <category term="Participation"/>
-    <summary>Share of upper-secondary VET pupils in work-based programmes (Eurostat; calculation by Apprentix): new or revised data retrieved 2026-10-01; source updated 2026-08-11T23:00:00+0200. 303 observations, 31 geographies, 2005–2024.</summary>
   </entry>
   <entry>
     <id>tag:apprentix.eu,2026-10-01:indicator/cedefop-esi</id>
@@ -233,14 +305,6 @@
     <summary>Apprentices in Norway (1 October) (Statistics Norway (SSB)): new or revised data retrieved 2026-10-01; source updated 2026-02-19T07:00:00Z. 840 observations, 1 geographies, 2006–2025.</summary>
   </entry>
   <entry>
-    <id>tag:apprentix.eu,2026-10-01:indicator/oecd-share-vet-sw</id>
-    <title>Updated: Share of VET students in combined school- and work-based programmes (OECD)</title>
-    <link rel="alternate" type="text/html" href="https://apprentix.eu/pages/indicators/oecd-share-vet-sw.html"/>
-    <updated>2026-10-01T09:50:34+00:00</updated>
-    <category term="Participation"/>
-    <summary>Share of VET students in combined school- and work-based programmes (OECD) (OECD): new or revised data retrieved 2026-10-01. 1,548 observations, 25 geographies, 2013–2024.</summary>
-  </entry>
-  <entry>
     <id>tag:apprentix.eu,2026-10-01:indicator/oecd-emp-rate-upper-secondary</id>
     <title>Updated: Employment rate of adults with vocational vs general upper-secondary qualifications (OECD)</title>
     <link rel="alternate" type="text/html" href="https://apprentix.eu/pages/indicators/oecd-emp-rate-upper-secondary.html"/>
@@ -263,22 +327,6 @@
     <updated>2026-10-01T09:38:06+00:00</updated>
     <category term="Mobility"/>
     <summary>New Erasmus accreditations in VET (European Commission (DG EAC / EACEA), Erasmus+ project results): new or revised data retrieved 2026-10-01; source updated 2026-10-01. 155 observations, 34 geographies, 2021–2025.</summary>
-  </entry>
-  <entry>
-    <id>tag:apprentix.eu,2026-10-01:indicator/erasmus-ka1-vet-projects</id>
-    <title>Updated: Erasmus+ VET mobility projects</title>
-    <link rel="alternate" type="text/html" href="https://apprentix.eu/pages/indicators/erasmus-ka1-vet-projects.html"/>
-    <updated>2026-10-01T09:38:06+00:00</updated>
-    <category term="Mobility"/>
-    <summary>Erasmus+ VET mobility projects (European Commission (DG EAC / EACEA), Erasmus+ project results): new or revised data retrieved 2026-10-01; source updated 2026-10-01. 1,233 observations, 35 geographies, 2014–2025.</summary>
-  </entry>
-  <entry>
-    <id>tag:apprentix.eu,2026-10-01:indicator/erasmus-ka1-vet-grant</id>
-    <title>Updated: EU grant for Erasmus+ VET mobility projects</title>
-    <link rel="alternate" type="text/html" href="https://apprentix.eu/pages/indicators/erasmus-ka1-vet-grant.html"/>
-    <updated>2026-10-01T09:38:06+00:00</updated>
-    <category term="Mobility"/>
-    <summary>EU grant for Erasmus+ VET mobility projects (European Commission (DG EAC / EACEA), Erasmus+ project results): new or revised data retrieved 2026-10-01; source updated 2026-10-01. 1,233 observations, 35 geographies, 2014–2025.</summary>
   </entry>
   <entry>
     <id>tag:apprentix.eu,2026-10-01:indicator/ch-bfs-qualifications-vet</id>
@@ -871,22 +919,6 @@
     <updated>2026-10-01T00:00:00Z</updated>
     <category term="Datasets"/>
     <summary>Financing apprenticeships: instruments: 55 records, read from Cedefop — Database on financing apprenticeships in the EU on 2026-10-01.</summary>
-  </entry>
-  <entry>
-    <id>tag:apprentix.eu,2026-10-01:dataset/erasmus-vet-organisations</id>
-    <title>Updated: Erasmus+ accredited VET organisations</title>
-    <link rel="alternate" type="text/html" href="https://apprentix.eu/pages/datasets/erasmus-vet-organisations.html"/>
-    <updated>2026-10-01T00:00:00Z</updated>
-    <category term="Datasets"/>
-    <summary>Erasmus+ accredited VET organisations: 4,038 records, read from European Commission — Erasmus+ projects lists for download (KA1 Learning Mobility of Individuals) on 2026-10-01.</summary>
-  </entry>
-  <entry>
-    <id>tag:apprentix.eu,2026-10-01:dataset/data-catalogue</id>
-    <title>Updated: Apprenticeship and VET open-data catalogue</title>
-    <link rel="alternate" type="text/html" href="https://apprentix.eu/pages/datasets/data-catalogue.html"/>
-    <updated>2026-10-01T00:00:00Z</updated>
-    <category term="Datasets"/>
-    <summary>Apprenticeship and VET open-data catalogue: 1,632 records, read from data.europa.eu — the official portal for European data (search API) on 2026-10-01.</summary>
   </entry>
   <entry>
     <id>tag:apprentix.eu,2026-10-01:dataset/cove-projects</id>

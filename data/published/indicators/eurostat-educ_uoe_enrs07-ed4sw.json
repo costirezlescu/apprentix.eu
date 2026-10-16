@@ -30,10 +30,10 @@
     "licence": "CC-BY-4.0",
     "licence_url": "https://creativecommons.org/licenses/by/4.0/",
     "citation": "Eurostat (educ_uoe_enrs07), Pupils enrolled in post-secondary non-tertiary education by programme orientation, sex, type of institution and intensity of participation. Retrieved via the Eurostat Statistics API.",
-    "source_updated": "2026-08-11T23:00:00+0200",
-    "retrieved_at": "2026-10-01T12:00:00+00:00",
-    "raw_file": "data/raw/eurostat/2026-10-01-eurostat-educ_uoe_enrs07-ed4sw.json",
-    "raw_sha256": "8d721eb4611383c6ca7c6e839a2a0b0b241cc814ddcde23ab13e5b4a7cbba442"
+    "source_updated": "2026-10-06T23:00:00+0200",
+    "retrieved_at": "2026-10-12T13:22:47+00:00",
+    "raw_file": "data/raw/eurostat/2026-10-12-eurostat-educ_uoe_enrs07-ed4sw.json",
+    "raw_sha256": "f667ff436aa01464b5062616558c66751609b2821c00cda2bed8e889d99f9e74"
   },
   "series": [
     {
@@ -176,7 +176,7 @@
     {
       "geo": "CH",
       "time": "2013",
-      "value": 11.0,
+      "value": 1.0,
       "dims": {
         "sex": "F"
       }
@@ -3472,7 +3472,7 @@
     {
       "geo": "CH",
       "time": "2013",
-      "value": 12.0,
+      "value": 2.0,
       "dims": {
         "sex": "T"
       }
