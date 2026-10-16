@@ -53,7 +53,7 @@ SOURCE = {
 AREAS = (r"^eud$", r"^erhvervsuddannelse")   # the API lists areas by code (EUD, GYM, …)
 TOPICS = (r"^prak$", r"l[æa]replads|praktikplads")   # codes: EUD / PRAK / AFTALER
 SUBTOPIC_PREFS = [r"^aftaler$", r"indg[åa]ede", r"aftale"]
-MEASURE = r"indg[åa]ede.*aftale|aftale.*indg[åa]ede"
+MEASURE = r"indg aftaler i perioden|indg[åa]ede.*aftale|aftale.*indg[åa]ede"   # [Measures].[Indg aftaler i perioden]
 MONTHS_DA = {"januar": 1, "februar": 2, "marts": 3, "april": 4, "maj": 5, "juni": 6, "juli": 7,
              "august": 8, "september": 9, "oktober": 10, "november": 11, "december": 12}
 
@@ -205,19 +205,19 @@ def run() -> list[str]:
         schema, schema_body = _post("skema", {"område": area, "emne": topic, "underemne": sub}, key)
         print(f"  dk-uvm: schema of {area}/{topic}/{sub}: {schema_body[:4000].decode('utf-8', 'replace')}")
         measures = _names(schema, "nøgletal", "noegletal")
-        details = _names(schema, "detaljering")
+        details = _names(schema, "detaljer")
         print(f"  dk-uvm: details available: {details}")
         measure = (_pick(measures, MEASURE, r"indg[åa]ede", r"^antal", what="nøgletal (new agreements)")
                    if len(measures) != 1 else measures[0])
     except ValueError:
         _dump_tree(area, key)
         raise
-    time_fields = [d for d in details if re.search(r"^(år|måned|kvartal)|måned|periode|tid", d, re.I)]
-    month_fields = [d for d in time_fields if re.search(r"måned", d, re.I)]
-    year_fields = [d for d in time_fields if re.search(r"^år$|^år\b", d, re.I)]
-    fields = month_fields + [y for y in year_fields if y not in month_fields]
-    if not month_fields:
-        raise ValueError(f"Uddannelsesstatistik: no month detail among {details}")
+    # Calendar breakdowns are listed as [Dato].[År Desc] (year) and [Dato].[Måned] (month number or name).
+    year_f = next((d for d in details if re.search(r"\[dato\]\.\[år", d, re.I)), None)
+    month_f = next((d for d in details if re.search(r"\[dato\]\.\[måned\]$", d, re.I)), None)
+    if not (year_f and month_f):
+        raise ValueError(f"Uddannelsesstatistik: no year/month breakdown among {details}")
+    fields = [year_f, month_f]
 
     query = {"område": area, "emne": topic, "underemne": sub, "nøgletal": [measure],
              "detaljering": fields, "filtre": {}, "indlejret": False, "tomme_rækker": False,
@@ -225,6 +225,7 @@ def run() -> list[str]:
     data, body = _post("statistik", query, key)
     raw, digest = save_raw("dk-uvm", "laerepladsstatistik-indgaaede-aftaler.json", body)
     rows = data if isinstance(data, list) else next((v for v in data.values() if isinstance(v, list)), [])
+    print(f"  dk-uvm: {len(rows)} rows; first: {rows[:2]}")
 
     totals = {}
     for r in rows:
