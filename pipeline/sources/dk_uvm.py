@@ -152,8 +152,20 @@ def key_expiry(key: str) -> str | None:
         return None
 
 
+def key_shape(raw: str | None, key: str) -> str:
+    """A description of the key that reveals nothing usable: length, form, what was cleaned off."""
+    parts = []
+    if (raw or "").strip() != key:
+        parts.append("extra characters (spaces, line breaks, quotes or 'Bearer') were removed from the secret")
+    form = ("a JWT (three dot-separated parts)" if key.count(".") == 2
+            else "a GUID-like value" if re.fullmatch(r"[0-9a-fA-F-]{32,36}", key) else "not a JWT")
+    parts.append(f"the key is {len(key)} characters long and {form}")
+    return "; ".join(parts)
+
+
 def run() -> list[str]:
-    key = clean_key(os.environ.get(KEY_ENV))
+    raw = os.environ.get(KEY_ENV)
+    key = clean_key(raw)
     if not key:
         raise RuntimeError(f"{KEY_ENV} is not set")
 
@@ -165,8 +177,9 @@ def run() -> list[str]:
             exp = key_expiry(key)
             hint = (f"the key expired on {exp}" if exp and exp < dt.date.today().isoformat()
                     else f"the key is valid until {exp} but was refused" if exp
+                    else "the key was refused" if key.count(".") == 2
                     else "the key was refused (it is not a JWT, so it may be the wrong value)")
-            raise RuntimeError(f"HTTP 401 from Uddannelsesstatistik: {hint}. Log in at "
+            raise RuntimeError(f"HTTP 401 from Uddannelsesstatistik: {hint} ({key_shape(raw, key)}). Log in at "
                                f"https://secure.api.uddannelsesstatistik.dk/Login, copy (or renew) the API key "
                                f"and update the GitHub secret {KEY_ENV}.") from e
         raise
