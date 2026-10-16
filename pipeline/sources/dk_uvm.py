@@ -50,7 +50,7 @@ SOURCE = {
     "outputs": ["indicators/dk-uvm-training-agreements"],
 }
 
-AREA = r"^erhvervsuddannelse"
+AREAS = (r"^eud$", r"^erhvervsuddannelse")   # the API lists areas by code (EUD, GYM, …)
 TOPIC = r"l[æa]replads|praktikplads"
 SUBTOPIC_PREFS = [r"indg[åa]ede", r"aftale", r"n[øo]gletal", r"l[æa]replads"]
 MEASURE = r"indg[åa]ede.*aftale|aftale.*indg[åa]ede"
@@ -101,8 +101,20 @@ def _pick(options: list[str], *patterns: str, what: str) -> str:
     for p in patterns:
         hits = [o for o in options if re.search(p, o, re.I)]
         if hits:
-            return sorted(hits, key=len)[0]
+            choice = sorted(hits, key=len)[0]
+            print(f"  dk-uvm: {what}: chose {choice!r} of {options}")
+            return choice
     raise ValueError(f"Uddannelsesstatistik: no {what} matching {patterns}; API offered: {options}")
+
+
+def _dump_tree(area: str, key: str) -> None:
+    """Log the topics and subtopics under an area (names only), to fix the patterns in one go."""
+    try:
+        for t in _names(_post("skema", {"område": area}, key)[0], "emne"):
+            subs = _names(_post("skema", {"område": area, "emne": t}, key)[0], "underemne")
+            print(f"  dk-uvm: tree {area} / {t}: {subs}")
+    except Exception as e:      # diagnostics only
+        print(f"  dk-uvm: could not list the tree under {area}: {e}")
 
 
 def _time(row: dict, fields: list[str]) -> str | None:
@@ -184,15 +196,20 @@ def run() -> list[str]:
                                f"and update the GitHub secret {KEY_ENV}.") from e
         raise
     areas = _names(first, "område", "omraade")
-    area = _pick(areas, AREA, what="område")
-    topics = _names(_post("skema", {"område": area}, key)[0], "emne")
-    topic = _pick(topics, TOPIC, what="emne")
-    subs = _names(_post("skema", {"område": area, "emne": topic}, key)[0], "underemne")
-    sub = _pick(subs, *SUBTOPIC_PREFS, r".", what="underemne")
-    schema, _ = _post("skema", {"område": area, "emne": topic, "underemne": sub}, key)
-    measures = _names(schema, "nøgletal", "noegletal")
-    details = _names(schema, "detaljering")
-    measure = _pick(measures, MEASURE, r"indg[åa]ede", what="nøgletal (new agreements)")
+    area = _pick(areas, *AREAS, what="område")
+    try:
+        topics = _names(_post("skema", {"område": area}, key)[0], "emne")
+        topic = _pick(topics, TOPIC, what="emne")
+        subs = _names(_post("skema", {"område": area, "emne": topic}, key)[0], "underemne")
+        sub = _pick(subs, *SUBTOPIC_PREFS, r".", what="underemne")
+        schema, _ = _post("skema", {"område": area, "emne": topic, "underemne": sub}, key)
+        measures = _names(schema, "nøgletal", "noegletal")
+        details = _names(schema, "detaljering")
+        print(f"  dk-uvm: details available: {details}")
+        measure = _pick(measures, MEASURE, r"indg[åa]ede", what="nøgletal (new agreements)")
+    except ValueError:
+        _dump_tree(area, key)
+        raise
     time_fields = [d for d in details if re.search(r"^(år|måned|kvartal)|måned|periode|tid", d, re.I)]
     month_fields = [d for d in time_fields if re.search(r"måned", d, re.I)]
     year_fields = [d for d in time_fields if re.search(r"^år$|^år\b", d, re.I)]
