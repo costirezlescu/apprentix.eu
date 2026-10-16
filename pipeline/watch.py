@@ -76,6 +76,11 @@ def _cadence_rules() -> list[dict]:
          "check": cedefop_skills.FILES["stas"]["landing"],
          "action": "Update FILES['stas'] in pipeline/sources/cedefop_skills.py with the new release file name."},
     ]
+    from .sources import cedefop_reset
+    rules.append({"id": "cedefop-reset", "name": "Cedefop Regional skills ecosystem index (RESET)",
+                  "version": (2026, 7), "cycle": 24, "grace": 3, "check": cedefop_reset.LANDING,
+                  "action": "RESET is new (July 2026) and its update cycle is not known yet. If a new version exists under a "
+                            "new file name, update FILE in pipeline/sources/cedefop_reset.py (and 'version' here)."})
     fiches = sorted((RAW / "cedefop-schemes").glob("*-fiche-answers.txt"))
     if fiches:
         d = fiches[-1].name[:10]
@@ -102,7 +107,7 @@ def check_cedefop_catalogue(known: dict) -> tuple[list[dict], dict]:
         if old is None:
             items.append({"kind": "new-dataset", "source": "Cedefop", "title": d["title"] or i,
                           "detail": f"New dataset in Cedefop's data.europa.eu catalogue (issued {d['issued'] or 'n/a'}).",
-                          "url": d["portal_url"], "action": "Decide whether to add it: a new connector, or an entry in pipeline/sources/_catalogue.py."})
+                          "url": d["portal_url"], "action": "To publish it on Apprentix, it needs a connector: a small script in pipeline/sources/ that downloads the file every week and turns it into indicators or a searchable dataset (ask Claude to write one; a downloaded copy of the file helps). Not wanted? Run python -m pipeline.watch --ack to stop this reminder."})
         elif (old.get("issued"), old.get("modified")) != (d["issued"], d["modified"]):
             items.append({"kind": "updated-dataset", "source": "Cedefop", "title": d["title"] or i,
                           "detail": f"Issued/modified changed: {old.get('issued')}/{old.get('modified')} → {d['issued']}/{d['modified']}.",

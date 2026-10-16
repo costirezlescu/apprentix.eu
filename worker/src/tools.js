@@ -303,13 +303,13 @@ export const TOOL_SPECS = [
     type: 'function',
     function: {
       name: 'search_site',
-      description: 'Full-text (BM25) search over everything Apprentix publishes: country profiles, indicators (with latest values), datasets, apprenticeship schemes (with Cedefop coded answers), financing instruments, recognition arrangements, VET policies, NQF levels, CoVE projects, insights, glossary definitions of VET terms. Use English keywords for best results.',
+      description: 'Full-text (BM25) search over everything Apprentix publishes: country profiles, indicators (with latest values), datasets, apprenticeship schemes (with Cedefop coded answers), financing instruments, recognition arrangements, VET policies, NQF levels, CoVE projects, insights, glossary definitions of VET terms, regional skills-ecosystem (RESET) scores for 244 EU regions. Use English keywords for best results.',
       parameters: {
         type: 'object',
         properties: {
           query: { type: 'string', description: 'Keywords, e.g. "apprentice wage workplace share 50%"' },
           k: { type: 'integer', minimum: 1, maximum: 8, description: 'Number of results (default 5)' },
-          kind: { type: 'string', enum: ['country', 'indicator', 'dataset', 'scheme', 'financing', 'recognition', 'vet-system', 'policy', 'policy-other', 'cove', 'nqf', 'erasmus-summary', 'catalogue-summary', 'qualifications-summary', 'insight', 'guide', 'glossary'], description: 'Optional: restrict to one kind of content' },
+          kind: { type: 'string', enum: ['country', 'indicator', 'dataset', 'scheme', 'financing', 'recognition', 'vet-system', 'policy', 'policy-other', 'cove', 'nqf', 'erasmus-summary', 'catalogue-summary', 'qualifications-summary', 'insight', 'guide', 'glossary', 'region'], description: 'Optional: restrict to one kind of content' },
           country_code: { type: 'string', description: 'Optional: restrict to a country (Eurostat code, e.g. DE, FR, EL for Greece)' },
         },
         required: ['query'],
@@ -350,7 +350,7 @@ export const TOOL_SPECS = [
     type: 'function',
     function: {
       name: 'query_records',
-      description: 'Filter a record dataset (e.g. apprenticeship-schemes, vet-policy-timeline, financing-instruments, nqf-qualification-levels, erasmus-vet-organisations, cove-projects, recognition-vet-qualifications, vet-systems, data-catalogue, vet-qualifications). Filters match field values (case-insensitive, partial). vet-qualifications needs a country_code filter. Use count_by to tally a field.',
+      description: 'Filter a record dataset (e.g. apprenticeship-schemes, regional-skills-ecosystems, vet-policy-timeline, financing-instruments, nqf-qualification-levels, erasmus-vet-organisations, cove-projects, recognition-vet-qualifications, vet-systems, data-catalogue, vet-qualifications). Filters match field values (case-insensitive, partial). vet-qualifications needs a country_code filter. Use count_by to tally a field.',
       parameters: {
         type: 'object',
         properties: {

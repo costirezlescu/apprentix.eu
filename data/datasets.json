@@ -107,6 +107,16 @@
       "coverage": "14 countries (AT, BE-Flanders, CZ, DE, EE, FR, IE, LV, LT, MT, NL, RS, SI, SE), EQF levels 2–5",
       "status": "live",
       "kind": "records"
+    },
+    {
+      "id": "regional-skills-ecosystems",
+      "path": "data/published/regional-skills-ecosystems",
+      "title": "Regional skills ecosystems (RESET)",
+      "tagline": "How Europe's 244 regions compare on skills supply, demand, match and environment.",
+      "records": 244,
+      "coverage": "244 NUTS 2 regions in the 27 EU member states, reference year 2024",
+      "status": "live",
+      "kind": "records"
     }
   ],
   "planned": [
@@ -116,7 +126,7 @@
     }
   ],
   "indicators": {
-    "count": 106,
+    "count": 107,
     "path": "data/published/indicators/index.json"
   }
 }

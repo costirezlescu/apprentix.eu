@@ -569,6 +569,9 @@ def build() -> dict:
     m, r = ds("nqf-qualification-levels")
     if m:
         chunks += nqf_chunks(r, names)
+    m, r = ds("regional-skills-ecosystems")
+    if m:
+        chunks += simple_record_chunks("regional-skills-ecosystems", "region", m, r, "region", long=300)
     m, r = ds("erasmus-vet-organisations")
     if m:
         chunks += erasmus_summaries(r, names)

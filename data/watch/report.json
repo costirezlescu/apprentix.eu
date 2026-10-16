@@ -1,7 +1,7 @@
 {
   "description": "Items from the source watch that need a person. See pipeline/watch.py.",
-  "checked_at": "2026-10-12T13:24:34+00:00",
-  "count": 3,
+  "checked_at": "2026-10-16T20:24:07+00:00",
+  "count": 1,
   "items": [
     {
       "kind": "failure",
@@ -10,23 +10,6 @@
       "detail": "HTTP 401 for https://api.uddannelsesstatistik.dk/Api/v1/skema",
       "url": "https://uddannelsesstatistik.dk/Pages/Topics/22.aspx",
       "action": "See the workflow log. The previous data stays published until fixed."
-    },
-    {
-      "kind": "new-dataset",
-      "source": "Cedefop",
-      "title": "Regional skills ecosystem index (RESET)",
-      "detail": "New dataset in Cedefop's data.europa.eu catalogue (issued 2026-10-05).",
-      "url": "https://data.europa.eu/data/datasets/regional-skills-ecosystem-index-reset?locale=en",
-      "action": "Decide whether to add it: a new connector, or an entry in pipeline/sources/_catalogue.py."
-    },
-    {
-      "kind": "overdue",
-      "rule": "cedefop-esi",
-      "source": "Cedefop European Skills Index",
-      "title": "Cedefop European Skills Index: a newer release is probably out",
-      "detail": "We hold the 2024-06 release; this source usually updates every 24 months.",
-      "url": "https://www.cedefop.europa.eu/en/datasets/dataset-european-skills-index-esi",
-      "action": "If a new ESI edition exists, add it to FILES in pipeline/sources/cedefop_skills.py."
     }
   ]
 }

@@ -46,6 +46,7 @@ KEY_FIGURES = [
     ["erasmus-ka1-vet-projects"],
     ["cedefop-kivet-3010"],
     ["cedefop-kivet-3030"],
+    ["cedefop-reset"],
 ]
 
 GROUPS = [
@@ -294,7 +295,8 @@ def load():
     cat_meta, catalogue = dataset("data-catalogue")
     extra = {}
     for did in ("vet-systems", "financing-instruments", "nqf-qualification-levels",
-                "recognition-vet-qualifications", "erasmus-vet-organisations", "cove-projects"):
+                "recognition-vet-qualifications", "erasmus-vet-organisations", "cove-projects",
+                "regional-skills-ecosystems"):
         m, recs = dataset(did)
         extra[did] = {"meta": m, "by_country": by_country(recs), "all": recs}
     # CoVE: by coordinator, and by every participating country (names).
@@ -669,6 +671,36 @@ def render_country(D, c: dict, f: dict, has_page: set[str]) -> str:
   <p class="sub">{plural(ncat, 'open dataset')} on apprenticeship and VET from {e(the_name)} {'is' if ncat == 1 else 'are'} listed on Europe's open-data portals{f", {capp:,} of them specifically about apprenticeship" if capp else ""}.</p>
   <p class="cp-links"><a class="btn primary" href="{e(explore_url("data-catalogue", [("country", v) for v in cat_country]))}">Browse {plural(ncat, 'dataset')}</a></p>
   <p class="provenance">Source: <a href="{e(src['url'])}" target="_blank" rel="noopener">{e(src['name'])}</a> ({licence_html(src.get('licence_id'))}). Each dataset keeps its own licence.</p>
+</section>""")
+
+    # f2. Regional skills ecosystems (Cedefop RESET), EU member states only.
+    regions = f.get("regional_skills_ecosystems") or []
+    if regions:
+        rm = D["extra"]["regional-skills-ecosystems"]["meta"]
+        src = rm["source"]
+        nav.append(("regions", "Regions"))
+        regions = sorted(regions, key=lambda r: -float(r.get("reset") or 0))
+        nat = (D["latest"].get("cedefop-reset") or {}).get("latest", {})
+        eu = nat.get("EU27")
+        nat_line = ""
+        if code in nat:
+            nat_line = (f" {e(name)} as a whole scores {nat[code]['value']:.1f}"
+                        + (f" (EU-27: {eu['value']:.1f})" if eu else "") + ".")
+        if len(regions) > 1:
+            rows = "".join(
+                f'<li><a href="{e(explore_url("regional-skills-ecosystems", [("country", r["country"])], open=r["id"]))}">{e(r["region"])}</a>'
+                f' <span class="cp-change-text">{e(r["reset"])} · {e(r["eu_rank"])} EU regions</span></li>' for r in regions)
+            body_html = (f'<p class="sub">Cedefop\'s Regional skills ecosystem index (RESET) scores every EU region from 1 to 100 on how skills are developed, used and supported.{nat_line} '
+                         f'{e(name)}\'s {len(regions)} regions, from highest to lowest score:</p><ol class="cp-list">{rows}</ol>')
+        else:
+            r = regions[0]
+            body_html = (f'<p class="sub">Cedefop\'s Regional skills ecosystem index (RESET) scores every EU region from 1 to 100 on how skills are developed, used and supported.{nat_line} '
+                         f'{e(name)} counts as a single region: it ranks {e(r["eu_rank"])} EU regions.</p>')
+        sections.append(f"""<section class="cp-sec" id="regions" aria-labelledby="h-regions">
+  <h2 id="h-regions">Regions: skills ecosystems</h2>
+  {body_html}
+  <p class="cp-links"><a class="btn primary" href="{e(explore_url("regional-skills-ecosystems", [("country", regions[0]["country"])]))}">Compare {e(name)}'s regions</a><a class="btn" href="../indicators.html?id=cedefop-reset">All countries' scores</a></p>
+  <p class="provenance">Source: <a href="{e(src['url'])}" target="_blank" rel="noopener">{e(src['name'])}</a> ({licence_html(src.get('licence_id'))}). Scores are relative to other EU regions, not raw statistics.</p>
 </section>""")
 
     # g. Follow: recent changes for this country and its Atom feed.

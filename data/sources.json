@@ -105,6 +105,33 @@
       }
     },
     {
+      "id": "cedefop-reset",
+      "name": "Cedefop — Regional skills ecosystem index (RESET)",
+      "publisher": "Cedefop",
+      "homepage": "https://www.cedefop.europa.eu/en/datasets/regional-skills-ecosystem-index",
+      "description": "Composite index comparing the skills ecosystems of the EU's NUTS 2 regions: skills supply, demand, match and environment, with VET-specific indicators (tasks, activity, employment and unemployment of people with initial VET). Published as country scores and a regional dataset.",
+      "access": "file",
+      "browser_cors": false,
+      "licence": "CC-BY-4.0",
+      "cadence": "new in 2026; update cycle not yet known",
+      "outputs": [
+        "indicators/cedefop-reset",
+        "regional-skills-ecosystems"
+      ],
+      "automated": true,
+      "connector": "pipeline/sources/cedefop_reset.py",
+      "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+      "status": {
+        "last_run": "2026-10-16T20:23:09+00:00",
+        "result": "ok",
+        "outputs": [
+          "data/published/indicators/cedefop-reset.json",
+          "data/published/regional-skills-ecosystems/meta.json",
+          "data/published/regional-skills-ecosystems/records.json"
+        ]
+      }
+    },
+    {
       "id": "cedefop-skills",
       "name": "Cedefop — Skills intelligence datasets (ESI, CLSSI, STAS)",
       "publisher": "Cedefop",

@@ -6,6 +6,47 @@
       "date": "2026-10-16",
       "items": [
         {
+          "kind": "new-dataset",
+          "title": "New dataset: Regional skills ecosystems (RESET)",
+          "text": "244 regions. How Europe's 244 regions compare on skills supply, demand, match and environment.",
+          "link": "pages/datasets/regional-skills-ecosystems.html"
+        },
+        {
+          "kind": "new-indicator",
+          "title": "New indicator: Regional skills ecosystem index (RESET), country scores",
+          "text": "Cedefop data, 2024, 27 countries.",
+          "link": "pages/indicators/cedefop-reset.html",
+          "countries": [
+            "AT",
+            "BE",
+            "BG",
+            "CY",
+            "CZ",
+            "DE",
+            "DK",
+            "EE",
+            "EL",
+            "ES",
+            "FI",
+            "FR",
+            "HR",
+            "HU",
+            "IE",
+            "IT",
+            "LT",
+            "LU",
+            "LV",
+            "MT",
+            "NL",
+            "PL",
+            "PT",
+            "RO",
+            "SE",
+            "SI",
+            "SK"
+          ]
+        },
+        {
           "kind": "new-records",
           "title": "1 organisation added: Erasmus+ accredited VET organisations",
           "text": "Zespół Szkół Ogólnokształcących i Zawodowych im. Ziemi Pogorzelskiej w Pogorzeli. Now 4,041 in total (was 4,040).",
@@ -94,6 +135,8 @@
         }
       ],
       "counts": {
+        "new-dataset": 1,
+        "new-indicator": 1,
         "new-records": 2,
         "removed-records": 1,
         "revision": 3,

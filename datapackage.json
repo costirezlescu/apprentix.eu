@@ -216,6 +216,26 @@
       ]
     },
     {
+      "name": "regional-skills-ecosystems",
+      "path": "data/published/regional-skills-ecosystems/records.json",
+      "format": "json",
+      "mediatype": "application/json",
+      "title": "Regional skills ecosystems (RESET)",
+      "description": "Cedefop's Regional skills ecosystem index (RESET) scores each EU NUTS 2 region from 1 to 100 on how skills are developed, used and supported, in four pillars and nine sub-pillars. Each record is one region with its overall score, its rank among all EU regions and within its country, and its scores on the VET-specific indicators (people with initial VET: job tasks, activity, employment, unemployment). Reference year 2024.",
+      "sources": [
+        {
+          "title": "Cedefop — Regional skills ecosystem index (RESET)",
+          "path": "https://www.cedefop.europa.eu/en/datasets/regional-skills-ecosystem-index"
+        }
+      ],
+      "licenses": [
+        {
+          "name": "CC-BY-4.0",
+          "title": "CC BY 4.0. Licence CC BY 4.0 as declared for the dataset in Cedefop's data.europa.eu catalogue (the workbook states: Copyright Cedefop, 2026). Cite as: Cedefop (2026), Regional skills ecosystem index (RESET); compiled by Apprentix."
+        }
+      ]
+    },
+    {
       "name": "cedefop-clssi-json",
       "path": "data/published/indicators/cedefop-clssi.json",
       "format": "json",
@@ -2646,6 +2666,46 @@
         {
           "title": "Cedefop",
           "path": "https://www.cedefop.europa.eu/en/datasets/dataset-key-indicators-vet"
+        }
+      ],
+      "licenses": [
+        {
+          "name": "CC-BY-4.0",
+          "path": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ]
+    },
+    {
+      "name": "cedefop-reset-json",
+      "path": "data/published/indicators/cedefop-reset.json",
+      "format": "json",
+      "mediatype": "application/json",
+      "title": "Regional skills ecosystem index (RESET), country scores",
+      "description": "Cedefop's RESET compares how well skills are developed, used and supported, combining indicators in four pillars: skills supply, skills demand, skills match and the skills environment (quality of education and business environment, education–business cooperation). Several indicators look specifically at people with initial VET (IVET): the cognitive and digital content of their jobs, their activity, employment and unemployment. Scores run from 1 to 100; higher is more favourable. These are the country and EU-27 rows of the dataset; the 244 regional scores are in the 'Regional skills ecosystems' dataset.",
+      "sources": [
+        {
+          "title": "Cedefop",
+          "path": "https://www.cedefop.europa.eu/en/datasets/regional-skills-ecosystem-index"
+        }
+      ],
+      "licenses": [
+        {
+          "name": "CC-BY-4.0",
+          "path": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ]
+    },
+    {
+      "name": "cedefop-reset-csv",
+      "path": "data/published/indicators/cedefop-reset.csv",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "title": "Regional skills ecosystem index (RESET), country scores",
+      "description": "Cedefop's RESET compares how well skills are developed, used and supported, combining indicators in four pillars: skills supply, skills demand, skills match and the skills environment (quality of education and business environment, education–business cooperation). Several indicators look specifically at people with initial VET (IVET): the cognitive and digital content of their jobs, their activity, employment and unemployment. Scores run from 1 to 100; higher is more favourable. These are the country and EU-27 rows of the dataset; the 244 regional scores are in the 'Regional skills ecosystems' dataset.",
+      "sources": [
+        {
+          "title": "Cedefop",
+          "path": "https://www.cedefop.europa.eu/en/datasets/regional-skills-ecosystem-index"
         }
       ],
       "licenses": [

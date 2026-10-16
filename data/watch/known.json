@@ -1,6 +1,6 @@
 {
   "description": "What has been reviewed. pipeline/watch.py reports only changes against this. Update with: python -m pipeline.watch --ack",
-  "acknowledged_at": "2026-10-01",
+  "acknowledged_at": "2026-10-16",
   "cedefop_catalogue": {
     "continuing_vet_sekmokas_cedefop_2026_dataset": {
       "title": "Continuing vocational training in enterprises in EU: trends, inequalities and COVID-19 impact (2015-2020)",
@@ -43,6 +43,12 @@
       "issued": "2026-07-02T10:00:00",
       "modified": null,
       "portal_url": "https://data.europa.eu/data/datasets/recognition_symeonidis_villalba_cedefop_2026_dataset?locale=en"
+    },
+    "regional-skills-ecosystem-index-reset": {
+      "title": "Regional skills ecosystem index (RESET)",
+      "issued": "2026-10-05",
+      "modified": null,
+      "portal_url": "https://data.europa.eu/data/datasets/regional-skills-ecosystem-index-reset?locale=en"
     },
     "sekmokas_lipinska_cedefop_eucen_2026_dataset": {
       "title": "Setting the Scene: Financing Adult Learning in Europe",
@@ -186,6 +192,7 @@
     "qoe_ewcs_6_5": "Employed persons whose work experience and job skills would be helpful to find another job by sex and age"
   },
   "catalogue_ids": [
+    "-91ff7a79-ceb3-45a7-9686-c992634343ce-_100445_es",
     "-b5bd9644-76a4-4540-b563-828819757b23-",
     "0000901",
     "0000902",
@@ -227,6 +234,7 @@
     "11630-caribisch-nl-deelnemers-mbo-niveau-sector-domein",
     "11631-caribisch-nl-leerlingen-in-het-po-vo-en-mbo",
     "11776-caribbean-netherlands-mbo-students-by-level-sector-and-domain",
+    "12072fe7-39e1-43bf-9052-57301e234b96",
     "12947491-bundesamt-fur-statistik-bfs",
     "13019-deelnemers-middelbaar-beroepsonderwijs-mbo-",
     "13043-mbo-deelnemers-leerweg-studierichting-regio",
@@ -319,6 +327,7 @@
     "27f5a443-f999-42a3-ad06-45e1a20a8d2c",
     "2802-statistisches-amt-kanton-zuerich",
     "28880-mbo-studieuitval-leerweg-opleiding-regio",
+    "29c3d6a0-010b-426c-9dd8-2dce86982026-geoinformation-der-stadt-bern",
     "2bddfe35-3186-45e0-b822-3406a0313b2d",
     "2c688cb6-4877-40b8-928f-0a8ae2a1701c",
     "2d108fc2-9488-4cee-abee-fa8e4a0be0ea",
@@ -606,6 +615,7 @@
     "58d1e6b2-ca55-4870-b129-71cec5189be5",
     "5a4d5111-6db3-4101-b8c6-c8a9bede0155",
     "5ae9c624c8d8c9146d44cc1a",
+    "5b03f6bbc8d8c9229f4afa4a",
     "5b3a2897-8191-4873-afd3-baa6a467cb17",
     "5b683eaf-6517-4b3a-aa9f-ad6e4ffd15a0",
     "5b68c41e-afbb-4e09-acc8-120c4d5fce1e",
@@ -859,6 +869,7 @@
     "cbs-microdata-0b01e410801d0c0d",
     "cbs-microdata-0b01e410801f5541",
     "cbs-microdata-0b01e41080367507",
+    "cbs-microdata-0b01e4108038382e",
     "cbs-microdata-0b01e410803a5088",
     "cbs-microdata-0b01e410804102b1",
     "cbs-microdata-0b01e4108055b33a",
@@ -868,6 +879,8 @@
     "cbs-microdata-0b01e410806d9abd",
     "cbs-microdata-0b01e4108074cd46",
     "cbs-microdata-0b01e4108079e7cb",
+    "cbs-microdata-0b01e410807e0b00",
+    "cbs-microdata-0b01e410807ee3f6",
     "cc937345-c86d-45db-bfbc-a8b59e936b7f",
     "ce42906f-f5e2-4376-aba1-8c368710b15b~~1",
     "ce574175-cfbd-97a0-5a31-5653ccacb3d4",
@@ -889,6 +902,7 @@
     "d96777ff-811c-4629-a601-2db1c33bdbbc",
     "d9d923ab-10d8-4840-8ff6-3420ade125d3",
     "dataset~~1",
+    "dbfe8d0c-96ed-41d2-ac0f-f98d61bc5377",
     "dbs-wb-2002-personalausundfortbildung",
     "dbs-wb-2004-personalausundfortbildung",
     "dbs-wb-2005-personalausundfortbildung",
@@ -1508,6 +1522,10 @@
     "https-www-landesdatenbank-nrw-de-ldbnrwws-downloader-00-tables-b-e07-6-i1_00",
     "https-www-landesdatenbank-nrw-de-ldbnrwws-downloader-00-tables-b-e12-4-i1_00",
     "https-www-odwb-be-explore-dataset-ares-referentiel-des-bassins-enseignement-qualifiant-formation-emploi-efe-",
+    "https-www-regionalstatistik-de-genesisws-downloader-00-tables-13111-11-04-4-b_00",
+    "https-www-regionalstatistik-de-genesisws-downloader-00-tables-13111-11-04-4_00",
+    "https-www-regionalstatistik-de-genesisws-downloader-00-tables-13111-12-03-4-b_00",
+    "https-www-regionalstatistik-de-genesisws-downloader-00-tables-13111-12-03-4_00",
     "https-www-regionalstatistik-de-genesisws-downloader-00-tables-19321-z-02_00",
     "https-www-regionalstatistik-de-genesisws-downloader-00-tables-19321-z-05_00",
     "https-www-regionalstatistik-de-genesisws-downloader-00-tables-19321-z-08_00",
@@ -1563,6 +1581,7 @@
     "https:-genesis.destatis.de-genesisws-downloads-00-tables-62361-0014_00",
     "https:-genesis.destatis.de-genesisws-downloads-00-tables-62361-0024_00",
     "https:-genesis.destatis.de-genesisws-downloads-00-tables-63511-0003_00",
+    "ine-0001387",
     "ine-0002391",
     "ine-0002392",
     "ine-0002393",
@@ -1602,6 +1621,7 @@
     "leerlingen_gem_cetscore_ouders_opgeleid_mbotweedrievier_havo_vwo",
     "leerlingen_gem_iepscore_ouders_opgeleid_mbotweedrievier_havo_en_vwo",
     "loe5hrcexxlg8l9at7nwbw",
+    "lrfvjattzjgok3camkcpva",
     "m1610",
     "m2039",
     "m2041",
@@ -1818,5 +1838,8 @@
     "y4gfp5e18kv0xrocksirva",
     "ztag8fcgfkscovpqjdzug~~1",
     "zzyfddiotgkl0tj1dpxpew"
-  ]
+  ],
+  "snoozed": {
+    "cedefop-esi": "2027-01-16"
+  }
 }

@@ -1,0 +1,261 @@
+{
+  "id": "regional-skills-ecosystems",
+  "title": "Regional skills ecosystems (RESET)",
+  "tagline": "How Europe's 244 regions compare on skills supply, demand, match and environment.",
+  "description": "Cedefop's Regional skills ecosystem index (RESET) scores each EU NUTS 2 region from 1 to 100 on how skills are developed, used and supported, in four pillars and nine sub-pillars. Each record is one region with its overall score, its rank among all EU regions and within its country, and its scores on the VET-specific indicators (people with initial VET: job tasks, activity, employment, unemployment). Reference year 2024.",
+  "recordLabel": {
+    "one": "region",
+    "many": "regions"
+  },
+  "source": {
+    "name": "Cedefop — Regional skills ecosystem index (RESET)",
+    "url": "https://www.cedefop.europa.eu/en/datasets/regional-skills-ecosystem-index",
+    "licence": "CC BY 4.0. Licence CC BY 4.0 as declared for the dataset in Cedefop's data.europa.eu catalogue (the workbook states: Copyright Cedefop, 2026). Cite as: Cedefop (2026), Regional skills ecosystem index (RESET); compiled by Apprentix.",
+    "licence_id": "CC-BY-4.0",
+    "caveat": "Scores are standardised from 1 to 100 relative to the other EU regions (higher = more favourable); they are not raw statistics. Ranks and the 'position among EU regions' bands are calculated by Apprentix from the overall score. Version July 2026, reference year 2024. Cedefop's interactive tool: https://www.cedefop.europa.eu/en/tools/reset",
+    "retrieved": "2026-10-16",
+    "file_url": "https://www.cedefop.europa.eu/files/dataset-regional-skills-ecosystem-index-reset.xlsx",
+    "raw_file": "data/raw/cedefop/2026-10-16-reset.xlsx",
+    "raw_sha256": "e4485c8816557ea7e3319ff745f25fac8e3f93049344041c513c73e143646b2a"
+  },
+  "display": {
+    "title": "region",
+    "subtitle": "region_original",
+    "group": "country",
+    "badge": "flag",
+    "facts": [
+      "chip_score",
+      "chip_rank",
+      "chip_country"
+    ]
+  },
+  "sections": [
+    {
+      "title": "At a glance",
+      "fields": [
+        "country",
+        "nuts2",
+        "reset",
+        "eu_rank",
+        "country_rank",
+        "band"
+      ]
+    },
+    {
+      "title": "Pillars",
+      "fields": [
+        "s_SkillSupply",
+        "s_SkillDemand",
+        "s_SkillMatch",
+        "s_SkillEnvironment"
+      ]
+    },
+    {
+      "title": "Sub-pillars",
+      "fields": [
+        "s_EmpProd",
+        "s_TaskEmpl",
+        "s_EduCoop",
+        "s_EduEnv",
+        "s_BizEnv",
+        "s_ActTrans",
+        "s_LabImb",
+        "s_SkillFor",
+        "s_LabAttr"
+      ]
+    },
+    {
+      "title": "People with VET (IVET or secondary education)",
+      "fields": [
+        "s_cog_task_ivet",
+        "s_dig_task_ivet",
+        "s_act_you_ivet",
+        "s_act_adu_ivet",
+        "s_emp_rec_ivet",
+        "s_unemp_ivet",
+        "s_unemplong_sec",
+        "s_cvet_sec"
+      ]
+    }
+  ],
+  "fields": [
+    {
+      "key": "country",
+      "label": "Country",
+      "type": "category",
+      "facet": true,
+      "collapse": 12
+    },
+    {
+      "key": "band",
+      "label": "Position among EU regions",
+      "type": "category",
+      "facet": true
+    },
+    {
+      "key": "region",
+      "label": "Region",
+      "type": "title"
+    },
+    {
+      "key": "region_original",
+      "label": "Name in the national language",
+      "type": "subtitle"
+    },
+    {
+      "key": "nuts2",
+      "label": "NUTS 2 code",
+      "type": "text"
+    },
+    {
+      "key": "reset",
+      "label": "RESET score (1–100)",
+      "type": "text"
+    },
+    {
+      "key": "eu_rank",
+      "label": "Rank among EU regions",
+      "type": "text"
+    },
+    {
+      "key": "country_rank",
+      "label": "Rank within the country",
+      "type": "text"
+    },
+    {
+      "key": "s_SkillSupply",
+      "label": "Skills supply",
+      "type": "text"
+    },
+    {
+      "key": "s_SkillDemand",
+      "label": "Skills demand",
+      "type": "text"
+    },
+    {
+      "key": "s_SkillMatch",
+      "label": "Skills match",
+      "type": "text"
+    },
+    {
+      "key": "s_SkillEnvironment",
+      "label": "Skills environment",
+      "type": "text"
+    },
+    {
+      "key": "s_EmpProd",
+      "label": "Employment and productivity",
+      "type": "text"
+    },
+    {
+      "key": "s_TaskEmpl",
+      "label": "Employment tasks",
+      "type": "text"
+    },
+    {
+      "key": "s_EduCoop",
+      "label": "Education-business cooperation",
+      "type": "text"
+    },
+    {
+      "key": "s_EduEnv",
+      "label": "Quality of education environment",
+      "type": "text"
+    },
+    {
+      "key": "s_BizEnv",
+      "label": "Quality of business environment",
+      "type": "text"
+    },
+    {
+      "key": "s_ActTrans",
+      "label": "Activity and transition",
+      "type": "text"
+    },
+    {
+      "key": "s_LabImb",
+      "label": "Labour market imbalances",
+      "type": "text"
+    },
+    {
+      "key": "s_SkillFor",
+      "label": "Skills formation",
+      "type": "text"
+    },
+    {
+      "key": "s_LabAttr",
+      "label": "Labour attraction",
+      "type": "text"
+    },
+    {
+      "key": "s_cog_task_ivet",
+      "label": "Cognitive tasks (IVET)",
+      "type": "text"
+    },
+    {
+      "key": "s_dig_task_ivet",
+      "label": "Digital tasks (IVET)",
+      "type": "text"
+    },
+    {
+      "key": "s_act_you_ivet",
+      "label": "Activity of young persons (IVET)",
+      "type": "text"
+    },
+    {
+      "key": "s_act_adu_ivet",
+      "label": "Activity of adult persons (IVET)",
+      "type": "text"
+    },
+    {
+      "key": "s_emp_rec_ivet",
+      "label": "Employment of young graduates (IVET)",
+      "type": "text"
+    },
+    {
+      "key": "s_unemp_ivet",
+      "label": "Unemployment (IVET)",
+      "type": "text"
+    },
+    {
+      "key": "s_unemplong_sec",
+      "label": "Long-term unemployment (secondary)",
+      "type": "text"
+    },
+    {
+      "key": "s_cvet_sec",
+      "label": "Adults with a learning experience (secondary)",
+      "type": "text"
+    },
+    {
+      "key": "chip_score",
+      "label": "Score (card)",
+      "type": "text"
+    },
+    {
+      "key": "chip_rank",
+      "label": "EU rank (card)",
+      "type": "text"
+    },
+    {
+      "key": "chip_country",
+      "label": "Country rank (card)",
+      "type": "text"
+    },
+    {
+      "key": "country_code",
+      "label": "Country code",
+      "type": "hidden"
+    },
+    {
+      "key": "flag",
+      "label": "Flag",
+      "type": "hidden"
+    },
+    {
+      "key": "id",
+      "label": "Identifier",
+      "type": "hidden"
+    }
+  ]
+}
