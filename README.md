@@ -16,12 +16,12 @@ Every record links back to its official source, which remains authoritative.
 Deliberately plain:
 
 - **No build step.** No npm, no bundler, no framework. Plain HTML, CSS and JavaScript.
-- **No server.** Everything is static files, so it runs on GitHub Pages for free.
+- **No server-side code.** Everything is static files, served as-is (in production by Laravel Forge; any static web server works).
 - **No accounts, no database, no tracking.**
 - **Data-driven.** Adding a dataset means adding two JSON files — not writing code.
 - **Data refreshed by a pipeline, not by the site.** A small Python pipeline (`pipeline/`)
   fetches public sources on a schedule in GitHub Actions and writes plain JSON/CSV.
-  Every change arrives as a pull request you review. The site itself still has no build step.
+  Each weekly refresh is committed to `main` once it passes validation. The site itself still has no build step.
 
 The only external request is the Google Fonts stylesheet — plus, on the optional *Ask* page,
 the question sent to the assistant's Worker (see "Ask Apprentix" below).
@@ -80,15 +80,15 @@ apprentix.eu/
 │     └─ indicators/              <id>.json + <id>.csv, index.json
 ├─ pipeline/                      Python: one connector per source, build, validate
 ├─ worker/                        Cloudflare Worker behind Ask Apprentix (deployed with wrangler)
-├─ .github/workflows/             weekly refresh (opens a PR) + validation
+├─ .github/workflows/             weekly refresh (commits to main) + validation
 ├─ datapackage.json               Frictionless description of all published data
 ├─ CITATION.cff                   How to cite
 ├─ scripts/
 │  ├─ serve.ps1                   local preview server
 │  ├─ csv-to-json.ps1             spreadsheet  -> records.json
 │  └─ docx-extract.ps1            Word files   -> CSV or records.json
-├─ .nojekyll                      stops GitHub Pages hiding files
-└─ CNAME                          custom domain (apprentix.eu)
+├─ .nojekyll                      only used by GitHub Pages (not needed on Forge)
+└─ CNAME                          only used by GitHub Pages (not needed on Forge)
 ```
 
 ### raw vs published
@@ -129,9 +129,10 @@ python3 -m pipeline.validate            # check everything against data/schemas/
 ### Automation (GitHub Actions)
 
 - `.github/workflows/ingest.yml` runs every Monday (and on demand from the Actions tab),
-  then opens a **pull request** titled "Data refresh". Review the diff, merge, and the site
-  updates. The git history of `data/` is the changelog.
-  *One-time setup:* Settings → Actions → General → allow GitHub Actions to create pull requests.
+  validates the result and, if anything changed, commits it straight to `main` as
+  "Data refresh (…)"; the site updates from there. Nothing is committed when validation
+  fails. The git history of `data/` is the changelog.
+  *If `main` is protected:* allow GitHub Actions to push to it (or the push step fails).
 - `.github/workflows/validate.yml` checks every push/PR against `data/schemas/`.
 - Optional API keys go in Settings → Secrets → Actions (e.g. `DESTATIS_TOKEN`); connectors
   that need a missing key are skipped, not failed.
@@ -444,9 +445,9 @@ whatever the DNS setup: the browser makes a cross-origin request, which the Work
 `ALLOWED_ORIGINS`. Alternatively, serve it at `https://apprentix.eu/api/ask` (uncomment `routes` in
 `wrangler.toml`; the Worker answers on `/ask` and `/api/ask`). That keeps everything on one
 domain (no CORS, less likely to be blocked by privacy extensions), but **only works if the
-apprentix.eu DNS record pointing at GitHub Pages is proxied through Cloudflare** (orange cloud),
-with SSL/TLS mode "Full". With DNS-only (grey cloud) records, which is GitHub Pages' default
-recommendation, Cloudflare never sees the traffic and the route does nothing — use workers.dev.
+apprentix.eu DNS record is proxied through Cloudflare** (orange cloud), with SSL/TLS mode
+"Full". With DNS-only (grey cloud) records Cloudflare never sees the traffic and the route does
+nothing — use workers.dev.
 
 ### Change the model or limits
 
@@ -468,14 +469,24 @@ local build instead.
 
 ---
 
-## Publishing to GitHub Pages
+## Publishing (Laravel Forge)
 
-1. Create a repository on GitHub and push this folder to it.
-2. Repository **Settings → Pages → Source: Deploy from a branch**, branch `main`, folder `/ (root)`.
-3. For the custom domain, keep the `CNAME` file and point your DNS at GitHub Pages.
+The live site is served by Laravel Forge straight from this repository. It is a static site, so
+the Forge site needs none of the Laravel defaults:
 
-Without a custom domain the site lives at `https://<username>.github.io/apprentix.eu/`.
-All paths in the code are relative, so both work with no changes.
+1. **Web directory:** `/` (the repository root), not `/public`.
+2. **Deploy script:** just update the files, e.g.
+   ```sh
+   cd $FORGE_SITE_PATH
+   git pull origin $FORGE_SITE_BRANCH
+   ```
+   No `composer install`, `npm` or `artisan` steps: they fail on this repository and the
+   deployment then stops before the new files are live.
+3. **Deploying:** Forge deploys on every push to `main` through its GitHub webhook — including
+   the weekly refresh commit, so refreshed data goes live without any extra step.
+4. Optional nginx tweak: `try_files $uri $uri/ =404;` instead of the Laravel `/index.php` fallback.
+
+All paths in the code are relative, so the site also works from any other static host.
 
 ---
 

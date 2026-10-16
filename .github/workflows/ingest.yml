@@ -1,8 +1,8 @@
 name: Refresh data
 
-# Fetches every automated source, rebuilds the indexes, validates, and opens a
-# pull request when anything changed. Nothing reaches the live site until a
-# person reviews and merges that PR.
+# Fetches every automated source, rebuilds the indexes and pages, validates, and
+# commits the result straight to main when anything changed. Nothing is committed
+# if validation fails. The git history of data/ is the changelog.
 
 on:
   schedule:
@@ -16,7 +16,6 @@ on:
 
 permissions:
   contents: write
-  pull-requests: write
   issues: write
 
 concurrency:
@@ -63,31 +62,33 @@ jobs:
           python -m pipeline.watch --markdown > watch.md
           python -m pipeline.watch
 
-      - name: Open pull request
-        uses: peter-evans/create-pull-request@v7
-        with:
-          branch: data-refresh
-          delete-branch: true
-          commit-message: "Data refresh ${{ github.run_id }}"
-          title: "Data refresh (${{ steps.run.outputs.status == '0' && 'all sources OK' || 'some sources failed' }})"
-          labels: data
-          add-paths: |
-            data/**
-            datapackage.json
-            pages/countries/**
-            pages/indicators/**
-            pages/datasets/**
-            pages/data.html
-            sitemap.xml
-            robots.txt
-          body: |
-            Automated refresh of the automated sources. Review the diff before merging: the git history of `data/` is the site's changelog.
+      - name: Commit to main
+        # The push deploys the site: Forge's GitHub webhook deploys every push to main.
+        # Only reached when validation passed. Failed sources keep their previous
+        # data (see data/sources.json), so a partial refresh is still committed.
+        env:
+          RUN_STATUS: ${{ steps.run.outputs.status == '0' && 'all sources OK' || 'some sources failed' }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A data datapackage.json pages assets/og sitemap.xml robots.txt
+          if git diff --cached --quiet; then
+            echo "Nothing changed."
+            exit 0
+          fi
+          git commit -q -F - <<MSG
+          Data refresh ($RUN_STATUS)
 
-            ```
-            ${{ steps.run.outputs.log }}
-            ```
-
-            Failed sources keep their previous data; see `data/sources.json` for the status of each.
+          Automated weekly refresh, run ${{ github.run_id }}.
+          ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          MSG
+          # Someone may have pushed while the refresh ran: replay on top of it.
+          for i in 1 2 3; do
+            git pull --rebase -q origin "${GITHUB_REF_NAME}" && git push -q origin "HEAD:${GITHUB_REF_NAME}" && exit 0
+            sleep 10
+          done
+          echo "::error::Could not push the refresh commit."
+          exit 1
 
       - name: Open or update the source-watch issue
         if: always()
