@@ -215,6 +215,7 @@ def page(*, title: str, description: str, canonical: str, root: str, body: str, 
       <a href="{pages}find.html">Find my apprenticeship</a>
       <a href="{pages}duel.html">Compare countries</a>
       <a href="{pages}play.html">Higher or lower?</a>
+      <a href="{pages}myths.html">Myth or fact?</a>
       <a href="{pages}glossary.html">Glossary</a>
       <a href="{pages}about.html">About</a>
       <a href="{pages}data.html">Data &amp; sources</a>
@@ -442,6 +443,18 @@ def sources_line(rows: list[dict]) -> str:
     return "; ".join(f"{e(pub)} ({licence_html(lic, url)})" for (pub, lic), url in seen.items())
 
 
+_PORTRAITS: dict | None = None
+
+
+def portrait_html(scheme_id: str) -> str:
+    """The scheme's portrait (pipeline/portraits.py), already escaped."""
+    global _PORTRAITS
+    if _PORTRAITS is None:
+        path = PUBLISHED / "portraits" / "portraits.json"
+        _PORTRAITS = read_json(path).get("portraits", {}) if path.exists() else {}
+    return (_PORTRAITS.get(scheme_id) or {}).get("html", "")
+
+
 def scheme_block(s: dict, meta: dict) -> str:
     def row(label, value):
         return f'<div class="row"><div class="k">{e(label)}</div><div>{e(value)}</div></div>' if value else ""
@@ -460,6 +473,7 @@ def scheme_block(s: dict, meta: dict) -> str:
   {region}<h3>{e(s.get('name_en'))}</h3>
   {f'<p class="cp-orig">{e(s["name_original"])}</p>' if s.get("name_original") else ""}
   {f'<p>{e(s["overview"])}</p>' if s.get("overview") else ""}
+  {portrait_html(s["id"])}
   <div class="kv">
     {row("Education level", level)}
     {row("Duration", s.get("duration"))}
@@ -487,6 +501,85 @@ def country_changes(code: str) -> list[dict]:
         from .changes import BY_COUNTRY
         _CHANGES = read_json(BY_COUNTRY).get("countries", {}) if BY_COUNTRY.exists() else {}
     return _CHANGES.get(code, [])
+
+
+_OPP: dict | None = None
+OPP_KIND = {"find": "Search for a place", "info": "Official information", "abroad": "Training abroad"}
+
+
+def opportunities_section(code: str, name: str, the_name: str, f: dict) -> str:
+    global _OPP
+    if _OPP is None:
+        path = REFERENCE / "opportunities.json"
+        _OPP = read_json(path) if path.exists() else {}
+    entry = (_OPP.get("countries") or {}).get(code) or {}
+    links = entry.get("links") or []
+    items = []
+    for kind in ("find", "info", "abroad"):
+        for l in (x for x in links if x.get("kind") == kind):
+            langs = ", ".join(l.get("languages") or [])
+            meta = " · ".join(x for x in [l.get("publisher"), langs.upper() if langs else ""] if x)
+            items.append(f'<li><span class="opp-kind">{e(OPP_KIND[kind])}</span>'
+                         f'<a href="{e(l["url"])}" target="_blank" rel="noopener">{e(l["title"])} ↗</a>'
+                         f'<span class="opp-meta">{e(meta)}</span></li>')
+    has_schemes = bool(f["schemes"])
+    eo = f["erasmus_vet_organisations"]
+    if not items and not has_schemes and not eo:
+        return ""
+    extra = []
+    if has_schemes:
+        extra.append(f'<a class="btn primary" href="../find.html?c={e("GR" if code == "EL" else code)}">Which scheme would suit me?</a>')
+    if eo:
+        extra.append(f'<a class="btn" href="{e(explore_url("erasmus-vet-organisations", [("country", v) for v in record_values(eo, "country")]))}">'
+                     f'{plural(len(eo), "Erasmus+ accredited VET organisation")} (learning abroad)</a>')
+    verified = _OPP.get("verified_on", "")
+    body = (f'<ul class="opp-list">{"".join(items)}</ul>' if items else
+            f'<p class="sub">No official national search service for apprenticeship places was found for {e(the_name)}. '
+            f'The links below may still help.</p>')
+    return f"""<section class="cp-sec" id="find" aria-labelledby="h-find">
+  <h2 id="h-find">Find an apprenticeship in {e(name)}</h2>
+  <p class="sub">Apprentix does not list vacancies or place anyone: these are the official services where apprenticeship places and advice are published.</p>
+  {body}
+  {f'<p class="cp-links">{"".join(extra)}</p>' if extra else ''}
+  <p class="provenance">Official services selected and checked by Apprentix{", links verified " + e(verified) if verified else ""}. Erasmus+ data: European Commission (CC BY 4.0).</p>
+</section>"""
+
+
+_WIC: dict | None = None
+KIND_LABEL = {"stock": "Snapshot on a date", "flow": "Count over a period", "rate": "Rate", "other": "Other measure"}
+
+
+def what_is_counted(D, code: str, name: str) -> str:
+    """'What is counted' panel: how the country's national series differ (data/reference/what-is-counted.json).
+    The latest value is read from the indicator itself, so it is always current."""
+    global _WIC
+    if _WIC is None:
+        path = REFERENCE / "what-is-counted.json"
+        _WIC = read_json(path) if path.exists() else {}
+    w = (_WIC.get("countries") or {}).get(code)
+    if not w:
+        return ""
+    cards = []
+    for sr in w.get("series", []):
+        L = D["latest"].get(sr["id"])
+        if not L:
+            continue
+        ind = L["ind"]
+        o = L["latest"].get(code)
+        latest = f'{e(o["time"])}: {e(fmt_value(o["value"], ind.get("unit")))}' if o else ""
+        rows = [("What it is", f'{KIND_LABEL.get(sr.get("kind"), "Measure")} · {sr.get("reference", "")}'),
+                ("Counts", sr.get("covers")), ("Leaves out", sr.get("excludes")), ("Latest", None)]
+        dl = "".join(f'<div><dt>{e(k)}</dt><dd>{latest if k == "Latest" else e(v)}</dd></div>'
+                     for k, v in rows if (latest if k == "Latest" else v) and v != "not stated")
+        cards.append(f'<li class="wic-card"><a class="wic-title" href="{e(indicator_page_url(sr["id"]))}">{e(sr.get("label") or ind["title"])}</a>'
+                     f'<dl>{dl}</dl><p class="wic-use">{e(sr.get("use_when", ""))}</p></li>')
+    if not cards:
+        return ""
+    reviewed = _WIC.get("reviewed_on", "")
+    return (f'<div class="wic" id="what-is-counted"><h3>What is counted</h3>'
+            f'<p>{e(w.get("summary", ""))}</p><ul class="wic-list">{"".join(cards)}</ul>'
+            f'<p class="provenance">Definitions from each publisher\'s documentation and the Apprentix connectors'
+            f'{", reviewed " + e(reviewed) if reviewed else ""}. Snapshots and counts over a period must not be added or compared directly.</p></div>')
 
 
 def render_country(D, c: dict, f: dict, has_page: set[str]) -> str:
@@ -540,6 +633,13 @@ def render_country(D, c: dict, f: dict, has_page: set[str]) -> str:
   <div class="cp-schemes">{"".join(scheme_block(s, sm) for s in f["schemes"])}</div>
   <p class="provenance">Source: <a href="{e(src['url'])}" target="_blank" rel="noopener">{e(src['name'])}</a>. {e(src.get('caveat', ''))}</p>
 </section>""")
+
+    # b2. Where to find an apprenticeship: official services (data/reference/opportunities.json),
+    # the quiz, and Erasmus+ accredited organisations for training abroad.
+    find_html = opportunities_section(code, name, the_name, f)
+    if find_html:
+        nav.append(("find", "Find an apprenticeship"))
+        sections.append(find_html)
 
     # System, qualifications and recognition (Cedefop VET in Europe, NQF tool, recognition mapping).
     X = D["extra"]
@@ -620,6 +720,7 @@ def render_country(D, c: dict, f: dict, has_page: set[str]) -> str:
   <h2 id="h-national">National statistics</h2>
   <p class="sub">Series from {e(the_name)}'s own statistical sources. Definitions differ from country to country, so these figures should not be compared with other countries'.</p>
   {figures_table(national, code, name, False)}
+  {what_is_counted(D, code, name)}
   <p class="provenance">Sources: {sources_line(national)}.</p>
 </section>""")
 
@@ -755,7 +856,7 @@ def render_country(D, c: dict, f: dict, has_page: set[str]) -> str:
     <h1><span class="cp-flag-emoji" aria-hidden="true">{c.get('flag', '')}</span> {e(name)}</h1>
     <p class="lede">Apprenticeships and vocational education and training (VET) in {e(the_name)}: {e(summary)}.</p>
     {f'<ul class="cp-toc" aria-label="On this page">{toc}</ul>' if toc else ''}
-    <p class="cp-links cp-actions"><a class="btn primary" href="../duel.html?a={e(code)}">Compare {e(name)} with another country</a><a class="btn" href="../find.html?c={e('GR' if code == 'EL' else code)}">Find an apprenticeship in {e(name)}</a><a class="btn" href="#follow">Follow {e(name)}</a></p>
+    <p class="cp-links cp-actions"><a class="btn primary" href="../duel.html?a={e(code)}">Compare {e(name)} with another country</a>{f'<a class="btn" href="#find">Find an apprenticeship in {e(name)}</a>' if find_html else ''}<a class="btn" href="#follow">Follow {e(name)}</a></p>
   </div>
   <div class="cp-mapbox">{tile_map(D["countries"], has_page, code, "")}</div>
 </header>
@@ -896,6 +997,7 @@ def sitemap(D, codes: list[str], extra: list[tuple[str, str]] = ()) -> str:
         (SITE + "pages/find.html", updated),
         (SITE + "pages/duel.html", updated),
         (SITE + "pages/play.html", updated),
+        (SITE + "pages/myths.html", updated),
         (SITE + "pages/glossary.html", updated),
         (SITE + "pages/compare.html", updated),
         (SITE + "pages/ask.html", updated),

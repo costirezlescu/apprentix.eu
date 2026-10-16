@@ -14,6 +14,7 @@ const SHOW_FIRST = 10;
 let SCHEMES = [];
 let NAMES = {};        // site code → country name (countries.json)
 let VETSYS = {};       // site code → vet-systems source_url
+let PORTRAITS = {};    // scheme id → portrait (pipeline/portraits.py)
 let COUNTRY_GROUPS = []; // [{label, items:[{code, name, flag, n}]}]
 
 let answers = parseAnswers('');
@@ -193,9 +194,17 @@ function card(r, rank) {
       el('a', { href: l.href, target: l.external ? '_blank' : null, rel: l.external ? 'noopener' : null, text: l.text }),
       l.external ? el('span', { class: 'find-sr', text: ' (opens in a new tab)' }) : null)));
 
+  const pt = PORTRAITS[rec.id];
+  const story = pt && pt.story?.length
+    ? el('details', { class: 'find-story' },
+        el('summary', { text: pt.story_title }),
+        el('p', { text: pt.story.join(' ') }),
+        el('p', { class: 'pt-src', text: "From Cedefop's coded answers for this scheme (2026 fiche)." }))
+    : null;
+
   return el('li', { class: 'find-card' }, head,
     rec.overview ? el('p', { class: 'find-overview', text: rec.overview }) : null,
-    facts, why, linkList);
+    facts, story, why, linkList);
 }
 
 function renderResults(focus) {
@@ -300,11 +309,13 @@ window.addEventListener('popstate', fromURL);
 
 (async function init() {
   try {
-    const [schemes, vet, ref] = await Promise.all([
+    const [schemes, vet, ref, portraits] = await Promise.all([
       loadDataset('apprenticeship-schemes'),
       loadDataset('vet-systems').catch(() => ({ records: [] })),
-      fetch(url('data/reference/countries.json')).then(r => r.json())
+      fetch(url('data/reference/countries.json')).then(r => r.json()),
+      fetch(url('data/published/portraits/portraits.json')).then(r => r.ok ? r.json() : {}).catch(() => ({}))
     ]);
+    PORTRAITS = portraits.portraits || {};
     SCHEMES = schemes.records;
     const groups = {};
     for (const c of ref.countries) {

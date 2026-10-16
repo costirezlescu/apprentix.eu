@@ -1,7 +1,8 @@
 /* Apprentix — "Scheme of the week" (home page).
    Each ISO week shows one of Cedefop's apprenticeship schemes, in a fixed shuffled
    order so neighbouring weeks come from different countries. It changes on Monday
-   (UTC) by itself; no rebuild is needed. All text is set with textContent.
+   (UTC) by itself; no rebuild is needed. Text is set with textContent, except the scheme's
+   portrait, which is HTML generated and escaped by pipeline/portraits.py.
 
    Usage: mountSchemeOfWeek(document.getElementById('scheme-week')) */
 
@@ -56,8 +57,12 @@ export function schemeFor(records, date = new Date()) {
 
 export async function mountSchemeOfWeek(host) {
   if (!host) return;
-  let data;
+  let data, portraits = {};
   try { data = await loadDataset('apprenticeship-schemes'); } catch { return; }
+  try {
+    const r = await fetch(url('data/published/portraits/portraits.json'));
+    if (r.ok) portraits = (await r.json()).portraits || {};
+  } catch { /* the card works without the portrait */ }
   const records = data.records.filter(r => r.id && r.name_en);
   if (!records.length) return;
   const { scheme: s, next, week } = schemeFor(records);
@@ -76,7 +81,12 @@ export async function mountSchemeOfWeek(host) {
 
   if (s.overview) el('p', 'sow-overview', card, s.overview);
 
-  const facts = [
+  const portrait = portraits[s.id]?.html;
+  if (portrait) {
+    const box = el('div', 'sow-portrait', card);
+    box.innerHTML = portrait;            // generated and escaped by pipeline/portraits.py
+  }
+  const facts = portrait ? [] : [
     ['duration', s.duration],
     ['workplace_time', s.workplace_time],
     ['compensation', s.compensation],

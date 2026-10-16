@@ -57,7 +57,7 @@ C = {
 }
 
 # Image paths (relative to the site root). Pages use these; keep in sync with build().
-SECTIONS = ("indicators", "insights", "find", "duel", "compare", "data", "ask", "explore", "play", "countries")
+SECTIONS = ("indicators", "insights", "find", "duel", "compare", "data", "ask", "explore", "play", "myths", "countries")
 
 
 def site_path() -> str:
@@ -923,6 +923,10 @@ def section_specs(N: dict) -> dict[str, dict]:
                         subtitle="Schemes, policies, qualifications, Erasmus+ organisations and open datasets.",
                         stats=[stat(N["datasets"], "Record datasets"), stat(N["records"], "Records"),
                                stat(N["recs"].get("vet-policy-timeline", 0), "VET policies since 2015")]),
+        "myths": dict(kicker="Quiz", title="Myth or fact?",
+                      subtitle="Ten things people say about apprenticeships, answered with data.",
+                      stats=[stat(N["schemes"], "Apprenticeship schemes"), stat(N["countries"], "Countries"),
+                             stat(N["indicators"], "Statistical indicators")]),
         "play": dict(kicker="Game", title="Higher or lower?",
                      subtitle="Which European country scores higher? Test your feel for apprenticeship and VET numbers.",
                      stats=[stat(N["countries"], "Countries"), stat(N["indicators"], "Statistical indicators"),

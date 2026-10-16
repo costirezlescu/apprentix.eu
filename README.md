@@ -194,6 +194,26 @@ one Atom feed per country page (`data/feeds/<code>.xml`), `data/feeds/countries.
 for importing into a feed reader) and `data/feeds/index.json`. Each country page ends with a
 "Follow" section listing its recent changes and the feed link; the countries index lists every feed.
 
+**Scheme portraits and stories.** `pipeline/portraits.py` turns Cedefop's coded answers for each
+scheme into a visual summary (company/school split, pay, arrangement, duration, typical age, level)
+and an "If you were an apprentice in …" story, written to `data/published/portraits/portraits.json`
+and shown on country pages, in the Scheme of the week and in the quiz results.
+
+**Myth or fact?** `pipeline/myths.py` writes `data/published/myths/myths.json`: statements about
+apprenticeship with verdicts *computed* from the scheme data, Eurostat and the insights, so they
+change if the data does. `pages/myths.html` plays ten per round.
+
+**Policy pulse.** `pipeline/pulse.py` lists the apprenticeship policies that were new, completed,
+moved to another stage or discontinued in the latest year of Cedefop's VET policy timeline
+(`data/published/pulse/pulse.json`, home page card).
+
+**Hand-curated reference files** (edit by hand, keep the dates current):
+- `data/reference/opportunities.json` — official places to find an apprenticeship, per country
+  (links checked one by one; shown in each country page's "Find an apprenticeship" section);
+- `data/reference/what-is-counted.json` — what each national statistic counts (snapshot or count
+  over a period, reference date, inclusions and exclusions), shown as the "What is counted" panel;
+  the latest values in the panel are read from the indicators at build time.
+
 **Scheme of the week.** The home page shows one of Cedefop's apprenticeship schemes per ISO week
 (`assets/js/scheme-week.js`), in a fixed shuffled order; it changes every Monday on its own.
 
@@ -238,6 +258,14 @@ Cedefop's web pages refuse automated requests, but its **Datasets** downloads (`
 work. If a download is refused, put the file in `data/raw/cedefop/` (with the date prefix) and
 the pipeline uses the latest copy. File names change per release: update the URL in
 `pipeline/sources/cedefop_files.py`. The apprenticeship-schemes fiches remain hand-curated.
+
+### Open-data portals (DCAT-AP)
+
+`pipeline/dcat.py` writes `data/catalog.rdf` on every build: a DCAT-AP catalogue (RDF/XML) with one
+dataset per record dataset and per indicator — title, description, original publisher, licence,
+countries, years and CSV/JSON downloads. It conforms to the DCAT-AP 2.1.1 SHACL shapes. This is the
+file data.europa.eu or a national portal would harvest: give them
+`https://apprentix.eu/data/catalog.rdf` as the harvesting URL.
 
 ### Citing and DOIs
 

@@ -1,0 +1,1158 @@
+{
+  "description": "Official places to find an apprenticeship or official information about apprenticeships, per country. Curated and checked by hand; links verified on 2026-10-17.",
+  "verified_on": "2026-10-17",
+  "countries": {
+    "AT": {
+      "links": [
+        {
+          "kind": "find",
+          "title": "Find an apprenticeship place (AMS/WKO Lehrstellenbörse)",
+          "url": "https://www.ams.at/arbeitsuchende/arbeitslos-was-tun/lehrstellenboerse",
+          "publisher": "Public Employment Service Austria (AMS) with the Austrian Economic Chambers (WKO)",
+          "languages": [
+            "de"
+          ],
+          "verified": "http-200",
+          "note": "Joint AMS/WKO apprenticeship vacancy exchange; the page links to the search in the AMS eJob-Room."
+        },
+        {
+          "kind": "info",
+          "title": "Apprenticeship information (WKO Lehre)",
+          "url": "https://www.wko.at/lehre/start",
+          "publisher": "Austrian Economic Chambers (WKO)",
+          "languages": [
+            "de"
+          ],
+          "verified": "http-200"
+        },
+        {
+          "kind": "abroad",
+          "title": "Erasmus+ vocational education and training (OeAD)",
+          "url": "https://erasmusplus.oead.at/de/berufsbildung/ueberblick",
+          "publisher": "OeAD – Austria's Agency for Education and Internationalisation (Erasmus+ national agency)",
+          "languages": [
+            "de"
+          ],
+          "verified": "http-200"
+        }
+      ]
+    },
+    "BE": {
+      "links": [
+        {
+          "kind": "info",
+          "title": "Dual learning in Flanders (Duaal Leren)",
+          "url": "https://www.duaalleren.vlaanderen/",
+          "publisher": "Flemish Government",
+          "languages": [
+            "nl"
+          ],
+          "verified": "http-200"
+        },
+        {
+          "kind": "info",
+          "title": "Work-linked training in French-speaking Belgium (OFFA)",
+          "url": "https://www.formationalternance.be/home.html",
+          "publisher": "OFFA – Office francophone de la formation en alternance",
+          "languages": [
+            "fr"
+          ],
+          "verified": "http-200"
+        }
+      ],
+      "note": "No single national vacancy search: training is organised by community/region (Flanders, Wallonia–Brussels, German-speaking Community)."
+    },
+    "BG": {
+      "links": [
+        {
+          "kind": "info",
+          "title": "National Agency for Vocational Education and Training (NAVET)",
+          "url": "https://www.navet.government.bg/bg/",
+          "publisher": "National Agency for Vocational Education and Training (NAVET)",
+          "languages": [
+            "bg"
+          ],
+          "verified": "http-200",
+          "note": "National VET agency: list of VET professions, licensed training centres and rules for work-based (dual) learning; mainly institutional."
+        },
+        {
+          "kind": "abroad",
+          "title": "Erasmus+ vocational education and training (HRDC)",
+          "url": "https://hrdc.bg/%d0%bf%d1%80%d0%be%d1%84%d0%b5%d1%81%d0%b8%d0%be%d0%bd%d0%b0%d0%bb%d0%bd%d0%be-%d0%be%d0%b1%d1%80%d0%b0%d0%b7%d0%be%d0%b2%d0%b0%d0%bd%d0%b8%d0%b5-%d0%b8-%d0%be%d0%b1%d1%83%d1%87%d0%b5/",
+          "publisher": "Human Resource Development Centre (Erasmus+ National Agency)",
+          "languages": [
+            "bg"
+          ],
+          "verified": "http-200"
+        }
+      ],
+      "note": "No official search service for dual-learning places found. Checked Employment Agency (az.government.bg), Ministry of Education (mon.bg, Cloudflare-blocked) and dual.mon.bg (an ESF project site that ended in 2023, left out)."
+    },
+    "HR": {
+      "links": [
+        {
+          "kind": "find",
+          "title": "Find an apprenticeship place in a licensed craft workshop",
+          "url": "https://www.hok.hr/obrazovanje/mjesta-za-naukovanje-praksu",
+          "publisher": "Croatian Chamber of Trades and Crafts (HOK)",
+          "languages": [
+            "hr"
+          ],
+          "verified": "http-200",
+          "note": "Search licensed workshops by occupation, county and place; a place must be secured before enrolling in a crafts programme."
+        },
+        {
+          "kind": "info",
+          "title": "Vocational education for crafts (JMO apprenticeship)",
+          "url": "https://www.hok.hr/obrazovanje/strukovno-obrazovanje-za-programe-vezanih-obrta",
+          "publisher": "Croatian Chamber of Trades and Crafts (HOK)",
+          "languages": [
+            "hr"
+          ],
+          "verified": "http-200"
+        },
+        {
+          "kind": "abroad",
+          "title": "Erasmus+ vocational education and training",
+          "url": "https://www.ampeu.hr/erasmus/podrucja-programa-erasmus/strukovno-obrazovanje-i-osposobljavanje",
+          "publisher": "Agency for Mobility and EU Programmes (AMPEU)",
+          "languages": [
+            "hr"
+          ],
+          "verified": "http-200"
+        }
+      ]
+    },
+    "CY": {
+      "links": [
+        {
+          "kind": "info",
+          "title": "Apprenticeship System (SMEEK): general information",
+          "url": "https://www.moec.gov.cy/dmteek/smeek_genikes_plirofories.html",
+          "publisher": "Ministry of Education, Sport and Youth – Directorate of Secondary Technical and Vocational Education and Training",
+          "languages": [
+            "el"
+          ],
+          "verified": "http-200",
+          "note": "Covers Preparatory Apprenticeship and the Core Apprenticeship; sibling pages give registrations and schools by district."
+        },
+        {
+          "kind": "abroad",
+          "title": "Erasmus+ National Agency (IDEP)",
+          "url": "https://idep.org.cy/",
+          "publisher": "Foundation for the Management of European Lifelong Learning Programmes (IDEP)",
+          "languages": [
+            "el"
+          ],
+          "verified": "http-200",
+          "note": "Agency homepage; no separate VET landing page."
+        }
+      ],
+      "note": "No public vacancy service for apprenticeship places found; enrolment is through the technical schools."
+    },
+    "CZ": {
+      "links": [
+        {
+          "kind": "info",
+          "title": "Infoabsolvent: vocational schools, fields of study and occupations",
+          "url": "https://www.infoabsolvent.cz/",
+          "publisher": "National Pedagogical Institute of the Czech Republic (NPI ČR)",
+          "languages": [
+            "cs"
+          ],
+          "verified": "http-200"
+        },
+        {
+          "kind": "abroad",
+          "title": "Erasmus+ for VET pupils and students",
+          "url": "https://www.dzs.cz/program/erasmus/vyjezdy-pobyty/zaci-studenti-odbornych-skol-vos",
+          "publisher": "Czech National Agency for International Education and Research (DZS)",
+          "languages": [
+            "cs"
+          ],
+          "verified": "http-200"
+        }
+      ],
+      "note": "No official search for dual practical-training places found (dual training is arranged by schools; the new certified 'duální praktické vyučování' started in 2026)."
+    },
+    "DK": {
+      "links": [
+        {
+          "kind": "find",
+          "title": "Find an apprenticeship place (Lærepladsen.dk)",
+          "url": "https://www.laerepladsen.dk/",
+          "publisher": "Danish Agency for IT and Learning (STIL), Ministry of Education",
+          "languages": [
+            "da"
+          ],
+          "verified": "search-only",
+          "note": "Formerly praktikpladsen.dk (permanent redirect). Site sits behind a STIL bot check that blocks scripted requests."
+        },
+        {
+          "kind": "info",
+          "title": "Vocational education and training (EUD, EUV, EUX)",
+          "url": "https://uvm.dk/uddannelse-til-unge/erhvervsuddannelser/",
+          "publisher": "Danish Ministry of Education (Undervisningsministeriet)",
+          "languages": [
+            "da"
+          ],
+          "verified": "http-200"
+        }
+      ]
+    },
+    "EE": {
+      "links": [
+        {
+          "kind": "info",
+          "title": "Apprenticeship (workplace-based learning)",
+          "url": "https://www.hm.ee/kutse-ja-taiskasvanuharidus/kutseharidus/opipoisiope",
+          "publisher": "Ministry of Education and Research",
+          "languages": [
+            "et"
+          ],
+          "verified": "http-200"
+        },
+        {
+          "kind": "abroad",
+          "title": "Erasmus+ learning mobility",
+          "url": "https://www.harno.ee/erasmus-opiranne",
+          "publisher": "Education and Youth Board (HARNO)",
+          "languages": [
+            "et"
+          ],
+          "verified": "http-200"
+        }
+      ],
+      "note": "No official search service for workplace-based learning places found; places are arranged by vocational schools with employers."
+    },
+    "FI": {
+      "links": [
+        {
+          "kind": "find",
+          "title": "Job Market Finland: open vacancies (search 'oppisopimus')",
+          "url": "https://tyomarkkinatori.fi/henkiloasiakkaat/avoimet-tyopaikat",
+          "publisher": "Job Market Finland (KEHA Centre / public employment services)",
+          "languages": [
+            "fi",
+            "sv",
+            "en"
+          ],
+          "verified": "http-200",
+          "note": "No dedicated apprenticeship search; apprenticeship jobs appear in the national job market and can be found with the keyword 'oppisopimus'."
+        },
+        {
+          "kind": "info",
+          "title": "Work-based learning and apprenticeship training",
+          "url": "https://www.oph.fi/fi/koulutus-ja-tutkinnot/tyoelamassa-oppiminen",
+          "publisher": "Finnish National Agency for Education (EDUFI / Opetushallitus)",
+          "languages": [
+            "fi"
+          ],
+          "verified": "http-200"
+        },
+        {
+          "kind": "abroad",
+          "title": "Erasmus+ for vocational education and training",
+          "url": "https://www.oph.fi/fi/kansainvalisyys/erasmus-ohjelma-2021-2027/erasmus-ammatilliselle-koulutukselle",
+          "publisher": "Finnish National Agency for Education (Erasmus+ national agency)",
+          "languages": [
+            "fi"
+          ],
+          "verified": "http-200"
+        }
+      ]
+    },
+    "FR": {
+      "links": [
+        {
+          "kind": "find",
+          "title": "Find an apprenticeship (La bonne alternance)",
+          "url": "https://labonnealternance.apprentissage.beta.gouv.fr/",
+          "publisher": "French government (beta.gouv.fr)",
+          "languages": [
+            "fr"
+          ],
+          "verified": "http-200",
+          "note": "The former Portail de l'alternance (alternance.emploi.gouv.fr) now redirects here."
+        },
+        {
+          "kind": "info",
+          "title": "Apprenticeship contract: your rights (Service-Public)",
+          "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2918",
+          "publisher": "Service-Public (French administration)",
+          "languages": [
+            "fr"
+          ],
+          "verified": "http-200"
+        },
+        {
+          "kind": "abroad",
+          "title": "Erasmus+ France (education and training)",
+          "url": "https://agence.erasmusplus.fr/",
+          "publisher": "Agence Erasmus+ France / Éducation Formation",
+          "languages": [
+            "fr"
+          ],
+          "verified": "http-200"
+        }
+      ]
+    },
+    "DE": {
+      "links": [
+        {
+          "kind": "find",
+          "title": "Find a training place (Jobsuche – Ausbildung)",
+          "url": "https://www.arbeitsagentur.de/jobsuche/suche?suchbereich=ausbildung",
+          "publisher": "Federal Employment Agency (Bundesagentur für Arbeit)",
+          "languages": [
+            "de"
+          ],
+          "verified": "http-200",
+          "note": "The BA job search restricted to apprenticeship (Ausbildung) places."
+        },
+        {
+          "kind": "info",
+          "title": "Apprenticeship: information for school leavers (Ausbildung)",
+          "url": "https://www.arbeitsagentur.de/bildung/ausbildung",
+          "publisher": "Federal Employment Agency (Bundesagentur für Arbeit)",
+          "languages": [
+            "de"
+          ],
+          "verified": "http-200"
+        },
+        {
+          "kind": "abroad",
+          "title": "Erasmus+ in VET (NA beim BIBB)",
+          "url": "https://www.na-bibb.de/",
+          "publisher": "National Agency Education for Europe at BIBB",
+          "languages": [
+            "de"
+          ],
+          "verified": "http-200"
+        }
+      ]
+    },
+    "EL": {
+      "links": [
+        {
+          "kind": "find",
+          "title": "DYPA apprenticeship schools (EPAS): find a school and enrol",
+          "url": "https://schools.dypa.gov.gr/",
+          "publisher": "Public Employment Service (DYPA)",
+          "languages": [
+            "el"
+          ],
+          "verified": "http-200",
+          "note": "School finder and enrolment for EPAS apprenticeship schools; the paid workplace placement is arranged through the school."
+        },
+        {
+          "kind": "info",
+          "title": "Vocational education: DYPA EPAS apprenticeship",
+          "url": "https://www.dypa.gov.gr/mathitia",
+          "publisher": "Public Employment Service (DYPA)",
+          "languages": [
+            "el"
+          ],
+          "verified": "http-200"
+        },
+        {
+          "kind": "abroad",
+          "title": "Erasmus+ vocational education and training",
+          "url": "https://www.iky.gr/erasmus/%ce%b2%ce%b1%cf%83%ce%b9%ce%ba%ce%ae-%ce%b4%cf%81%ce%ac%cf%83%ce%b7-1/epangelmatiki-ekpaidefsi-kai-katart/",
+          "publisher": "State Scholarships Foundation (IKY), Erasmus+ National Agency",
+          "languages": [
+            "el"
+          ],
+          "verified": "http-200"
+        }
+      ],
+      "note": "The Ministry of Education's post-secondary apprenticeship year uses e-mathiteia.minedu.gov.gr (application system); it timed out from here, so it is left out."
+    },
+    "HU": {
+      "links": [
+        {
+          "kind": "find",
+          "title": "Training company finder (Képzőhelykereső)",
+          "url": "https://dualis.mkik.hu/kereso/kepzohely",
+          "publisher": "Hungarian Chamber of Commerce and Industry (MKIK)",
+          "languages": [
+            "hu"
+          ],
+          "verified": "http-200",
+          "note": "Finds chamber-registered dual training companies, not individual vacancies. JavaScript app; content confirmed from the site's code."
+        },
+        {
+          "kind": "info",
+          "title": "Dual vocational training: all information in one place",
+          "url": "https://dualis.mkik.hu/",
+          "publisher": "Hungarian Chamber of Commerce and Industry (MKIK)",
+          "languages": [
+            "hu"
+          ],
+          "verified": "http-200"
+        },
+        {
+          "kind": "abroad",
+          "title": "Erasmus+ vocational education and training",
+          "url": "https://erasmusplusz.hu/erasmusplusz_szakkepzes",
+          "publisher": "Tempus Public Foundation (Erasmus+ National Agency)",
+          "languages": [
+            "hu"
+          ],
+          "verified": "http-200"
+        }
+      ]
+    },
+    "IE": {
+      "links": [
+        {
+          "kind": "find",
+          "title": "Find apprenticeship jobs",
+          "url": "https://apprenticeship.ie/career-seekers/jobs",
+          "publisher": "National Apprenticeship Office (SOLAS and HEA)",
+          "languages": [
+            "en"
+          ],
+          "verified": "http-200",
+          "note": "Also links to the apprenticeship employers directory."
+        },
+        {
+          "kind": "info",
+          "title": "Apprenticeships in Ireland: getting started",
+          "url": "https://apprenticeship.ie/career-seekers/introduction",
+          "publisher": "National Apprenticeship Office (SOLAS and HEA)",
+          "languages": [
+            "en"
+          ],
+          "verified": "http-200"
+        },
+        {
+          "kind": "abroad",
+          "title": "Erasmus+ VET mobility projects (Léargas)",
+          "url": "https://www.leargas.ie/erasmus-plus/mobility-projects/vet/",
+          "publisher": "Léargas (Erasmus+ national agency)",
+          "languages": [
+            "en"
+          ],
+          "verified": "http-200"
+        }
+      ]
+    },
+    "IT": {
+      "links": [
+        {
+          "kind": "info",
+          "title": "Apprenticeship (Apprendistato): types, ages and rules",
+          "url": "https://www.lavoro.gov.it/temi-e-priorita/orientamento-e-formazione/focus-on/apprendistato/pagine/default",
+          "publisher": "Ministry of Labour and Social Policies (Ministero del Lavoro e delle Politiche Sociali)",
+          "languages": [
+            "it"
+          ],
+          "verified": "http-200"
+        },
+        {
+          "kind": "abroad",
+          "title": "Erasmus+ for vocational education and training",
+          "url": "https://www.erasmusplus.it/formazione/erasmus-per-la-formazione-professionale/",
+          "publisher": "Erasmus+ National Agency INAPP",
+          "languages": [
+            "it"
+          ],
+          "verified": "http-200"
+        }
+      ],
+      "note": "No national apprenticeship vacancy service found; first-level (dual) apprenticeships are organised by the regions. SIISL (the Ministry of Labour job platform) is a general job board and was not listed."
+    },
+    "LV": {
+      "links": [
+        {
+          "kind": "info",
+          "title": "Work-based learning: cooperation with employers",
+          "url": "https://www.izm.gov.lv/lv/sadarbiba-ar-darba-devejiem",
+          "publisher": "Ministry of Education and Science",
+          "languages": [
+            "lv"
+          ],
+          "verified": "http-200",
+          "note": "Explains work-based learning (darba vidē balstītas mācības); aimed mainly at employers."
+        },
+        {
+          "kind": "info",
+          "title": "National database of education opportunities (NIID)",
+          "url": "https://www.niid.lv/",
+          "publisher": "State Education Development Agency (VIAA)",
+          "languages": [
+            "lv"
+          ],
+          "verified": "http-200",
+          "note": "Search vocational programmes and schools."
+        },
+        {
+          "kind": "abroad",
+          "title": "Erasmus+ vocational education",
+          "url": "https://www.erasmusplus.lv/profesionala-izglitiba",
+          "publisher": "State Education Development Agency (VIAA), Erasmus+ National Agency",
+          "languages": [
+            "lv"
+          ],
+          "verified": "http-200"
+        }
+      ],
+      "note": "No official vacancy service for work-based learning places found (prakse.lv is a commercial portal and was left out)."
+    },
+    "LT": {
+      "links": [
+        {
+          "kind": "find",
+          "title": "Apprenticeship portal with apprenticeship ads (Pameistrystė)",
+          "url": "https://www.pameistryste.lt/",
+          "publisher": "Qualifications and VET Development Centre (KPMPC)",
+          "languages": [
+            "lt",
+            "en"
+          ],
+          "verified": "http-200",
+          "note": "Information for apprentices and employers plus an apprenticeship ads module (pameistryste.pameistryste.lt)."
+        },
+        {
+          "kind": "info",
+          "title": "AIKOS: open information, counselling and guidance system",
+          "url": "https://www.aikos.smm.lt/Puslapiai/Pradinis.aspx",
+          "publisher": "Ministry of Education, Science and Sport / National Agency for Education",
+          "languages": [
+            "lt"
+          ],
+          "verified": "http-200"
+        },
+        {
+          "kind": "abroad",
+          "title": "Erasmus+ education and training",
+          "url": "https://www.erasmus-plius.lt/programa/svietimo-ir-mokymo-sritis/",
+          "publisher": "Education Exchanges Support Foundation (ŠMPF), Erasmus+ National Agency",
+          "languages": [
+            "lt"
+          ],
+          "verified": "http-200"
+        }
+      ]
+    },
+    "LU": {
+      "links": [
+        {
+          "kind": "find",
+          "title": "How to become an apprentice (ADEM career guidance service)",
+          "url": "https://adem.public.lu/fr/demandeurs-demploi/definir-son-projet-professionnel/faire-un-apprentissage/apprentissage-initial/comment-devenir-apprenti.html",
+          "publisher": "ADEM – National Employment Agency (Service d'orientation professionnelle)",
+          "languages": [
+            "fr",
+            "de",
+            "en"
+          ],
+          "verified": "http-200",
+          "note": "Vacant apprenticeship posts are declared to ADEM's career guidance service, which passes them to candidates; there is no public online search."
+        },
+        {
+          "kind": "info",
+          "title": "Concluding an apprenticeship contract (Guichet.lu)",
+          "url": "https://guichet.public.lu/fr/citoyens/travail/conditions-travail/contrat-jeunes-actifs/contrat-apprentissage.html",
+          "publisher": "Guichet.lu (Government of Luxembourg)",
+          "languages": [
+            "fr",
+            "de",
+            "en"
+          ],
+          "verified": "http-200"
+        },
+        {
+          "kind": "abroad",
+          "title": "Erasmus+ vocational education and training (Anefore)",
+          "url": "https://www.anefore.lu/erasmus/formation-professionnelle/",
+          "publisher": "Anefore (Erasmus+ national agency)",
+          "languages": [
+            "fr"
+          ],
+          "verified": "http-200"
+        }
+      ]
+    },
+    "MT": {
+      "links": [
+        {
+          "kind": "find",
+          "title": "MCAST apprenticeship vacancies",
+          "url": "https://apprenticeship.mcast.edu.mt/",
+          "publisher": "Malta College of Arts, Science and Technology (MCAST)",
+          "languages": [
+            "en"
+          ],
+          "verified": "http-200",
+          "note": "Vacancy search for MCAST apprenticeship students; listings load with JavaScript."
+        },
+        {
+          "kind": "info",
+          "title": "Apprenticeships at MCAST",
+          "url": "https://mcast.edu.mt/apprenticeships-mcast/",
+          "publisher": "Malta College of Arts, Science and Technology (MCAST)",
+          "languages": [
+            "en",
+            "mt"
+          ],
+          "verified": "http-200"
+        }
+      ]
+    },
+    "NL": {
+      "links": [
+        {
+          "kind": "find",
+          "title": "Find a work placement or apprenticeship job (Stagemarkt)",
+          "url": "https://stagemarkt.nl/",
+          "publisher": "SBB – Foundation for Cooperation on Vocational Education, Training and the Labour Market",
+          "languages": [
+            "nl"
+          ],
+          "verified": "http-200",
+          "note": "Lists internships (BOL) and learning jobs (leerbanen, BBL) at accredited companies."
+        },
+        {
+          "kind": "info",
+          "title": "Information for MBO students (BOL and BBL)",
+          "url": "https://www.s-bb.nl/studenten",
+          "publisher": "SBB – Foundation for Cooperation on Vocational Education, Training and the Labour Market",
+          "languages": [
+            "nl"
+          ],
+          "verified": "http-200"
+        },
+        {
+          "kind": "abroad",
+          "title": "Erasmus+ Netherlands (education and training)",
+          "url": "https://www.erasmusplus.nl/",
+          "publisher": "Erasmus+ National Agency Netherlands",
+          "languages": [
+            "nl",
+            "en"
+          ],
+          "verified": "http-200"
+        }
+      ]
+    },
+    "PL": {
+      "links": [
+        {
+          "kind": "info",
+          "title": "Vocational training in the crafts (journeyman route)",
+          "url": "https://zrp.pl/dzialalnosc-zrp/oswiata-zawodowa/",
+          "publisher": "Polish Craft Association (Związek Rzemiosła Polskiego)",
+          "languages": [
+            "pl"
+          ],
+          "verified": "http-200"
+        },
+        {
+          "kind": "abroad",
+          "title": "Erasmus+ National Agency (Poland)",
+          "url": "https://erasmusplus.org.pl/",
+          "publisher": "Foundation for the Development of the Education System (FRSE)",
+          "languages": [
+            "pl"
+          ],
+          "verified": "http-200"
+        }
+      ],
+      "note": "No official national search for juvenile-worker training places found; places are arranged directly with employers, guilds (cechy) and chambers of crafts."
+    },
+    "PT": {
+      "links": [
+        {
+          "kind": "find",
+          "title": "Search IEFP training offers (filter: Cursos de aprendizagem)",
+          "url": "https://www.iefp.pt/ofertas-formacao",
+          "publisher": "Institute for Employment and Vocational Training (IEFP)",
+          "languages": [
+            "pt"
+          ],
+          "verified": "http-200",
+          "note": "Redirects to the IEFP Online search; filter 'Modalidade Formação' by 'Cursos de aprendizagem'."
+        },
+        {
+          "kind": "info",
+          "title": "Apprenticeship courses (Cursos de aprendizagem)",
+          "url": "https://www.iefp.pt/cursos-de-aprendizagem",
+          "publisher": "Institute for Employment and Vocational Training (IEFP)",
+          "languages": [
+            "pt"
+          ],
+          "verified": "http-200"
+        },
+        {
+          "kind": "abroad",
+          "title": "Erasmus+ Education and Training National Agency",
+          "url": "https://erasmusmais.pt/",
+          "publisher": "Agência Nacional Erasmus+ Educação e Formação",
+          "languages": [
+            "pt"
+          ],
+          "verified": "http-200"
+        }
+      ]
+    },
+    "RO": {
+      "links": [
+        {
+          "kind": "info",
+          "title": "Apprenticeship at the workplace (Ucenicia la locul de muncă)",
+          "url": "https://www.anofm.ro/ucenicia-la-locul-de-munca/",
+          "publisher": "National Agency for Employment (ANOFM)",
+          "languages": [
+            "ro"
+          ],
+          "verified": "http-200",
+          "note": "Explains how to register with the county employment agency, which refers candidates to apprenticeship vacancies."
+        },
+        {
+          "kind": "abroad",
+          "title": "Erasmus+ vocational education and training",
+          "url": "https://www.erasmusplus.ro/formare-profesionala-vet-1",
+          "publisher": "National Agency for Community Programmes in Education and Vocational Training (ANPCDEFP)",
+          "languages": [
+            "ro"
+          ],
+          "verified": "http-200"
+        }
+      ],
+      "note": "No apprenticeship-specific vacancy search found; ANOFM's general vacancy list and county agencies handle apprenticeship placements. Dual VET places are offered through schools and county school inspectorates."
+    },
+    "SK": {
+      "links": [
+        {
+          "kind": "info",
+          "title": "Dual education (Duálne vzdelávanie)",
+          "url": "https://siov.sk/dualne-vzdelavanie/",
+          "publisher": "State Institute of Vocational Education (ŠIOV)",
+          "languages": [
+            "sk"
+          ],
+          "verified": "http-200"
+        },
+        {
+          "kind": "abroad",
+          "title": "Erasmus+ vocational education and training",
+          "url": "https://www.erasmusplus.sk/sektory-vzdelavania/odborne-vzdelavanie-a-priprava/",
+          "publisher": "Erasmus+ National Agency for Education and Training (SAAIC)",
+          "languages": [
+            "sk"
+          ],
+          "verified": "http-200"
+        }
+      ],
+      "note": "No official search for dual-education places found; the old dualnysystem.sk portal now redirects to a dead ŠIOV page."
+    },
+    "SI": {
+      "links": [
+        {
+          "kind": "find",
+          "title": "Central Register of Training Places (Centralni register učnih mest)",
+          "url": "https://crum.cpi.si/",
+          "publisher": "Institute of the Republic of Slovenia for Vocational Education and Training (CPI), with data from GZS, OZS and TZS",
+          "languages": [
+            "sl"
+          ],
+          "verified": "http-200",
+          "note": "Search verified training places; choose 'Vajeništvo' for apprenticeship places."
+        },
+        {
+          "kind": "info",
+          "title": "Apprenticeship (Vajeništvo)",
+          "url": "https://cpi.si/poklicno-izobrazevanje/vajenistvo/",
+          "publisher": "Institute of the Republic of Slovenia for Vocational Education and Training (CPI)",
+          "languages": [
+            "sl"
+          ],
+          "verified": "http-200"
+        },
+        {
+          "kind": "info",
+          "title": "Apprenticeship information for apprentices and companies",
+          "url": "https://www.gzs.si/vajenistvo",
+          "publisher": "Chamber of Commerce and Industry of Slovenia (GZS)",
+          "languages": [
+            "sl"
+          ],
+          "verified": "http-200"
+        }
+      ]
+    },
+    "ES": {
+      "links": [
+        {
+          "kind": "info",
+          "title": "Dual vocational training (FP Dual, general and intensive)",
+          "url": "https://www.todofp.es/como-cuando-y-donde-estudiar/como-estudiar/formacion-profesional-dual.html",
+          "publisher": "Ministry of Education, Vocational Training and Sports (TodoFP)",
+          "languages": [
+            "es"
+          ],
+          "verified": "http-200"
+        }
+      ],
+      "note": "No national search for intensive (dual) FP places found; places are arranged by regional education authorities and FP schools. The SEPIE Erasmus+ site was left out: its HTTPS certificate had expired when checked."
+    },
+    "SE": {
+      "links": [
+        {
+          "kind": "info",
+          "title": "Upper secondary apprenticeship (Lärlingscentrum)",
+          "url": "https://www.skolverket.se/styrning-och-ansvar/anordna-utbildning/anordna-gymnasieutbildning/larlingscentrum-starta-larlingsutbildning",
+          "publisher": "Swedish National Agency for Education (Skolverket)",
+          "languages": [
+            "sv"
+          ],
+          "verified": "http-200",
+          "note": "Written mainly for schools and employers; covers contracts, workplace learning and the CSN apprentice allowance."
+        },
+        {
+          "kind": "abroad",
+          "title": "Erasmus+ for vocational education",
+          "url": "https://www.uhr.se/erasmus-yrkesutbildning",
+          "publisher": "Swedish Council for Higher Education (UHR)",
+          "languages": [
+            "sv"
+          ],
+          "verified": "http-200"
+        }
+      ],
+      "note": "No national apprenticeship vacancy service; upper secondary apprenticeships are arranged through the school (gymnasieskola or komvux)."
+    },
+    "IS": {
+      "links": [
+        {
+          "kind": "info",
+          "title": "Workplace training and electronic logbooks (Vinnustaðanám og rafrænar ferilbækur)",
+          "url": "https://www.stjornarradid.is/verkefni/menntamal/framhaldsskolar/vinnustadanam-og-rafraenar-ferilbaekur/",
+          "publisher": "Government of Iceland, Ministry of Education and Children",
+          "languages": [
+            "is"
+          ],
+          "verified": "http-200"
+        },
+        {
+          "kind": "info",
+          "title": "Electronic logbook for workplace training (Rafræn ferilbók)",
+          "url": "https://island.is/s/midstod-menntunar-og-skolathjonustu/rafraen-ferilbok",
+          "publisher": "Directorate of Education and School Services (Miðstöð menntunar og skólaþjónustu, MMS)",
+          "languages": [
+            "is"
+          ],
+          "verified": "http-200"
+        },
+        {
+          "kind": "abroad",
+          "title": "Erasmus+ learning and training in VET",
+          "url": "https://www.erasmusplus.is/taekifaeri/starfsmenntun/nam-og-thjalfun/",
+          "publisher": "Erasmus+ National Agency (Rannís)",
+          "languages": [
+            "is"
+          ],
+          "verified": "http-200"
+        }
+      ],
+      "note": "No public apprenticeship vacancy search confirmed. The MMS register of workplaces (ferilbok-vinnustadir.inna.is) is a JavaScript app whose public access could not be confirmed; Nemastofa atvinnulífsins is run by industry training centres, not a public body, so it was left out."
+    },
+    "LI": {
+      "links": [
+        {
+          "kind": "find",
+          "title": "Open apprenticeship places (next-step)",
+          "url": "https://www.next-step.li/berufslehre-schule/infos-fur-schulerinnen-und-eltern/freie-lehrstellen",
+          "publisher": "Office for Vocational Training and Career Counselling (ABB), Liechtenstein",
+          "languages": [
+            "de"
+          ],
+          "verified": "http-200"
+        },
+        {
+          "kind": "info",
+          "title": "next-step: vocational training and careers in Liechtenstein",
+          "url": "https://www.next-step.li/",
+          "publisher": "Office for Vocational Training and Career Counselling (ABB), Liechtenstein",
+          "languages": [
+            "de"
+          ],
+          "verified": "http-200",
+          "note": "Initiative of the government and business associations."
+        },
+        {
+          "kind": "abroad",
+          "title": "Go to Europe: work placements abroad for apprentices",
+          "url": "https://www.next-step.li/berufslehre-schule/infos-fur-lernende/auslandsprojekt-go-europe",
+          "publisher": "Office for Vocational Training and Career Counselling (ABB), Liechtenstein",
+          "languages": [
+            "de"
+          ],
+          "verified": "http-200"
+        }
+      ]
+    },
+    "NO": {
+      "links": [
+        {
+          "kind": "find",
+          "title": "Find a training company (Finn lærebedrift)",
+          "url": "https://utdanning.no/finnlarebedrift/",
+          "publisher": "Utdanning.no (Directorate for Higher Education and Skills, HK-dir)",
+          "languages": [
+            "no"
+          ],
+          "verified": "http-200",
+          "note": "Approved training companies and open apprenticeship places, updated nightly from Vigo and public registers."
+        },
+        {
+          "kind": "info",
+          "title": "Vocational handbook (Yrkesfaghåndboka)",
+          "url": "https://utdanning.no/yrkesfag",
+          "publisher": "Utdanning.no (Directorate for Higher Education and Skills, HK-dir)",
+          "languages": [
+            "no"
+          ],
+          "verified": "http-200"
+        }
+      ],
+      "note": "Applications for apprenticeship places go through the counties via vigo.no. vilbli.no (the counties' upper secondary portal) blocks automated checks with a captcha and was not included."
+    },
+    "CH": {
+      "links": [
+        {
+          "kind": "find",
+          "title": "Find an apprenticeship (LENA apprenticeship place register)",
+          "url": "https://www.berufsberatung.ch/de/suche/lehrstellen",
+          "publisher": "SDBB – Swiss Service Centre for Vocational Education and Career Guidance, on behalf of the cantons",
+          "languages": [
+            "de",
+            "fr",
+            "it"
+          ],
+          "verified": "http-200",
+          "note": "Same register in French at orientation.ch and Italian at orientamento.ch."
+        },
+        {
+          "kind": "info",
+          "title": "Official Swiss VET portal (berufsbildung.ch)",
+          "url": "https://www.berufsbildung.ch/de",
+          "publisher": "SDBB – Swiss Service Centre for Vocational Education and Career Guidance",
+          "languages": [
+            "de",
+            "fr",
+            "it"
+          ],
+          "verified": "http-200"
+        },
+        {
+          "kind": "abroad",
+          "title": "Exchange and mobility in VET (Movetia)",
+          "url": "https://movetia.ch/de",
+          "publisher": "Movetia – national agency for exchange and mobility",
+          "languages": [
+            "de",
+            "fr",
+            "it",
+            "en"
+          ],
+          "verified": "http-200"
+        }
+      ]
+    },
+    "UK": {
+      "links": [
+        {
+          "kind": "find",
+          "title": "Find an apprenticeship (England)",
+          "url": "https://www.gov.uk/apply-apprenticeship",
+          "publisher": "Department for Education (GOV.UK)",
+          "languages": [
+            "en"
+          ],
+          "verified": "http-200"
+        },
+        {
+          "kind": "find",
+          "title": "Find an apprenticeship vacancy (Scotland)",
+          "url": "https://www.apprenticeships.scot/find-a-vacancy/",
+          "publisher": "Skills Development Scotland",
+          "languages": [
+            "en"
+          ],
+          "verified": "http-200"
+        },
+        {
+          "kind": "find",
+          "title": "Apprenticeship search (Wales)",
+          "url": "https://careerswales.gov.wales/apprenticeship-search",
+          "publisher": "Careers Wales (Welsh Government Apprenticeship Vacancy Service)",
+          "languages": [
+            "en",
+            "cy"
+          ],
+          "verified": "http-200"
+        }
+      ],
+      "note": "Apprenticeships are devolved. Northern Ireland: nidirect 'Search for apprenticeship opportunities' (https://www.nidirect.gov.uk/services/search-apprenticeship-opportunities, checked 200)."
+    },
+    "AL": {
+      "links": [
+        {
+          "kind": "info",
+          "title": "Vocational schools, training courses and employment programmes (AKPA)",
+          "url": "https://akpa.gov.al/",
+          "publisher": "National Agency for Employment and Skills (AKPA)",
+          "languages": [
+            "sq"
+          ],
+          "verified": "http-200",
+          "note": "The national agency for public VET providers and the employment service; not an apprenticeship search."
+        }
+      ],
+      "note": "No official apprenticeship vacancy service found. AKPA's employment-promotion programmes (VKM 17/2020) include on-the-job training and internships, but these are applied for by employers through e-Albania. The aftesi.puna.gov.al VET portal is a script-only app, so its content could not be checked."
+    },
+    "BA": {
+      "links": [],
+      "note": "No state-level apprenticeship or dual-VET portal found. Education is run by Republika Srpska, the ten Federation cantons and Brčko District, and dual VET exists only in local pilots and draft laws (e.g. Sarajevo Canton)."
+    },
+    "GE": {
+      "links": [
+        {
+          "kind": "info",
+          "title": "Vocational education portal: programmes and registration (vet.ge)",
+          "url": "https://vet.ge/",
+          "publisher": "Education Management Information System (EMIS), Ministry of Education, Science and Youth of Georgia",
+          "languages": [
+            "ka"
+          ],
+          "verified": "http-200",
+          "note": "Official VET portal with programmes, institutions, admission conditions and twice-yearly registration, including dual-approach programmes."
+        }
+      ]
+    },
+    "MD": {
+      "links": [],
+      "note": "No official dual-VET search or learner portal found. Checked the Ministry of Education and Research VET section (mec.gov.md, navigation only, no dual-education content), the eadmitere.gov.md admissions platform (script-only, content could not be checked) and ANOFM."
+    },
+    "ME": {
+      "links": [],
+      "note": "No official dual-VET portal could be checked. The VET Centre (cso.edu.me) returned 503, the Employment Agency (zzzcg.me) and the Chamber of Economy (privrednakomora.me) did not respond, and no gov.me page on dual education was found."
+    },
+    "MK": {
+      "links": [
+        {
+          "kind": "info",
+          "title": "Work-based learning portal (Praksa)",
+          "url": "https://praksa.mchamber.mk/",
+          "publisher": "Economic Chamber of North Macedonia",
+          "languages": [
+            "mk"
+          ],
+          "verified": "http-200",
+          "note": "Information on work-based learning and dual VET, and the list of verified employers offering practical training. Not a vacancy search."
+        },
+        {
+          "kind": "abroad",
+          "title": "Erasmus+ Key Action 1: mobility for VET learners and staff",
+          "url": "https://www.na.org.mk/Home/KlucnaAkcija1",
+          "publisher": "National Agency for European Educational Programmes and Mobility",
+          "languages": [
+            "mk",
+            "sq",
+            "en"
+          ],
+          "verified": "http-200"
+        }
+      ],
+      "note": "The VET Centre site (csoo.edu.mk) is behind a Cloudflare challenge and was not used."
+    },
+    "RS": {
+      "links": [
+        {
+          "kind": "info",
+          "title": "Dual education in Serbia: information for students and employers",
+          "url": "https://dualnoobrazovanje.rs/",
+          "publisher": "Chamber of Commerce and Industry of Serbia (PKS)",
+          "languages": [
+            "sr"
+          ],
+          "verified": "http-200",
+          "note": "PKS accredits dual-education companies and runs employer registration through this portal (contact obrazovanje@pks.rs)."
+        },
+        {
+          "kind": "abroad",
+          "title": "Erasmus+ vocational education and training",
+          "url": "https://erasmusplus.rs/strucno-obrazovanje/",
+          "publisher": "Tempus Foundation (Erasmus+ National Agency, Serbia)",
+          "languages": [
+            "sr"
+          ],
+          "verified": "http-200"
+        }
+      ]
+    },
+    "TR": {
+      "links": [
+        {
+          "kind": "info",
+          "title": "Vocational Education Centres (MESEM): apprenticeship and journeyman training",
+          "url": "https://meslegimhayatim.meb.gov.tr/mesleki-egitim-merkezleri",
+          "publisher": "Ministry of National Education (MEB), Directorate General for Vocational and Technical Education",
+          "languages": [
+            "tr"
+          ],
+          "verified": "http-200",
+          "note": "Covers enrolment conditions, the 1 day at school / 4 days in a company pattern, pay and certificates. Learners enrol at a MESEM or vocational high school."
+        },
+        {
+          "kind": "abroad",
+          "title": "Erasmus+ opportunities for learners, including VET traineeships abroad",
+          "url": "https://www.ua.gov.tr/programlar/gruplar/egitim-alanlar-icin/",
+          "publisher": "Turkish National Agency (Centre for EU Education and Youth Programmes)",
+          "languages": [
+            "tr",
+            "en"
+          ],
+          "verified": "http-200"
+        }
+      ],
+      "note": "No official national search for apprenticeship (MESEM) places found."
+    },
+    "UA": {
+      "links": [
+        {
+          "kind": "info",
+          "title": "Dual education in vocational education",
+          "url": "https://mon.gov.ua/osvita-2/profesiyno-tekhnichna-osvita/reforma-profesiynoi-osviti/derzhavno-privatne-partnerstvo-ta-dualna-osvita/dualna-osvita",
+          "publisher": "Ministry of Education and Science of Ukraine",
+          "languages": [
+            "uk"
+          ],
+          "verified": "search-only",
+          "note": "The ministry site blocks scripts with a Cloudflare challenge (403). The page is confirmed by search results, and some of its content (statistics) is from 2020/21."
+        }
+      ],
+      "note": "No official search for dual-education places found."
+    },
+    "XK": {
+      "links": [
+        {
+          "kind": "info",
+          "title": "Agency for Vocational Education and Training and Adult Education (AAAPARR)",
+          "url": "https://aaaparr.rks-gov.net/en/",
+          "publisher": "Agency for VET and Adult Education, established by the Ministry of Education, Science and Technology",
+          "languages": [
+            "sq",
+            "en"
+          ],
+          "verified": "http-200",
+          "note": "The national VET agency, which runs the six Competence Centres. Its pages are institutional, not a learner guide to apprenticeships."
+        }
+      ],
+      "note": "No official apprenticeship or work-based learning search found. Dual VET is still being piloted with donor support."
+    }
+  }
+}

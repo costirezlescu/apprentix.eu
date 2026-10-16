@@ -1,0 +1,1495 @@
+{
+  "description": "Scheme portraits and 'If you were an apprentice in …' stories, generated from Cedefop's coded answers by pipeline/portraits.py.",
+  "portraits": {
+    "at-lehre": {
+      "country": "Austria",
+      "country_code": "AT",
+      "name": "Dual apprenticeship",
+      "split": 0.7,
+      "split_label": "Mostly at work (≥2/3)",
+      "facts": [
+        {
+          "icon": "pay",
+          "label": "Pay",
+          "value": "Wage, paid by your employer"
+        },
+        {
+          "icon": "contract",
+          "label": "Arrangement",
+          "value": "Specific apprenticeship contract"
+        },
+        {
+          "icon": "time",
+          "label": "Duration",
+          "value": "2–4 yrs"
+        },
+        {
+          "icon": "age",
+          "label": "Typical age",
+          "value": "15–18"
+        },
+        {
+          "icon": "level",
+          "label": "Leads to",
+          "value": "Upper secondary · access to higher education"
+        }
+      ],
+      "story_title": "If you were an apprentice in Austria",
+      "story": [
+        "You would most likely be between 15 and 18.",
+        "You would sign an apprenticeship contract and have the legal status of an apprentice.",
+        "You would spend most of your time (two-thirds or more) at the company.",
+        "You would earn a wage, set by collective agreements for your sector or by agreement with your employer, paid by your employer; it also covers your days at school.",
+        "It would take 2–4 years.",
+        "You would finish with: Apprenticeship certificate (Lehrabschluss), NQF 4, which gives direct access to higher education."
+      ],
+      "html": "<div class=\"portrait\"><div class=\"pt-split\" role=\"img\" aria-label=\"Time at the company: Mostly at work (≥2/3)\"><span class=\"pt-work\" style=\"width:70%\"><span>Company</span></span><span class=\"pt-school\" style=\"width:30%\"><span>School</span></span></div><p class=\"pt-split-note\">Mostly at work (≥2/3)</p><ul class=\"pt-facts\"><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M3 6h14v9H3z\"/><circle cx=\"10\" cy=\"10.5\" r=\"2.2\"/><path d=\"M6 6V4.5h8V6\"/></svg><span class=\"pt-k\">Pay</span> <span class=\"pt-v\">Wage, paid by your employer</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 2.5h7l3 3v12H5z\"/><path d=\"M12 2.5v3h3M7.5 9h5M7.5 12h5M7.5 15h3\"/></svg><span class=\"pt-k\">Arrangement</span> <span class=\"pt-v\">Specific apprenticeship contract</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"10\" cy=\"10\" r=\"7\"/><path d=\"M10 6v4l3 2\"/></svg><span class=\"pt-k\">Duration</span> <span class=\"pt-v\">2–4 yrs</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"10\" cy=\"7\" r=\"3\"/><path d=\"M4 17c.8-3.2 3.2-5 6-5s5.2 1.8 6 5\"/></svg><span class=\"pt-k\">Typical age</span> <span class=\"pt-v\">15–18</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M2 8l8-4 8 4-8 4z\"/><path d=\"M5.5 9.8V13c1.2 1.3 2.8 2 4.5 2s3.3-.7 4.5-2V9.8\"/></svg><span class=\"pt-k\">Leads to</span> <span class=\"pt-v\">Upper secondary · access to higher education</span></li></ul><div class=\"pt-story\"><h4>If you were an apprentice in Austria</h4><p>You would most likely be between 15 and 18. You would sign an apprenticeship contract and have the legal status of an apprentice. You would spend most of your time (two-thirds or more) at the company. You would earn a wage, set by collective agreements for your sector or by agreement with your employer, paid by your employer; it also covers your days at school. It would take 2–4 years. You would finish with: Apprenticeship certificate (Lehrabschluss), NQF 4, which gives direct access to higher education.</p><p class=\"pt-src\">From Cedefop's coded answers for this scheme (2026 fiche).</p></div></div>"
+    },
+    "befl-duaal": {
+      "country": "Belgium",
+      "country_code": "BE",
+      "name": "Dual learning",
+      "split": 0.5,
+      "split_label": "Around half",
+      "facts": [
+        {
+          "icon": "pay",
+          "label": "Pay",
+          "value": "Wage, paid by your employer"
+        },
+        {
+          "icon": "contract",
+          "label": "Arrangement",
+          "value": "Ordinary employment contract or Specific apprenticeship contract"
+        },
+        {
+          "icon": "time",
+          "label": "Duration",
+          "value": "1–2 school years per programme"
+        },
+        {
+          "icon": "age",
+          "label": "Typical age",
+          "value": "18–24"
+        },
+        {
+          "icon": "level",
+          "label": "Leads to",
+          "value": "Upper secondary · access to higher education"
+        }
+      ],
+      "story_title": "If you were an apprentice in Belgium",
+      "story": [
+        "You would most likely be between 18 and 24.",
+        "Your training would be set out in a written arrangement (ordinary employment contract or specific apprenticeship contract).",
+        "You would spend about half your time at the company, switching between school and work every week.",
+        "You would earn a wage, set by law or by collective agreements for your sector, paid by your employer; it also covers your days at school.",
+        "It would take 1–2 school years per programme.",
+        "You would finish with: Secondary education diploma / vocational qualifications, NQF 2–4, which gives direct access to higher education."
+      ],
+      "html": "<div class=\"portrait\"><div class=\"pt-split\" role=\"img\" aria-label=\"Time at the company: Around half\"><span class=\"pt-work\" style=\"width:50%\"><span>Company</span></span><span class=\"pt-school\" style=\"width:50%\"><span>School</span></span></div><p class=\"pt-split-note\">Around half</p><ul class=\"pt-facts\"><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M3 6h14v9H3z\"/><circle cx=\"10\" cy=\"10.5\" r=\"2.2\"/><path d=\"M6 6V4.5h8V6\"/></svg><span class=\"pt-k\">Pay</span> <span class=\"pt-v\">Wage, paid by your employer</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 2.5h7l3 3v12H5z\"/><path d=\"M12 2.5v3h3M7.5 9h5M7.5 12h5M7.5 15h3\"/></svg><span class=\"pt-k\">Arrangement</span> <span class=\"pt-v\">Ordinary employment contract or Specific apprenticeship contract</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"10\" cy=\"10\" r=\"7\"/><path d=\"M10 6v4l3 2\"/></svg><span class=\"pt-k\">Duration</span> <span class=\"pt-v\">1–2 school years per programme</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"10\" cy=\"7\" r=\"3\"/><path d=\"M4 17c.8-3.2 3.2-5 6-5s5.2 1.8 6 5\"/></svg><span class=\"pt-k\">Typical age</span> <span class=\"pt-v\">18–24</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M2 8l8-4 8 4-8 4z\"/><path d=\"M5.5 9.8V13c1.2 1.3 2.8 2 4.5 2s3.3-.7 4.5-2V9.8\"/></svg><span class=\"pt-k\">Leads to</span> <span class=\"pt-v\">Upper secondary · access to higher education</span></li></ul><div class=\"pt-story\"><h4>If you were an apprentice in Belgium</h4><p>You would most likely be between 18 and 24. Your training would be set out in a written arrangement (ordinary employment contract or specific apprenticeship contract). You would spend about half your time at the company, switching between school and work every week. You would earn a wage, set by law or by collective agreements for your sector, paid by your employer; it also covers your days at school. It would take 1–2 school years per programme. You would finish with: Secondary education diploma / vocational qualifications, NQF 2–4, which gives direct access to higher education.</p><p class=\"pt-src\">From Cedefop's coded answers for this scheme (2026 fiche).</p></div></div>"
+    },
+    "befr-alternance": {
+      "country": "Belgium",
+      "country_code": "BE",
+      "name": "Dual training",
+      "split": 0.5,
+      "split_label": "Around half",
+      "facts": [
+        {
+          "icon": "pay",
+          "label": "Pay",
+          "value": "Wage, paid by your employer"
+        },
+        {
+          "icon": "contract",
+          "label": "Arrangement",
+          "value": "Specific apprenticeship contract"
+        },
+        {
+          "icon": "time",
+          "label": "Duration",
+          "value": "1–6 yrs by job profile"
+        },
+        {
+          "icon": "age",
+          "label": "Typical age",
+          "value": "18–24"
+        },
+        {
+          "icon": "level",
+          "label": "Leads to",
+          "value": "Upper secondary · access to higher education"
+        }
+      ],
+      "story_title": "If you were an apprentice in Belgium",
+      "story": [
+        "You would most likely be between 18 and 24.",
+        "You would sign an apprenticeship contract and have the legal status of an apprentice.",
+        "You would spend about half your time at the company, switching between school and work every week.",
+        "You would earn a wage, set by law or by agreement with your employer, paid by your employer; it also covers your days at school.",
+        "It would take 1–6 years by job profile.",
+        "You would finish with: Qualifications at CFC level 4 (CEFA), levels 3–4 (IFAPME/SFPME), 6–7 tertiary, which gives direct access to higher education."
+      ],
+      "html": "<div class=\"portrait\"><div class=\"pt-split\" role=\"img\" aria-label=\"Time at the company: Around half\"><span class=\"pt-work\" style=\"width:50%\"><span>Company</span></span><span class=\"pt-school\" style=\"width:50%\"><span>School</span></span></div><p class=\"pt-split-note\">Around half</p><ul class=\"pt-facts\"><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M3 6h14v9H3z\"/><circle cx=\"10\" cy=\"10.5\" r=\"2.2\"/><path d=\"M6 6V4.5h8V6\"/></svg><span class=\"pt-k\">Pay</span> <span class=\"pt-v\">Wage, paid by your employer</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 2.5h7l3 3v12H5z\"/><path d=\"M12 2.5v3h3M7.5 9h5M7.5 12h5M7.5 15h3\"/></svg><span class=\"pt-k\">Arrangement</span> <span class=\"pt-v\">Specific apprenticeship contract</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"10\" cy=\"10\" r=\"7\"/><path d=\"M10 6v4l3 2\"/></svg><span class=\"pt-k\">Duration</span> <span class=\"pt-v\">1–6 yrs by job profile</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"10\" cy=\"7\" r=\"3\"/><path d=\"M4 17c.8-3.2 3.2-5 6-5s5.2 1.8 6 5\"/></svg><span class=\"pt-k\">Typical age</span> <span class=\"pt-v\">18–24</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M2 8l8-4 8 4-8 4z\"/><path d=\"M5.5 9.8V13c1.2 1.3 2.8 2 4.5 2s3.3-.7 4.5-2V9.8\"/></svg><span class=\"pt-k\">Leads to</span> <span class=\"pt-v\">Upper secondary · access to higher education</span></li></ul><div class=\"pt-story\"><h4>If you were an apprentice in Belgium</h4><p>You would most likely be between 18 and 24. You would sign an apprenticeship contract and have the legal status of an apprentice. You would spend about half your time at the company, switching between school and work every week. You would earn a wage, set by law or by agreement with your employer, paid by your employer; it also covers your days at school. It would take 1–6 years by job profile. You would finish with: Qualifications at CFC level 4 (CEFA), levels 3–4 (IFAPME/SFPME), 6–7 tertiary, which gives direct access to higher education.</p><p class=\"pt-src\">From Cedefop's coded answers for this scheme (2026 fiche).</p></div></div>"
+    },
+    "bg-dual": {
+      "country": "Bulgaria",
+      "country_code": "BG",
+      "name": "Work-based learning (dual system)",
+      "split": 0.5,
+      "split_label": "Around half",
+      "facts": [
+        {
+          "icon": "pay",
+          "label": "Pay",
+          "value": "Wage, paid by your employer"
+        },
+        {
+          "icon": "contract",
+          "label": "Arrangement",
+          "value": "Specific apprenticeship contract"
+        },
+        {
+          "icon": "time",
+          "label": "Duration",
+          "value": "5-yr programme; last 2 years at the workplace"
+        },
+        {
+          "icon": "age",
+          "label": "Typical age",
+          "value": "15–18"
+        },
+        {
+          "icon": "level",
+          "label": "Leads to",
+          "value": "Upper secondary · access to higher education"
+        }
+      ],
+      "story_title": "If you were an apprentice in Bulgaria",
+      "story": [
+        "You would most likely be between 15 and 18.",
+        "You would sign an apprenticeship contract and have the legal status of an apprentice.",
+        "You would spend about half your time at the company, switching between school and work every week.",
+        "You would earn a wage, set by law or by agreement with your employer, paid by your employer.",
+        "Duration: 5-year programme; last 2 years at the workplace.",
+        "You would finish with: VET qualification, EQF 4 (schools) / EQF 2–4 (training centres), which gives direct access to higher education."
+      ],
+      "html": "<div class=\"portrait\"><div class=\"pt-split\" role=\"img\" aria-label=\"Time at the company: Around half\"><span class=\"pt-work\" style=\"width:50%\"><span>Company</span></span><span class=\"pt-school\" style=\"width:50%\"><span>School</span></span></div><p class=\"pt-split-note\">Around half</p><ul class=\"pt-facts\"><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M3 6h14v9H3z\"/><circle cx=\"10\" cy=\"10.5\" r=\"2.2\"/><path d=\"M6 6V4.5h8V6\"/></svg><span class=\"pt-k\">Pay</span> <span class=\"pt-v\">Wage, paid by your employer</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 2.5h7l3 3v12H5z\"/><path d=\"M12 2.5v3h3M7.5 9h5M7.5 12h5M7.5 15h3\"/></svg><span class=\"pt-k\">Arrangement</span> <span class=\"pt-v\">Specific apprenticeship contract</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"10\" cy=\"10\" r=\"7\"/><path d=\"M10 6v4l3 2\"/></svg><span class=\"pt-k\">Duration</span> <span class=\"pt-v\">5-yr programme; last 2 years at the workplace</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"10\" cy=\"7\" r=\"3\"/><path d=\"M4 17c.8-3.2 3.2-5 6-5s5.2 1.8 6 5\"/></svg><span class=\"pt-k\">Typical age</span> <span class=\"pt-v\">15–18</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M2 8l8-4 8 4-8 4z\"/><path d=\"M5.5 9.8V13c1.2 1.3 2.8 2 4.5 2s3.3-.7 4.5-2V9.8\"/></svg><span class=\"pt-k\">Leads to</span> <span class=\"pt-v\">Upper secondary · access to higher education</span></li></ul><div class=\"pt-story\"><h4>If you were an apprentice in Bulgaria</h4><p>You would most likely be between 15 and 18. You would sign an apprenticeship contract and have the legal status of an apprentice. You would spend about half your time at the company, switching between school and work every week. You would earn a wage, set by law or by agreement with your employer, paid by your employer. Duration: 5-year programme; last 2 years at the workplace. You would finish with: VET qualification, EQF 4 (schools) / EQF 2–4 (training centres), which gives direct access to higher education.</p><p class=\"pt-src\">From Cedefop's coded answers for this scheme (2026 fiche).</p></div></div>"
+    },
+    "cy-nma": {
+      "country": "Cyprus",
+      "country_code": "CY",
+      "name": "New Modern Apprenticeship",
+      "split": 0.5,
+      "split_label": "Around half",
+      "facts": [
+        {
+          "icon": "pay",
+          "label": "Pay",
+          "value": "Wage, paid by your employer"
+        },
+        {
+          "icon": "contract",
+          "label": "Arrangement",
+          "value": "Specific apprenticeship contract"
+        },
+        {
+          "icon": "time",
+          "label": "Duration",
+          "value": "3 school years (6 terms)"
+        },
+        {
+          "icon": "age",
+          "label": "Typical age",
+          "value": "15–18"
+        },
+        {
+          "icon": "level",
+          "label": "Leads to",
+          "value": "Upper secondary"
+        }
+      ],
+      "story_title": "If you were an apprentice in Cyprus",
+      "story": [
+        "You would most likely be between 15 and 18.",
+        "You would sign an apprenticeship contract and have the legal status of an apprentice.",
+        "You would spend about half your time at the company, switching between school and work every week.",
+        "You would earn a wage, set by agreement with your employer, paid by your employer.",
+        "It would take 3 school years (6 terms).",
+        "You would finish with: Apprenticeship Certificate, EQF 3, which does not by itself give access to higher education."
+      ],
+      "html": "<div class=\"portrait\"><div class=\"pt-split\" role=\"img\" aria-label=\"Time at the company: Around half\"><span class=\"pt-work\" style=\"width:50%\"><span>Company</span></span><span class=\"pt-school\" style=\"width:50%\"><span>School</span></span></div><p class=\"pt-split-note\">Around half</p><ul class=\"pt-facts\"><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M3 6h14v9H3z\"/><circle cx=\"10\" cy=\"10.5\" r=\"2.2\"/><path d=\"M6 6V4.5h8V6\"/></svg><span class=\"pt-k\">Pay</span> <span class=\"pt-v\">Wage, paid by your employer</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 2.5h7l3 3v12H5z\"/><path d=\"M12 2.5v3h3M7.5 9h5M7.5 12h5M7.5 15h3\"/></svg><span class=\"pt-k\">Arrangement</span> <span class=\"pt-v\">Specific apprenticeship contract</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"10\" cy=\"10\" r=\"7\"/><path d=\"M10 6v4l3 2\"/></svg><span class=\"pt-k\">Duration</span> <span class=\"pt-v\">3 school years (6 terms)</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"10\" cy=\"7\" r=\"3\"/><path d=\"M4 17c.8-3.2 3.2-5 6-5s5.2 1.8 6 5\"/></svg><span class=\"pt-k\">Typical age</span> <span class=\"pt-v\">15–18</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M2 8l8-4 8 4-8 4z\"/><path d=\"M5.5 9.8V13c1.2 1.3 2.8 2 4.5 2s3.3-.7 4.5-2V9.8\"/></svg><span class=\"pt-k\">Leads to</span> <span class=\"pt-v\">Upper secondary</span></li></ul><div class=\"pt-story\"><h4>If you were an apprentice in Cyprus</h4><p>You would most likely be between 15 and 18. You would sign an apprenticeship contract and have the legal status of an apprentice. You would spend about half your time at the company, switching between school and work every week. You would earn a wage, set by agreement with your employer, paid by your employer. It would take 3 school years (6 terms). You would finish with: Apprenticeship Certificate, EQF 3, which does not by itself give access to higher education.</p><p class=\"pt-src\">From Cedefop's coded answers for this scheme (2026 fiche).</p></div></div>"
+    },
+    "cz-dual": {
+      "country": "Czechia",
+      "country_code": "CZ",
+      "name": "Dual practical training",
+      "split": 0.5,
+      "split_label": "Around half",
+      "facts": [
+        {
+          "icon": "pay",
+          "label": "Pay",
+          "value": "Allowance, paid by your employer"
+        },
+        {
+          "icon": "contract",
+          "label": "Arrangement",
+          "value": "Formal agreement, not a contract"
+        },
+        {
+          "icon": "time",
+          "label": "Duration",
+          "value": "3–4 yrs per framework programme"
+        },
+        {
+          "icon": "level",
+          "label": "Leads to",
+          "value": "Upper secondary · access to higher education"
+        }
+      ],
+      "story_title": "If you were an apprentice in Czechia",
+      "story": [
+        "You would stay a student, with a formal training agreement between you, your school and the company.",
+        "You would spend about half your time at the company.",
+        "You would receive an allowance rather than a wage, paid by your employer.",
+        "It would take 3–4 years per framework programme.",
+        "You would finish with: VET qualification (ISCED 344/353/354/655), which gives direct access to higher education."
+      ],
+      "html": "<div class=\"portrait\"><div class=\"pt-split\" role=\"img\" aria-label=\"Time at the company: Around half\"><span class=\"pt-work\" style=\"width:50%\"><span>Company</span></span><span class=\"pt-school\" style=\"width:50%\"><span>School</span></span></div><p class=\"pt-split-note\">Around half</p><ul class=\"pt-facts\"><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M3 6h14v9H3z\"/><circle cx=\"10\" cy=\"10.5\" r=\"2.2\"/><path d=\"M6 6V4.5h8V6\"/></svg><span class=\"pt-k\">Pay</span> <span class=\"pt-v\">Allowance, paid by your employer</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 2.5h7l3 3v12H5z\"/><path d=\"M12 2.5v3h3M7.5 9h5M7.5 12h5M7.5 15h3\"/></svg><span class=\"pt-k\">Arrangement</span> <span class=\"pt-v\">Formal agreement, not a contract</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"10\" cy=\"10\" r=\"7\"/><path d=\"M10 6v4l3 2\"/></svg><span class=\"pt-k\">Duration</span> <span class=\"pt-v\">3–4 yrs per framework programme</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M2 8l8-4 8 4-8 4z\"/><path d=\"M5.5 9.8V13c1.2 1.3 2.8 2 4.5 2s3.3-.7 4.5-2V9.8\"/></svg><span class=\"pt-k\">Leads to</span> <span class=\"pt-v\">Upper secondary · access to higher education</span></li></ul><div class=\"pt-story\"><h4>If you were an apprentice in Czechia</h4><p>You would stay a student, with a formal training agreement between you, your school and the company. You would spend about half your time at the company. You would receive an allowance rather than a wage, paid by your employer. It would take 3–4 years per framework programme. You would finish with: VET qualification (ISCED 344/353/354/655), which gives direct access to higher education.</p><p class=\"pt-src\">From Cedefop's coded answers for this scheme (2026 fiche).</p></div></div>"
+    },
+    "de-dual": {
+      "country": "Germany",
+      "country_code": "DE",
+      "name": "Dual VET",
+      "split": 0.7,
+      "split_label": "Mostly at work (≥2/3)",
+      "facts": [
+        {
+          "icon": "pay",
+          "label": "Pay",
+          "value": "Wage, paid by your employer"
+        },
+        {
+          "icon": "contract",
+          "label": "Arrangement",
+          "value": "Specific apprenticeship contract"
+        },
+        {
+          "icon": "time",
+          "label": "Duration",
+          "value": "3–3.5 yrs; 2-yr options"
+        },
+        {
+          "icon": "age",
+          "label": "Typical age",
+          "value": "18–24"
+        },
+        {
+          "icon": "level",
+          "label": "Leads to",
+          "value": "Upper secondary"
+        }
+      ],
+      "story_title": "If you were an apprentice in Germany",
+      "story": [
+        "You would most likely be between 18 and 24.",
+        "You would sign an apprenticeship contract and have the legal status of an apprentice.",
+        "You would spend most of your time (two-thirds or more) at the company.",
+        "You would earn a wage, set by collective agreements for your sector or by agreement with your employer, paid by your employer; it also covers your days at school.",
+        "It would take 3–3.5 years; 2-year options.",
+        "You would finish with: Recognised occupation certificate, DQR/EQF 3–4, which does not by itself give access to higher education."
+      ],
+      "html": "<div class=\"portrait\"><div class=\"pt-split\" role=\"img\" aria-label=\"Time at the company: Mostly at work (≥2/3)\"><span class=\"pt-work\" style=\"width:70%\"><span>Company</span></span><span class=\"pt-school\" style=\"width:30%\"><span>School</span></span></div><p class=\"pt-split-note\">Mostly at work (≥2/3)</p><ul class=\"pt-facts\"><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M3 6h14v9H3z\"/><circle cx=\"10\" cy=\"10.5\" r=\"2.2\"/><path d=\"M6 6V4.5h8V6\"/></svg><span class=\"pt-k\">Pay</span> <span class=\"pt-v\">Wage, paid by your employer</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 2.5h7l3 3v12H5z\"/><path d=\"M12 2.5v3h3M7.5 9h5M7.5 12h5M7.5 15h3\"/></svg><span class=\"pt-k\">Arrangement</span> <span class=\"pt-v\">Specific apprenticeship contract</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"10\" cy=\"10\" r=\"7\"/><path d=\"M10 6v4l3 2\"/></svg><span class=\"pt-k\">Duration</span> <span class=\"pt-v\">3–3.5 yrs; 2-yr options</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"10\" cy=\"7\" r=\"3\"/><path d=\"M4 17c.8-3.2 3.2-5 6-5s5.2 1.8 6 5\"/></svg><span class=\"pt-k\">Typical age</span> <span class=\"pt-v\">18–24</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M2 8l8-4 8 4-8 4z\"/><path d=\"M5.5 9.8V13c1.2 1.3 2.8 2 4.5 2s3.3-.7 4.5-2V9.8\"/></svg><span class=\"pt-k\">Leads to</span> <span class=\"pt-v\">Upper secondary</span></li></ul><div class=\"pt-story\"><h4>If you were an apprentice in Germany</h4><p>You would most likely be between 18 and 24. You would sign an apprenticeship contract and have the legal status of an apprentice. You would spend most of your time (two-thirds or more) at the company. You would earn a wage, set by collective agreements for your sector or by agreement with your employer, paid by your employer; it also covers your days at school. It would take 3–3.5 years; 2-year options. You would finish with: Recognised occupation certificate, DQR/EQF 3–4, which does not by itself give access to higher education.</p><p class=\"pt-src\">From Cedefop's coded answers for this scheme (2026 fiche).</p></div></div>"
+    },
+    "dk-eud": {
+      "country": "Denmark",
+      "country_code": "DK",
+      "name": "Apprenticeship (VET programmes)",
+      "split": 0.7,
+      "split_label": "Mostly at work (≥2/3)",
+      "facts": [
+        {
+          "icon": "pay",
+          "label": "Pay",
+          "value": "Wage, paid by your employer"
+        },
+        {
+          "icon": "contract",
+          "label": "Arrangement",
+          "value": "Ordinary employment contract"
+        },
+        {
+          "icon": "time",
+          "label": "Duration",
+          "value": "Usually 4 yrs incl. the basic school year"
+        },
+        {
+          "icon": "age",
+          "label": "Typical age",
+          "value": "15–18, 18–24 or Over 24"
+        },
+        {
+          "icon": "level",
+          "label": "Leads to",
+          "value": "Upper secondary · access to higher education"
+        }
+      ],
+      "story_title": "If you were an apprentice in Denmark",
+      "story": [
+        "You would most likely be between 15 and 18, between 18 and 24 or over 24.",
+        "Your training would be set out in a written arrangement (ordinary employment contract).",
+        "You would spend most of your time (two-thirds or more) at the company.",
+        "You would earn a wage, set by collective agreements for your sector, paid by your employer; it also covers your days at school.",
+        "Duration: usually 4 years incl. the basic school year.",
+        "You would finish with: Journeyman / VET qualification, NQF 4, which gives direct access to higher education."
+      ],
+      "html": "<div class=\"portrait\"><div class=\"pt-split\" role=\"img\" aria-label=\"Time at the company: Mostly at work (≥2/3)\"><span class=\"pt-work\" style=\"width:70%\"><span>Company</span></span><span class=\"pt-school\" style=\"width:30%\"><span>School</span></span></div><p class=\"pt-split-note\">Mostly at work (≥2/3)</p><ul class=\"pt-facts\"><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M3 6h14v9H3z\"/><circle cx=\"10\" cy=\"10.5\" r=\"2.2\"/><path d=\"M6 6V4.5h8V6\"/></svg><span class=\"pt-k\">Pay</span> <span class=\"pt-v\">Wage, paid by your employer</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 2.5h7l3 3v12H5z\"/><path d=\"M12 2.5v3h3M7.5 9h5M7.5 12h5M7.5 15h3\"/></svg><span class=\"pt-k\">Arrangement</span> <span class=\"pt-v\">Ordinary employment contract</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"10\" cy=\"10\" r=\"7\"/><path d=\"M10 6v4l3 2\"/></svg><span class=\"pt-k\">Duration</span> <span class=\"pt-v\">Usually 4 yrs incl. the basic school year</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"10\" cy=\"7\" r=\"3\"/><path d=\"M4 17c.8-3.2 3.2-5 6-5s5.2 1.8 6 5\"/></svg><span class=\"pt-k\">Typical age</span> <span class=\"pt-v\">15–18, 18–24 or Over 24</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M2 8l8-4 8 4-8 4z\"/><path d=\"M5.5 9.8V13c1.2 1.3 2.8 2 4.5 2s3.3-.7 4.5-2V9.8\"/></svg><span class=\"pt-k\">Leads to</span> <span class=\"pt-v\">Upper secondary · access to higher education</span></li></ul><div class=\"pt-story\"><h4>If you were an apprentice in Denmark</h4><p>You would most likely be between 15 and 18, between 18 and 24 or over 24. Your training would be set out in a written arrangement (ordinary employment contract). You would spend most of your time (two-thirds or more) at the company. You would earn a wage, set by collective agreements for your sector, paid by your employer; it also covers your days at school. Duration: usually 4 years incl. the basic school year. You would finish with: Journeyman / VET qualification, NQF 4, which gives direct access to higher education.</p><p class=\"pt-src\">From Cedefop's coded answers for this scheme (2026 fiche).</p></div></div>"
+    },
+    "ee-wbl": {
+      "country": "Estonia",
+      "country_code": "EE",
+      "name": "Workplace-based learning",
+      "split": 0.7,
+      "split_label": "Mostly at work (≥2/3)",
+      "facts": [
+        {
+          "icon": "pay",
+          "label": "Pay",
+          "value": "Wage, paid by your employer"
+        },
+        {
+          "icon": "contract",
+          "label": "Arrangement",
+          "value": "Ordinary employment contract or Formal agreement, not a contract"
+        },
+        {
+          "icon": "time",
+          "label": "Duration",
+          "value": "3 months–2.5 yrs"
+        },
+        {
+          "icon": "age",
+          "label": "Typical age",
+          "value": "Over 24"
+        },
+        {
+          "icon": "level",
+          "label": "Leads to",
+          "value": "All VET levels (EQF 2–5) · access to higher education"
+        }
+      ],
+      "story_title": "If you were an apprentice in Estonia",
+      "story": [
+        "You would most likely be over 24 — many apprentices here are adults.",
+        "Your training would be set out in a written arrangement (ordinary employment contract or formal agreement, not a contract).",
+        "You would spend most of your time (two-thirds or more) at the company.",
+        "You would earn a wage, set by law or by agreement with your employer, paid by your employer.",
+        "It would take 3 months–2.5 years.",
+        "You would finish with: VET certificate, EQF 2–5, which gives direct access to higher education."
+      ],
+      "html": "<div class=\"portrait\"><div class=\"pt-split\" role=\"img\" aria-label=\"Time at the company: Mostly at work (≥2/3)\"><span class=\"pt-work\" style=\"width:70%\"><span>Company</span></span><span class=\"pt-school\" style=\"width:30%\"><span>School</span></span></div><p class=\"pt-split-note\">Mostly at work (≥2/3)</p><ul class=\"pt-facts\"><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M3 6h14v9H3z\"/><circle cx=\"10\" cy=\"10.5\" r=\"2.2\"/><path d=\"M6 6V4.5h8V6\"/></svg><span class=\"pt-k\">Pay</span> <span class=\"pt-v\">Wage, paid by your employer</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 2.5h7l3 3v12H5z\"/><path d=\"M12 2.5v3h3M7.5 9h5M7.5 12h5M7.5 15h3\"/></svg><span class=\"pt-k\">Arrangement</span> <span class=\"pt-v\">Ordinary employment contract or Formal agreement, not a contract</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"10\" cy=\"10\" r=\"7\"/><path d=\"M10 6v4l3 2\"/></svg><span class=\"pt-k\">Duration</span> <span class=\"pt-v\">3 months–2.5 yrs</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"10\" cy=\"7\" r=\"3\"/><path d=\"M4 17c.8-3.2 3.2-5 6-5s5.2 1.8 6 5\"/></svg><span class=\"pt-k\">Typical age</span> <span class=\"pt-v\">Over 24</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M2 8l8-4 8 4-8 4z\"/><path d=\"M5.5 9.8V13c1.2 1.3 2.8 2 4.5 2s3.3-.7 4.5-2V9.8\"/></svg><span class=\"pt-k\">Leads to</span> <span class=\"pt-v\">All VET levels (EQF 2–5) · access to higher education</span></li></ul><div class=\"pt-story\"><h4>If you were an apprentice in Estonia</h4><p>You would most likely be over 24 — many apprentices here are adults. Your training would be set out in a written arrangement (ordinary employment contract or formal agreement, not a contract). You would spend most of your time (two-thirds or more) at the company. You would earn a wage, set by law or by agreement with your employer, paid by your employer. It would take 3 months–2.5 years. You would finish with: VET certificate, EQF 2–5, which gives direct access to higher education.</p><p class=\"pt-src\">From Cedefop's coded answers for this scheme (2026 fiche).</p></div></div>"
+    },
+    "el-epas": {
+      "country": "Greece",
+      "country_code": "GR",
+      "name": "EPAS apprenticeships (DYPA)",
+      "split": 0.7,
+      "split_label": "Mostly at work (≥2/3)",
+      "facts": [
+        {
+          "icon": "pay",
+          "label": "Pay",
+          "value": "Wage, paid by your employer or the state"
+        },
+        {
+          "icon": "contract",
+          "label": "Arrangement",
+          "value": "Specific apprenticeship contract"
+        },
+        {
+          "icon": "time",
+          "label": "Duration",
+          "value": "2 school years (4 semesters)"
+        },
+        {
+          "icon": "age",
+          "label": "Typical age",
+          "value": "15–18 or 18–24"
+        },
+        {
+          "icon": "level",
+          "label": "Leads to",
+          "value": "Upper secondary"
+        }
+      ],
+      "story_title": "If you were an apprentice in Greece",
+      "story": [
+        "You would most likely be between 15 and 18 or between 18 and 24.",
+        "You would sign an apprenticeship contract and have the legal status of an apprentice.",
+        "You would spend most of your time (two-thirds or more) at the company, switching between school and work every week.",
+        "You would earn a wage, set by law, paid by your employer or the state.",
+        "It would take 2 school years (4 semesters).",
+        "You would finish with: Vocational School Certificate, EQF 3, which does not by itself give access to higher education."
+      ],
+      "html": "<div class=\"portrait\"><div class=\"pt-split\" role=\"img\" aria-label=\"Time at the company: Mostly at work (≥2/3)\"><span class=\"pt-work\" style=\"width:70%\"><span>Company</span></span><span class=\"pt-school\" style=\"width:30%\"><span>School</span></span></div><p class=\"pt-split-note\">Mostly at work (≥2/3)</p><ul class=\"pt-facts\"><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M3 6h14v9H3z\"/><circle cx=\"10\" cy=\"10.5\" r=\"2.2\"/><path d=\"M6 6V4.5h8V6\"/></svg><span class=\"pt-k\">Pay</span> <span class=\"pt-v\">Wage, paid by your employer or the state</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 2.5h7l3 3v12H5z\"/><path d=\"M12 2.5v3h3M7.5 9h5M7.5 12h5M7.5 15h3\"/></svg><span class=\"pt-k\">Arrangement</span> <span class=\"pt-v\">Specific apprenticeship contract</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"10\" cy=\"10\" r=\"7\"/><path d=\"M10 6v4l3 2\"/></svg><span class=\"pt-k\">Duration</span> <span class=\"pt-v\">2 school years (4 semesters)</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"10\" cy=\"7\" r=\"3\"/><path d=\"M4 17c.8-3.2 3.2-5 6-5s5.2 1.8 6 5\"/></svg><span class=\"pt-k\">Typical age</span> <span class=\"pt-v\">15–18 or 18–24</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M2 8l8-4 8 4-8 4z\"/><path d=\"M5.5 9.8V13c1.2 1.3 2.8 2 4.5 2s3.3-.7 4.5-2V9.8\"/></svg><span class=\"pt-k\">Leads to</span> <span class=\"pt-v\">Upper secondary</span></li></ul><div class=\"pt-story\"><h4>If you were an apprentice in Greece</h4><p>You would most likely be between 15 and 18 or between 18 and 24. You would sign an apprenticeship contract and have the legal status of an apprentice. You would spend most of your time (two-thirds or more) at the company, switching between school and work every week. You would earn a wage, set by law, paid by your employer or the state. It would take 2 school years (4 semesters). You would finish with: Vocational School Certificate, EQF 3, which does not by itself give access to higher education.</p><p class=\"pt-src\">From Cedefop's coded answers for this scheme (2026 fiche).</p></div></div>"
+    },
+    "el-postsec": {
+      "country": "Greece",
+      "country_code": "GR",
+      "name": "Post-secondary apprenticeship year",
+      "split": 0.7,
+      "split_label": "Mostly at work (≥2/3)",
+      "facts": [
+        {
+          "icon": "pay",
+          "label": "Pay",
+          "value": "Wage, paid by your employer"
+        },
+        {
+          "icon": "contract",
+          "label": "Arrangement",
+          "value": "Specific apprenticeship contract"
+        },
+        {
+          "icon": "time",
+          "label": "Duration",
+          "value": "11 months"
+        },
+        {
+          "icon": "age",
+          "label": "Typical age",
+          "value": "18–24"
+        },
+        {
+          "icon": "level",
+          "label": "Leads to",
+          "value": "Post-secondary (EQF 5) · access to higher education"
+        }
+      ],
+      "story_title": "If you were an apprentice in Greece",
+      "story": [
+        "You would most likely be between 18 and 24.",
+        "You would sign an apprenticeship contract and have the legal status of an apprentice.",
+        "You would spend most of your time (two-thirds or more) at the company, switching between school and work every week.",
+        "You would earn a wage, set by law, paid by your employer.",
+        "It would take 11 months.",
+        "You would finish with: Vocational specialty degree, EQF 5, which gives direct access to higher education."
+      ],
+      "html": "<div class=\"portrait\"><div class=\"pt-split\" role=\"img\" aria-label=\"Time at the company: Mostly at work (≥2/3)\"><span class=\"pt-work\" style=\"width:70%\"><span>Company</span></span><span class=\"pt-school\" style=\"width:30%\"><span>School</span></span></div><p class=\"pt-split-note\">Mostly at work (≥2/3)</p><ul class=\"pt-facts\"><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M3 6h14v9H3z\"/><circle cx=\"10\" cy=\"10.5\" r=\"2.2\"/><path d=\"M6 6V4.5h8V6\"/></svg><span class=\"pt-k\">Pay</span> <span class=\"pt-v\">Wage, paid by your employer</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 2.5h7l3 3v12H5z\"/><path d=\"M12 2.5v3h3M7.5 9h5M7.5 12h5M7.5 15h3\"/></svg><span class=\"pt-k\">Arrangement</span> <span class=\"pt-v\">Specific apprenticeship contract</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"10\" cy=\"10\" r=\"7\"/><path d=\"M10 6v4l3 2\"/></svg><span class=\"pt-k\">Duration</span> <span class=\"pt-v\">11 months</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"10\" cy=\"7\" r=\"3\"/><path d=\"M4 17c.8-3.2 3.2-5 6-5s5.2 1.8 6 5\"/></svg><span class=\"pt-k\">Typical age</span> <span class=\"pt-v\">18–24</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M2 8l8-4 8 4-8 4z\"/><path d=\"M5.5 9.8V13c1.2 1.3 2.8 2 4.5 2s3.3-.7 4.5-2V9.8\"/></svg><span class=\"pt-k\">Leads to</span> <span class=\"pt-v\">Post-secondary (EQF 5) · access to higher education</span></li></ul><div class=\"pt-story\"><h4>If you were an apprentice in Greece</h4><p>You would most likely be between 18 and 24. You would sign an apprenticeship contract and have the legal status of an apprentice. You would spend most of your time (two-thirds or more) at the company, switching between school and work every week. You would earn a wage, set by law, paid by your employer. It would take 11 months. You would finish with: Vocational specialty degree, EQF 5, which gives direct access to higher education.</p><p class=\"pt-src\">From Cedefop's coded answers for this scheme (2026 fiche).</p></div></div>"
+    },
+    "es-intensiva": {
+      "country": "Spain",
+      "country_code": "ES",
+      "name": "Intensive VET (dual)",
+      "split": 0.3,
+      "split_label": "Under half",
+      "facts": [
+        {
+          "icon": "pay",
+          "label": "Pay",
+          "value": "Wage, paid by your employer"
+        },
+        {
+          "icon": "contract",
+          "label": "Arrangement",
+          "value": "Specific apprenticeship contract or Formal agreement, not a contract"
+        },
+        {
+          "icon": "time",
+          "label": "Duration",
+          "value": "1 yr (level C); 2–3 yrs (level D)"
+        },
+        {
+          "icon": "age",
+          "label": "Typical age",
+          "value": "18–24"
+        },
+        {
+          "icon": "level",
+          "label": "Leads to",
+          "value": "Upper secondary · access to higher education"
+        }
+      ],
+      "story_title": "If you were an apprentice in Spain",
+      "story": [
+        "You would most likely be between 18 and 24.",
+        "Your training would be set out in a written arrangement (specific apprenticeship contract or formal agreement, not a contract).",
+        "You would spend less than half your time at the company, the rest at school or a training centre.",
+        "You would earn a wage, set by law or by collective agreements for your sector, paid by your employer.",
+        "It would take 1 year (level C); 2–3 years (level D).",
+        "You would finish with: VET diploma or professional certificate, EQF 2–4, which gives direct access to higher education."
+      ],
+      "html": "<div class=\"portrait\"><div class=\"pt-split\" role=\"img\" aria-label=\"Time at the company: Under half\"><span class=\"pt-work\" style=\"width:30%\"><span>Company</span></span><span class=\"pt-school\" style=\"width:70%\"><span>School</span></span></div><p class=\"pt-split-note\">Under half</p><ul class=\"pt-facts\"><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M3 6h14v9H3z\"/><circle cx=\"10\" cy=\"10.5\" r=\"2.2\"/><path d=\"M6 6V4.5h8V6\"/></svg><span class=\"pt-k\">Pay</span> <span class=\"pt-v\">Wage, paid by your employer</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 2.5h7l3 3v12H5z\"/><path d=\"M12 2.5v3h3M7.5 9h5M7.5 12h5M7.5 15h3\"/></svg><span class=\"pt-k\">Arrangement</span> <span class=\"pt-v\">Specific apprenticeship contract or Formal agreement, not a contract</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"10\" cy=\"10\" r=\"7\"/><path d=\"M10 6v4l3 2\"/></svg><span class=\"pt-k\">Duration</span> <span class=\"pt-v\">1 yr (level C); 2–3 yrs (level D)</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"10\" cy=\"7\" r=\"3\"/><path d=\"M4 17c.8-3.2 3.2-5 6-5s5.2 1.8 6 5\"/></svg><span class=\"pt-k\">Typical age</span> <span class=\"pt-v\">18–24</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M2 8l8-4 8 4-8 4z\"/><path d=\"M5.5 9.8V13c1.2 1.3 2.8 2 4.5 2s3.3-.7 4.5-2V9.8\"/></svg><span class=\"pt-k\">Leads to</span> <span class=\"pt-v\">Upper secondary · access to higher education</span></li></ul><div class=\"pt-story\"><h4>If you were an apprentice in Spain</h4><p>You would most likely be between 18 and 24. Your training would be set out in a written arrangement (specific apprenticeship contract or formal agreement, not a contract). You would spend less than half your time at the company, the rest at school or a training centre. You would earn a wage, set by law or by collective agreements for your sector, paid by your employer. It would take 1 year (level C); 2–3 years (level D). You would finish with: VET diploma or professional certificate, EQF 2–4, which gives direct access to higher education.</p><p class=\"pt-src\">From Cedefop's coded answers for this scheme (2026 fiche).</p></div></div>"
+    },
+    "fi-oppisopimus": {
+      "country": "Finland",
+      "country_code": "FI",
+      "name": "Apprenticeship training",
+      "split": 0.7,
+      "split_label": "Mostly at work (≥2/3)",
+      "facts": [
+        {
+          "icon": "pay",
+          "label": "Pay",
+          "value": "Wage, paid by your employer"
+        },
+        {
+          "icon": "contract",
+          "label": "Arrangement",
+          "value": "Specific apprenticeship contract"
+        },
+        {
+          "icon": "time",
+          "label": "Duration",
+          "value": "Individual, per personal competence development plan"
+        },
+        {
+          "icon": "age",
+          "label": "Typical age",
+          "value": "Over 24"
+        },
+        {
+          "icon": "level",
+          "label": "Leads to",
+          "value": "EQF 4–5, all vocational qualifications · access to higher education"
+        }
+      ],
+      "story_title": "If you were an apprentice in Finland",
+      "story": [
+        "You would most likely be over 24 — many apprentices here are adults.",
+        "You would sign an apprenticeship contract and have the legal status of an apprentice.",
+        "You would spend most of your time (two-thirds or more) at the company.",
+        "You would earn a wage, set by collective agreements for your sector or by agreement with your employer, paid by your employer; it also covers your days at school.",
+        "Duration: individual, per personal competence development plan.",
+        "You would finish with: Vocational qualifications EQF 4; specialist qualifications EQF 5, which gives direct access to higher education."
+      ],
+      "html": "<div class=\"portrait\"><div class=\"pt-split\" role=\"img\" aria-label=\"Time at the company: Mostly at work (≥2/3)\"><span class=\"pt-work\" style=\"width:70%\"><span>Company</span></span><span class=\"pt-school\" style=\"width:30%\"><span>School</span></span></div><p class=\"pt-split-note\">Mostly at work (≥2/3)</p><ul class=\"pt-facts\"><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M3 6h14v9H3z\"/><circle cx=\"10\" cy=\"10.5\" r=\"2.2\"/><path d=\"M6 6V4.5h8V6\"/></svg><span class=\"pt-k\">Pay</span> <span class=\"pt-v\">Wage, paid by your employer</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 2.5h7l3 3v12H5z\"/><path d=\"M12 2.5v3h3M7.5 9h5M7.5 12h5M7.5 15h3\"/></svg><span class=\"pt-k\">Arrangement</span> <span class=\"pt-v\">Specific apprenticeship contract</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"10\" cy=\"10\" r=\"7\"/><path d=\"M10 6v4l3 2\"/></svg><span class=\"pt-k\">Duration</span> <span class=\"pt-v\">Individual, per personal competence development plan</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"10\" cy=\"7\" r=\"3\"/><path d=\"M4 17c.8-3.2 3.2-5 6-5s5.2 1.8 6 5\"/></svg><span class=\"pt-k\">Typical age</span> <span class=\"pt-v\">Over 24</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M2 8l8-4 8 4-8 4z\"/><path d=\"M5.5 9.8V13c1.2 1.3 2.8 2 4.5 2s3.3-.7 4.5-2V9.8\"/></svg><span class=\"pt-k\">Leads to</span> <span class=\"pt-v\">EQF 4–5, all vocational qualifications · access to higher education</span></li></ul><div class=\"pt-story\"><h4>If you were an apprentice in Finland</h4><p>You would most likely be over 24 — many apprentices here are adults. You would sign an apprenticeship contract and have the legal status of an apprentice. You would spend most of your time (two-thirds or more) at the company. You would earn a wage, set by collective agreements for your sector or by agreement with your employer, paid by your employer; it also covers your days at school. Duration: individual, per personal competence development plan. You would finish with: Vocational qualifications EQF 4; specialist qualifications EQF 5, which gives direct access to higher education.</p><p class=\"pt-src\">From Cedefop's coded answers for this scheme (2026 fiche).</p></div></div>"
+    },
+    "fr-apprentissage": {
+      "country": "France",
+      "country_code": "FR",
+      "name": "Apprenticeship contract",
+      "split": 0.7,
+      "split_label": "Mostly at work (≥2/3)",
+      "facts": [
+        {
+          "icon": "pay",
+          "label": "Pay",
+          "value": "Wage, paid by your employer"
+        },
+        {
+          "icon": "contract",
+          "label": "Arrangement",
+          "value": "Specific apprenticeship contract"
+        },
+        {
+          "icon": "time",
+          "label": "Duration",
+          "value": "6 months–3 yrs"
+        },
+        {
+          "icon": "age",
+          "label": "Typical age",
+          "value": "18–24"
+        },
+        {
+          "icon": "level",
+          "label": "Leads to",
+          "value": "Upper secondary to doctorate (EQF 4–8) · access to higher education"
+        }
+      ],
+      "story_title": "If you were an apprentice in France",
+      "story": [
+        "You would most likely be between 18 and 24.",
+        "You would sign an apprenticeship contract and have the legal status of an apprentice.",
+        "You would spend most of your time (two-thirds or more) at the company.",
+        "You would earn a wage, set by law or by collective agreements for your sector, paid by your employer; it also covers your days at school.",
+        "It would take 6 months–3 years.",
+        "You would finish with: RNCP-registered qualifications, EQF 4–8, which gives direct access to higher education."
+      ],
+      "html": "<div class=\"portrait\"><div class=\"pt-split\" role=\"img\" aria-label=\"Time at the company: Mostly at work (≥2/3)\"><span class=\"pt-work\" style=\"width:70%\"><span>Company</span></span><span class=\"pt-school\" style=\"width:30%\"><span>School</span></span></div><p class=\"pt-split-note\">Mostly at work (≥2/3)</p><ul class=\"pt-facts\"><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M3 6h14v9H3z\"/><circle cx=\"10\" cy=\"10.5\" r=\"2.2\"/><path d=\"M6 6V4.5h8V6\"/></svg><span class=\"pt-k\">Pay</span> <span class=\"pt-v\">Wage, paid by your employer</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 2.5h7l3 3v12H5z\"/><path d=\"M12 2.5v3h3M7.5 9h5M7.5 12h5M7.5 15h3\"/></svg><span class=\"pt-k\">Arrangement</span> <span class=\"pt-v\">Specific apprenticeship contract</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"10\" cy=\"10\" r=\"7\"/><path d=\"M10 6v4l3 2\"/></svg><span class=\"pt-k\">Duration</span> <span class=\"pt-v\">6 months–3 yrs</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"10\" cy=\"7\" r=\"3\"/><path d=\"M4 17c.8-3.2 3.2-5 6-5s5.2 1.8 6 5\"/></svg><span class=\"pt-k\">Typical age</span> <span class=\"pt-v\">18–24</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M2 8l8-4 8 4-8 4z\"/><path d=\"M5.5 9.8V13c1.2 1.3 2.8 2 4.5 2s3.3-.7 4.5-2V9.8\"/></svg><span class=\"pt-k\">Leads to</span> <span class=\"pt-v\">Upper secondary to doctorate (EQF 4–8) · access to higher education</span></li></ul><div class=\"pt-story\"><h4>If you were an apprentice in France</h4><p>You would most likely be between 18 and 24. You would sign an apprenticeship contract and have the legal status of an apprentice. You would spend most of your time (two-thirds or more) at the company. You would earn a wage, set by law or by collective agreements for your sector, paid by your employer; it also covers your days at school. It would take 6 months–3 years. You would finish with: RNCP-registered qualifications, EQF 4–8, which gives direct access to higher education.</p><p class=\"pt-src\">From Cedefop's coded answers for this scheme (2026 fiche).</p></div></div>"
+    },
+    "fr-pro": {
+      "country": "France",
+      "country_code": "FR",
+      "name": "Professionalisation contract",
+      "split": 0.7,
+      "split_label": "Mostly at work (≥2/3)",
+      "facts": [
+        {
+          "icon": "pay",
+          "label": "Pay",
+          "value": "Wage, paid by your employer"
+        },
+        {
+          "icon": "contract",
+          "label": "Arrangement",
+          "value": "Specific apprenticeship contract"
+        },
+        {
+          "icon": "time",
+          "label": "Duration",
+          "value": "Normally 6–12 months (most exceed 9)"
+        },
+        {
+          "icon": "age",
+          "label": "Typical age",
+          "value": "Over 24"
+        },
+        {
+          "icon": "level",
+          "label": "Leads to",
+          "value": "Upper secondary to master · access to higher education"
+        }
+      ],
+      "story_title": "If you were an apprentice in France",
+      "story": [
+        "You would most likely be over 24 — many apprentices here are adults.",
+        "Your training would be set out in a written arrangement (specific apprenticeship contract).",
+        "You would spend most of your time (two-thirds or more) at the company.",
+        "You would earn a wage, set by law, paid by your employer; it also covers your days at school.",
+        "Duration: normally 6–12 months (most exceed 9).",
+        "You would finish with: RNCP or branch-recognised qualifications (upper secondary to master), which gives direct access to higher education."
+      ],
+      "html": "<div class=\"portrait\"><div class=\"pt-split\" role=\"img\" aria-label=\"Time at the company: Mostly at work (≥2/3)\"><span class=\"pt-work\" style=\"width:70%\"><span>Company</span></span><span class=\"pt-school\" style=\"width:30%\"><span>School</span></span></div><p class=\"pt-split-note\">Mostly at work (≥2/3)</p><ul class=\"pt-facts\"><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M3 6h14v9H3z\"/><circle cx=\"10\" cy=\"10.5\" r=\"2.2\"/><path d=\"M6 6V4.5h8V6\"/></svg><span class=\"pt-k\">Pay</span> <span class=\"pt-v\">Wage, paid by your employer</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 2.5h7l3 3v12H5z\"/><path d=\"M12 2.5v3h3M7.5 9h5M7.5 12h5M7.5 15h3\"/></svg><span class=\"pt-k\">Arrangement</span> <span class=\"pt-v\">Specific apprenticeship contract</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"10\" cy=\"10\" r=\"7\"/><path d=\"M10 6v4l3 2\"/></svg><span class=\"pt-k\">Duration</span> <span class=\"pt-v\">Normally 6–12 months (most exceed 9)</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"10\" cy=\"7\" r=\"3\"/><path d=\"M4 17c.8-3.2 3.2-5 6-5s5.2 1.8 6 5\"/></svg><span class=\"pt-k\">Typical age</span> <span class=\"pt-v\">Over 24</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M2 8l8-4 8 4-8 4z\"/><path d=\"M5.5 9.8V13c1.2 1.3 2.8 2 4.5 2s3.3-.7 4.5-2V9.8\"/></svg><span class=\"pt-k\">Leads to</span> <span class=\"pt-v\">Upper secondary to master · access to higher education</span></li></ul><div class=\"pt-story\"><h4>If you were an apprentice in France</h4><p>You would most likely be over 24 — many apprentices here are adults. Your training would be set out in a written arrangement (specific apprenticeship contract). You would spend most of your time (two-thirds or more) at the company. You would earn a wage, set by law, paid by your employer; it also covers your days at school. Duration: normally 6–12 months (most exceed 9). You would finish with: RNCP or branch-recognised qualifications (upper secondary to master), which gives direct access to higher education.</p><p class=\"pt-src\">From Cedefop's coded answers for this scheme (2026 fiche).</p></div></div>"
+    },
+    "hr-jmo": {
+      "country": "Croatia",
+      "country_code": "HR",
+      "name": "Unified Model of Education",
+      "split": 0.5,
+      "split_label": "Around half",
+      "facts": [
+        {
+          "icon": "pay",
+          "label": "Pay",
+          "value": "Allowance, paid by your employer"
+        },
+        {
+          "icon": "contract",
+          "label": "Arrangement",
+          "value": "Formal agreement, not a contract"
+        },
+        {
+          "icon": "time",
+          "label": "Duration",
+          "value": "3 yrs"
+        },
+        {
+          "icon": "age",
+          "label": "Typical age",
+          "value": "15–18"
+        },
+        {
+          "icon": "level",
+          "label": "Leads to",
+          "value": "Upper secondary"
+        }
+      ],
+      "story_title": "If you were an apprentice in Croatia",
+      "story": [
+        "You would most likely be between 15 and 18.",
+        "You would stay a student, with a formal training agreement between you, your school and the company.",
+        "You would spend about half your time at the company.",
+        "You would receive an allowance rather than a wage, paid by your employer.",
+        "It would take 3 years.",
+        "You would finish with: VET qualification, CROQF 4.1 / EQF 4, which does not by itself give access to higher education."
+      ],
+      "html": "<div class=\"portrait\"><div class=\"pt-split\" role=\"img\" aria-label=\"Time at the company: Around half\"><span class=\"pt-work\" style=\"width:50%\"><span>Company</span></span><span class=\"pt-school\" style=\"width:50%\"><span>School</span></span></div><p class=\"pt-split-note\">Around half</p><ul class=\"pt-facts\"><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M3 6h14v9H3z\"/><circle cx=\"10\" cy=\"10.5\" r=\"2.2\"/><path d=\"M6 6V4.5h8V6\"/></svg><span class=\"pt-k\">Pay</span> <span class=\"pt-v\">Allowance, paid by your employer</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 2.5h7l3 3v12H5z\"/><path d=\"M12 2.5v3h3M7.5 9h5M7.5 12h5M7.5 15h3\"/></svg><span class=\"pt-k\">Arrangement</span> <span class=\"pt-v\">Formal agreement, not a contract</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"10\" cy=\"10\" r=\"7\"/><path d=\"M10 6v4l3 2\"/></svg><span class=\"pt-k\">Duration</span> <span class=\"pt-v\">3 yrs</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"10\" cy=\"7\" r=\"3\"/><path d=\"M4 17c.8-3.2 3.2-5 6-5s5.2 1.8 6 5\"/></svg><span class=\"pt-k\">Typical age</span> <span class=\"pt-v\">15–18</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M2 8l8-4 8 4-8 4z\"/><path d=\"M5.5 9.8V13c1.2 1.3 2.8 2 4.5 2s3.3-.7 4.5-2V9.8\"/></svg><span class=\"pt-k\">Leads to</span> <span class=\"pt-v\">Upper secondary</span></li></ul><div class=\"pt-story\"><h4>If you were an apprentice in Croatia</h4><p>You would most likely be between 15 and 18. You would stay a student, with a formal training agreement between you, your school and the company. You would spend about half your time at the company. You would receive an allowance rather than a wage, paid by your employer. It would take 3 years. You would finish with: VET qualification, CROQF 4.1 / EQF 4, which does not by itself give access to higher education.</p><p class=\"pt-src\">From Cedefop's coded answers for this scheme (2026 fiche).</p></div></div>"
+    },
+    "hu-dual": {
+      "country": "Hungary",
+      "country_code": "HU",
+      "name": "Dual vocational training",
+      "split": 0.5,
+      "split_label": "Around half",
+      "facts": [
+        {
+          "icon": "pay",
+          "label": "Pay",
+          "value": "Allowance, paid by your employer"
+        },
+        {
+          "icon": "contract",
+          "label": "Arrangement",
+          "value": "Specific apprenticeship contract"
+        },
+        {
+          "icon": "time",
+          "label": "Duration",
+          "value": "Dual phase covers the last 2–3 years of the programme"
+        },
+        {
+          "icon": "age",
+          "label": "Typical age",
+          "value": "15–18"
+        },
+        {
+          "icon": "level",
+          "label": "Leads to",
+          "value": "Upper secondary · access to higher education"
+        }
+      ],
+      "story_title": "If you were an apprentice in Hungary",
+      "story": [
+        "You would most likely be between 15 and 18.",
+        "You would sign an apprenticeship contract and have the legal status of an apprentice.",
+        "You would spend about half your time at the company.",
+        "You would receive an allowance rather than a wage, paid by your employer.",
+        "Duration: dual phase covers the last 2–3 years of the programme.",
+        "You would finish with: State-recognised VET qualification, EQF 3–5, which gives direct access to higher education."
+      ],
+      "html": "<div class=\"portrait\"><div class=\"pt-split\" role=\"img\" aria-label=\"Time at the company: Around half\"><span class=\"pt-work\" style=\"width:50%\"><span>Company</span></span><span class=\"pt-school\" style=\"width:50%\"><span>School</span></span></div><p class=\"pt-split-note\">Around half</p><ul class=\"pt-facts\"><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M3 6h14v9H3z\"/><circle cx=\"10\" cy=\"10.5\" r=\"2.2\"/><path d=\"M6 6V4.5h8V6\"/></svg><span class=\"pt-k\">Pay</span> <span class=\"pt-v\">Allowance, paid by your employer</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 2.5h7l3 3v12H5z\"/><path d=\"M12 2.5v3h3M7.5 9h5M7.5 12h5M7.5 15h3\"/></svg><span class=\"pt-k\">Arrangement</span> <span class=\"pt-v\">Specific apprenticeship contract</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"10\" cy=\"10\" r=\"7\"/><path d=\"M10 6v4l3 2\"/></svg><span class=\"pt-k\">Duration</span> <span class=\"pt-v\">Dual phase covers the last 2–3 years of the programme</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"10\" cy=\"7\" r=\"3\"/><path d=\"M4 17c.8-3.2 3.2-5 6-5s5.2 1.8 6 5\"/></svg><span class=\"pt-k\">Typical age</span> <span class=\"pt-v\">15–18</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M2 8l8-4 8 4-8 4z\"/><path d=\"M5.5 9.8V13c1.2 1.3 2.8 2 4.5 2s3.3-.7 4.5-2V9.8\"/></svg><span class=\"pt-k\">Leads to</span> <span class=\"pt-v\">Upper secondary · access to higher education</span></li></ul><div class=\"pt-story\"><h4>If you were an apprentice in Hungary</h4><p>You would most likely be between 15 and 18. You would sign an apprenticeship contract and have the legal status of an apprentice. You would spend about half your time at the company. You would receive an allowance rather than a wage, paid by your employer. Duration: dual phase covers the last 2–3 years of the programme. You would finish with: State-recognised VET qualification, EQF 3–5, which gives direct access to higher education.</p><p class=\"pt-src\">From Cedefop's coded answers for this scheme (2026 fiche).</p></div></div>"
+    },
+    "ie-app": {
+      "country": "Ireland",
+      "country_code": "IE",
+      "name": "Apprenticeships in Ireland",
+      "split": 0.5,
+      "split_label": "Around half",
+      "facts": [
+        {
+          "icon": "pay",
+          "label": "Pay",
+          "value": "Wage, paid by your employer or the state"
+        },
+        {
+          "icon": "contract",
+          "label": "Arrangement",
+          "value": "Ordinary employment contract"
+        },
+        {
+          "icon": "time",
+          "label": "Duration",
+          "value": "2–4 yrs (craft 4; consortium-led mostly 2)"
+        },
+        {
+          "icon": "age",
+          "label": "Typical age",
+          "value": "18–24"
+        },
+        {
+          "icon": "level",
+          "label": "Leads to",
+          "value": "NFQ 5–10 (up to degree level) · access to higher education"
+        }
+      ],
+      "story_title": "If you were an apprentice in Ireland",
+      "story": [
+        "You would most likely be between 18 and 24.",
+        "Your training would be set out in a written arrangement (ordinary employment contract).",
+        "You would spend about half your time at the company.",
+        "You would earn a wage, set by collective agreements for your sector or by agreement with your employer, paid by your employer or the state; it also covers your days at school.",
+        "It would take 2–4 years (craft 4; consortium-led mostly 2).",
+        "You would finish with: NFQ 5–10 awards (EQF 4–8); craft: Advanced Certificate, NFQ 6, which gives direct access to higher education."
+      ],
+      "html": "<div class=\"portrait\"><div class=\"pt-split\" role=\"img\" aria-label=\"Time at the company: Around half\"><span class=\"pt-work\" style=\"width:50%\"><span>Company</span></span><span class=\"pt-school\" style=\"width:50%\"><span>School</span></span></div><p class=\"pt-split-note\">Around half</p><ul class=\"pt-facts\"><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M3 6h14v9H3z\"/><circle cx=\"10\" cy=\"10.5\" r=\"2.2\"/><path d=\"M6 6V4.5h8V6\"/></svg><span class=\"pt-k\">Pay</span> <span class=\"pt-v\">Wage, paid by your employer or the state</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 2.5h7l3 3v12H5z\"/><path d=\"M12 2.5v3h3M7.5 9h5M7.5 12h5M7.5 15h3\"/></svg><span class=\"pt-k\">Arrangement</span> <span class=\"pt-v\">Ordinary employment contract</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"10\" cy=\"10\" r=\"7\"/><path d=\"M10 6v4l3 2\"/></svg><span class=\"pt-k\">Duration</span> <span class=\"pt-v\">2–4 yrs (craft 4; consortium-led mostly 2)</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"10\" cy=\"7\" r=\"3\"/><path d=\"M4 17c.8-3.2 3.2-5 6-5s5.2 1.8 6 5\"/></svg><span class=\"pt-k\">Typical age</span> <span class=\"pt-v\">18–24</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M2 8l8-4 8 4-8 4z\"/><path d=\"M5.5 9.8V13c1.2 1.3 2.8 2 4.5 2s3.3-.7 4.5-2V9.8\"/></svg><span class=\"pt-k\">Leads to</span> <span class=\"pt-v\">NFQ 5–10 (up to degree level) · access to higher education</span></li></ul><div class=\"pt-story\"><h4>If you were an apprentice in Ireland</h4><p>You would most likely be between 18 and 24. Your training would be set out in a written arrangement (ordinary employment contract). You would spend about half your time at the company. You would earn a wage, set by collective agreements for your sector or by agreement with your employer, paid by your employer or the state; it also covers your days at school. It would take 2–4 years (craft 4; consortium-led mostly 2). You would finish with: NFQ 5–10 awards (EQF 4–8); craft: Advanced Certificate, NFQ 6, which gives direct access to higher education.</p><p class=\"pt-src\">From Cedefop's coded answers for this scheme (2026 fiche).</p></div></div>"
+    },
+    "is-starfsnam": {
+      "country": "Iceland",
+      "country_code": "IS",
+      "name": "Apprenticeship (certified trades)",
+      "split": 0.5,
+      "split_label": "Around half",
+      "facts": [
+        {
+          "icon": "pay",
+          "label": "Pay",
+          "value": "Wage, paid by your employer"
+        },
+        {
+          "icon": "contract",
+          "label": "Arrangement",
+          "value": "Specific apprenticeship contract"
+        },
+        {
+          "icon": "time",
+          "label": "Duration",
+          "value": "Commonly 4 yrs"
+        },
+        {
+          "icon": "age",
+          "label": "Typical age",
+          "value": "18–24"
+        },
+        {
+          "icon": "level",
+          "label": "Leads to",
+          "value": "Upper secondary"
+        }
+      ],
+      "story_title": "If you were an apprentice in Iceland",
+      "story": [
+        "You would most likely be between 18 and 24.",
+        "You would sign an apprenticeship contract and have the legal status of an apprentice.",
+        "You would spend about half your time at the company, first at school, then at the workplace.",
+        "You would earn a wage, set by collective agreements for your sector, paid by your employer.",
+        "Duration: commonly 4 years.",
+        "You would finish with: Journeyman's certificate (sveinspróf), ISQF 3 / EQF 4, which does not by itself give access to higher education."
+      ],
+      "html": "<div class=\"portrait\"><div class=\"pt-split\" role=\"img\" aria-label=\"Time at the company: Around half\"><span class=\"pt-work\" style=\"width:50%\"><span>Company</span></span><span class=\"pt-school\" style=\"width:50%\"><span>School</span></span></div><p class=\"pt-split-note\">Around half</p><ul class=\"pt-facts\"><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M3 6h14v9H3z\"/><circle cx=\"10\" cy=\"10.5\" r=\"2.2\"/><path d=\"M6 6V4.5h8V6\"/></svg><span class=\"pt-k\">Pay</span> <span class=\"pt-v\">Wage, paid by your employer</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 2.5h7l3 3v12H5z\"/><path d=\"M12 2.5v3h3M7.5 9h5M7.5 12h5M7.5 15h3\"/></svg><span class=\"pt-k\">Arrangement</span> <span class=\"pt-v\">Specific apprenticeship contract</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"10\" cy=\"10\" r=\"7\"/><path d=\"M10 6v4l3 2\"/></svg><span class=\"pt-k\">Duration</span> <span class=\"pt-v\">Commonly 4 yrs</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"10\" cy=\"7\" r=\"3\"/><path d=\"M4 17c.8-3.2 3.2-5 6-5s5.2 1.8 6 5\"/></svg><span class=\"pt-k\">Typical age</span> <span class=\"pt-v\">18–24</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M2 8l8-4 8 4-8 4z\"/><path d=\"M5.5 9.8V13c1.2 1.3 2.8 2 4.5 2s3.3-.7 4.5-2V9.8\"/></svg><span class=\"pt-k\">Leads to</span> <span class=\"pt-v\">Upper secondary</span></li></ul><div class=\"pt-story\"><h4>If you were an apprentice in Iceland</h4><p>You would most likely be between 18 and 24. You would sign an apprenticeship contract and have the legal status of an apprentice. You would spend about half your time at the company, first at school, then at the workplace. You would earn a wage, set by collective agreements for your sector, paid by your employer. Duration: commonly 4 years. You would finish with: Journeyman&#x27;s certificate (sveinspróf), ISQF 3 / EQF 4, which does not by itself give access to higher education.</p><p class=\"pt-src\">From Cedefop's coded answers for this scheme (2026 fiche).</p></div></div>"
+    },
+    "it-type1": {
+      "country": "Italy",
+      "country_code": "IT",
+      "name": "Type 1: apprenticeship for vocational qualification",
+      "split": 0.5,
+      "split_label": "Around half",
+      "facts": [
+        {
+          "icon": "pay",
+          "label": "Pay",
+          "value": "Wage, paid by your employer"
+        },
+        {
+          "icon": "contract",
+          "label": "Arrangement",
+          "value": "Specific apprenticeship contract"
+        },
+        {
+          "icon": "time",
+          "label": "Duration",
+          "value": "6 months–3/4 yrs by qualification"
+        },
+        {
+          "icon": "age",
+          "label": "Typical age",
+          "value": "18–24"
+        },
+        {
+          "icon": "level",
+          "label": "Leads to",
+          "value": "Upper secondary · access to higher education"
+        }
+      ],
+      "story_title": "If you were an apprentice in Italy",
+      "story": [
+        "You would most likely be between 18 and 24.",
+        "You would sign an apprenticeship contract and have the legal status of an apprentice.",
+        "You would spend about half your time at the company.",
+        "You would earn a wage, set by law or by collective agreements for your sector, paid by your employer.",
+        "It would take 6 months–3/4 years by qualification.",
+        "You would finish with: Vocational qualification, professional or upper secondary diploma, NQF 3–4, which gives direct access to higher education."
+      ],
+      "html": "<div class=\"portrait\"><div class=\"pt-split\" role=\"img\" aria-label=\"Time at the company: Around half\"><span class=\"pt-work\" style=\"width:50%\"><span>Company</span></span><span class=\"pt-school\" style=\"width:50%\"><span>School</span></span></div><p class=\"pt-split-note\">Around half</p><ul class=\"pt-facts\"><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M3 6h14v9H3z\"/><circle cx=\"10\" cy=\"10.5\" r=\"2.2\"/><path d=\"M6 6V4.5h8V6\"/></svg><span class=\"pt-k\">Pay</span> <span class=\"pt-v\">Wage, paid by your employer</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 2.5h7l3 3v12H5z\"/><path d=\"M12 2.5v3h3M7.5 9h5M7.5 12h5M7.5 15h3\"/></svg><span class=\"pt-k\">Arrangement</span> <span class=\"pt-v\">Specific apprenticeship contract</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"10\" cy=\"10\" r=\"7\"/><path d=\"M10 6v4l3 2\"/></svg><span class=\"pt-k\">Duration</span> <span class=\"pt-v\">6 months–3/4 yrs by qualification</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"10\" cy=\"7\" r=\"3\"/><path d=\"M4 17c.8-3.2 3.2-5 6-5s5.2 1.8 6 5\"/></svg><span class=\"pt-k\">Typical age</span> <span class=\"pt-v\">18–24</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M2 8l8-4 8 4-8 4z\"/><path d=\"M5.5 9.8V13c1.2 1.3 2.8 2 4.5 2s3.3-.7 4.5-2V9.8\"/></svg><span class=\"pt-k\">Leads to</span> <span class=\"pt-v\">Upper secondary · access to higher education</span></li></ul><div class=\"pt-story\"><h4>If you were an apprentice in Italy</h4><p>You would most likely be between 18 and 24. You would sign an apprenticeship contract and have the legal status of an apprentice. You would spend about half your time at the company. You would earn a wage, set by law or by collective agreements for your sector, paid by your employer. It would take 6 months–3/4 years by qualification. You would finish with: Vocational qualification, professional or upper secondary diploma, NQF 3–4, which gives direct access to higher education.</p><p class=\"pt-src\">From Cedefop's coded answers for this scheme (2026 fiche).</p></div></div>"
+    },
+    "it-type3": {
+      "country": "Italy",
+      "country_code": "IT",
+      "name": "Type 3: higher education apprenticeship",
+      "split": 0.5,
+      "split_label": "Around half",
+      "facts": [
+        {
+          "icon": "pay",
+          "label": "Pay",
+          "value": "Wage, paid by your employer"
+        },
+        {
+          "icon": "contract",
+          "label": "Arrangement",
+          "value": "Specific apprenticeship contract"
+        },
+        {
+          "icon": "time",
+          "label": "Duration",
+          "value": "1–3 yrs"
+        },
+        {
+          "icon": "age",
+          "label": "Typical age",
+          "value": "Over 24"
+        },
+        {
+          "icon": "level",
+          "label": "Leads to",
+          "value": "Higher education (EQF 6+) · access to higher education"
+        }
+      ],
+      "story_title": "If you were an apprentice in Italy",
+      "story": [
+        "You would most likely be over 24 — many apprentices here are adults.",
+        "You would sign an apprenticeship contract and have the legal status of an apprentice.",
+        "You would spend about half your time at the company.",
+        "You would earn a wage, set by law or by collective agreements for your sector, paid by your employer.",
+        "It would take 1–3 years.",
+        "You would finish with: EQF 5–8: degrees, doctorates, higher technical diplomas, which gives direct access to higher education."
+      ],
+      "html": "<div class=\"portrait\"><div class=\"pt-split\" role=\"img\" aria-label=\"Time at the company: Around half\"><span class=\"pt-work\" style=\"width:50%\"><span>Company</span></span><span class=\"pt-school\" style=\"width:50%\"><span>School</span></span></div><p class=\"pt-split-note\">Around half</p><ul class=\"pt-facts\"><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M3 6h14v9H3z\"/><circle cx=\"10\" cy=\"10.5\" r=\"2.2\"/><path d=\"M6 6V4.5h8V6\"/></svg><span class=\"pt-k\">Pay</span> <span class=\"pt-v\">Wage, paid by your employer</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 2.5h7l3 3v12H5z\"/><path d=\"M12 2.5v3h3M7.5 9h5M7.5 12h5M7.5 15h3\"/></svg><span class=\"pt-k\">Arrangement</span> <span class=\"pt-v\">Specific apprenticeship contract</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"10\" cy=\"10\" r=\"7\"/><path d=\"M10 6v4l3 2\"/></svg><span class=\"pt-k\">Duration</span> <span class=\"pt-v\">1–3 yrs</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"10\" cy=\"7\" r=\"3\"/><path d=\"M4 17c.8-3.2 3.2-5 6-5s5.2 1.8 6 5\"/></svg><span class=\"pt-k\">Typical age</span> <span class=\"pt-v\">Over 24</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M2 8l8-4 8 4-8 4z\"/><path d=\"M5.5 9.8V13c1.2 1.3 2.8 2 4.5 2s3.3-.7 4.5-2V9.8\"/></svg><span class=\"pt-k\">Leads to</span> <span class=\"pt-v\">Higher education (EQF 6+) · access to higher education</span></li></ul><div class=\"pt-story\"><h4>If you were an apprentice in Italy</h4><p>You would most likely be over 24 — many apprentices here are adults. You would sign an apprenticeship contract and have the legal status of an apprentice. You would spend about half your time at the company. You would earn a wage, set by law or by collective agreements for your sector, paid by your employer. It would take 1–3 years. You would finish with: EQF 5–8: degrees, doctorates, higher technical diplomas, which gives direct access to higher education.</p><p class=\"pt-src\">From Cedefop's coded answers for this scheme (2026 fiche).</p></div></div>"
+    },
+    "lt-pameistryste": {
+      "country": "Lithuania",
+      "country_code": "LT",
+      "name": "VET in apprenticeship form",
+      "split": 0.7,
+      "split_label": "Mostly at work (≥2/3)",
+      "facts": [
+        {
+          "icon": "pay",
+          "label": "Pay",
+          "value": "Wage, paid by your employer"
+        },
+        {
+          "icon": "contract",
+          "label": "Arrangement",
+          "value": "Specific apprenticeship contract"
+        },
+        {
+          "icon": "time",
+          "label": "Duration",
+          "value": "From one module (~2 months); programmes of 20–110 credits"
+        },
+        {
+          "icon": "age",
+          "label": "Typical age",
+          "value": "15–18"
+        },
+        {
+          "icon": "level",
+          "label": "Leads to",
+          "value": "All VET levels (EQF 1–5) · access to higher education"
+        }
+      ],
+      "story_title": "If you were an apprentice in Lithuania",
+      "story": [
+        "You would most likely be between 15 and 18.",
+        "You would sign an apprenticeship contract and have the legal status of an apprentice.",
+        "You would spend most of your time (two-thirds or more) at the company.",
+        "You would earn a wage, set by law or by agreement with your employer, paid by your employer.",
+        "Duration: from one module (~2 months); programmes of 20–110 credits.",
+        "You would finish with: Qualifications from EQF 1 to 5, which gives direct access to higher education."
+      ],
+      "html": "<div class=\"portrait\"><div class=\"pt-split\" role=\"img\" aria-label=\"Time at the company: Mostly at work (≥2/3)\"><span class=\"pt-work\" style=\"width:70%\"><span>Company</span></span><span class=\"pt-school\" style=\"width:30%\"><span>School</span></span></div><p class=\"pt-split-note\">Mostly at work (≥2/3)</p><ul class=\"pt-facts\"><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M3 6h14v9H3z\"/><circle cx=\"10\" cy=\"10.5\" r=\"2.2\"/><path d=\"M6 6V4.5h8V6\"/></svg><span class=\"pt-k\">Pay</span> <span class=\"pt-v\">Wage, paid by your employer</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 2.5h7l3 3v12H5z\"/><path d=\"M12 2.5v3h3M7.5 9h5M7.5 12h5M7.5 15h3\"/></svg><span class=\"pt-k\">Arrangement</span> <span class=\"pt-v\">Specific apprenticeship contract</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"10\" cy=\"10\" r=\"7\"/><path d=\"M10 6v4l3 2\"/></svg><span class=\"pt-k\">Duration</span> <span class=\"pt-v\">From one module (~2 months); programmes of 20–110 credits</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"10\" cy=\"7\" r=\"3\"/><path d=\"M4 17c.8-3.2 3.2-5 6-5s5.2 1.8 6 5\"/></svg><span class=\"pt-k\">Typical age</span> <span class=\"pt-v\">15–18</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M2 8l8-4 8 4-8 4z\"/><path d=\"M5.5 9.8V13c1.2 1.3 2.8 2 4.5 2s3.3-.7 4.5-2V9.8\"/></svg><span class=\"pt-k\">Leads to</span> <span class=\"pt-v\">All VET levels (EQF 1–5) · access to higher education</span></li></ul><div class=\"pt-story\"><h4>If you were an apprentice in Lithuania</h4><p>You would most likely be between 15 and 18. You would sign an apprenticeship contract and have the legal status of an apprentice. You would spend most of your time (two-thirds or more) at the company. You would earn a wage, set by law or by agreement with your employer, paid by your employer. Duration: from one module (~2 months); programmes of 20–110 credits. You would finish with: Qualifications from EQF 1 to 5, which gives direct access to higher education.</p><p class=\"pt-src\">From Cedefop's coded answers for this scheme (2026 fiche).</p></div></div>"
+    },
+    "lu-apprentissage": {
+      "country": "Luxembourg",
+      "country_code": "LU",
+      "name": "Apprenticeship contract",
+      "split": 0.7,
+      "split_label": "Mostly at work (≥2/3)",
+      "facts": [
+        {
+          "icon": "pay",
+          "label": "Pay",
+          "value": "Wage, paid by your employer"
+        },
+        {
+          "icon": "contract",
+          "label": "Arrangement",
+          "value": "Specific apprenticeship contract"
+        },
+        {
+          "icon": "time",
+          "label": "Duration",
+          "value": "2–4 yrs by qualification (CCP 2–3, DAP ~3, DT ~4)"
+        },
+        {
+          "icon": "age",
+          "label": "Typical age",
+          "value": "15–18, 18–24 or Over 24"
+        },
+        {
+          "icon": "level",
+          "label": "Leads to",
+          "value": "Upper secondary"
+        }
+      ],
+      "story_title": "If you were an apprentice in Luxembourg",
+      "story": [
+        "You would most likely be between 15 and 18, between 18 and 24 or over 24.",
+        "You would sign an apprenticeship contract and have the legal status of an apprentice.",
+        "You would spend most of your time (two-thirds or more) at the company.",
+        "You would earn a wage, set by law, paid by your employer; it also covers your days at school.",
+        "It would take 2–4 years by qualification (CCP 2–3, DAP ~3, DT ~4).",
+        "You would finish with: CCP (EQF 2), DAP (EQF 3), DT (EQF 4), which does not by itself give access to higher education."
+      ],
+      "html": "<div class=\"portrait\"><div class=\"pt-split\" role=\"img\" aria-label=\"Time at the company: Mostly at work (≥2/3)\"><span class=\"pt-work\" style=\"width:70%\"><span>Company</span></span><span class=\"pt-school\" style=\"width:30%\"><span>School</span></span></div><p class=\"pt-split-note\">Mostly at work (≥2/3)</p><ul class=\"pt-facts\"><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M3 6h14v9H3z\"/><circle cx=\"10\" cy=\"10.5\" r=\"2.2\"/><path d=\"M6 6V4.5h8V6\"/></svg><span class=\"pt-k\">Pay</span> <span class=\"pt-v\">Wage, paid by your employer</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 2.5h7l3 3v12H5z\"/><path d=\"M12 2.5v3h3M7.5 9h5M7.5 12h5M7.5 15h3\"/></svg><span class=\"pt-k\">Arrangement</span> <span class=\"pt-v\">Specific apprenticeship contract</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"10\" cy=\"10\" r=\"7\"/><path d=\"M10 6v4l3 2\"/></svg><span class=\"pt-k\">Duration</span> <span class=\"pt-v\">2–4 yrs by qualification (CCP 2–3, DAP ~3, DT ~4)</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"10\" cy=\"7\" r=\"3\"/><path d=\"M4 17c.8-3.2 3.2-5 6-5s5.2 1.8 6 5\"/></svg><span class=\"pt-k\">Typical age</span> <span class=\"pt-v\">15–18, 18–24 or Over 24</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M2 8l8-4 8 4-8 4z\"/><path d=\"M5.5 9.8V13c1.2 1.3 2.8 2 4.5 2s3.3-.7 4.5-2V9.8\"/></svg><span class=\"pt-k\">Leads to</span> <span class=\"pt-v\">Upper secondary</span></li></ul><div class=\"pt-story\"><h4>If you were an apprentice in Luxembourg</h4><p>You would most likely be between 15 and 18, between 18 and 24 or over 24. You would sign an apprenticeship contract and have the legal status of an apprentice. You would spend most of your time (two-thirds or more) at the company. You would earn a wage, set by law, paid by your employer; it also covers your days at school. It would take 2–4 years by qualification (CCP 2–3, DAP ~3, DT ~4). You would finish with: CCP (EQF 2), DAP (EQF 3), DT (EQF 4), which does not by itself give access to higher education.</p><p class=\"pt-src\">From Cedefop's coded answers for this scheme (2026 fiche).</p></div></div>"
+    },
+    "lv-wbl": {
+      "country": "Latvia",
+      "country_code": "LV",
+      "name": "Work-based learning",
+      "split": 0.3,
+      "split_label": "Under half",
+      "facts": [
+        {
+          "icon": "pay",
+          "label": "Pay",
+          "value": "Wage, paid by your employer"
+        },
+        {
+          "icon": "contract",
+          "label": "Arrangement",
+          "value": "Ordinary employment contract or Formal agreement, not a contract"
+        },
+        {
+          "icon": "time",
+          "label": "Duration",
+          "value": "IVET 3–4 yrs; CVET 1.5–2 yrs"
+        },
+        {
+          "icon": "age",
+          "label": "Typical age",
+          "value": "15–18 or 18–24"
+        },
+        {
+          "icon": "level",
+          "label": "Leads to",
+          "value": "Upper secondary · access to higher education"
+        }
+      ],
+      "story_title": "If you were an apprentice in Latvia",
+      "story": [
+        "You would most likely be between 15 and 18 or between 18 and 24.",
+        "Your training would be set out in a written arrangement (ordinary employment contract or formal agreement, not a contract).",
+        "You would spend less than half your time at the company, the rest at school or a training centre.",
+        "You would earn a wage, set by agreement with your employer, paid by your employer.",
+        "Duration: IVET 3–4 years; CVET 1.5–2 years.",
+        "You would finish with: VET qualification, NQF 2–4 (EQF 5 possible), which gives direct access to higher education."
+      ],
+      "html": "<div class=\"portrait\"><div class=\"pt-split\" role=\"img\" aria-label=\"Time at the company: Under half\"><span class=\"pt-work\" style=\"width:30%\"><span>Company</span></span><span class=\"pt-school\" style=\"width:70%\"><span>School</span></span></div><p class=\"pt-split-note\">Under half</p><ul class=\"pt-facts\"><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M3 6h14v9H3z\"/><circle cx=\"10\" cy=\"10.5\" r=\"2.2\"/><path d=\"M6 6V4.5h8V6\"/></svg><span class=\"pt-k\">Pay</span> <span class=\"pt-v\">Wage, paid by your employer</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 2.5h7l3 3v12H5z\"/><path d=\"M12 2.5v3h3M7.5 9h5M7.5 12h5M7.5 15h3\"/></svg><span class=\"pt-k\">Arrangement</span> <span class=\"pt-v\">Ordinary employment contract or Formal agreement, not a contract</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"10\" cy=\"10\" r=\"7\"/><path d=\"M10 6v4l3 2\"/></svg><span class=\"pt-k\">Duration</span> <span class=\"pt-v\">IVET 3–4 yrs; CVET 1.5–2 yrs</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"10\" cy=\"7\" r=\"3\"/><path d=\"M4 17c.8-3.2 3.2-5 6-5s5.2 1.8 6 5\"/></svg><span class=\"pt-k\">Typical age</span> <span class=\"pt-v\">15–18 or 18–24</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M2 8l8-4 8 4-8 4z\"/><path d=\"M5.5 9.8V13c1.2 1.3 2.8 2 4.5 2s3.3-.7 4.5-2V9.8\"/></svg><span class=\"pt-k\">Leads to</span> <span class=\"pt-v\">Upper secondary · access to higher education</span></li></ul><div class=\"pt-story\"><h4>If you were an apprentice in Latvia</h4><p>You would most likely be between 15 and 18 or between 18 and 24. Your training would be set out in a written arrangement (ordinary employment contract or formal agreement, not a contract). You would spend less than half your time at the company, the rest at school or a training centre. You would earn a wage, set by agreement with your employer, paid by your employer. Duration: IVET 3–4 years; CVET 1.5–2 years. You would finish with: VET qualification, NQF 2–4 (EQF 5 possible), which gives direct access to higher education.</p><p class=\"pt-src\">From Cedefop's coded answers for this scheme (2026 fiche).</p></div></div>"
+    },
+    "mt-mcast": {
+      "country": "Malta",
+      "country_code": "MT",
+      "name": "MCAST apprenticeships",
+      "split": 0.5,
+      "split_label": "Around half",
+      "facts": [
+        {
+          "icon": "pay",
+          "label": "Pay",
+          "value": "Wage, paid by your employer or the state"
+        },
+        {
+          "icon": "contract",
+          "label": "Arrangement",
+          "value": "Formal agreement, not a contract"
+        },
+        {
+          "icon": "time",
+          "label": "Duration",
+          "value": "600 h (EQF 3) or 1 200 h (EQF 4–6) of workplace learning"
+        },
+        {
+          "icon": "age",
+          "label": "Typical age",
+          "value": "18–24"
+        },
+        {
+          "icon": "level",
+          "label": "Leads to",
+          "value": "EQF 3–6 · access to higher education"
+        }
+      ],
+      "story_title": "If you were an apprentice in Malta",
+      "story": [
+        "You would most likely be between 18 and 24.",
+        "Your training would be set out in a written arrangement (formal agreement, not a contract).",
+        "You would spend about half your time at the company.",
+        "You would earn a wage, set by law, paid by your employer or the state.",
+        "It would take 600 h (EQF 3) or 1 200 h (EQF 4–6) of workplace learning.",
+        "You would finish with: MCAST Diploma (EQF 3), Advanced Diploma (EQF 4), Bachelor (EQF 6), which gives direct access to higher education."
+      ],
+      "html": "<div class=\"portrait\"><div class=\"pt-split\" role=\"img\" aria-label=\"Time at the company: Around half\"><span class=\"pt-work\" style=\"width:50%\"><span>Company</span></span><span class=\"pt-school\" style=\"width:50%\"><span>School</span></span></div><p class=\"pt-split-note\">Around half</p><ul class=\"pt-facts\"><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M3 6h14v9H3z\"/><circle cx=\"10\" cy=\"10.5\" r=\"2.2\"/><path d=\"M6 6V4.5h8V6\"/></svg><span class=\"pt-k\">Pay</span> <span class=\"pt-v\">Wage, paid by your employer or the state</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 2.5h7l3 3v12H5z\"/><path d=\"M12 2.5v3h3M7.5 9h5M7.5 12h5M7.5 15h3\"/></svg><span class=\"pt-k\">Arrangement</span> <span class=\"pt-v\">Formal agreement, not a contract</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"10\" cy=\"10\" r=\"7\"/><path d=\"M10 6v4l3 2\"/></svg><span class=\"pt-k\">Duration</span> <span class=\"pt-v\">600 h (EQF 3) or 1 200 h (EQF 4–6) of workplace learning</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"10\" cy=\"7\" r=\"3\"/><path d=\"M4 17c.8-3.2 3.2-5 6-5s5.2 1.8 6 5\"/></svg><span class=\"pt-k\">Typical age</span> <span class=\"pt-v\">18–24</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M2 8l8-4 8 4-8 4z\"/><path d=\"M5.5 9.8V13c1.2 1.3 2.8 2 4.5 2s3.3-.7 4.5-2V9.8\"/></svg><span class=\"pt-k\">Leads to</span> <span class=\"pt-v\">EQF 3–6 · access to higher education</span></li></ul><div class=\"pt-story\"><h4>If you were an apprentice in Malta</h4><p>You would most likely be between 18 and 24. Your training would be set out in a written arrangement (formal agreement, not a contract). You would spend about half your time at the company. You would earn a wage, set by law, paid by your employer or the state. It would take 600 h (EQF 3) or 1 200 h (EQF 4–6) of workplace learning. You would finish with: MCAST Diploma (EQF 3), Advanced Diploma (EQF 4), Bachelor (EQF 6), which gives direct access to higher education.</p><p class=\"pt-src\">From Cedefop's coded answers for this scheme (2026 fiche).</p></div></div>"
+    },
+    "nl-bbl": {
+      "country": "Netherlands",
+      "country_code": "NL",
+      "name": "Dual pathway (BBL)",
+      "split": 0.7,
+      "split_label": "Mostly at work (≥2/3)",
+      "facts": [
+        {
+          "icon": "pay",
+          "label": "Pay",
+          "value": "Wage, paid by your employer"
+        },
+        {
+          "icon": "contract",
+          "label": "Arrangement",
+          "value": "Specific apprenticeship contract"
+        },
+        {
+          "icon": "time",
+          "label": "Duration",
+          "value": "1–4 yrs by level"
+        },
+        {
+          "icon": "age",
+          "label": "Typical age",
+          "value": "18–24"
+        },
+        {
+          "icon": "level",
+          "label": "Leads to",
+          "value": "Upper secondary · access to higher education"
+        }
+      ],
+      "story_title": "If you were an apprentice in Netherlands",
+      "story": [
+        "You would most likely be between 18 and 24.",
+        "You would sign an apprenticeship contract and have the legal status of an apprentice.",
+        "You would spend most of your time (two-thirds or more) at the company, switching between school and work every week.",
+        "You would earn a wage, set by law or by collective agreements for your sector, paid by your employer; it also covers your days at school.",
+        "It would take 1–4 years by level.",
+        "You would finish with: MBO diploma, EQF 1–4, which gives direct access to higher education."
+      ],
+      "html": "<div class=\"portrait\"><div class=\"pt-split\" role=\"img\" aria-label=\"Time at the company: Mostly at work (≥2/3)\"><span class=\"pt-work\" style=\"width:70%\"><span>Company</span></span><span class=\"pt-school\" style=\"width:30%\"><span>School</span></span></div><p class=\"pt-split-note\">Mostly at work (≥2/3)</p><ul class=\"pt-facts\"><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M3 6h14v9H3z\"/><circle cx=\"10\" cy=\"10.5\" r=\"2.2\"/><path d=\"M6 6V4.5h8V6\"/></svg><span class=\"pt-k\">Pay</span> <span class=\"pt-v\">Wage, paid by your employer</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 2.5h7l3 3v12H5z\"/><path d=\"M12 2.5v3h3M7.5 9h5M7.5 12h5M7.5 15h3\"/></svg><span class=\"pt-k\">Arrangement</span> <span class=\"pt-v\">Specific apprenticeship contract</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"10\" cy=\"10\" r=\"7\"/><path d=\"M10 6v4l3 2\"/></svg><span class=\"pt-k\">Duration</span> <span class=\"pt-v\">1–4 yrs by level</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"10\" cy=\"7\" r=\"3\"/><path d=\"M4 17c.8-3.2 3.2-5 6-5s5.2 1.8 6 5\"/></svg><span class=\"pt-k\">Typical age</span> <span class=\"pt-v\">18–24</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M2 8l8-4 8 4-8 4z\"/><path d=\"M5.5 9.8V13c1.2 1.3 2.8 2 4.5 2s3.3-.7 4.5-2V9.8\"/></svg><span class=\"pt-k\">Leads to</span> <span class=\"pt-v\">Upper secondary · access to higher education</span></li></ul><div class=\"pt-story\"><h4>If you were an apprentice in Netherlands</h4><p>You would most likely be between 18 and 24. You would sign an apprenticeship contract and have the legal status of an apprentice. You would spend most of your time (two-thirds or more) at the company, switching between school and work every week. You would earn a wage, set by law or by collective agreements for your sector, paid by your employer; it also covers your days at school. It would take 1–4 years by level. You would finish with: MBO diploma, EQF 1–4, which gives direct access to higher education.</p><p class=\"pt-src\">From Cedefop's coded answers for this scheme (2026 fiche).</p></div></div>"
+    },
+    "no-2plus2": {
+      "country": "Norway",
+      "country_code": "NO",
+      "name": "Upper secondary VET (2+2 model)",
+      "split": 0.5,
+      "split_label": "Around half",
+      "facts": [
+        {
+          "icon": "pay",
+          "label": "Pay",
+          "value": "Wage, paid by your employer"
+        },
+        {
+          "icon": "contract",
+          "label": "Arrangement",
+          "value": "Specific apprenticeship contract"
+        },
+        {
+          "icon": "time",
+          "label": "Duration",
+          "value": "4 yrs: 2 school-based + 2 enterprise-based"
+        },
+        {
+          "icon": "age",
+          "label": "Typical age",
+          "value": "18–24"
+        },
+        {
+          "icon": "level",
+          "label": "Leads to",
+          "value": "Upper secondary"
+        }
+      ],
+      "story_title": "If you were an apprentice in Norway",
+      "story": [
+        "You would most likely be between 18 and 24.",
+        "You would sign an apprenticeship contract and have the legal status of an apprentice.",
+        "You would spend about half your time at the company.",
+        "You would earn a wage, set by collective agreements for your sector, paid by your employer.",
+        "It would take 4 years: 2 school-based + 2 enterprise-based.",
+        "You would finish with: Trade or journeyman's certificate (Fagbrev/Svennebrev), EQF 4, which does not by itself give access to higher education."
+      ],
+      "html": "<div class=\"portrait\"><div class=\"pt-split\" role=\"img\" aria-label=\"Time at the company: Around half\"><span class=\"pt-work\" style=\"width:50%\"><span>Company</span></span><span class=\"pt-school\" style=\"width:50%\"><span>School</span></span></div><p class=\"pt-split-note\">Around half</p><ul class=\"pt-facts\"><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M3 6h14v9H3z\"/><circle cx=\"10\" cy=\"10.5\" r=\"2.2\"/><path d=\"M6 6V4.5h8V6\"/></svg><span class=\"pt-k\">Pay</span> <span class=\"pt-v\">Wage, paid by your employer</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 2.5h7l3 3v12H5z\"/><path d=\"M12 2.5v3h3M7.5 9h5M7.5 12h5M7.5 15h3\"/></svg><span class=\"pt-k\">Arrangement</span> <span class=\"pt-v\">Specific apprenticeship contract</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"10\" cy=\"10\" r=\"7\"/><path d=\"M10 6v4l3 2\"/></svg><span class=\"pt-k\">Duration</span> <span class=\"pt-v\">4 yrs: 2 school-based + 2 enterprise-based</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"10\" cy=\"7\" r=\"3\"/><path d=\"M4 17c.8-3.2 3.2-5 6-5s5.2 1.8 6 5\"/></svg><span class=\"pt-k\">Typical age</span> <span class=\"pt-v\">18–24</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M2 8l8-4 8 4-8 4z\"/><path d=\"M5.5 9.8V13c1.2 1.3 2.8 2 4.5 2s3.3-.7 4.5-2V9.8\"/></svg><span class=\"pt-k\">Leads to</span> <span class=\"pt-v\">Upper secondary</span></li></ul><div class=\"pt-story\"><h4>If you were an apprentice in Norway</h4><p>You would most likely be between 18 and 24. You would sign an apprenticeship contract and have the legal status of an apprentice. You would spend about half your time at the company. You would earn a wage, set by collective agreements for your sector, paid by your employer. It would take 4 years: 2 school-based + 2 enterprise-based. You would finish with: Trade or journeyman&#x27;s certificate (Fagbrev/Svennebrev), EQF 4, which does not by itself give access to higher education.</p><p class=\"pt-src\">From Cedefop's coded answers for this scheme (2026 fiche).</p></div></div>"
+    },
+    "pl-juvenile": {
+      "country": "Poland",
+      "country_code": "PL",
+      "name": "Vocational preparation of juvenile workers",
+      "split": 0.5,
+      "split_label": "Around half",
+      "facts": [
+        {
+          "icon": "pay",
+          "label": "Pay",
+          "value": "Wage, paid by your employer"
+        },
+        {
+          "icon": "contract",
+          "label": "Arrangement",
+          "value": "Specific apprenticeship contract"
+        },
+        {
+          "icon": "time",
+          "label": "Duration",
+          "value": "3 yrs"
+        },
+        {
+          "icon": "age",
+          "label": "Typical age",
+          "value": "15–18"
+        },
+        {
+          "icon": "level",
+          "label": "Leads to",
+          "value": "Upper secondary"
+        }
+      ],
+      "story_title": "If you were an apprentice in Poland",
+      "story": [
+        "You would most likely be between 15 and 18.",
+        "Your training would be set out in a written arrangement (specific apprenticeship contract).",
+        "You would spend about half your time at the company.",
+        "You would earn a wage, set by law or by agreement with your employer, paid by your employer; it also covers your days at school.",
+        "It would take 3 years.",
+        "You would finish with: Qualification at NQF/EQF 3, which does not by itself give access to higher education."
+      ],
+      "html": "<div class=\"portrait\"><div class=\"pt-split\" role=\"img\" aria-label=\"Time at the company: Around half\"><span class=\"pt-work\" style=\"width:50%\"><span>Company</span></span><span class=\"pt-school\" style=\"width:50%\"><span>School</span></span></div><p class=\"pt-split-note\">Around half</p><ul class=\"pt-facts\"><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M3 6h14v9H3z\"/><circle cx=\"10\" cy=\"10.5\" r=\"2.2\"/><path d=\"M6 6V4.5h8V6\"/></svg><span class=\"pt-k\">Pay</span> <span class=\"pt-v\">Wage, paid by your employer</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 2.5h7l3 3v12H5z\"/><path d=\"M12 2.5v3h3M7.5 9h5M7.5 12h5M7.5 15h3\"/></svg><span class=\"pt-k\">Arrangement</span> <span class=\"pt-v\">Specific apprenticeship contract</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"10\" cy=\"10\" r=\"7\"/><path d=\"M10 6v4l3 2\"/></svg><span class=\"pt-k\">Duration</span> <span class=\"pt-v\">3 yrs</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"10\" cy=\"7\" r=\"3\"/><path d=\"M4 17c.8-3.2 3.2-5 6-5s5.2 1.8 6 5\"/></svg><span class=\"pt-k\">Typical age</span> <span class=\"pt-v\">15–18</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M2 8l8-4 8 4-8 4z\"/><path d=\"M5.5 9.8V13c1.2 1.3 2.8 2 4.5 2s3.3-.7 4.5-2V9.8\"/></svg><span class=\"pt-k\">Leads to</span> <span class=\"pt-v\">Upper secondary</span></li></ul><div class=\"pt-story\"><h4>If you were an apprentice in Poland</h4><p>You would most likely be between 15 and 18. Your training would be set out in a written arrangement (specific apprenticeship contract). You would spend about half your time at the company. You would earn a wage, set by law or by agreement with your employer, paid by your employer; it also covers your days at school. It would take 3 years. You would finish with: Qualification at NQF/EQF 3, which does not by itself give access to higher education.</p><p class=\"pt-src\">From Cedefop's coded answers for this scheme (2026 fiche).</p></div></div>"
+    },
+    "pt-aprendizagem": {
+      "country": "Portugal",
+      "country_code": "PT",
+      "name": "Apprenticeship programmes",
+      "split": 0.3,
+      "split_label": "Under half",
+      "facts": [
+        {
+          "icon": "pay",
+          "label": "Pay",
+          "value": "Allowance, paid by the state"
+        },
+        {
+          "icon": "contract",
+          "label": "Arrangement",
+          "value": "Formal agreement, not a contract"
+        },
+        {
+          "icon": "time",
+          "label": "Duration",
+          "value": "3 000–4 000 hours"
+        },
+        {
+          "icon": "age",
+          "label": "Typical age",
+          "value": "15–18, 18–24 or Over 24"
+        },
+        {
+          "icon": "level",
+          "label": "Leads to",
+          "value": "Upper secondary · access to higher education"
+        }
+      ],
+      "story_title": "If you were an apprentice in Portugal",
+      "story": [
+        "You would most likely be between 15 and 18, between 18 and 24 or over 24.",
+        "You would stay a student, with a formal training agreement between you, your school and the company.",
+        "You would spend less than half your time at the company, the rest at school or a training centre, in blocks of several months at school and at work.",
+        "You would receive an allowance rather than a wage, paid by the state.",
+        "It would take 3 000–4 000 hours.",
+        "You would finish with: Double certification: upper secondary + EQF 4 vocational qualification, which gives direct access to higher education."
+      ],
+      "html": "<div class=\"portrait\"><div class=\"pt-split\" role=\"img\" aria-label=\"Time at the company: Under half\"><span class=\"pt-work\" style=\"width:30%\"><span>Company</span></span><span class=\"pt-school\" style=\"width:70%\"><span>School</span></span></div><p class=\"pt-split-note\">Under half</p><ul class=\"pt-facts\"><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M3 6h14v9H3z\"/><circle cx=\"10\" cy=\"10.5\" r=\"2.2\"/><path d=\"M6 6V4.5h8V6\"/></svg><span class=\"pt-k\">Pay</span> <span class=\"pt-v\">Allowance, paid by the state</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 2.5h7l3 3v12H5z\"/><path d=\"M12 2.5v3h3M7.5 9h5M7.5 12h5M7.5 15h3\"/></svg><span class=\"pt-k\">Arrangement</span> <span class=\"pt-v\">Formal agreement, not a contract</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"10\" cy=\"10\" r=\"7\"/><path d=\"M10 6v4l3 2\"/></svg><span class=\"pt-k\">Duration</span> <span class=\"pt-v\">3 000–4 000 hours</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"10\" cy=\"7\" r=\"3\"/><path d=\"M4 17c.8-3.2 3.2-5 6-5s5.2 1.8 6 5\"/></svg><span class=\"pt-k\">Typical age</span> <span class=\"pt-v\">15–18, 18–24 or Over 24</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M2 8l8-4 8 4-8 4z\"/><path d=\"M5.5 9.8V13c1.2 1.3 2.8 2 4.5 2s3.3-.7 4.5-2V9.8\"/></svg><span class=\"pt-k\">Leads to</span> <span class=\"pt-v\">Upper secondary · access to higher education</span></li></ul><div class=\"pt-story\"><h4>If you were an apprentice in Portugal</h4><p>You would most likely be between 15 and 18, between 18 and 24 or over 24. You would stay a student, with a formal training agreement between you, your school and the company. You would spend less than half your time at the company, the rest at school or a training centre, in blocks of several months at school and at work. You would receive an allowance rather than a wage, paid by the state. It would take 3 000–4 000 hours. You would finish with: Double certification: upper secondary + EQF 4 vocational qualification, which gives direct access to higher education.</p><p class=\"pt-src\">From Cedefop's coded answers for this scheme (2026 fiche).</p></div></div>"
+    },
+    "ro-dual": {
+      "country": "Romania",
+      "country_code": "RO",
+      "name": "VET in dual system",
+      "split": 0.5,
+      "split_label": "Around half",
+      "facts": [
+        {
+          "icon": "pay",
+          "label": "Pay",
+          "value": "Allowance, paid by your employer"
+        },
+        {
+          "icon": "contract",
+          "label": "Arrangement",
+          "value": "Formal agreement, not a contract"
+        },
+        {
+          "icon": "time",
+          "label": "Duration",
+          "value": "3 yrs"
+        },
+        {
+          "icon": "age",
+          "label": "Typical age",
+          "value": "15–18"
+        },
+        {
+          "icon": "level",
+          "label": "Leads to",
+          "value": "Upper secondary"
+        }
+      ],
+      "story_title": "If you were an apprentice in Romania",
+      "story": [
+        "You would most likely be between 15 and 18.",
+        "You would stay a student, with a formal training agreement between you, your school and the company.",
+        "You would spend about half your time at the company.",
+        "You would receive an allowance rather than a wage, paid by your employer.",
+        "It would take 3 years.",
+        "You would finish with: Professional qualification certificate, EQF 3, which does not by itself give access to higher education."
+      ],
+      "html": "<div class=\"portrait\"><div class=\"pt-split\" role=\"img\" aria-label=\"Time at the company: Around half\"><span class=\"pt-work\" style=\"width:50%\"><span>Company</span></span><span class=\"pt-school\" style=\"width:50%\"><span>School</span></span></div><p class=\"pt-split-note\">Around half</p><ul class=\"pt-facts\"><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M3 6h14v9H3z\"/><circle cx=\"10\" cy=\"10.5\" r=\"2.2\"/><path d=\"M6 6V4.5h8V6\"/></svg><span class=\"pt-k\">Pay</span> <span class=\"pt-v\">Allowance, paid by your employer</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 2.5h7l3 3v12H5z\"/><path d=\"M12 2.5v3h3M7.5 9h5M7.5 12h5M7.5 15h3\"/></svg><span class=\"pt-k\">Arrangement</span> <span class=\"pt-v\">Formal agreement, not a contract</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"10\" cy=\"10\" r=\"7\"/><path d=\"M10 6v4l3 2\"/></svg><span class=\"pt-k\">Duration</span> <span class=\"pt-v\">3 yrs</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"10\" cy=\"7\" r=\"3\"/><path d=\"M4 17c.8-3.2 3.2-5 6-5s5.2 1.8 6 5\"/></svg><span class=\"pt-k\">Typical age</span> <span class=\"pt-v\">15–18</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M2 8l8-4 8 4-8 4z\"/><path d=\"M5.5 9.8V13c1.2 1.3 2.8 2 4.5 2s3.3-.7 4.5-2V9.8\"/></svg><span class=\"pt-k\">Leads to</span> <span class=\"pt-v\">Upper secondary</span></li></ul><div class=\"pt-story\"><h4>If you were an apprentice in Romania</h4><p>You would most likely be between 15 and 18. You would stay a student, with a formal training agreement between you, your school and the company. You would spend about half your time at the company. You would receive an allowance rather than a wage, paid by your employer. It would take 3 years. You would finish with: Professional qualification certificate, EQF 3, which does not by itself give access to higher education.</p><p class=\"pt-src\">From Cedefop's coded answers for this scheme (2026 fiche).</p></div></div>"
+    },
+    "ro-ucenicie": {
+      "country": "Romania",
+      "country_code": "RO",
+      "name": "Apprenticeship at the workplace",
+      "split": 0.7,
+      "split_label": "Mostly at work (≥2/3)",
+      "facts": [
+        {
+          "icon": "pay",
+          "label": "Pay",
+          "value": "Wage, paid by your employer"
+        },
+        {
+          "icon": "contract",
+          "label": "Arrangement",
+          "value": "Specific apprenticeship contract"
+        },
+        {
+          "icon": "time",
+          "label": "Duration",
+          "value": "6–36 months by level"
+        },
+        {
+          "icon": "age",
+          "label": "Typical age",
+          "value": "Over 24"
+        },
+        {
+          "icon": "level",
+          "label": "Leads to",
+          "value": "EQF 1–4 (adult route) · access to higher education"
+        }
+      ],
+      "story_title": "If you were an apprentice in Romania",
+      "story": [
+        "You would most likely be over 24 — many apprentices here are adults.",
+        "You would sign an apprenticeship contract and have the legal status of an apprentice.",
+        "You would spend most of your time (two-thirds or more) at the company.",
+        "You would earn a wage, set by law, paid by your employer; it also covers your days at school.",
+        "It would take 6–36 months by level.",
+        "You would finish with: Qualification certificates, NQF/EQF 1–4, which gives direct access to higher education."
+      ],
+      "html": "<div class=\"portrait\"><div class=\"pt-split\" role=\"img\" aria-label=\"Time at the company: Mostly at work (≥2/3)\"><span class=\"pt-work\" style=\"width:70%\"><span>Company</span></span><span class=\"pt-school\" style=\"width:30%\"><span>School</span></span></div><p class=\"pt-split-note\">Mostly at work (≥2/3)</p><ul class=\"pt-facts\"><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M3 6h14v9H3z\"/><circle cx=\"10\" cy=\"10.5\" r=\"2.2\"/><path d=\"M6 6V4.5h8V6\"/></svg><span class=\"pt-k\">Pay</span> <span class=\"pt-v\">Wage, paid by your employer</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 2.5h7l3 3v12H5z\"/><path d=\"M12 2.5v3h3M7.5 9h5M7.5 12h5M7.5 15h3\"/></svg><span class=\"pt-k\">Arrangement</span> <span class=\"pt-v\">Specific apprenticeship contract</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"10\" cy=\"10\" r=\"7\"/><path d=\"M10 6v4l3 2\"/></svg><span class=\"pt-k\">Duration</span> <span class=\"pt-v\">6–36 months by level</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"10\" cy=\"7\" r=\"3\"/><path d=\"M4 17c.8-3.2 3.2-5 6-5s5.2 1.8 6 5\"/></svg><span class=\"pt-k\">Typical age</span> <span class=\"pt-v\">Over 24</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M2 8l8-4 8 4-8 4z\"/><path d=\"M5.5 9.8V13c1.2 1.3 2.8 2 4.5 2s3.3-.7 4.5-2V9.8\"/></svg><span class=\"pt-k\">Leads to</span> <span class=\"pt-v\">EQF 1–4 (adult route) · access to higher education</span></li></ul><div class=\"pt-story\"><h4>If you were an apprentice in Romania</h4><p>You would most likely be over 24 — many apprentices here are adults. You would sign an apprenticeship contract and have the legal status of an apprentice. You would spend most of your time (two-thirds or more) at the company. You would earn a wage, set by law, paid by your employer; it also covers your days at school. It would take 6–36 months by level. You would finish with: Qualification certificates, NQF/EQF 1–4, which gives direct access to higher education.</p><p class=\"pt-src\">From Cedefop's coded answers for this scheme (2026 fiche).</p></div></div>"
+    },
+    "se-larling": {
+      "country": "Sweden",
+      "country_code": "SE",
+      "name": "Upper secondary apprenticeship",
+      "split": 0.5,
+      "split_label": "Around half",
+      "facts": [
+        {
+          "icon": "pay",
+          "label": "Pay",
+          "value": "Wage, paid by your employer or the state"
+        },
+        {
+          "icon": "contract",
+          "label": "Arrangement",
+          "value": "Specific apprenticeship contract or Formal agreement, not a contract"
+        },
+        {
+          "icon": "time",
+          "label": "Duration",
+          "value": "Join in year 1, 2 or 3 of the 3-yr programme"
+        },
+        {
+          "icon": "age",
+          "label": "Typical age",
+          "value": "15–18"
+        },
+        {
+          "icon": "level",
+          "label": "Leads to",
+          "value": "Upper secondary · access to higher education"
+        }
+      ],
+      "story_title": "If you were an apprentice in Sweden",
+      "story": [
+        "You would most likely be between 15 and 18.",
+        "Your training would be set out in a written arrangement (specific apprenticeship contract or formal agreement, not a contract).",
+        "You would spend about half your time at the company.",
+        "You would earn a wage, set by law, by national collective agreements or by collective agreements for your sector, paid by your employer or the state.",
+        "Duration: join in year 1, 2 or 3 of the 3-year programme.",
+        "You would finish with: Vocational diploma, SeQF/EQF 4, which gives direct access to higher education."
+      ],
+      "html": "<div class=\"portrait\"><div class=\"pt-split\" role=\"img\" aria-label=\"Time at the company: Around half\"><span class=\"pt-work\" style=\"width:50%\"><span>Company</span></span><span class=\"pt-school\" style=\"width:50%\"><span>School</span></span></div><p class=\"pt-split-note\">Around half</p><ul class=\"pt-facts\"><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M3 6h14v9H3z\"/><circle cx=\"10\" cy=\"10.5\" r=\"2.2\"/><path d=\"M6 6V4.5h8V6\"/></svg><span class=\"pt-k\">Pay</span> <span class=\"pt-v\">Wage, paid by your employer or the state</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 2.5h7l3 3v12H5z\"/><path d=\"M12 2.5v3h3M7.5 9h5M7.5 12h5M7.5 15h3\"/></svg><span class=\"pt-k\">Arrangement</span> <span class=\"pt-v\">Specific apprenticeship contract or Formal agreement, not a contract</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"10\" cy=\"10\" r=\"7\"/><path d=\"M10 6v4l3 2\"/></svg><span class=\"pt-k\">Duration</span> <span class=\"pt-v\">Join in year 1, 2 or 3 of the 3-yr programme</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"10\" cy=\"7\" r=\"3\"/><path d=\"M4 17c.8-3.2 3.2-5 6-5s5.2 1.8 6 5\"/></svg><span class=\"pt-k\">Typical age</span> <span class=\"pt-v\">15–18</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M2 8l8-4 8 4-8 4z\"/><path d=\"M5.5 9.8V13c1.2 1.3 2.8 2 4.5 2s3.3-.7 4.5-2V9.8\"/></svg><span class=\"pt-k\">Leads to</span> <span class=\"pt-v\">Upper secondary · access to higher education</span></li></ul><div class=\"pt-story\"><h4>If you were an apprentice in Sweden</h4><p>You would most likely be between 15 and 18. Your training would be set out in a written arrangement (specific apprenticeship contract or formal agreement, not a contract). You would spend about half your time at the company. You would earn a wage, set by law, by national collective agreements or by collective agreements for your sector, paid by your employer or the state. Duration: join in year 1, 2 or 3 of the 3-year programme. You would finish with: Vocational diploma, SeQF/EQF 4, which gives direct access to higher education.</p><p class=\"pt-src\">From Cedefop's coded answers for this scheme (2026 fiche).</p></div></div>"
+    },
+    "si-vajenistvo": {
+      "country": "Slovenia",
+      "country_code": "SI",
+      "name": "Apprenticeship pathway",
+      "split": 0.5,
+      "split_label": "Around half",
+      "facts": [
+        {
+          "icon": "pay",
+          "label": "Pay",
+          "value": "Allowance, paid by your employer"
+        },
+        {
+          "icon": "contract",
+          "label": "Arrangement",
+          "value": "Formal agreement, not a contract"
+        },
+        {
+          "icon": "time",
+          "label": "Duration",
+          "value": "3 yrs"
+        },
+        {
+          "icon": "age",
+          "label": "Typical age",
+          "value": "15–18"
+        },
+        {
+          "icon": "level",
+          "label": "Leads to",
+          "value": "Upper secondary"
+        }
+      ],
+      "story_title": "If you were an apprentice in Slovenia",
+      "story": [
+        "You would most likely be between 15 and 18.",
+        "You would stay a student, with a formal training agreement between you, your school and the company.",
+        "You would spend about half your time at the company.",
+        "You would receive an allowance rather than a wage, paid by your employer.",
+        "It would take 3 years.",
+        "You would finish with: Upper secondary vocational certificate, EQF 4, which does not by itself give access to higher education."
+      ],
+      "html": "<div class=\"portrait\"><div class=\"pt-split\" role=\"img\" aria-label=\"Time at the company: Around half\"><span class=\"pt-work\" style=\"width:50%\"><span>Company</span></span><span class=\"pt-school\" style=\"width:50%\"><span>School</span></span></div><p class=\"pt-split-note\">Around half</p><ul class=\"pt-facts\"><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M3 6h14v9H3z\"/><circle cx=\"10\" cy=\"10.5\" r=\"2.2\"/><path d=\"M6 6V4.5h8V6\"/></svg><span class=\"pt-k\">Pay</span> <span class=\"pt-v\">Allowance, paid by your employer</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 2.5h7l3 3v12H5z\"/><path d=\"M12 2.5v3h3M7.5 9h5M7.5 12h5M7.5 15h3\"/></svg><span class=\"pt-k\">Arrangement</span> <span class=\"pt-v\">Formal agreement, not a contract</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"10\" cy=\"10\" r=\"7\"/><path d=\"M10 6v4l3 2\"/></svg><span class=\"pt-k\">Duration</span> <span class=\"pt-v\">3 yrs</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"10\" cy=\"7\" r=\"3\"/><path d=\"M4 17c.8-3.2 3.2-5 6-5s5.2 1.8 6 5\"/></svg><span class=\"pt-k\">Typical age</span> <span class=\"pt-v\">15–18</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M2 8l8-4 8 4-8 4z\"/><path d=\"M5.5 9.8V13c1.2 1.3 2.8 2 4.5 2s3.3-.7 4.5-2V9.8\"/></svg><span class=\"pt-k\">Leads to</span> <span class=\"pt-v\">Upper secondary</span></li></ul><div class=\"pt-story\"><h4>If you were an apprentice in Slovenia</h4><p>You would most likely be between 15 and 18. You would stay a student, with a formal training agreement between you, your school and the company. You would spend about half your time at the company. You would receive an allowance rather than a wage, paid by your employer. It would take 3 years. You would finish with: Upper secondary vocational certificate, EQF 4, which does not by itself give access to higher education.</p><p class=\"pt-src\">From Cedefop's coded answers for this scheme (2026 fiche).</p></div></div>"
+    },
+    "sk-dual": {
+      "country": "Slovakia",
+      "country_code": "SK",
+      "name": "Dual education",
+      "split": 0.5,
+      "split_label": "Around half",
+      "facts": [
+        {
+          "icon": "pay",
+          "label": "Pay",
+          "value": "Wage, paid by your employer or the state"
+        },
+        {
+          "icon": "contract",
+          "label": "Arrangement",
+          "value": "Formal agreement, not a contract"
+        },
+        {
+          "icon": "time",
+          "label": "Duration",
+          "value": "2–5 yrs by programme"
+        },
+        {
+          "icon": "age",
+          "label": "Typical age",
+          "value": "15–18 or 18–24"
+        },
+        {
+          "icon": "level",
+          "label": "Leads to",
+          "value": "Upper secondary · access to higher education"
+        }
+      ],
+      "story_title": "If you were an apprentice in Slovakia",
+      "story": [
+        "You would most likely be between 15 and 18 or between 18 and 24.",
+        "You would stay a student, with a formal training agreement between you, your school and the company.",
+        "You would spend about half your time at the company.",
+        "You would earn a wage, set by law or by agreement with your employer, paid by your employer or the state.",
+        "It would take 2–5 years by programme.",
+        "You would finish with: Apprenticeship certificate and/or maturita, EQF 2–5, which gives direct access to higher education."
+      ],
+      "html": "<div class=\"portrait\"><div class=\"pt-split\" role=\"img\" aria-label=\"Time at the company: Around half\"><span class=\"pt-work\" style=\"width:50%\"><span>Company</span></span><span class=\"pt-school\" style=\"width:50%\"><span>School</span></span></div><p class=\"pt-split-note\">Around half</p><ul class=\"pt-facts\"><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M3 6h14v9H3z\"/><circle cx=\"10\" cy=\"10.5\" r=\"2.2\"/><path d=\"M6 6V4.5h8V6\"/></svg><span class=\"pt-k\">Pay</span> <span class=\"pt-v\">Wage, paid by your employer or the state</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 2.5h7l3 3v12H5z\"/><path d=\"M12 2.5v3h3M7.5 9h5M7.5 12h5M7.5 15h3\"/></svg><span class=\"pt-k\">Arrangement</span> <span class=\"pt-v\">Formal agreement, not a contract</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"10\" cy=\"10\" r=\"7\"/><path d=\"M10 6v4l3 2\"/></svg><span class=\"pt-k\">Duration</span> <span class=\"pt-v\">2–5 yrs by programme</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"10\" cy=\"7\" r=\"3\"/><path d=\"M4 17c.8-3.2 3.2-5 6-5s5.2 1.8 6 5\"/></svg><span class=\"pt-k\">Typical age</span> <span class=\"pt-v\">15–18 or 18–24</span></li><li><svg class=\"pt-icon\" viewBox=\"0 0 20 20\" aria-hidden=\"true\" focusable=\"false\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M2 8l8-4 8 4-8 4z\"/><path d=\"M5.5 9.8V13c1.2 1.3 2.8 2 4.5 2s3.3-.7 4.5-2V9.8\"/></svg><span class=\"pt-k\">Leads to</span> <span class=\"pt-v\">Upper secondary · access to higher education</span></li></ul><div class=\"pt-story\"><h4>If you were an apprentice in Slovakia</h4><p>You would most likely be between 15 and 18 or between 18 and 24. You would stay a student, with a formal training agreement between you, your school and the company. You would spend about half your time at the company. You would earn a wage, set by law or by agreement with your employer, paid by your employer or the state. It would take 2–5 years by programme. You would finish with: Apprenticeship certificate and/or maturita, EQF 2–5, which gives direct access to higher education.</p><p class=\"pt-src\">From Cedefop's coded answers for this scheme (2026 fiche).</p></div></div>"
+    }
+  }
+}

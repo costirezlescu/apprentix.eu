@@ -1,0 +1,341 @@
+{
+  "description": "Per-country comparison of the national statistics shown on Apprentix: what each one counts. Written from the connectors' definitions and the publishers' documentation; reviewed 2026-10-17.",
+  "reviewed_on": "2026-10-17",
+  "countries": {
+    "CH": {
+      "summary": "All five Swiss series include full-time school-based VET unless the 'Dual' training form is selected; the learner stock comes from two BFS surveys (school year vs calendar year) that differ slightly. Eurostat's ED3SW proxy (pupils in combined school- and work-based programmes) is lower than the BFS learner stock, which also includes school-based VET.",
+      "series": [
+        {
+          "id": "ch-bfs-learners-vet",
+          "label": "Learners in initial VET (school year)",
+          "kind": "stock",
+          "reference": "school year; time = first year (2024 = 2024/25)",
+          "covers": "All learners in upper-secondary initial VET: EFZ, EBA, non-regulated, HMS/IMS (to 2013), Anlehre; dual and school-based",
+          "excludes": "Not split by training form; tertiary-level (higher VET) programmes",
+          "use_when": "Use this for the longest learner series (from 1999/2000), by programme type.",
+          "latest": "2024: 217,096"
+        },
+        {
+          "id": "ch-bfs-learners-vet-form",
+          "label": "Learners in initial VET by dual/school-based form",
+          "kind": "stock",
+          "reference": "calendar year (BFS SBG-SFPI)",
+          "covers": "Learners in EFZ, EBA and non-regulated initial VET, split into dual (company) and full-time school-based",
+          "excludes": "Training form not recorded in 2005–2006",
+          "use_when": "Use this for the number of learners in dual (company-based) training.",
+          "latest": "2025: 215,052"
+        },
+        {
+          "id": "ch-bfs-learners-vet-canton",
+          "label": "Learners in initial VET by canton",
+          "kind": "stock",
+          "reference": "calendar year (BFS SBG-SFPI)",
+          "covers": "Same learners as the training-form series, by canton of the training company; 'CH' = national total",
+          "excludes": "not stated",
+          "use_when": "Use this for comparing cantons; the national total equals the training-form series.",
+          "latest": "2025: 215,052"
+        },
+        {
+          "id": "ch-bfs-entrants-vet",
+          "label": "Entrants to initial VET",
+          "kind": "flow",
+          "reference": "calendar year (BFS SBG-SFPI)",
+          "covers": "People entering EFZ, EBA or non-regulated initial VET in the year, dual and school-based",
+          "excludes": "Learners continuing from earlier years",
+          "use_when": "Use this for new starts; with 'Dual' selected, the nearest to new contracts.",
+          "latest": "2025: 76,793"
+        },
+        {
+          "id": "ch-bfs-qualifications-vet",
+          "label": "Initial VET qualifications awarded",
+          "kind": "flow",
+          "reference": "calendar year (BFS SBG-SFPI)",
+          "covers": "Successful qualification procedures (EFZ, EBA, non-regulated), incl. candidates without a contract",
+          "excludes": "Failed qualification procedures",
+          "use_when": "Use this for completions (qualifications awarded), not learners.",
+          "latest": "2025: 65,329"
+        }
+      ]
+    },
+    "DE": {
+      "summary": "Destatis counts dual training contracts under BBiG/HwO (stock at 31 December, new contracts and passed exams in the calendar year); the BA figures cover only places and applicants registered with the employment agencies in the October–September reporting year. Eurostat splits German dual training between upper-secondary (ED3SW) and post-secondary (ED4SW) levels, so ED3SW alone is well below the Destatis stock.",
+      "series": [
+        {
+          "id": "de-destatis-apprentices",
+          "label": "Apprentices in dual training",
+          "kind": "stock",
+          "reference": "31 December",
+          "covers": "Dual training contracts under BBiG and the Crafts Code (HwO), by training area; counts contracts, not persons",
+          "excludes": "School-based VET (e.g. health and care schools, Berufsfachschulen)",
+          "use_when": "Use this for the number of apprentices in dual training in Germany.",
+          "latest": "2025: 1,211,844"
+        },
+        {
+          "id": "de-destatis-apprentices-land",
+          "label": "Apprentices in dual training by Land",
+          "kind": "stock",
+          "reference": "31 December",
+          "covers": "Same scope as the national stock (BBiG/HwO dual training), by Land of the training place and sex",
+          "excludes": "School-based VET (e.g. health and care schools, Berufsfachschulen)",
+          "use_when": "Use this for comparing Länder; the 'DE' total is close to the national series.",
+          "latest": "2025: 1,211,841"
+        },
+        {
+          "id": "de-ba-unfilled-places",
+          "label": "Registered training places still unfilled",
+          "kind": "stock",
+          "reference": "30 September (end of reporting year)",
+          "covers": "Places registered with employment agencies/job centres that still had no apprentice at 30 September",
+          "excludes": "Places never registered with the employment agencies (registration is voluntary)",
+          "use_when": "Use this for employers' difficulty in filling places.",
+          "latest": "2025: 56,378"
+        },
+        {
+          "id": "de-ba-unplaced-applicants",
+          "label": "Registered applicants still unplaced",
+          "kind": "stock",
+          "reference": "30 September (end of reporting year)",
+          "covers": "Registered applicants with neither a training place nor an alternative, still looking at 30 September",
+          "excludes": "Applicants with an alternative (school, course, job) who still want a place; unregistered seekers",
+          "use_when": "Use this for young people left without a training place.",
+          "latest": "2025: 39,868"
+        },
+        {
+          "id": "de-destatis-new-contracts",
+          "label": "Newly concluded training contracts",
+          "kind": "flow",
+          "reference": "calendar year (1 January–31 December)",
+          "covers": "Dual training contracts (BBiG/HwO) concluded in the year, as recorded by the competent bodies",
+          "excludes": "School-based VET; BIBB's 30 September new-contract count is a separate, different figure",
+          "use_when": "Use this for new apprenticeship contracts in Germany.",
+          "latest": "2025: 461,919"
+        },
+        {
+          "id": "de-destatis-exams-passed",
+          "label": "Final apprenticeship examinations passed",
+          "kind": "flow",
+          "reference": "calendar year",
+          "covers": "Final exams passed in BBiG/HwO dual training, incl. external candidates without a training contract",
+          "excludes": "Failed examinations; school-based VET",
+          "use_when": "Use this for completions of dual training.",
+          "latest": "2025: 338,349"
+        },
+        {
+          "id": "de-ba-training-places",
+          "label": "Training places registered with employment agencies",
+          "kind": "flow",
+          "reference": "reporting year Oct–Sep, totals at 30 Sep (2025 = 2024/25)",
+          "covers": "Company training places in BBiG/HwO occupations that employers registered for placement in the year",
+          "excludes": "Places not registered (registration is voluntary); not all apprenticeship places",
+          "use_when": "Use this for registered demand for apprentices, not total places.",
+          "latest": "2025: 501,338"
+        },
+        {
+          "id": "de-ba-applicants",
+          "label": "Applicants registered with employment agencies",
+          "kind": "flow",
+          "reference": "reporting year Oct–Sep, totals at 30 Sep (2025 = 2024/25)",
+          "covers": "Young people who used the agencies' and job centres' placement service to seek a training place",
+          "excludes": "Applicants who did not register (registration is voluntary)",
+          "use_when": "Use this for registered demand for training places, not all applicants.",
+          "latest": "2025: 444,335"
+        }
+      ]
+    },
+    "DK": {
+      "summary": "Denmark's only national series is a monthly flow of new training agreements in vocational education (EUD), not a count of apprentices in training. Eurostat's ED3SW is a stock of pupils, so the two measure different things.",
+      "series": [
+        {
+          "id": "dk-uvm-training-agreements",
+          "label": "New training agreements (monthly)",
+          "kind": "flow",
+          "reference": "month",
+          "covers": "Agreements concluded between an EUD student and an approved company: ordinary, short, rest and combination",
+          "excludes": "Apprentices already in training (stock); higher-education apprenticeships; small cells suppressed",
+          "use_when": "Use this for monthly trends in new agreements; compare the same month across years.",
+          "latest": "2026-08: 3,300"
+        }
+      ]
+    },
+    "FI": {
+      "summary": "Finnish figures count students and qualifications whose studies included at least one apprenticeship period, across initial, further and specialist qualifications, many taken by adults; they are not counts of contracts. Eurostat's ED3SW proxy is lower than the national student count, which covers anyone studying at any time in the calendar year.",
+      "series": [
+        {
+          "id": "fi-statfin-apprenticeship-new-students",
+          "label": "New vocational students with apprenticeship periods",
+          "kind": "flow",
+          "reference": "calendar year",
+          "covers": "Students starting vocational education in the year whose studies included an apprenticeship period",
+          "excludes": "Students with no apprenticeship period; higher-education apprenticeships",
+          "use_when": "Use this for people starting vocational studies that include apprenticeship.",
+          "latest": "2025: 24,338"
+        },
+        {
+          "id": "fi-statfin-apprenticeship-qualifications",
+          "label": "Vocational qualifications with apprenticeship periods",
+          "kind": "flow",
+          "reference": "calendar year",
+          "covers": "Initial, further and specialist vocational qualifications completed after studies with an apprenticeship period",
+          "excludes": "Qualifications with no apprenticeship period; higher-education apprenticeships",
+          "use_when": "Use this for completions involving apprenticeship training.",
+          "latest": "2025: 31,609"
+        },
+        {
+          "id": "fi-statfin-apprenticeship-students",
+          "label": "Vocational students with apprenticeship periods",
+          "kind": "other",
+          "reference": "calendar year (anyone studying at any time in the year)",
+          "covers": "Students in initial, further or specialist vocational qualifications with at least one apprenticeship period",
+          "excludes": "Students with no apprenticeship period; higher-education apprenticeships",
+          "use_when": "Use this for the number of people learning through apprenticeship during a year.",
+          "latest": "2025: 84,062"
+        }
+      ]
+    },
+    "FR": {
+      "summary": "Both French series cover all apprenticeship contracts, including the large share preparing higher-education diplomas, which most other countries' counts and Eurostat's upper-secondary ED3SW proxy do not include. One series is an end-of-month stock, the other a monthly flow of new contracts; both are seasonal, peaking in September.",
+      "series": [
+        {
+          "id": "fr-dares-apprentices-stock",
+          "label": "Apprentices under contract (end of month)",
+          "kind": "stock",
+          "reference": "last day of each month",
+          "covers": "All current apprenticeship contracts, private and public employers, secondary and higher-education levels, incl. DROM",
+          "excludes": "Overseas collectivities (COM)",
+          "use_when": "Use this for the number of apprentices in France at a given date.",
+          "latest": "2026-07: 911,425 (provisional)"
+        },
+        {
+          "id": "fr-dares-new-contracts",
+          "label": "New apprenticeship contracts (monthly)",
+          "kind": "flow",
+          "reference": "month (contract start month)",
+          "covers": "New contracts by start month, incl. renewals, private and public employers, all diploma levels, incl. DROM",
+          "excludes": "Overseas collectivities (COM)",
+          "use_when": "Use this for new apprenticeship contracts; compare the same month across years.",
+          "latest": "2026-07: 42,510 (provisional)"
+        }
+      ]
+    },
+    "IE": {
+      "summary": "Ireland's national figures are completions (apprentices qualifying each year) and their later employment, not registrations or a stock of apprentices in training. They include consortia-led apprenticeships up to NFQ level 8, whereas Eurostat's ED3SW is an upper-secondary enrolment proxy.",
+      "series": [
+        {
+          "id": "ie-cso-qualified-apprentices",
+          "label": "Apprentices qualifying",
+          "kind": "flow",
+          "reference": "qualification year",
+          "covers": "Apprentices who qualified: craft (NFQ 6) and consortia-led (NFQ 5–8) programmes; rounded to nearest 5",
+          "excludes": "Registrations and apprentices still in training",
+          "use_when": "Use this for apprenticeship completions in Ireland.",
+          "latest": "2020: 2,685"
+        },
+        {
+          "id": "ie-cso-apprentice-employment-rate",
+          "label": "Qualified apprentices in employment",
+          "kind": "rate",
+          "reference": "qualification year; default 2 years after qualifying",
+          "covers": "Share of a qualifying cohort in employment (with or without study), from administrative (Revenue) records",
+          "excludes": "Records with missing or invalid PPSN; 'not captured' outcomes stay in the denominator",
+          "use_when": "Use this for employment outcomes of apprentices after qualifying.",
+          "latest": "2020: 92.2%"
+        }
+      ]
+    },
+    "NL": {
+      "summary": "Both Dutch series count students enrolled in MBO at 1 October; BBL is the work-based pathway, not a count of apprenticeship contracts, and the two BBL totals differ slightly because of disclosure control. Eurostat's ED3SW series for the Netherlands on the site ends in 2010.",
+      "series": [
+        {
+          "id": "nl-duo-mbo-students",
+          "label": "MBO students by learning pathway (default: BBL)",
+          "kind": "stock",
+          "reference": "1 October (2025 = school year 2025/26)",
+          "covers": "Main enrolments in MBO by pathway: BBL, BOL full-time, BOL part-time, exam-only; funded and non-funded",
+          "excludes": "Higher-education apprenticeships; cells of 1–4 students suppressed",
+          "use_when": "Use this for comparing work-based (BBL) with school-based (BOL) MBO.",
+          "latest": "2025: 137,185 (provisional)"
+        },
+        {
+          "id": "nl-duo-bbl-students",
+          "label": "BBL students by level and sector",
+          "kind": "stock",
+          "reference": "1 October (2025 = school year 2025/26)",
+          "covers": "Main BBL enrolments in MBO levels 1–4, by level and sector chamber; funded and non-funded",
+          "excludes": "Other MBO pathways; suppressed cells (total up to ~0.5% below the pathway series)",
+          "use_when": "Use this for BBL by level or sector chamber.",
+          "latest": "2025: 136,915 (provisional)"
+        }
+      ]
+    },
+    "NO": {
+      "summary": "Norway's figures separate the stock of apprentices at 1 October, new apprentices in the year and trade/journeyman examinations; all are upper-secondary only. Eurostat's ED3SW figure for Norway is about twice the SSB apprentice count and is flagged 'definition differs'.",
+      "series": [
+        {
+          "id": "no-ssb-apprentices",
+          "label": "Apprentices (default; training candidates optional)",
+          "kind": "stock",
+          "reference": "1 October",
+          "covers": "Persons registered as apprentices in upper secondary; training candidates available as a separate type",
+          "excludes": "Training candidates in the default view; higher-education apprenticeships",
+          "use_when": "Use this for the number of apprentices in Norway at a date.",
+          "latest": "2025: 52,440"
+        },
+        {
+          "id": "no-ssb-new-apprentices",
+          "label": "New apprentices",
+          "kind": "flow",
+          "reference": "year (counted in the 1 October statistics)",
+          "covers": "Apprentices registered as new in the year, all ages (sum of SSB age groups), whole country",
+          "excludes": "Training candidates; continuing apprentices",
+          "use_when": "Use this for apprenticeship entries; do not add to the stock series.",
+          "latest": "2025: 26,717"
+        },
+        {
+          "id": "no-ssb-trade-certificates",
+          "label": "Trade/journeyman exams sat (default: apprentices)",
+          "kind": "flow",
+          "reference": "school year; time = start year (2024 = 2024/25)",
+          "covers": "Persons sitting the trade or journeyman's examination; default = apprentices, all results",
+          "excludes": "Practice candidates and pupils in the default view; failed exams are included unless 'Passed' is chosen",
+          "use_when": "Use this for apprentices reaching the final examination.",
+          "latest": "2024: 20,834"
+        }
+      ]
+    },
+    "UK": {
+      "summary": "All three series cover England only and count programmes or learners by academic year (August–July), including higher and degree apprenticeships; starts and achievements are flows, participation counts anyone on an apprenticeship during the year. Eurostat's ED3SW series for the UK on the site ends in 2019.",
+      "series": [
+        {
+          "id": "uk-dfe-apprenticeship-starts",
+          "label": "Apprenticeship starts (England)",
+          "kind": "flow",
+          "reference": "academic year Aug–Jul; time = start year (2024 = 2024/25)",
+          "covers": "Programme starts at all levels (2 to 7, incl. degree apprenticeships), ages 16+; a learner can start twice",
+          "excludes": "Scotland, Wales and Northern Ireland",
+          "use_when": "Use this for new apprenticeships in England.",
+          "latest": "2025: 308,770 (provisional, part year)"
+        },
+        {
+          "id": "uk-dfe-apprenticeship-achievements",
+          "label": "Apprenticeship achievements (England)",
+          "kind": "flow",
+          "reference": "academic year Aug–Jul; time = start year (2024 = 2024/25)",
+          "covers": "Programmes successfully completed at all levels (2 to 7), ages 16+; rounded to nearest 10",
+          "excludes": "Scotland, Wales and Northern Ireland; programmes not completed",
+          "use_when": "Use this for completions of apprenticeships in England.",
+          "latest": "2025: 146,210 (provisional, part year)"
+        },
+        {
+          "id": "uk-dfe-apprenticeship-participation",
+          "label": "Apprenticeship participation (England)",
+          "kind": "other",
+          "reference": "academic year Aug–Jul (anyone on an apprenticeship during the year)",
+          "covers": "Learners on an apprenticeship at any point in the year, all levels (2 to 7), ages 16+",
+          "excludes": "Scotland, Wales and Northern Ireland; not a point-in-time stock",
+          "use_when": "Use this for how many people were apprentices in England during a year.",
+          "latest": "2025: 735,500 (provisional, part year)"
+        }
+      ]
+    }
+  }
+}

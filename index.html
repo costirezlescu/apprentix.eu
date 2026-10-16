@@ -82,6 +82,12 @@
           <p>Ten quick questions: which of two countries has more apprentices in work, more training firms, more early leavers? Challenge a friend to beat your score.</p>
           <span class="start-go">Play a round →</span>
         </a>
+        <a class="start-card" href="pages/myths.html">
+          <span class="start-kicker">Quiz</span>
+          <h3>Myth or fact?</h3>
+          <p>"Apprentices aren't paid." "It's only for teenagers." Ten things people say about apprenticeships — answered with data from 34 schemes.</p>
+          <span class="start-go">Take the quiz →</span>
+        </a>
         <a class="start-card" href="pages/insights.html">
           <span class="start-kicker">For decision-makers</span>
           <h3>Insights</h3>
@@ -107,6 +113,12 @@
   <section class="section">
     <div class="wrap">
       <section id="scheme-week" class="sow" aria-label="Scheme of the week" hidden></section>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <section id="pulse" class="pulse" aria-label="Policy pulse" hidden></section>
     </div>
   </section>
 
@@ -163,6 +175,7 @@
       <a href="pages/find.html">Find my apprenticeship</a>
       <a href="pages/duel.html">Compare countries</a>
       <a href="pages/play.html">Higher or lower?</a>
+      <a href="pages/myths.html">Myth or fact?</a>
       <a href="pages/glossary.html">Glossary</a>
       <a href="pages/about.html">About</a>
       <a href="pages/data.html">Data &amp; sources</a>
@@ -179,6 +192,8 @@
   import { mountChanges } from './assets/js/changes.js';
   import { mountHomeMap } from './assets/js/home-map.js';
   import { mountSchemeOfWeek } from './assets/js/scheme-week.js';
+  import { mountPulse } from './assets/js/pulse.js';
+  mountPulse(document.getElementById('pulse'));
   mountHomeMap(document.getElementById('timelapse'));
   mountSchemeOfWeek(document.getElementById('scheme-week'));
   mountDidYouKnow(document.getElementById('dyk'));

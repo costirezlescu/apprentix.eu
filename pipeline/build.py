@@ -122,10 +122,15 @@ def all(connectors: dict, status: dict) -> None:
     refresh_manifest(inds)
     datapackage(inds)
     print(f"Built: {len(inds)} indicators, catalogue, manifest, datapackage.json")
+    from . import dcat
+    dcat.build()              # DCAT-AP catalogue for open-data portals → data/catalog.rdf
     from . import changes, duel
     changes.build()           # what changed since the last build → data/published/changes/
     changes.ensure_by_country()
     duel.build()              # per-country profiles for the country duel
+    from . import portraits, pulse
+    portraits.build()         # scheme portraits and "If you were an apprentice in …" stories
+    pulse.build()             # policy pulse: apprenticeship policies that moved in the latest year
     from . import play
     play.build()              # 'Higher or lower?' question pool
     from . import glossary
@@ -133,6 +138,8 @@ def all(connectors: dict, status: dict) -> None:
     from . import insights, render_insights, facts
     insights.build()          # analyses across all data → data/published/insights/
     facts.build()             # 'Did you know?' facts → data/published/facts/
+    from . import myths
+    myths.build()             # 'Myth or fact?' statements → data/published/myths/
     from . import og
     og.build()                # link-preview images + duel share pages
     render_insights.render_insights()
