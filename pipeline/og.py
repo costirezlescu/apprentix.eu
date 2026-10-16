@@ -182,7 +182,17 @@ def wrap(text: str, f, max_w: float) -> list[str]:
     return out
 
 
+_FULL_TEXT: dict[str, str] = {}   # shortened text -> the text it was cut from (for fingerprints)
+
+
 def ellipsize(line: str, f, max_w: float) -> str:
+    out = _ellipsize(line, f, max_w)
+    if out != line:
+        _FULL_TEXT[out] = line
+    return out
+
+
+def _ellipsize(line: str, f, max_w: float) -> str:
     if text_w(line, f) <= max_w:
         return line
     while line and text_w(line.rstrip(" ,;:·—-") + "…", f) > max_w:
@@ -218,9 +228,12 @@ RENDERER = hashlib.sha256(Path(__file__).read_bytes().replace(b"\r\n", b"\n")).h
 
 class Canvas:
     """Drawing calls are logged, so a card's fingerprint depends only on its content.
-    Font rasterisation differs slightly between macOS and Linux, so the pixels of the
-    same card do; comparing fingerprints instead stops builds on different machines
-    from rewriting every image (see build/put)."""
+    Fonts are measured and rasterised slightly differently on macOS and Linux, so the
+    pixels, the line breaks and any position derived from a text width differ between
+    machines. The fingerprint therefore keeps what the card says and shows — its text
+    (whitespace-normalised, so line breaks do not matter), the fonts and colours used,
+    and the data-driven marks (lines, dots) — but no layout coordinates. Comparing
+    fingerprints stops builds on different machines from rewriting every image."""
 
     def __init__(self):
         from PIL import Image, ImageDraw
@@ -228,10 +241,25 @@ class Canvas:
         self.d = ImageDraw.Draw(self.img)
         self.ops: list = []
 
-    def _log(self, *op):
-        self.ops.append(repr(tuple(
-            (Path(getattr(x, "path", "")).name, getattr(x, "size", None)) if hasattr(x, "getbbox") else x
-            for x in op)))
+    def _log(self, kind, *args):
+        self.ops.append((kind, args))
+
+    def fingerprint(self) -> str:
+        def fid(f):
+            return (Path(getattr(f, "path", "")).name, getattr(f, "size", None))
+        # The words and numbers on the card, as a sorted bag; shortened texts restored; font
+        # sizes left out. Line breaks, "…" cut-offs, fitted sizes and where a unit is placed
+        # depend on font metrics, which differ between machines; the words do not.
+        words = sorted(w for k, a in self.ops if k == "text"
+                       for w in re.findall(r"[\w.,%+−-]+", _FULL_TEXT.get(str(a[2]), str(a[2])).lower()))
+        text = " ".join(words)
+        styles = sorted({repr((fid(a[3])[0], a[4])) for k, a in self.ops if k == "text"})
+        fills = sorted({repr(a[-1] if k != "rect" else (a[4], a[5])) for k, a in self.ops if k in ("rect", "poly")})
+        def r(v):
+            return round(v) if isinstance(v, (int, float)) else [r(x) for x in v] if isinstance(v, (list, tuple)) else v
+        marks = [repr((k, r(a))) for k, a in self.ops if k in ("line", "dot")]
+        blob = "\n".join([RENDERER, text, *styles, *fills, *marks])
+        return hashlib.sha256(blob.encode("utf-8")).hexdigest()[:20]
 
     def rect(self, x0, y0, x1, y1, fill=None, outline=None, width=1, r=0):
         self._log("rect", x0, y0, x1, y1, fill, outline, width, r)
@@ -273,7 +301,7 @@ class Canvas:
         buf = io.BytesIO()
         img.save(buf, "PNG", optimize=True)
         out = PNG(buf.getvalue())
-        out.fp = hashlib.sha256((RENDERER + "\n" + "\n".join(self.ops)).encode("utf-8")).hexdigest()[:20]
+        out.fp = self.fingerprint()
         return out
 
 
