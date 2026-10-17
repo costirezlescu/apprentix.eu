@@ -35,8 +35,13 @@ SITE = "https://apprentix.eu"
 
 PILLARS = {
     "cedefop": "At Cedefop", "policy": "EU policy", "agencies": "Agencies", "countries": "Countries",
-    "research": "Research", "data": "Data", "people": "People",
+    "research": "Research", "data": "Data", "people": "People", "debate": "The wider debate",
 }
+LANGUAGES = {"de": "German", "fr": "French", "es": "Spanish", "it": "Italian", "nl": "Dutch", "el": "Greek",
+             "fi": "Finnish", "da": "Danish", "sv": "Swedish", "ro": "Romanian", "pl": "Polish", "pt": "Portuguese"}
+COUNTRY = {"UK": "United Kingdom", "IE": "Ireland", "DE": "Germany", "AT": "Austria", "FR": "France", "ES": "Spain",
+           "IT": "Italy", "NL": "Netherlands", "EL": "Greece", "FI": "Finland", "DK": "Denmark", "SE": "Sweden",
+           "PL": "Poland", "RO": "Romania", "US": "United States", "EU": "Europe", "INT": "International"}
 # Work areas in the order they are named in a connection line; governance only when alone.
 AREA_ORDER = ["apprenticeships", "vet_policy", "skills_intelligence", "qualifications", "adult_learning",
               "inclusion", "teachers_trainers", "mobility", "future_of_work", "labour_market", "governance"]
@@ -135,6 +140,10 @@ def connection(item: dict, override: list[str] | None = None) -> str | None:
         head = f"Apprentix analysis of data from {m['publisher']}" if m.get("publisher") else "Apprentix"
     elif m.get("agency"):
         head = AGENCY_LINE.get(m["agency"], m["agency"])
+    elif m.get("outlet"):
+        head = f"{m['outlet']} ({COUNTRY.get(m['country'], m['country'])})"
+        if m.get("language") and m["language"] != "en":
+            head += f" · translated from {LANGUAGES.get(m['language'], m['language'])}"
     else:
         head = SOURCE_LINE.get(item["source"], SOURCE_NAME.get(item["source"], ""))
     line = f"{head} · Relevant to: " + " · ".join(TOPICS["areas"][a]["label"] for a in areas)
@@ -158,17 +167,26 @@ def strip_value(spec: dict, pool: list[dict]) -> str:
 
 # ------------------------------------------------------------- pieces --
 
+POOL_INDEX: dict = {}
+
+
+def link_url(l: dict) -> str:
+    """A link names a pool item ({"item": id}) or, for anchors and legacy data, a URL."""
+    return POOL_INDEX[l["item"]]["url"] if l.get("item") else l["url"]
+
+
 def links_html(links: list[dict]) -> str:
     if not links:
         return ""
-    parts = [f'<a href="{e(href(l["url"]))}">{e(l["text"])}</a>' for l in links]
+    parts = [f'<a href="{e(href(link_url(l)))}">{e(l["text"])}</a>' for l in links]
     return f'<p class="dc-links">{" · ".join(parts)}</p>'
 
 
 def card(c: dict, P: dict, pillar: str) -> str:
     it = P[c["item"]]
     line = connection(it, c.get("areas"))
-    url = c["links"][0]["url"] if c.get("links") and not c["links"][0]["url"].startswith("#") else it["url"]
+    first = link_url(c["links"][0]) if c.get("links") else ""
+    url = first if first and not first.startswith("#") else it["url"]
     date = fmt_date(it["date"]) if c.get("show_date", True) else ""
     kicker = e(c.get("kicker", "")) + (f' <span>· {e(date)}</span>' if date else "")
     body = "".join(f"<p>{e(p)}</p>" for p in c.get("body", []))
@@ -189,7 +207,7 @@ def briefs(b: dict, P: dict, pillar: str) -> str:
     for r in b["items"]:
         it = P[r["item"]] if r.get("item") else None
         url = r.get("url") or it["url"]
-        src = f'{SOURCE_NAME.get(it["source"], "")}, {fmt_date(it["date"])}' if it else ""
+        src = f'{it["meta"].get("outlet") or SOURCE_NAME.get(it["source"], "")}, {fmt_date(it["date"])}' if it else ""
         rows.append(f"""<li><a class="dc-brief-hl" href="{e(href(url))}">{e(r['headline'])}</a>
   <span class="dc-brief-text">{e(r['text'])}</span>{f' <span class="dc-brief-src">{e(src)}</span>' if src else ''}</li>""")
     line = connection(P[b["item"]]) if b.get("item") else None
@@ -373,7 +391,7 @@ def section(s: dict, P: dict) -> str:
 def lead(c: dict, P: dict) -> str:
     it = P[c["item"]]
     body = "".join(f"<p>{e(p)}</p>" for p in c["body"])
-    url = c["links"][0]["url"]
+    url = link_url(c["links"][0])
     return f"""<article class="dc-lead" data-pillar="{e(c['pillar'])}">
   <div class="dc-lead-text">
     <p class="dc-kicker">{e(c['kicker'])} <span>· {e(fmt_date(it['date']))}</span></p>
@@ -385,6 +403,17 @@ def lead(c: dict, P: dict) -> str:
   </div>
   {reset_figure(c['figure'], P) if c.get('figure', {}).get('type') == 'reset-bars' else ''}
 </article>"""
+
+
+def also_today(items: list[dict], sections: list[dict]) -> str:
+    """Front-page teasers pointing into the paper; headlines are the cards' own."""
+    cards = {b.get("anchor"): (s, b) for s in sections for b in s["blocks"] if b.get("anchor")}
+    cells = []
+    for a in items:
+        s, b = cards[a]
+        cells.append(f'<a class="dc-tease" data-pillar="{e(s["pillar"])}" href="#{e(a)}">'
+                     f'<span class="dc-kicker">{e(s["title"])}</span><span class="dc-tease-hl">{e(b["headline"])}</span></a>')
+    return f'<nav class="dc-teasers" aria-label="Also today">{"".join(cells)}</nav>'
 
 
 def strip(s: dict, pool: list[dict]) -> str:
@@ -490,10 +519,22 @@ def masthead(ed: dict, sections: list[dict]) -> str:
 </header>"""
 
 
+PRESS_FEEDS = {f["id"]: f for f in json.loads((HERE / "press.json").read_text("utf-8"))["feeds"]}
+
+
 def footer(pool: dict) -> str:
-    ok = [SOURCE_STATUS_LABEL.get(k, k) for k, v in pool["sources"].items() if v == "ok"]
+    is_press = lambda k: k in PRESS_FEEDS or k.removesuffix("_page") in PRESS_FEEDS
+    ok = [SOURCE_STATUS_LABEL.get(k, k) for k, v in pool["sources"].items() if v == "ok" and not is_press(k)]
+    feeds_ok = [k for k, v in pool["sources"].items() if k in PRESS_FEEDS and v == "ok"]
+    outlets = {PRESS_FEEDS[k]["name"] for k in feeds_ok}
+    countries = {PRESS_FEEDS[k]["country"] for k in feeds_ok} - {"EU", "INT"}
+    ok.append(f"press and field feeds from {len(outlets)} outlets in {len(countries)} countries")
     bad = [(SOURCE_STATUS_LABEL.get(k, k), v.split(":", 1)[1].strip() if ":" in v else v)
-           for k, v in pool["sources"].items() if v != "ok"]
+           for k, v in pool["sources"].items() if v != "ok" and not is_press(k)]
+    paywalled = sorted({PRESS_FEEDS[k.removesuffix("_page")]["name"] for k, v in pool["sources"].items()
+                        if k.endswith("_page") and is_press(k) and v != "ok"})
+    if paywalled:
+        bad.append(("Article pages of " + ", ".join(paywalled), "refuse scripts; only the feed’s summary is used"))
     not_read = "".join(f"<li>{e(n)}: {e(w)}</li>" for n, w in bad + NOT_READ)
     return f"""<footer class="dc-foot">
   <div class="wrap">
@@ -512,10 +553,14 @@ def footer(pool: dict) -> str:
 
 def render_edition(ed: dict, pool: dict) -> str:
     P = {i["id"]: i for i in pool["items"]}
+    POOL_INDEX.clear()
+    POOL_INDEX.update(P)
     title = f"Cedefop Daily — {long_date(ed['date'])}"
     desc = ed["lead"]["headline"] + ". " + ed["lead"]["standfirst"]
     out = [head(title, desc, f"{SITE}/daily/{ed['date']}/"), masthead(ed, ed["sections"]),
            '<main id="main" class="wrap dc-main">', strip(ed["strip"], pool["items"]), lead(ed["lead"], P)]
+    if ed.get("also_today"):
+        out.append(also_today(ed["also_today"], ed["sections"]))
     out += [section(s, P) for s in ed["sections"]]
     out.append(week_ahead(ed["week_ahead"], P, ed["date"]))
     out += ["</main>", footer(pool), SCRIPT, "</body>\n</html>\n"]
@@ -545,15 +590,20 @@ ABOUT = """
 
 <h2>How an edition is built</h2>
 <ol>
-<li><strong>Fetch.</strong> A script reads public sources over plain HTTP: Cedefop’s RSS feed and newsletter, the EU Publications Office catalogue, the Commission’s press corner, the Council’s press feed, the Official Journal, the news pages of EU and UN agencies, Eurostat, OpenAlex for research, and Apprentix’s own data. A source that refuses automated reading is recorded as refused and skipped. Bot checks are never worked around.</li>
+<li><strong>Fetch.</strong> A script reads public sources over plain HTTP: Cedefop’s RSS feed and newsletter, the EU Publications Office catalogue, the Commission’s press corner, the Council’s press feed, the Official Journal, the news pages of EU and UN agencies, Eurostat, OpenAlex for research, Apprentix’s own data, and the press (below). A source that refuses automated reading is recorded as refused and skipped. Bot checks are never worked around.</li>
 <li><strong>Tag.</strong> Each item is tagged with Cedefop work areas by keyword, in several languages.</li>
 <li><strong>Write.</strong> Stories are drafted from the fetched text only, with help from software that includes a language model. Links, dates and the line under each story come from the data, not from the writing step.</li>
 <li><strong>Check.</strong> Before publication, every link must come from the fetched sources, every number must appear in the story’s sources, and every quotation must be verbatim. Banned words, sensitive topics (which hold the edition for a person to decide), a person in more than one headline and past events in the diary are flagged.</li>
 <li><strong>Publish.</strong> The checked edition is rendered as a static page.</li>
 </ol>
 
+<h2>The press and the field</h2>
+<p>To see how things are on the ground, not only from the institutions, the paper reads national and local newspapers, trade press, teachers’, learners’ and employers’ outlets, international newspapers and magazines, popular science and economics columns. An article is kept only if it touches education, training and skills, or AI together with work and jobs, and only if it is from the last eight days.</p>
+<p>Press articles are summarised in the paper’s own words and linked; at most a short phrase is quoted. Articles in other languages are summarised in English and labelled “translated from …”. Private individuals in press stories are not named; people appear only in a public role. Subscription articles are marked.</p>
+{outlets}
+
 <h2>Sections</h2>
-<p>At Cedefop · EU policy · Agencies and partners · Across Europe · Research · Data · People · Week ahead. The top strip shows “Today at Cedefop” when there is a public agenda for the day, and “This week in numbers” otherwise. On Mondays the diary looks at the week ahead.</p>
+<p>At Cedefop · From the field · The wider debate · EU policy · Agencies and partners · Research · Data · People · Week ahead. The top strip shows “Today at Cedefop” when there is a public agenda for the day, and “This week in numbers” otherwise. On Mondays the diary looks at the week ahead.</p>
 
 <h2>Privacy</h2>
 <p>No cookies, no tracking and no analytics. If you guess The number, your guess is kept only in your browser.</p>
@@ -564,9 +614,13 @@ ABOUT = """
 
 
 def render_about() -> str:
+    by = {}
+    for f in PRESS_FEEDS.values():
+        by.setdefault(COUNTRY.get(f["country"], f["country"]), set()).add(f["name"])
+    outlets = "<ul>" + "".join(f"<li><strong>{e(c)}</strong>: {e(', '.join(sorted(n)))}</li>" for c, n in sorted(by.items())) + "</ul>"
     return stamp_html("\n".join([head("How Cedefop Daily is made", "How Cedefop Daily is compiled, checked and published.",
                                       f"{SITE}/daily/about.html"),
-                                 '<main id="main" class="wrap dc-main dc-page">', ABOUT,
+                                 '<main id="main" class="wrap dc-main dc-page">', ABOUT.replace("{outlets}", outlets),
                                  '<p><a href="/daily/">Back to today’s paper</a></p></main>', "</body>\n</html>\n"]))
 
 

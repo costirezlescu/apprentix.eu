@@ -1,5 +1,5 @@
 {
- "_note": "Work areas for tagging and connection lines. Seed list from cedefop-daily/data/topics.yaml (17 October 2026). Align names with Cedefop's Single Programming Document. Keywords are lowercase and match at the start of a word; keywords of four letters or fewer must match a whole word.",
+ "_note": "Work areas for tagging and connection lines. Seed list from cedefop-daily/data/topics.yaml (17 October 2026). Align names with Cedefop's Single Programming Document. Keywords are lowercase and match at the start of a word; keywords of four letters or fewer must match a whole word. A keyword starting with '=' must match a whole word.",
  "areas": {
   "vet_policy": {
    "label": "VET policy and systems",
@@ -16,34 +16,90 @@
      "copenhagen process",
      "worldskills",
      "skills competition",
-     "vocational"
+     "vocational",
+     "further education",
+     "fe college",
+     "fe colleges",
+     "technical college",
+     "t levels",
+     "t-levels",
+     "trade school",
+     "trade schools"
     ],
     "de": [
      "berufsbildung",
      "berufliche bildung",
-     "berufsschule"
+     "berufsschule",
+     "berufsausbildung",
+     "meisterschule"
     ],
     "fr": [
      "formation professionnelle",
-     "enseignement professionnel"
+     "enseignement professionnel",
+     "lycée professionnel",
+     "lycées professionnels",
+     "voie professionnelle",
+     "bac pro"
     ],
     "el": [
      "επαγγελματική εκπαίδευση",
-     "επαγγελματική κατάρτιση"
+     "επαγγελματική κατάρτιση",
+     "επαλ",
+     "επαγγελματικά λύκεια",
+     "σαεκ",
+     "ιεκ",
+     "επαγγελματικής κατάρτισης"
     ],
     "it": [
      "formazione professionale",
-     "istruzione tecnica"
+     "istruzione tecnica",
+     "istituti tecnici",
+     "istituti professionali",
+     "istruzione professionale",
+     "its academy"
     ],
     "es": [
-     "formación profesional"
+     "formación profesional",
+     "fp dual",
+     "ciclos formativos",
+     "ciclo formativo"
     ],
     "nl": [
      "beroepsonderwijs",
-     "mbo"
+     "mbo",
+     "mbo-studenten",
+     "mbo-scholen"
     ],
     "pl": [
-     "kształcenie zawodowe"
+     "kształcenie zawodowe",
+     "szkoła branżowa",
+     "szkoły branżowe"
+    ],
+    "da": [
+     "erhvervsuddannelse",
+     "erhvervsuddannelser",
+     "erhvervsskole"
+    ],
+    "sv": [
+     "yrkesutbildning",
+     "yrkesprogram",
+     "yrkeshögskola",
+     "komvux"
+    ],
+    "fi": [
+     "ammatillinen koulutus",
+     "ammattikoulu",
+     "ammatillisen koulutuksen"
+    ],
+    "ro": [
+     "învățământ profesional",
+     "învățământul profesional",
+     "școala profesională",
+     "învățământ dual"
+    ],
+    "pt": [
+     "ensino profissional",
+     "cursos profissionais"
     ]
    }
   },
@@ -57,28 +113,74 @@
      "dual system",
      "dual training",
      "traineeship",
-     "european alliance for apprenticeships"
+     "european alliance for apprenticeships",
+     "apprentices",
+     "pre-apprenticeship",
+     "apprenticeship levy",
+     "growth and skills levy",
+     "trainee",
+     "trainees"
     ],
     "de": [
      "ausbildung",
      "lehrstelle",
      "duale ausbildung",
-     "auszubildende"
+     "auszubildende",
+     "azubi",
+     "azubis",
+     "ausbildungsplatz",
+     "ausbildungsplätze",
+     "lehrling",
+     "lehrlinge",
+     "ausbildungsbetrieb"
     ],
     "fr": [
      "apprentissage",
      "alternance",
-     "apprenti"
+     "apprenti",
+     "=apprentis",
+     "alternant",
+     "alternants",
+     "apprentissage en entreprise",
+     "contrat d'apprentissage"
     ],
     "el": [
-     "μαθητεία"
+     "μαθητεία",
+     "μαθητείας"
     ],
     "it": [
-     "apprendistato"
+     "apprendistato",
+     "apprendisti"
     ],
     "es": [
      "fp dual",
-     "aprendiz"
+     "aprendiz",
+     "aprendices",
+     "formación dual"
+    ],
+    "nl": [
+     "leerbaan",
+     "bbl",
+     "leerling-werknemer"
+    ],
+    "da": [
+     "lærling",
+     "lærlinge",
+     "lærepladser",
+     "læreplads"
+    ],
+    "sv": [
+     "lärling",
+     "lärlingar",
+     "lärlingsutbildning"
+    ],
+    "fi": [
+     "oppisopimus"
+    ],
+    "ro": [
+     "ucenic",
+     "ucenici",
+     "ucenicie"
     ]
    }
   },
@@ -103,14 +205,34 @@
      "skills governance",
      "skills forecasting",
      "regional skills",
-     "skills ecosystem"
+     "skills ecosystem",
+     "skills gap",
+     "skills gaps",
+     "labour shortages",
+     "labor shortages",
+     "worker shortage",
+     "reskill",
+     "upskill"
     ],
     "de": [
-     "fachkräftemangel"
+     "fachkräftemangel",
+     "fachkräfte",
+     "arbeitskräftemangel"
     ],
     "fr": [
      "pénurie de compétences",
-     "pénurie de main-d'œuvre"
+     "pénurie de main-d'œuvre",
+     "métiers en tension"
+    ],
+    "es": [
+     "escasez de mano de obra",
+     "falta de trabajadores",
+     "vacantes sin cubrir"
+    ],
+    "it": [
+     "carenza di personale",
+     "mismatch",
+     "competenze"
     ]
    }
   },
@@ -127,7 +249,14 @@
      "micro-credential",
      "microcredential",
      "europass",
-     "esco"
+     "esco",
+     "=qualifications",
+     "=diploma",
+     "=credentials",
+     "micro-credentials",
+     "degree apprenticeship",
+     "degree apprenticeships",
+     "skills-based hiring"
     ]
    }
   },
@@ -147,14 +276,28 @@
      "career guidance",
      "workplace learning",
      "training expenses",
-     "employer-sponsored training"
+     "employer-sponsored training",
+     "retraining",
+     "adult education",
+     "night school",
+     "bootcamp"
     ],
     "de": [
-     "weiterbildung"
+     "weiterbildung",
+     "umschulung"
     ],
     "fr": [
      "formation continue",
-     "compte personnel de formation"
+     "compte personnel de formation",
+     "reconversion"
+    ],
+    "es": [
+     "formación continua",
+     "recualificación"
+    ],
+    "it": [
+     "formazione continua",
+     "riqualificazione"
     ]
    }
   },
@@ -172,7 +315,28 @@
      "gender gap",
      "poverty",
      "social exclusion",
-     "not in employment, education or training"
+     "not in employment, education or training",
+     "school dropouts",
+     "drop out",
+     "young people not in work",
+     "youth unemployment",
+     "neets"
+    ],
+    "de": [
+     "schulabbrecher",
+     "ausbildungsabbruch"
+    ],
+    "fr": [
+     "décrochage",
+     "décrocheurs"
+    ],
+    "es": [
+     "abandono escolar"
+    ],
+    "it": [
+     "dispersione scolastica",
+     "abbandono scolastico",
+     "neet"
     ]
    }
   },
@@ -189,7 +353,30 @@
      "vet teacher",
      "teachers and trainers",
      "teacher training",
-     "vocational trainers"
+     "vocational trainers",
+     "teachers",
+     "lecturers"
+    ],
+    "fr": [
+     "enseignants",
+     "professeurs"
+    ],
+    "de": [
+     "lehrkräfte",
+     "lehrermangel",
+     "ausbilder"
+    ],
+    "es": [
+     "profesorado",
+     "docentes"
+    ],
+    "it": [
+     "docenti",
+     "insegnanti"
+    ],
+    "el": [
+     "εκπαιδευτικοί",
+     "εκπαιδευτικών"
     ]
    }
   },
@@ -219,7 +406,47 @@
      "twin transition",
      "platform work",
      "ageing workforce",
-     "demographic change"
+     "demographic change",
+     "chatgpt",
+     "ai agents",
+     "large language model",
+     "llm",
+     "llms",
+     "=robots",
+     "robotics",
+     "jobs of the future",
+     "future of work",
+     "white-collar jobs",
+     "entry-level jobs",
+     "graduate jobs"
+    ],
+    "de": [
+     "künstliche intelligenz",
+     "ki",
+     "automatisierung",
+     "chatgpt"
+    ],
+    "fr": [
+     "intelligence artificielle",
+     "ia",
+     "automatisation",
+     "chatgpt"
+    ],
+    "es": [
+     "inteligencia artificial",
+     "ia",
+     "automatización"
+    ],
+    "it": [
+     "intelligenza artificiale",
+     "ia"
+    ],
+    "el": [
+     "τεχνητή νοημοσύνη"
+    ],
+    "nl": [
+     "kunstmatige intelligentie",
+     "ai"
     ]
    }
   },
@@ -239,7 +466,34 @@
      "social policy",
      "labour inspectorate",
      "job placement",
-     "posting of workers"
+     "posting of workers",
+     "jobs",
+     "workers",
+     "workforce",
+     "job market",
+     "hiring",
+     "employers",
+     "entry-level"
+    ],
+    "de": [
+     "arbeitsmarkt",
+     "jugendarbeitslosigkeit",
+     "arbeitslosigkeit",
+     "jobs"
+    ],
+    "fr": [
+     "marché du travail",
+     "chômage",
+     "emploi des jeunes"
+    ],
+    "es": [
+     "mercado laboral",
+     "paro juvenil",
+     "desempleo"
+    ],
+    "it": [
+     "mercato del lavoro",
+     "disoccupazione"
     ]
    }
   },

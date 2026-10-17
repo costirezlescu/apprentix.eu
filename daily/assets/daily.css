@@ -9,6 +9,7 @@
   --p-research: #b3262f;
   --p-data: #56661a;
   --p-people: #a12f6d;
+  --p-debate: #3e4f66;
   --t-cedefop: #e2f0ee;
   --t-policy: #e6edf8;
   --t-agencies: #efe8f7;
@@ -16,22 +17,23 @@
   --t-research: #f8e6e7;
   --t-data: #eef1e1;
   --t-people: #f6e5ee;
+  --t-debate: #e8ecf2;
   --pillar: var(--ink);
   --tint: var(--sunken);
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     --p-cedefop: #5fd4c4; --p-policy: #8fb2f0; --p-agencies: #c3a2ee; --p-countries: #f0a56b;
-    --p-research: #f38b90; --p-data: #bccf6a; --p-people: #ee8fc0;
+    --p-research: #f38b90; --p-data: #bccf6a; --p-people: #ee8fc0; --p-debate: #a9bbd6;
     --t-cedefop: #14302c; --t-policy: #172238; --t-agencies: #251c33; --t-countries: #33241a;
-    --t-research: #351b1d; --t-data: #252b14; --t-people: #331a28;
+    --t-research: #351b1d; --t-data: #252b14; --t-people: #331a28; --t-debate: #1c232e;
   }
 }
 :root[data-theme="dark"] {
   --p-cedefop: #5fd4c4; --p-policy: #8fb2f0; --p-agencies: #c3a2ee; --p-countries: #f0a56b;
-  --p-research: #f38b90; --p-data: #bccf6a; --p-people: #ee8fc0;
+  --p-research: #f38b90; --p-data: #bccf6a; --p-people: #ee8fc0; --p-debate: #a9bbd6;
   --t-cedefop: #14302c; --t-policy: #172238; --t-agencies: #251c33; --t-countries: #33241a;
-  --t-research: #351b1d; --t-data: #252b14; --t-people: #331a28;
+  --t-research: #351b1d; --t-data: #252b14; --t-people: #331a28; --t-debate: #1c232e;
 }
 
 [data-pillar="cedefop"]   { --pillar: var(--p-cedefop);   --tint: var(--t-cedefop); }
@@ -41,6 +43,7 @@
 [data-pillar="research"]  { --pillar: var(--p-research);  --tint: var(--t-research); }
 [data-pillar="data"]      { --pillar: var(--p-data);      --tint: var(--t-data); }
 [data-pillar="people"]    { --pillar: var(--p-people);    --tint: var(--t-people); }
+[data-pillar="debate"]    { --pillar: var(--p-debate);    --tint: var(--t-debate); }
 
 /* ---------- Masthead ---------- */
 
@@ -133,6 +136,17 @@
 .is-hl .rb-name { font-weight: 700; }
 .is-hl .rb-bar { background: var(--pillar); }
 @media (max-width: 480px) { .rb-row { grid-template-columns: minmax(0, 6.6rem) minmax(0, 1fr) 4.6rem; gap: 8px; font-size: .8rem; } }
+
+/* ---------- Also today (front-page teasers) ---------- */
+
+.dc-teasers { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); gap: 0; margin-top: 18px;
+  border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.dc-tease { display: grid; gap: 4px; align-content: start; padding: 12px 16px 14px; border-left: 3px solid var(--pillar);
+  text-decoration: none; color: var(--ink); background: var(--surface); }
+.dc-tease + .dc-tease { border-top: 0; }
+.dc-tease .dc-kicker { margin: 0; }
+.dc-tease-hl { font-family: var(--display); font-weight: 600; font-size: 1.05rem; line-height: 1.22; }
+.dc-tease:hover .dc-tease-hl { color: var(--pillar); text-decoration: underline; text-decoration-thickness: 1px; }
 
 /* ---------- Sections ---------- */
 

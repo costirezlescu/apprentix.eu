@@ -1,0 +1,549 @@
+{
+ "_note": "Press, field and ideas feeds for Cedefop Daily, tested 17 October 2026 with the pipeline's own user agent (sources that refused it are left out). group: field = reporting from member states, practitioners and learners; press = international newspapers and magazines; tech = AI and technology desks; science = popular science and research-based journalism; ideas = debate and economics columns. Items are kept only if they touch education, training, skills or AI and work (see fetch.py, press_relevant). Copyright: the paper links, summarises in its own words and quotes at most a short phrase.",
+ "feeds": [
+  {
+   "group": "field",
+   "id": "guardian_fe",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/education/further-education/rss",
+   "country": "UK",
+   "lang": "en"
+  },
+  {
+   "group": "field",
+   "id": "guardian_appr",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/education/apprenticeships/rss",
+   "country": "UK",
+   "lang": "en"
+  },
+  {
+   "group": "field",
+   "id": "guardian_edu",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/education/rss",
+   "country": "UK",
+   "lang": "en"
+  },
+  {
+   "group": "field",
+   "id": "bbc_edu",
+   "name": "BBC News",
+   "url": "https://feeds.bbci.co.uk/news/education/rss.xml",
+   "country": "UK",
+   "lang": "en"
+  },
+  {
+   "group": "field",
+   "id": "irishtimes_edu",
+   "name": "The Irish Times",
+   "url": "https://www.irishtimes.com/arc/outboundfeeds/feed-education/?outputType=xml",
+   "country": "IE",
+   "lang": "en"
+  },
+  {
+   "group": "field",
+   "id": "rte",
+   "name": "RTÉ News",
+   "url": "https://www.rte.ie/feeds/rss/?index=/news/",
+   "country": "IE",
+   "lang": "en"
+  },
+  {
+   "group": "field",
+   "id": "dhz",
+   "name": "Deutsche Handwerks Zeitung",
+   "url": "https://www.deutsche-handwerks-zeitung.de/rss",
+   "country": "DE",
+   "lang": "de"
+  },
+  {
+   "group": "field",
+   "id": "handwerk_com",
+   "name": "handwerk.com",
+   "url": "https://www.handwerk.com/rss.xml",
+   "country": "DE",
+   "lang": "de"
+  },
+  {
+   "group": "field",
+   "id": "tagesschau",
+   "name": "tagesschau.de",
+   "url": "https://www.tagesschau.de/xml/rss2",
+   "country": "DE",
+   "lang": "de"
+  },
+  {
+   "group": "field",
+   "id": "spiegel_job",
+   "name": "Der Spiegel",
+   "url": "https://www.spiegel.de/karriere/index.rss",
+   "country": "DE",
+   "lang": "de"
+  },
+  {
+   "group": "field",
+   "id": "zeit_arbeit",
+   "name": "Die Zeit",
+   "url": "https://newsfeed.zeit.de/arbeit/index",
+   "country": "DE",
+   "lang": "de"
+  },
+  {
+   "group": "field",
+   "id": "derstandard",
+   "name": "Der Standard",
+   "url": "https://www.derstandard.at/rss",
+   "country": "AT",
+   "lang": "de"
+  },
+  {
+   "group": "field",
+   "id": "orf",
+   "name": "ORF",
+   "url": "https://rss.orf.at/news.xml",
+   "country": "AT",
+   "lang": "de"
+  },
+  {
+   "group": "field",
+   "id": "lemonde_edu",
+   "name": "Le Monde",
+   "url": "https://www.lemonde.fr/education/rss_full.xml",
+   "country": "FR",
+   "lang": "fr"
+  },
+  {
+   "group": "field",
+   "id": "lemonde_emploi",
+   "name": "Le Monde",
+   "url": "https://www.lemonde.fr/emploi/rss_full.xml",
+   "country": "FR",
+   "lang": "fr"
+  },
+  {
+   "group": "field",
+   "id": "letudiant",
+   "name": "L’Etudiant",
+   "url": "https://www.letudiant.fr/rss.html",
+   "country": "FR",
+   "lang": "fr"
+  },
+  {
+   "group": "field",
+   "id": "cafepeda",
+   "name": "Le Café pédagogique",
+   "url": "https://www.cafepedagogique.net/feed/",
+   "country": "FR",
+   "lang": "fr"
+  },
+  {
+   "group": "field",
+   "id": "francetvinfo_edu",
+   "name": "franceinfo",
+   "url": "https://www.francetvinfo.fr/societe/education.rss",
+   "country": "FR",
+   "lang": "fr"
+  },
+  {
+   "group": "field",
+   "id": "elpais_edu",
+   "name": "El País",
+   "url": "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/educacion/portada",
+   "country": "ES",
+   "lang": "es"
+  },
+  {
+   "group": "field",
+   "id": "eldiario_edu",
+   "name": "elDiario.es",
+   "url": "https://www.eldiario.es/rss/sociedad/educacion/",
+   "country": "ES",
+   "lang": "es"
+  },
+  {
+   "group": "field",
+   "id": "magisnet",
+   "name": "Magisterio",
+   "url": "https://www.magisnet.com/feed/",
+   "country": "ES",
+   "lang": "es"
+  },
+  {
+   "group": "field",
+   "id": "corriere_scuola",
+   "name": "Corriere della Sera",
+   "url": "https://www.corriere.it/rss/scuola.xml",
+   "country": "IT",
+   "lang": "it"
+  },
+  {
+   "group": "field",
+   "id": "orizzontescuola",
+   "name": "Orizzonte Scuola",
+   "url": "https://www.orizzontescuola.it/feed/",
+   "country": "IT",
+   "lang": "it"
+  },
+  {
+   "group": "field",
+   "id": "nos",
+   "name": "NOS",
+   "url": "https://feeds.nos.nl/nosnieuwsalgemeen",
+   "country": "NL",
+   "lang": "nl"
+  },
+  {
+   "group": "field",
+   "id": "esos",
+   "name": "ESOS",
+   "url": "https://www.esos.gr/rss.xml",
+   "country": "EL",
+   "lang": "el"
+  },
+  {
+   "group": "field",
+   "id": "alfavita",
+   "name": "Alfavita",
+   "url": "https://www.alfavita.gr/rss.xml",
+   "country": "EL",
+   "lang": "el"
+  },
+  {
+   "group": "field",
+   "id": "yle_en",
+   "name": "Yle News",
+   "url": "https://yle.fi/rss/t/18-34837/en",
+   "country": "FI",
+   "lang": "en"
+  },
+  {
+   "group": "field",
+   "id": "yle_fi",
+   "name": "Yle",
+   "url": "https://yle.fi/rss/uutiset/tuoreimmat",
+   "country": "FI",
+   "lang": "fi"
+  },
+  {
+   "group": "field",
+   "id": "dr_dk",
+   "name": "DR",
+   "url": "https://www.dr.dk/nyheder/service/feeds/allenyheder",
+   "country": "DK",
+   "lang": "da"
+  },
+  {
+   "group": "field",
+   "id": "svt",
+   "name": "SVT",
+   "url": "https://www.svt.se/nyheter/rss.xml",
+   "country": "SE",
+   "lang": "sv"
+  },
+  {
+   "group": "field",
+   "id": "thelocal_se",
+   "name": "The Local Sweden",
+   "url": "https://www.thelocal.se/feeds/rss.php",
+   "country": "SE",
+   "lang": "en"
+  },
+  {
+   "group": "field",
+   "id": "thelocal_de",
+   "name": "The Local Germany",
+   "url": "https://www.thelocal.de/feeds/rss.php",
+   "country": "DE",
+   "lang": "en"
+  },
+  {
+   "group": "field",
+   "id": "thelocal_fr",
+   "name": "The Local France",
+   "url": "https://www.thelocal.fr/feeds/rss.php",
+   "country": "FR",
+   "lang": "en"
+  },
+  {
+   "group": "field",
+   "id": "thelocal_it",
+   "name": "The Local Italy",
+   "url": "https://www.thelocal.it/feeds/rss.php",
+   "country": "IT",
+   "lang": "en"
+  },
+  {
+   "group": "field",
+   "id": "thelocal_at",
+   "name": "The Local Austria",
+   "url": "https://www.thelocal.at/feeds/rss.php",
+   "country": "AT",
+   "lang": "en"
+  },
+  {
+   "group": "field",
+   "id": "notesfrompoland",
+   "name": "Notes from Poland",
+   "url": "https://notesfrompoland.com/feed/",
+   "country": "PL",
+   "lang": "en"
+  },
+  {
+   "group": "field",
+   "id": "hotnews_ro",
+   "name": "HotNews.ro",
+   "url": "https://www.hotnews.ro/rss",
+   "country": "RO",
+   "lang": "ro"
+  },
+  {
+   "group": "field",
+   "id": "edupedu_ro",
+   "name": "Edupedu.ro",
+   "url": "https://www.edupedu.ro/feed/",
+   "country": "RO",
+   "lang": "ro"
+  },
+  {
+   "group": "field",
+   "id": "obessu",
+   "name": "OBESSU (school students’ union)",
+   "url": "https://obessu.org/feed/",
+   "country": "EU",
+   "lang": "en"
+  },
+  {
+   "group": "press",
+   "id": "guardian_work",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/money/work-and-careers/rss",
+   "country": "UK",
+   "lang": "en"
+  },
+  {
+   "group": "press",
+   "id": "nyt_edu",
+   "name": "The New York Times",
+   "url": "https://rss.nytimes.com/services/xml/rss/nyt/Education.xml",
+   "country": "US",
+   "lang": "en"
+  },
+  {
+   "group": "press",
+   "id": "economist_intl",
+   "name": "The Economist",
+   "url": "https://www.economist.com/international/rss.xml",
+   "country": "INT",
+   "lang": "en"
+  },
+  {
+   "group": "press",
+   "id": "economist_fin",
+   "name": "The Economist",
+   "url": "https://www.economist.com/finance-and-economics/rss.xml",
+   "country": "INT",
+   "lang": "en"
+  },
+  {
+   "group": "press",
+   "id": "economist_biz",
+   "name": "The Economist",
+   "url": "https://www.economist.com/business/rss.xml",
+   "country": "INT",
+   "lang": "en"
+  },
+  {
+   "group": "press",
+   "id": "ft_work",
+   "name": "Financial Times",
+   "url": "https://www.ft.com/work-careers?format=rss",
+   "country": "INT",
+   "lang": "en"
+  },
+  {
+   "group": "press",
+   "id": "politico_eu",
+   "name": "Politico Europe",
+   "url": "https://www.politico.eu/feed/",
+   "country": "EU",
+   "lang": "en"
+  },
+  {
+   "group": "press",
+   "id": "zeit_campus",
+   "name": "Zeit Campus",
+   "url": "https://newsfeed.zeit.de/campus/index",
+   "country": "DE",
+   "lang": "de"
+  },
+  {
+   "group": "press",
+   "id": "faz_beruf",
+   "name": "Frankfurter Allgemeine",
+   "url": "https://www.faz.net/rss/aktuell/karriere-hochschule/",
+   "country": "DE",
+   "lang": "de"
+  },
+  {
+   "group": "press",
+   "id": "fastcompany_work",
+   "name": "Fast Company",
+   "url": "https://www.fastcompany.com/work-life/rss",
+   "country": "US",
+   "lang": "en"
+  },
+  {
+   "group": "tech",
+   "id": "guardian_ai",
+   "name": "The Guardian",
+   "url": "https://www.theguardian.com/technology/artificialintelligenceai/rss",
+   "country": "UK",
+   "lang": "en"
+  },
+  {
+   "group": "tech",
+   "id": "nyt_tech",
+   "name": "The New York Times",
+   "url": "https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml",
+   "country": "US",
+   "lang": "en"
+  },
+  {
+   "group": "tech",
+   "id": "mittr",
+   "name": "MIT Technology Review",
+   "url": "https://www.technologyreview.com/feed/",
+   "country": "US",
+   "lang": "en"
+  },
+  {
+   "group": "tech",
+   "id": "wired_ai",
+   "name": "Wired",
+   "url": "https://www.wired.com/feed/tag/ai/latest/rss",
+   "country": "US",
+   "lang": "en"
+  },
+  {
+   "group": "tech",
+   "id": "verge_ai",
+   "name": "The Verge",
+   "url": "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml",
+   "country": "US",
+   "lang": "en"
+  },
+  {
+   "group": "tech",
+   "id": "ars",
+   "name": "Ars Technica",
+   "url": "https://feeds.arstechnica.com/arstechnica/index",
+   "country": "US",
+   "lang": "en"
+  },
+  {
+   "group": "tech",
+   "id": "bbc_tech",
+   "name": "BBC News",
+   "url": "https://feeds.bbci.co.uk/news/technology/rss.xml",
+   "country": "UK",
+   "lang": "en"
+  },
+  {
+   "group": "tech",
+   "id": "edsurge",
+   "name": "EdSurge",
+   "url": "https://www.edsurge.com/articles_rss",
+   "country": "US",
+   "lang": "en"
+  },
+  {
+   "group": "tech",
+   "id": "bloomberg_tech",
+   "name": "Bloomberg",
+   "url": "https://feeds.bloomberg.com/technology/news.rss",
+   "country": "INT",
+   "lang": "en"
+  },
+  {
+   "group": "science",
+   "id": "conv_eu",
+   "name": "The Conversation",
+   "url": "https://theconversation.com/europe/articles.atom",
+   "country": "EU",
+   "lang": "en"
+  },
+  {
+   "group": "science",
+   "id": "conv_global",
+   "name": "The Conversation",
+   "url": "https://theconversation.com/global/articles.atom",
+   "country": "INT",
+   "lang": "en"
+  },
+  {
+   "group": "science",
+   "id": "conv_edu_uk",
+   "name": "The Conversation",
+   "url": "https://theconversation.com/uk/education/articles.atom",
+   "country": "UK",
+   "lang": "en"
+  },
+  {
+   "group": "science",
+   "id": "nature",
+   "name": "Nature",
+   "url": "https://www.nature.com/nature.rss",
+   "country": "INT",
+   "lang": "en"
+  },
+  {
+   "group": "science",
+   "id": "science_news",
+   "name": "Science",
+   "url": "https://www.science.org/rss/news_current.xml",
+   "country": "INT",
+   "lang": "en"
+  },
+  {
+   "group": "science",
+   "id": "newscientist",
+   "name": "New Scientist",
+   "url": "https://www.newscientist.com/feed/home/",
+   "country": "INT",
+   "lang": "en"
+  },
+  {
+   "group": "science",
+   "id": "knowable",
+   "name": "Knowable Magazine",
+   "url": "https://knowablemagazine.org/rss",
+   "country": "US",
+   "lang": "en"
+  },
+  {
+   "group": "science",
+   "id": "aeon",
+   "name": "Aeon",
+   "url": "https://aeon.co/feed.rss",
+   "country": "INT",
+   "lang": "en"
+  },
+  {
+   "group": "ideas",
+   "id": "socialeurope",
+   "name": "Social Europe",
+   "url": "https://www.socialeurope.eu/feed",
+   "country": "EU",
+   "lang": "en"
+  },
+  {
+   "group": "ideas",
+   "id": "voxeu",
+   "name": "VoxEU (CEPR)",
+   "url": "https://cepr.org/rss/vox-content",
+   "country": "EU",
+   "lang": "en"
+  }
+ ]
+}

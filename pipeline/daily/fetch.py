@@ -121,9 +121,10 @@ _KW: list[tuple[str, re.Pattern]] = []
 for _area, _spec in TOPICS["areas"].items():
     for _words in _spec["keywords"].values():
         for _w in _words:
-            n = _norm(_w).strip()
+            exact = _w.startswith("=")
+            n = _norm(_w.lstrip("=")).strip()
             if n:
-                tail = r"(?!\w)" if len(n) <= 4 else ""
+                tail = r"(?!\w)" if exact or len(n) <= 4 else ""
                 _KW.append((_area, re.compile(r"(?<!\w)" + re.escape(n) + tail)))
 
 
@@ -131,7 +132,8 @@ def tag(*texts: str) -> tuple[list[str], list[str]]:
     t = _norm(" ".join(x or "" for x in texts))
     areas = sorted({a for a, rx in _KW if rx.search(t)})
     low = " ".join(x or "" for x in texts).lower()
-    hooks = [h for h in TOPICS["policy_hooks"] if h.split(" (")[0].lower() in low]
+    hooks = [h for h in TOPICS["policy_hooks"]
+             if re.search(r"(?<!\w)" + re.escape(h.split(" (")[0].lower()) + r"(?!\w)", low)]
     return areas, hooks
 
 
@@ -570,6 +572,96 @@ def eurostat(start, end) -> list[dict]:
     return out
 
 
+# ---------------------------------------------------- press and the field --
+
+PRESS = json.loads((HERE / "press.json").read_text("utf-8"))["feeds"]
+PRESS_DAYS = 8            # "current": the last eight days
+PRESS_PAGES = 10          # article pages read per feed, at most (politeness)
+EDU = {"vet_policy", "apprenticeships", "adult_learning", "qualifications", "skills_intelligence"}
+
+
+def press_relevant(areas: list[str]) -> bool:
+    """Press is noisy: keep an item only if it touches education and training directly,
+    or AI/technology together with work and jobs."""
+    a = set(areas)
+    return bool(a & EDU) or {"future_of_work", "labour_market"} <= a
+
+
+def _feed_entries(body: bytes) -> list[dict]:
+    """RSS <item> or Atom <entry> → title, link, date, summary."""
+    root = ET.fromstring(body)
+    out = []
+    for el in root.iter():
+        tag = el.tag.split("}")[-1]
+        if tag not in ("item", "entry"):
+            continue
+        f = {c.tag.split("}")[-1]: c for c in el}
+        link = (f["link"].text or f["link"].get("href") or "") if "link" in f else ""
+        if not link.strip() and "link" in f:
+            link = f["link"].get("href", "")
+        summary = next((f[k].text for k in ("description", "summary", "content", "encoded") if k in f and f[k].text), "")
+        date = next((f[k].text for k in ("pubDate", "published", "updated", "date") if k in f and f[k].text), None)
+        out.append({"title": (f["title"].text if "title" in f else "") or "", "link": link.strip(),
+                    "date": _date(date), "summary": summary})
+    return out
+
+
+def _page_text(source: str, url: str) -> str:
+    """The article's openly served paragraphs, for summarising (never republished).
+    A paywall simply leaves the teaser; nothing is worked around."""
+    body = get(f"{source}_page", url)
+    if body is None:
+        return ""
+    page = body.decode("utf-8", "replace")
+    page = re.sub(r"<(script|style|nav|header|footer|aside|figure|form)\b.*?</\1>", " ", page, flags=re.S | re.I)
+    art = re.search(r"<article\b.*?</article>", page, re.S | re.I)
+    paras = [_clean(p) for p in re.findall(r"<p\b[^>]*>(.*?)</p>", art.group(0) if art else page, re.S)]
+    return " ".join(p for p in paras if len(p) > 60)[:8000]
+
+
+def _press_feed(f: dict, lo: dt.date, end: dt.date) -> list[dict]:
+    body = get(f["id"], f["url"])
+    if body is None:
+        return []
+    try:
+        entries = _feed_entries(body)
+    except ET.ParseError as e:
+        STATUS[f["id"]] = f"failed: not XML ({e})"
+        return []
+    out, pages = [], 0
+    for x in entries:
+        if not x["link"] or not within(x["date"], lo, end):
+            continue
+        areas, _ = tag(x["title"], _clean(x["summary"]))
+        if not press_relevant(areas):
+            continue
+        text = ""
+        if pages < PRESS_PAGES:
+            text, pages = _page_text(f["id"], x["link"]), pages + 1
+        it = item(f["id"], "press" if f["group"] != "field" else "4", f["group"], x["title"], x["link"],
+                  x["date"], x["summary"], text or x["summary"], outlet=f["name"], country=f["country"],
+                  language=f["lang"], group=f["group"])
+        if press_relevant(it["work_areas"]):
+            out.append(it)
+    return out
+
+
+def press(edition: dt.date) -> list[dict]:
+    from concurrent.futures import ThreadPoolExecutor
+    end = min(edition, dt.date.today())
+    lo = end - dt.timedelta(days=PRESS_DAYS)
+    with ThreadPoolExecutor(8) as ex:
+        batches = list(ex.map(lambda f: _press_feed(f, lo, end), PRESS))
+    seen, out = set(), []
+    for b in batches:
+        for i in b:
+            key = re.sub(r"\W+", " ", i["title"].lower()).strip()
+            if key not in seen:        # the same story in two feeds of one outlet
+                seen.add(key)
+                out.append(i)
+    return out
+
+
 # -------------------------------------------------------------- apprentix --
 
 SITE = "https://apprentix.eu/"
@@ -591,7 +683,7 @@ def apprentix() -> list[dict]:
                         None, i["finding"], text, insight_id=i["id"]))
     for sid, p in rd("portraits/portraits.json")["portraits"].items():
         out.append(item("apprentix", "data", "portrait", f"{p['name']} ({p['country']})",
-                        f"{SITE}pages/countries/{p['country_code'].lower()}.html#scheme-{sid}", None,
+                        f"{SITE}pages/countries/{ {'GR': 'el'}.get(p['country_code'], p['country_code'].lower()) }.html#scheme-{sid}", None,
                         " ".join(p["story"]), " ".join(p["story"]), scheme=sid,
                         country_code=p["country_code"], html=p["html"], facts=p["facts"],
                         publisher="Cedefop’s European database on apprenticeship schemes"))
@@ -616,6 +708,10 @@ def apprentix() -> list[dict]:
                     meta["description"], meta["description"] + " " + meta["source"].get("caveat", ""),
                     regions=regions, citation=meta["source"].get("citation"),
                     licence=meta["source"].get("licence_id")))
+    for ind in rd("indicators/index.json")["indicators"]:
+        out.append(item("apprentix", "data", "indicator", ind["title"],
+                        f"{SITE}pages/indicators.html?id={ind['id']}", None, ind.get("description", "")[:400],
+                        indicator=ind["id"], publisher=(ind.get("provenance") or {}).get("publisher")))
     duel = rd("duel/countries.json")
     codes = sorted(duel.get("countries", duel).keys()) if isinstance(duel, dict) else []
     out.append(item("apprentix", "data", "tool", "Country vs country", f"{SITE}pages/duel.html",
@@ -668,6 +764,7 @@ def main(argv: list[str]) -> int:
                      ("EU-OSHA", lambda: euosha(start, end)),
                      ("Agency listings", lambda: listings(start, end)),
                      ("Eurostat", lambda: eurostat(start, end)),
+                     ("Press and the field", lambda: press(edition)),
                      ("Apprentix", apprentix)]:
         try:
             got = fn()
@@ -686,6 +783,13 @@ def main(argv: list[str]) -> int:
            .replace(microsecond=0).isoformat(), "window": [start.isoformat(), end.isoformat()],
            "sources": STATUS, "count": len(pool), "items": pool}
     path = POOL / f"{edition}.json"
+    if path.exists():
+        # An edition's pool only grows: feeds roll over (the Official Journal keeps 100 items),
+        # and a story already written must keep its source. Fresh copies replace old ones.
+        old = json.loads(path.read_text("utf-8"))
+        kept = [i for i in old["items"] if i["id"] not in seen]
+        pool += kept
+        out.update(count=len(pool), items=pool, carried_over=len(kept))
     write_json(path, out)
     print(f"Wrote {path.relative_to(ROOT)}: {len(pool)} items; "
           f"{sum(1 for i in pool if i['work_areas'])} tagged with a work area")

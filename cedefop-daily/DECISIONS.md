@@ -36,6 +36,34 @@
   Each has a dark-mode variant (`daily/assets/daily.css`).
 - **Pools are not committed** (about 1 MB a day). Each edition publishes `daily/<date>/sources.json` with the items it used.
 
+## Beyond the Brussels bubble (decided 17 October 2026)
+
+The first version read mostly from the top: institutions, agencies and Cedefop itself. Asked for: a paper that keeps staff at the edge of their field and shows **how things actually are on the ground**, plus the wider debate in international newspapers, magazines and popular science, especially how AI is changing work and skills.
+
+- **From the field** (orange) leads the paper after At Cedefop. It draws on:
+  - national and local press in the member states;
+  - trade press, such as the Deutsche Handwerks Zeitung;
+  - teachers' outlets (Café pédagogique, ESOS);
+  - a school-students' union (OBESSU);
+  - The Local's English editions;
+  - UK further-education reporting.
+
+  Stories are summarised in English and labelled "translated from …". Apprentix's portraits and policy pulse sit in this section too.
+- **The wider debate** (slate, `#3e4f66`) covers international newspapers and magazines, AI and technology desks, popular science and economics columns (Social Europe, VoxEU).
+- **"Also today"** is a row of four teasers under the lead, linking into the paper.
+- **The source list is `pipeline/daily/press.json`.** It has 68 feeds, all tested with the pipeline's own user agent, and those that refused it are left out.
+- **Relevance:** an item must touch education, training and skills directly, or AI together with work and jobs (`press_relevant`). It must also be from the last eight days.
+- **Multilingual keywords** were added for DE, FR, ES, IT, NL, EL, DA, SV, FI, RO, PL and PT.
+- **Copyright and privacy rules for press stories, enforced by `check.py`:**
+  - stories are summarised in the paper's own words, with a link;
+  - quotes from the press are at most 12 words;
+  - subscription articles are marked;
+  - private individuals are not named, and a possible personal name raises a warning.
+- **Process fixes this round:**
+  - links in an edition now name a pool item (`{"item": id}`), so the writer never types a URL. A first draft did type four press URLs from memory, and all four were wrong.
+  - an edition's pool only grows: a refetch merges rather than replaces, because the Official Journal feed rolls over after 100 items.
+  - the checker also verifies in-page anchors.
+
 ## How it works
 
 ```
@@ -80,6 +108,10 @@ python3 -m pipeline.daily.check 2026-10-19          # exit 1 on any failure
 
 1. Automate the writing step. It needs an LLM API key in CI and the rules from BLUEPRINT §6 in the prompt. Fetch, check and render are already scripted.
 2. A weekday GitHub Action that runs fetch, write, check and render, and commits only if the check passes. Like Apprentix's weekly refresh, the push deploys.
-3. Have your say consultations. The API needs a `feedbackStatus` parameter.
-4. The Parliament feed, as above. EPALE and the EP Think Tank need current addresses.
-5. The use-by rules. The first edition warns about four items 13–19 days old (catch-up). Later editions should keep within the limits.
+3. Press coverage to widen:
+   - more member states (CZ, HU, SK, BG, HR, SI, PT, the Baltics);
+   - more practitioner sources (EPALE, Education International, the European Apprentices Network, all of which refused scripts or have moved);
+   - a weekly "voices" box with learners, teachers and employers, quoted from published reporting.
+4. Have your say consultations. The API needs a `feedbackStatus` parameter.
+5. The Parliament feed, as above. EPALE and the EP Think Tank need current addresses.
+6. The use-by rules. The first edition warns about four items 13–19 days old (catch-up). Later editions should keep within the limits.

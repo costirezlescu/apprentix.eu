@@ -27,12 +27,18 @@ import unicodedata
 from ..common import ROOT
 from .render import DAILY, SITE, connection
 
-USE_BY = {"cedefop": 7, "policy": 3, "agencies": 10, "countries": 30, "research": 30, "data": 365, "people": 30}
+USE_BY = {"cedefop": 7, "policy": 3, "agencies": 10, "countries": 30, "field": 8, "debate": 8, "research": 30,
+          "data": 365, "people": 30}
 BANNED = ["landmark", "ambitious", "controversial", "groundbreaking", "game-changer", "game changer",
           "unprecedented", "historic", "revolutionary", "world-class", "cutting-edge", "we ", "our "]
 SENSITIVE = ["olaf", "audit", "ombudsman", "litigation", "lawsuit", "court of justice ruling", "died", "death of",
              "disciplinary", "harassment", "fraud investigation", "security incident"]
 DIRECTOR = "Siebel"
+ORG_WORDS = {"Social", "Insurance", "Policy", "Markets", "Employers", "Summit", "Alliance", "Institute", "Centre",
+             "Center", "Union", "Council", "Commission", "European", "German", "French", "Spanish", "Greek", "Italian",
+             "Irish", "British", "Ministry", "Education", "Agency", "Authority", "Foundation", "Association",
+             "Parliament", "Office", "School", "Schools", "University", "College", "Survey", "Forum", "Network",
+             "Board", "Fund", "Bank", "Organisation", "Organization", "Federation", "Chamber", "Trade", "Labour"}
 ALLOWED_EXTERNAL = ("https://fonts.googleapis.com/", "https://github.com/costirezlescu/apprentix.eu/issues")
 
 
@@ -73,13 +79,18 @@ def main(argv: list[str]) -> int:
         parts = [json.dumps(P[i], ensure_ascii=False) for i in ids if i in P]
         parts += [json.dumps(i, ensure_ascii=False) for i in pool["items"] if i["url"] in urls]
         text = norm(" ".join(parts))
-        return text + " " + " ".join(numbers(text))     # "1,380" in a source matches "1,380" or "1380"
+        decimal = re.sub(r"(\d),(\d{1,2})(?!\d)", r"\1.\2", text)     # "5,6 Prozent" → 5.6
+        return text + " " + " ".join(numbers(text)) + " " + " ".join(numbers(decimal))
 
     stories = []      # (where, pillar, headline, texts, item ids, urls, areas)
 
     def add(where, pillar, c, texts):
         ids = [x for x in [c.get("item"), c.get("connection_item"), *c.get("also", [])] if x]
-        urls = [l["url"] for l in c.get("links", [])] + ([c["url"]] if c.get("url") else [])
+        urls = [l["url"] for l in c.get("links", []) if l.get("url")] + ([c["url"]] if c.get("url") else [])
+        ids_l = [l["item"] for l in c.get("links", []) if l.get("item")]
+        for i in ids_l:
+            if i not in P:
+                fails.append(f"{where}: linked item {i} is not in the pool")
         stories.append((where, pillar, c.get("headline", ""), texts, ids, urls, c))
 
     lead = ed["lead"]
@@ -100,7 +111,10 @@ def main(argv: list[str]) -> int:
                     if i and i not in P:
                         fails.append(f"{where}: item {i} is not in the pool")
                 for l in b.get("links", []):
-                    if not url_ok(l["url"]):
+                    if l.get("item"):
+                        if l["item"] not in P:
+                            fails.append(f"{where}: linked item {l['item']} is not in the pool")
+                    elif not url_ok(l["url"]):
                         fails.append(f"{where}: URL not from the pool: {l['url']}")
                 for i, note in b.get("notes", {}).items():
                     src = sources_text([i], [])
@@ -127,9 +141,18 @@ def main(argv: list[str]) -> int:
         for n in numbers(body):
             if n not in src and n not in date:
                 fails.append(f"{where}: number {n} not found in its sources (“{hl or body[:50]}”)")
+        press = [P[i] for i in ids if P[i]["circle"] in ("press", "4")]
         for q in re.findall(r"“([^”]+)”", body):
             if norm(q).strip(" .,") not in src:
                 fails.append(f"{where}: quotation not found verbatim in its sources: “{q}”")
+            if press and len(q.split()) > 12:
+                fails.append(f"{where}: quotation from the press is longer than 12 words (copyright): “{q[:40]}…”")
+        if press:
+            # Private individuals in press stories are not named: flag capitalised name pairs for a look.
+            allowed = {w for i in press for w in re.findall(r"[A-ZÀ-Ž][\wÀ-ž’'-]+", i["meta"].get("outlet", ""))}
+            for m in re.finditer(r"(?<![.!?] )(?<!^)\b([A-ZÀ-Ž][a-zà-ž]+) ([A-ZÀ-Ž][a-zà-ž]+)\b", " ".join(texts[1:])):
+                if not ({m.group(1), m.group(2)} & (allowed | ORG_WORDS)):
+                    warns.append(f"{where}: possible personal name in a press story: “{m.group(0)}” (public role only)")
         low = " " + norm(body) + " "
         for w in BANNED:
             if f" {w}" in low and not any(f" {w}" in " " + norm(q) for q in re.findall(r"“([^”]+)”", body)):
@@ -143,7 +166,7 @@ def main(argv: list[str]) -> int:
                 warns.append(f"{where}: headline is {len(hl)} characters: {hl}")
             if DIRECTOR in hl:
                 warns.append(f"{where}: the Director is in a headline")
-        if c.get("item") and c.get("headline") and where != "lead" and "type" not in c or c.get("type") == "card":
+        if c.get("item") in P and (c.get("headline") and where != "lead" and "type" not in c or c.get("type") == "card"):
             try:
                 if not connection(P[c["item"]], c.get("areas")):
                     fails.append(f"{where}: no connection line can be generated (no work area): out")
@@ -176,8 +199,12 @@ def main(argv: list[str]) -> int:
 
     page = DAILY / date / "index.html"
     if page.exists():
-        for u in re.findall(r'<a\b[^>]*href="([^"]+)"', page.read_text("utf-8")):
+        html_text = page.read_text("utf-8")
+        ids = set(re.findall(r'\bid="([^"]+)"', html_text))
+        for u in re.findall(r'<a\b[^>]*href="([^"]+)"', html_text):
             u = u.replace("&amp;", "&")
+            if u.startswith("#") and u[1:] not in ids:
+                fails.append(f"page: link to a missing anchor: {u}")
             if u.startswith(("#", "/")) and not u.startswith("//"):
                 if u.startswith("/") and not (ROOT / u.split("?")[0].split("#")[0].lstrip("/")).exists() \
                         and not u.endswith("/"):

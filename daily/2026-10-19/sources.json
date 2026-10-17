@@ -1,6 +1,6 @@
 {
  "edition": "2026-10-19",
- "fetched_at": "2026-10-17T17:28:47+00:00",
+ "fetched_at": "2026-10-17T18:24:57+00:00",
  "sources_status": {
   "cedefop_rss": "ok",
   "cellar_recent": "ok",
@@ -25,6 +25,96 @@
   "unevoc": "ok",
   "eurostat_updates": "ok",
   "eurostat_api": "ok",
+  "rte": "ok",
+  "guardian_edu": "ok",
+  "bbc_edu": "ok",
+  "irishtimes_edu": "ok",
+  "handwerk_com": "ok",
+  "guardian_fe": "ok",
+  "guardian_appr": "ok",
+  "guardian_edu_page": "ok",
+  "spiegel_job": "ok",
+  "zeit_arbeit": "ok",
+  "tagesschau": "ok",
+  "handwerk_com_page": "ok",
+  "guardian_fe_page": "ok",
+  "guardian_appr_page": "ok",
+  "zeit_arbeit_page": "failed: HTTP 403 for https://www.zeit.de/arbeit/2026-10/ki-arbeitsmarkt-auswirkungen-deutschland-berufseinstieg",
+  "derstandard": "ok",
+  "orf": "ok",
+  "lemonde_edu": "ok",
+  "lemonde_emploi": "ok",
+  "letudiant": "ok",
+  "lemonde_emploi_page": "ok",
+  "lemonde_edu_page": "ok",
+  "elpais_edu": "ok",
+  "francetvinfo_edu": "ok",
+  "derstandard_page": "ok",
+  "cafepeda": "ok",
+  "eldiario_edu": "ok",
+  "orizzontescuola": "ok",
+  "dhz": "ok",
+  "corriere_scuola": "ok",
+  "francetvinfo_edu_page": "ok",
+  "orizzontescuola_page": "failed: HTTP 403 for https://www.orizzontescuola.it/potenzia-le-tue-competenze-informatiche-da-esperto-di-cyberbullismo-alluso-di-workspace-di-google-dalle-competenze-base-al-cad-ed-esperto-dpo/",
+  "nos": "ok",
+  "cafepeda_page": "ok",
+  "magisnet": "ok",
+  "esos": "ok",
+  "dhz_page": "ok",
+  "alfavita": "ok",
+  "yle_en": "ok",
+  "yle_fi": "ok",
+  "dr_dk": "ok",
+  "esos_page": "ok",
+  "svt": "ok",
+  "magisnet_page": "ok",
+  "thelocal_de": "ok",
+  "thelocal_fr": "ok",
+  "thelocal_se": "ok",
+  "thelocal_it": "ok",
+  "notesfrompoland": "ok",
+  "thelocal_at": "ok",
+  "hotnews_ro": "ok",
+  "obessu": "ok",
+  "nyt_edu": "ok",
+  "economist_intl": "ok",
+  "economist_fin": "ok",
+  "guardian_work": "ok",
+  "economist_biz": "ok",
+  "zeit_campus": "ok",
+  "politico_eu": "ok",
+  "ft_work": "ok",
+  "faz_beruf": "ok",
+  "guardian_work_page": "ok",
+  "ft_work_page": "failed: HTTP 403 for https://www.ft.com/content/3a3d3eb8-ff86-418e-9704-c1ff601718c4?syn-25a6b1a6=1",
+  "fastcompany_work": "ok",
+  "edupedu_ro": "ok",
+  "guardian_ai": "ok",
+  "nyt_tech": "ok",
+  "politico_eu_page": "ok",
+  "mittr": "ok",
+  "wired_ai": "ok",
+  "guardian_ai_page": "ok",
+  "ars": "ok",
+  "bbc_tech": "ok",
+  "fastcompany_work_page": "ok",
+  "verge_ai": "ok",
+  "bloomberg_tech": "ok",
+  "bbc_tech_page": "ok",
+  "conv_global": "ok",
+  "conv_eu": "ok",
+  "edsurge": "ok",
+  "conv_edu_uk": "ok",
+  "science_news": "ok",
+  "nature": "ok",
+  "aeon": "ok",
+  "newscientist": "ok",
+  "socialeurope": "ok",
+  "knowable": "ok",
+  "voxeu": "ok",
+  "voxeu_page": "failed: HTTP 403 for https://cepr.org/voxeu/columns/cost-job-loss-carbon-intensive-sectors-evidence-germany",
+  "socialeurope_page": "ok",
   "apprentix": "ok"
  },
  "items": [
@@ -143,6 +233,7 @@
    "work_areas": [
     "future_of_work",
     "qualifications",
+    "teachers_trainers",
     "vet_policy"
    ]
   },
@@ -275,62 +366,6 @@
    ]
   },
   {
-   "id": "eb5622cfc8",
-   "source": "eurlex_oj_l",
-   "kind": "act",
-   "title": "Council Decision of 9 October 2026 replacing an alternate member of the Management Board of the European Foundation for the improvement of living and working conditions for Denmark",
-   "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026D05382",
-   "date": "2026-10-14",
-   "work_areas": [
-    "governance"
-   ]
-  },
-  {
-   "id": "2171437d86",
-   "source": "eurlex_oj_l",
-   "kind": "act",
-   "title": "Council Decision of 9 October 2026 replacing a member of the Management Board of the European Foundation for the improvement of living and working conditions for Denmark",
-   "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026D05381",
-   "date": "2026-10-14",
-   "work_areas": [
-    "governance"
-   ]
-  },
-  {
-   "id": "19428d7afd",
-   "source": "eurlex_oj_l",
-   "kind": "act",
-   "title": "Council Decision of 1 October 2026 replacing a member of the Management Board of the European Agency for Safety and Health at Work for Estonia",
-   "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026D05201",
-   "date": "2026-10-06",
-   "work_areas": [
-    "governance"
-   ]
-  },
-  {
-   "id": "ec2765c3c8",
-   "source": "eurlex_oj_l",
-   "kind": "act",
-   "title": "Council Decision of 1 October 2026 replacing a member of the Management Board of the European Agency for Safety and Health at Work for Cyprus",
-   "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026D05200",
-   "date": "2026-10-06",
-   "work_areas": [
-    "governance"
-   ]
-  },
-  {
-   "id": "fcdce614ae",
-   "source": "eurlex_oj_l",
-   "kind": "act",
-   "title": "Council Decision of 24 September 2026 replacing a member of the Management Board of the European Centre for the Development of Vocational Training (Cedefop) for Bulgaria",
-   "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026D05026",
-   "date": "2026-09-30",
-   "work_areas": [
-    "governance",
-    "vet_policy"
-   ]
-  },
-  {
    "id": "5b093e53af",
    "source": "euosha",
    "kind": "news",
@@ -369,6 +404,8 @@
     "apprenticeships",
     "future_of_work",
     "governance",
+    "labour_market",
+    "skills_intelligence",
     "vet_policy"
    ]
   },
@@ -401,6 +438,219 @@
    "url": "https://ec.europa.eu/eurostat/databrowser/view/edat_lfse_14/default/table?lang=en",
    "date": "2026-09-10",
    "work_areas": []
+  },
+  {
+   "id": "c12c2df1b5",
+   "source": "guardian_fe",
+   "kind": "field",
+   "title": "Create new pre-apprenticeship scheme to close youth unemployment gap, says Milburn",
+   "url": "https://www.theguardian.com/education/2026/oct/10/pre-apprenticeship-scheme-landmark-alan-milburn-youth-jobs-crisis-report",
+   "date": "2026-10-10",
+   "work_areas": [
+    "apprenticeships",
+    "inclusion",
+    "labour_market",
+    "qualifications",
+    "vet_policy"
+   ]
+  },
+  {
+   "id": "0ee099b12e",
+   "source": "guardian_appr",
+   "kind": "field",
+   "title": "Plan to make firms pay more to train older workers than youth apprentices in England",
+   "url": "https://www.theguardian.com/business/2026/oct/17/make-firms-pay-more-train-older-workers-youth-apprentices-england",
+   "date": "2026-10-17",
+   "work_areas": [
+    "apprenticeships",
+    "inclusion",
+    "labour_market"
+   ]
+  },
+  {
+   "id": "db8e970cbd",
+   "source": "dhz",
+   "kind": "field",
+   "title": "Azubis erleben häufiger Gewalt als Studierende",
+   "url": "https://www.deutsche-handwerks-zeitung.de/azubis-erleben-haeufiger-gewalt-als-studierende-384972/",
+   "date": "2026-10-13",
+   "work_areas": [
+    "apprenticeships",
+    "vet_policy"
+   ]
+  },
+  {
+   "id": "bc68abdec5",
+   "source": "dhz",
+   "kind": "field",
+   "title": "Mindestausbildungsvergütung: So hoch ist sie 2027",
+   "url": "https://www.deutsche-handwerks-zeitung.de/mindestausbildungsverguetung-azubi-mindestlohn-2027-144611/",
+   "date": "2026-10-12",
+   "work_areas": [
+    "apprenticeships",
+    "skills_intelligence",
+    "vet_policy"
+   ]
+  },
+  {
+   "id": "9592974999",
+   "source": "dhz",
+   "kind": "field",
+   "title": "Weltmeister mit 18: Der Zimmerer, der alles gewann",
+   "url": "https://www.deutsche-handwerks-zeitung.de/weltmeister-mit-18-der-zimmerer-der-alles-gewann-384661/",
+   "date": "2026-10-12",
+   "work_areas": [
+    "adult_learning",
+    "apprenticeships",
+    "vet_policy"
+   ]
+  },
+  {
+   "id": "a039141933",
+   "source": "lemonde_emploi",
+   "kind": "field",
+   "title": "« Oui, on va perdre certains contrats » : à Montréal, le marché de l’emploi des jeunes diplômés bouleversé par l’IA",
+   "url": "https://www.lemonde.fr/le-monde-et-vous/article/2026/10/09/oui-on-va-perdre-certains-contrats-a-montreal-le-marche-de-l-emploi-des-jeunes-diplomes-bouleverse-par-l-ia_6790540_6065879.html",
+   "date": "2026-10-09",
+   "work_areas": [
+    "future_of_work",
+    "labour_market"
+   ]
+  },
+  {
+   "id": "c10fecd9a6",
+   "source": "cafepeda",
+   "kind": "field",
+   "title": "Innover en lycée professionnel : un dispositif inventé au fil de l’eau",
+   "url": "https://www.cafepedagogique.net/2026/10/16/innover-en-lycee-professionnel-un-dispositif-invente-au-fil-de-leau/",
+   "date": "2026-10-16",
+   "work_areas": [
+    "inclusion",
+    "teachers_trainers",
+    "vet_policy"
+   ]
+  },
+  {
+   "id": "0a9b1c5532",
+   "source": "magisnet",
+   "kind": "field",
+   "title": "ACADE alerta del impacto de las nuevas regulaciones sobre la FP y la Educación Infantil",
+   "url": "https://www.magisnet.com/2026/10/acade-alerta-del-impacto-de-las-nuevas-regulaciones-sobre-la-fp-y-la-educacion-infantil/",
+   "date": "2026-10-16",
+   "work_areas": [
+    "vet_policy"
+   ]
+  },
+  {
+   "id": "2d89b46109",
+   "source": "esos",
+   "kind": "field",
+   "title": "Σ. Ζαχαράκη από το Δουβλίνο: Νέο Λύκειο, Εθνικό Απολυτήριο και τεχνητή νοημοσύνη στο επίκεντρο των αλλαγών στην Παιδεία",
+   "url": "https://www.esos.gr/arthra/101896/s-zaharaki-apo-doyblino-neo-lykeio-ethniko-apolytirio-kai-tehniti-noimosyni-sto",
+   "date": "2026-10-17",
+   "work_areas": [
+    "future_of_work",
+    "teachers_trainers",
+    "vet_policy"
+   ]
+  },
+  {
+   "id": "4e2bf1f07e",
+   "source": "esos",
+   "kind": "field",
+   "title": "Νεοσύστατο ΕΠΑΛ λειτουργεί με μοναδικό εκπαιδευτικό τον Διευθυντή του",
+   "url": "https://www.esos.gr/arthra/101886/neosystato-epal-leitoyrgei-me-monadiko-ekpaideytiko-ton-dieythynti-toy",
+   "date": "2026-10-17",
+   "work_areas": [
+    "teachers_trainers",
+    "vet_policy"
+   ]
+  },
+  {
+   "id": "777e23e95e",
+   "source": "esos",
+   "kind": "field",
+   "title": "Κατ’ εξαίρεση λειτουργία 257 τμημάτων του Μεταλυκειακού Έτους - Τάξης Μαθητείας",
+   "url": "https://www.esos.gr/arthra/101866/kat-exairesi-leitoyrgia-257-tmimaton-toy-metalykeiakoy-etoys-taxis-mathiteias",
+   "date": "2026-10-16",
+   "work_areas": [
+    "apprenticeships"
+   ]
+  },
+  {
+   "id": "ffbde07207",
+   "source": "guardian_work",
+   "kind": "press",
+   "title": "Use of AI in job interviews on the rise – but UK recruiters say they can spot the cheats",
+   "url": "https://www.theguardian.com/technology/2026/oct/14/use-of-ai-job-interviews-on-rise-uk-recruiters-cheats",
+   "date": "2026-10-13",
+   "work_areas": [
+    "future_of_work",
+    "labour_market"
+   ]
+  },
+  {
+   "id": "c15f7bcccd",
+   "source": "ft_work",
+   "kind": "press",
+   "title": "Tougher competition for internships strains UK graduate jobs market",
+   "url": "https://www.ft.com/content/3a3d3eb8-ff86-418e-9704-c1ff601718c4?syn-25a6b1a6=1",
+   "date": "2026-10-13",
+   "work_areas": [
+    "future_of_work",
+    "labour_market"
+   ]
+  },
+  {
+   "id": "4ec8dd72c0",
+   "source": "politico_eu",
+   "kind": "press",
+   "title": "In Europe’s tech capital, Irish labor unions are booming amid AI-driven layoffs",
+   "url": "https://www.politico.eu/article/in-europe-tech-capital-ireland-irish-labor-unions-are-booming-amid-ai-layoffs/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+   "date": "2026-10-16",
+   "work_areas": [
+    "future_of_work",
+    "labour_market"
+   ]
+  },
+  {
+   "id": "3ba6460763",
+   "source": "bbc_tech",
+   "kind": "tech",
+   "title": "'I applied for 200 jobs' - How 'spray and pray' AI job applications can backfire",
+   "url": "https://www.bbc.co.uk/news/articles/c623dnkn8pkyo?at_medium=RSS&at_campaign=rss",
+   "date": "2026-10-14",
+   "work_areas": [
+    "apprenticeships",
+    "future_of_work",
+    "labour_market"
+   ]
+  },
+  {
+   "id": "9ccc86464c",
+   "source": "socialeurope",
+   "kind": "ideas",
+   "title": "The EU Needs Dedicated Capacity to Track AI’s Impact on Jobs",
+   "url": "https://www.socialeurope.eu/the-eu-needs-dedicated-capacity-to-track-ais-impact-on-jobs",
+   "date": "2026-10-14",
+   "work_areas": [
+    "future_of_work",
+    "governance",
+    "labour_market",
+    "vet_policy"
+   ]
+  },
+  {
+   "id": "89016aba30",
+   "source": "voxeu",
+   "kind": "ideas",
+   "title": "The cost of job loss in carbon-intensive sectors: Evidence from Germany",
+   "url": "https://cepr.org/voxeu/columns/cost-job-loss-carbon-intensive-sectors-evidence-germany",
+   "date": "2026-10-16",
+   "work_areas": [
+    "future_of_work",
+    "labour_market"
+   ]
   },
   {
    "id": "b556d5b780",
@@ -469,6 +719,19 @@
    ]
   },
   {
+   "id": "6a21ff6960",
+   "source": "apprentix",
+   "kind": "portrait",
+   "title": "Post-secondary apprenticeship year (Greece)",
+   "url": "https://apprentix.eu/pages/countries/el.html#scheme-el-postsec",
+   "date": null,
+   "work_areas": [
+    "apprenticeships",
+    "qualifications",
+    "vet_policy"
+   ]
+  },
+  {
    "id": "b188362643",
    "source": "apprentix",
    "kind": "portrait",
@@ -478,6 +741,7 @@
    "work_areas": [
     "apprenticeships",
     "labour_market",
+    "qualifications",
     "vet_policy"
    ]
   },
@@ -580,6 +844,17 @@
    ]
   },
   {
+   "id": "6f04a0844c",
+   "source": "apprentix",
+   "kind": "indicator",
+   "title": "Apprenticeship starts in England",
+   "url": "https://apprentix.eu/pages/indicators.html?id=uk-dfe-apprenticeship-starts",
+   "date": null,
+   "work_areas": [
+    "apprenticeships"
+   ]
+  },
+  {
    "id": "a463165cfc",
    "source": "apprentix",
    "kind": "tool",
@@ -588,6 +863,62 @@
    "date": null,
    "work_areas": [
     "apprenticeships"
+   ]
+  },
+  {
+   "id": "eb5622cfc8",
+   "source": "eurlex_oj_l",
+   "kind": "act",
+   "title": "Council Decision of 9 October 2026 replacing an alternate member of the Management Board of the European Foundation for the improvement of living and working conditions for Denmark",
+   "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026D05382",
+   "date": "2026-10-14",
+   "work_areas": [
+    "governance"
+   ]
+  },
+  {
+   "id": "2171437d86",
+   "source": "eurlex_oj_l",
+   "kind": "act",
+   "title": "Council Decision of 9 October 2026 replacing a member of the Management Board of the European Foundation for the improvement of living and working conditions for Denmark",
+   "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026D05381",
+   "date": "2026-10-14",
+   "work_areas": [
+    "governance"
+   ]
+  },
+  {
+   "id": "19428d7afd",
+   "source": "eurlex_oj_l",
+   "kind": "act",
+   "title": "Council Decision of 1 October 2026 replacing a member of the Management Board of the European Agency for Safety and Health at Work for Estonia",
+   "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026D05201",
+   "date": "2026-10-06",
+   "work_areas": [
+    "governance"
+   ]
+  },
+  {
+   "id": "ec2765c3c8",
+   "source": "eurlex_oj_l",
+   "kind": "act",
+   "title": "Council Decision of 1 October 2026 replacing a member of the Management Board of the European Agency for Safety and Health at Work for Cyprus",
+   "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026D05200",
+   "date": "2026-10-06",
+   "work_areas": [
+    "governance"
+   ]
+  },
+  {
+   "id": "fcdce614ae",
+   "source": "eurlex_oj_l",
+   "kind": "act",
+   "title": "Council Decision of 24 September 2026 replacing a member of the Management Board of the European Centre for the Development of Vocational Training (Cedefop) for Bulgaria",
+   "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026D05026",
+   "date": "2026-09-30",
+   "work_areas": [
+    "governance",
+    "vet_policy"
    ]
   }
  ]
