@@ -64,6 +64,14 @@ The first version read mostly from the top: institutions, agencies and Cedefop i
   - an edition's pool only grows: a refetch merges rather than replaces, because the Official Journal feed rolls over after 100 items.
   - the checker also verifies in-page anchors.
 
+## Versions (decided 17 October 2026)
+
+- **Every published version of every edition stays online.** A version is a push to `main` that changed `daily/<date>/index.html`; changes only to the version line or cache-busting hashes don't count.
+- **Each version is kept** at `daily/<date>/v<n>/` with its page, its stylesheets (`daily.css`, `site.css`), its edition JSON and its `sources.json`, all taken from git by `pipeline/daily/versions.py`. A banner names the version and links to the current one.
+- **The current page** shows "Version n · earlier versions" in the masthead.
+- **`daily/archive.html`** lists every version with its publication time, in Athens time.
+- No. 1 has two versions: v1 (20:34) and v2 (21:27, with "From the field" and "The wider debate").
+
 ## How it works
 
 ```

@@ -27,6 +27,7 @@ from pathlib import Path
 
 from ..asset_version import stamp_html
 from ..common import ROOT
+from . import versions
 
 HERE = Path(__file__).resolve().parent
 DAILY = ROOT / "daily"
@@ -513,7 +514,8 @@ def masthead(ed: dict, sections: list[dict]) -> str:
     <div class="dm-brand"><a class="dm-title" href="/daily/">Cedefop Daily</a>
       <p class="dm-sub">Thessaloniki · Brussels</p></div>
     <div class="dm-meta"><strong>{e(long_date(ed['date']))}</strong>
-      <span>No. {e(ed['number'])}</span><span>Built from {e(ed['built_from'])}</span></div>
+      <span>No. {e(ed['number'])}</span><span>Built from {e(ed['built_from'])}</span>
+      <span class="dm-version">%%VERSION%%</span></div>
   </div>
   <nav class="dm-pillars" aria-label="Sections"><div class="wrap"><ul>{nav}</ul></div></nav>
 </header>"""
@@ -564,14 +566,25 @@ def render_edition(ed: dict, pool: dict) -> str:
     out += [section(s, P) for s in ed["sections"]]
     out.append(week_ahead(ed["week_ahead"], P, ed["date"]))
     out += ["</main>", footer(pool), SCRIPT, "</body>\n</html>\n"]
-    return stamp_html("\n".join(out))
+    page = stamp_html("\n".join(out))
+    n, hist = versions.current_number(ed["date"], page)
+    earlier = f' · <a href="/daily/archive.html#ed-{e(ed["date"])}">earlier versions</a>' if n > 1 else ""
+    return page.replace("%%VERSION%%", f"Version {n}{earlier}")
 
 
 def render_archive(editions: list[dict]) -> str:
-    rows = "".join(f'<li><a href="/daily/{e(x["date"])}/">{e(long_date(x["date"]))}</a> · No. {e(x["number"])} · {e(x["lead"]["headline"])}</li>'
-                   for x in sorted(editions, key=lambda x: x["date"], reverse=True))
+    rows = []
+    for x in sorted(editions, key=lambda x: x["date"], reverse=True):
+        d = x["date"]
+        vs = " · ".join(f'<a href="/daily/{e(d)}/v{v["n"]}/">version {v["n"]}</a> '
+                        f'<span class="dc-brief-src">({e(versions.when(v["time"]))})</span>'
+                        for v in versions.history(d))
+        rows.append(f'<li id="ed-{e(d)}"><a href="/daily/{e(d)}/">{e(long_date(d))}</a> · No. {e(x["number"])} · '
+                    f'{e(x["lead"]["headline"])}{f"<br><span class=dc-versions>Published versions: {vs}</span>" if vs else ""}</li>')
+    rows = "".join(rows)
     return stamp_html("\n".join([head("Cedefop Daily — Editions", "Every edition of Cedefop Daily.", f"{SITE}/daily/archive.html"),
                                  '<main id="main" class="wrap dc-main dc-page"><h1 class="dm-title">Editions</h1>',
+                                 '<p class="dc-intro">Every version of every edition stays online. A new version is published when an edition is corrected or extended; each is kept as it was, with the stylesheets of the day.</p>',
                                  f'<ul class="dc-archive">{rows}</ul></main>', "</body>\n</html>\n"]))
 
 
@@ -609,7 +622,7 @@ ABOUT = """
 <p>No cookies, no tracking and no analytics. If you guess The number, your guess is kept only in your browser.</p>
 
 <h2>Corrections</h2>
-<p>Errors are corrected in the next edition, in the same place. To report one, <a href="https://github.com/costirezlescu/apprentix.eu/issues">open an issue</a>.</p>
+<p>Every version of every edition stays online, exactly as it was published: when an edition is corrected or extended, the earlier version moves to its own address and is listed under <a href="/daily/archive.html">Editions</a>. Errors are corrected in the next edition, in the same place. To report one, <a href="https://github.com/costirezlescu/apprentix.eu/issues">open an issue</a>.</p>
 """
 
 
@@ -655,6 +668,8 @@ def main(argv: list[str]) -> int:
     write(DAILY / ed["date"] / "sources.json", sources_json(ed, pool))
     if ed["date"] == max(x["date"] for x in editions):
         write(DAILY / "index.html", page.replace(f'href="{SITE}/daily/{ed["date"]}/"', f'href="{SITE}/daily/"', 1))
+    for x in editions:
+        versions.build(x["date"])
     write(DAILY / "archive.html", render_archive(editions))
     write(DAILY / "about.html", render_about())
     return 0
