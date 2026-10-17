@@ -4,7 +4,7 @@
 
    Usage: mountPulse(document.getElementById('pulse')) */
 
-import { url } from './data.js?v=0246fca6';
+import { url } from './data.js?v=c969d87b';
 
 const LABELS = { new: 'New', completed: 'Completed', moved: 'Moved on', discontinued: 'Discontinued' };
 

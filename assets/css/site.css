@@ -2312,3 +2312,28 @@ body.embed { background: var(--surface); margin: 0; }
 .opp-kind { grid-row: span 2; font-family: var(--mono); font-size: 10px; letter-spacing: .08em; text-transform: uppercase; color: var(--accent-ink); padding-top: 3px; }
 .opp-meta { font-size: .82rem; color: var(--muted); }
 @media (max-width: 560px) { .opp-list li { grid-template-columns: 1fr; } .opp-kind { grid-row: auto; } }
+
+/* ---------- who shares a feature? (compare page) ---------- */
+.share-card[hidden] { display: none; }
+.share-chips { margin: 8px 0 14px; }
+.share-layout { display: grid; grid-template-columns: minmax(0, 520px) minmax(0, 1fr); gap: 18px 26px; align-items: start; }
+.share-map { min-width: 0; }
+.share-tiles { width: 100%; height: auto; display: block; }
+.share-tile rect { fill: transparent; stroke: var(--line-strong); stroke-width: 1; stroke-dasharray: 3 3; }
+.share-tile text { font-size: 12px; font-weight: 600; fill: var(--faint); pointer-events: none; }
+.share-tile.off rect { fill: var(--sunken); stroke: var(--line); stroke-dasharray: none; }
+.share-tile.off text { fill: var(--muted); }
+.share-tile.on rect { fill: var(--accent); stroke: var(--accent); stroke-dasharray: none; }
+.share-tile.on text { fill: var(--on-accent); }
+.share-tile.on, .share-tile.off { cursor: pointer; }
+.share-tile.sel rect { stroke: var(--ink); stroke-width: 2.5; }
+.share-tile:focus-visible { outline: none; }
+.share-tile:focus-visible rect { stroke: var(--ink); stroke-width: 3; }
+.share-sw.on { background: var(--accent); }
+.share-sw.off { background: var(--sunken); border: 1px solid var(--line); }
+.share-sw.none { background: transparent; border: 1px dashed var(--line-strong); }
+.share-sum { font-weight: 600; margin: 0 0 8px; }
+.share-list { margin: 0; padding-left: 18px; display: grid; gap: 4px; font-size: .92rem; }
+.share-list li.sel { background: var(--accent-soft); border-radius: 4px; }
+.share-note { margin: 10px 0 0; font-size: .88rem; color: var(--muted); }
+@media (max-width: 760px) { .share-layout { grid-template-columns: 1fr; } }

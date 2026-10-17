@@ -10,7 +10,7 @@
 
    Data text is always inserted with textContent, never as HTML. */
 
-import { url } from './data.js?v=0246fca6';
+import { url } from './data.js?v=c969d87b';
 
 const FACTS_PATH = 'data/published/facts/facts.json';
 const SEEN_KEY = 'apprentix:facts-seen';

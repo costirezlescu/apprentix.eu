@@ -17,8 +17,8 @@
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Apprentix: compare Europe&#x27;s apprenticeship schemes side by side on the questions coded by Cedefop.">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Public+Sans:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
-<link rel="stylesheet" href="../assets/css/site.css?v=0246fca6">
+<link rel="stylesheet" href="../assets/css/fonts.css?v=c969d87b">
+<link rel="stylesheet" href="../assets/css/site.css?v=c969d87b">
 <link rel="alternate" type="application/atom+xml" title="Apprentix data updates" href="../data/feed.xml">
 </head>
 <body data-root="../">
@@ -51,7 +51,7 @@
   <div class="mono">Apprenticeship schemes</div>
   <h1 style="margin-top:4px">Compare every scheme</h1>
   <p style="color:var(--muted);max-width:75ch;margin:6px 0 0">Each column is one question from Cedefop's standard questionnaire, answered by national experts in the 2026 scheme fiches.
-    Pick a question to colour its column and see how the schemes split. Select a scheme for its full record.</p>
+    Pick a question to colour its column and see how the schemes split, or see on the map which countries share an answer. Select a scheme for its full record.</p>
   <p class="hint" id="count" style="color:var(--muted);font-size:.85rem;margin:8px 0 0"></p>
 
   <div class="filterbar">
@@ -61,6 +61,7 @@
   <div class="chips" id="sections" role="group" aria-label="Show questions about"></div>
 
   <div class="chart-card" id="dist"></div>
+  <div class="chart-card share-card" id="share" aria-labelledby="share-h"></div>
   <div class="chart-card matrix-card"><div class="matrix-scroll" id="matrix">Loading…</div></div>
 
   <p class="provenance" style="margin-top:22px">Source: <a href="https://www.cedefop.europa.eu/en/tools/apprenticeship-schemes" target="_blank" rel="noopener">Cedefop — European database on apprenticeship schemes</a>, 2026 fiches, coded answers read on 2026-10-01.
@@ -88,9 +89,9 @@
   </div>
 </footer>
 
-<script type="module" src="../assets/js/compare.js?v=0246fca6"></script>
-<script type="module">import { mountSurpriseBanner } from '../assets/js/facts.js?v=0246fca6'; mountSurpriseBanner();</script>
+<script type="module" src="../assets/js/compare.js?v=c969d87b"></script>
+<script type="module">import { mountSurpriseBanner } from '../assets/js/facts.js?v=c969d87b'; mountSurpriseBanner();</script>
 
-<script type="module">import { initGlossary } from '../assets/js/glossary.js?v=0246fca6'; initGlossary();</script>
+<script type="module">import { initGlossary } from '../assets/js/glossary.js?v=c969d87b'; initGlossary();</script>
 </body>
 </html>

@@ -46,7 +46,7 @@ ORG_WORDS = {"Social", "Competition", "Vocational", "President", "Insurance", "P
              "Denis", "Wood", "Bad", "Wildungen", "Nördlingen", "King", "Kings", "WorldSkills", "Wiener", "Jugend"}
 FUNCTION_WORDS = {"In", "While", "Their", "The", "A", "An", "At", "On", "For", "With", "Its", "His", "Her", "They",
                   "He", "She", "When", "After", "Before", "Now", "Some", "One", "This", "That", "These", "Those"}
-ALLOWED_EXTERNAL = ("https://fonts.googleapis.com/", "https://github.com/costirezlescu/apprentix.eu/issues")
+ALLOWED_EXTERNAL = ("https://github.com/costirezlescu/apprentix.eu/issues",)
 
 
 def norm(s: str) -> str:

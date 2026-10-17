@@ -25,8 +25,11 @@ Deliberately plain:
   fetches public sources on a schedule in GitHub Actions and writes plain JSON/CSV.
   Each weekly refresh is committed to `main` once it passes validation. The site itself still has no build step.
 
-The only external request is the Google Fonts stylesheet — plus, on the optional *Ask* page,
-the question sent to the assistant's Worker (see "Ask Apprentix" below).
+Pages make no requests to other sites: the fonts (Newsreader, Public Sans, IBM Plex Mono, all
+SIL Open Font License) are self-hosted in `assets/fonts/` and declared in `assets/css/fonts.css`.
+The one exception is the optional *Ask* page, which sends the question to the assistant's Worker
+(see "Ask Apprentix" below). CSS and JS links carry `?v=<hash>` (`pipeline/asset_version.py`), so
+caches never pair a new page with an old stylesheet.
 
 ---
 

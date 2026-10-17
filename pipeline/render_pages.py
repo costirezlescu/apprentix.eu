@@ -28,8 +28,6 @@ from .common import DATA, INDICATORS, LICENCES, PUBLISHED, REFERENCE, ROOT, geo_
 SITE = "https://apprentix.eu/"
 OUT = ROOT / "pages" / "countries"
 FEED_PATH = "data/feed.xml"
-FONTS = ("https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600"
-         "&family=Public+Sans:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap")
 
 # Indicators shown under "Key figures", in this order. Each entry lists alternatives
 # measuring the same thing: the first one with data for the country is shown.
@@ -170,7 +168,7 @@ def page(*, title: str, description: str, canonical: str, root: str, body: str, 
 <meta name="description" content="{e(description)}">
 <link rel="canonical" href="{e(canonical)}">
 {og_meta(title=title, description=description, url=canonical, image=og_image, alt=og_image_alt, og_type=og_type)}
-<link rel="stylesheet" href="{FONTS.replace('&', '&amp;')}">
+<link rel="stylesheet" href="{root}assets/css/fonts.css">
 <link rel="stylesheet" href="{root}assets/css/site.css">
 <link rel="alternate" type="application/atom+xml" title="Apprentix data updates" href="{root}{FEED_PATH}">
 <script type="application/ld+json">

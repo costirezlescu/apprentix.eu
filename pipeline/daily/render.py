@@ -517,7 +517,7 @@ def head(title: str, desc: str, canonical: str) -> str:
 <meta name="description" content="{e(desc)}">
 <meta name="robots" content="noindex, nofollow">
 <link rel="canonical" href="{e(canonical)}">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&amp;family=Public+Sans:wght@400;500;700&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap">
+<link rel="stylesheet" href="/assets/css/fonts.css">
 <link rel="stylesheet" href="/assets/css/site.css">
 <link rel="stylesheet" href="/daily/assets/daily.css?v={css_version()}">
 </head>
