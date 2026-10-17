@@ -660,6 +660,10 @@ def preview_banner(ed: dict) -> str:
             f'<a href="/daily/lab/">All variants</a></div>')
 
 
+def know_title(ed: dict) -> str:
+    return ["One", "Two", "Three", "Four", "Five", "Six", "Seven"][len(ed["know"]) - 1] + " to know"
+
+
 def render_edition(ed: dict, pool: dict) -> str:
     P = {i["id"]: i for i in pool["items"]}
     POOL_INDEX.clear()
@@ -669,11 +673,13 @@ def render_edition(ed: dict, pool: dict) -> str:
     canonical = f"{SITE}/daily/{ed['date']}/" if not ed.get("preview") else f"{SITE}/daily/lab/"
     diary_label = ed["diary"]["title"]
     if ed["layout"] == "shape":
-        nav = [("lives", "Lives", "lives"), ("five", "Five to know", "cedefop"), ("question", "Today’s question", "data"),
+        nav = [("know", know_title(ed), "cedefop"), ("question", "Today’s question", "data"),
                ("week", diary_label, "policy"), ("more", "More today", "debate")]
     else:
-        nav = [("lives", "Lives", "lives")] + [(x["id"], x["title"], x["pillar"]) for x in ed["sections"]] \
+        nav = [(x["id"], x["title"], x["pillar"]) for x in ed["sections"]] \
             + [("question", "Data", "data"), ("week", diary_label, "policy")]
+    if ed.get("lives"):
+        nav.insert(0, ("lives", "Lives", "lives"))
     out = [head(title, desc, canonical)]
     if ed.get("preview"):
         out.append(preview_banner(ed))
@@ -681,9 +687,9 @@ def render_edition(ed: dict, pool: dict) -> str:
     top = [lead2(ed["lead"], P)] + ([lives2(ed["lives"], P)] if ed.get("lives") else [])
     out += top[::-1] if ed.get("lives_first") else top
     if ed["layout"] == "shape":
-        cards = "".join(card(x, P, x["pillar"], PILLAR_TITLE.get(x["pillar"], "")) for x in ed["five"])
-        out.append(f"""<section class="dc-section dc-five" id="five" aria-labelledby="h-five">
-  <h2 class="dc-sec-title" id="h-five">Five to know</h2>
+        cards = "".join(card(x, P, x["pillar"], PILLAR_TITLE.get(x["pillar"], "")) for x in ed["know"])
+        out.append(f"""<section class="dc-section dc-five" id="know" aria-labelledby="h-know">
+  <h2 class="dc-sec-title" id="h-know">{know_title(ed)}</h2>
   <div class="dc-grid">{cards}</div>
 </section>""")
         out.append(question2(ed["question"], P))
@@ -751,7 +757,8 @@ ABOUT = """
 {outlets}
 
 <h2>Sections</h2>
-<p>About twelve items a day, a five-minute read: <strong>The one thing</strong> (the day’s most important story, with a line on why it matters to Cedefop), <strong>Lives</strong> (one real person whose life vocational education and training has shaped), <strong>Five to know</strong>, <strong>Today’s question</strong> (a number to guess, a myth to call, a fact or an insight), the <strong>Diary</strong>, and <strong>More today</strong> as a short list of links. Stories come from Cedefop, the field, the wider debate, EU policy, the agencies and research, each marked with its section colour. The top strip shows “Today at Cedefop” when there is a public agenda for the day, and “This week in numbers” otherwise. On Mondays the diary looks at the week ahead.</p>
+<p>About twelve items a day, a five-minute read: <strong>The one thing</strong> (the day’s most important story, with a line on why it matters to Cedefop), <strong>Six to know</strong>, <strong>Today’s question</strong> (a number to guess, a myth to call, a fact or an insight), the <strong>Diary</strong>, and <strong>More today</strong> as a short list of links. On Fridays, <strong>Lives</strong> opens the paper: one real person whose life vocational education and training has shaped. Stories come from Cedefop, the field, the wider debate, EU policy, the agencies and research, each marked with its section colour. The top strip shows “Today at Cedefop” when there is a public agenda for the day, and “This week in numbers” otherwise.</p>
+<p>Each weekday has a focus: Monday EU policy and Cedefop, with the week ahead in the diary; Tuesday research; Wednesday the field; Thursday AI and the future of work; Friday long reads.</p>
 <h2>Lives</h2>
 <p>Lives stories come from published profiles and interviews. A person is named only as printed, and only when the source is a profile or interview they chose to give, in which they are the subject. Minors are never named, and nothing about health, family or money is included beyond what the story itself is about.</p>
 
@@ -813,21 +820,22 @@ def render_lab() -> None:
             if not ed:
                 cells += "<td>–</td>"
                 continue
-            n = 1 + len(ed.get("five", [])) + len(ed.get("more", [])) + sum(len(x["stories"]) for x in ed.get("sections", []))
+            n = 1 + len(ed.get("know", [])) + len(ed.get("more", [])) + sum(len(x["stories"]) for x in ed.get("sections", []))
             top = ed["lives"]["headline"] if ed.get("lives_first") else ed["lead"]["headline"]
             cells += (f'<td><a href="/daily/lab/{c}/{d}/">{e(top)}</a>'
-                      f'<span class="dc-brief-src">{n} stories · Lives{" at length, opening the paper" if ed.get("lives_first") else ""}'
+                      f'<span class="dc-brief-src">{n} stories{" · Lives" if ed.get("lives") else ""}{", opening the paper" if ed.get("lives_first") else ""}'
                       f'{" · focus: " + e(ed["day_focus"]) if ed.get("day_focus") else ""}</span></td>')
         rows += f"<tr><th scope=row>{e(long_date(d))}</th>{cells}</tr>"
     body = f"""<main id="main" class="wrap dc-main dc-page dc-lab"><h1 class="dm-title">Design comparison</h1>
 <p class="dc-intro">Four ways to shape Cedefop Daily at about 12 items a day, over one week. Every variant is planned from the same story bank, written on 17 October 2026 from the sources available then, and never runs a story twice in the week, so later days show what earlier days left. Real editions would add each day’s news, so Tuesday to Friday are thinner here than they would be.</p>
 <ul class="dc-intro">
-<li><strong>Fixed shape:</strong> The one thing · Lives · Five to know · Today’s question · Diary · More today (collapsed links).</li>
-<li><strong>Sections capped:</strong> the paper’s sections, at most two stories each (one for agencies), about ten stories in all, plus Lives, a data item and the diary.</li>
-<li><strong>Weekday rhythm:</strong> Monday policy and Cedefop, Tuesday research, Wednesday the field, Thursday AI and the future of work, Friday long reads with Lives at length.</li>
+<li><strong>Fixed shape:</strong> The one thing · Six to know · Today’s question · Diary · More today (collapsed links).</li>
+<li><strong>Sections capped:</strong> the paper’s sections, at most two stories each (one for agencies), about ten stories in all, plus a data item and the diary.</li>
+<li><strong>Weekday rhythm:</strong> Monday policy and Cedefop, Tuesday research, Wednesday the field, Thursday AI and the future of work, Friday long reads with Lives opening the paper.</li>
+<li><strong>Lives</strong> runs in every variant once a week, on Fridays, at length.</li>
 </ul>
 <div class="dc-lab-scroll"><table class="dc-lab-table"><thead><tr><th></th>{head_row}</tr></thead><tbody>{rows}</tbody></table></div>
-<p><a href="/daily/">Today’s paper</a> uses the fixed shape without rhythm.</p></main>"""
+<p><a href="/daily/">The paper</a> uses the fixed shape with the weekday rhythm.</p></main>"""
     write(lab / "index.html", stamp_html("\n".join([head("Cedefop Daily — Design comparison", "Four layouts of Cedefop Daily compared over one week.",
                                                             f"{SITE}/daily/lab/"), body, "</body>\n</html>\n"])))
 

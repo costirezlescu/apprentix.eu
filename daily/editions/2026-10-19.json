@@ -1,14 +1,14 @@
 {
  "schema": 2,
  "layout": "shape",
- "rhythm": false,
+ "rhythm": true,
  "date": "2026-10-19",
  "number": 1,
  "pool": "2026-10-19",
  "built_from": "public sources retrieved on 17 October 2026",
  "built_on": "2026-10-17",
  "preview": false,
- "day_focus": null,
+ "day_focus": "Policy and the week ahead",
  "strip": {
   "kind": "numbers",
   "title": "This week in numbers",
@@ -75,7 +75,7 @@
   "headline": "Cedefop’s new RESET index scores skills in all 244 EU regions",
   "standfirst": "Published on 15 October, the regional skills ecosystems index compares regions on skills supply, demand, environment and match. Central Macedonia, home to the Thessaloniki office, ranks 208th; Brussels-Capital ranks 101st.",
   "body": [
-   "Cedefop describes RESET as the first multidimensional EU regional index focused specifically on skills and VET, with 37 indicators across four dimensions. Scores run from 1 to 100 relative to the other regions (version July 2026, reference year 2024): Stockholm is highest at 75.9, Sud-Vest Oltenia lowest at 26.8. Central Macedonia scores 36.5, fourth of 13 Greek regions; its strongest dimension is skills match (55.3), its weakest skills demand (23.6).",
+   "Cedefop describes RESET as the first multidimensional EU regional index focused specifically on skills and VET, with 37 indicators across four dimensions. Scores run from 1 to 100 relative to the other regions (version July 2026, reference year 2024): Stockholm is highest at 75.9, Sud-Vest Oltenia lowest at 26.8. Central Macedonia scores 36.5, fourth of 13 Greek regions; its strongest dimension is skills match (55.3), its weakest skills demand (23.6). Each region also has scores on indicators for people with initial VET: their job tasks, activity, employment and unemployment.",
    "Executive Director Jürgen Siebel said the first event “confirmed how strong the demand is for evidence that reflects territorial realities”."
   ],
   "figure": {
@@ -110,34 +110,7 @@
   ],
   "more": "RESET: a new Cedefop index scores skills ecosystems in all 244 EU regions."
  },
- "five": [
-  {
-   "key": "aimonitor",
-   "pillar": "debate",
-   "focus": [
-    "ai",
-    "long"
-   ],
-   "priority": 5,
-   "item": "9ccc86464c",
-   "areas": [
-    "future_of_work",
-    "labour_market"
-   ],
-   "kicker": "AI and work",
-   "headline": "The EU should track AI’s impact on jobs, argues a Social Europe piece",
-   "standfirst": "Drawing on a June workshop of the European Policy Centre and the Open Markets Institute, it calls for systematic, harmonised EU monitoring of AI’s labour-market impact.",
-   "body": [
-    "Immediate job displacement is not yet visible in aggregate data, it notes, and a job’s estimated AI exposure is often treated as a proxy for displacement risk. The Commission has committed to a high-level expert group tasked with identifying “enhanced analytical tools for monitoring, early warning, foresight and anticipation”, the kind of evidence Cedefop’s skills intelligence produces."
-   ],
-   "links": [
-    {
-     "item": "9ccc86464c",
-     "text": "Social Europe"
-    }
-   ],
-   "more": "Why the EU needs to track AI’s impact on jobs (Social Europe)."
-  },
+ "know": [
   {
    "key": "england",
    "pillar": "field",
@@ -262,9 +235,7 @@
     }
    ],
    "more": "EPSCO: employment and social policy ministers meet today."
-  }
- ],
- "more": [
+  },
   {
    "key": "itcz",
    "pillar": "cedefop",
@@ -338,54 +309,65 @@
     }
    ],
    "more": "Cedefop and EU-OSHA: job quality is part of the answer to shortages."
-  },
+  }
+ ],
+ "more": [
   {
-   "key": "jvet",
-   "pillar": "research",
+   "key": "risk",
+   "pillar": "cedefop",
    "focus": [
-    "research",
-    "long"
+    "cedefop"
    ],
    "priority": 4,
-   "item": "8612a5359e",
+   "item": "cab1dad3cc",
    "also": [
-    "af10c2fcf1",
-    "6a5bf13457"
+    "c43f73ea73",
+    "6516e27cb6"
    ],
    "areas": [
-    "vet_policy"
+    "inclusion"
    ],
-   "kicker": "Debate",
-   "headline": "Two VET scholars debate the capabilities approach in JVET’s 250th issue",
-   "standfirst": "Stephanie Allais argues the approach offers VET research little; Leesa Wheelahan argues it has value within broader theories.",
+   "kicker": "New publication",
+   "headline": "Early leaving is a process, not an event, says Cedefop policy brief",
+   "standfirst": "The EU early leaving rate fell to 9.1% in 2025 against a 2030 target of below 8%.",
    "body": [
-    "Allais says its emphasis on human flourishing is important but not new, that it rests on individualism, and that its outcomes-focused stance “gives weak VET systems new ways to fail”. Wheelahan situates it among critical realism, Bernsteinian sociology and Marxism. Allais replies that “compatibility is not a contribution”."
+    "The brief sets out 20 intervention approaches covering system capacity, early identification, targeted support and re-engagement, drawing on Cedefop’s VET toolkit for tackling early leaving. Cedefop will launch it at a webinar with the Commission’s DG EAC on 2 December."
    ],
    "links": [
     {
-     "item": "af10c2fcf1",
-     "text": "Wheelahan"
+     "url": "https://www.cedefop.europa.eu/en/publications/9211",
+     "text": "From risk to resilience"
     },
     {
-     "item": "6a5bf13457",
-     "text": "Allais’s reply"
+     "url": "https://www.cedefop.europa.eu/en/events/risk-resilience",
+     "text": "Webinar, 2 December"
     }
    ],
-   "more": "Is the capabilities approach useful for VET research? A JVET debate."
+   "more": "From risk to resilience: Cedefop’s 20 approaches to early leaving."
+  },
+  {
+   "key": "dublin",
+   "pillar": "policy",
+   "focus": [
+    "policy",
+    "field",
+    "ai"
+   ],
+   "priority": 3,
+   "item": "2d89b46109",
+   "areas": [
+    "vet_policy",
+    "future_of_work"
+   ],
+   "kicker": "Council presidency",
+   "headline": "Greek minister brings AI and vocational training to informal EU meeting",
+   "standfirst": "At the informal meeting of EU education ministers in Dublin on 15–16 October, Greece’s education minister spoke on AI in education and upgrading vocational training, ESOS reports.",
+   "body": [
+    "Her other themes were the new lyceum, a national diploma and tackling educational inequalities."
+   ],
+   "more": "Informal EU education ministers’ meeting in Dublin: Greece on AI and VET (ESOS)."
   }
  ],
- "lives": {
-  "date": "2026-10-19",
-  "item": "9592974999",
-  "named": [
-   "Albert Baumann"
-  ],
-  "headline": "Germany’s first carpentry world champion, 1967, still in the workshop at 78",
-  "standfirst": "He won gold at the forerunner of WorldSkills in Madrid at 18, ran the family firm for decades and trained most of its staff himself.",
-  "body": [
-   "In July 1967, Albert Baumann beat young carpenters from Korea, the Netherlands, Ireland, Japan, Great Britain and Switzerland. He had begun his apprenticeship in the family firm in Flein in 1964; for the national final in Berlin he took a plane for the first time, his big carpenter’s saw stowed behind the back row. He became a master carpenter in 1970, took over the business, trained most of its up to twelve employees and handed it to his children in 2012. At 78 he still works in the workshop."
-  ]
- },
  "question": {
   "type": "number",
   "item": "d46d592323",

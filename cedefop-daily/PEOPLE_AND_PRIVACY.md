@@ -85,7 +85,7 @@ The brief asks for "news (if any) on the people working at Cedefop". This is the
 
 ## 6. Lives: the naming exception (decided 17 October 2026)
 
-The paper carries one human story a day, **Lives**: a real person whose life vocational education and training has shaped, whether the story is heartwarming or hard. Elsewhere in the paper private individuals in press stories are not named. In Lives they may be named, **only** under these conditions:
+The paper carries one human story a week, on Fridays, **Lives**: a real person whose life vocational education and training has shaped, whether the story is heartwarming or hard. Elsewhere in the paper private individuals in press stories are not named. In Lives they may be named, **only** under these conditions:
 
 - **As printed.** The name is used exactly as the source prints it.
 - **Their own story.** The source is a profile or interview the person clearly chose to give, in which they are the subject and are quoted. A passing mention in someone else's story is not enough.

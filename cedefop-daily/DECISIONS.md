@@ -87,6 +87,14 @@ The first version read mostly from the top: institutions, agencies and Cedefop i
 - **Interactive item.** One a day, in rotation: Monday The number, Tuesday Myth or fact, Wednesday Did you know?, Thursday Insight, Friday Myth or fact.
 - **No. 1 reissued as version 3** in the fixed shape without rhythm. Versions 1 and 2 stay archived.
 
+## The paper's shape (decided 17 October 2026)
+
+- **Fixed shape with the weekday rhythm** is the paper's design. The lab keeps all four variants for comparison.
+- **Six to know** instead of five: The one thing · Six to know · Today's question · Diary · More today.
+- **The lead runs a little longer,** a paragraph of about 100–130 words under the standfirst.
+- **Lives runs only on Fridays,** at length, and opens the paper. The bank's other profiles are marked `reserve` and wait for later Fridays.
+- **No. 1 reissued as version 4.** Versions 1–3 stay archived.
+
 ## How it works
 
 ```

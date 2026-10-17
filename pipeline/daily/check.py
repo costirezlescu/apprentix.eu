@@ -36,7 +36,7 @@ BANNED = ["landmark", "ambitious", "controversial", "groundbreaking", "game-chan
 SENSITIVE = ["olaf", "audit", "ombudsman", "litigation", "lawsuit", "court of justice ruling", "died", "death of",
              "disciplinary", "harassment", "fraud investigation", "security incident"]
 DIRECTOR = "Siebel"
-ORG_WORDS = {"Social", "Insurance", "Policy", "Markets", "Employers", "Summit", "Alliance", "Institute", "Centre",
+ORG_WORDS = {"Social", "Competition", "Vocational", "President", "Insurance", "Policy", "Markets", "Employers", "Summit", "Alliance", "Institute", "Centre",
              "Center", "Union", "Council", "Commission", "European", "German", "French", "Spanish", "Greek", "Italian",
              "Irish", "British", "Ministry", "Education", "Agency", "Authority", "Foundation", "Association",
              "Parliament", "Office", "School", "Schools", "University", "College", "Survey", "Forum", "Network",
@@ -63,7 +63,7 @@ def numbers(text: str) -> list[str]:
 def stories_of(ed: dict) -> list[tuple[str, dict, str]]:
     """(where, story, pillar) for every story in an edition, whatever its layout."""
     out = [("lead", ed["lead"], ed["lead"]["pillar"])]
-    out += [(f"five[{k}]", s, s["pillar"]) for k, s in enumerate(ed.get("five", []))]
+    out += [(f"know[{k}]", s, s["pillar"]) for k, s in enumerate(ed.get("know", []))]
     out += [(f"more[{k}]", s, s["pillar"]) for k, s in enumerate(ed.get("more", []))]
     for x in ed.get("sections", []):
         out += [(f"{x['id']}[{k}]", s, x["pillar"]) for k, s in enumerate(x["stories"])]

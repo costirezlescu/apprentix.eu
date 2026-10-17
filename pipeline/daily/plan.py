@@ -4,12 +4,16 @@
                                                       and the main edition for that day
 
 Variants:
-  layout  shape     The one thing · Lives · Five to know · Today's question · Diary · More today
+  layout  shape     The one thing · Six to know · Today's question · Diary · More today
           sections  the paper's sections, each capped, about the same number of stories
   rhythm  plain     every day ranks stories by priority alone
           rhythm    each weekday boosts one focus: Mon policy and Cedefop, Tue research,
                     Wed the field, Thu AI and the future of work, Fri long reads (and
-                    the Lives story at length)
+                    the Lives story opens the paper)
+
+The paper uses the fixed shape with the weekday rhythm (decided 17 October 2026); the
+lab keeps all four variants for comparison. Lives runs once a week, on Fridays, at
+length; the bank's other profiles wait in reserve for later Fridays.
 
 The planner walks the week in order and never runs a story twice, so later days use
 what earlier days left, as the pacing banks in BLUEPRINT §7 intend. A story with
@@ -32,8 +36,8 @@ BOOST = 2.0
 DAY_FOCUS = {0: {"policy", "cedefop"}, 1: {"research"}, 2: {"field"}, 3: {"ai"}, 4: {"long"}}
 DAY_NAME = {0: "Policy and the week ahead", 1: "Research day", 2: "From the field", 3: "AI and the future of work",
             4: "Long reads"}
-FIVE, MORE = 5, 4                      # shape: lead + 5 cards + 4 links = 10 stories
-MAX_STORIES = 10
+KNOW, MORE = 6, 4                      # shape: lead + 6 cards + 4 links = 11 stories
+MAX_STORIES = 11
 CAPS = {"cedefop": 2, "field": 2, "debate": 2, "policy": 2, "agencies": 1, "research": 2}
 SECTION_STORIES = 9                    # sections: lead + 9 cards = 10 stories
 SECTION_ORDER = [("cedefop", "At Cedefop"), ("field", "From the field"), ("debate", "The wider debate"),
@@ -57,7 +61,7 @@ def plan_day(bank: dict, date: str, number: int, used: set, layout: str, rhythm:
     d = dt.date.fromisoformat(date)
     wd = d.weekday()
     avail = [s for s in bank["stories"] if s["key"] not in used and s.get("only_on", date) == date]
-    # Pacing: share what is left across the days left, at most 10 stories a day.
+    # Pacing: share what is left across the days left, at most 11 stories a day.
     later = [s for s in bank["stories"] if s["key"] not in used and not s.get("only_on")]
     target = min(MAX_STORIES, max(1, math.ceil(len(later) / days_left)) + sum(1 for s in avail if s.get("only_on")))
     order = sorted(avail, key=lambda s: (-weight(s, wd, rhythm), -s["priority"], s["key"]))
@@ -72,9 +76,9 @@ def plan_day(bank: dict, date: str, number: int, used: set, layout: str, rhythm:
           "strip": STRIP, "lead": lead}
     picked = [lead]
     if layout == "shape":
-        ed["five"] = rest[:min(FIVE, target - 1)]
-        ed["more"] = rest[len(ed["five"]):max(len(ed["five"]), target - 1)][:MORE]
-        picked += ed["five"] + ed["more"]
+        ed["know"] = rest[:min(KNOW, target - 1)]
+        ed["more"] = rest[len(ed["know"]):max(len(ed["know"]), target - 1)][:MORE]
+        picked += ed["know"] + ed["more"]
     else:
         count, sections = {k: 0 for k in CAPS}, {k: [] for k in CAPS}
         for s in rest:
@@ -87,13 +91,13 @@ def plan_day(bank: dict, date: str, number: int, used: set, layout: str, rhythm:
                 picked.append(s)
         ed["sections"] = [{"id": k, "pillar": k, "title": t, "stories": sections[k]} for k, t in SECTION_ORDER if sections[k]]
     used |= {s["key"] for s in picked}
-    lives = next((x for x in bank["lives"] if x["date"] == date), None)
+    lives = next((x for x in bank["lives"] if x.get("date") == date), None) if wd == 4 else None
     if lives:
         lives = dict(lives)
-        if rhythm and wd == 4 and lives.get("long"):
+        if lives.get("long"):
             lives["body"], lives["is_long"] = lives["long"], True
-            ed["lives_first"] = True          # Friday's long Lives story opens the paper
         ed["lives"] = lives
+        ed["lives_first"] = rhythm            # with the rhythm, Friday's Lives story opens the paper
     ed["question"] = bank["questions"][str(wd)]
     diary = bank["diary"]
     if wd == 0:
@@ -132,10 +136,10 @@ def main(argv: list[str]) -> int:
             out.parent.mkdir(parents=True, exist_ok=True)
             out.write_text(json.dumps(ed, ensure_ascii=False, indent=1) + "\n", "utf-8")
         print(f"lab/{variant_id(layout, rhythm)}: {len(used)} of {len(bank['stories'])} bank stories used over 5 days")
-    # The main paper: shape, no rhythm (the recommended default), for the bank's first day only.
-    ed = plan_day(bank, start, 1, set(), "shape", False, main=True, days_left=len(days))
+    # The main paper: fixed shape with the weekday rhythm, for the bank's first day only.
+    ed = plan_day(bank, start, 1, set(), "shape", True, main=True, days_left=len(days))
     (DAILY / "editions" / f"{start}.json").write_text(json.dumps(ed, ensure_ascii=False, indent=1) + "\n", "utf-8")
-    print(f"editions/{start}.json: main edition (shape, no rhythm)")
+    print(f"editions/{start}.json: main edition (shape, weekday rhythm)")
     return 0
 
 
