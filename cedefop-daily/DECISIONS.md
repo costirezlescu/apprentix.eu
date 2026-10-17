@@ -95,6 +95,14 @@ The first version read mostly from the top: institutions, agencies and Cedefop i
 - **Lives runs only on Fridays,** at length, and opens the paper. The bank's other profiles are marked `reserve` and wait for later Fridays.
 - **No. 1 reissued as version 4.** Versions 1–3 stay archived.
 
+## Visual design (leaning, 18 October 2026)
+
+- **Most likely: version 3, "Broadsheet · Cedefop blue".** Not final and not implemented; the live Daily keeps its current look until the user confirms.
+- **What version 3 is:** the current layout unchanged, restyled as a broadsheet. Centred Playfair Display masthead with a double rule, small-caps dateline and section bar, hairline columns instead of boxed cards, a centred "SIX TO KNOW" heading. Text is in Libre Franklin. Colours are a muted Cedefop palette: navy-grey ink `#1c2233`, Cedefop blue `#3c4f8c` for section titles, numbers and the paper's own stories, and no yellow.
+- **Section labels** keep today's chips: white monospace capitals on the section colour, with the detail in the same font and colour after them.
+- **The mock-up and the full notes are kept locally,** not in git: `cedefop-daily/reference/design/` (`cedefop-daily-designs.html`, open it and press 3; `DESIGN_DECISION.md`). The published comparison is https://claude.ai/artifact/DgVNCtByE9hT6RvqJv6RGk.
+- **The Daily stays separate from any redesign of the main Apprentix site.**
+
 ## How it works
 
 ```
