@@ -1,0 +1,31 @@
+id,name,circle,kind,url,status_2026_10_17,notes
+cedefop_rss,Cedefop RSS,0,rss,https://www.cedefop.europa.eu/en/rss.xml,200 (10 items),noisy recently-changed feed; filter by URL path
+cedefop_html,Cedefop news/events/publications pages,0,html,https://www.cedefop.europa.eu/en/news,403,bot check; ask the web team for a feed or API
+cedefop_newsletter,Cedefop newsletter,0,inbox,https://www.cedefop.europa.eu/en/newsletters,via RSS,subscribe the paper's inbox
+cedefop_calendar,Cedefop internal calendar,0,calendar,,not tested,needs a feed from Communications
+staff_news_inbox,HR / Communications / self-submission inbox,0,inbox,,to create,see PEOPLE_AND_PRIVACY.md
+openalex_fulltext,OpenAlex full text "cedefop",1,api,https://api.openalex.org/works?filter=fulltext.search:cedefop,200,about 23 works a week (2025)
+openalex_cites,OpenAlex works citing Cedefop works,1,api,(built by script from Cedefop's top works),200,19 in 30 days (top-50 works)
+media_monitoring,Cedefop media monitoring contract,1,media_monitor,,not tested,ask Communications
+emm_newsbrief,JRC Europe Media Monitor NewsBrief,1,rss,https://emm.newsbrief.eu/rss/rss?type=search&mode=advanced&atLeast=cedefop&language=en,403 (RSS; home page 200),ask for institutional access
+ec_presscorner,European Commission press corner,2,rss,https://ec.europa.eu/commission/presscorner/api/rss?language=en,200 (10 items),filter with topics.yaml
+council_press,Council of the EU press releases,2,rss,https://www.consilium.europa.eu/en/rss/pressreleases.ashx,200 (20 items),
+ep_press,European Parliament press releases,2,rss,https://www.europarl.europa.eu/rss/doc/press-releases/en.xml,200 (20 items),
+ep_thinktank,European Parliament Think Tank,2,rss,https://www.europarl.europa.eu/rss/doc/thinktank/en.xml,404,find current feed URL
+eurlex_oj_l,EUR-Lex Official Journal L series,2,rss,https://eur-lex.europa.eu/EN/display-feed.rss?rssId=162,200 (100 items),
+cellar_sparql,Publications Office Cellar SPARQL,2,api,https://publications.europa.eu/webapi/rdf/sparql,200,
+have_your_say,Commission Have your say consultations,2,api,,not tested,
+eurostat_api,Eurostat dissemination API,data,api,https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/trng_lfse_01?format=JSON&lang=EN,200,
+eurostat_updates,Eurostat dataset updates,data,rss,https://ec.europa.eu/eurostat/api/dissemination/catalogue/rss/en/statistics-update.rss,200 (1739 entries),filter to watchlist
+esco_api,ESCO API,tagging,api,https://ec.europa.eu/esco/api/search?text=welder&type=occupation&language=en,200,
+etf,European Training Foundation news,3,html,https://www.etf.europa.eu/en/news-and-events/news,200 HTML,no feed found
+eurofound,Eurofound news,3,html,https://www.eurofound.europa.eu/en/news,429,rate-limited; newsletter
+euosha,EU-OSHA,3,rss,https://osha.europa.eu/en/rss.xml,200 (10 items),
+ela,European Labour Authority news,3,html,https://www.ela.europa.eu/en/news,200 HTML,
+eige,EIGE news,3,html,https://eige.europa.eu/newsroom/news,200 HTML,
+oecd,OECD skills,3,html,https://www.oecd.org/en/topics/skills.html,403,newsletters; OECD data API
+ilo,ILO news,3,html,https://www.ilo.org/resource/news,200 HTML,
+unevoc,UNESCO-UNEVOC news,3,html,https://unevoc.unesco.org/home/UNEVOC+News,200 HTML,
+epale,EPALE,3,html,https://epale.ec.europa.eu/en/news,404,find current URL
+national,National ministries and VET agencies (EU-27 + IS + NO),4,mixed,,not tested,phase 4; translation
+journals,VET and labour journals,5,api,see data/vet_journals.csv,200,84 papers in 30 days (10 VET journals)

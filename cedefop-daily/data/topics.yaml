@@ -1,0 +1,66 @@
+# Work areas for tagging and connection lines.
+# Seed list, 17 October 2026. Align names with Cedefop's Single Programming Document and organigramme.
+# Keywords: lowercase; matched on title + summary; the model confirms borderline matches.
+# Non-English terms are a starting set; ask ReferNet or colleagues to complete them.
+
+vet_policy:
+  label: VET policy and systems
+  en: [vocational education and training, "vet ", vocational school, technical and vocational, tvet, centres of vocational excellence, osnabrück declaration, vet recommendation, copenhagen process]
+  de: [berufsbildung, berufliche bildung, berufsschule]
+  fr: [formation professionnelle, enseignement professionnel]
+  el: [επαγγελματική εκπαίδευση, επαγγελματική κατάρτιση]
+  it: [formazione professionale, istruzione tecnica]
+  es: [formación profesional]
+  nl: [beroepsonderwijs, mbo]
+  pl: [kształcenie zawodowe]
+apprenticeships:
+  label: Apprenticeships and work-based learning
+  en: [apprenticeship, apprentice, work-based learning, dual system, dual training, traineeship, european alliance for apprenticeships]
+  de: [ausbildung, lehrstelle, duale ausbildung, auszubildende]
+  fr: [apprentissage, alternance, apprenti]
+  el: [μαθητεία]
+  it: [apprendistato]
+  es: [fp dual, aprendiz]
+skills_intelligence:
+  label: Skills intelligence
+  en: [skills mismatch, skills shortage, labour shortage, skills forecast, skills needs, skills anticipation, online job advertisements, skills ovate, european skills index, european skills and jobs survey, upskilling needs]
+  de: [fachkräftemangel]
+  fr: [pénurie de compétences, pénurie de main-d'œuvre]
+qualifications:
+  label: Qualifications and credentials
+  en: [european qualifications framework, "eqf", national qualifications framework, learning outcomes, validation of non-formal, recognition of prior learning, micro-credential, microcredential, europass, esco]
+adult_learning:
+  label: Adult learning and upskilling
+  en: [adult learning, lifelong learning, upskilling, reskilling, individual learning account, continuing vocational training, cvet, upskilling pathways, low-skilled adults, career guidance]
+  de: [weiterbildung]
+  fr: [formation continue, compte personnel de formation]
+inclusion:
+  label: Inclusion and early leaving
+  en: [early leaving, early school leaving, neet, dropout, migrants, refugees, disability, gender gap]
+teachers_trainers:
+  label: Teachers and trainers
+  en: [vet teachers, in-company trainers, teacher shortage, trainers]
+mobility:
+  label: Mobility
+  en: [erasmus+, learner mobility, vet mobility, mobility scoreboard]
+future_of_work:
+  label: Future of work
+  en: [artificial intelligence, " ai ", generative ai, automation, digital skills, ai literacy, green skills, green transition, twin transition, platform work, ageing workforce, demographic change]
+labour_market:
+  label: Labour market
+  en: [employment rate, unemployment, job vacancies, wages, social partners, collective agreement, labour market]
+governance:
+  label: Governance and the agencies
+  en: [eu agencies, eu agencies network, euan, governing board, cedefop, etf, eurofound, eu-osha, european labour authority]
+
+policy_hooks:   # names to recognise in EU policy items; verify each against current EU pages
+  - Union of Skills
+  - European Skills Agenda
+  - Pact for Skills
+  - European Education Area
+  - European Pillar of Social Rights Action Plan
+  - Council Recommendation on vocational education and training (2020)
+  - Osnabrück Declaration
+  - Council Recommendation on individual learning accounts (2022)
+  - Council Recommendation on micro-credentials (2022)
+  - AI Act (Article 4, AI literacy)

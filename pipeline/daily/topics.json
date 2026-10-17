@@ -1,0 +1,279 @@
+{
+ "_note": "Work areas for tagging and connection lines. Seed list from cedefop-daily/data/topics.yaml (17 October 2026). Align names with Cedefop's Single Programming Document. Keywords are lowercase and match at the start of a word; keywords of four letters or fewer must match a whole word.",
+ "areas": {
+  "vet_policy": {
+   "label": "VET policy and systems",
+   "keywords": {
+    "en": [
+     "vocational education and training",
+     "vet",
+     "vocational school",
+     "technical and vocational",
+     "tvet",
+     "centres of vocational excellence",
+     "osnabrück declaration",
+     "vet recommendation",
+     "copenhagen process",
+     "worldskills",
+     "skills competition",
+     "vocational"
+    ],
+    "de": [
+     "berufsbildung",
+     "berufliche bildung",
+     "berufsschule"
+    ],
+    "fr": [
+     "formation professionnelle",
+     "enseignement professionnel"
+    ],
+    "el": [
+     "επαγγελματική εκπαίδευση",
+     "επαγγελματική κατάρτιση"
+    ],
+    "it": [
+     "formazione professionale",
+     "istruzione tecnica"
+    ],
+    "es": [
+     "formación profesional"
+    ],
+    "nl": [
+     "beroepsonderwijs",
+     "mbo"
+    ],
+    "pl": [
+     "kształcenie zawodowe"
+    ]
+   }
+  },
+  "apprenticeships": {
+   "label": "Apprenticeships and work-based learning",
+   "keywords": {
+    "en": [
+     "apprenticeship",
+     "apprentice",
+     "work-based learning",
+     "dual system",
+     "dual training",
+     "traineeship",
+     "european alliance for apprenticeships"
+    ],
+    "de": [
+     "ausbildung",
+     "lehrstelle",
+     "duale ausbildung",
+     "auszubildende"
+    ],
+    "fr": [
+     "apprentissage",
+     "alternance",
+     "apprenti"
+    ],
+    "el": [
+     "μαθητεία"
+    ],
+    "it": [
+     "apprendistato"
+    ],
+    "es": [
+     "fp dual",
+     "aprendiz"
+    ]
+   }
+  },
+  "skills_intelligence": {
+   "label": "Skills intelligence",
+   "keywords": {
+    "en": [
+     "skills mismatch",
+     "skills shortage",
+     "labour shortage",
+     "skills forecast",
+     "skills needs",
+     "skills anticipation",
+     "online job advertisements",
+     "skills ovate",
+     "european skills index",
+     "european skills and jobs survey",
+     "upskilling needs",
+     "mismatch",
+     "overeducation",
+     "overeducated",
+     "skills governance",
+     "skills forecasting",
+     "regional skills",
+     "skills ecosystem"
+    ],
+    "de": [
+     "fachkräftemangel"
+    ],
+    "fr": [
+     "pénurie de compétences",
+     "pénurie de main-d'œuvre"
+    ]
+   }
+  },
+  "qualifications": {
+   "label": "Qualifications and credentials",
+   "keywords": {
+    "en": [
+     "european qualifications framework",
+     "eqf",
+     "national qualifications framework",
+     "learning outcomes",
+     "validation of non-formal",
+     "recognition of prior learning",
+     "micro-credential",
+     "microcredential",
+     "europass",
+     "esco"
+    ]
+   }
+  },
+  "adult_learning": {
+   "label": "Adult learning and upskilling",
+   "keywords": {
+    "en": [
+     "adult learning",
+     "lifelong learning",
+     "upskilling",
+     "reskilling",
+     "individual learning account",
+     "continuing vocational training",
+     "cvet",
+     "upskilling pathways",
+     "low-skilled adults",
+     "career guidance",
+     "workplace learning",
+     "training expenses",
+     "employer-sponsored training"
+    ],
+    "de": [
+     "weiterbildung"
+    ],
+    "fr": [
+     "formation continue",
+     "compte personnel de formation"
+    ]
+   }
+  },
+  "inclusion": {
+   "label": "Inclusion and early leaving",
+   "keywords": {
+    "en": [
+     "early leaving",
+     "early school leaving",
+     "neet",
+     "dropout",
+     "migrants",
+     "refugees",
+     "disability",
+     "gender gap",
+     "poverty",
+     "social exclusion",
+     "not in employment, education or training"
+    ]
+   }
+  },
+  "teachers_trainers": {
+   "label": "Teachers and trainers",
+   "keywords": {
+    "en": [
+     "vet teachers",
+     "in-company trainers",
+     "teacher shortage",
+     "trainers",
+     "vocational education teachers",
+     "vocational teachers",
+     "vet teacher",
+     "teachers and trainers",
+     "teacher training",
+     "vocational trainers"
+    ]
+   }
+  },
+  "mobility": {
+   "label": "Mobility",
+   "keywords": {
+    "en": [
+     "erasmus+",
+     "learner mobility",
+     "vet mobility",
+     "mobility scoreboard"
+    ]
+   }
+  },
+  "future_of_work": {
+   "label": "Future of work",
+   "keywords": {
+    "en": [
+     "artificial intelligence",
+     "ai",
+     "generative ai",
+     "automation",
+     "digital skills",
+     "ai literacy",
+     "green skills",
+     "green transition",
+     "twin transition",
+     "platform work",
+     "ageing workforce",
+     "demographic change"
+    ]
+   }
+  },
+  "labour_market": {
+   "label": "Labour market",
+   "keywords": {
+    "en": [
+     "employment rate",
+     "unemployment",
+     "job vacancies",
+     "wages",
+     "social partners",
+     "collective agreement",
+     "labour market",
+     "employment and social policy",
+     "epsco",
+     "social policy",
+     "labour inspectorate",
+     "job placement",
+     "posting of workers"
+    ]
+   }
+  },
+  "governance": {
+   "label": "Governance and the agencies",
+   "keywords": {
+    "en": [
+     "eu agencies",
+     "eu agencies network",
+     "euan",
+     "governing board",
+     "cedefop",
+     "etf",
+     "eurofound",
+     "eu-osha",
+     "european labour authority",
+     "management board",
+     "european agency for safety and health at work",
+     "european training foundation",
+     "tripartite social summit"
+    ]
+   }
+  }
+ },
+ "policy_hooks": [
+  "Union of Skills",
+  "European Skills Agenda",
+  "Pact for Skills",
+  "European Education Area",
+  "European Pillar of Social Rights Action Plan",
+  "Council Recommendation on vocational education and training (2020)",
+  "Osnabrück Declaration",
+  "Council Recommendation on individual learning accounts (2022)",
+  "Council Recommendation on micro-credentials (2022)",
+  "AI Act (Article 4, AI literacy)"
+ ]
+}
