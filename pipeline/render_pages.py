@@ -196,6 +196,7 @@ def page(*, title: str, description: str, canonical: str, root: str, body: str, 
       {nav(pages + "indicators.html", "Indicators", "indicators")}
       {nav(pages + "insights.html", "Insights", "insights")}
       {nav(pages + "countries/", "Countries", "countries")}
+      {nav(pages + "occupations/", "Occupations", "occupations")}
       {nav(pages + "ask.html", "Ask", "ask")}
       {nav(pages + "about.html", "About", "about")}
       {nav(pages + "data.html", "Data &amp; sources", "data")}
@@ -213,7 +214,9 @@ def page(*, title: str, description: str, canonical: str, root: str, body: str, 
       <a href="{root}">Datasets</a>
       <a href="{pages}indicators.html">Indicators</a>
       <a href="{pages}insights.html">Insights</a>
+      <a href="{pages}stories/">Stories</a>
       <a href="{pages}countries/">Countries</a>
+      <a href="{pages}occupations/">Occupations</a>
       <a href="{pages}ask.html">Ask</a>
       <a href="{pages}find.html">Find my apprenticeship</a>
       <a href="{pages}duel.html">Compare countries</a>
@@ -636,6 +639,12 @@ def render_country(D, c: dict, f: dict, has_page: set[str]) -> str:
   <div class="cp-schemes">{"".join(scheme_block(s, sm) for s in f["schemes"])}</div>
   <p class="provenance">Source: <a href="{e(src['url'])}" target="_blank" rel="noopener">{e(src['name'])}</a>. {e(src.get('caveat', ''))}</p>
 </section>""")
+
+    # b1. Learner path: school → apprenticeship → qualification → work or further study.
+    if f["schemes"]:
+        from .learner_paths import section_html as path_html
+        nav.append(("path", "From school to work"))
+        sections.append(path_html(code, the_name, f["schemes"]))
 
     # b2. Where to find an apprenticeship: official services (data/reference/opportunities.json),
     # the quiz, and Erasmus+ accredited organisations for training abroad.
@@ -1063,6 +1072,11 @@ def render_all() -> list[Path]:
     from . import render_datasets
     extra_written, extra_urls = render_datasets.render_all(D)
     written += extra_written
+    from . import render_occupations, render_stories
+    occ_written, occ_urls = render_occupations.render_all()
+    st_written, st_urls = render_stories.render_all()
+    written += occ_written + st_written
+    extra_urls = list(extra_urls) + occ_urls + st_urls
     codes = [c["code"] for c in D["countries"] if c["code"] in facts]
     if write_text(ROOT / "sitemap.xml", sitemap(D, codes, extra_urls)):
         written.append(ROOT / "sitemap.xml")

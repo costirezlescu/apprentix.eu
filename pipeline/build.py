@@ -128,6 +128,8 @@ def all(connectors: dict, status: dict) -> None:
     changes.build()           # what changed since the last build → data/published/changes/
     changes.ensure_by_country()
     duel.build()              # per-country profiles for the country duel
+    from . import occupations
+    occupations.build()       # Occupation lens: qualifications per occupation and country
     from . import portraits, pulse
     portraits.build()         # scheme portraits and "What to expect on this scheme" stories
     pulse.build()             # policy pulse: apprenticeship policies that moved in the latest year
@@ -138,6 +140,8 @@ def all(connectors: dict, status: dict) -> None:
     from . import insights, render_insights, facts
     insights.build()          # analyses across all data → data/published/insights/
     facts.build()             # 'Did you know?' facts → data/published/facts/
+    from . import stories
+    stories.build()           # scroll-driven stories → data/published/stories/
     from . import myths
     myths.build()             # 'Myth or fact?' statements → data/published/myths/
     from . import og

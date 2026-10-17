@@ -376,7 +376,8 @@
       "licence": "EC-reuse",
       "cadence": "irregular (new ESCO versions roughly yearly)",
       "outputs": [
-        "reference/esco-occupations.json"
+        "reference/esco-occupations.json",
+        "reference/occupation-lens-esco.json"
       ],
       "automated": true,
       "connector": "pipeline/sources/esco.py",

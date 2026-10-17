@@ -18,7 +18,7 @@
 <meta property="og:image:alt" content="Apprentix: European apprenticeship and VET data, made searchable — apprenticeship schemes, statistical indicators and countries covered.">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Public+Sans:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
-<link rel="stylesheet" href="assets/css/site.css?v=62696cb2">
+<link rel="stylesheet" href="assets/css/site.css?v=32ac435b">
 <link rel="alternate" type="application/atom+xml" title="Apprentix data updates" href="data/feed.xml">
 </head>
 <body data-root="./">
@@ -40,6 +40,7 @@
       <a href="pages/indicators.html">Indicators</a>
       <a href="pages/insights.html">Insights</a>
       <a href="pages/countries/">Countries</a>
+      <a href="pages/occupations/">Occupations</a>
       <a href="pages/ask.html">Ask</a>
       <a href="pages/about.html">About</a>
       <a href="pages/data.html">Data &amp; sources</a>
@@ -87,6 +88,18 @@
           <h3>Myth or fact?</h3>
           <p>"Apprentices aren't paid." "It's only for teenagers." Ten things people say about apprenticeships — answered with data from 34 schemes.</p>
           <span class="start-go">Take the quiz →</span>
+        </a>
+        <a class="start-card" href="pages/occupations/">
+          <span class="start-kicker">For learners</span>
+          <h3>Want to be an electrician?</h3>
+          <p>Pick one of 18 occupations and see where in Europe you can qualify, at which level, and where to look for an apprenticeship.</p>
+          <span class="start-go">Pick an occupation →</span>
+        </a>
+        <a class="start-card" href="pages/stories/french-apprenticeship-boom.html">
+          <span class="start-kicker">Story</span>
+          <h3>The French apprenticeship boom</h3>
+          <p>From 426,000 to over a million apprentices in seven years: scroll through how it happened, who the new apprentices are, and why the count is now falling.</p>
+          <span class="start-go">Scroll the story →</span>
         </a>
         <a class="start-card" href="pages/insights.html">
           <span class="start-kicker">For decision-makers</span>
@@ -188,11 +201,11 @@
 </footer>
 
 <script type="module">
-  import { mountDidYouKnow } from './assets/js/facts.js?v=62696cb2';
-  import { mountChanges } from './assets/js/changes.js?v=62696cb2';
-  import { mountHomeMap } from './assets/js/home-map.js?v=62696cb2';
-  import { mountSchemeOfWeek } from './assets/js/scheme-week.js?v=62696cb2';
-  import { mountPulse } from './assets/js/pulse.js?v=62696cb2';
+  import { mountDidYouKnow } from './assets/js/facts.js?v=32ac435b';
+  import { mountChanges } from './assets/js/changes.js?v=32ac435b';
+  import { mountHomeMap } from './assets/js/home-map.js?v=32ac435b';
+  import { mountSchemeOfWeek } from './assets/js/scheme-week.js?v=32ac435b';
+  import { mountPulse } from './assets/js/pulse.js?v=32ac435b';
   mountPulse(document.getElementById('pulse'));
   mountHomeMap(document.getElementById('timelapse'));
   mountSchemeOfWeek(document.getElementById('scheme-week'));
@@ -201,7 +214,7 @@
 </script>
 
 <script type="module">
-  import { loadManifest, esc } from './assets/js/data.js?v=62696cb2';
+  import { loadManifest, esc } from './assets/js/data.js?v=32ac435b';
 
   const m = await loadManifest();
   document.getElementById('site-tagline').textContent = m.site.tagline;
@@ -252,6 +265,6 @@
   }
 </script>
 
-<script type="module">import { initGlossary } from './assets/js/glossary.js?v=62696cb2'; initGlossary();</script>
+<script type="module">import { initGlossary } from './assets/js/glossary.js?v=32ac435b'; initGlossary();</script>
 </body>
 </html>

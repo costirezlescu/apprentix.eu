@@ -90,7 +90,7 @@ def render_insights() -> list[str]:
 <header class="in-head">
   <div class="mono">Analysis</div>
   <h1>Insights</h1>
-  <p class="lede">What the data on European apprenticeships says when you put the sources side by side. Every number below is recomputed from the published data whenever the sources update, and every finding links to its data, method and caveats.</p>
+  <p class="lede">What the data on European apprenticeships says when you put the sources side by side. Every number below is recomputed from the published data whenever the sources update, and every finding links to its data, method and caveats. Some are told at length, step by step, in the <a href="stories/">stories</a>.</p>
   <div class="chips in-filter" role="group" aria-label="Show insights for">{chips}</div>
   <details class="in-toc"><summary>All {len(items)} insights</summary><ol>{toc}</ol></details>
 </header>

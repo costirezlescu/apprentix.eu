@@ -3,7 +3,7 @@
    one at a time: answer, see the data, move on; a score to share at the end.
    All text is set with textContent. Nothing is stored. */
 
-import { url } from './data.js?v=62696cb2';
+import { url } from './data.js?v=32ac435b';
 
 const ROUND = 10;
 const host = document.getElementById('mf');

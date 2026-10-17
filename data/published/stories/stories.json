@@ -1,0 +1,1103 @@
+{
+  "description": "Scroll-driven stories: step texts with the chart state for each step. Numbers computed from published data.",
+  "stories": [
+    {
+      "id": "french-apprenticeship-boom",
+      "title": "The French apprenticeship boom",
+      "dek": "How France went from 425,876 to over 1,000,000 apprentices in seven years, who they are, and why the count is now falling.",
+      "kicker": "France",
+      "chart": {
+        "type": "lines",
+        "unit": "apprentices under contract, end of December",
+        "series": {
+          "TOTAL": {
+            "key": "TOTAL",
+            "points": [
+              {
+                "time": "2013",
+                "value": 432995.0
+              },
+              {
+                "time": "2014",
+                "value": 408803.0
+              },
+              {
+                "time": "2015",
+                "value": 408411.0
+              },
+              {
+                "time": "2016",
+                "value": 415952.0
+              },
+              {
+                "time": "2017",
+                "value": 425876.0
+              },
+              {
+                "time": "2018",
+                "value": 436898.0
+              },
+              {
+                "time": "2019",
+                "value": 486789.0
+              },
+              {
+                "time": "2020",
+                "value": 661409.0
+              },
+              {
+                "time": "2021",
+                "value": 856162.0
+              },
+              {
+                "time": "2022",
+                "value": 970803.0
+              },
+              {
+                "time": "2023",
+                "value": 1015395.0
+              },
+              {
+                "time": "2024",
+                "value": 1048840.0
+              },
+              {
+                "time": "2025",
+                "value": 1014485.0
+              }
+            ]
+          },
+          "SECONDARY": {
+            "key": "SECONDARY",
+            "points": [
+              {
+                "time": "2013",
+                "value": 290937.0
+              },
+              {
+                "time": "2014",
+                "value": 267507.0
+              },
+              {
+                "time": "2015",
+                "value": 261479.0
+              },
+              {
+                "time": "2016",
+                "value": 260669.0
+              },
+              {
+                "time": "2017",
+                "value": 258828.0
+              },
+              {
+                "time": "2018",
+                "value": 258038.0
+              },
+              {
+                "time": "2019",
+                "value": 266258.0
+              },
+              {
+                "time": "2020",
+                "value": 299452.0
+              },
+              {
+                "time": "2021",
+                "value": 344947.0
+              },
+              {
+                "time": "2022",
+                "value": 369048.0
+              },
+              {
+                "time": "2023",
+                "value": 374902.0
+              },
+              {
+                "time": "2024",
+                "value": 386343.0
+              },
+              {
+                "time": "2025",
+                "value": 380468.0
+              }
+            ]
+          },
+          "HIGHER": {
+            "key": "HIGHER",
+            "points": [
+              {
+                "time": "2013",
+                "value": 142058.0
+              },
+              {
+                "time": "2014",
+                "value": 141296.0
+              },
+              {
+                "time": "2015",
+                "value": 146932.0
+              },
+              {
+                "time": "2016",
+                "value": 155283.0
+              },
+              {
+                "time": "2017",
+                "value": 167048.0
+              },
+              {
+                "time": "2018",
+                "value": 178860.0
+              },
+              {
+                "time": "2019",
+                "value": 220531.0
+              },
+              {
+                "time": "2020",
+                "value": 361957.0
+              },
+              {
+                "time": "2021",
+                "value": 511215.0
+              },
+              {
+                "time": "2022",
+                "value": 601755.0
+              },
+              {
+                "time": "2023",
+                "value": 640493.0
+              },
+              {
+                "time": "2024",
+                "value": 662497.0
+              },
+              {
+                "time": "2025",
+                "value": 634017.0
+              }
+            ]
+          }
+        },
+        "labels": {
+          "TOTAL": "All apprentices",
+          "SECONDARY": "Secondary-level diplomas",
+          "HIGHER": "Higher-education diplomas"
+        },
+        "index": {
+          "unit": "index, 2017 = 100",
+          "series": [
+            {
+              "label": "France — apprentices (stock, December)",
+              "points": [
+                {
+                  "time": "2017",
+                  "value": 100.0
+                },
+                {
+                  "time": "2018",
+                  "value": 102.6
+                },
+                {
+                  "time": "2019",
+                  "value": 114.3
+                },
+                {
+                  "time": "2020",
+                  "value": 155.3
+                },
+                {
+                  "time": "2021",
+                  "value": 201.0
+                },
+                {
+                  "time": "2022",
+                  "value": 228.0
+                },
+                {
+                  "time": "2023",
+                  "value": 238.4
+                },
+                {
+                  "time": "2024",
+                  "value": 246.3
+                },
+                {
+                  "time": "2025",
+                  "value": 238.2
+                }
+              ]
+            },
+            {
+              "label": "Norway — apprentices",
+              "points": [
+                {
+                  "time": "2017",
+                  "value": 100.0
+                },
+                {
+                  "time": "2018",
+                  "value": 104.1
+                },
+                {
+                  "time": "2019",
+                  "value": 109.4
+                },
+                {
+                  "time": "2020",
+                  "value": 110.0
+                },
+                {
+                  "time": "2021",
+                  "value": 115.4
+                },
+                {
+                  "time": "2022",
+                  "value": 118.8
+                },
+                {
+                  "time": "2023",
+                  "value": 118.5
+                },
+                {
+                  "time": "2024",
+                  "value": 120.2
+                },
+                {
+                  "time": "2025",
+                  "value": 123.1
+                }
+              ]
+            },
+            {
+              "label": "Switzerland — VET entrants",
+              "points": [
+                {
+                  "time": "2017",
+                  "value": 100.0
+                },
+                {
+                  "time": "2018",
+                  "value": 99.1
+                },
+                {
+                  "time": "2019",
+                  "value": 99.4
+                },
+                {
+                  "time": "2020",
+                  "value": 99.2
+                },
+                {
+                  "time": "2021",
+                  "value": 98.1
+                },
+                {
+                  "time": "2022",
+                  "value": 97.0
+                },
+                {
+                  "time": "2023",
+                  "value": 98.9
+                },
+                {
+                  "time": "2024",
+                  "value": 100.1
+                },
+                {
+                  "time": "2025",
+                  "value": 100.7
+                }
+              ]
+            },
+            {
+              "label": "England — apprenticeship starts",
+              "points": [
+                {
+                  "time": "2017",
+                  "value": 100.0
+                },
+                {
+                  "time": "2018",
+                  "value": 104.7
+                },
+                {
+                  "time": "2019",
+                  "value": 85.8
+                },
+                {
+                  "time": "2020",
+                  "value": 85.5
+                },
+                {
+                  "time": "2021",
+                  "value": 92.9
+                },
+                {
+                  "time": "2022",
+                  "value": 89.7
+                },
+                {
+                  "time": "2023",
+                  "value": 90.4
+                },
+                {
+                  "time": "2024",
+                  "value": 94.1
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "steps": [
+        {
+          "text": "At the end of 2017, <strong>425,876</strong> people in France were training under an apprenticeship contract. The number had hardly moved in years: 432,995 at the end of 2013.",
+          "chart": {
+            "view": "level",
+            "series": [
+              "TOTAL"
+            ],
+            "upto": "2017",
+            "mark": "2017"
+          }
+        },
+        {
+          "text": "In September 2018 a new law, “for the freedom to choose one’s professional future”, changed how apprenticeship works. Any training organisation could now open an apprentice training centre, and centres were funded for each contract they signed. By the end of 2019 there were <strong>486,789</strong> apprentices, +14% in two years.",
+          "chart": {
+            "view": "level",
+            "series": [
+              "TOTAL"
+            ],
+            "upto": "2019",
+            "mark": "2019",
+            "notes": [
+              {
+                "time": "2018",
+                "label": "2018 reform"
+              }
+            ]
+          }
+        },
+        {
+          "text": "In July 2020, in the middle of the pandemic, the government added an exceptional hiring aid: up to €5,000 for an apprentice under 18 and €8,000 for an adult in the first year. Instead of collapsing, the count jumped to <strong>661,409</strong> at the end of 2020, +36% in a single year.",
+          "chart": {
+            "view": "level",
+            "series": [
+              "TOTAL"
+            ],
+            "upto": "2020",
+            "mark": "2020",
+            "notes": [
+              {
+                "time": "2018",
+                "label": "2018 reform"
+              },
+              {
+                "time": "2020",
+                "label": "Hiring aid"
+              }
+            ]
+          }
+        },
+        {
+          "text": "The growth went on. At its peak, at the end of 2024, France had <strong>1,048,840</strong> apprentices: 2.5 times the 2017 level.",
+          "chart": {
+            "view": "level",
+            "series": [
+              "TOTAL"
+            ],
+            "upto": "2024",
+            "mark": "2024",
+            "notes": [
+              {
+                "time": "2018",
+                "label": "2018 reform"
+              },
+              {
+                "time": "2020",
+                "label": "Hiring aid"
+              }
+            ]
+          }
+        },
+        {
+          "text": "Who are the new apprentices? Mostly students in higher education. Apprentices preparing a higher-education diploma (BTS, bachelor, master, engineering degree) went from 167,048 to <strong>634,017</strong>; those preparing a secondary-level diploma (CAP, vocational baccalaureate…) from 258,828 to 380,468. In 2025, 62% of apprentices were in higher education.",
+          "chart": {
+            "view": "level",
+            "series": [
+              "SECONDARY",
+              "HIGHER"
+            ],
+            "upto": "2025",
+            "mark": "2025"
+          }
+        },
+        {
+          "text": "At the end of 2025 the count fell for the first time in the series: <strong>1,014,485</strong>, −3% on a year earlier. The hiring aid had been cut, most recently in February 2025 to €5,000 for firms with fewer than 250 employees and €2,000 for larger ones. The latest monthly figure, for 2026-07, is 911,425, −3% on a year earlier.",
+          "chart": {
+            "view": "level",
+            "series": [
+              "TOTAL"
+            ],
+            "upto": "2025",
+            "mark": "2025",
+            "notes": [
+              {
+                "time": "2018",
+                "label": "2018 reform"
+              },
+              {
+                "time": "2020",
+                "label": "Hiring aid"
+              },
+              {
+                "time": "2025",
+                "label": "Aid cut"
+              }
+            ]
+          }
+        },
+        {
+          "text": "Nothing comparable happened in the other countries with long national series. Since 2017: Norway +23% (to 2025); Switzerland +1% (to 2025); England −6% (to 2024). France also counts higher-education apprentices, which most countries do not, so compare the direction, not the levels.",
+          "chart": {
+            "view": "index"
+          }
+        }
+      ],
+      "sources": [
+        {
+          "label": "DARES, apprentices under contract (POEM), on Apprentix",
+          "url": "pages/indicators/fr-dares-apprentices-stock.html"
+        },
+        {
+          "label": "Loi n° 2018-771 du 5 septembre 2018 (Légifrance)",
+          "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000037367660"
+        },
+        {
+          "label": "Hiring aid from 1 July 2020: Assemblée nationale, written question 33143",
+          "url": "https://questions.assemblee-nationale.fr/dyn/15/questions/QANR5L15QE33143.pdf"
+        },
+        {
+          "label": "2025 cut: Centre Inffo",
+          "url": "https://www.centre-inffo.fr/site-centre-inffo/actualites-centre-inffo/le-quotidien-de-la-formation-actualite-formation-professionnelle-apprentissage/articles-2025/le-gouvernement-diminue-laide-au-recrutement-dapprentis-en-2025"
+        },
+        {
+          "label": "National apprenticeship trends (insight)",
+          "url": "pages/insights.html#national-trajectories"
+        }
+      ],
+      "method": "End-of-December stocks of apprenticeship contracts from DARES (private and public employers, all levels). DARES treats the most recent 48 months as provisional. The comparison uses each country's own series indexed to 2017 = 100."
+    },
+    {
+      "id": "two-families-of-apprenticeship",
+      "title": "Two families of apprenticeship",
+      "dek": "Europe’s 34 apprenticeship schemes look alike from afar. Sorted by Cedefop’s own answers, they split into two families with different histories, contracts and qualifications.",
+      "kicker": "Europe",
+      "chart": {
+        "type": "dots",
+        "dots": [
+          {
+            "id": "at-lehre",
+            "cc": "AT",
+            "name": "Dual apprenticeship",
+            "country": "Austria",
+            "family": "employer",
+            "old": true,
+            "new": false,
+            "craft": true,
+            "old_craft": true,
+            "school_origin": false,
+            "student": false,
+            "agreement": false,
+            "only_route": true
+          },
+          {
+            "id": "befl-duaal",
+            "cc": "BE",
+            "name": "Dual learning",
+            "country": "Belgium — Flanders",
+            "family": "school",
+            "old": false,
+            "new": true,
+            "craft": true,
+            "old_craft": false,
+            "school_origin": true,
+            "student": false,
+            "agreement": false,
+            "only_route": false
+          },
+          {
+            "id": "befr-alternance",
+            "cc": "BE",
+            "name": "Dual training",
+            "country": "Belgium — French community",
+            "family": "employer",
+            "old": true,
+            "new": false,
+            "craft": true,
+            "old_craft": true,
+            "school_origin": false,
+            "student": false,
+            "agreement": false,
+            "only_route": true
+          },
+          {
+            "id": "bg-dual",
+            "cc": "BG",
+            "name": "Work-based learning (dual system)",
+            "country": "Bulgaria",
+            "family": "school",
+            "old": false,
+            "new": true,
+            "craft": false,
+            "old_craft": false,
+            "school_origin": true,
+            "student": false,
+            "agreement": false,
+            "only_route": false
+          },
+          {
+            "id": "hr-jmo",
+            "cc": "HR",
+            "name": "Unified Model of Education",
+            "country": "Croatia",
+            "family": "school",
+            "old": false,
+            "new": false,
+            "craft": true,
+            "old_craft": false,
+            "school_origin": true,
+            "student": true,
+            "agreement": true,
+            "only_route": false
+          },
+          {
+            "id": "cy-nma",
+            "cc": "CY",
+            "name": "New Modern Apprenticeship",
+            "country": "Cyprus",
+            "family": "employer",
+            "old": true,
+            "new": false,
+            "craft": true,
+            "old_craft": true,
+            "school_origin": false,
+            "student": false,
+            "agreement": false,
+            "only_route": true
+          },
+          {
+            "id": "cz-dual",
+            "cc": "CZ",
+            "name": "Dual practical training",
+            "country": "Czechia",
+            "family": "school",
+            "old": false,
+            "new": true,
+            "craft": false,
+            "old_craft": false,
+            "school_origin": true,
+            "student": true,
+            "agreement": true,
+            "only_route": false
+          },
+          {
+            "id": "dk-eud",
+            "cc": "DK",
+            "name": "Apprenticeship (VET programmes)",
+            "country": "Denmark",
+            "family": "employer",
+            "old": true,
+            "new": false,
+            "craft": true,
+            "old_craft": true,
+            "school_origin": false,
+            "student": false,
+            "agreement": false,
+            "only_route": true
+          },
+          {
+            "id": "ee-wbl",
+            "cc": "EE",
+            "name": "Workplace-based learning",
+            "country": "Estonia",
+            "family": "school",
+            "old": false,
+            "new": false,
+            "craft": false,
+            "old_craft": false,
+            "school_origin": true,
+            "student": true,
+            "agreement": true,
+            "only_route": false
+          },
+          {
+            "id": "fi-oppisopimus",
+            "cc": "FI",
+            "name": "Apprenticeship training",
+            "country": "Finland",
+            "family": "employer",
+            "old": true,
+            "new": false,
+            "craft": true,
+            "old_craft": true,
+            "school_origin": false,
+            "student": false,
+            "agreement": false,
+            "only_route": false
+          },
+          {
+            "id": "fr-apprentissage",
+            "cc": "FR",
+            "name": "Apprenticeship contract",
+            "country": "France",
+            "family": "employer",
+            "old": true,
+            "new": false,
+            "craft": true,
+            "old_craft": true,
+            "school_origin": false,
+            "student": false,
+            "agreement": false,
+            "only_route": false
+          },
+          {
+            "id": "fr-pro",
+            "cc": "FR",
+            "name": "Professionalisation contract",
+            "country": "France",
+            "family": "other",
+            "old": false,
+            "new": false,
+            "craft": false,
+            "old_craft": false,
+            "school_origin": false,
+            "student": false,
+            "agreement": false,
+            "only_route": false
+          },
+          {
+            "id": "de-dual",
+            "cc": "DE",
+            "name": "Dual VET",
+            "country": "Germany",
+            "family": "employer",
+            "old": true,
+            "new": false,
+            "craft": true,
+            "old_craft": true,
+            "school_origin": false,
+            "student": false,
+            "agreement": false,
+            "only_route": true
+          },
+          {
+            "id": "el-epas",
+            "cc": "EL",
+            "name": "EPAS apprenticeships (DYPA)",
+            "country": "Greece",
+            "family": "employer",
+            "old": true,
+            "new": false,
+            "craft": true,
+            "old_craft": true,
+            "school_origin": false,
+            "student": false,
+            "agreement": false,
+            "only_route": true
+          },
+          {
+            "id": "el-postsec",
+            "cc": "EL",
+            "name": "Post-secondary apprenticeship year",
+            "country": "Greece",
+            "family": "employer",
+            "old": false,
+            "new": true,
+            "craft": false,
+            "old_craft": false,
+            "school_origin": false,
+            "student": false,
+            "agreement": false,
+            "only_route": false
+          },
+          {
+            "id": "hu-dual",
+            "cc": "HU",
+            "name": "Dual vocational training",
+            "country": "Hungary",
+            "family": "school",
+            "old": false,
+            "new": true,
+            "craft": false,
+            "old_craft": false,
+            "school_origin": true,
+            "student": false,
+            "agreement": false,
+            "only_route": false
+          },
+          {
+            "id": "is-starfsnam",
+            "cc": "IS",
+            "name": "Apprenticeship (certified trades)",
+            "country": "Iceland",
+            "family": "employer",
+            "old": true,
+            "new": false,
+            "craft": true,
+            "old_craft": true,
+            "school_origin": false,
+            "student": false,
+            "agreement": false,
+            "only_route": true
+          },
+          {
+            "id": "ie-app",
+            "cc": "IE",
+            "name": "Apprenticeships in Ireland",
+            "country": "Ireland",
+            "family": "employer",
+            "old": true,
+            "new": false,
+            "craft": true,
+            "old_craft": true,
+            "school_origin": false,
+            "student": false,
+            "agreement": false,
+            "only_route": true
+          },
+          {
+            "id": "it-type1",
+            "cc": "IT",
+            "name": "Type 1: apprenticeship for vocational qualification",
+            "country": "Italy",
+            "family": "school",
+            "old": false,
+            "new": false,
+            "craft": true,
+            "old_craft": false,
+            "school_origin": true,
+            "student": false,
+            "agreement": false,
+            "only_route": false
+          },
+          {
+            "id": "it-type3",
+            "cc": "IT",
+            "name": "Type 3: higher education apprenticeship",
+            "country": "Italy",
+            "family": "employer",
+            "old": false,
+            "new": false,
+            "craft": false,
+            "old_craft": false,
+            "school_origin": false,
+            "student": false,
+            "agreement": false,
+            "only_route": false
+          },
+          {
+            "id": "lv-wbl",
+            "cc": "LV",
+            "name": "Work-based learning",
+            "country": "Latvia",
+            "family": "school",
+            "old": false,
+            "new": true,
+            "craft": false,
+            "old_craft": false,
+            "school_origin": true,
+            "student": true,
+            "agreement": true,
+            "only_route": false
+          },
+          {
+            "id": "lt-pameistryste",
+            "cc": "LT",
+            "name": "VET in apprenticeship form",
+            "country": "Lithuania",
+            "family": "school",
+            "old": false,
+            "new": false,
+            "craft": false,
+            "old_craft": false,
+            "school_origin": true,
+            "student": false,
+            "agreement": false,
+            "only_route": false
+          },
+          {
+            "id": "lu-apprentissage",
+            "cc": "LU",
+            "name": "Apprenticeship contract",
+            "country": "Luxembourg",
+            "family": "employer",
+            "old": true,
+            "new": false,
+            "craft": true,
+            "old_craft": true,
+            "school_origin": false,
+            "student": false,
+            "agreement": false,
+            "only_route": true
+          },
+          {
+            "id": "mt-mcast",
+            "cc": "MT",
+            "name": "MCAST apprenticeships",
+            "country": "Malta",
+            "family": "employer",
+            "old": true,
+            "new": false,
+            "craft": true,
+            "old_craft": true,
+            "school_origin": false,
+            "student": false,
+            "agreement": true,
+            "only_route": true
+          },
+          {
+            "id": "nl-bbl",
+            "cc": "NL",
+            "name": "Dual pathway (BBL)",
+            "country": "Netherlands",
+            "family": "employer",
+            "old": true,
+            "new": false,
+            "craft": true,
+            "old_craft": true,
+            "school_origin": false,
+            "student": false,
+            "agreement": false,
+            "only_route": false
+          },
+          {
+            "id": "no-2plus2",
+            "cc": "NO",
+            "name": "Upper secondary VET (2+2 model)",
+            "country": "Norway",
+            "family": "employer",
+            "old": true,
+            "new": false,
+            "craft": true,
+            "old_craft": true,
+            "school_origin": false,
+            "student": false,
+            "agreement": false,
+            "only_route": false
+          },
+          {
+            "id": "pl-juvenile",
+            "cc": "PL",
+            "name": "Vocational preparation of juvenile workers",
+            "country": "Poland",
+            "family": "employer",
+            "old": true,
+            "new": false,
+            "craft": true,
+            "old_craft": true,
+            "school_origin": false,
+            "student": false,
+            "agreement": false,
+            "only_route": true
+          },
+          {
+            "id": "pt-aprendizagem",
+            "cc": "PT",
+            "name": "Apprenticeship programmes",
+            "country": "Portugal",
+            "family": "other",
+            "old": true,
+            "new": false,
+            "craft": false,
+            "old_craft": false,
+            "school_origin": false,
+            "student": true,
+            "agreement": true,
+            "only_route": false
+          },
+          {
+            "id": "ro-dual",
+            "cc": "RO",
+            "name": "VET in dual system",
+            "country": "Romania",
+            "family": "school",
+            "old": false,
+            "new": true,
+            "craft": false,
+            "old_craft": false,
+            "school_origin": true,
+            "student": true,
+            "agreement": true,
+            "only_route": false
+          },
+          {
+            "id": "ro-ucenicie",
+            "cc": "RO",
+            "name": "Apprenticeship at the workplace",
+            "country": "Romania",
+            "family": "employer",
+            "old": true,
+            "new": false,
+            "craft": true,
+            "old_craft": true,
+            "school_origin": false,
+            "student": false,
+            "agreement": false,
+            "only_route": false
+          },
+          {
+            "id": "sk-dual",
+            "cc": "SK",
+            "name": "Dual education",
+            "country": "Slovakia",
+            "family": "school",
+            "old": false,
+            "new": true,
+            "craft": false,
+            "old_craft": false,
+            "school_origin": true,
+            "student": true,
+            "agreement": true,
+            "only_route": false
+          },
+          {
+            "id": "si-vajenistvo",
+            "cc": "SI",
+            "name": "Apprenticeship pathway",
+            "country": "Slovenia",
+            "family": "school",
+            "old": false,
+            "new": true,
+            "craft": false,
+            "old_craft": false,
+            "school_origin": true,
+            "student": true,
+            "agreement": true,
+            "only_route": false
+          },
+          {
+            "id": "es-intensiva",
+            "cc": "ES",
+            "name": "Intensive VET (dual)",
+            "country": "Spain",
+            "family": "school",
+            "old": false,
+            "new": true,
+            "craft": false,
+            "old_craft": false,
+            "school_origin": true,
+            "student": true,
+            "agreement": true,
+            "only_route": false
+          },
+          {
+            "id": "se-larling",
+            "cc": "SE",
+            "name": "Upper secondary apprenticeship",
+            "country": "Sweden",
+            "family": "school",
+            "old": false,
+            "new": false,
+            "craft": false,
+            "old_craft": false,
+            "school_origin": true,
+            "student": true,
+            "agreement": true,
+            "only_route": false
+          }
+        ],
+        "families": {
+          "employer": "Employer-based",
+          "school": "School-based dual",
+          "other": "Neither"
+        },
+        "flags": {
+          "old": "Introduced before 2000",
+          "school_origin": "Grew out of school-based VET",
+          "student": "Learner is a student",
+          "agreement": "Training agreement, not a contract",
+          "only_route": "Qualification only through apprenticeship"
+        }
+      },
+      "steps": [
+        {
+          "text": "Cedefop’s database describes <strong>34 apprenticeship schemes</strong> in Europe, each coded on the same questions: where it came from, who the learner is, what contract they sign, what qualification they get. Each dot is one scheme.",
+          "chart": {
+            "layout": "grid",
+            "on": null
+          }
+        },
+        {
+          "text": "<strong>17</strong> schemes are old: introduced before 2000, 16 of them from a craft tradition, like Germany’s, Austria’s or Denmark’s dual systems.",
+          "chart": {
+            "layout": "grid",
+            "on": "old"
+          }
+        },
+        {
+          "text": "Another <strong>10</strong> were introduced after 2012, and 14 schemes in all grew out of school-based vocational education: schools adding long periods of work to their programmes.",
+          "chart": {
+            "layout": "grid",
+            "on": "school_origin"
+          }
+        },
+        {
+          "text": "Sort the schemes by those answers and two families appear: <strong>18 employer-based</strong> apprenticeships, where the learner has the status of an apprentice, and <strong>14 school-based dual tracks</strong>. 2 fit neither: Professionalisation contract (France), Apprenticeship programmes (Portugal).",
+          "chart": {
+            "layout": "families",
+            "on": null
+          }
+        },
+        {
+          "text": "In the school-based family the learner often stays a student: in 9 of 14 schemes, against 0 of 18 employer-based ones.",
+          "chart": {
+            "layout": "families",
+            "on": "student"
+          }
+        },
+        {
+          "text": "A training agreement can replace the contract in 9 of 14 school-based schemes, against 1 of 18 employer-based ones.",
+          "chart": {
+            "layout": "families",
+            "on": "agreement"
+          }
+        },
+        {
+          "text": "And only employer-based schemes lead to a qualification you can get <strong>only</strong> through apprenticeship: 11 of them, against 0 school-based ones. In the others, the same qualification can also be earned in a school-based programme.",
+          "chart": {
+            "layout": "families",
+            "on": "only_route"
+          }
+        },
+        {
+          "text": "So which family works better? Neither group of countries clearly does better: median employment of recent VET graduates is 80.3% where schemes are employer-based and 78.8% where they are school-based, while VET graduates' advantage over general-education graduates is 7.9 and 11.4 points respectively.",
+          "chart": {
+            "layout": "families",
+            "on": null,
+            "outcome": true
+          }
+        }
+      ],
+      "sources": [
+        {
+          "label": "Cedefop European database on apprenticeship schemes, on Apprentix",
+          "url": "pages/datasets/apprenticeship-schemes.html"
+        },
+        {
+          "label": "Compare all schemes",
+          "url": "pages/compare.html"
+        },
+        {
+          "label": "The insight behind this story",
+          "url": "pages/insights.html#two-families"
+        }
+      ],
+      "method": "Families from Cedefop's coded answers (2026 update): school-based dual = the scheme grew out of school-based VET; employer-based = the learner has a specific apprentice status and the scheme did not grow out of school VET. Outcomes compare countries whose schemes all fall in one family; they reflect all VET, not only apprentices."
+    }
+  ]
+}

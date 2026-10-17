@@ -1,9 +1,9 @@
 /* Apprentix — indicators: EU targets overview and a generic indicator view.
    Driven entirely by data/published/indicators/*.json. */
 
-import { url, esc } from './data.js?v=62696cb2';
-import { formatter, tileMap, barChart, lineChart, lineLegend, fixedScale, timeControls } from './charts.js?v=62696cb2';
-import { addShareControls } from './share.js?v=62696cb2';
+import { url, esc } from './data.js?v=32ac435b';
+import { formatter, tileMap, barChart, lineChart, lineLegend, fixedScale, timeControls } from './charts.js?v=32ac435b';
+import { addShareControls } from './share.js?v=32ac435b';
 
 const $ = id => document.getElementById(id);
 const params = new URLSearchParams(location.search);

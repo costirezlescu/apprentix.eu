@@ -29,6 +29,12 @@ PAGE = 500
 EXTRA_LANGS: list[str] = []
 OUT = REFERENCE / "esco-occupations.json"
 ACK = "This service uses the ESCO classification of the European Commission."
+RESOURCE = "https://ec.europa.eu/esco/api/resource/occupation"
+LENS = REFERENCE / "occupation-lens.json"
+LENS_OUT = REFERENCE / "occupation-lens-esco.json"
+# Languages whose preferred label the Occupation lens shows ("known as … in"): EU/EEA official languages.
+LENS_LANGS = ["bg", "cs", "da", "de", "el", "en", "es", "et", "fi", "fr", "ga", "hr", "hu", "is", "it", "lt",
+              "lv", "mt", "nl", "no", "pl", "pt", "ro", "sk", "sl", "sv"]
 
 SOURCE = {
     "id": "esco",
@@ -41,7 +47,7 @@ SOURCE = {
     "licence": "EC-reuse",
     "cadence": "irregular (new ESCO versions roughly yearly)",
     "secret": None,
-    "outputs": ["reference/esco-occupations.json"],
+    "outputs": ["reference/esco-occupations.json", "reference/occupation-lens-esco.json"],
 }
 
 
@@ -111,4 +117,55 @@ def run() -> list[str]:
         "occupations": occupations,
     }
     write_json(OUT, doc)
-    return [rel(OUT)]
+    return [rel(OUT), *lens()]
+
+
+def lens() -> list[str]:
+    """Full ESCO records for the Occupation lens (data/reference/occupation-lens.json): labels in every
+    language, the English description and the essential skills. ~20 requests, one per occupation."""
+    if not LENS.exists():
+        return []
+    wanted = []
+    for o in read_json(LENS)["occupations"]:
+        wanted += [o["esco_uri"], *o.get("related_uris", [])]
+    out = {}
+    for uri in sorted(set(wanted)):
+        r = fetch_json(RESOURCE, params={"uri": uri, "language": "en", "selectedVersion": VERSION},
+                       timeout=120, polite_delay=1.0)
+        links = r.get("_links", {})
+        labels = r.get("preferredLabel", {})
+        isco = (links.get("broaderIscoGroup") or [{}])[0]
+        out[uri] = {
+            "uri": uri,
+            "label": labels.get("en"),
+            "code": r.get("code"),
+            "labels": {l: labels[l] for l in LENS_LANGS if labels.get(l)},
+            "description": ((r.get("description") or {}).get("en") or {}).get("literal"),
+            "isco_group": {"code": isco.get("code"), "title": isco.get("title")} if isco else None,
+            "essential_skills": [{"uri": k["uri"], "title": k["title"]} for k in links.get("hasEssentialSkill", [])],
+            "optional_skills_count": len(links.get("hasOptionalSkill", [])),
+        }
+    digest = hashlib.sha256(json.dumps(out, ensure_ascii=False, sort_keys=True).encode()).hexdigest()
+    retrieved = now_iso()
+    if LENS_OUT.exists():
+        old = read_json(LENS_OUT)
+        if old.get("content_sha256") == digest:
+            retrieved = old.get("retrieved_at", retrieved)
+    write_json(LENS_OUT, {
+        "description": "Full ESCO records for the occupations in the Occupation lens: preferred labels in EU/EEA languages, English description, ISCO-08 unit group and essential skills.",
+        "source": "ESCO — European Skills, Competences, Qualifications and Occupations, European Commission",
+        "source_url": "https://esco.ec.europa.eu/",
+        "api_url": f"{RESOURCE}?uri=<occupation URI>&language=en&selectedVersion={VERSION}",
+        "esco_version": VERSION,
+        "licence_id": "EC-reuse",
+        "acknowledgement": ACK,
+        "retrieved_at": retrieved,
+        "content_sha256": digest,
+        "occupations": out,
+    })
+    return [rel(LENS_OUT)]
+
+
+if __name__ == "__main__":
+    import sys
+    print(lens() if sys.argv[1:] == ["lens"] else run())

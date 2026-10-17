@@ -268,6 +268,7 @@ export function schemeLinks(rec, { names = {}, vetSystems = {} } = {}) {
   const q = `I'm interested in the "${rec.name_en}" (${rec.name_original}) apprenticeship in ${rec.country}. ` +
     'Who can apply, how are apprentices paid, how long does it take, and how do I find a company to train with?';
   const links = [];
+  links.push({ kind: 'path', href: `countries/${code.toLowerCase()}.html#path`, text: 'See the path from school to work →' });
   if (rec.source_url) links.push({ kind: 'fiche', href: rec.source_url, text: 'Official Cedefop fiche', external: true });
   links.push({ kind: 'record', href: `explore.html?dataset=apprenticeship-schemes&open=${encodeURIComponent(rec.id)}`, text: 'Full record in the explorer' });
   links.push({ kind: 'country', href: `countries/${code.toLowerCase()}.html`, text: `${countryName}: country page` });

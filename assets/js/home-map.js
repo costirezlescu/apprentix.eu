@@ -7,8 +7,8 @@
 
    Usage: mountHomeMap(document.getElementById('timelapse')) */
 
-import { url } from './data.js?v=62696cb2';
-import { formatter, tileMap, fixedScale, timeControls, prefersReducedMotion } from './charts.js?v=62696cb2';
+import { url } from './data.js?v=32ac435b';
+import { formatter, tileMap, fixedScale, timeControls, prefersReducedMotion } from './charts.js?v=32ac435b';
 
 // Headline indicators, in the order they are shown (ids from indicators/index.json).
 const HEADLINES = [

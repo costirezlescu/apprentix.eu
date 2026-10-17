@@ -1,0 +1,2721 @@
+{
+  "description": "Full ESCO records for the occupations in the Occupation lens: preferred labels in EU/EEA languages, English description, ISCO-08 unit group and essential skills.",
+  "source": "ESCO — European Skills, Competences, Qualifications and Occupations, European Commission",
+  "source_url": "https://esco.ec.europa.eu/",
+  "api_url": "https://ec.europa.eu/esco/api/resource/occupation?uri=<occupation URI>&language=en&selectedVersion=v1.2.1",
+  "esco_version": "v1.2.1",
+  "licence_id": "EC-reuse",
+  "acknowledgement": "This service uses the ESCO classification of the European Commission.",
+  "retrieved_at": "2026-10-17T22:25:43+00:00",
+  "content_sha256": "bccf67abc51bf549f8e0bf4e0b2a84069e071597f86bb28d41f19e225c6e65a8",
+  "occupations": {
+    "http://data.europa.eu/esco/occupation/05f321f8-055b-407d-bf19-e0ddabda56b7": {
+      "uri": "http://data.europa.eu/esco/occupation/05f321f8-055b-407d-bf19-e0ddabda56b7",
+      "label": "bricklayer",
+      "code": "7112.1",
+      "labels": {
+        "bg": "зидар",
+        "cs": "zedník/zednice",
+        "da": "murer",
+        "de": "Maurer/Maurerin",
+        "el": "κτίστης/κτίστρια",
+        "en": "bricklayer",
+        "es": "albañil",
+        "et": "müüriladuja",
+        "fi": "muurari",
+        "fr": "maçon/maçonne",
+        "ga": "bríceadóir",
+        "hr": "zidar/zidarka",
+        "hu": "épületfalazó kőműves",
+        "is": "múr- og steinhleðslumaður",
+        "it": "muratore in mattoni",
+        "lt": "mūrininkas",
+        "lv": "ķieģeļu licējs",
+        "mt": "ħaddiem tat-tqegħid tal-briks",
+        "nl": "metselaar",
+        "no": "murer",
+        "pl": "murarz",
+        "pt": "Pedreiro/Pedreira",
+        "ro": "zidar",
+        "sk": "murár/murárka",
+        "sl": "zidar/zidarka za zidanje in ometavanje",
+        "sv": "murare"
+      },
+      "description": "Bricklayers assemble brick walls and structures by skilfully laying the bricks in an established pattern, using a binding agent like cement to bond the bricks together. They then fill the joints with mortar or other suitable materials.",
+      "isco_group": {
+        "code": "7112",
+        "title": "Bricklayers and related workers"
+      },
+      "essential_skills": [
+        {
+          "uri": "http://data.europa.eu/esco/skill/bfd96453-f2fd-43ea-afc1-fb2dc0d7367d",
+          "title": "mix construction grouts"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/b6239792-033c-41ba-b09b-21837655436a",
+          "title": "check straightness of brick"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/b92758d4-4591-4df1-9ceb-f907aa71ebd9",
+          "title": "use measurement instruments"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/6ed2fb8d-3580-497f-8a21-30a0ada5caae",
+          "title": "secure working area"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/aafbb139-02c6-4f35-bc62-ff73faf97d6d",
+          "title": "interpret 3D plans"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/110d7aa3-e44e-4cce-a927-8d4de615f3d9",
+          "title": "sort waste"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/dfce2aba-783e-4e17-9c17-e74aca505ec2",
+          "title": "interpret 2D plans"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/3e3f2ff8-cf80-4415-ac6a-020d52b175c1",
+          "title": "split bricks"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/50f2d23c-b3fb-48a5-967b-14fd0a6dd205",
+          "title": "inspect construction supplies"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/2da864d4-339f-40ab-91c0-9f8d229a2c0b",
+          "title": "snap chalk line"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/13e1c0a2-b90d-46f4-be51-11730360b38d",
+          "title": "lay bricks"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/ca309d1f-e080-42a3-b828-1c16e74aa9e7",
+          "title": "finish mortar joints"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/86df7af2-f9f3-4c06-a500-7f1fba9e78fe",
+          "title": "follow health and safety procedures in construction"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/4af56376-7b2f-4ced-ac58-0c3967bd1e83",
+          "title": "transport construction supplies"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/156f8c5b-894a-4ccc-a70e-37a2726f3f00",
+          "title": "work ergonomically"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/8ed53702-3e4e-4637-a4c3-9dc8f4281019",
+          "title": "install construction profiles"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/cb949305-6aee-46c0-9b6f-f0ab693cde5b",
+          "title": "discharge cement"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/fafbb75f-ec35-4cc2-996a-20c85ef6c266",
+          "title": "follow safety procedures when working at heights"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/c643e59b-d74c-4f44-b76e-6e1d96c05ec4",
+          "title": "use safety equipment in construction"
+        }
+      ],
+      "optional_skills_count": 30
+    },
+    "http://data.europa.eu/esco/occupation/099c6bb0-22d3-4c5d-8bf5-70910af381ef": {
+      "uri": "http://data.europa.eu/esco/occupation/099c6bb0-22d3-4c5d-8bf5-70910af381ef",
+      "label": "hairdresser",
+      "code": "5141.1",
+      "labels": {
+        "bg": "фризьор/фризьорка",
+        "cs": "kadeřník/kadeřnice",
+        "da": "frisør",
+        "de": "Friseur/Friseurin",
+        "el": "κομμωτής/κομμώτρια",
+        "en": "hairdresser",
+        "es": "peluquero/peluquera",
+        "et": "juuksur",
+        "fi": "parturi-kampaaja",
+        "fr": "coiffeur/coiffeuse",
+        "ga": "gruagaire",
+        "hr": "frizer/frizerka",
+        "hu": "fodrász",
+        "is": "hársnyrtir",
+        "it": "parrucchiere/parrucchiera",
+        "lt": "kirpėjas",
+        "lv": "frizieris",
+        "mt": "hairdresser",
+        "nl": "kapper",
+        "no": "frisør",
+        "pl": "fryzjer/fryzjerka",
+        "pt": "Cabeleireiro/Cabeleireira",
+        "ro": "coafor/coafeză",
+        "sk": "kaderník/kaderníčka",
+        "sl": "frizer/frizerka",
+        "sv": "frisör"
+      },
+      "description": "Hairdressers offer beauty services such as cutting, colouring, bleaching, permanent waving and styling clients' hair. They ask their clients about their hairstyle preferences in order to provide customised services. Hairdressers use clippers, scissors and razors. They provide hair and scalp treatments and shampoo, condition and rinse hair.",
+      "isco_group": {
+        "code": "5141",
+        "title": "Hairdressers"
+      },
+      "essential_skills": [
+        {
+          "uri": "http://data.europa.eu/esco/skill/5f27371a-1cf3-4a81-9faf-12fab80cb3e1",
+          "title": "use equipment for hair care"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/5d715a3d-ddb1-4906-a599-e9737f4ca491",
+          "title": "advise on hair style"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/156f8c5b-894a-4ccc-a70e-37a2726f3f00",
+          "title": "work ergonomically"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/dbc20527-0852-4dde-a2e9-d25d8356115f",
+          "title": "dye hair"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/9f76644e-45ce-424e-91dc-064cb166b323",
+          "title": "curl hair"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/68698869-c13c-4563-adc7-118b7644f45d",
+          "title": "identify customer's needs"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/0b6c4174-a862-480d-8d55-44f7cf7ac365",
+          "title": "style hair"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/efb0eff5-ca8d-4638-b119-0c14a953f77c",
+          "title": "hair products"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/0da516ee-e70e-4384-be13-f5ff80be8127",
+          "title": "communicate with customers"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/bdcac0c8-b77a-4640-9eaf-c0cf3efd1e23",
+          "title": "process payments"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/8330c86e-63cf-4be6-849f-4f77628cc5c5",
+          "title": "satisfy customers"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/c76d86b3-9860-4bc0-996d-cc724c669bcf",
+          "title": "hair"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/e4bf6574-d0d0-4314-a4e0-d54a549e41d8",
+          "title": "stay up-to-date with hair style trends"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/5033c2fb-ec55-4b8e-b0a4-9379593f1e1c",
+          "title": "maintain equipment"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/75dfe1ee-5935-42ce-b820-697f827825c3",
+          "title": "maintain customer service"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/5fce4ae7-bbd6-4d91-9fd9-d7d6b0e6c3da",
+          "title": "wash hair"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/26db1e50-aa8f-407c-87b9-87a48dd4d29a",
+          "title": "hair colouring"
+        }
+      ],
+      "optional_skills_count": 21
+    },
+    "http://data.europa.eu/esco/occupation/15620506-fb5d-49cd-87a2-1c9047fb406a": {
+      "uri": "http://data.europa.eu/esco/occupation/15620506-fb5d-49cd-87a2-1c9047fb406a",
+      "label": "construction painter",
+      "code": "7131.1",
+      "labels": {
+        "bg": "бояджия, сгради",
+        "cs": "stavební natěrač/stavební natěračka",
+        "da": "bygningsmaler",
+        "de": "Maler/Malerin",
+        "el": "ελαιοχρωματιστής οικοδομών/ελαιοχρωματίστρια οικοδομών",
+        "en": "construction painter",
+        "es": "pintor de obra/pintora de obra",
+        "et": "ehitusmaaler",
+        "fi": "rakennusmaalari",
+        "fr": "peintre en bâtiment",
+        "ga": "péintéir foirgneamh",
+        "hr": "ličilac/ličiteljica",
+        "hu": "festő és mázoló",
+        "is": "málari",
+        "it": "pittore edile/pittrice edile",
+        "lt": "statybų dažytojas",
+        "lv": "krāsotājs",
+        "mt": "bajjad",
+        "nl": "schilder bouw",
+        "no": "husmaler",
+        "pl": "malarz",
+        "pt": "Pintor da construção/Pintora da construção",
+        "ro": "zugrav/zugrăviță",
+        "sk": "maliar/maliarka",
+        "sl": "pleskar/pleskarka",
+        "sv": "målare"
+      },
+      "description": "Construction painters paint the interior and exterior of buildings and other structures. They may use standard latex based paints or specialised paints for decorative effect or protective properties. Building painters are skilled in using brushes, paint rollers and paint sprayers for different applications.",
+      "isco_group": {
+        "code": "7131",
+        "title": "Painters and related workers"
+      },
+      "essential_skills": [
+        {
+          "uri": "http://data.europa.eu/esco/skill/c45efdbc-08f7-4d95-b9c9-1fc63c9b40c4",
+          "title": "clean painting equipment"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/2da864d4-339f-40ab-91c0-9f8d229a2c0b",
+          "title": "snap chalk line"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/40fa39b5-0f69-432a-b5ea-b01b5d98649a",
+          "title": "dispose of hazardous waste"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/7d2a1c45-fae0-4bd6-b570-c668c9d4eda7",
+          "title": "prepare surface for painting"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/aafbb139-02c6-4f35-bc62-ff73faf97d6d",
+          "title": "interpret 3D plans"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/30bfd573-ab0b-457e-95fa-851dc681af60",
+          "title": "protect surfaces during construction work"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/dfce2aba-783e-4e17-9c17-e74aca505ec2",
+          "title": "interpret 2D plans"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/872ad4df-5576-4322-8ebf-36b9d448965a",
+          "title": "inspect paintwork"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/86df7af2-f9f3-4c06-a500-7f1fba9e78fe",
+          "title": "follow health and safety procedures in construction"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/1bfeddc8-44be-4559-af64-2b2d41ceae65",
+          "title": "remove paint"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/92848013-ebac-4b3a-b2ad-e2b846f10621",
+          "title": "sand between coats"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/89d2bb53-67fc-4b9e-80c7-07b6c587bc0d",
+          "title": "work safely with chemicals"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/b92758d4-4591-4df1-9ceb-f907aa71ebd9",
+          "title": "use measurement instruments"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/4aba6668-6118-4953-804b-869cef94422a",
+          "title": "dispose of non-hazardous waste"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/c643e59b-d74c-4f44-b76e-6e1d96c05ec4",
+          "title": "use safety equipment in construction"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/6db1bd36-fc47-4103-8401-81d4d99360b3",
+          "title": "types of paint"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/fafbb75f-ec35-4cc2-996a-20c85ef6c266",
+          "title": "follow safety procedures when working at heights"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/50f2d23c-b3fb-48a5-967b-14fd0a6dd205",
+          "title": "inspect construction supplies"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/156f8c5b-894a-4ccc-a70e-37a2726f3f00",
+          "title": "work ergonomically"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/b826a56a-811d-477c-b165-271729f644a4",
+          "title": "paint surfaces"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/4af56376-7b2f-4ced-ac58-0c3967bd1e83",
+          "title": "transport construction supplies"
+        }
+      ],
+      "optional_skills_count": 20
+    },
+    "http://data.europa.eu/esco/occupation/1aadb308-432a-4d01-b54b-b4f7f76dd419": {
+      "uri": "http://data.europa.eu/esco/occupation/1aadb308-432a-4d01-b54b-b4f7f76dd419",
+      "label": "baker",
+      "code": "7512.1",
+      "labels": {
+        "bg": "пекар/пекарка",
+        "cs": "pekař/pekařka",
+        "da": "bager",
+        "de": "Bäcker/Bäckerin",
+        "el": "αρτοποιός",
+        "en": "baker",
+        "es": "panadero/panadera",
+        "et": "pagar",
+        "fi": "leipuri",
+        "fr": "boulanger/boulangère",
+        "ga": "báicéir",
+        "hr": "pekar/pekarica",
+        "hu": "pék édesiparitermék-gyártó",
+        "is": "bakari",
+        "it": "fornaio/fornaia",
+        "lt": "kepėjas",
+        "lv": "cepējs",
+        "mt": "furnar",
+        "nl": "bakker",
+        "no": "baker",
+        "pl": "piekarz",
+        "pt": "Padeiro/Padeira",
+        "ro": "brutar/brutăreasă",
+        "sk": "pekár/pekárka",
+        "sl": "pek/pekinja",
+        "sv": "bagare"
+      },
+      "description": "Bakers make a wide range of breads, pastries, and other baked goods. They follow all the processes from receipt and storage of raw materials, preparation of raw materials for bread-making, measurement and mixing of ingredients into dough and proof. They tend ovens to bake products to an adequate temperature and time.",
+      "isco_group": {
+        "code": "7512",
+        "title": "Bakers, pastry-cooks and confectionery makers"
+      },
+      "essential_skills": [
+        {
+          "uri": "http://data.europa.eu/esco/skill/5d05068e-7ae7-4ff6-8fa3-e35ea03b48b1",
+          "title": "check quality of products on the production line"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/5521fcf8-80fa-489b-af18-a69823b85702",
+          "title": "clean food and beverage machinery"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/a34f4fd4-1aff-4941-82d5-542ac94f81c3",
+          "title": "follow hygienic procedures during food processing"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/2f4f78ac-0246-4c59-907d-9fcb46f8fb77",
+          "title": "mark differences in colours"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/3f4e4eab-a8e0-4aed-b8bb-79afe7c890e3",
+          "title": "food safety principles"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/5626b3b1-5415-47f6-acf1-b573d457d180",
+          "title": "bake goods"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/3782a625-52c2-46c7-b585-35ba4ddc4a1d",
+          "title": "crafting"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/29b326ea-a9c8-4963-b35a-8541d0cdff77",
+          "title": "store raw food materials"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/a0d96ce8-aeeb-4ffb-bd78-21c0598179ff",
+          "title": "work according to recipe"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/e33ad426-d088-4136-b9f4-8e9c70522932",
+          "title": "bakery production methods"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/e52d79c7-c1be-47d9-84ed-81af18d67931",
+          "title": "operate mixing of food products"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/811bdb9d-5bf7-4b5a-a3f5-4fc2002f6d57",
+          "title": "financial capability"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/047ceb23-1eb3-4889-a07f-84a1e4b85bff",
+          "title": "monitor flour unloading equipment"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/d87653a0-87b0-4c03-a44a-bf0a217431a2",
+          "title": "knead food products"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/680f271f-4a7e-410a-aaaf-4f42c8f48251",
+          "title": "administer ingredients in food production"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/adcde86b-023a-4865-afec-45e1c343388e",
+          "title": "administer lactic ferment cultures to manufacturing products"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/188048ff-18bf-43c4-a1a0-7adb6e68f421",
+          "title": "monitor machine operations"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/cf7ec3cc-75a9-4cbb-9db2-7f0c8b58d8af",
+          "title": "measure precise food processing operations"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/c44c5e78-6647-406c-84f0-b6e626877fc2",
+          "title": "monitor temperature in farinaceous processes"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/3fa0a100-66ea-4bb3-a33e-2044d4a43df3",
+          "title": "bakery ingredients"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/bf7a45c4-0d72-4e6e-9da7-127b2b6656b7",
+          "title": "apply GMP"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/bc250150-3372-42c9-834a-a1b65f89ca0b",
+          "title": "apply requirements concerning manufacturing of food and beverages"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/8f96b592-24c4-40c3-bb88-189ae3a1e405",
+          "title": "mould doughs"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/b5e1a909-9d21-4c29-9438-9df9fd7da3a1",
+          "title": "select adequate ingredients"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/5ba1d5b9-3f8d-46ca-bf9f-2e9ca65d1350",
+          "title": "apply HACCP"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/ce37e233-64c4-4b48-a09a-04ec08fb9740",
+          "title": "ensure correct use of bakery equipment"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/dc57f705-75b6-4232-b531-1f020afa0364",
+          "title": "food and beverage industry"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/0eece926-f1a3-4b65-9b99-a35e4c0eb835",
+          "title": "care for food aesthetic"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/46661213-71c3-4039-86e7-4ee9c908425a",
+          "title": "apply flame handling regulations"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/50db2b5e-edda-496d-8a6e-aff91dc243d9",
+          "title": "prepare bakery products"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/06cf28f4-608d-4fb9-94c5-c0698d70ea71",
+          "title": "maintain cutting equipment"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/0c944316-12f6-4949-a156-a03dbaae790f",
+          "title": "ensure sanitation"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/d18408c1-c2ba-4835-9ee0-352705d807d0",
+          "title": "operate weighing machine"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/77250067-81bd-4e18-865e-2be6ca26c8a8",
+          "title": "tend bakery ovens"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/a1a032e1-4b7a-4603-8516-43d83707ffac",
+          "title": "set up machine controls"
+        }
+      ],
+      "optional_skills_count": 48
+    },
+    "http://data.europa.eu/esco/occupation/2a22ff9e-de3b-408d-b312-5034896cc4f4": {
+      "uri": "http://data.europa.eu/esco/occupation/2a22ff9e-de3b-408d-b312-5034896cc4f4",
+      "label": "carpenter",
+      "code": "7115.1",
+      "labels": {
+        "bg": "дърводелец",
+        "cs": "tesař/tesařka",
+        "da": "tømrer",
+        "de": "Zimmerer/Zimmerin",
+        "el": "ξυλουργός",
+        "en": "carpenter",
+        "es": "carpintero/carpintera",
+        "et": "puusepp",
+        "fi": "kirvesmies",
+        "fr": "charpentier/charpentière",
+        "ga": "siúinéir",
+        "hr": "tesar/tesarica",
+        "hu": "ács",
+        "is": "trésmiður",
+        "it": "carpentiere/carpentiera",
+        "lt": "dailidė",
+        "lv": "namdaris",
+        "mt": "mastrudaxxa",
+        "nl": "timmerman",
+        "no": "tømrer",
+        "pl": "cieśla",
+        "pt": "Carpinteiro/Carpinteira",
+        "ro": "dulgher/dulgheriță",
+        "sk": "tesár/tesárka",
+        "sl": "tesar/tesarka",
+        "sv": "snickare"
+      },
+      "description": "Carpenters cut, shape and assemble wooden elements for the construction of buildings and other structures. They also use materials such as plastic and metal in their creations. Carpenters create the wooden frames to support wood framed buildings.",
+      "isco_group": {
+        "code": "7115",
+        "title": "Carpenters and joiners"
+      },
+      "essential_skills": [
+        {
+          "uri": "http://data.europa.eu/esco/skill/2e8e2acf-5d58-4d99-807d-2ed77a6c8b17",
+          "title": "join wood elements"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/11c0bfec-6bc8-4ec0-a535-91bd65be92c5",
+          "title": "install wood elements in structures"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/adf661fe-9429-4094-8671-ca69fb72ad02",
+          "title": "clean wood surface"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/c643e59b-d74c-4f44-b76e-6e1d96c05ec4",
+          "title": "use safety equipment in construction"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/8ed53702-3e4e-4637-a4c3-9dc8f4281019",
+          "title": "install construction profiles"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/8fc9753d-810d-414a-ba0e-139c99f0b201",
+          "title": "keep sawing equipment in good condition"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/156f8c5b-894a-4ccc-a70e-37a2726f3f00",
+          "title": "work ergonomically"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/aafbb139-02c6-4f35-bc62-ff73faf97d6d",
+          "title": "interpret 3D plans"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/cf2005ee-c788-4283-81d9-b443dfdf2c2e",
+          "title": "types of wood"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/65b32af2-3665-49a4-8eec-d3b2138ec09b",
+          "title": "identify wood warp"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/5df6be8c-c4ff-4bef-b744-3d502e5e5330",
+          "title": "create smooth wood surface"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/110d7aa3-e44e-4cce-a927-8d4de615f3d9",
+          "title": "sort waste"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/c3c3b550-f95e-4f1c-bdf3-ad1465e7b2ab",
+          "title": "create wood joints"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/bb933bf6-e9a6-4dd8-8c88-0d8bacae30a5",
+          "title": "wood cuts"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/b92758d4-4591-4df1-9ceb-f907aa71ebd9",
+          "title": "use measurement instruments"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/50f2d23c-b3fb-48a5-967b-14fd0a6dd205",
+          "title": "inspect construction supplies"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/2da864d4-339f-40ab-91c0-9f8d229a2c0b",
+          "title": "snap chalk line"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/acc74047-f59f-4935-afc0-45ec43b9b57a",
+          "title": "define part requirements"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/80e257a9-5725-4faf-ba94-d1675ccc878d",
+          "title": "keep track of wooden elements"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/86df7af2-f9f3-4c06-a500-7f1fba9e78fe",
+          "title": "follow health and safety procedures in construction"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/e040fb97-ac17-4cd0-bf74-7e96c83811b6",
+          "title": "apply wood finishes"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/4af56376-7b2f-4ced-ac58-0c3967bd1e83",
+          "title": "transport construction supplies"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/dfce2aba-783e-4e17-9c17-e74aca505ec2",
+          "title": "interpret 2D plans"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/a47cfa4f-30f5-4306-b23d-11fbacd7f189",
+          "title": "install wood hardware"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/4c06a716-6363-4308-b548-88f7a3e70097",
+          "title": "woodworking tools"
+        }
+      ],
+      "optional_skills_count": 30
+    },
+    "http://data.europa.eu/esco/occupation/3413f234-6230-47a8-8cc7-2691fd54ce3a": {
+      "uri": "http://data.europa.eu/esco/occupation/3413f234-6230-47a8-8cc7-2691fd54ce3a",
+      "label": "child care worker",
+      "code": "5311.1",
+      "labels": {
+        "bg": "педагог в детско заведение",
+        "cs": "pracovník péče o děti/pracovnice péče o děti",
+        "da": "barnepasser",
+        "de": "Kinderbetreuer/Kinderbetreuerin",
+        "el": "υπάλληλος φροντίδας παιδιών",
+        "en": "child care worker",
+        "es": "cuidador infantil/cuidadora infantil",
+        "et": "lapsehoiuteenuse pakkuja",
+        "fi": "lastenhoitaja",
+        "fr": "éducateur en petite enfance/éducatrice en petite enfance",
+        "ga": "oibrí cúraim leanaí",
+        "hr": "njegovatelj/njegovateljica djece",
+        "hu": "gyermekfelügyelő",
+        "is": "starfsmaður við barnagæslu",
+        "it": "addetto alla sorveglianza di bambini/addetta alla sorveglianza di bambini",
+        "lt": "vaikų priežiūros darbuotojas",
+        "lv": "bērnu aprūpes darbinieks",
+        "mt": "ħaddiem tal-ħarsien tat-tfal",
+        "nl": "kinderverzorgster",
+        "no": "barnepasser",
+        "pl": "opiekun dziecięcy / opiekunka dziecięca",
+        "pt": "Auxiliar de cuidados à infância",
+        "ro": "lucrător îngrijire copii",
+        "sk": "opatrovateľ/opatrovateľka detí",
+        "sl": "varuh/varuhinja otrok",
+        "sv": "barnskötare"
+      },
+      "description": "Child care workers provide care for children when the parents or family members are unavailable. They look after the children's basic needs and help or supervise them during play. Child care workers can work for preschools, daycare centres, childcare agencies or individual families.",
+      "isco_group": {
+        "code": "5311",
+        "title": "Child care workers"
+      },
+      "essential_skills": [
+        {
+          "uri": "http://data.europa.eu/esco/skill/4e3db6d7-88b8-492d-89e5-a93d01c3e369",
+          "title": "social development"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/b5af495b-61f1-4330-9891-dca56d97d714",
+          "title": "communicate with youth"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/efe801a5-8704-4def-8a96-c32f7a6cb9fb",
+          "title": "maintain relations with children's parents"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/8e09fe66-2649-4179-81ef-91fefa3ceee8",
+          "title": "assist children in developing personal skills"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/f8d4a24c-fb62-444e-9525-7aa5662f440d",
+          "title": "supervise children"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/06bd47bc-d9f3-4517-8e34-c55c2e81f8c2",
+          "title": "workplace sanitation"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/e2e5d534-bf89-466b-a2a7-ea1b1f26222d",
+          "title": "determine child welfare"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/51a26193-9abe-4bce-9108-f50835be1c35",
+          "title": "handle chemical cleaning agents"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/beb952e4-8a9c-47af-8a60-c6eb5c5f25bc",
+          "title": "attend to children's basic physical needs"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/94b01483-f13d-48ba-b8a9-ef8f18fcb2dc",
+          "title": "play with children"
+        }
+      ],
+      "optional_skills_count": 20
+    },
+    "http://data.europa.eu/esco/occupation/37c7880e-cfee-4c41-a41b-061682fefde3": {
+      "uri": "http://data.europa.eu/esco/occupation/37c7880e-cfee-4c41-a41b-061682fefde3",
+      "label": "butcher",
+      "code": "7511.1",
+      "labels": {
+        "bg": "месар/месарка",
+        "cs": "řezník/řeznice",
+        "da": "slagtermester",
+        "de": "Fleischer/Fleischerin",
+        "el": "κρεοπώλης/κρεοπώλισσα",
+        "en": "butcher",
+        "es": "carnicero/carnicera",
+        "et": "lihunik",
+        "fi": "lihakauppias",
+        "fr": "boucher/bouchère",
+        "ga": "búistéir",
+        "hr": "mesar/mesarica",
+        "hu": "hentes",
+        "is": "slátrari",
+        "it": "macellaio/macellaia",
+        "lt": "mėsininkas",
+        "lv": "miesnieks",
+        "mt": "bejjiegħ tal-laħam",
+        "nl": "slager",
+        "no": "slaktebutikkeier",
+        "pl": "rzeźnik",
+        "pt": "Talhante",
+        "ro": "măcelar",
+        "sk": "mäsiar/mäsiarka",
+        "sl": "mesar/mesarka",
+        "sv": "slaktare"
+      },
+      "description": "Butchers order, inspect and buy meat to prepare it and sell it as consumable meat products. They perform activities such as cutting, trimming, boning, tying, and grinding beef, pork, and poultry meat. They prepare those mentioned sorts of meat for consumption.",
+      "isco_group": {
+        "code": "7511",
+        "title": "Butchers, fishmongers and related food preparers"
+      },
+      "essential_skills": [
+        {
+          "uri": "http://data.europa.eu/esco/skill/ed883d6b-cd2a-4d87-8bef-13f66f80fcb6",
+          "title": "work in a food processing team"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/08040bcc-a824-4441-bfd0-738b2de965cf",
+          "title": "tolerate strong smells"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/e1edc456-d5fe-4f51-ad43-0cb9702c7f5c",
+          "title": "grind meat"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/5ba1d5b9-3f8d-46ca-bf9f-2e9ca65d1350",
+          "title": "apply HACCP"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/1d21f6ad-340f-45da-a0a3-4e83867f47a6",
+          "title": "provide first aid"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/895c5a0e-6e7f-47bf-b3a5-fcd22d21d1ba",
+          "title": "maintain food specifications"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/5ac3a1b8-78d4-4f7d-b922-dad34595c975",
+          "title": "handle knives for cutting activities"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/28e8a23b-0db7-45da-83c7-4ec5a236fe00",
+          "title": "tend meat packaging machine"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/9a5b670b-81b5-4807-8db6-a5d5b8413f83",
+          "title": "cope with blood"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/492214f5-5bfd-4f2a-9a48-c36240ce100d",
+          "title": "follow an environmental friendly policy while processing food"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/ae5b462a-c1eb-4209-979b-3da8b1ad01de",
+          "title": "prepare meat for sale"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/adabc2f7-826c-40f4-a58d-7f904e35a2a1",
+          "title": "tend meat processing production machines"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/d41262ae-eca1-4ede-89a8-46d2d99a7a31",
+          "title": "consider economic criteria in decision making"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/d8a0bd55-b701-4284-b075-43c098ff1d77",
+          "title": "handle knives for meat processing activities"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/21d5f9c6-c35d-4c70-bbc5-f32cbd7b2500",
+          "title": "ensure refrigeration of food in the supply chain"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/70f9a330-ff59-40fd-87d1-ba32d9df7504",
+          "title": "cultural practices regarding animal parts sorting"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/d350bfa6-ae99-433a-a138-1a16f8f93d33",
+          "title": "operate meat processing equipment"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/0c944316-12f6-4949-a156-a03dbaae790f",
+          "title": "ensure sanitation"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/3935e442-df7f-46c9-8eb8-901d001990b6",
+          "title": "warm blooded animal organs"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/b4b3b539-81ae-43aa-a540-0e2ea2c7e802",
+          "title": "food storage"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/2f4f78ac-0246-4c59-907d-9fcb46f8fb77",
+          "title": "mark differences in colours"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/bf7a45c4-0d72-4e6e-9da7-127b2b6656b7",
+          "title": "apply GMP"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/bc250150-3372-42c9-834a-a1b65f89ca0b",
+          "title": "apply requirements concerning manufacturing of food and beverages"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/1289bd81-8daf-4e7c-bb46-6bbfe9141c49",
+          "title": "legislation about animal origin products"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/d5ab94c9-f5e5-4030-82af-18e2c7614207",
+          "title": "work in cold environments"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/cf7ec3cc-75a9-4cbb-9db2-7f0c8b58d8af",
+          "title": "measure precise food processing operations"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/ef59f2b1-66d6-4a10-a775-00714fc4f2dc",
+          "title": "split animal carcasses"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/c0fdc4f3-b77b-4bc5-8a7b-eb0d66ea0e2b",
+          "title": "prepare specialised meat products"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/ec66b111-d8d0-4516-88ba-ee0b6fe6f695",
+          "title": "process customer orders"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/44f6a65f-6be7-4818-9a66-73908797283f",
+          "title": "monitor stock level"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/cfcc2266-a578-4300-93ce-ce7860c7398c",
+          "title": "monitor temperature in manufacturing process of food and beverages"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/8474d1d3-1fea-43b2-b6ed-5b961faabe9e",
+          "title": "process livestock organs"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/fcae5ce9-62a7-4318-bed4-339553f6a83f",
+          "title": "animal anatomy for food production"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/723a149b-101f-4d5c-8afd-46efd1bcc3c5",
+          "title": "apply preservation treatments"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/a34f4fd4-1aff-4941-82d5-542ac94f81c3",
+          "title": "follow hygienic procedures during food processing"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/78a3fa51-66d6-43b8-aee2-b47a0aadca52",
+          "title": "trace meat products"
+        }
+      ],
+      "optional_skills_count": 31
+    },
+    "http://data.europa.eu/esco/occupation/4910419f-b4af-4f59-b544-9dbebc8a74f0": {
+      "uri": "http://data.europa.eu/esco/occupation/4910419f-b4af-4f59-b544-9dbebc8a74f0",
+      "label": "electrician",
+      "code": "7411.1",
+      "labels": {
+        "bg": "електротехник",
+        "cs": "elektrikář/elektrikářka",
+        "da": "elektriker",
+        "de": "Industrieelektriker – Geräte und Systeme/Industrieelektrikerin – Geräte und Systeme",
+        "el": "ηλεκτρολόγος",
+        "en": "electrician",
+        "es": "electricista",
+        "et": "elektrik",
+        "fi": "sähköasentaja",
+        "fr": "électricien/électricienne",
+        "ga": "leictreoir",
+        "hr": "električar/električarka",
+        "hu": "villanyszerelő",
+        "is": "rafvirki",
+        "it": "elettricista",
+        "lt": "elektrikas",
+        "lv": "elektriķis",
+        "mt": "electrician",
+        "nl": "monteur elektrische installaties",
+        "no": "elektriker",
+        "pl": "elektryk",
+        "pt": "Eletricista",
+        "ro": "electrician/electriciană",
+        "sk": "elektrikár/elektrikárka",
+        "sl": "električar/električarka",
+        "sv": "installationselektriker"
+      },
+      "description": "Electricians fit and repair electrical circuits and wiring systems. They also install and maintain electrical equipment and machinery. This work can be performed indoors as well as outdoors, in nearly every type of facility.",
+      "isco_group": {
+        "code": "7411",
+        "title": "Building and related electricians"
+      },
+      "essential_skills": [
+        {
+          "uri": "http://data.europa.eu/esco/skill/cbcce641-a001-47eb-b15b-476da8dfc9ce",
+          "title": "install lightning protection system"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/7f67f82e-73c5-4dc0-b506-8e0b1a84f614",
+          "title": "bind wire"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/a99c6783-50c0-4f7a-99df-bf93429ef6dc",
+          "title": "use precision tools"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/b92758d4-4591-4df1-9ceb-f907aa71ebd9",
+          "title": "use measurement instruments"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/c8bd9f9f-0ec6-447a-ab78-ad6eeeed9aa8",
+          "title": "electrical testing methods"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/4a30802f-827c-4706-9099-de85beee6cb5",
+          "title": "splice cable"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/2179e0fd-7431-41a3-bbf4-76451c615ce2",
+          "title": "inspect electrical supplies"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/be7c80ee-0b7a-455c-8928-055cfa65076c",
+          "title": "react to events in time-critical environments"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/ccfbdaad-b91d-4bfe-bd0e-d30b33587f19",
+          "title": "keep records of work progress"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/1de6b87b-2c7d-49aa-bcc0-3b2ef75f064f",
+          "title": "resolve equipment malfunctions"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/c8ac1986-38fa-43b2-89dc-50a4beeb420e",
+          "title": "electricity"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/52d6eb67-56c0-4ad7-b5c2-71e7c2362ece",
+          "title": "install electricity sockets"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/86df7af2-f9f3-4c06-a500-7f1fba9e78fe",
+          "title": "follow health and safety procedures in construction"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/4fa2d6ba-4fff-4f21-bddd-4a54ae840955",
+          "title": "work in a construction team"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/3f6dc31c-ceef-4e93-9d8a-b4b862cf9b51",
+          "title": "test electrical equipment"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/52797dce-911c-4e6d-b0cb-491f6469014f",
+          "title": "install electrical and electronic equipment"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/0e8d16c9-e2db-4862-ac06-1567f01ef806",
+          "title": "building systems monitoring technology"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/c3d1ada5-1d97-4a23-be2a-9ff39296775b",
+          "title": "install electric switches"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/d15e92c4-c8dc-48cd-a1f6-94fe13347f87",
+          "title": "electrical wiring plans"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/c643e59b-d74c-4f44-b76e-6e1d96c05ec4",
+          "title": "use safety equipment in construction"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/386774ac-fe5b-431a-b485-9aec0bf5c09e",
+          "title": "maintain electrical equipment"
+        }
+      ],
+      "optional_skills_count": 34
+    },
+    "http://data.europa.eu/esco/occupation/4ad4024e-d1d3-4dea-b6d1-2c7948111dce": {
+      "uri": "http://data.europa.eu/esco/occupation/4ad4024e-d1d3-4dea-b6d1-2c7948111dce",
+      "label": "vehicle technician",
+      "code": "7231.10",
+      "labels": {
+        "bg": "автомонтьор",
+        "cs": "automechanik/automechanička",
+        "da": "automekaniker",
+        "de": "Kraftfahrzeugmechatroniker Schwerpunkt Personenkraftwagentechnik/Kraftfahrzeugmechatronikerin Schwerpunkt Personenkraftwagentechnik",
+        "el": "τεχνικός οχημάτων",
+        "en": "vehicle technician",
+        "es": "mecánico de vehículos/mecánica de vehículos",
+        "et": "mootorsõidukimehaanik",
+        "fi": "ajoneuvoasentaja",
+        "fr": "technicien de véhicules/technicienne de véhicules",
+        "ga": "teicneoir feithiclí",
+        "hr": "mehaničar/mehaničarka motornih vozila",
+        "hu": "gépjármű-karbantartó és -javító",
+        "is": "bifvélavirki",
+        "it": "meccanico autoriparatore/meccanica autoriparatrice",
+        "lt": "transporto priemonių mechanikas",
+        "lv": "transporta mehāniķis",
+        "mt": "tekniku tal-vetturi",
+        "nl": "automonteur",
+        "no": "kjøretøytekniker",
+        "pl": "mechanik pojazdów samochodowych",
+        "pt": "Técnico de veículos a motor/Técnica de veículos a motor",
+        "ro": "mecanic calificat autovehicule ",
+        "sk": "automechanik/automechanička",
+        "sl": "avtoserviser/avtoserviserka",
+        "sv": "fordonstekniker"
+      },
+      "description": "Vehicle technicians inspect, test and maintain vehicles, motorcycles, engine tune-ups and tyre replacements. They repair engine failures, lube replacements. Vehicle technicians replace vehicle components and evaluate warranty options.",
+      "isco_group": {
+        "code": "7231",
+        "title": "Motor vehicle mechanics and repairers"
+      },
+      "essential_skills": [
+        {
+          "uri": "http://data.europa.eu/esco/skill/efa141df-f382-418f-9121-bd88fd735669",
+          "title": "mechanics"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/02e235f4-a30a-412a-a06e-1c471ad28678",
+          "title": "follow procedures to control substances hazardous to health"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/1b1c2d44-c487-4121-a2ed-dcda651f4d59",
+          "title": "car controls"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/48c82c54-fc6d-48f3-91f5-c9adc2a70f4b",
+          "title": "mechanical requirements for vehicles in urban areas"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/a5b0cd5c-e13a-4ab3-8d93-4d242adcfb01",
+          "title": "teamwork principles"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/74ad37e3-325b-4ccd-ab2a-04f7696750e8",
+          "title": "health and safety measures in transportation"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/215762df-b2b4-40fa-a5e6-3004001cb315",
+          "title": "position vehicles for maintenance and repair"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/52743af8-ab5d-4ce3-b877-13d349394456",
+          "title": "diagnose problems with vehicles"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/2bdc2f65-b42f-4963-abff-d7214ca4caae",
+          "title": "emission standards"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/90d04cf8-dcc1-45cf-93e1-a2eba80aed6f",
+          "title": "hybrid vehicle architecture"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/68698869-c13c-4563-adc7-118b7644f45d",
+          "title": "identify customer's needs"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/54804209-6aac-4ca4-bf3c-aef4fbe18f8c",
+          "title": "principles of mechanical engineering"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/4394a7e8-ffec-4062-b679-a2570260a84f",
+          "title": "types of vehicles"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/a38e54a1-0922-4e8f-92a6-4f028d7d569f",
+          "title": "maintain updated professional knowledge"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/ae4ea3e1-3c1a-45b0-96a7-106988c053c0",
+          "title": "provide customer information related to repairs"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/e3211ab2-18b5-49b4-90de-d395f3be2378",
+          "title": "execute working instructions"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/3c4cfade-58c1-4f6d-9a0e-dabf78b0e9e0",
+          "title": "repair vehicle electrical systems"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/e97733e8-5bf1-4c21-93c4-8bebbdabc394",
+          "title": "perform manual work autonomously"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/b112ead8-6245-49bb-879f-07b1388a1c9b",
+          "title": "components of air conditioning systems"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/dcc96a49-0bac-4a9c-8f8e-a32b4e47e6eb",
+          "title": "apply health and safety standards"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/3a5275f4-67e5-4371-a31e-68291aa86691",
+          "title": "vehicle electrical systems"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/cbaa2139-7789-4e7f-a58b-4946d455d390",
+          "title": "perform vehicle tests"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/5b264a14-d4db-4352-9278-fbb63c5ebed4",
+          "title": "use automotive diagnostic equipment"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/b1084057-66a7-4ab6-8162-41c4e74d00cb",
+          "title": "carry out repairs and maintenance of vehicle bodies"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/5598739b-6718-4cff-8402-91d7f65b1505",
+          "title": "maintain work area cleanliness"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/923dc3f7-5e76-4159-a736-402be592fbfe",
+          "title": "perform road testing of vehicles"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/b1338cfb-930c-4bcb-b77a-1034d76ddb0e",
+          "title": "use traditional toolbox tools"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/5b394ba8-5d40-40d9-b771-5df6ea9ac436",
+          "title": "perform technical tasks with great care"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/5ca9f3d6-d7dd-4bb1-a4ca-75c6b14b7b6f",
+          "title": "adapt to new technology used in cars"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/575f79e8-8500-4ddf-91ec-5e6de73d35a3",
+          "title": "mechanical components of vehicles"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/183eb46f-24f6-4e15-8017-93f10039c0a6",
+          "title": "maintain vehicle records"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/65155435-1c5b-41ee-8812-e0b9b03ae480",
+          "title": "carry out repair of vehicles"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/187f82c7-b165-4e6b-b327-704e38e85cdd",
+          "title": "automotive diagnostic equipment"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/6122d586-5978-431f-8e7a-96e61fc1f3fc",
+          "title": "wear appropriate protective gear"
+        }
+      ],
+      "optional_skills_count": 32
+    },
+    "http://data.europa.eu/esco/occupation/7aedaa07-3884-4c5b-88f9-80997b2aa54b": {
+      "uri": "http://data.europa.eu/esco/occupation/7aedaa07-3884-4c5b-88f9-80997b2aa54b",
+      "label": "welder",
+      "code": "7212.3",
+      "labels": {
+        "bg": "заварчик",
+        "cs": "svářeč",
+        "da": "svejser",
+        "de": "Schweißer/Schweißerin",
+        "el": "τεχνικός θερμοσυγκολλήσεων",
+        "en": "welder",
+        "es": "soldador/soldadora",
+        "et": "keevitaja",
+        "fi": "hitsaaja",
+        "fr": "soudeur/soudeuse",
+        "ga": "táthaire",
+        "hr": "zavarivač/zavarivačica",
+        "hu": "hegesztő",
+        "is": "logsuðumaður",
+        "it": "saldatore/saldatrice",
+        "lt": "suvirintojas",
+        "lv": "metinātājs",
+        "mt": "welder",
+        "nl": "lasser",
+        "no": "sveiser",
+        "pl": "spawacz",
+        "pt": "Soldador/Soldadora",
+        "ro": "sudor/sudoare",
+        "sk": "zvárač/zváračka",
+        "sl": "varilec/varilka",
+        "sv": "svetsare, manuell"
+      },
+      "description": "Welders operate welding equipment in order to join metal workpieces together. They can use fusion welding processes based on different techniques and materials. They also perform simple visual inspection of welds.",
+      "isco_group": {
+        "code": "7212",
+        "title": "Welders and flamecutters"
+      },
+      "essential_skills": [
+        {
+          "uri": "http://data.europa.eu/esco/skill/60ff3eac-7d4d-4e51-87b8-74c3b5d62498",
+          "title": "perform metal active gas welding"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/6122d586-5978-431f-8e7a-96e61fc1f3fc",
+          "title": "wear appropriate protective gear"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/34250f4b-b39e-42bd-a2d7-783e90051b08",
+          "title": "spot metal imperfections"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/69f23426-9279-4fe6-a283-24c2aa4c855d",
+          "title": "ensure equipment availability"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/7c127140-3a91-4fe2-b33e-12567d78ef0f",
+          "title": "fuel gas"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/e2ba5755-d934-486e-b6cb-a938c2857b79",
+          "title": "flammable fluids"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/f33b0ef2-7fe1-4ac1-96c4-36a1bff1771b",
+          "title": "select filler metal"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/46f2796e-e1b8-4210-95e2-d9a89af956e7",
+          "title": "torch temperature for metal processes"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/bd620a17-3f2b-411f-9613-8c6e8b3faafd",
+          "title": "ensure correct metal temperature"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/86df7af2-f9f3-4c06-a500-7f1fba9e78fe",
+          "title": "follow health and safety procedures in construction"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/334e3e49-fb02-4051-809a-f06adfdc1c40",
+          "title": "troubleshoot"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/b713a540-54d8-4648-809f-6304450579f5",
+          "title": "smooth burred surfaces"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/f015c5d5-6a1c-4f63-9012-a05f4f34105e",
+          "title": "perform metal inert gas welding"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/050dc15e-a41f-4958-bb2c-3fa46c2182be",
+          "title": "weld in hyperbaric conditions"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/2973b3bc-5893-4b3d-8953-22ef677a162f",
+          "title": "cutting technologies"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/aafbb139-02c6-4f35-bc62-ff73faf97d6d",
+          "title": "interpret 3D plans"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/a51adea8-bf02-488a-a0d8-b0961caca5b0",
+          "title": "perform tungsten inert gas welding"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/dfce2aba-783e-4e17-9c17-e74aca505ec2",
+          "title": "interpret 2D plans"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/27d26fd6-5795-4f0a-884e-112df7c68314",
+          "title": "apply arc welding techniques"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/14b4a40e-da80-452a-86d6-88a959052219",
+          "title": "operate oxy-fuel welding torch"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/2fcd95a4-1f9a-41cf-95a9-4701bde476b4",
+          "title": "operate welding equipment"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/530cb489-d900-46ab-9350-4d50ccd49eea",
+          "title": "welding techniques"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/465ff64a-1271-4064-8ed1-e969cb68d8b4",
+          "title": "perform test run"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/d2d9051a-10e1-41c5-9cfb-bbdc58016176",
+          "title": "follow safety precautions in work practices"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/357e1729-e2a8-49f4-8b42-dc8b278320fa",
+          "title": "remove processed workpiece"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/29d762da-1711-4a3c-b424-f0a404f4bf2d",
+          "title": "join metals"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/2035c565-f0df-4efa-99fc-09a42f18c158",
+          "title": "handle fuels"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/471541e3-76a0-4c10-8457-9f4db75d82c2",
+          "title": "repair metal sheets"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/8d4271ca-c9fd-40b3-875f-15f78332a49e",
+          "title": "quality standards"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/bc28e22e-f1e1-4f60-a9a4-df26c38338dc",
+          "title": "metal thermal conductivity"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/b0279338-ddfa-473d-b961-fa51b1185612",
+          "title": "recognise signs of corrosion"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/98d0c976-2966-4f72-831b-ffd1f531a2c6",
+          "title": "apply precision metalworking techniques"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/285cac9e-dad3-4b7b-848f-9bd2860ae345",
+          "title": "monitor gauge"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/7f107a85-d6ac-410f-a995-d635c5aa418b",
+          "title": "types of metal"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/82f6b2a3-45ca-4841-90d2-83169d7416ee",
+          "title": "shape sheet metal objects"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/5133ed7b-0785-4c28-825d-1dcf518c4b5b",
+          "title": "align components"
+        }
+      ],
+      "optional_skills_count": 50
+    },
+    "http://data.europa.eu/esco/occupation/90f75f67-495d-49fa-ab57-2f320e251d7e": {
+      "uri": "http://data.europa.eu/esco/occupation/90f75f67-495d-49fa-ab57-2f320e251d7e",
+      "label": "cook",
+      "code": "5120.1",
+      "labels": {
+        "bg": "готвач/готвачка",
+        "cs": "kuchař/kuchařka",
+        "da": "kok",
+        "de": "Koch/Köchin",
+        "el": "μάγειρας/μαγείρισσα",
+        "en": "cook",
+        "es": "cocinero/cocinera",
+        "et": "kokk",
+        "fi": "kokki",
+        "fr": "cuisinier/cuisinière",
+        "ga": "cócaire",
+        "hr": "kuhar/kuharica",
+        "hu": "szakács",
+        "is": "matreiðslumaður",
+        "it": "cuoco/cuoca",
+        "lt": "virėjas",
+        "lv": "pavārs",
+        "mt": "kok/koka",
+        "nl": "kok",
+        "no": "kokk",
+        "pl": "kucharz/kucharka",
+        "pt": "Chefe de cozinha",
+        "ro": "bucătar/bucătăreasă",
+        "sk": "kuchár/kuchárka",
+        "sl": "kuhar/kuharica",
+        "sv": "kokerska"
+      },
+      "description": "Cooks are culinary operatives who are able to prepare and present food, normally in domestic and institutional environments.",
+      "isco_group": {
+        "code": "5120",
+        "title": "Cooks"
+      },
+      "essential_skills": [
+        {
+          "uri": "http://data.europa.eu/esco/skill/c87c5366-c9a9-4205-8333-4938a9c384ad",
+          "title": "maintain a safe, hygienic and secure working environment"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/210827e3-3129-45a2-8683-70399f3f561f",
+          "title": "order supplies"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/c42d2a2a-2f55-45ac-beb1-0a8a76412457",
+          "title": "use food cutting tools"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/29b326ea-a9c8-4963-b35a-8541d0cdff77",
+          "title": "store raw food materials"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/c747ab82-9c35-4bf6-ab90-b50b9a53d292",
+          "title": "ensure cleanliness of food preparation area"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/341cf309-746c-4437-ad14-e0a0ee13eacc",
+          "title": "receive kitchen supplies"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/e1f5c539-7c93-49ee-917d-a24e0d887686",
+          "title": "control of expenses"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/8c8da904-cdb3-47d9-bfbf-15ade747d9ec",
+          "title": "work in a hospitality team"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/e265e4e2-f031-4012-a7bf-54cac48fb846",
+          "title": "maintain kitchen equipment at correct temperature"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/9ccd8da7-733b-4aff-a49f-94c390aeb618",
+          "title": "handover the food preparation area"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/a02d7f88-a240-4644-911b-169af470be5a",
+          "title": "use reheating techniques"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/bb84d739-1b06-477b-9195-251650bb3c14",
+          "title": "use culinary finishing techniques"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/0ff99f51-40d9-42f1-a1ec-377b2bb5e15f",
+          "title": "comply with food safety and hygiene"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/4b15a965-9bb4-42f1-8e44-1024aeb0b08c",
+          "title": "use food preparation techniques"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/f3934441-4bff-4076-9945-e6c51a01c467",
+          "title": "use cooking techniques"
+        }
+      ],
+      "optional_skills_count": 35
+    },
+    "http://data.europa.eu/esco/occupation/9ba74e8a-c40c-4228-9998-eb3c7a5c11df": {
+      "uri": "http://data.europa.eu/esco/occupation/9ba74e8a-c40c-4228-9998-eb3c7a5c11df",
+      "label": "sales assistant",
+      "code": "5223.4",
+      "labels": {
+        "bg": "продавач-консултант",
+        "cs": "prodavač/prodavačka",
+        "da": "salgsassistent",
+        "de": "Verkäufer/Verkäuferin",
+        "el": "πωλητής/πωλήτρια",
+        "en": "sales assistant",
+        "es": "vendedor/vendedora",
+        "et": "müügikonsultant",
+        "fi": "myyjä",
+        "fr": "vendeur/vendeuse",
+        "ga": "cúntóir díolachán",
+        "hr": "pomoćnik/pomoćnica u trgovini",
+        "hu": "értékesítési asszisztens",
+        "is": "sölumaður",
+        "it": "assistente di vendita",
+        "lt": "pardavėjas",
+        "lv": "pārdevējs",
+        "mt": "assistent tal-bejgħ/assistenta tal-bejgħ",
+        "nl": "verkoopmedewerker",
+        "no": "salgsassistent",
+        "pl": "sprzedawca/sprzedawczyni",
+        "pt": "Assistente de vendas",
+        "ro": "asistent vânzări",
+        "sk": "asistent predaja/asistentka predaja",
+        "sl": "prodajalec/prodajalka",
+        "sv": "försäljningsassistent"
+      },
+      "description": "Sales assistants represent the direct contact with clients. They provide general advice to customers.",
+      "isco_group": {
+        "code": "5223",
+        "title": "Shop sales assistants"
+      },
+      "essential_skills": [
+        {
+          "uri": "http://data.europa.eu/esco/skill/2239694b-771a-4586-8b54-2794e361a9ae",
+          "title": "maintain relationship with customers"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/fb3bc9b5-2297-4bba-85b1-60f696a92db8",
+          "title": "characteristics of services"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/0ae55852-562d-4fc9-be5e-d99f54e91b24",
+          "title": "prepare sales checks"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/2aed5d29-15c3-44ba-bb5c-80750a815b3c",
+          "title": "follow up orders for customers"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/00e53a0a-c0ba-4c9f-a2ed-4706d5832a00",
+          "title": "guarantee customer satisfaction"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/2b69525c-731c-4813-99a7-673fa5679d32",
+          "title": "provide customer guidance on product selection"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/d6d3fee7-47e2-47f4-a0ec-6c75f28c6abd",
+          "title": "product comprehension"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/a6d697d1-80ba-4175-82d4-43440ed04270",
+          "title": "process refunds"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/debb8d81-ed7f-447d-853a-5d107fda6fcf",
+          "title": "provide customer follow-up services"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/68698869-c13c-4563-adc7-118b7644f45d",
+          "title": "identify customer's needs"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/7e9daad3-8604-4839-af9b-dc6f8db3ef68",
+          "title": "stock shelves"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/de7b8c6c-9ed4-4776-924c-4265dd1d9cde",
+          "title": "demonstrate products' features"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/f75b740c-b36c-495e-bc67-efe347bbc6b5",
+          "title": "company policies"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/f10cf304-f32c-40ee-97a7-ec8d84d72955",
+          "title": "prevent shoplifting"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/c81c9ea3-4689-4146-9076-24dd175c69bc",
+          "title": "carry out active selling"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/efc1d46f-39ab-4c73-ade6-0a99a90dbeba",
+          "title": "plan aftersales arrangements"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/77a11321-754a-41de-b9e4-80d747f528db",
+          "title": "organise product display"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/1dae8445-12e5-423a-bb26-824010e299b9",
+          "title": "ensure compliance with legal requirements"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/c7e8948c-e7e4-406a-957d-55daaa4cdb44",
+          "title": "ensure stock storage safety"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/0cb013af-6dd9-4fb2-b34e-63dda1a5cf82",
+          "title": "operate cash register"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/a89c463d-e6f0-417d-9216-b59b92249226",
+          "title": "carry out order intake"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/c609c7cf-ec3f-42df-9147-3ea012e31b66",
+          "title": "Order products"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/1585fc98-bfe4-461f-97fc-734055a2c3ce",
+          "title": "characteristics of products"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/3cd35f5d-ce6d-4f14-9a09-53d7a28d834c",
+          "title": "maintain relationship with suppliers"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/44f6a65f-6be7-4818-9a66-73908797283f",
+          "title": "monitor stock level"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/25fce4fb-35b6-49b6-a4fa-c7aa168fd770",
+          "title": "examine merchandise"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/b7c8f418-08d5-45d6-b697-ab26c6ecbfb4",
+          "title": "ensure client orientation"
+        }
+      ],
+      "optional_skills_count": 14
+    },
+    "http://data.europa.eu/esco/occupation/d38c2107-98f2-47b7-8bb4-f69750d51082": {
+      "uri": "http://data.europa.eu/esco/occupation/d38c2107-98f2-47b7-8bb4-f69750d51082",
+      "label": "healthcare assistant",
+      "code": "5321.1",
+      "labels": {
+        "bg": "сътрудник, здравно обслужване",
+        "cs": "asistent zdravotní péče/asistentka zdravotní péče",
+        "da": "social- og sundhedsassistent",
+        "de": "Pflegehelfer/Pflegehelferin",
+        "el": "βοηθός νοσηλευτής/βοηθός νοσηλεύτρια",
+        "en": "healthcare assistant",
+        "es": "técnico de atención sociosanitaria/técnica de atención sociosanitaria",
+        "et": "tervishoiu- ja hoolekandeasutuste hooldustöötaja",
+        "fi": "lähihoitaja",
+        "fr": "aide-soignant en institution/aide-soignante en institution",
+        "ga": "cúntóir cúraim sláinte",
+        "hr": "djelatnik/djelatnica za zdravstvenu i socijalnu skrb u ustanovama",
+        "hu": "ápolási asszisztens",
+        "is": "aðstoðarmaður í heilbrigðisþjónustu",
+        "it": "operatore socio-sanitario/operatrice socio-sanitaria",
+        "lt": "medicinos priežiūros padėjėjas",
+        "lv": "Māsas palīgs",
+        "mt": "assistent tal-kura tas-saħħa",
+        "nl": "zorghulp",
+        "no": "hjelpepleier",
+        "pl": "opiekun medyczny",
+        "pt": "Assistente de cuidados de saúde",
+        "ro": "infirmier/infirmieră",
+        "sk": "asistent zdravotnej starostlivosti/asistentka zdravotnej starostlivosti",
+        "sl": "bolničar/bolničarka",
+        "sv": "undersköterska, vård- och specialavdelning och mottagning"
+      },
+      "description": "Healthcare assistants work in teams of nurses within the occupational fields of nursing, social care, clinical care and care of people of all age-groups. Healthcare assistants assist in the promotion and restoration of patients' health by providing physical and psychological support to patients, friends and families.",
+      "isco_group": {
+        "code": "5321",
+        "title": "Health care assistants"
+      },
+      "essential_skills": [
+        {
+          "uri": "http://data.europa.eu/esco/skill/68088afb-3afd-4538-8e25-377a63f09666",
+          "title": "communicate with nursing staff"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/65a1c226-5d93-4fec-8a15-cb1b2ec4379f",
+          "title": "work under supervision in care"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/aa238394-8126-4ada-be2f-9dfe065cf314",
+          "title": "adhere to organisational guidelines"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/2e90ef65-646a-4b1d-8597-26ca88aa1c6b",
+          "title": "identify abnormalities"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/d3b74d50-7fc9-4051-9335-58d129a4a064",
+          "title": "monitor basic patients signs"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/b34a15fe-dc14-43eb-9eb3-c227238a029c",
+          "title": "convey medical routine information"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/98eb1f3b-3480-416b-bd4b-811946f7e347",
+          "title": "comply with quality standards related to healthcare practice"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/bcd2ce08-ba12-4d66-865f-f4ba36419707",
+          "title": "promote inclusion"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/c65aa043-98da-4136-9877-494e72d9e4cf",
+          "title": "interact with healthcare users"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/4d614c92-0c48-4a11-a5ed-416b34fd50d2",
+          "title": "manage healthcare users' data"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/2475cd27-8d6c-4318-a364-21395b23acba",
+          "title": "empathise with the healthcare user"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/d15ce60f-ddab-41ce-ba56-398451b77b60",
+          "title": "have computer literacy"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/a17286c5-238d-4f0b-bc24-29e9121345de",
+          "title": "listen actively"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/8232979d-6aa4-40c9-a12b-5152a52a76b8",
+          "title": "advise on healthcare users' informed consent"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/9fcf9918-fdef-49c3-aedc-518eb1e7e1f5",
+          "title": "comply with legislation related to health care"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/13724e7d-b946-4773-915e-9621340237bc",
+          "title": "contribute to continuity of health care"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/eba85523-6ad2-4cd9-9b27-a0b6a39b8cfa",
+          "title": "work in multidisciplinary health teams"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/bccafecc-4d80-43d3-8c9f-aef382c3926f",
+          "title": "work with nursing staff"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/d93f9e29-9740-4231-8486-13d377b99f05",
+          "title": "develop a collaborative therapeutic relationship"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/f90d4810-8bac-4e5e-b870-3e35a4138ff7",
+          "title": "accept own accountability"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/51e79cb4-fab3-404c-88f3-cd4a1bd5879e",
+          "title": "deal with emergency care situations"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/62268d9a-42f9-4c65-9ed3-d7ba69249896",
+          "title": "support nurses"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/0b5aaee4-c948-4853-bf8d-b9cd6c4917ee",
+          "title": "inform policy makers on health-related challenges"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/b55f61a4-5f9e-4741-ba95-9ac04b64119b",
+          "title": "work in a multicultural environment in health care"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/049c8caf-dd12-45fc-9bfa-b64051f32a19",
+          "title": "respond to changing situations in health care"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/60b2dd49-c677-4f47-816e-aff3b577e113",
+          "title": "provide health education"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/097098fc-6d89-44e9-9305-98ac5c0a78ac",
+          "title": "educate on the prevention of illness"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/16636767-c215-4cf0-b126-e144fea20926",
+          "title": "use e-health and mobile health technologies"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/24f980ba-b44f-4739-b563-205104c3190d",
+          "title": "provide basic support to patients"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/76395873-7fe2-4f9a-b4b6-9932f8cbd0b4",
+          "title": "follow clinical guidelines"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/ce0d6a42-59c1-433e-ab62-adfc969c46bb",
+          "title": "ensure safety of healthcare users"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/d3eccb86-f02d-4950-bfbd-20b9510774a1",
+          "title": "apply organisational techniques"
+        }
+      ],
+      "optional_skills_count": 14
+    },
+    "http://data.europa.eu/esco/occupation/d5db9d5c-2ebf-4a54-a79a-1b7e7ff70471": {
+      "uri": "http://data.europa.eu/esco/occupation/d5db9d5c-2ebf-4a54-a79a-1b7e7ff70471",
+      "label": "waiter/waitress",
+      "code": "5131.2",
+      "labels": {
+        "bg": "сервитьор/сервитьорка",
+        "cs": "číšník/číšnice",
+        "da": "tjener",
+        "de": "Kellner/Kellnerin",
+        "el": "σερβιτόρος/σερβιτόρα",
+        "en": "waiter/waitress",
+        "es": "camarero/camarera",
+        "et": "söögisaali teenindaja",
+        "fi": "tarjoilija",
+        "fr": "serveur/serveuse",
+        "ga": "freastalaí",
+        "hr": "konobar/konobarica",
+        "hu": "pincér/pincérnő",
+        "is": "framreiðslumaður",
+        "it": "cameriere/cameriera",
+        "lt": "padavėjas",
+        "lv": "viesmīlis",
+        "mt": "wejter/wejtress",
+        "nl": "ober/serveerster",
+        "no": "servitør",
+        "pl": "kelner/kelnerka",
+        "pt": "Empregado de mesa/Empregada de mesa",
+        "ro": "ospătar/ospătăriță",
+        "sk": "čašník/čašníčka",
+        "sl": "natakar/natakarica",
+        "sv": "servitör/servitris"
+      },
+      "description": "Waiters/waitresses supply guests with food and drinks as requested. Waiters/waitresses usually work in restaurants, bars and hotels. This involves the preparation of tables, serving food or beverages and taking payments.",
+      "isco_group": {
+        "code": "5131",
+        "title": "Waiters"
+      },
+      "essential_skills": [
+        {
+          "uri": "http://data.europa.eu/esco/skill/0ff99f51-40d9-42f1-a1ec-377b2bb5e15f",
+          "title": "comply with food safety and hygiene"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/906d21c9-7a9c-4919-817d-10676f9ddfe4",
+          "title": "arrange tables"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/b7553d1b-31b4-42e6-b6be-2a90189ef7d6",
+          "title": "present menus"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/8c8da904-cdb3-47d9-bfbf-15ade747d9ec",
+          "title": "work in a hospitality team"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/89ba58e8-a67e-4d2b-ad42-6acab25c241b",
+          "title": "measure customer feedback"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/449f85e3-22e6-44d3-a295-b2fb1ab8b494",
+          "title": "advise guests on menus for special events"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/75dfe1ee-5935-42ce-b820-697f827825c3",
+          "title": "maintain customer service"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/99b95aca-221d-415c-9de5-564e1a273701",
+          "title": "welcome restaurant guests"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/9b67cbf3-085c-4578-8a8e-8d130ed3fced",
+          "title": "supervise food quality"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/b6b2e665-1085-4f4d-9973-e979721815d7",
+          "title": "assist clients with special needs"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/496fd702-885e-488c-a48a-27e0ab692292",
+          "title": "assist VIP guests"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/6d1532b4-b649-4089-b665-cf80debf159b",
+          "title": "food and beverages on the menu"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/bdcac0c8-b77a-4640-9eaf-c0cf3efd1e23",
+          "title": "process payments"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/6ff01827-907d-43d8-b6e4-7162c1cf0aca",
+          "title": "clean surfaces"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/c011d9ef-b3f1-4f48-8d1b-9cdd288a4f55",
+          "title": "prepare the restaurant for service"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/d9895150-fbb5-42ec-8087-8e5d7ed5fcf3",
+          "title": "prepare alcoholic beverages"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/ea4a7e5e-923d-4a15-ad55-362a3ff41641",
+          "title": "check dining room cleanliness"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/655d3d08-680a-40ea-8ffd-7e66916272fb",
+          "title": "dietary regimes"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/61970f8b-099c-4e7e-82e0-9ccdced0baf3",
+          "title": "assist customers"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/e4fb4f26-1c0c-45e4-9250-5be32cee2a48",
+          "title": "prepare hot drinks"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/2239694b-771a-4586-8b54-2794e361a9ae",
+          "title": "maintain relationship with customers"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/68698869-c13c-4563-adc7-118b7644f45d",
+          "title": "identify customer's needs"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/beeaddc7-fe69-4b97-a286-0bd595432eb9",
+          "title": "serve beverages"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/42a6eff0-e9d9-423d-877b-e48fe91ff26f",
+          "title": "serve food in table service"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/44773391-78b7-4500-b421-96a9ca622a99",
+          "title": "serve wines"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/5ef6d0cf-1ce3-487e-97e6-90670353d030",
+          "title": "attend to detail regarding food and beverages"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/0e21e183-e787-4f23-a240-93b416c088c2",
+          "title": "maintain personal hygiene standards"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/1e9bd245-3118-45e0-83e4-751f2ce556e5",
+          "title": "alcoholic beverage products"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/704bed2c-737a-4585-b840-1d28bbcab9b4",
+          "title": "take food and beverage orders from customers"
+        }
+      ],
+      "optional_skills_count": 14
+    },
+    "http://data.europa.eu/esco/occupation/e1416610-ad08-4f37-8b46-9f99632a5c0f": {
+      "uri": "http://data.europa.eu/esco/occupation/e1416610-ad08-4f37-8b46-9f99632a5c0f",
+      "label": "cabinet maker",
+      "code": "7522.2",
+      "labels": {
+        "bg": "майстор, производство на шкафове",
+        "cs": "výrobce nábytku/výrobkyně nábytku",
+        "da": "møbelsnedker",
+        "de": "Tischler/Tischlerin",
+        "el": "επιπλοποιός",
+        "en": "cabinet maker",
+        "es": "ebanista",
+        "et": "mööblitisler",
+        "fi": "huonekalupuuseppä",
+        "fr": "ébéniste",
+        "ga": "caibinéadaire",
+        "hr": "izrađivač/izrađivačica namještaja",
+        "hu": "bútorasztalos",
+        "is": "skápasmiður",
+        "it": "ebanista mobiliere",
+        "lt": "baldžius",
+        "lv": "mēbeļu galdnieks",
+        "mt": "produttur tal-armarji/produttriċi tal-armarji",
+        "nl": "meubelmaker",
+        "no": "møbelsnekker",
+        "pl": "stolarz meblowy",
+        "pt": "Marceneiro/Marceneira",
+        "ro": "ebenist/ constructor produse din lemn",
+        "sk": "výrobca/výrobkyňa nábytku",
+        "sl": "pohištveni mizar/pohištvena mizarka",
+        "sv": "inredningssnickare"
+      },
+      "description": "Cabinet makers build cabinets or other pieces of furniture by cutting, shaping and fitting pieces of wood. They use different kind of power and hand tools, such as lathes, planers and saws.",
+      "isco_group": {
+        "code": "7522",
+        "title": "Cabinet-makers and related workers"
+      },
+      "essential_skills": [
+        {
+          "uri": "http://data.europa.eu/esco/skill/87ebb1d4-3aab-4257-b2bd-7b7f2008eea2",
+          "title": "apply a protective layer"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/34bd22df-015b-4a85-9cfe-4074956a882a",
+          "title": "woodturning"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/59ea80e1-463a-4dba-82c6-d0b6d577d532",
+          "title": "technical drawings"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/aedae903-74b5-4209-8765-7f6619f52545",
+          "title": "create furniture frames"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/a8c14569-704d-4615-bfb3-b1ecfd721bb3",
+          "title": "tend boring machine"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/2c71ffc8-dae9-4584-ae7f-5b3a78c8cc69",
+          "title": "furniture trends"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/cf2005ee-c788-4283-81d9-b443dfdf2c2e",
+          "title": "types of wood"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/adf661fe-9429-4094-8671-ca69fb72ad02",
+          "title": "clean wood surface"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/c9026b8f-7c5c-44b4-9e59-ae1e72fb29c0",
+          "title": "wood products"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/2e8e2acf-5d58-4d99-807d-2ed77a6c8b17",
+          "title": "join wood elements"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/e040fb97-ac17-4cd0-bf74-7e96c83811b6",
+          "title": "apply wood finishes"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/f2f9934c-b462-43e1-9172-432cf1904c8c",
+          "title": "operate wood sawing equipment"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/5ac07f1a-6436-4103-b891-c59a7ac505f0",
+          "title": "construction products"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/95097774-1a0e-4501-a3d9-b0f31973e02d",
+          "title": "sanding techniques"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/88ea614f-7e96-48fd-bf0b-96bf00bdb098",
+          "title": "sand wood"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/a4c40f64-e8d4-4677-a741-ec04e63fa284",
+          "title": "design original furniture"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/ca273412-56a5-487e-a58b-2539abc0d730",
+          "title": "design objects to be crafted"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/5df6be8c-c4ff-4bef-b744-3d502e5e5330",
+          "title": "create smooth wood surface"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/64f0b3c5-92ff-4fd7-9e34-cfe5eeb11c98",
+          "title": "repair furniture frames"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/db99d662-4230-49b3-a9e9-b0043a70c3c3",
+          "title": "operate drilling equipment"
+        }
+      ],
+      "optional_skills_count": 23
+    },
+    "http://data.europa.eu/esco/occupation/e7970c7a-7769-4002-87d3-0a8ea94fdd6f": {
+      "uri": "http://data.europa.eu/esco/occupation/e7970c7a-7769-4002-87d3-0a8ea94fdd6f",
+      "label": "landscape gardener",
+      "code": "6113.5",
+      "labels": {
+        "bg": "градинар-озеленител/градинарка-озеленител",
+        "cs": "krajinář/krajinářka",
+        "da": "anlægsgartner",
+        "de": "Landschaftsgärtner/Landschaftsgärtnerin",
+        "el": "κηποτέχνης",
+        "en": "landscape gardener",
+        "es": "jardinero paisajista/jardinera paisajista",
+        "et": "maastikuaednik",
+        "fi": "puutarha-arkkitehti",
+        "fr": "jardinier paysagiste/jardinière paysagiste",
+        "ga": "garraíodóir tírdhreacha",
+        "hr": "vrtlar/vrtlarka krajobraza",
+        "hu": "tájkertész",
+        "is": "landslagsgarðyrkjumaður",
+        "it": "giardiniere paesaggista/giardiniera paesaggista",
+        "lt": "kraštotvarkininkas",
+        "lv": "ainavu dārznieks",
+        "mt": "ġardinar tal-pajsaġġi/ġardinara tal-pajsaġġi",
+        "nl": "hovenier",
+        "no": "landskapsgartner",
+        "pl": "ogrodnik/ogrodniczka",
+        "pt": "Paisagista",
+        "ro": "peisagist grădini",
+        "sk": "záhradník/záhradníčka",
+        "sl": "krajinski vrtnar/krajinska vrtnarka",
+        "sv": "trädgårdsarkitekt"
+      },
+      "description": "Landscape gardeners plan, construct, renovate and maintain parks, gardens and public green spaces.",
+      "isco_group": {
+        "code": "6113",
+        "title": "Gardeners, horticultural and nursery growers"
+      },
+      "essential_skills": [
+        {
+          "uri": "http://data.europa.eu/esco/skill/73997f48-cd9d-4724-872d-86ecbb2ed9a2",
+          "title": "plant species"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/eadf0f36-cba0-4e68-8458-c91bc60b494d",
+          "title": "nurse trees"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/dcb01a4f-720a-480f-b61a-11a1286d56f3",
+          "title": "horticulture principles"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/0e355580-bd4a-465a-8058-92984623070e",
+          "title": "work in outdoor conditions"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/844e9480-7aef-49f6-9260-d88c27249241",
+          "title": "propagate plants"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/d6f40152-c00d-44fa-a48f-55e39f08c14e",
+          "title": "maintain landscape site"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/fd61cec0-cfab-4a4a-9157-e8f21e612116",
+          "title": "principles of landscape construction"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/8ce4a4af-969b-4d1c-8bfe-891cff82f913",
+          "title": "plant green plants"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/bf056c12-eaba-4f00-b5a9-c4add7f841f3",
+          "title": "landscaping materials"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/fe82195e-af26-4156-b554-c724b28fb2fb",
+          "title": "pruning types"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/142415cb-503f-4721-b4d8-cac47de18cc6",
+          "title": "transport physical resources within the work area"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/f8460277-3c9a-4be4-b203-600a2a295f47",
+          "title": "plant disease control"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/87da57a8-ae40-41e3-998e-f517daa95c9a",
+          "title": "handling chemical products for soil and plants"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/51b4a8c4-6af7-41b7-a68d-f3c2fd63c9ec",
+          "title": "de-limb trees"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/8a1942a8-bebd-4cc5-bdff-fe215aaa3de5",
+          "title": "use gardening equipment"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/a8429098-ddac-481b-91e7-688d021c092e",
+          "title": "ecology"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/69c865d1-39d6-48ae-b33f-75a7e9cc1811",
+          "title": "operate landscaping equipment"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/08881cb7-5331-4b11-9442-4d7c9fce749e",
+          "title": "perform pest control"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/c5f255ef-02d3-4ab0-a652-2bf055d1d493",
+          "title": "grow plants"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/e1479957-1606-4dbd-90f7-4c46c615936c",
+          "title": "prepare planting area"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/94a1b3c5-2a95-4703-8559-973bc6d14747",
+          "title": "perform weed control operations"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/17fa5b53-fd59-49eb-8763-29255a185d26",
+          "title": "prepare the ground"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/a8f1c3cf-bd8b-4c85-80d3-c69955f6bd00",
+          "title": "pruning techniques"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/8bb1142a-06ca-41fa-a434-444d95d8b8c9",
+          "title": "build fences"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/3419fac9-575d-4492-a018-edff6f4dae26",
+          "title": "environmental legislation in agriculture and forestry"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/5125b132-d1a9-41a4-95c3-91b0984e86b5",
+          "title": "maintain ground"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/4c58528e-bdaa-43ad-8f5a-8ad0b8cd4bbb",
+          "title": "design principles"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/98815e0a-0bcc-41fc-ba9a-6ec1c4e8a8a0",
+          "title": "put up signs"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/e85cff6b-ee0e-4106-98f0-b57b39a2ea3f",
+          "title": "execute disease and pest control activities"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/51097602-8e4e-4830-8f35-d77afc713fc0",
+          "title": "prune hedges and trees"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/9d75efb9-0c77-4f86-b5e7-99100808564a",
+          "title": "pest control in plants"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/7b3717e4-e963-44e0-b94f-1088a7242da0",
+          "title": "nurse plants"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/af9b6098-7d2f-4990-b4eb-d7dd73fdb933",
+          "title": "prune plants"
+        }
+      ],
+      "optional_skills_count": 21
+    },
+    "http://data.europa.eu/esco/occupation/ed3cf43d-c2c1-4c46-82fc-1375e27e0290": {
+      "uri": "http://data.europa.eu/esco/occupation/ed3cf43d-c2c1-4c46-82fc-1375e27e0290",
+      "label": "plumber",
+      "code": "7126.8",
+      "labels": {
+        "bg": "водопроводчик",
+        "cs": "instalatér/instalatérka",
+        "da": "vvs-installatør",
+        "de": "Gas- und Sanitärinstallateur/Gas- und Sanitärinstallateurin",
+        "el": "υδραυλικός",
+        "en": "plumber",
+        "es": "fontanero/fontanera",
+        "et": "torulukksepp",
+        "fi": "putkiasentaja",
+        "fr": "plombier/plombière",
+        "ga": "pluiméir",
+        "hr": "vodoinstalater i plinoinstalater / vodoinstalaterka i plinoinstalaterka",
+        "hu": "víz- és gázvezeték-szerelő",
+        "is": "pípulagningarmaður",
+        "it": "idraulico",
+        "lt": "vandentiekininkas",
+        "lv": "santehniķis",
+        "mt": "plumber",
+        "nl": "loodgieter",
+        "no": "rørlegger",
+        "pl": "hydraulik",
+        "pt": "Canalizador/Canalizadora",
+        "ro": "instalator/instalatoare",
+        "sk": "inštalatér/inštalatérka",
+        "sl": "vodovodni inštalater/vodovodna inštalaterka",
+        "sv": "rörmokare"
+      },
+      "description": "Plumbers maintain and install water, gas and sewage systems. They inspect pipes and fixtures on a regular basis or make repairs as needed. They bend, cut, and install pipes. They test systems and make adjustments safely and following regulations. They place sanitary equipment.",
+      "isco_group": {
+        "code": "7126",
+        "title": "Plumbers and pipe fitters"
+      },
+      "essential_skills": [
+        {
+          "uri": "http://data.europa.eu/esco/skill/c643e59b-d74c-4f44-b76e-6e1d96c05ec4",
+          "title": "use safety equipment in construction"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/ab3d3d36-0242-41b0-bf5e-d8301171b14a",
+          "title": "attach PEX pipe"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/1b3a0b78-cd19-4503-a58c-9b1eda2396bb",
+          "title": "prepare copper gas-lines pipes"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/86df7af2-f9f3-4c06-a500-7f1fba9e78fe",
+          "title": "follow health and safety procedures in construction"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/50f2d23c-b3fb-48a5-967b-14fd0a6dd205",
+          "title": "inspect construction supplies"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/b92758d4-4591-4df1-9ceb-f907aa71ebd9",
+          "title": "use measurement instruments"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/7a96889b-5ae5-4a43-bcdf-ed38a759b739",
+          "title": "install metal gas piping"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/55f52ccc-fca9-434b-afab-497387e75359",
+          "title": "check water pressure"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/dfce2aba-783e-4e17-9c17-e74aca505ec2",
+          "title": "interpret 2D plans"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/8755734c-2919-41a3-9ca6-1e3d1f169213",
+          "title": "install plumbing systems"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/59030382-506d-454d-81cd-787586ffb840",
+          "title": "install PVC piping"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/2da864d4-339f-40ab-91c0-9f8d229a2c0b",
+          "title": "snap chalk line"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/4af56376-7b2f-4ced-ac58-0c3967bd1e83",
+          "title": "transport construction supplies"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/0f58f88f-d46d-45d7-b0a1-46364e5f7013",
+          "title": "plumbing tools"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/77b8d33e-5948-4924-aefc-f4f4b7477576",
+          "title": "types of piping"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/0a85e1c5-393b-4348-97c4-7b5bef419e7d",
+          "title": "replace faucets"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/2fcd95a4-1f9a-41cf-95a9-4701bde476b4",
+          "title": "operate welding equipment"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/ef6cb992-07d1-435b-a150-45d92228db1e",
+          "title": "place sanitary equipment"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/aafbb139-02c6-4f35-bc62-ff73faf97d6d",
+          "title": "interpret 3D plans"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/8e946faa-b350-4cbe-9eeb-6fee739e6d98",
+          "title": "clear out drains"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/156f8c5b-894a-4ccc-a70e-37a2726f3f00",
+          "title": "work ergonomically"
+        }
+      ],
+      "optional_skills_count": 22
+    },
+    "http://data.europa.eu/esco/occupation/edf2e989-d7c5-496e-b365-81fc5cb9eb39": {
+      "uri": "http://data.europa.eu/esco/occupation/edf2e989-d7c5-496e-b365-81fc5cb9eb39",
+      "label": "mechatronics engineering technician",
+      "code": "3115.1.11",
+      "labels": {
+        "bg": "техник-механик, мехатроника",
+        "cs": "mechatronik/mechatronička",
+        "da": "mekatroniktekniker",
+        "de": "Maschinenbautechniker Mechatronik/Maschinenbautechnikerin Mechatronik",
+        "el": "τεχνικός μηχατρονικής",
+        "en": "mechatronics engineering technician",
+        "es": "ingeniero técnico de mecatrónica/ingeniera técnica de mecatrónica",
+        "et": "mehhatroonikatehnik",
+        "fi": "asiantuntija, mekatroniikka",
+        "fr": "technicien mécatronique/technicienne mécatronique",
+        "ga": "teicneoir innealtoireachta meicitreonaice",
+        "hr": "tehničar/tehničarka za mehatroniku",
+        "hu": "mechatronikai technikus",
+        "is": "rafeindavélaverkfræðitæknir",
+        "it": "tecnico meccatronico",
+        "lt": "mechatronikos inžinerijos technikas",
+        "lv": "mehatroniķis",
+        "mt": "tekniku tal-inġinerija tal-mekatronika",
+        "nl": "mechatronicus",
+        "no": "tekniker, mekatronikk",
+        "pl": "technik mechatronik",
+        "pt": "Técnico de engenharia mecatrónica/Técnica de engenharia mecatrónica",
+        "ro": "tehnician mecatronist",
+        "sk": "technik/technička v oblasti mechatroniky",
+        "sl": "tehnik/tehnica za mehatroniko",
+        "sv": "mekatroniktekniker"
+      },
+      "description": "Mechatronics engineering technicians collaborate with engineers in the development of mechatronic devices and applications through a combination of mechanical engineering, electronic engineering, and computer engineering. They build, test, install, and calibrate mechatronics and solve technical problems.",
+      "isco_group": null,
+      "essential_skills": [
+        {
+          "uri": "http://data.europa.eu/esco/skill/cafc2723-c308-4058-9921-61306b5de924",
+          "title": "fasten components"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/692ace70-7f97-4214-92bd-88f7637d8a44",
+          "title": "physics"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/e921279a-1a7e-4900-9720-bde93ae3e70e",
+          "title": "prepare production prototypes"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/6c65bbce-15ce-447e-9666-0fe928f5588c",
+          "title": "test mechatronic units"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/3c333552-8d89-43f5-90bd-856e15bec433",
+          "title": "design drawings"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/455a7133-cf0f-4c74-a91f-fd35c0d25b79",
+          "title": "install mechatronic equipment"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/f4a6e9f7-5cff-46c0-894c-59c20bb78694",
+          "title": "automation technology"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/5133ed7b-0785-4c28-825d-1dcf518c4b5b",
+          "title": "align components"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/c5c51528-ccfc-4c53-b409-c200aaa44222",
+          "title": "liaise with engineers"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/42b23922-1c40-4dbe-9e0c-7a568dfdf06b",
+          "title": "adjust engineering designs"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/d6179c4b-ff5a-4bbb-a3c8-e0acf0de1f56",
+          "title": "assist scientific research"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/2feeef46-05cf-445c-9ca1-c96a30e10106",
+          "title": "read assembly drawings"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/465ff64a-1271-4064-8ed1-e969cb68d8b4",
+          "title": "perform test run"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/d88cb3f1-8e02-4618-bf32-4b0488066934",
+          "title": "mechatronics"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/999f0cf8-0d78-492c-be17-06ee15bce47a",
+          "title": "simulate mechatronic design concepts"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/db4a5d3a-47f5-4ff2-bc79-e458ee58c3fe",
+          "title": "assemble mechatronic units"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/8d4271ca-c9fd-40b3-875f-15f78332a49e",
+          "title": "quality standards"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/9c071f1d-eac3-449d-b004-c14775b5a3b9",
+          "title": "mechanical engineering"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/1a3660c2-011c-4e96-9b1d-529afc305428",
+          "title": "inspect quality of products"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/bf1f763e-c505-46e7-8af3-e48f13ec5f44",
+          "title": "control engineering"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/3e40c7d0-0e36-4b33-bc33-0aa87eda0561",
+          "title": "electrical engineering"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/328733a7-6d84-420d-a65c-2a8014fadc60",
+          "title": "record test data"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/e87ec79a-c9ff-46f5-84fa-7a0f394cdf40",
+          "title": "robotics"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/b07daddc-8625-4360-946e-ad2b0e56ebf6",
+          "title": "read engineering drawings"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/02c71cde-f513-43da-8952-0974763c7568",
+          "title": "interpret circuit diagrams"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/95c35c3a-035f-47c2-90cf-7e934d20fc08",
+          "title": "electronics"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/86065a19-7537-4bd5-b41c-7e0638d67b58",
+          "title": "follow standards for machinery safety"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/89f6560b-2194-45c9-9ece-d33049a73eef",
+          "title": "computer engineering"
+        }
+      ],
+      "optional_skills_count": 35
+    },
+    "http://data.europa.eu/esco/occupation/f2b15a0e-e65a-438a-affb-29b9d50b77d1": {
+      "uri": "http://data.europa.eu/esco/occupation/f2b15a0e-e65a-438a-affb-29b9d50b77d1",
+      "label": "software developer",
+      "code": "2512.4",
+      "labels": {
+        "bg": "разработчик на софтуер",
+        "cs": "softwarový vývojář/softwarová vývojářka",
+        "da": "softwareudvikler",
+        "de": "Softwareentwickler/Softwareentwicklerin",
+        "el": "μηχανικός ανάπτυξης λογισμικού",
+        "en": "software developer",
+        "es": "desarrollador de software/desarrolladora de software",
+        "et": "tarkvaraarendaja",
+        "fi": "ohjelmistokehittäjä",
+        "fr": "développeur de logiciels/développeuse de logiciels",
+        "ga": "forbróir bogearraí",
+        "hr": "razvojni programer softvera / razvojna programerka softvera",
+        "hu": "szoftverfejlesztő",
+        "is": "hugbúnaðarsérfræðingur",
+        "it": "sviluppatore di software/sviluppatrice di software",
+        "lt": "programinės įrangos kūrėjas",
+        "lv": "programmatūras izstrādātājs",
+        "mt": "żviluppatur tas-softwer",
+        "nl": "software ontwikkelaar",
+        "no": "programvareutvikler",
+        "pl": "twórca oprogramowania",
+        "pt": "Programador de software/Programadora de software",
+        "ro": "dezvoltator de software",
+        "sk": "softvérový vývojár/softvérová vývojárka",
+        "sl": "razvijalec/razvijalka programske opreme",
+        "sv": "programvaruutvecklare"
+      },
+      "description": "Software developers implement or program all kinds of software systems based on specifications and designs by using programming languages, tools, and platforms.",
+      "isco_group": {
+        "code": "2512",
+        "title": "Software developers"
+      },
+      "essential_skills": [
+        {
+          "uri": "http://data.europa.eu/esco/skill/72a74f69-5cf1-43c5-99b9-62a444578919",
+          "title": "engineering processes"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/7111b95d-0ce3-441a-9d92-4c75d05c4388",
+          "title": "project management"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/209a5498-3449-4689-8ed9-bd08cab4fd78",
+          "title": "engineering principles"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/6a899482-8bcf-40ca-ae67-579a1cc467ab",
+          "title": "manage engineering project"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/0b0335f3-0aa1-491e-895e-81fc8774a300",
+          "title": "develop automated migration methods"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/f84a433f-34f1-4083-b0a3-24802623509c",
+          "title": "web services"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/2522a6ce-3202-4ac8-9f5b-b9cb5a3a83a1",
+          "title": "debug software"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/04fe962b-4017-4eb7-9139-7d69b6922bc9",
+          "title": "use an application-specific interface"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/0e0c9c11-b39e-43cf-ba95-2fe646f5de64",
+          "title": "identify customer requirements"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/2b7a79e5-84d8-4880-be66-3d9bb05bea17",
+          "title": "use software design patterns"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/797a4416-0b8d-44f3-8fcd-eb10bd0be6b4",
+          "title": "develop software prototype"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/9d2e926f-53d9-41f5-98f3-19dfaa687f3f",
+          "title": "tools for software configuration management"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/59ea80e1-463a-4dba-82c6-d0b6d577d532",
+          "title": "technical drawings"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/d9e5349e-8791-49c2-8ba4-839fdd1606c2",
+          "title": "define technical requirements"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/f28617ad-afdd-4041-814c-216153a38998",
+          "title": "analyse software specifications"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/6014921e-1d25-4039-adc2-04852d61880e",
+          "title": "ICT debugging tools"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/21d2f96d-35f7-4e3f-9745-c533d2dd6e97",
+          "title": "computer programming"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/925463a7-d51f-4d5b-9f79-4d28cf30acde",
+          "title": "integrated development environment software"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/541561bc-510c-4a99-881c-2d8bf5a85462",
+          "title": "use technical drawing software"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/4fabca9a-7435-4f33-b1da-3cdb00340fdc",
+          "title": "perform scientific research"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/901105f8-3a08-453e-b1dc-23619e317fd3",
+          "title": "create flowchart diagram"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/8b94aa1e-89c9-459d-b3b4-1dfab8dec2df",
+          "title": "use software libraries"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/be48353d-25c7-4f86-bea9-7b9e248fbc6e",
+          "title": "interpret technical requirements"
+        },
+        {
+          "uri": "http://data.europa.eu/esco/skill/172020d1-e151-445b-8173-e2a5fb16fe51",
+          "title": "utilise computer-aided software engineering tools"
+        }
+      ],
+      "optional_skills_count": 84
+    }
+  }
+}

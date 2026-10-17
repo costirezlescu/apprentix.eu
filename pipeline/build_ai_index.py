@@ -16,6 +16,8 @@ Called at the end of pipeline/build.py all(); run on its own with
 
 from __future__ import annotations
 
+import re
+
 import json
 from collections import Counter
 from pathlib import Path
@@ -431,6 +433,39 @@ def insight_chunks() -> list[dict]:
     return sorted(out, key=lambda c: c["id"])
 
 
+def occupation_chunks() -> list[dict]:
+    """One chunk per Occupation lens page: where you can qualify, at which EQF levels, per country."""
+    path = PUBLISHED / "occupations" / "occupations.json"
+    if not path.exists():
+        return []
+    out = []
+    for o in read_json(path)["occupations"]:
+        s = o["summary"]
+        per = "; ".join(f"{c['name']}: {c['count']} ({', '.join('EQF ' + k + ' ×' + str(v) for k, v in c['levels'].items())}"
+                        + (f", {c['apprenticeship']} flagged apprenticeship" if c["apprenticeship"] else "") + ")"
+                        for c in o["countries"])
+        ex = "; ".join(f"{c['name']}: " + ", ".join(q["title"] for q in c["qualifications"][:3]) for c in o["countries"][:6])
+        lines = [f"Occupation lens: want to be {o['with_article']}? ESCO occupation {o['esco']['label']} ({o['esco']['code']}), ISCO {o['esco']['isco_unit']}.",
+                 f"{s['qualifications']} national VET qualifications published to Europass in {s['countries']} countries, EQF levels {s['levels']}.",
+                 f"By country: {per}.", f"Examples: {clip(ex, 700)}."]
+        if o.get("outlook") and o["outlook"].get("eu") is not None:
+            lines.append(f"Cedefop STAS forecast {o['outlook']['year']} for ISCO group {o['outlook']['isco_major']} "
+                         f"{o['outlook']['isco_major_title']}: EU {o['outlook']['eu']:+.1f}% employment change.")
+        out.append(chunk(f"occupation:{o['slug']}", f"{SITE}pages/occupations/{o['slug']}.html",
+                         f"Want to be {o['with_article']}?", "occupation", "\n".join(lines)))
+    return out
+
+
+def story_chunks() -> list[dict]:
+    path = PUBLISHED / "stories" / "stories.json"
+    if not path.exists():
+        return []
+    tag = re.compile(r"<[^>]+>")
+    return [chunk(f"story:{s['id']}", f"{SITE}pages/stories/{s['id']}.html", s["title"], "story",
+                  f"Story: {s['title']}. {s['dek']}\n" + " ".join(tag.sub("", st["text"]) for st in s["steps"]))
+            for s in read_json(path)["stories"]]
+
+
 GUIDE = [
     ("guide:about", SITE + "pages/about.html", "About Apprentix",
      "Apprentix (apprentix.eu) is an independent, non-commercial project that republishes public European data on "
@@ -459,7 +494,7 @@ GUIDE += [
      "(pages/duel.html?a=AT&b=DE): schemes, outcomes, money and mobility side by side. Country pages "
      "(pages/countries/<code>.html, e.g. at.html, el.html for Greece) gather everything per country, with a 'Follow' "
      "section and an update feed per country (data/feeds/<code>.xml). Glossary (pages/glossary.html): plain-language "
-     "definitions of VET terms. Higher or lower? (pages/play.html) and Myth or fact? (pages/myths.html): quiz games. Each country page has a 'Find an apprenticeship' section with the official national services for apprenticeship places, a 'What is counted' panel comparing its national statistics, and scheme portraits with a 'What to expect on this scheme' story. Every indicator and insight chart can "
+     "definitions of VET terms. Higher or lower? (pages/play.html) and Myth or fact? (pages/myths.html): quiz games. Occupation lens (pages/occupations/<slug>.html, e.g. electrician.html): for 18 occupations, the national qualifications by country and EQF level. Stories (pages/stories/): scroll-driven stories. Each country page also has a 'From school to work' learner path per scheme. Each country page has a 'Find an apprenticeship' section with the official national services for apprenticeship places, a 'What is counted' panel comparing its national statistics, and scheme portraits with a 'What to expect on this scheme' story. Every indicator and insight chart can "
      "be downloaded as an image or embedded on another website."),
 ]
 
@@ -584,6 +619,8 @@ def build() -> dict:
         chunks += qualification_summaries(r, names)
         shards = qualification_shards(r)
     chunks += insight_chunks()
+    chunks += occupation_chunks()
+    chunks += story_chunks()
 
     ids = [c["id"] for c in chunks]
     dupes = {i for i in ids if ids.count(i) > 1}
