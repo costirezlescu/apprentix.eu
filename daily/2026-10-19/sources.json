@@ -1,6 +1,6 @@
 {
  "edition": "2026-10-19",
- "fetched_at": "2026-10-17T18:24:57+00:00",
+ "fetched_at": "2026-10-17T18:55:43+00:00",
  "sources_status": {
   "cedefop_rss": "ok",
   "cellar_recent": "ok",
@@ -25,95 +25,93 @@
   "unevoc": "ok",
   "eurostat_updates": "ok",
   "eurostat_api": "ok",
+  "bbc_edu": "ok",
   "rte": "ok",
   "guardian_edu": "ok",
-  "bbc_edu": "ok",
   "irishtimes_edu": "ok",
-  "handwerk_com": "ok",
   "guardian_fe": "ok",
+  "handwerk_com": "ok",
   "guardian_appr": "ok",
-  "guardian_edu_page": "ok",
   "spiegel_job": "ok",
+  "guardian_edu_page": "ok",
   "zeit_arbeit": "ok",
-  "tagesschau": "ok",
   "handwerk_com_page": "ok",
   "guardian_fe_page": "ok",
   "guardian_appr_page": "ok",
-  "zeit_arbeit_page": "failed: HTTP 403 for https://www.zeit.de/arbeit/2026-10/ki-arbeitsmarkt-auswirkungen-deutschland-berufseinstieg",
-  "derstandard": "ok",
+  "tagesschau": "ok",
   "orf": "ok",
-  "lemonde_edu": "ok",
   "lemonde_emploi": "ok",
-  "letudiant": "ok",
-  "lemonde_emploi_page": "ok",
+  "derstandard": "ok",
+  "lemonde_edu": "ok",
   "lemonde_edu_page": "ok",
+  "letudiant": "ok",
+  "cafepeda": "ok",
   "elpais_edu": "ok",
   "francetvinfo_edu": "ok",
   "derstandard_page": "ok",
-  "cafepeda": "ok",
-  "eldiario_edu": "ok",
-  "orizzontescuola": "ok",
   "dhz": "ok",
+  "eldiario_edu": "ok",
   "corriere_scuola": "ok",
   "francetvinfo_edu_page": "ok",
-  "orizzontescuola_page": "failed: HTTP 403 for https://www.orizzontescuola.it/potenzia-le-tue-competenze-informatiche-da-esperto-di-cyberbullismo-alluso-di-workspace-di-google-dalle-competenze-base-al-cad-ed-esperto-dpo/",
-  "nos": "ok",
+  "dhz_page": "ok",
   "cafepeda_page": "ok",
   "magisnet": "ok",
   "esos": "ok",
-  "dhz_page": "ok",
+  "nos": "ok",
   "alfavita": "ok",
+  "orizzontescuola": "ok",
   "yle_en": "ok",
-  "yle_fi": "ok",
-  "dr_dk": "ok",
+  "orizzontescuola_page": "failed: HTTP 403 for https://www.orizzontescuola.it/potenzia-le-tue-competenze-informatiche-da-esperto-di-cyberbullismo-alluso-di-workspace-di-google-dalle-competenze-base-al-cad-ed-esperto-dpo/",
   "esos_page": "ok",
-  "svt": "ok",
+  "yle_fi": "ok",
   "magisnet_page": "ok",
-  "thelocal_de": "ok",
-  "thelocal_fr": "ok",
+  "dr_dk": "ok",
+  "svt": "ok",
   "thelocal_se": "ok",
+  "thelocal_fr": "ok",
+  "thelocal_de": "ok",
   "thelocal_it": "ok",
-  "notesfrompoland": "ok",
   "thelocal_at": "ok",
+  "notesfrompoland": "ok",
   "hotnews_ro": "ok",
   "obessu": "ok",
+  "edupedu_ro": "ok",
   "nyt_edu": "ok",
   "economist_intl": "ok",
-  "economist_fin": "ok",
   "guardian_work": "ok",
+  "economist_fin": "ok",
   "economist_biz": "ok",
   "zeit_campus": "ok",
-  "politico_eu": "ok",
   "ft_work": "ok",
-  "faz_beruf": "ok",
+  "politico_eu": "ok",
   "guardian_work_page": "ok",
+  "faz_beruf": "ok",
   "ft_work_page": "failed: HTTP 403 for https://www.ft.com/content/3a3d3eb8-ff86-418e-9704-c1ff601718c4?syn-25a6b1a6=1",
   "fastcompany_work": "ok",
-  "edupedu_ro": "ok",
   "guardian_ai": "ok",
   "nyt_tech": "ok",
   "politico_eu_page": "ok",
   "mittr": "ok",
   "wired_ai": "ok",
   "guardian_ai_page": "ok",
-  "ars": "ok",
-  "bbc_tech": "ok",
-  "fastcompany_work_page": "ok",
   "verge_ai": "ok",
-  "bloomberg_tech": "ok",
+  "bbc_tech": "ok",
+  "ars": "ok",
+  "fastcompany_work_page": "ok",
   "bbc_tech_page": "ok",
-  "conv_global": "ok",
   "conv_eu": "ok",
   "edsurge": "ok",
+  "bloomberg_tech": "ok",
+  "conv_global": "ok",
   "conv_edu_uk": "ok",
   "science_news": "ok",
-  "nature": "ok",
-  "aeon": "ok",
-  "newscientist": "ok",
-  "socialeurope": "ok",
   "knowable": "ok",
+  "aeon": "ok",
+  "socialeurope": "ok",
+  "newscientist": "ok",
   "voxeu": "ok",
   "voxeu_page": "failed: HTTP 403 for https://cepr.org/voxeu/columns/cost-job-loss-carbon-intensive-sectors-evidence-germany",
+  "nature": "ok",
   "socialeurope_page": "ok",
   "apprentix": "ok"
  },
@@ -159,123 +157,6 @@
    ]
   },
   {
-   "id": "cab1dad3cc",
-   "source": "cellar_recent",
-   "kind": "publication",
-   "title": "From risk to resilience: policy guidelines for supporting learners at risk and early leavers from vocational education and training",
-   "url": "https://op.europa.eu/en/publication-detail/-/publication/47567826-bed0-11f1-988f-01aa75ed71a1",
-   "date": "2026-09-30",
-   "work_areas": [
-    "adult_learning",
-    "governance",
-    "inclusion",
-    "vet_policy"
-   ]
-  },
-  {
-   "id": "6c8e0d34ac",
-   "source": "cellar_recent",
-   "kind": "publication",
-   "title": "Policy pointers to enhance Estonia’s skills anticipation and governance system",
-   "url": "https://op.europa.eu/en/publication-detail/-/publication/48ec935a-c83d-11f1-a77b-01aa75ed71a1",
-   "date": "2026-10-13",
-   "work_areas": [
-    "governance",
-    "skills_intelligence"
-   ]
-  },
-  {
-   "id": "52b718c998",
-   "source": "openalex_fulltext",
-   "kind": "mentions_cedefop",
-   "title": "OVEREDUCATION IN GREEN INDUSTRIES: METHODOLOGICAL ASYMMETRIES AND EVIDENCE FROM CENTRAL AND EASTERN EUROPE",
-   "url": "https://doi.org/10.17818/diem/2026/si7",
-   "date": "2026-10-15",
-   "work_areas": [
-    "future_of_work",
-    "governance",
-    "labour_market",
-    "skills_intelligence"
-   ]
-  },
-  {
-   "id": "3afb931541",
-   "source": "openalex_fulltext",
-   "kind": "mentions_cedefop",
-   "title": "Training and productivity in micro-firms",
-   "url": "https://doi.org/10.1016/j.respol.2026.105637",
-   "date": "2026-10-13",
-   "work_areas": [
-    "adult_learning"
-   ]
-  },
-  {
-   "id": "9c2a62b3d7",
-   "source": "openalex_fulltext",
-   "kind": "mentions_cedefop",
-   "title": "Towards an Inclusive VET Ecosystem",
-   "url": "https://doi.org/10.21240/vetcon/2026/ecer/77",
-   "date": "2026-10-13",
-   "work_areas": [
-    "future_of_work",
-    "inclusion",
-    "teachers_trainers",
-    "vet_policy"
-   ]
-  },
-  {
-   "id": "e520359742",
-   "source": "openalex_fulltext",
-   "kind": "mentions_cedefop",
-   "title": "AI-Mediated Vocational Pedagogy in Transition",
-   "url": "https://doi.org/10.21240/vetcon/2026/ecer/69",
-   "date": "2026-10-13",
-   "work_areas": [
-    "future_of_work",
-    "qualifications",
-    "teachers_trainers",
-    "vet_policy"
-   ]
-  },
-  {
-   "id": "76a9118752",
-   "source": "openalex_fulltext",
-   "kind": "mentions_cedefop",
-   "title": "Embodied AI Customer Role-Play in XR for Retail Apprentices",
-   "url": "https://doi.org/10.21240/vetcon/2026/ecer/62",
-   "date": "2026-10-13",
-   "work_areas": [
-    "apprenticeships",
-    "future_of_work",
-    "qualifications"
-   ]
-  },
-  {
-   "id": "70e1ef0b04",
-   "source": "openalex_journals",
-   "kind": "journal_paper",
-   "title": "Job demands and resources of vocational education teachers: the role of resilience and social support in well-being, job satisfaction, and burnout",
-   "url": "https://doi.org/10.1186/s40461-026-00215-w",
-   "date": "2026-10-15",
-   "work_areas": [
-    "teachers_trainers",
-    "vet_policy"
-   ]
-  },
-  {
-   "id": "e305fe64ff",
-   "source": "openalex_journals",
-   "kind": "journal_paper",
-   "title": "Workplace Social Support for Apprentices During the COVID-19 Pandemic – A Mixed-Methods Study on the Perceptions of Vocational Trainers and Apprentices in Switzerland",
-   "url": "https://doi.org/10.1007/s12186-026-09396-7",
-   "date": "2026-10-13",
-   "work_areas": [
-    "apprenticeships",
-    "teachers_trainers",
-    "vet_policy"
-   ]
-  },
-  {
    "id": "8612a5359e",
    "source": "openalex_journals",
    "kind": "journal_paper",
@@ -299,18 +180,6 @@
    ]
   },
   {
-   "id": "20c8546042",
-   "source": "openalex_journals",
-   "kind": "journal_paper",
-   "title": "The detrimental impact of multidimensional labour market mismatch –evidence from a Norwegian graduate survey",
-   "url": "https://doi.org/10.1080/13639080.2026.2737928",
-   "date": "2026-10-13",
-   "work_areas": [
-    "labour_market",
-    "skills_intelligence"
-   ]
-  },
-  {
    "id": "af10c2fcf1",
    "source": "openalex_journals",
    "kind": "journal_paper",
@@ -319,18 +188,6 @@
    "date": "2026-10-07",
    "work_areas": [
     "vet_policy"
-   ]
-  },
-  {
-   "id": "9356f2a16e",
-   "source": "ec_presscorner",
-   "kind": "press",
-   "title": "Statement by Executive Vice-President Mînzatu ahead of the International Day for the Eradication of Poverty",
-   "url": "https://ec.europa.eu/commission/presscorner/detail/en/statement_26_2188",
-   "date": "2026-10-16",
-   "work_areas": [
-    "inclusion",
-    "labour_market"
    ]
   },
   {
@@ -354,18 +211,6 @@
    ]
   },
   {
-   "id": "0fd66ac91c",
-   "source": "council_press",
-   "kind": "press",
-   "title": "Main messages from the Tripartite Social Summit of 14 October 2026",
-   "url": "https://www.consilium.europa.eu/en/press/press-releases/2026/10/14/main-messages-from-the-tripartite-social-summit-of-14-october-2026/",
-   "date": "2026-10-14",
-   "work_areas": [
-    "governance",
-    "labour_market"
-   ]
-  },
-  {
    "id": "5b093e53af",
    "source": "euosha",
    "kind": "news",
@@ -376,49 +221,6 @@
     "governance",
     "labour_market",
     "skills_intelligence"
-   ]
-  },
-  {
-   "id": "0bf789c2e2",
-   "source": "etf",
-   "kind": "news",
-   "title": "Why investing in teachers and trainers is essential for skills, learning and workforce development",
-   "url": "https://www.etf.europa.eu/en/news-and-events/news/why-investing-teachers-and-trainers-essential-skills-learning-and-workforce",
-   "date": "2026-10-05",
-   "work_areas": [
-    "adult_learning",
-    "future_of_work",
-    "labour_market",
-    "teachers_trainers"
-   ]
-  },
-  {
-   "id": "888eb4b17e",
-   "source": "etf",
-   "kind": "news",
-   "title": "International cooperation holds the key to AI-age skills",
-   "url": "https://www.etf.europa.eu/en/news-and-events/news/international-cooperation-holds-key-ai-age-skills-and-pace-technological",
-   "date": "2026-10-02",
-   "work_areas": [
-    "adult_learning",
-    "apprenticeships",
-    "future_of_work",
-    "governance",
-    "labour_market",
-    "skills_intelligence",
-    "vet_policy"
-   ]
-  },
-  {
-   "id": "d161809335",
-   "source": "ela",
-   "kind": "news",
-   "title": "ELA supports Member States in tackling disguised job placement",
-   "url": "https://www.ela.europa.eu/en/news/ela-supports-member-states-tackling-disguised-job-placement-0",
-   "date": "2026-10-14",
-   "work_areas": [
-    "governance",
-    "labour_market"
    ]
   },
   {
@@ -442,7 +244,7 @@
   {
    "id": "c12c2df1b5",
    "source": "guardian_fe",
-   "kind": "field",
+   "kind": "lives",
    "title": "Create new pre-apprenticeship scheme to close youth unemployment gap, says Milburn",
    "url": "https://www.theguardian.com/education/2026/oct/10/pre-apprenticeship-scheme-landmark-alan-milburn-youth-jobs-crisis-report",
    "date": "2026-10-10",
@@ -468,34 +270,9 @@
    ]
   },
   {
-   "id": "db8e970cbd",
-   "source": "dhz",
-   "kind": "field",
-   "title": "Azubis erleben häufiger Gewalt als Studierende",
-   "url": "https://www.deutsche-handwerks-zeitung.de/azubis-erleben-haeufiger-gewalt-als-studierende-384972/",
-   "date": "2026-10-13",
-   "work_areas": [
-    "apprenticeships",
-    "vet_policy"
-   ]
-  },
-  {
-   "id": "bc68abdec5",
-   "source": "dhz",
-   "kind": "field",
-   "title": "Mindestausbildungsvergütung: So hoch ist sie 2027",
-   "url": "https://www.deutsche-handwerks-zeitung.de/mindestausbildungsverguetung-azubi-mindestlohn-2027-144611/",
-   "date": "2026-10-12",
-   "work_areas": [
-    "apprenticeships",
-    "skills_intelligence",
-    "vet_policy"
-   ]
-  },
-  {
    "id": "9592974999",
    "source": "dhz",
-   "kind": "field",
+   "kind": "lives",
    "title": "Weltmeister mit 18: Der Zimmerer, der alles gewann",
    "url": "https://www.deutsche-handwerks-zeitung.de/weltmeister-mit-18-der-zimmerer-der-alles-gewann-384661/",
    "date": "2026-10-12",
@@ -503,127 +280,6 @@
     "adult_learning",
     "apprenticeships",
     "vet_policy"
-   ]
-  },
-  {
-   "id": "a039141933",
-   "source": "lemonde_emploi",
-   "kind": "field",
-   "title": "« Oui, on va perdre certains contrats » : à Montréal, le marché de l’emploi des jeunes diplômés bouleversé par l’IA",
-   "url": "https://www.lemonde.fr/le-monde-et-vous/article/2026/10/09/oui-on-va-perdre-certains-contrats-a-montreal-le-marche-de-l-emploi-des-jeunes-diplomes-bouleverse-par-l-ia_6790540_6065879.html",
-   "date": "2026-10-09",
-   "work_areas": [
-    "future_of_work",
-    "labour_market"
-   ]
-  },
-  {
-   "id": "c10fecd9a6",
-   "source": "cafepeda",
-   "kind": "field",
-   "title": "Innover en lycée professionnel : un dispositif inventé au fil de l’eau",
-   "url": "https://www.cafepedagogique.net/2026/10/16/innover-en-lycee-professionnel-un-dispositif-invente-au-fil-de-leau/",
-   "date": "2026-10-16",
-   "work_areas": [
-    "inclusion",
-    "teachers_trainers",
-    "vet_policy"
-   ]
-  },
-  {
-   "id": "0a9b1c5532",
-   "source": "magisnet",
-   "kind": "field",
-   "title": "ACADE alerta del impacto de las nuevas regulaciones sobre la FP y la Educación Infantil",
-   "url": "https://www.magisnet.com/2026/10/acade-alerta-del-impacto-de-las-nuevas-regulaciones-sobre-la-fp-y-la-educacion-infantil/",
-   "date": "2026-10-16",
-   "work_areas": [
-    "vet_policy"
-   ]
-  },
-  {
-   "id": "2d89b46109",
-   "source": "esos",
-   "kind": "field",
-   "title": "Σ. Ζαχαράκη από το Δουβλίνο: Νέο Λύκειο, Εθνικό Απολυτήριο και τεχνητή νοημοσύνη στο επίκεντρο των αλλαγών στην Παιδεία",
-   "url": "https://www.esos.gr/arthra/101896/s-zaharaki-apo-doyblino-neo-lykeio-ethniko-apolytirio-kai-tehniti-noimosyni-sto",
-   "date": "2026-10-17",
-   "work_areas": [
-    "future_of_work",
-    "teachers_trainers",
-    "vet_policy"
-   ]
-  },
-  {
-   "id": "4e2bf1f07e",
-   "source": "esos",
-   "kind": "field",
-   "title": "Νεοσύστατο ΕΠΑΛ λειτουργεί με μοναδικό εκπαιδευτικό τον Διευθυντή του",
-   "url": "https://www.esos.gr/arthra/101886/neosystato-epal-leitoyrgei-me-monadiko-ekpaideytiko-ton-dieythynti-toy",
-   "date": "2026-10-17",
-   "work_areas": [
-    "teachers_trainers",
-    "vet_policy"
-   ]
-  },
-  {
-   "id": "777e23e95e",
-   "source": "esos",
-   "kind": "field",
-   "title": "Κατ’ εξαίρεση λειτουργία 257 τμημάτων του Μεταλυκειακού Έτους - Τάξης Μαθητείας",
-   "url": "https://www.esos.gr/arthra/101866/kat-exairesi-leitoyrgia-257-tmimaton-toy-metalykeiakoy-etoys-taxis-mathiteias",
-   "date": "2026-10-16",
-   "work_areas": [
-    "apprenticeships"
-   ]
-  },
-  {
-   "id": "ffbde07207",
-   "source": "guardian_work",
-   "kind": "press",
-   "title": "Use of AI in job interviews on the rise – but UK recruiters say they can spot the cheats",
-   "url": "https://www.theguardian.com/technology/2026/oct/14/use-of-ai-job-interviews-on-rise-uk-recruiters-cheats",
-   "date": "2026-10-13",
-   "work_areas": [
-    "future_of_work",
-    "labour_market"
-   ]
-  },
-  {
-   "id": "c15f7bcccd",
-   "source": "ft_work",
-   "kind": "press",
-   "title": "Tougher competition for internships strains UK graduate jobs market",
-   "url": "https://www.ft.com/content/3a3d3eb8-ff86-418e-9704-c1ff601718c4?syn-25a6b1a6=1",
-   "date": "2026-10-13",
-   "work_areas": [
-    "future_of_work",
-    "labour_market"
-   ]
-  },
-  {
-   "id": "4ec8dd72c0",
-   "source": "politico_eu",
-   "kind": "press",
-   "title": "In Europe’s tech capital, Irish labor unions are booming amid AI-driven layoffs",
-   "url": "https://www.politico.eu/article/in-europe-tech-capital-ireland-irish-labor-unions-are-booming-amid-ai-layoffs/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
-   "date": "2026-10-16",
-   "work_areas": [
-    "future_of_work",
-    "labour_market"
-   ]
-  },
-  {
-   "id": "3ba6460763",
-   "source": "bbc_tech",
-   "kind": "tech",
-   "title": "'I applied for 200 jobs' - How 'spray and pray' AI job applications can backfire",
-   "url": "https://www.bbc.co.uk/news/articles/c623dnkn8pkyo?at_medium=RSS&at_campaign=rss",
-   "date": "2026-10-14",
-   "work_areas": [
-    "apprenticeships",
-    "future_of_work",
-    "labour_market"
    ]
   },
   {
@@ -641,39 +297,6 @@
    ]
   },
   {
-   "id": "89016aba30",
-   "source": "voxeu",
-   "kind": "ideas",
-   "title": "The cost of job loss in carbon-intensive sectors: Evidence from Germany",
-   "url": "https://cepr.org/voxeu/columns/cost-job-loss-carbon-intensive-sectors-evidence-germany",
-   "date": "2026-10-16",
-   "work_areas": [
-    "future_of_work",
-    "labour_market"
-   ]
-  },
-  {
-   "id": "b556d5b780",
-   "source": "apprentix",
-   "kind": "fact",
-   "title": "Greece coordinates 17 of the 73 Erasmus+ Centres of Vocational Excellence selected since 2021 — more than any other country.",
-   "url": "https://apprentix.eu/pages/explore.html?dataset=cove-projects&f.coordinator_country=Greece#fact-cove-coordinators",
-   "date": null,
-   "work_areas": [
-    "mobility",
-    "vet_policy"
-   ]
-  },
-  {
-   "id": "2f458777e8",
-   "source": "apprentix",
-   "kind": "fact",
-   "title": "Only the schemes in Czechia, Finland and Iceland set no minimum share of time at the workplace.",
-   "url": "https://apprentix.eu/pages/compare.html?q=q_min_workplace_share#fact-scheme-min-workplace-share-no-minimum",
-   "date": null,
-   "work_areas": []
-  },
-  {
    "id": "e42bf96438",
    "source": "apprentix",
    "kind": "fact",
@@ -683,31 +306,6 @@
    "work_areas": []
   },
   {
-   "id": "33909f8f6c",
-   "source": "apprentix",
-   "kind": "fact",
-   "title": "The share of recent VET graduates with work-based learning in Italy fell by 9.8 points between 2021 and 2025, to 22.0% — the largest fall in the EU.",
-   "url": "https://apprentix.eu/pages/indicators.html?id=eurostat-tps00215&geo=IT#fact-target-wbl-fall",
-   "date": null,
-   "work_areas": [
-    "apprenticeships",
-    "vet_policy"
-   ]
-  },
-  {
-   "id": "89c42eece7",
-   "source": "apprentix",
-   "kind": "insight",
-   "title": "EU 2025 targets: work-based learning met, employment of VET graduates missed",
-   "url": "https://apprentix.eu/pages/insights.html#eu-2025-targets",
-   "date": null,
-   "work_areas": [
-    "apprenticeships",
-    "labour_market",
-    "vet_policy"
-   ]
-  },
-  {
    "id": "f781f16b0d",
    "source": "apprentix",
    "kind": "portrait",
@@ -715,19 +313,6 @@
    "url": "https://apprentix.eu/pages/countries/cz.html#scheme-cz-dual",
    "date": null,
    "work_areas": [
-    "vet_policy"
-   ]
-  },
-  {
-   "id": "6a21ff6960",
-   "source": "apprentix",
-   "kind": "portrait",
-   "title": "Post-secondary apprenticeship year (Greece)",
-   "url": "https://apprentix.eu/pages/countries/el.html#scheme-el-postsec",
-   "date": null,
-   "work_areas": [
-    "apprenticeships",
-    "qualifications",
     "vet_policy"
    ]
   },
@@ -744,89 +329,6 @@
     "qualifications",
     "vet_policy"
    ]
-  },
-  {
-   "id": "ce374c24cf",
-   "source": "apprentix",
-   "kind": "myth",
-   "title": "Apprentices aren't paid.",
-   "url": "https://apprentix.eu/pages/myths.html#paid",
-   "date": null,
-   "work_areas": [
-    "apprenticeships"
-   ]
-  },
-  {
-   "id": "404e42c648",
-   "source": "apprentix",
-   "kind": "policy",
-   "title": "A substantial reinforcement of VET",
-   "url": "https://apprentix.eu/pages/explore.html?dataset=vet-policy-timeline&open=tl-49530",
-   "date": null,
-   "work_areas": [
-    "vet_policy"
-   ]
-  },
-  {
-   "id": "f27b970912",
-   "source": "apprentix",
-   "kind": "policy",
-   "title": "Mandatory work experience",
-   "url": "https://apprentix.eu/pages/explore.html?dataset=vet-policy-timeline&open=tl-49968",
-   "date": null,
-   "work_areas": []
-  },
-  {
-   "id": "037125a0df",
-   "source": "apprentix",
-   "kind": "policy",
-   "title": "The 2025-2027 Strategic plan for vocational education and training, lifelong learning and youth",
-   "url": "https://apprentix.eu/pages/explore.html?dataset=vet-policy-timeline&open=tl-51014",
-   "date": null,
-   "work_areas": [
-    "adult_learning",
-    "vet_policy"
-   ]
-  },
-  {
-   "id": "649ad2503f",
-   "source": "apprentix",
-   "kind": "policy",
-   "title": "Advanced Manufacturing Training Centre of Excellence (AMTCE) Opens in Dundalk, Ireland's Border Region with Northern Ireland",
-   "url": "https://apprentix.eu/pages/explore.html?dataset=vet-policy-timeline&open=tl-51025",
-   "date": null,
-   "work_areas": []
-  },
-  {
-   "id": "256c7234cb",
-   "source": "apprentix",
-   "kind": "policy",
-   "title": "Innovation in Initial Vocational Education and Training (IVET) Modules: New Partnership between Schools and FET Sector",
-   "url": "https://apprentix.eu/pages/explore.html?dataset=vet-policy-timeline&open=tl-50908",
-   "date": null,
-   "work_areas": [
-    "vet_policy"
-   ]
-  },
-  {
-   "id": "a2874a1dbc",
-   "source": "apprentix",
-   "kind": "policy",
-   "title": "Tertiary VET reinforcement",
-   "url": "https://apprentix.eu/pages/explore.html?dataset=vet-policy-timeline&open=tl-50709",
-   "date": null,
-   "work_areas": [
-    "vet_policy"
-   ]
-  },
-  {
-   "id": "e24eac10c6",
-   "source": "apprentix",
-   "kind": "policy",
-   "title": "Programme document for development planning until 2033",
-   "url": "https://apprentix.eu/pages/explore.html?dataset=vet-policy-timeline&open=tl-49918",
-   "date": null,
-   "work_areas": []
   },
   {
    "id": "9fe705a357",
@@ -863,62 +365,6 @@
    "date": null,
    "work_areas": [
     "apprenticeships"
-   ]
-  },
-  {
-   "id": "eb5622cfc8",
-   "source": "eurlex_oj_l",
-   "kind": "act",
-   "title": "Council Decision of 9 October 2026 replacing an alternate member of the Management Board of the European Foundation for the improvement of living and working conditions for Denmark",
-   "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026D05382",
-   "date": "2026-10-14",
-   "work_areas": [
-    "governance"
-   ]
-  },
-  {
-   "id": "2171437d86",
-   "source": "eurlex_oj_l",
-   "kind": "act",
-   "title": "Council Decision of 9 October 2026 replacing a member of the Management Board of the European Foundation for the improvement of living and working conditions for Denmark",
-   "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026D05381",
-   "date": "2026-10-14",
-   "work_areas": [
-    "governance"
-   ]
-  },
-  {
-   "id": "19428d7afd",
-   "source": "eurlex_oj_l",
-   "kind": "act",
-   "title": "Council Decision of 1 October 2026 replacing a member of the Management Board of the European Agency for Safety and Health at Work for Estonia",
-   "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026D05201",
-   "date": "2026-10-06",
-   "work_areas": [
-    "governance"
-   ]
-  },
-  {
-   "id": "ec2765c3c8",
-   "source": "eurlex_oj_l",
-   "kind": "act",
-   "title": "Council Decision of 1 October 2026 replacing a member of the Management Board of the European Agency for Safety and Health at Work for Cyprus",
-   "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026D05200",
-   "date": "2026-10-06",
-   "work_areas": [
-    "governance"
-   ]
-  },
-  {
-   "id": "fcdce614ae",
-   "source": "eurlex_oj_l",
-   "kind": "act",
-   "title": "Council Decision of 24 September 2026 replacing a member of the Management Board of the European Centre for the Development of Vocational Training (Cedefop) for Bulgaria",
-   "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026D05026",
-   "date": "2026-09-30",
-   "work_areas": [
-    "governance",
-    "vet_policy"
    ]
   }
  ]

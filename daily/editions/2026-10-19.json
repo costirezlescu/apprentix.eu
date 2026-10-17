@@ -1,9 +1,14 @@
 {
+ "schema": 2,
+ "layout": "shape",
+ "rhythm": false,
  "date": "2026-10-19",
  "number": 1,
- "kind": "monday",
  "pool": "2026-10-19",
  "built_from": "public sources retrieved on 17 October 2026",
+ "built_on": "2026-10-17",
+ "preview": false,
+ "day_focus": null,
  "strip": {
   "kind": "numbers",
   "title": "This week in numbers",
@@ -15,8 +20,7 @@
      "to": "2026-10-17"
     },
     "label": "research papers mentioning Cedefop",
-    "note": "published 11–17 October · OpenAlex full text",
-    "link": "#research"
+    "note": "published 11–17 October · OpenAlex full text"
    },
    {
     "count": {
@@ -27,18 +31,15 @@
      "exclude_title": "Grant Award Notice"
     },
     "label": "new Cedefop publications catalogued",
-    "note": "28 September – 17 October · EU Publications Office",
-    "link": "#cedefop"
+    "note": "28 September – 17 October · EU Publications Office"
    },
    {
-    "count": {
-     "source": "openalex_journals",
-     "from": "2026-10-11",
+    "count_press": {
+     "from": "2026-10-10",
      "to": "2026-10-17"
     },
-    "label": "papers in 11 VET and adult-learning journals",
-    "note": "published 11–17 October · OpenAlex",
-    "link": "#research"
+    "label": "press and field stories on VET and skills",
+    "note": "10–17 October · from the paper’s press feeds"
    },
    {
     "value": {
@@ -47,19 +48,25 @@
      "suffix": "%"
     },
     "label": "of 18–24-year-olds left education and training early",
-    "note": "EU-27, 2025 · Eurostat",
-    "link": "#early-leaving"
+    "note": "EU-27, 2025 · Eurostat"
    }
   ]
  },
  "lead": {
+  "key": "reset",
+  "pillar": "cedefop",
+  "focus": [
+   "cedefop",
+   "policy"
+  ],
+  "priority": 5,
+  "lead_on": "2026-10-19",
   "item": "3b95c0d286",
+  "connection_item": "c43f73ea73",
   "also": [
    "c43f73ea73",
    "9fe705a357"
   ],
-  "pillar": "cedefop",
-  "connection_item": "c43f73ea73",
   "areas": [
    "skills_intelligence",
    "vet_policy"
@@ -68,9 +75,7 @@
   "headline": "Cedefop’s new RESET index scores skills in all 244 EU regions",
   "standfirst": "Published on 15 October, the regional skills ecosystems index compares regions on skills supply, demand, environment and match. Central Macedonia, home to the Thessaloniki office, ranks 208th; Brussels-Capital ranks 101st.",
   "body": [
-   "Cedefop describes RESET as the first multidimensional EU regional index focused specifically on skills and vocational education and training. It covers 244 regions in all 27 Member States and draws on 37 indicators across four dimensions. Regions can compare their performance with national and EU averages and see how they rank against other regions.",
-   "The index was presented at “Europe’s skills revolution starts in its regions”, held on 8 October at the European Committee of the Regions in Brussels as part of the European Skills & VET Week. Cedefop’s newsletter links it to the European Skills High-Level Board’s call in July for stronger regional and sectoral skills ecosystems, to Regional Skills Partnerships under the Pact for Skills and to the Union of Skills.",
-   "Scores run from 1 to 100 relative to the other EU regions (version July 2026, reference year 2024). Stockholm is highest at 75.9 and Sud-Vest Oltenia lowest at 26.8. Central Macedonia scores 36.5, fourth of 13 Greek regions: its strongest dimension is skills match (55.3) and its weakest skills demand (23.6). Brussels-Capital scores 54.3, fifth of 11 Belgian regions.",
+   "Cedefop describes RESET as the first multidimensional EU regional index focused specifically on skills and VET, with 37 indicators across four dimensions. Scores run from 1 to 100 relative to the other regions (version July 2026, reference year 2024): Stockholm is highest at 75.9, Sud-Vest Oltenia lowest at 26.8. Central Macedonia scores 36.5, fourth of 13 Greek regions; its strongest dimension is skills match (55.3), its weakest skills demand (23.6).",
    "Executive Director Jürgen Siebel said the first event “confirmed how strong the demand is for evidence that reflects territorial realities”."
   ],
   "figure": {
@@ -92,707 +97,329 @@
   "links": [
    {
     "url": "https://www.cedefop.europa.eu/en/news/europes-skills-ambitions-need-regional-lens",
-    "text": "Cedefop: Europe’s skills ambitions need a regional lens"
+    "text": "Cedefop news"
    },
    {
     "url": "https://www.cedefop.europa.eu/en/tools/reset",
     "text": "RESET tool"
    },
    {
-    "url": "https://apprentix.eu/pages/explore.html?dataset=regional-skills-ecosystems",
+    "item": "9fe705a357",
     "text": "All 244 regions on Apprentix"
    }
-  ]
+  ],
+  "more": "RESET: a new Cedefop index scores skills ecosystems in all 244 EU regions."
  },
- "sections": [
+ "five": [
   {
-   "id": "cedefop",
-   "pillar": "cedefop",
-   "title": "At Cedefop",
-   "blocks": [
-    {
-     "type": "card",
-     "item": "c43f73ea73",
-     "kicker": "Country support",
-     "headline": "Italy and Czechia join Cedefop project on skills for the age of AI",
-     "standfirst": "WORK.FUTURE, launched in Rome on 22 September, is a two-year project under the EU’s Technical Support Instrument, run with the Commission’s SG REFORM and both national authorities.",
-     "body": [
-      "It follows a two-year cooperation with Estonia that began in December 2024. Cedefop will select up to five occupations, sectors or labour market segments in each country for in-depth analysis, alongside foresight workshops, stakeholder consultations and roundtables in two regions of each country. The findings will feed into action plans.",
-      "The newsletter gives three comparisons. In 2023, 26% of employment in both countries was in high-skilled jobs, against 38% across the EU. Adult learning participation was 29% in Italy and 21% in Czechia, against an EU average of 39%. In the JRC’s 2024 AIM-Work survey, 28% of workers in Italy and 34% in Czechia said they used AI tools at work."
-     ],
-     "areas": [
-      "skills_intelligence",
-      "future_of_work"
-     ],
-     "links": [
-      {
-       "url": "https://www.cedefop.europa.eu/en/news/italy-czechia-step-skills-anticipation-age-ai",
-       "text": "Cedefop news"
-      },
-      {
-       "url": "https://apprentix.eu/pages/duel.html?a=IT&b=CZ",
-       "text": "Compare Italy and Czechia"
-      },
-      {
-       "url": "#field",
-       "text": "Meet an apprentice in each country"
-      }
-     ]
-    },
-    {
-     "type": "card",
-     "item": "75d0430ba0",
-     "also": [
-      "c43f73ea73",
-      "a463165cfc"
-     ],
-     "kicker": "New publication",
-     "headline": "34 apprenticeship schemes show incremental quality gains, Cedefop finds",
-     "standfirst": "Published on 30 September, five years after Cedefop’s previous analysis of the European framework for quality and effective apprenticeships and ahead of the forthcoming European VET strategy.",
-     "body": [
-      "The analysis covers schemes in the 27 Member States, Iceland and Norway. Criteria on learning and working conditions are usually addressed. On framework conditions the picture is mixed, with several indicators unevenly met.",
-      "Across criteria, the report finds an association between how far social partners or chambers take part in decision-making and coordination and how far they invest in implementation. Limited roles go with narrower or uneven coverage of quality criteria."
-     ],
-     "areas": [
-      "apprenticeships"
-     ],
-     "links": [
-      {
-       "url": "https://www.cedefop.europa.eu/en/publications/5626",
-       "text": "Quality of apprenticeships in Europe"
-      },
-      {
-       "url": "https://apprentix.eu/pages/compare.html",
-       "text": "Compare the 34 schemes on Apprentix"
-      }
-     ]
-    },
-    {
-     "type": "card",
-     "item": "cab1dad3cc",
-     "also": [
-      "c43f73ea73",
-      "6516e27cb6"
-     ],
-     "anchor": "early-leaving",
-     "kicker": "New publication",
-     "headline": "Early leaving is a process, not an event, says Cedefop policy brief",
-     "standfirst": "The EU early leaving rate fell to 9.1% in 2025 against a 2030 target of below 8%. The brief sets out 20 intervention approaches.",
-     "body": [
-      "The approaches cover system capacity, early identification, targeted support and re-engagement, drawing on Cedefop’s VET toolkit for tackling early leaving. Among the policy pointers: build early identification into VET systems, match support to learners’ circumstances and keep pathways back into learning open. Cedefop will launch the brief at a webinar with the Commission’s DG EAC on 2 December."
-     ],
-     "areas": [
-      "inclusion"
-     ],
-     "links": [
-      {
-       "url": "https://www.cedefop.europa.eu/en/publications/9211",
-       "text": "From risk to resilience"
-      },
-      {
-       "url": "https://www.cedefop.europa.eu/en/events/risk-resilience",
-       "text": "Webinar, 2 December"
-      }
-     ]
-    },
-    {
-     "type": "card",
-     "item": "6c8e0d34ac",
-     "kicker": "New publication",
-     "size": "small",
-     "headline": "Policy pointers for Estonia’s skills forecasting system published",
-     "standfirst": "The report, dated 13 October, comes from a project run with Estonia’s Ministry of Education and Research and the Commission.",
-     "body": [
-      "Based on desk research, stakeholder consultations, peer learning and examples from other countries, it sets strategic directions for OSKA and Estonia’s wider skills governance system. It calls the pointers “intentionally indicative rather than prescriptive”."
-     ],
-     "areas": [
-      "skills_intelligence"
-     ]
-    },
-    {
-     "type": "briefs",
-     "title": "Also in newsletter no. 167",
-     "item": "c43f73ea73",
-     "items": [
-      {
-       "url": "https://www.cedefop.europa.eu/en/publications/7107",
-       "headline": "Policy approaches to strengthening VET-business partnerships",
-       "text": "A Cedefop Insight drawing on the Timeline of VET policies in Europe."
-      },
-      {
-       "url": "https://www.cedefop.europa.eu/en/publications/2243",
-       "headline": "Changing landscape of skills in the age of AI",
-       "text": "A joint report of the Inter-agency TVET group, drafted with inputs from Cedefop."
-      },
-      {
-       "url": "https://www.cedefop.europa.eu/en/publications/3202",
-       "headline": "Vocational education and training in Ireland",
-       "text": "A short description of Ireland’s further education and training system."
-      },
-      {
-       "url": "https://www.cedefop.europa.eu/en/publications/8175",
-       "headline": "Spotlight on jobs and skills – Portugal",
-       "text": "Part of Cedefop’s Spotlights for the EU-27, Iceland and Norway."
-      }
-     ]
-    }
-   ]
-  },
-  {
-   "id": "field",
-   "pillar": "countries",
-   "title": "From the field",
-   "blocks": [
-    {
-     "type": "card",
-     "item": "0ee099b12e",
-     "also": [
-      "c12c2df1b5",
-      "6f04a0844c"
-     ],
-     "anchor": "field-england",
-     "kicker": "England",
-     "headline": "England plans to charge firms more to train over-25s than young apprentices",
-     "standfirst": "Ministers are considering raising the cost of training a worker over 25 by 25% under the growth and skills levy, the Guardian reports, to reverse a 40% fall in youth apprenticeship starts over the past decade.",
-     "body": [
-      "More than half of new starts are now for over-25s, and the number of under-19s enrolling has almost halved in a decade, according to the paper. The plan would add a new “co-investment” rule to the levy, which raises £4bn a year, as part of the government’s response to Alan Milburn’s review of youth unemployment.",
-      "A week earlier, the paper reported that Milburn’s final report will call for a “national pre-apprenticeship route” offering further education, training and work experience. As few as one in five apprenticeship starts currently go to 16- to 18-year-olds."
-     ],
-     "areas": [
-      "apprenticeships",
-      "inclusion"
-     ],
-     "links": [
-      {
-       "text": "The Guardian",
-       "item": "0ee099b12e"
-      },
-      {
-       "text": "Apprenticeship starts in England, on Apprentix",
-       "item": "6f04a0844c"
-      }
-     ]
-    },
-    {
-     "type": "card",
-     "item": "db8e970cbd",
-     "anchor": "field-violence",
-     "kicker": "Germany",
-     "headline": "German apprentices report more bullying and violence than students",
-     "standfirst": "In a Forsa survey for the German Social Accident Insurance, 42% of apprentices had experienced or witnessed insults, against 23% of students.",
-     "body": [
-      "28% of apprentices knew bullying from their own experience or observation (students: 12%), and 14% had experienced or witnessed violence or physical assault (students: 3%). Apprentices felt better prepared for safe work: 91% had learned about accident prevention during their training, against 53% of students."
-     ],
-     "areas": [
-      "apprenticeships"
-     ]
-    },
-    {
-     "type": "card",
-     "item": "4e2bf1f07e",
-     "also": [
-      "777e23e95e",
-      "6a21ff6960"
-     ],
-     "anchor": "field-cyclades",
-     "kicker": "Greece",
-     "headline": "In the Cyclades, 130 teaching posts are still empty a month into term",
-     "standfirst": "The local secondary teachers’ union says thousands of teaching hours are lost every week, about 500 on Mykonos alone. ESOS reports a newly founded vocational upper-secondary school (EPAL) running with its director as its only teacher.",
-     "body": [
-      "Separately, the Ministry of Education has allowed 257 classes of the post-secondary apprenticeship year to run in 2026–2027 with fewer apprentices than its regulation sets."
-     ],
-     "areas": [
-      "vet_policy",
-      "teachers_trainers"
-     ],
-     "links": [
-      {
-       "text": "ESOS",
-       "item": "4e2bf1f07e"
-      },
-      {
-       "text": "What the post-secondary apprenticeship year looks like, on Apprentix",
-       "item": "6a21ff6960"
-      }
-     ]
-    },
-    {
-     "type": "card",
-     "item": "c10fecd9a6",
-     "anchor": "field-lyceepro",
-     "kicker": "France",
-     "size": "small",
-     "headline": "A Seine-Saint-Denis vocational lycée chronicles its fight against dropout",
-     "standfirst": "In a new series for Le Café pédagogique, a history and geography teacher describes a “passerelle” class for students who left lower secondary without a place in a vocational lycée.",
-     "body": [
-      "The school’s social position index is 75, among the lowest in the département, and its absenteeism rate is 23%. It combines the passerelle class, tested since 2024, with an in-house “tremplin” class for absent or disengaged students: at most 30 students, taught, the teacher writes, without specific training."
-     ],
-     "areas": [
-      "inclusion",
-      "vet_policy"
-     ]
-    },
-    {
-     "type": "card",
-     "item": "0a9b1c5532",
-     "anchor": "field-spain",
-     "kicker": "Spain",
-     "size": "small",
-     "headline": "Spain’s private training providers push back against a draft VET decree",
-     "standfirst": "ACADE, the association of private schools, says the draft royal decree on vocational training presented in September limits the opening of private centres and online provision.",
-     "body": [
-      "Its president argued that measures presented as quality improvements target private centres while leaving out public ones, and asked for the draft to be halted, Magisterio reports. ACADE says the growth of private VET reflects demand from students and families and employers’ need for qualified staff."
-     ],
-     "areas": [
-      "vet_policy"
-     ]
-    },
-    {
-     "type": "briefs",
-     "title": "Also from the field",
-     "items": [
-      {
-       "item": "bc68abdec5",
-       "headline": "Germany: minimum apprentice pay rises in 2027",
-       "text": "For contracts starting in 2027, the legal minimum rises to €764 a month in the first year, up 5.6% (translated from German)."
-      },
-      {
-       "item": "9592974999",
-       "headline": "Germany: a world champion carpenter at 78",
-       "text": "In 1967 he became Germany’s first carpentry world champion, at the forerunner of WorldSkills in Madrid. At 78 he still works in the carpentry workshop (translated from German)."
-      }
-     ]
-    },
-    {
-     "type": "portraits",
-     "title": "Meet the apprentices: Italy and Czechia",
-     "intro": "With Italy and Czechia starting work with Cedefop on skills for the age of AI, here is what an apprenticeship looks like in each, from Cedefop’s coded answers for the European database on apprenticeship schemes.",
-     "items": [
-      "b188362643",
-      "f781f16b0d"
-     ],
-     "facts": [
-      "2f458777e8",
-      "33909f8f6c"
-     ],
-     "links": [
-      {
-       "url": "https://apprentix.eu/pages/duel.html?a=IT&b=CZ",
-       "text": "Italy vs Czechia, side by side"
-      }
-     ]
-    },
-    {
-     "type": "pulse",
-     "title": "New in Cedefop’s Timeline of VET policies",
-     "intro": "Apprenticeship-related policies first reported in the 2025 update, from Cedefop and ReferNet.",
-     "items": [
-      "404e42c648",
-      "f27b970912",
-      "037125a0df",
-      "649ad2503f",
-      "256c7234cb",
-      "a2874a1dbc",
-      "e24eac10c6"
-     ]
-    }
-   ]
-  },
-  {
-   "id": "debate",
+   "key": "aimonitor",
    "pillar": "debate",
-   "title": "The wider debate",
-   "blocks": [
+   "focus": [
+    "ai",
+    "long"
+   ],
+   "priority": 5,
+   "item": "9ccc86464c",
+   "areas": [
+    "future_of_work",
+    "labour_market"
+   ],
+   "kicker": "AI and work",
+   "headline": "The EU should track AI’s impact on jobs, argues a Social Europe piece",
+   "standfirst": "Drawing on a June workshop of the European Policy Centre and the Open Markets Institute, it calls for systematic, harmonised EU monitoring of AI’s labour-market impact.",
+   "body": [
+    "Immediate job displacement is not yet visible in aggregate data, it notes, and a job’s estimated AI exposure is often treated as a proxy for displacement risk. The Commission has committed to a high-level expert group tasked with identifying “enhanced analytical tools for monitoring, early warning, foresight and anticipation”, the kind of evidence Cedefop’s skills intelligence produces."
+   ],
+   "links": [
     {
-     "type": "card",
      "item": "9ccc86464c",
-     "anchor": "debate-ai-monitor",
-     "kicker": "AI and work",
-     "headline": "The EU should track AI’s impact on jobs, argues a Social Europe piece",
-     "standfirst": "An article in Social Europe, drawing on a June workshop of the European Policy Centre and the Open Markets Institute, calls for systematic, harmonised EU monitoring of AI’s impact on the labour market.",
-     "body": [
-      "It notes that immediate job displacement is not yet visible in aggregate data, and that a job’s estimated AI exposure is often treated as a proxy for displacement risk. The Commission has committed to a high-level expert group on AI’s impact on the labour market, tasked with identifying “enhanced analytical tools for monitoring, early warning, foresight and anticipation”.",
-      "The article puts at 41 per cent the share of European workers using AI who are “somewhat” or “very” concerned about being displaced."
-     ],
-     "areas": [
-      "future_of_work",
-      "labour_market"
-     ]
-    },
-    {
-     "type": "card",
-     "item": "ffbde07207",
-     "also": [
-      "3ba6460763"
-     ],
-     "anchor": "debate-hiring",
-     "kicker": "AI and hiring",
-     "headline": "Graduate employers report record AI misconduct in hiring",
-     "standfirst": "In the Institute of Student Employers’ annual survey, 92% of employers suspected or confirmed misconduct in selection, up from 85% a year earlier. Undeclared use of AI in interviews topped the list.",
-     "body": [
-      "66% of respondents reported at least one graduate misusing AI during an interview, the Guardian reports. The BBC describes the other side: candidates using AI to send many applications a day, known as “spray and pray”, partly to get past employers’ own AI screening; one graduate it spoke to applied for over 200 jobs. The 155 employers the ISE surveyed were “more accepting” of AI at some stages, most often for cover letters and CVs."
-     ],
-     "areas": [
-      "future_of_work",
-      "labour_market"
-     ],
-     "links": [
-      {
-       "text": "The Guardian",
-       "item": "ffbde07207"
-      },
-      {
-       "text": "BBC News",
-       "item": "3ba6460763"
-      }
-     ]
-    },
-    {
-     "type": "card",
-     "item": "4ec8dd72c0",
-     "anchor": "debate-unions",
-     "kicker": "AI and work",
-     "size": "small",
-     "headline": "Irish tech union grows five-fold amid AI-driven layoffs",
-     "standfirst": "While Dublin hosted the International AI Summit of Ireland’s Council presidency, a Workers’ AI Counter Summit met the weekend before, Politico Europe reports.",
-     "body": [
-      "The Digital and Techworker Alliance, founded in 2023, had around 270 members in its first year and a half and now has more than 1,350, its organiser told the outlet. Sign-ups tend to spike around layoffs."
-     ],
-     "areas": [
-      "future_of_work",
-      "labour_market"
-     ]
-    },
-    {
-     "type": "briefs",
-     "title": "Also worth reading",
-     "items": [
-      {
-       "item": "89016aba30",
-       "headline": "Green transition: what job loss costs",
-       "text": "German workers displaced from carbon-intensive sectors lose more in earnings and wages than others, a VoxEU column finds from administrative data."
-      },
-      {
-       "item": "a039141933",
-       "headline": "Montreal’s young graduates and AI",
-       "text": "In a city that has become an AI hub, some graduates expect new opportunities while others fear their skills will soon be outdated. Le Monde, subscription (translated from French)."
-      },
-      {
-       "item": "c15f7bcccd",
-       "headline": "UK internships",
-       "text": "Applications for summer internships rose 27% as recruitment becomes more automated. Financial Times, subscription."
-      }
-     ]
+     "text": "Social Europe"
     }
-   ]
+   ],
+   "more": "Why the EU needs to track AI’s impact on jobs (Social Europe)."
   },
   {
-   "id": "policy",
+   "key": "england",
+   "pillar": "field",
+   "focus": [
+    "field",
+    "policy"
+   ],
+   "priority": 5,
+   "item": "0ee099b12e",
+   "also": [
+    "c12c2df1b5",
+    "6f04a0844c"
+   ],
+   "areas": [
+    "apprenticeships",
+    "inclusion"
+   ],
+   "kicker": "England",
+   "public_roles": [
+    "Alan Milburn"
+   ],
+   "headline": "England plans to charge firms more to train over-25s than young apprentices",
+   "standfirst": "Ministers are considering raising the cost of training a worker over 25 by 25% under the growth and skills levy, the Guardian reports, to reverse a 40% fall in youth apprenticeship starts over a decade.",
+   "body": [
+    "More than half of new starts are now for over-25s, and under-19 enrolments have almost halved in a decade. The plan adds a “co-investment” rule to the £4bn-a-year levy as part of the response to Alan Milburn’s review of youth unemployment, which, the paper reported a week earlier, will call for a “national pre-apprenticeship route”."
+   ],
+   "links": [
+    {
+     "item": "0ee099b12e",
+     "text": "The Guardian"
+    },
+    {
+     "item": "6f04a0844c",
+     "text": "Apprenticeship starts in England, on Apprentix"
+    }
+   ],
+   "more": "England: firms may pay more to train over-25s than young apprentices (The Guardian)."
+  },
+  {
+   "key": "quality",
+   "pillar": "cedefop",
+   "focus": [
+    "cedefop",
+    "policy"
+   ],
+   "priority": 5,
+   "item": "75d0430ba0",
+   "also": [
+    "c43f73ea73",
+    "a463165cfc"
+   ],
+   "areas": [
+    "apprenticeships"
+   ],
+   "kicker": "New publication",
+   "headline": "34 apprenticeship schemes show incremental quality gains, Cedefop finds",
+   "standfirst": "Published on 30 September, five years after Cedefop’s previous analysis of the European framework for quality and effective apprenticeships and ahead of the forthcoming European VET strategy.",
+   "body": [
+    "Criteria on learning and working conditions are usually addressed; on framework conditions the picture is mixed, with several indicators unevenly met. Across criteria, the report finds that where social partners or chambers take a fuller part in decision-making and coordination, they also invest more in implementation, and limited roles go with narrower coverage of quality criteria."
+   ],
+   "links": [
+    {
+     "url": "https://www.cedefop.europa.eu/en/publications/5626",
+     "text": "Quality of apprenticeships in Europe"
+    },
+    {
+     "item": "a463165cfc",
+     "text": "Compare the 34 schemes on Apprentix"
+    }
+   ],
+   "more": "Quality of apprenticeships in Europe: Cedefop’s comparison of 34 schemes."
+  },
+  {
+   "key": "aireport",
+   "pillar": "cedefop",
+   "focus": [
+    "cedefop",
+    "ai"
+   ],
+   "priority": 4,
+   "item": "c43f73ea73",
+   "areas": [
+    "future_of_work",
+    "skills_intelligence"
+   ],
+   "kicker": "Joint report",
+   "headline": "AI literacy is a new basic skill, inter-agency report argues",
+   "standfirst": "Written within the Inter-agency TVET group on skill mismatch in digitalised labour markets, with inputs from Cedefop.",
+   "body": [
+    "It finds AI adoption raising demand for higher-order cognitive and socioemotional skills and for digital and data science skills, and a small but fast-growing market for jobs building and maintaining AI systems. Everyone now needs the ability to use AI tools safely and ethically, it argues, and skills policies should prioritise broad capabilities and human agency."
+   ],
+   "links": [
+    {
+     "url": "https://www.cedefop.europa.eu/en/publications/2243",
+     "text": "Changing landscape of skills in the age of AI"
+    }
+   ],
+   "more": "Changing landscape of skills in the age of AI: inter-agency report with Cedefop."
+  },
+  {
+   "key": "epsco",
+   "no_lead": true,
    "pillar": "policy",
-   "title": "EU policy",
-   "blocks": [
+   "focus": [
+    "policy"
+   ],
+   "priority": 4,
+   "only_on": "2026-10-19",
+   "show_date": false,
+   "item": "860199b037",
+   "areas": [
+    "labour_market"
+   ],
+   "kicker": "Today",
+   "headline": "EU employment and social policy ministers meet in the Council today",
+   "standfirst": "The Council’s media advisory lists the agenda, timing and public sessions of Monday’s Employment, Social Policy, Health and Consumer Affairs Council (EPSCO).",
+   "body": [],
+   "links": [
     {
-     "type": "card",
      "item": "860199b037",
-     "kicker": "Today",
-     "size": "small",
-     "show_date": false,
-     "headline": "EU employment and social policy ministers meet in the Council today",
-     "standfirst": "The Council’s media advisory lists the main agenda items, timing, public sessions and press opportunities for Monday’s meeting of the Employment, Social Policy, Health and Consumer Affairs Council (EPSCO).",
-     "body": [],
-     "areas": [
-      "labour_market"
-     ],
-     "links": [
-      {
-       "url": "https://www.consilium.europa.eu/en/press/press-releases/2026/10/16/media-advisory-employment-social-policy-health-and-consumer-affairs-employment-and-social-policy-council-of-19-october-2026/",
-       "text": "Media advisory"
-      }
-     ]
-    },
-    {
-     "type": "card",
-     "item": "9356f2a16e",
-     "kicker": "Statement",
-     "headline": "Quality jobs best way out of poverty for those who can work, says Mînzatu",
-     "standfirst": "In a statement on 16 October, ahead of the International Day for the Eradication of Poverty, the Executive Vice-President said one in five Europeans is at risk of poverty and social exclusion.",
-     "body": [
-      "She pointed to the first EU Anti-Poverty Strategy, adopted earlier this year, and to the European Pillar of Social Rights Action Plan target of reducing the number of people at risk by at least 15 million by 2030. The economy “cannot afford leaving almost 50 million people outside the labour market”, she said.",
-      "She noted the first-stage consultation of the European social partners, launched in July, on possible EU action for people facing significant barriers to the labour market, and an ESF+ call from May that supports Roma youth aged 15–29 who are not in employment, education or training."
-     ],
-     "areas": [
-      "inclusion",
-      "labour_market"
-     ]
-    },
-    {
-     "type": "briefs",
-     "title": "Also in Europe",
-     "items": [
-      {
-       "item": "2d89b46109",
-       "headline": "EU education ministers in Dublin",
-       "text": "Greece’s education minister spoke on the new lyceum, a national diploma, AI in education and upgrading vocational training at the informal meeting of EU education ministers on 15–16 October (ESOS, translated from Greek)."
-      },
-      {
-       "item": "0fd66ac91c",
-       "headline": "Tripartite Social Summit",
-       "text": "EU leaders and social partners met in Brussels on 14 October for the twice-yearly summit."
-      }
-     ]
+     "text": "Media advisory"
     }
-   ]
-  },
-  {
-   "id": "agencies",
-   "pillar": "agencies",
-   "title": "Agencies and partners",
-   "blocks": [
-    {
-     "type": "card",
-     "item": "5b093e53af",
-     "also": [
-      "c43f73ea73"
-     ],
-     "kicker": "Cedefop and EU-OSHA",
-     "headline": "Safer jobs can help ease labour shortages, say Cedefop and EU-OSHA",
-     "standfirst": "A joint article sets EU-OSHA evidence on working conditions beside Cedefop’s intelligence on skills and labour shortages.",
-     "body": [
-      "Shortage occupations it names include welders, electricians, plumbers, cooks, heavy truck drivers and health care assistants. Many share demanding or hazardous working environments, limited career prospects and, in some cases, insecure employment. In EU-OSHA’s 2025 OSH Pulse survey, 29% of workers reported stress, anxiety or depression caused or worsened by work, up from 27% in 2022.",
-      "“Training more people for occupations with poor retention prospects will not be enough if those jobs remain insecure, unhealthy or unrewarding,” the article says."
-     ],
-     "areas": [
-      "skills_intelligence",
-      "labour_market"
-     ],
-     "links": [
-      {
-       "url": "https://www.cedefop.europa.eu/en/news/job-quality-labour-shortages-europe",
-       "text": "Joint article"
-      },
-      {
-       "url": "https://osha.europa.eu/en/oshnews/safer-and-healthier-workplaces-can-help-tackle-labour-shortages",
-       "text": "EU-OSHA"
-      }
-     ]
-    },
-    {
-     "type": "card",
-     "item": "888eb4b17e",
-     "kicker": "ETF",
-     "size": "small",
-     "headline": "Cooperation is key to AI-age skills, ETF says after WorldSkills",
-     "standfirst": "An ETF delegation led by director Pilvi Torsti joined the Commission delegation at the competition and conference in Shanghai, held from 21 to 27 September.",
-     "body": [
-      "The ETF attended as a partner in the German-led Towards a Global TVET Agenda initiative, and held talks with India’s Ministry for Skill Development and Entrepreneurship ahead of the India-EU High-Level Dialogue."
-     ],
-     "areas": [
-      "vet_policy",
-      "future_of_work"
-     ]
-    },
-    {
-     "type": "briefs",
-     "title": "In brief",
-     "items": [
-      {
-       "item": "d161809335",
-       "headline": "ELA on disguised job placement",
-       "text": "Authorities from Belgium, Czechia, Germany, the Netherlands, Lithuania, Slovakia and Finland met in Prague on 6–7 October. An ELA study on temporary work agencies is expected in early 2027."
-      },
-      {
-       "item": "0bf789c2e2",
-       "headline": "ETF on teachers and trainers",
-       "text": "The ETF describes teachers and trainers as among the most important agents of change as AI and the green transition reshape labour markets."
-      }
-     ]
-    }
-   ]
-  },
-  {
-   "id": "research",
-   "pillar": "research",
-   "title": "Research",
-   "blocks": [
-    {
-     "type": "card",
-     "item": "8612a5359e",
-     "also": [
-      "af10c2fcf1",
-      "6a5bf13457"
-     ],
-     "kicker": "Debate",
-     "headline": "Two VET scholars debate the capabilities approach in JVET’s 250th issue",
-     "standfirst": "Stephanie Allais argues that the approach offers VET research little; Leesa Wheelahan argues that it has some value when used within broader theories.",
-     "body": [
-      "The debate was held on 22 May 2026 to mark the journal’s 250th issue. Allais says the approach’s emphasis on human flourishing is important but not new, that it is at its core based on individualism, and that its outcomes-focused stance “gives weak VET systems new ways to fail”. Wheelahan argues that it insists on ethical individualism while rejecting methodological individualism, and situates it among critical realism, Bernsteinian sociology and Marxism. In a short reply, Allais accepts that distinction but argues that “compatibility is not a contribution”."
-     ],
-     "areas": [
-      "vet_policy"
-     ],
-     "links": [
-      {
-       "url": "https://doi.org/10.1080/13636820.2026.2744996",
-       "text": "Wheelahan"
-      },
-      {
-       "url": "https://doi.org/10.1080/13636820.2026.2744998",
-       "text": "Allais’s reply"
-      }
-     ]
-    },
-    {
-     "type": "card",
-     "item": "20c8546042",
-     "kicker": "New paper",
-     "size": "small",
-     "headline": "Double mismatch hits graduates hardest, Norwegian survey study finds",
-     "standfirst": "In the Norwegian Graduate Survey, 90% of those with horizontal mismatch were also overeducated.",
-     "body": [
-      "Studying one form of mismatch without the other overstates its effect: the link between horizontal mismatch and job satisfaction falls by 15% once overeducation is controlled for, and the link between overeducation and satisfaction by 45%. For graduates facing both, the negative effect exceeds that of either alone."
-     ],
-     "areas": [
-      "skills_intelligence"
-     ]
-    },
-    {
-     "type": "card",
-     "item": "e305fe64ff",
-     "kicker": "New paper",
-     "size": "small",
-     "headline": "Swiss apprentices and trainers saw pandemic support differently",
-     "standfirst": "A mixed-methods study combined a survey of 1,380 vocational trainers with 16 focus groups involving 119 apprentices.",
-     "body": [
-      "Trainers tended to report that workplace support was largely maintained. Apprentices described it as less spontaneous and less consistently accessible, and in firms with increased workload more often reported limited guidance, feedback and emotional support."
-     ],
-     "areas": [
-      "apprenticeships",
-      "teachers_trainers"
-     ]
-    },
-    {
-     "type": "card",
-     "item": "70e1ef0b04",
-     "kicker": "New paper",
-     "size": "small",
-     "headline": "Resilience buffers burnout among German VET teachers, study finds",
-     "standfirst": "A survey of 1,470 vocational teachers found task scope and complexity to be the most prevalent job demands.",
-     "body": [
-      "Perceived demands were linked to lower well-being and job satisfaction and to more burnout. Of the resources studied, only resilience significantly moderated the effect of demands on burnout. The authors suggest reducing demands and building resilience during teacher training."
-     ],
-     "areas": [
-      "teachers_trainers"
-     ]
-    },
-    {
-     "type": "cited",
-     "title": "Cedefop in the literature",
-     "intro": "Papers published in the last two weeks that mention Cedefop in their full text, a selection.",
-     "items": [
-      "3afb931541",
-      "52b718c998",
-      "e520359742",
-      "76a9118752",
-      "9c2a62b3d7"
-     ],
-     "notes": {
-      "3afb931541": "Training raises productivity in micro-firms: a positive and sizable effect in an administrative panel from three Italian regions.",
-      "52b718c998": "Overeducation in green industries in seven Central and Eastern European countries depends on how it is measured. Uses Cedefop’s 2019 framework.",
-      "e520359742": "One of nine VETNET papers from ECER 2026, published on 13 October, that mention Cedefop.",
-      "76a9118752": "Also from the VETNET ECER 2026 series.",
-      "9c2a62b3d7": "Also from the VETNET ECER 2026 series."
-     }
-    }
-   ]
-  },
-  {
-   "id": "data",
-   "pillar": "data",
-   "title": "Data",
-   "layout": "compact",
-   "blocks": [
-    {
-     "type": "number",
-     "item": "d46d592323",
-     "anchor": "the-number",
-     "question": "What share of adults aged 25–64 in the EU took part in education or training in the last four weeks, in 2025?",
-     "options": [
-      {
-       "label": "Under 10%",
-       "max": 10
-      },
-      {
-       "label": "10–15%",
-       "max": 15
-      },
-      {
-       "label": "15–20%",
-       "max": 20
-      },
-      {
-       "label": "Over 20%",
-       "max": 101
-      }
-     ],
-     "answer": "Up from 10.1% in 2015, with a dip to 9.1% in 2020.",
-     "also_fact": "e42bf96438"
-    },
-    {
-     "type": "insight",
-     "item": "89c42eece7"
-    },
-    {
-     "type": "dyk",
-     "item": "b556d5b780"
-    },
-    {
-     "type": "myth",
-     "item": "ce374c24cf"
-    }
-   ]
-  },
-  {
-   "id": "people",
-   "pillar": "people",
-   "title": "People",
-   "blocks": [
-    {
-     "type": "briefs",
-     "title": "Board changes in the Official Journal",
-     "items": [
-      {
-       "item": "fcdce614ae",
-       "headline": "Cedefop",
-       "text": "Council Decision of 24 September replacing a member of the Management Board for Bulgaria (Official Journal, 30 September)."
-      },
-      {
-       "item": "2171437d86",
-       "also": [
-        "eb5622cfc8"
-       ],
-       "headline": "Eurofound",
-       "text": "Council Decisions of 9 October replacing a member and an alternate member for Denmark (14 October)."
-      },
-      {
-       "item": "19428d7afd",
-       "also": [
-        "ec2765c3c8"
-       ],
-       "headline": "EU-OSHA",
-       "text": "Council Decisions of 1 October replacing members for Estonia and Cyprus (6 October)."
-      }
-     ]
-    }
-   ]
+   ],
+   "more": "EPSCO: employment and social policy ministers meet today."
   }
  ],
- "week_ahead": {
+ "more": [
+  {
+   "key": "itcz",
+   "pillar": "cedefop",
+   "focus": [
+    "cedefop",
+    "ai",
+    "field"
+   ],
+   "priority": 4,
+   "item": "c43f73ea73",
+   "areas": [
+    "skills_intelligence",
+    "future_of_work"
+   ],
+   "kicker": "Country support",
+   "headline": "Italy and Czechia join Cedefop project on skills for the age of AI",
+   "standfirst": "WORK.FUTURE, launched in Rome on 22 September, is a two-year project under the EU’s Technical Support Instrument with the Commission’s SG REFORM and both national authorities.",
+   "body": [
+    "Cedefop will analyse up to five occupations or sectors in each country, with foresight workshops and regional roundtables. The newsletter’s comparisons: 26% of employment in both countries was in high-skilled jobs in 2023, against 38% in the EU; adult learning participation was 29% in Italy and 21% in Czechia, against 39%."
+   ],
+   "links": [
+    {
+     "url": "https://www.cedefop.europa.eu/en/news/italy-czechia-step-skills-anticipation-age-ai",
+     "text": "Cedefop news"
+    },
+    {
+     "item": "b188362643",
+     "text": "A typical apprentice in Italy"
+    },
+    {
+     "item": "f781f16b0d",
+     "text": "… and in Czechia"
+    },
+    {
+     "url": "https://apprentix.eu/pages/duel.html?a=IT&b=CZ",
+     "text": "Italy vs Czechia"
+    }
+   ],
+   "more": "Italy and Czechia start work with Cedefop on skills for the age of AI."
+  },
+  {
+   "key": "jobquality",
+   "pillar": "agencies",
+   "focus": [
+    "cedefop",
+    "field"
+   ],
+   "priority": 4,
+   "item": "5b093e53af",
+   "also": [
+    "c43f73ea73"
+   ],
+   "areas": [
+    "skills_intelligence",
+    "labour_market"
+   ],
+   "kicker": "Cedefop and EU-OSHA",
+   "headline": "Safer jobs can help ease labour shortages, say Cedefop and EU-OSHA",
+   "standfirst": "A joint article sets EU-OSHA evidence on working conditions beside Cedefop’s intelligence on skills and labour shortages.",
+   "body": [
+    "Shortage occupations it names include welders, electricians, plumbers, cooks, truck drivers and health care assistants, many with demanding or hazardous work. In EU-OSHA’s 2025 OSH Pulse survey, 29% of workers reported stress, anxiety or depression caused or worsened by work, up from 27% in 2022."
+   ],
+   "links": [
+    {
+     "url": "https://www.cedefop.europa.eu/en/news/job-quality-labour-shortages-europe",
+     "text": "Joint article"
+    },
+    {
+     "item": "5b093e53af",
+     "text": "EU-OSHA"
+    }
+   ],
+   "more": "Cedefop and EU-OSHA: job quality is part of the answer to shortages."
+  },
+  {
+   "key": "jvet",
+   "pillar": "research",
+   "focus": [
+    "research",
+    "long"
+   ],
+   "priority": 4,
+   "item": "8612a5359e",
+   "also": [
+    "af10c2fcf1",
+    "6a5bf13457"
+   ],
+   "areas": [
+    "vet_policy"
+   ],
+   "kicker": "Debate",
+   "headline": "Two VET scholars debate the capabilities approach in JVET’s 250th issue",
+   "standfirst": "Stephanie Allais argues the approach offers VET research little; Leesa Wheelahan argues it has value within broader theories.",
+   "body": [
+    "Allais says its emphasis on human flourishing is important but not new, that it rests on individualism, and that its outcomes-focused stance “gives weak VET systems new ways to fail”. Wheelahan situates it among critical realism, Bernsteinian sociology and Marxism. Allais replies that “compatibility is not a contribution”."
+   ],
+   "links": [
+    {
+     "item": "af10c2fcf1",
+     "text": "Wheelahan"
+    },
+    {
+     "item": "6a5bf13457",
+     "text": "Allais’s reply"
+    }
+   ],
+   "more": "Is the capabilities approach useful for VET research? A JVET debate."
+  }
+ ],
+ "lives": {
+  "date": "2026-10-19",
+  "item": "9592974999",
+  "named": [
+   "Albert Baumann"
+  ],
+  "headline": "Germany’s first carpentry world champion, 1967, still in the workshop at 78",
+  "standfirst": "He won gold at the forerunner of WorldSkills in Madrid at 18, ran the family firm for decades and trained most of its staff himself.",
+  "body": [
+   "In July 1967, Albert Baumann beat young carpenters from Korea, the Netherlands, Ireland, Japan, Great Britain and Switzerland. He had begun his apprenticeship in the family firm in Flein in 1964; for the national final in Berlin he took a plane for the first time, his big carpenter’s saw stowed behind the back row. He became a master carpenter in 1970, took over the business, trained most of its up to twelve employees and handed it to his children in 2012. At 78 he still works in the workshop."
+  ]
+ },
+ "question": {
+  "type": "number",
+  "item": "d46d592323",
+  "anchor": "the-number",
+  "question": "What share of adults aged 25–64 in the EU took part in education or training in the last four weeks, in 2025?",
+  "options": [
+   {
+    "label": "Under 10%",
+    "max": 10
+   },
+   {
+    "label": "10–15%",
+    "max": 15
+   },
+   {
+    "label": "15–20%",
+    "max": 20
+   },
+   {
+    "label": "Over 20%",
+    "max": 101
+   }
+  ],
+  "answer": "Up from 10.1% in 2015, with a dip to 9.1% in 2020.",
+  "also_fact": "e42bf96438"
+ },
+ "diary": {
   "title": "Week ahead",
   "days": [
    {
     "date": "2026-10-19",
     "events": [
      {
+      "date": "2026-10-19",
       "item": "860199b037",
       "text": "Employment and social policy Council (EPSCO)",
       "tag": "Council"
@@ -806,14 +433,13 @@
     "text": "Council forward look, 19 October – 1 November"
    }
   ],
-  "coming_title": "Coming up at Cedefop",
   "coming": [
    {
     "date": "2026-11-09",
     "end": "2026-11-10",
     "item": "c43f73ea73",
     "url": "https://www.cedefop.europa.eu/en/events/sixth-policy-learning-forum-plf-upskilling-pathways-all-adults",
-    "text": "Sixth Policy learning forum on upskilling pathways for all adults",
+    "text": "Policy learning forum on upskilling pathways for all adults",
     "where": "EESC, Brussels"
    },
    {
@@ -834,7 +460,7 @@
     "date": "2026-11-30",
     "item": "c43f73ea73",
     "url": "https://www.cedefop.europa.eu/en/events/modernising-vet-policies-systems-green-digital-economy",
-    "text": "21st Cedefop Brussels Seminar: modernising VET for the green and digital economy",
+    "text": "21st Cedefop Brussels Seminar",
     "where": "With the Irish Presidency · by invitation"
    },
    {
@@ -860,11 +486,5 @@
     "where": "Webinar"
    }
   ]
- },
- "also_today": [
-  "field-england",
-  "debate-ai-monitor",
-  "field-cyclades",
-  "debate-hiring"
- ]
+ }
 }

@@ -153,6 +153,27 @@ def connection(item: dict, override: list[str] | None = None) -> str | None:
     return line
 
 
+HOOKS = json.loads((HERE / "hooks.json").read_text("utf-8"))["hooks"]
+
+
+def line_areas(item: dict, override: list[str] | None = None) -> list[str]:
+    if override:
+        return override
+    areas = sorted(item["work_areas"], key=AREA_ORDER.index)
+    return ([a for a in areas if a != "governance"] if len(areas) > 1 else areas)[:2]
+
+
+def conn_html(item: dict, override: list[str] | None = None) -> str:
+    """The generated line under a story, ending with the Cedefop product it relates to."""
+    line = connection(item, override)
+    if not line:
+        return ""
+    hook = next((HOOKS[a] for a in line_areas(item, override) if a in HOOKS), None)
+    if hook:
+        return f'{e(line)} · Cedefop: <a href="{e(hook["url"])}">{e(hook["name"])}</a>'
+    return e(line)
+
+
 def strip_value(spec: dict, pool: list[dict]) -> str:
     if "count" in spec:
         c = spec["count"]
@@ -161,6 +182,10 @@ def strip_value(spec: dict, pool: list[dict]) -> str:
                 and i["date"] and c["from"] <= i["date"] <= c["to"]
                 and not (c.get("exclude_title") and i["title"].startswith(c["exclude_title"])))
         return str(n)
+    if "count_press" in spec:
+        c = spec["count_press"]
+        return str(sum(1 for i in pool if i["circle"] in ("press", "4") and i["kind"] != "lives"
+                       and i["date"] and c["from"] <= i["date"] <= c["to"]))
     v = spec["value"]
     item = next(i for i in pool if i["id"] == v["item"])
     return f"{item['meta'][v['field']]}{v.get('suffix', '')}"
@@ -183,13 +208,13 @@ def links_html(links: list[dict]) -> str:
     return f'<p class="dc-links">{" · ".join(parts)}</p>'
 
 
-def card(c: dict, P: dict, pillar: str) -> str:
+def card(c: dict, P: dict, pillar: str, tag: str = "") -> str:
     it = P[c["item"]]
-    line = connection(it, c.get("areas"))
     first = link_url(c["links"][0]) if c.get("links") else ""
     url = first if first and not first.startswith("#") else it["url"]
     date = fmt_date(it["date"]) if c.get("show_date", True) else ""
-    kicker = e(c.get("kicker", "")) + (f' <span>· {e(date)}</span>' if date else "")
+    kicker = (f'<span class="dc-pill">{e(tag)}</span> ' if tag else "") + e(c.get("kicker", "")) \
+        + (f' <span>· {e(date)}</span>' if date else "")
     body = "".join(f"<p>{e(p)}</p>" for p in c.get("body", []))
     size = " dc-card--small" if c.get("size") == "small" else ""
     anchor = f' id="{e(c["anchor"])}"' if c.get("anchor") else ""
@@ -199,7 +224,7 @@ def card(c: dict, P: dict, pillar: str) -> str:
   <p class="dc-stand">{e(c['standfirst'])}</p>
   {f'<div class="dc-body">{body}</div>' if body else ''}
   {links_html(c.get('links', []))}
-  <p class="dc-conn">{e(line)}</p>
+  <p class="dc-conn">{conn_html(it, c.get('areas'))}</p>
 </article>"""
 
 
@@ -418,8 +443,8 @@ def also_today(items: list[dict], sections: list[dict]) -> str:
 
 
 def strip(s: dict, pool: list[dict]) -> str:
-    cells = "".join(f"""<a class="dc-num" href="{e(x['link'])}"><span class="dc-num-v">{e(strip_value(x, pool))}</span>
-  <span class="dc-num-l">{e(x['label'])}</span><span class="dc-num-n">{e(x['note'])}</span></a>""" for x in s["items"])
+    cells = "".join(f"""<{'a' if x.get('link') else 'div'} class="dc-num"{f' href="{e(x["link"])}"' if x.get('link') else ''}><span class="dc-num-v">{e(strip_value(x, pool))}</span>
+  <span class="dc-num-l">{e(x['label'])}</span><span class="dc-num-n">{e(x['note'])}</span></{'a' if x.get('link') else 'div'}>""" for x in s["items"])
     return f"""<section class="dc-strip" aria-labelledby="strip-t">
   <h2 class="dc-strip-title" id="strip-t">{e(s['title'])}</h2>
   <div class="dc-nums">{cells}</div>
@@ -506,18 +531,18 @@ def head(title: str, desc: str, canonical: str) -> str:
 </div></header>"""
 
 
-def masthead(ed: dict, sections: list[dict]) -> str:
-    nav = "".join(f'<li data-pillar="{e(s["pillar"])}"><a href="#{e(s["id"])}">{e(s["title"])}</a></li>' for s in sections)
-    nav += '<li data-pillar="policy"><a href="#week">Week ahead</a></li>'
+def masthead(ed: dict, nav: list[tuple[str, str, str]]) -> str:
+    items = "".join(f'<li data-pillar="{e(p)}"><a href="#{e(i)}">{e(t)}</a></li>' for i, t, p in nav)
+    focus = f'<span class="dm-focus">Today’s focus: {e(ed["day_focus"])}</span>' if ed.get("day_focus") else ""
     return f"""<header class="dm">
   <div class="wrap dm-inner">
     <div class="dm-brand"><a class="dm-title" href="/daily/">Cedefop Daily</a>
       <p class="dm-sub">Thessaloniki · Brussels</p></div>
     <div class="dm-meta"><strong>{e(long_date(ed['date']))}</strong>
-      <span>No. {e(ed['number'])}</span><span>Built from {e(ed['built_from'])}</span>
+      <span>No. {e(ed['number'])}</span>{focus}<span>Built from {e(ed['built_from'])}</span>
       <span class="dm-version">%%VERSION%%</span></div>
   </div>
-  <nav class="dm-pillars" aria-label="Sections"><div class="wrap"><ul>{nav}</ul></div></nav>
+  <nav class="dm-pillars" aria-label="Sections"><div class="wrap"><ul>{items}</ul></div></nav>
 </header>"""
 
 
@@ -553,20 +578,130 @@ def footer(pool: dict) -> str:
 </footer>"""
 
 
+LIVES_LABEL = "Lives"
+PILLAR_TITLE = {"cedefop": "At Cedefop", "field": "From the field", "debate": "The wider debate", "policy": "EU policy",
+                "agencies": "Agencies", "research": "Research", "people": "People", "data": "Data"}
+
+
+def lead2(s: dict, P: dict) -> str:
+    it = P[s["item"]]
+    body = "".join(f"<p>{e(p)}</p>" for p in s.get("body", []))
+    url = link_url(s["links"][0]) if s.get("links") else it["url"]
+    date = fmt_date(it["date"]) if s.get("show_date", True) else ""
+    fig = reset_figure(s["figure"], P) if s.get("figure", {}).get("type") == "reset-bars" else ""
+    return f"""<article class="dc-lead{'' if fig else ' dc-lead--text'}" data-pillar="{e(s['pillar'])}" id="lead">
+  <div class="dc-lead-text">
+    <p class="dc-kicker"><span class="dc-pill">The one thing</span> {e(s.get('kicker', ''))}{f' <span>· {e(date)}</span>' if date else ''}</p>
+    <h1 class="dc-hl dc-hl--lead"><a href="{e(href(url))}">{e(s['headline'])}</a></h1>
+    <p class="dc-stand">{e(s['standfirst'])}</p>
+    {f'<div class="dc-body">{body}</div>' if body else ''}
+    {links_html(s.get('links', []))}
+    <p class="dc-conn dc-why"><strong>Why it matters to Cedefop:</strong> {conn_html(P[s.get('connection_item', s['item'])], s.get('areas'))}</p>
+  </div>
+  {fig}
+</article>"""
+
+
+def lives2(l: dict, P: dict) -> str:
+    it = P[l["item"]]
+    m = it["meta"]
+    src = f"{m.get('outlet', '')} ({COUNTRY.get(m.get('country'), m.get('country', ''))})"
+    if m.get("language") and m["language"] != "en":
+        src += f" · translated from {LANGUAGES.get(m['language'], m['language'])}"
+    body = "".join(f"<p>{e(p)}</p>" for p in l["body"])
+    return f"""<section class="dc-lives{' dc-lives--long' if l.get('is_long') else ''}" id="lives" data-pillar="lives" aria-labelledby="h-lives">
+  <p class="dc-lives-label" id="h-lives">{LIVES_LABEL}</p>
+  <div class="dc-lives-inner">
+    <h2 class="dc-lives-hl"><a href="{e(it['url'])}">{e(l['headline'])}</a></h2>
+    <p class="dc-stand">{e(l['standfirst'])}</p>
+    <div class="dc-body">{body}</div>
+    <p class="dc-conn">{e(src)} · {e(fmt_date(it['date'], True))} · <a href="{e(it['url'])}">Read the original</a></p>
+  </div>
+</section>"""
+
+
+def question2(q: dict, P: dict) -> str:
+    title = {"number": "The number", "myth": "Myth or fact?", "dyk": "Did you know?", "insight": "Insight"}[q["type"]]
+    inner = BLOCKS[q["type"]](q, P, "data")
+    return f"""<section class="dc-section dc-question" id="question" data-pillar="data" aria-labelledby="h-question">
+  <h2 class="dc-sec-title" id="h-question">Today’s question <span class="dc-sec-sub">· {e(title)}</span></h2>
+  <div class="dc-question-inner">{inner}</div>
+</section>"""
+
+
+def more2(stories: list[dict], P: dict) -> str:
+    if not stories:
+        return ""
+    rows = []
+    for s in stories:
+        it = P[s["item"]]
+        url = link_url(s["links"][0]) if s.get("links") else it["url"]
+        src = it["meta"].get("outlet") or SOURCE_NAME.get(it["source"], "")
+        rows.append(f'<li data-pillar="{e(s["pillar"])}"><span class="dc-pill">{e(PILLAR_TITLE.get(s["pillar"], ""))}</span> '
+                    f'<a href="{e(href(url))}">{e(s["more"])}</a> <span class="dc-brief-src">{e(src)}, {e(fmt_date(it["date"]))}</span></li>')
+    return f"""<section class="dc-section" id="more" aria-labelledby="h-more">
+  <details class="dc-more-today"><summary><h2 class="dc-sec-title" id="h-more">More today <span class="dc-sec-sub">· {len(stories)} links</span></h2></summary>
+  <ul>{''.join(rows)}</ul></details>
+</section>"""
+
+
+def diary2(d: dict, P: dict, date: str) -> str:
+    w = {"title": d["title"], "days": d["days"], "more": d["more"], "coming_title": "Coming up at Cedefop", "coming": d["coming"]}
+    html_ = week_ahead(w, P, date)
+    if not d["days"]:
+        html_ = html_.replace('<div class="dc-week-grid">\n    <div><ul class="dc-more"></ul></div>', '<div class="dc-week-grid dc-week-grid--one">')
+    return html_
+
+
+def preview_banner(ed: dict) -> str:
+    v = f"{'Fixed shape' if ed['layout'] == 'shape' else 'Sections, capped'}, {'with weekday rhythm' if ed['rhythm'] else 'no weekday rhythm'}"
+    return (f'<div class="dc-preview" role="note"><strong>Preview · design comparison</strong> ({e(v)}). '
+            f'Built on 17 October 2026 from the sources available then; a real edition adds that day’s news. '
+            f'<a href="/daily/lab/">All variants</a></div>')
+
+
 def render_edition(ed: dict, pool: dict) -> str:
     P = {i["id"]: i for i in pool["items"]}
     POOL_INDEX.clear()
     POOL_INDEX.update(P)
-    title = f"Cedefop Daily — {long_date(ed['date'])}"
+    title = f"Cedefop Daily — {long_date(ed['date'])}" + (" (preview)" if ed.get("preview") else "")
     desc = ed["lead"]["headline"] + ". " + ed["lead"]["standfirst"]
-    out = [head(title, desc, f"{SITE}/daily/{ed['date']}/"), masthead(ed, ed["sections"]),
-           '<main id="main" class="wrap dc-main">', strip(ed["strip"], pool["items"]), lead(ed["lead"], P)]
-    if ed.get("also_today"):
-        out.append(also_today(ed["also_today"], ed["sections"]))
-    out += [section(s, P) for s in ed["sections"]]
-    out.append(week_ahead(ed["week_ahead"], P, ed["date"]))
+    canonical = f"{SITE}/daily/{ed['date']}/" if not ed.get("preview") else f"{SITE}/daily/lab/"
+    diary_label = ed["diary"]["title"]
+    if ed["layout"] == "shape":
+        nav = [("lives", "Lives", "lives"), ("five", "Five to know", "cedefop"), ("question", "Today’s question", "data"),
+               ("week", diary_label, "policy"), ("more", "More today", "debate")]
+    else:
+        nav = [("lives", "Lives", "lives")] + [(x["id"], x["title"], x["pillar"]) for x in ed["sections"]] \
+            + [("question", "Data", "data"), ("week", diary_label, "policy")]
+    out = [head(title, desc, canonical)]
+    if ed.get("preview"):
+        out.append(preview_banner(ed))
+    out += [masthead(ed, nav), '<main id="main" class="wrap dc-main">', strip(ed["strip"], pool["items"])]
+    top = [lead2(ed["lead"], P)] + ([lives2(ed["lives"], P)] if ed.get("lives") else [])
+    out += top[::-1] if ed.get("lives_first") else top
+    if ed["layout"] == "shape":
+        cards = "".join(card(x, P, x["pillar"], PILLAR_TITLE.get(x["pillar"], "")) for x in ed["five"])
+        out.append(f"""<section class="dc-section dc-five" id="five" aria-labelledby="h-five">
+  <h2 class="dc-sec-title" id="h-five">Five to know</h2>
+  <div class="dc-grid">{cards}</div>
+</section>""")
+        out.append(question2(ed["question"], P))
+        out.append(diary2(ed["diary"], P, ed["date"]))
+        out.append(more2(ed.get("more", []), P))
+    else:
+        for x in ed["sections"]:
+            cards = "".join(card(c, P, x["pillar"]) for c in x["stories"])
+            out.append(f"""<section class="dc-section" id="{e(x['id'])}" data-pillar="{e(x['pillar'])}" aria-labelledby="h-{e(x['id'])}">
+  <h2 class="dc-sec-title" id="h-{e(x['id'])}">{e(x['title'])}</h2>
+  <div class="dc-grid">{cards}</div>
+</section>""")
+        out.append(question2(ed["question"], P).replace("Today’s question <span", "Data <span"))
+        out.append(diary2(ed["diary"], P, ed["date"]))
     out += ["</main>", footer(pool), SCRIPT, "</body>\n</html>\n"]
     page = stamp_html("\n".join(out))
+    if ed.get("preview"):
+        return page.replace("%%VERSION%%", f"Preview No. {ed['number']}")
     n, hist = versions.current_number(ed["date"], page)
     earlier = f' · <a href="/daily/archive.html#ed-{e(ed["date"])}">earlier versions</a>' if n > 1 else ""
     return page.replace("%%VERSION%%", f"Version {n}{earlier}")
@@ -616,7 +751,9 @@ ABOUT = """
 {outlets}
 
 <h2>Sections</h2>
-<p>At Cedefop · From the field · The wider debate · EU policy · Agencies and partners · Research · Data · People · Week ahead. The top strip shows “Today at Cedefop” when there is a public agenda for the day, and “This week in numbers” otherwise. On Mondays the diary looks at the week ahead.</p>
+<p>About twelve items a day, a five-minute read: <strong>The one thing</strong> (the day’s most important story, with a line on why it matters to Cedefop), <strong>Lives</strong> (one real person whose life vocational education and training has shaped), <strong>Five to know</strong>, <strong>Today’s question</strong> (a number to guess, a myth to call, a fact or an insight), the <strong>Diary</strong>, and <strong>More today</strong> as a short list of links. Stories come from Cedefop, the field, the wider debate, EU policy, the agencies and research, each marked with its section colour. The top strip shows “Today at Cedefop” when there is a public agenda for the day, and “This week in numbers” otherwise. On Mondays the diary looks at the week ahead.</p>
+<h2>Lives</h2>
+<p>Lives stories come from published profiles and interviews. A person is named only as printed, and only when the source is a profile or interview they chose to give, in which they are the subject. Minors are never named, and nothing about health, family or money is included beyond what the story itself is about.</p>
 
 <h2>Privacy</h2>
 <p>No cookies, no tracking and no analytics. If you guess The number, your guess is kept only in your browser.</p>
@@ -640,12 +777,7 @@ def render_about() -> str:
 def sources_json(ed: dict, pool: dict) -> str:
     """The items this edition used, with where they came from: small enough to keep in git
     (the full pool, about 1 MB a day, is not committed)."""
-    used = set(re.findall(r'"(?:item|connection_item)": "([0-9a-f]{10})"', json.dumps(ed)))
-    used |= set(re.findall(r'"([0-9a-f]{10})"', json.dumps([b.get("items", []) + b.get("also", []) + b.get("facts", [])
-                                                            + [b.get("also_fact", "")] for s in ed["sections"]
-                                                            for b in s["blocks"]] + [ed["lead"].get("also", [])])))
-    used |= {x for b in ed["sections"] for blk in b["blocks"] for r in blk.get("items", []) if isinstance(r, dict)
-             for x in [r.get("item"), *r.get("also", [])] if x}
+    used = set(re.findall(r'"([0-9a-f]{10})"', json.dumps(ed)))
     items = [{k: i[k] for k in ("id", "source", "kind", "title", "url", "date", "work_areas")}
              for i in pool["items"] if i["id"] in used]
     return json.dumps({"edition": ed["date"], "fetched_at": pool["fetched_at"], "sources_status": pool["sources"],
@@ -658,7 +790,52 @@ def write(path: Path, text: str) -> None:
     print(f"wrote {path.relative_to(ROOT)}")
 
 
+LAB_LABEL = {"shape-plain": "Fixed shape, no rhythm", "shape-rhythm": "Fixed shape, weekday rhythm",
+             "sections-plain": "Sections capped, no rhythm", "sections-rhythm": "Sections capped, weekday rhythm"}
+
+
+def render_lab() -> None:
+    lab = DAILY / "lab"
+    pools: dict = {}
+    grid: dict = {}
+    for f in sorted(lab.glob("*/*/edition.json")):
+        ed = json.loads(f.read_text("utf-8"))
+        pool = pools.setdefault(ed["pool"], json.loads((DAILY / "pool" / f"{ed['pool']}.json").read_text("utf-8")))
+        write(f.parent / "index.html", render_edition(ed, pool))
+        grid.setdefault(ed["date"], {})[f.parent.parent.name] = ed
+    cols = list(LAB_LABEL)
+    head_row = "".join(f"<th scope=col>{e(LAB_LABEL[c])}</th>" for c in cols)
+    rows = ""
+    for d in sorted(grid):
+        cells = ""
+        for c in cols:
+            ed = grid[d].get(c)
+            if not ed:
+                cells += "<td>–</td>"
+                continue
+            n = 1 + len(ed.get("five", [])) + len(ed.get("more", [])) + sum(len(x["stories"]) for x in ed.get("sections", []))
+            top = ed["lives"]["headline"] if ed.get("lives_first") else ed["lead"]["headline"]
+            cells += (f'<td><a href="/daily/lab/{c}/{d}/">{e(top)}</a>'
+                      f'<span class="dc-brief-src">{n} stories · Lives{" at length, opening the paper" if ed.get("lives_first") else ""}'
+                      f'{" · focus: " + e(ed["day_focus"]) if ed.get("day_focus") else ""}</span></td>')
+        rows += f"<tr><th scope=row>{e(long_date(d))}</th>{cells}</tr>"
+    body = f"""<main id="main" class="wrap dc-main dc-page dc-lab"><h1 class="dm-title">Design comparison</h1>
+<p class="dc-intro">Four ways to shape Cedefop Daily at about 12 items a day, over one week. Every variant is planned from the same story bank, written on 17 October 2026 from the sources available then, and never runs a story twice in the week, so later days show what earlier days left. Real editions would add each day’s news, so Tuesday to Friday are thinner here than they would be.</p>
+<ul class="dc-intro">
+<li><strong>Fixed shape:</strong> The one thing · Lives · Five to know · Today’s question · Diary · More today (collapsed links).</li>
+<li><strong>Sections capped:</strong> the paper’s sections, at most two stories each (one for agencies), about ten stories in all, plus Lives, a data item and the diary.</li>
+<li><strong>Weekday rhythm:</strong> Monday policy and Cedefop, Tuesday research, Wednesday the field, Thursday AI and the future of work, Friday long reads with Lives at length.</li>
+</ul>
+<div class="dc-lab-scroll"><table class="dc-lab-table"><thead><tr><th></th>{head_row}</tr></thead><tbody>{rows}</tbody></table></div>
+<p><a href="/daily/">Today’s paper</a> uses the fixed shape without rhythm.</p></main>"""
+    write(lab / "index.html", stamp_html("\n".join([head("Cedefop Daily — Design comparison", "Four layouts of Cedefop Daily compared over one week.",
+                                                            f"{SITE}/daily/lab/"), body, "</body>\n</html>\n"])))
+
+
 def main(argv: list[str]) -> int:
+    if "--lab" in argv:
+        render_lab()
+        return 0
     editions = [json.loads(p.read_text("utf-8")) for p in sorted((DAILY / "editions").glob("*.json"))]
     want = argv[0] if argv else editions[-1]["date"]
     ed = next(x for x in editions if x["date"] == want)

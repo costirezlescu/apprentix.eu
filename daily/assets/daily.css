@@ -44,6 +44,8 @@
 [data-pillar="data"]      { --pillar: var(--p-data);      --tint: var(--t-data); }
 [data-pillar="people"]    { --pillar: var(--p-people);    --tint: var(--t-people); }
 [data-pillar="debate"]    { --pillar: var(--p-debate);    --tint: var(--t-debate); }
+[data-pillar="lives"]     { --pillar: var(--p-people);    --tint: var(--t-people); }
+[data-pillar="field"]     { --pillar: var(--p-countries); --tint: var(--t-countries); }
 
 /* ---------- Masthead ---------- */
 
@@ -257,3 +259,50 @@
   .dc-card, .dc-briefs, .dc-wide, .dc-number, .dc-insight, .dc-dyk, .dc-myth { padding: 16px; }
   .dc-coming li { grid-template-columns: 1fr; gap: 2px; }
 }
+
+/* ---------- Edition shape (schema 2) ---------- */
+
+.dc-pill {
+  display: inline-block; font-family: var(--mono); font-size: 10px; letter-spacing: .08em; text-transform: uppercase;
+  color: var(--surface); background: var(--pillar); padding: 1px 6px; border-radius: 4px; margin-right: 4px; vertical-align: 1px;
+}
+.dc-kicker .dc-pill, .dc-pill { color: var(--surface); }
+.dc-why { font-size: .84rem; }
+.dc-why strong { color: var(--ink); }
+.dc-lead--text { grid-template-columns: minmax(0, 1fr); }
+.dc-lead--text .dc-lead-text { max-width: 78ch; }
+.dm-focus { color: var(--ink); font-weight: 600; }
+.dc-sec-sub { font-family: var(--body); font-size: 1rem; font-weight: 400; color: var(--muted); letter-spacing: 0; }
+
+/* Lives: one human story, every day */
+.dc-lives { margin-top: 28px; background: var(--tint); border-radius: 14px; padding: 22px 26px 18px; border-left: 6px solid var(--pillar); }
+.dc-lives-label { margin: 0 0 6px; font-family: var(--display); font-style: italic; font-size: 1.15rem; color: var(--pillar); }
+.dc-lives-inner { max-width: 72ch; }
+.dc-lives-hl { font-family: var(--display); font-weight: 600; font-size: clamp(1.5rem, 3vw, 2rem); line-height: 1.12; letter-spacing: -.015em; }
+.dc-lives-hl a { color: var(--ink); text-decoration: none; }
+.dc-lives-hl a:hover { color: var(--pillar); text-decoration: underline; text-decoration-thickness: 1px; }
+.dc-lives .dc-body p { font-family: var(--display); font-size: 1.12rem; line-height: 1.55; }
+@media (max-width: 640px) { .dc-lives { padding: 16px 16px 12px; } }
+
+.dc-five .dc-sec-title, .dc-question .dc-sec-title, #more .dc-sec-title { border-top-color: var(--ink); }
+.dc-question-inner { max-width: 720px; }
+
+.dc-more-today summary { cursor: pointer; list-style: none; }
+.dc-more-today summary::-webkit-details-marker { display: none; }
+.dc-more-today summary .dc-sec-title::after { content: " ▸"; color: var(--muted); font-size: 1rem; }
+.dc-more-today[open] summary .dc-sec-title::after { content: " ▾"; }
+.dc-more-today ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.dc-more-today li { padding: 10px 14px; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; }
+.dc-more-today li a { color: var(--ink); font-weight: 600; }
+
+.dc-week-grid--one { grid-template-columns: minmax(0, 1fr); }
+
+.dc-preview { background: var(--accent-soft); color: var(--ink); border-bottom: 2px solid var(--accent); padding: 10px 20px; font-size: .88rem; text-align: center; }
+
+.dc-lab { max-width: var(--max); }
+.dc-lab ul.dc-intro { padding-left: 18px; }
+.dc-lab-scroll { overflow-x: auto; margin-top: 18px; }
+.dc-lab-table { border-collapse: collapse; width: 100%; min-width: 760px; font-size: .9rem; }
+.dc-lab-table th, .dc-lab-table td { border: 1px solid var(--line); padding: 10px 12px; vertical-align: top; text-align: left; background: var(--surface); }
+.dc-lab-table thead th { font-family: var(--mono); font-size: 11px; letter-spacing: .06em; text-transform: uppercase; background: var(--sunken); }
+.dc-lab-table td a { display: block; font-family: var(--display); font-weight: 600; font-size: 1rem; line-height: 1.25; color: var(--ink); margin-bottom: 4px; }

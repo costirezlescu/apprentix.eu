@@ -1,0 +1,331 @@
+{
+ "schema": 2,
+ "layout": "sections",
+ "rhythm": true,
+ "date": "2026-10-21",
+ "number": 3,
+ "pool": "2026-10-19",
+ "built_from": "public sources retrieved on 17 October 2026",
+ "built_on": "2026-10-17",
+ "preview": true,
+ "day_focus": "From the field",
+ "strip": {
+  "kind": "numbers",
+  "title": "This week in numbers",
+  "items": [
+   {
+    "count": {
+     "source": "openalex_fulltext",
+     "from": "2026-10-11",
+     "to": "2026-10-17"
+    },
+    "label": "research papers mentioning Cedefop",
+    "note": "published 11–17 October · OpenAlex full text"
+   },
+   {
+    "count": {
+     "source": "cellar_recent",
+     "kind": "publication",
+     "from": "2026-09-28",
+     "to": "2026-10-17",
+     "exclude_title": "Grant Award Notice"
+    },
+    "label": "new Cedefop publications catalogued",
+    "note": "28 September – 17 October · EU Publications Office"
+   },
+   {
+    "count_press": {
+     "from": "2026-10-10",
+     "to": "2026-10-17"
+    },
+    "label": "press and field stories on VET and skills",
+    "note": "10–17 October · from the paper’s press feeds"
+   },
+   {
+    "value": {
+     "item": "6516e27cb6",
+     "field": "latest_value",
+     "suffix": "%"
+    },
+    "label": "of 18–24-year-olds left education and training early",
+    "note": "EU-27, 2025 · Eurostat"
+   }
+  ]
+ },
+ "lead": {
+  "key": "swiss",
+  "pillar": "research",
+  "focus": [
+   "research",
+   "field"
+  ],
+  "priority": 4,
+  "item": "e305fe64ff",
+  "areas": [
+   "apprenticeships",
+   "teachers_trainers"
+  ],
+  "kicker": "New paper",
+  "headline": "Swiss apprentices and trainers saw pandemic support differently",
+  "standfirst": "A mixed-methods study combined a survey of 1,380 vocational trainers with 16 focus groups involving 119 apprentices.",
+  "body": [
+   "Trainers tended to report that workplace support was largely maintained. Apprentices described it as less spontaneous and less consistently accessible, and in firms with more workload more often reported limited guidance, feedback and emotional support."
+  ],
+  "more": "Swiss apprentices and trainers saw workplace support differently in the pandemic."
+ },
+ "sections": [
+  {
+   "id": "cedefop",
+   "pillar": "cedefop",
+   "title": "At Cedefop",
+   "stories": [
+    {
+     "key": "partner",
+     "pillar": "cedefop",
+     "focus": [
+      "cedefop",
+      "field"
+     ],
+     "priority": 3,
+     "item": "c43f73ea73",
+     "areas": [
+      "vet_policy"
+     ],
+     "kicker": "Cedefop Insight",
+     "headline": "How VET and business work together: a new Cedefop Insight",
+     "standfirst": "Drawing on the Timeline of VET policies in the EU-27, Iceland and Norway, it finds cooperation moving beyond work placements.",
+     "body": [
+      "VET-business cooperation now also covers skills foresight, governance, teacher training and entrepreneurship education. Examples include France’s Campus of Excellence Industry of the Future South and Spain’s Digitalízate, where 58% of certification completers are women. It says SMEs need brokers such as chambers and sector bodies."
+     ],
+     "links": [
+      {
+       "url": "https://www.cedefop.europa.eu/en/publications/7107",
+       "text": "Policy approaches to strengthening VET-business partnerships"
+      }
+     ],
+     "more": "Cedefop Insight: how countries build VET-business partnerships."
+    },
+    {
+     "key": "estonia",
+     "pillar": "cedefop",
+     "focus": [
+      "cedefop"
+     ],
+     "priority": 3,
+     "item": "6c8e0d34ac",
+     "areas": [
+      "skills_intelligence"
+     ],
+     "kicker": "New publication",
+     "headline": "Policy pointers for Estonia’s skills forecasting system published",
+     "standfirst": "The report, dated 13 October, comes from a project run with Estonia’s Ministry of Education and Research and the Commission.",
+     "body": [
+      "Based on desk research, consultations, peer learning and examples from other countries, it sets strategic directions for OSKA and Estonia’s wider skills governance, “intentionally indicative rather than prescriptive”, and may inspire other countries with similar reform plans."
+     ],
+     "more": "Policy pointers for Estonia’s skills anticipation system (Cedefop)."
+    }
+   ]
+  },
+  {
+   "id": "field",
+   "pillar": "field",
+   "title": "From the field",
+   "stories": [
+    {
+     "key": "greece257",
+     "pillar": "field",
+     "focus": [
+      "field"
+     ],
+     "priority": 3,
+     "item": "777e23e95e",
+     "also": [
+      "4e2bf1f07e",
+      "6a21ff6960"
+     ],
+     "areas": [
+      "apprenticeships"
+     ],
+     "kicker": "Greece",
+     "headline": "Greece lets 257 small apprenticeship-year classes run this year",
+     "standfirst": "The Ministry of Education has allowed 257 classes of the post-secondary apprenticeship year to run in 2026–2027 with fewer apprentices than its regulation sets.",
+     "body": [
+      "Staffing is tight elsewhere: in the Cyclades, the local secondary teachers’ union says 130 teaching posts are still empty a month into term, and ESOS reports a new vocational upper-secondary school running with its director as its only teacher."
+     ],
+     "links": [
+      {
+       "item": "777e23e95e",
+       "text": "ESOS"
+      },
+      {
+       "item": "6a21ff6960",
+       "text": "The post-secondary apprenticeship year, on Apprentix"
+      }
+     ],
+     "more": "Greece: 257 small apprenticeship-year classes allowed to run (ESOS)."
+    },
+    {
+     "key": "minpay",
+     "pillar": "field",
+     "focus": [
+      "field"
+     ],
+     "priority": 3,
+     "item": "bc68abdec5",
+     "areas": [
+      "apprenticeships"
+     ],
+     "kicker": "Germany",
+     "headline": "Germany’s minimum apprentice pay rises to €764 in 2027",
+     "standfirst": "For apprenticeships starting in 2027, the legal minimum rises to €764 a month in the first year, up 5.6% on 2026.",
+     "body": [
+      "Germany has had fewer apprentices than it needs for years, the paper notes, and the minimum, in law since 2020, is meant to help turn that round. Where a collective agreement exists, its rate applies. BIBB updates the amount each year."
+     ],
+     "links": [
+      {
+       "item": "bc68abdec5",
+       "text": "Deutsche Handwerks Zeitung"
+      },
+      {
+       "item": "fcf7633de2",
+       "text": "Who pays apprentices across 34 schemes"
+      }
+     ],
+     "more": "Germany: minimum apprentice pay rises to €764 in 2027 (DHZ)."
+    }
+   ]
+  },
+  {
+   "id": "policy",
+   "pillar": "policy",
+   "title": "EU policy",
+   "stories": [
+    {
+     "key": "minzatu",
+     "pillar": "policy",
+     "focus": [
+      "policy"
+     ],
+     "priority": 3,
+     "item": "9356f2a16e",
+     "areas": [
+      "inclusion",
+      "labour_market"
+     ],
+     "kicker": "Statement",
+     "headline": "Quality jobs best way out of poverty for those who can work, says Mînzatu",
+     "standfirst": "Ahead of the International Day for the Eradication of Poverty, the Executive Vice-President said one in five Europeans is at risk of poverty and social exclusion.",
+     "body": [
+      "The economy “cannot afford leaving almost 50 million people outside the labour market”, she said, pointing to a first-stage consultation of the social partners, launched in July, on EU action for people facing significant barriers to work."
+     ],
+     "more": "Mînzatu: quality jobs are the best way out of poverty for those who can work."
+    }
+   ]
+  },
+  {
+   "id": "agencies",
+   "pillar": "agencies",
+   "title": "Agencies and partners",
+   "stories": [
+    {
+     "key": "ela",
+     "pillar": "agencies",
+     "focus": [
+      "field"
+     ],
+     "priority": 2,
+     "item": "d161809335",
+     "areas": [
+      "labour_market"
+     ],
+     "kicker": "ELA",
+     "headline": "ELA brings seven countries together on disguised job placement",
+     "standfirst": "Authorities from Belgium, Czechia, Germany, the Netherlands, Lithuania, Slovakia and Finland met in Prague on 6–7 October.",
+     "body": [
+      "An ELA study on temporary work agencies and other forms of employment intermediation is expected in early 2027."
+     ],
+     "more": "ELA: seven countries compare tools against disguised job placement."
+    }
+   ]
+  },
+  {
+   "id": "research",
+   "pillar": "research",
+   "title": "Research",
+   "stories": [
+    {
+     "key": "chile",
+     "pillar": "research",
+     "focus": [
+      "research",
+      "field"
+     ],
+     "priority": 2,
+     "item": "375e860e51",
+     "areas": [
+      "vet_policy"
+     ],
+     "kicker": "New paper",
+     "headline": "Chile’s TVET schools turn one internship policy into many",
+     "standfirst": "Interviews with 37 internship coordinators show schools reading the policy either as competency validation or as a route to employability.",
+     "body": [
+      "Those readings shape which students go to which workplaces; engaging employers is a recurring barrier."
+     ],
+     "more": "Chile: how TVET schools enact internship policy (Education + Training)."
+    }
+   ]
+  }
+ ],
+ "lives": {
+  "date": "2026-10-21",
+  "item": "d564f1ce98",
+  "named": [
+   "Khudeija Rafique"
+  ],
+  "headline": "Preston’s AI bootcamp offers young people out of work an apprenticeship",
+  "standfirst": "A three-week pilot for 16- to 24-year-olds not in education, employment or training ends with an offer of AI apprenticeships.",
+  "body": [
+   "In a youth centre opposite Preston bus station, five young people at laptops learn why AI models need clean data. The pilot, open to 70 people, links to apprenticeships with partners including JD Sports, Heinz and Agilysys, in AI marketing or IT helpdesks. Khudeija Rafique, 18, from Burnley, says it would be “really helpful with whatever job I would like to go into”. A 17-year-old says the course changed his opinion of AI. A King’s College London researcher says little is yet known about how AI affects non-graduate work."
+  ]
+ },
+ "question": {
+  "type": "dyk",
+  "item": "b556d5b780"
+ },
+ "diary": {
+  "title": "Diary",
+  "days": [],
+  "more": [],
+  "coming": [
+   {
+    "date": "2026-11-09",
+    "end": "2026-11-10",
+    "item": "c43f73ea73",
+    "url": "https://www.cedefop.europa.eu/en/events/sixth-policy-learning-forum-plf-upskilling-pathways-all-adults",
+    "text": "Policy learning forum on upskilling pathways for all adults",
+    "where": "EESC, Brussels"
+   },
+   {
+    "date": "2026-11-19",
+    "item": "c43f73ea73",
+    "url": "https://www.cedefop.europa.eu/en/events/future-vet",
+    "text": "The future of VET",
+    "where": "Online conference"
+   },
+   {
+    "date": "2026-11-20",
+    "item": "c43f73ea73",
+    "url": "https://www.cedefop.europa.eu/en/events/financial-legislative-arrangements-skills-development",
+    "text": "Financial and legislative arrangements for skills development",
+    "where": "Expert group"
+   },
+   {
+    "date": "2026-11-30",
+    "item": "c43f73ea73",
+    "url": "https://www.cedefop.europa.eu/en/events/modernising-vet-policies-systems-green-digital-economy",
+    "text": "21st Cedefop Brussels Seminar",
+    "where": "With the Irish Presidency · by invitation"
+   }
+  ]
+ }
+}

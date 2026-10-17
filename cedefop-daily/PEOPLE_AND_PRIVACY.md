@@ -82,3 +82,16 @@ The brief asks for "news (if any) on the people working at Cedefop". This is the
 - **Public office holders are covered in their public role only.** This includes Commissioners, Directors-General, MEPs, ministers, agency directors and social-partner leaders.
 - **Track roles, not names.** The `roles` table resolves each role to its current holder from an official page, and is re-checked monthly. The paper then follows people as they change jobs, without anyone keeping a list of names.
 - **Researchers** appear as authors of the papers covered, as in Daily Codes, with their affiliations as printed.
+
+## 6. Lives: the naming exception (decided 17 October 2026)
+
+The paper carries one human story a day, **Lives**: a real person whose life vocational education and training has shaped, whether the story is heartwarming or hard. Elsewhere in the paper private individuals in press stories are not named. In Lives they may be named, **only** under these conditions:
+
+- **As printed.** The name is used exactly as the source prints it.
+- **Their own story.** The source is a profile or interview the person clearly chose to give, in which they are the subject and are quoted. A passing mention in someone else's story is not enough.
+- **Adults only.** Minors are never named. Their age may appear ("a 17-year-old").
+- **Only what the story needs.** No health, family or money details beyond what the story itself is about.
+- **Never Cedefop staff.** Staff news follows sections 1–3.
+- **No misfortune for its own sake.** A story whose only point is someone's suffering doesn't run.
+
+Each Lives story lists its named people (`named` in the bank), and `check.py` fails the edition if a listed name is not in the source. Quotations from sources in other languages are paraphrased, because quotation marks are only for words in their original language.

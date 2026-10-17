@@ -1,0 +1,332 @@
+{
+ "schema": 2,
+ "layout": "sections",
+ "rhythm": false,
+ "date": "2026-10-21",
+ "number": 3,
+ "pool": "2026-10-19",
+ "built_from": "public sources retrieved on 17 October 2026",
+ "built_on": "2026-10-17",
+ "preview": true,
+ "day_focus": null,
+ "strip": {
+  "kind": "numbers",
+  "title": "This week in numbers",
+  "items": [
+   {
+    "count": {
+     "source": "openalex_fulltext",
+     "from": "2026-10-11",
+     "to": "2026-10-17"
+    },
+    "label": "research papers mentioning Cedefop",
+    "note": "published 11–17 October · OpenAlex full text"
+   },
+   {
+    "count": {
+     "source": "cellar_recent",
+     "kind": "publication",
+     "from": "2026-09-28",
+     "to": "2026-10-17",
+     "exclude_title": "Grant Award Notice"
+    },
+    "label": "new Cedefop publications catalogued",
+    "note": "28 September – 17 October · EU Publications Office"
+   },
+   {
+    "count_press": {
+     "from": "2026-10-10",
+     "to": "2026-10-17"
+    },
+    "label": "press and field stories on VET and skills",
+    "note": "10–17 October · from the paper’s press feeds"
+   },
+   {
+    "value": {
+     "item": "6516e27cb6",
+     "field": "latest_value",
+     "suffix": "%"
+    },
+    "label": "of 18–24-year-olds left education and training early",
+    "note": "EU-27, 2025 · Eurostat"
+   }
+  ]
+ },
+ "lead": {
+  "key": "etfws",
+  "pillar": "agencies",
+  "focus": [
+   "ai",
+   "field"
+  ],
+  "priority": 3,
+  "item": "888eb4b17e",
+  "areas": [
+   "vet_policy",
+   "future_of_work"
+  ],
+  "kicker": "ETF",
+  "headline": "Cooperation is key to AI-age skills, ETF says after WorldSkills",
+  "standfirst": "An ETF delegation led by director Pilvi Torsti joined the Commission delegation at WorldSkills 2026 in Shanghai, 21–27 September.",
+  "body": [
+   "The ETF attended as a partner in the German-led Towards a Global TVET Agenda initiative and held talks with India’s Ministry for Skill Development and Entrepreneurship ahead of the India-EU High-Level Dialogue."
+  ],
+  "more": "ETF at WorldSkills 2026: international cooperation on AI-age skills."
+ },
+ "sections": [
+  {
+   "id": "cedefop",
+   "pillar": "cedefop",
+   "title": "At Cedefop",
+   "stories": [
+    {
+     "key": "partner",
+     "pillar": "cedefop",
+     "focus": [
+      "cedefop",
+      "field"
+     ],
+     "priority": 3,
+     "item": "c43f73ea73",
+     "areas": [
+      "vet_policy"
+     ],
+     "kicker": "Cedefop Insight",
+     "headline": "How VET and business work together: a new Cedefop Insight",
+     "standfirst": "Drawing on the Timeline of VET policies in the EU-27, Iceland and Norway, it finds cooperation moving beyond work placements.",
+     "body": [
+      "VET-business cooperation now also covers skills foresight, governance, teacher training and entrepreneurship education. Examples include France’s Campus of Excellence Industry of the Future South and Spain’s Digitalízate, where 58% of certification completers are women. It says SMEs need brokers such as chambers and sector bodies."
+     ],
+     "links": [
+      {
+       "url": "https://www.cedefop.europa.eu/en/publications/7107",
+       "text": "Policy approaches to strengthening VET-business partnerships"
+      }
+     ],
+     "more": "Cedefop Insight: how countries build VET-business partnerships."
+    }
+   ]
+  },
+  {
+   "id": "field",
+   "pillar": "field",
+   "title": "From the field",
+   "stories": [
+    {
+     "key": "greece257",
+     "pillar": "field",
+     "focus": [
+      "field"
+     ],
+     "priority": 3,
+     "item": "777e23e95e",
+     "also": [
+      "4e2bf1f07e",
+      "6a21ff6960"
+     ],
+     "areas": [
+      "apprenticeships"
+     ],
+     "kicker": "Greece",
+     "headline": "Greece lets 257 small apprenticeship-year classes run this year",
+     "standfirst": "The Ministry of Education has allowed 257 classes of the post-secondary apprenticeship year to run in 2026–2027 with fewer apprentices than its regulation sets.",
+     "body": [
+      "Staffing is tight elsewhere: in the Cyclades, the local secondary teachers’ union says 130 teaching posts are still empty a month into term, and ESOS reports a new vocational upper-secondary school running with its director as its only teacher."
+     ],
+     "links": [
+      {
+       "item": "777e23e95e",
+       "text": "ESOS"
+      },
+      {
+       "item": "6a21ff6960",
+       "text": "The post-secondary apprenticeship year, on Apprentix"
+      }
+     ],
+     "more": "Greece: 257 small apprenticeship-year classes allowed to run (ESOS)."
+    },
+    {
+     "key": "minpay",
+     "pillar": "field",
+     "focus": [
+      "field"
+     ],
+     "priority": 3,
+     "item": "bc68abdec5",
+     "areas": [
+      "apprenticeships"
+     ],
+     "kicker": "Germany",
+     "headline": "Germany’s minimum apprentice pay rises to €764 in 2027",
+     "standfirst": "For apprenticeships starting in 2027, the legal minimum rises to €764 a month in the first year, up 5.6% on 2026.",
+     "body": [
+      "Germany has had fewer apprentices than it needs for years, the paper notes, and the minimum, in law since 2020, is meant to help turn that round. Where a collective agreement exists, its rate applies. BIBB updates the amount each year."
+     ],
+     "links": [
+      {
+       "item": "bc68abdec5",
+       "text": "Deutsche Handwerks Zeitung"
+      },
+      {
+       "item": "fcf7633de2",
+       "text": "Who pays apprentices across 34 schemes"
+      }
+     ],
+     "more": "Germany: minimum apprentice pay rises to €764 in 2027 (DHZ)."
+    }
+   ]
+  },
+  {
+   "id": "debate",
+   "pillar": "debate",
+   "title": "The wider debate",
+   "stories": [
+    {
+     "key": "unions",
+     "pillar": "debate",
+     "focus": [
+      "ai"
+     ],
+     "priority": 3,
+     "item": "4ec8dd72c0",
+     "areas": [
+      "future_of_work",
+      "labour_market"
+     ],
+     "kicker": "AI and work",
+     "headline": "Irish tech union grows five-fold amid AI-driven layoffs",
+     "standfirst": "While Dublin hosted the presidency’s International AI Summit, a Workers’ AI Counter Summit met the weekend before, Politico Europe reports.",
+     "body": [
+      "The Digital and Techworker Alliance, founded in 2023, had around 270 members in its first year and a half and now has more than 1,350, its organiser told the outlet."
+     ],
+     "more": "Irish tech workers unionise as AI-driven layoffs spread (Politico Europe)."
+    }
+   ]
+  },
+  {
+   "id": "policy",
+   "pillar": "policy",
+   "title": "EU policy",
+   "stories": [
+    {
+     "key": "minzatu",
+     "pillar": "policy",
+     "focus": [
+      "policy"
+     ],
+     "priority": 3,
+     "item": "9356f2a16e",
+     "areas": [
+      "inclusion",
+      "labour_market"
+     ],
+     "kicker": "Statement",
+     "headline": "Quality jobs best way out of poverty for those who can work, says Mînzatu",
+     "standfirst": "Ahead of the International Day for the Eradication of Poverty, the Executive Vice-President said one in five Europeans is at risk of poverty and social exclusion.",
+     "body": [
+      "The economy “cannot afford leaving almost 50 million people outside the labour market”, she said, pointing to a first-stage consultation of the social partners, launched in July, on EU action for people facing significant barriers to work."
+     ],
+     "more": "Mînzatu: quality jobs are the best way out of poverty for those who can work."
+    }
+   ]
+  },
+  {
+   "id": "research",
+   "pillar": "research",
+   "title": "Research",
+   "stories": [
+    {
+     "key": "overedu",
+     "pillar": "research",
+     "focus": [
+      "research"
+     ],
+     "priority": 3,
+     "item": "52b718c998",
+     "areas": [
+      "skills_intelligence",
+      "future_of_work"
+     ],
+     "kicker": "New paper · cites Cedefop",
+     "headline": "Is overeducation lower in green industries? It depends on the measure",
+     "standfirst": "Using PIAAC data for seven Central and Eastern European countries and Cedefop’s 2019 framework for green industries.",
+     "body": [
+      "Workers’ own assessments show no difference between green and other industries; the statistical measure finds less overeducation in green industries. The authors urge caution, given the broad definition of green industries."
+     ],
+     "more": "Overeducation in green industries depends on how it is measured (DIEM)."
+    },
+    {
+     "key": "teachers",
+     "pillar": "research",
+     "focus": [
+      "research"
+     ],
+     "priority": 3,
+     "item": "70e1ef0b04",
+     "areas": [
+      "teachers_trainers"
+     ],
+     "kicker": "New paper",
+     "headline": "Resilience buffers burnout among German VET teachers, study finds",
+     "standfirst": "A survey of 1,470 vocational teachers found task scope and complexity to be the most prevalent job demands.",
+     "body": [
+      "Demands were linked to lower well-being and job satisfaction and more burnout; of the resources studied, only resilience moderated the effect on burnout. The authors suggest reducing demands and building resilience in teacher training."
+     ],
+     "more": "German VET teachers: resilience buffers burnout (ERVET)."
+    }
+   ]
+  }
+ ],
+ "lives": {
+  "date": "2026-10-21",
+  "item": "d564f1ce98",
+  "named": [
+   "Khudeija Rafique"
+  ],
+  "headline": "Preston’s AI bootcamp offers young people out of work an apprenticeship",
+  "standfirst": "A three-week pilot for 16- to 24-year-olds not in education, employment or training ends with an offer of AI apprenticeships.",
+  "body": [
+   "In a youth centre opposite Preston bus station, five young people at laptops learn why AI models need clean data. The pilot, open to 70 people, links to apprenticeships with partners including JD Sports, Heinz and Agilysys, in AI marketing or IT helpdesks. Khudeija Rafique, 18, from Burnley, says it would be “really helpful with whatever job I would like to go into”. A 17-year-old says the course changed his opinion of AI. A King’s College London researcher says little is yet known about how AI affects non-graduate work."
+  ]
+ },
+ "question": {
+  "type": "dyk",
+  "item": "b556d5b780"
+ },
+ "diary": {
+  "title": "Diary",
+  "days": [],
+  "more": [],
+  "coming": [
+   {
+    "date": "2026-11-09",
+    "end": "2026-11-10",
+    "item": "c43f73ea73",
+    "url": "https://www.cedefop.europa.eu/en/events/sixth-policy-learning-forum-plf-upskilling-pathways-all-adults",
+    "text": "Policy learning forum on upskilling pathways for all adults",
+    "where": "EESC, Brussels"
+   },
+   {
+    "date": "2026-11-19",
+    "item": "c43f73ea73",
+    "url": "https://www.cedefop.europa.eu/en/events/future-vet",
+    "text": "The future of VET",
+    "where": "Online conference"
+   },
+   {
+    "date": "2026-11-20",
+    "item": "c43f73ea73",
+    "url": "https://www.cedefop.europa.eu/en/events/financial-legislative-arrangements-skills-development",
+    "text": "Financial and legislative arrangements for skills development",
+    "where": "Expert group"
+   },
+   {
+    "date": "2026-11-30",
+    "item": "c43f73ea73",
+    "url": "https://www.cedefop.europa.eu/en/events/modernising-vet-policies-systems-green-digital-economy",
+    "text": "21st Cedefop Brussels Seminar",
+    "where": "With the Irish Presidency · by invitation"
+   }
+  ]
+ }
+}

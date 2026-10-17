@@ -72,14 +72,31 @@ The first version read mostly from the top: institutions, agencies and Cedefop i
 - **`daily/archive.html`** lists every version with its publication time, in Athens time.
 - No. 1 has two versions: v1 (20:34) and v2 (21:27, with "From the field" and "The wider debate").
 
+## Sharper editions (decided 17 October 2026)
+
+- **Budget.** About 12 items a day, a five-minute read. No. 1 version 2 had 37 stories.
+- **Lives.** One human story every day, in its own section, the magenta that used to be People's. The naming exception is in `PEOPLE_AND_PRIVACY.md` §6. The fetcher looks for profiles in the field feeds over 60 days, because these stories don't go stale.
+- **Relevance.** Field reporting must carry a core VET or skills term in its title or summary. The "Cyclades teachers" and "AI misconduct in graduate hiring" stories were judged marginal. The first is folded into a VET-specific Greek story; the second is dropped.
+- **Why it matters.** Under every story the generated line now ends with the Cedefop product the story relates to (`pipeline/daily/hooks.json`). Every link in that table comes from the pool.
+- **The bank and the planner.** The writer fills a story bank (`daily/bank/<week>.json`): short cards with a priority (1–5) and a focus. `pipeline/daily/plan.py` picks each day's items, shares the bank across the days left, never runs a story twice, and never leads with housekeeping (`no_lead`).
+- **Two layouts × rhythm on or off,** compared over Monday 19 to Friday 23 October at `/daily/lab/`:
+  - **Fixed shape:** The one thing · Lives · Five to know · Today's question · Diary · More today (collapsed).
+  - **Sections capped:** the paper's sections, at most two stories each and one for agencies, plus Lives, Data and the Diary.
+  - **Weekday rhythm:** Monday policy and Cedefop, Tuesday research, Wednesday the field, Thursday AI, Friday long reads. On Fridays the Lives story runs at length and opens the paper.
+- **What the lab shows.** Without the rhythm, Monday takes the strongest stories and Friday gets what is left. With it, strong stories spread across the week.
+- **Interactive item.** One a day, in rotation: Monday The number, Tuesday Myth or fact, Wednesday Did you know?, Thursday Insight, Friday Myth or fact.
+- **No. 1 reissued as version 3** in the fixed shape without rhythm. Versions 1 and 2 stay archived.
+
 ## How it works
 
 ```
 python3 -m pipeline.daily.fetch 2026-10-19          # sources → daily/pool/2026-10-19.json (≈30 s)
 python3 -m pipeline.daily.fetch 2026-10-19 --retag  # after editing pipeline/daily/topics.json
-#   write daily/editions/2026-10-19.json            # the writing step: text only, items by id
+#   write daily/bank/2026-10-19.json                # the writing step: short cards, items by id
+python3 -m pipeline.daily.plan 2026-10-19           # → daily/editions/<date>.json + daily/lab/<variant>/<date>/
 python3 -m pipeline.daily.render 2026-10-19         # → daily/2026-10-19/, daily/index.html, archive, about
-python3 -m pipeline.daily.check 2026-10-19          # exit 1 on any failure
+python3 -m pipeline.daily.render --lab              # → the four variants and /daily/lab/
+python3 -m pipeline.daily.check 2026-10-19          # exit 1 on any failure (--lab for the variants)
 ```
 
 - **Generated from data, never written:**

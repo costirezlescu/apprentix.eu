@@ -1,0 +1,287 @@
+{
+ "schema": 2,
+ "layout": "shape",
+ "rhythm": true,
+ "date": "2026-10-22",
+ "number": 4,
+ "pool": "2026-10-19",
+ "built_from": "public sources retrieved on 17 October 2026",
+ "built_on": "2026-10-17",
+ "preview": true,
+ "day_focus": "AI and the future of work",
+ "strip": {
+  "kind": "numbers",
+  "title": "This week in numbers",
+  "items": [
+   {
+    "count": {
+     "source": "openalex_fulltext",
+     "from": "2026-10-11",
+     "to": "2026-10-17"
+    },
+    "label": "research papers mentioning Cedefop",
+    "note": "published 11–17 October · OpenAlex full text"
+   },
+   {
+    "count": {
+     "source": "cellar_recent",
+     "kind": "publication",
+     "from": "2026-09-28",
+     "to": "2026-10-17",
+     "exclude_title": "Grant Award Notice"
+    },
+    "label": "new Cedefop publications catalogued",
+    "note": "28 September – 17 October · EU Publications Office"
+   },
+   {
+    "count_press": {
+     "from": "2026-10-10",
+     "to": "2026-10-17"
+    },
+    "label": "press and field stories on VET and skills",
+    "note": "10–17 October · from the paper’s press feeds"
+   },
+   {
+    "value": {
+     "item": "6516e27cb6",
+     "field": "latest_value",
+     "suffix": "%"
+    },
+    "label": "of 18–24-year-olds left education and training early",
+    "note": "EU-27, 2025 · Eurostat"
+   }
+  ]
+ },
+ "lead": {
+  "key": "unions",
+  "pillar": "debate",
+  "focus": [
+   "ai"
+  ],
+  "priority": 3,
+  "item": "4ec8dd72c0",
+  "areas": [
+   "future_of_work",
+   "labour_market"
+  ],
+  "kicker": "AI and work",
+  "headline": "Irish tech union grows five-fold amid AI-driven layoffs",
+  "standfirst": "While Dublin hosted the presidency’s International AI Summit, a Workers’ AI Counter Summit met the weekend before, Politico Europe reports.",
+  "body": [
+   "The Digital and Techworker Alliance, founded in 2023, had around 270 members in its first year and a half and now has more than 1,350, its organiser told the outlet."
+  ],
+  "more": "Irish tech workers unionise as AI-driven layoffs spread (Politico Europe)."
+ },
+ "five": [
+  {
+   "key": "archive2023",
+   "no_lead": true,
+   "pillar": "cedefop",
+   "focus": [
+    "ai",
+    "long"
+   ],
+   "priority": 2,
+   "item": "9d95859ed7",
+   "areas": [
+    "future_of_work"
+   ],
+   "kicker": "From the archive · 2023",
+   "headline": "From the archive: tracking digital skill needs in online job ads",
+   "standfirst": "A Cedefop policy brief dated 20 October 2023.",
+   "body": [
+    "Using Cedefop analysis of online job advertisements, it showed the demand for digital skills across the EU-27 and argued for faster implementation of digital policy and for up- and reskilling."
+   ],
+   "more": "From the archive (2023): Going digital means skilling for digital."
+  },
+  {
+   "key": "hrai",
+   "pillar": "research",
+   "focus": [
+    "research",
+    "ai"
+   ],
+   "priority": 2,
+   "item": "7984c803bc",
+   "areas": [
+    "future_of_work",
+    "adult_learning"
+   ],
+   "kicker": "New paper",
+   "headline": "HR professionals see AI reshaping their roles more than taking jobs",
+   "standfirst": "Their insecurity is mostly about changing role expectations rather than job loss, and self-directed workplace learning helps them regain agency.",
+   "body": [],
+   "more": "AI and HR professionals: workplace learning as a buffer (Journal of Workplace Learning)."
+  },
+  {
+   "key": "montreal",
+   "no_lead": true,
+   "pillar": "debate",
+   "focus": [
+    "ai"
+   ],
+   "priority": 2,
+   "item": "a039141933",
+   "areas": [
+    "future_of_work",
+    "labour_market"
+   ],
+   "kicker": "AI and young graduates",
+   "headline": "In AI hub Montreal, young graduates weigh chances against fears",
+   "standfirst": "Some students and newcomers expect new opportunities; others fear their skills will soon be outdated, Le Monde reports (subscription).",
+   "body": [],
+   "more": "Montreal’s young graduates and AI (Le Monde, subscription)."
+  },
+  {
+   "key": "vetnet",
+   "no_lead": true,
+   "pillar": "research",
+   "focus": [
+    "research",
+    "ai"
+   ],
+   "priority": 2,
+   "item": "e520359742",
+   "also": [
+    "76a9118752",
+    "4eb3797e7e",
+    "9c2a62b3d7"
+   ],
+   "areas": [
+    "vet_policy",
+    "future_of_work"
+   ],
+   "kicker": "Cited this week",
+   "headline": "Nine VETNET papers from ECER 2026 mention Cedefop",
+   "standfirst": "Published on 13 October in the VETNET Conference Series.",
+   "body": [
+    "They include studies of AI-mediated vocational pedagogy, embodied AI role-play in extended reality for retail apprentices, and an inclusive VET ecosystem."
+   ],
+   "links": [
+    {
+     "item": "e520359742",
+     "text": "AI-mediated vocational pedagogy"
+    },
+    {
+     "item": "76a9118752",
+     "text": "AI role-play for retail apprentices"
+    }
+   ],
+   "more": "Nine VETNET conference papers mention Cedefop."
+  },
+  {
+   "key": "estonia",
+   "pillar": "cedefop",
+   "focus": [
+    "cedefop"
+   ],
+   "priority": 3,
+   "item": "6c8e0d34ac",
+   "areas": [
+    "skills_intelligence"
+   ],
+   "kicker": "New publication",
+   "headline": "Policy pointers for Estonia’s skills forecasting system published",
+   "standfirst": "The report, dated 13 October, comes from a project run with Estonia’s Ministry of Education and Research and the Commission.",
+   "body": [
+    "Based on desk research, consultations, peer learning and examples from other countries, it sets strategic directions for OSKA and Estonia’s wider skills governance, “intentionally indicative rather than prescriptive”, and may inspire other countries with similar reform plans."
+   ],
+   "more": "Policy pointers for Estonia’s skills anticipation system (Cedefop)."
+  }
+ ],
+ "more": [
+  {
+   "key": "minzatu",
+   "pillar": "policy",
+   "focus": [
+    "policy"
+   ],
+   "priority": 3,
+   "item": "9356f2a16e",
+   "areas": [
+    "inclusion",
+    "labour_market"
+   ],
+   "kicker": "Statement",
+   "headline": "Quality jobs best way out of poverty for those who can work, says Mînzatu",
+   "standfirst": "Ahead of the International Day for the Eradication of Poverty, the Executive Vice-President said one in five Europeans is at risk of poverty and social exclusion.",
+   "body": [
+    "The economy “cannot afford leaving almost 50 million people outside the labour market”, she said, pointing to a first-stage consultation of the social partners, launched in July, on EU action for people facing significant barriers to work."
+   ],
+   "more": "Mînzatu: quality jobs are the best way out of poverty for those who can work."
+  },
+  {
+   "key": "archive2013",
+   "no_lead": true,
+   "pillar": "cedefop",
+   "focus": [
+    "long"
+   ],
+   "priority": 2,
+   "item": "529da1a6fe",
+   "areas": [
+    "qualifications"
+   ],
+   "kicker": "From the archive · 2013",
+   "headline": "From the archive: how qualifications govern access to occupations",
+   "standfirst": "A Cedefop study dated 18 October 2013.",
+   "body": [
+    "Qualifications define what a person needs to know and be able to do to carry out an activity on the labour market. Health and safety, consumer protection and quality assurance are quoted to justify them, but they may also defend the private interests of professional groups, the study notes."
+   ],
+   "more": "From the archive (2013): the role of qualifications in governing occupations."
+  }
+ ],
+ "lives": {
+  "date": "2026-10-22",
+  "item": "6ac36d9000",
+  "named": [
+   "Jakob Distler",
+   "Tim Arnold"
+  ],
+  "headline": "German concrete builders win world gold after training around their jobs",
+  "standfirst": "Jakob Distler and Tim Arnold beat eight teams in concrete construction at WorldSkills 2026 in Shanghai.",
+  "body": [
+   "Four days at their physical limit, they told the Deutsche Handwerks Zeitung; when the concrete for a staircase came out far too liquid, they formed a lid over the step and still finished on time. They trained from April, every two to three weeks with their national trainer in Nördlingen and on evenings at home, with their bosses giving them the time. Their Chinese rivals, they observed, train for years. Now, they say, they pass their enthusiasm for the trade on to the new apprentices."
+  ]
+ },
+ "question": {
+  "type": "insight",
+  "item": "44eba21990"
+ },
+ "diary": {
+  "title": "Diary",
+  "days": [],
+  "more": [],
+  "coming": [
+   {
+    "date": "2026-11-09",
+    "end": "2026-11-10",
+    "item": "c43f73ea73",
+    "url": "https://www.cedefop.europa.eu/en/events/sixth-policy-learning-forum-plf-upskilling-pathways-all-adults",
+    "text": "Policy learning forum on upskilling pathways for all adults",
+    "where": "EESC, Brussels"
+   },
+   {
+    "date": "2026-11-19",
+    "item": "c43f73ea73",
+    "url": "https://www.cedefop.europa.eu/en/events/future-vet",
+    "text": "The future of VET",
+    "where": "Online conference"
+   },
+   {
+    "date": "2026-11-20",
+    "item": "c43f73ea73",
+    "url": "https://www.cedefop.europa.eu/en/events/financial-legislative-arrangements-skills-development",
+    "text": "Financial and legislative arrangements for skills development",
+    "where": "Expert group"
+   },
+   {
+    "date": "2026-11-30",
+    "item": "c43f73ea73",
+    "url": "https://www.cedefop.europa.eu/en/events/modernising-vet-policies-systems-green-digital-economy",
+    "text": "21st Cedefop Brussels Seminar",
+    "where": "With the Irish Presidency · by invitation"
+   }
+  ]
+ }
+}

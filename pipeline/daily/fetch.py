@@ -580,10 +580,18 @@ PRESS_PAGES = 10          # article pages read per feed, at most (politeness)
 EDU = {"vet_policy", "apprenticeships", "adult_learning", "qualifications", "skills_intelligence"}
 
 
-def press_relevant(areas: list[str]) -> bool:
-    """Press is noisy: keep an item only if it touches education and training directly,
-    or AI/technology together with work and jobs."""
+LIVES_DAYS = 60           # human stories do not go stale
+CORE = {"vet_policy", "apprenticeships", "adult_learning", "qualifications"}
+PROFILE = re.compile(r"(\b\d{2}\b[- ]?(jährig|year|ans\b|años|anni|χρον|vuotias|år\b|ani\b))|(-jährige)|"
+                     r"(\bwho\b.*\b(apprentice|retrain))|(weltmeister|world champion|champion du monde|campeón)", re.I)
+
+
+def press_relevant(areas: list[str], group: str = "press") -> bool:
+    """Press is noisy. Field reporting must touch education and training directly (a core
+    VET or skills term in the title or summary); the debate may also be AI with work and jobs."""
     a = set(areas)
+    if group == "field":
+        return bool(a & EDU)
     return bool(a & EDU) or {"future_of_work", "labour_market"} <= a
 
 
@@ -629,19 +637,24 @@ def _press_feed(f: dict, lo: dt.date, end: dt.date) -> list[dict]:
         STATUS[f["id"]] = f"failed: not XML ({e})"
         return []
     out, pages = [], 0
+    lives_lo = end - dt.timedelta(days=LIVES_DAYS)
     for x in entries:
-        if not x["link"] or not within(x["date"], lo, end):
+        if not x["link"] or not within(x["date"], lives_lo, end):
             continue
         areas, _ = tag(x["title"], _clean(x["summary"]))
-        if not press_relevant(areas):
+        head = x["title"] + " " + _clean(x["summary"])
+        lives = f["group"] in ("field", "press") and bool(set(areas) & CORE) and bool(PROFILE.search(head))
+        if not lives and (not within(x["date"], lo, end) or not press_relevant(areas, f["group"])):
             continue
         text = ""
         if pages < PRESS_PAGES:
             text, pages = _page_text(f["id"], x["link"]), pages + 1
-        it = item(f["id"], "press" if f["group"] != "field" else "4", f["group"], x["title"], x["link"],
-                  x["date"], x["summary"], text or x["summary"], outlet=f["name"], country=f["country"],
-                  language=f["lang"], group=f["group"])
-        if press_relevant(it["work_areas"]):
+        if lives:
+            text = _page_text(f["id"], x["link"])
+        it = item(f["id"], "press" if f["group"] != "field" else "4", "lives" if lives else f["group"], x["title"],
+                  x["link"], x["date"], x["summary"], text or x["summary"], outlet=f["name"], country=f["country"],
+                  language=f["lang"], group=f["group"], lives_candidate=lives or None)
+        if lives or press_relevant(it["work_areas"], f["group"]):
             out.append(it)
     return out
 
@@ -712,6 +725,10 @@ def apprentix() -> list[dict]:
         out.append(item("apprentix", "data", "indicator", ind["title"],
                         f"{SITE}pages/indicators.html?id={ind['id']}", None, ind.get("description", "")[:400],
                         indicator=ind["id"], publisher=(ind.get("provenance") or {}).get("publisher")))
+    for meta_path in sorted(pub.glob("*/meta.json")):
+        src = json.loads(meta_path.read_text("utf-8")).get("source") or {}
+        if src.get("url"):
+            out.append(item("apprentix", "data", "source_page", src.get("name") or src["url"], src["url"], None))
     duel = rd("duel/countries.json")
     codes = sorted(duel.get("countries", duel).keys()) if isinstance(duel, dict) else []
     out.append(item("apprentix", "data", "tool", "Country vs country", f"{SITE}pages/duel.html",

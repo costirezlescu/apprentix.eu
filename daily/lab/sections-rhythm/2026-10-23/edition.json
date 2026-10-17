@@ -1,0 +1,310 @@
+{
+ "schema": 2,
+ "layout": "sections",
+ "rhythm": true,
+ "date": "2026-10-23",
+ "number": 5,
+ "pool": "2026-10-19",
+ "built_from": "public sources retrieved on 17 October 2026",
+ "built_on": "2026-10-17",
+ "preview": true,
+ "day_focus": "Long reads",
+ "strip": {
+  "kind": "numbers",
+  "title": "This week in numbers",
+  "items": [
+   {
+    "count": {
+     "source": "openalex_fulltext",
+     "from": "2026-10-11",
+     "to": "2026-10-17"
+    },
+    "label": "research papers mentioning Cedefop",
+    "note": "published 11–17 October · OpenAlex full text"
+   },
+   {
+    "count": {
+     "source": "cellar_recent",
+     "kind": "publication",
+     "from": "2026-09-28",
+     "to": "2026-10-17",
+     "exclude_title": "Grant Award Notice"
+    },
+    "label": "new Cedefop publications catalogued",
+    "note": "28 September – 17 October · EU Publications Office"
+   },
+   {
+    "count_press": {
+     "from": "2026-10-10",
+     "to": "2026-10-17"
+    },
+    "label": "press and field stories on VET and skills",
+    "note": "10–17 October · from the paper’s press feeds"
+   },
+   {
+    "value": {
+     "item": "6516e27cb6",
+     "field": "latest_value",
+     "suffix": "%"
+    },
+    "label": "of 18–24-year-olds left education and training early",
+    "note": "EU-27, 2025 · Eurostat"
+   }
+  ]
+ },
+ "lead": {
+  "key": "prison",
+  "pillar": "research",
+  "focus": [
+   "research",
+   "long"
+  ],
+  "priority": 2,
+  "item": "af7f4864be",
+  "areas": [
+   "adult_learning"
+  ],
+  "kicker": "New paper",
+  "headline": "Teaching in Swedish prisons is a practice of its own, study finds",
+  "standfirst": "Interviews with 14 adult educators in Swedish prisons show a pedagogy built on trust, responsibility and empowerment.",
+  "body": [
+   "It is negotiated between care and control, autonomy and coercion, trust and vigilance, the authors write."
+  ],
+  "more": "Adult education in Swedish prisons (International Journal of Lifelong Education)."
+ },
+ "sections": [
+  {
+   "id": "cedefop",
+   "pillar": "cedefop",
+   "title": "At Cedefop",
+   "stories": [
+    {
+     "key": "ireland",
+     "no_lead": true,
+     "pillar": "cedefop",
+     "focus": [
+      "cedefop"
+     ],
+     "priority": 2,
+     "item": "5e8243dc35",
+     "areas": [
+      "apprenticeships",
+      "vet_policy"
+     ],
+     "kicker": "New publication",
+     "headline": "Cedefop describes Ireland’s further education and training system",
+     "standfirst": "A new short description covers VET for learners aged 16+ and adults, delivered mainly through 16 education and training boards.",
+     "body": [
+      "It highlights the dual apprenticeship model, tertiary degrees linking further and higher education, and microqualifications under the Skills to Advance initiative."
+     ],
+     "links": [
+      {
+       "url": "https://www.cedefop.europa.eu/en/publications/3202",
+       "text": "VET in Ireland"
+      },
+      {
+       "url": "https://www.cedefop.europa.eu/en/publications/8173",
+       "text": "Spotlight on VET Ireland"
+      }
+     ],
+     "more": "VET in Ireland: Cedefop short description and Spotlight."
+    }
+   ]
+  },
+  {
+   "id": "field",
+   "pillar": "field",
+   "title": "From the field",
+   "stories": [
+    {
+     "key": "pulse",
+     "no_lead": true,
+     "pillar": "field",
+     "focus": [
+      "field",
+      "policy"
+     ],
+     "priority": 2,
+     "item": "037125a0df",
+     "also": [
+      "404e42c648",
+      "f27b970912",
+      "a2874a1dbc",
+      "e24eac10c6"
+     ],
+     "areas": [
+      "vet_policy"
+     ],
+     "kicker": "Timeline of VET policies",
+     "headline": "New apprenticeship policies in Cedefop’s 2025 timeline update",
+     "standfirst": "First reported in the 2025 update by Cedefop and ReferNet, as summarised on Apprentix.",
+     "body": [
+      "They include Denmark’s substantial reinforcement of VET and mandatory work experience, Greece’s 2025–2027 strategic plan for VET, lifelong learning and youth, Slovakia’s tertiary VET reinforcement and Slovenia’s programme document for development planning until 2033."
+     ],
+     "links": [
+      {
+       "item": "037125a0df",
+       "text": "Greece’s strategic plan"
+      },
+      {
+       "item": "404e42c648",
+       "text": "Denmark"
+      }
+     ],
+     "more": "New apprenticeship policies in Cedefop’s 2025 timeline update."
+    },
+    {
+     "key": "vienna",
+     "pillar": "field",
+     "focus": [
+      "field"
+     ],
+     "priority": 2,
+     "item": "9a56ce1f5f",
+     "areas": [
+      "apprenticeships"
+     ],
+     "kicker": "Austria",
+     "headline": "Vienna debates how young people find a way into apprenticeships",
+     "standfirst": "At the Tag der Wiener Jugend, experts discussed the difficult search for apprenticeships and the falling number of training companies, Der Standard reports.",
+     "body": [
+      "The head of Austria’s public employment service, AMS, told the event he is interested in applicants who have changed course."
+     ],
+     "more": "Vienna: experts on young people’s hard search for apprenticeships (Der Standard)."
+    }
+   ]
+  },
+  {
+   "id": "policy",
+   "pillar": "policy",
+   "title": "EU policy",
+   "stories": [
+    {
+     "key": "tripartite",
+     "no_lead": true,
+     "pillar": "policy",
+     "focus": [
+      "policy"
+     ],
+     "priority": 2,
+     "item": "0fd66ac91c",
+     "areas": [
+      "labour_market"
+     ],
+     "kicker": "Social dialogue",
+     "headline": "EU leaders and social partners meet at the Tripartite Social Summit",
+     "standfirst": "The twice-yearly summit brought EU leaders and social partners together in Brussels on 14 October.",
+     "body": [],
+     "more": "Tripartite Social Summit, 14 October: EU leaders and social partners."
+    }
+   ]
+  },
+  {
+   "id": "research",
+   "pillar": "research",
+   "title": "Research",
+   "stories": [
+    {
+     "key": "overedu",
+     "pillar": "research",
+     "focus": [
+      "research"
+     ],
+     "priority": 3,
+     "item": "52b718c998",
+     "areas": [
+      "skills_intelligence",
+      "future_of_work"
+     ],
+     "kicker": "New paper · cites Cedefop",
+     "headline": "Is overeducation lower in green industries? It depends on the measure",
+     "standfirst": "Using PIAAC data for seven Central and Eastern European countries and Cedefop’s 2019 framework for green industries.",
+     "body": [
+      "Workers’ own assessments show no difference between green and other industries; the statistical measure finds less overeducation in green industries. The authors urge caution, given the broad definition of green industries."
+     ],
+     "more": "Overeducation in green industries depends on how it is measured (DIEM)."
+    },
+    {
+     "key": "teachers",
+     "pillar": "research",
+     "focus": [
+      "research"
+     ],
+     "priority": 3,
+     "item": "70e1ef0b04",
+     "areas": [
+      "teachers_trainers"
+     ],
+     "kicker": "New paper",
+     "headline": "Resilience buffers burnout among German VET teachers, study finds",
+     "standfirst": "A survey of 1,470 vocational teachers found task scope and complexity to be the most prevalent job demands.",
+     "body": [
+      "Demands were linked to lower well-being and job satisfaction and more burnout; of the resources studied, only resilience moderated the effect on burnout. The authors suggest reducing demands and building resilience in teacher training."
+     ],
+     "more": "German VET teachers: resilience buffers burnout (ERVET)."
+    }
+   ]
+  }
+ ],
+ "lives_first": true,
+ "lives": {
+  "date": "2026-10-23",
+  "item": "167b265af4",
+  "named": [
+   "Tobias Kelz"
+  ],
+  "headline": "What world gold cost a young cabinetmaker",
+  "standfirst": "Tobias Kelz won WorldSkills gold in Shanghai by a single point, finishing his piece in the last second.",
+  "body": [
+   "He had 22 hours to build a piece of furniture he first saw on day one, with solid wood, panels, veneer and doors to hang, and made two careless mistakes along the way; his trainer, whom he could only consult in breaks, found a way to recover. In the evenings they negotiated every minute of the next day’s time.",
+   "The road began after his journeyman’s exam, more than two years earlier: the chamber, Bavarian and national competitions, then a year of training with the other national winners before the trainers picked two cabinetmakers for Shanghai. In the last six months there was no real free time: a week a month at the wood technical school in Bad Wildungen, work by day, the workshop after hours. Some days, he says, he asked himself why he was doing it; his employer accepted many absences.",
+   "What he takes away: new techniques, more speed, and more calm. He would do it again, he says, but not a second time."
+  ],
+  "long": [
+   "He had 22 hours to build a piece of furniture he first saw on day one, with solid wood, panels, veneer and doors to hang, and made two careless mistakes along the way; his trainer, whom he could only consult in breaks, found a way to recover. In the evenings they negotiated every minute of the next day’s time.",
+   "The road began after his journeyman’s exam, more than two years earlier: the chamber, Bavarian and national competitions, then a year of training with the other national winners before the trainers picked two cabinetmakers for Shanghai. In the last six months there was no real free time: a week a month at the wood technical school in Bad Wildungen, work by day, the workshop after hours. Some days, he says, he asked himself why he was doing it; his employer accepted many absences.",
+   "What he takes away: new techniques, more speed, and more calm. He would do it again, he says, but not a second time."
+  ],
+  "is_long": true
+ },
+ "question": {
+  "type": "myth",
+  "item": "36691751ce"
+ },
+ "diary": {
+  "title": "Diary",
+  "days": [],
+  "more": [],
+  "coming": [
+   {
+    "date": "2026-11-09",
+    "end": "2026-11-10",
+    "item": "c43f73ea73",
+    "url": "https://www.cedefop.europa.eu/en/events/sixth-policy-learning-forum-plf-upskilling-pathways-all-adults",
+    "text": "Policy learning forum on upskilling pathways for all adults",
+    "where": "EESC, Brussels"
+   },
+   {
+    "date": "2026-11-19",
+    "item": "c43f73ea73",
+    "url": "https://www.cedefop.europa.eu/en/events/future-vet",
+    "text": "The future of VET",
+    "where": "Online conference"
+   },
+   {
+    "date": "2026-11-20",
+    "item": "c43f73ea73",
+    "url": "https://www.cedefop.europa.eu/en/events/financial-legislative-arrangements-skills-development",
+    "text": "Financial and legislative arrangements for skills development",
+    "where": "Expert group"
+   },
+   {
+    "date": "2026-11-30",
+    "item": "c43f73ea73",
+    "url": "https://www.cedefop.europa.eu/en/events/modernising-vet-policies-systems-green-digital-economy",
+    "text": "21st Cedefop Brussels Seminar",
+    "where": "With the Irish Presidency · by invitation"
+   }
+  ]
+ }
+}

@@ -1,0 +1,291 @@
+{
+ "schema": 2,
+ "layout": "shape",
+ "rhythm": true,
+ "date": "2026-10-20",
+ "number": 2,
+ "pool": "2026-10-19",
+ "built_from": "public sources retrieved on 17 October 2026",
+ "built_on": "2026-10-17",
+ "preview": true,
+ "day_focus": "Research day",
+ "strip": {
+  "kind": "numbers",
+  "title": "This week in numbers",
+  "items": [
+   {
+    "count": {
+     "source": "openalex_fulltext",
+     "from": "2026-10-11",
+     "to": "2026-10-17"
+    },
+    "label": "research papers mentioning Cedefop",
+    "note": "published 11–17 October · OpenAlex full text"
+   },
+   {
+    "count": {
+     "source": "cellar_recent",
+     "kind": "publication",
+     "from": "2026-09-28",
+     "to": "2026-10-17",
+     "exclude_title": "Grant Award Notice"
+    },
+    "label": "new Cedefop publications catalogued",
+    "note": "28 September – 17 October · EU Publications Office"
+   },
+   {
+    "count_press": {
+     "from": "2026-10-10",
+     "to": "2026-10-17"
+    },
+    "label": "press and field stories on VET and skills",
+    "note": "10–17 October · from the paper’s press feeds"
+   },
+   {
+    "value": {
+     "item": "6516e27cb6",
+     "field": "latest_value",
+     "suffix": "%"
+    },
+    "label": "of 18–24-year-olds left education and training early",
+    "note": "EU-27, 2025 · Eurostat"
+   }
+  ]
+ },
+ "lead": {
+  "key": "jvet",
+  "pillar": "research",
+  "focus": [
+   "research",
+   "long"
+  ],
+  "priority": 4,
+  "item": "8612a5359e",
+  "also": [
+   "af10c2fcf1",
+   "6a5bf13457"
+  ],
+  "areas": [
+   "vet_policy"
+  ],
+  "kicker": "Debate",
+  "headline": "Two VET scholars debate the capabilities approach in JVET’s 250th issue",
+  "standfirst": "Stephanie Allais argues the approach offers VET research little; Leesa Wheelahan argues it has value within broader theories.",
+  "body": [
+   "Allais says its emphasis on human flourishing is important but not new, that it rests on individualism, and that its outcomes-focused stance “gives weak VET systems new ways to fail”. Wheelahan situates it among critical realism, Bernsteinian sociology and Marxism. Allais replies that “compatibility is not a contribution”."
+  ],
+  "links": [
+   {
+    "item": "af10c2fcf1",
+    "text": "Wheelahan"
+   },
+   {
+    "item": "6a5bf13457",
+    "text": "Allais’s reply"
+   }
+  ],
+  "more": "Is the capabilities approach useful for VET research? A JVET debate."
+ },
+ "five": [
+  {
+   "key": "microfirms",
+   "pillar": "research",
+   "focus": [
+    "research"
+   ],
+   "priority": 4,
+   "item": "3afb931541",
+   "areas": [
+    "adult_learning"
+   ],
+   "kicker": "New paper · cites Cedefop",
+   "headline": "Training pays off in micro-firms too, Research Policy study finds",
+   "standfirst": "Using administrative data on training expenses in micro-firms in three Italian regions, the authors find a positive and sizable effect of training on productivity.",
+   "body": [
+    "Firms with fewer than 10 employees are usually lumped in with larger SMEs, the authors note, and some argue training could even hurt their productivity. The effect held across robustness checks and heterogeneity analysis. The paper mentions Cedefop in its full text."
+   ],
+   "more": "Training raises productivity in micro-firms (Research Policy)."
+  },
+  {
+   "key": "mismatch",
+   "pillar": "research",
+   "focus": [
+    "research"
+   ],
+   "priority": 4,
+   "item": "20c8546042",
+   "areas": [
+    "skills_intelligence"
+   ],
+   "kicker": "New paper",
+   "headline": "Double mismatch hits graduates hardest, Norwegian survey study finds",
+   "standfirst": "In the Norwegian Graduate Survey, 90% of those with horizontal mismatch were also overeducated.",
+   "body": [
+    "Studying one form of mismatch without the other overstates its effect: the link between horizontal mismatch and job satisfaction falls by 15% once overeducation is controlled for, and the link between overeducation and satisfaction by 45%. For graduates facing both, the negative effect exceeds that of either alone."
+   ],
+   "more": "Double mismatch: horizontal mismatch and overeducation together hit hardest (Norway)."
+  },
+  {
+   "key": "swiss",
+   "pillar": "research",
+   "focus": [
+    "research",
+    "field"
+   ],
+   "priority": 4,
+   "item": "e305fe64ff",
+   "areas": [
+    "apprenticeships",
+    "teachers_trainers"
+   ],
+   "kicker": "New paper",
+   "headline": "Swiss apprentices and trainers saw pandemic support differently",
+   "standfirst": "A mixed-methods study combined a survey of 1,380 vocational trainers with 16 focus groups involving 119 apprentices.",
+   "body": [
+    "Trainers tended to report that workplace support was largely maintained. Apprentices described it as less spontaneous and less consistently accessible, and in firms with more workload more often reported limited guidance, feedback and emotional support."
+   ],
+   "more": "Swiss apprentices and trainers saw workplace support differently in the pandemic."
+  },
+  {
+   "key": "carbon",
+   "pillar": "debate",
+   "focus": [
+    "research",
+    "long"
+   ],
+   "priority": 3,
+   "item": "89016aba30",
+   "areas": [
+    "future_of_work",
+    "labour_market"
+   ],
+   "kicker": "Green transition",
+   "headline": "Losing a job in a carbon-intensive sector costs more, German data show",
+   "standfirst": "Displaced workers from high-carbon sectors face larger earnings and wage losses than others, a VoxEU column finds from administrative data.",
+   "body": [
+    "These sectors are regionally concentrated and involve specific occupations and tasks with high firm-wage premia, the authors write, which narrows workers’ options for jobs with similar skills and pay."
+   ],
+   "more": "Green transition: job loss costs more in carbon-intensive sectors (VoxEU)."
+  },
+  {
+   "key": "overedu",
+   "pillar": "research",
+   "focus": [
+    "research"
+   ],
+   "priority": 3,
+   "item": "52b718c998",
+   "areas": [
+    "skills_intelligence",
+    "future_of_work"
+   ],
+   "kicker": "New paper · cites Cedefop",
+   "headline": "Is overeducation lower in green industries? It depends on the measure",
+   "standfirst": "Using PIAAC data for seven Central and Eastern European countries and Cedefop’s 2019 framework for green industries.",
+   "body": [
+    "Workers’ own assessments show no difference between green and other industries; the statistical measure finds less overeducation in green industries. The authors urge caution, given the broad definition of green industries."
+   ],
+   "more": "Overeducation in green industries depends on how it is measured (DIEM)."
+  }
+ ],
+ "more": [
+  {
+   "key": "teachers",
+   "pillar": "research",
+   "focus": [
+    "research"
+   ],
+   "priority": 3,
+   "item": "70e1ef0b04",
+   "areas": [
+    "teachers_trainers"
+   ],
+   "kicker": "New paper",
+   "headline": "Resilience buffers burnout among German VET teachers, study finds",
+   "standfirst": "A survey of 1,470 vocational teachers found task scope and complexity to be the most prevalent job demands.",
+   "body": [
+    "Demands were linked to lower well-being and job satisfaction and more burnout; of the resources studied, only resilience moderated the effect on burnout. The authors suggest reducing demands and building resilience in teacher training."
+   ],
+   "more": "German VET teachers: resilience buffers burnout (ERVET)."
+  },
+  {
+   "key": "aimonitor",
+   "pillar": "debate",
+   "focus": [
+    "ai",
+    "long"
+   ],
+   "priority": 5,
+   "item": "9ccc86464c",
+   "areas": [
+    "future_of_work",
+    "labour_market"
+   ],
+   "kicker": "AI and work",
+   "headline": "The EU should track AI’s impact on jobs, argues a Social Europe piece",
+   "standfirst": "Drawing on a June workshop of the European Policy Centre and the Open Markets Institute, it calls for systematic, harmonised EU monitoring of AI’s labour-market impact.",
+   "body": [
+    "Immediate job displacement is not yet visible in aggregate data, it notes, and a job’s estimated AI exposure is often treated as a proxy for displacement risk. The Commission has committed to a high-level expert group tasked with identifying “enhanced analytical tools for monitoring, early warning, foresight and anticipation”, the kind of evidence Cedefop’s skills intelligence produces."
+   ],
+   "links": [
+    {
+     "item": "9ccc86464c",
+     "text": "Social Europe"
+    }
+   ],
+   "more": "Why the EU needs to track AI’s impact on jobs (Social Europe)."
+  }
+ ],
+ "lives": {
+  "date": "2026-10-20",
+  "item": "c10fecd9a6",
+  "named": [
+   "Mathilde Ouguel"
+  ],
+  "headline": "A class for teenagers left without a school place: one teacher’s diary",
+  "standfirst": "In a vocational lycée in Seine-Saint-Denis, a history and geography teacher is starting a class for students who left lower secondary with nowhere to go.",
+  "body": [
+   "On 1 September the first names arrived, and worried families came early to the interviews. Mathilde Ouguel’s class takes at most 30 students, with a school day from 10 in the morning, core lessons before lunch, workshops after and six to eight weeks of placements. On the first morning everyone was on time. Asked what they had understood of the project, one student said the teachers believe in them and want to get them out of where they are. On 11 September, 13 more students arrived."
+  ]
+ },
+ "question": {
+  "type": "myth",
+  "item": "1ac26a1e06"
+ },
+ "diary": {
+  "title": "Diary",
+  "days": [],
+  "more": [],
+  "coming": [
+   {
+    "date": "2026-11-09",
+    "end": "2026-11-10",
+    "item": "c43f73ea73",
+    "url": "https://www.cedefop.europa.eu/en/events/sixth-policy-learning-forum-plf-upskilling-pathways-all-adults",
+    "text": "Policy learning forum on upskilling pathways for all adults",
+    "where": "EESC, Brussels"
+   },
+   {
+    "date": "2026-11-19",
+    "item": "c43f73ea73",
+    "url": "https://www.cedefop.europa.eu/en/events/future-vet",
+    "text": "The future of VET",
+    "where": "Online conference"
+   },
+   {
+    "date": "2026-11-20",
+    "item": "c43f73ea73",
+    "url": "https://www.cedefop.europa.eu/en/events/financial-legislative-arrangements-skills-development",
+    "text": "Financial and legislative arrangements for skills development",
+    "where": "Expert group"
+   },
+   {
+    "date": "2026-11-30",
+    "item": "c43f73ea73",
+    "url": "https://www.cedefop.europa.eu/en/events/modernising-vet-policies-systems-green-digital-economy",
+    "text": "21st Cedefop Brussels Seminar",
+    "where": "With the Irish Presidency · by invitation"
+   }
+  ]
+ }
+}

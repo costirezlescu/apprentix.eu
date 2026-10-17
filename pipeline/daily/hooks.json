@@ -1,0 +1,45 @@
+{
+ "_note": "Work area → the Cedefop product a story's line points to ('why it matters'). URLs are taken from Cedefop's own newsletter or Apprentix's source metadata, so they are in the pool; check.py verifies them.",
+ "hooks": {
+  "apprenticeships": {
+   "name": "European database on apprenticeship schemes",
+   "url": "https://www.cedefop.europa.eu/en/tools/apprenticeship-schemes"
+  },
+  "vet_policy": {
+   "name": "Timeline of VET policies in Europe",
+   "url": "https://www.cedefop.europa.eu/en/tools/timeline-vet-policies-europe"
+  },
+  "skills_intelligence": {
+   "name": "Skills intelligence",
+   "url": "https://www.cedefop.europa.eu/en/tools/skills-intelligence"
+  },
+  "inclusion": {
+   "name": "VET toolkit for tackling early leaving",
+   "url": "http://www.cedefop.europa.eu/TEL-toolkit"
+  },
+  "adult_learning": {
+   "name": "Policy learning forum on upskilling pathways for all adults",
+   "url": "https://www.cedefop.europa.eu/en/events/sixth-policy-learning-forum-plf-upskilling-pathways-all-adults"
+  },
+  "qualifications": {
+   "name": "Validation of non-formal and informal learning",
+   "url": "https://www.cedefop.europa.eu/en/projects/validation-non-formal-informal-learning"
+  },
+  "teachers_trainers": {
+   "name": "VET excellence and inclusion for the 21st century",
+   "url": "https://www.cedefop.europa.eu/en/projects/vet-excellence-and-inclusion-21st-century"
+  },
+  "future_of_work": {
+   "name": "AI futures of work",
+   "url": "http://www.cedefop.europa.eu/en/events-and-projects/projects/digitalisation-and-future-work"
+  },
+  "labour_market": {
+   "name": "Skills forecast",
+   "url": "https://www.cedefop.europa.eu/en/tools/skills-forecast"
+  },
+  "governance": {
+   "name": "About Cedefop",
+   "url": "https://www.cedefop.europa.eu/en/about-cedefop"
+  }
+ }
+}
