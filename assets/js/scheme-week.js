@@ -6,7 +6,7 @@
 
    Usage: mountSchemeOfWeek(document.getElementById('scheme-week')) */
 
-import { loadDataset, url } from './data.js?v=c969d87b';
+import { loadDataset, url } from './data.js?v=62696cb2';
 
 const WEEK = 7 * 864e5;
 const MONDAY0 = Date.UTC(2024, 0, 1);   // a Monday: week 0 of the rotation

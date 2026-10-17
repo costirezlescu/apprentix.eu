@@ -1,7 +1,7 @@
 /* Apprentix — draws one insight's chart (data/published/insights/insights.json item)
    into a host element. Shared by the Insights page and the embeddable chart page. */
 
-import { formatter, barChart, lineChart, lineLegend, scatterChart, pairedBars } from './charts.js?v=c969d87b';
+import { formatter, barChart, lineChart, lineLegend, scatterChart, pairedBars } from './charts.js?v=62696cb2';
 
 const SERIES = ['--series-1', '--series-2', '--series-3', '--series-4'];
 
