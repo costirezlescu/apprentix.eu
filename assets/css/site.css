@@ -2510,3 +2510,111 @@ body.embed { background: var(--surface); margin: 0; }
   .st-js .st-step { min-height: 80vh; align-items: flex-end; }
   .st-js .st-step p { opacity: 1; }
 }
+
+/* ---------------------------------------------------------------- Static charts (pipeline/static_charts.py) */
+.sc-fig { margin: 0 0 16px; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; min-width: 0; }
+.sc-scroll { overflow-x: auto; }
+.sc { display: block; width: 100%; height: auto; }
+.sc text { font-family: var(--body); }
+.sc-cap { margin: 8px 0 0; font-size: .76rem; color: var(--muted); }
+.sc-grid { stroke: var(--line); }
+.sc-ax { font-size: 11px; fill: var(--faint); }
+.sc-lab { font-size: 12px; fill: var(--ink); }
+.sc-lab.on { font-weight: 700; fill: var(--accent-ink); }
+.sc-bar { fill: var(--accent); opacity: .78; }
+.sc-bar.on { opacity: 1; fill: var(--amber); }
+.sc-val { font-size: 11px; fill: var(--muted); font-variant-numeric: tabular-nums; }
+.sc-eu { stroke: var(--ink); stroke-width: 1.5; stroke-dasharray: 3 3; }
+.sc-eu-lab { font-size: 11px; font-weight: 700; fill: var(--ink); }
+.sc-table-fold { margin: 4px 0 0; }
+.sc-table-fold > summary { cursor: pointer; color: var(--accent-ink); font-weight: 500; font-size: .9rem; margin-bottom: 10px; }
+
+.sc-sms { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(148px, 1fr)); gap: 8px; }
+.sc-sm { border: 1px solid var(--line); border-radius: 9px; padding: 7px 9px 5px; min-width: 0; }
+.sc-sm-h, .sc-sm-f { display: flex; justify-content: space-between; gap: 6px; font-size: .76rem; }
+.sc-sm-h span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.sc-sm-h b { font-variant-numeric: tabular-nums; }
+.sc-sm-f { font-family: var(--mono); font-size: 10px; color: var(--faint); }
+.sc-sm-f .up { color: var(--accent-ink); } .sc-sm-f .down { color: var(--amber); }
+.sc-line { fill: none; stroke: var(--accent); stroke-width: 2; stroke-linejoin: round; stroke-linecap: round; }
+.sc-eu-line { fill: none; stroke: var(--line-strong); stroke-width: 1.5; }
+.sc-dot { fill: var(--accent); }
+
+.sc-tilemaps { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 16px; margin: 0 0 16px; }
+.sc-tilebox { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; min-width: 0; }
+.sc-tile-h { margin: 0 0 8px; font-weight: 700; font-size: .92rem; }
+.sc-tiles { max-width: 460px; }
+.sc-tile.none { fill: var(--sunken); }
+.sc-tile.s1 { fill: color-mix(in oklab, var(--accent) 16%, var(--surface)); }
+.sc-tile.s2 { fill: color-mix(in oklab, var(--accent) 34%, var(--surface)); }
+.sc-tile.s3 { fill: color-mix(in oklab, var(--accent) 52%, var(--surface)); }
+.sc-tile.s4 { fill: color-mix(in oklab, var(--accent) 72%, var(--surface)); }
+.sc-tile.s5 { fill: var(--accent); }
+.sc-tiles a:hover .sc-tile, .sc-tiles a:focus .sc-tile { stroke: var(--ink); stroke-width: 2; }
+.sc-tile-t { font-size: 11px; font-weight: 700; fill: var(--ink); pointer-events: none; }
+.sc-tile-t.none { fill: var(--faint); font-weight: 500; }
+.sc-tile-t.s4, .sc-tile-t.s5 { fill: var(--on-accent); }
+
+.sc-range { stroke: var(--line-strong); stroke-width: 2; }
+.sc-range.on { stroke: var(--amber); }
+.sc-pt { fill: var(--accent); fill-opacity: .7; stroke: var(--surface); stroke-width: 1; }
+.sc-pt.on { fill: var(--amber); fill-opacity: 1; }
+
+.sc-glances { list-style: none; padding: 0; margin: 0 0 14px; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 220px), 1fr)); gap: 10px; }
+.sc-glance { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; display: flex; flex-direction: column; gap: 5px; min-width: 0; }
+.sc-glance-t { font-size: .84rem; line-height: 1.3; color: var(--ink); text-decoration: none; min-height: 3.9em; }
+.sc-glance-t:hover { color: var(--accent-ink); text-decoration: underline; }
+.sc-glance-v { font-family: var(--display); font-size: 1.75rem; font-weight: 600; line-height: 1; font-variant-numeric: tabular-nums; }
+.sc-glance-v small { font-size: .55em; margin-left: 2px; color: var(--muted); }
+.sc-glance-eu { font-size: .76rem; color: var(--muted); }
+.sc-chip { align-self: flex-start; font-size: .72rem; font-weight: 700; border-radius: 999px; padding: 1px 9px; }
+.sc-chip.good { background: var(--accent-soft); color: var(--accent-ink); }
+.sc-chip.bad { background: var(--amber-soft); color: var(--amber); }
+.sc-chip.neutral { background: var(--sunken); color: var(--muted); }
+.sc-spark { margin-top: 2px; }
+.sc-spark-k { font-family: var(--mono); font-size: 10px; color: var(--faint); }
+
+/* ---------------------------------------------------------------- Financing explorer (pages/financing.html) */
+.fx-notes { margin: 14px 0 0; padding-left: 1.2em; display: grid; gap: 4px; font-size: .9rem; color: var(--muted); max-width: 70ch; }
+.fx-notes strong { color: var(--ink); }
+.fx-filter { margin: 0 0 12px; }
+.fx-wrap { padding: 6px 10px; }
+.fx-matrix { border-collapse: collapse; width: 100%; min-width: 520px; }
+.fx-matrix th, .fx-matrix td { padding: 6px 8px; border-bottom: 1px solid var(--line); }
+.fx-matrix tbody tr:last-child th, .fx-matrix tbody tr:last-child td { border-bottom: 0; }
+.fx-matrix thead th { font-size: .78rem; font-weight: 700; text-align: center; vertical-align: bottom; }
+.fx-matrix thead th:first-child { text-align: left; }
+.fx-matrix thead th small { display: block; font-family: var(--mono); font-weight: 400; color: var(--faint); }
+.fx-matrix tbody th { text-align: left; font-weight: 500; white-space: nowrap; }
+.fx-matrix tbody th a { color: var(--ink); text-decoration: none; }
+.fx-matrix tbody th a:hover { color: var(--accent-ink); text-decoration: underline; }
+.fx-matrix td { text-align: center; height: 40px; width: 18%; }
+.fx-dot { display: inline-grid; place-items: center; width: var(--d); height: var(--d); border-radius: 50%; background: var(--accent); color: var(--on-accent); font-size: .72rem; font-weight: 700; text-decoration: none; }
+.fx-dot:hover, .fx-dot:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; }
+.fx-none::after { content: "·"; color: var(--line-strong); }
+.fx-matrix tr.fx-dim th, .fx-matrix tr.fx-dim td { opacity: .3; }
+.fx-matrix[data-on="grants-for-companies"] td:not([data-type="grants-for-companies"]) .fx-dot,
+.fx-matrix[data-on="tax-incentives"] td:not([data-type="tax-incentives"]) .fx-dot,
+.fx-matrix[data-on="grants-for-individuals"] td:not([data-type="grants-for-individuals"]) .fx-dot,
+.fx-matrix[data-on="training-funds"] td:not([data-type="training-funds"]) .fx-dot { background: var(--line-strong); color: var(--ink); }
+.fx-country { padding-block: 14px 4px; scroll-margin-top: 12px; }
+.fx-country h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: 10px; }
+.fx-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr)); gap: 12px; align-items: start; }
+.fx-card { display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+.fx-card h4 { font-size: 1rem; font-weight: 700; margin: 0; }
+.fx-card p { margin: 0; font-size: .9rem; }
+.fx-card .kv .row { grid-template-columns: 110px minmax(0, 1fr); font-size: .84rem; }
+.fx-types { display: flex; flex-wrap: wrap; gap: 4px; }
+.fx-type { font-family: var(--mono); font-size: 10px; letter-spacing: .05em; text-transform: uppercase; background: var(--accent-soft); color: var(--accent-ink); border-radius: 4px; padding: 1px 6px; }
+.oc-shares { margin: 0 0 8px; font-size: .88rem; }
+.oc-sk-wrap { padding: 6px 10px; }
+.oc-sk { border-collapse: collapse; font-size: .8rem; }
+.oc-sk th, .oc-sk td { padding: 4px 6px; border-bottom: 1px solid var(--line); }
+.oc-sk thead th { font-weight: 500; color: var(--muted); vertical-align: bottom; height: 170px; }
+.oc-sk thead th:first-child { vertical-align: bottom; text-align: left; height: auto; }
+.oc-sk thead th span { display: inline-block; writing-mode: vertical-rl; transform: rotate(180deg); max-height: 160px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.oc-sk tbody th { text-align: left; font-weight: 600; white-space: nowrap; }
+.oc-sk tbody th a { color: var(--ink); text-decoration: none; }
+.oc-sk tbody th a:hover { color: var(--accent-ink); text-decoration: underline; }
+.oc-sk td { text-align: center; }
+.oc-skdot { display: inline-block; width: 11px; height: 11px; border-radius: 50%; background: var(--accent); }

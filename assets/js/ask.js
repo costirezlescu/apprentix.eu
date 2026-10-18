@@ -3,7 +3,7 @@
    data/datasets.json site.ask_endpoint; the model's markdown is rendered with DOM nodes
    (paragraphs, lists, bold, code, http(s) links) — never as HTML. */
 
-import { loadManifest } from './data.js?v=32ac435b';
+import { loadManifest } from './data.js?v=1c53ec88';
 
 const $ = (id) => document.getElementById(id);
 const form = $('ask-form');

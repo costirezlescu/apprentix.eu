@@ -14,7 +14,7 @@ from __future__ import annotations
 
 import statistics as st
 
-from .common import INDICATORS, PUBLISHED, read_json, write_json
+from .common import INDICATORS, PUBLISHED, plain, read_json, write_json
 
 OUT = PUBLISHED / "stories" / "stories.json"
 
@@ -188,7 +188,7 @@ def two_families() -> dict | None:
          "chart": {"layout": "families", "on": "only_route"}},
     ]
     if outcome:
-        steps.append({"text": "So which family works better? " + outcome,
+        steps.append({"text": "So which family works better? " + plain(outcome),
                       "chart": {"layout": "families", "on": None, "outcome": True}})
     return {
         "id": "two-families-of-apprenticeship",
@@ -197,7 +197,7 @@ def two_families() -> dict | None:
         "kicker": "Europe",
         "chart": {"type": "dots", "dots": dots,
                   "families": {"employer": "Employer-based", "school": "School-based dual", "other": "Neither"},
-                  "flags": {"old": "Introduced before 2000", "school_origin": "Grew out of school-based VET",
+                  "flags": {"old": "Introduced before 2000", "school_origin": "Grew out of school-based vocational education",
                             "student": "Learner is a student", "agreement": "Training agreement, not a contract",
                             "only_route": "Qualification only through apprenticeship"}},
         "steps": steps,
@@ -206,9 +206,9 @@ def two_families() -> dict | None:
             {"label": "Compare all schemes", "url": "pages/compare.html"},
             {"label": "The insight behind this story", "url": "pages/insights.html#two-families"},
         ],
-        "method": "Families from Cedefop's coded answers (2026 update): school-based dual = the scheme grew out of school-based VET; "
-                  "employer-based = the learner has a specific apprentice status and the scheme did not grow out of school VET. "
-                  "Outcomes compare countries whose schemes all fall in one family; they reflect all VET, not only apprentices.",
+        "method": "Families from Cedefop's coded answers (2026 update): school-based dual = the scheme grew out of school-based vocational education; "
+                  "employer-based = the learner has a specific apprentice status and the scheme did not grow out of school-based vocational education. "
+                  "Outcomes compare countries whose schemes all fall in one family; they reflect all vocational education and training, not only apprentices.",
     }
 
 

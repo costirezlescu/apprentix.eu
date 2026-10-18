@@ -3,7 +3,7 @@
    (meta.matrix.questions). Pick a column to colour it, sort by it and see how
    the schemes split. All labels are inserted with textContent. */
 
-import { loadDataset, values, field, url } from './data.js?v=32ac435b';
+import { loadDataset, values, field, url } from './data.js?v=1c53ec88';
 
 const $ = id => document.getElementById(id);
 const params = new URLSearchParams(location.search);

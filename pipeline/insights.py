@@ -436,7 +436,7 @@ def who_pays() -> dict:
         "method": "Cedefop coded answers Q33–Q37 (2026 fiches); financing instruments database (reference 2016–17).",
         "caveats": ["The financing database is not updated since 2016–17."],
         "sources": [{"label": "Compare: who pays", "url": "pages/compare.html?q=q_pay_funded_by"},
-                    {"label": "Financing instruments", "url": "pages/explore.html?dataset=financing-instruments"}],
+                    {"label": "Who pays for apprenticeships? All financing instruments", "url": "pages/financing.html"}],
     }
 
 

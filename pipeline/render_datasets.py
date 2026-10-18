@@ -233,6 +233,33 @@ def latest_table(ind: dict, names: dict[str, str]) -> tuple[str, int]:
             f'<tbody>{body}</tbody></table></div>', len(order))
 
 
+def indicator_charts(D, ind: dict, names: dict[str, str]) -> dict[str, str]:
+    """Static charts for an indicator page (pipeline/static_charts.py)."""
+    from . import static_charts as sc
+    single = len((ind.get("coverage") or {}).get("geos") or []) == 1
+    out = {"bars": "", "multiples": "", "tiles": "", "regions": ""}
+    if single:
+        return out
+    out["bars"] = sc.ranked_bars(ind, names)
+    out["multiples"] = sc.small_multiples(ind, names)
+    if ind["id"].startswith("erasmus-"):
+        out["tiles"] = sc.tile_maps(ind, D["countries"])
+    if ind["id"] == "cedefop-reset":
+        recs = (D["extra"].get("regional-skills-ecosystems") or {}).get("all") or []
+        groups: dict[str, dict] = {}
+        for r in recs:
+            g = groups.setdefault(r["country_code"], {"code": r["country_code"], "name": names.get(r["country_code"], r["country"]), "points": []})
+            g["points"].append((r["region"], float(r["reset"])))
+        if groups:
+            out["regions"] = f"""<section class="cp-sec" id="regions" aria-labelledby="h-regions">
+  <h2 id="h-regions">All {len(recs)} regions</h2>
+  <p class="sub">Each dot is one NUTS 2 region; the line spans a country’s weakest to strongest region. Countries sorted by their strongest region. Hover a dot for its name.</p>
+  {sc.strip_plot(list(groups.values()))}
+  <p class="provenance">Regional scores from Cedefop’s RESET index; see the <a href="../datasets/regional-skills-ecosystems.html">regional dataset</a>.</p>
+</section>"""
+    return out
+
+
 def apprentix_citation(title: str, year: str, url: str, based_on: str | None) -> str:
     c = f"Apprentix ({year}). {title} [Data set]. {url}"
     return c + (f". Based on: {based_on}" if based_on else ".")
@@ -247,6 +274,11 @@ def render_indicator(D, ind: dict, names: dict[str, str], siblings: list[dict]) 
     retrieved = iso_date(p.get("retrieved_at")) or D["updated"]
     interactive = "../indicators.html?id=" + quote(iid)
     table, nrows = latest_table(ind, names)
+    charts = indicator_charts(D, ind, names)
+    charts["trends"] = (f'<section class="cp-sec" id="trends" aria-labelledby="h-trends">'
+                        f'<h2 id="h-trends">Trend by country</h2>'
+                        f'<p class="sub">One small chart per country, all on the same scale, so you can compare both levels and direction.</p>'
+                        f'{charts["multiples"]}</section>') if charts["multiples"] else ""
     single = len(cov.get("geos") or []) == 1
     national = ind.get("national")
     country = names.get(cov["geos"][0], "") if single else ""
@@ -311,10 +343,14 @@ def render_indicator(D, ind: dict, names: dict[str, str], siblings: list[dict]) 
 <section class="cp-sec" id="values" aria-labelledby="h-values">
   <h2 id="h-values">{'Values over time' if single else 'Latest value by country'}</h2>
   <p class="sub">{table_sub} For other breakdowns and every year, use the <a href="{e(interactive)}">interactive view</a> or the downloads.</p>
-  {table}
+  {charts["tiles"]}
+  {charts["bars"]}
+  {f'<details class="sc-table-fold"><summary>Show as a table</summary>{table}</details>' if charts["bars"] else table}
   <p class="provenance">Letters after a value are the publisher's flags; hover for their meaning.</p>
 </section>
 
+{charts["trends"]}
+{charts["regions"]}
 <section class="cp-sec" id="source" aria-labelledby="h-source">
   <h2 id="h-source">Source, licence and citation</h2>
   <div class="kv">

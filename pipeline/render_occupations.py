@@ -21,9 +21,9 @@ OUT = ROOT / "pages" / "occupations"
 LEVELS = [2, 3, 4, 5]
 LEVEL_HINT = {
     2: "basic vocational skills",
-    3: "skilled worker, often a 2–3-year VET programme",
-    4: "upper secondary VET or apprenticeship; access to further study in many countries",
-    5: "short-cycle higher VET, master craftsperson or specialist",
+    3: "skilled worker, often a 2–3-year vocational programme",
+    4: "vocational upper secondary school or apprenticeship; often opens the way to further study",
+    5: "higher vocational training, master craftsperson or specialist",
 }
 SHOWN = 5  # qualifications listed before "show all"
 LANG = {
@@ -166,7 +166,35 @@ def skills_html(o: dict) -> str:
   <h2 id="h-skills">What the work involves</h2>
   <p class="sub">{e(s["description"] or "")}</p>
   <ul class="chips oc-skills" aria-label="Essential skills in ESCO">{chips}</ul>
+  {shares_line(o)}
   <p class="oc-meta">{f"And {more} more essential skills. " if more > 0 else ""}From ESCO, the European classification of skills and occupations: <a href="{e(s["uri"])}" target="_blank" rel="noopener">{e(s["label"])} ({e(s["code"])})</a>.{isco}{rel}</p>
+</section>"""
+
+
+def shares_line(o: dict) -> str:
+    sh = [x for x in o.get("shares", []) if x["n"] >= 2]
+    if not sh:
+        return ""
+    links = ", ".join(f'<a href="{x["slug"]}.html" title="{e("; ".join(x["skills"]))}">{e(x["name"].lower())} ({x["n"]})</a>' for x in sh)
+    return f'<p class="oc-shares"><strong>Shares essential skills with:</strong> {links}. <a href="./#skills">All shared skills</a></p>'
+
+
+def shared_matrix(doc: dict) -> str:
+    sh = doc.get("shared_skills") or {}
+    if not sh.get("skills"):
+        return ""
+    head = "".join(f'<th scope="col"><span title="{e(k["title"])}">{e(k["title"])}</span></th>' for k in sh["skills"])
+    rows = "".join(
+        f'<tr><th scope="row"><a href="{r["slug"]}.html">{e(r["name"])}</a></th>'
+        + "".join(f'<td>{"<span class=oc-skdot aria-label=essential></span>" if h else ""}</td>' for h in r["has"]) + "</tr>"
+        for r in sh["rows"])
+    return f"""<section class="cp-sec" id="skills" aria-labelledby="h-skills">
+  <h2 id="h-skills">Skills shared across trades</h2>
+  <p class="sub">The {len(sh["skills"])} ESCO skills that appear in the most occupation profiles here. A dot means the skill is essential for that occupation: safety, measuring, reading plans and serving customers carry over from one trade to another.</p>
+  <div class="cp-table oc-sk-wrap"><table class="oc-sk">
+    <caption class="oc-sr">Essential ESCO skills shared by several occupations</caption>
+    <thead><tr><th scope="col">Occupation</th>{head}</tr></thead><tbody>{rows}</tbody></table></div>
+  <p class="provenance">From ESCO, the European classification of skills and occupations. This service uses the ESCO classification of the European Commission.</p>
 </section>"""
 
 
@@ -284,7 +312,8 @@ def index_page(doc: dict, D: dict) -> str:
   <p class="lede">Pick an occupation to see where in Europe you can qualify for it, at which level, through which national qualifications, and where to look for an apprenticeship. Built from the qualifications {len(doc["qdr_countries"])} countries publish to Europass, linked to ESCO, the European classification of occupations.</p>
 </header>
 <ul class="oc-cards">{"".join(cards)}</ul>
-<p class="provenance">Countries covered by the qualification register so far: {e(qdr)}. Other countries’ apprenticeships are on their <a href="../countries/">country pages</a>. Looking for an occupation that is not here? Search all {D["qual_total"]:,} national VET qualifications in the <a href="../datasets/vet-qualifications.html">qualifications dataset</a>.</p>"""
+{shared_matrix(doc)}
+<p class="provenance">Countries covered by the qualification register so far: {e(qdr)}. Other countries’ apprenticeships are on their <a href="../countries/">country pages</a>. Looking for an occupation that is not here? Search all {D["qual_total"]:,} national vocational qualifications in the <a href="../datasets/vet-qualifications.html">qualifications dataset</a>.</p>"""
     ld = {"@context": "https://schema.org", "@graph": [
         {"@type": "CollectionPage", "@id": page_url, "url": page_url, "name": "Occupation lens", "dateModified": D["updated"],
          "hasPart": [{"@type": "WebPage", "url": f"{page_url}{o['slug']}.html", "name": f"Want to be {o['with_article']}?"} for o in doc["occupations"]]},

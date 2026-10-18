@@ -16,7 +16,7 @@ from __future__ import annotations
 import html
 import re
 
-from .common import PUBLISHED, read_json, write_json
+from .common import PUBLISHED, plain, read_json, write_json
 
 OUT = PUBLISHED / "portraits" / "portraits.json"
 DATASET = PUBLISHED / "apprenticeship-schemes" / "records.json"
@@ -95,7 +95,7 @@ def portrait(s: dict) -> dict:
     elif level == "Multiple levels":
         level = "Several levels"
     if level:
-        facts.append({"icon": "level", "label": "Leads to", "value": level + (" · access to higher education" if he == "Yes" else "")})
+        facts.append({"icon": "level", "label": "Leads to", "value": plain(level) + (" · access to higher education" if he == "Yes" else "")})
 
     # The story, sentence by sentence; each sentence only when the coded answers support it.
     story = []
@@ -130,9 +130,10 @@ def portrait(s: dict) -> dict:
         if re.match(r"\d[\d\s–.,/]*(school )?(months?|years?|weeks?|hours?|h)\b", d):
             story.append(f"It would take {d}.")
         else:
+            d = plain(d)
             story.append(f"Duration: {d[0].lower() + d[1:] if d[1:2].islower() else d}.")
     if s.get("qualification"):
-        line = f"You would finish with: {s['qualification']}"
+        line = f"You would finish with: {plain(s['qualification'])}"
         if he == "Yes":
             line += ", which gives direct access to higher education"
         elif he == "No":

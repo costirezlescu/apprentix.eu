@@ -226,6 +226,27 @@ def geo_name(code: str) -> str:
 
 # ---------------------------------------------------------------- text ----
 
+# Plain words for learners: the policy abbreviations in record texts ("VET qualification",
+# "IVET 3–4 yrs; CVET …") read as jargon to someone choosing a trade. Proper names are left alone.
+_PLAIN = [
+    (re.compile(r"\bIVET\b"), "initial vocational training"),
+    (re.compile(r"\bCVET\b"), "continuing vocational training"),
+    (re.compile(r"\bschool-based VET\b"), "school-based vocational education"),
+    (re.compile(r"\bVET (qualification|certificate|diploma|programme|school)(s?)\b"), r"vocational \1\2"),
+    (re.compile(r"\bAll VET levels\b"), "All vocational levels"),
+    (re.compile(r"\brecent VET graduates\b"), "young people who recently finished vocational training"),
+    (re.compile(r"\bVET\b"), "vocational education"),
+]
+
+
+def plain(text: str | None) -> str:
+    """Replace VET abbreviations with plain words, for pages written for learners."""
+    s = text or ""
+    for pat, rep in _PLAIN:
+        s = pat.sub(rep, s)
+    return s
+
+
 _TAG = re.compile(r"<[^>]+>")
 
 

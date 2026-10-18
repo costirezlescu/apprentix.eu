@@ -18,7 +18,7 @@
 <meta property="og:image:alt" content="Apprentix: European apprenticeship and VET data, made searchable — apprenticeship schemes, statistical indicators and countries covered.">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Public+Sans:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
-<link rel="stylesheet" href="assets/css/site.css?v=32ac435b">
+<link rel="stylesheet" href="assets/css/site.css?v=1c53ec88">
 <link rel="alternate" type="application/atom+xml" title="Apprentix data updates" href="data/feed.xml">
 </head>
 <body data-root="./">
@@ -165,7 +165,7 @@
       <div class="ds-grid">
         <a class="ds-card" href="pages/countries/">
           <h3>Apprenticeships by country</h3>
-          <p>Profiles of the apprenticeship and VET systems of the EU Member States, EFTA, candidate countries and the United Kingdom.</p>
+          <p>Profiles of the apprenticeship and vocational training systems of the EU Member States, EFTA, candidate countries and the United Kingdom.</p>
           <div class="meta"><span>Country profiles</span><span>EU-27 · EFTA · candidates</span></div>
         </a>
       </div>
@@ -201,11 +201,11 @@
 </footer>
 
 <script type="module">
-  import { mountDidYouKnow } from './assets/js/facts.js?v=32ac435b';
-  import { mountChanges } from './assets/js/changes.js?v=32ac435b';
-  import { mountHomeMap } from './assets/js/home-map.js?v=32ac435b';
-  import { mountSchemeOfWeek } from './assets/js/scheme-week.js?v=32ac435b';
-  import { mountPulse } from './assets/js/pulse.js?v=32ac435b';
+  import { mountDidYouKnow } from './assets/js/facts.js?v=1c53ec88';
+  import { mountChanges } from './assets/js/changes.js?v=1c53ec88';
+  import { mountHomeMap } from './assets/js/home-map.js?v=1c53ec88';
+  import { mountSchemeOfWeek } from './assets/js/scheme-week.js?v=1c53ec88';
+  import { mountPulse } from './assets/js/pulse.js?v=1c53ec88';
   mountPulse(document.getElementById('pulse'));
   mountHomeMap(document.getElementById('timelapse'));
   mountSchemeOfWeek(document.getElementById('scheme-week'));
@@ -214,7 +214,7 @@
 </script>
 
 <script type="module">
-  import { loadManifest, esc } from './assets/js/data.js?v=32ac435b';
+  import { loadManifest, esc } from './assets/js/data.js?v=1c53ec88';
 
   const m = await loadManifest();
   document.getElementById('site-tagline').textContent = m.site.tagline;
@@ -246,7 +246,7 @@
   document.getElementById('ind-grid').innerHTML = `
     <a class="ds-card" href="pages/indicators.html">
       <h3>EU targets for vocational education</h3>
-      <p>Work-based learning and employment of recent VET graduates against the EU's 2025 targets, by country.</p>
+      <p>Work-based learning and jobs for young people who recently finished vocational training against the EU's 2025 targets, by country.</p>
       <div class="meta"><span>Eurostat</span><span>live</span></div>
     </a>` + [...pubs].map(([p, n]) => `
     <a class="ds-card" href="pages/indicators.html">
@@ -265,6 +265,6 @@
   }
 </script>
 
-<script type="module">import { initGlossary } from './assets/js/glossary.js?v=32ac435b'; initGlossary();</script>
+<script type="module">import { initGlossary } from './assets/js/glossary.js?v=1c53ec88'; initGlossary();</script>
 </body>
 </html>

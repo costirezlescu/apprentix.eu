@@ -17,7 +17,7 @@ from __future__ import annotations
 import re
 from html import escape
 
-from .common import INDICATORS, PUBLISHED, read_json
+from .common import INDICATORS, PUBLISHED, plain, read_json
 
 EMPLOYMENT = "eurostat-edat_lfse_24-vet"
 MASTER = re.compile(r"master|meister|maîtrise|majstor", re.I)
@@ -89,7 +89,7 @@ def level_text(s: dict) -> tuple[str, int | None]:
         if m:
             label = f"{m.group(1)} {m.group(2)}–{m.group(3)}" if m.group(3) else f"{m.group(1)} {m.group(2)}"
             return label, _nqf_to_eqf().get(s.get("country"), {}).get(m.group(3) or m.group(2))
-    return s.get("education_level") or "", None
+    return plain(s.get("education_level")), None
 
 
 def short(text: str | None, n: int = 120) -> str:
@@ -107,7 +107,7 @@ def scheme_path(s: dict, code: str, the_name: str) -> str:
     # 1. Start
     ages = s.get("q_typical_age") or []
     age = ", ".join(ages) if ages else ""
-    start = step("Start", f"Age {age[:1].lower() + age[1:]}" if age else "Entry", [e(short(s.get("target_group"), 110))])
+    start = step("Start", f"Age {age[:1].lower() + age[1:]}" if age else "Entry", [e(short(plain(s.get("target_group")), 110))])
 
     # 2. Apprenticeship
     work = WORK_SHARE.get(s.get("workplace_time"))
@@ -123,8 +123,8 @@ def scheme_path(s: dict, code: str, the_name: str) -> str:
     lv, top = level_text(s)
     route = s.get("q_qualification_route")
     route_txt = {"Only through apprenticeship": "Only through apprenticeship",
-                 "Also through school-based VET": "Also reachable through school-based VET"}.get(route, "")
-    qual = step("Qualification", lv, [e(short(s.get("qualification"), 110)),
+                 "Also through school-based VET": "Also possible in a school-based programme"}.get(route, "")
+    qual = step("Qualification", lv, [e(short(plain(s.get("qualification")), 110)),
                                        f'<span class="lp-chip">{e(route_txt)}</span>' if route_txt else ""])
 
     # 4. Then: work, further study
@@ -133,7 +133,7 @@ def scheme_path(s: dict, code: str, the_name: str) -> str:
     if c:
         eu_txt = f" (EU: {eu['value']:.0f}%)" if eu else ""
         branches.append(f'<div class="lp-branch"><span class="lp-k">Work</span><span class="lp-big">{c["value"]:.0f}%</span>'
-                        f'<p>of recent VET graduates in {e(the_name)} had a job, {e(c["time"])}{e(eu_txt)}</p></div>')
+                        f'<p>of young people in {e(the_name)} who recently finished vocational training had a job, {e(c["time"])}{e(eu_txt)}</p></div>')
     he = s.get("q_access_to_he")
     study = {"Yes": "The qualification gives access to higher education",
              "No": "The qualification does not by itself give access to higher education"}.get(he, "")
@@ -165,7 +165,7 @@ def section_html(code: str, the_name: str, schemes: list[dict]) -> str:
     srcs = ["Cedefop’s European database on apprenticeship schemes (coded answers)",
             "Cedefop’s NQF online tool (next step up)"]
     if year:
-        srcs.append(f'Eurostat edat_lfse_24 (<a href="../indicators/{EMPLOYMENT}.html">employment of recent VET graduates</a>, all VET, not only apprentices)')
+        srcs.append(f'Eurostat edat_lfse_24 (<a href="../indicators/{EMPLOYMENT}.html">employment of recent graduates of vocational education and training</a>, all vocational programmes, not only apprenticeships)')
     title = the_name[0].upper() + the_name[1:]
     return f"""<section class="cp-sec" id="path" aria-labelledby="h-path">
   <h2 id="h-path">From school to work</h2>

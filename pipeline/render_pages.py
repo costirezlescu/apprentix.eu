@@ -24,6 +24,7 @@ from pathlib import Path
 from urllib.parse import quote, urlencode
 
 from .common import DATA, INDICATORS, LICENCES, PUBLISHED, REFERENCE, ROOT, geo_code, read_json
+from .static_charts import glance_tiles
 
 SITE = "https://apprentix.eu/"
 OUT = ROOT / "pages" / "countries"
@@ -217,6 +218,7 @@ def page(*, title: str, description: str, canonical: str, root: str, body: str, 
       <a href="{pages}stories/">Stories</a>
       <a href="{pages}countries/">Countries</a>
       <a href="{pages}occupations/">Occupations</a>
+      <a href="{pages}financing.html">Who pays?</a>
       <a href="{pages}ask.html">Ask</a>
       <a href="{pages}find.html">Find my apprenticeship</a>
       <a href="{pages}duel.html">Compare countries</a>
@@ -694,6 +696,7 @@ def render_country(D, c: dict, f: dict, has_page: set[str]) -> str:
   <h2 id="h-financing">Financing apprenticeships</h2>
   <p class="sub">{plural(len(fi), "financing instrument")} for apprenticeships in {e(the_name)}, as recorded by Cedefop for 2016–17 (the database has not been updated since).</p>
   <ul class="cp-list">{items}</ul>
+  <p class="cp-links"><a class="btn" href="../financing.html">Compare with other countries: who pays for apprenticeships?</a></p>
   <p class="provenance">Source: <a href="{e(src['url'])}" target="_blank" rel="noopener">{e(src['name'])}</a>.</p>
 </section>""")
 
@@ -720,8 +723,9 @@ def render_country(D, c: dict, f: dict, has_page: set[str]) -> str:
         with_eu = any(r["eu"] for r in figures)
         sections.append(f"""<section class="cp-sec" id="figures" aria-labelledby="h-figures">
   <h2 id="h-figures">Key figures</h2>
-  <p class="sub">Latest value for {e(the_name)} on the main measures of vocational education and work-based learning, with the EU-27 figure for the same year where one is published. Select an indicator for its map, ranking, trend and downloads.</p>
-  {figures_table(figures, code, name, with_eu)}
+  <p class="sub">Latest value for {e(the_name)} on the main measures of vocational education and work-based learning, with the EU-27 figure for the same year where one is published. Teal and amber chips say whether that is better or worse than the EU; grey ones only say above or below, where neither is better. Select an indicator for its map, ranking, trend and downloads.</p>
+  {glance_tiles(figures, code, name, {k: v["by_time"] for k, v in D["latest"].items()}, lambda iid: indicator_url(iid, code))}
+  <details class="sc-table-fold"><summary>Show as a table, with sources</summary>{figures_table(figures, code, name, with_eu)}</details>
   <p class="provenance">Sources: {sources_line(figures)}. Totals only (default breakdown). Letters after a value are the publisher's flags; hover for their meaning.</p>
 </section>""")
 
@@ -799,16 +803,21 @@ def render_country(D, c: dict, f: dict, has_page: set[str]) -> str:
         if code in nat:
             nat_line = (f" {e(name)} as a whole scores {nat[code]['value']:.1f}"
                         + (f" (EU-27: {eu['value']:.1f})" if eu else "") + ".")
+        from .static_charts import strip_plot
+        all_recs = D["extra"]["regional-skills-ecosystems"]["all"]
+        strip = strip_plot([{"code": "ALL", "name": f"All {len(all_recs)} EU regions", "points": [(f'{r["region"]} ({r["country"]})', float(r["reset"])) for r in all_recs]},
+                            {"code": code, "name": name, "points": [(r["region"], float(r["reset"])) for r in regions]}], highlight=code)
         if len(regions) > 1:
             rows = "".join(
                 f'<li><a href="{e(explore_url("regional-skills-ecosystems", [("country", r["country"])], open=r["id"]))}">{e(r["region"])}</a>'
                 f' <span class="cp-change-text">{e(r["reset"])} · {e(r["eu_rank"])} EU regions</span></li>' for r in regions)
             body_html = (f'<p class="sub">Cedefop\'s Regional skills ecosystem index (RESET) scores every EU region from 1 to 100 on how skills are developed, used and supported.{nat_line} '
-                         f'{e(name)}\'s {len(regions)} regions, from highest to lowest score:</p><ol class="cp-list">{rows}</ol>')
+                         f'Each dot is a region; the top row shows every EU region for comparison.</p>{strip}'
+                         f'<details class="cp-details"><summary>{e(name)}\'s {len(regions)} regions, from highest to lowest score</summary><ol class="cp-list">{rows}</ol></details>')
         else:
             r = regions[0]
             body_html = (f'<p class="sub">Cedefop\'s Regional skills ecosystem index (RESET) scores every EU region from 1 to 100 on how skills are developed, used and supported.{nat_line} '
-                         f'{e(name)} counts as a single region: it ranks {e(r["eu_rank"])} EU regions.</p>')
+                         f'{e(name)} counts as a single region: it ranks {e(r["eu_rank"])} EU regions.</p>{strip}')
         sections.append(f"""<section class="cp-sec" id="regions" aria-labelledby="h-regions">
   <h2 id="h-regions">Regions: skills ecosystems</h2>
   {body_html}
@@ -944,7 +953,7 @@ def render_index(D, facts: dict[str, dict]) -> str:
 <header class="cp-head">
   <div>
     <h1>Apprenticeships by country</h1>
-    <p class="lede">One page per country gathering everything Apprentix holds on its apprenticeship and VET system: schemes, key figures against the EU average, national statistics, recent policies and open datasets.</p>
+    <p class="lede">One page per country gathering everything Apprentix holds on its apprenticeship and vocational education and training (VET) system: schemes, key figures against the EU average, national statistics, recent policies and open datasets.</p>
     <div class="stats">
       <div class="stat"><div class="n">{n}</div><div class="l">Countries</div></div>
       <div class="stat"><div class="n">{nschemes}</div><div class="l">Apprenticeship schemes</div></div>
@@ -1072,6 +1081,9 @@ def render_all() -> list[Path]:
     from . import render_datasets
     extra_written, extra_urls = render_datasets.render_all(D)
     written += extra_written
+    from . import render_financing
+    written += [Path(x) for x in render_financing.render()]
+    extra_urls = list(extra_urls) + [(SITE + "pages/financing.html", D["updated"])]
     from . import render_occupations, render_stories
     occ_written, occ_urls = render_occupations.render_all()
     st_written, st_urls = render_stories.render_all()

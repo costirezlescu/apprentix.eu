@@ -1,6 +1,6 @@
 {
   "description": "The Occupation lens: occupations commonly learnt through apprenticeship, each linked to an ESCO occupation and to patterns that find matching national qualifications in the Europass Qualifications Dataset Register by title.",
-  "method": "Each occupation has 'include' and 'exclude' regular expressions, applied to the qualification's title and original-language title after lower-casing and removing accents. Patterns cover the national languages of the 14 countries that publish VET qualifications to Europass, and were checked by hand against every match on 18 October 2026. Matching by title finds most qualifications for an occupation but not all: titles that name only a field ('Electrical engineering') or a level are missed unless listed.",
+  "method": "Each occupation has 'include' and 'exclude' regular expressions, applied to the qualification's title and original-language title after lower-casing and removing accents. Patterns cover the national languages of the 14 countries that publish vocational qualifications to Europass, and were checked by hand against every match on 18 October 2026. Matching by title finds most qualifications for an occupation but not all: titles that name only a field ('Electrical engineering') or a level are missed unless listed.",
   "checked": "2026-10-18",
   "global_exclude": [
     "meilleurs ouvriers",

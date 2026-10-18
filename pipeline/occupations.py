@@ -178,6 +178,23 @@ def build() -> dict:
             "outlook": outlook,
         })
 
+    # Essential skills shared between occupations: the transferable core of the trades.
+    skillsets = {o["slug"]: {k["title"] for k in esco.get(o["esco_uri"], {}).get("essential_skills", [])} for o in lens["occupations"]}
+    names_by = {o["slug"]: o["name"] for o in lens["occupations"]}
+    for occ in occupations:
+        mine = skillsets[occ["slug"]]
+        shares = [{"slug": k, "name": names_by[k], "n": len(mine & v), "skills": sorted(mine & v)}
+                  for k, v in skillsets.items() if k != occ["slug"] and mine & v]
+        occ["shares"] = sorted(shares, key=lambda x: (-x["n"], x["name"]))[:4]
+    counts: dict[str, int] = {}
+    for v in skillsets.values():
+        for k in v:
+            counts[k] = counts.get(k, 0) + 1
+    top = [k for k, n in sorted(counts.items(), key=lambda kv: (-kv[1], kv[0])) if n > 1][:15]
+    shared = {"skills": [{"title": k, "n": counts[k]} for k in top],
+              "rows": [{"slug": o["slug"], "name": o["name"], "has": [k in skillsets[o["slug"]] for k in top]}
+                       for o in lens["occupations"] if any(k in skillsets[o["slug"]] for k in top)]}
+
     doc = {
         "description": "The Occupation lens: for each occupation, the national VET qualifications published to Europass that lead to it (matched by title), by country and EQF level, with Cedefop's employment forecast for its occupation group.",
         "method": lens["method"],
@@ -192,6 +209,7 @@ def build() -> dict:
                         "url": stas["provenance"]["source_url"]} if stas else None,
         },
         "occupations": occupations,
+        "shared_skills": shared,
     }
     write_json(OUT, doc)
     return doc

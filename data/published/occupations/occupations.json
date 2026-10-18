@@ -1,6 +1,6 @@
 {
   "description": "The Occupation lens: for each occupation, the national VET qualifications published to Europass that lead to it (matched by title), by country and EQF level, with Cedefop's employment forecast for its occupation group.",
-  "method": "Each occupation has 'include' and 'exclude' regular expressions, applied to the qualification's title and original-language title after lower-casing and removing accents. Patterns cover the national languages of the 14 countries that publish VET qualifications to Europass, and were checked by hand against every match on 18 October 2026. Matching by title finds most qualifications for an occupation but not all: titles that name only a field ('Electrical engineering') or a level are missed unless listed.",
+  "method": "Each occupation has 'include' and 'exclude' regular expressions, applied to the qualification's title and original-language title after lower-casing and removing accents. Patterns cover the national languages of the 14 countries that publish vocational qualifications to Europass, and were checked by hand against every match on 18 October 2026. Matching by title finds most qualifications for an occupation but not all: titles that name only a field ('Electrical engineering') or a level are missed unless listed.",
   "checked": "2026-10-18",
   "qdr_countries": [
     {
@@ -1219,7 +1219,49 @@
           }
         ],
         "indicator": "cedefop-stas-employment-growth"
-      }
+      },
+      "shares": [
+        {
+          "slug": "bricklayer",
+          "name": "Bricklayer",
+          "n": 3,
+          "skills": [
+            "follow health and safety procedures in construction",
+            "use measurement instruments",
+            "use safety equipment in construction"
+          ]
+        },
+        {
+          "slug": "carpenter",
+          "name": "Carpenter or joiner",
+          "n": 3,
+          "skills": [
+            "follow health and safety procedures in construction",
+            "use measurement instruments",
+            "use safety equipment in construction"
+          ]
+        },
+        {
+          "slug": "painter-decorator",
+          "name": "Painter and decorator",
+          "n": 3,
+          "skills": [
+            "follow health and safety procedures in construction",
+            "use measurement instruments",
+            "use safety equipment in construction"
+          ]
+        },
+        {
+          "slug": "plumber",
+          "name": "Plumber",
+          "n": 3,
+          "skills": [
+            "follow health and safety procedures in construction",
+            "use measurement instruments",
+            "use safety equipment in construction"
+          ]
+        }
+      ]
     },
     {
       "slug": "plumber",
@@ -2295,7 +2337,68 @@
           }
         ],
         "indicator": "cedefop-stas-employment-growth"
-      }
+      },
+      "shares": [
+        {
+          "slug": "bricklayer",
+          "name": "Bricklayer",
+          "n": 9,
+          "skills": [
+            "follow health and safety procedures in construction",
+            "inspect construction supplies",
+            "interpret 2D plans",
+            "interpret 3D plans",
+            "snap chalk line",
+            "transport construction supplies",
+            "use measurement instruments",
+            "use safety equipment in construction",
+            "work ergonomically"
+          ]
+        },
+        {
+          "slug": "carpenter",
+          "name": "Carpenter or joiner",
+          "n": 9,
+          "skills": [
+            "follow health and safety procedures in construction",
+            "inspect construction supplies",
+            "interpret 2D plans",
+            "interpret 3D plans",
+            "snap chalk line",
+            "transport construction supplies",
+            "use measurement instruments",
+            "use safety equipment in construction",
+            "work ergonomically"
+          ]
+        },
+        {
+          "slug": "painter-decorator",
+          "name": "Painter and decorator",
+          "n": 9,
+          "skills": [
+            "follow health and safety procedures in construction",
+            "inspect construction supplies",
+            "interpret 2D plans",
+            "interpret 3D plans",
+            "snap chalk line",
+            "transport construction supplies",
+            "use measurement instruments",
+            "use safety equipment in construction",
+            "work ergonomically"
+          ]
+        },
+        {
+          "slug": "welder",
+          "name": "Welder",
+          "n": 4,
+          "skills": [
+            "follow health and safety procedures in construction",
+            "interpret 2D plans",
+            "interpret 3D plans",
+            "operate welding equipment"
+          ]
+        }
+      ]
     },
     {
       "slug": "cook",
@@ -3668,7 +3771,26 @@
           }
         ],
         "indicator": "cedefop-stas-employment-growth"
-      }
+      },
+      "shares": [
+        {
+          "slug": "waiter",
+          "name": "Waiter or waitress",
+          "n": 2,
+          "skills": [
+            "comply with food safety and hygiene",
+            "work in a hospitality team"
+          ]
+        },
+        {
+          "slug": "baker",
+          "name": "Baker",
+          "n": 1,
+          "skills": [
+            "store raw food materials"
+          ]
+        }
+      ]
     },
     {
       "slug": "baker",
@@ -4668,7 +4790,31 @@
           }
         ],
         "indicator": "cedefop-stas-employment-growth"
-      }
+      },
+      "shares": [
+        {
+          "slug": "butcher",
+          "name": "Butcher",
+          "n": 7,
+          "skills": [
+            "apply GMP",
+            "apply HACCP",
+            "apply requirements concerning manufacturing of food and beverages",
+            "ensure sanitation",
+            "follow hygienic procedures during food processing",
+            "mark differences in colours",
+            "measure precise food processing operations"
+          ]
+        },
+        {
+          "slug": "cook",
+          "name": "Cook",
+          "n": 1,
+          "skills": [
+            "store raw food materials"
+          ]
+        }
+      ]
     },
     {
       "slug": "hairdresser",
@@ -5860,7 +6006,43 @@
           }
         ],
         "indicator": "cedefop-stas-employment-growth"
-      }
+      },
+      "shares": [
+        {
+          "slug": "waiter",
+          "name": "Waiter or waitress",
+          "n": 3,
+          "skills": [
+            "identify customer's needs",
+            "maintain customer service",
+            "process payments"
+          ]
+        },
+        {
+          "slug": "bricklayer",
+          "name": "Bricklayer",
+          "n": 1,
+          "skills": [
+            "work ergonomically"
+          ]
+        },
+        {
+          "slug": "car-mechanic",
+          "name": "Car mechanic",
+          "n": 1,
+          "skills": [
+            "identify customer's needs"
+          ]
+        },
+        {
+          "slug": "carpenter",
+          "name": "Carpenter or joiner",
+          "n": 1,
+          "skills": [
+            "work ergonomically"
+          ]
+        }
+      ]
     },
     {
       "slug": "carpenter",
@@ -7470,7 +7652,69 @@
           }
         ],
         "indicator": "cedefop-stas-employment-growth"
-      }
+      },
+      "shares": [
+        {
+          "slug": "bricklayer",
+          "name": "Bricklayer",
+          "n": 11,
+          "skills": [
+            "follow health and safety procedures in construction",
+            "inspect construction supplies",
+            "install construction profiles",
+            "interpret 2D plans",
+            "interpret 3D plans",
+            "snap chalk line",
+            "sort waste",
+            "transport construction supplies",
+            "use measurement instruments",
+            "use safety equipment in construction",
+            "work ergonomically"
+          ]
+        },
+        {
+          "slug": "painter-decorator",
+          "name": "Painter and decorator",
+          "n": 9,
+          "skills": [
+            "follow health and safety procedures in construction",
+            "inspect construction supplies",
+            "interpret 2D plans",
+            "interpret 3D plans",
+            "snap chalk line",
+            "transport construction supplies",
+            "use measurement instruments",
+            "use safety equipment in construction",
+            "work ergonomically"
+          ]
+        },
+        {
+          "slug": "plumber",
+          "name": "Plumber",
+          "n": 9,
+          "skills": [
+            "follow health and safety procedures in construction",
+            "inspect construction supplies",
+            "interpret 2D plans",
+            "interpret 3D plans",
+            "snap chalk line",
+            "transport construction supplies",
+            "use measurement instruments",
+            "use safety equipment in construction",
+            "work ergonomically"
+          ]
+        },
+        {
+          "slug": "electrician",
+          "name": "Electrician",
+          "n": 3,
+          "skills": [
+            "follow health and safety procedures in construction",
+            "use measurement instruments",
+            "use safety equipment in construction"
+          ]
+        }
+      ]
     },
     {
       "slug": "bricklayer",
@@ -8425,7 +8669,70 @@
           }
         ],
         "indicator": "cedefop-stas-employment-growth"
-      }
+      },
+      "shares": [
+        {
+          "slug": "carpenter",
+          "name": "Carpenter or joiner",
+          "n": 11,
+          "skills": [
+            "follow health and safety procedures in construction",
+            "inspect construction supplies",
+            "install construction profiles",
+            "interpret 2D plans",
+            "interpret 3D plans",
+            "snap chalk line",
+            "sort waste",
+            "transport construction supplies",
+            "use measurement instruments",
+            "use safety equipment in construction",
+            "work ergonomically"
+          ]
+        },
+        {
+          "slug": "painter-decorator",
+          "name": "Painter and decorator",
+          "n": 10,
+          "skills": [
+            "follow health and safety procedures in construction",
+            "follow safety procedures when working at heights",
+            "inspect construction supplies",
+            "interpret 2D plans",
+            "interpret 3D plans",
+            "snap chalk line",
+            "transport construction supplies",
+            "use measurement instruments",
+            "use safety equipment in construction",
+            "work ergonomically"
+          ]
+        },
+        {
+          "slug": "plumber",
+          "name": "Plumber",
+          "n": 9,
+          "skills": [
+            "follow health and safety procedures in construction",
+            "inspect construction supplies",
+            "interpret 2D plans",
+            "interpret 3D plans",
+            "snap chalk line",
+            "transport construction supplies",
+            "use measurement instruments",
+            "use safety equipment in construction",
+            "work ergonomically"
+          ]
+        },
+        {
+          "slug": "electrician",
+          "name": "Electrician",
+          "n": 3,
+          "skills": [
+            "follow health and safety procedures in construction",
+            "use measurement instruments",
+            "use safety equipment in construction"
+          ]
+        }
+      ]
     },
     {
       "slug": "painter-decorator",
@@ -9408,7 +9715,68 @@
           }
         ],
         "indicator": "cedefop-stas-employment-growth"
-      }
+      },
+      "shares": [
+        {
+          "slug": "bricklayer",
+          "name": "Bricklayer",
+          "n": 10,
+          "skills": [
+            "follow health and safety procedures in construction",
+            "follow safety procedures when working at heights",
+            "inspect construction supplies",
+            "interpret 2D plans",
+            "interpret 3D plans",
+            "snap chalk line",
+            "transport construction supplies",
+            "use measurement instruments",
+            "use safety equipment in construction",
+            "work ergonomically"
+          ]
+        },
+        {
+          "slug": "carpenter",
+          "name": "Carpenter or joiner",
+          "n": 9,
+          "skills": [
+            "follow health and safety procedures in construction",
+            "inspect construction supplies",
+            "interpret 2D plans",
+            "interpret 3D plans",
+            "snap chalk line",
+            "transport construction supplies",
+            "use measurement instruments",
+            "use safety equipment in construction",
+            "work ergonomically"
+          ]
+        },
+        {
+          "slug": "plumber",
+          "name": "Plumber",
+          "n": 9,
+          "skills": [
+            "follow health and safety procedures in construction",
+            "inspect construction supplies",
+            "interpret 2D plans",
+            "interpret 3D plans",
+            "snap chalk line",
+            "transport construction supplies",
+            "use measurement instruments",
+            "use safety equipment in construction",
+            "work ergonomically"
+          ]
+        },
+        {
+          "slug": "electrician",
+          "name": "Electrician",
+          "n": 3,
+          "skills": [
+            "follow health and safety procedures in construction",
+            "use measurement instruments",
+            "use safety equipment in construction"
+          ]
+        }
+      ]
     },
     {
       "slug": "welder",
@@ -10569,7 +10937,50 @@
           }
         ],
         "indicator": "cedefop-stas-employment-growth"
-      }
+      },
+      "shares": [
+        {
+          "slug": "plumber",
+          "name": "Plumber",
+          "n": 4,
+          "skills": [
+            "follow health and safety procedures in construction",
+            "interpret 2D plans",
+            "interpret 3D plans",
+            "operate welding equipment"
+          ]
+        },
+        {
+          "slug": "bricklayer",
+          "name": "Bricklayer",
+          "n": 3,
+          "skills": [
+            "follow health and safety procedures in construction",
+            "interpret 2D plans",
+            "interpret 3D plans"
+          ]
+        },
+        {
+          "slug": "carpenter",
+          "name": "Carpenter or joiner",
+          "n": 3,
+          "skills": [
+            "follow health and safety procedures in construction",
+            "interpret 2D plans",
+            "interpret 3D plans"
+          ]
+        },
+        {
+          "slug": "mechatronics-technician",
+          "name": "Mechatronics technician",
+          "n": 3,
+          "skills": [
+            "align components",
+            "perform test run",
+            "quality standards"
+          ]
+        }
+      ]
     },
     {
       "slug": "car-mechanic",
@@ -11563,7 +11974,41 @@
           }
         ],
         "indicator": "cedefop-stas-employment-growth"
-      }
+      },
+      "shares": [
+        {
+          "slug": "hairdresser",
+          "name": "Hairdresser",
+          "n": 1,
+          "skills": [
+            "identify customer's needs"
+          ]
+        },
+        {
+          "slug": "sales-assistant",
+          "name": "Retail sales assistant",
+          "n": 1,
+          "skills": [
+            "identify customer's needs"
+          ]
+        },
+        {
+          "slug": "waiter",
+          "name": "Waiter or waitress",
+          "n": 1,
+          "skills": [
+            "identify customer's needs"
+          ]
+        },
+        {
+          "slug": "welder",
+          "name": "Welder",
+          "n": 1,
+          "skills": [
+            "wear appropriate protective gear"
+          ]
+        }
+      ]
     },
     {
       "slug": "mechatronics-technician",
@@ -12485,7 +12930,19 @@
           }
         ],
         "indicator": "cedefop-stas-employment-growth"
-      }
+      },
+      "shares": [
+        {
+          "slug": "welder",
+          "name": "Welder",
+          "n": 3,
+          "skills": [
+            "align components",
+            "perform test run",
+            "quality standards"
+          ]
+        }
+      ]
     },
     {
       "slug": "butcher",
@@ -13361,7 +13818,31 @@
           }
         ],
         "indicator": "cedefop-stas-employment-growth"
-      }
+      },
+      "shares": [
+        {
+          "slug": "baker",
+          "name": "Baker",
+          "n": 7,
+          "skills": [
+            "apply GMP",
+            "apply HACCP",
+            "apply requirements concerning manufacturing of food and beverages",
+            "ensure sanitation",
+            "follow hygienic procedures during food processing",
+            "mark differences in colours",
+            "measure precise food processing operations"
+          ]
+        },
+        {
+          "slug": "sales-assistant",
+          "name": "Retail sales assistant",
+          "n": 1,
+          "skills": [
+            "monitor stock level"
+          ]
+        }
+      ]
     },
     {
       "slug": "gardener",
@@ -14954,7 +15435,8 @@
           }
         ],
         "indicator": "cedefop-stas-employment-growth"
-      }
+      },
+      "shares": []
     },
     {
       "slug": "sales-assistant",
@@ -16246,7 +16728,42 @@
           }
         ],
         "indicator": "cedefop-stas-employment-growth"
-      }
+      },
+      "shares": [
+        {
+          "slug": "waiter",
+          "name": "Waiter or waitress",
+          "n": 2,
+          "skills": [
+            "identify customer's needs",
+            "maintain relationship with customers"
+          ]
+        },
+        {
+          "slug": "butcher",
+          "name": "Butcher",
+          "n": 1,
+          "skills": [
+            "monitor stock level"
+          ]
+        },
+        {
+          "slug": "car-mechanic",
+          "name": "Car mechanic",
+          "n": 1,
+          "skills": [
+            "identify customer's needs"
+          ]
+        },
+        {
+          "slug": "hairdresser",
+          "name": "Hairdresser",
+          "n": 1,
+          "skills": [
+            "identify customer's needs"
+          ]
+        }
+      ]
     },
     {
       "slug": "software-developer",
@@ -17981,7 +18498,8 @@
           }
         ],
         "indicator": "cedefop-stas-employment-growth"
-      }
+      },
+      "shares": []
     },
     {
       "slug": "healthcare-assistant",
@@ -19320,7 +19838,8 @@
           }
         ],
         "indicator": "cedefop-stas-employment-growth"
-      }
+      },
+      "shares": []
     },
     {
       "slug": "childcare-worker",
@@ -20606,7 +21125,8 @@
           }
         ],
         "indicator": "cedefop-stas-employment-growth"
-      }
+      },
+      "shares": []
     },
     {
       "slug": "waiter",
@@ -21542,7 +22062,405 @@
           }
         ],
         "indicator": "cedefop-stas-employment-growth"
-      }
+      },
+      "shares": [
+        {
+          "slug": "hairdresser",
+          "name": "Hairdresser",
+          "n": 3,
+          "skills": [
+            "identify customer's needs",
+            "maintain customer service",
+            "process payments"
+          ]
+        },
+        {
+          "slug": "cook",
+          "name": "Cook",
+          "n": 2,
+          "skills": [
+            "comply with food safety and hygiene",
+            "work in a hospitality team"
+          ]
+        },
+        {
+          "slug": "sales-assistant",
+          "name": "Retail sales assistant",
+          "n": 2,
+          "skills": [
+            "identify customer's needs",
+            "maintain relationship with customers"
+          ]
+        },
+        {
+          "slug": "car-mechanic",
+          "name": "Car mechanic",
+          "n": 1,
+          "skills": [
+            "identify customer's needs"
+          ]
+        }
+      ]
     }
-  ]
+  ],
+  "shared_skills": {
+    "skills": [
+      {
+        "title": "follow health and safety procedures in construction",
+        "n": 6
+      },
+      {
+        "title": "interpret 2D plans",
+        "n": 5
+      },
+      {
+        "title": "interpret 3D plans",
+        "n": 5
+      },
+      {
+        "title": "use measurement instruments",
+        "n": 5
+      },
+      {
+        "title": "use safety equipment in construction",
+        "n": 5
+      },
+      {
+        "title": "work ergonomically",
+        "n": 5
+      },
+      {
+        "title": "identify customer's needs",
+        "n": 4
+      },
+      {
+        "title": "inspect construction supplies",
+        "n": 4
+      },
+      {
+        "title": "snap chalk line",
+        "n": 4
+      },
+      {
+        "title": "transport construction supplies",
+        "n": 4
+      },
+      {
+        "title": "align components",
+        "n": 2
+      },
+      {
+        "title": "apply GMP",
+        "n": 2
+      },
+      {
+        "title": "apply HACCP",
+        "n": 2
+      },
+      {
+        "title": "apply requirements concerning manufacturing of food and beverages",
+        "n": 2
+      },
+      {
+        "title": "comply with food safety and hygiene",
+        "n": 2
+      }
+    ],
+    "rows": [
+      {
+        "slug": "electrician",
+        "name": "Electrician",
+        "has": [
+          true,
+          false,
+          false,
+          true,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      {
+        "slug": "plumber",
+        "name": "Plumber",
+        "has": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false,
+          true,
+          true,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      {
+        "slug": "cook",
+        "name": "Cook",
+        "has": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          true
+        ]
+      },
+      {
+        "slug": "baker",
+        "name": "Baker",
+        "has": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          false
+        ]
+      },
+      {
+        "slug": "hairdresser",
+        "name": "Hairdresser",
+        "has": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          true,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      {
+        "slug": "carpenter",
+        "name": "Carpenter or joiner",
+        "has": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false,
+          true,
+          true,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      {
+        "slug": "bricklayer",
+        "name": "Bricklayer",
+        "has": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false,
+          true,
+          true,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      {
+        "slug": "painter-decorator",
+        "name": "Painter and decorator",
+        "has": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          false,
+          true,
+          true,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      {
+        "slug": "welder",
+        "name": "Welder",
+        "has": [
+          true,
+          true,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      {
+        "slug": "car-mechanic",
+        "name": "Car mechanic",
+        "has": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      {
+        "slug": "mechatronics-technician",
+        "name": "Mechatronics technician",
+        "has": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      {
+        "slug": "butcher",
+        "name": "Butcher",
+        "has": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          true,
+          true,
+          true,
+          false
+        ]
+      },
+      {
+        "slug": "sales-assistant",
+        "name": "Retail sales assistant",
+        "has": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      {
+        "slug": "waiter",
+        "name": "Waiter or waitress",
+        "has": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          true
+        ]
+      }
+    ]
+  }
 }

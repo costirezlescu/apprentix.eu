@@ -3,11 +3,11 @@
    All text is set with textContent. No tracking: the only thing stored is the
    viewer's best score, in their own browser. */
 
-import { url } from './data.js?v=32ac435b';
+import { url } from './data.js?v=1c53ec88';
 import {
   ROUND, parseSeed, newSeed, drawRound, isCorrect, record, freshState, verdict,
   shareText, roundLink, tweenDisplay, meterWidths,
-} from './play-core.js?v=32ac435b';
+} from './play-core.js?v=1c53ec88';
 
 const BEST_KEY = 'apprentix-play-best';
 const root = document.getElementById('play');
