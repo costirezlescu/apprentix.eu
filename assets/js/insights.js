@@ -2,9 +2,9 @@
    filters insights by audience. All text is already in the HTML; this only
    adds the visual layer. */
 
-import { url } from './data.js?v=1c53ec88';
-import { drawInsight } from './insight-chart.js?v=1c53ec88';
-import { addShareControls } from './share.js?v=1c53ec88';
+import { url } from './data.js?v=af878328';
+import { drawInsight } from './insight-chart.js?v=af878328';
+import { addShareControls } from './share.js?v=af878328';
 
 let ITEMS = [];
 

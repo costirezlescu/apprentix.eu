@@ -2,11 +2,11 @@
    One question at a time; answers live in the URL query only (no storage, no tracking).
    All record text is inserted with textContent / DOM nodes — never as HTML. */
 
-import { loadDataset, url } from './data.js?v=1c53ec88';
+import { loadDataset, url } from './data.js?v=af878328';
 import {
   QUESTIONS, DONT_MIND, DONT_KNOW_STATUS, parseAnswers, encodeAnswers, answeredCount,
   rankSchemes, fitLabel, schemeLinks, siteCode
-} from './find-score.js?v=1c53ec88';
+} from './find-score.js?v=af878328';
 
 const $ = (id) => document.getElementById(id);
 const SHOW_FIRST = 10;

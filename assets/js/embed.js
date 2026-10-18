@@ -2,9 +2,9 @@
    One chart per page, with its title, source, licence and a link back, sized for an
    <iframe> on someone else's site. All text is set with textContent. */
 
-import { url } from './data.js?v=1c53ec88';
-import { formatter, tileMap, barChart, lineChart, lineLegend, fixedScale, timeControls } from './charts.js?v=1c53ec88';
-import { drawInsight } from './insight-chart.js?v=1c53ec88';
+import { url } from './data.js?v=af878328';
+import { formatter, tileMap, barChart, lineChart, lineLegend, fixedScale, timeControls } from './charts.js?v=af878328';
+import { drawInsight } from './insight-chart.js?v=af878328';
 
 const $ = id => document.getElementById(id);
 const params = new URLSearchParams(location.search);

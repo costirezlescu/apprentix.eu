@@ -46,7 +46,7 @@ function compose(host, meta) {
   const ink = root.getPropertyValue('--ink').trim() || '#14181b';
   const muted = root.getPropertyValue('--muted').trim() || '#5c6569';
   const accent = root.getPropertyValue('--accent').trim() || '#0f6b63';
-  const font = 'Public Sans, Segoe UI, system-ui, sans-serif';
+  const font = root.getPropertyValue('--body').trim().replace(/"/g, "'") || 'Public Sans, Segoe UI, system-ui, sans-serif';
 
   const pad = 28;
   const parts = svgs.map(s => {

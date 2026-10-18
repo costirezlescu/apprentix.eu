@@ -151,6 +151,8 @@ def all(connectors: dict, status: dict) -> None:
     render_pages.render_all()
     from . import follow
     follow.build()            # one Atom feed per country page → data/feeds/
+    from . import design
+    design.apply()            # fonts and design stylesheet (pipeline/design.py) on hand-written pages
     from . import asset_version
     asset_version.apply()     # ?v= on CSS/JS references in hand-written pages and JS imports
     from . import build_ai_index

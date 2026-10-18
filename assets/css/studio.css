@@ -1,0 +1,236 @@
+/* Apprentix.EU — "Studio" design (proposal 6, chosen 18 October 2026)
+
+   Loaded after site.css on main-site pages only, while pipeline/design.py has DESIGN = "studio".
+   site.css is untouched: set DESIGN = "current" and rebuild to return to the original look.
+   Cedefop Daily (/daily) never loads this file.
+
+   Big confident type (Bricolage Grotesque), plain readable text (Instrument Sans), data in calm
+   blue, tomato for actions, pastel colour blocks where the site invites you in (start cards,
+   learner paths, story steps), rounder and borderless cards. */
+
+:root {
+  --ground: #f5f6fa;
+  --surface: #ffffff;
+  --sunken: #eceef5;
+  --ink: #17172b;
+  --muted: #59597a;
+  --faint: #75758f;
+  --line: #e2e3ee;
+  --line-strong: #cbcde0;
+  --accent: #3546d6;          /* data, links, selection */
+  --accent-ink: #2a37b0;
+  --accent-soft: #e5e8ff;
+  --on-accent: #ffffff;
+  --amber: #b45309;
+  --amber-soft: #fff1dc;
+  --shadow: 0 12px 32px rgba(23, 23, 43, .09);
+  --card-shadow: 0 1px 2px rgba(23, 23, 43, .05), 0 1px 1px rgba(23, 23, 43, .03);
+
+  --action: #d63b25;          /* primary buttons: white text passes AA (4.6:1) */
+  --action-hover: #b8301c;
+  --on-action: #ffffff;
+  --tomato: #e8452f;          /* decoration and large text only */
+  --fill-1: #c9e6ff;
+  --fill-2: #ffe39a;
+  --fill-3: #c8f0da;
+  --fill-4: #ffd6cc;
+  --on-fill: #17172b;
+
+  --display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --body: "Instrument Sans", "Segoe UI", system-ui, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, Consolas, monospace;
+  --r: 18px;
+  --r-lg: 24px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --ground: #111122;
+    --surface: #1a1a31;
+    --sunken: #0d0d1a;
+    --ink: #f0f0fb;
+    --muted: #aaaacb;
+    --faint: #8585a6;
+    --line: #2b2b48;
+    --line-strong: #3d3d62;
+    --accent: #8f9bff;
+    --accent-ink: #b3bcff;
+    --accent-soft: #23264d;
+    --on-accent: #111122;
+    --amber: #e0a561;
+    --amber-soft: #33240f;
+    --shadow: 0 12px 32px rgba(0, 0, 0, .5);
+    --card-shadow: none;
+    --action: #ff7663;
+    --action-hover: #ff9384;
+    --on-action: #111122;
+    --tomato: #ff7663;
+    --fill-1: #1c3653;
+    --fill-2: #4a3c11;
+    --fill-3: #173f2b;
+    --fill-4: #4a2620;
+    --on-fill: #f0f0fb;
+  }
+}
+:root[data-theme="dark"] {
+  --ground: #111122;
+  --surface: #1a1a31;
+  --sunken: #0d0d1a;
+  --ink: #f0f0fb;
+  --muted: #aaaacb;
+  --faint: #8585a6;
+  --line: #2b2b48;
+  --line-strong: #3d3d62;
+  --accent: #8f9bff;
+  --accent-ink: #b3bcff;
+  --accent-soft: #23264d;
+  --on-accent: #111122;
+  --amber: #e0a561;
+  --amber-soft: #33240f;
+  --shadow: 0 12px 32px rgba(0, 0, 0, .5);
+  --card-shadow: none;
+  --action: #ff7663;
+  --action-hover: #ff9384;
+  --on-action: #111122;
+  --tomato: #ff7663;
+  --fill-1: #1c3653;
+  --fill-2: #4a3c11;
+  --fill-3: #173f2b;
+  --fill-4: #4a2620;
+  --on-fill: #f0f0fb;
+}
+
+/* ---------- Type ---------- */
+
+body { font-size: 15.5px; }
+h1, h2, h3 { font-family: var(--display); letter-spacing: -.02em; }
+h4 { font-family: var(--display); }
+
+/* Display headings: heavier and tighter than the serif they replace. */
+.hero h1, .cp-head h1, .in-head h1, .st-head h1, .results-head h1, .ask-head h1, .find-title, .duel-title,
+.play-title, .play-end-title, .embed-head h1 { font-weight: 800; letter-spacing: -.03em; }
+.section > h2, .cp-sec > h2, .duel-sec > h2, .drawer h2, .in-card h2, .tl-home-head h2, .pulse-head h2,
+.st-foot h2, .changes-title, .start-card h3, .sow-title, .wic h3, .oc-card-q, .find-q, .find-r-title,
+.duel-side-name, .play-q, .play-review-title, .mf-statement, .gl-entry dt, .gl-pop-title, .pt-story h4 { font-weight: 700; }
+.stat .n, .lp-big, .sc-glance-v, .oc-stats dd, .play-value, .tl-year, .tl-home-year, .mf-score, .duel-score { font-weight: 800; letter-spacing: -.02em; }
+.dyk-text { font-family: var(--body); font-weight: 500; }
+
+.hero h1 { font-size: clamp(2.4rem, 6.4vw, 4rem); line-height: .98; max-width: 15ch; }
+.cp-head h1, .in-head h1, .st-head h1 { line-height: 1; }
+.section > h2, .cp-sec > h2 { font-size: 1.7rem; }
+
+/* ---------- Header, notice, footer ---------- */
+
+.site-head {
+  background: color-mix(in oklab, var(--ground) 86%, transparent);
+  -webkit-backdrop-filter: saturate(1.4) blur(12px);
+  backdrop-filter: saturate(1.4) blur(12px);
+  border-bottom-color: var(--line);
+}
+.brand { font-weight: 800; letter-spacing: -.03em; font-size: 1.36rem; gap: 0; }
+.brand .x { color: var(--tomato); }
+.site-nav a { font-weight: 500; }
+.site-nav a[aria-current="page"] { color: var(--ink); text-decoration: underline; text-decoration-color: var(--tomato); text-decoration-thickness: 2px; text-underline-offset: 7px; }
+
+.indep { background: var(--accent-soft); border-bottom: 0; }
+.indep .tag { background: var(--accent); color: var(--on-accent); padding: 1px 8px; border-radius: 999px; }
+.indep p { color: var(--ink); }
+
+.site-foot { border-top: 0; background: var(--surface); }
+
+/* ---------- Surfaces: rounder, borderless cards ---------- */
+
+.ds-card, .panel, .card, .stat-tile, .chart-card, .target-card, .in-card, .ask-msg, .find-card, .duel-pickers,
+.duel-banner, .duel-card, .changes, .tl-home, .play-card, .play-result, .play-end-card, .sow-card, .mf-card, .mf-end,
+.pulse, .oc-card, .sc-fig, .sc-tilebox, .sc-glance, .st-js .st-fig {
+  border-radius: var(--r);
+  border-color: transparent;
+  box-shadow: var(--card-shadow);
+}
+.table-wrap, .cp-table, .duel-table, .oc-matrix-wrap { border-radius: var(--r); }
+.cp-card, .wic-card, .follow-box, .find-opt, .duel-list { border-radius: 14px; }
+.ds-card:hover, .card:hover, .target-card:hover { border-color: transparent; box-shadow: var(--shadow); }
+.card.picked { border-color: var(--accent); }
+.dyk, .sow-card { border-left: 0; }
+
+/* ---------- Controls ---------- */
+
+.btn { border-radius: 999px; padding: 7px 15px; font-weight: 600; }
+.btn.btn.primary { background: var(--action); border-color: var(--action); color: var(--on-action); }
+.btn.btn.primary:hover { background: var(--action-hover); border-color: var(--action-hover); }
+/* In repeated result cards a primary button is a quiet blue, so a grid of 30 cards is not a wall of red. */
+.card-actions .btn.btn.primary { background: var(--accent); border-color: var(--accent); color: var(--on-accent); }
+.card-actions .btn.btn.primary:hover { background: var(--accent-ink); border-color: var(--accent-ink); }
+.chip { font-weight: 500; }
+.search, .filterbar select { border-radius: 12px; }
+.cp-toc a { font-weight: 500; }
+.fact { border-radius: 999px; }
+
+/* ---------- Home ---------- */
+
+.hero { border-bottom: 0; padding-block: 60px 30px; }
+.stats { gap: 10px; }
+.stat { background: var(--surface); border-radius: var(--r); padding: 12px 16px; box-shadow: var(--card-shadow); }
+.stat .n { font-size: 2.15rem; }
+
+/* "Did you know?": a tilted blue note. */
+.hero-dyk.dyk { background: var(--accent); color: var(--on-accent); border: 0; transform: rotate(-1.2deg); box-shadow: var(--shadow); }
+.hero-dyk .dyk-eyebrow, .hero-dyk .dyk-text, .hero-dyk .dyk-source, .hero-dyk .dyk-source a { color: var(--on-accent); }
+.hero-dyk .dyk-kind { color: var(--on-accent); border-color: color-mix(in oklab, var(--on-accent) 45%, transparent); }
+.hero-dyk .dyk-hl { color: var(--on-accent); font-weight: 800; background: linear-gradient(transparent 64%, color-mix(in oklab, var(--on-accent) 30%, transparent) 64%); }
+.hero-dyk .dyk-actions .btn { background: transparent; color: var(--on-accent); border-color: color-mix(in oklab, var(--on-accent) 50%, transparent); }
+.hero-dyk .dyk-actions .btn.btn.primary { background: var(--on-accent); color: var(--accent); border-color: var(--on-accent); }
+.hero-dyk .dyk-actions .btn:focus-visible { outline-color: var(--on-accent); }
+.hero-dyk .gl-term { color: inherit; text-decoration-color: color-mix(in oklab, var(--on-accent) 60%, transparent); }
+.hero-dyk .gl-term:hover, .hero-dyk .gl-term[aria-expanded="true"] { background: color-mix(in oklab, var(--on-accent) 18%, transparent); }
+.hero-dyk .gl-term:focus-visible { outline-color: var(--on-accent); }
+@media (prefers-reduced-motion: reduce) { .hero-dyk.dyk { transform: none; } }
+
+/* Start here: solid pastel blocks. */
+.start-card { border: 0; color: var(--on-fill); border-radius: var(--r-lg); min-height: 190px; padding: 22px; }
+.start-card:nth-child(4n+1) { background: var(--fill-1); }
+.start-card:nth-child(4n+2) { background: var(--fill-2); }
+.start-card:nth-child(4n+3) { background: var(--fill-3); }
+.start-card:nth-child(4n+4) { background: var(--fill-4); }
+.start-card h3 { font-size: 1.45rem; line-height: 1.1; }
+.start-card p, .start-kicker, .start-go { color: var(--on-fill); }
+.start-card p { opacity: .82; }
+.start-go { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 4px; text-decoration-color: color-mix(in oklab, var(--on-fill) 40%, transparent); }
+.start-card:hover, .start-card:focus-visible { border: 0; transform: translateY(-3px) rotate(-.4deg); }
+
+/* ---------- Learner path: the journey as colour blocks ---------- */
+
+.lp-step { border-color: transparent; color: var(--on-fill); }
+.lp-step:nth-child(1) { background: var(--fill-1); }
+.lp-step:nth-child(2) { background: var(--fill-2); }
+.lp-step:nth-child(3) { background: var(--fill-3); }
+.lp-step.lp-then { background: var(--fill-4); border-color: transparent; }
+.lp-step:first-child { border-radius: var(--r) 0 0 var(--r); }
+.lp-step:last-child { border-radius: 0 var(--r) var(--r) 0; }
+.lp-step:not(:last-child)::after { background: inherit; border-color: transparent; }
+.lp-step p, .lp-k, .lp-big, .lp-split-k { color: var(--on-fill); }
+.lp-step p { opacity: .85; }
+.lp-split { background: color-mix(in oklab, var(--surface) 65%, transparent); }
+.lp-chip { background: var(--surface); color: var(--ink); }
+.lp-branch { border-radius: 12px; }
+.lp-branch .lp-k { color: var(--muted); }
+.lp-branch .lp-big { color: var(--accent-ink); }
+.lp-branch p { color: var(--ink); opacity: 1; }
+@media (max-width: 760px) {
+  .lp-step:first-child { border-radius: var(--r) var(--r) 0 0; }
+  .lp-step:last-child { border-radius: 0 0 var(--r) var(--r); }
+}
+
+/* ---------- Stories: the active step lifts in colour ---------- */
+
+.st-js .st-step p { border-color: transparent; font-size: 1.08rem; }
+.st-js .st-step.is-active p { background: var(--fill-2); color: var(--on-fill); border-color: transparent; }
+.st-js .st-step.is-active strong { color: var(--on-fill); }
+.st-step strong { font-family: var(--display); font-weight: 800; }
+
+/* ---------- Scheme stories and the scheme of the week ---------- */
+
+.pt-story, .find-story { background: var(--fill-2); color: var(--on-fill); border-color: transparent; }
+.pt-story .pt-src, .find-story .pt-src { color: var(--on-fill); opacity: .75; }
+.pt-split { border-radius: 999px; }
+.sow-card { border-radius: var(--r-lg); }

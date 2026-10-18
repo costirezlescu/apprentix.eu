@@ -2,11 +2,11 @@
    Loads data/published/duel/countries.json (built by pipeline/duel.py) once and
    renders two profiles side by side. All data text goes in via textContent. */
 
-import { url } from './data.js?v=1c53ec88';
+import { url } from './data.js?v=af878328';
 import {
   fmtValue, fmtEur, fmtInt, fold, compareMeasure, scorecard, scorecardText,
   onlyIn, euFor, scaleMax, pickFromParams, MAX_YEAR_GAP,
-} from './duel-core.js?v=1c53ec88';
+} from './duel-core.js?v=af878328';
 
 const $ = (s, el = document) => el.querySelector(s);
 const SVGNS = 'http://www.w3.org/2000/svg';

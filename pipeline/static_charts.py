@@ -17,10 +17,10 @@ from html import escape
 
 AGG = {"EU27", "EU28", "EA", "EA19", "EA20"}
 # Which way is better, for the chips on country pages. Indicators not listed are shown without a judgement.
-HIGHER_BETTER = {"eurostat-edat_lfse_24-vet", "cedefop-kivet-2080a", "cedefop-kivet-2090a", "cedefop-kivet-2066",
-                 "cedefop-kivet-1026", "eurostat-trng_cvt_34s", "oecd-emp-rate-upper-secondary",
+HIGHER_BETTER = {"eurostat-tps00215", "eurostat-edat_lfse_24-vet", "cedefop-kivet-2080a", "cedefop-kivet-2090a",
+                 "cedefop-kivet-2066", "cedefop-kivet-1026", "eurostat-trng_cvt_34s", "oecd-emp-rate-upper-secondary",
                  "cedefop-kivet-1050", "cedefop-reset"}
-LOWER_BETTER = {"eurostat-tps00215", "cedefop-kivet-3010", "cedefop-kivet-3030"}
+LOWER_BETTER = {"cedefop-kivet-3010", "cedefop-kivet-3030"}
 
 
 def e(v) -> str:
