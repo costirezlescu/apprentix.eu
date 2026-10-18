@@ -101,7 +101,7 @@ def plan_day(bank: dict, date: str, number: int, used: set, layout: str, rhythm:
         ed["lives_first"] = rhythm            # with the rhythm, Friday's Lives story opens the paper
     ed["question"] = bank["questions"][str(wd)]
     # The weekday feature (Mon deadlines, Tue paper, Wed country, Thu AI watch, Fri archive) and the chart.
-    for k, src in (("feature", "features"), ("chart", "charts")):
+    for k, src in (("feature", "features"), ("chart", "charts"), ("out", "out")):
         if bank.get(src, {}).get(date):
             ed[k] = bank[src][date]
     diary = bank["diary"]
@@ -141,10 +141,14 @@ def main(argv: list[str]) -> int:
             out.parent.mkdir(parents=True, exist_ok=True)
             out.write_text(json.dumps(ed, ensure_ascii=False, indent=1) + "\n", "utf-8")
         print(f"lab/{variant_id(layout, rhythm)}: {len(used)} of {len(bank['stories'])} bank stories used over 5 days")
-    # The main paper: fixed shape with the weekday rhythm, for the bank's first day only.
-    ed = plan_day(bank, start, 1, set(), "shape", True, main=True, days_left=len(days))
-    (DAILY / "editions" / f"{start}.json").write_text(json.dumps(ed, ensure_ascii=False, indent=1) + "\n", "utf-8")
-    print(f"editions/{start}.json: main edition (shape, weekday rhythm)")
+    # The paper itself: fixed shape with the weekday rhythm, every day of the week, numbered on
+    # from the last edition before this week.
+    first = 1 + sum(1 for p in (DAILY / "editions").glob("*.json") if p.stem < start)
+    used = set()
+    for n, date in enumerate(days):
+        ed = plan_day(bank, date, first + n, used, "shape", True, main=True, days_left=len(days) - n)
+        (DAILY / "editions" / f"{date}.json").write_text(json.dumps(ed, ensure_ascii=False, indent=1) + "\n", "utf-8")
+    print(f"editions/{days[0]}…{days[-1]}.json: No. {first}–{first + len(days) - 1} (shape, weekday rhythm)")
     return 0
 
 

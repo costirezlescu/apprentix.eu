@@ -32,6 +32,7 @@
   --t-data: #eef1e1;
   --t-people: #f6e5ee;
   --t-debate: #e9ebf1;
+  --p-out: #1d6b62; --t-out: #e3f0ee;
   --pillar: var(--ink);
   --tint: var(--sunken);
 }
@@ -43,7 +44,7 @@
     --accent: #a7b6e6; --accent-ink: #a7b6e6; --accent-soft: #1a1e2a; --on-accent: #10131c;
     --amber: #e0a561; --amber-soft: #2e2416; --bar-plain: #2c3244;
     --p-cedefop: #a7b6e6; --p-policy: #82c2dd; --p-agencies: #c3a2ee; --p-countries: #f0a56b;
-    --p-research: #f08f95; --p-data: #bccf6a; --p-people: #ee8fc0; --p-debate: #b2bdd6;
+    --p-research: #f08f95; --p-data: #bccf6a; --p-people: #ee8fc0; --p-debate: #b2bdd6; --p-out: #7fd1c4; --t-out: #12302c;
     --t-cedefop: #1b2135; --t-policy: #142a35; --t-agencies: #251c33; --t-countries: #33241a;
     --t-research: #351b1d; --t-data: #252b14; --t-people: #331a28; --t-debate: #1c2230;
   }
@@ -55,7 +56,7 @@
   --accent: #a7b6e6; --accent-ink: #a7b6e6; --accent-soft: #1a1e2a; --on-accent: #10131c;
   --amber: #e0a561; --amber-soft: #2e2416; --bar-plain: #2c3244;
   --p-cedefop: #a7b6e6; --p-policy: #82c2dd; --p-agencies: #c3a2ee; --p-countries: #f0a56b;
-  --p-research: #f08f95; --p-data: #bccf6a; --p-people: #ee8fc0; --p-debate: #b2bdd6;
+  --p-research: #f08f95; --p-data: #bccf6a; --p-people: #ee8fc0; --p-debate: #b2bdd6; --p-out: #7fd1c4; --t-out: #12302c;
   --t-cedefop: #1b2135; --t-policy: #142a35; --t-agencies: #251c33; --t-countries: #33241a;
   --t-research: #351b1d; --t-data: #252b14; --t-people: #331a28; --t-debate: #1c2230;
 }
@@ -70,6 +71,7 @@
 [data-pillar="debate"]    { --pillar: var(--p-debate);    --tint: var(--t-debate); }
 [data-pillar="lives"]     { --pillar: var(--p-people);    --tint: var(--t-people); }
 [data-pillar="field"]     { --pillar: var(--p-countries); --tint: var(--t-countries); }
+[data-pillar="out"]       { --pillar: var(--p-out);       --tint: var(--t-out); }
 
 body { background: var(--ground); color: var(--ink); font-family: var(--body); font-size: 15.5px; line-height: 1.6; font-variant-numeric: lining-nums; }
 a { color: var(--ink); text-decoration-color: var(--line-strong); text-underline-offset: 2px; }
@@ -358,6 +360,20 @@ a:hover { color: var(--accent); text-decoration-color: currentColor; }
 .dc-trend circle { fill: var(--pillar); }
 .dc-trend .ct-grid { stroke: var(--line); stroke-width: 1; }
 .dc-trend .ct-axis { stroke: var(--line-strong); stroke-width: 1; }
+
+/* ---------- Out this week (Fridays) ---------- */
+
+.dc-out-grid { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); gap: 0 32px; align-items: start; }
+@media (max-width: 860px) { .dc-out-grid { grid-template-columns: 1fr; } }
+.dc-out-list { list-style: none; margin: 0; padding: 0; display: grid; }
+.dc-out-list li { border-top: 1px solid var(--line); padding: 12px 0 14px; }
+.dc-out-list li:first-child { border-top: 0; padding-top: 0; }
+.dc-hl--out { font-size: 1.15rem; }
+.dc-out-trail { margin: 4px 0 2px; }
+.dc-listen { margin: 6px 0 0; font-size: .88rem; color: var(--pillar); }
+.dc-listen b { color: var(--ink); font-weight: 600; }
+.dc-out-also ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+.dc-out-also li p { margin: 0; font-size: .92rem; }
 
 /* ---------- Pages ---------- */
 

@@ -108,6 +108,14 @@ The first version read mostly from the top: institutions, agencies and Cedefop i
 - **In the bank:** `features` and `charts`, keyed by date. The planner attaches them; `check.py` runs the usual checks on them (numbers, quotations, items, links) plus a deadline check and chart checks (data present, year covered, no negative values in a ranked chart).
 - **Fetching some sources only:** `python3 -m pipeline.daily.fetch <date> --only consultations,apprentix` merges those sources into an existing pool and keeps the others' status.
 
+## Tuesday to Friday, and Out this week (decided 18 October 2026)
+
+- **The masthead** no longer shows "Built from public sources…" or the version line. Versions are still kept and listed under Editions.
+- **The whole week is written ahead:** `plan.py` writes No. 1–5 (Monday 19 to Friday 23 October) from the week's bank. `render.py` renders every edition. The front page is the edition of the day in Athens time, or No. 1 before the paper starts. Because the site is static and editions are written ahead, a small script on `/daily/` moves readers on to the edition of their day, and the Editions page hides editions dated after today.
+- **Out this week (Fridays):** Thessaloniki concerts, films, talks and exhibitions for Friday to Thursday, in the format of the Daily Codes weekend box (day and time, genre, title, two lines, performers · venue · price, an optional "Listen for", and "Also on" for festivals and exhibitions).
+  - Picked only from venues' and organisers' own sites, never aggregators or ticket resellers. Venues that refuse scripts are left out, never worked around.
+  - The bank's `out` lists each pick with its event page; `fetch.py --only events` reads those pages into the pool, and `check.py` verifies each number (day, time, price) against the page and fails any date outside the edition's week.
+
 ## Visual design (decided 18 October 2026)
 
 - **Version 3, "Broadsheet · Cedefop blue",** is the Daily's look: the current layout restyled as a broadsheet. Centred bold serif masthead with a double rule, small-caps dateline and section bar, hairline columns instead of boxed cards, a centred "SIX TO KNOW" heading.

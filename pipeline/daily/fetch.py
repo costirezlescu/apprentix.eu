@@ -715,6 +715,29 @@ def consultations() -> list[dict]:
     return out
 
 
+def event_pages(edition: dt.date) -> list[dict]:
+    """The event pages that the week's "Out this week" picks link to (bank: "out"), read from the
+    venues' own sites so that check.py can verify each date, time and price against the page.
+    Plain HTTP only: a venue that refuses scripts is recorded and its events cannot run."""
+    bank = ROOT / "daily" / "bank" / f"{edition}.json"
+    if not bank.exists():
+        return []
+    out_days = json.loads(bank.read_text("utf-8")).get("out", {})
+    urls = {x["url"] for d in out_days.values() for x in d.get("items", []) + d.get("also", [])}
+    out = []
+    for url in sorted(urls):
+        body = get("venues", url)
+        if body is None:
+            continue
+        page = body.decode("utf-8", "replace")
+        title = re.search(r"<title[^>]*>(.*?)</title>", page, re.S | re.I)
+        page = re.sub(r"<(script|style|noscript|svg)\b.*?</\1>", " ", page, flags=re.S | re.I)
+        out.append(item("venues", "out", "event", html.unescape(title.group(1)) if title else url, url, None,
+                        "", html_to_text(page)[:60000], host=urllib.parse.urlparse(url).netloc))
+    STATUS["venues"] = "ok" if out else STATUS.get("venues", "no event pages")
+    return out
+
+
 def indicator_data(ind_id: str) -> dict:
     """An Apprentix indicator, compacted for charts: the default breakdown only, every country's
     values by year. The values also go into the item's text, so check.py can find any number used."""
@@ -867,6 +890,7 @@ def main(argv: list[str]) -> int:
                      ("Eurostat", lambda: eurostat(start, end)),
                      ("Press and the field", lambda: press(edition)),
                      ("Consultations", consultations),
+                     ("Events", lambda: event_pages(edition)),
                      ("Apprentix", apprentix)]:
         if only and name.lower().replace(" ", "_").split(",")[0] not in only.lower().split(","):
             continue

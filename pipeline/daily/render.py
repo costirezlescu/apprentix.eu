@@ -23,6 +23,7 @@ import json
 import re
 import statistics
 import sys
+import urllib.parse
 from pathlib import Path
 
 from ..asset_version import stamp_html
@@ -550,8 +551,7 @@ def masthead(ed: dict, nav: list[tuple[str, str, str]]) -> str:
     <div class="dm-brand"><a class="dm-title" href="/daily/">Cedefop Daily</a>
       <p class="dm-sub">Thessaloniki · Brussels</p></div>
     <div class="dm-meta"><strong>{e(long_date(ed['date']))}</strong>
-      <span>No. {e(ed['number'])}</span>{focus}<span>Built from {e(ed['built_from'])}</span>
-      <span class="dm-version">%%VERSION%%</span></div>
+      <span>No. {e(ed['number'])}</span>{focus}</div>
   </div>
   <nav class="dm-pillars" aria-label="Sections"><div class="wrap"><ul>{items}</ul></div></nav>
 </header>"""
@@ -841,6 +841,32 @@ def chart2(c: dict, P: dict) -> str:
 </section>"""
 
 
+def out2(o: dict, P: dict) -> str:
+    """Out this week (Fridays): picked from Thessaloniki venues' own listings."""
+    rows = []
+    for x in sorted(o["items"], key=lambda x: (x["date"], x.get("start", ""))):
+        d = dt.date.fromisoformat(x["date"])
+        when = f"{d.strftime('%a')} {d.day} {d.strftime('%b')}" + (f", {x['start']}" if x.get("start") else "")
+        listen = f'<p class="dc-listen">{e(x.get("listen_label", "Listen for"))}: <b>{e(x["listen"])}</b></p>' if x.get("listen") else ""
+        rows.append(f"""<li>
+  <p class="dc-kicker">{e(when)} <span>· {e(x['genre'])}</span></p>
+  <h3 class="dc-hl dc-hl--out"><a href="{e(href(x['url']))}">{e(x['title'])}</a></h3>
+  <p class="dc-out-trail">{e(x['trail'])}</p>
+  <p class="dc-brief-src">{e(x['meta'])}</p>
+  {listen}
+</li>""")
+    also = "".join(f'<li><p>{e(a["text"])}</p><p class="dc-brief-src"><a href="{e(href(a["url"]))}">{e(urllib.parse.urlparse(a["url"]).netloc.removeprefix("www."))}</a>'
+                   f'{" · " + e(a["meta"]) if a.get("meta") else ""}</p></li>' for a in o.get("also", []))
+    return f"""<section class="dc-section dc-out" id="out" data-pillar="out" aria-labelledby="h-out">
+  <h2 class="dc-sec-title" id="h-out">Out this week <span class="dc-sec-sub">· {e(o['sub'])}</span></h2>
+  <div class="dc-out-grid">
+    <ul class="dc-out-list">{''.join(rows)}</ul>
+    {f'<aside class="dc-out-also"><p class="dc-block-title">Also on</p><ul>{also}</ul></aside>' if also else ''}
+  </div>
+  <p class="dc-conn">Picked from the venues’ own listings, checked {e(fmt_date(o['checked'], True))}. Check the link before you go.</p>
+</section>"""
+
+
 def render_edition(ed: dict, pool: dict, theme: str | None = None) -> str:
     P = {i["id"]: i for i in pool["items"]}
     POOL_INDEX.clear()
@@ -850,7 +876,8 @@ def render_edition(ed: dict, pool: dict, theme: str | None = None) -> str:
     canonical = f"{SITE}/daily/{ed['date']}/" if not ed.get("preview") else f"{SITE}/daily/lab/"
     diary_label = ed["diary"]["title"]
     extras = ([("feature", ed["feature"].get("title") or FEATURE_TITLE[ed["feature"]["type"]], ed["feature"]["pillar"])]
-              if ed.get("feature") else []) + ([("chart", "Chart of the day", "data")] if ed.get("chart") else [])
+              if ed.get("feature") else []) + ([("chart", "Chart of the day", "data")] if ed.get("chart") else []) \
+        + ([("out", "Out this week", "out")] if ed.get("out") else [])
     more_today = ([feature2(ed["feature"], P, ed["date"])] if ed.get("feature") else []) \
         + ([chart2(ed["chart"], P)] if ed.get("chart") else [])
     if ed["layout"] == "shape":
@@ -879,6 +906,8 @@ def render_edition(ed: dict, pool: dict, theme: str | None = None) -> str:
 </section>""")
         out += more_today
         out.append(question2(ed["question"], P))
+        if ed.get("out"):
+            out.append(out2(ed["out"], P))
         out.append(diary2(ed["diary"], P, ed["date"]))
         out.append(more2(ed.get("more", []), P))
     else:
@@ -890,14 +919,16 @@ def render_edition(ed: dict, pool: dict, theme: str | None = None) -> str:
 </section>""")
         out += more_today
         out.append(question2(ed["question"], P).replace("Today’s question <span", "Data <span"))
+        if ed.get("out"):
+            out.append(out2(ed["out"], P))
         out.append(diary2(ed["diary"], P, ed["date"]))
     out += ["</main>", SCRIPT, "</body>\n</html>\n"]
-    page = stamp_html("\n".join(out))
-    if ed.get("preview"):
-        return page.replace("%%VERSION%%", f"Preview No. {ed['number']}")
-    n, hist = versions.current_number(ed["date"], page)
-    earlier = f' · <a href="/daily/archive.html#ed-{e(ed["date"])}">earlier versions</a>' if n > 1 else ""
-    return page.replace("%%VERSION%%", f"Version {n}{earlier}")
+    # Versions are still kept and listed under Editions; the masthead no longer names them.
+    return stamp_html("\n".join(out))
+
+
+ATHENS_TODAY_JS = ("<script>function athensToday() { return new Intl.DateTimeFormat('en-CA', "
+                   "{timeZone: 'Europe/Athens'}).format(new Date()); }</script>\n")
 
 
 def render_archive(editions: list[dict]) -> str:
@@ -907,13 +938,15 @@ def render_archive(editions: list[dict]) -> str:
         vs = " · ".join(f'<a href="/daily/{e(d)}/v{v["n"]}/">version {v["n"]}</a> '
                         f'<span class="dc-brief-src">({e(versions.when(v["time"]))})</span>'
                         for v in versions.history(d))
-        rows.append(f'<li id="ed-{e(d)}"><a href="/daily/{e(d)}/">{e(long_date(d))}</a> · No. {e(x["number"])} · '
+        rows.append(f'<li id="ed-{e(d)}" data-date="{e(d)}"><a href="/daily/{e(d)}/">{e(long_date(d))}</a> · No. {e(x["number"])} · '
                     f'{e(x["lead"]["headline"])}{f"<br><span class=dc-versions>Published versions: {vs}</span>" if vs else ""}</li>')
     rows = "".join(rows)
     return stamp_html("\n".join([head("Cedefop Daily — Editions", "Every edition of Cedefop Daily.", f"{SITE}/daily/archive.html"),
                                  '<main id="main" class="wrap dc-main dc-page"><h1 class="dm-title">Editions</h1>',
                                  '<p class="dc-intro">Every version of every edition stays online. A new version is published when an edition is corrected or extended; each is kept as it was, with the stylesheets of the day.</p>',
-                                 f'<ul class="dc-archive">{rows}</ul></main>', "</body>\n</html>\n"]))
+                                 f'<ul class="dc-archive">{rows}</ul></main>', ATHENS_TODAY_JS +
+                                 "<script>document.querySelectorAll('[data-date]').forEach(li => { if (li.dataset.date > athensToday()) li.hidden = true; });</script>",
+                                 "</body>\n</html>\n"]))
 
 
 ABOUT = """
@@ -947,7 +980,7 @@ ABOUT = """
 
 <h2>Sections</h2>
 <p>About thirteen items a day, a five- to seven-minute read: <strong>The one thing</strong> (the day’s most important story, with a line on why it matters to Cedefop), <strong>Six to know</strong>, the weekday feature, the <strong>Chart of the day</strong>, <strong>Today’s question</strong> (a number to guess, a myth to call, a fact or an insight), the <strong>Diary</strong>, and <strong>More today</strong> as a short list of links. On Fridays, <strong>Lives</strong> opens the paper: one real person whose life vocational education and training has shaped. Stories come from Cedefop, the field, the wider debate, EU policy, the agencies and research, each marked with its section colour. The top strip shows “Today at Cedefop” when there is a public agenda for the day, and “This week in numbers” otherwise.</p>
-<p>Each weekday has a focus and a standing feature: Monday EU policy and Cedefop, with <strong>Deadlines</strong> (Commission initiatives open for feedback that touch Cedefop’s work, from the “Have your say” portal) and the week ahead in the diary; Tuesday research, with the <strong>Paper of the day</strong> (one new paper in plain language: question, method, finding, caveat); Wednesday the field, with <strong>Country in focus</strong> (one country’s numbers, regions, recent VET policy and typical apprentices); Thursday AI and the future of work, with <strong>AI watch</strong>; Friday long reads, with Lives and <strong>From the archive</strong> (what Cedefop published this week years ago, and what has changed since).</p>
+<p>Each weekday has a focus and a standing feature: Monday EU policy and Cedefop, with <strong>Deadlines</strong> (Commission initiatives open for feedback that touch Cedefop’s work, from the “Have your say” portal) and the week ahead in the diary; Tuesday research, with the <strong>Paper of the day</strong> (one new paper in plain language: question, method, finding, caveat); Wednesday the field, with <strong>Country in focus</strong> (one country’s numbers, regions, recent VET policy and typical apprentices); Thursday AI and the future of work, with <strong>AI watch</strong>; Friday long reads, with Lives, <strong>From the archive</strong> (what Cedefop published this week years ago, and what has changed since) and <strong>Out this week</strong>: concerts, films, talks and exhibitions in Thessaloniki for the week ahead, picked from the venues’ own listings. Each date, time and price is checked against the venue’s page; check the link before you go.</p>
 <p>Every day, the <strong>Chart of the day</strong> draws one indicator from the data Apprentix publishes (Cedefop, Eurostat and national sources). The chart is generated from the data; the two lines beside it are checked against it.</p>
 <h2>Lives</h2>
 <p>Lives stories come from published profiles and interviews. A person is named only as printed, and only when the source is a profile or interview they chose to give, in which they are the subject. Minors are never named, and nothing about health, family or money is included beyond what the story itself is about.</p>
@@ -1043,14 +1076,23 @@ def main(argv: list[str]) -> int:
         render_lab()
         return 0
     editions = [json.loads(p.read_text("utf-8")) for p in sorted((DAILY / "editions").glob("*.json"))]
-    want = argv[0] if argv else editions[-1]["date"]
-    ed = next(x for x in editions if x["date"] == want)
-    pool = json.loads((DAILY / "pool" / f"{ed['pool']}.json").read_text("utf-8"))
-    page = render_edition(ed, pool)
-    write(DAILY / ed["date"] / "index.html", page)
-    write(DAILY / ed["date"] / "sources.json", sources_json(ed, pool))
-    if ed["date"] == max(x["date"] for x in editions):
-        write(DAILY / "index.html", page.replace(f'href="{SITE}/daily/{ed["date"]}/"', f'href="{SITE}/daily/"', 1))
+    pools: dict = {}
+    pages = {}
+    for ed in editions if not argv else [x for x in editions if x["date"] in argv]:
+        pool = pools.setdefault(ed["pool"], json.loads((DAILY / "pool" / f"{ed['pool']}.json").read_text("utf-8")))
+        pages[ed["date"]] = page = render_edition(ed, pool)
+        write(DAILY / ed["date"] / "index.html", page)
+        write(DAILY / ed["date"] / "sources.json", sources_json(ed, pool))
+    # The front page is today's edition (Athens time), or the first one before the paper starts.
+    # Editions are written ahead, so a small script moves readers on to the edition of their day.
+    dates = [x["date"] for x in editions]
+    today = dt.datetime.now(versions.ATHENS).date().isoformat()
+    front = max((d for d in dates if d <= today), default=dates[0])
+    page = pages.get(front) or (DAILY / front / "index.html").read_text("utf-8")
+    hop = (ATHENS_TODAY_JS + f"<script>(() => {{ const d = {json.dumps(dates)}.filter(x => x <= athensToday()).pop();"
+           f" if (d && d !== {json.dumps(front)}) location.replace('/daily/' + d + '/'); }})();</script>\n")
+    write(DAILY / "index.html", page.replace(f'href="{SITE}/daily/{front}/"', f'href="{SITE}/daily/"', 1)
+          .replace("</body>", hop + "</body>", 1))
     for x in editions:
         versions.build(x["date"])
     write(DAILY / "archive.html", render_archive(editions))

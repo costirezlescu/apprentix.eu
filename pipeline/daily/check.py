@@ -220,6 +220,25 @@ def check(ed: dict, page: Path | None) -> tuple[list[str], list[str], int]:
         elif c["geo"] not in vals:
             fails.append(f"chart: no series for {c['geo']}")
 
+    o = ed.get("out") or {}
+    last = (dt.date.fromisoformat(date) + dt.timedelta(days=6)).isoformat()
+    for k, x in enumerate(o.get("items", []) + o.get("also", [])):
+        it = next((i for i in pool["items"] if i["url"] == x["url"]), None)
+        if not it:
+            fails.append(f"out[{k}]: event page not in the pool (fetch --only events): {x['url']}")
+            continue
+        if x.get("date") and not date <= x["date"] <= last:
+            fails.append(f"out[{k}]: {x['date']} is outside {date}–{last}: {x.get('title', x.get('text', ''))[:50]}")
+        src = sources_text([it["id"]], [])
+        when = f"{int(x['date'][8:])} {x.get('start', '')}" if x.get("date") else ""
+        text = " ".join([when, x.get("title", ""), x.get("trail", ""), x.get("meta", ""), x.get("listen", ""), x.get("text", "")])
+        for n in numbers(text):
+            if n not in src:
+                fails.append(f"out[{k}]: number {n} not on the event page ({x.get('title', x.get('text', ''))[:40]})")
+        for q in re.findall(r"“([^”]+)”", text):
+            if norm(q).strip(" .,") not in src:
+                fails.append(f"out[{k}]: quotation not found verbatim on the event page: “{q}”")
+
     d = ed.get("diary", {})
     for x in d.get("coming", []) + [ev for day in d.get("days", []) for ev in day["events"]] + d.get("more", []):
         if x.get("date") and x["date"] < date:

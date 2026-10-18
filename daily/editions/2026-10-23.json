@@ -1,0 +1,432 @@
+{
+ "schema": 2,
+ "layout": "shape",
+ "rhythm": true,
+ "date": "2026-10-23",
+ "number": 5,
+ "pool": "2026-10-19",
+ "built_from": "public sources retrieved on 17 October 2026",
+ "built_on": "2026-10-17",
+ "preview": false,
+ "day_focus": "Long reads",
+ "strip": {
+  "kind": "numbers",
+  "title": "This week in numbers",
+  "items": [
+   {
+    "count": {
+     "source": "openalex_fulltext",
+     "from": "2026-10-11",
+     "to": "2026-10-17"
+    },
+    "label": "research papers mentioning Cedefop",
+    "note": "published 11–17 October · OpenAlex full text"
+   },
+   {
+    "count": {
+     "source": "cellar_recent",
+     "kind": "publication",
+     "from": "2026-09-28",
+     "to": "2026-10-17",
+     "exclude_title": "Grant Award Notice"
+    },
+    "label": "new Cedefop publications catalogued",
+    "note": "28 September – 17 October · EU Publications Office"
+   },
+   {
+    "count_press": {
+     "from": "2026-10-10",
+     "to": "2026-10-17"
+    },
+    "label": "press and field stories on VET and skills",
+    "note": "10–17 October · from the paper’s press feeds"
+   },
+   {
+    "value": {
+     "item": "6516e27cb6",
+     "field": "latest_value",
+     "suffix": "%"
+    },
+    "label": "of 18–24-year-olds left education and training early",
+    "note": "EU-27, 2025 · Eurostat"
+   }
+  ]
+ },
+ "lead": {
+  "key": "prison",
+  "pillar": "research",
+  "focus": [
+   "research",
+   "long"
+  ],
+  "priority": 2,
+  "item": "af7f4864be",
+  "areas": [
+   "adult_learning"
+  ],
+  "kicker": "New paper",
+  "headline": "Teaching in Swedish prisons is a practice of its own, study finds",
+  "standfirst": "Interviews with 14 adult educators in Swedish prisons show a pedagogy built on trust, responsibility and empowerment.",
+  "body": [
+   "Prison education is not simply adult education delivered under constraints, the authors argue, but a practice of its own, shaped by institutional rules, security routines and students’ varied educational backgrounds, and aimed at the students’ holistic development. It is negotiated between care and control, autonomy and coercion, trust and vigilance."
+  ],
+  "more": "Adult education in Swedish prisons (International Journal of Lifelong Education)."
+ },
+ "know": [
+  {
+   "key": "etfteach",
+   "no_lead": true,
+   "pillar": "agencies",
+   "focus": [
+    "field"
+   ],
+   "priority": 2,
+   "item": "0bf789c2e2",
+   "areas": [
+    "teachers_trainers"
+   ],
+   "kicker": "ETF",
+   "headline": "Teachers and trainers are key agents of change, says the ETF",
+   "standfirst": "As AI and the green transition reshape labour markets, the ETF argues for investing in the educators who support young people and adults throughout their learning.",
+   "body": [],
+   "more": "ETF: why investing in teachers and trainers matters."
+  },
+  {
+   "key": "ireland",
+   "no_lead": true,
+   "pillar": "cedefop",
+   "focus": [
+    "cedefop"
+   ],
+   "priority": 2,
+   "item": "5e8243dc35",
+   "areas": [
+    "apprenticeships",
+    "vet_policy"
+   ],
+   "kicker": "New publication",
+   "headline": "Cedefop describes Ireland’s further education and training system",
+   "standfirst": "A new short description covers VET for learners aged 16+ and adults, delivered mainly through 16 education and training boards.",
+   "body": [
+    "It highlights the dual apprenticeship model, tertiary degrees linking further and higher education, and microqualifications under the Skills to Advance initiative."
+   ],
+   "links": [
+    {
+     "url": "https://www.cedefop.europa.eu/en/publications/3202",
+     "text": "VET in Ireland"
+    },
+    {
+     "url": "https://www.cedefop.europa.eu/en/publications/8173",
+     "text": "Spotlight on VET Ireland"
+    }
+   ],
+   "more": "VET in Ireland: Cedefop short description and Spotlight."
+  },
+  {
+   "key": "minzatu_board",
+   "no_lead": true,
+   "pillar": "policy",
+   "focus": [
+    "policy"
+   ],
+   "priority": 2,
+   "item": "fcdce614ae",
+   "also": [
+    "2171437d86",
+    "eb5622cfc8",
+    "19428d7afd",
+    "ec2765c3c8"
+   ],
+   "areas": [
+    "governance"
+   ],
+   "kicker": "Official Journal",
+   "headline": "Agency board changes for Cedefop, Eurofound and EU-OSHA",
+   "standfirst": "The Council replaced a member of Cedefop’s Management Board for Bulgaria (decision of 24 September).",
+   "body": [
+    "It also replaced a member and an alternate for Denmark at Eurofound (9 October) and members for Estonia and Cyprus at EU-OSHA (1 October)."
+   ],
+   "more": "Board changes at Cedefop, Eurofound and EU-OSHA (Official Journal)."
+  },
+  {
+   "key": "pulse",
+   "no_lead": true,
+   "pillar": "field",
+   "focus": [
+    "field",
+    "policy"
+   ],
+   "priority": 2,
+   "item": "037125a0df",
+   "also": [
+    "404e42c648",
+    "f27b970912",
+    "a2874a1dbc",
+    "e24eac10c6"
+   ],
+   "areas": [
+    "vet_policy"
+   ],
+   "kicker": "Timeline of VET policies",
+   "headline": "New apprenticeship policies in Cedefop’s 2025 timeline update",
+   "standfirst": "First reported in the 2025 update by Cedefop and ReferNet, as summarised on Apprentix.",
+   "body": [
+    "They include Denmark’s substantial reinforcement of VET and mandatory work experience, Greece’s 2025–2027 strategic plan for VET, lifelong learning and youth, Slovakia’s tertiary VET reinforcement and Slovenia’s programme document for development planning until 2033."
+   ],
+   "links": [
+    {
+     "item": "037125a0df",
+     "text": "Greece’s strategic plan"
+    },
+    {
+     "item": "404e42c648",
+     "text": "Denmark"
+    }
+   ],
+   "more": "New apprenticeship policies in Cedefop’s 2025 timeline update."
+  },
+  {
+   "key": "tripartite",
+   "no_lead": true,
+   "pillar": "policy",
+   "focus": [
+    "policy"
+   ],
+   "priority": 2,
+   "item": "0fd66ac91c",
+   "areas": [
+    "labour_market"
+   ],
+   "kicker": "Social dialogue",
+   "headline": "EU leaders and social partners meet at the Tripartite Social Summit",
+   "standfirst": "The twice-yearly summit brought EU leaders and social partners together in Brussels on 14 October.",
+   "body": [],
+   "more": "Tripartite Social Summit, 14 October: EU leaders and social partners."
+  },
+  {
+   "key": "vienna",
+   "pillar": "field",
+   "focus": [
+    "field"
+   ],
+   "priority": 2,
+   "item": "9a56ce1f5f",
+   "areas": [
+    "apprenticeships"
+   ],
+   "kicker": "Austria",
+   "headline": "Vienna debates how young people find a way into apprenticeships",
+   "standfirst": "At the Tag der Wiener Jugend, experts discussed the difficult search for apprenticeships and the falling number of training companies, Der Standard reports.",
+   "body": [
+    "The head of Austria’s public employment service, AMS, told the event he is interested in applicants who have changed course."
+   ],
+   "more": "Vienna: experts on young people’s hard search for apprenticeships (Der Standard)."
+  }
+ ],
+ "more": [],
+ "lives": {
+  "date": "2026-10-23",
+  "item": "9592974999",
+  "named": [
+   "Albert Baumann"
+  ],
+  "headline": "Germany’s first carpentry world champion, 1967, still in the workshop at 78",
+  "standfirst": "He won gold at the forerunner of WorldSkills in Madrid at 18, ran the family firm for decades and trained most of its staff himself.",
+  "body": [
+   "Albert Baumann grew up in a carpentry firm in Flein that his grandfather founded in 1896; as a child, he says, he was already working with a fretsaw. He began his apprenticeship in the family firm in 1964 and finished first at every level of the trade competitions, from guild to chamber to state. In 1966 he flew for the first time, to the national final in Berlin, his big carpenter’s saw stowed behind the back row on the airport staff’s advice. He won there too, at 18, and was honoured by the Federal President.",
+   "In July 1967 the German team went by coach from Duisburg to Madrid for the 16th International Vocational Training Competition, the forerunner of WorldSkills. The task was a hipped roof for a building with an extension, in three days. He finished first, after two, and used the spare time for sightseeing; he still talks about the Prado. On 17 July he took gold, ahead of young carpenters from Korea, the Netherlands, Ireland, Japan, Great Britain and Switzerland. Back in Flein, he recalls, customers came by to congratulate him, and some joked that prices would now go up, with a world champion in the workshop.",
+   "He qualified as a master carpenter in 1970 and took over the business from his father three years later. At its peak it employed twelve people, most of whom he had trained himself, and for decades he volunteered for the trade’s young people in the local carpenters’ guild. In 2012 he handed the firm to his children, the fourth generation. At 78 he still works in the workshop. Since 1967, four more German carpenters have won world gold, in 1973, 2003, 2015 and 2019."
+  ],
+  "long": [
+   "Albert Baumann grew up in a carpentry firm in Flein that his grandfather founded in 1896; as a child, he says, he was already working with a fretsaw. He began his apprenticeship in the family firm in 1964 and finished first at every level of the trade competitions, from guild to chamber to state. In 1966 he flew for the first time, to the national final in Berlin, his big carpenter’s saw stowed behind the back row on the airport staff’s advice. He won there too, at 18, and was honoured by the Federal President.",
+   "In July 1967 the German team went by coach from Duisburg to Madrid for the 16th International Vocational Training Competition, the forerunner of WorldSkills. The task was a hipped roof for a building with an extension, in three days. He finished first, after two, and used the spare time for sightseeing; he still talks about the Prado. On 17 July he took gold, ahead of young carpenters from Korea, the Netherlands, Ireland, Japan, Great Britain and Switzerland. Back in Flein, he recalls, customers came by to congratulate him, and some joked that prices would now go up, with a world champion in the workshop.",
+   "He qualified as a master carpenter in 1970 and took over the business from his father three years later. At its peak it employed twelve people, most of whom he had trained himself, and for decades he volunteered for the trade’s young people in the local carpenters’ guild. In 2012 he handed the firm to his children, the fourth generation. At 78 he still works in the workshop. Since 1967, four more German carpenters have won world gold, in 1973, 2003, 2015 and 2019."
+  ],
+  "is_long": true
+ },
+ "lives_first": true,
+ "question": {
+  "type": "myth",
+  "item": "36691751ce"
+ },
+ "feature": {
+  "type": "archive",
+  "key": "f-archive",
+  "pillar": "cedefop",
+  "item": "93e196b326",
+  "also": [
+   "7deebd9313",
+   "8da91b7726"
+  ],
+  "headline": "When 764 VET experts went to learn from each other abroad",
+  "standfirst": "Cedefop’s review of the 2007 study visits programme counted 59 visits on 11 themes, for VET specialists, policy-makers and social partners.",
+  "body": [
+   "Themes included making vocational training more attractive for young people and adult learners, and developing entrepreneurship. Questionnaires from 2005 and 2006 were analysed for what the visits changed in participants’ organisations and work."
+  ],
+  "parts": [
+   {
+    "label": "Since then",
+    "text": "Mobility is now measured for learners too: in 2023, 5.3% of EU vocational learners spent at least 10 days abroad (today’s chart). Germany has the most Erasmus-accredited VET organisations, 692, ahead of France with 516."
+   }
+  ],
+  "links": [
+   {
+    "item": "93e196b326",
+    "text": "The 2008 review"
+   },
+   {
+    "item": "8da91b7726",
+    "text": "Erasmus accreditations on Apprentix"
+   }
+  ]
+ },
+ "chart": {
+  "type": "trend",
+  "item": "7deebd9313",
+  "geo": "EU27",
+  "mark": [
+   "2019",
+   "2020"
+  ],
+  "headline": "Learning abroad: 5.3% of EU vocational learners in 2023",
+  "reading": [
+   "Mobile IVET learners, those with at least 10 days abroad, as a share of a cohort of IVET graduates: 3.6% in 2018, 4.1% in 2019, just over 1% in 2020 and 5.3% in 2023."
+  ]
+ },
+ "out": {
+  "sub": "concerts, film, theatre and exhibitions, Friday 23 to Thursday 29 October",
+  "checked": "2026-10-18",
+  "items": [
+   {
+    "date": "2026-10-23",
+    "start": "21:00",
+    "genre": "Theatre",
+    "url": "https://e-dimitria.gr/ekdhlwseis/langelo-del-focolare-o-angelos-tis-estias/",
+    "title": "Emma Dante’s L’angelo del focolare, for one night",
+    "trail": "A woman nobody believes is dead has to rise again every day and return to her domestic routine. A Piccolo Teatro di Milano co-production, part of the Dimitria festival.",
+    "meta": "Written and directed by Emma Dante, with Leonarda Saffi, Ivano Picciallo, David Leone and Giuditta Perriera · Theatre of the Society for Macedonian Studies · in Italian with surtitles"
+   },
+   {
+    "date": "2026-10-23",
+    "start": "20:30",
+    "genre": "Film",
+    "url": "https://filmfestival.gr/el/tiff/films/landscape-in-the-mist-2/",
+    "title": "Angelopoulos’s Landscape in the Mist on the big screen",
+    "trail": "Two siblings leave home to look for their father in Germany: Theo Angelopoulos’s film, with music by Eleni Karaindrou. A single screening.",
+    "meta": "Greece, 1988, 127 minutes · Olympion cinema"
+   },
+   {
+    "date": "2026-10-24",
+    "start": "20:30",
+    "genre": "Chamber music",
+    "url": "https://www.tch.gr/default.aspx?lang=el-GR&page=3&tcheid=3713",
+    "title": "Mozart, Beethoven, Schumann and Brahms for violin and piano",
+    "trail": "Mozart’s Sonata in E minor K. 304, Beethoven’s Moonlight Sonata, Schumann’s Fantasiestücke op. 73 and Brahms’s Violin Sonata No. 3 op. 108.",
+    "meta": "Thomas Lefort (violin), Nefeli Mousoura (piano) · Thessaloniki Concert Hall, Emilios Riadis hall (M2) · €15, reduced €10"
+   },
+   {
+    "date": "2026-10-24",
+    "start": "20:30",
+    "genre": "Orchestral",
+    "url": "https://www.tch.gr/default.aspx?lang=el-GR&page=3&tcheid=3714",
+    "title": "The Cyprus Symphony Orchestra in Beethoven and Falla",
+    "trail": "Myron Michailidis conducts Haydn’s overture to Lo speziale, Beethoven’s Piano Concerto No. 4 with Anna Avramidou, and Falla’s El amor brujo with the mezzo-soprano Villy Kyriakopoulou. Part of the Dimitria festival.",
+    "meta": "Thessaloniki Concert Hall, Friends of Music hall (M1) · €20, €15, €10; reduced €10–5"
+   },
+   {
+    "date": "2026-10-24",
+    "start": "20:30",
+    "genre": "Theatre",
+    "url": "https://www.ntng.gr/el/%CF%80%CE%B1%CF%81%CE%B1%CF%83%CF%84%CE%B1%CF%83%CE%B5%CE%B9%CF%82/31/%CF%81%CE%B5%CF%80%CE%B5%CF%81%CF%84%CE%BF%CF%81%CE%B9%CE%BF/14071/2-%CE%BF-%CE%B2%CF%85%CF%83%CF%83%CE%B9%CE%BD%CE%BF%CE%BA%CE%B7%CF%80%CE%BF%CF%82",
+    "title": "Chekhov’s The Cherry Orchard at the Royal Theatre",
+    "trail": "Athanasia Karagiannopoulou’s production of Chekhov’s play about a family facing the auction of its estate, translated from the Russian by David Maltese. Also Sunday 25 and Wednesday 28 at 19:00, Thursday 29 at 20:30.",
+    "meta": "National Theatre of Northern Greece · Royal Theatre · in Greek"
+   },
+   {
+    "date": "2026-10-25",
+    "start": "19:00",
+    "genre": "Exhibition opening",
+    "url": "https://www.tch.gr/default.aspx?lang=el-GR&page=3&tcheid=3741",
+    "title": "Mikis Theodorakis: memory in the digital age",
+    "trail": "A touring exhibition of the digital material made from the composer’s archive at the Lilian Voudouri Music Library in Athens. Then Monday to Saturday, 10:00–18:00, until 29 January.",
+    "meta": "Thessaloniki Concert Hall, M1 foyer · free entry"
+   },
+   {
+    "date": "2026-10-25",
+    "start": "20:30",
+    "genre": "Nuevo flamenco",
+    "url": "https://www.tch.gr/default.aspx?lang=el-GR&page=3&tcheid=3683",
+    "title": "Encuentro: a cello meets a flamenco guitar",
+    "trail": "The cellist Giannis Toulis and the flamenco guitarist and composer Thomas Natsis bring the classical tradition and flamenco together. Part of the Dimitria festival.",
+    "meta": "Thessaloniki Concert Hall, M2 · €15, reduced €10"
+   },
+   {
+    "date": "2026-10-29",
+    "start": "20:30",
+    "genre": "Greek art song",
+    "url": "https://www.tch.gr/default.aspx?lang=el-GR&page=3&tcheid=3684",
+    "title": "Ritsos, Livaditis, Anagnostakis: three poets in Theodorakis’s songs",
+    "trail": "The Mikis Theodorakis Popular Orchestra performs his song cycles on poems by Yannis Ritsos, Tasos Livaditis and the Thessaloniki poet Manolis Anagnostakis, with an actor voicing the poems.",
+    "meta": "Dimitris Basis, Rita Antonopoulou, Angelos Theodorakis, Panagiotis Petrakis, Nefeli Fasouli · Thessaloniki Concert Hall, M1 · €10–45"
+   }
+  ],
+  "also": [
+   {
+    "url": "https://www.tch.gr/default.aspx?lang=el-GR&page=3&tcheid=3704",
+    "text": "Mariano Pensotti’s An Insatiable Shadow, presented by Onassis Stegi for the Dimitria festival: last performance Friday 23 at 21:00, Concert Hall M2, €20–28."
+   },
+   {
+    "url": "https://www.momus.gr/exhibitions/laszlo-moholy-nagy-light-play",
+    "text": "László Moholy-Nagy, Light Play: photographs and photographic experiments by the Bauhaus artist. MOMus Thessaloniki Museum of Photography, until 15 November."
+   },
+   {
+    "url": "https://www.momus.gr/exhibitions/thessaloniki-apotypoma-tis-metabasis-1960-1980-mesa-apo-tis-fotografies-toy-pete",
+    "text": "Thessaloniki: The Imprint of Transition (1960–1980): Pete Marifoglou’s photographs of a changing city, the first exhibition in the Hamza Bey Mosque (Alcazar) on Egnatia. Until 31 March."
+   },
+   {
+    "url": "https://e-dimitria.gr/ekdhlwseis/nikos-gavriil-pentzikis-thremma-tou-atho/",
+    "text": "Nikos Gavriil Pentzikis, Nursling of Athos: the Thessaloniki writer and painter’s notebook from his 1952 visit to Mount Athos, with paintings and archive material. Agioritiki Estia, Egnatia 109, from Friday 23; free."
+   },
+   {
+    "url": "https://www.teloglion.gr/ektheseis/apo-typoma-technis-i-kallitechniki-typografia/",
+    "text": "Art Im-print: the art books of the Diatton press, with original prints by Greek artists for Solomos, Kalvos, Cavafy and Ritsos. Teloglion Foundation, 27 October to 28 February."
+   }
+  ]
+ },
+ "diary": {
+  "title": "Diary",
+  "days": [],
+  "more": [],
+  "coming": [
+   {
+    "date": "2026-11-09",
+    "end": "2026-11-10",
+    "item": "c43f73ea73",
+    "url": "https://www.cedefop.europa.eu/en/events/sixth-policy-learning-forum-plf-upskilling-pathways-all-adults",
+    "text": "Policy learning forum on upskilling pathways for all adults",
+    "where": "EESC, Brussels"
+   },
+   {
+    "date": "2026-11-19",
+    "item": "c43f73ea73",
+    "url": "https://www.cedefop.europa.eu/en/events/future-vet",
+    "text": "The future of VET",
+    "where": "Online conference"
+   },
+   {
+    "date": "2026-11-20",
+    "item": "c43f73ea73",
+    "url": "https://www.cedefop.europa.eu/en/events/financial-legislative-arrangements-skills-development",
+    "text": "Financial and legislative arrangements for skills development",
+    "where": "Expert group"
+   },
+   {
+    "date": "2026-11-30",
+    "item": "c43f73ea73",
+    "url": "https://www.cedefop.europa.eu/en/events/modernising-vet-policies-systems-green-digital-economy",
+    "text": "21st Cedefop Brussels Seminar",
+    "where": "With the Irish Presidency · by invitation"
+   }
+  ]
+ }
+}

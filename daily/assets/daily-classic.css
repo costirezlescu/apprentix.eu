@@ -65,20 +65,21 @@ a:hover { color: var(--accent); }
   --t-data: #eef1e1;
   --t-people: #f6e5ee;
   --t-debate: #e8ecf2;
+  --p-out: #1d6b62; --t-out: #e3f0ee;
   --pillar: var(--ink);
   --tint: var(--sunken);
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     --p-cedefop: #5fd4c4; --p-policy: #8fb2f0; --p-agencies: #c3a2ee; --p-countries: #f0a56b;
-    --p-research: #f38b90; --p-data: #bccf6a; --p-people: #ee8fc0; --p-debate: #a9bbd6;
+    --p-research: #f38b90; --p-data: #bccf6a; --p-people: #ee8fc0; --p-debate: #a9bbd6; --p-out: #7fd1c4; --t-out: #12302c;
     --t-cedefop: #14302c; --t-policy: #172238; --t-agencies: #251c33; --t-countries: #33241a;
     --t-research: #351b1d; --t-data: #252b14; --t-people: #331a28; --t-debate: #1c232e;
   }
 }
 :root[data-theme="dark"] {
   --p-cedefop: #5fd4c4; --p-policy: #8fb2f0; --p-agencies: #c3a2ee; --p-countries: #f0a56b;
-  --p-research: #f38b90; --p-data: #bccf6a; --p-people: #ee8fc0; --p-debate: #a9bbd6;
+  --p-research: #f38b90; --p-data: #bccf6a; --p-people: #ee8fc0; --p-debate: #a9bbd6; --p-out: #7fd1c4; --t-out: #12302c;
   --t-cedefop: #14302c; --t-policy: #172238; --t-agencies: #251c33; --t-countries: #33241a;
   --t-research: #351b1d; --t-data: #252b14; --t-people: #331a28; --t-debate: #1c232e;
 }
@@ -93,6 +94,7 @@ a:hover { color: var(--accent); }
 [data-pillar="debate"]    { --pillar: var(--p-debate);    --tint: var(--t-debate); }
 [data-pillar="lives"]     { --pillar: var(--p-people);    --tint: var(--t-people); }
 [data-pillar="field"]     { --pillar: var(--p-countries); --tint: var(--t-countries); }
+[data-pillar="out"]       { --pillar: var(--p-out);       --tint: var(--t-out); }
 
 /* ---------- Masthead ---------- */
 
@@ -390,3 +392,17 @@ a:hover { color: var(--accent); }
 .dc-trend .ct-axis { stroke: var(--line-strong); stroke-width: 1; }
 .dc-feature-inner, .dc-chart-grid { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 18px 20px; }
 .dc-feature { border-top: 0; }
+
+/* ---------- Out this week (Fridays) ---------- */
+
+.dc-out-grid { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); gap: 0 32px; align-items: start; }
+@media (max-width: 860px) { .dc-out-grid { grid-template-columns: 1fr; } }
+.dc-out-list { list-style: none; margin: 0; padding: 0; display: grid; }
+.dc-out-list li { border-top: 1px solid var(--line); padding: 12px 0 14px; }
+.dc-out-list li:first-child { border-top: 0; padding-top: 0; }
+.dc-hl--out { font-size: 1.15rem; }
+.dc-out-trail { margin: 4px 0 2px; }
+.dc-listen { margin: 6px 0 0; font-size: .88rem; color: var(--pillar); }
+.dc-listen b { color: var(--ink); font-weight: 600; }
+.dc-out-also ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+.dc-out-also li p { margin: 0; font-size: .92rem; }

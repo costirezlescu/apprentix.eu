@@ -1,0 +1,328 @@
+{
+ "edition": "2026-10-22",
+ "fetched_at": "2026-10-17T18:55:43+00:00",
+ "sources_status": {
+  "cedefop_rss": "ok",
+  "cellar_recent": "ok",
+  "cellar_archive": "ok",
+  "openalex_fulltext": "ok",
+  "openalex_affiliation": "ok",
+  "openalex_journals": "ok",
+  "ec_presscorner": "ok",
+  "ec_presscorner_doc": "ok",
+  "council_press": "ok",
+  "ep_press": "refused: empty response (bot check)",
+  "eurlex_oj_l": "ok",
+  "euosha": "ok",
+  "euosha_page": "ok",
+  "etf": "ok",
+  "etf_page": "ok",
+  "ela": "ok",
+  "ela_page": "ok",
+  "eige": "ok",
+  "ilo": "ok",
+  "ilo_page": "ok",
+  "unevoc": "ok",
+  "eurostat_updates": "ok",
+  "eurostat_api": "ok",
+  "bbc_edu": "ok",
+  "rte": "ok",
+  "guardian_edu": "ok",
+  "irishtimes_edu": "ok",
+  "guardian_fe": "ok",
+  "handwerk_com": "ok",
+  "guardian_appr": "ok",
+  "spiegel_job": "ok",
+  "guardian_edu_page": "ok",
+  "zeit_arbeit": "ok",
+  "handwerk_com_page": "ok",
+  "guardian_fe_page": "ok",
+  "guardian_appr_page": "ok",
+  "tagesschau": "ok",
+  "orf": "ok",
+  "lemonde_emploi": "ok",
+  "derstandard": "ok",
+  "lemonde_edu": "ok",
+  "lemonde_edu_page": "ok",
+  "letudiant": "ok",
+  "cafepeda": "ok",
+  "elpais_edu": "ok",
+  "francetvinfo_edu": "ok",
+  "derstandard_page": "ok",
+  "dhz": "ok",
+  "eldiario_edu": "ok",
+  "corriere_scuola": "ok",
+  "francetvinfo_edu_page": "ok",
+  "dhz_page": "ok",
+  "cafepeda_page": "ok",
+  "magisnet": "ok",
+  "esos": "ok",
+  "nos": "ok",
+  "alfavita": "ok",
+  "orizzontescuola": "ok",
+  "yle_en": "ok",
+  "orizzontescuola_page": "failed: HTTP 403 for https://www.orizzontescuola.it/potenzia-le-tue-competenze-informatiche-da-esperto-di-cyberbullismo-alluso-di-workspace-di-google-dalle-competenze-base-al-cad-ed-esperto-dpo/",
+  "esos_page": "ok",
+  "yle_fi": "ok",
+  "magisnet_page": "ok",
+  "dr_dk": "ok",
+  "svt": "ok",
+  "thelocal_se": "ok",
+  "thelocal_fr": "ok",
+  "thelocal_de": "ok",
+  "thelocal_it": "ok",
+  "thelocal_at": "ok",
+  "notesfrompoland": "ok",
+  "hotnews_ro": "ok",
+  "obessu": "ok",
+  "edupedu_ro": "ok",
+  "nyt_edu": "ok",
+  "economist_intl": "ok",
+  "guardian_work": "ok",
+  "economist_fin": "ok",
+  "economist_biz": "ok",
+  "zeit_campus": "ok",
+  "ft_work": "ok",
+  "politico_eu": "ok",
+  "guardian_work_page": "ok",
+  "faz_beruf": "ok",
+  "ft_work_page": "failed: HTTP 403 for https://www.ft.com/content/3a3d3eb8-ff86-418e-9704-c1ff601718c4?syn-25a6b1a6=1",
+  "fastcompany_work": "ok",
+  "guardian_ai": "ok",
+  "nyt_tech": "ok",
+  "politico_eu_page": "ok",
+  "mittr": "ok",
+  "wired_ai": "ok",
+  "guardian_ai_page": "ok",
+  "verge_ai": "ok",
+  "bbc_tech": "ok",
+  "ars": "ok",
+  "fastcompany_work_page": "ok",
+  "bbc_tech_page": "ok",
+  "conv_eu": "ok",
+  "edsurge": "ok",
+  "bloomberg_tech": "ok",
+  "conv_global": "ok",
+  "conv_edu_uk": "ok",
+  "science_news": "ok",
+  "knowable": "ok",
+  "aeon": "ok",
+  "socialeurope": "ok",
+  "newscientist": "ok",
+  "voxeu": "ok",
+  "voxeu_page": "failed: HTTP 403 for https://cepr.org/voxeu/columns/cost-job-loss-carbon-intensive-sectors-evidence-germany",
+  "nature": "ok",
+  "socialeurope_page": "ok",
+  "apprentix": "ok",
+  "have_your_say": "ok",
+  "venues": "ok"
+ },
+ "items": [
+  {
+   "id": "44eba21990",
+   "source": "apprentix",
+   "kind": "insight",
+   "title": "Where employment is forecast to grow",
+   "url": "https://apprentix.eu/pages/insights.html#jobs-outlook",
+   "date": null,
+   "work_areas": [
+    "apprenticeships",
+    "governance",
+    "labour_market",
+    "qualifications",
+    "vet_policy"
+   ]
+  },
+  {
+   "id": "b5c5ca03a3",
+   "source": "apprentix",
+   "kind": "indicator",
+   "title": "Adults (16-74 year-olds) with at least basic digital skills (%)",
+   "url": "https://apprentix.eu/pages/indicators.html?id=cedefop-kivet-2130a",
+   "date": null,
+   "work_areas": [
+    "future_of_work"
+   ]
+  },
+  {
+   "id": "c43f73ea73",
+   "source": "cedefop_rss",
+   "kind": "newsletter",
+   "title": "Cedefop newsletter no 167",
+   "url": "https://www.cedefop.europa.eu/en/newsletters/cedefop-newsletter-no-167",
+   "date": "2026-10-15",
+   "work_areas": [
+    "adult_learning",
+    "future_of_work",
+    "governance",
+    "labour_market",
+    "skills_intelligence",
+    "vet_policy"
+   ]
+  },
+  {
+   "id": "6c8e0d34ac",
+   "source": "cellar_recent",
+   "kind": "publication",
+   "title": "Policy pointers to enhance Estonia’s skills anticipation and governance system",
+   "url": "https://op.europa.eu/en/publication-detail/-/publication/48ec935a-c83d-11f1-a77b-01aa75ed71a1",
+   "date": "2026-10-13",
+   "work_areas": [
+    "governance",
+    "skills_intelligence"
+   ]
+  },
+  {
+   "id": "529da1a6fe",
+   "source": "cellar_archive",
+   "kind": "archive",
+   "title": "The role of qualifications in governing occupations and professions",
+   "url": "https://op.europa.eu/en/publication-detail/-/publication/eec48925-724c-4885-a854-51e59e807562",
+   "date": "2013-10-18",
+   "work_areas": [
+    "labour_market",
+    "qualifications"
+   ]
+  },
+  {
+   "id": "9d95859ed7",
+   "source": "cellar_archive",
+   "kind": "archive",
+   "title": "Going digital means skilling for digital: using big data to track emerging digital skill needs",
+   "url": "https://op.europa.eu/en/publication-detail/-/publication/6b9f27c8-721b-11ee-9220-01aa75ed71a1",
+   "date": "2023-10-20",
+   "work_areas": [
+    "adult_learning",
+    "future_of_work",
+    "governance",
+    "labour_market",
+    "skills_intelligence",
+    "teachers_trainers"
+   ]
+  },
+  {
+   "id": "9c2a62b3d7",
+   "source": "openalex_fulltext",
+   "kind": "mentions_cedefop",
+   "title": "Towards an Inclusive VET Ecosystem",
+   "url": "https://doi.org/10.21240/vetcon/2026/ecer/77",
+   "date": "2026-10-13",
+   "work_areas": [
+    "future_of_work",
+    "inclusion",
+    "teachers_trainers",
+    "vet_policy"
+   ]
+  },
+  {
+   "id": "e520359742",
+   "source": "openalex_fulltext",
+   "kind": "mentions_cedefop",
+   "title": "AI-Mediated Vocational Pedagogy in Transition",
+   "url": "https://doi.org/10.21240/vetcon/2026/ecer/69",
+   "date": "2026-10-13",
+   "work_areas": [
+    "future_of_work",
+    "qualifications",
+    "teachers_trainers",
+    "vet_policy"
+   ]
+  },
+  {
+   "id": "76a9118752",
+   "source": "openalex_fulltext",
+   "kind": "mentions_cedefop",
+   "title": "Embodied AI Customer Role-Play in XR for Retail Apprentices",
+   "url": "https://doi.org/10.21240/vetcon/2026/ecer/62",
+   "date": "2026-10-13",
+   "work_areas": [
+    "apprenticeships",
+    "future_of_work",
+    "qualifications"
+   ]
+  },
+  {
+   "id": "4eb3797e7e",
+   "source": "openalex_fulltext",
+   "kind": "mentions_cedefop",
+   "title": "Beyond AI Skills",
+   "url": "https://doi.org/10.21240/vetcon/2026/ecer/94",
+   "date": "2026-10-13",
+   "work_areas": [
+    "apprenticeships",
+    "future_of_work",
+    "labour_market",
+    "vet_policy"
+   ]
+  },
+  {
+   "id": "7984c803bc",
+   "source": "openalex_journals",
+   "kind": "journal_paper",
+   "title": "Are HR professionals insecure? AI, job insecurity and the re-wiring of workplace learning",
+   "url": "https://doi.org/10.1108/jwl-05-2026-0256",
+   "date": "2026-10-06",
+   "work_areas": [
+    "adult_learning",
+    "future_of_work"
+   ]
+  },
+  {
+   "id": "64e14aed3a",
+   "source": "openalex_journals",
+   "kind": "journal_paper",
+   "title": "Knowing more, doing less: AI literacy development and organisational barriers in healthcare training",
+   "url": "https://doi.org/10.1108/jwl-02-2026-0062",
+   "date": "2026-09-30",
+   "work_areas": [
+    "adult_learning",
+    "future_of_work"
+   ]
+  },
+  {
+   "id": "9356f2a16e",
+   "source": "ec_presscorner",
+   "kind": "press",
+   "title": "Statement by Executive Vice-President Mînzatu ahead of the International Day for the Eradication of Poverty",
+   "url": "https://ec.europa.eu/commission/presscorner/detail/en/statement_26_2188",
+   "date": "2026-10-16",
+   "work_areas": [
+    "inclusion",
+    "labour_market"
+   ]
+  },
+  {
+   "id": "6516e27cb6",
+   "source": "eurostat_api",
+   "kind": "number",
+   "title": "Early leavers from education and training, EU-27",
+   "url": "https://ec.europa.eu/eurostat/databrowser/view/edat_lfse_14/default/table?lang=en",
+   "date": "2026-09-10",
+   "work_areas": []
+  },
+  {
+   "id": "4ec8dd72c0",
+   "source": "politico_eu",
+   "kind": "press",
+   "title": "In Europe’s tech capital, Irish labor unions are booming amid AI-driven layoffs",
+   "url": "https://www.politico.eu/article/in-europe-tech-capital-ireland-irish-labor-unions-are-booming-amid-ai-layoffs/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication",
+   "date": "2026-10-16",
+   "work_areas": [
+    "future_of_work",
+    "labour_market"
+   ]
+  },
+  {
+   "id": "a039141933",
+   "source": "lemonde_emploi",
+   "kind": "field",
+   "title": "« Oui, on va perdre certains contrats » : à Montréal, le marché de l’emploi des jeunes diplômés bouleversé par l’IA",
+   "url": "https://www.lemonde.fr/le-monde-et-vous/article/2026/10/09/oui-on-va-perdre-certains-contrats-a-montreal-le-marche-de-l-emploi-des-jeunes-diplomes-bouleverse-par-l-ia_6790540_6065879.html",
+   "date": "2026-10-09",
+   "work_areas": [
+    "future_of_work",
+    "labour_market"
+   ]
+  }
+ ]
+}

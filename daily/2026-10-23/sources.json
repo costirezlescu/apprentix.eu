@@ -1,0 +1,378 @@
+{
+ "edition": "2026-10-23",
+ "fetched_at": "2026-10-17T18:55:43+00:00",
+ "sources_status": {
+  "cedefop_rss": "ok",
+  "cellar_recent": "ok",
+  "cellar_archive": "ok",
+  "openalex_fulltext": "ok",
+  "openalex_affiliation": "ok",
+  "openalex_journals": "ok",
+  "ec_presscorner": "ok",
+  "ec_presscorner_doc": "ok",
+  "council_press": "ok",
+  "ep_press": "refused: empty response (bot check)",
+  "eurlex_oj_l": "ok",
+  "euosha": "ok",
+  "euosha_page": "ok",
+  "etf": "ok",
+  "etf_page": "ok",
+  "ela": "ok",
+  "ela_page": "ok",
+  "eige": "ok",
+  "ilo": "ok",
+  "ilo_page": "ok",
+  "unevoc": "ok",
+  "eurostat_updates": "ok",
+  "eurostat_api": "ok",
+  "bbc_edu": "ok",
+  "rte": "ok",
+  "guardian_edu": "ok",
+  "irishtimes_edu": "ok",
+  "guardian_fe": "ok",
+  "handwerk_com": "ok",
+  "guardian_appr": "ok",
+  "spiegel_job": "ok",
+  "guardian_edu_page": "ok",
+  "zeit_arbeit": "ok",
+  "handwerk_com_page": "ok",
+  "guardian_fe_page": "ok",
+  "guardian_appr_page": "ok",
+  "tagesschau": "ok",
+  "orf": "ok",
+  "lemonde_emploi": "ok",
+  "derstandard": "ok",
+  "lemonde_edu": "ok",
+  "lemonde_edu_page": "ok",
+  "letudiant": "ok",
+  "cafepeda": "ok",
+  "elpais_edu": "ok",
+  "francetvinfo_edu": "ok",
+  "derstandard_page": "ok",
+  "dhz": "ok",
+  "eldiario_edu": "ok",
+  "corriere_scuola": "ok",
+  "francetvinfo_edu_page": "ok",
+  "dhz_page": "ok",
+  "cafepeda_page": "ok",
+  "magisnet": "ok",
+  "esos": "ok",
+  "nos": "ok",
+  "alfavita": "ok",
+  "orizzontescuola": "ok",
+  "yle_en": "ok",
+  "orizzontescuola_page": "failed: HTTP 403 for https://www.orizzontescuola.it/potenzia-le-tue-competenze-informatiche-da-esperto-di-cyberbullismo-alluso-di-workspace-di-google-dalle-competenze-base-al-cad-ed-esperto-dpo/",
+  "esos_page": "ok",
+  "yle_fi": "ok",
+  "magisnet_page": "ok",
+  "dr_dk": "ok",
+  "svt": "ok",
+  "thelocal_se": "ok",
+  "thelocal_fr": "ok",
+  "thelocal_de": "ok",
+  "thelocal_it": "ok",
+  "thelocal_at": "ok",
+  "notesfrompoland": "ok",
+  "hotnews_ro": "ok",
+  "obessu": "ok",
+  "edupedu_ro": "ok",
+  "nyt_edu": "ok",
+  "economist_intl": "ok",
+  "guardian_work": "ok",
+  "economist_fin": "ok",
+  "economist_biz": "ok",
+  "zeit_campus": "ok",
+  "ft_work": "ok",
+  "politico_eu": "ok",
+  "guardian_work_page": "ok",
+  "faz_beruf": "ok",
+  "ft_work_page": "failed: HTTP 403 for https://www.ft.com/content/3a3d3eb8-ff86-418e-9704-c1ff601718c4?syn-25a6b1a6=1",
+  "fastcompany_work": "ok",
+  "guardian_ai": "ok",
+  "nyt_tech": "ok",
+  "politico_eu_page": "ok",
+  "mittr": "ok",
+  "wired_ai": "ok",
+  "guardian_ai_page": "ok",
+  "verge_ai": "ok",
+  "bbc_tech": "ok",
+  "ars": "ok",
+  "fastcompany_work_page": "ok",
+  "bbc_tech_page": "ok",
+  "conv_eu": "ok",
+  "edsurge": "ok",
+  "bloomberg_tech": "ok",
+  "conv_global": "ok",
+  "conv_edu_uk": "ok",
+  "science_news": "ok",
+  "knowable": "ok",
+  "aeon": "ok",
+  "socialeurope": "ok",
+  "newscientist": "ok",
+  "voxeu": "ok",
+  "voxeu_page": "failed: HTTP 403 for https://cepr.org/voxeu/columns/cost-job-loss-carbon-intensive-sectors-evidence-germany",
+  "nature": "ok",
+  "socialeurope_page": "ok",
+  "apprentix": "ok",
+  "have_your_say": "ok",
+  "venues": "ok"
+ },
+ "items": [
+  {
+   "id": "8da91b7726",
+   "source": "apprentix",
+   "kind": "fact",
+   "title": "Germany has the most Erasmus-accredited VET organisations — 692, ahead of France with 516.",
+   "url": "https://apprentix.eu/pages/explore.html?dataset=erasmus-vet-organisations&f.country=Germany&f.status=Accredited#fact-erasmus-accredited-top",
+   "date": null,
+   "work_areas": [
+    "mobility",
+    "vet_policy"
+   ]
+  },
+  {
+   "id": "36691751ce",
+   "source": "apprentix",
+   "kind": "myth",
+   "title": "An apprenticeship rules out going to university.",
+   "url": "https://apprentix.eu/pages/myths.html#university",
+   "date": null,
+   "work_areas": [
+    "apprenticeships"
+   ]
+  },
+  {
+   "id": "404e42c648",
+   "source": "apprentix",
+   "kind": "policy",
+   "title": "A substantial reinforcement of VET",
+   "url": "https://apprentix.eu/pages/explore.html?dataset=vet-policy-timeline&open=tl-49530",
+   "date": null,
+   "work_areas": [
+    "vet_policy"
+   ]
+  },
+  {
+   "id": "f27b970912",
+   "source": "apprentix",
+   "kind": "policy",
+   "title": "Mandatory work experience",
+   "url": "https://apprentix.eu/pages/explore.html?dataset=vet-policy-timeline&open=tl-49968",
+   "date": null,
+   "work_areas": []
+  },
+  {
+   "id": "037125a0df",
+   "source": "apprentix",
+   "kind": "policy",
+   "title": "The 2025-2027 Strategic plan for vocational education and training, lifelong learning and youth",
+   "url": "https://apprentix.eu/pages/explore.html?dataset=vet-policy-timeline&open=tl-51014",
+   "date": null,
+   "work_areas": [
+    "adult_learning",
+    "vet_policy"
+   ]
+  },
+  {
+   "id": "a2874a1dbc",
+   "source": "apprentix",
+   "kind": "policy",
+   "title": "Tertiary VET reinforcement",
+   "url": "https://apprentix.eu/pages/explore.html?dataset=vet-policy-timeline&open=tl-50709",
+   "date": null,
+   "work_areas": [
+    "vet_policy"
+   ]
+  },
+  {
+   "id": "e24eac10c6",
+   "source": "apprentix",
+   "kind": "policy",
+   "title": "Programme document for development planning until 2033",
+   "url": "https://apprentix.eu/pages/explore.html?dataset=vet-policy-timeline&open=tl-49918",
+   "date": null,
+   "work_areas": []
+  },
+  {
+   "id": "7deebd9313",
+   "source": "apprentix",
+   "kind": "indicator",
+   "title": "IVET learners who benefitted from a learning mobility abroad (%)",
+   "url": "https://apprentix.eu/pages/indicators.html?id=cedefop-kivet-1026",
+   "date": null,
+   "work_areas": [
+    "governance",
+    "mobility"
+   ]
+  },
+  {
+   "id": "c43f73ea73",
+   "source": "cedefop_rss",
+   "kind": "newsletter",
+   "title": "Cedefop newsletter no 167",
+   "url": "https://www.cedefop.europa.eu/en/newsletters/cedefop-newsletter-no-167",
+   "date": "2026-10-15",
+   "work_areas": [
+    "adult_learning",
+    "future_of_work",
+    "governance",
+    "labour_market",
+    "skills_intelligence",
+    "vet_policy"
+   ]
+  },
+  {
+   "id": "5e8243dc35",
+   "source": "cellar_recent",
+   "kind": "publication",
+   "title": "Vocational education and training in Ireland: short description",
+   "url": "https://op.europa.eu/en/publication-detail/-/publication/ce74ad7b-bbaf-11f1-81de-01aa75ed71a1",
+   "date": "2026-09-28",
+   "work_areas": [
+    "apprenticeships",
+    "qualifications",
+    "skills_intelligence",
+    "vet_policy"
+   ]
+  },
+  {
+   "id": "93e196b326",
+   "source": "cellar_archive",
+   "kind": "archive",
+   "title": "Study visits for vocational education and training experts in 2007: transition to a wider perspective",
+   "url": "https://op.europa.eu/en/publication-detail/-/publication/6ddcc650-52ce-420a-8fc6-8baf1aff6823",
+   "date": "2008-10-22",
+   "work_areas": [
+    "labour_market",
+    "vet_policy"
+   ]
+  },
+  {
+   "id": "af7f4864be",
+   "source": "openalex_journals",
+   "kind": "journal_paper",
+   "title": "Teaching under constraint: exploring adult educators’ pedagogical practices in correctional settings in Sweden",
+   "url": "https://doi.org/10.1080/02601370.2026.2746729",
+   "date": "2026-10-09",
+   "work_areas": [
+    "adult_learning",
+    "teachers_trainers"
+   ]
+  },
+  {
+   "id": "0fd66ac91c",
+   "source": "council_press",
+   "kind": "press",
+   "title": "Main messages from the Tripartite Social Summit of 14 October 2026",
+   "url": "https://www.consilium.europa.eu/en/press/press-releases/2026/10/14/main-messages-from-the-tripartite-social-summit-of-14-october-2026/",
+   "date": "2026-10-14",
+   "work_areas": [
+    "governance",
+    "labour_market"
+   ]
+  },
+  {
+   "id": "0bf789c2e2",
+   "source": "etf",
+   "kind": "news",
+   "title": "Why investing in teachers and trainers is essential for skills, learning and workforce development",
+   "url": "https://www.etf.europa.eu/en/news-and-events/news/why-investing-teachers-and-trainers-essential-skills-learning-and-workforce",
+   "date": "2026-10-05",
+   "work_areas": [
+    "adult_learning",
+    "future_of_work",
+    "labour_market",
+    "teachers_trainers"
+   ]
+  },
+  {
+   "id": "6516e27cb6",
+   "source": "eurostat_api",
+   "kind": "number",
+   "title": "Early leavers from education and training, EU-27",
+   "url": "https://ec.europa.eu/eurostat/databrowser/view/edat_lfse_14/default/table?lang=en",
+   "date": "2026-09-10",
+   "work_areas": []
+  },
+  {
+   "id": "9592974999",
+   "source": "dhz",
+   "kind": "lives",
+   "title": "Weltmeister mit 18: Der Zimmerer, der alles gewann",
+   "url": "https://www.deutsche-handwerks-zeitung.de/weltmeister-mit-18-der-zimmerer-der-alles-gewann-384661/",
+   "date": "2026-10-12",
+   "work_areas": [
+    "adult_learning",
+    "apprenticeships",
+    "vet_policy"
+   ]
+  },
+  {
+   "id": "9a56ce1f5f",
+   "source": "derstandard",
+   "kind": "field",
+   "title": "AMS-Chef Kopf über Bewerbungen: \"Mich interessieren Leute, die abgebogen sind\"",
+   "url": "https://www.derstandard.at/story/3000000344254/ams-chef-kopf-ueber-bewerbungen-mich-interessieren-leute-die-abgebogen-sind?ref=rss",
+   "date": "2026-10-15",
+   "work_areas": [
+    "apprenticeships"
+   ]
+  },
+  {
+   "id": "eb5622cfc8",
+   "source": "eurlex_oj_l",
+   "kind": "act",
+   "title": "Council Decision of 9 October 2026 replacing an alternate member of the Management Board of the European Foundation for the improvement of living and working conditions for Denmark",
+   "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026D05382",
+   "date": "2026-10-14",
+   "work_areas": [
+    "governance"
+   ]
+  },
+  {
+   "id": "2171437d86",
+   "source": "eurlex_oj_l",
+   "kind": "act",
+   "title": "Council Decision of 9 October 2026 replacing a member of the Management Board of the European Foundation for the improvement of living and working conditions for Denmark",
+   "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026D05381",
+   "date": "2026-10-14",
+   "work_areas": [
+    "governance"
+   ]
+  },
+  {
+   "id": "19428d7afd",
+   "source": "eurlex_oj_l",
+   "kind": "act",
+   "title": "Council Decision of 1 October 2026 replacing a member of the Management Board of the European Agency for Safety and Health at Work for Estonia",
+   "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026D05201",
+   "date": "2026-10-06",
+   "work_areas": [
+    "governance"
+   ]
+  },
+  {
+   "id": "ec2765c3c8",
+   "source": "eurlex_oj_l",
+   "kind": "act",
+   "title": "Council Decision of 1 October 2026 replacing a member of the Management Board of the European Agency for Safety and Health at Work for Cyprus",
+   "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026D05200",
+   "date": "2026-10-06",
+   "work_areas": [
+    "governance"
+   ]
+  },
+  {
+   "id": "fcdce614ae",
+   "source": "eurlex_oj_l",
+   "kind": "act",
+   "title": "Council Decision of 24 September 2026 replacing a member of the Management Board of the European Centre for the Development of Vocational Training (Cedefop) for Bulgaria",
+   "url": "https://eur-lex.europa.eu/legal-content/AUTO/?uri=CELEX:32026D05026",
+   "date": "2026-09-30",
+   "work_areas": [
+    "governance",
+    "vet_policy"
+   ]
+  }
+ ]
+}
