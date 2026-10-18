@@ -437,7 +437,7 @@ Cloudflare Worker  worker/src/index.js      holds OPENROUTER_API_KEY (secret)
 - **The key never reaches the browser.** It lives only as a Worker secret. Nothing in the repo
   contains it; `worker/.dev.vars` (local testing) is git-ignored.
 - **Retrieval index.** `pipeline/build_ai_index.py` runs at the end of every build and writes
-  `data/ai/search-index.json` (~2 MB, ~1,700 text chunks: country profiles, every indicator with
+  `data/ai/search-index.json` (~2.5 MB, ~2,000 text chunks: country profiles, every indicator with
   its latest values, datasets, schemes with Cedefop's coded answers, financing instruments,
   recognition arrangements, VET policies, NQF levels, CoVE projects, insights, the 70 glossary
   terms and a guide to the site's tools) plus slim
@@ -577,14 +577,18 @@ All paths in the code are relative, so the site also works from any other static
 
 ---
 
-## Before publishing data — read this
+## How the scheme data was checked
 
-The starting dataset was read from published scheme fiches and condensed. **It has not
-been checked against the source records.** Before this site is public:
+Cedefop's coded answers (the filters and the comparison matrix) are imported directly from the
+2026 fiches; the merge stops if a fiche uses an answer option it does not know. The short
+descriptions (overview, duration, learners, pay) were condensed by hand and **checked against
+the fiche text on 2026-10-01**. The official fiches remain authoritative.
 
-- spot-check records against the official fiches;
-- confirm the reuse conditions of every source and record them in `pages/data.html`;
-- keep the independent-project notice visible on every page.
+- Re-check the descriptions when Cedefop publishes new fiches (`pipeline/watch.py` reminds
+  every 12 months).
+- The reuse conditions of every source are recorded in `data/sources.json` and shown on
+  `pages/data.html`.
+- Keep the independent-project notice visible on every page of the main site.
 
 ---
 

@@ -6,12 +6,12 @@
 
 | # | Question | Decision |
 |---|---|---|
-| 1 | Who owns it | **An independent publication on Apprentix**, not commissioned by Cedefop. It uses no Cedefop logo and carries the site-wide "Independent project" banner. The footer says it is not published or endorsed by Cedefop. There is **no "mock-up" label**: editions are numbered as real ones. |
+| 1 | Who owns it | **An independent publication on Apprentix**, not commissioned by Cedefop. It uses no Cedefop logo. Since the broadsheet design (18 October) edition pages carry no Apprentix banner or footer; the statement that the paper is not published or endorsed by Cedefop is on `daily/about.html`. There is **no "mock-up" label**: editions are numbered as real ones. |
 | 2 | Who gets it | **Public but unlisted** at apprentix.eu/daily. Pages are `noindex, nofollow`, left out of `sitemap.xml`, and not linked from Apprentix's navigation or home page. Email distribution is not built. |
 | 4 | Name and masthead | "Cedefop Daily", with "Thessaloniki · Brussels" under it, in Apprentix's type (Newsreader, Public Sans, IBM Plex Mono) |
 | 5, 6 | Send time, calendar | Monday to Friday, with Monday's paper carrying the week ahead (to confirm with a holiday list). No email yet. |
 | 7 | Where it runs | Outside Cedefop: static pages in this repo, deployed by Forge on push |
-| 13 | AI transparency | The footer reads "Compiled from the linked public sources". `daily/about.html` says drafting uses software that includes a language model, without naming a model. "Reviewed by Communications" is left out, because it isn't true. |
+| 13 | AI transparency | `daily/about.html` says drafting uses software that includes a language model, without naming a model, and that links, dates and the line under each story come from the data. (Edition pages had a "Compiled from the linked public sources" footer until the broadsheet design removed the footer.) "Reviewed by Communications" is left out, because it isn't true. |
 | 16 | Languages | English |
 | 17 | The Director | Public role only. No headline in No. 1; a quote in the lead story |
 | 18 | Critical coverage | Sensitive topics fail the check and hold the edition (`check.py`) |
@@ -122,7 +122,7 @@ The first version read mostly from the top: institutions, agencies and Cedefop i
 - **Fonts, as the approved mock-up actually rendered them:** Georgia bold for the masthead, headlines, section titles and big numbers (Gelasio, a free font with Georgia's metrics, only where Georgia is not installed); Libre Franklin 400/500/700 for text; IBM Plex Mono 400/500 for section labels. The mock-up's CSS named Playfair Display, but its font request was malformed, so Playfair never loaded and Georgia showed instead. The first deploy used Playfair; it was replaced the same day. Colours are a muted Cedefop palette: navy-grey ink `#1c2233`, Cedefop blue `#3c4f8c` for section titles, numbers and the paper's own stories, and no yellow.
 - **Section labels** keep the chips: white monospace capitals on the section colour, with the detail in the same font and colour after them.
 - **No Apprentix chrome.** The Daily drops the "Independent project" line and the Apprentix header and menu, and the footer. Its first row is the paper's own: the day's forecast for Thessaloniki and Brussels (Open-Meteo, CC BY 4.0, fetched with the edition into `daily/weather/<date>.json`) and links to Today's paper, Editions and How it's made. The sources that could not be read are now listed on the about page; each edition's sources stay in its `sources.json`.
-- **Endorsement.** The about page still says the paper is not published or endorsed by Cedefop. Change it when the endorsement is formal.
+- **Status statement.** The about page says the paper is not published or endorsed by Cedefop.
 - **The styles live in `daily/assets/daily.css`,** which overrides every token from `assets/css/site.css`, so a redesign of the main Apprentix site leaves the Daily unchanged. Archived versions keep the stylesheets of their day.
 - **Versions ignore stylesheet links.** A commit that only changes which stylesheets or fonts a page links is not a new version, so the main site's font swap and revert on 18 October did not create versions of No. 1. The redesign is No. 1 version 5.
 - The mock-up and full notes are kept locally, not in git: `cedefop-daily/reference/design/`.
