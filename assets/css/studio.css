@@ -37,6 +37,10 @@
   --fill-2: #ffe39a;
   --fill-3: #c8f0da;
   --fill-4: #ffd6cc;
+  --fill-5: #ffdcb8;
+  --fill-6: #ddd6ff;
+  --fill-7: #ffd3ea;
+  --fill-8: #c3ece9;
   --on-fill: #17172b;
   --bar: var(--data);
 
@@ -77,6 +81,10 @@
     --fill-2: #4a3c11;
     --fill-3: #173f2b;
     --fill-4: #4a2620;
+    --fill-5: #4a3216;
+    --fill-6: #2e2754;
+    --fill-7: #4a2038;
+    --fill-8: #163f3c;
     --on-fill: #f0f0fb;
   }
 }
@@ -109,6 +117,10 @@
   --fill-2: #4a3c11;
   --fill-3: #173f2b;
   --fill-4: #4a2620;
+  --fill-5: #4a3216;
+  --fill-6: #2e2754;
+  --fill-7: #4a2038;
+  --fill-8: #163f3c;
   --on-fill: #f0f0fb;
 }
 
@@ -226,13 +238,17 @@ h1, h2, h3, h4 { font-family: var(--display); font-weight: 800; letter-spacing: 
 .hero-dyk .dyk-actions .btn:focus-visible, .hero-dyk .gl-term:focus-visible { outline-color: var(--on-hi); }
 @media (prefers-reduced-motion: reduce) { .hero-dyk.dyk { transform: none; } }
 
-/* Start here: solid pastel blocks. */
+/* Start here: solid pastel blocks, every card its own colour (chosen 18 October 2026). */
 .start-grid { gap: 14px; }
 .start-card { border: 0; color: var(--on-fill); border-radius: var(--radius-lg); min-height: 170px; padding: 16px; gap: 6px; }
-.start-card:nth-child(4n+1) { background: var(--fill-1); }
-.start-card:nth-child(4n+2) { background: var(--fill-2); }
-.start-card:nth-child(4n+3) { background: var(--fill-3); }
-.start-card:nth-child(4n+4) { background: var(--fill-4); }
+.start-card:nth-child(8n+1) { background: var(--fill-1); }
+.start-card:nth-child(8n+2) { background: var(--fill-2); }
+.start-card:nth-child(8n+3) { background: var(--fill-3); }
+.start-card:nth-child(8n+4) { background: var(--fill-4); }
+.start-card:nth-child(8n+5) { background: var(--fill-5); }
+.start-card:nth-child(8n+6) { background: var(--fill-6); }
+.start-card:nth-child(8n+7) { background: var(--fill-7); }
+.start-card:nth-child(8n+8) { background: var(--fill-8); }
 .start-card h3 { font-size: 1.35rem; }
 .start-card p { font-size: .86rem; }
 .start-card p, .start-kicker, .start-go { color: var(--on-fill); }
