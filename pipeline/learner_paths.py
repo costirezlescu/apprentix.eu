@@ -104,10 +104,10 @@ def step(kicker: str, big: str, lines: list[str], cls: str = "") -> str:
 
 
 def scheme_path(s: dict, code: str, the_name: str) -> str:
-    # 1. Start
+    # 1. Start: the typical age of learners in the scheme (not the age at entry)
     ages = s.get("q_typical_age") or []
     age = ", ".join(ages) if ages else ""
-    start = step("Start", f"Age {age[:1].lower() + age[1:]}" if age else "Entry", [e(short(plain(s.get("target_group")), 110))])
+    start = step("Typical age of learners" if age else "Start", age or "Entry", [e(short(plain(s.get("target_group")), 110))])
 
     # 2. Apprenticeship
     work = WORK_SHARE.get(s.get("workplace_time"))
