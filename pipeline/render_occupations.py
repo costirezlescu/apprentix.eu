@@ -245,7 +245,7 @@ def occupation_page(o: dict, doc: dict, D: dict) -> str:
 <header class="cp-head oc-head">
   <div>
     <div class="mono cp-group">Occupation lens</div>
-    <h1>Want to be {e(o["with_article"])}?</h1>
+    <h1>Want to be <span class="h-accent">{e(o["with_article"])}?</span></h1>
     <p class="lede">{e(lede)}</p>
     {note}
     {stats}

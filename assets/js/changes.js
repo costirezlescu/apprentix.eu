@@ -6,7 +6,7 @@
 
    All text is set with textContent; nothing from the log is parsed as HTML. */
 
-import { url } from './data.js?v=af878328';
+import { url } from './data.js?v=5ec0f233';
 
 const LOG_PATH = 'data/published/changes/log.json';
 const FEED_PATH = 'data/feed.xml';

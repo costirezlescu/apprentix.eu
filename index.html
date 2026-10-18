@@ -18,8 +18,8 @@
 <meta property="og:image:alt" content="Apprentix: European apprenticeship and VET data, made searchable — apprenticeship schemes, statistical indicators and countries covered.">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&amp;family=Instrument+Sans:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap">
-<link rel="stylesheet" href="assets/css/site.css?v=af878328">
-<link rel="stylesheet" href="assets/css/studio.css?v=af878328">
+<link rel="stylesheet" href="assets/css/site.css?v=5ec0f233">
+<link rel="stylesheet" href="assets/css/studio.css?v=5ec0f233">
 <link rel="alternate" type="application/atom+xml" title="Apprentix data updates" href="data/feed.xml">
 </head>
 <body data-root="./">
@@ -54,7 +54,8 @@
   <section class="hero">
     <div class="wrap hero-grid">
       <div>
-        <h1 id="site-tagline">European apprenticeship data, made searchable.</h1>
+        <p class="eyebrow" aria-hidden="true" hidden>European apprenticeship and VET data</p>
+        <h1 id="site-tagline">European apprenticeship data, <span class="h-accent">made searchable.</span></h1>
         <p class="lede" id="site-blurb"></p>
         <div class="stats" id="stats"></div>
       </div>
@@ -202,11 +203,11 @@
 </footer>
 
 <script type="module">
-  import { mountDidYouKnow } from './assets/js/facts.js?v=af878328';
-  import { mountChanges } from './assets/js/changes.js?v=af878328';
-  import { mountHomeMap } from './assets/js/home-map.js?v=af878328';
-  import { mountSchemeOfWeek } from './assets/js/scheme-week.js?v=af878328';
-  import { mountPulse } from './assets/js/pulse.js?v=af878328';
+  import { mountDidYouKnow } from './assets/js/facts.js?v=5ec0f233';
+  import { mountChanges } from './assets/js/changes.js?v=5ec0f233';
+  import { mountHomeMap } from './assets/js/home-map.js?v=5ec0f233';
+  import { mountSchemeOfWeek } from './assets/js/scheme-week.js?v=5ec0f233';
+  import { mountPulse } from './assets/js/pulse.js?v=5ec0f233';
   mountPulse(document.getElementById('pulse'));
   mountHomeMap(document.getElementById('timelapse'));
   mountSchemeOfWeek(document.getElementById('scheme-week'));
@@ -215,10 +216,13 @@
 </script>
 
 <script type="module">
-  import { loadManifest, esc } from './assets/js/data.js?v=af878328';
+  import { loadManifest, esc } from './assets/js/data.js?v=5ec0f233';
 
   const m = await loadManifest();
-  document.getElementById('site-tagline').textContent = m.site.tagline;
+  // The words after the last comma carry the design's accent colour (unstyled in the current design).
+  const tagline = m.site.tagline, cut = tagline.lastIndexOf(', ');
+  document.getElementById('site-tagline').innerHTML = cut > 0
+    ? `${esc(tagline.slice(0, cut + 1))} <span class="h-accent">${esc(tagline.slice(cut + 2))}</span>` : esc(tagline);
   document.getElementById('site-blurb').textContent = m.site.blurb;
   document.getElementById('foot-updated').textContent = `Last updated ${m.site.updated}.`;
 
@@ -266,6 +270,6 @@
   }
 </script>
 
-<script type="module">import { initGlossary } from './assets/js/glossary.js?v=af878328'; initGlossary();</script>
+<script type="module">import { initGlossary } from './assets/js/glossary.js?v=5ec0f233'; initGlossary();</script>
 </body>
 </html>
