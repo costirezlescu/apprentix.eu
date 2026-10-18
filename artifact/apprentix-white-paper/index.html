@@ -1,0 +1,872 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Inside Apprentix</title>
+<meta name="description" content="A white paper on how apprentix.eu gathers, checks and explains European apprenticeship and VET data.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Instrument+Sans:wght@400..700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one reading column with a sticky contents rail on wide screens; diagrams break out to the full measure.
+   Identity: Apprentix's own "Studio" design (tomato accent, blue data, pastel cards). */
+:root {
+  --ground: #f5f6fa; --surface: #ffffff; --sunken: #eceef5;
+  --ink: #17172b; --muted: #59597a; --faint: #75758f;
+  --line: #e2e3ee; --line-strong: #cbcde0;
+  --accent: #e8452f; --accent-ink: #c2321e; --accent-soft: #ffe5df; --on-accent: #ffffff;
+  --data: #3546d6; --data-ink: #2a37b0; --data-soft: #e5e8ff; --on-data: #ffffff;
+  --good: #1b7a47; --good-soft: #dcf2e5; --bad: #b04a0c; --bad-soft: #fbe9dd;
+  --fill-1: #c9e6ff; --fill-2: #ffe39a; --fill-3: #c8f0da; --fill-4: #ffd6cc;
+  --fill-5: #ffdcb8; --fill-6: #ddd6ff; --fill-7: #ffd3ea; --fill-8: #c3ece9; --on-fill: #17172b;
+  --shadow: 0 12px 32px rgba(23, 23, 43, .09);
+  --display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --body: "Instrument Sans", "Segoe UI", system-ui, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, Consolas, monospace;
+  --radius: 18px; --radius-lg: 26px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --ground: #111122; --surface: #1a1a31; --sunken: #0d0d1a;
+    --ink: #f0f0fb; --muted: #aaaacb; --faint: #8585a6;
+    --line: #2b2b48; --line-strong: #3d3d62;
+    --accent: #ff7663; --accent-ink: #ffa597; --accent-soft: #3b1d19; --on-accent: #111122;
+    --data: #8f9bff; --data-ink: #b3bcff; --data-soft: #23264d; --on-data: #111122;
+    --good: #6fd39b; --good-soft: #153a26; --bad: #f2a167; --bad-soft: #33240f;
+    --fill-1: #1c3653; --fill-2: #4a3c11; --fill-3: #173f2b; --fill-4: #4a2620;
+    --fill-5: #4a3216; --fill-6: #2e2754; --fill-7: #4a2038; --fill-8: #163f3c; --on-fill: #f0f0fb;
+    --shadow: 0 12px 32px rgba(0, 0, 0, .5);
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --ground: #111122; --surface: #1a1a31; --sunken: #0d0d1a;
+  --ink: #f0f0fb; --muted: #aaaacb; --faint: #8585a6;
+  --line: #2b2b48; --line-strong: #3d3d62;
+  --accent: #ff7663; --accent-ink: #ffa597; --accent-soft: #3b1d19; --on-accent: #111122;
+  --data: #8f9bff; --data-ink: #b3bcff; --data-soft: #23264d; --on-data: #111122;
+  --good: #6fd39b; --good-soft: #153a26; --bad: #f2a167; --bad-soft: #33240f;
+  --fill-1: #1c3653; --fill-2: #4a3c11; --fill-3: #173f2b; --fill-4: #4a2620;
+  --fill-5: #4a3216; --fill-6: #2e2754; --fill-7: #4a2038; --fill-8: #163f3c; --on-fill: #f0f0fb;
+  --shadow: 0 12px 32px rgba(0, 0, 0, .5);
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; }
+[hidden] { display: none !important; }
+body { background: var(--ground); color: var(--ink); font-family: var(--body); font-size: 16.5px; line-height: 1.62; }
+a { color: var(--accent-ink); text-underline-offset: 3px; }
+a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px solid var(--data); outline-offset: 2px; border-radius: 4px; }
+h1, h2, h3, h4 { font-family: var(--display); font-weight: 800; letter-spacing: -.025em; line-height: 1.12; text-wrap: balance; margin: 0; }
+p { margin: 0; }
+.mono { font-family: var(--mono); }
+.num { font-variant-numeric: tabular-nums; }
+
+.page { max-width: 1240px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+
+/* ---------- cover ---------- */
+.cover { padding-block: 40px 30px; display: grid; gap: 26px; }
+.tag { display: inline-flex; gap: 10px; align-items: center; font-family: var(--mono); font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+.tag b { background: var(--data); color: var(--on-data); padding: 3px 9px; border-radius: 99px; font-weight: 500; letter-spacing: .08em; }
+.cover h1 { font-size: clamp(42px, 7.4vw, 92px); max-width: 15ch; }
+.cover h1 em { font-style: normal; color: var(--accent); }
+.cover .lede { font-size: clamp(18px, 2.1vw, 22px); color: var(--muted); max-width: 60ch; line-height: 1.5; }
+.byline { display: flex; flex-wrap: wrap; gap: 6px 22px; font-family: var(--mono); font-size: 13px; color: var(--muted); }
+.byline strong { color: var(--ink); font-weight: 500; }
+
+.bignums { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin-top: 6px; }
+@media (max-width: 720px) { .bignums { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.bignum { border-radius: var(--radius); padding: 18px 18px 16px; background: var(--fill-1); color: var(--on-fill); }
+.bignum:nth-child(8n+2) { background: var(--fill-2); } .bignum:nth-child(8n+3) { background: var(--fill-3); }
+.bignum:nth-child(8n+4) { background: var(--fill-4); } .bignum:nth-child(8n+5) { background: var(--fill-5); }
+.bignum:nth-child(8n+6) { background: var(--fill-6); } .bignum:nth-child(8n+7) { background: var(--fill-7); }
+.bignum:nth-child(8n+8) { background: var(--fill-8); }
+.bignum .n { font-family: var(--display); font-weight: 800; font-size: clamp(30px, 3.6vw, 42px); letter-spacing: -.03em; line-height: 1; font-variant-numeric: tabular-nums; }
+.bignum .l { font-size: 14px; margin-top: 8px; line-height: 1.35; }
+
+.indep { border: 1px solid var(--line-strong); border-radius: var(--radius); padding: 14px 18px; font-size: 14.5px; color: var(--muted); background: var(--surface); max-width: 880px; }
+.indep strong { color: var(--ink); }
+
+/* ---------- body layout ---------- */
+.layout { display: grid; grid-template-columns: 220px minmax(0, 1fr); gap: 48px; padding-block: 20px 60px; }
+.toc { position: sticky; top: calc(env(safe-area-inset-top, 0px) + 20px); align-self: start; font-size: 14px; max-height: calc(100vh - 40px); overflow: auto; }
+.toc p { font-family: var(--mono); font-size: 11.5px; letter-spacing: .1em; text-transform: uppercase; color: var(--faint); margin-bottom: 10px; }
+.toc ol { list-style: none; margin: 0; padding: 0; display: grid; gap: 2px; counter-reset: toc; }
+.toc li { counter-increment: toc; }
+.toc a { display: grid; grid-template-columns: 26px 1fr; padding: 5px 8px; border-radius: 10px; color: var(--muted); text-decoration: none; line-height: 1.3; }
+.toc a::before { content: counter(toc, decimal-leading-zero); font-family: var(--mono); font-size: 11px; color: var(--faint); padding-top: 2px; }
+.toc a:hover { background: var(--surface); color: var(--ink); }
+main { min-width: 0; display: grid; gap: 72px; }
+
+section { display: grid; gap: 20px; scroll-margin-top: 20px; }
+.kicker { font-family: var(--mono); font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: var(--accent-ink); }
+section > h2 { font-size: clamp(30px, 4vw, 46px); max-width: 22ch; }
+h3 { font-size: 22px; letter-spacing: -.015em; }
+.prose { display: grid; gap: 14px; max-width: 68ch; }
+.prose p, .prose li { color: var(--ink); }
+.prose ul { margin: 0; padding-left: 20px; display: grid; gap: 6px; }
+.muted { color: var(--muted); }
+.small { font-size: 14px; }
+
+/* plain-language explainer chips */
+.explain { background: var(--data-soft); border-radius: 14px; padding: 14px 16px; font-size: 15px; max-width: 68ch; }
+.explain b { font-family: var(--mono); font-size: 11.5px; letter-spacing: .1em; text-transform: uppercase; color: var(--data-ink); display: block; margin-bottom: 4px; font-weight: 500; }
+
+.card { background: var(--surface); border-radius: var(--radius); padding: 22px; box-shadow: var(--shadow); min-width: 0; }
+.grid2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 16px; }
+.grid3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; }
+
+/* ---------- system map ---------- */
+.sysmap { display: grid; grid-template-columns: 1fr 64px 1.1fr 64px 1fr; align-items: stretch; gap: 0; }
+.sm-col { display: grid; gap: 10px; align-content: start; min-width: 0; }
+.sm-col h4 { font-family: var(--mono); font-weight: 500; font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+.sm-box { border-radius: 14px; padding: 12px 14px; background: var(--surface); border: 1px solid var(--line); font-size: 14px; line-height: 1.35; }
+.sm-box strong { display: block; font-size: 15px; }
+.sm-box span { color: var(--muted); font-size: 13px; }
+.sm-core { background: var(--ink); color: var(--ground); border-radius: var(--radius-lg); padding: 20px; display: grid; gap: 10px; align-content: start; }
+.sm-core h4 { color: var(--ground); opacity: .7; }
+.sm-step { display: grid; grid-template-columns: 30px 1fr; gap: 10px; align-items: start; font-size: 14px; line-height: 1.35; }
+.sm-step i { font-style: normal; width: 26px; height: 26px; border-radius: 50%; background: var(--accent); color: var(--on-accent); display: grid; place-items: center; font-family: var(--mono); font-size: 12px; }
+.sm-step strong { display: block; font-size: 15px; }
+.sm-step span { opacity: .75; }
+.sm-arrow { display: grid; place-items: center; color: var(--accent); }
+.sm-arrow svg { width: 44px; height: 24px; }
+@media (max-width: 900px) {
+  .sysmap { grid-template-columns: 1fr; }
+  .sm-arrow { height: 44px; }
+  .sm-arrow svg { transform: rotate(90deg); }
+}
+
+/* ---------- bars (HTML, drawn to scale) ---------- */
+.bars { display: grid; gap: 8px; }
+.bar-row { display: grid; grid-template-columns: minmax(120px, 210px) minmax(0, 1fr) 64px; gap: 12px; align-items: center; font-size: 14.5px; }
+.bar-row .track { height: 22px; background: var(--sunken); border-radius: 6px; overflow: hidden; }
+.bar-row .fill { height: 100%; background: var(--data); border-radius: 0 6px 6px 0; min-width: 3px; }
+.bar-row .fill.acc { background: var(--accent); }
+.bar-row .v { font-family: var(--mono); font-size: 13.5px; text-align: right; font-variant-numeric: tabular-nums; }
+@media (max-width: 520px) { .bar-row { grid-template-columns: 1fr 56px; } .bar-row .track { grid-column: 1 / -1; grid-row: 2; } }
+.figcap { font-size: 13.5px; color: var(--muted); }
+
+/* ---------- tables ---------- */
+.tablewrap { overflow-x: auto; border-radius: var(--radius); background: var(--surface); box-shadow: var(--shadow); }
+table { border-collapse: collapse; width: 100%; font-size: 14.5px; min-width: 760px; }
+th, td { text-align: left; vertical-align: top; padding: 11px 14px; border-bottom: 1px solid var(--line); }
+thead th { font-family: var(--mono); font-weight: 500; font-size: 11.5px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); background: var(--sunken); position: sticky; top: 0; }
+tbody th { font-weight: 600; }
+tr.grp th { background: var(--accent-soft); color: var(--accent-ink); font-family: var(--mono); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; font-weight: 500; }
+td .pill { display: inline-block; font-family: var(--mono); font-size: 11.5px; padding: 2px 8px; border-radius: 99px; background: var(--data-soft); color: var(--data-ink); white-space: nowrap; margin: 1px 2px 1px 0; }
+td .pill.warn { background: var(--bad-soft); color: var(--bad); }
+
+/* ---------- pipeline flow ---------- */
+.flow { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 10px; counter-reset: step; }
+.flow li { list-style: none; position: relative; background: var(--surface); border-radius: var(--radius); padding: 16px 14px; box-shadow: var(--shadow); counter-increment: step; display: grid; gap: 6px; align-content: start; }
+.flow li::before { content: counter(step); font-family: var(--mono); font-size: 12px; color: var(--on-accent); background: var(--accent); width: 24px; height: 24px; border-radius: 50%; display: grid; place-items: center; }
+.flow li:not(:last-child)::after { content: ""; position: absolute; right: -9px; top: 26px; width: 8px; height: 8px; border-top: 2px solid var(--accent); border-right: 2px solid var(--accent); transform: rotate(45deg); }
+.flow strong { font-family: var(--display); font-size: 17px; letter-spacing: -.01em; }
+.flow span { font-size: 13.5px; color: var(--muted); line-height: 1.4; }
+.flow { padding: 0; margin: 0; }
+@media (max-width: 1100px) { .flow { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); } .flow li::after { display: none; } }
+
+/* ---------- provenance card ---------- */
+.prov { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: 0; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow); }
+.prov-l { background: var(--surface); padding: 24px; display: grid; gap: 12px; align-content: start; }
+.prov-r { background: var(--ink); color: var(--ground); padding: 24px; display: grid; gap: 4px; align-content: start; font-family: var(--mono); font-size: 13px; line-height: 1.55; }
+.prov-r .k { opacity: .6; }
+.prov-r .v { word-break: break-all; margin-bottom: 8px; }
+.prov-r .hash { color: var(--fill-2); }
+.meter { display: grid; gap: 6px; }
+.meter-track { position: relative; height: 18px; border-radius: 99px; background: var(--sunken); }
+.meter-fill { position: absolute; inset: 0 auto 0 0; border-radius: 99px; background: var(--data); }
+.meter-target { position: absolute; top: -5px; bottom: -5px; width: 3px; background: var(--accent); border-radius: 2px; }
+.meter-labels { display: flex; justify-content: space-between; font-family: var(--mono); font-size: 12px; color: var(--muted); }
+@media (max-width: 760px) { .prov { grid-template-columns: 1fr; } }
+
+/* ---------- feature cards ---------- */
+.fgroup { display: grid; gap: 14px; }
+.fgroup > h3 { display: flex; gap: 10px; align-items: baseline; }
+.fgroup > h3 small { font-family: var(--mono); font-size: 12px; font-weight: 400; letter-spacing: .06em; color: var(--muted); text-transform: uppercase; }
+.feat { border-radius: var(--radius); padding: 18px; background: var(--fill-1); color: var(--on-fill); display: grid; gap: 8px; align-content: start; min-width: 0; }
+.feat h4 { font-size: 19px; letter-spacing: -.015em; }
+.feat p { font-size: 14.5px; line-height: 1.5; }
+.feat .path { font-family: var(--mono); font-size: 11.5px; opacity: .75; word-break: break-all; }
+.feat ul { margin: 0; padding-left: 18px; font-size: 14px; display: grid; gap: 3px; }
+.g-a .feat:nth-child(4n+1) { background: var(--fill-1); } .g-a .feat:nth-child(4n+2) { background: var(--fill-6); } .g-a .feat:nth-child(4n+3) { background: var(--fill-8); } .g-a .feat:nth-child(4n+4) { background: var(--fill-3); }
+.g-b .feat:nth-child(4n+1) { background: var(--fill-2); } .g-b .feat:nth-child(4n+2) { background: var(--fill-5); } .g-b .feat:nth-child(4n+3) { background: var(--fill-4); } .g-b .feat:nth-child(4n+4) { background: var(--fill-7); }
+.g-c .feat:nth-child(4n+1) { background: var(--fill-7); } .g-c .feat:nth-child(4n+2) { background: var(--fill-3); } .g-c .feat:nth-child(4n+3) { background: var(--fill-1); } .g-c .feat:nth-child(4n+4) { background: var(--fill-2); }
+.g-d .feat { background: var(--surface); color: var(--ink); box-shadow: var(--shadow); }
+
+/* ---------- country page anatomy ---------- */
+.anatomy { display: grid; grid-template-columns: minmax(0, 340px) minmax(0, 1fr); gap: 28px; align-items: start; }
+.phone { background: var(--surface); border-radius: 30px; padding: 14px; box-shadow: var(--shadow); border: 1px solid var(--line); display: grid; gap: 7px; }
+.phone .ph-h { font-family: var(--display); font-weight: 800; font-size: 22px; letter-spacing: -.02em; padding: 4px 6px 2px; }
+.phone .ph-s { font-size: 12px; color: var(--muted); padding: 0 6px 6px; }
+.blk { border-radius: 10px; padding: 7px 10px; font-size: 12.5px; display: grid; grid-template-columns: 22px 1fr; gap: 6px; align-items: center; background: var(--sunken); }
+.blk i { font-style: normal; font-family: var(--mono); font-size: 11px; color: var(--muted); }
+.blk.hl { background: var(--fill-2); color: var(--on-fill); }
+.blk.hl i { color: var(--on-fill); opacity: .7; }
+.anat-list { margin: 0; padding: 0; list-style: none; display: grid; gap: 10px; counter-reset: an; }
+.anat-list li { counter-increment: an; display: grid; grid-template-columns: 34px 1fr; gap: 8px; font-size: 15px; }
+.anat-list li::before { content: counter(an); font-family: var(--mono); font-size: 12px; width: 26px; height: 26px; border-radius: 50%; background: var(--sunken); display: grid; place-items: center; color: var(--muted); }
+.anat-list strong { font-weight: 600; }
+@media (max-width: 820px) { .anatomy { grid-template-columns: 1fr; } }
+
+/* ---------- glance tile ---------- */
+.tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 12px; }
+.tile { background: var(--surface); border-radius: 16px; padding: 14px 16px; border: 1px solid var(--line); display: grid; gap: 6px; }
+.tile .t { font-size: 13px; color: var(--muted); line-height: 1.3; }
+.tile .val { font-family: var(--display); font-weight: 800; font-size: 30px; letter-spacing: -.02em; line-height: 1; }
+.tile .eu { font-size: 12.5px; color: var(--muted); }
+.chip { display: inline-flex; align-items: center; gap: 5px; font-family: var(--mono); font-size: 11.5px; padding: 2px 9px; border-radius: 99px; width: fit-content; }
+.chip.good { background: var(--good-soft); color: var(--good); }
+.chip.bad { background: var(--bad-soft); color: var(--bad); }
+.chip.neutral { background: var(--sunken); color: var(--muted); }
+.tile svg { width: 100%; height: 34px; display: block; }
+
+/* ---------- quote / example ---------- */
+.example { border-left: 4px solid var(--accent); padding: 4px 0 4px 18px; display: grid; gap: 6px; max-width: 68ch; }
+.example .src { font-family: var(--mono); font-size: 12px; color: var(--muted); }
+.example q { font-family: var(--display); font-weight: 600; font-size: 20px; letter-spacing: -.01em; line-height: 1.35; quotes: "“" "”"; }
+
+/* ---------- ask loop ---------- */
+.loop { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 10px; align-items: stretch; }
+.loop > div { background: var(--surface); border-radius: 16px; padding: 14px; font-size: 14px; line-height: 1.4; border: 1px solid var(--line); display: grid; gap: 4px; align-content: start; }
+.loop > div strong { font-size: 15px; }
+.loop > div.hot { background: var(--data); color: var(--on-data); border-color: var(--data); }
+.loop > div.hot span { opacity: .85; }
+.loop > div span { color: inherit; opacity: .8; }
+@media (max-width: 900px) { .loop { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 480px) { .loop { grid-template-columns: 1fr; } }
+
+/* ---------- auto vs human ---------- */
+.split { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.split > div { border-radius: var(--radius); padding: 20px; display: grid; gap: 10px; align-content: start; }
+.split .auto { background: var(--good-soft); }
+.split .human { background: var(--surface); box-shadow: var(--shadow); }
+.split h3 { font-size: 20px; }
+.split ul { margin: 0; padding-left: 18px; display: grid; gap: 6px; font-size: 15px; }
+@media (max-width: 760px) { .split { grid-template-columns: 1fr; } }
+
+/* ---------- hard list ---------- */
+.hard { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 14px; counter-reset: hard; }
+.hard > div { background: var(--surface); border-radius: var(--radius); padding: 20px; box-shadow: var(--shadow); display: grid; gap: 8px; align-content: start; counter-increment: hard; }
+.hard h4 { font-size: 18px; letter-spacing: -.01em; }
+.hard p { font-size: 14.5px; color: var(--muted); }
+.hard .why { font-size: 14px; color: var(--ink); border-top: 1px dashed var(--line-strong); padding-top: 8px; }
+.hard .why b { font-family: var(--mono); font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--accent-ink); font-weight: 500; margin-right: 6px; }
+
+/* ---------- glossary ---------- */
+dl.gloss { display: grid; grid-template-columns: minmax(140px, 220px) minmax(0, 1fr); gap: 0; margin: 0; background: var(--surface); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); }
+dl.gloss dt, dl.gloss dd { padding: 12px 16px; border-bottom: 1px solid var(--line); margin: 0; font-size: 15px; }
+dl.gloss dt { font-weight: 600; background: var(--sunken); }
+@media (max-width: 560px) { dl.gloss { grid-template-columns: 1fr; } dl.gloss dt { border-bottom: 0; padding-bottom: 2px; } }
+
+.timeline { display: grid; gap: 0; border-left: 2px solid var(--line-strong); margin-left: 8px; }
+.timeline > div { position: relative; padding: 0 0 18px 22px; display: grid; gap: 2px; }
+.timeline > div::before { content: ""; position: absolute; left: -7px; top: 6px; width: 12px; height: 12px; border-radius: 50%; background: var(--accent); }
+.timeline .when { font-family: var(--mono); font-size: 12.5px; color: var(--muted); }
+
+footer.end { border-top: 1px solid var(--line); padding-block: 28px 48px; display: grid; gap: 8px; font-size: 14px; color: var(--muted); }
+
+@media (max-width: 1000px) {
+  .layout { grid-template-columns: 1fr; gap: 24px; }
+  .toc { position: static; max-height: none; }
+  .toc ol { grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .bar-row .fill { transform-origin: left; animation: grow .9s cubic-bezier(.2, .7, .2, 1) both; }
+  @keyframes grow { from { transform: scaleX(.02); } to { transform: scaleX(1); } }
+}
+</style>
+</head>
+<body>
+
+<div class="page">
+  <header class="cover">
+    <div class="tag"><b>White paper</b> apprentix.eu · October 2026</div>
+    <h1>Europe’s apprenticeship data, <em>gathered, checked and explained</em>, every week</h1>
+    <p class="lede">Apprentix brings together what Cedefop, Eurostat, the OECD, UNESCO, the European Commission and ten national statistics offices publish about apprenticeships and vocational education and training. It checks every figure, keeps a record of where each one came from, and turns the data into pages that policy makers, researchers, employers and young people can use. This paper explains what the site does, where its data comes from, and how it runs with very little manual work.</p>
+    <div class="byline"><span>By <strong>apprentix.eu</strong></span><span>Situation on <strong>18 October 2026</strong></span><span>Cite the site: <strong>doi.org/10.5281/zenodo.23426138</strong></span></div>
+    <div class="bignums" role="list">
+      <div class="bignum" role="listitem"><div class="n">112</div><div class="l">statistical indicators, each with its source on record</div></div>
+      <div class="bignum" role="listitem"><div class="n">64,901</div><div class="l">data points (one country, one year, one value)</div></div>
+      <div class="bignum" role="listitem"><div class="n">33,177</div><div class="l">records in 11 searchable datasets</div></div>
+      <div class="bignum" role="listitem"><div class="n">42</div><div class="l">country portraits, plus the EU-27 as a benchmark</div></div>
+      <div class="bignum" role="listitem"><div class="n">32</div><div class="l">sources tracked; 20 refresh automatically</div></div>
+      <div class="bignum" role="listitem"><div class="n">341</div><div class="l">web pages, all rebuilt from the data</div></div>
+      <div class="bignum" role="listitem"><div class="n">Mon</div><div class="l">every Monday at 05:17 UTC the whole site refreshes itself</div></div>
+      <div class="bignum" role="listitem"><div class="n">0</div><div class="l">accounts, cookies, trackers or databases</div></div>
+    </div>
+    <p class="indep"><strong>Independent and non-commercial.</strong> Apprentix is not affiliated with, or endorsed by, any European institution or agency. Every record links back to its official source, and the official source is always the authority.</p>
+  </header>
+
+  <div class="layout">
+    <nav class="toc" aria-label="Contents">
+      <p>Contents</p>
+      <ol>
+        <li><a href="#why">Why Apprentix exists</a></li>
+        <li><a href="#map">The system on one page</a></li>
+        <li><a href="#sources">Where the data comes from</a></li>
+        <li><a href="#week">The weekly cycle</a></li>
+        <li><a href="#trace">Every number can be traced</a></li>
+        <li><a href="#guard">What stops bad data</a></li>
+        <li><a href="#features">What visitors can do</a></li>
+        <li><a href="#country">Anatomy of a country portrait</a></li>
+        <li><a href="#fair">Rules for fair comparison</a></li>
+        <li><a href="#words">Words written by the data</a></li>
+        <li><a href="#open">Open to people and machines</a></li>
+        <li><a href="#ask">Ask Apprentix</a></li>
+        <li><a href="#build">How it is built</a></li>
+        <li><a href="#people">Where people still come in</a></li>
+        <li><a href="#hard">Why it is hard to copy</a></li>
+        <li><a href="#next">What comes next</a></li>
+        <li><a href="#glossary">Terms used here</a></li>
+      </ol>
+    </nav>
+
+    <main>
+      <!-- 1 -->
+      <section id="why">
+        <div class="kicker">01 · The problem</div>
+        <h2>The data exists, but it is scattered</h2>
+        <div class="prose">
+          <p>Anyone trying to understand apprenticeships in Europe has to visit many places. Cedefop alone publishes key indicators in a spreadsheet, scheme descriptions in an online database, a timeline of national policies, a regional skills index, skills forecasts and qualification frameworks, each in its own tool and format. Eurostat, the OECD and UNESCO publish further statistics through their own interfaces. National statistics offices publish apprentice counts that cannot be compared directly between countries. The European Commission publishes Erasmus+ project lists as files of around 90 MB each.</p>
+          <p>There is also a gap that most people do not expect. <strong>No EU-wide statistic counts apprentices.</strong> Open, machine-readable national apprentice statistics exist for only nine countries. Apprentix says this plainly on its Insights page, and it treats the national series with care because each one counts something slightly different.</p>
+          <p>Apprentix does four things with this material:</p>
+          <ul>
+            <li><strong>Gathers</strong> it automatically wherever the publisher allows, and by careful hand-curation where it does not.</li>
+            <li><strong>Checks</strong> it against fixed rules before anything is published.</li>
+            <li><strong>Links</strong> it: a country, a scheme, a qualification, an occupation and an indicator are connected, so a reader can move from one to the next.</li>
+            <li><strong>Explains</strong> it in plain language, with the method, the caveats and the source shown next to every figure.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 2 -->
+      <section id="map">
+        <div class="kicker">02 · Overview</div>
+        <h2>The whole system on one page</h2>
+        <p class="prose muted">Sources on the left, the weekly process in the middle, everything people and computers can use on the right.</p>
+        <div class="sysmap" role="img" aria-label="Diagram: 32 sources feed a seven-step weekly process, which produces the website, downloads, feeds, a data catalogue, embeddable charts and an AI search index.">
+          <div class="sm-col">
+            <h4>32 sources</h4>
+            <div class="sm-box"><strong>Cedefop</strong><span>KIVET indicators, policy timeline, skills index, shortage index, skills forecast, RESET regions, apprenticeship schemes, financing, qualification frameworks, VET in Europe, recognition</span></div>
+            <div class="sm-box"><strong>Eurostat · OECD · UNESCO</strong><span>EU targets, enrolments, graduate employment, continuing training, international comparators</span></div>
+            <div class="sm-box"><strong>European Commission</strong><span>Erasmus+ projects and accreditations, Centres of Vocational Excellence, ESCO, Europass qualifications, data.europa.eu</span></div>
+            <div class="sm-box"><strong>10 national offices</strong><span>CH · DE (two offices) · DK · FI · FR · IE · NL · NO · UK (England)</span></div>
+          </div>
+          <div class="sm-arrow" aria-hidden="true"><svg viewBox="0 0 44 24"><path d="M2 12h36m-9-8 9 8-9 8" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <div class="sm-core">
+            <h4>Every Monday, unattended</h4>
+            <div class="sm-step"><i>1</i><div><strong>Fetch</strong><span>Download from each source</span></div></div>
+            <div class="sm-step"><i>2</i><div><strong>Keep the original</strong><span>Dated copy with a digital fingerprint</span></div></div>
+            <div class="sm-step"><i>3</i><div><strong>Put in one shape</strong><span>Same country codes, units and record of origin</span></div></div>
+            <div class="sm-step"><i>4</i><div><strong>Check</strong><span>Against fixed rules; failures stop publication</span></div></div>
+            <div class="sm-step"><i>5</i><div><strong>Build</strong><span>Pages, charts, findings, quizzes, feeds</span></div></div>
+            <div class="sm-step"><i>6</i><div><strong>Publish</strong><span>Live within minutes</span></div></div>
+            <div class="sm-step"><i>7</i><div><strong>Watch</strong><span>Flag new or overdue data for a person</span></div></div>
+          </div>
+          <div class="sm-arrow" aria-hidden="true"><svg viewBox="0 0 44 24"><path d="M2 12h36m-9-8 9 8-9 8" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <div class="sm-col">
+            <h4>What comes out</h4>
+            <div class="sm-box"><strong>341 web pages</strong><span>Countries, indicators, occupations, insights, stories, tools and games</span></div>
+            <div class="sm-box"><strong>Downloads</strong><span>Every indicator as CSV and JSON; every dataset in full</span></div>
+            <div class="sm-box"><strong>A catalogue for data portals</strong><span>DCAT-AP, ready for data.europa.eu to collect</span></div>
+            <div class="sm-box"><strong>43 news feeds</strong><span>One per country plus one for the whole site</span></div>
+            <div class="sm-box"><strong>Charts for other sites</strong><span>Embeddable, with the source attached</span></div>
+            <div class="sm-box"><strong>An index for the AI assistant</strong><span>2,040 passages it is allowed to quote</span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3 -->
+      <section id="sources">
+        <div class="kicker">03 · Sources</div>
+        <h2>Where the data comes from</h2>
+        <div class="prose">
+          <p>Apprentix tracks 32 sources. Twenty-two have an automated connector: a small program written for that one source, which knows where its data lives and how to read it. Twenty of these run every week. Two are switched off and will stay off until their publishers give permission. The other ten sources cannot be read by a program, either because the publisher’s website refuses automated visits or because the material is only published as a document. Those are curated by hand, on a schedule, and the site says so wherever their data appears.</p>
+        </div>
+        <div class="explain"><b>In plain words</b>Publishers offer data in different ways. An <strong>API</strong> is a door built for computers: a program asks a precise question and gets a precise answer. A <strong>file download</strong> is a spreadsheet or table that is replaced when new figures come out. <strong>SPARQL</strong> is the query language of linked-data registers such as Europass and the EU Publications Office. <strong>SDMX</strong> and <strong>JSON-stat</strong> are standard formats that official statisticians use to exchange tables. Apprentix speaks all of them.</div>
+
+        <div class="card" style="display:grid; gap:14px">
+          <h3>112 indicators, by publisher</h3>
+          <div class="bars" role="img" aria-label="Bar chart of indicators by publisher: Cedefop 64, national statistics offices 29, Eurostat 7, UNESCO 6, European Commission 4, OECD 2.">
+            <div class="bar-row"><span>Cedefop</span><div class="track"><div class="fill acc" style="width:100%"></div></div><span class="v">64</span></div>
+            <div class="bar-row"><span>National statistics offices</span><div class="track"><div class="fill" style="width:45.3%"></div></div><span class="v">29</span></div>
+            <div class="bar-row"><span>Eurostat</span><div class="track"><div class="fill" style="width:10.9%"></div></div><span class="v">7</span></div>
+            <div class="bar-row"><span>UNESCO (UIS)</span><div class="track"><div class="fill" style="width:9.4%"></div></div><span class="v">6</span></div>
+            <div class="bar-row"><span>European Commission</span><div class="track"><div class="fill" style="width:6.25%"></div></div><span class="v">4</span></div>
+            <div class="bar-row"><span>OECD</span><div class="track"><div class="fill" style="width:3.1%"></div></div><span class="v">2</span></div>
+          </div>
+          <p class="figcap">Cedefop supplies more than half of all indicators. Eurostat’s count includes one share calculated by Apprentix, which is labelled as such. The 29 national series cover nine countries: Germany 8, Switzerland 5, Finland 3, Norway 3, United Kingdom 3, France 2, Ireland 2, Netherlands 2, Denmark 1.</p>
+        </div>
+
+        <div class="tablewrap">
+          <table>
+            <thead><tr><th>Source</th><th>What Apprentix takes</th><th>How it is read</th><th>Refreshed</th><th>Licence</th></tr></thead>
+            <tbody>
+              <tr class="grp"><th colspan="5">Cedefop</th></tr>
+              <tr><th>Key indicators on VET (KIVET)</th><td>58 indicators, 36 countries, 2010–2025, with Cedefop’s own grouping kept</td><td><span class="pill">spreadsheet download</span></td><td>Weekly check; Cedefop updates June–July</td><td>CC BY 4.0</td></tr>
+              <tr><th>Timeline of VET policies in Europe (with ReferNet)</th><td>1,184 national policies; 408 flagged as concerning apprenticeship</td><td><span class="pill">spreadsheet download</span></td><td>Weekly; the program looks for next year’s file by itself</td><td>CC BY 4.0</td></tr>
+              <tr><th>European Skills Index</th><td>2024 edition (6,152 values, 31 countries) and the 2018–2022 editions</td><td><span class="pill">spreadsheet download</span></td><td>Weekly check</td><td>CC BY 4.0</td></tr>
+              <tr><th>Labour and skills shortage index (2026)</th><td>Shortage scores for 38 occupation groups, 31 countries</td><td><span class="pill">spreadsheet download</span></td><td>Weekly check</td><td>CC BY 4.0</td></tr>
+              <tr><th>Skills forecast, short term (August 2026)</th><td>Employment projections and growth, 28 countries; used for job outlooks</td><td><span class="pill">spreadsheet download</span></td><td>Weekly check; Cedefop updates twice a year</td><td>CC BY 4.0</td></tr>
+              <tr><th>RESET regional skills ecosystems index (July 2026)</th><td>Index, 4 pillars, 9 sub-pillars, 37 indicators; all 244 NUTS-2 regions ranked</td><td><span class="pill">spreadsheet download</span></td><td>Weekly check</td><td>CC BY 4.0</td></tr>
+              <tr><th>European database on apprenticeship schemes</th><td>34 schemes in 30 countries, with the answers to Cedefop’s 34 coded questions</td><td><span class="pill warn">curated by hand</span> read in a browser, then merged by a program that stops on anything unexpected</td><td>Yearly review</td><td>Cedefop legal notice</td></tr>
+              <tr><th>Financing apprenticeships database</th><td>55 funding instruments in 21 countries (reference period 2016–17)</td><td><span class="pill warn">curated by hand</span></td><td>Not updated by Cedefop since</td><td>Cedefop legal notice</td></tr>
+              <tr><th>National qualifications frameworks tool (2024)</th><td>1,074 qualification levels in 41 countries</td><td><span class="pill warn">curated by hand</span></td><td>Yearly review</td><td>Cedefop legal notice</td></tr>
+              <tr><th>VET in Europe (with ReferNet)</th><td>30 national VET system descriptions, linked and cited</td><td><span class="pill warn">curated by hand</span></td><td>Yearly review</td><td>Cedefop legal notice</td></tr>
+              <tr><th>Recognition of foreign VET qualifications (2026)</th><td>30 national systems: who informs, who decides, under which law</td><td><span class="pill">read from the PDF</span> by a table-reading program</td><td>On new edition</td><td>CC BY 4.0</td></tr>
+              <tr class="grp"><th colspan="5">European and international statistics</th></tr>
+              <tr><th>Eurostat</th><td>Work-based learning among recent VET graduates (EU target 60%), employment of recent graduates, pupils in combined school and work programmes, continuing training in enterprises</td><td><span class="pill">API</span> JSON-stat</td><td>Weekly</td><td>CC BY 4.0</td></tr>
+              <tr><th>OECD, Education at a Glance</th><td>Share of VET students in combined programmes; employment by type of upper-secondary education; non-EU comparators</td><td><span class="pill">API</span> SDMX, one call per table to respect the OECD’s hourly limit</td><td>Weekly</td><td>CC BY 4.0</td></tr>
+              <tr><th>UNESCO Institute for Statistics</th><td>6 indicators that fill gaps for candidate countries</td><td><span class="pill">API</span> pinned to a fixed data release</td><td>Weekly</td><td>CC BY-SA 4.0</td></tr>
+              <tr class="grp"><th colspan="5">European Commission</th></tr>
+              <tr><th>Erasmus+ project results</th><td>12 yearly project files, 2014–2025 (about 90 MB and 621 columns each): VET mobility projects and grants, 4,041 accredited VET organisations; 73 Centres of Vocational Excellence projects</td><td><span class="pill">file download</span> only when a file has changed; contact names, e-mails and addresses are never read</td><td>Weekly</td><td>CC BY 4.0</td></tr>
+              <tr><th>ESCO</th><td>3,039 occupations, with names in 26 languages</td><td><span class="pill">API</span> pinned to version 1.2.1</td><td>On new version</td><td>EC reuse notice</td></tr>
+              <tr><th>Europass Qualifications Dataset Register</th><td>24,768 current vocational qualifications at EQF levels 2–5, from 14 countries</td><td><span class="pill">SPARQL</span> many small queries, sorted afterwards</td><td>Weekly</td><td>EC reuse notice</td></tr>
+              <tr><th>data.europa.eu</th><td>1,644 open datasets on apprenticeship and VET from 28 countries; also watches Cedefop’s own catalogue entries</td><td><span class="pill">API</span> searched in several languages</td><td>Weekly</td><td>Per dataset</td></tr>
+              <tr class="grp"><th colspan="5">National statistics (not comparable between countries, and labelled that way)</th></tr>
+              <tr><th>Germany</th><td>Destatis vocational training statistics; Federal Employment Agency training-market figures by Land, 2009–2025</td><td><span class="pill">API</span> <span class="pill">spreadsheet download</span></td><td>Weekly</td><td>dl-de/by-2-0; BA credit</td></tr>
+              <tr><th>Switzerland, Denmark, Finland, Norway, Ireland</th><td>Apprenticeship contracts, new agreements (Denmark monthly since 2003), apprentices in training</td><td><span class="pill">API</span> PxWeb, JSON-stat, REST</td><td>Weekly</td><td>CC BY 4.0 or equivalent</td></tr>
+              <tr><th>France (DARES), Netherlands (DUO), England (DfE)</th><td>New apprenticeship contracts monthly since 2013; work-based and school-based MBO students; starts and achievements</td><td><span class="pill">file download</span> <span class="pill">API</span></td><td>Weekly</td><td>Open licences; France’s being confirmed</td></tr>
+              <tr><th>Austria (WKO), Germany (BIBB)</th><td>Connectors written and tested</td><td><span class="pill warn">switched off</span> until the publishers give permission</td><td>—</td><td>Awaiting permission</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="grid2">
+          <div class="card" style="display:grid; gap:12px">
+            <h3>Licences of the 112 indicators</h3>
+            <div class="bars" role="img" aria-label="Bar chart of licences: CC BY 4.0 86, CC BY-SA 4.0 6, opendata.swiss terms 5, German open licence 4, BA credit 4, UK Open Government Licence 3, Dutch open licence 2, being confirmed 2.">
+              <div class="bar-row"><span>CC BY 4.0</span><div class="track"><div class="fill" style="width:100%"></div></div><span class="v">86</span></div>
+              <div class="bar-row"><span>CC BY-SA 4.0</span><div class="track"><div class="fill" style="width:7%"></div></div><span class="v">6</span></div>
+              <div class="bar-row"><span>opendata.swiss</span><div class="track"><div class="fill" style="width:5.8%"></div></div><span class="v">5</span></div>
+              <div class="bar-row"><span>German open licence</span><div class="track"><div class="fill" style="width:4.7%"></div></div><span class="v">4</span></div>
+              <div class="bar-row"><span>BA credit line</span><div class="track"><div class="fill" style="width:4.7%"></div></div><span class="v">4</span></div>
+              <div class="bar-row"><span>UK Open Government</span><div class="track"><div class="fill" style="width:3.5%"></div></div><span class="v">3</span></div>
+              <div class="bar-row"><span>Dutch open licence</span><div class="track"><div class="fill" style="width:2.3%"></div></div><span class="v">2</span></div>
+              <div class="bar-row"><span>Being confirmed</span><div class="track"><div class="fill acc" style="width:2.3%"></div></div><span class="v">2</span></div>
+            </div>
+            <p class="figcap">Each indicator carries its own licence, and downloads repeat it. Only material the publisher allows to be reused is republished.</p>
+          </div>
+          <div class="card" style="display:grid; gap:12px">
+            <h3>Rules for reading other people’s websites</h3>
+            <div class="prose small">
+              <ul>
+                <li>Every request names the project and gives its address, so publishers can see who is asking.</li>
+                <li>Requests are paced, and a refused request is retried later with growing pauses.</li>
+                <li>A website that refuses programs is never worked around. Its data is read in a browser by a person instead, or left out.</li>
+                <li>A source that needs permission is skipped in the code until permission exists.</li>
+                <li>Large files are downloaded only when their size shows they have changed.</li>
+                <li>No personal data is read, even when a file contains it.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4 -->
+      <section id="week">
+        <div class="kicker">04 · Automation</div>
+        <h2>The weekly cycle, step by step</h2>
+        <div class="prose">
+          <p>Every Monday at 05:17 UTC an automated job starts on GitHub’s servers. It runs the whole process below without anyone watching. A full rebuild of the 341 pages takes under a minute; most of the time goes on downloading.</p>
+        </div>
+        <ol class="flow">
+          <li><strong>Fetch</strong><span>Each of the 20 live connectors runs on its own. If one source is down, the others carry on.</span></li>
+          <li><strong>Keep the original</strong><span>The file as the publisher sent it is stored with the date. A new copy is kept only if the content changed.</span></li>
+          <li><strong>Put in one shape</strong><span>Country codes, years, units and statistical flags are written the same way for every source.</span></li>
+          <li><strong>Check</strong><span>Each file is tested against a written schema and a list of rules. One error stops publication.</span></li>
+          <li><strong>Build</strong><span>Pages, charts, findings, quizzes, feeds, the catalogue and share images are regenerated.</span></li>
+          <li><strong>Publish</strong><span>The result is saved with a note of what changed, and the web server picks it up within minutes.</span></li>
+          <li><strong>Watch</strong><span>New datasets, overdue releases and refused downloads are listed for a person to look at.</span></li>
+        </ol>
+        <div class="grid2">
+          <div class="card prose small">
+            <h3>When a publisher changes something</h3>
+            <p>Each connector checks that a file looks the way it expects: the right sheets, the right country list, the right column headings. Examples from the code: “RESET workbook layout changed”, “BA workbook: expected Germany and 16 Länder”. If anything is off, that connector stops before it writes. The previous, good data stays online, the failure appears on the public Data &amp; sources page, and the weekly job is marked as failed so it gets attention.</p>
+          </div>
+          <div class="card prose small">
+            <h3>When new figures arrive</h3>
+            <p>Apprentix keeps a fingerprint of every published series and record. When a fingerprint changes, it writes a dated entry in plain language: a new year of data, a revision, new records, a policy that moved stage, a new indicator. Example: “Germany: 1,211,844 apprentices in 2025.” These entries appear on the home page, on each country page and in the news feeds. Nothing is changed silently.</p>
+          </div>
+          <div class="card prose small">
+            <h3>The source watch</h3>
+            <p>A second program reads Cedefop’s entries on data.europa.eu, Eurostat’s list of tables and the national portals, looking for new apprenticeship and VET data. It also knows each source’s release rhythm (KIVET yearly, the skills forecast every six months, RESET every two years) and flags any release that is late. Everything it finds goes into one public to-do note, which closes itself when the list is empty.</p>
+          </div>
+          <div class="card prose small">
+            <h3>Nothing moves unless the data moves</h3>
+            <p>The “Last updated” date on the site is the date of the newest original file, not the date the job ran. A week in which no publisher changed anything produces no changes at all. Because of this, the project’s history is also an exact log of when each figure entered the site.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5 -->
+      <section id="trace">
+        <div class="kicker">05 · Provenance</div>
+        <h2>Every number can be traced to the file it came from</h2>
+        <div class="prose"><p>Each of the 112 indicators carries a record of origin. Below is the real one behind the EU’s work-based learning target, exactly as the site stores it.</p></div>
+        <div class="prov">
+          <div class="prov-l">
+            <div class="kicker">Indicator · eurostat-tps00215</div>
+            <h3>Recent VET graduates who had work-based learning</h3>
+            <p class="small muted">EU-level target: at least 60% by 2025 (Council Recommendation on VET, 2020). The site shows each country against the target, with “✓ Target met” or “✕ Target not met”.</p>
+            <div class="meter" aria-hidden="true">
+              <div class="meter-labels"><span>0%</span><span>target 60%</span><span>100%</span></div>
+              <div class="meter-track"><div class="meter-fill" style="width:65%"></div><div class="meter-target" style="left:60%"></div></div>
+            </div>
+            <p class="figcap">Illustration of the target meter.</p>
+            <p class="small">On every indicator page, the reader can download the data as CSV or JSON, open the publisher’s own table, and copy a ready-made citation for both the source and Apprentix.</p>
+          </div>
+          <div class="prov-r" aria-label="Provenance record">
+            <span class="k">publisher</span><span class="v">Eurostat</span>
+            <span class="k">dataset_code</span><span class="v">tps00215</span>
+            <span class="k">api_url</span><span class="v">ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/tps00215</span>
+            <span class="k">licence</span><span class="v">CC-BY-4.0</span>
+            <span class="k">source_updated</span><span class="v">2026-09-10T23:00:00+02:00</span>
+            <span class="k">retrieved_at</span><span class="v">2026-10-01T12:00:00Z</span>
+            <span class="k">raw_file</span><span class="v">data/raw/eurostat/2026-10-01-eurostat-tps00215.json</span>
+            <span class="k">raw_sha256</span><span class="v hash">e2c51d9a6271a962ebca2697ba782777cba51e69e328c0e52d64cc722839c174</span>
+          </div>
+        </div>
+        <div class="explain"><b>In plain words</b>The long string at the end is a <strong>SHA-256 fingerprint</strong>: a code calculated from every byte of the original file. Change one digit in the file and the fingerprint changes completely. Anyone can check that the figures on Apprentix come from exactly this file, as Eurostat published it on that date.</div>
+        <div class="prose"><p>Statistical flags travel with the numbers. When Eurostat marks a value as a break in series (b), an estimate (e), provisional (p) or of low reliability (u), the flag is shown in Apprentix’s tables, and the quiz leaves such values out. Comparability notes appear where they matter: the financing data is dated 2016–17 on every page that uses it, and national series are fenced off with a “What is counted” panel for each of the nine countries. Each panel says whether the figure is a count on a date or over a period, what it includes and leaves out, and what it is good for.</p></div>
+      </section>
+
+      <!-- 6 -->
+      <section id="guard">
+        <div class="kicker">06 · Safeguards</div>
+        <h2>What stops bad data from going live</h2>
+        <div class="grid3">
+          <div class="card"><h3>A written contract for every file</h3><p class="small muted" style="margin-top:8px">Each indicator must match a published schema: an identifier, title, description, unit, topic, full origin, series and coverage. Country codes must be known, every value must be declared, and a CSV copy must exist. Each dataset is checked the same way: record identifiers must be unique and record counts must match.</p></div>
+          <div class="card"><h3>Validation before publication</h3><p class="small muted" style="margin-top:8px">The weekly job saves nothing unless the checker passes. The current site passes with “Checked 112 indicators and 11 datasets: 0 error(s)”. A second automatic check runs on every change to the code and fails if any page is out of date with its data.</p></div>
+          <div class="card"><h3>Failures stay contained</h3><p class="small muted" style="margin-top:8px">A broken source keeps its last good data and shows its status on the Data &amp; sources page. A stale fallback copy raises a warning. One bad source never takes down the others.</p></div>
+          <div class="card"><h3>Hand-curated data is guarded too</h3><p class="small muted" style="margin-top:8px">The program that merges Cedefop’s scheme answers stops if a scheme uses an answer option it has not seen before, so a new questionnaire option cannot be mislabelled. Scheme descriptions were checked against Cedefop’s fiche text on 1 October 2026.</p></div>
+          <div class="card"><h3>Reproducible to the byte</h3><p class="small muted" style="margin-top:8px">The same data always produces the same site. A full rebuild in a fresh copy produced zero differences from the published files. Software versions that affect output are pinned exactly, so even the 303 share images come out identical.</p></div>
+          <div class="card"><h3>Permission written into the code</h3><p class="small muted" style="margin-top:8px">Sources that require the publisher’s permission are marked in the code and skipped until it is given. Two connectors wait in this state today.</p></div>
+        </div>
+      </section>
+
+      <!-- 7 -->
+      <section id="features">
+        <div class="kicker">07 · Features</div>
+        <h2>What a visitor can do</h2>
+        <div class="prose"><p>The site serves four kinds of reader: policy makers and analysts, researchers, employers, and young people choosing a path. The same data appears in different forms for each. Every feature below is live, unless marked otherwise.</p></div>
+
+        <div class="fgroup g-a">
+          <h3>Look up and compare data <small>for analysts and researchers</small></h3>
+          <div class="grid3">
+            <div class="feat"><h4>Indicators</h4><p>All 112 indicators in one searchable view. Each has a map of Europe with a year-by-year time-lapse, a ranking with the EU-27 and any EU target marked, trends for up to four countries, breakdowns such as by sex, and a data table with flags.</p><p class="path">/pages/indicators.html</p></div>
+            <div class="feat"><h4>One page per indicator</h4><p>112 static pages with the definition, coverage, a ranked chart, small-multiple trends on a shared scale, a citation and downloads. They read fully without JavaScript and are indexed by search engines.</p><p class="path">/pages/indicators/&lt;id&gt;.html</p></div>
+            <div class="feat"><h4>Dataset explorer</h4><p>One tool for all 11 datasets, from 34 schemes to 24,768 qualifications. Free-text search, filters with live counts, a detail panel and side-by-side comparison of 2–6 records with a “differences only” switch. Adding a dataset needs no new code, only a description file.</p><p class="path">/pages/explore.html</p></div>
+            <div class="feat"><h4>Compare every scheme</h4><p>A matrix of the 34 schemes against Cedefop’s 34 coded questions. Pick a question to colour and sort by it. “Who shares a feature?” lights up every country with a scheme that gives a chosen answer.</p><p class="path">/pages/compare.html</p></div>
+            <div class="feat"><h4>Who pays for apprenticeships?</h4><p>55 funding instruments across 4 types and 22 countries and regions: grants for companies (17), tax incentives (15), grants for individuals (13) and training funds (10), clearly dated 2016–17.</p><p class="path">/pages/financing.html</p></div>
+            <div class="feat"><h4>Regions (RESET)</h4><p>Every country page places its regions among all 244 EU regions of Cedefop’s regional skills index, with ranks such as “Oberbayern 66.9 · 11 of 244”.</p><p class="path">country pages</p></div>
+          </div>
+        </div>
+
+        <div class="fgroup g-b">
+          <h3>Understand <small>for policy makers and the public</small></h3>
+          <div class="grid3">
+            <div class="feat"><h4>Country portraits</h4><p>42 pages, each joining schemes, learner paths, qualifications, financing, Erasmus+, 13 key figures against the EU, national statistics, recent policies, open datasets and regions. See the anatomy in section 08.</p><p class="path">/pages/countries/</p></div>
+            <div class="feat"><h4>Insights</h4><p>13 findings, such as the EU 2025 targets, the VET employment advantage, “two families of apprenticeship” and data gaps. Each has its method, caveats and data table, and is recomputed every week. Readers can filter by audience: decision-makers, learners or employers.</p><p class="path">/pages/insights.html</p></div>
+            <div class="feat"><h4>Scroll stories</h4><p>Long reads where a chart redraws as the reader scrolls. “The French apprenticeship boom” follows France from 425,876 apprentices in 2017 to a peak of 1,048,840 in 2024. “Two families of apprenticeship” regroups the 34 schemes as dots.</p><p class="path">/pages/stories/</p></div>
+            <div class="feat"><h4>Glossary everywhere</h4><p>70 terms with short and long definitions and their sources. On almost every page, the first use of a term is underlined, and a tap shows the definition. It knows that “VET” is not the same as “IVET”.</p><p class="path">/pages/glossary.html</p></div>
+            <div class="feat"><h4>Policy pulse</h4><p>What moved in the latest year of Cedefop’s policy timeline, among the 408 apprenticeship policies: 12 new, 14 completed, 7 moved stage, 2 discontinued.</p><p class="path">home page</p></div>
+            <div class="feat"><h4>Europe over time</h4><p>A home-page map that plays four headline indicators year by year on a fixed colour scale. It plays only when visible and stays still for readers who have asked their device for less motion.</p><p class="path">home page</p></div>
+          </div>
+        </div>
+
+        <div class="fgroup g-c">
+          <h3>Choose a path, play and learn <small>for young people, parents and teachers</small></h3>
+          <div class="grid3">
+            <div class="feat"><h4>Find my apprenticeship</h4><p>Seven optional questions (country, age, pay, university access, time in the company, level, status) matched against Cedefop’s coded answers. Each result explains why it fits, with ✓, ~, – and ! marks. The tool also lists the schemes it left out, and why. Nothing is stored; the answers live only in the link.</p><p class="path">/pages/find.html</p></div>
+            <div class="feat"><h4>Want to be an electrician?</h4><p>18 occupation pages, from baker to software developer. Each is linked to ESCO and matched against 24,768 Europass qualifications from 14 countries. For example: 67 electrician qualifications in 13 countries at EQF 2–5. Pages show names in other languages, the skills involved and the job outlook from Cedefop’s forecast.</p><p class="path">/pages/occupations/</p></div>
+            <div class="feat"><h4>Country vs country</h4><p>Pick two of 42 countries and compare schemes, key figures, policy, money, qualifications and a strict scorecard. 137 popular pairs have their own share page, with the scorecard in the link preview.</p><p class="path">/pages/duel.html</p></div>
+            <div class="feat"><h4>Higher or lower?</h4><p>A ten-question game drawn from 438 fair questions at three levels of difficulty. A shared link replays the same ten questions, so a class can play the same round. “See the data” opens the real figures.</p><p class="path">/pages/play.html</p></div>
+            <div class="feat"><h4>Myth or fact?</h4><p>Statements such as “Apprentices aren’t paid.” Each verdict is computed from the data, so it would change if the data changed.</p><p class="path">/pages/myths.html</p></div>
+            <div class="feat"><h4>Did you know?</h4><p>103 facts in 8 kinds, computed at each build. “Surprise me” takes the reader to the view behind a random fact and explains why they landed there.</p><p class="path">home page</p></div>
+            <div class="feat"><h4>Scheme of the week</h4><p>One of the 34 schemes each week, in an order that avoids two weeks in a row from the same country. It changes every Monday without a rebuild.</p><p class="path">home page</p></div>
+            <div class="feat"><h4>Find an apprenticeship in a country</h4><p>Official national services for finding a place, official information and training abroad, for all 42 countries, with links checked one by one. Apprentix does not list vacancies itself.</p><p class="path">country pages</p></div>
+          </div>
+        </div>
+
+        <div class="fgroup g-d">
+          <h3>Reuse and share <small>for journalists, websites and other services</small></h3>
+          <div class="grid3">
+            <div class="feat"><h4>Download anything</h4><p>Every indicator as CSV and JSON at a fixed address, every dataset in full, and a link to the publisher’s own table. Together these fixed addresses work as a free, read-only data service.</p></div>
+            <div class="feat"><h4>Embed a chart</h4><p>Any indicator, as a map, ranking or trend, or any insight, can be placed on another website. The embedded chart carries its title, source, licence and a link back, and keeps up to date with new data.</p></div>
+            <div class="feat"><h4>Images that keep their source</h4><p>“Download image” makes a picture of any chart with the title, source credit, licence and address written on it. 303 preview images make links look right when shared.</p></div>
+            <div class="feat"><h4>Follow a country</h4><p>42 country feeds and one site feed announce new data in any feed reader, with a single file to subscribe to all of them.</p></div>
+            <div class="feat"><h4>Links that keep their view</h4><p>Indicator views, comparisons, duels, quiz results and game rounds keep their settings in the link, so a shared link opens exactly what the sender saw.</p></div>
+            <div class="feat"><h4>Cite it</h4><p>A citation on every indicator and dataset page, and a permanent identifier (DOI) on Zenodo for the whole site, versioned with each release.</p></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 8 -->
+      <section id="country">
+        <div class="kicker">08 · Example</div>
+        <h2>Anatomy of a country portrait</h2>
+        <div class="prose"><p>A country page brings together material that sits in at least eight different publications. Germany’s opens with one line: “1 apprenticeship scheme · 53 VET policies (29 on apprenticeship) · 91 indicators with data · 320 open datasets.” Fourteen sections follow, all built at once from the data.</p></div>
+        <div class="anatomy">
+          <div class="phone" aria-hidden="true">
+            <div class="ph-h">Germany</div>
+            <div class="ph-s">1 scheme · 53 policies · 91 indicators · 320 datasets</div>
+            <div class="blk hl"><i>1</i>Scheme portrait</div>
+            <div class="blk hl"><i>2</i>From school to work</div>
+            <div class="blk"><i>3</i>Find an apprenticeship</div>
+            <div class="blk"><i>4</i>System and qualifications</div>
+            <div class="blk"><i>5</i>Financing</div>
+            <div class="blk"><i>6</i>Erasmus+ and excellence</div>
+            <div class="blk hl"><i>7</i>Key figures vs the EU</div>
+            <div class="blk"><i>8</i>National statistics</div>
+            <div class="blk"><i>9</i>More indicators</div>
+            <div class="blk"><i>10</i>Recent policies</div>
+            <div class="blk"><i>11</i>Open datasets</div>
+            <div class="blk"><i>12</i>Regions (RESET)</div>
+            <div class="blk"><i>13</i>Follow Germany</div>
+            <div class="blk"><i>14</i>Sources and licences</div>
+          </div>
+          <div style="display:grid; gap:20px; min-width:0">
+            <ol class="anat-list">
+              <li><div><strong>Scheme portrait.</strong> A bar splitting time between company and school, pay and who pays it, duration, typical age and level. Then “What to expect”, a short text addressed to the learner and written only from Cedefop’s coded answers.</div></li>
+              <li><div><strong>From school to work.</strong> A path diagram: typical age, then the apprenticeship, the qualification and its EQF level, then work or further study. It ends with the next step up, such as Meister at EQF 6. Example: recent German VET graduates in work 92%, EU 80%.</div></li>
+              <li><div><strong>Find an apprenticeship.</strong> Official services for finding a place, and the 704 Erasmus+ accredited VET organisations in Germany.</div></li>
+              <li><div><strong>System and qualifications.</strong> Cedefop’s VET-in-Europe description; where apprenticeship qualifications sit in the national framework (Germany: 35 qualification types, 3 for apprenticeship or crafts); how foreign VET qualifications are recognised.</div></li>
+              <li><div><strong>Key figures.</strong> 13 tiles, each with the value, the EU-27 for the same year, an eight-year sparkline and a better/worse chip (see below).</div></li>
+              <li><div><strong>National statistics.</strong> Shown only where they exist, behind a warning that they are not comparable, with the “What is counted” panel.</div></li>
+            </ol>
+            <div class="tiles" aria-label="Example key-figure tiles">
+              <div class="tile"><span class="t">Recent VET graduates in work</span><span class="val num">92%</span><span class="eu">EU-27: 80%</span><span class="chip good">▲ better than EU</span>
+                <svg viewBox="0 0 160 34" preserveAspectRatio="none" aria-hidden="true"><polyline points="0,22 22,20 45,17 68,18 91,14 114,12 137,10 160,9" style="fill:none;stroke:var(--data);stroke-width:2"/><polyline points="0,26 22,26 45,25 68,24 91,24 114,23 137,22 160,22" style="fill:none;stroke:var(--faint);stroke-width:1.5;stroke-dasharray:3 3"/></svg></div>
+              <div class="tile"><span class="t">Early leavers from education</span><span class="val">lower is better</span><span class="eu">Compared with EU-27, same year</span><span class="chip bad">▼ worse than EU</span>
+                <svg viewBox="0 0 160 34" preserveAspectRatio="none" aria-hidden="true"><polyline points="0,14 22,15 45,13 68,12 91,11 114,10 137,9 160,9" style="fill:none;stroke:var(--data);stroke-width:2"/><polyline points="0,12 22,13 45,14 68,16 91,17 114,18 137,19 160,20" style="fill:none;stroke:var(--faint);stroke-width:1.5;stroke-dasharray:3 3"/></svg></div>
+              <div class="tile"><span class="t">Share of pupils in VET</span><span class="val">no “better”</span><span class="eu">Neither direction is better</span><span class="chip neutral">above EU</span>
+                <svg viewBox="0 0 160 34" preserveAspectRatio="none" aria-hidden="true"><polyline points="0,10 22,11 45,11 68,12 91,12 114,13 137,13 160,14" style="fill:none;stroke:var(--data);stroke-width:2"/><polyline points="0,20 22,20 45,20 68,21 91,21 114,21 137,22 160,22" style="fill:none;stroke:var(--faint);stroke-width:1.5;stroke-dasharray:3 3"/></svg></div>
+            </div>
+            <p class="figcap">The three kinds of comparison chip. The first tile’s value is Germany’s (EU-27 for the same year); the other two tiles and all three trend lines are illustrations of how the tiles work.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 9 -->
+      <section id="fair">
+        <div class="kicker">09 · Method</div>
+        <h2>Rules for fair comparison, written into the code</h2>
+        <div class="prose"><p>Comparing countries is easy to do badly. Apprentix applies the cautions a statistician would apply, every time and in the same way, because they are part of the program.</p></div>
+        <div class="grid2">
+          <div class="card prose small"><h3>Better, worse, or just different</h3><p>For each measure the code records whether higher is better (work-based learning, graduate employment), lower is better (early leavers, young people not in employment or education, youth unemployment), or neither (the share of pupils in VET). Only the first two get a “better” or “worse” chip. Counts and money get no EU comparison at all, because the EU figure is a total.</p></div>
+          <div class="card prose small"><h3>A strict country scorecard</h3><p>In Country vs country, a measure counts only if it has a direction, both countries have the same indicator, and their years are at most one apart. The result is neutral: “Germany is ahead on 7 of 10 comparable measures; Austria on 3.” No winner is declared on money or policy counts, which depend on country size.</p></div>
+          <div class="card prose small"><h3>A fair quiz</h3><p>Higher or lower? uses only harmonised indicators, countries in the European Economic Area, the same year and the default breakdown. Values flagged as unreliable, defined differently, or broken in series are left out. The gap must be at least 5% and above a minimum per unit, such as 2 percentage points. The question always asks which is “higher”, never which is “better”.</p></div>
+          <div class="card prose small"><h3>Sensible defaults</h3><p>An indicator opens on the latest year that covers at least 60% of the countries of its best year, so a reader is not shown a map with three countries on it. Insights use simple, robust statistics (medians, counts, rank correlations) and say plainly that a link between two figures across countries does not prove that one causes the other.</p></div>
+        </div>
+      </section>
+
+      <!-- 10 -->
+      <section id="words">
+        <div class="kicker">10 · Generated text</div>
+        <h2>Words written by the data, not by hand</h2>
+        <div class="prose">
+          <p>Most websites go out of date because their text is written once and the data moves on. On Apprentix, much of the text is generated from the data at every build, using rules a person wrote and checked. When the data changes, the sentences change with it.</p>
+        </div>
+        <div class="grid2">
+          <div class="example"><span class="src">Scheme portrait · from Cedefop’s coded answers</span><q>You would most likely be between 18 and 24 … You would earn a wage … paid by your employer.</q></div>
+          <div class="example"><span class="src">Country vs country · scorecard</span><q>Germany is ahead on 7 of 10 comparable measures; Austria on 3.</q></div>
+          <div class="example"><span class="src">Insight · the wording follows the computed direction</span><q>ρ = +0.41 … partial ρ = +0.35</q></div>
+          <div class="example"><span class="src">Change log · written when a figure changes</span><q>Germany: 1,211,844 apprentices in 2025.</q></div>
+        </div>
+        <div class="prose small muted"><p>No language model writes any of this. The site’s text generation is ordinary, rule-based code that can be read and tested. The rules for Myth or fact? are an example: each statement is a test over the data, and a statement whose data is missing is dropped rather than guessed.</p></div>
+      </section>
+
+      <!-- 11 -->
+      <section id="open">
+        <div class="kicker">11 · Interoperability</div>
+        <h2>Open to people and to machines</h2>
+        <div class="prose"><p>Apprentix publishes its data in the formats that European data portals, libraries and search engines read automatically. Few third-party sites in this field are ready to be collected by data.europa.eu without extra work.</p></div>
+        <div class="tablewrap">
+          <table>
+            <thead><tr><th>Output</th><th>What it is, in plain words</th><th>Size</th></tr></thead>
+            <tbody>
+              <tr><th>DCAT-AP 2.1.1 catalogue</th><td>The EU’s standard description of datasets, the format data.europa.eu collects from national portals. It names Apprentix as publisher and the original institution as creator, with licences, countries and time spans, in the EU Publications Office’s own vocabularies.</td><td class="num">123 datasets, 235 files</td></tr>
+              <tr><th>Frictionless Data Package</th><td>A single file listing every download with its structure and licence, which research software can load in one step.</td><td class="num">235 resources</td></tr>
+              <tr><th>schema.org descriptions</th><td>Hidden labels on 330 pages that tell search engines “this is a dataset, from this publisher, under this licence”. They make the data findable in Google Dataset Search.</td><td class="num">369 dataset entries</td></tr>
+              <tr><th>Zenodo DOI and CITATION.cff</th><td>A permanent identifier for citing the site in academic work, with an archived copy of every release.</td><td>v1.0.0, 17 Oct 2026</td></tr>
+              <tr><th>Atom feeds and OPML</th><td>News feeds for any feed reader: one per country and one for the site, plus a single file to subscribe to all.</td><td class="num">43 feeds</td></tr>
+              <tr><th>Sitemap</th><td>A list of every page for search engines.</td><td class="num">213 addresses</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- 12 -->
+      <section id="ask">
+        <div class="kicker">12 · Artificial intelligence</div>
+        <h2>Ask Apprentix: an assistant that can only quote the site</h2>
+        <div class="prose">
+          <p>Ask Apprentix answers questions in plain language, in the reader’s own language, using only the site’s published data. It is <strong>built and tested, and ready to switch on</strong>. Today the page says “The assistant isn’t switched on yet.”</p>
+          <p>A general chatbot answers from memory and can invent figures. Ask Apprentix is designed so that it cannot: the model must look things up, and the sources shown under each answer come from the look-ups, not from the model.</p>
+        </div>
+        <div class="loop" role="img" aria-label="Diagram of how a question is answered: the question goes to the assistant, which calls up to five rounds of tools that read the site's own data, then writes an answer with sources taken from the tool results.">
+          <div><strong>1 · Question</strong><span>“How do apprentices in Austria and France compare on pay?”</span></div>
+          <div class="hot"><strong>2 · Look-up</strong><span>Up to 5 rounds, 4 look-ups each: search the site, get a country, get an indicator, query records, list datasets.</span></div>
+          <div><strong>3 · Apprentix data only</strong><span>The look-ups read the same JSON files the website uses, including the 2,040-passage search index.</span></div>
+          <div class="hot"><strong>4 · Answer</strong><span>Every figure, scheme, date and definition must come from a look-up, with the publisher and year named.</span></div>
+          <div><strong>5 · Sources</strong><span>Listed by the system from what was actually read, so they cannot be invented.</span></div>
+        </div>
+        <div class="grid2">
+          <div class="card prose small"><h3>Rules the assistant must follow</h3><ul><li>If the data does not cover a question, it says “Apprentix’s data does not cover this.”</li><li>General background goes in a separate paragraph headed “Beyond Apprentix’s data”, with no figures, dates or links.</li><li>It respects the site’s caveats: national counts are not comparable, and the financing data is from 2016–17.</li><li>It gives no legal, financial or career advice, and ignores instructions hidden inside questions.</li></ul></div>
+          <div class="card prose small"><h3>Privacy, cost and control</h3><ul><li>The question goes from the browser to a small program on Cloudflare’s network, which holds the only key to the language model. The key never reaches the browser or the code repository.</li><li>No cookies, no log of questions, and the conversation exists only in the open page. Readers are told not to enter personal data.</li><li>The model is reached through OpenRouter (currently xAI’s Grok) and can be replaced by any model that can use tools. A setting restricts it to providers that do not keep prompts.</li><li>Hard limits: 10 questions a minute per visitor, 1,000 questions and 3 million tokens a day.</li><li>29 automated tests cover the search, the look-ups, the limits and the full question-and-answer loop.</li></ul></div>
+        </div>
+        <div class="explain"><b>In plain words</b>A <strong>language model</strong> is software that writes text by predicting likely words. On its own it can sound sure and still be wrong. <strong>Grounding</strong> means making it answer only from documents it has been given, and <strong>tool use</strong> means letting it look those documents up step by step, the way a researcher checks a reference.</div>
+      </section>
+
+      <!-- 13 -->
+      <section id="build">
+        <div class="kicker">13 · Engineering</div>
+        <h2>How it is built: light, fast and durable</h2>
+        <div class="grid2">
+          <div class="card prose small">
+            <h3>A site made of plain files</h3>
+            <p>The website is a set of ordinary files: no database, no user accounts, no server program that can fail at night. This makes it fast, cheap to run, hard to attack and easy to archive. It is served by Laravel Forge, behind Cloudflare’s network, and updates within minutes of each new version.</p>
+            <p>The pages use plain HTML, CSS and JavaScript (about 6,000 lines across 25 modules) with no framework. Every chart is drawn by the site’s own code. No charting library is used.</p>
+          </div>
+          <div class="card prose small">
+            <h3>A data pipeline in Python</h3>
+            <p>About 17,600 lines of Python in 64 files, with only four outside packages: one to read spreadsheets, one to check files against their schemas, one for secure connections and one to draw images. Fewer dependencies mean fewer things that break on their own.</p>
+            <p>The weekly job runs on GitHub Actions. The code and its full history are public. The code was written with an AI programming assistant (Anthropic’s Claude Code), under the author’s direction and review.</p>
+          </div>
+          <div class="card prose small">
+            <h3>Readable without JavaScript</h3>
+            <p>Country, indicator, dataset, occupation, story, insight, glossary and financing pages are complete without JavaScript. Their charts are drawn when the site is built, with a data table beside each. Interactive features are added on top. This matters for search engines, slow connections, archiving and assistive technology.</p>
+          </div>
+          <div class="card prose small">
+            <h3>Accessible and calm</h3>
+            <p>A skip link, labelled regions, keyboard play in the games, text alternatives for symbols, and a data table behind every chart. Animation stops for readers who ask their device for less motion. Dark mode follows the reader’s device. A formal accessibility audit is planned.</p>
+          </div>
+          <div class="card prose small">
+            <h3>Stable while it loads</h3>
+            <p>Pages are built so that nothing jumps as they load. Headline numbers are written into the page in advance, chart space is reserved, and fallback fonts are matched in width to the final fonts. In a test on a slow mobile connection with an empty cache, every page measured stayed under 0.1 on Google’s layout-shift score, the threshold Google treats as good. Before this work, some pages scored up to 0.45.</p>
+          </div>
+          <div class="card prose small">
+            <h3>Design that can be switched back</h3>
+            <p>The current look was chosen from six proposals in October 2026. One setting returns the whole site to its previous design. Each release stamps its style and script files with a content fingerprint, so a browser never mixes a new page with old styles.</p>
+          </div>
+        </div>
+        <div class="card" style="display:grid; gap:12px">
+          <h3>Size of what the system manages</h3>
+          <div class="bars" role="img" aria-label="Bar chart of records per dataset, linear scale: National VET qualifications 24,768; Erasmus+ accredited VET organisations 4,041; Open-data catalogue 1,644; VET policy timeline 1,184; NQF qualification levels 1,074; RESET regions 244; CoVE projects 73; Financing instruments 55; Apprenticeship schemes 34; Recognition systems 30; VET systems 30.">
+            <div class="bar-row"><span>National VET qualifications</span><div class="track"><div class="fill" style="width:100%"></div></div><span class="v">24,768</span></div>
+            <div class="bar-row"><span>Erasmus+ VET organisations</span><div class="track"><div class="fill" style="width:16.3%"></div></div><span class="v">4,041</span></div>
+            <div class="bar-row"><span>Open-data catalogue</span><div class="track"><div class="fill" style="width:6.6%"></div></div><span class="v">1,644</span></div>
+            <div class="bar-row"><span>VET policy timeline</span><div class="track"><div class="fill" style="width:4.8%"></div></div><span class="v">1,184</span></div>
+            <div class="bar-row"><span>NQF qualification levels</span><div class="track"><div class="fill" style="width:4.3%"></div></div><span class="v">1,074</span></div>
+            <div class="bar-row"><span>RESET regions</span><div class="track"><div class="fill" style="width:1%"></div></div><span class="v">244</span></div>
+            <div class="bar-row"><span>CoVE projects</span><div class="track"><div class="fill" style="width:.3%"></div></div><span class="v">73</span></div>
+            <div class="bar-row"><span>Financing instruments</span><div class="track"><div class="fill" style="width:.2%"></div></div><span class="v">55</span></div>
+            <div class="bar-row"><span>Apprenticeship schemes</span><div class="track"><div class="fill acc" style="width:.14%"></div></div><span class="v">34</span></div>
+            <div class="bar-row"><span>Recognition systems</span><div class="track"><div class="fill" style="width:.12%"></div></div><span class="v">30</span></div>
+            <div class="bar-row"><span>VET systems</span><div class="track"><div class="fill" style="width:.12%"></div></div><span class="v">30</span></div>
+          </div>
+          <p class="figcap">Records in the 11 datasets, 33,177 in all, on a linear scale. The smallest datasets are the richest per record: each of the 34 schemes carries 34 coded answers and a full description.</p>
+        </div>
+      </section>
+
+      <!-- 14 -->
+      <section id="people">
+        <div class="kicker">14 · Human work</div>
+        <h2>Where people still come in</h2>
+        <div class="prose"><p>Apprentix is designed so that routine work needs no one. Human time goes where judgement is needed, or where a publisher’s website does not allow programs.</p></div>
+        <div class="split">
+          <div class="auto">
+            <h3>Fully automatic, every week</h3>
+            <ul>
+              <li>Fetching from all 20 live sources</li>
+              <li>Keeping and fingerprinting every original</li>
+              <li>Checking every file against its rules</li>
+              <li>Rebuilding all 341 pages, charts, insights, stories, quizzes and facts</li>
+              <li>The change log and 43 news feeds</li>
+              <li>The data catalogue, data package and search index</li>
+              <li>Publishing, and marking the run as failed if any source failed</li>
+              <li>Watching for new and overdue releases</li>
+            </ul>
+          </div>
+          <div class="human">
+            <h3>Needs a person</h3>
+            <ul>
+              <li>Re-reading the five Cedefop databases whose website refuses programs, and the yearly check of the scheme fiches</li>
+              <li>Updating a link when Cedefop renames a file for a new release (the watch flags it when a release is late)</li>
+              <li>Writing a connector when the watch finds a new dataset worth adding</li>
+              <li>Checking the hand-kept lists, such as the official apprenticeship services for each country</li>
+              <li>Asking publishers for permission, and switching gated sources on</li>
+              <li>Making a release on Zenodo</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- 15 -->
+      <section id="hard">
+        <div class="kicker">15 · Assessment</div>
+        <h2>Why this is hard to copy</h2>
+        <div class="hard">
+          <div><h4>Twenty data dialects in one shape</h4><p>Spreadsheets, statistical APIs, linked-data registers, PDF tables and national portals, each with its own codes and habits, all brought into one schema with full provenance.</p><p class="why"><b>Why hard</b>Each source has quirks that only show up in use: hourly limits, banned query words, renamed files, columns that move.</p></div>
+          <div><h4>A site that rewrites itself</h4><p>Insights, stories, myths, facts, quizzes and scorecards are recomputed every Monday, and their wording follows the results.</p><p class="why"><b>Why hard</b>Each finding must be written as a rule that stays true, or switches its wording, whatever the data does.</p></div>
+          <div><h4>Statistical caution as code</h4><p>Flags, breaks in series, coverage rules, year matching and fenced-off national series are applied everywhere in the same way.</p><p class="why"><b>Why hard</b>It takes statistical judgement as well as programming, and one slip produces a misleading chart.</p></div>
+          <div><h4>The occupation lens</h4><p>18 occupations matched across 24,768 qualifications in their original languages from 14 national registers, joined to ESCO, schemes and job outlooks.</p><p class="why"><b>Why hard</b>Matching titles across languages without false matches needed patterns checked by hand against every hit.</p></div>
+          <div><h4>Cedefop’s coding, turned into guidance</h4><p>The 34 coded answers per scheme become portraits, learner paths, a matching tool that explains itself, and a comparison matrix.</p><p class="why"><b>Why hard</b>It requires understanding what each answer means for a learner, then saying it without overstating it.</p></div>
+          <div><h4>Provenance down to the byte</h4><p>Every figure leads to a dated original with a digital fingerprint, a licence and a citation.</p><p class="why"><b>Why hard</b>Provenance has to be designed in from the first line. It cannot be added later.</p></div>
+          <div><h4>Ready for European portals</h4><p>A DCAT-AP catalogue, a Frictionless package, schema.org labels and a DOI, produced automatically every week.</p><p class="why"><b>Why hard</b>These standards are strict and rarely implemented by projects of this size.</p></div>
+          <div><h4>No servers to keep alive</h4><p>No database, no accounts, no tracking, and pages that read without JavaScript. The site can be copied and archived as it is.</p><p class="why"><b>Why hard</b>Giving up a database means solving search, comparison and change tracking in other ways.</p></div>
+        </div>
+      </section>
+
+      <!-- 16 -->
+      <section id="next">
+        <div class="kicker">16 · Outlook</div>
+        <h2>What comes next</h2>
+        <div class="timeline">
+          <div><span class="when">Ready</span><strong>Switch on Ask Apprentix</strong><span class="muted small">Built and tested; it needs to be deployed and connected.</span></div>
+          <div><span class="when">Ready</span><strong>Collection by data.europa.eu</strong><span class="muted small">The catalogue is in the portal’s own format and can be collected as soon as the portal adds it.</span></div>
+          <div><span class="when">In preparation</span><strong>Financing adult learning</strong><span class="muted small">The next Cedefop dataset on the list.</span></div>
+          <div><span class="when">Waiting for permission</span><strong>Austria (WKO) and Germany (BIBB) apprentice statistics</strong><span class="muted small">The connectors are written; they switch on when the publishers agree.</span></div>
+          <div><span class="when">Planned</span><strong>A formal accessibility audit (WCAG)</strong><span class="muted small">To confirm in writing what has been built in.</span></div>
+          <div><span class="when">Would help</span><strong>A machine-readable export of Cedefop’s databases</strong><span class="muted small">With a direct data feed for the apprenticeship schemes, financing, qualifications frameworks and VET in Europe tools, the last hand-curated steps would become automatic too.</span></div>
+        </div>
+      </section>
+
+      <!-- 17 -->
+      <section id="glossary">
+        <div class="kicker">17 · Reference</div>
+        <h2>Terms used in this paper</h2>
+        <dl class="gloss">
+          <dt>API</dt><dd>A door a website offers to programs, so they can ask for data directly instead of reading pages meant for people.</dd>
+          <dt>Connector</dt><dd>A small Apprentix program written for one source. It knows where the data is and how to read it, and checks that it still looks right.</dd>
+          <dt>Schema</dt><dd>A written description of what a valid file must contain. Files that do not match are rejected.</dd>
+          <dt>Provenance</dt><dd>The record of where a figure came from: publisher, table, date, licence and original file.</dd>
+          <dt>SHA-256 fingerprint</dt><dd>A code computed from a file’s contents. Any change to the file changes the code, so it proves the file is the original.</dd>
+          <dt>Static site</dt><dd>A website made of finished files, prepared in advance, rather than pages put together by a server for each visitor.</dd>
+          <dt>Deterministic</dt><dd>Always producing the same result from the same input. It makes every change traceable to a change in the data.</dd>
+          <dt>JSON, CSV</dt><dd>Two common file formats for data. CSV opens in a spreadsheet; JSON is easier for programs.</dd>
+          <dt>SPARQL</dt><dd>A query language for linked-data registers, such as Europass and the EU Publications Office.</dd>
+          <dt>SDMX, JSON-stat, PxWeb</dt><dd>Standards and tools that statistics offices use to publish tables for programs.</dd>
+          <dt>DCAT-AP</dt><dd>The EU’s standard for describing datasets, so that data portals can list them automatically.</dd>
+          <dt>Atom feed</dt><dd>A news feed that feed readers check for new entries, similar to RSS.</dd>
+          <dt>Language model</dt><dd>Software that writes text by predicting likely words. It is only used in Ask Apprentix, and only on the site’s own data.</dd>
+          <dt>EQF, NQF</dt><dd>The European Qualifications Framework and national qualifications frameworks, which place qualifications on levels 1 to 8.</dd>
+          <dt>ESCO</dt><dd>The EU’s multilingual classification of occupations and skills.</dd>
+        </dl>
+      </section>
+    </main>
+  </div>
+
+  <footer class="end">
+    <p><strong>Inside Apprentix</strong> · a white paper on apprentix.eu · situation on 18 October 2026.</p>
+    <p>Figures in this paper are taken from the site’s own published files on that date. Apprentix is an independent, non-commercial project. It is not affiliated with, or endorsed by, any European institution or agency; the official sources remain authoritative.</p>
+    <p>Cite: Apprentix (2026). doi.org/10.5281/zenodo.23426138</p>
+  </footer>
+</div>
+</body>
+</html>

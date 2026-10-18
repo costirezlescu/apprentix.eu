@@ -1,0 +1,762 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Making Cedefop Daily</title>
+<meta name="description" content="A white paper on how Cedefop Daily is gathered, written, checked and published.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,700;1,700&family=Libre+Franklin:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a printed-report column (about 70ch) under a newspaper masthead; diagrams and the specimen edition use the full width.
+   Identity: the Daily's own "Broadsheet · Cedefop blue" design: Georgia headlines, Libre Franklin text, Plex Mono labels, section colours. */
+:root {
+  --paper: #fbfbf9; --sheet: #ffffff; --sunken: #f0f1f4;
+  --ink: #1c2233; --muted: #565c6e; --faint: #8a8fa0;
+  --line: #d9dbe2; --line-strong: #a3a8b8;
+  --blue: #3c4f8c; --blue-soft: #eef0f5; --on-blue: #ffffff;
+  --amber: #a15c11; --amber-soft: #fbf0df;
+  --ok: #2f6b3a; --ok-soft: #e4f1e6; --stop: #a8333a; --stop-soft: #f8e6e7;
+  --p-cedefop: #3c4f8c; --p-policy: #2a6a85; --p-agencies: #6b3fa0; --p-countries: #a8490f;
+  --p-research: #a8333a; --p-data: #56661a; --p-people: #9b3468; --p-debate: #4a5670; --p-out: #1d6b62;
+  --t-cedefop: #ebeef6; --t-policy: #e6f0f4; --t-agencies: #efe8f7; --t-countries: #f8ece2;
+  --t-research: #f8e6e7; --t-data: #eef1e1; --t-people: #f6e5ee; --t-debate: #e9ebf1; --t-out: #e3f0ee;
+  --display: Georgia, "Gelasio", "Times New Roman", serif;
+  --body: "Libre Franklin", "Segoe UI", system-ui, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #10131c; --sheet: #161a26; --sunken: #0b0e15;
+    --ink: #e7e9f0; --muted: #a5abbd; --faint: #737a8f;
+    --line: #262b3b; --line-strong: #454c63;
+    --blue: #a7b6e6; --blue-soft: #1a1e2a; --on-blue: #10131c;
+    --amber: #e0a561; --amber-soft: #2e2416;
+    --ok: #8fd19b; --ok-soft: #15291a; --stop: #f08f95; --stop-soft: #351b1d;
+    --p-cedefop: #a7b6e6; --p-policy: #82c2dd; --p-agencies: #c3a2ee; --p-countries: #f0a56b;
+    --p-research: #f08f95; --p-data: #bccf6a; --p-people: #ee8fc0; --p-debate: #b2bdd6; --p-out: #7fd1c4;
+    --t-cedefop: #1b2135; --t-policy: #142a35; --t-agencies: #251c33; --t-countries: #33241a;
+    --t-research: #351b1d; --t-data: #252b14; --t-people: #331a28; --t-debate: #1c2230; --t-out: #12302c;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #10131c; --sheet: #161a26; --sunken: #0b0e15;
+  --ink: #e7e9f0; --muted: #a5abbd; --faint: #737a8f;
+  --line: #262b3b; --line-strong: #454c63;
+  --blue: #a7b6e6; --blue-soft: #1a1e2a; --on-blue: #10131c;
+  --amber: #e0a561; --amber-soft: #2e2416;
+  --ok: #8fd19b; --ok-soft: #15291a; --stop: #f08f95; --stop-soft: #351b1d;
+  --p-cedefop: #a7b6e6; --p-policy: #82c2dd; --p-agencies: #c3a2ee; --p-countries: #f0a56b;
+  --p-research: #f08f95; --p-data: #bccf6a; --p-people: #ee8fc0; --p-debate: #b2bdd6; --p-out: #7fd1c4;
+  --t-cedefop: #1b2135; --t-policy: #142a35; --t-agencies: #251c33; --t-countries: #33241a;
+  --t-research: #351b1d; --t-data: #252b14; --t-people: #331a28; --t-debate: #1c2230; --t-out: #12302c;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; }
+[hidden] { display: none !important; }
+body { background: var(--paper); color: var(--ink); font-family: var(--body); font-size: 16px; line-height: 1.65; }
+a { color: var(--blue); text-underline-offset: 3px; }
+a:focus-visible, summary:focus-visible { outline: 2px solid var(--blue); outline-offset: 3px; }
+h1, h2, h3, h4 { font-family: var(--display); font-weight: 700; line-height: 1.15; margin: 0; text-wrap: balance; }
+p { margin: 0; }
+.label { font-family: var(--mono); font-size: 11.5px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); font-weight: 500; }
+.num { font-variant-numeric: tabular-nums lining-nums; }
+
+.page { max-width: 1180px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+
+/* ---------- masthead cover ---------- */
+.topline { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 6px 18px; padding-block: 12px 10px; border-bottom: 1px solid var(--line); }
+.mast { text-align: center; padding-block: 34px 14px; display: grid; gap: 10px; justify-items: center; }
+.mast .label { color: var(--blue); }
+.mast h1 { font-size: clamp(46px, 8.4vw, 104px); letter-spacing: -.02em; line-height: 1; }
+.mast .sub { font-family: var(--display); font-style: italic; font-weight: 700; font-size: clamp(18px, 2.4vw, 24px); color: var(--muted); max-width: 40ch; }
+.rule2 { border: 0; border-top: 4px double var(--ink); margin: 0; }
+.dateline { display: flex; flex-wrap: wrap; justify-content: center; gap: 4px 22px; padding-block: 10px; border-bottom: 1px solid var(--ink); font-variant: small-caps; letter-spacing: .06em; font-size: 15px; }
+
+.lede-grid { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: 40px; padding-block: 34px 10px; }
+.lede-grid .lede { font-family: var(--display); font-size: clamp(20px, 2.3vw, 25px); line-height: 1.45; }
+.lede-grid .lede::first-letter { float: left; font-size: 3.4em; line-height: .85; padding: 6px 10px 0 0; color: var(--blue); }
+.status { border-top: 3px solid var(--blue); padding-top: 14px; display: grid; gap: 10px; font-size: 14.5px; align-content: start; }
+.status p strong { font-weight: 700; }
+@media (max-width: 820px) { .lede-grid { grid-template-columns: 1fr; gap: 22px; } }
+
+.figs { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); border-block: 1px solid var(--ink); margin-block: 28px 8px; }
+.figs > div { padding: 16px 14px; border-left: 1px solid var(--line); display: grid; gap: 4px; align-content: start; }
+.figs > div:first-child { border-left: 0; }
+.figs .n { font-family: var(--display); font-weight: 700; font-size: clamp(30px, 3.6vw, 44px); line-height: 1; color: var(--blue); font-variant-numeric: lining-nums tabular-nums; }
+.figs .l { font-size: 13.5px; color: var(--muted); line-height: 1.35; }
+@media (max-width: 900px) { .figs { grid-template-columns: repeat(3, minmax(0, 1fr)); } .figs > div:nth-child(4) { border-left: 0; } .figs > div:nth-child(n+4) { border-top: 1px solid var(--line); } }
+@media (max-width: 480px) { .figs { grid-template-columns: repeat(2, minmax(0, 1fr)); } .figs > div { border-left: 0 !important; border-top: 1px solid var(--line); } .figs > div:nth-child(-n+2) { border-top: 0; } .figs > div:nth-child(even) { border-left: 1px solid var(--line) !important; } }
+
+/* ---------- contents ---------- */
+.contents { padding-block: 26px 10px; display: grid; gap: 12px; }
+.contents ol { margin: 0; padding: 0; list-style: none; columns: 3 230px; column-gap: 28px; counter-reset: c; }
+.contents li { counter-increment: c; break-inside: avoid; padding: 4px 0; border-bottom: 1px dotted var(--line-strong); font-size: 15px; }
+.contents a { text-decoration: none; color: var(--ink); display: flex; gap: 10px; }
+.contents a::before { content: counter(c, decimal-leading-zero); font-family: var(--mono); font-size: 12px; color: var(--faint); padding-top: 3px; }
+.contents a:hover { color: var(--blue); }
+
+/* ---------- sections ---------- */
+main { display: grid; gap: 64px; padding-block: 40px 60px; }
+section { display: grid; gap: 20px; scroll-margin-top: 16px; }
+.sec-head { display: grid; gap: 8px; border-top: 1px solid var(--ink); padding-top: 14px; }
+.sec-head .label { color: var(--blue); }
+.sec-head h2 { font-size: clamp(30px, 4.2vw, 46px); letter-spacing: -.01em; max-width: 24ch; }
+.prose { max-width: 70ch; display: grid; gap: 14px; }
+.prose ul, .prose ol { margin: 0; padding-left: 20px; display: grid; gap: 6px; }
+.muted { color: var(--muted); }
+.small { font-size: 14.5px; }
+h3 { font-size: 22px; }
+.explain { background: var(--blue-soft); padding: 14px 18px; max-width: 70ch; font-size: 15px; border-left: 3px solid var(--blue); }
+.explain .label { display: block; color: var(--blue); margin-bottom: 4px; }
+.cols2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 0 36px; }
+.cols3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 0 28px; }
+.col { border-top: 1px solid var(--line); padding-block: 14px; display: grid; gap: 8px; align-content: start; min-width: 0; }
+.col h3 { font-size: 19px; }
+.col p, .col li { font-size: 15px; }
+.col ul { margin: 0; padding-left: 18px; display: grid; gap: 4px; }
+
+/* ---------- specimen edition ---------- */
+.specimen-wrap { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: 34px; align-items: start; }
+@media (max-width: 960px) { .specimen-wrap { grid-template-columns: 1fr; } }
+.specimen { background: var(--sheet); border: 1px solid var(--line-strong); padding: 18px 20px 22px; box-shadow: 0 18px 40px rgba(28, 34, 51, .10); display: grid; gap: 12px; font-size: 13px; line-height: 1.45; min-width: 0; }
+.sp-top { display: flex; justify-content: space-between; gap: 8px; font-family: var(--mono); font-size: 9.5px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); border-bottom: 1px solid var(--line); padding-bottom: 6px; flex-wrap: wrap; }
+.sp-mast { text-align: center; font-family: var(--display); font-weight: 700; font-size: clamp(28px, 4vw, 40px); line-height: 1; }
+.sp-date { text-align: center; font-variant: small-caps; letter-spacing: .05em; font-size: 12px; border-top: 4px double var(--ink); border-bottom: 1px solid var(--ink); padding: 4px 0; }
+.sp-strip { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0; border-bottom: 1px solid var(--line); padding-bottom: 8px; }
+.sp-strip > div { padding: 0 8px; border-left: 1px solid var(--line); }
+.sp-strip > div:first-child { border-left: 0; padding-left: 0; }
+.sp-strip b { font-family: var(--display); font-size: 20px; color: var(--p-cedefop); display: block; line-height: 1.1; }
+.sp-strip span { font-size: 10.5px; color: var(--muted); display: block; }
+.sp-lead { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); gap: 14px; border-bottom: 1px solid var(--line); padding-bottom: 12px; }
+.sp-lead h4 { font-size: 21px; line-height: 1.15; }
+.sp-lead p { font-size: 12px; color: var(--muted); margin-top: 6px; }
+.sp-why { font-size: 10.5px; margin-top: 8px; border-top: 1px dotted var(--line-strong); padding-top: 5px; color: var(--muted); }
+.sp-chart { display: grid; gap: 4px; align-content: start; }
+.sp-chart .r { display: grid; grid-template-columns: 82px 1fr 30px; gap: 6px; align-items: center; font-size: 10.5px; }
+.sp-chart .b { height: 9px; background: var(--line-strong); }
+.sp-chart .b.h { background: var(--p-cedefop); }
+.sp-chart .v { font-family: var(--mono); font-size: 10px; text-align: right; }
+.chipx { display: inline-block; font-family: var(--mono); font-size: 9px; letter-spacing: .08em; text-transform: uppercase; color: var(--sheet); padding: 1px 6px; margin-bottom: 4px; font-weight: 500; }
+.sp-six-h { text-align: center; font-family: var(--mono); font-size: 10.5px; letter-spacing: .16em; border-block: 1px solid var(--ink); padding: 3px 0; }
+.sp-six { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0; }
+.sp-six > div { padding: 8px 10px; border-left: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.sp-six > div:nth-child(3n+1) { border-left: 0; padding-left: 0; }
+.sp-six h5 { margin: 0; font-family: var(--display); font-size: 13.5px; line-height: 1.25; font-weight: 700; }
+.sp-bottom { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.sp-bottom > div { display: grid; gap: 4px; align-content: start; }
+.sp-bottom h5 { margin: 0; font-family: var(--display); font-size: 13px; line-height: 1.25; }
+.sp-bottom p { font-size: 11px; color: var(--muted); }
+.c-cedefop { background: var(--p-cedefop); } .c-policy { background: var(--p-policy); } .c-agencies { background: var(--p-agencies); }
+.c-countries { background: var(--p-countries); } .c-research { background: var(--p-research); } .c-data { background: var(--p-data); }
+.c-people { background: var(--p-people); } .c-debate { background: var(--p-debate); } .c-out { background: var(--p-out); }
+.callout { display: inline-grid; place-items: center; width: 18px; height: 18px; border-radius: 50%; background: var(--ink); color: var(--paper); font-family: var(--mono); font-size: 10px; vertical-align: 2px; margin-right: 4px; }
+@media (max-width: 560px) {
+  .sp-strip { grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: 8px; }
+  .sp-strip > div:nth-child(3) { border-left: 0; padding-left: 0; }
+  .sp-lead { grid-template-columns: 1fr; }
+  .sp-six, .sp-bottom { grid-template-columns: 1fr; }
+  .sp-six > div { border-left: 0; padding-left: 0; }
+}
+.parts { margin: 0; padding: 0; list-style: none; display: grid; gap: 0; }
+.parts li { display: grid; grid-template-columns: 28px 1fr; gap: 8px; padding: 10px 0; border-top: 1px solid var(--line); font-size: 15px; }
+.parts li > span:first-child { padding-top: 2px; }
+.parts strong { font-family: var(--display); font-size: 17px; }
+
+/* ---------- tables ---------- */
+.tablewrap { overflow-x: auto; border-top: 2px solid var(--ink); border-bottom: 1px solid var(--ink); }
+table { border-collapse: collapse; width: 100%; font-size: 14.5px; min-width: 720px; }
+th, td { text-align: left; vertical-align: top; padding: 10px 12px 10px 0; border-bottom: 1px solid var(--line); }
+thead th { font-family: var(--mono); font-weight: 500; font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+tbody th { font-family: var(--display); font-weight: 700; font-size: 15.5px; }
+td.n { font-family: var(--mono); font-variant-numeric: tabular-nums; text-align: right; padding-right: 0; }
+tr.grp th { font-family: var(--mono); font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: var(--blue); padding-top: 16px; font-weight: 500; }
+.tag { display: inline-block; font-family: var(--mono); font-size: 11px; padding: 1px 7px; border: 1px solid var(--line-strong); color: var(--muted); margin: 1px 3px 1px 0; white-space: nowrap; }
+.tag.no { border-color: var(--stop); color: var(--stop); }
+.dot { display: inline-block; width: 10px; height: 10px; margin-right: 6px; vertical-align: 0; }
+
+/* ---------- rings ---------- */
+.rings-wrap { display: grid; grid-template-columns: minmax(0, 520px) minmax(0, 1fr); gap: 34px; align-items: center; }
+@media (max-width: 900px) { .rings-wrap { grid-template-columns: 1fr; } }
+.rings svg { width: 100%; height: auto; display: block; max-width: 520px; margin: 0 auto; }
+.rg-1 { fill: var(--t-cedefop); stroke: var(--p-cedefop); }
+.rg-2 { fill: var(--t-policy); stroke: var(--p-policy); }
+.rg-3 { fill: var(--t-agencies); stroke: var(--p-agencies); }
+.rg-4 { fill: var(--t-research); stroke: var(--p-research); }
+.rg-5 { fill: var(--t-countries); stroke: var(--p-countries); }
+.rings circle { stroke-width: 1.2; }
+.rt { font-family: var(--mono); font-size: 11px; letter-spacing: .1em; text-transform: uppercase; fill: var(--ink); font-weight: 500; }
+.rs { font-family: var(--body); font-size: 11.5px; fill: var(--muted); }
+.rc { font-family: var(--display); font-weight: 700; font-size: 20px; fill: var(--p-cedefop); }
+.side-src { display: grid; gap: 0; }
+.side-src > div { border-top: 1px solid var(--line); padding: 10px 0; display: grid; grid-template-columns: 14px 1fr; gap: 10px; font-size: 14.5px; }
+.side-src .sw { width: 12px; height: 12px; margin-top: 5px; }
+.side-src strong { font-family: var(--display); font-size: 16px; }
+
+/* ---------- bars ---------- */
+.hbar { display: grid; gap: 7px; }
+.hbar .r { display: grid; grid-template-columns: minmax(110px, 190px) minmax(0, 1fr) 40px; gap: 12px; align-items: center; font-size: 14.5px; }
+.hbar .t { height: 16px; background: var(--sunken); }
+.hbar .f { height: 100%; background: var(--p-countries); min-width: 2px; }
+.hbar .v { font-family: var(--mono); font-size: 13px; text-align: right; }
+.figcap { font-size: 13.5px; color: var(--muted); max-width: 70ch; }
+.langs { display: flex; flex-wrap: wrap; gap: 6px; }
+.langs span { font-family: var(--mono); font-size: 12px; border: 1px solid var(--line-strong); padding: 2px 8px; }
+
+/* ---------- funnel ---------- */
+.funnel { display: grid; gap: 6px; }
+.fn { display: grid; grid-template-columns: minmax(0, 1fr); justify-items: center; }
+.fn > div { background: var(--blue); color: var(--on-blue); padding: 12px 18px; display: flex; flex-wrap: wrap; align-items: baseline; justify-content: center; gap: 4px 14px; text-align: center; max-width: 100%; }
+.fn b { font-family: var(--display); font-size: 28px; line-height: 1; font-variant-numeric: lining-nums; }
+.fn span { font-size: 14px; }
+.fn:nth-child(2) > div { opacity: .92; } .fn:nth-child(3) > div { opacity: .86; } .fn:nth-child(4) > div { opacity: .8; }
+.fn.last > div { background: var(--p-countries); }
+
+/* ---------- production line ---------- */
+.line { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 0; border-block: 1px solid var(--ink); }
+.line > div { padding: 16px 14px 16px 0; border-left: 1px solid var(--line); padding-left: 14px; display: grid; gap: 6px; align-content: start; position: relative; }
+.line > div:first-child { border-left: 0; padding-left: 0; }
+.line .step { font-family: var(--mono); font-size: 11px; letter-spacing: .1em; color: var(--muted); text-transform: uppercase; }
+.line h4 { font-size: 19px; }
+.line p { font-size: 14px; color: var(--muted); line-height: 1.45; }
+.line .who { font-family: var(--mono); font-size: 11px; padding: 2px 7px; width: fit-content; letter-spacing: .04em; }
+.who.auto { background: var(--ok-soft); color: var(--ok); }
+.who.sup { background: var(--amber-soft); color: var(--amber); }
+.line code { font-family: var(--mono); font-size: 12px; color: var(--ink); }
+@media (max-width: 1000px) { .line { grid-template-columns: repeat(2, minmax(0, 1fr)); } .line > div { border-left: 0; padding-left: 0; border-top: 1px solid var(--line); } .line > div:nth-child(even) { border-left: 1px solid var(--line); padding-left: 14px; } .line > div:nth-child(-n+2) { border-top: 0; } }
+@media (max-width: 520px) { .line { grid-template-columns: 1fr; } .line > div { border-left: 0 !important; padding-left: 0 !important; border-top: 1px solid var(--line) !important; } .line > div:first-child { border-top: 0 !important; } }
+
+/* ---------- integrity gate ---------- */
+.gate { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 0 28px; }
+.gate > div { border-top: 1px solid var(--line); padding: 14px 0; display: grid; gap: 6px; align-content: start; }
+.gate h4 { font-size: 17px; display: flex; gap: 8px; align-items: baseline; }
+.gate h4 .label { color: var(--stop); }
+.gate p { font-size: 14.5px; color: var(--muted); }
+.verdict { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 10px; }
+.verdict > div { padding: 14px; display: grid; gap: 4px; }
+.verdict .stop { background: var(--stop-soft); }
+.verdict .pass { background: var(--ok-soft); }
+.verdict b { font-family: var(--display); font-size: 18px; }
+.verdict .stop b { color: var(--stop); } .verdict .pass b { color: var(--ok); }
+.verdict span { font-size: 13.5px; }
+.banned { display: flex; flex-wrap: wrap; gap: 6px; }
+.banned s { font-family: var(--display); font-size: 15px; padding: 2px 8px; background: var(--stop-soft); color: var(--stop); text-decoration-thickness: 1.5px; }
+
+/* ---------- week ---------- */
+.week { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 0; border-block: 1px solid var(--ink); }
+.week > div { padding: 14px 12px; border-left: 1px solid var(--line); display: grid; gap: 8px; align-content: start; }
+.week > div:first-child { border-left: 0; padding-left: 0; }
+.week .d { font-variant: small-caps; letter-spacing: .06em; font-size: 15px; font-weight: 700; color: var(--blue); }
+.week .f { font-family: var(--display); font-weight: 700; font-size: 18px; line-height: 1.2; }
+.week .k { font-size: 13.5px; color: var(--muted); line-height: 1.4; }
+.week .k b { color: var(--ink); font-weight: 500; }
+@media (max-width: 860px) { .week { grid-template-columns: 1fr; } .week > div { border-left: 0; padding-left: 0; border-top: 1px solid var(--line); } .week > div:first-child { border-top: 0; } }
+
+.swatches { display: flex; flex-wrap: wrap; gap: 8px; }
+.swatches span { display: inline-flex; align-items: center; gap: 6px; font-size: 13.5px; padding: 4px 10px 4px 4px; border: 1px solid var(--line); }
+.swatches i { width: 16px; height: 16px; display: inline-block; }
+
+.split { display: grid; grid-template-columns: 1fr 1fr; gap: 0 36px; }
+.split > div { border-top: 3px solid var(--ok); padding-top: 12px; display: grid; gap: 8px; align-content: start; }
+.split > div.next { border-top-color: var(--amber); }
+.split ul { margin: 0; padding-left: 18px; display: grid; gap: 6px; font-size: 15px; }
+@media (max-width: 760px) { .split { grid-template-columns: 1fr; gap: 24px; } }
+
+dl.gloss { display: grid; grid-template-columns: minmax(140px, 210px) minmax(0, 1fr); margin: 0; border-top: 2px solid var(--ink); }
+dl.gloss dt, dl.gloss dd { margin: 0; padding: 10px 0; border-bottom: 1px solid var(--line); font-size: 15px; }
+dl.gloss dt { font-family: var(--display); font-weight: 700; padding-right: 16px; }
+@media (max-width: 560px) { dl.gloss { grid-template-columns: 1fr; } dl.gloss dt { border-bottom: 0; padding-bottom: 0; } }
+
+footer.end { border-top: 4px double var(--ink); padding-block: 18px 48px; display: grid; gap: 8px; font-size: 14px; color: var(--muted); }
+</style>
+</head>
+<body>
+
+<div class="page">
+  <div class="topline"><span class="label">White paper · October 2026</span><span class="label">Thessaloniki · Brussels</span></div>
+  <header class="mast">
+    <span class="label">How the paper is made</span>
+    <h1>Making Cedefop Daily</h1>
+    <p class="sub">A morning paper on vocational education, skills and work, written from public sources and checked line by line by machine</p>
+  </header>
+  <hr class="rule2">
+  <div class="dateline"><span>Situation on Sunday 18 October 2026</span><span>Edition No. 1 dated Monday 19 October</span><span>apprentix.eu/daily</span></div>
+
+  <div class="lede-grid">
+    <p class="lede">Every weekday morning, Cedefop Daily gives Cedefop’s staff a five-minute read on what happened in their field: new Cedefop work, EU policy, sister agencies, research, the debate in the press across Europe, and life on the ground in vocational schools and workshops. It reads close to ninety sources in eleven languages, keeps only what bears on Cedefop’s own work, and will not publish a number, quotation or link that it cannot trace back to its source.</p>
+    <div class="status">
+      <span class="label">Status</span>
+      <p><strong>Independent.</strong> Cedefop Daily is an independent publication on apprentix.eu. It is not published or endorsed by Cedefop.</p>
+      <p><strong>Public but unlisted.</strong> Anyone with the address can read it, but search engines are asked not to list it, and the main Apprentix site does not link to it.</p>
+      <p><strong>Ready.</strong> Editions No. 1 to No. 5 (Monday 19 to Friday 23 October) are written, checked and online. Each appears on its own date.</p>
+      <p><strong>By</strong> apprentix.eu</p>
+    </div>
+  </div>
+
+  <div class="figs">
+    <div><span class="n">89</span><span class="l">sources read for each pool, plus a weather service</span></div>
+    <div><span class="n">68</span><span class="l">press feeds from 17 countries in 11 languages</span></div>
+    <div><span class="n num">628</span><span class="l">items in the first week’s pool</span></div>
+    <div><span class="n">12–13</span><span class="l">items in each edition, about a 5–7 minute read</span></div>
+    <div><span class="n">30 s</span><span class="l">to fetch and tag every source</span></div>
+    <div><span class="n">0</span><span class="l">failed checks across the first five editions</span></div>
+  </div>
+
+  <nav class="contents" aria-label="Contents">
+    <span class="label">Contents</span>
+    <ol>
+      <li><a href="#what">What the Daily is</a></li>
+      <li><a href="#anatomy">Anatomy of an edition</a></li>
+      <li><a href="#week">The shape of the week</a></li>
+      <li><a href="#sources">Where the news comes from</a></li>
+      <li><a href="#funnel">From 628 items to 13</a></li>
+      <li><a href="#line">The production line</a></li>
+      <li><a href="#relevance">Deciding what matters to Cedefop</a></li>
+      <li><a href="#gate">The integrity gate</a></li>
+      <li><a href="#code">The editorial code</a></li>
+      <li><a href="#privacy">People and privacy</a></li>
+      <li><a href="#manners">Good manners with sources</a></li>
+      <li><a href="#record">A public record of every edition</a></li>
+      <li><a href="#design">Design</a></li>
+      <li><a href="#apprentix">Built on Apprentix data</a></li>
+      <li><a href="#today">Today and next</a></li>
+      <li><a href="#cedefop">What Cedefop could add</a></li>
+      <li><a href="#hard">Why it is hard to copy</a></li>
+      <li><a href="#glossary">Terms used here</a></li>
+    </ol>
+  </nav>
+
+  <main>
+    <!-- 01 -->
+    <section id="what">
+      <div class="sec-head"><span class="label">01 · Purpose</span><h2>A paper made for one house</h2></div>
+      <div class="prose">
+        <p>Most news services are written for everyone. Cedefop Daily is written for the people who work at Cedefop, in Thessaloniki and Brussels. Its subject is the agency’s own field: vocational education and training (VET), apprenticeships, skills intelligence, qualifications, adult learning and the future of work. It covers the EU institutions, sister agencies, member states and researchers working on these questions, and it looks beyond Brussels to how things are going in classrooms, workshops and companies.</p>
+        <p>Six principles govern every edition:</p>
+      </div>
+      <div class="cols3">
+        <div class="col"><h3>Relevant</h3><p>If an item does not bear on Cedefop’s work, it does not run, however big the news.</p></div>
+        <div class="col"><h3>True</h3><p>Every claim is linked to its source. Numbers are copied, never recalculated into new claims. Quotations are verbatim.</p></div>
+        <div class="col"><h3>Neutral</h3><p>Evaluations are attributed to whoever made them. The paper never speaks for Cedefop and never says “we”.</p></div>
+        <div class="col"><h3>Short</h3><p>About thirteen items, readable in five to seven minutes, with links for anyone who wants more.</p></div>
+        <div class="col"><h3>Automatic</h3><p>Gathering, selection, layout, charts, dates and checks are done by software. Human time goes on judgement.</p></div>
+        <div class="col"><h3>Discreet about people</h3><p>Colleagues are never researched. People appear only in public roles, or with their consent.</p></div>
+      </div>
+    </section>
+
+    <!-- 02 -->
+    <section id="anatomy">
+      <div class="sec-head"><span class="label">02 · The product</span><h2>Anatomy of an edition</h2></div>
+      <div class="prose"><p>Every edition has the same fixed shape, so a reader always knows where to look. Below is a reduced copy of No. 1, for Monday 19 October 2026, with its real headlines.</p></div>
+      <div class="specimen-wrap">
+        <div class="specimen" role="img" aria-label="Reduced copy of the front of Cedefop Daily No. 1, with the masthead, the week in numbers, the lead story on Cedefop's RESET index with a bar chart, six short stories, and the weekday feature, chart and diary.">
+          <div class="sp-top"><span>Thessaloniki 24° mostly sunny · Brussels 16° cloudy</span><span>Today’s paper · Editions · How it’s made</span></div>
+          <div class="sp-mast">Cedefop Daily</div>
+          <div class="sp-date">Monday 19 October 2026 · No. 1 · Today’s focus: policy and the week ahead</div>
+          <div class="sp-strip">
+            <div><b>19</b><span>research papers mentioning Cedefop, 11–17 Oct</span></div>
+            <div><b>4</b><span>new Cedefop publications catalogued</span></div>
+            <div><b>33</b><span>press and field stories on VET and skills</span></div>
+            <div><b>9.1%</b><span>early leavers aged 18–24, EU-27, 2025</span></div>
+          </div>
+          <div class="sp-lead">
+            <div>
+              <span class="chipx c-cedefop">New publication</span>
+              <h4>Cedefop’s new RESET index scores skills in all 244 EU regions</h4>
+              <p>Published on 15 October, the regional skills ecosystems index compares regions on skills supply, demand, environment and match. Central Macedonia, home to the Thessaloniki office, ranks 208th; Brussels-Capital ranks 101st.</p>
+              <p class="sp-why"><b>Why it matters to Cedefop:</b> From Cedefop newsletter no. 167 · Relevant to: Skills intelligence · VET policy and systems</p>
+            </div>
+            <div class="sp-chart" aria-hidden="true">
+              <div class="r"><span>Stockholm</span><div class="b" style="width:100%"></div><span class="v">75.9</span></div>
+              <div class="r"><span>Brussels-Cap.</span><div class="b h" style="width:71.5%"></div><span class="v">54.3</span></div>
+              <div class="r"><span>Attica</span><div class="b" style="width:56.3%"></div><span class="v">42.7</span></div>
+              <div class="r"><span>C. Macedonia</span><div class="b h" style="width:48.1%"></div><span class="v">36.5</span></div>
+              <div class="r"><span>Sud-Vest Olt.</span><div class="b" style="width:35.3%"></div><span class="v">26.8</span></div>
+            </div>
+          </div>
+          <div class="sp-six-h">SIX TO KNOW</div>
+          <div class="sp-six">
+            <div><span class="chipx c-countries">The field</span><h5>England plans to charge firms more to train over-25s than young apprentices</h5></div>
+            <div><span class="chipx c-cedefop">Cedefop</span><h5>34 apprenticeship schemes show incremental quality gains, Cedefop finds</h5></div>
+            <div><span class="chipx c-agencies">Agencies</span><h5>AI literacy is a new basic skill, inter-agency report argues</h5></div>
+            <div><span class="chipx c-policy">Policy</span><h5>EU employment and social policy ministers meet in the Council today</h5></div>
+            <div><span class="chipx c-cedefop">Cedefop</span><h5>Italy and Czechia join Cedefop project on skills for the age of AI</h5></div>
+            <div><span class="chipx c-agencies">Agencies</span><h5>Safer jobs can help ease labour shortages, say Cedefop and EU-OSHA</h5></div>
+          </div>
+          <div class="sp-bottom">
+            <div><span class="chipx c-policy">Deadlines</span><h5>The ETF’s future is open for feedback until 13 November</h5><p>Five consultations, sorted by closing date.</p></div>
+            <div><span class="chipx c-data">Chart of the day</span><h5>Recent VET graduates in work: the EU at 80.1%, short of its 82% target</h5></div>
+            <div><span class="chipx c-debate">Diary</span><h5>Week ahead</h5><p>Council meetings, and coming Cedefop events such as the 21st Brussels Seminar.</p></div>
+          </div>
+        </div>
+        <ol class="parts">
+          <li><span class="callout">1</span><div><strong>Top row and masthead.</strong> Today’s forecast for Thessaloniki and Brussels, the date, the edition number and the day’s focus.</div></li>
+          <li><span class="callout">2</span><div><strong>This week in numbers.</strong> Four counts, each computed by a rule the edition states, such as the number of research papers that mentioned Cedefop in the past seven days.</div></li>
+          <li><span class="callout">3</span><div><strong>The one thing.</strong> The lead story, 100–130 words under the summary, with a chart when the data allows.</div></li>
+          <li><span class="callout">4</span><div><strong>Six to know.</strong> Six short stories, each marked with its section colour: Cedefop, policy, agencies, research, the field, the debate.</div></li>
+          <li><span class="callout">5</span><div><strong>The weekday feature.</strong> Deadlines, Paper of the day, Country in focus, AI watch or From the archive (see the week below).</div></li>
+          <li><span class="callout">6</span><div><strong>Chart of the day.</strong> One indicator across the EU-27, with the target or average marked and Belgium and Greece, the two host countries, highlighted.</div></li>
+          <li><span class="callout">7</span><div><strong>Today’s question.</strong> A small daily test: guess the number, myth or fact, or did you know.</div></li>
+          <li><span class="callout">8</span><div><strong>Diary and More today.</strong> The week ahead on Mondays, the next four events on other days, and a short list of further links.</div></li>
+          <li><span class="callout">9</span><div><strong>Fridays only.</strong> “Lives”, a longer profile of one person whose life vocational training has shaped, and “Out this week”, cultural picks in Thessaloniki.</div></li>
+        </ol>
+      </div>
+      <div class="explain"><span class="label">The line under every story</span>Each story ends with “Why it matters to Cedefop”, a line the software generates from the item’s source, the work areas it touches, and the Cedefop product it relates to. Example from No. 3: “Deutsche Handwerks Zeitung (Germany) · translated from German · Relevant to: Apprenticeships and work-based learning · Cedefop: European database on apprenticeship schemes.” The writer cannot change this line by hand.</div>
+    </section>
+
+    <!-- 03 -->
+    <section id="week">
+      <div class="sec-head"><span class="label">03 · Rhythm</span><h2>The shape of the week</h2></div>
+      <div class="prose"><p>Each weekday has a focus. Stories that match it count double when the software decides which stories run, so Monday leans to policy and Thursday to artificial intelligence, without any day becoming one-topic. There are no weekend editions, in keeping with the right to disconnect.</p></div>
+      <div class="week">
+        <div><span class="d">Monday</span><span class="f">Policy and the week ahead</span><span class="k"><b>Feature:</b> Deadlines, the Commission’s open “Have your say” consultations by closing date</span><span class="k"><b>Question:</b> The number, a guess kept on the reader’s own device</span><span class="k"><b>Diary:</b> the full week ahead</span></div>
+        <div><span class="d">Tuesday</span><span class="f">Research day</span><span class="k"><b>Feature:</b> Paper of the day: question, method, finding, caveat, why read it</span><span class="k"><b>Question:</b> Myth or fact</span></div>
+        <div><span class="d">Wednesday</span><span class="f">From the field</span><span class="k"><b>Feature:</b> Country in focus</span><span class="k"><b>Question:</b> Did you know?</span></div>
+        <div><span class="d">Thursday</span><span class="f">AI and the future of work</span><span class="k"><b>Feature:</b> AI watch</span><span class="k"><b>Question:</b> Insight</span></div>
+        <div><span class="d">Friday</span><span class="f">Long reads</span><span class="k"><b>Feature:</b> From the archive, a Cedefop publication from this week in an earlier year, with a sourced “Since then”</span><span class="k"><b>Also:</b> Lives and Out this week</span></div>
+      </div>
+      <div class="tablewrap">
+        <table>
+          <thead><tr><th>No.</th><th>Date</th><th>Focus</th><th>Lead story</th><th>Feature</th></tr></thead>
+          <tbody>
+            <tr><th>1</th><td>Mon 19 Oct</td><td>Policy and the week ahead</td><td>Cedefop’s new RESET index scores skills in all 244 EU regions</td><td>The ETF’s future is open for feedback until 13 November</td></tr>
+            <tr><th>2</th><td>Tue 20 Oct</td><td>Research day</td><td>Two VET scholars debate the capabilities approach in JVET’s 250th issue</td><td>Three Chinese counties, three ways to govern vocational training</td></tr>
+            <tr><th>3</th><td>Wed 21 Oct</td><td>From the field</td><td>German apprentices report more bullying and violence than students</td><td>France: a million apprentices, and the first fall in a decade</td></tr>
+            <tr><th>4</th><td>Thu 22 Oct</td><td>AI and the future of work</td><td>Irish tech union grows five-fold amid AI-driven layoffs</td><td>Learning about AI left hospital trainers less sure of themselves</td></tr>
+            <tr><th>5</th><td>Fri 23 Oct</td><td>Long reads</td><td>Lives: Germany’s first carpentry world champion, 1967, still in the workshop at 78 (translated from German). Lead: Teaching in Swedish prisons is a practice of its own, study finds</td><td>When 764 VET experts went to learn from each other abroad</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="cols2">
+        <div class="col"><h3>Out this week, on Fridays</h3><p>Concerts, film, theatre, talks and exhibitions in Thessaloniki from Friday to Thursday. No. 5 has eight picks and five shorter mentions, among them Angelopoulos’s <i>Landscape in the Mist</i> at the Olympion, <i>The Cherry Orchard</i> at the National Theatre of Northern Greece, a violin and piano recital at the Thessaloniki Concert Hall (€15, reduced €10) and the Moholy-Nagy exhibition at MOMus.</p></div>
+        <div class="col"><h3>How picks are chosen</h3><p>Only from the venues’ and organisers’ own websites, never from resellers or listing sites. Each event is judged on substance rather than fame. Every pick shows day, time, venue and price, all of which the check confirms against the event page, with the date the page was read.</p></div>
+      </div>
+    </section>
+
+    <!-- 04 -->
+    <section id="sources">
+      <div class="sec-head"><span class="label">04 · Sources</span><h2>Where the news comes from</h2></div>
+      <div class="prose"><p>The sources are arranged in rings by how close they are to Cedefop. The inner rings tell readers what their own agency and its partners have done. The outer rings show what researchers, journalists and practitioners across Europe are saying about the same questions.</p></div>
+      <div class="rings-wrap">
+        <div class="rings">
+          <svg viewBox="0 0 520 520" role="img" aria-label="Five concentric rings of sources: Cedefop's own at the centre, then EU institutions, sister agencies and international bodies, research, and the press and the field on the outside.">
+            <circle class="rg-5" cx="260" cy="260" r="255"/>
+            <circle class="rg-4" cx="260" cy="260" r="203"/>
+            <circle class="rg-3" cx="260" cy="260" r="152"/>
+            <circle class="rg-2" cx="260" cy="260" r="101"/>
+            <circle class="rg-1" cx="260" cy="260" r="52"/>
+            <text class="rc" x="260" y="267" text-anchor="middle">Cedefop</text>
+            <text class="rt" x="260" y="186" text-anchor="middle">EU institutions</text>
+            <text class="rs" x="260" y="203" text-anchor="middle">Commission · Council · EUR-Lex</text>
+            <text class="rt" x="260" y="135" text-anchor="middle">Agencies and international</text>
+            <text class="rs" x="260" y="152" text-anchor="middle">EU-OSHA · ETF · ELA · EIGE · ILO · UNEVOC</text>
+            <text class="rt" x="260" y="84" text-anchor="middle">Research</text>
+            <text class="rs" x="260" y="101" text-anchor="middle">Papers on Cedefop · 11 VET journals</text>
+            <text class="rt" x="260" y="33" text-anchor="middle">Press and the field</text>
+            <text class="rs" x="260" y="50" text-anchor="middle">68 feeds · 17 countries · 11 languages</text>
+          </svg>
+        </div>
+        <div class="side-src">
+          <div><i class="sw c-cedefop"></i><span><strong>Cedefop’s own work.</strong> Cedefop’s news feed, and the EU Publications Office’s catalogue of Cedefop publications, both new ones and those from the same week in earlier years.</span></div>
+          <div><i class="sw c-policy"></i><span><strong>EU institutions.</strong> Commission press releases with their full text, Council press releases, the Official Journal, and every initiative open for public feedback on “Have your say”.</span></div>
+          <div><i class="sw c-agencies"></i><span><strong>Sister agencies and international bodies.</strong> EU-OSHA, the ETF, ELA, EIGE, the ILO and UNESCO-UNEVOC.</span></div>
+          <div><i class="sw c-research"></i><span><strong>Research.</strong> The OpenAlex research index: new papers that mention Cedefop, papers by Cedefop-affiliated authors, and new articles in 11 VET and adult-learning journals.</span></div>
+          <div><i class="sw c-countries"></i><span><strong>Press and the field.</strong> 68 newspapers, trade titles, science magazines and policy blogs.</span></div>
+          <div><i class="sw c-data"></i><span><strong>Data.</strong> Eurostat’s release feed, filtered to nine datasets that matter for VET, and Apprentix’s own checked data.</span></div>
+        </div>
+      </div>
+
+      <div class="tablewrap">
+        <table>
+          <thead><tr><th>Source</th><th>What is read</th><th>How</th><th>Window</th><th style="text-align:right">Items, 17 Oct</th></tr></thead>
+          <tbody>
+            <tr class="grp"><th colspan="5">Cedefop</th></tr>
+            <tr><th>Cedefop news feed</th><td>New items, filtered by section; attachments kept only by their permanent identifier, uploaders’ names never stored</td><td><span class="tag">RSS</span></td><td>14 days</td><td class="n">2</td></tr>
+            <tr><th>Publications Office (Cellar)</th><td>New Cedefop publications; and the archive for the same week in earlier years</td><td><span class="tag">SPARQL</span></td><td>14 days; ±3 days</td><td class="n">5 + 18</td></tr>
+            <tr class="grp"><th colspan="5">Research</th></tr>
+            <tr><th>OpenAlex</th><td>Papers whose full text mentions Cedefop; papers by Cedefop-affiliated authors; articles in 11 VET and adult-learning journals</td><td><span class="tag">API</span></td><td>14, 120 and 30 days</td><td class="n">54 + 7 + 84</td></tr>
+            <tr class="grp"><th colspan="5">EU institutions</th></tr>
+            <tr><th>European Commission press corner</th><td>Press releases, with the full text from its document service</td><td><span class="tag">RSS</span> <span class="tag">API</span></td><td>14 days</td><td class="n">10</td></tr>
+            <tr><th>Council of the EU</th><td>Press releases</td><td><span class="tag">RSS</span></td><td>14 days</td><td class="n">20</td></tr>
+            <tr><th>EUR-Lex</th><td>Official Journal, L series</td><td><span class="tag">RSS</span></td><td>14 days</td><td class="n">5</td></tr>
+            <tr><th>Have your say</th><td>Commission initiatives open for feedback, with closing dates</td><td><span class="tag">API</span></td><td>open now</td><td class="n">43</td></tr>
+            <tr><th>European Parliament press</th><td>Refuses identified programs</td><td><span class="tag no">refused</span></td><td>—</td><td class="n">0</td></tr>
+            <tr class="grp"><th colspan="5">Agencies and international</th></tr>
+            <tr><th>EU-OSHA, ETF, ELA, EIGE, ILO, UNESCO-UNEVOC</th><td>News listings</td><td><span class="tag">RSS</span> <span class="tag">web page</span></td><td>about 4 weeks</td><td class="n">11</td></tr>
+            <tr class="grp"><th colspan="5">Data, press, culture, weather</th></tr>
+            <tr><th>Eurostat</th><td>New releases for a nine-dataset watch list; selected figures from its statistics service</td><td><span class="tag">RSS</span> <span class="tag">API</span></td><td>14 days</td><td class="n">2</td></tr>
+            <tr><th>Apprentix</th><td>Checked indicators, regional index, scheme portraits, facts, myths, insights and the policy pulse</td><td><span class="tag">local files</span></td><td>current</td><td class="n">312</td></tr>
+            <tr><th>68 press feeds</th><td>Articles that pass the relevance test, plus up to 10 article pages per feed for the text</td><td><span class="tag">RSS</span> <span class="tag">Atom</span></td><td>8 days</td><td class="n">42</td></tr>
+            <tr><th>Venues and organisers</th><td>Event pages for Out this week</td><td><span class="tag">web page</span></td><td>Fri–Thu</td><td class="n">13</td></tr>
+            <tr><th>Open-Meteo</th><td>Forecast for Thessaloniki and Brussels</td><td><span class="tag">API</span>, open licence, no key</td><td>today</td><td class="n">—</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="cols2">
+        <div class="col" style="gap:12px">
+          <h3>The 68 press feeds</h3>
+          <div class="hbar" role="img" aria-label="Bar chart of press feeds by group: field 39, international press 10, technology 9, science 8, ideas 2.">
+            <div class="r"><span>The field</span><div class="t"><div class="f" style="width:100%"></div></div><span class="v">39</span></div>
+            <div class="r"><span>International press</span><div class="t"><div class="f" style="width:25.6%"></div></div><span class="v">10</span></div>
+            <div class="r"><span>Technology</span><div class="t"><div class="f" style="width:23.1%"></div></div><span class="v">9</span></div>
+            <div class="r"><span>Science</span><div class="t"><div class="f" style="width:20.5%"></div></div><span class="v">8</span></div>
+            <div class="r"><span>Ideas</span><div class="t"><div class="f" style="width:5.1%"></div></div><span class="v">2</span></div>
+          </div>
+          <p class="figcap">“The field” means education and trade titles close to classrooms and workshops: the Guardian’s further-education pages, the Irish Times, Deutsche Handwerks Zeitung, Der Standard, Le Monde, L’Etudiant, Café pédagogique, El País, Corriere, Orizzonte Scuola, NOS, Yle, SVT, Notes from Poland, Edupedu.ro and the student union OBESSU, among others. International press includes the Financial Times, the Economist, Politico Europe and the FAZ; science includes Nature, Science and The Conversation.</p>
+        </div>
+        <div class="col" style="gap:12px">
+          <h3>Eleven languages</h3>
+          <div class="langs"><span>English</span><span>German</span><span>French</span><span>Spanish</span><span>Italian</span><span>Dutch</span><span>Greek</span><span>Danish</span><span>Swedish</span><span>Finnish</span><span>Romanian</span></div>
+          <p class="small">Stories from other languages are summarised in English and marked “translated from German”, “translated from French”, and so on. The relevance keywords exist in 13 languages, adding Polish and Portuguese.</p>
+          <p class="small muted">Some sources could not be read and are listed on the paper’s public “How it’s made” page: Cedefop’s own website (its bot check refuses programs), Council web pages, Eurofound, the OECD and the European Parliament’s press feed. No media-monitoring service is used.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 05 -->
+    <section id="funnel">
+      <div class="sec-head"><span class="label">05 · Selection</span><h2>From 628 items to 13</h2></div>
+      <div class="prose"><p>The first week’s pool was gathered on 17 October 2026, covering 3 to 17 October. This is what happened to it.</p></div>
+      <div class="funnel" role="img" aria-label="Funnel: 89 sources read, 38 returned items, 628 items in the pool, 473 tagged to a Cedefop work area, 40 stories written for the week, 12 to 13 items per edition.">
+        <div class="fn"><div style="width:100%"><b>89</b><span>sources read, plus the weather service</span></div></div>
+        <div class="fn"><div style="width:88%"><b>628</b><span>items in the pool, from the 38 sources that had something new</span></div></div>
+        <div class="fn"><div style="width:74%"><b>473</b><span>tagged to at least one of Cedefop’s 11 work areas</span></div></div>
+        <div class="fn"><div style="width:52%"><b>40</b><span>stories written for the week, plus 5 Lives profiles and 5 features</span></div></div>
+        <div class="fn last"><div style="width:32%"><b>12–13</b><span>items in each edition</span></div></div>
+      </div>
+      <p class="figcap">Widths are not to scale; they show order only. Each edition drew on 15 to 24 pool items and carries 39 to 63 links. Main text runs from 1,136 to 1,893 words.</p>
+    </section>
+
+    <!-- 06 -->
+    <section id="line">
+      <div class="sec-head"><span class="label">06 · Process</span><h2>The production line</h2></div>
+      <div class="prose"><p>Six steps turn the sources into a paper. Five are done entirely by software. The writing step is done by a writer working with a large language model, from the gathered text only, and its output is then held to the same mechanical checks as everything else.</p></div>
+      <div class="line">
+        <div><span class="step">Step 1</span><h4>Fetch</h4><p>Read all sources, tag each item by work area and policy, remove duplicates and add to the pool. About 30 seconds.</p><span class="who auto">automatic</span></div>
+        <div><span class="step">Step 2</span><h4>Pool</h4><p>One file holds everything the writer may use: about 1–3 MB of text a week, each item with its own identifier.</p><span class="who auto">automatic</span></div>
+        <div><span class="step">Step 3</span><h4>Write</h4><p>Story cards for the week, with headline, summary, body, priority and focus. Links are given as pool identifiers, never typed.</p><span class="who sup">supervised</span></div>
+        <div><span class="step">Step 4</span><h4>Plan</h4><p>Spread the stories across the remaining weekdays by priority and focus. No story runs twice; no day is overfilled.</p><span class="who auto">automatic</span></div>
+        <div><span class="step">Step 5</span><h4>Render</h4><p>Lay out the page, draw charts, write dates, sources and the “Why it matters” lines, and publish a list of the sources used.</p><span class="who auto">automatic</span></div>
+        <div><span class="step">Step 6</span><h4>Check</h4><p>Test every link, number, quotation, name, date and word against the rules. One failure stops the edition.</p><span class="who auto">automatic</span></div>
+      </div>
+      <div class="cols2">
+        <div class="col"><h3>The writer never types a link</h3><p>In a first draft, four press links were typed from memory, and all four were wrong. Since then, a story can only point to an item in the pool by its identifier. The software inserts the real address. A link that is not in the pool cannot appear in the paper.</p></div>
+        <div class="col"><h3>What the software writes itself</h3><p>The “Why it matters” lines, every date and source name, the four counts in “This week in numbers”, every chart and the list of sources are generated from data. The writer cannot change them, so they cannot drift from the facts.</p></div>
+        <div class="col"><h3>A week’s bank, used with care</h3><p>Stories are written once into a weekly bank and carry a use-by period: 3 days for policy, 7 for Cedefop news, 8 for the press, 30 for research and people. Lives profiles that are not used are kept in reserve for later Fridays.</p></div>
+        <div class="col"><h3>One command per step</h3><p>Each step is a single command, and each step’s output is a plain file anyone can open. A failed check leaves the previous edition in place.</p></div>
+      </div>
+    </section>
+
+    <!-- 07 -->
+    <section id="relevance">
+      <div class="sec-head"><span class="label">07 · Relevance</span><h2>Deciding what matters to Cedefop</h2></div>
+      <div class="prose"><p>Relevance is not left to taste. Every item is matched against a map of Cedefop’s work that the software can read.</p></div>
+      <div class="cols3">
+        <div class="col"><h3>11 work areas</h3><ul><li>VET policy and systems</li><li>Apprenticeships and work-based learning</li><li>Skills intelligence</li><li>Qualifications and credentials</li><li>Adult learning and upskilling</li><li>Inclusion and early leaving</li><li>Teachers and trainers</li><li>Mobility</li><li>Future of work</li><li>Labour market</li><li>Governance and the agencies</li></ul></div>
+        <div class="col"><h3>10 EU policy hooks</h3><ul><li>Union of Skills</li><li>European Skills Agenda</li><li>Pact for Skills</li><li>European Education Area</li><li>European Pillar of Social Rights Action Plan</li><li>Council Recommendation on VET (2020)</li><li>Osnabrück Declaration</li><li>Individual learning accounts (2022)</li><li>Micro-credentials (2022)</li><li>AI Act, Article 4 (AI literacy)</li></ul></div>
+        <div class="col"><h3>10 Cedefop products</h3><ul><li>Apprenticeship schemes database</li><li>Timeline of VET policies</li><li>Skills intelligence</li><li>VET toolkit for tackling early leaving</li><li>Policy learning forum on upskilling pathways</li><li>Validation of non-formal and informal learning</li><li>VET excellence and inclusion</li><li>AI futures of work</li><li>Skills forecast</li><li>About Cedefop</li></ul></div>
+      </div>
+      <div class="explain"><span class="label">How it works</span>The work areas are defined by 341 keywords in 13 languages. A press story about schools runs only if it contains a core VET or skills term; a story about technology needs that, or AI together with work and jobs. Matched items are tagged, and the tags link each story to the relevant policy and Cedefop product. Readers see the result in the “Why it matters to Cedefop” line.</div>
+    </section>
+
+    <!-- 08 -->
+    <section id="gate">
+      <div class="sec-head"><span class="label">08 · Verification</span><h2>The integrity gate</h2></div>
+      <div class="prose"><p>Before an edition is published, a checking program reads it and compares it with the sources. It does not trust the writer, human or machine. When it finds a problem, the edition does not go out.</p></div>
+      <div class="gate">
+        <div><h4><span class="label">Stop</span>Links</h4><p>Every address on the page must come from the pool, or from a short list of the paper’s own pages. Every in-page link and file must exist.</p></div>
+        <div><h4><span class="label">Stop</span>Numbers</h4><p>Every number in a story must appear in the text of its sources. Decimal commas and points are treated alike.</p></div>
+        <div><h4><span class="label">Stop</span>Quotations</h4><p>Quotations must match the source word for word. Quotations from the press may not exceed 12 words.</p></div>
+        <div><h4><span class="label">Stop</span>Banned words</h4><p>Promotional or loaded words may not appear outside a quotation (see the list below).</p></div>
+        <div><h4><span class="label">Hold</span>Sensitive subjects</h4><p>Words such as audit, OLAF, ombudsman, litigation, harassment, disciplinary, fraud investigation, security incident or death hold the edition for an editor.</p></div>
+        <div><h4><span class="label">Stop</span>People</h4><p>The same person may not appear in more than one headline. A name in a Lives profile must appear in its source exactly as printed.</p></div>
+        <div><h4><span class="label">Stop</span>Dates</h4><p>No past events in the diary, no consultations whose deadline has passed, no cultural pick outside Friday to Thursday. Every time and price must be on the event page.</p></div>
+        <div><h4><span class="label">Stop</span>Charts</h4><p>Data must be present for at least ten countries in the chart’s year, every highlighted country must have a value, and ranked charts may not hold negative values.</p></div>
+        <div><h4><span class="label">Warn</span>Style and freshness</h4><p>Headlines over 75 characters, stories past their use-by date, the Executive Director in a headline, a possible private name in a press story, more than 14 items on the page.</p></div>
+      </div>
+      <div class="cols2">
+        <div class="col" style="gap:12px">
+          <h3>The check was tested by planting errors</h3>
+          <div class="verdict">
+            <div class="stop"><b>Caught</b><span>An invented number in a story</span></div>
+            <div class="stop"><b>Caught</b><span>An invented quotation</span></div>
+            <div class="stop"><b>Caught</b><span>An invented link</span></div>
+          </div>
+        </div>
+        <div class="col" style="gap:12px">
+          <h3>Result on the first five editions</h3>
+          <div class="verdict">
+            <div class="pass"><b>0 failures</b><span>in all five editions</span></div>
+            <div class="pass"><b>12–13 items</b><span>each, under the limit of 14</span></div>
+            <div class="pass"><b>9 warnings</b><span>all for older items placed on purpose, such as archive pieces</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="col" style="gap:10px">
+        <h3>Words the paper does not use</h3>
+        <div class="banned"><s>landmark</s><s>ambitious</s><s>controversial</s><s>groundbreaking</s><s>game-changer</s><s>unprecedented</s><s>historic</s><s>revolutionary</s><s>world-class</s><s>cutting-edge</s><s>we</s><s>our</s></div>
+        <p class="small muted">These words can still appear inside a quotation, where they are someone else’s words.</p>
+      </div>
+    </section>
+
+    <!-- 09 -->
+    <section id="code">
+      <div class="sec-head"><span class="label">09 · Standards</span><h2>The editorial code</h2></div>
+      <div class="cols2">
+        <div class="col"><h3>Claims and numbers</h3><ul><li>Every claim is linked to where it comes from.</li><li>Numbers are copied from the source, never combined into new claims.</li><li>Evaluations are attributed: “Cedefop finds”, “the report argues”.</li><li>No anonymous sources, and no speculation about appointments or budgets.</li><li>Nothing pre-published: no drafts, no embargoed material.</li></ul></div>
+        <div class="col"><h3>Research</h3><ul><li>Papers are summarised from their abstracts, never from their titles alone.</li><li>Only what the abstract says is reported.</li><li>Preprints are labelled “not peer-reviewed”.</li><li>Paper of the day sets out question, method, finding and caveat.</li></ul></div>
+        <div class="col"><h3>Copyright</h3><ul><li>Press stories are summarised in the paper’s own words, with a link to the original.</li><li>Quotations from the press are limited to 12 words, in line with the press publishers’ right in Directive (EU) 2019/790, Article 15.</li><li>Articles behind a subscription are marked.</li></ul></div>
+        <div class="col"><h3>Style</h3><ul><li>Headlines are concrete, carry a verb and stay under about 70 characters.</li><li>Official EU names are used; acronyms are spelled out once.</li><li>Personal social media is never a source.</li><li>Translations are labelled with the original language.</li></ul></div>
+      </div>
+    </section>
+
+    <!-- 10 -->
+    <section id="privacy">
+      <div class="sec-head"><span class="label">10 · Privacy</span><h2>People and privacy</h2></div>
+      <div class="prose">
+        <p>A paper written for colleagues has to be careful about colleagues. The Daily’s rules were drawn up against the EU institutions’ own data protection regulation, Regulation (EU) 2018/1725, which applies to Cedefop in place of the GDPR.</p>
+      </div>
+      <div class="cols2">
+        <div class="col"><h3>Never</h3><ul><li>Searching the web for information about any member of staff</li><li>People-search sites or data brokers</li><li>Personal social media, family, health, appraisals, discipline, salaries, reasons for leaving, or rumour</li><li>Storing the names of staff who upload files to Cedefop’s website (the feed carries them; the software drops them)</li></ul></div>
+        <div class="col"><h3>Only in a public role</h3><ul><li>The Executive Director and staff acting publicly for Cedefop appear only in that role, and only when a public source names the person together with Cedefop.</li><li>The Director is capped at about three headlines a week, and the check warns when the Director is in one.</li><li>Office holders elsewhere are followed by role, not by name.</li></ul></div>
+        <div class="col"><h3>Lives, the one exception</h3><ul><li>A person can be named only as printed, in a profile they chose to give to a newspaper or magazine.</li><li>Adults only, and only what the story needs.</li><li>Never Cedefop staff, and no misfortune for its own sake.</li><li>The check confirms each name against the source.</li></ul></div>
+        <div class="col"><h3>Readers</h3><ul><li>No cookies, no tracking, no analytics.</li><li>The guess in Monday’s number game stays on the reader’s own device.</li><li>No staff e-mail addresses are held. If the paper is ever e-mailed, the proposal is a single message to a list that Cedefop controls.</li><li>Staff news is not part of the paper. It would come only through channels Cedefop approves, with consent and an opt-out.</li></ul></div>
+      </div>
+    </section>
+
+    <!-- 11 -->
+    <section id="manners">
+      <div class="sec-head"><span class="label">11 · Conduct</span><h2>Good manners with sources</h2></div>
+      <div class="cols3">
+        <div class="col"><h3>Identified</h3><p>Every request says who is asking and gives the project’s address. Nothing pretends to be a person in a browser.</p></div>
+        <div class="col"><h3>No workarounds</h3><p>When a website refuses programs, the refusal is respected. Its content is left out and the refusal is recorded.</p></div>
+        <div class="col"><h3>Public about gaps</h3><p>Sources the paper could not read are named on its “How it’s made” page, so readers know what it does not cover.</p></div>
+      </div>
+    </section>
+
+    <!-- 12 -->
+    <section id="record">
+      <div class="sec-head"><span class="label">12 · Transparency</span><h2>A public record of every edition</h2></div>
+      <div class="cols2">
+        <div class="col"><h3>Every version is kept</h3><p>If an edition is corrected after it appears, the earlier version stays online at its own address, with the stylesheets of the day, the edition’s data and its list of sources. No. 1 already has seven versions, from the first draft on 17 October to the final design on 18 October. Changes that only touch the look do not count as new versions.</p></div>
+        <div class="col"><h3>Every edition lists its sources</h3><p>Next to each edition sits a file with the items it used: 24 for No. 1, 15 for No. 2, 22 for No. 3, 16 for No. 4 and 22 for No. 5. Anyone can check any line against it.</p></div>
+        <div class="col"><h3>An archive by date</h3><p>The archive lists editions by date and never shows one before its day, in Athens time. The front page takes each reader to the edition for their day.</p></div>
+        <div class="col"><h3>A laboratory</h3><p>The same week’s stories are laid out in four alternative formats (a fixed shape or flexible sections, with or without the weekday rhythm), plus the earlier design. Editors can compare them side by side before deciding.</p></div>
+      </div>
+    </section>
+
+    <!-- 13 -->
+    <section id="design">
+      <div class="sec-head"><span class="label">13 · Design</span><h2>Design: a broadsheet in Cedefop blue</h2></div>
+      <div class="prose"><p>The design was chosen on 18 October 2026 from six mock-ups. It borrows the conventions of a quality newspaper: a centred masthead over a double rule, a small-caps dateline, columns separated by fine lines instead of boxes, and a colour for each section. The Daily has no Apprentix header, menu or footer. Its design lives in its own stylesheet, so a change to the Apprentix site cannot change the paper. This white paper uses the same typefaces and colours.</p></div>
+      <div class="swatches" aria-label="Section colours">
+        <span><i class="c-cedefop"></i>Cedefop</span><span><i class="c-policy"></i>Policy</span><span><i class="c-agencies"></i>Agencies</span><span><i class="c-countries"></i>The field</span><span><i class="c-research"></i>Research</span><span><i class="c-data"></i>Data</span><span><i class="c-people"></i>People and Lives</span><span><i class="c-debate"></i>Debate</span><span><i class="c-out"></i>Out this week</span>
+      </div>
+      <div class="cols3">
+        <div class="col"><h3>Type</h3><p>Georgia for the masthead, headlines and numbers; Libre Franklin for text; IBM Plex Mono for section labels.</p></div>
+        <div class="col"><h3>Every screen</h3><p>Layouts for phones, tablets and desktops, and a full dark version that follows the reader’s device.</p></div>
+        <div class="col"><h3>Accessible</h3><p>British English set as the page language, a skip link, labelled sections, charts with text descriptions, quiz results read out by screen readers, and visible keyboard focus.</p></div>
+      </div>
+    </section>
+
+    <!-- 14 -->
+    <section id="apprentix">
+      <div class="sec-head"><span class="label">14 · Data</span><h2>Built on Apprentix data</h2></div>
+      <div class="prose">
+        <p>The Daily shares its home with Apprentix, an open site that gathers Europe’s apprenticeship and VET data every week and checks it before publishing. The Daily draws on it for its charts, numbers and quiz questions: 112 indicators with full provenance, Cedefop’s regional skills index for all 244 regions, portraits of the 34 apprenticeship schemes, policy changes from Cedefop’s timeline, and tested myths and facts. In the first week’s pool, 312 items came from Apprentix.</p>
+        <p>This is why the Chart of the day can show any EU-27 indicator against its target with Belgium and Greece highlighted, and why every figure in it already has a source, a licence and a date attached.</p>
+      </div>
+    </section>
+
+    <!-- 15 -->
+    <section id="today">
+      <div class="sec-head"><span class="label">15 · Status and roadmap</span><h2>Today and next</h2></div>
+      <div class="prose"><p>The Daily went from a blank page to five checked editions in a matter of days. Some parts of the design are built and working; others are designed and waiting for the right partner or permission.</p></div>
+      <div class="split">
+        <div>
+          <span class="label" style="color:var(--ok)">Working today</span>
+          <ul>
+            <li>Fetching and tagging all sources with one command</li>
+            <li>A weekly writing session that produces stories for all five weekdays</li>
+            <li>Automatic planning, layout, charts, dates and connection lines</li>
+            <li>The integrity gate, with a stop on any failure</li>
+            <li>Every version archived, and a source list for every edition</li>
+            <li>Weather, Out this week, the diary and the weekday features</li>
+            <li>Publication within minutes of approval</li>
+          </ul>
+        </div>
+        <div class="next">
+          <span class="label" style="color:var(--amber)">Designed, next to build</span>
+          <ul>
+            <li>A weekday run every morning before 08:00 Athens time: fetch, write, check and publish, and publish only if the check passes</li>
+            <li>A preview to an editor at 06:30, with a one-click link to drop any story and a switch to stop the edition</li>
+            <li>Writing through an approved language-model service hosted in the EU, sent only public text</li>
+            <li>Cedefop’s holiday calendar, and a lighter rhythm in summer and late December</li>
+            <li>“Today at Cedefop”, once an internal calendar can be read</li>
+            <li>Delivery by e-mail to a list that Cedefop controls</li>
+          </ul>
+        </div>
+      </div>
+      <div class="explain"><span class="label">On the use of AI</span>A large language model helps to draft stories, from the fetched text only. It never chooses a link, and every number and quotation it writes is checked against the sources by ordinary software before publication. The paper’s “How it’s made” page says so. The design aims at the transparency the EU AI Act asks for (Article 50) and at Cedefop’s own choice of an approved service.</div>
+    </section>
+
+    <!-- 16 -->
+    <section id="cedefop">
+      <div class="sec-head"><span class="label">16 · Partnership</span><h2>What Cedefop could add</h2></div>
+      <div class="prose"><p>The paper is built to run on public sources alone. A few things that only Cedefop can provide would make it better, and the system is designed to accept each of them.</p></div>
+      <div class="cols2">
+        <div class="col"><h3>An editor of record</h3><p>A named person, for example in Communications, who sees the morning preview and can drop a story or stop an edition.</p></div>
+        <div class="col"><h3>A data feed from Cedefop’s website</h3><p>The website refuses programs, so the paper reads Cedefop through its news feed and the Publications Office. A feed or export would give fuller and faster coverage of Cedefop’s own work.</p></div>
+        <div class="col"><h3>The events calendar</h3><p>Read-only access to the internal calendar would switch on “Today at Cedefop” at the top of the paper.</p></div>
+        <div class="col"><h3>Media monitoring</h3><p>Access to the agency’s media-monitoring service would widen coverage beyond the 68 public press feeds.</p></div>
+        <div class="col"><h3>The Data Protection Officer’s view</h3><p>A record of processing and the DPO’s agreement before any staff news or e-mail delivery is added.</p></div>
+        <div class="col"><h3>An approved AI service</h3><p>A language-model service that Cedefop approves, hosted in the EU, for the automated writing step.</p></div>
+        <div class="col"><h3>Alignment with the work programme</h3><p>Matching the 11 work areas to the activities in Cedefop’s Single Programming Document, so the “Why it matters” line uses Cedefop’s own terms.</p></div>
+      </div>
+    </section>
+
+    <!-- 17 -->
+    <section id="hard">
+      <div class="sec-head"><span class="label">17 · Assessment</span><h2>Why it is hard to copy</h2></div>
+      <div class="cols2">
+        <div class="col"><h3>Facts checked by code, not by trust</h3><p>Most AI-assisted writing relies on the writer being careful. Here, every link must exist in the gathered material, and every number and quotation is traced back to source text by a separate program that was tested with planted errors. Getting this right means designing the whole pipeline around it from the start.</p></div>
+        <div class="col"><h3>Relevance that a machine can apply</h3><p>Turning “what matters to Cedefop” into 11 work areas, 341 keywords in 13 languages, 10 policy hooks and 10 Cedefop products, so that every story explains its own relevance, takes knowledge of the agency’s field as well as programming.</p></div>
+        <div class="col"><h3>Breadth without noise</h3><p>Eighty-nine sources, from the Official Journal to trade papers in eleven languages, are filtered down to thirteen items a day that fit a five-minute read.</p></div>
+        <div class="col"><h3>Ethics written into software</h3><p>No staff research, names dropped at the source, sensitive subjects held automatically, copyright limits enforced, refusals respected and published. The rules are enforced by the program itself.</p></div>
+        <div class="col"><h3>Editorial craft as rules</h3><p>A weekday rhythm, use-by dates, a story bank that keeps every day supplied, a cap per person in headlines, and a laboratory for comparing formats. These are the habits of a news desk, written down precisely enough for a computer.</p></div>
+        <div class="col"><h3>A full public record</h3><p>Every version of every edition, with its sources, stays online. Few newsrooms publish this much about how each edition was made.</p></div>
+      </div>
+    </section>
+
+    <!-- 18 -->
+    <section id="glossary">
+      <div class="sec-head"><span class="label">18 · Reference</span><h2>Terms used in this paper</h2></div>
+      <dl class="gloss">
+        <dt>Pool</dt><dd>The week’s collection of everything gathered from the sources. The writer may use nothing else.</dd>
+        <dt>Bank</dt><dd>The stories written for the week, each with a priority, a focus and a use-by date, from which the software builds each day’s edition.</dd>
+        <dt>RSS, Atom</dt><dd>News feeds that websites publish so programs can see new items without reading the whole site.</dd>
+        <dt>API</dt><dd>A door a website offers to programs, so they can ask for data directly.</dd>
+        <dt>SPARQL</dt><dd>The query language of linked-data catalogues such as the EU Publications Office’s Cellar.</dd>
+        <dt>OpenAlex</dt><dd>An open index of research publications, used to find new papers that mention Cedefop or appear in VET journals.</dd>
+        <dt>Language model</dt><dd>Software that writes text by predicting likely words. On its own it can be wrong with confidence, which is why the Daily checks its output mechanically.</dd>
+        <dt>Integrity gate</dt><dd>The checking program that compares each edition with its sources and stops publication on any failure.</dd>
+        <dt>Bot check</dt><dd>A barrier some websites put up to refuse automated visitors. The Daily does not try to get past them.</dd>
+        <dt>Use-by date</dt><dd>How long a story stays fresh enough to run, from 3 days for policy news to 60 days for a Lives profile.</dd>
+        <dt>EUDPR</dt><dd>Regulation (EU) 2018/1725, the data protection rules for EU institutions and agencies.</dd>
+      </dl>
+    </section>
+  </main>
+
+  <footer class="end">
+    <p><strong>Making Cedefop Daily</strong> · a white paper · situation on 18 October 2026.</p>
+    <p>Cedefop Daily is an independent publication on apprentix.eu. It is not published or endorsed by Cedefop. Headlines quoted here are the paper’s own; figures are taken from its edition files, source lists and checking program on 18 October 2026.</p>
+  </footer>
+</div>
+</body>
+</html>
