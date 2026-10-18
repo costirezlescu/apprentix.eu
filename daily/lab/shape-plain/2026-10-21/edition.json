@@ -248,6 +248,48 @@
   "type": "dyk",
   "item": "b556d5b780"
  },
+ "feature": {
+  "type": "country",
+  "key": "f-country",
+  "pillar": "field",
+  "country": "FR",
+  "item": "0a04cbe8b4",
+  "also": [
+   "5682b75f70",
+   "0b69626650",
+   "d77289f9f8",
+   "9fb7a97659"
+  ],
+  "facts": [
+   "6b733aa49a",
+   "92383393f1",
+   "fc41636e47"
+  ],
+  "kicker": "France",
+  "headline": "France: a million apprentices, and the first fall in a decade",
+  "standfirst": "Apprentices under contract grew 2.4-fold from December 2017, to 1,014,485 at the end of 2025, but fell 3% over the year: the first annual fall since December 2015.",
+  "body": [
+   "Much of the growth was in higher education: 62% of France’s apprentices now prepare a higher-education diploma, up from 39% at the end of 2017. France has two schemes in Cedefop’s database: the apprenticeship contract, where apprentices are most likely between 18 and 24, and the professionalisation contract, where many are over 24."
+  ]
+ },
+ "chart": {
+  "type": "trend",
+  "item": "9411a45738",
+  "geo": "FR",
+  "month": "12",
+  "from": "2013-12",
+  "latest": false,
+  "mark": [
+   "2017-12",
+   "2024-12"
+  ],
+  "points_note": "December of each year",
+  "headline": "Apprentices in France, December of each year since 2013",
+  "reading": [
+   "The number more than doubled from 425,876 in December 2017 to a peak of 1,048,840 in December 2024, then fell to 1,014,485 a year later.",
+   "Mid-year figures are lower: 911,425 in July 2026, against 944,260 in July 2025."
+  ]
+ },
  "diary": {
   "title": "Diary",
   "days": [],

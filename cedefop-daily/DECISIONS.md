@@ -95,6 +95,19 @@ The first version read mostly from the top: institutions, agencies and Cedefop i
 - **Lives runs only on Fridays,** at length, and opens the paper. The bank's other profiles are marked `reserve` and wait for later Fridays.
 - **No. 1 reissued as version 4.** Versions 1–3 stay archived.
 
+## Weekday features and the chart (decided 18 October 2026)
+
+- **Why:** without Lives on Mondays to Thursdays, the paper felt light. Rather than more news cards, each edition gains one standing feature and one chart, about 13 items in all.
+- **The weekday features,** one a day, matched to the day's focus:
+  - **Mon, Deadlines:** Commission initiatives open for feedback that touch Cedefop's work, sorted by closing date. Source: the "Have your say" portal's public JSON API (`consultations()` in `fetch.py`); `check.py` fails a row whose closing date has passed.
+  - **Tue, Paper of the day:** one new paper from the VET journals in plain language: the question, how it was studied, what it found, the caveat, why read it.
+  - **Wed, Country in focus:** one country, rotating. The written part is short; the rest is generated from the pool: Apprentix facts, the country's RESET regions, recent VET policy (the pulse) and its typical-apprentice portraits.
+  - **Thu, AI watch:** one AI development (a study, a tool, a decision): what happened, what was found, what it means for skills.
+  - **Fri, From the archive:** a Cedefop publication from this week years ago, with a sourced "since then".
+- **Chart of the day:** one Apprentix indicator, either countries ranked for a year (EU-27, with the EU target or EU average as a dashed line, Belgium and Greece highlighted) or a trend. The fetcher now copies each indicator's values (default breakdown, every country and year) into the pool, so the chart is drawn from the data and its two lines are checked against them.
+- **In the bank:** `features` and `charts`, keyed by date. The planner attaches them; `check.py` runs the usual checks on them (numbers, quotations, items, links) plus a deadline check and chart checks (data present, year covered, no negative values in a ranked chart).
+- **Fetching some sources only:** `python3 -m pipeline.daily.fetch <date> --only consultations,apprentix` merges those sources into an existing pool and keeps the others' status.
+
 ## Visual design (decided 18 October 2026)
 
 - **Version 3, "Broadsheet · Cedefop blue",** is the Daily's look: the current layout restyled as a broadsheet. Centred bold serif masthead with a double rule, small-caps dateline and section bar, hairline columns instead of boxed cards, a centred "SIX TO KNOW" heading.

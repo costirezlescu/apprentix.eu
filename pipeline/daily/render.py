@@ -48,6 +48,7 @@ AREA_ORDER = ["apprenticeships", "vet_policy", "skills_intelligence", "qualifica
               "inclusion", "teachers_trainers", "mobility", "future_of_work", "labour_market", "governance"]
 SOURCE_LINE = {
     "cellar_recent": "Cedefop publication", "cellar_archive": "From the Cedefop archive",
+    "have_your_say": "European Commission, Have your say",
     "openalex_fulltext": "Mentions Cedefop in its full text",
     "openalex_affiliation": "Author affiliation names Cedefop",
     "ec_presscorner": "European Commission", "council_press": "Council of the EU",
@@ -64,7 +65,7 @@ AGENCY_LINE = {
 }
 SOURCE_NAME = {
     "cedefop_rss": "Cedefop", "cellar_recent": "EU Publications Office", "cellar_archive": "EU Publications Office",
-    "ec_presscorner": "European Commission", "council_press": "Council of the EU", "ep_press": "European Parliament",
+    "ec_presscorner": "European Commission", "have_your_say": "European Commission", "council_press": "Council of the EU", "ep_press": "European Parliament",
     "eurlex_oj_l": "EUR-Lex", "euosha": "EU-OSHA", "etf": "ETF", "ela": "ELA", "eige": "EIGE", "ilo": "ILO",
     "unevoc": "UNESCO-UNEVOC", "eurostat_api": "Eurostat", "eurostat_updates": "Eurostat", "apprentix": "Apprentix",
     "openalex_fulltext": "OpenAlex", "openalex_journals": "OpenAlex", "openalex_affiliation": "OpenAlex",
@@ -649,6 +650,197 @@ def know_title(ed: dict) -> str:
     return ["One", "Two", "Three", "Four", "Five", "Six", "Seven"][len(ed["know"]) - 1] + " to know"
 
 
+# ---------------------------------------------------------------- weekday features and the chart --
+
+FEATURE_TITLE = {"deadlines": "Deadlines", "paper": "Paper of the day", "country": "Country in focus",
+                 "aiwatch": "AI watch", "archive": "From the archive"}
+EU27 = "AT BE BG CY CZ DE DK EE EL ES FI FR HR HU IE IT LT LU LV MT NL PL PT RO SE SI SK".split()
+GEO = {"AT": "Austria", "BE": "Belgium", "BG": "Bulgaria", "CY": "Cyprus", "CZ": "Czechia", "DE": "Germany",
+       "DK": "Denmark", "EE": "Estonia", "EL": "Greece", "ES": "Spain", "FI": "Finland", "FR": "France",
+       "HR": "Croatia", "HU": "Hungary", "IE": "Ireland", "IT": "Italy", "LT": "Lithuania", "LU": "Luxembourg",
+       "LV": "Latvia", "MT": "Malta", "NL": "Netherlands", "PL": "Poland", "PT": "Portugal", "RO": "Romania",
+       "SE": "Sweden", "SI": "Slovenia", "SK": "Slovakia", "EU27": "EU-27"}
+
+
+def fmt_val(v: float) -> str:
+    return f"{v:,.0f}" if abs(v) >= 1000 else f"{v:.1f}"
+
+
+def ordinal(n: int) -> str:
+    return f"{n}{'th' if 10 <= n % 100 <= 20 else {1: 'st', 2: 'nd', 3: 'rd'}.get(n % 10, 'th')}"
+
+
+def feature_parts(f: dict) -> str:
+    if not f.get("parts"):
+        return ""
+    rows = "".join(f"<dt>{e(x['label'])}</dt><dd>{e(x['text'])}</dd>" for x in f["parts"])
+    return f'<dl class="dc-parts">{rows}</dl>'
+
+
+def deadlines_block(f: dict, P: dict, date: str) -> str:
+    rows = []
+    for r in sorted(f["rows"], key=lambda r: P[r["item"]]["meta"]["until"]):
+        it = P[r["item"]]
+        until = it["meta"]["until"]
+        left = (dt.date.fromisoformat(until) - dt.date.fromisoformat(date)).days
+        rows.append(f"""<li><span class="dc-when">{e(fmt_date(until))}<span class="dc-brief-src">in {left} days</span></span>
+  <span><a href="{e(href(it['url']))}">{e(it['title'])}</a>
+  <span class="dc-brief-src">{e(it['meta']['stage'])} · {e(r['text'])}</span></span></li>""")
+    return f'<ul class="dc-coming dc-deadlines">{"".join(rows)}</ul>'
+
+
+def paper_byline(it: dict) -> str:
+    m = it["meta"]
+    names = [a["name"] for a in m.get("authors", [])]
+    who = ", ".join(names[:3]) + (" et al." if len(names) > 3 else "")
+    oa = ' · <span class="dc-tag">Open access</span>' if m.get("open_access") else ""
+    return (f'<p class="dc-byline">{e(who)} · <em>{e(m.get("venue", ""))}</em>, {e(fmt_date(it["date"], True))}'
+            f' · <a href="{e(href(m.get("doi") or it["url"]))}">Read the paper</a>{oa}</p>')
+
+
+def country_block(f: dict, P: dict) -> str:
+    cc = f["country"]
+    name = GEO.get(cc, cc)
+    portraits_ = [i for i in P.values() if i["kind"] == "portrait" and i["meta"].get("country_code") == cc]
+    cards = "".join(f"""<article class="dc-portrait">
+  <p class="dc-kicker">Typical apprentice</p>
+  <h4><a href="{e(href(it['url']))}">{e(it['title'])}</a></h4>
+  {it['meta']['html']}
+</article>""" for it in portraits_)   # html: Apprentix's own escaped portrait snippet
+    facts = "".join(f'<li><a href="{e(href(P[x]["url"]))}">{e(P[x]["title"])}</a></li>' for x in f.get("facts", []))
+    ds = next(i for i in P.values() if i["kind"] == "dataset" and i["meta"].get("regions"))
+    regions = sorted((r for r in ds["meta"]["regions"] if r["country_code"] == cc), key=lambda r: float(r["reset"]), reverse=True)
+    reset = ""
+    if regions:
+        top, low = regions[0], regions[-1]
+        rank = lambda r: ordinal(int(r["eu_rank"].split(" of ")[0]))
+        reset = (f'<p class="dc-regions"><strong>Skills ecosystems:</strong> of {name}’s {len(regions)} regions, '
+                 f'{e(top["region"])} scores highest on Cedefop’s RESET index ({e(top["reset"])}, {rank(top)} of 244 EU regions), '
+                 f'{e(low["region"])} lowest ({e(low["reset"])}, {rank(low)}). '
+                 f'<a href="{e(href(ds["url"]))}">All regions</a></p>')
+    policies = [i for i in P.values() if i["kind"] == "policy" and i["meta"].get("country_code") == cc]
+    pol = "".join(f'<li><a href="{e(href(i["url"]))}">{e(i["title"])}</a> <span class="dc-brief-src">{e(i["meta"]["change"])}, {e(i["meta"]["year"])}</span></li>'
+                  for i in policies)
+    duel = next((i for i in P.values() if i["kind"] == "tool" and i["title"] == "Country vs country"), None)
+    compare = (f'<p class="dc-links"><a href="{SITE}/pages/duel.html?a={e(cc)}&amp;b=EU27">{e(name)} against the EU-27, side by side</a></p>'
+               if duel and cc in duel["meta"]["countries"] else "")
+    return f"""<div class="dc-country">
+  {f'<h4 class="dc-block-title">In numbers</h4><ul class="dc-facts">{facts}</ul>' if facts else ''}
+  {reset}
+  {f'<h4 class="dc-block-title">Recent VET policy</h4><ul class="dc-facts">{pol}</ul>' if pol else ''}
+  {f'<h4 class="dc-block-title">Being an apprentice in {e(name)}</h4><div class="dc-portraits">{cards}</div>' if cards else ''}
+  {compare}
+</div>"""
+
+
+def feature2(f: dict, P: dict, date: str) -> str:
+    it = P[f["item"]]
+    title = f.get("title") or FEATURE_TITLE[f["type"]]
+    body = "".join(f"<p>{e(x)}</p>" for x in f.get("body", []))
+    kicker = e(f.get("kicker", ""))
+    if f["type"] == "archive" and it.get("date"):
+        years = int(date[:4]) - int(it["date"][:4])
+        kicker = f"Published {e(fmt_date(it['date'], True))} · {years} years ago"
+    extra = {"deadlines": lambda: deadlines_block(f, P, date), "paper": lambda: paper_byline(it),
+             "country": lambda: country_block(f, P)}.get(f["type"], lambda: "")()
+    url = link_url(f["links"][0]) if f.get("links") else it["url"]
+    return f"""<section class="dc-section dc-feature dc-feature--{e(f['type'])}" id="feature" data-pillar="{e(f['pillar'])}" aria-labelledby="h-feature">
+  <h2 class="dc-sec-title" id="h-feature">{e(title)}</h2>
+  <div class="dc-feature-inner">
+    {f'<p class="dc-kicker">{kicker}</p>' if kicker else ''}
+    <h3 class="dc-hl dc-hl--feature"><a href="{e(href(url))}">{e(f['headline'])}</a></h3>
+    {f'<p class="dc-stand">{e(f["standfirst"])}</p>' if f.get('standfirst') else ''}
+    {extra if f['type'] == 'paper' else ''}
+    {f'<div class="dc-body">{body}</div>' if body else ''}
+    {feature_parts(f)}
+    {extra if f['type'] != 'paper' else ''}
+    {links_html(f.get('links', []))}
+    <p class="dc-conn">{conn_html(P[f.get('connection_item', f['item'])], f.get('areas'))}</p>
+  </div>
+</section>"""
+
+
+def chart_rank(c: dict, it: dict) -> str:
+    v, y = it["meta"]["values"], c["year"]
+    rows = [(v[g][y], g) for g in EU27 if y in v.get(g, {})]
+    if "EU27" in v and y in v["EU27"]:
+        rows.append((v["EU27"][y], "EU27"))
+    rows.sort(reverse=True)
+    target = (it["meta"].get("target") or {}).get("value")
+    top = max([r[0] for r in rows] + [target or 0]) * 1.04
+    line = target if target is not None else v.get("EU27", {}).get(y)
+    li = []
+    for val, g in rows:
+        cls = " is-hl" if g in c.get("highlight", []) else ""
+        cls += " is-eu" if g == "EU27" else ""
+        li.append(f'<li class="rb-row{cls}"><span class="rb-name">{e(GEO.get(g, g))}</span>'
+                  f'<span class="rb-track"><span class="rb-bar" style="width:{val / top * 100:.1f}%"></span></span>'
+                  f'<span class="rb-val">{fmt_val(val)}</span></li>')
+    note = (f"dashed line: EU target, {fmt_val(target)}" if target is not None
+            else f"dashed line: EU-27, {fmt_val(line)}" if line is not None else "")
+    style = f' style="--median:{line / top * 100:.1f}%"' if line is not None else ""
+    return f"""<figure class="dc-figure dc-chart-fig"{style}>
+  <p class="rb-sub">{e(it['meta'].get('unit') or '')}, {e(y)} · EU-27 countries with data{' · ' + note if note else ''}</p>
+  <ol class="rb rb--rank">{''.join(li)}</ol>
+</figure>"""
+
+
+def chart_trend(c: dict, it: dict) -> str:
+    series = it["meta"]["values"][c["geo"]]
+    keys = sorted(series)
+    if c.get("from"):
+        keys = [k for k in keys if k >= c["from"]]
+    if c.get("month"):                      # monthly data: one point a year, plus the latest month
+        latest = [keys[-1]] if c.get("latest", True) and not keys[-1].endswith("-" + c["month"]) else []
+        keys = [k for k in keys if k.endswith("-" + c["month"])] + latest
+    vals = [series[k] for k in keys]
+    W, H, L, R, T, B = 420, 210, 46, 14, 14, 26
+    top = max(vals) * 1.1
+    x = lambda i: L + i * (W - L - R) / max(1, len(vals) - 1)
+    yv = lambda v: T + (1 - v / top) * (H - T - B)
+    pts = " ".join(f"{x(i):.1f},{yv(v):.1f}" for i, v in enumerate(vals))
+    grid = ""
+    for g in (top / 3, 2 * top / 3):
+        nice = float(f"{g:.2g}")
+        grid += (f'<line x1="{L}" x2="{W - R}" y1="{yv(nice):.1f}" y2="{yv(nice):.1f}" class="ct-grid"/>'
+                 f'<text x="{L - 6}" y="{yv(nice) + 4:.1f}" text-anchor="end">{fmt_val(nice) if nice < 1000 else f"{nice / 1000:,.0f}k"}</text>')
+    step = max(1, len(keys) // 6)
+    ticks = "".join(f'<text x="{x(i):.1f}" y="{H - 8}" text-anchor="middle">{e(k[:4])}</text>'
+                    for i, k in enumerate(keys) if i % step == 0 or i == len(keys) - 1)
+    marks, last = "", -9
+    for i, k in enumerate(keys):
+        if k in c.get("mark", []) or i == len(keys) - 1:
+            anchor = "end" if i > len(keys) * .7 else "start"
+            dy = 18 if i - last <= 2 else -8          # a label next to another one goes under the line
+            marks += (f'<circle cx="{x(i):.1f}" cy="{yv(vals[i]):.1f}" r="3.5"/>'
+                      f'<text x="{x(i) + (-6 if anchor == "end" else 6):.1f}" y="{yv(vals[i]) + dy:.1f}" text-anchor="{anchor}" class="ct-val">{fmt_val(vals[i])}</text>')
+            last = i
+    label = f"{it['title']}: {', '.join(f'{k} {fmt_val(series[k])}' for k in keys)}"
+    return f"""<figure class="dc-figure dc-chart-fig">
+  <p class="rb-sub">{e(it['meta'].get('unit') or '')} · {e(GEO.get(c['geo'], c['geo']))}{' · ' + e(c['points_note']) if c.get('points_note') else ''}</p>
+  <svg class="dc-trend" viewBox="0 0 {W} {H}" role="img" aria-label="{e(label)}">
+    {grid}<line x1="{L}" x2="{W - R}" y1="{yv(0):.1f}" y2="{yv(0):.1f}" class="ct-axis"/>
+    <polyline points="{pts}" class="ct-line"/>{marks}{ticks}
+  </svg>
+</figure>"""
+
+
+def chart2(c: dict, P: dict) -> str:
+    it = P[c["item"]]
+    fig = chart_rank(c, it) if c["type"] == "rank" else chart_trend(c, it)
+    reading = "".join(f"<p>{e(x)}</p>" for x in c["reading"])
+    src = it["meta"].get("publisher") or "Apprentix"
+    return f"""<section class="dc-section dc-chart" id="chart" data-pillar="{e(c.get('pillar', 'data'))}" aria-labelledby="h-chart">
+  <h2 class="dc-sec-title" id="h-chart">Chart of the day</h2>
+  <div class="dc-chart-grid">
+    <div><h3 class="dc-hl"><a href="{e(href(it['url']))}">{e(c['headline'])}</a></h3>
+      <div class="dc-body">{reading}</div>
+      <p class="dc-conn">Data: {e(src)}, “{e(it['title'])}”, as published on <a href="{e(href(it['url']))}">Apprentix</a>. Chart: Cedefop Daily.</p></div>
+    {fig}
+  </div>
+</section>"""
+
+
 def render_edition(ed: dict, pool: dict, theme: str | None = None) -> str:
     P = {i["id"]: i for i in pool["items"]}
     POOL_INDEX.clear()
@@ -657,11 +849,15 @@ def render_edition(ed: dict, pool: dict, theme: str | None = None) -> str:
     desc = ed["lead"]["headline"] + ". " + ed["lead"]["standfirst"]
     canonical = f"{SITE}/daily/{ed['date']}/" if not ed.get("preview") else f"{SITE}/daily/lab/"
     diary_label = ed["diary"]["title"]
+    extras = ([("feature", ed["feature"].get("title") or FEATURE_TITLE[ed["feature"]["type"]], ed["feature"]["pillar"])]
+              if ed.get("feature") else []) + ([("chart", "Chart of the day", "data")] if ed.get("chart") else [])
+    more_today = ([feature2(ed["feature"], P, ed["date"])] if ed.get("feature") else []) \
+        + ([chart2(ed["chart"], P)] if ed.get("chart") else [])
     if ed["layout"] == "shape":
-        nav = [("know", know_title(ed), "cedefop"), ("question", "Today’s question", "data"),
+        nav = [("know", know_title(ed), "cedefop")] + extras + [("question", "Today’s question", "data"),
                ("week", diary_label, "policy")] + ([("more", "More today", "debate")] if ed.get("more") else [])
     else:
-        nav = [(x["id"], x["title"], x["pillar"]) for x in ed["sections"]] \
+        nav = [(x["id"], x["title"], x["pillar"]) for x in ed["sections"]] + extras \
             + [("question", "Data", "data"), ("week", diary_label, "policy")]
     if ed.get("lives"):
         nav.insert(0, ("lives", "Lives", "lives"))
@@ -681,6 +877,7 @@ def render_edition(ed: dict, pool: dict, theme: str | None = None) -> str:
   <h2 class="dc-sec-title" id="h-know">{know_title(ed)}</h2>
   <div class="dc-grid">{cards}</div>
 </section>""")
+        out += more_today
         out.append(question2(ed["question"], P))
         out.append(diary2(ed["diary"], P, ed["date"]))
         out.append(more2(ed.get("more", []), P))
@@ -691,6 +888,7 @@ def render_edition(ed: dict, pool: dict, theme: str | None = None) -> str:
   <h2 class="dc-sec-title" id="h-{e(x['id'])}">{e(x['title'])}</h2>
   <div class="dc-grid">{cards}</div>
 </section>""")
+        out += more_today
         out.append(question2(ed["question"], P).replace("Today’s question <span", "Data <span"))
         out.append(diary2(ed["diary"], P, ed["date"]))
     out += ["</main>", SCRIPT, "</body>\n</html>\n"]
@@ -748,8 +946,9 @@ ABOUT = """
 {outlets}
 
 <h2>Sections</h2>
-<p>About twelve items a day, a five-minute read: <strong>The one thing</strong> (the day’s most important story, with a line on why it matters to Cedefop), <strong>Six to know</strong>, <strong>Today’s question</strong> (a number to guess, a myth to call, a fact or an insight), the <strong>Diary</strong>, and <strong>More today</strong> as a short list of links. On Fridays, <strong>Lives</strong> opens the paper: one real person whose life vocational education and training has shaped. Stories come from Cedefop, the field, the wider debate, EU policy, the agencies and research, each marked with its section colour. The top strip shows “Today at Cedefop” when there is a public agenda for the day, and “This week in numbers” otherwise.</p>
-<p>Each weekday has a focus: Monday EU policy and Cedefop, with the week ahead in the diary; Tuesday research; Wednesday the field; Thursday AI and the future of work; Friday long reads.</p>
+<p>About thirteen items a day, a five- to seven-minute read: <strong>The one thing</strong> (the day’s most important story, with a line on why it matters to Cedefop), <strong>Six to know</strong>, the weekday feature, the <strong>Chart of the day</strong>, <strong>Today’s question</strong> (a number to guess, a myth to call, a fact or an insight), the <strong>Diary</strong>, and <strong>More today</strong> as a short list of links. On Fridays, <strong>Lives</strong> opens the paper: one real person whose life vocational education and training has shaped. Stories come from Cedefop, the field, the wider debate, EU policy, the agencies and research, each marked with its section colour. The top strip shows “Today at Cedefop” when there is a public agenda for the day, and “This week in numbers” otherwise.</p>
+<p>Each weekday has a focus and a standing feature: Monday EU policy and Cedefop, with <strong>Deadlines</strong> (Commission initiatives open for feedback that touch Cedefop’s work, from the “Have your say” portal) and the week ahead in the diary; Tuesday research, with the <strong>Paper of the day</strong> (one new paper in plain language: question, method, finding, caveat); Wednesday the field, with <strong>Country in focus</strong> (one country’s numbers, regions, recent VET policy and typical apprentices); Thursday AI and the future of work, with <strong>AI watch</strong>; Friday long reads, with Lives and <strong>From the archive</strong> (what Cedefop published this week years ago, and what has changed since).</p>
+<p>Every day, the <strong>Chart of the day</strong> draws one indicator from the data Apprentix publishes (Cedefop, Eurostat and national sources). The chart is generated from the data; the two lines beside it are checked against it.</p>
 <h2>Lives</h2>
 <p>Lives stories come from published profiles and interviews. A person is named only as printed, and only when the source is a profile or interview they chose to give, in which they are the subject. Minors are never named, and nothing about health, family or money is included beyond what the story itself is about.</p>
 

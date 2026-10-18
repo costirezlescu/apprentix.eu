@@ -4,7 +4,8 @@
                                                       and the main edition for that day
 
 Variants:
-  layout  shape     The one thing · Six to know · Today's question · Diary · More today
+  layout  shape     The one thing · Six to know · weekday feature · Chart of the day · Today's question ·
+                    Diary · More today
           sections  the paper's sections, each capped, about the same number of stories
   rhythm  plain     every day ranks stories by priority alone
           rhythm    each weekday boosts one focus: Mon policy and Cedefop, Tue research,
@@ -99,6 +100,10 @@ def plan_day(bank: dict, date: str, number: int, used: set, layout: str, rhythm:
         ed["lives"] = lives
         ed["lives_first"] = rhythm            # with the rhythm, Friday's Lives story opens the paper
     ed["question"] = bank["questions"][str(wd)]
+    # The weekday feature (Mon deadlines, Tue paper, Wed country, Thu AI watch, Fri archive) and the chart.
+    for k, src in (("feature", "features"), ("chart", "charts")):
+        if bank.get(src, {}).get(date):
+            ed[k] = bank[src][date]
     diary = bank["diary"]
     if wd == 0:
         ed["diary"] = {"title": "Week ahead", "days": [{"date": date, "events": diary["week_ahead"]}],

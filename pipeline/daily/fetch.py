@@ -3,6 +3,7 @@
   python -m pipeline.daily.fetch 2026-10-19          (edition date; default: next working day)
   python -m pipeline.daily.fetch 2026-10-19 --retag  (re-apply topics.json to the existing pool)
   python -m pipeline.daily.fetch 2026-10-19 --weather  (only the forecast → daily/weather/<date>.json)
+  python -m pipeline.daily.fetch 2026-10-19 --only consultations,apprentix   (some sources, merged into the pool)
 
 The pool is everything the writing step may use. Every URL an edition prints must
 come from it (pipeline/daily/check.py enforces this), so links are never typed by hand.
@@ -681,6 +682,55 @@ def press(edition: dt.date) -> list[dict]:
 SITE = "https://apprentix.eu/"
 
 
+HYS = "https://ec.europa.eu/info/law/better-regulation"
+HYS_STAGE = {"PLANNING_WORKFLOW": "Call for evidence", "ISC_WORKFLOW": "Draft act", "OPC_LAUNCHED": "Public consultation",
+             "ADOPTION_WORKFLOW": "Commission proposal"}
+
+
+def consultations() -> list[dict]:
+    """Initiatives open for feedback on the Commission's "Have your say" portal (its public JSON API).
+    All are kept; tagging decides which touch Cedefop's work, and the closing date goes in meta."""
+    out, page = [], 0
+    while True:
+        d = json.loads(fetch(f"{HYS}/brpapi/searchInitiatives", params={"page": page, "size": 50, "language": "EN",
+                                                                      "feedbackStatus": "OPEN"},
+                             headers={"Accept": "application/json"}))["initiativeResultDtoPage"]
+        for x in d["content"]:
+            st = next((s for s in x["currentStatuses"] if s.get("isCurrent")), x["currentStatuses"][0])
+            title = x["shortTitle"].strip()
+            slug = re.sub(r"[^A-Za-z0-9]+", "-", title).strip("-")
+            stage = HYS_STAGE.get(st.get("frontEndStage"), "Feedback")
+            until = st.get("feedbackEndDate", "")[:10].replace("/", "-")
+            topics = [t["label"] for t in x["topics"]]
+            out.append(item("have_your_say", "2", "consultation", title,
+                            f"{HYS}/have-your-say/initiatives/{int(x['id'])}-{slug}_en",
+                            st.get("feedbackStartDate", "")[:10].replace("/", "-") or None,
+                            f"{stage}, open for feedback until {until}. Topics: {', '.join(topics)}.",
+                            f"{title}. {stage}, open for feedback until {until}. Topics: {', '.join(topics)}.",
+                            stage=stage, until=until, topics=topics, reference=x.get("reference")))
+        page += 1
+        if page >= d.get("totalPages", 1):
+            break
+    STATUS["have_your_say"] = "ok"
+    return out
+
+
+def indicator_data(ind_id: str) -> dict:
+    """An Apprentix indicator, compacted for charts: the default breakdown only, every country's
+    values by year. The values also go into the item's text, so check.py can find any number used."""
+    path = ROOT / "data" / "published" / "indicators" / f"{ind_id}.json"
+    if not path.exists():
+        return {}
+    d = json.loads(path.read_text("utf-8"))
+    default = {x["key"]: x.get("default") for x in d.get("dims", [])}
+    by: dict = {}
+    for r in d.get("series", []):
+        if all(r.get("dims", {}).get(k) == v for k, v in default.items() if v is not None) and r.get("value") is not None:
+            by.setdefault(r["geo"], {})[str(r["time"])] = r["value"]
+    return {"unit": d.get("unit"), "values": by, "target": d.get("target"),
+            "source_url": (d.get("provenance") or {}).get("source_url")}
+
+
 def apprentix() -> list[dict]:
     """Apprentix's own published analyses of Cedefop, Eurostat and national data.
     Read from the repository, not the web: they are rebuilt weekly by pipeline/build.py."""
@@ -723,9 +773,14 @@ def apprentix() -> list[dict]:
                     regions=regions, citation=meta["source"].get("citation"),
                     licence=meta["source"].get("licence_id")))
     for ind in rd("indicators/index.json")["indicators"]:
+        data = indicator_data(ind["id"])
+        values = " ".join(f"{g} {y}: {v};" for g, ys in sorted(data.get("values", {}).items()) for y, v in sorted(ys.items()))
         out.append(item("apprentix", "data", "indicator", ind["title"],
                         f"{SITE}pages/indicators.html?id={ind['id']}", None, ind.get("description", "")[:400],
-                        indicator=ind["id"], publisher=(ind.get("provenance") or {}).get("publisher")))
+                        ind.get("description", "") + " " + values,
+                        indicator=ind["id"], publisher=(ind.get("provenance") or {}).get("publisher"),
+                        unit=data.get("unit"), values=data.get("values"), target=data.get("target"),
+                        source_url=data.get("source_url")))
     for meta_path in sorted(pub.glob("*/meta.json")):
         src = json.loads(meta_path.read_text("utf-8")).get("source") or {}
         if src.get("url"):
@@ -794,6 +849,7 @@ def main(argv: list[str]) -> int:
         return retag(edition)
     if "--weather" in argv:
         return weather(edition)
+    only = next((a.split("=", 1)[1] if "=" in a else argv[argv.index(a) + 1] for a in argv if a.startswith("--only")), "")
     end = min(edition, dt.date.today())
     start = end - dt.timedelta(days=WINDOW_DAYS)
     print(f"Cedefop Daily pool for {edition} (news from {start} to {end})")
@@ -810,7 +866,10 @@ def main(argv: list[str]) -> int:
                      ("Agency listings", lambda: listings(start, end)),
                      ("Eurostat", lambda: eurostat(start, end)),
                      ("Press and the field", lambda: press(edition)),
+                     ("Consultations", consultations),
                      ("Apprentix", apprentix)]:
+        if only and name.lower().replace(" ", "_").split(",")[0] not in only.lower().split(","):
+            continue
         try:
             got = fn()
         except Exception as e:      # one broken source must not stop the others
@@ -834,12 +893,15 @@ def main(argv: list[str]) -> int:
         old = json.loads(path.read_text("utf-8"))
         kept = [i for i in old["items"] if i["id"] not in seen]
         pool += kept
-        out.update(count=len(pool), items=pool, carried_over=len(kept))
+        out.update(count=len(pool), items=pool, carried_over=len(kept), sources={**old["sources"], **STATUS})
+        if only:
+            out.update(fetched_at=old["fetched_at"], window=old["window"])
     write_json(path, out)
     print(f"Wrote {path.relative_to(ROOT)}: {len(pool)} items; "
           f"{sum(1 for i in pool if i['work_areas'])} tagged with a work area")
     try:
-        weather(edition)
+        if not only or "weather" in only:
+            weather(edition)
     except Exception as e:
         print(f"- Weather: failed ({e!r})")
     return 0

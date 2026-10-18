@@ -113,9 +113,144 @@
   "voxeu_page": "failed: HTTP 403 for https://cepr.org/voxeu/columns/cost-job-loss-carbon-intensive-sectors-evidence-germany",
   "nature": "ok",
   "socialeurope_page": "ok",
-  "apprentix": "ok"
+  "apprentix": "ok",
+  "have_your_say": "ok"
  },
  "items": [
+  {
+   "id": "7937574357",
+   "source": "have_your_say",
+   "kind": "consultation",
+   "title": "Strengthening and modernising the European Training Foundation",
+   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19032-Strengthening-and-modernising-the-European-Training-Foundation_en",
+   "date": "2026-10-16",
+   "work_areas": [
+    "governance"
+   ]
+  },
+  {
+   "id": "0123870c00",
+   "source": "have_your_say",
+   "kind": "consultation",
+   "title": "Fair labour mobility package: European social security pass",
+   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/15912-Fair-labour-mobility-package-European-social-security-pass_en",
+   "date": "2026-10-15",
+   "work_areas": []
+  },
+  {
+   "id": "cc663e205e",
+   "source": "have_your_say",
+   "kind": "consultation",
+   "title": "Articles 75c – 75d AI Act Implementing Act",
+   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/19292-Articles-75c-75d-AI-Act-Implementing-Act_en",
+   "date": "2026-10-12",
+   "work_areas": [
+    "future_of_work"
+   ]
+  },
+  {
+   "id": "1e8edc4fce",
+   "source": "have_your_say",
+   "kind": "consultation",
+   "title": "Training and certification standards of fishers on EU vessels",
+   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16352-Training-and-certification-standards-of-fishers-on-EU-vessels_en",
+   "date": "2026-10-01",
+   "work_areas": []
+  },
+  {
+   "id": "6ee2894af3",
+   "source": "have_your_say",
+   "kind": "consultation",
+   "title": "Cloud and AI Development Act",
+   "url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14628-Cloud-and-AI-Development-Act_en",
+   "date": "2026-07-02",
+   "work_areas": [
+    "future_of_work"
+   ]
+  },
+  {
+   "id": "e42bf96438",
+   "source": "apprentix",
+   "kind": "fact",
+   "title": "Adults in Sweden are 7.3 times as likely as adults in Greece to have taken part in learning in the last four weeks: 38% against 5.2% (2025).",
+   "url": "https://apprentix.eu/pages/indicators.html?id=cedefop-kivet-1050&geo=SE,EL#fact-spread-cedefop-kivet-1050",
+   "date": null,
+   "work_areas": []
+  },
+  {
+   "id": "f781f16b0d",
+   "source": "apprentix",
+   "kind": "portrait",
+   "title": "Dual practical training (Czechia)",
+   "url": "https://apprentix.eu/pages/countries/cz.html#scheme-cz-dual",
+   "date": null,
+   "work_areas": [
+    "vet_policy"
+   ]
+  },
+  {
+   "id": "b188362643",
+   "source": "apprentix",
+   "kind": "portrait",
+   "title": "Type 1: apprenticeship for vocational qualification (Italy)",
+   "url": "https://apprentix.eu/pages/countries/it.html#scheme-it-type1",
+   "date": null,
+   "work_areas": [
+    "apprenticeships",
+    "labour_market",
+    "qualifications",
+    "vet_policy"
+   ]
+  },
+  {
+   "id": "9fe705a357",
+   "source": "apprentix",
+   "kind": "dataset",
+   "title": "Regional skills ecosystems (RESET)",
+   "url": "https://apprentix.eu/pages/explore.html?dataset=regional-skills-ecosystems",
+   "date": "2026-10-16",
+   "work_areas": [
+    "apprenticeships",
+    "governance",
+    "labour_market",
+    "skills_intelligence",
+    "vet_policy"
+   ]
+  },
+  {
+   "id": "a6fb1e92e9",
+   "source": "apprentix",
+   "kind": "indicator",
+   "title": "Employment rate of recent VET graduates",
+   "url": "https://apprentix.eu/pages/indicators.html?id=eurostat-edat_lfse_24-vet",
+   "date": null,
+   "work_areas": [
+    "labour_market",
+    "vet_policy"
+   ]
+  },
+  {
+   "id": "6f04a0844c",
+   "source": "apprentix",
+   "kind": "indicator",
+   "title": "Apprenticeship starts in England",
+   "url": "https://apprentix.eu/pages/indicators.html?id=uk-dfe-apprenticeship-starts",
+   "date": null,
+   "work_areas": [
+    "apprenticeships"
+   ]
+  },
+  {
+   "id": "a463165cfc",
+   "source": "apprentix",
+   "kind": "tool",
+   "title": "Compare all apprenticeship schemes side by side",
+   "url": "https://apprentix.eu/pages/compare.html",
+   "date": null,
+   "work_areas": [
+    "apprenticeships"
+   ]
+  },
   {
    "id": "c43f73ea73",
    "source": "cedefop_rss",
@@ -260,77 +395,6 @@
     "future_of_work",
     "teachers_trainers",
     "vet_policy"
-   ]
-  },
-  {
-   "id": "e42bf96438",
-   "source": "apprentix",
-   "kind": "fact",
-   "title": "Adults in Sweden are 7.3 times as likely as adults in Greece to have taken part in learning in the last four weeks: 38% against 5.2% (2025).",
-   "url": "https://apprentix.eu/pages/indicators.html?id=cedefop-kivet-1050&geo=SE,EL#fact-spread-cedefop-kivet-1050",
-   "date": null,
-   "work_areas": []
-  },
-  {
-   "id": "f781f16b0d",
-   "source": "apprentix",
-   "kind": "portrait",
-   "title": "Dual practical training (Czechia)",
-   "url": "https://apprentix.eu/pages/countries/cz.html#scheme-cz-dual",
-   "date": null,
-   "work_areas": [
-    "vet_policy"
-   ]
-  },
-  {
-   "id": "b188362643",
-   "source": "apprentix",
-   "kind": "portrait",
-   "title": "Type 1: apprenticeship for vocational qualification (Italy)",
-   "url": "https://apprentix.eu/pages/countries/it.html#scheme-it-type1",
-   "date": null,
-   "work_areas": [
-    "apprenticeships",
-    "labour_market",
-    "qualifications",
-    "vet_policy"
-   ]
-  },
-  {
-   "id": "9fe705a357",
-   "source": "apprentix",
-   "kind": "dataset",
-   "title": "Regional skills ecosystems (RESET)",
-   "url": "https://apprentix.eu/pages/explore.html?dataset=regional-skills-ecosystems",
-   "date": "2026-10-16",
-   "work_areas": [
-    "apprenticeships",
-    "governance",
-    "labour_market",
-    "skills_intelligence",
-    "vet_policy"
-   ]
-  },
-  {
-   "id": "6f04a0844c",
-   "source": "apprentix",
-   "kind": "indicator",
-   "title": "Apprenticeship starts in England",
-   "url": "https://apprentix.eu/pages/indicators.html?id=uk-dfe-apprenticeship-starts",
-   "date": null,
-   "work_areas": [
-    "apprenticeships"
-   ]
-  },
-  {
-   "id": "a463165cfc",
-   "source": "apprentix",
-   "kind": "tool",
-   "title": "Compare all apprenticeship schemes side by side",
-   "url": "https://apprentix.eu/pages/compare.html",
-   "date": null,
-   "work_areas": [
-    "apprenticeships"
    ]
   }
  ]

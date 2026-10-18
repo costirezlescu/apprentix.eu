@@ -69,6 +69,14 @@ def stories_of(ed: dict) -> list[tuple[str, dict, str]]:
         out += [(f"{x['id']}[{k}]", s, x["pillar"]) for k, s in enumerate(x["stories"])]
     if ed.get("lives"):
         out.append(("lives", ed["lives"], "lives"))
+    if ed.get("feature"):
+        f = ed["feature"]       # parts and deadline notes are checked like body text
+        out.append(("feature", dict(f, body=f.get("body", []) + [x["text"] for x in f.get("parts", []) + f.get("rows", [])],
+                                    also=f.get("also", []) + [r["item"] for r in f.get("rows", [])] + f.get("facts", [])),
+                    f["pillar"]))
+    if ed.get("chart"):
+        c = ed["chart"]
+        out.append(("chart", dict(c, key="chart:" + c["item"], body=c["reading"]), "data"))
     return out
 
 
@@ -85,7 +93,7 @@ def check(ed: dict, page: Path | None) -> tuple[list[str], list[str], int]:
     def url_ok(u: str) -> bool:
         if u.startswith("#") or u in pool_urls:
             return True
-        m = re.fullmatch(re.escape(SITE) + r"/pages/duel\.html\?a=([A-Z]{2})&b=([A-Z]{2})", u)
+        m = re.fullmatch(re.escape(SITE) + r"/pages/duel\.html\?a=([A-Z]{2}|EU27)&b=([A-Z]{2}|EU27)", u)
         return bool(m and duel and {m.group(1), m.group(2)} <= set(duel["meta"]["countries"]))
 
     def sources_text(ids: list[str], urls: list[str]) -> str:
@@ -158,14 +166,14 @@ def check(ed: dict, page: Path | None) -> tuple[list[str], list[str], int]:
                 warns.append(f"{where}: headline is {len(hl)} characters: {hl}")
             if DIRECTOR in hl:
                 warns.append(f"{where}: the Director is in a headline")
-        if where != "lives" and s.get("item") in P:
+        if where not in ("lives", "chart") and s.get("item") in P:
             try:
                 if not connection(P[s.get("connection_item", s["item"])], s.get("areas")):
                     fails.append(f"{where}: no connection line can be generated (no work area): out")
             except ValueError as e:
                 fails.append(f"{where}: {e}")
         it = P.get(s.get("item"))
-        if it and it["date"] and pillar in USE_BY:
+        if it and it["date"] and pillar in USE_BY and where != "chart" and s.get("type") not in ("archive", "paper"):
             age = (dt.date.fromisoformat(built) - dt.date.fromisoformat(it["date"][:10])).days
             if age > USE_BY[pillar]:
                 warns.append(f"{where}: item is {age} days old (use-by for {pillar}: {USE_BY[pillar]} days)")
@@ -187,6 +195,30 @@ def check(ed: dict, page: Path | None) -> tuple[list[str], list[str], int]:
         for n in numbers(q["answer"] + " " + q["question"]):
             if n not in src and not any(n == str(o["max"]) for o in q["options"]):
                 fails.append(f"question: number {n} not found in its source")
+
+    f = ed.get("feature") or {}
+    for r in f.get("rows", []):
+        until = P.get(r["item"], {}).get("meta", {}).get("until")
+        if not until:
+            fails.append(f"feature: deadline row {r['item']} has no closing date in the pool")
+        elif until < date:
+            fails.append(f"feature: deadline already passed: {P[r['item']]['title']} ({until})")
+    c = ed.get("chart") or {}
+    if c:
+        vals = P.get(c["item"], {}).get("meta", {}).get("values") or {}
+        if not vals:
+            fails.append(f"chart: item {c['item']} has no data")
+        elif c["type"] == "rank":
+            got = [g for g in vals if c["year"] in vals[g]]
+            if len(got) < 10:
+                fails.append(f"chart: only {len(got)} countries have {c['year']} data")
+            for g in c.get("highlight", []):
+                if c["year"] not in vals.get(g, {}):
+                    fails.append(f"chart: highlighted {g} has no {c['year']} value")
+            if any(vals[g][c["year"]] < 0 for g in got):
+                fails.append("chart: negative values; a ranked bar chart cannot show them")
+        elif c["geo"] not in vals:
+            fails.append(f"chart: no series for {c['geo']}")
 
     d = ed.get("diary", {})
     for x in d.get("coming", []) + [ev for day in d.get("days", []) for ev in day["events"]] + d.get("more", []):
