@@ -1,0 +1,388 @@
+{
+ "edition": "2026-10-21",
+ "fetched_at": "2026-10-17T18:55:43+00:00",
+ "sources_status": {
+  "cedefop_rss": "ok",
+  "cellar_recent": "ok",
+  "cellar_archive": "ok",
+  "openalex_fulltext": "ok",
+  "openalex_affiliation": "ok",
+  "openalex_journals": "ok",
+  "ec_presscorner": "ok",
+  "ec_presscorner_doc": "ok",
+  "council_press": "ok",
+  "ep_press": "refused: empty response (bot check)",
+  "eurlex_oj_l": "ok",
+  "euosha": "ok",
+  "euosha_page": "ok",
+  "etf": "ok",
+  "etf_page": "ok",
+  "ela": "ok",
+  "ela_page": "ok",
+  "eige": "ok",
+  "ilo": "ok",
+  "ilo_page": "ok",
+  "unevoc": "ok",
+  "eurostat_updates": "ok",
+  "eurostat_api": "ok",
+  "bbc_edu": "ok",
+  "rte": "ok",
+  "guardian_edu": "ok",
+  "irishtimes_edu": "ok",
+  "guardian_fe": "ok",
+  "handwerk_com": "ok",
+  "guardian_appr": "ok",
+  "spiegel_job": "ok",
+  "guardian_edu_page": "ok",
+  "zeit_arbeit": "ok",
+  "handwerk_com_page": "ok",
+  "guardian_fe_page": "ok",
+  "guardian_appr_page": "ok",
+  "tagesschau": "ok",
+  "orf": "ok",
+  "lemonde_emploi": "ok",
+  "derstandard": "ok",
+  "lemonde_edu": "ok",
+  "lemonde_edu_page": "ok",
+  "letudiant": "ok",
+  "cafepeda": "ok",
+  "elpais_edu": "ok",
+  "francetvinfo_edu": "ok",
+  "derstandard_page": "ok",
+  "dhz": "ok",
+  "eldiario_edu": "ok",
+  "corriere_scuola": "ok",
+  "francetvinfo_edu_page": "ok",
+  "dhz_page": "ok",
+  "cafepeda_page": "ok",
+  "magisnet": "ok",
+  "esos": "ok",
+  "nos": "ok",
+  "alfavita": "ok",
+  "orizzontescuola": "ok",
+  "yle_en": "ok",
+  "orizzontescuola_page": "failed: HTTP 403 for https://www.orizzontescuola.it/potenzia-le-tue-competenze-informatiche-da-esperto-di-cyberbullismo-alluso-di-workspace-di-google-dalle-competenze-base-al-cad-ed-esperto-dpo/",
+  "esos_page": "ok",
+  "yle_fi": "ok",
+  "magisnet_page": "ok",
+  "dr_dk": "ok",
+  "svt": "ok",
+  "thelocal_se": "ok",
+  "thelocal_fr": "ok",
+  "thelocal_de": "ok",
+  "thelocal_it": "ok",
+  "thelocal_at": "ok",
+  "notesfrompoland": "ok",
+  "hotnews_ro": "ok",
+  "obessu": "ok",
+  "edupedu_ro": "ok",
+  "nyt_edu": "ok",
+  "economist_intl": "ok",
+  "guardian_work": "ok",
+  "economist_fin": "ok",
+  "economist_biz": "ok",
+  "zeit_campus": "ok",
+  "ft_work": "ok",
+  "politico_eu": "ok",
+  "guardian_work_page": "ok",
+  "faz_beruf": "ok",
+  "ft_work_page": "failed: HTTP 403 for https://www.ft.com/content/3a3d3eb8-ff86-418e-9704-c1ff601718c4?syn-25a6b1a6=1",
+  "fastcompany_work": "ok",
+  "guardian_ai": "ok",
+  "nyt_tech": "ok",
+  "politico_eu_page": "ok",
+  "mittr": "ok",
+  "wired_ai": "ok",
+  "guardian_ai_page": "ok",
+  "verge_ai": "ok",
+  "bbc_tech": "ok",
+  "ars": "ok",
+  "fastcompany_work_page": "ok",
+  "bbc_tech_page": "ok",
+  "conv_eu": "ok",
+  "edsurge": "ok",
+  "bloomberg_tech": "ok",
+  "conv_global": "ok",
+  "conv_edu_uk": "ok",
+  "science_news": "ok",
+  "knowable": "ok",
+  "aeon": "ok",
+  "socialeurope": "ok",
+  "newscientist": "ok",
+  "voxeu": "ok",
+  "voxeu_page": "failed: HTTP 403 for https://cepr.org/voxeu/columns/cost-job-loss-carbon-intensive-sectors-evidence-germany",
+  "nature": "ok",
+  "socialeurope_page": "ok",
+  "apprentix": "ok",
+  "have_your_say": "ok",
+  "venues": "ok"
+ },
+ "items": [
+  {
+   "id": "b556d5b780",
+   "source": "apprentix",
+   "kind": "fact",
+   "title": "Greece coordinates 17 of the 73 Erasmus+ Centres of Vocational Excellence selected since 2021 — more than any other country.",
+   "url": "https://apprentix.eu/pages/explore.html?dataset=cove-projects&f.coordinator_country=Greece#fact-cove-coordinators",
+   "date": null,
+   "work_areas": [
+    "mobility",
+    "vet_policy"
+   ]
+  },
+  {
+   "id": "6b733aa49a",
+   "source": "apprentix",
+   "kind": "fact",
+   "title": "France's “Apprenticeship tax”, a levy on companies that funds apprenticeship, dates back to 1925.",
+   "url": "https://apprentix.eu/pages/explore.html?dataset=financing-instruments&open=fi-apprenticeship-tax#fact-finance-oldest-levy",
+   "date": null,
+   "work_areas": [
+    "apprenticeships"
+   ]
+  },
+  {
+   "id": "9fb7a97659",
+   "source": "apprentix",
+   "kind": "fact",
+   "title": "62% of France's apprentices now prepare a higher-education diploma (end of 2025), up from 39% at the end of 2017.",
+   "url": "https://apprentix.eu/pages/indicators.html?id=fr-dares-apprentices-stock&dim_scope=HIGHER#fact-fr-higher-education-share",
+   "date": null,
+   "work_areas": [
+    "apprenticeships",
+    "qualifications"
+   ]
+  },
+  {
+   "id": "92383393f1",
+   "source": "apprentix",
+   "kind": "fact",
+   "title": "Only 3 schemes were built from scratch: France's Professionalisation contract, Greece's Post-secondary apprenticeship year and Italy's Type 3: higher education apprenticeship.",
+   "url": "https://apprentix.eu/pages/compare.html?q=q_origin#fact-scheme-origin-created-from-scratch",
+   "date": null,
+   "work_areas": [
+    "apprenticeships"
+   ]
+  },
+  {
+   "id": "fcf7633de2",
+   "source": "apprentix",
+   "kind": "fact",
+   "title": "The state helps pay apprentices in 6 of 34 schemes; employers pay them in 33.",
+   "url": "https://apprentix.eu/pages/compare.html?q=q_pay_funded_by#fact-scheme-pay-funded-by-state",
+   "date": null,
+   "work_areas": [
+    "apprenticeships",
+    "labour_market"
+   ]
+  },
+  {
+   "id": "fc41636e47",
+   "source": "apprentix",
+   "kind": "fact",
+   "title": "In 8 of 33 European apprenticeship schemes many apprentices are over 24 — apprenticeship is not only for school-leavers.",
+   "url": "https://apprentix.eu/pages/compare.html?q=q_typical_age#fact-scheme-typical-age-over-24",
+   "date": null,
+   "work_areas": [
+    "apprenticeships"
+   ]
+  },
+  {
+   "id": "d77289f9f8",
+   "source": "apprentix",
+   "kind": "fact",
+   "title": "Apprentices under contract in France grew 2.4-fold between December 2017 and December 2025, to 1,014,485.",
+   "url": "https://apprentix.eu/pages/indicators.html?id=fr-dares-apprentices-stock#fact-trend-fr-dares-apprentices-stock",
+   "date": null,
+   "work_areas": [
+    "apprenticeships"
+   ]
+  },
+  {
+   "id": "0a04cbe8b4",
+   "source": "apprentix",
+   "kind": "fact",
+   "title": "Apprentices under contract in France fell 3% in the year to December 2025, to 1,014,485 — the first annual fall since December 2015.",
+   "url": "https://apprentix.eu/pages/indicators.html?id=fr-dares-apprentices-stock#fact-turn-fr-dares-apprentices-stock",
+   "date": null,
+   "work_areas": [
+    "apprenticeships"
+   ]
+  },
+  {
+   "id": "6a21ff6960",
+   "source": "apprentix",
+   "kind": "portrait",
+   "title": "Post-secondary apprenticeship year (Greece)",
+   "url": "https://apprentix.eu/pages/countries/el.html#scheme-el-postsec",
+   "date": null,
+   "work_areas": [
+    "apprenticeships",
+    "qualifications",
+    "vet_policy"
+   ]
+  },
+  {
+   "id": "5682b75f70",
+   "source": "apprentix",
+   "kind": "portrait",
+   "title": "Apprenticeship contract (France)",
+   "url": "https://apprentix.eu/pages/countries/fr.html#scheme-fr-apprentissage",
+   "date": null,
+   "work_areas": [
+    "apprenticeships",
+    "labour_market",
+    "qualifications"
+   ]
+  },
+  {
+   "id": "0b69626650",
+   "source": "apprentix",
+   "kind": "portrait",
+   "title": "Professionalisation contract (France)",
+   "url": "https://apprentix.eu/pages/countries/fr.html#scheme-fr-pro",
+   "date": null,
+   "work_areas": [
+    "apprenticeships",
+    "qualifications"
+   ]
+  },
+  {
+   "id": "9411a45738",
+   "source": "apprentix",
+   "kind": "indicator",
+   "title": "Apprentices under contract in France (end of month)",
+   "url": "https://apprentix.eu/pages/indicators.html?id=fr-dares-apprentices-stock",
+   "date": null,
+   "work_areas": [
+    "apprenticeships",
+    "qualifications"
+   ]
+  },
+  {
+   "id": "c43f73ea73",
+   "source": "cedefop_rss",
+   "kind": "newsletter",
+   "title": "Cedefop newsletter no 167",
+   "url": "https://www.cedefop.europa.eu/en/newsletters/cedefop-newsletter-no-167",
+   "date": "2026-10-15",
+   "work_areas": [
+    "adult_learning",
+    "future_of_work",
+    "governance",
+    "labour_market",
+    "skills_intelligence",
+    "vet_policy"
+   ]
+  },
+  {
+   "id": "375e860e51",
+   "source": "openalex_journals",
+   "kind": "journal_paper",
+   "title": "Exploring the local enactment of internships in secondary TVET in Chile: interpretations, adjustments, barriers and enablers",
+   "url": "https://doi.org/10.1108/et-01-2026-0098",
+   "date": "2026-10-05",
+   "work_areas": [
+    "labour_market",
+    "vet_policy"
+   ]
+  },
+  {
+   "id": "888eb4b17e",
+   "source": "etf",
+   "kind": "news",
+   "title": "International cooperation holds the key to AI-age skills",
+   "url": "https://www.etf.europa.eu/en/news-and-events/news/international-cooperation-holds-key-ai-age-skills-and-pace-technological",
+   "date": "2026-10-02",
+   "work_areas": [
+    "adult_learning",
+    "apprenticeships",
+    "future_of_work",
+    "governance",
+    "labour_market",
+    "skills_intelligence",
+    "vet_policy"
+   ]
+  },
+  {
+   "id": "d161809335",
+   "source": "ela",
+   "kind": "news",
+   "title": "ELA supports Member States in tackling disguised job placement",
+   "url": "https://www.ela.europa.eu/en/news/ela-supports-member-states-tackling-disguised-job-placement-0",
+   "date": "2026-10-14",
+   "work_areas": [
+    "governance",
+    "labour_market"
+   ]
+  },
+  {
+   "id": "6516e27cb6",
+   "source": "eurostat_api",
+   "kind": "number",
+   "title": "Early leavers from education and training, EU-27",
+   "url": "https://ec.europa.eu/eurostat/databrowser/view/edat_lfse_14/default/table?lang=en",
+   "date": "2026-09-10",
+   "work_areas": []
+  },
+  {
+   "id": "db8e970cbd",
+   "source": "dhz",
+   "kind": "field",
+   "title": "Azubis erleben häufiger Gewalt als Studierende",
+   "url": "https://www.deutsche-handwerks-zeitung.de/azubis-erleben-haeufiger-gewalt-als-studierende-384972/",
+   "date": "2026-10-13",
+   "work_areas": [
+    "apprenticeships",
+    "vet_policy"
+   ]
+  },
+  {
+   "id": "bc68abdec5",
+   "source": "dhz",
+   "kind": "field",
+   "title": "Mindestausbildungsvergütung: So hoch ist sie 2027",
+   "url": "https://www.deutsche-handwerks-zeitung.de/mindestausbildungsverguetung-azubi-mindestlohn-2027-144611/",
+   "date": "2026-10-12",
+   "work_areas": [
+    "apprenticeships",
+    "skills_intelligence",
+    "vet_policy"
+   ]
+  },
+  {
+   "id": "0a9b1c5532",
+   "source": "magisnet",
+   "kind": "field",
+   "title": "ACADE alerta del impacto de las nuevas regulaciones sobre la FP y la Educación Infantil",
+   "url": "https://www.magisnet.com/2026/10/acade-alerta-del-impacto-de-las-nuevas-regulaciones-sobre-la-fp-y-la-educacion-infantil/",
+   "date": "2026-10-16",
+   "work_areas": [
+    "vet_policy"
+   ]
+  },
+  {
+   "id": "4e2bf1f07e",
+   "source": "esos",
+   "kind": "field",
+   "title": "Νεοσύστατο ΕΠΑΛ λειτουργεί με μοναδικό εκπαιδευτικό τον Διευθυντή του",
+   "url": "https://www.esos.gr/arthra/101886/neosystato-epal-leitoyrgei-me-monadiko-ekpaideytiko-ton-dieythynti-toy",
+   "date": "2026-10-17",
+   "work_areas": [
+    "teachers_trainers",
+    "vet_policy"
+   ]
+  },
+  {
+   "id": "777e23e95e",
+   "source": "esos",
+   "kind": "field",
+   "title": "Κατ’ εξαίρεση λειτουργία 257 τμημάτων του Μεταλυκειακού Έτους - Τάξης Μαθητείας",
+   "url": "https://www.esos.gr/arthra/101866/kat-exairesi-leitoyrgia-257-tmimaton-toy-metalykeiakoy-etoys-taxis-mathiteias",
+   "date": "2026-10-16",
+   "work_areas": [
+    "apprenticeships"
+   ]
+  }
+ ]
+}

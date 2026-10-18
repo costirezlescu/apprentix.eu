@@ -1,0 +1,304 @@
+{
+ "edition": "2026-10-20",
+ "fetched_at": "2026-10-17T18:55:43+00:00",
+ "sources_status": {
+  "cedefop_rss": "ok",
+  "cellar_recent": "ok",
+  "cellar_archive": "ok",
+  "openalex_fulltext": "ok",
+  "openalex_affiliation": "ok",
+  "openalex_journals": "ok",
+  "ec_presscorner": "ok",
+  "ec_presscorner_doc": "ok",
+  "council_press": "ok",
+  "ep_press": "refused: empty response (bot check)",
+  "eurlex_oj_l": "ok",
+  "euosha": "ok",
+  "euosha_page": "ok",
+  "etf": "ok",
+  "etf_page": "ok",
+  "ela": "ok",
+  "ela_page": "ok",
+  "eige": "ok",
+  "ilo": "ok",
+  "ilo_page": "ok",
+  "unevoc": "ok",
+  "eurostat_updates": "ok",
+  "eurostat_api": "ok",
+  "bbc_edu": "ok",
+  "rte": "ok",
+  "guardian_edu": "ok",
+  "irishtimes_edu": "ok",
+  "guardian_fe": "ok",
+  "handwerk_com": "ok",
+  "guardian_appr": "ok",
+  "spiegel_job": "ok",
+  "guardian_edu_page": "ok",
+  "zeit_arbeit": "ok",
+  "handwerk_com_page": "ok",
+  "guardian_fe_page": "ok",
+  "guardian_appr_page": "ok",
+  "tagesschau": "ok",
+  "orf": "ok",
+  "lemonde_emploi": "ok",
+  "derstandard": "ok",
+  "lemonde_edu": "ok",
+  "lemonde_edu_page": "ok",
+  "letudiant": "ok",
+  "cafepeda": "ok",
+  "elpais_edu": "ok",
+  "francetvinfo_edu": "ok",
+  "derstandard_page": "ok",
+  "dhz": "ok",
+  "eldiario_edu": "ok",
+  "corriere_scuola": "ok",
+  "francetvinfo_edu_page": "ok",
+  "dhz_page": "ok",
+  "cafepeda_page": "ok",
+  "magisnet": "ok",
+  "esos": "ok",
+  "nos": "ok",
+  "alfavita": "ok",
+  "orizzontescuola": "ok",
+  "yle_en": "ok",
+  "orizzontescuola_page": "failed: HTTP 403 for https://www.orizzontescuola.it/potenzia-le-tue-competenze-informatiche-da-esperto-di-cyberbullismo-alluso-di-workspace-di-google-dalle-competenze-base-al-cad-ed-esperto-dpo/",
+  "esos_page": "ok",
+  "yle_fi": "ok",
+  "magisnet_page": "ok",
+  "dr_dk": "ok",
+  "svt": "ok",
+  "thelocal_se": "ok",
+  "thelocal_fr": "ok",
+  "thelocal_de": "ok",
+  "thelocal_it": "ok",
+  "thelocal_at": "ok",
+  "notesfrompoland": "ok",
+  "hotnews_ro": "ok",
+  "obessu": "ok",
+  "edupedu_ro": "ok",
+  "nyt_edu": "ok",
+  "economist_intl": "ok",
+  "guardian_work": "ok",
+  "economist_fin": "ok",
+  "economist_biz": "ok",
+  "zeit_campus": "ok",
+  "ft_work": "ok",
+  "politico_eu": "ok",
+  "guardian_work_page": "ok",
+  "faz_beruf": "ok",
+  "ft_work_page": "failed: HTTP 403 for https://www.ft.com/content/3a3d3eb8-ff86-418e-9704-c1ff601718c4?syn-25a6b1a6=1",
+  "fastcompany_work": "ok",
+  "guardian_ai": "ok",
+  "nyt_tech": "ok",
+  "politico_eu_page": "ok",
+  "mittr": "ok",
+  "wired_ai": "ok",
+  "guardian_ai_page": "ok",
+  "verge_ai": "ok",
+  "bbc_tech": "ok",
+  "ars": "ok",
+  "fastcompany_work_page": "ok",
+  "bbc_tech_page": "ok",
+  "conv_eu": "ok",
+  "edsurge": "ok",
+  "bloomberg_tech": "ok",
+  "conv_global": "ok",
+  "conv_edu_uk": "ok",
+  "science_news": "ok",
+  "knowable": "ok",
+  "aeon": "ok",
+  "socialeurope": "ok",
+  "newscientist": "ok",
+  "voxeu": "ok",
+  "voxeu_page": "failed: HTTP 403 for https://cepr.org/voxeu/columns/cost-job-loss-carbon-intensive-sectors-evidence-germany",
+  "nature": "ok",
+  "socialeurope_page": "ok",
+  "apprentix": "ok",
+  "have_your_say": "ok",
+  "venues": "ok"
+ },
+ "items": [
+  {
+   "id": "1ac26a1e06",
+   "source": "apprentix",
+   "kind": "myth",
+   "title": "Apprenticeship is only for teenagers.",
+   "url": "https://apprentix.eu/pages/myths.html#teenagers",
+   "date": null,
+   "work_areas": [
+    "apprenticeships"
+   ]
+  },
+  {
+   "id": "0694aed38d",
+   "source": "apprentix",
+   "kind": "indicator",
+   "title": "Workers with skills matched to their duties (%)",
+   "url": "https://apprentix.eu/pages/indicators.html?id=cedefop-kivet-2120",
+   "date": null,
+   "work_areas": [
+    "governance",
+    "labour_market"
+   ]
+  },
+  {
+   "id": "c43f73ea73",
+   "source": "cedefop_rss",
+   "kind": "newsletter",
+   "title": "Cedefop newsletter no 167",
+   "url": "https://www.cedefop.europa.eu/en/newsletters/cedefop-newsletter-no-167",
+   "date": "2026-10-15",
+   "work_areas": [
+    "adult_learning",
+    "future_of_work",
+    "governance",
+    "labour_market",
+    "skills_intelligence",
+    "vet_policy"
+   ]
+  },
+  {
+   "id": "52b718c998",
+   "source": "openalex_fulltext",
+   "kind": "mentions_cedefop",
+   "title": "OVEREDUCATION IN GREEN INDUSTRIES: METHODOLOGICAL ASYMMETRIES AND EVIDENCE FROM CENTRAL AND EASTERN EUROPE",
+   "url": "https://doi.org/10.17818/diem/2026/si7",
+   "date": "2026-10-15",
+   "work_areas": [
+    "future_of_work",
+    "governance",
+    "labour_market",
+    "skills_intelligence"
+   ]
+  },
+  {
+   "id": "3afb931541",
+   "source": "openalex_fulltext",
+   "kind": "mentions_cedefop",
+   "title": "Training and productivity in micro-firms",
+   "url": "https://doi.org/10.1016/j.respol.2026.105637",
+   "date": "2026-10-13",
+   "work_areas": [
+    "adult_learning"
+   ]
+  },
+  {
+   "id": "70e1ef0b04",
+   "source": "openalex_journals",
+   "kind": "journal_paper",
+   "title": "Job demands and resources of vocational education teachers: the role of resilience and social support in well-being, job satisfaction, and burnout",
+   "url": "https://doi.org/10.1186/s40461-026-00215-w",
+   "date": "2026-10-15",
+   "work_areas": [
+    "teachers_trainers",
+    "vet_policy"
+   ]
+  },
+  {
+   "id": "e305fe64ff",
+   "source": "openalex_journals",
+   "kind": "journal_paper",
+   "title": "Workplace Social Support for Apprentices During the COVID-19 Pandemic – A Mixed-Methods Study on the Perceptions of Vocational Trainers and Apprentices in Switzerland",
+   "url": "https://doi.org/10.1007/s12186-026-09396-7",
+   "date": "2026-10-13",
+   "work_areas": [
+    "apprenticeships",
+    "teachers_trainers",
+    "vet_policy"
+   ]
+  },
+  {
+   "id": "8612a5359e",
+   "source": "openalex_journals",
+   "kind": "journal_paper",
+   "title": "Why the ‘capabilities approach’ is not helpful for researching vocational education and training",
+   "url": "https://doi.org/10.1080/13636820.2026.2745001",
+   "date": "2026-10-13",
+   "work_areas": [
+    "vet_policy"
+   ]
+  },
+  {
+   "id": "6a5bf13457",
+   "source": "openalex_journals",
+   "kind": "journal_paper",
+   "title": "Compatibility is not a contribution: a response to Leesa Wheelahan",
+   "url": "https://doi.org/10.1080/13636820.2026.2744998",
+   "date": "2026-10-13",
+   "work_areas": [
+    "labour_market",
+    "vet_policy"
+   ]
+  },
+  {
+   "id": "20c8546042",
+   "source": "openalex_journals",
+   "kind": "journal_paper",
+   "title": "The detrimental impact of multidimensional labour market mismatch –evidence from a Norwegian graduate survey",
+   "url": "https://doi.org/10.1080/13639080.2026.2737928",
+   "date": "2026-10-13",
+   "work_areas": [
+    "labour_market",
+    "skills_intelligence"
+   ]
+  },
+  {
+   "id": "af10c2fcf1",
+   "source": "openalex_journals",
+   "kind": "journal_paper",
+   "title": "Why the capabilities approach has some value in vocational education research",
+   "url": "https://doi.org/10.1080/13636820.2026.2744996",
+   "date": "2026-10-07",
+   "work_areas": [
+    "vet_policy"
+   ]
+  },
+  {
+   "id": "8ffbcedfc9",
+   "source": "openalex_journals",
+   "kind": "journal_paper",
+   "title": "Local development and differentiated governance of skill formation: a comparative study of vocational education in three Chinese counties",
+   "url": "https://doi.org/10.1080/13636820.2026.2741819",
+   "date": "2026-10-02",
+   "work_areas": [
+    "labour_market",
+    "vet_policy"
+   ]
+  },
+  {
+   "id": "6516e27cb6",
+   "source": "eurostat_api",
+   "kind": "number",
+   "title": "Early leavers from education and training, EU-27",
+   "url": "https://ec.europa.eu/eurostat/databrowser/view/edat_lfse_14/default/table?lang=en",
+   "date": "2026-09-10",
+   "work_areas": []
+  },
+  {
+   "id": "9ccc86464c",
+   "source": "socialeurope",
+   "kind": "ideas",
+   "title": "The EU Needs Dedicated Capacity to Track AI’s Impact on Jobs",
+   "url": "https://www.socialeurope.eu/the-eu-needs-dedicated-capacity-to-track-ais-impact-on-jobs",
+   "date": "2026-10-14",
+   "work_areas": [
+    "future_of_work",
+    "governance",
+    "labour_market",
+    "vet_policy"
+   ]
+  },
+  {
+   "id": "89016aba30",
+   "source": "voxeu",
+   "kind": "ideas",
+   "title": "The cost of job loss in carbon-intensive sectors: Evidence from Germany",
+   "url": "https://cepr.org/voxeu/columns/cost-job-loss-carbon-intensive-sectors-evidence-germany",
+   "date": "2026-10-16",
+   "work_areas": [
+    "future_of_work",
+    "labour_market"
+   ]
+  }
+ ]
+}
