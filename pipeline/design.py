@@ -34,6 +34,11 @@ DESIGNS = {
     },
 }
 
+# Early connections to Google Fonts, so the fonts arrive sooner after the first paint.
+PRECONNECT = ('<link rel="preconnect" href="https://fonts.googleapis.com">\n'
+              '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>')
+PRECONNECT_LINK = re.compile(r'<link rel="preconnect" href="https://fonts\.(?:googleapis|gstatic)\.com"(?: crossorigin)?>\n?')
+
 # Any main-site Google Fonts link (either design), the site stylesheet, and any design stylesheet.
 FONTS_LINK = re.compile(r'<link rel="stylesheet" href="https://fonts\.googleapis\.com/css2\?family=(?:Newsreader|Bricolage\+Grotesque)[^"]*">')
 SITE_LINK = re.compile(r'<link rel="stylesheet" href="(?P<root>[./]*)assets/css/site\.css(?:\?v=[0-9a-f]{8})?">')
@@ -48,7 +53,7 @@ def fonts_href() -> str:
 def head_links(root: str) -> str:
     """Fonts and stylesheets for a main-site page whose path to the site root is `root`."""
     d = DESIGNS[DESIGN]
-    links = [f'<link rel="stylesheet" href="{fonts_href()}">', f'<link rel="stylesheet" href="{root}assets/css/site.css">']
+    links = [PRECONNECT, f'<link rel="stylesheet" href="{fonts_href()}">', f'<link rel="stylesheet" href="{root}assets/css/site.css">']
     if d["css"]:
         links.append(f'<link rel="stylesheet" href="{root}{d["css"]}">')
     return "\n".join(links)
@@ -59,7 +64,8 @@ def restyle(text: str) -> str:
     m = SITE_LINK.search(text)
     if not m:
         return text
-    text = FONTS_LINK.sub(lambda _: f'<link rel="stylesheet" href="{fonts_href()}">', text)
+    text = PRECONNECT_LINK.sub("", text)
+    text = FONTS_LINK.sub(lambda _: f'{PRECONNECT}\n<link rel="stylesheet" href="{fonts_href()}">', text)
     text = DESIGN_LINK.sub("", text)
     css = DESIGNS[DESIGN]["css"]
     if css:

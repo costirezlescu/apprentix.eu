@@ -3,7 +3,7 @@
 
 import {
   loadDataset, esc, values, field, facets, facetValues, matches
-} from './data.js?v=a2666d07';
+} from './data.js?v=e79605e3';
 
 const $ = (id) => document.getElementById(id);
 const params = new URLSearchParams(location.search);
@@ -15,6 +15,7 @@ let META, RECORDS, ENTRY;
 const state = { q: '', filters: {}, compare: [], shown: PAGE, open: new Set() };
 
 init().catch(err => {
+  document.querySelector('main').dataset.ready = 'true';
   $('grid').innerHTML =
     `<p class="empty">Could not load this dataset.<br><small>${esc(err.message)}</small></p>`;
   console.error(err);
@@ -50,6 +51,7 @@ async function init() {
   renderGrid();
   renderTray();
   wire();
+  document.querySelector('main').dataset.ready = 'true';   // studio.css shows the results from here on
   if (params.get('open')) openDrawer(params.get('open'));
 }
 

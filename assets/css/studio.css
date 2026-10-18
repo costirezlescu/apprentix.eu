@@ -8,6 +8,21 @@
    tomato accent for heading highlights, eyebrows, links and actions; data in blue; pastel
    colour blocks; Bricolage Grotesque 800 headings; Instrument Sans text; 18/26 px radii. */
 
+/* Stand-ins shown until the Google fonts arrive: local Arial and Courier New scaled to the
+   web fonts' widths and line heights, so swapping in the real fonts barely moves anything.
+   Values computed from the font files (letter-frequency-weighted average width, OS/2 and hhea
+   metrics; Bricolage at wght 800 / opsz 40 for headings). */
+@font-face { font-family: "Instrument Sans Fallback"; src: local("Arial"), local("ArialMT"), local("Liberation Sans"), local("Arimo"); font-weight: 400 500;
+  size-adjust: 103.25%; ascent-override: 93.95%; descent-override: 24.21%; line-gap-override: 0%; }
+@font-face { font-family: "Instrument Sans Fallback"; src: local("Arial Bold"), local("Arial-BoldMT"), local("Liberation Sans Bold"), local("Arimo Bold"); font-weight: 600 700;
+  size-adjust: 98.89%; ascent-override: 98.09%; descent-override: 25.28%; line-gap-override: 0%; }
+@font-face { font-family: "Bricolage Grotesque Fallback"; src: local("Arial"), local("ArialMT"), local("Liberation Sans"), local("Arimo"); font-weight: 400 500;
+  size-adjust: 107.06%; ascent-override: 86.87%; descent-override: 25.22%; line-gap-override: 0%; }
+@font-face { font-family: "Bricolage Grotesque Fallback"; src: local("Arial Bold"), local("Arial-BoldMT"), local("Liberation Sans Bold"), local("Arimo Bold"); font-weight: 600 800;
+  size-adjust: 100.76%; ascent-override: 92.30%; descent-override: 26.80%; line-gap-override: 0%; }
+@font-face { font-family: "IBM Plex Mono Fallback"; src: local("Courier New"), local("CourierNewPSMT"), local("Liberation Mono"), local("Cousine"); font-weight: 400 500;
+  size-adjust: 99.98%; ascent-override: 102.52%; descent-override: 27.50%; line-gap-override: 0%; }
+
 :root {
   --ground: #f5f6fa;
   --surface: #ffffff;
@@ -44,9 +59,9 @@
   --on-fill: #17172b;
   --bar: var(--data);
 
-  --display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
-  --body: "Instrument Sans", "Segoe UI", system-ui, sans-serif;
-  --mono: "IBM Plex Mono", ui-monospace, Consolas, monospace;
+  --display: "Bricolage Grotesque", "Bricolage Grotesque Fallback", "Segoe UI", system-ui, sans-serif;
+  --body: "Instrument Sans", "Instrument Sans Fallback", "Segoe UI", system-ui, sans-serif;
+  --mono: "IBM Plex Mono", "IBM Plex Mono Fallback", ui-monospace, Consolas, monospace;
   --radius: 18px;
   --radius-lg: 26px;
 }
@@ -318,3 +333,17 @@ h1, h2, h3, h4 { font-family: var(--display); font-weight: 800; letter-spacing: 
 .st-js .st-step p { border-color: transparent; border-radius: var(--radius-lg); }
 .st-js .st-step.is-active p { background: var(--fill-2); color: var(--on-fill); border-color: transparent; }
 .st-js .st-step.is-active strong { color: var(--on-fill); }
+
+/* ---------- Layout stability ----------
+   Most pages build their content with JavaScript after the first paint. Until then the main area
+   reserves a screen's height, so the footer starts below the fold instead of being pushed down
+   (Cedefop Daily has no .site-foot, so this never reaches it). On one-column screens the "Did you
+   know?" card gets its usual height before its fact arrives. Insight charts reserve their height
+   in the page (render_insights.chart_height). */
+main:has(~ .site-foot) { min-height: 100vh; }
+@media (max-width: 900px) { .hero-dyk:empty { display: block; min-height: 250px; } }
+/* Rail counts filled in by script keep their line. */
+.rail .hint:empty::before { content: "\00a0"; }
+/* Explorer on one-column screens: the filters (150–1,300 px, by dataset) sit above the results, so
+   the results stay invisible until explore.js has drawn the filters and marked the page ready. */
+@media (max-width: 900px) { main.explore:has(#filters):not([data-ready]) > section { visibility: hidden; } }

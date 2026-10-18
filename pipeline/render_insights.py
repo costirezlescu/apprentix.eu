@@ -54,6 +54,23 @@ def table_for(chart: dict | None) -> str:
     return f"<table class=\"data\"><thead>{head}</thead><tbody>{body}</tbody></table>"
 
 
+def chart_height(chart: dict) -> int | None:
+    """The height assets/js/charts.js will draw the chart at, in px (a lower bound where a legend or
+    note wraps), so the card keeps its layout while the chart loads. None where it depends on width."""
+    t = chart.get("type")
+    if t == "bars":
+        return 8 + 26 * len(chart["rows"]) + 28
+    if t == "target-bars":   # side-by-side panels: heading + bars, EU row included
+        return max(28 + 8 + 26 * (len(p["rows"]) + 1) + 28 for p in chart["panels"])
+    if t == "paired-bars":   # legend above
+        return 30 + 6 + 40 * len(chart["rows"]) + 24
+    if t == "lines":         # legend above a 300 px chart
+        return 30 + 300
+    if t == "scatter":       # 300–420 px by width, note below
+        return 300
+    return None
+
+
 def card(i: dict, idx: int) -> str:
     aud = " ".join(i.get("audience", []))
     tags = "".join(f'<span class="in-tag">{e(dict(AUDIENCES).get(a, a))}</span>' for a in i.get("audience", []))
@@ -61,11 +78,13 @@ def card(i: dict, idx: int) -> str:
     caveats = "".join(f"<li>{e(c)}</li>" for c in i.get("caveats", []))
     sources = " · ".join(f'<a href="../{e(s["url"])}">{e(s["label"])}</a>' for s in i.get("sources", []))
     chart = i.get("chart")
+    h = chart_height(chart) if chart else None
+    reserve = f' style="min-height:{h}px"' if h else ""
     return f"""<article class="in-card" id="{e(i['id'])}" data-audience="{e(aud)}">
   <div class="in-tags">{tags}</div>
   <h2><a href="#{e(i['id'])}">{e(i['title'])}</a></h2>
   <p class="in-finding">{e(i['finding'])}</p>
-  {f'<div class="in-chart" data-chart="{idx}" role="img" aria-label="Chart: {e(i["title"])}"></div>' if chart else ''}
+  {f'<div class="in-chart" data-chart="{idx}"{reserve} role="img" aria-label="Chart: {e(i["title"])}"></div>' if chart else ''}
   {f'<ul class="in-detail">{details}</ul>' if details else ''}
   {f'<details class="in-data"><summary>Data behind this chart</summary><div class="in-table">{table_for(chart)}</div></details>' if chart else ''}
   <details class="in-method"><summary>Method and caveats</summary>
