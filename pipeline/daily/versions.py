@@ -4,7 +4,9 @@
 
 A version is what a push to main published: each commit that changed
 daily/<date>/index.html. Commits that changed nothing a reader sees (only the
-version line or a stylesheet's cache-busting hash) are not new versions.
+version line, a stylesheet's cache-busting hash, or which stylesheets and fonts the
+page links, as when the main site's fonts were swapped and swapped back) are not new
+versions.
 
 For version n of an edition this writes daily/<date>/v<n>/:
   index.html     the page as published, with a banner naming the version and
@@ -42,8 +44,9 @@ def show(commit: str, path: str) -> str | None:
 
 
 def normalise(page: str) -> str:
-    """What a reader sees: drop the version line and cache-busting hashes."""
+    """What a reader sees: drop the version line, stylesheet links and cache-busting hashes."""
     page = re.sub(r'<span class="dm-version">.*?</span>', "", page, flags=re.S)
+    page = re.sub(r'<link rel="stylesheet"[^>]*>', "", page)
     page = re.sub(r"\?v=[0-9a-f]{8}", "", page)
     return re.sub(r">\s+<", "><", re.sub(r"\s+", " ", page)).strip()
 
@@ -83,13 +86,13 @@ def when(iso: str) -> str:
 
 
 def banner(date: str, v: dict, total: int, long_date: str) -> str:
-    style = ("background:#fbf0df;color:#14181b;border-bottom:2px solid #a15c11;padding:10px 20px;"
-             "font:500 14px/1.5 'Public Sans',system-ui,sans-serif;text-align:center")
+    style = ("background:#eef0f5;color:#1c2233;border-bottom:1px solid #3c4f8c;padding:10px 20px;"
+             "font:500 14px/1.5 'Libre Franklin','Public Sans',system-ui,sans-serif;text-align:center")
     return (f'<div class="dc-archived" role="note" style="{style}">'
             f'<strong>Archived version {v["n"]} of {total}</strong> of Cedefop Daily for {html.escape(long_date)}, '
             f'published {html.escape(when(v["time"]))}. '
-            f'<a href="/daily/{date}/" style="color:#0a4a44">Current version</a> · '
-            f'<a href="/daily/archive.html#ed-{date}" style="color:#0a4a44">All versions</a></div>')
+            f'<a href="/daily/{date}/" style="color:#3c4f8c">Current version</a> · '
+            f'<a href="/daily/archive.html#ed-{date}" style="color:#3c4f8c">All versions</a></div>')
 
 
 def snapshot(date: str, v: dict, total: int, long_date: str) -> None:

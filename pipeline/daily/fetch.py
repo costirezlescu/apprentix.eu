@@ -2,6 +2,7 @@
 
   python -m pipeline.daily.fetch 2026-10-19          (edition date; default: next working day)
   python -m pipeline.daily.fetch 2026-10-19 --retag  (re-apply topics.json to the existing pool)
+  python -m pipeline.daily.fetch 2026-10-19 --weather  (only the forecast → daily/weather/<date>.json)
 
 The pool is everything the writing step may use. Every URL an edition prints must
 come from it (pipeline/daily/check.py enforces this), so links are never typed by hand.
@@ -761,11 +762,38 @@ def retag(edition: dt.date) -> int:
     return 0
 
 
+# The forecast for the paper's top row: Open-Meteo (open data, CC BY 4.0, no key).
+CITIES = [("Thessaloniki", 40.64, 22.94, "Europe/Athens"), ("Brussels", 50.85, 4.35, "Europe/Brussels")]
+WMO = [((0,), "sunny"), ((1,), "mostly sunny"), ((2,), "partly cloudy"), ((3,), "cloudy"), ((45, 48), "fog"),
+       (range(51, 58), "drizzle"), (range(61, 68), "rain"), (range(71, 78), "snow"), (range(80, 83), "showers"),
+       ((85, 86), "snow showers"), (range(95, 100), "thunderstorms")]
+
+
+def weather(edition: dt.date) -> int:
+    """Forecast for the edition's week, written to daily/weather/<edition>.json (committed)."""
+    days = {}
+    for city, lat, lon, tz in CITIES:
+        d = json.loads(fetch("https://api.open-meteo.com/v1/forecast", params={
+            "latitude": lat, "longitude": lon, "timezone": tz, "start_date": edition.isoformat(),
+            "end_date": (edition + dt.timedelta(days=4)).isoformat(),
+            "daily": "weather_code,temperature_2m_max,temperature_2m_min"}))["daily"]
+        for date, code, hi, lo in zip(d["time"], d["weather_code"], d["temperature_2m_max"], d["temperature_2m_min"]):
+            sky = next((w for codes, w in WMO if code in codes), "")
+            days.setdefault(date, []).append({"city": city, "max": round(hi), "min": round(lo), "sky": sky})
+    path = ROOT / "daily" / "weather" / f"{edition}.json"
+    write_json(path, {"source": "Open-Meteo", "url": "https://open-meteo.com/", "fetched_at":
+                      dt.datetime.now(dt.timezone.utc).replace(microsecond=0).isoformat(), "days": days})
+    print(f"Wrote {path.relative_to(ROOT)}: forecast for {len(days)} days")
+    return 0
+
+
 def main(argv: list[str]) -> int:
     args = [a for a in argv if not a.startswith("-")]
     edition = dt.date.fromisoformat(args[0]) if args else next_working_day(dt.date.today())
     if "--retag" in argv:
         return retag(edition)
+    if "--weather" in argv:
+        return weather(edition)
     end = min(edition, dt.date.today())
     start = end - dt.timedelta(days=WINDOW_DAYS)
     print(f"Cedefop Daily pool for {edition} (news from {start} to {end})")
@@ -810,6 +838,10 @@ def main(argv: list[str]) -> int:
     write_json(path, out)
     print(f"Wrote {path.relative_to(ROOT)}: {len(pool)} items; "
           f"{sum(1 for i in pool if i['work_areas'])} tagged with a work area")
+    try:
+        weather(edition)
+    except Exception as e:
+        print(f"- Weather: failed ({e!r})")
     return 0
 
 

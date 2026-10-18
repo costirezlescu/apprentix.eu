@@ -69,18 +69,6 @@ SOURCE_NAME = {
     "unevoc": "UNESCO-UNEVOC", "eurostat_api": "Eurostat", "eurostat_updates": "Eurostat", "apprentix": "Apprentix",
     "openalex_fulltext": "OpenAlex", "openalex_journals": "OpenAlex", "openalex_affiliation": "OpenAlex",
 }
-SOURCE_STATUS_LABEL = {
-    "cedefop_rss": "Cedefop RSS feed", "cellar_recent": "EU Publications Office catalogue (recent)",
-    "cellar_archive": "EU Publications Office catalogue (archive)", "openalex_fulltext": "OpenAlex: full text",
-    "openalex_affiliation": "OpenAlex: author affiliations", "openalex_journals": "OpenAlex: VET journals",
-    "ec_presscorner": "Commission press corner", "ec_presscorner_doc": "Commission press corner (full texts)",
-    "council_press": "Council press releases (feed)", "ep_press": "European Parliament press releases",
-    "eurlex_oj_l": "Official Journal (L series)", "euosha": "EU-OSHA feed", "euosha_page": "EU-OSHA articles",
-    "etf": "ETF news", "etf_page": "ETF articles", "ela": "ELA news", "ela_page": "ELA articles",
-    "eige": "EIGE news", "eige_page": "EIGE articles", "ilo": "ILO news", "ilo_page": "ILO articles",
-    "unevoc": "UNESCO-UNEVOC news", "eurostat_updates": "Eurostat dataset updates",
-    "eurostat_api": "Eurostat data API", "apprentix": "Apprentix published data",
-}
 NOT_READ = [
     ("Cedefop website pages", "refuse scripts (bot check); the RSS feed is used instead"),
     ("Council of the EU pages", "refuse scripts; only the press-release feed is used"),
@@ -507,7 +495,19 @@ def css_version() -> str:
     return hashlib.sha256((DAILY / "assets" / "daily.css").read_bytes()).hexdigest()[:8]
 
 
-def head(title: str, desc: str, canonical: str) -> str:
+def topbar(wx: dict | None = None) -> str:
+    """The paper's own top row: the day's forecast for both offices, and the paper's pages."""
+    left = ""
+    if wx and wx.get("today"):
+        left = " · ".join(f'{e(c["city"])} <strong>{c["max"]}°</strong> {e(c["sky"])}' for c in wx["today"]) \
+            + f' <a class="dt-src" href="{e(wx["url"])}">forecast: {e(wx["source"])}</a>'
+    return f"""<div class="dt"><div class="wrap dt-inner">
+  <p class="dt-wx">{left}</p>
+  <nav class="dt-nav" aria-label="Cedefop Daily"><a href="/daily/">Today’s paper</a><a href="/daily/archive.html">Editions</a><a href="/daily/about.html">How it’s made</a></nav>
+</div></div>"""
+
+
+def head(title: str, desc: str, canonical: str, wx: dict | None = None) -> str:
     return f"""<!doctype html>
 <html lang="en-GB">
 <head>
@@ -517,18 +517,13 @@ def head(title: str, desc: str, canonical: str) -> str:
 <meta name="description" content="{e(desc)}">
 <meta name="robots" content="noindex, nofollow">
 <link rel="canonical" href="{e(canonical)}">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&amp;family=Public+Sans:wght@400;500;700&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&amp;family=Libre+Franklin:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap">
 <link rel="stylesheet" href="/assets/css/site.css">
 <link rel="stylesheet" href="/daily/assets/daily.css?v={css_version()}">
 </head>
 <body data-root="/">
 <a class="skip" href="#main">Skip to content</a>
-<div class="indep"><div class="wrap"><span class="tag">Independent project</span>
-<p>Not affiliated with, or endorsed by, any European institution or agency. Built on publicly available data.</p></div></div>
-<header class="site-head"><div class="wrap head-inner">
-  <a class="brand" href="/">Apprenti<span class="x">x</span><span class="eu">.eu</span></a>
-  <nav class="site-nav"><a href="/">Datasets</a><a href="/pages/indicators.html">Indicators</a><a href="/pages/insights.html">Insights</a><a href="/pages/countries/">Countries</a><a href="/pages/about.html">About</a></nav>
-</div></header>"""
+{topbar(wx)}"""
 
 
 def masthead(ed: dict, nav: list[tuple[str, str, str]]) -> str:
@@ -547,35 +542,6 @@ def masthead(ed: dict, nav: list[tuple[str, str, str]]) -> str:
 
 
 PRESS_FEEDS = {f["id"]: f for f in json.loads((HERE / "press.json").read_text("utf-8"))["feeds"]}
-
-
-def footer(pool: dict) -> str:
-    is_press = lambda k: k in PRESS_FEEDS or k.removesuffix("_page") in PRESS_FEEDS
-    ok = [SOURCE_STATUS_LABEL.get(k, k) for k, v in pool["sources"].items() if v == "ok" and not is_press(k)]
-    feeds_ok = [k for k, v in pool["sources"].items() if k in PRESS_FEEDS and v == "ok"]
-    outlets = {PRESS_FEEDS[k]["name"] for k in feeds_ok}
-    countries = {PRESS_FEEDS[k]["country"] for k in feeds_ok} - {"EU", "INT"}
-    ok.append(f"press and field feeds from {len(outlets)} outlets in {len(countries)} countries")
-    bad = [(SOURCE_STATUS_LABEL.get(k, k), v.split(":", 1)[1].strip() if ":" in v else v)
-           for k, v in pool["sources"].items() if v != "ok" and not is_press(k)]
-    paywalled = sorted({PRESS_FEEDS[k.removesuffix("_page")]["name"] for k, v in pool["sources"].items()
-                        if k.endswith("_page") and is_press(k) and v != "ok"})
-    if paywalled:
-        bad.append(("Article pages of " + ", ".join(paywalled), "refuse scripts; only the feed’s summary is used"))
-    not_read = "".join(f"<li>{e(n)}: {e(w)}</li>" for n, w in bad + NOT_READ)
-    return f"""<footer class="dc-foot">
-  <div class="wrap">
-    <div class="dc-foot-grid">
-      <div><h2>About this paper</h2>
-        <p><strong>Cedefop Daily</strong> is a morning paper on what Cedefop works on: vocational education and training, apprenticeships, skills, qualifications, adult learning and the future of work. It is an independent publication on Apprentix and is not published or endorsed by Cedefop.</p>
-        <p>Compiled from the linked public sources. Every story links to its source; figures are copied, not recalculated, and the line under each story is generated from the source data. <a href="/daily/about.html">How this paper is made</a> · <a href="/daily/archive.html">Editions</a></p>
-        <p>Corrections: none. To report an error, <a href="https://github.com/costirezlescu/apprentix.eu/issues">open an issue</a>.</p></div>
-      <div><h2>Read for this edition</h2><p>{e(' · '.join(ok))}.</p>
-        <h2>Not read</h2><ul>{not_read}</ul>
-        <p>No tracking. The number’s guess is kept only in your browser.</p></div>
-    </div>
-  </div>
-</footer>"""
 
 
 LIVES_LABEL = "Lives"
@@ -674,13 +640,17 @@ def render_edition(ed: dict, pool: dict) -> str:
     diary_label = ed["diary"]["title"]
     if ed["layout"] == "shape":
         nav = [("know", know_title(ed), "cedefop"), ("question", "Today’s question", "data"),
-               ("week", diary_label, "policy"), ("more", "More today", "debate")]
+               ("week", diary_label, "policy")] + ([("more", "More today", "debate")] if ed.get("more") else [])
     else:
         nav = [(x["id"], x["title"], x["pillar"]) for x in ed["sections"]] \
             + [("question", "Data", "data"), ("week", diary_label, "policy")]
     if ed.get("lives"):
         nav.insert(0, ("lives", "Lives", "lives"))
-    out = [head(title, desc, canonical)]
+    wx_file = DAILY / "weather" / f"{ed['pool']}.json"
+    wx = json.loads(wx_file.read_text("utf-8")) if wx_file.exists() else {}
+    if wx:
+        wx["today"] = wx["days"].get(ed["date"])
+    out = [head(title, desc, canonical, wx)]
     if ed.get("preview"):
         out.append(preview_banner(ed))
     out += [masthead(ed, nav), '<main id="main" class="wrap dc-main">', strip(ed["strip"], pool["items"])]
@@ -704,7 +674,7 @@ def render_edition(ed: dict, pool: dict) -> str:
 </section>""")
         out.append(question2(ed["question"], P).replace("Today’s question <span", "Data <span"))
         out.append(diary2(ed["diary"], P, ed["date"]))
-    out += ["</main>", footer(pool), SCRIPT, "</body>\n</html>\n"]
+    out += ["</main>", SCRIPT, "</body>\n</html>\n"]
     page = stamp_html("\n".join(out))
     if ed.get("preview"):
         return page.replace("%%VERSION%%", f"Preview No. {ed['number']}")
@@ -748,8 +718,10 @@ ABOUT = """
 <li><strong>Tag.</strong> Each item is tagged with Cedefop work areas by keyword, in several languages.</li>
 <li><strong>Write.</strong> Stories are drafted from the fetched text only, with help from software that includes a language model. Links, dates and the line under each story come from the data, not from the writing step.</li>
 <li><strong>Check.</strong> Before publication, every link must come from the fetched sources, every number must appear in the story’s sources, and every quotation must be verbatim. Banned words, sensitive topics (which hold the edition for a person to decide), a person in more than one headline and past events in the diary are flagged.</li>
-<li><strong>Publish.</strong> The checked edition is rendered as a static page.</li>
+<li><strong>Publish.</strong> The checked edition is rendered as a static page. Each edition’s sources are listed in its <code>sources.json</code>.</li>
 </ol>
+<p>Not read: {not_read}.</p>
+<p>The forecast in the top row is from <a href="https://open-meteo.com/">Open-Meteo</a> (CC BY 4.0), fetched with the edition.</p>
 
 <h2>The press and the field</h2>
 <p>To see how things are on the ground, not only from the institutions, the paper reads national and local newspapers, trade press, teachers’, learners’ and employers’ outlets, international newspapers and magazines, popular science and economics columns. An article is kept only if it touches education, training and skills, or AI together with work and jobs, and only if it is from the last eight days.</p>
@@ -777,7 +749,7 @@ def render_about() -> str:
     outlets = "<ul>" + "".join(f"<li><strong>{e(c)}</strong>: {e(', '.join(sorted(n)))}</li>" for c, n in sorted(by.items())) + "</ul>"
     return stamp_html("\n".join([head("How Cedefop Daily is made", "How Cedefop Daily is compiled, checked and published.",
                                       f"{SITE}/daily/about.html"),
-                                 '<main id="main" class="wrap dc-main dc-page">', ABOUT.replace("{outlets}", outlets),
+                                 '<main id="main" class="wrap dc-main dc-page">', ABOUT.replace("{outlets}", outlets).replace("{not_read}", e("; ".join(f"{n} ({w})" for n, w in NOT_READ))),
                                  '<p><a href="/daily/">Back to today’s paper</a></p></main>', "</body>\n</html>\n"]))
 
 

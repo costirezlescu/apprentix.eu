@@ -95,13 +95,15 @@ The first version read mostly from the top: institutions, agencies and Cedefop i
 - **Lives runs only on Fridays,** at length, and opens the paper. The bank's other profiles are marked `reserve` and wait for later Fridays.
 - **No. 1 reissued as version 4.** Versions 1–3 stay archived.
 
-## Visual design (leaning, 18 October 2026)
+## Visual design (decided 18 October 2026)
 
-- **Most likely: version 3, "Broadsheet · Cedefop blue".** Not final and not implemented; the live Daily keeps its current look until the user confirms.
-- **What version 3 is:** the current layout unchanged, restyled as a broadsheet. Centred Playfair Display masthead with a double rule, small-caps dateline and section bar, hairline columns instead of boxed cards, a centred "SIX TO KNOW" heading. Text is in Libre Franklin. Colours are a muted Cedefop palette: navy-grey ink `#1c2233`, Cedefop blue `#3c4f8c` for section titles, numbers and the paper's own stories, and no yellow.
-- **Section labels** keep today's chips: white monospace capitals on the section colour, with the detail in the same font and colour after them.
-- **The mock-up and the full notes are kept locally,** not in git: `cedefop-daily/reference/design/` (`cedefop-daily-designs.html`, open it and press 3; `DESIGN_DECISION.md`). The published comparison is https://claude.ai/artifact/DgVNCtByE9hT6RvqJv6RGk.
-- **The Daily stays separate from any redesign of the main Apprentix site.**
+- **Version 3, "Broadsheet · Cedefop blue",** is the Daily's look: the current layout restyled as a broadsheet. Centred Playfair Display masthead with a double rule, small-caps dateline and section bar, hairline columns instead of boxed cards, a centred "SIX TO KNOW" heading. Text is in Libre Franklin and section labels in IBM Plex Mono. Colours are a muted Cedefop palette: navy-grey ink `#1c2233`, Cedefop blue `#3c4f8c` for section titles, numbers and the paper's own stories, and no yellow.
+- **Section labels** keep the chips: white monospace capitals on the section colour, with the detail in the same font and colour after them.
+- **No Apprentix chrome.** The Daily drops the "Independent project" line and the Apprentix header and menu, and the footer. Its first row is the paper's own: the day's forecast for Thessaloniki and Brussels (Open-Meteo, CC BY 4.0, fetched with the edition into `daily/weather/<date>.json`) and links to Today's paper, Editions and How it's made. The sources that could not be read are now listed on the about page; each edition's sources stay in its `sources.json`.
+- **Endorsement.** The about page still says the paper is not published or endorsed by Cedefop. Change it when the endorsement is formal.
+- **The styles live in `daily/assets/daily.css`,** which overrides every token from `assets/css/site.css`, so a redesign of the main Apprentix site leaves the Daily unchanged. Archived versions keep the stylesheets of their day.
+- **Versions ignore stylesheet links.** A commit that only changes which stylesheets or fonts a page links is not a new version, so the main site's font swap and revert on 18 October did not create versions of No. 1. The redesign is No. 1 version 5.
+- The mock-up and full notes are kept locally, not in git: `cedefop-daily/reference/design/`.
 
 ## How it works
 

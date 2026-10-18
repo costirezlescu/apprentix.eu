@@ -1,0 +1,77 @@
+{
+  "source": "Open-Meteo",
+  "url": "https://open-meteo.com/",
+  "fetched_at": "2026-10-18T06:47:53+00:00",
+  "days": {
+    "2026-10-19": [
+      {
+        "city": "Thessaloniki",
+        "max": 24,
+        "min": 11,
+        "sky": "mostly sunny"
+      },
+      {
+        "city": "Brussels",
+        "max": 16,
+        "min": 10,
+        "sky": "cloudy"
+      }
+    ],
+    "2026-10-20": [
+      {
+        "city": "Thessaloniki",
+        "max": 22,
+        "min": 11,
+        "sky": "mostly sunny"
+      },
+      {
+        "city": "Brussels",
+        "max": 15,
+        "min": 7,
+        "sky": "drizzle"
+      }
+    ],
+    "2026-10-21": [
+      {
+        "city": "Thessaloniki",
+        "max": 21,
+        "min": 13,
+        "sky": "cloudy"
+      },
+      {
+        "city": "Brussels",
+        "max": 14,
+        "min": 8,
+        "sky": "drizzle"
+      }
+    ],
+    "2026-10-22": [
+      {
+        "city": "Thessaloniki",
+        "max": 20,
+        "min": 15,
+        "sky": "rain"
+      },
+      {
+        "city": "Brussels",
+        "max": 13,
+        "min": 7,
+        "sky": "showers"
+      }
+    ],
+    "2026-10-23": [
+      {
+        "city": "Thessaloniki",
+        "max": 23,
+        "min": 16,
+        "sky": "fog"
+      },
+      {
+        "city": "Brussels",
+        "max": 12,
+        "min": 6,
+        "sky": "showers"
+      }
+    ]
+  }
+}

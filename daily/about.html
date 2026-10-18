@@ -7,18 +7,16 @@
 <meta name="description" content="How Cedefop Daily is compiled, checked and published.">
 <meta name="robots" content="noindex, nofollow">
 <link rel="canonical" href="https://apprentix.eu/daily/about.html">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&amp;family=Public+Sans:wght@400;500;700&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap">
-<link rel="stylesheet" href="/assets/css/site.css?v=19ecfa41">
-<link rel="stylesheet" href="/daily/assets/daily.css?v=00d5bc29">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&amp;family=Libre+Franklin:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="/assets/css/site.css?v=1c53ec88">
+<link rel="stylesheet" href="/daily/assets/daily.css?v=21d6a71b">
 </head>
 <body data-root="/">
 <a class="skip" href="#main">Skip to content</a>
-<div class="indep"><div class="wrap"><span class="tag">Independent project</span>
-<p>Not affiliated with, or endorsed by, any European institution or agency. Built on publicly available data.</p></div></div>
-<header class="site-head"><div class="wrap head-inner">
-  <a class="brand" href="/">Apprenti<span class="x">x</span><span class="eu">.eu</span></a>
-  <nav class="site-nav"><a href="/">Datasets</a><a href="/pages/indicators.html">Indicators</a><a href="/pages/insights.html">Insights</a><a href="/pages/countries/">Countries</a><a href="/pages/about.html">About</a></nav>
-</div></header>
+<div class="dt"><div class="wrap dt-inner">
+  <p class="dt-wx"></p>
+  <nav class="dt-nav" aria-label="Cedefop Daily"><a href="/daily/">Today’s paper</a><a href="/daily/archive.html">Editions</a><a href="/daily/about.html">How it’s made</a></nav>
+</div></div>
 <main id="main" class="wrap dc-main dc-page">
 
 <h1 class="dm-title">How this paper is made</h1>
@@ -39,8 +37,10 @@
 <li><strong>Tag.</strong> Each item is tagged with Cedefop work areas by keyword, in several languages.</li>
 <li><strong>Write.</strong> Stories are drafted from the fetched text only, with help from software that includes a language model. Links, dates and the line under each story come from the data, not from the writing step.</li>
 <li><strong>Check.</strong> Before publication, every link must come from the fetched sources, every number must appear in the story’s sources, and every quotation must be verbatim. Banned words, sensitive topics (which hold the edition for a person to decide), a person in more than one headline and past events in the diary are flagged.</li>
-<li><strong>Publish.</strong> The checked edition is rendered as a static page.</li>
+<li><strong>Publish.</strong> The checked edition is rendered as a static page. Each edition’s sources are listed in its <code>sources.json</code>.</li>
 </ol>
+<p>Not read: Cedefop website pages (refuse scripts (bot check); the RSS feed is used instead); Council of the EU pages (refuse scripts; only the press-release feed is used); Eurofound news (rate-limited (429)); OECD (refuses scripts (403)); Media monitoring (not connected: no access yet).</p>
+<p>The forecast in the top row is from <a href="https://open-meteo.com/">Open-Meteo</a> (CC BY 4.0), fetched with the edition.</p>
 
 <h2>The press and the field</h2>
 <p>To see how things are on the ground, not only from the institutions, the paper reads national and local newspapers, trade press, teachers’, learners’ and employers’ outlets, international newspapers and magazines, popular science and economics columns. An article is kept only if it touches education, training and skills, or AI together with work and jobs, and only if it is from the last eight days.</p>
