@@ -105,6 +105,7 @@ The first version read mostly from the top: institutions, agencies and Cedefop i
 - **The styles live in `daily/assets/daily.css`,** which overrides every token from `assets/css/site.css`, so a redesign of the main Apprentix site leaves the Daily unchanged. Archived versions keep the stylesheets of their day.
 - **Versions ignore stylesheet links.** A commit that only changes which stylesheets or fonts a page links is not a new version, so the main site's font swap and revert on 18 October did not create versions of No. 1. The redesign is No. 1 version 5.
 - The mock-up and full notes are kept locally, not in git: `cedefop-daily/reference/design/`.
+- **The earlier design is kept as a theme.** Design 1 of the comparison, the Apprentix look the Daily had until 18 October, lives on as `daily/assets/daily-classic.css`. It is self-contained: Apprentix's tokens as of 17 October are frozen in it, so a redesign of the main site cannot change it. To return to it, set `THEME = "classic"` in `pipeline/daily/render.py` and re-render; every check passes in either theme. `/daily/lab/classic/<date>/` always shows the latest edition in it, and the lab page links there. The new top row replaces Apprentix's header and footer in both themes.
 
 ## How it works
 

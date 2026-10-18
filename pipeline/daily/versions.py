@@ -11,7 +11,7 @@ versions.
 For version n of an edition this writes daily/<date>/v<n>/:
   index.html     the page as published, with a banner naming the version and
                  linking to the current one; its stylesheets point to local copies
-  daily.css      daily/assets/daily.css as it was at that commit
+  daily.css      the Daily's stylesheet (daily/assets/daily.css, or the theme's) as it was at that commit
   site.css       assets/css/site.css as it was at that commit
   edition.json   the edition as written
   sources.json   the items it used (when the commit had one)
@@ -98,14 +98,15 @@ def banner(date: str, v: dict, total: int, long_date: str) -> str:
 def snapshot(date: str, v: dict, total: int, long_date: str) -> None:
     c = v["commit"]
     page = show(c, f"daily/{date}/index.html")
-    page = re.sub(r'href="/daily/assets/daily\.css(\?v=[0-9a-f]{8})?"', 'href="daily.css"', page)
+    css = (re.search(r'href="/daily/assets/(daily[\w-]*\.css)', page) or [None, "daily.css"])[1]
+    page = re.sub(r'href="/daily/assets/daily[\w-]*\.css(\?v=[0-9a-f]{8})?"', 'href="daily.css"', page)
     page = re.sub(r'href="/assets/css/site\.css(\?v=[0-9a-f]{8})?"', 'href="site.css"', page)
     page = re.sub(r"(<body[^>]*>)", lambda m: m.group(1) + "\n" + banner(date, v, total, long_date), page, count=1)
     page = re.sub(r'<link rel="canonical" href="[^"]*">', f'<link rel="canonical" href="https://apprentix.eu/daily/{date}/">', page)
     out = DAILY / date / f"v{v['n']}"
     out.mkdir(parents=True, exist_ok=True)
     files = {"index.html": page,
-             "daily.css": show(c, "daily/assets/daily.css"),
+             "daily.css": show(c, f"daily/assets/{css}"),
              "site.css": show(c, "assets/css/site.css"),
              "edition.json": show(c, f"daily/editions/{date}.json"),
              "sources.json": show(c, f"daily/{date}/sources.json")}

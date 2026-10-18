@@ -491,8 +491,22 @@ SCRIPT = """<script>
 </script>"""
 
 
-def css_version() -> str:
-    return hashlib.sha256((DAILY / "assets" / "daily.css").read_bytes()).hexdigest()[:8]
+# The paper's look. "broadsheet" (Broadsheet · Cedefop blue) since 18 October 2026; "classic" is
+# design 1 of the design comparison, the Apprentix look the Daily had until then. To return to it,
+# set THEME = "classic" and re-render. /daily/lab/classic/ always previews the latest edition in it.
+THEME = "broadsheet"
+THEMES = {
+    "broadsheet": {"css": "daily.css", "name": "Broadsheet · Cedefop blue",
+                   "fonts": "family=Gelasio:ital,wght@0,700;1,700&amp;family=Libre+Franklin:wght@400;500;700"
+                            "&amp;family=IBM+Plex+Mono:wght@400;500"},
+    "classic": {"css": "daily-classic.css", "name": "Classic (design 1)",
+                "fonts": "family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&amp;family=Public+Sans:wght@400;500;700"
+                         "&amp;family=IBM+Plex+Mono:wght@400;500"},
+}
+
+
+def css_version(theme: str) -> str:
+    return hashlib.sha256((DAILY / "assets" / THEMES[theme]["css"]).read_bytes()).hexdigest()[:8]
 
 
 def topbar(wx: dict | None = None) -> str:
@@ -507,7 +521,8 @@ def topbar(wx: dict | None = None) -> str:
 </div></div>"""
 
 
-def head(title: str, desc: str, canonical: str, wx: dict | None = None) -> str:
+def head(title: str, desc: str, canonical: str, wx: dict | None = None, theme: str | None = None) -> str:
+    t = THEMES[theme or THEME]
     return f"""<!doctype html>
 <html lang="en-GB">
 <head>
@@ -517,9 +532,9 @@ def head(title: str, desc: str, canonical: str, wx: dict | None = None) -> str:
 <meta name="description" content="{e(desc)}">
 <meta name="robots" content="noindex, nofollow">
 <link rel="canonical" href="{e(canonical)}">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,700;1,700&amp;family=Libre+Franklin:wght@400;500;700&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?{t['fonts']}&amp;display=swap">
 <link rel="stylesheet" href="/assets/css/site.css">
-<link rel="stylesheet" href="/daily/assets/daily.css?v={css_version()}">
+<link rel="stylesheet" href="/daily/assets/{t['css']}?v={css_version(theme or THEME)}">
 </head>
 <body data-root="/">
 <a class="skip" href="#main">Skip to content</a>
@@ -620,6 +635,10 @@ def diary2(d: dict, P: dict, date: str) -> str:
 
 
 def preview_banner(ed: dict) -> str:
+    if ed.get("theme_preview"):
+        return (f'<div class="dc-preview" role="note"><strong>Preview · {e(THEMES[ed["theme_preview"]]["name"])}</strong>: '
+                f'this edition in the Daily’s earlier design, kept so the paper can return to it. '
+                f'<a href="/daily/">The paper as published</a> · <a href="/daily/lab/">Design lab</a></div>')
     v = f"{'Fixed shape' if ed['layout'] == 'shape' else 'Sections, capped'}, {'with weekday rhythm' if ed['rhythm'] else 'no weekday rhythm'}"
     return (f'<div class="dc-preview" role="note"><strong>Preview · design comparison</strong> ({e(v)}). '
             f'Built on 17 October 2026 from the sources available then; a real edition adds that day’s news. '
@@ -630,7 +649,7 @@ def know_title(ed: dict) -> str:
     return ["One", "Two", "Three", "Four", "Five", "Six", "Seven"][len(ed["know"]) - 1] + " to know"
 
 
-def render_edition(ed: dict, pool: dict) -> str:
+def render_edition(ed: dict, pool: dict, theme: str | None = None) -> str:
     P = {i["id"]: i for i in pool["items"]}
     POOL_INDEX.clear()
     POOL_INDEX.update(P)
@@ -650,7 +669,7 @@ def render_edition(ed: dict, pool: dict) -> str:
     wx = json.loads(wx_file.read_text("utf-8")) if wx_file.exists() else {}
     if wx:
         wx["today"] = wx["days"].get(ed["date"])
-    out = [head(title, desc, canonical, wx)]
+    out = [head(title, desc, canonical, wx, theme)]
     if ed.get("preview"):
         out.append(preview_banner(ed))
     out += [masthead(ed, nav), '<main id="main" class="wrap dc-main">', strip(ed["strip"], pool["items"])]
@@ -782,6 +801,13 @@ def render_lab() -> None:
         pool = pools.setdefault(ed["pool"], json.loads((DAILY / "pool" / f"{ed['pool']}.json").read_text("utf-8")))
         write(f.parent / "index.html", render_edition(ed, pool))
         grid.setdefault(ed["date"], {})[f.parent.parent.name] = ed
+    editions = sorted((DAILY / "editions").glob("*.json"))
+    if editions:
+        ed = json.loads(editions[-1].read_text("utf-8"))
+        pool = pools.setdefault(ed["pool"], json.loads((DAILY / "pool" / f"{ed['pool']}.json").read_text("utf-8")))
+        write(lab / "classic" / ed["date"] / "index.html",
+              render_edition(dict(ed, preview=True, theme_preview="classic"), pool, theme="classic"))
+        classic = f'/daily/lab/classic/{ed["date"]}/'
     cols = list(LAB_LABEL)
     head_row = "".join(f"<th scope=col>{e(LAB_LABEL[c])}</th>" for c in cols)
     rows = ""
@@ -807,7 +833,8 @@ def render_lab() -> None:
 <li><strong>Lives</strong> runs in every variant once a week, on Fridays, at length.</li>
 </ul>
 <div class="dc-lab-scroll"><table class="dc-lab-table"><thead><tr><th></th>{head_row}</tr></thead><tbody>{rows}</tbody></table></div>
-<p><a href="/daily/">The paper</a> uses the fixed shape with the weekday rhythm.</p></main>"""
+<p><a href="/daily/">The paper</a> uses the fixed shape with the weekday rhythm.</p>
+{f'<h2>Earlier design</h2><p>The paper has used the Broadsheet · Cedefop blue design since 18 October 2026. <a href="{classic}">The latest edition in the classic design</a> (design 1, the Apprentix look it had before) is kept here so the paper can return to it.</p>' if editions else ''}</main>"""
     write(lab / "index.html", stamp_html("\n".join([head("Cedefop Daily — Design comparison", "Four layouts of Cedefop Daily compared over one week.",
                                                             f"{SITE}/daily/lab/"), body, "</body>\n</html>\n"])))
 
