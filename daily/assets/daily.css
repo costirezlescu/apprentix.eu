@@ -1,4 +1,6 @@
 /* Cedefop Daily — "Broadsheet · Cedefop blue" (chosen 18 October 2026).
+   Fonts as the approved mock-up rendered them: Georgia (masthead, headlines, titles, numbers),
+   Libre Franklin 400/500/700 (text), IBM Plex Mono 400/500 (labels; 600 is synthesised, as in the mock-up).
    Loaded after assets/css/site.css, which still supplies the base (reset, .wrap, portraits);
    everything the paper shows is restyled here, so a redesign of the main site does not change it.
    Spec: cedefop-daily/DECISIONS.md, "Visual design". */
@@ -10,7 +12,7 @@
   --accent: #3c4f8c; --accent-ink: #3c4f8c; --accent-soft: #eef0f5; --on-accent: #ffffff;
   --amber: #a15c11; --amber-soft: #fbf0df;
   --bar-plain: #d5d8e1;
-  --display: "Playfair Display", Georgia, serif;
+  --display: Georgia, "Gelasio", serif;   /* Gelasio (Georgia's metrics) only where Georgia is missing: Android, Linux */
   --body: "Libre Franklin", "Segoe UI", system-ui, sans-serif;
   --mono: "IBM Plex Mono", ui-monospace, Consolas, monospace;
 
